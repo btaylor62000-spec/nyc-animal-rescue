@@ -1,0 +1,5 @@
+Weekly data check 2026-09-17: 1 flagged
+Checked 6 organizations against their own websites.
+No contact details met the bar for an automatic change.
+1 item(s) flagged for a person; nothing was changed for those.
+See build/reports/weekly-check.md.

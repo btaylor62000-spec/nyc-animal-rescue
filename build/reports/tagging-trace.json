@@ -5748,8 +5748,8 @@
   "pound-hounds-res-q": [
     {
       "tag": "dog",
-      "field": "notes",
-      "matched": "dogs"
+      "field": "name",
+      "matched": "Hounds"
     },
     {
       "tag": "adoption",
@@ -5896,8 +5896,8 @@
   "rebound-hounds": [
     {
       "tag": "dog",
-      "field": "notes",
-      "matched": "dogs"
+      "field": "name",
+      "matched": "Hounds"
     },
     {
       "tag": "wildlife",

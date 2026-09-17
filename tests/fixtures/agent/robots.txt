@@ -1,0 +1,11 @@
+# Example robots file
+User-agent: BadBot
+Disallow: /
+
+User-agent: *
+Disallow: /admin
+Disallow: /wp-admin/
+Crawl-delay: 5
+
+User-agent: NYCAnimalRescueBot
+Disallow: /private

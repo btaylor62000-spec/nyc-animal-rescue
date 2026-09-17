@@ -1,0 +1,131 @@
+# Weekly contact check.
+#
+# Free for public repositories. Fetches each organization's own pages, applies
+# the rules in scripts/agent/rules.ts, and commits what it learned. The commit
+# triggers a Cloudflare Pages rebuild, so a corrected phone number is live
+# within a few minutes without anyone doing anything.
+#
+# It is built to be ignorable: the site keeps working whether or not anyone
+# reads the issue it opens.
+name: Weekly data check
+
+on:
+  schedule:
+    # Mondays at 07:00 UTC, which is early morning in New York.
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check everything but commit nothing'
+        type: boolean
+        default: false
+      limit:
+        description: 'Only check the first N organizations (0 = all)'
+        type: string
+        default: '0'
+
+# Only one check at a time, and never cancel one halfway through: a partial
+# run would leave some records checked and others not, and the next run would
+# have no way to tell which.
+concurrency:
+  group: weekly-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # The rules engine decides what the evidence means, so it has to be
+      # right before it is allowed to edit anything.
+      - name: Test the rules engine
+        run: npm test
+
+      - name: Run the check
+        id: check
+        run: |
+          npm run agent:weekly -- \
+            ${{ inputs.dry_run == true && '--dry' || '' }} \
+            ${{ inputs.limit != '' && inputs.limit != '0' && format('--limit={0}', inputs.limit) || '' }}
+        continue-on-error: true
+
+      # Rebuild the records so the overlay is applied and the published data,
+      # the search index and the chat corpus all agree.
+      - name: Rebuild the data
+        if: steps.check.outcome == 'success'
+        run: npm run import
+
+      - name: Commit what changed
+        if: steps.check.outcome == 'success' && inputs.dry_run != true
+        run: |
+          git config user.name "nyc-animal-rescue-bot"
+          git config user.email "noreply@users.noreply.github.com"
+
+          if git diff --quiet -- data content; then
+            echo "Nothing changed this week."
+            exit 0
+          fi
+
+          git add data content build/reports/weekly-check.md
+          git commit --file build/reports/weekly-commit-message.txt
+          git push
+
+      # One issue, reopened and rewritten each week, rather than a new one
+      # every Monday. Anything the checker would not decide on its own is in
+      # here; the site works whether or not it is read.
+      - name: Update the flagged-items issue
+        if: always() && inputs.dry_run != true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const title = 'Weekly data check — items flagged';
+
+            let body;
+            try {
+              body = fs.readFileSync('build/reports/weekly-check.md', 'utf8');
+            } catch {
+              body = 'The weekly check did not produce a report. Look at the workflow logs.';
+            }
+            if (body.length > 60000) body = body.slice(0, 60000) + '\n\n…truncated. See build/reports/weekly-check.md in the repository.';
+
+            const { owner, repo } = context.repo;
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: 'all', labels: 'weekly-check', per_page: 10,
+            });
+            const issue = existing.data.find(i => i.title === title);
+
+            const needsAttention = /## Needs a person \((?!0\))/.test(body) || /safety valve/i.test(body);
+
+            if (!issue) {
+              if (needsAttention) {
+                await github.rest.issues.create({ owner, repo, title, body, labels: ['weekly-check'] });
+              }
+              return;
+            }
+
+            await github.rest.issues.update({
+              owner, repo, issue_number: issue.number, body,
+              state: needsAttention ? 'open' : 'closed',
+            });
+
+      - name: Fail the run if the safety valve tripped
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "The check stopped itself: it wanted to change an implausible share of the directory."
+          echo "Nothing was applied. See build/reports/weekly-check.md and the flagged-items issue."
+          exit 1

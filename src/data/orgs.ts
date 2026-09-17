@@ -45,6 +45,11 @@ export function daysSinceVerified(org: Org, today = new Date()): number | null {
   return Math.round((today.getTime() - new Date(org.last_verified).getTime()) / 86_400_000);
 }
 
+/** A record found by the monthly discovery run that nothing has checked yet. */
+export function isNewlyFound(org: Org): boolean {
+  return org.check_status === 'new-unverified';
+}
+
 /** Should this entry be shown with a "confirm this is still active" note? */
 export function needsConfirmation(org: Org, today = new Date()): boolean {
   if (org.confidence === 'Low') return true;

@@ -1,0 +1,64 @@
+{
+  "source": "https://data.ny.gov/resource/p5wx-nivw.json (NYS DEC licensed wildlife rehabilitators)",
+  "fetched": "2026-09-17",
+  "note": "Counts only. The register lists private individuals, including home telephone numbers, and none of it is published on this site. People needing a rehabilitator are sent to the DEC search tool and Animal Help Now.",
+  "boroughs": {
+    "bronx": {
+      "licensed": 10,
+      "rabiesCertified": 0,
+      "species": [
+        "game birds reptiles amphibians small mammals",
+        "reptiles amphibians",
+        "reptiles amphibians small mammals",
+        "small mammals"
+      ]
+    },
+    "brooklyn": {
+      "licensed": 35,
+      "rabiesCertified": 0,
+      "species": [
+        "reptiles amphibians small mammals",
+        "small mammals"
+      ]
+    },
+    "manhattan": {
+      "licensed": 55,
+      "rabiesCertified": 0,
+      "species": [
+        "game birds reptiles amphibians small mammals",
+        "reptiles amphibians small mammals",
+        "small mammals"
+      ]
+    },
+    "queens": {
+      "licensed": 34,
+      "rabiesCertified": 0,
+      "species": [
+        "reptiles amphibians small mammals",
+        "small mammals"
+      ]
+    },
+    "staten-island": {
+      "licensed": 6,
+      "rabiesCertified": 0,
+      "species": [
+        "small mammals"
+      ]
+    }
+  },
+  "adjacent": {
+    "NASSAU": 65,
+    "ORANGE": 43,
+    "PUTNAM": 10,
+    "ROCKLAND": 9,
+    "SUFFOLK": 130,
+    "WESTCHESTER": 66
+  },
+  "gaps": [
+    "bronx: nobody on the register is rabies-certified, so raccoons, skunks and bats cannot be taken here — these go to surrounding counties, or to 311 and the Urban Park Rangers",
+    "brooklyn: nobody on the register is rabies-certified, so raccoons, skunks and bats cannot be taken here — these go to surrounding counties, or to 311 and the Urban Park Rangers",
+    "manhattan: nobody on the register is rabies-certified, so raccoons, skunks and bats cannot be taken here — these go to surrounding counties, or to 311 and the Urban Park Rangers",
+    "queens: nobody on the register is rabies-certified, so raccoons, skunks and bats cannot be taken here — these go to surrounding counties, or to 311 and the Urban Park Rangers",
+    "staten-island: nobody on the register is rabies-certified, so raccoons, skunks and bats cannot be taken here — these go to surrounding counties, or to 311 and the Urban Park Rangers"
+  ]
+}

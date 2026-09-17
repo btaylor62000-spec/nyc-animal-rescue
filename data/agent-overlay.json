@@ -1,0 +1,5 @@
+{
+  "$comment": "Written by the automated checks in scripts/agent and applied by the importer as its last step, so re-running the import never discards what the checks learned. Edit by hand only to correct the agent. To discard an automated change, delete its entry and re-run the import.",
+  "updated": "1970-01-01T00:00:00.000Z",
+  "entries": {}
+}

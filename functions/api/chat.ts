@@ -197,11 +197,25 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       // Ask the model only after the cards are out. If the daily allocation is
       // exhausted or the model is unreachable, the reader has already been
       // given real, verified contacts -- which is the part that matters.
+      //
+      // The two causes are reported separately. Telling someone their free
+      // allowance is spent when in fact nothing is configured sends them
+      // looking for a problem that is not there.
+      if (!env.AI || typeof env.AI.run !== 'function') {
+        send({ error: 'assistant-not-configured', degraded: true });
+        controller.close();
+        return;
+      }
+
       let upstream: ReadableStream | { response?: string };
       try {
         upstream = await env.AI.run(MODEL, { messages, stream: true, max_tokens: 400, temperature: 0.3 });
-      } catch {
-        send({ error: 'assistant-unavailable', degraded: true });
+      } catch (err) {
+        // Workers AI reports an exhausted daily allocation as a quota or
+        // capacity error; anything else is a fault worth naming differently.
+        const text = String((err as Error)?.message ?? err).toLowerCase();
+        const outOfQuota = /quota|limit|exceed|capacity|too many|429/.test(text);
+        send({ error: outOfQuota ? 'assistant-out-of-allowance' : 'assistant-unavailable', degraded: true });
         controller.close();
         return;
       }

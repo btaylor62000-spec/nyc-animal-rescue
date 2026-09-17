@@ -12,7 +12,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "evals": "tsx scripts/run-evals.ts"
+    "evals": "tsx scripts/run-evals.ts",
+    "agent:weekly": "tsx scripts/agent/weekly.ts",
+    "agent:discover": "tsx scripts/agent/discover.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",

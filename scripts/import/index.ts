@@ -26,6 +26,8 @@ import { buildAllGuidePages, unusedTabs, writeGuidePages } from './guide-pages.t
 import { ORG_SCHEMA } from './schema.ts';
 import { buildReport } from './report.ts';
 import { buildOrgCorpus, chunkGuide, type CorpusGuide } from './corpus.ts';
+import { applyOverlay, loadOverlay } from '../agent/overlay.ts';
+import { discoveredOrgs } from './discovered.ts';
 import type { TagTrace } from './tag.ts';
 
 const ORGS_DIR = 'data/orgs';
@@ -126,8 +128,16 @@ function main(): void {
   }
   console.log(`  guide   ${String(guideOrgs.length).padStart(3)} organizations extracted from guide prose`);
 
+  // Candidates from the monthly discovery run. They go through the same merge,
+  // so anything already in the directory under another name folds into it
+  // rather than appearing twice.
+  const discovered = discoveredOrgs();
+  if (discovered.length) {
+    console.log(`  found   ${String(discovered.length).padStart(3)} unverified candidates from monthly discovery`);
+  }
+
   console.log('De-duplicating…');
-  const merge = mergeOrgs([...mainOrgs, ...guideOrgs]);
+  const merge = mergeOrgs([...mainOrgs, ...guideOrgs, ...discovered]);
   console.log(`  ${mainOrgs.length + guideOrgs.length} -> ${merge.orgs.length} (${merge.merged.length} clusters merged)`);
 
   const applied = applyOverrides(merge.orgs);
@@ -137,6 +147,21 @@ function main(): void {
   console.log('Applying privacy holds…');
   const privacy = applyPrivacyHolds(merge.orgs);
   console.log(`  ${privacy.removals.length} personal contact details withheld`);
+
+  // Whatever the weekly checks have learned since the last import. Applied
+  // last, so re-running the import never discards the agent's work.
+  const overlay = loadOverlay();
+  const overlayIds = Object.keys(overlay.entries);
+  if (overlayIds.length) {
+    const known = new Set(merge.orgs.map((o) => o.id));
+    const applied = merge.orgs.filter((o) => overlay.entries[o.id]);
+    merge.orgs = merge.orgs.map((o) => applyOverlay(o, overlay.entries[o.id]));
+    const orphaned = overlayIds.filter((id) => !known.has(id));
+    console.log(
+      `Applied automated updates to ${applied.length} record(s)` +
+        (orphaned.length ? `; ${orphaned.length} overlay entr(ies) no longer match a record: ${orphaned.slice(0, 5).join(', ')}` : ''),
+    );
+  }
 
   // Ids are file names and URLs; a duplicate silently loses a record.
   const idCounts = new Map<string, number>();
@@ -202,11 +227,12 @@ function main(): void {
     `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus }, null, 0)}\n`,
     'utf8',
   );
-  const excluded = sorted.length - orgCorpus.length;
+  const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;
+  const unverifiedOut = sorted.filter((o) => o.check_status === 'new-unverified').length;
   console.log(
     `Wrote data/chat-corpus.json (${orgCorpus.length} organizations, ` +
-      `${guideCorpus.reduce((n, g) => n + g.chunks.length, 0)} guide sections, ` +
-      `${excluded} closed or relocated excluded)`,
+      `${guideCorpus.reduce((n, g) => n + g.chunks.length, 0)} guide sections; ` +
+      `${closedOut} closed or relocated and ${unverifiedOut} not yet verified are excluded)`,
   );
 
   const report = buildReport({

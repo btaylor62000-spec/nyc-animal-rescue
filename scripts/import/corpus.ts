@@ -55,6 +55,16 @@ export interface CorpusGuide {
 /** Statuses the assistant must never recommend. */
 const EXCLUDED: ReadonlyArray<Org['status']> = ['retired', 'relocated'];
 
+/**
+ * A newly discovered organization is real, but nothing about it has been
+ * checked. It can be browsed and filtered on the site, where the label says
+ * so plainly; it is not handed to someone in a crisis as an answer. It becomes
+ * eligible once a weekly check finds a working contact on its own site.
+ */
+function isUnverifiedDiscovery(o: Org): boolean {
+  return o.check_status === 'new-unverified';
+}
+
 function firstSentences(text: string | null, max = 200): string {
   if (!text) return '';
   const clean = text.replace(/\s+/g, ' ').trim();
@@ -66,7 +76,7 @@ function firstSentences(text: string | null, max = 200): string {
 
 export function buildOrgCorpus(orgs: Org[]): CorpusOrg[] {
   return orgs
-    .filter((o) => !EXCLUDED.includes(o.status))
+    .filter((o) => !EXCLUDED.includes(o.status) && !isUnverifiedDiscovery(o))
     .map((o) => ({
       id: o.id,
       name: o.name,

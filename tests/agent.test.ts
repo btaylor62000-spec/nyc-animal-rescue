@@ -1,0 +1,255 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+
+import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
+import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
+import { parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
+import { decide, isCheckable, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
+
+const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
+const DATE = '2026-09-24';
+
+// --- extraction ------------------------------------------------------------
+
+test('scripts and styles are not read as page text', () => {
+  const text = htmlToText(fixture('unchanged.html'));
+  assert.doesNotMatch(text, /var tracking/);
+  assert.match(text, /volunteer-run TNR group/);
+});
+
+test('phone numbers are found and normalised', () => {
+  const { phones } = detectContacts(fixture('unchanged.html'));
+  assert.ok(phones.includes('7185550142'));
+});
+
+test('an EIN is not mistaken for a phone number', () => {
+  const { phones } = detectContacts(fixture('unchanged.html'));
+  assert.ok(!phones.includes('8731475180'), 'EIN 87-3147518 must not become a phone number');
+});
+
+test('a tracking script number is not picked up as a contact', () => {
+  const { phones } = detectContacts(fixture('unchanged.html'));
+  assert.ok(!phones.includes('5555555555'));
+});
+
+test('email addresses are found, image files are not', () => {
+  const { emails } = extractContacts('write to help@example.org or see logo@2x.png');
+  assert.deepEqual(emails, ['help@example.org']);
+});
+
+test('phone normalisation handles the ways people write numbers', () => {
+  assert.equal(normalizePhone('(718) 555-0142'), '7185550142');
+  assert.equal(normalizePhone('718.555.0142'), '7185550142');
+  assert.equal(normalizePhone('1-718-555-0142'), '7185550142');
+  assert.equal(normalizePhone('555-0142'), null);
+});
+
+test('closure language is detected with the sentence around it', () => {
+  const signals = detectClosure(htmlToText(fixture('closed.html')));
+  assert.equal(signals[0]?.severity, 'closed');
+  assert.match(signals[0]!.quote, /we have closed/i);
+});
+
+test('a pause is distinguished from a closure', () => {
+  const signals = detectClosure(htmlToText(fixture('paused.html')));
+  assert.ok(signals.length > 0);
+  assert.equal(signals.every((s) => s.severity === 'paused'), true);
+});
+
+test('a parked domain is treated as a closure', () => {
+  const signals = detectClosure(htmlToText(fixture('parked.html')));
+  assert.equal(signals[0]?.severity, 'closed');
+});
+
+test('an ordinary page produces no closure signal', () => {
+  assert.deepEqual(detectClosure(htmlToText(fixture('unchanged.html'))), []);
+});
+
+// --- robots.txt ------------------------------------------------------------
+
+test('a group naming us takes precedence over the wildcard group', () => {
+  const robots = parseRobots(fixture('robots.txt'));
+  assert.deepEqual(robots.disallow, ['/private']);
+  assert.equal(robotsAllows(robots, 'https://example.org/contact'), true);
+  assert.equal(robotsAllows(robots, 'https://example.org/private/x'), false);
+  // The wildcard group's rules do not apply once a specific group exists.
+  assert.equal(robotsAllows(robots, 'https://example.org/admin'), true);
+});
+
+test('a wildcard disallow-all is obeyed', () => {
+  const robots = parseRobots('User-agent: *\nDisallow: /');
+  assert.equal(robotsAllows(robots, 'https://example.org/'), false);
+});
+
+test('an empty disallow blocks nothing', () => {
+  const robots = parseRobots('User-agent: *\nDisallow:');
+  assert.equal(robotsAllows(robots, 'https://example.org/anything'), true);
+});
+
+test('crawl delay is respected when longer than our own', () => {
+  assert.ok(parseRobots('User-agent: *\nCrawl-delay: 10').crawlDelayMs >= 10_000);
+});
+
+test('subdomains count as the same site', () => {
+  assert.equal(sameSite('https://example.org/a', 'https://www.example.org/b'), true);
+  assert.equal(sameSite('https://example.org/a', 'https://donate.example.org/b'), true);
+  assert.equal(sameSite('https://example.org/a', 'https://somethingelse.com/b'), false);
+});
+
+// --- the rules engine ------------------------------------------------------
+
+test('an unchanged page verifies the record', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('unchanged.html'), DATE));
+  assert.deepEqual(decision, { kind: 'ok', verified: true });
+
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.last_verified, DATE, 'seeing the stored number on their own site is what verification means');
+  assert.equal(patch.check_status, 'ok');
+});
+
+test('a single replacement number is applied, with evidence', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('changed-phone.html'), DATE));
+  assert.equal(decision.kind, 'apply');
+
+  const { patch, log } = toPatch(record, decision, DATE);
+  assert.deepEqual(patch.phones, [{ value: '7185550999', display: '(718) 555-0999' }]);
+  assert.equal(log[0]?.from, '7185550142');
+  assert.equal(log[0]?.to, '7185550999');
+  assert.ok(log[0]?.evidence_url, 'a change must record where it was seen');
+});
+
+test('two candidate numbers are a question for a person, not a change', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('two-new-numbers.html'), DATE));
+  assert.equal(decision.kind, 'needs-review');
+
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.phones, undefined, 'nothing may be overwritten when the evidence is ambiguous');
+  assert.equal(patch.check_status, 'needs-review');
+});
+
+test('a closure is flagged and the record is never deleted', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('closed.html'), DATE));
+  assert.equal(decision.kind, 'closed');
+
+  const { patch, log, flag } = toPatch(record, decision, DATE);
+  assert.equal(patch.status, 'retired');
+  assert.match(String(patch.status_note), /closed/i);
+  assert.ok(log[0]?.evidence_url);
+  assert.ok(flag);
+  assert.equal(patch.phones, undefined, 'a closed organization keeps its contacts on the record');
+});
+
+test('a pause sets hiatus rather than closed', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('paused.html'), DATE));
+  assert.equal(decision.kind, 'closed');
+  assert.equal(toPatch(record, decision, DATE).patch.status, 'hiatus');
+});
+
+test('one unreachable week is not yet a problem', () => {
+  const record = org({ consecutive_failures: 0 });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    { url: 'https://example.org', finalUrl: 'https://example.org', status: 0, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], error: 'timed out' },
+  ] });
+  assert.deepEqual(decision, { kind: 'unreachable', failures: 1, flagged: false });
+
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.check_status, 'unreachable');
+  assert.equal(patch.confidence, undefined, 'one bad week must not downgrade anyone');
+});
+
+test('three unreachable weeks flags the record and downgrades confidence once', () => {
+  const record = org({ consecutive_failures: 2, confidence: 'High' });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    { url: 'https://example.org', finalUrl: 'https://example.org', status: 500, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], error: 'server error' },
+  ] });
+  assert.deepEqual(decision, { kind: 'unreachable', failures: 3, flagged: true });
+
+  const { patch, log } = toPatch(record, decision, DATE);
+  assert.equal(patch.check_status, 'needs-review');
+  assert.equal(patch.confidence, 'Medium');
+  assert.match(String(patch.status_note), /may no longer be active/i);
+  assert.equal(log[0]?.field, 'confidence');
+
+  // A fourth failure must not downgrade a second time.
+  const later = org({ consecutive_failures: 3, confidence: 'Medium' });
+  const laterDecision = decide(later, { orgId: later.id, date: DATE, pages: [
+    { url: 'https://example.org', finalUrl: 'https://example.org', status: 500, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], error: 'server error' },
+  ] });
+  assert.equal(toPatch(later, laterDecision, DATE).patch.confidence, undefined);
+});
+
+test('a redirect off the domain is flagged rather than followed', () => {
+  const record = org();
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    { url: 'https://bushwickstreetcats.org', finalUrl: 'https://casino-example.com', status: 200, ok: true, offDomain: true, ownDomain: false, text: 'unrelated', phones: [], emails: [], closure: [] },
+  ] });
+  assert.equal(decision.kind, 'needs-review');
+  assert.match((decision as { reason: string }).reason, /different domain/i);
+});
+
+test('a social-only organization is skipped, not failed', () => {
+  const record = org({ website: null, intake_urls: [], social: [{ platform: 'instagram', handle: 'bushwickcats' }] });
+  assert.equal(isCheckable(record).checkable, false);
+
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [] });
+  assert.equal(decision.kind, 'skipped');
+  assert.match((decision as { reason: string }).reason, /social/i);
+
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.last_checked, DATE);
+  assert.equal(patch.confidence, undefined, 'a group we cannot check must not be penalised for it');
+});
+
+test('the safety valve trips when too much of the directory would change', () => {
+  assert.equal(tooManyChanges(10, 300), false);
+  assert.equal(tooManyChanges(50, 300), true, '50 of 300 is well past the threshold');
+  assert.equal(tooManyChanges(0, 0), false);
+});
+
+test('a check never produces a deletion', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  for (const name of ['unchanged.html', 'changed-phone.html', 'two-new-numbers.html', 'closed.html', 'paused.html', 'parked.html']) {
+    const decision = decide(record, evidenceFromHtml(record, fixture(name), DATE));
+    const { patch } = toPatch(record, decision, DATE);
+    assert.notEqual(patch.phones, null, `${name} produced a null phone list`);
+    assert.ok(!('id' in patch), `${name} tried to change the record id`);
+    if ('phones' in patch) {
+      assert.ok(Array.isArray(patch.phones) && (patch.phones as unknown[]).length > 0, `${name} emptied the phone list`);
+    }
+  }
+});
+
+test('a contact we simply could not read is not reported as a change', () => {
+  // Their number is in an image or loaded by script: we see no numbers at all.
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const html = '<html><body><main><h1>Bushwick Street Cats</h1>' +
+    '<p>We are a volunteer TNR group working across Bushwick and Ridgewood. ' +
+    'Our contact details are on the poster in the shop window, and we answer messages ' +
+    'through our help form. Please include your location and two photographs.</p>' +
+    '<p>We also run monthly clinics for certified caretakers, and lend traps.</p></main></body></html>';
+  const decision = decide(record, evidenceFromHtml(record, html, DATE));
+  assert.deepEqual(decision, { kind: 'ok', verified: false }, 'not seeing a number is not evidence it changed');
+
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.last_verified, undefined, 'but it must not be recorded as verified either');
+  assert.equal(patch.last_checked, DATE);
+});
+
+test('their number missing while other numbers are present is a real signal', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('two-new-numbers.html'), DATE));
+  assert.equal(decision.kind, 'needs-review');
+});
+
+test('an almost-empty page is treated as a broken fetch', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, '<html><body><p>Loading…</p></body></html>', DATE));
+  assert.equal(decision.kind, 'needs-review');
+  assert.match((decision as { reason: string }).reason, /almost no readable text/i);
+});

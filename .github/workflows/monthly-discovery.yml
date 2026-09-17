@@ -1,0 +1,111 @@
+# Monthly discovery.
+#
+# Two jobs in one run. It reads the state's wildlife-rehabilitator register for
+# *coverage* — how many licensed rehabbers each borough has, and which species
+# they may take — without copying any of it, because that register lists
+# private individuals and their home telephone numbers. And it reads
+# organizational rosters for groups the directory does not yet have.
+#
+# Nothing it finds goes live as a verified entry. New organizations are added
+# marked "newly found, not yet verified", labelled as such on every card, and
+# kept out of the assistant's answers until a weekly check has found a working
+# contact on their own site.
+name: Monthly discovery
+
+on:
+  schedule:
+    # The first of each month, after the weekly check has had its turn.
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Look, but write nothing'
+        type: boolean
+        default: false
+
+concurrency:
+  group: monthly-discovery
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Look for new resources
+        run: npm run agent:discover -- ${{ inputs.dry_run == true && '--dry' || '' }}
+
+      # Turns the candidates into records and regenerates everything derived
+      # from them, so the site, the search index and the chat corpus agree.
+      - name: Rebuild the data
+        if: inputs.dry_run != true
+        run: npm run import
+
+      # A discovery run must not be able to break the directory. If the data no
+      # longer validates, or the site no longer builds, nothing is committed.
+      - name: Check nothing broke
+        if: inputs.dry_run != true
+        run: |
+          npm test
+          npm run build
+
+      - name: Commit what was found
+        if: inputs.dry_run != true
+        run: |
+          git config user.name "nyc-animal-rescue-bot"
+          git config user.email "noreply@users.noreply.github.com"
+
+          if git diff --quiet -- data content; then
+            echo "No new organizations this month."
+            exit 0
+          fi
+
+          COUNT=$(git diff --numstat -- data/discovered.json | awk '{print $1}')
+          git add data content build/reports/monthly-discovery.md
+          git commit -m "Monthly discovery $(date -u +%Y-%m-%d)" \
+            -m "New organizations found on authoritative rosters, added as not yet verified." \
+            -m "They are labelled on the site and excluded from the assistant until a weekly check finds a working contact on their own site." \
+            -m "See build/reports/monthly-discovery.md."
+          git push
+
+      - name: Post the discovery report
+        if: always() && inputs.dry_run != true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const title = 'Monthly discovery — new resources and coverage';
+
+            let body;
+            try {
+              body = fs.readFileSync('build/reports/monthly-discovery.md', 'utf8');
+            } catch {
+              body = 'The discovery run did not produce a report. Look at the workflow logs.';
+            }
+            if (body.length > 60000) body = body.slice(0, 60000) + '\n\n…truncated. See build/reports/monthly-discovery.md.';
+
+            const { owner, repo } = context.repo;
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: 'all', labels: 'monthly-discovery', per_page: 10,
+            });
+            const issue = existing.data.find(i => i.title === title);
+
+            if (issue) {
+              await github.rest.issues.update({ owner, repo, issue_number: issue.number, body, state: 'open' });
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body, labels: ['monthly-discovery'] });
+            }

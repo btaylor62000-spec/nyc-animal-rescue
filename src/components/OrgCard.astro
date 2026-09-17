@@ -1,6 +1,6 @@
 ---
 import type { Org } from '../types.ts';
-import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, needsConfirmation } from '../data/orgs.ts';
+import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
 import ConfidenceBadge from './ConfidenceBadge.astro';
 
 interface Props { org: Org }
@@ -8,6 +8,7 @@ const { org } = Astro.props;
 
 const age = daysSinceVerified(org);
 const confirm = needsConfirmation(org);
+const newlyFound = isNewlyFound(org);
 
 const where = org.citywide
   ? 'All five boroughs'
@@ -45,6 +46,7 @@ const phone = org.phones[0];
 
   <ul class="card__tags">
     <li><ConfidenceBadge confidence={org.confidence} /></li>
+    {newlyFound && <li><span class="tag tag--strong">Newly found — not yet verified</span></li>}
     {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>
@@ -60,7 +62,9 @@ const phone = org.phones[0];
     <p class="notice">
       <span aria-hidden="true">&#9888;</span>
       <span>
-        {org.status !== 'active' && org.status_note
+        {newlyFound
+          ? 'We found this on an official list of rescue partners, but nothing about it has been checked yet. Confirm before relying on it.'
+          : org.status !== 'active' && org.status_note
           ? org.status_note
           : org.confidence === 'Low'
             ? 'Listed from a directory or social channel. Confirm this contact is still active before relying on it.'

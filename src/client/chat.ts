@@ -38,9 +38,38 @@ if (form && input && log) {
     if (status) status.textContent = text;
   }
 
+  /**
+   * Messages for the ways the assistant can be away. They are different
+   * problems for whoever is running the site, so they say different things.
+   */
+  const DEGRADED_REASONS: Record<string, { title: string; body: string }> = {
+    'assistant-out-of-allowance': {
+      title: 'The assistant is resting',
+      body: 'It runs on a free daily allowance, and that is used up for today. It will be back tomorrow. The directory is unaffected.',
+    },
+    'assistant-not-configured': {
+      title: 'The assistant is not switched on yet',
+      body: 'This site is running without its language model connected. The directory, search and guides all work normally.',
+    },
+    'assistant-unavailable': {
+      title: 'The assistant is unreachable',
+      body: 'Something went wrong on the way to the assistant. The directory is unaffected, and search will get you there.',
+    },
+    'rate-limited': {
+      title: 'That is a lot of questions',
+      body: 'You have sent several messages in a short time. Please use search for now.',
+    },
+  };
+
   /** Fall back to the directory, carrying the question across. */
-  function showDegraded(question: string): void {
+  function showDegraded(question: string, reason = 'assistant-unavailable'): void {
     if (!degraded) return;
+    const copy = DEGRADED_REASONS[reason] ?? DEGRADED_REASONS['assistant-unavailable']!;
+    const heading = degraded.querySelector('h3');
+    const para = degraded.querySelector('p');
+    if (heading) heading.textContent = copy.title;
+    if (para) para.textContent = copy.body;
+
     degraded.hidden = false;
     if (degradedSearch) {
       degradedSearch.href = `/directory?q=${encodeURIComponent(question)}`;
@@ -216,10 +245,22 @@ if (form && input && log) {
     const newPass = res.headers.get('x-chat-pass');
     if (newPass) pass = newPass;
 
-    if (!res.ok && res.status !== 429 && res.status !== 503) {
+    if (res.status === 429) {
+      showDegraded(question, 'rate-limited');
+      return;
+    }
+    if (res.status === 404) {
+      // The endpoint is not deployed -- running the static site on its own.
+      showDegraded(question, 'assistant-not-configured');
+      return;
+    }
+    if (!res.ok && res.status !== 503) {
       const detail = await res.text();
-      const message = /"error":"([^"]+)"/.exec(detail)?.[1] ?? 'Something went wrong.';
-      setStatus(message.includes('-') ? 'Something went wrong.' : message);
+      const message = /"error":"([^"]+)"/.exec(detail)?.[1] ?? '';
+      if (message && !message.includes('-')) {
+        setStatus(message);
+        return;
+      }
       showDegraded(question);
       return;
     }
@@ -268,7 +309,7 @@ if (form && input && log) {
             continue;
           }
           if ('error' in event) {
-            if (event.degraded) showDegraded(question);
+            if (event.degraded) showDegraded(question, event.error);
             else setStatus(event.error);
             continue;
           }
