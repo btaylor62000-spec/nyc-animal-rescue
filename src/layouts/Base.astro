@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Logo from '../components/Logo.astro';
 
 interface Props {
   title: string;
@@ -30,6 +31,18 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
     {description && <meta name="description" content={description} />}
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!--
+      The body font, fetched in parallel with the stylesheet rather than after
+      it. `font-display: swap` means text is readable either way; this just
+      shortens how long it is readable in the fallback.
+    -->
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- Set before first paint so no-JS styling never flashes. -->
     <script is:inline>document.documentElement.classList.remove('no-js');</script>
   </head>
@@ -38,7 +51,13 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
 
     <header class="site-header">
       <div class="wrap site-header__inner">
-        <a class="site-title" href="/">NYC Animal Rescue</a>
+        <a class="site-title" href="/">
+          <Logo size={34} class="site-title__mark" />
+          <span class="site-title__text">
+            NYC Animal Rescue
+            <span class="site-title__sub">Free directory · All five boroughs</span>
+          </span>
+        </a>
         <nav class="site-nav" aria-label="Main">
           {nav.map((item) => (
             <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
@@ -53,13 +72,41 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>
-          A free, community-maintained directory of animal help in New York City.
-          Contact details go stale — <strong>confirm a number is still live before you rely on it in an emergency.</strong>
-        </p>
-        <p>
-          <a href="/about">How this is maintained</a> ·
-          <a href="/about#report">Report a problem with an entry</a>
+        <div class="site-footer__grid">
+          <div>
+            <div class="site-footer__brand">
+              <Logo size={30} />
+              <strong>NYC Animal Rescue</strong>
+            </div>
+            <p style="margin:0;max-width:34ch">
+              A free, community-maintained directory of animal help in New York City.
+              No ads, no tracking, no accounts.
+            </p>
+          </div>
+
+          <div>
+            <h2>Find help</h2>
+            <ul>
+              <li><a href="/directory">Every resource</a></li>
+              <li><a href="/directory?need=emergency-vet">24-hour emergency vets</a></li>
+              <li><a href="/ask">Ask the assistant</a></li>
+              <li><a href="/guides">Guides</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>This directory</h2>
+            <ul>
+              <li><a href="/about">How it is maintained</a></li>
+              <li><a href="/about#confidence">What confidence means</a></li>
+              <li><a href="/about#report">Report a problem</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="site-footer__note">
+          Contact details go stale — <strong>confirm a number is still live before you rely on it
+          in an emergency.</strong>
         </p>
       </div>
     </footer>

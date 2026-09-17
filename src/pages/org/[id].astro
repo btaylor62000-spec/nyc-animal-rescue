@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
+import Icon from '../../components/Icon.astro';
 import {
   ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, ORGS, ORGS_BY_ID, ORG_TYPE_LABELS,
   STATUS_LABELS, daysSinceVerified, needsConfirmation, programmesOf,
@@ -59,7 +60,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
   description={org.notes?.slice(0, 155) ?? `Contact details and services for ${org.name} in New York City.`}
 >
   <div class="wrap">
-    <p class="muted" style="margin:1rem 0 0"><a href="/directory">&larr; All resources</a></p>
+    <p class="muted" style="margin:1.25rem 0 0"><a href="/directory">&larr; All resources</a></p>
     <h1>{org.name}</h1>
 
     {parent && <p class="muted">Part of <a href={`/org/${parent.id}`}>{parent.name}</a></p>}
@@ -72,14 +73,14 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
 
     {org.status !== 'active' && org.status_note && (
       <p class="notice notice--urgent">
-        <span aria-hidden="true">&#9888;</span>
+        <Icon name="alert" size={17} />
         <span>{org.status_note}</span>
       </p>
     )}
 
     {confirm && org.status === 'active' && (
       <p class="notice">
-        <span aria-hidden="true">&#9888;</span>
+        <Icon name="alert" size={17} />
         <span>
           {org.confidence === 'Low'
             ? 'This entry comes from a directory or social channel rather than the organization’s own site. Confirm this contact is still active before relying on it.'
@@ -92,7 +93,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
 
     {org.privacy_hold && (
       <p class="notice">
-        <span aria-hidden="true">&#9432;</span>
+        <Icon name="info" size={17} />
         <span>
           Some contact details for this entry belong to a private individual and are withheld
           until they confirm they are willing to be listed publicly.
@@ -100,7 +101,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
       </p>
     )}
 
-    <div class="layout">
+    <div class="layout layout--main-first">
       <div>
         <h2>Contact</h2>
         {contactCount === 0 ? (
@@ -110,7 +111,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
             {org.phones.map((p) => (
               <li>
                 <a href={`tel:+1${p.value}`}>
-                  <span aria-hidden="true">&#9742;</span>
+                  <Icon name="phone" size={18} />
                   <span>{p.display}{p.label && <> <span class="label">({p.label})</span></>}</span>
                 </a>
               </li>
@@ -118,7 +119,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
             {org.emails.map((e) => (
               <li>
                 <a href={`mailto:${e.value}`}>
-                  <span aria-hidden="true">&#9993;</span>
+                  <Icon name="mail" size={18} />
                   <span>{e.value}{e.label && <> <span class="label">({e.label})</span></>}</span>
                 </a>
               </li>
@@ -126,7 +127,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
             {org.intake_urls.map((u) => (
               <li>
                 <a href={u.url} rel="noopener nofollow">
-                  <span aria-hidden="true">&#9654;</span>
+                  <Icon name="arrow" size={18} />
                   <span>{u.label ?? 'Help / intake form'} <span class="label">{hostOf(u.url)}</span></span>
                 </a>
               </li>
@@ -134,7 +135,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
             {org.website && (
               <li>
                 <a href={org.website} rel="noopener nofollow">
-                  <span aria-hidden="true">&#8599;</span>
+                  <Icon name="external" size={18} />
                   <span>Website <span class="label">{hostOf(org.website)}</span></span>
                 </a>
               </li>
@@ -143,7 +144,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
               <li>
                 {s.url ? (
                   <a href={s.url} rel="noopener nofollow">
-                    <span aria-hidden="true">&#9679;</span>
+                    <Icon name="globe" size={18} />
                     <span>{s.platform} <span class="label">{s.handle}</span></span>
                   </a>
                 ) : (
@@ -175,7 +176,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
         )}
       </div>
 
-      <aside>
+      <aside class="sidecar">
         <h2>Details</h2>
         <dl class="definition">
           {where && <><dt>Serves</dt><dd>{where}</dd></>}

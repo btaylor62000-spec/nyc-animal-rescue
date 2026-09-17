@@ -1,0 +1,37 @@
+---
+/*
+ * The mark: a paw whose pad is the heart from the original favicon, on a
+ * rounded tile. Drawn inline so the header needs no image request, and sized
+ * by prop so the same file serves the 34px header and the 30px footer.
+ *
+ * The gradient id is suffixed per instance -- two copies of this on one page
+ * would otherwise share one id, and the second would silently win.
+ */
+interface Props { size?: number; class?: string }
+const { size = 32, class: klass } = Astro.props;
+const uid = `logo-${Math.random().toString(36).slice(2, 8)}`;
+---
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 32 32"
+  class={klass}
+  aria-hidden="true"
+  focusable="false"
+>
+  <defs>
+    <linearGradient id={uid} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a6e5b" />
+      <stop offset="1" stop-color="#0f4b3e" />
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill={`url(#${uid})`} />
+  <g fill="#fbfaf8">
+    <ellipse cx="9.7" cy="14.4" rx="2.35" ry="2.95" />
+    <ellipse cx="14.1" cy="11.3" rx="2.45" ry="3.15" />
+    <ellipse cx="18.5" cy="11.3" rx="2.45" ry="3.15" />
+    <ellipse cx="22.7" cy="14.4" rx="2.35" ry="2.95" />
+    <path d="M16 26c-3.4-2-5.8-3.8-5.8-6.4a3.2 3.2 0 0 1 5.8-1.9 3.2 3.2 0 0 1 5.8 1.9c0 2.6-2.4 4.4-5.8 6.4Z" />
+  </g>
+</svg>

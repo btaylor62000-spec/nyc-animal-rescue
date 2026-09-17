@@ -1,8 +1,10 @@
 ---
+import Icon from './Icon.astro';
+
 interface Props { urgent?: boolean }
 const { urgent = false } = Astro.props;
 ---
 <p class={`notice${urgent ? ' notice--urgent' : ''}`}>
-  <span aria-hidden="true">{urgent ? '⚠' : 'ℹ'}</span>
+  <Icon name={urgent ? 'alert' : 'info'} size={17} />
   <span><slot /></span>
 </p>

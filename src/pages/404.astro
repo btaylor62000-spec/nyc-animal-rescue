@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
+import Icon from '../components/Icon.astro';
 ---
 <Base title="Page not found">
   <div class="wrap prose">
@@ -11,7 +12,7 @@ import SearchBox from '../components/SearchBox.astro';
     <SearchBox label="Search every resource" autofocus={true} />
 
     <p class="notice notice--urgent">
-      <span aria-hidden="true">&#9888;</span>
+      <Icon name="alert" size={17} />
       <span>
         If this is an emergency, go straight to the
         <a href="/directory?need=emergency-vet">24-hour emergency vets</a>.

@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
+import Icon from '../components/Icon.astro';
 import { TURNSTILE_SITE_KEY } from '../data/site.ts';
 
 /**
@@ -33,7 +34,7 @@ const examples = [
     </p>
 
     <p class="notice notice--urgent">
-      <span aria-hidden="true">&#9888;</span>
+      <Icon name="alert" size={17} />
       <span>
         If an animal is bleeding, struggling to breathe, collapsed or has been caught by a cat,
         do not wait for an answer here — go straight to the
@@ -55,6 +56,13 @@ const examples = [
         <a id="chat-degraded-search" class="btn btn--primary" href="/directory">Search the directory instead</a>
       </div>
 
+      <div>
+        <p class="muted" style="font-size:.9rem;margin-bottom:.45rem">Start from one of these:</p>
+        <ul id="chat-examples" class="chat__examples">
+          {examples.map((q) => <li><button type="button" data-q={q}>{q}</button></li>)}
+        </ul>
+      </div>
+
       <form id="chat-form" class="chat__form" data-turnstile-site-key={turnstileSiteKey}>
         <label class="visually-hidden" for="chat-input">What is happening?</label>
         <textarea
@@ -65,7 +73,10 @@ const examples = [
           placeholder="e.g. I found a bird on the pavement in Astoria and it can't fly"
           autocomplete="off"
         ></textarea>
-        <button id="chat-send" class="btn btn--primary" type="submit">Ask</button>
+        <button id="chat-send" class="btn btn--primary" type="submit">
+          <Icon name="arrow" size={17} />
+          Ask
+        </button>
       </form>
 
       <!--
@@ -78,22 +89,18 @@ const examples = [
         <div id="turnstile-host"></div>
       </div>
 
-      <div>
-        <p class="muted" style="font-size:.9rem;margin-bottom:.4rem">Or start from one of these:</p>
-        <ul id="chat-examples" class="chat__examples">
-          {examples.map((q) => <li><button type="button" data-q={q}>{q}</button></li>)}
-        </ul>
-      </div>
-
-      <p class="muted" style="font-size:.88rem">
-        The assistant only knows what is in this directory. It will say so when it does not know,
-        rather than guess. Nothing you type is stored or logged.
+      <p class="chat__fineprint">
+        <Icon name="shield" size={16} />
+        <span>
+          The assistant only knows what is in this directory. It will say so when it does not know,
+          rather than guess. Nothing you type is stored or logged.
+        </span>
       </p>
     </div>
 
     <noscript>
       <p class="notice">
-        <span aria-hidden="true">&#9432;</span>
+        <Icon name="alert" size={17} />
         <span>The assistant needs JavaScript. Search the directory instead:</span>
       </p>
       <SearchBox label="Search every resource" />

@@ -1,6 +1,34 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
 import { GUIDES_ORDERED } from '../../data/guides.ts';
+
+/*
+ * An icon per guide, chosen by slug. Anything unmatched falls back to the
+ * compass rather than throwing -- the importer can add a guide without this
+ * page needing to know about it first.
+ */
+const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' | 'leaf' | 'alert' | 'shield'> = {
+  'animal-emergency': 'alert',
+  'exotic-pet-emergency': 'alert',
+  'found-an-injured-bird': 'bird',
+  'found-wildlife': 'leaf',
+  'starting-tnr': 'cat',
+  'keeping-your-cat': 'cat',
+  'cats-with-special-needs': 'cat',
+  'lost-and-found-cat': 'compass',
+  'lost-and-found-dog': 'compass',
+  'lost-and-found-exotic': 'compass',
+  'keeping-your-dog': 'home',
+  'dog-behavior-and-legal': 'shield',
+  'breed-specific-dog-rescue': 'home',
+  'rehoming-an-exotic-pet': 'home',
+  'exotic-boarding-and-planning': 'home',
+  'exotic-pet-legality': 'shield',
+  'help-paying-for-care': 'stethoscope',
+  'low-cost-clinics-and-trap-banks': 'stethoscope',
+  'low-cost-dog-care': 'stethoscope',
+};
 ---
 
 <Base
@@ -18,6 +46,7 @@ import { GUIDES_ORDERED } from '../../data/guides.ts';
       {GUIDES_ORDERED.map((g) => (
         <li>
           <a class="tile" href={`/guides/${g.slug}`}>
+            <span class="tile__icon"><Icon name={ICONS[g.slug] ?? 'compass'} size={20} /></span>
             <strong>{g.title}</strong>
             <span>{g.summary}</span>
           </a>

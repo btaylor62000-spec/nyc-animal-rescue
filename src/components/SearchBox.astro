@@ -1,4 +1,6 @@
 ---
+import Icon from './Icon.astro';
+
 interface Props {
   /** Where a no-JS submit should land. */
   action?: string;
@@ -17,16 +19,19 @@ const {
 ---
 <form class="searchbox" role="search" action={action} method="get">
   <label class="visually-hidden" for="q">{label}</label>
-  <input
-    type="search"
-    id="q"
-    name="q"
-    value={value}
-    placeholder={placeholder}
-    autocomplete="off"
-    autocorrect="off"
-    spellcheck="false"
-    autofocus={autofocus || undefined}
-  />
+  <span class="searchbox__field">
+    <Icon name="search" size={19} />
+    <input
+      type="search"
+      id="q"
+      name="q"
+      value={value}
+      placeholder={placeholder}
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="false"
+      autofocus={autofocus || undefined}
+    />
+  </span>
   <button class="btn btn--primary" type="submit">Search</button>
 </form>

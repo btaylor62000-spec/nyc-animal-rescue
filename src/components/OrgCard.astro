@@ -2,6 +2,7 @@
 import type { Org } from '../types.ts';
 import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
 import ConfidenceBadge from './ConfidenceBadge.astro';
+import Icon from './Icon.astro';
 
 interface Props { org: Org }
 const { org } = Astro.props;
@@ -40,6 +41,7 @@ const phone = org.phones[0];
   <h3 class="card__title"><a href={`/org/${org.id}`}>{org.name}</a></h3>
 
   <p class="card__meta">
+    <Icon name="pin" size={15} />
     {where}
     {org.animals.length > 0 && <> · {org.animals.slice(0, 3).map((a) => ANIMAL_LABELS[a]).join(', ')}</>}
   </p>
@@ -53,14 +55,19 @@ const phone = org.phones[0];
 
   {(phone || org.website) && (
     <div class="card__actions">
-      {phone && <a class="btn btn--primary" href={`tel:+1${phone.value}`}>Call {phone.display}</a>}
+      {phone && (
+        <a class="btn btn--primary" href={`tel:+1${phone.value}`}>
+          <Icon name="phone" size={17} />
+          Call {phone.display}
+        </a>
+      )}
       <a class="btn" href={`/org/${org.id}`}>Details</a>
     </div>
   )}
 
   {confirm && (
     <p class="notice">
-      <span aria-hidden="true">&#9888;</span>
+      <Icon name="alert" size={17} />
       <span>
         {newlyFound
           ? 'We found this on an official list of rescue partners, but nothing about it has been checked yet. Confirm before relying on it.'

@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
+import Icon from '../components/Icon.astro';
 import { ORGS } from '../data/orgs.ts';
 
 /**
@@ -11,51 +12,85 @@ import { ORGS } from '../data/orgs.ts';
 const tiles = [
   {
     href: '/guides/found-an-injured-bird',
+    icon: 'bird',
     title: 'Found an injured bird',
     blurb: 'Catch it, box it, and get it to a rehabber. Do not feed it.',
   },
   {
     href: '/directory?need=tnr&animal=cat',
+    icon: 'cat',
     title: 'Found a stray cat or kittens',
     blurb: 'TNR groups, bottle-baby help and local rescues.',
   },
   {
     href: '/directory?need=owner-support',
+    icon: 'home',
     title: 'I can’t keep my pet',
     blurb: 'Help with costs, housing and temporary care first.',
   },
   {
     href: '/directory?need=lost-found',
+    icon: 'compass',
     title: 'Lost or found a pet',
     blurb: 'Where to report and search in the first hours.',
   },
   {
     href: '/directory?need=low-cost-vet',
+    icon: 'stethoscope',
     title: 'Need low-cost vet care',
     blurb: 'Clinics, spay/neuter and help with vet bills.',
   },
   {
     href: '/guides/found-wildlife',
+    icon: 'leaf',
     title: 'Found wildlife',
     blurb: 'Only licensed rehabbers may handle wild animals.',
   },
-];
+] as const;
 
 const orgCount = ORGS.length;
+const emergencyCount = ORGS.filter((o) => o.needs.includes('emergency-vet')).length;
+const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
 ---
 
 <Base
   title="NYC Animal Rescue"
   description="Find the right animal rescue, clinic or rehabilitator in New York City — for cats, dogs, birds, wildlife and exotic pets."
 >
-  <div class="wrap">
-    <h1>Find help for an animal in New York City</h1>
-    <p class="lede">
-      {orgCount} rescues, clinics, hotlines and rehabilitators across the five boroughs. Free, and kept current.
-    </p>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Find help for an animal in New York City</h1>
+      <p class="lede">
+        {orgCount} rescues, clinics, hotlines and rehabilitators across the five boroughs.
+        Free to use, kept current, and honest about what it does not know.
+      </p>
 
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="/directory">
+          <Icon name="search" size={19} />
+          Search every resource
+        </a>
+        <a class="btn btn--lg" href="/ask">
+          <Icon name="message" size={19} />
+          Describe what happened
+        </a>
+      </div>
+
+      <dl class="stats">
+        <div><dd>{orgCount}</dd><dt>Organizations listed</dt></div>
+        <div><dd>{emergencyCount}</dd><dt>Emergency vets</dt></div>
+        <div><dd>{verifiedCount}</dd><dt>Verified on their own site</dt></div>
+        <div><dd>5</dd><dt>Boroughs covered</dt></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="wrap">
     <section class="emergency" aria-labelledby="emergency-heading">
-      <h2 id="emergency-heading">Is this an emergency?</h2>
+      <h2 id="emergency-heading">
+        <Icon name="alert" size={22} />
+        Is this an emergency?
+      </h2>
       <p>
         If an animal is bleeding, struggling to breathe, collapsed, seizing, has been hit by a car,
         has swallowed something toxic, or <strong>has been caught by a cat</strong> — it needs a vet or a
@@ -68,33 +103,45 @@ const orgCount = ORGS.length;
       </div>
     </section>
 
-    <h2>Search every resource</h2>
-    <SearchBox label="Search every resource" />
-    <p class="muted" style="margin-top:-.4rem">
-      Not sure what to search for? <a href="/ask">Describe what is happening</a> and get pointed
-      to the right place.
-    </p>
+    <section class="section">
+      <span class="eyebrow">Start from what happened</span>
+      <h2>Six situations people arrive with</h2>
+      <ul class="tiles">
+        {tiles.map((t) => (
+          <li>
+            <a class="tile" href={t.href}>
+              <span class="tile__icon"><Icon name={t.icon} size={20} /></span>
+              <strong>{t.title}</strong>
+              <span>{t.blurb}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
 
-    <h2>Or start from what happened</h2>
-    <ul class="tiles">
-      {tiles.map((t) => (
-        <li>
-          <a class="tile" href={t.href}>
-            <strong>{t.title}</strong>
-            <span>{t.blurb}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-
-    <h2>Before you call</h2>
-    <div class="prose">
-      <p>
-        Rescue contact details go stale quickly — small groups fold, numbers change, volunteers move on.
-        Every entry here shows when it was last checked and how firmly it is verified, and entries we are
-        less sure about say so plainly. <strong>Confirm a number is live before you rely on it.</strong>
+    <section class="section">
+      <span class="eyebrow">Or search directly</span>
+      <h2>Search every resource</h2>
+      <SearchBox label="Search every resource" />
+      <p class="muted" style="margin-top:-.2rem">
+        Not sure what to search for? <a href="/ask">Describe what is happening</a> and get pointed
+        to the right place.
       </p>
-      <p><a href="/about">How this directory is maintained</a></p>
-    </div>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <span class="eyebrow"><Icon name="shield" size={14} /> Before you call</span>
+        <h2>Every entry says how well we know it</h2>
+        <p>
+          Rescue contact details go stale quickly — small groups fold, numbers change, volunteers move on.
+          Every entry here shows when it was last checked and how firmly it is verified, and entries we are
+          less sure about say so plainly. <strong>Confirm a number is live before you rely on it.</strong>
+        </p>
+        <p style="margin-bottom:0">
+          <a href="/about">How this directory is maintained</a>
+        </p>
+      </div>
+    </section>
   </div>
 </Base>
