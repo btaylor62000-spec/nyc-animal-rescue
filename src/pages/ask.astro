@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
+import { TURNSTILE_SITE_KEY } from '../data/site.ts';
 
 /**
  * The assistant lives on its own page so the home page stays fast and the
@@ -10,7 +11,7 @@ import SearchBox from '../components/SearchBox.astro';
  * page still works -- the endpoint skips verification too -- so the assistant
  * can be developed and tested before any credentials exist.
  */
-const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
+const turnstileSiteKey = TURNSTILE_SITE_KEY;
 
 const examples = [
   'A pigeon hit my window and flew off',

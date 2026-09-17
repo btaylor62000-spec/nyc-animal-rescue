@@ -77,7 +77,19 @@ Several warnings are counter-intuitive and people act on them under stress:
 
 Paraphrasing risks softening exactly the instruction that matters.
 
-### 5. It must not be able to cost money
+### 5. Configuration has exactly one home for each kind of thing
+
+Because `wrangler.toml` exists, Cloudflare treats it as the source of truth and
+the dashboard only manages encrypted secrets. So:
+
+- **Bindings** (Workers AI) — `wrangler.toml`
+- **Public values** (repo slug, Turnstile site key) — `src/data/site.ts`
+- **Secrets** (Turnstile secret key, pass signing key) — Cloudflare dashboard
+
+Do not add a build-time public value as a Pages environment variable. It will
+appear to work in the dashboard and silently not reach the build.
+
+### 6. It must not be able to cost money
 
 Stay on the Workers Free plan. No database, no paid API, no stored state. See
 `docs/FREE-TIER.md` for what each service allows and what happens at the limit.

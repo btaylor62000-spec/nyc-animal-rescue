@@ -1,10 +1,17 @@
 {
   "$comment": "Organizations found on authoritative rosters that are not yet in the directory. The importer turns these into records marked \"newly found, not yet verified\": low confidence, labelled on the site, and kept out of the assistant’s answers until a weekly check finds a working contact on their own site.",
-  "updated": "2026-09-17T20:27:46.202Z",
+  "updated": "2026-09-17T20:51:29.155Z",
   "candidates": [
     {
       "name": "3 Acres Rescue",
       "website": "http://3acresrescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "3 Hearts 4 Paws",
+      "website": "https://www.3hearts4paws.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -17,8 +24,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Adore-A-Bullie Paws and Claws*",
+      "website": "http://www.adore-a-bullie.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Air Twiga Animal Rescue",
       "website": "https://www.airtwiga.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "All About Cats Rescue",
+      "website": "http://www.allaboutcats.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "All Creatures Big & Small",
+      "website": "http://allcreaturesbigandsmall.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -31,8 +59,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "All Sentient Beings",
+      "website": "https://www.asbrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Alley Pond Environmental Center Inc",
       "website": "https://www.alleypond.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Almost Home Animal Rescue & Adoptions, Inc.",
+      "website": "https://www.almosthomeli.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "American Alliance for Protection of Animals",
+      "website": "https://www.animalsprotectors.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -45,8 +94,22 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "American Maltese Association Rescue*",
+      "website": "http://www.americanmalteserescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Animal Farm Foundation",
       "website": "https://www.animalfarmfoundation.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Animal Kind",
+      "website": "http://www.animalkindny.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -59,6 +122,20 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Animal Rescue Fund of the Hamptons (ARF)",
+      "website": "http://www.arfhamptons.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Australian Cattle Dog Rescue Association",
+      "website": "http://www.acdra.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Best Bullies",
       "website": "https://www.bestbullies.org",
       "source": "ACC New Hope partners",
@@ -66,8 +143,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Big East Akita Rescue",
+      "website": "http://bigeastakitarescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Blue Barn Farm & Sanctuary",
+      "website": "http://www.bluebarnrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Blue Ridge Bull Terrier Group",
       "website": "http://www.brbtc.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Bronx Zoo",
+      "website": "https://bronxzoo.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -94,6 +192,13 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Cane Corso Rescue",
+      "website": "https://canecorsorescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Cat Assistance Inc.*",
       "website": "http://www.catassistanceny.org",
       "source": "ACC New Hope partners",
@@ -101,8 +206,22 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Cats Under the Stars",
+      "website": "https://catsunderthestars.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Cavalier Rescue USA*",
       "website": "http://www.cavalierrescueusa.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Center for Avian & Exotics",
+      "website": "https://avianandexoticvets.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -129,8 +248,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Dawn of a New Day Animal Rescue, Inc.",
+      "website": "https://dawnofanewdayanimalrescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Doberman Pinscher Rescue of PA, Inc.",
       "website": "https://www.dprpa.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Doberman Rescue Unlimited",
+      "website": "http://www.dru.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "ECHO East Coast Herding Dog Organization",
+      "website": "https://www.echorescue.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -143,8 +283,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Emerald City Rescue, Inc",
+      "website": "http://www.emeraldcityrescuenj.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Everlasting Hope Animal Advocacy & Rescue",
       "website": "http://awos.petfinder.com/shelters/ny1061.html",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Every Last One Rescue",
+      "website": "http://www.everylastonerescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "F.A.C.T.(Feline Advocates Coming Together)*",
+      "website": "https://www.felineadvocatescomingtogether.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -157,6 +318,13 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Feline Rescue of Staten Island",
+      "website": "http://felinerescueofstatenisland.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "For Our Friends",
       "website": "http://www.forourfriends.org",
       "source": "ACC New Hope partners",
@@ -164,7 +332,21 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "For the Love of Dog Rottweiler Rescue of NH",
+      "website": "http://www.4theloveofdog.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Franklin Township Animal Shelter",
+      "website": "http://secondchanceforanimals.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Friends of Homeless Animals",
       "website": "http://secondchanceforanimals.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
@@ -185,8 +367,50 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "German Shepherd Rescue of the Finger Lakes",
+      "website": "https://www.gsrfingerlakes.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Get A Bull",
+      "website": "http://www.getabull.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Gimme Shelter Animal Rescue, Inc.",
+      "website": "http://www.gimmeshelteranimalrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Happily Furever After Rescue",
+      "website": "https://www.happilyfureverafter.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Happy Life Animal Rescue",
+      "website": "https://happylifeanimalrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Hermione's Home",
       "website": "https://www.hermioneshome.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Homeward Bound Schnauzer Rescue",
+      "website": "http://hbschnauzerrescue.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -199,6 +423,13 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Hopewell Rescue Inc",
+      "website": "https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Hudson Valley Humane Society",
       "website": "http://www.hvhumane.org",
       "source": "ACC New Hope partners",
@@ -206,8 +437,36 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Hudson Valley SPCA*",
+      "website": "http://www.hudsonvalleyspca.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Humane Society of Westchester",
+      "website": "https://humanesocietyofwestchester.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Hunter Hollow Bunny Bed & Breakfast",
+      "website": "https://hunterhollow.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Hunterdon Somerset",
       "website": "http://hunterdonsomersetarc.webs.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Hurricane Pets Rescue",
+      "website": "http://hurricanepetsrescue.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -241,8 +500,22 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "King’s Pride Kitten Rescue",
+      "website": "https://kings-pride.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Kizzy's Place",
       "website": "https://kizzysplace.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Labs 4 Rescue",
+      "website": "http://www.labs4rescue.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -262,8 +535,29 @@
       "firstSeen": "2026-09-17"
     },
     {
+      "name": "Little Shelter*",
+      "website": "http://littleshelter.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
       "name": "Long Beach Humane Society*",
       "website": "http://www.longbeachhumanesociety.net",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Long Island Bulldog Rescue*",
+      "website": "http://longislandbulldogrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Lucky Dog Refuge CT",
+      "website": "https://luckydogrefuge.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"
@@ -278,6 +572,272 @@
     {
       "name": "Meow Parlour Cats",
       "website": "https://www.meowparlour.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Metropolitan Maltese Rescue*",
+      "website": "https://www.malteserescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Mid-Atlantic Basset Hound Rescue",
+      "website": "https://www.midatlanticbassets.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "NEPA",
+      "website": "https://nepapetrescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "New Jersey Schnauzer Rescue Network*",
+      "website": "http://www.njsrn.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Next Stop Forever Small Dog Rescue*",
+      "website": "https://www.noahsarps.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Noah's Ark Rescue Project & Sanctuary",
+      "website": "https://www.noahsarps.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Northeast Boston Terrier Rescue",
+      "website": "http://nebostonrescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "NY Pet Rescue",
+      "website": "https://ny-petrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Passion 4 Paws",
+      "website": "https://passion4paws.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Pathway to Hope",
+      "website": "http://www.apathwaytohope.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Paws4Survival Rescue, Inc.",
+      "website": "http://www.paws4survival.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Pawsome Squad, Inc.",
+      "website": "https://www.pawsomesquad.org/about-us",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Peace Love Rescue New York",
+      "website": "https://www.petfinder.com/member/us/ny/manorville/peace-love-rescue-new-york-ny1511",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Peppertree",
+      "website": "http://www.peppertree.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Pibbles & More Animal Rescue, Inc.*",
+      "website": "http://www.pmarinc.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Pioneers for Animal Welfare Society, Inc.",
+      "website": "http://paws-li.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Pug Rescue of New England",
+      "website": "http://pugrescueofnewengland.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Purrfect Pals, Inc*",
+      "website": "https://purrfectpalsinc.petfinder.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Remember Me Rescue",
+      "website": "https://www.remembermerescueny.net",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "ROAR - Ridgefield Operation for Animal Rescue",
+      "website": "https://roar-ridgefield.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Ruff Dog Rescue Northeast",
+      "website": "http://www.rdrne.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Safe Tails Animal Rescue Corp.",
+      "website": "https://www.safetails.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Save A Yorkie Rescue, Inc.",
+      "website": "https://www.saveayorkierescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Shelter Chic",
+      "website": "http://www.shelterchic.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Shiba Rescue of New Jersey",
+      "website": "http://www.shibarescuenj.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Shore Saves",
+      "website": "https://shoresaves.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Skylands Sanctuary",
+      "website": "http://skylandssanctuary.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "SPCA of Westchester",
+      "website": "https://spca914.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Starting Over Animal Rescue",
+      "website": "http://www.startingoveranimalrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Suruluna Animal Rescue",
+      "website": "http://www.suruluna.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "The Cat Maffia Rescue",
+      "website": "http://www.thecatmaffiarescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "The Mr. Mo Project",
+      "website": "http://www.mrmoproject.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "They All Want To Live",
+      "website": "https://theyallwanttolive.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Two by Two Rescue Group",
+      "website": "http://twobytworescue.com",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Urban Wildlife Alliance",
+      "website": "https://urbanwildlifealliance.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Wag On Inn Rescue",
+      "website": "https://wagoninn.rescuegroups.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "Wells Valley Cat Rescue",
+      "website": "https://wellsvalleycatrescue.org",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "name": "WRAP- Whippet Rescue and Placement",
+      "website": "http://whippet-rescue.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17"

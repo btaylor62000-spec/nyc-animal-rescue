@@ -67,9 +67,25 @@ If you do not have the repository yet, create it first at
    | Name | Value |
    | --- | --- |
    | `NODE_VERSION` | `20` |
-   | `PUBLIC_GITHUB_REPO` | `YOUR-USERNAME/nyc-animal-rescue` |
 
 5. **Save and Deploy.**
+
+> **Where configuration lives, and why.** This project ships a `wrangler.toml`,
+> which is what gives the chat function its Workers AI binding automatically —
+> you never have to add that by hand. The side effect is that Cloudflare then
+> treats `wrangler.toml` as the source of truth for configuration, and the
+> dashboard will only let you manage **encrypted secrets**.
+>
+> So configuration is split three ways, and each thing has exactly one home:
+>
+> | What | Where |
+> | --- | --- |
+> | Bindings (Workers AI) | `wrangler.toml` |
+> | Public values (repo slug, Turnstile **site** key) | `src/data/site.ts` |
+> | Real secrets (Turnstile **secret** key, pass key) | Cloudflare dashboard → Secrets |
+>
+> The public values are in the repository on purpose: both are rendered into
+> the page anyway, so treating them as secrets would be theatre.
 
 **Check it worked:** in a minute or two you get a `https://….pages.dev`
 address. Open it. The home page, the directory, search, filters and the guides
@@ -108,13 +124,18 @@ This stops bots from spending the daily allocation.
 
 ### 3c. Tell the site about them
 
-Back in your Pages project → **Settings** → **Environment variables**:
+The **site key** is public and goes in the repository. Edit
+`src/data/site.ts`, set `TURNSTILE_SITE_KEY`, then commit and push — that
+alone triggers a rebuild.
 
-| Name | Value | Type |
-| --- | --- | --- |
-| `PUBLIC_TURNSTILE_SITE_KEY` | the Site Key | Plaintext |
-| `TURNSTILE_SECRET_KEY` | the Secret Key | **Encrypt** |
-| `CHAT_PASS_SECRET` | a long random string | **Encrypt** |
+The **secret key** goes in the dashboard, where it is encrypted. Pages project
+→ **Settings** → **Variables and secrets** → **Add**, with Type set to
+**Secret**:
+
+| Name | Value |
+| --- | --- |
+| `TURNSTILE_SECRET_KEY` | the Secret Key from Turnstile |
+| `CHAT_PASS_SECRET` | a long random string (below) |
 
 For the last one, generate something nobody can guess:
 
@@ -126,8 +147,12 @@ It signs the short-lived pass that saves people from solving a challenge on
 every message. Nothing breaks if you change it later; anyone mid-conversation
 simply solves one more challenge.
 
-Then **redeploy** (Deployments → the latest one → **Retry deployment**),
-because build-time variables only take effect on a fresh build.
+Secrets take effect on the next deployment. Pushing the site key does that by
+itself; otherwise use **Deployments → the latest one → Retry deployment**.
+
+Until `TURNSTILE_SECRET_KEY` is set, the endpoint skips verification
+altogether — which means the daily model allowance is open to anyone who finds
+it. It is the one piece of setup worth not leaving until tomorrow.
 
 **Check it worked:** open `/ask` and type *"a pigeon hit my window in park
 slope"*. You should get resource cards immediately, then a written answer. If
@@ -212,8 +237,12 @@ checker broke rather than the world changing. Nothing was applied. Read
 `npm run import` locally to see the error, then remove the offending entry from
 `data/agent-overlay.json` and re-run.
 
-**Report links point at `your-github-username`.** `PUBLIC_GITHUB_REPO` is not
-set in Pages, or the deployment predates setting it.
+**Report links point at the wrong repository.** `GITHUB_REPO` in
+`src/data/site.ts` has not been updated, or the deployment predates the change.
+
+**The dashboard will not let you add a plaintext variable.** Expected: while
+`wrangler.toml` exists, only secrets can be managed there. Public values belong
+in `src/data/site.ts`; see the note in step 2.
 
 ---
 
