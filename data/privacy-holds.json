@@ -1,0 +1,52 @@
+{
+  "$comment": "Personal (non-organizational) contact details found in the research files. The importer scrubs every value listed here from all output and marks affected records privacy_hold: true. Nothing here reaches the public site until the person has been asked. Move an entry to `cleared` with a note once permission is confirmed.",
+  "policy": "withhold-by-default",
+  "held": [
+    {
+      "id": "divya-personal-mobile",
+      "kind": "personal-phone",
+      "value": "7183444424",
+      "person": "Divya (co-founder, Flatbush Cats; volunteers with NYC Bird Alliance)",
+      "found_in": "research/injured-birds-wildlife-guide.docx, closing paragraph",
+      "reason": "Offered as a personal contact for questions in a document shared privately. A personal mobile on a public crisis page invites unbounded call volume.",
+      "ask": "Confirm with Divya whether she wants to be listed, and if so under what hours and which number."
+    },
+    {
+      "id": "winorr-home-and-cells",
+      "kind": "personal-phone",
+      "value": ["5162930587", "5169873961", "5168516045"],
+      "person": "Bobby & Cathy Horvath (WINORR)",
+      "found_in": "Exotic workbook row 55 Phone; 'Wildlife rehabilitation' tab line 10",
+      "reason": "A home line plus two personal mobiles, for a rehab operation run out of a private residence. Published by NYC Bird Alliance on a public referral page, so arguably already public -- but republishing a home number is a decision for them, not us.",
+      "ask": "Ask WINORR which number they want listed. Keep the organization record either way; it routes NYC raptor cases."
+    },
+    {
+      "id": "robert-spragg-cell",
+      "kind": "personal-phone",
+      "value": "9173284315",
+      "person": "Robert Spragg (raptor transport volunteer)",
+      "found_in": "'Wildlife rehabilitation' tab line 11",
+      "reason": "An individual volunteer's mobile, not an organizational line.",
+      "ask": "Confirm he is willing to be listed publicly for bird-of-prey transport."
+    },
+    {
+      "id": "mama-chris-si-mobile",
+      "kind": "personal-phone",
+      "value": "3479832240",
+      "person": "'Mama Chris' (Staten Island trap bank)",
+      "found_in": "'Colony & feral care' tab lines 21 and 69",
+      "reason": "An individual's mobile, listed as text-only, with no organizational identity attached.",
+      "ask": "Confirm before listing; a text-only line may not want public traffic."
+    }
+  ],
+  "name_holds": [
+    {
+      "id": "cottontail-cottage-first-name",
+      "kind": "personal-name",
+      "value": "Briggitte",
+      "reason": "The organization (Cottontail Cottage, cottontailrehab.com) and its number are public; the operator's first name adds nothing for a user in a crisis.",
+      "action": "Strip the first name, keep the organization and its number."
+    }
+  ],
+  "cleared": []
+}

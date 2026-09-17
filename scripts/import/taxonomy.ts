@@ -1,0 +1,253 @@
+/**
+ * The tagging map.
+ *
+ * Every derived tag on a record comes from one of the rule tables below, so a
+ * maintainer can answer "why is this org tagged `neonatal`?" by reading this
+ * file. Rules are pure and order-independent: a record collects every tag whose
+ * pattern matches, and the importer records which rule fired for each tag.
+ *
+ * Precedence, highest first:
+ *   1. Explicit curation (`scripts/import/overrides.ts`)
+ *   2. Specialty-tab membership (the source already groups orgs by need)
+ *   3. Section heading the row sat under
+ *   4. Keyword rules over Type / Notes / Name / Animals-served
+ */
+import type { Animal, Borough, Need, OrgType, Status } from '../../src/types.ts';
+
+/** Which text fields a rule is allowed to look at. */
+export type Field = 'name' | 'type' | 'notes' | 'section' | 'animals_served' | 'areas';
+
+export interface Rule<T> {
+  tag: T;
+  pattern: RegExp;
+  /** Defaults to Type + Notes + Name. */
+  fields?: Field[];
+  /** Human-readable justification shown in the tagging report. */
+  why?: string;
+}
+
+const TYPE_NOTES: Field[] = ['type', 'notes'];
+const TYPE_ONLY: Field[] = ['type'];
+const ALL: Field[] = ['name', 'type', 'notes', 'section', 'animals_served', 'areas'];
+
+// ---------------------------------------------------------------------------
+// Animals
+// ---------------------------------------------------------------------------
+
+/** Section headings in the exotic workbook map straight onto animal tags. */
+export const SECTION_ANIMALS: Array<{ pattern: RegExp; tags: Animal[] }> = [
+  { pattern: /^RABBITS/i, tags: ['rabbit'] },
+  { pattern: /^SMALL MAMMALS/i, tags: ['small-mammal'] },
+  { pattern: /^COMPANION BIRDS/i, tags: ['bird-companion'] },
+  { pattern: /^FERAL \/ URBAN BIRDS/i, tags: ['pigeon', 'bird-wild'] },
+  { pattern: /^REPTILES & AMPHIBIANS/i, tags: ['reptile', 'amphibian'] },
+  { pattern: /^FISH & AQUATIC/i, tags: ['fish'] },
+  { pattern: /^FARMED ANIMALS/i, tags: ['farm'] },
+  { pattern: /^EQUINES/i, tags: ['equine'] },
+  { pattern: /^WILDLIFE/i, tags: ['wildlife'] },
+  { pattern: /^INVERTEBRATES/i, tags: ['invertebrate'] },
+];
+
+export const ANIMAL_RULES: Rule<Animal>[] = [
+  { tag: 'cat', pattern: /\bcats?\b|\bfeline|\bkitten|\bTNR\b|\bferal\b|colony/i, fields: ALL },
+  { tag: 'dog', pattern: /\bdogs?\b|\bcanine|\bpupp(y|ies)|\bsato\b|bully breed|\bpit\b/i, fields: ALL },
+  { tag: 'rabbit', pattern: /\brabbits?\b|\bbunn(y|ies)\b|\blagomorph/i, fields: ALL },
+  {
+    tag: 'small-mammal',
+    pattern: /\bguinea pigs?\b|\bhamsters?\b|\bgerbils?\b|\brats?\b|\bmice\b|\bmouse\b|\bchinchillas?\b|\bferrets?\b|pocket pets?|small mammals?|small.{0,3}animals?/i,
+    fields: ALL,
+  },
+  {
+    tag: 'bird-companion',
+    pattern: /\bparrots?\b|\bbudgies?\b|\bcockatiels?\b|\bfinch(es)?\b|\bcockatoo|\bmacaw|\bconure|\bavian\b|companion bird|domestic bird|backyard poultry|\bchickens?\b/i,
+    fields: ALL,
+  },
+  { tag: 'pigeon', pattern: /\bpigeons?\b|\bking pigeon|\bdoves?\b/i, fields: ALL },
+  {
+    tag: 'bird-wild',
+    pattern: /\bwild birds?\b|\bsongbird|\braptors?\b|\bhawks?\b|\bowls?\b|\beagles?\b|\bfalcons?\b|birds? of prey|\bwaterfowl\b|\bgeese\b|\bducks?\b|\bgulls?\b|window.?strike|fledgling/i,
+    fields: ALL,
+  },
+  {
+    tag: 'reptile',
+    pattern: /\breptiles?\b|\bturtles?\b|\btortoises?\b|\blizards?\b|\bsnakes?\b|\biguanas?\b|\bgeckos?\b|red-eared slider|\bterrapin/i,
+    fields: ALL,
+  },
+  { tag: 'amphibian', pattern: /\bamphibians?\b|\bfrogs?\b|\btoads?\b|\bsalamander/i, fields: ALL },
+  { tag: 'fish', pattern: /\bfish\b|\baquarium\b|\bgoldfish\b|\bbettas?\b|\baquatic\b/i, fields: ALL },
+  {
+    tag: 'farm',
+    pattern: /\bfarm(ed)? animals?\b|\broosters?\b|\bpigs?\b|\bgoats?\b|\bsheep\b|\bcows?\b|\bturkeys?\b|\bpoultry\b|\bhens?\b|\blivestock\b/i,
+    fields: ALL,
+  },
+  { tag: 'equine', pattern: /\bequines?\b|\bhorses?\b|\bponies\b|\bpony\b|\bdonkeys?\b|\bmules?\b/i, fields: ALL },
+  {
+    tag: 'wildlife',
+    pattern: /\bwildlife\b|\brehabilitat|\bsquirrels?\b|\bopossums?\b|\braccoons?\b|\bskunks?\b|\bbats?\b|\bdeer\b|\bcottontail/i,
+    fields: ALL,
+  },
+  { tag: 'marine', pattern: /\bmarine mammal|\bseals?\b|\bwhales?\b|\bdolphins?\b|sea turtle|\bstranding\b/i, fields: ALL },
+  {
+    tag: 'invertebrate',
+    pattern: /\binvertebrates?\b|\btarantulas?\b|\bhermit crabs?\b|\binsects?\b|\bspiders?\b/i,
+    fields: ALL,
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Needs
+// ---------------------------------------------------------------------------
+
+export const NEED_RULES: Rule<Need>[] = [
+  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|\b24hr\b|emergency (vet|hospital|care)|\bER\b|urgent care/i, fields: ALL },
+  { tag: 'poison-control', pattern: /poison control|poison helpline|toxicolog/i, fields: ALL },
+  { tag: 'wildlife-rehab', pattern: /rehabilitat|\brehabber/i, fields: ALL },
+  { tag: 'adoption', pattern: /\badopt/i, fields: TYPE_NOTES },
+  { tag: 'surrender', pattern: /\bsurrender|\brehom(e|ing)|\bintake\b|\bgive up\b|owner.?relinquish/i, fields: TYPE_NOTES },
+  { tag: 'foster', pattern: /\bfoster/i, fields: TYPE_NOTES },
+  { tag: 'tnr', pattern: /\bTNR\b|trap.?neuter.?return/i, fields: ALL },
+  { tag: 'colony-care', pattern: /\bcolony\b|colony care|colony feeding|community cats?\b/i, fields: ALL },
+  { tag: 'trap-bank', pattern: /trap bank|trap rental|trap loan|lend(s|ing)? traps?|borrow.{0,20}trap/i, fields: ALL },
+  { tag: 'spay-neuter', pattern: /\bspay|\bneuter|\bs\/n\b/i, fields: ALL },
+  { tag: 'low-cost-vet', pattern: /low.?cost|free (vet|clinic|spay)|discounted|sliding scale|affordable (vet|care)/i, fields: ALL },
+  { tag: 'exotic-vet', pattern: /\bavian (&|and) exotic|exotic (vet|medicine|day.?practice)|treats? exotics?/i, fields: ALL },
+  { tag: 'neonatal', pattern: /\bneonatal\b|bottle.?bab(y|ies)|bottle.?feed|unweaned|kitten nursery|one day old|tube.?feed/i, fields: ALL },
+  {
+    tag: 'medical-special-needs',
+    pattern: /special.?needs|special.?care|critical.?medical|critical(ly)? (injured|ill)|medical (focus|cases|hard)|hard cases|disabled|three.?legged|3-legged|neurolog|\bblind\b|hospice|fospice|cruelty cases/i,
+    fields: ALL,
+  },
+  { tag: 'senior', pattern: /\bseniors?\b|\bgeriatric\b|older (cats?|dogs?|pets?)/i, fields: ALL },
+  { tag: 'retrovirus', pattern: /\bFeLV\b|\bFIV\b|retrovirus/i, fields: ALL },
+  { tag: 'lost-found', pattern: /lost.{0,4}(&|and|\/).{0,4}found|lost (cat|dog|pet)|missing pet|\bfound pet/i, fields: ALL },
+  { tag: 'microchip', pattern: /microchip/i, fields: ALL },
+  { tag: 'behavior-training', pattern: /\bbehaviou?r|\btrainer\b|\btraining\b|\bobedience\b/i, fields: ALL },
+  { tag: 'financial-aid', pattern: /financial aid|\bgrants?\b|\bvouchers?\b|certificate program|assistance fund|help (with|paying)|can'?t afford|copay/i, fields: ALL },
+  { tag: 'food-assistance', pattern: /pet food|food pantry|food bank|\bpet.?food assistance/i, fields: ALL },
+  {
+    tag: 'owner-support',
+    pattern: /surrender prevention|keep.{0,5}your pet|owner support|crisis (support|boarding)|temporary (care|boarding)|housing (support|help)|domestic violence|eviction/i,
+    fields: ALL,
+  },
+  { tag: 'boarding', pattern: /\bboarding\b|pet.?sitting|\bsitters?\b|\bdaycare\b/i, fields: ALL },
+  { tag: 'sanctuary', pattern: /\bsanctuary\b|lifelong care|lifetime (care|foster)|non-?releasable/i, fields: ALL },
+  { tag: 'working-cat', pattern: /working cats?|barn cats?/i, fields: ALL },
+  { tag: 'transport', pattern: /\btransport/i, fields: ALL },
+  { tag: 'legal', pattern: /\blegal\b|law enforcement|\bcruelty\b|bite report|\blegality\b|\bpermit/i, fields: ALL },
+  { tag: 'breed-specific', pattern: /breed.?specific|bully.?breeds?|\bpit\b|pit.?bull|small-?breed|\bsatos?\b|specific breed/i, fields: TYPE_NOTES },
+  { tag: 'advocacy', pattern: /\badvocacy\b|\bat-risk\b|death row|pull(s|ing)? from ACC|New Hope partner/i, fields: ALL },
+  { tag: 'education', pattern: /\beducation|\boutreach\b|\bworkshop|\bcertification\b|\btrain(s|ing)? (volunteers|caretakers)/i, fields: ALL },
+  { tag: 'licensing', pattern: /(dog|pet) licens|licensing (program|requirement)/i, fields: ALL },
+  { tag: 'pet-loss', pattern: /pet.?loss|bereavement|\bgrief\b|\beuthanas/i, fields: ALL },
+  {
+    tag: 'referral',
+    pattern: /referral|\bdirectory\b|information hub|resource (hub|directory)|routing entry|participating.?org|advice hub|\bhub\b/i,
+    fields: ALL,
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Organization types
+// ---------------------------------------------------------------------------
+
+export const ORG_TYPE_RULES: Rule<OrgType>[] = [
+  { tag: 'shelter-open-admission', pattern: /open-?admission/i, fields: TYPE_NOTES },
+  { tag: 'shelter-no-kill', pattern: /no-?kill (shelter|rescue)|physical shelter|shelter \(walk-in\)|shelter \(by appt\)/i, fields: TYPE_NOTES },
+  { tag: 'rescue-foster', pattern: /rescue|adoption|foster/i, fields: TYPE_ONLY },
+  { tag: 'tnr-group', pattern: /\bTNR\b/i, fields: TYPE_ONLY },
+  { tag: 'solo-rescuer', pattern: /solo rescuer|one-?person|solo\/hyper-local/i, fields: TYPE_NOTES },
+  { tag: 'clinic', pattern: /\bclinic\b|veterinary (hospital|center|centre|group)|animal hospital/i, fields: ALL },
+  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|emergency (&|and)? ?(referral|vet|hospital)|\bER\b|urgent care/i, fields: ALL },
+  { tag: 'exotic-vet', pattern: /avian (&|and) exotic|exotic (vet|medicine)/i, fields: ALL },
+  { tag: 'wildlife-rehabber', pattern: /wildlife rehab|licensed rehabilitator|rehabber/i, fields: ALL },
+  { tag: 'sanctuary', pattern: /\bsanctuary\b/i, fields: TYPE_NOTES },
+  { tag: 'referral-hub', pattern: /referral hub|information hub|routing entry|resource directory|participating-org/i, fields: TYPE_ONLY },
+  { tag: 'advocacy', pattern: /\badvocacy\b/i, fields: TYPE_ONLY },
+  { tag: 'hotline', pattern: /\bhotline\b|helpline/i, fields: ALL },
+  { tag: 'government', pattern: /\bmunicipal\b|health dept|NYC Health|Parks|state licensing|DOHMH|\b311\b|city of new york/i, fields: ALL },
+  { tag: 'club-society', pattern: /\bsociety\b|\bclub\b|membership/i, fields: TYPE_ONLY },
+  { tag: 'directory', pattern: /\bdirectory\b|search tool|licensing directory/i, fields: TYPE_ONLY },
+  { tag: 'support-program', pattern: /\(support\b|support org|certificate program|voucher|working.?cat placement|placement partner/i, fields: TYPE_ONLY },
+  { tag: 'rescue-foster', pattern: /rehoming|placement (service|network)|\bnetwork\b/i, fields: TYPE_ONLY },
+];
+
+// ---------------------------------------------------------------------------
+// Geography
+// ---------------------------------------------------------------------------
+
+export const BOROUGH_PATTERNS: Array<{ tag: Borough; pattern: RegExp }> = [
+  { tag: 'brooklyn', pattern: /\bbrooklyn\b|\bkings county\b|\bbklyn\b|\bBK\b/i },
+  { tag: 'queens', pattern: /\bqueens\b/i },
+  { tag: 'bronx', pattern: /\bbronx\b/i },
+  { tag: 'manhattan', pattern: /\bmanhattan\b|\bnew york county\b/i },
+  { tag: 'staten-island', pattern: /\bstaten island\b|\brichmond county\b|\bSI\b/i },
+];
+
+/**
+ * Neighbourhood names that reliably imply a borough. Only unambiguous ones --
+ * "Ridgewood" (Queens and NJ) and "Bay Ridge"/"Bayside" style collisions are
+ * left out rather than guessed.
+ */
+export const NEIGHBORHOOD_BOROUGH: Array<{ tag: Borough; pattern: RegExp }> = [
+  {
+    tag: 'brooklyn',
+    pattern: /\b(greenpoint|williamsburg|bushwick|bed.?stuy|bedford.?stuyvesant|crown heights|flatbush|park slope|sunset park|bay ridge|midwood|sheepshead bay|brownsville|east new york|ocean hill|gowanus|red hook|dumbo|canarsie|borough park|windsor terrace|prospect heights|carroll gardens|bensonhurst|coney island|fort greene|clinton hill|south slope)\b/i,
+  },
+  {
+    tag: 'queens',
+    pattern: /\b(astoria|long island city|\bLIC\b|jackson heights|flushing|jamaica|forest hills|rego park|elmhurst|woodside|sunnyside|corona|rockaway|woodhaven|glendale|maspeth|bayside|richmond hill|ozone park|far rockaway|howard beach|whitestone|college point|kew gardens)\b/i,
+  },
+  {
+    tag: 'manhattan',
+    pattern: /\b(harlem|washington heights|inwood|upper east side|upper west side|\bUES\b|\bUWS\b|chelsea|soho|tribeca|east village|west village|lower east side|\bLES\b|midtown|hell'?s kitchen|morningside heights|chinatown|murray hill|gramercy)\b/i,
+  },
+  {
+    tag: 'bronx',
+    pattern: /\b(riverdale|fordham|throgs neck|pelham bay|mott haven|hunts point|kingsbridge|morris park|parkchester|soundview|castle hill|city island|tremont|concourse)\b/i,
+  },
+  {
+    tag: 'staten-island',
+    pattern: /\b(st\.? george|tottenville|great kills|new dorp|port richmond|stapleton|clove|annadale|west brighton)\b/i,
+  },
+];
+
+/** NYC ZIP ranges. Deterministic, so ZIPs are the strongest borough signal. */
+const ZIP_RANGES: Array<{ tag: Borough; from: number; to: number }> = [
+  { tag: 'manhattan', from: 10001, to: 10282 },
+  { tag: 'staten-island', from: 10301, to: 10314 },
+  { tag: 'bronx', from: 10451, to: 10475 },
+  { tag: 'queens', from: 11001, to: 11005 },
+  { tag: 'brooklyn', from: 11201, to: 11256 },
+  { tag: 'queens', from: 11101, to: 11120 },
+  { tag: 'queens', from: 11351, to: 11697 },
+];
+
+export function zipToBorough(zip: string): Borough | null {
+  const n = Number(zip);
+  if (!Number.isInteger(n)) return null;
+  for (const r of ZIP_RANGES) if (n >= r.from && n <= r.to) return r.tag;
+  return null;
+}
+
+export function isNycZip(zip: string): boolean {
+  return zipToBorough(zip) !== null;
+}
+
+// ---------------------------------------------------------------------------
+// Operating status
+// ---------------------------------------------------------------------------
+
+/**
+ * Ordered most severe first: the first match wins, so an explicit "RETIRED"
+ * is never softened by a later "verify" match in the same string.
+ */
+export const STATUS_RULES: Array<{ tag: Status; pattern: RegExp; note: string }> = [
+  { tag: 'retired', pattern: /\bRETIRED\b|do not rely|\bdefunct\b|no longer operat/i, note: 'Source marks this organization as retired.' },
+  { tag: 'relocated', pattern: /\bRELOCATED\b|\bMOVED to\b|no longer NYC/i, note: 'Source says this organization has moved out of New York City.' },
+  { tag: 'hiatus', pattern: /\bhiatus\b|\bsuspended\b|\bpaused\b|currently on hold|not (currently )?accepting/i, note: 'Source says this organization is paused or on hiatus.' },
+  {
+    tag: 'verify',
+    pattern: /\[VERIFY|may be inactive|may be dated|confirm current activity|SCALING DOWN|scaling down|\(inactive\)|verify it'?s active/i,
+    note: 'Source flags this entry as needing confirmation before you rely on it.',
+  },
+];

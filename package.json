@@ -1,0 +1,19 @@
+{
+  "name": "nyc-animal-rescue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Free public directory helping New Yorkers find the right animal rescue resource, fast.",
+  "scripts": {
+    "import": "tsx scripts/import/index.ts",
+    "validate": "tsx scripts/validate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
