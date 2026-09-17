@@ -38,7 +38,7 @@ const phone = org.phones[0];
   data-has-phone={org.phones.length ? '1' : '0'}
   data-verified={org.last_verified ?? ''}
 >
-  <h3 class="card__title"><a href={`/org/${org.id}`}>{org.name}</a></h3>
+  <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
 
   <p class="card__meta">
     <Icon name="pin" size={15} />
@@ -58,7 +58,7 @@ const phone = org.phones[0];
       {phone && (
         <a class="btn btn--primary" href={`tel:+1${phone.value}`}>
           <Icon name="phone" size={17} />
-          Call {phone.display}
+          Call <span translate="no">{phone.display}</span>
         </a>
       )}
       <a class="btn" href={`/org/${org.id}`}>Details</a>

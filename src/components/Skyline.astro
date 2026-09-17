@@ -1,0 +1,65 @@
+---
+/*
+ * The New York skyline as a single continuous line.
+ *
+ * Drawn rather than photographed or licensed: about 2KB of markup, no network
+ * request, sharp at any size, and it takes its colour from `currentColor` so
+ * dark mode needs no second asset.
+ *
+ * It really is one unbroken stroke -- the whole thing is a single `d`, running
+ * left to right: an opening ripple, the Statue of Liberty, the skyline profile
+ * as a stepped run with a few spires, a suspension bridge, and a trailing
+ * ripple. Spires double back on themselves, which is what a one-line drawing
+ * does and why they read as single strokes rather than loops.
+ *
+ * This style was chosen over a filled silhouette or detailed line art because
+ * the band is shallow. Fine interior detail -- window grids, floor lines --
+ * collapses into mush at 40-130px tall, whereas one clean contour survives.
+ *
+ * `vector-effect: non-scaling-stroke` fixes the line weight in screen pixels.
+ * Without it the stroke would scale with the drawing and thin away to nothing
+ * in exactly the shallow band this is built for.
+ *
+ * Decorative, so it is hidden from screen readers.
+ */
+interface Props { class?: string }
+const { class: klass } = Astro.props;
+---
+<svg
+  class={klass}
+  viewBox="0 0 1800 180"
+  preserveAspectRatio="xMidYMax meet"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    vector-effect="non-scaling-stroke"
+    d="M0 160
+       C40 150 92 171 130 160
+       L152 160 L152 148 L164 148 L164 136 L172 136
+       L180 76 L170 70 L182 68 L178 54 L190 64 L196 46 L202 64 L214 54 L210 68 L222 70 L212 76
+       L236 44 L244 30 L254 44 L242 50
+       L220 80 L214 136 L222 136 L222 148 L234 148 L234 160
+       L300 160 L300 128 L340 128 L340 108 L378 108 L378 138 L416 138
+       L416 92 L452 92 L452 120 L488 120
+       L488 78 L508 78 L508 48 L514 48 L514 24 L518 24 L518 48 L524 48 L524 78 L544 78
+       L544 120 L580 120
+       L580 86 L606 86 L606 120 L622 120 L622 86 L648 86 L648 120
+       L686 120 L686 100 L722 100 L722 132 L762 132
+       L762 112 C762 92 806 92 806 112 L806 132
+       L852 132 L852 104 L890 104 L890 62 L896 62 L896 36 L900 36 L900 62 L906 62 L906 104
+       L944 104 L944 140 L990 140 L990 118 L1026 118 L1026 144 L1080 144 L1080 160
+       L1200 160 L1200 84
+       C1260 126 1340 126 1400 84
+       L1400 160
+       L1560 160
+       C1604 151 1652 171 1712 160
+       L1800 160"
+  />
+</svg>

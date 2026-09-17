@@ -130,6 +130,9 @@ if (form && input && log) {
       name.className = 'chat-card__name';
       name.href = card.url;
       name.textContent = card.name;
+      // An org's name is what is on the door and what the phone answerer says,
+      // so a translator must leave it exactly as the record has it.
+      name.translate = false;
 
       const where = document.createElement('span');
       where.className = 'chat-card__where';
@@ -144,6 +147,8 @@ if (form && input && log) {
         a.className = 'btn btn--primary';
         a.href = `tel:+1${phone.replace(/\D/g, '')}`;
         a.textContent = `Call ${phone}`;
+        a.translate = false; // a reformatted number is a wrong number
+
         actions.append(a);
       }
       const details = document.createElement('a');

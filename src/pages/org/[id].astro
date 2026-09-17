@@ -61,7 +61,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
 >
   <div class="wrap">
     <p class="muted" style="margin:1.25rem 0 0"><a href="/directory">&larr; All resources</a></p>
-    <h1>{org.name}</h1>
+    <h1 translate="no">{org.name}</h1>
 
     {parent && <p class="muted">Part of <a href={`/org/${parent.id}`}>{parent.name}</a></p>}
 
@@ -107,7 +107,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
         {contactCount === 0 ? (
           <p class="muted">No contact details are recorded for this entry yet.</p>
         ) : (
-          <ul class="contact-list">
+          <ul class="contact-list" translate="no">
             {org.phones.map((p) => (
               <li>
                 <a href={`tel:+1${p.value}`}>
@@ -182,7 +182,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
           {where && <><dt>Serves</dt><dd>{where}</dd></>}
           {org.neighborhoods && <><dt>Area</dt><dd>{org.neighborhoods}</dd></>}
           {org.address?.street && (
-            <><dt>Address</dt><dd>{org.address.street}{org.address.zip && <>, {org.address.zip}</>}</dd></>
+            <><dt>Address</dt><dd translate="no">{org.address.street}{org.address.zip && <>, {org.address.zip}</>}</dd></>
           )}
           {org.hours && <><dt>Hours</dt><dd>{org.hours}</dd></>}
           {org.animals.length > 0 && (

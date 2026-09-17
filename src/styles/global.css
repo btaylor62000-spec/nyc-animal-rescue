@@ -378,9 +378,30 @@ a:hover { text-decoration-thickness: 2px; }
     radial-gradient(60rem 26rem at 12% -18%, var(--accent-soft), transparent 62%),
     radial-gradient(44rem 22rem at 96% 0%, var(--hero-wash), transparent 66%);
   border-bottom: 1px solid var(--border);
-  padding-block: 0.5rem 2.25rem;
+  padding-block: 0 2.25rem;
   margin-bottom: 2.25rem;
+  overflow: hidden;
 }
+/* Breathing room between the band and the headline under it. */
+.hero__banner + .wrap { padding-top: 1.35rem; }
+/*
+ * A band directly under the header, above everything else. It is nothing's
+ * backdrop, so it needs no mask and no scrim -- and because no text sits on
+ * it, it can carry far more contrast than it could behind a headline.
+ */
+.hero__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--accent);
+  opacity: 0.55;
+  pointer-events: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .hero__banner { opacity: 0.6; }
+}
+:root[data-theme='dark'] .hero__banner { opacity: 0.6; }
+
 .hero h1 { max-width: 19ch; }
 .hero .lede { max-width: 56ch; }
 
