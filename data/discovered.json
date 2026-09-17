@@ -1,6 +1,6 @@
 {
   "$comment": "Organizations found on authoritative rosters that are not yet in the directory. The importer turns these into records marked \"newly found, not yet verified\": low confidence, labelled on the site, and kept out of the assistant’s answers until a weekly check finds a working contact on their own site.",
-  "updated": "2026-09-17T19:43:36.969Z",
+  "updated": "2026-09-17T20:27:46.202Z",
   "candidates": [
     {
       "name": "3 Acres Rescue",

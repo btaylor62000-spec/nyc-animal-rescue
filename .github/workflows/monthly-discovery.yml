@@ -69,18 +69,18 @@ jobs:
           git config user.name "nyc-animal-rescue-bot"
           git config user.email "noreply@users.noreply.github.com"
 
-          if git diff --quiet -- data content; then
+          git add data content build/reports/monthly-discovery.md
+          if git diff --cached --quiet; then
             echo "No new organizations this month."
             exit 0
           fi
-
-          COUNT=$(git diff --numstat -- data/discovered.json | awk '{print $1}')
-          git add data content build/reports/monthly-discovery.md
           git commit -m "Monthly discovery $(date -u +%Y-%m-%d)" \
             -m "New organizations found on authoritative rosters, added as not yet verified." \
             -m "They are labelled on the site and excluded from the assistant until a weekly check finds a working contact on their own site." \
             -m "See build/reports/monthly-discovery.md."
-          git push
+
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Post the discovery report
         if: always() && inputs.dry_run != true

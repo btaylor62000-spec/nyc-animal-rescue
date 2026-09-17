@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { ORGS, STALE_DAYS } from '../data/orgs.ts';
-import { REPORT_ISSUE_BASE } from '../data/site.ts';
+import { GITHUB_REPO, HAS_REPO, REPORT_ISSUE_BASE } from '../data/site.ts';
 
 /**
  * The "recent changes" feed is built from each record's change_log. It is
@@ -129,15 +129,33 @@ const counts = {
     )}
 
     <h2 id="report">Report a problem</h2>
-    <p>
-      If an entry is wrong, out of date, or should not be here, say so. Every organization page
-      has a "report it" link that opens a pre-filled issue with the entry already identified.
-      You can also <a href={REPORT_ISSUE_BASE} rel="noopener">open one directly</a>.
-    </p>
+    {HAS_REPO ? (
+      <p>
+        If an entry is wrong, out of date, or should not be here, say so. Every organization page
+        has a "report it" link that opens a pre-filled issue with the entry already identified.
+        You can also <a href={REPORT_ISSUE_BASE} rel="noopener">open one directly</a>.
+      </p>
+    ) : (
+      <p>
+        Reporting is not connected yet. Once this site's repository is public, every organization
+        page will carry a "report it" link that opens a pre-filled issue.
+      </p>
+    )}
     <p class="muted" style="font-size:.92rem">
-      Reports go to a public issue tracker, which means a report is visible to anyone. That is the
-      trade-off for running this with no server, no database and no cost — there is nowhere
-      private to put a message. Do not include anything you would not want public.
+      Reports go to a public issue tracker{HAS_REPO && <> at <code>{GITHUB_REPO}</code></>}, which means
+      a report is visible to anyone, and needs a free GitHub account to file. That is the trade-off for
+      running this with no server, no database and no cost: there is nowhere private to put a message,
+      and adding one would mean either a bill or an inbox nobody reads. Please do not include anything
+      you would not want public.
+    </p>
+
+    <h2>What it runs on</h2>
+    <p>
+      Static pages on Cloudflare's free tier, a small language model with a free daily allowance,
+      and scheduled checks on GitHub. Nothing here can bill anyone: when an allowance runs out,
+      the feature using it stops working rather than starting to charge. If the assistant is
+      unavailable, the directory is unaffected — it is the part that matters, and it is
+      just files.
     </p>
 
     <h2>Corrections and takedowns</h2>

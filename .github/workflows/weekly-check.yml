@@ -75,14 +75,21 @@ jobs:
           git config user.name "nyc-animal-rescue-bot"
           git config user.email "noreply@users.noreply.github.com"
 
-          if git diff --quiet -- data content; then
-            echo "Nothing changed this week."
+          # The report is committed every week even when nothing changed.
+          # Two reasons: it is a visible heartbeat showing the check really ran,
+          # and GitHub disables scheduled workflows after 60 days without
+          # repository activity — a quiet directory would eventually switch its
+          # own maintenance off.
+          git add data content build/reports/weekly-check.md
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
             exit 0
           fi
-
-          git add data content build/reports/weekly-check.md
           git commit --file build/reports/weekly-commit-message.txt
-          git push
+
+          # Someone may have pushed while the check was running.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       # One issue, reopened and rewritten each week, rather than a new one
       # every Monday. Anything the checker would not decide on its own is in

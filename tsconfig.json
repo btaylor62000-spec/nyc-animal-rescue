@@ -22,6 +22,7 @@
   "include": [
     "scripts/**/*.ts",
     "src/**/*.ts",
+    "src/**/*.d.ts",
     "tests/**/*.ts"
   ],
   "exclude": [

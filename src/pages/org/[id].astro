@@ -5,7 +5,7 @@ import {
   ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, ORGS, ORGS_BY_ID, ORG_TYPE_LABELS,
   STATUS_LABELS, daysSinceVerified, needsConfirmation, programmesOf,
 } from '../../data/orgs.ts';
-import { REPORT_ISSUE_BASE } from '../../data/site.ts';
+import { HAS_REPO, REPORT_ISSUE_BASE } from '../../data/site.ts';
 
 export function getStaticPaths() {
   return ORGS.map((org) => ({ params: { id: org.id } }));
@@ -217,8 +217,13 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
 
         <h2>Something wrong?</h2>
         <p class="muted" style="font-size:.92rem">
-          Numbers change and small groups fold. If this entry is out of date,
-          <a href={reportUrl} rel="noopener">report it</a> — it opens a pre-filled issue.
+          {HAS_REPO ? (
+            <>Numbers change and small groups fold. If this entry is out of date,
+            <a href={reportUrl} rel="noopener"> report it</a> — it opens a pre-filled issue.</>
+          ) : (
+            <>Numbers change and small groups fold. Reporting is not connected yet —
+            see <a href="/about#report">how this is maintained</a>.</>
+          )}
         </p>
       </aside>
     </div>
