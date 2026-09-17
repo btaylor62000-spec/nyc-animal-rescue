@@ -27,7 +27,7 @@ export const GITHUB_REPO = import.meta.env.PUBLIC_GITHUB_REPO ?? 'btaylor62000-s
  * local development and reckless in production: the daily model allowance is
  * then open to anyone. Set it as soon as the site is live.
  */
-export const TURNSTILE_SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
+export const TURNSTILE_SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '0x4AAAAAAAE68r0GdDanZf1Mw';
 
 export const REPORT_ISSUE_BASE = `https://github.com/${GITHUB_REPO}/issues/new`;
 
