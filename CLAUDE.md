@@ -6,6 +6,57 @@ matter.
 
 ---
 
+## Where things stand
+
+**The site is live and deployed.** Everything below already works in
+production; nothing here is aspirational.
+
+| | |
+| --- | --- |
+| Live site | <https://nyc-animal-rescue.pages.dev> |
+| Repository | `btaylor62000-spec/nyc-animal-rescue` (public) |
+| Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
+| Assistant | Working, with Workers AI and Turnstile both switched on |
+| Scheduled checks | Both workflows active; weekly runs Mondays, discovery on the 1st |
+
+Two things about the local git setup, because they are not obvious:
+
+- The push remote is `github-btaylor:btaylor62000-spec/...`, an SSH host alias
+  in `~/.ssh/config`. The machine's default GitHub key belongs to a *different*
+  account (`VerityHealth`), and GitHub will not accept one key on two accounts,
+  so this project has its own key at `~/.ssh/id_ed25519_btaylor`.
+- `npx wrangler` is logged in, so secrets can be set from the command line:
+  `wrangler pages secret put NAME --project-name=nyc-animal-rescue`.
+
+### What to do next
+
+1. **Run the weekly check once.** Repo → Actions → *Weekly data check* → Run
+   workflow → tick dry run. It has never run; everything else is proven.
+2. **Ask the three people in `data/privacy-holds.json`** whether they want to
+   be listed. Two of them — WINORR and Robert Spragg — currently leave an
+   organization with no direct contact, and WINORR is where NYC raptor cases
+   go. Note that `research/` is public in this repository, so those numbers are
+   readable there anyway; asking is now courtesy rather than concealment.
+3. **Resolve the two emergency-room conflicts** in
+   `build/reports/data-quality.md`: VERG is listed at two addresses with one
+   phone number, and VEG Ralph Ave shares a number with VERG South. These are
+   emergency listings.
+4. **Give the wildlife guide a byline.** It is written in the first person by
+   whoever wrote the original document.
+
+### Two bugs already fixed, so they are not re-introduced
+
+- **The Turnstile widget must be visible while it runs.** It was originally
+  rendered into a container marked `aria-hidden` with no layout. The widget
+  loaded but never produced a token, which made the assistant unreachable for
+  everyone once verification was switched on. A Managed challenge decides for
+  itself whether to ask the reader for something, so it needs to be seen.
+- **Turnstile cannot be tested from an automated browser.** It refuses them by
+  design — that is the entire point of it. A failing check in automation is not
+  evidence of a bug. Test in a real browser.
+
+---
+
 ## What this is for
 
 People arrive here mid-crisis. An injured bird on the pavement, kittens in a
