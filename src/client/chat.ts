@@ -55,6 +55,14 @@ if (form && input && log) {
       title: 'The assistant is unreachable',
       body: 'Something went wrong on the way to the assistant. The directory is unaffected, and search will get you there.',
     },
+    'verification-failed': {
+      title: 'The check could not be completed',
+      body: 'The bot check did not finish — it may have been blocked by a browser extension or a strict privacy setting. Search works without it.',
+    },
+    'needs-verification': {
+      title: 'The check could not be completed',
+      body: 'The bot check did not finish. Search works without it.',
+    },
     'rate-limited': {
       title: 'That is a lot of questions',
       body: 'You have sent several messages in a short time. Please use search for now.',
@@ -173,13 +181,19 @@ if (form && input && log) {
     if (!turnstile) return null;
 
     const host = document.getElementById('turnstile-host');
+    const wrap = document.getElementById('turnstile-wrap');
     if (!host) return null;
+
+    // Show it. A Managed challenge decides for itself whether to ask the
+    // reader for anything, and if it does they need to be able to see it.
+    wrap?.removeAttribute('hidden');
 
     return new Promise<string | null>((resolve) => {
       let settled = false;
       const finish = (token: string | null) => {
         if (settled) return;
         settled = true;
+        wrap?.setAttribute('hidden', '');
         resolve(token);
       };
       try {
@@ -224,7 +238,7 @@ if (form && input && log) {
         setStatus('Just checking you are a person…');
         const token = await solveTurnstile();
         if (!token) {
-          showDegraded(question);
+          showDegraded(question, 'verification-failed');
           return;
         }
         body.turnstileToken = token;

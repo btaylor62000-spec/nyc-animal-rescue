@@ -1,90 +1,90 @@
 # Monthly discovery — 2026-09-17
 
-Found **40** organizations not already in the directory. 120 are awaiting verification in total.
+Found **40** organizations not already in the directory. 160 are awaiting verification in total.
 
 Nothing here is live on the site as a verified entry. Candidates are added as "newly found, not yet verified", and are kept out of the assistant’s answers until a weekly check finds a working contact on their own site.
 
 ## New candidates
 
-- **American Maltese Association Rescue*** — http://www.americanmalteserescue.org  
+- **Ollie's Angels Animal Rescue** — http://www.olliesangelsanimalrescue.org  
   From ACC New Hope partners
-- **Animal Kind** — http://www.animalkindny.com  
+- **Patricia Ladew Foundation** — http://www.theladewcatsanctuary.org  
   From ACC New Hope partners
-- **Animal Rescue Fund of the Hamptons (ARF)** — http://www.arfhamptons.org  
+- **Pawsitive Possibilities Rescue Inc.** — https://pawsitiverescue.org  
   From ACC New Hope partners
-- **Australian Cattle Dog Rescue Association** — http://www.acdra.org  
+- **Peace4Paws** — https://www.peace4paws.org  
   From ACC New Hope partners
-- **Bronx Zoo** — https://bronxzoo.com  
+- **Peis & Strays** — http://www.peisandstrays.com  
   From ACC New Hope partners
-- **Big East Akita Rescue** — http://bigeastakitarescue.org  
+- **Pets Alive** — http://www.petsalive.com  
   From ACC New Hope partners
-- **Blue Barn Farm & Sanctuary** — http://www.bluebarnrescue.org  
+- **Pit of Our Souls Rescue Inc.** — http://pitofoursoulsrescue.com  
   From ACC New Hope partners
-- **Cane Corso Rescue** — https://canecorsorescue.org  
+- **Project Precious Rescue** — http://www.pprct.org  
   From ACC New Hope partners
-- **The Cat Maffia Rescue** — http://www.thecatmaffiarescue.com  
+- **Pupstarz Rescue*** — https://www.pupstarzrescue.org  
   From ACC New Hope partners
-- **Cats Under the Stars** — https://catsunderthestars.org  
+- **Rabbit Rescue & Rehab** — http://www.rabbitcare.org  
   From ACC New Hope partners
-- **Center for Avian & Exotics** — https://avianandexoticvets.com  
+- **Real Dog Rescue** — https://www.realdogrescue.org  
   From ACC New Hope partners
-- **Dawn of a New Day Animal Rescue, Inc.** — https://dawnofanewdayanimalrescue.com  
+- **Redemption Rescues*** — https://www.redemptionrescueinc.com  
   From ACC New Hope partners
-- **Doberman Rescue Unlimited** — http://www.dru.org  
+- **Rescue NYC** — http://http//www.rescuenyc.org/.org  
   From ACC New Hope partners
-- **ECHO East Coast Herding Dog Organization** — https://www.echorescue.com  
+- **Riverhead Shelter Volunteer Program(RSVP)** — https://rsvpinc.org  
   From ACC New Hope partners
-- **Emerald City Rescue, Inc** — http://www.emeraldcityrescuenj.com  
+- **Sarama Animal Rescue** — http://sarama.org  
   From ACC New Hope partners
-- **Every Last One Rescue** — http://www.everylastonerescue.org  
+- **Saving Paws Rescue, Inc.*** — http://savingpawsrescue.org  
   From ACC New Hope partners
-- **F.A.C.T.(Feline Advocates Coming Together)*** — https://www.felineadvocatescomingtogether.org  
+- **Shelter Survivors*** — http://www.sheltersurvivors.com  
   From ACC New Hope partners
-- **Feline Rescue of Staten Island** — http://felinerescueofstatenisland.org  
+- **Shelter Free Rescue NY** — https://shelterfreerescueny.com  
   From ACC New Hope partners
-- **For the Love of Dog Rottweiler Rescue of NH** — http://www.4theloveofdog.org  
+- **Shih Tzus & Furbabies** — https://stfbr.org  
   From ACC New Hope partners
-- **Friends of Homeless Animals** — http://secondchanceforanimals.org  
+- **Short & Stumpy Pups Inc** — https://ourbestfriendsrescue.org  
   From ACC New Hope partners
-- **Get A Bull** — http://www.getabull.org  
+- **Symphony Vet Center** — http://www.symphonyvet.com  
   From ACC New Hope partners
-- **Gimme Shelter Animal Rescue, Inc.** — http://www.gimmeshelteranimalrescue.org  
+- **Tibetan Mastiff Rescue** — http://www.tibetanmastiffrescueinc.org  
   From ACC New Hope partners
-- **German Shepherd Rescue of the Finger Lakes** — https://www.gsrfingerlakes.org  
+- **TIG's Journey Animal Rescue & Sanctuary** — http://www.tigjars.org  
   From ACC New Hope partners
-- **Happily Furever After Rescue** — https://www.happilyfureverafter.org  
+- **Ulster County SPCA** — https://www.ucspca.org  
   From ACC New Hope partners
-- **Happy Life Animal Rescue** — https://happylifeanimalrescue.org  
+- **Valley Cats & Friends** — http://valleycatsandfriends.com  
   From ACC New Hope partners
-- **Homeward Bound Schnauzer Rescue** — http://hbschnauzerrescue.com  
+- **Wise Animal Rescue** — http://www.wiseanimalrescue.org  
   From ACC New Hope partners
-- **Hopewell Rescue Inc** — https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354  
+- **With a Golden Spirit (WAGS)*** — http://wagsrescue.homestead.com  
   From ACC New Hope partners
-- **Hudson Valley SPCA*** — http://www.hudsonvalleyspca.com  
+- **Zani's Furry Friends** — https://zanisfurryfriends.org  
   From ACC New Hope partners
-- **Humane Society of Westchester** — https://humanesocietyofwestchester.org  
+- **Abandoned Angel Cocker Spaniel Rescue** — https://www.nyabandonedangels.com  
   From ACC New Hope partners
-- **Hunter Hollow Bunny Bed & Breakfast** — https://hunterhollow.org  
+- **ABC Animal Hospital** — http://www.abcanimalhosp.com  
   From ACC New Hope partners
-- **Hurricane Pets Rescue** — http://hurricanepetsrescue.org  
+- **All About Spay Neuter** — http://www.allaboutspayneuter.com  
   From ACC New Hope partners
-- **King’s Pride Kitten Rescue** — https://kings-pride.org  
+- **All God's Creatures Inc.** — https://www.petfinder.com/member/us/nj/hightstown/all-gods-creatures-inc-nj864  
   From ACC New Hope partners
-- **Labs 4 Rescue** — http://www.labs4rescue.com  
+- **Alleykattz** — https://www.alleykattz.org  
   From ACC New Hope partners
-- **Little Shelter*** — http://littleshelter.com  
+- **Almost Home Animal Sanctuary** — http://www.almosthomeanimalsanctuary.com  
   From ACC New Hope partners
-- **Long Island Bulldog Rescue*** — http://longislandbulldogrescue.org  
+- **American Belgian Malinois Rescue** — https://www.malinoisrescue.org  
   From ACC New Hope partners
-- **Lucky Dog Refuge CT** — https://luckydogrefuge.com  
+- **Animal Nation, Inc** — https://www.animalnation.org  
   From ACC New Hope partners
-- **Metropolitan Maltese Rescue*** — https://www.malteserescue.com  
+- **Animals Are Forever Inc** — https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299  
   From ACC New Hope partners
-- **NEPA** — https://nepapetrescue.com  
+- **Australian Shepherds Furever** — https://www.australianshepherdsfurever.org  
   From ACC New Hope partners
-- **Noah's Ark Rescue Project & Sanctuary** — https://www.noahsarps.com  
+- **Beastly Rescue *** — https://www.beastlyrescue.org  
   From ACC New Hope partners
-- **Northeast Boston Terrier Rescue** — http://nebostonrescue.com  
+- **Bichon Frise Rescue of Northern New Jersey*** — http://www.bichonrescuenj.com  
   From ACC New Hope partners
 
 ## Sources that no longer exist
@@ -93,7 +93,7 @@ Nothing here is live on the site as a verified entry. Candidates are added as "n
 
 ## Sources that could not be read
 
-- **ACC New Hope partners** listed more new organizations than one run adds (146 in total). 40 were taken this month; the rest will follow next month.
+- **ACC New Hope partners** listed more new organizations than one run adds (106 in total). 40 were taken this month; the rest will follow next month.
 - **NYC Animal Welfare resources** listed more new organizations than one run adds (6 in total). 40 were taken this month; the rest will follow next month.
 
 ## Wildlife rehabilitator coverage

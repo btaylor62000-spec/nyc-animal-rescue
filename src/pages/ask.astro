@@ -68,7 +68,15 @@ const examples = [
         <button id="chat-send" class="btn btn--primary" type="submit">Ask</button>
       </form>
 
-      <div id="turnstile-host" aria-hidden="true"></div>
+      <!--
+        The bot check. Hidden until it is actually needed, then shown: a
+        Managed challenge can ask the reader to click something, and a
+        container with no layout gives them nothing to click.
+      -->
+      <div id="turnstile-wrap" class="chat__turnstile" hidden>
+        <p class="chat__turnstile-label">One moment — just checking you are a person.</p>
+        <div id="turnstile-host"></div>
+      </div>
 
       <div>
         <p class="muted" style="font-size:.9rem;margin-bottom:.4rem">Or start from one of these:</p>

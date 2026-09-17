@@ -571,3 +571,15 @@ a:hover { text-decoration-thickness: 2px; }
   cursor: pointer;
 }
 .chat__examples button:hover { background: var(--surface-2); }
+
+/* The bot check, shown only while it is running. */
+.chat__turnstile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.chat__turnstile-label { margin: 0; font-size: 0.9rem; color: var(--text-muted); }
