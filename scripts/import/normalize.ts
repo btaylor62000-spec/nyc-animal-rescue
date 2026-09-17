@@ -152,7 +152,20 @@ export function parseEmails(raw: string | null): Parsed<Email> {
 }
 
 const URL_RE = /https?:\/\/[^\s|,)]+/gi;
-const BARE_DOMAIN_RE = /^(?:www\.)?[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)+(?:\/\S*)?$/i;
+
+/**
+ * A bare domain, with or without a path: "muffins.org", "nycacc.app",
+ * "neighborhoodcats.org/tnr-in-nyc/trap-banks". The host is checked separately
+ * from the path so a trailing path segment does not defeat the TLD test.
+ */
+function bareDomain(token: string): string | null {
+  const cleaned = token.replace(/^[("'\[]+/, '').replace(/[)"'\].,;:]+$/, '');
+  if (!cleaned || cleaned.includes('@') || /^https?:/i.test(cleaned)) return null;
+  const host = cleaned.split('/')[0]!;
+  if (!/^(?:www\.)?[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)+$/i.test(host)) return null;
+  if (!/\.[a-z]{2,}$/i.test(host)) return null;
+  return cleaned;
+}
 
 /** Trim trailing punctuation that the source glued onto a URL. */
 function tidyUrl(u: string): string {
@@ -180,12 +193,19 @@ export function parseUrls(raw: string | null): Parsed<string> {
       continue;
     }
     const { core } = splitLabel(seg);
-    // A bare domain such as "nycacc.app" or "catstoria.com".
-    const token = core.split(/\s+/).find((t) => BARE_DOMAIN_RE.test(t) && /\.[a-z]{2,}$/i.test(t));
-    if (token && !/@/.test(token)) {
-      const url = `https://${token.replace(/^www\./, '')}`;
+    // A bare domain such as "nycacc.app" or "neighborhoodcats.org/trap-banks".
+    let found: { token: string; domain: string } | null = null;
+    for (const t of core.split(/\s+/)) {
+      const d = bareDomain(t);
+      if (d) {
+        found = { token: t, domain: d };
+        break;
+      }
+    }
+    if (found) {
+      const url = `https://${found.domain.replace(/^www\./, '')}`;
       if (!values.includes(url)) values.push(url);
-      const leftover = core.replace(token, '').replace(/^[\s:|-]+|[\s:|-]+$/g, '').trim();
+      const leftover = core.replace(found.token, '').replace(/^[\s:|-]+|[\s:|-]+$/g, '').trim();
       if (leftover.length > 3) residue.push(leftover);
     } else if (seg.length > 3) {
       residue.push(seg);
