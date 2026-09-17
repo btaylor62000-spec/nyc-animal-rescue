@@ -316,9 +316,45 @@ export function mergeOrgs(all: Org[]): MergeResult {
     });
   }
 
+  ensureUniqueIds(orgs);
   conflicts.push(...detectAddressConflicts(orgs));
 
   return { orgs, merged, conflicts, keptApart };
+}
+
+/**
+ * Make every id unique.
+ *
+ * Disambiguating a split cluster by appending its borough can land on an id a
+ * different record already owns -- "aspca-community-veterinary-clinic" plus
+ * "-brooklyn" is exactly the slug of the record actually called "ASPCA
+ * Community Veterinary Clinic - Brooklyn". Ids are file names and URLs, so a
+ * collision silently loses a record.
+ */
+function ensureUniqueIds(orgs: Org[]): void {
+  const taken = new Set<string>();
+  for (const org of orgs) {
+    if (!taken.has(org.id)) {
+      taken.add(org.id);
+      continue;
+    }
+    const suffixes = [org.zips[0], org.boroughs[0], org.address?.zip].filter(Boolean) as string[];
+    let next = '';
+    for (const s of suffixes) {
+      const candidate = `${org.id}-${s}`;
+      if (!taken.has(candidate)) {
+        next = candidate;
+        break;
+      }
+    }
+    if (!next) {
+      let n = 2;
+      while (taken.has(`${org.id}-${n}`)) n++;
+      next = `${org.id}-${n}`;
+    }
+    org.id = next;
+    taken.add(next);
+  }
 }
 
 /** Rank records so the most authoritative one supplies the name and id. */

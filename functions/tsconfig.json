@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2022"
+    ],
+    "types": [
+      "@cloudflare/workers-types"
+    ],
+    "noEmit": true
+  },
+  "include": [
+    "**/*.ts",
+    "../src/chat/**/*.ts",
+    "../src/data/search.ts",
+    "../src/data/synonyms.ts",
+    "../src/data/geo.ts",
+    "../scripts/import/corpus.ts",
+    "../src/types.ts"
+  ],
+  "exclude": []
+}

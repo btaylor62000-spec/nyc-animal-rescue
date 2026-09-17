@@ -182,16 +182,6 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     { role: 'user', content: `${buildContext(retrieved.orgs, retrieved.guide)}\n\nQUESTION\n${message}` },
   ];
 
-  // --- ask the model -----------------------------------------------------
-  let upstream: ReadableStream | { response?: string };
-  try {
-    upstream = await env.AI.run(MODEL, { messages, stream: true, max_tokens: 400, temperature: 0.3 });
-  } catch {
-    // The daily allocation is exhausted, or the model is unavailable. Neither
-    // is worth an error page: the directory is still there and still works.
-    return jsonError(503, 'assistant-unavailable', true);
-  }
-
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
   const redactor = new StreamRedactor(allowed);
@@ -203,6 +193,18 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       // Cards first: real, verified contacts reach the reader before any
       // generated text does, so the useful part does not wait on the model.
       send({ cards, guide: retrieved.guide ? { slug: retrieved.guide.slug, title: retrieved.guide.title } : null });
+
+      // Ask the model only after the cards are out. If the daily allocation is
+      // exhausted or the model is unreachable, the reader has already been
+      // given real, verified contacts -- which is the part that matters.
+      let upstream: ReadableStream | { response?: string };
+      try {
+        upstream = await env.AI.run(MODEL, { messages, stream: true, max_tokens: 400, temperature: 0.3 });
+      } catch {
+        send({ error: 'assistant-unavailable', degraded: true });
+        controller.close();
+        return;
+      }
 
       try {
         if (!(upstream instanceof ReadableStream)) {

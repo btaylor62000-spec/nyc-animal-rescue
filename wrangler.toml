@@ -1,0 +1,12 @@
+# Cloudflare Pages configuration.
+#
+# The Workers AI binding is what the chat endpoint calls; on the free plan it
+# has a daily allocation and fails with an error rather than billing once that
+# is spent. Turnstile and the pass secret are set as encrypted secrets in the
+# dashboard, not here.
+name = "nyc-animal-rescue"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "dist"
+
+[ai]
+binding = "AI"

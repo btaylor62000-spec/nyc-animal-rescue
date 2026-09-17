@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro';
+import SearchBox from '../components/SearchBox.astro';
+
+/**
+ * The assistant lives on its own page so the home page stays fast and the
+ * emergency route stays the first thing anyone sees.
+ *
+ * The Turnstile site key is public by design. When it is not configured the
+ * page still works -- the endpoint skips verification too -- so the assistant
+ * can be developed and tested before any credentials exist.
+ */
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
+
+const examples = [
+  'A pigeon hit my window and flew off',
+  'I found kittens in my yard in Bushwick',
+  "I can't afford my dog's vet bill",
+  'Where can I borrow a trap for TNR?',
+];
+---
+
+<Base
+  title="Ask for help"
+  description="Describe what is happening and get pointed to the right animal rescue, clinic or rehabilitator in New York City."
+>
+  <div class="wrap">
+    <h1>Ask for help</h1>
+    <p class="lede">
+      Describe what is happening in your own words. You will get the organizations that fit,
+      with their real phone numbers.
+    </p>
+
+    <p class="notice notice--urgent">
+      <span aria-hidden="true">&#9888;</span>
+      <span>
+        If an animal is bleeding, struggling to breathe, collapsed or has been caught by a cat,
+        do not wait for an answer here — go straight to the
+        <a href="/directory?need=emergency-vet">24-hour emergency vets</a>.
+      </span>
+    </p>
+
+    <div class="chat">
+      <div id="chat-log" class="chat__log" role="log" aria-live="polite" aria-label="Conversation"></div>
+
+      <p id="chat-status" class="chat__status" role="status"></p>
+
+      <div id="chat-degraded" class="chat__degraded" hidden>
+        <h3>The assistant is resting</h3>
+        <p>
+          It runs on a free daily allowance, and that is used up for today — or it could not be
+          reached. The directory is unaffected, and search will get you there.
+        </p>
+        <a id="chat-degraded-search" class="btn btn--primary" href="/directory">Search the directory instead</a>
+      </div>
+
+      <form id="chat-form" class="chat__form" data-turnstile-site-key={turnstileSiteKey}>
+        <label class="visually-hidden" for="chat-input">What is happening?</label>
+        <textarea
+          id="chat-input"
+          name="message"
+          rows="2"
+          maxlength="600"
+          placeholder="e.g. I found a bird on the pavement in Astoria and it can't fly"
+          autocomplete="off"
+        ></textarea>
+        <button id="chat-send" class="btn btn--primary" type="submit">Ask</button>
+      </form>
+
+      <div id="turnstile-host" aria-hidden="true"></div>
+
+      <div>
+        <p class="muted" style="font-size:.9rem;margin-bottom:.4rem">Or start from one of these:</p>
+        <ul id="chat-examples" class="chat__examples">
+          {examples.map((q) => <li><button type="button" data-q={q}>{q}</button></li>)}
+        </ul>
+      </div>
+
+      <p class="muted" style="font-size:.88rem">
+        The assistant only knows what is in this directory. It will say so when it does not know,
+        rather than guess. Nothing you type is stored or logged.
+      </p>
+    </div>
+
+    <noscript>
+      <p class="notice">
+        <span aria-hidden="true">&#9432;</span>
+        <span>The assistant needs JavaScript. Search the directory instead:</span>
+      </p>
+      <SearchBox label="Search every resource" />
+    </noscript>
+  </div>
+</Base>
+
+{turnstileSiteKey && (
+  <script is:inline async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+)}
+
+<script>
+  import '../client/chat.ts';
+</script>

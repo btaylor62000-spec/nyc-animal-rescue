@@ -7,11 +7,12 @@
   "scripts": {
     "import": "tsx scripts/import/index.ts",
     "validate": "tsx scripts/validate.ts",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p functions/tsconfig.json",
     "test": "tsx --test tests/*.test.ts",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "evals": "tsx scripts/run-evals.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",

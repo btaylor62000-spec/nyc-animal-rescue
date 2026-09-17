@@ -138,6 +138,16 @@ function main(): void {
   const privacy = applyPrivacyHolds(merge.orgs);
   console.log(`  ${privacy.removals.length} personal contact details withheld`);
 
+  // Ids are file names and URLs; a duplicate silently loses a record.
+  const idCounts = new Map<string, number>();
+  for (const org of merge.orgs) idCounts.set(org.id, (idCounts.get(org.id) ?? 0) + 1);
+  const duplicateIds = [...idCounts].filter(([, n]) => n > 1);
+  if (duplicateIds.length) {
+    throw new Error(
+      `Duplicate record ids after merging: ${duplicateIds.map(([id, n]) => `${id} (x${n})`).join(', ')}`,
+    );
+  }
+
   console.log('Validating against the schema…');
   const ajv = new Ajv({ allErrors: true, strict: false });
   addFormats(ajv);

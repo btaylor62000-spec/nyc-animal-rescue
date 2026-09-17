@@ -58,8 +58,19 @@ export function stem(word: string): string {
   return word;
 }
 
+/**
+ * Fold accents before anything else looks at the word.
+ *
+ * Without this "pájaro" becomes "pjaro" and matches nothing, so a question
+ * asked in Spanish retrieves cat rescues for an injured bird. It also makes
+ * "cafe" find "Café" in an organization's name.
+ */
+function foldAccents(s: string): string {
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 export function processTerm(term: string): string | null {
-  const t = term.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const t = foldAccents(term.toLowerCase()).replace(/[^a-z0-9]/g, '');
   if (t.length < 2) return null;
   return STOPWORDS.has(t) ? null : stem(t);
 }

@@ -175,41 +175,9 @@ export const ORG_TYPE_RULES: Rule<OrgType>[] = [
 // Geography
 // ---------------------------------------------------------------------------
 
-export const BOROUGH_PATTERNS: Array<{ tag: Borough; pattern: RegExp }> = [
-  { tag: 'brooklyn', pattern: /\bbrooklyn\b|\bkings county\b|\bbklyn\b|\bBK\b/i },
-  { tag: 'queens', pattern: /\bqueens\b/i },
-  { tag: 'bronx', pattern: /\bbronx\b/i },
-  { tag: 'manhattan', pattern: /\bmanhattan\b|\bnew york county\b/i },
-  { tag: 'staten-island', pattern: /\bstaten island\b|\brichmond county\b|\bSI\b/i },
-];
-
-/**
- * Neighbourhood names that reliably imply a borough. Only unambiguous ones --
- * "Ridgewood" (Queens and NJ) and "Bay Ridge"/"Bayside" style collisions are
- * left out rather than guessed.
- */
-export const NEIGHBORHOOD_BOROUGH: Array<{ tag: Borough; pattern: RegExp }> = [
-  {
-    tag: 'brooklyn',
-    pattern: /\b(greenpoint|williamsburg|bushwick|bed.?stuy|bedford.?stuyvesant|crown heights|flatbush|park slope|sunset park|bay ridge|midwood|sheepshead bay|brownsville|east new york|ocean hill|gowanus|red hook|dumbo|canarsie|borough park|windsor terrace|prospect heights|carroll gardens|bensonhurst|coney island|fort greene|clinton hill|south slope)\b/i,
-  },
-  {
-    tag: 'queens',
-    pattern: /\b(astoria|long island city|\bLIC\b|jackson heights|flushing|jamaica|forest hills|rego park|elmhurst|woodside|sunnyside|corona|rockaway|woodhaven|glendale|maspeth|bayside|richmond hill|ozone park|far rockaway|howard beach|whitestone|college point|kew gardens)\b/i,
-  },
-  {
-    tag: 'manhattan',
-    pattern: /\b(harlem|washington heights|inwood|upper east side|upper west side|\bUES\b|\bUWS\b|chelsea|soho|tribeca|east village|west village|lower east side|\bLES\b|midtown|hell'?s kitchen|morningside heights|chinatown|murray hill|gramercy)\b/i,
-  },
-  {
-    tag: 'bronx',
-    pattern: /\b(riverdale|fordham|throgs neck|pelham bay|mott haven|hunts point|kingsbridge|morris park|parkchester|soundview|castle hill|city island|tremont|concourse)\b/i,
-  },
-  {
-    tag: 'staten-island',
-    pattern: /\b(st\.? george|tottenville|great kills|new dorp|port richmond|stapleton|clove|annadale|west brighton)\b/i,
-  },
-];
+// Borough and neighbourhood patterns live in src/data/geo.ts, shared with the
+// chat assistant so both read the same place out of the same words.
+export { BOROUGH_PATTERNS, NEIGHBORHOOD_BOROUGH } from '../../src/data/geo.ts';
 
 /** NYC ZIP ranges. Deterministic, so ZIPs are the strongest borough signal. */
 const ZIP_RANGES: Array<{ tag: Borough; from: number; to: number }> = [
