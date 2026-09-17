@@ -1,0 +1,67 @@
+{
+  "id": "vinegar-hill-veterinary-group",
+  "name": "Vinegar Hill Veterinary Group",
+  "aka": [
+    "Vinegar Hill Veterinary Group (DUMBO/Brooklyn Heights)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "exotic-vet",
+    "clinic"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile",
+    "wildlife",
+    "bird-wild"
+  ],
+  "needs": [
+    "exotic-vet",
+    "emergency-vet",
+    "wildlife-rehab"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11201"
+  ],
+  "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "phones": [
+    {
+      "value": "7187976875",
+      "display": "(718) 797-6875",
+      "label": "2nd location in Brooklyn Heights"
+    }
+  ],
+  "emails": [],
+  "website": "https://vhvetgroup.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "57 Front St",
+    "zip": "11201"
+  },
+  "hours": "Mon-Fri 8am-8pm, Sat-Sun 10am-5pm (2nd location in Brooklyn Heights)",
+  "notes": "57 Front St, Unit 101, Brooklyn (DUMBO) 11201 (718) 797-6875 - Mon-Fri 8am-8pm, Sat-Sun 10am-5pm (2nd location in Brooklyn Heights); vhvetgroup.com. A full-service clinic with the equipment and expertise to treat exotic & avian species (incubators, oxygen therapy, nebulization) alongside cats/dogs; sees guinea pigs, turtles, hedgehogs and birds, and treats some WILDLIFE by appointment (Drs. Neumann & Adelman). The most convenient exotics-capable full-service option in Brooklyn.\n\nDrs. Sara Neumann & Amy Adelman see wildlife by appointment; 57 Front St, Unit 101, Brooklyn 11201, (718) 797-6875. A Brooklyn option for an injured wild animal a rehabber directs to a vet.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

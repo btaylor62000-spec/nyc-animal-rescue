@@ -1,0 +1,69 @@
+{
+  "id": "barc-shelter",
+  "name": "BARC Shelter (Brooklyn Animal Resource Coalition)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Williamsburg, Brooklyn; serves NYC",
+  "zips": [
+    "11211"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [
+    {
+      "value": "7184867489",
+      "display": "(718) 486-7489"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.barcshelter.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "barcshelter",
+      "url": "https://instagram.com/barcshelter"
+    },
+    {
+      "platform": "facebook",
+      "handle": "BarcShelter",
+      "url": "https://facebook.com/BarcShelter"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) no-kill, privately funded, in Williamsburg since 1987 - one of Brooklyn's oldest WALK-IN shelters (253 Wythe Ave 11211), receives no government subsidy. Dogs + cats. Adoption hours Tue-Sat 12-4pm (closed Mon); runs a pet-supply store whose profits fund the shelter. Adopters must be 21+, complete the application, bring 2 valid IDs (photo + proof of address) + 2 non-family references + vet reference, and bring any resident dog/kids to meet. Post-pandemic also does outreach assisting other rescues. Email: (via site contact form) Intake: Adopt: walk-in Tue-Sat 12-4 Intake: App required",
+  "type_raw": "Rescue+adoption / shelter (walk-in) - dogs & cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.barcshelter.com/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

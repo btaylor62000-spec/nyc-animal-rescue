@@ -1,0 +1,56 @@
+{
+  "id": "feather-friends-parrot-adoption-services",
+  "name": "Feather Friends Parrot Adoption Services",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Maspeth, Queens, NYC",
+  "zips": [
+    "11378"
+  ],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "nycparrot@verizon.net"
+    }
+  ],
+  "website": "http://www.nycparrot.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A Queens (Maspeth) parrot adoption service - one of the very few listings for an IN-NYC pet-parrot resource, which is why it's included. However, its listing appears dated and could not be independently confirmed as currently operating at build time. Treat as a lead to verify by email before relying; if it's inactive, use LIPS placement, Northeast Avian Rescue, or the tri-state parrot rescues below. Phone: (fax 718-478-8460; no listed voice line) Intake: Email nycparrot@verizon.net Intake: PO Box 780344, Maspeth NY 11378. NOTE: verify the org is still active before referring (listing may be dated; site blocks automated checks). Other channel: (none confirmed)",
+  "type_raw": "Parrot adoption service (NYC-based) [VERIFY - may be inactive]",
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://birdsupplies.com/pages/parrot-rescues-and-adoption-programs"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

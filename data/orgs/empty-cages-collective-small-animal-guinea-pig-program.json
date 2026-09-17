@@ -1,0 +1,77 @@
+{
+  "id": "empty-cages-collective-small-animal-guinea-pig-program",
+  "name": "Empty Cages Collective (ECC) - small-animal / guinea pig program",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "small-mammal",
+    "cat",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Williamsburg-based (11211); serves NYC + Hudson Valley via fosters",
+  "zips": [
+    "11211"
+  ],
+  "region_note": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "phones": [
+    {
+      "value": "8008802684",
+      "display": "(800) 880-2684"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adopt@emptycagescollective.org"
+    }
+  ],
+  "website": "https://www.emptycagescollective.org",
+  "intake_urls": [
+    {
+      "url": "https://www.emptycagescollective.org/guinea-pigs-of-ecc.html",
+      "label": "Guinea-pig adoption info"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "emptycagescollective",
+      "url": "https://instagram.com/emptycagescollective"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3). Adopts guinea pigs only in pairs or to homes that already have one (they are social herd animals). Adoption donation from $30 single / $50 pair; $150 if spayed/neutered. Also a cat rescue (listed in the NYC cat reference). Intake: application via adopt@emptycagescollective.org",
+  "type_raw": "Rescue / adoption (multi-species)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.emptycagescollective.org/guinea-pigs-of-ecc.html"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

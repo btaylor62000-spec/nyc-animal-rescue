@@ -1,0 +1,68 @@
+{
+  "id": "ready-for-rescue",
+  "name": "Ready for Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; adopts NY metro",
+  "zips": [
+    "10280"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "readyforrescue@gmail.com"
+    }
+  ],
+  "website": "https://www.readyforrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "readyforrescue",
+      "url": "https://instagram.com/readyforrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "readyforrescue",
+      "url": "https://facebook.com/readyforrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC-based foster rescue pulling at-risk dogs (and some cats) from overcrowded shelters. Foster-based, no shelter. Mailing New York 10280 (Battery Park City area). Confirm current availability; email is the reliable channel. Phone: (no public phone; email preferred) Intake: Adopt/foster via site",
+  "type_raw": "Rescue+adoption (all-breed, foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.readyforrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

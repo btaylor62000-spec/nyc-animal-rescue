@@ -1,0 +1,65 @@
+{
+  "id": "hard-hat-cats",
+  "name": "Hard Hat Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "working-cat"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs - places un-adoptable feral cats as working cats at businesses",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hardhatcats@gmail.com"
+    }
+  ],
+  "website": "https://www.hardhatcats.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "hardhatcats",
+      "url": "https://instagram.com/hardhatcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Nonprofit (since ~2018, TNR roots 2008) placing feral/unadoptable cats from ACC + hoarding/colony situations as WORKING CATS (breweries, distilleries, warehouses, community gardens, apartment buildings) for non-toxic rodent deterrence. Cat is free; employer provides food/water/humane shelter. Has placed inside the Brooklyn Navy Yard (Kings County Distillery). Verified 2026-08-26. Intake: Businesses/sites apply via site or email Intake: founder does a site visit before placement Other channel: founder/president Sheila Massey",
+  "type_raw": "working-cat placement (citywide)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.hardhatcats.org/",
+    "https://www.marketplace.org/story/2023/07/04/these-feral-cats-have-jobs"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

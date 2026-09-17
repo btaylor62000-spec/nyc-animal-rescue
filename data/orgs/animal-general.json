@@ -1,0 +1,57 @@
+{
+  "id": "animal-general",
+  "name": "Animal General",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10024"
+  ],
+  "region_note": "MANHATTAN - feral-friendly / low-cost clinics",
+  "phones": [
+    {
+      "value": "2125019600",
+      "display": "(212) 501-9600"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "558 Columbus Ave",
+    "zip": "10024"
+  },
+  "hours": null,
+  "notes": "558 Columbus Ave 10024 - (212) 501-9600 - feral-friendly (Bideawee list).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — MANHATTAN - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

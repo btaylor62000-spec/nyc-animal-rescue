@@ -1,0 +1,68 @@
+{
+  "id": "the-toby-project-feral-spay-neuter-clinic",
+  "name": "The Toby Project - Feral Spay/Neuter Clinic",
+  "aka": [],
+  "parent_org": "the-toby-project",
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs - FREE community-cat spay/neuter for Certified TNR Caretakers",
+  "zips": [],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "3478162899",
+      "display": "(347) 816-2899",
+      "label": "Bklyn/Manhattan/SI clinic scheduling, Tue-Sat 1-7pm"
+    }
+  ],
+  "emails": [
+    {
+      "value": "tobyprojectnyc@gmail.com",
+      "label": "Bronx/Queens mobile clinic"
+    }
+  ],
+  "website": "https://www.tobyproject.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "FREE spay/neuter + eartip in ALL FIVE BOROUGHS for community cats ($5 mandatory rabies charge). Must be a Certified TNR Caretaker. FVRCP/SNAP testing/Revolution available at heavily discounted fees. Also runs public low-cost s/n. Verified 2026-08-26. Intake: call (347) 816-2899 for the stationary clinic at Ferals in Peril (Brooklyn), Sun/Mon by appt. Bronx/Queens: email Tobyprojectnyc@gmail.com for the weekly mobile clinic. Other channel: 104,000+ spay/neuters to date",
+  "type_raw": "spay-neuter clinic (support, all boroughs)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

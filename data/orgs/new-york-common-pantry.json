@@ -1,0 +1,54 @@
+{
+  "id": "new-york-common-pantry",
+  "name": "New York Common Pantry",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [
+    {
+      "value": "9177209700",
+      "display": "(917) 720-9700"
+    }
+  ],
+  "emails": [],
+  "website": "https://nycommonpantry.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.\n\ndistributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "korean-k9-rescue",
+  "name": "Korean K9 Rescue (KK9R)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "behavior-training",
+    "transport",
+    "advocacy"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens/LIC-based; adopts within ~150 miles of NYC (some case-by-case exceptions)",
+  "zips": [],
+  "region_note": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.koreank9rescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.koreank9rescue.org/adopt/",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.koreank9rescue.org/contact-us/",
+      "label": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "koreank9rescue",
+      "url": "https://instagram.com/koreank9rescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "koreank9rescue",
+      "url": "https://facebook.com/koreank9rescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) No-Kill based in Queens/LIC and Bundang, South Korea. Transports dogs rescued in South Korea plus local at-risk NYC dogs as an ACC New Hope partner. Foster-based in NYC (dogs live in foster homes until adopted). Thorough screening: requires proper supplies and adopter enrolls in training. Adopts within ~150 miles of NYC (excludes RI and NH); also places in Boston and LA. 3,500+ dogs rehomed. Phone: (no public phone; contact via site) Email: (via site contact form)",
+  "type_raw": "Rescue+adoption (foster-based, No-Kill) + ACC New Hope partner",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.koreank9rescue.org/adopt/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

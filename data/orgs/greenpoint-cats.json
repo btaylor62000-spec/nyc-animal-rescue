@@ -1,0 +1,65 @@
+{
+  "id": "greenpoint-cats",
+  "name": "Greenpoint Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Greenpoint; North Brooklyn (prioritizes local Greenpoint)",
+  "zips": [
+    "11222"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.greenpointcats.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "greenpoint_cats",
+      "url": "https://instagram.com/greenpoint_cats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "Greenpointcats",
+      "url": "https://facebook.com/Greenpointcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 84-2272610), volunteer-run, no shelter. No public phone/email; intake via rescue-request form. TNR then foster/adopt of friendlies. Re-verified 2026-08-26. Intake: //www.greenpointcats.org/tnr-requests Other channel: Venmo @greenpoint_cats",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.greenpointcats.org/tnr-requests"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

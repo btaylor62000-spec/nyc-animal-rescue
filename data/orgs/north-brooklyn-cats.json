@@ -1,0 +1,68 @@
+{
+  "id": "north-brooklyn-cats",
+  "name": "North Brooklyn Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Northern Brooklyn (Bushwick, Williamsburg, Greenpoint area)",
+  "zips": [
+    "11206",
+    "11211",
+    "11221",
+    "11222",
+    "11237"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": "https://northbrooklyncats.org",
+  "intake_urls": [
+    {
+      "url": "https://forms.monday.com/forms/e0162f83fa9c6ed04c2d1096f2dc7e98",
+      "label": "adopt/foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "northbrooklyncats",
+      "url": "https://instagram.com/northbrooklyncats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3) (EIN 87-3147518), no shelter. Contact form ONLY. Help requests MUST include location + 1-2 photos and come directly from the person needing help (not a third party); don't call the store. Maintains an excellent Brooklyn rescue directory at /resources. Re-verified 2026-08-26. Intake: Contact form on homepage Other channel: weekly event Sun 1-4pm, Bushwick Bark, 181 Irving Ave 11237",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

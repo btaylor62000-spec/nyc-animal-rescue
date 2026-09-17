@@ -1,0 +1,80 @@
+{
+  "id": "the-toby-project",
+  "name": "The Toby Project (Brooklyn feral coordinator)",
+  "aka": [
+    "The Toby Project"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (free community-cat spay/neuter); Brooklyn TNR coordinator",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [
+    {
+      "value": "3478162899",
+      "display": "(347) 816-2899",
+      "label": "scheduling, Tue-Sat 1-7pm"
+    },
+    {
+      "value": "2123155251",
+      "display": "(212) 315-5251"
+    }
+  ],
+  "emails": [
+    {
+      "value": "tobyprojectnyc@gmail.com",
+      "label": "appts"
+    },
+    {
+      "value": "petden19@verizon.net",
+      "label": "Brooklyn/SI/Manhattan feral coordinator"
+    }
+  ],
+  "website": "https://tobyproject.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat s/n, all 5 boroughs (Certified TNR Caretakers). Bklyn/Man/SI: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com. $5 rabies only.\n\nNYC's only org solely devoted to free/low-cost s/n; mobile vans + in-neighborhood clinics, works with DOHMH. Free s/n with proof of public assistance, reduced without; vaccines $8 (with s/n only). Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
+  "type_raw": "spay-neuter clinic / TNR support (multi-borough)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.humaneurbangroup.org/tnr-resources",
+    "https://www.aspcapro.org/sites/default/files/Local%20NYC%20resources-online%2011-14.pdf"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

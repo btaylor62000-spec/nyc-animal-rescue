@@ -1,0 +1,78 @@
+{
+  "id": "bobbi-and-the-strays",
+  "name": "Bobbi and the Strays",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "medical-special-needs"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens (Glendale shelter); serves all NYC boroughs + Long Island",
+  "zips": [
+    "11385"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "phones": [
+    {
+      "value": "7183266070",
+      "display": "(718) 326-6070"
+    }
+  ],
+  "emails": [],
+  "website": "https://bobbiandthestrays.org",
+  "intake_urls": [
+    {
+      "url": "https://bobbiandthestrays.org/adopt-a-dog/",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://bobbiandthestrays.org/adoption-page-new/",
+      "label": "App"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bobbiandthestrays",
+      "url": "https://instagram.com/bobbiandthestrays"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bobbiandthestrays",
+      "url": "https://facebook.com/bobbiandthestrays"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) no-kill since 1998 (founder Bobbi Giordano); dogs + cats, including special-needs. Queens WALK-IN shelter at 80-36 Cooper Ave, Glendale 11385, (718) 326-6070 (Mon-Fri 11-5, Sat 11-4:30, Sun 11-4). Adoption requires application + home visit + approval; will take an animal back if an adoption fails. Also runs community programs for low-income/elderly/disabled owners. NOTE: also has a separate LONG ISLAND (Freeport) location at 2 Rider Pl 11520, (516) 378-4340 - the Glendale site is the NYC one. Email: (via site contact form)",
+  "type_raw": "Rescue+adoption / shelter (walk-in) - dogs & cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bobbiandthestrays.org/adopt-a-dog/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

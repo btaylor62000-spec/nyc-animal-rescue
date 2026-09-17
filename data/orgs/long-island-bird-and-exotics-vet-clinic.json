@@ -1,0 +1,55 @@
+{
+  "id": "long-island-bird-and-exotics-vet-clinic",
+  "name": "Long Island Bird & Exotics Vet Clinic (Nassau County)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "exotic-vet",
+    "clinic"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "exotic-vet",
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "bronx",
+    "manhattan",
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "phones": [],
+  "emails": [],
+  "website": "https://birdexoticsvet.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "the only avian & exotic hospital in Nassau; serves all of NYC (Manhattan, Queens, Brooklyn, Bronx, Staten Island) plus Westchester/NJ/CT. Treats birds, reptiles, parrots, sugar gliders, rabbits, chinchillas and other small mammals; offers endoscopy, anesthesia, minimally invasive surgery, emergency services, MEDICAL BOARDING and grooming (birdexoticsvet.com). A strong exotics-only option for outer-borough/LI residents.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

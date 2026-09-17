@@ -1,0 +1,62 @@
+{
+  "id": "save-the-animals-rescue-foundation",
+  "name": "Save the Animals Rescue Foundation (STAR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "wildlife",
+    "bird-wild"
+  ],
+  "needs": [
+    "emergency-vet",
+    "wildlife-rehab",
+    "legal"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Long Island (Middle Island, Suffolk County)",
+  "zips": [
+    "11953"
+  ],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "6317368207",
+      "display": "(631) 736-8207",
+      "label": "24-hr live answering service"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@savetheanimalsrescue.org"
+    }
+  ],
+  "website": "https://www.savetheanimalsrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Long Island wildlife-rehab foundation that takes raptors (and occasionally gulls, volume permitting). 24-hour live answering service. Regional (Suffolk County) - flagged as NYC-adjacent, not NYC-local; a raptor-specific backup to WINORR/Wild Bird Fund. Intake: Call 631-736-8207 Intake: email info@savetheanimalsrescue.org Other channel: FB Save the Animals Rescue Foundation (STAR)",
+  "type_raw": "Wildlife rehabilitation - raptors (licensed)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

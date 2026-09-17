@@ -1,0 +1,55 @@
+{
+  "id": "magnificat-cat-rescue-and-rehoming",
+  "name": "Magnificat Cat Rescue and Rehoming",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (NYC-area foster network)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [],
+  "website": "http://www.magnificatrescue.webs.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based NYC cat rescue; TNR-certified (Mayor's Alliance). Assists local TNR groups across five boroughs + helps owners at risk of losing pets. Confirm current activity - older web presence. Intake: Contact via site / Petfinder",
+  "type_raw": "rescue+adoption / TNR (multi-borough)",
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://www.idealist.org/en/nonprofit/f2fd07127ed848c295d82543d726f704-magnificat-cat-rescue-and-rehoming-new-york-city"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

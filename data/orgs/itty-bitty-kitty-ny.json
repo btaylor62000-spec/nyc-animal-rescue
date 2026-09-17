@@ -1,0 +1,61 @@
+{
+  "id": "itty-bitty-kitty-ny",
+  "name": "Itty Bitty Kitty NY (IBKNY)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bay Ridge / South Brooklyn",
+  "zips": [
+    "11209",
+    "11220",
+    "11228"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [],
+  "website": "https://ittybittykittyny.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "ittybittykittyny",
+      "url": "https://instagram.com/ittybittykittyny"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small all-volunteer Bay Ridge community-cat rescue (NOT a 501(c)(3); donations not tax-deductible). TNR + friendly rescue/adoption; adopts kittens in pairs. Lost donated holding space in 2020 (foster-based since). Site live and adopting as of 2026 re-check; co-founder George Politis (featured in 'The Cat Rescuers') long the primary caretaker - confirm current capacity via application/IG. Re-verified 2026-08-26. Intake: Adoption/foster application on site Intake: urgent-request page",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://ittybittykittyny.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "luv-n-bunns-rabbit-rescue",
+  "name": "Luv-N-Bunns Rabbit Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "rabbit"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "spay-neuter",
+    "referral"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Greater Philadelphia & tri-state region (PA/NJ/DE); regional - far from NYC",
+  "zips": [],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "bunnies@luvnbunns.org"
+    }
+  ],
+  "website": "https://luvnbunns.org",
+  "intake_urls": [
+    {
+      "url": "https://luvnbunns.org/contact-us",
+      "label": "contact"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Volunteer, foster-based 501(c)(3) rescuing/spaying/placing rabbits since 2007 (2,600+ saved). Adopts only to indoor homes; recently opened an adoption center. REGIONAL - based in the greater Philadelphia / tri-state area, well outside NYC; included for completeness because this animal category has few resources, but it is a long-distance option, not a local NYC referral. Confirm willingness/logistics before referring a NYC rehomer. Phone: (no public phone; email) Intake: email bunnies@luvnbunns.org for an application Intake: care@luvnbunns.org Other channel: IG/FB @LuvNBunns",
+  "type_raw": "Rescue / adoption / bonding (rabbits) - foster-based",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://luvnbunns.org/contact-us/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,91 @@
+{
+  "id": "nyc-second-chance-rescue",
+  "name": "NYC Second Chance Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "wildlife"
+  ],
+  "needs": [
+    "emergency-vet",
+    "adoption",
+    "foster",
+    "medical-special-needs",
+    "boarding",
+    "advocacy",
+    "wildlife-rehab",
+    "lost-found",
+    "legal"
+  ],
+  "boroughs": [
+    "queens",
+    "manhattan",
+    "brooklyn",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; pulls from NYC ACC + overcrowded shelters",
+  "zips": [
+    "10025"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@nycsecondchancerescue.org"
+    }
+  ],
+  "website": "https://nycsecondchancerescue.org",
+  "intake_urls": [
+    {
+      "url": "https://nycsecondchancerescue.org/adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycscr",
+      "url": "https://instagram.com/nycscr"
+    },
+    {
+      "platform": "instagram",
+      "handle": "nycsecondchancerescue",
+      "url": "https://instagram.com/nycsecondchancerescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "NYCSecondChanceRescue",
+      "url": "https://facebook.com/NYCSecondChanceRescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2009. SPECIALTY: critically injured/neglected/abused dogs & cats pulled from ACC 'death row' - many need emergency vet care. Foster + private-boarding based, no shelter. Queens-based but rescues citywide. Contact via site. Verified 2026-08-26. Intake: Contact form + adoption app at Other channel: PO Box 570701, Whitestone NY 11357\n\n501(c)(3) since 2009; 17,000+ animals saved. NYC-based, foster-based, known for taking CRITICALLY injured, neglected, and abused dogs & cats (many bully + mixed breeds) from overcrowded shelters and funding medical care and rehabilitation. No walk-in shelter. Also publishes lost/found guidance. Mailing New York, NY. Phone: (no public phone; contact via site) Intake: Lost-pet tips at /lost-pet",
+  "type_raw": "Rescue+adoption (critical medical/cruelty cases; foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nycsecondchancerescue.org/",
+    "https://www.adoptapet.com/shelter/84725-nyc-second-chance-rescue-long-island-city-new-york"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

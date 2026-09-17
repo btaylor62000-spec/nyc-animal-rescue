@@ -1,0 +1,71 @@
+{
+  "id": "badass-animal-rescue",
+  "name": "Badass Animal Rescue (Badass Brooklyn)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "transport",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-based; adopts to NY/NJ/CT/PA/Upstate NY (home visit required)",
+  "zips": [
+    "11218"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://badassanimalrescue.com",
+  "intake_urls": [
+    {
+      "url": "https://badassanimalrescue.com/find-a-dog",
+      "label": "Find a dog"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "badassanimalrescue",
+      "url": "https://instagram.com/badassanimalrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "badassbrooklyn",
+      "url": "https://facebook.com/badassbrooklyn"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2011 (founder Sara Alize Cross); 4,000+ dogs rehomed. All-breed, all-volunteer, foster-based - no physical shelter. Pulls the most at-risk dogs from overcrowded rural shelters in the US South and US Virgin Islands, transports to NYC-area foster homes. Adopters must be 23+, provide ID + references, consent to a home visit. Mailing: 419 McDonald Ave, Box 180523, Brooklyn NY 11218. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Application linked from each dog's listing",
+  "type_raw": "Rescue+adoption (all-breed, foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://badassanimalrescue.com/about-badass"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

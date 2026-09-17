@@ -1,0 +1,85 @@
+{
+  "id": "waggytail-rescue",
+  "name": "Waggytail Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "spay-neuter",
+    "senior",
+    "microchip",
+    "breed-specific"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-wide (foster-based, no shelter); serves NYC metro",
+  "zips": [
+    "10002"
+  ],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "adopt@waggytailrescue.org"
+    },
+    {
+      "value": "waggytailrescue@gmail.com"
+    }
+  ],
+  "website": "https://www.waggytailrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.waggytailrescue.org/adopt-a-waggytail",
+      "label": "Apply"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "waggytailrescue",
+      "url": "https://instagram.com/waggytailrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "WaggyTailRescue",
+      "url": "https://facebook.com/WaggyTailRescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2004; 6,000+ small dogs rehomed. Volunteer- and foster-run, no physical shelter (mailing only). Focuses on small-breed dogs pulled from crowded local shelters and Southern/West-Coast shelters. Fees (2026): puppies <1yr $550, dogs 1-8yr $450, seniors 9+ $325 (+$100 deposit if unfixed); includes microchip, age-appropriate vaccines, spay/neuter. All household members attend the meet & greet. Phone: (no public phone; email preferred)",
+  "type_raw": "Rescue+adoption (small-breed dogs; occasional cats)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.waggytailrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

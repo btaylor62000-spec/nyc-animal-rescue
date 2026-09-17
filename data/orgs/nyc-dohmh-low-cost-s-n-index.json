@@ -1,0 +1,51 @@
+{
+  "id": "nyc-dohmh-low-cost-s-n-index",
+  "name": "NYC DOHMH low-cost s/n index",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CITYWIDE - free / low-cost SPAY-NEUTER",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "updated periodically): https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — CITYWIDE - free / low-cost SPAY-NEUTER",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

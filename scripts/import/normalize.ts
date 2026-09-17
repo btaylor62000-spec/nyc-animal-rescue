@@ -263,7 +263,12 @@ export function parseSocial(raw: string | null): Parsed<SocialLink> {
         matched = true;
         continue;
       }
-      values.push({ platform: p.platform, handle, url: p.url(handle) });
+      // Sources sometimes give a page's display name rather than its slug
+      // ("FB /WINORR - Wildlife In Need of Rescue and Rehabilitation"). That
+      // cannot be turned into a working URL, so keep the name and omit the
+      // link rather than publishing one that 404s.
+      const linkable = /^[\w.-]+$/.test(handle);
+      values.push(linkable ? { platform: p.platform, handle, url: p.url(handle) } : { platform: p.platform, handle });
       matched = true;
     }
     if (!matched && seg.length > 3) residue.push(seg);

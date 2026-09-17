@@ -1,0 +1,45 @@
+{
+  "id": "paws-of-war",
+  "name": "Paws of War",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "senior"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "SENIOR / DISABILITY / ILLNESS - in-home pet care",
+  "phones": [],
+  "emails": [],
+  "website": "https://pawsofwar.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "veterinary care for pets of veterans + first responders. pawsofwar.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — SENIOR / DISABILITY / ILLNESS - in-home pet care",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

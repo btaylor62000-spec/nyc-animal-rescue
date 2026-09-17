@@ -1,0 +1,63 @@
+{
+  "id": "the-center-for-avian-and-exotic-medicine",
+  "name": "The Center for Avian & Exotic Medicine",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "exotic-vet",
+    "clinic"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "exotic-vet",
+    "emergency-vet",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10024"
+  ],
+  "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "phones": [
+    {
+      "value": "2125018750",
+      "display": "(212) 501-8750",
+      "label": "e.g. squirrels, pigeons"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "562 Columbus Avenue",
+    "zip": "10024"
+  },
+  "hours": "open 7 days 9am-7pm",
+  "notes": "562 Columbus Avenue, Manhattan, NY 10024 (212) 501-8750 - open 7 days 9am-7pm. NYC's only exclusively avian & exotic veterinary hospital (a calm, dog/cat-free environment). Treats birds, reptiles, amphibians, fish, small mammals, small ruminants, and wildlife-as-pets (e.g. squirrels, pigeons); offers TeleVet for established patients. The natural complement to AMC's ER for non-emergency exotic care. (On Columbus Ave, near the Wild Bird Fund.)\n\nThe Center for Avian & Exotic Medicine (562 Columbus Ave; (212) 501-8750) - not free, but the dedicated exotics day-practice; ask about payment plans + wellness packages to spread cost.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

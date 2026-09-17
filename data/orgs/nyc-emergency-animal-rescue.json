@@ -1,0 +1,57 @@
+{
+  "id": "nyc-emergency-animal-rescue",
+  "name": "NYC Emergency Animal Rescue (Facebook group)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber",
+    "rescue-foster"
+  ],
+  "animals": [
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "MULTI-SPECIES / CROSS-CUTTING NYC RESCUES (take several of the animal types below)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.facebook.com/groups/nycemergencyanimalrescue/",
+  "intake_urls": [
+    {
+      "url": "https://facebook.com/groups/nycemergencyanimalrescue"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A members-only NYC Facebook group that covers ALL animals - any species emergency. How it works: you must be accepted into the group first, then you post the details of the animal emergency and community members respond/coordinate help. Because it is a closed group its internal operations can't be independently verified here; it is a fast community crowd-sourcing channel, not a licensed shelter or rehabber. For regulated situations (wildlife, injured protected species) still route to a licensed rehabber in parallel. Phone: (no phone; posted to via the Facebook group) Email: (no email; via Facebook group) Intake: Request to join the group first, then post the details of the animal emergency for members to respond Other channel: Facebook group (members-only)",
+  "type_raw": "Community first-response network (members-only Facebook group)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.facebook.com/groups/nycemergencyanimalrescue/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "MULTI-SPECIES / CROSS-CUTTING NYC RESCUES (take several of the animal types below)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

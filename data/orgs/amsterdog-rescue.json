@@ -1,0 +1,79 @@
+{
+  "id": "amsterdog-rescue",
+  "name": "AmsterDog Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; greater NY/NJ/PA intake, adopts East Coast",
+  "zips": [
+    "10280"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [
+    {
+      "value": "9176898414",
+      "display": "(917) 689-8414"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@amsterdog.org"
+    },
+    {
+      "value": "amsterdog@gmail.com"
+    }
+  ],
+  "website": "https://amsterdog.org",
+  "intake_urls": [
+    {
+      "url": "https://www.amsterdog.org/application",
+      "label": "Apply"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "amsterdogrescue",
+      "url": "https://instagram.com/amsterdogrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "amsterdog",
+      "url": "https://facebook.com/amsterdog"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) all-volunteer foster-based rescue helping dogs in NYC city shelters + the greater NY/NJ/PA area, placing across the East Coast. Process: online application, then a phone conversation. One of the few smaller NYC dog rescues that publishes a direct phone line. Mailing New York 10280.",
+  "type_raw": "Rescue+adoption (all-breed, foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://amsterdog.org"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

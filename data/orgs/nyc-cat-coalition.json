@@ -1,0 +1,62 @@
+{
+  "id": "nyc-cat-coalition",
+  "name": "NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "tnr"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "The Bronx & surrounding areas (into Westchester)",
+  "zips": [],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "nycatcoal@yahoo.com"
+    }
+  ],
+  "website": "https://www.nycatcoal.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycatcoalition",
+      "url": "https://instagram.com/nycatcoalition"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "100% no-kill, all-volunteer 501(c)(3) (EIN 13-3144256). TNR in/around the Bronx + rescue from streets & owner surrender + adoption. Checks email regularly. Active 2026. Verified 2026-08-26. Intake: Email for adoption application Intake: adoption center at Pelham Manor PetSmart Other channel: FB @NYCCatCoalition",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/107611-nyc-cat-coalition-bronx-new-york",
+    "https://www.guidestar.org/profile/13-3144256"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

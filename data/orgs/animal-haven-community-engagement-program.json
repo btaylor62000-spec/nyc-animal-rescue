@@ -1,0 +1,50 @@
+{
+  "id": "animal-haven-community-engagement-program",
+  "name": "Animal Haven Community Engagement Program",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment",
+  "phones": [
+    {
+      "value": "2122748511",
+      "display": "(212) 274-8511"
+    }
+  ],
+  "emails": [],
+  "website": "https://animalhaven.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511, animalhaven.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,71 @@
+{
+  "id": "snarr-northeast",
+  "name": "SNARR Northeast (Special Needs Animal Rescue & Rehabilitation)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "foster",
+    "medical-special-needs",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Brewster (Putnam); adopts NY metro incl. NYC",
+  "zips": [
+    "10509"
+  ],
+  "region_note": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "phones": [],
+  "emails": [],
+  "website": "https://snarrnortheast.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "snarrnortheast",
+      "url": "https://instagram.com/snarrnortheast"
+    },
+    {
+      "platform": "facebook",
+      "handle": "SNARRNortheast",
+      "url": "https://facebook.com/SNARRNortheast"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) 'Special Needs Animal Rescue & Rehabilitation', ACC New Hope partner, focused on medical and special-needs cases. Foster-based (Brewster/Putnam), adopts into NY metro incl. NYC. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site Intake: 'Giving Hope to the Hopeless'",
+  "type_raw": "Rescue+adoption (special-needs/medical dogs & cats; foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://snarrnortheast.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

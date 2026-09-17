@@ -1,0 +1,58 @@
+{
+  "id": "urgent-vets",
+  "name": "Urgent Vets",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10465"
+  ],
+  "region_note": "BRONX - urgent care (for TRUE 24hr ER, Bronx residents are advised to use Manhattan - AMC/BluePearl)",
+  "phones": [
+    {
+      "value": "3472819700",
+      "display": "(347) 281-9700"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "3800 E Tremont Ave",
+    "zip": "10465"
+  },
+  "hours": "Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr)",
+  "notes": "3800 E Tremont Ave 10465 - (347) 281-9700 - Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BRONX - urgent care (for TRUE 24hr ER, Bronx residents are advised to use Manhattan - AMC/BluePearl)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

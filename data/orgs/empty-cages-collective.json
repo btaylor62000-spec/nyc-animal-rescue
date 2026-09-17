@@ -1,0 +1,82 @@
+{
+  "id": "empty-cages-collective",
+  "name": "Empty Cages Collective (ECC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "wildlife"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs",
+    "retrovirus",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Williamsburg-based (11211); serves NYC + Hudson Valley via fosters",
+  "zips": [
+    "11211"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [
+    {
+      "value": "8008802684",
+      "display": "(800) 880-2684"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adopt@emptycagescollective.org"
+    },
+    {
+      "value": "info@emptycagescollective.org"
+    }
+  ],
+  "website": "https://www.emptycagescollective.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "emptycagescollective",
+      "url": "https://instagram.com/emptycagescollective"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3) animal + environmental advocacy rescue. Feral-cat TNR + rescue/adoption; pulls cats from NYCACC; FeLV+ and special-needs cat specialty; also dogs/rabbits/small animals/wildlife. Brooklyn (Williamsburg) base with citywide + Hudson Valley reach. Verified 2026-08-26. Intake: Adoption application (PDF) via adopt@ email Intake: FaceTime interview + home drop-off",
+  "type_raw": "TNR / rescue+adoption (multi-species)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.emptycagescollective.org/",
+    "https://www.adoptapet.com/adoption_rescue/78830-empty-cages-collective-brooklyn-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

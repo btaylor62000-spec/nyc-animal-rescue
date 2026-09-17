@@ -1,0 +1,91 @@
+{
+  "id": "new-york-bully-crew",
+  "name": "New York Bully Crew (NYBC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "behavior-training",
+    "breed-specific"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "HQ East Patchogue (Long Island); serves NYC metro NY/NJ; pulls bully breeds from overcrowded shelters",
+  "zips": [
+    "11772"
+  ],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [
+    {
+      "value": "8446336922",
+      "display": "(844) 633-6922"
+    },
+    {
+      "value": "6316560310",
+      "display": "(631) 656-0310"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.nybullycrew.org",
+  "intake_urls": [
+    {
+      "url": "https://www.nybullycrew.org/adopt",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.nybullycrew.org/surrender",
+      "label": "Surrender"
+    },
+    {
+      "url": "https://www.nybullycrew.org/contact",
+      "label": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "newyorkbullycrew",
+      "url": "https://instagram.com/newyorkbullycrew"
+    },
+    {
+      "platform": "facebook",
+      "handle": "NewYorkBullyCrew",
+      "url": "https://facebook.com/NewYorkBullyCrew"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2010 focused on bully breeds pulled from shelters and the streets, fully vetted then rehomed. Handles bully-breed surrenders and previously-adopted NYBC dogs; has an in-house trainer. HQ 1457 Montauk Hwy, East Patchogue NY 11772 (Long Island); a Best Friends partner serving the NYC metro. A resource for pit/bully-type dogs that breed-restricted groups may not take. Email: (via site contact form)",
+  "type_raw": "Rescue+adoption (BULLY BREEDS; foster + facility)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nybullycrew.org/contact"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

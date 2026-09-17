@@ -1,0 +1,73 @@
+{
+  "id": "hearts-and-bones-rescue",
+  "name": "Hearts & Bones Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "transport"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based (also Dallas TX); adopts NY metro",
+  "zips": [
+    "10001"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@heartsandbonesrescue.com"
+    }
+  ],
+  "website": "https://www.heartsandbonesrescue.com",
+  "intake_urls": [
+    {
+      "url": "https://www.heartsandbonesrescue.com/adopt",
+      "label": "Adopt/foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "heartsandbonesrescue",
+      "url": "https://instagram.com/heartsandbonesrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "heartsandbonesrescue",
+      "url": "https://facebook.com/heartsandbonesrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) foster-based dog rescue operating in NYC + Dallas; partners with shelters in high-intake areas and transports dogs to NYC-area foster homes. Emphasizes responsible, well-matched placements + ongoing adopter support. Foster-based, no walk-in shelter. Online application then virtual meet-and-greet. Mailing New York, NY. Phone: (no public phone; email preferred) Intake: online app + virtual meet",
+  "type_raw": "Rescue+adoption (all-breed, foster-based) + transport",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.heartsandbonesrescue.com/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

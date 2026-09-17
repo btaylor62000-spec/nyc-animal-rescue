@@ -1,0 +1,76 @@
+{
+  "id": "equine-advocates-rescue-and-sanctuary",
+  "name": "Equine Advocates Rescue & Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "clinic",
+    "sanctuary"
+  ],
+  "animals": [
+    "equine",
+    "farm",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "surrender",
+    "sanctuary",
+    "education"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Chatham, NY (Columbia County; regional)",
+  "zips": [
+    "12037"
+  ],
+  "region_note": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "phones": [
+    {
+      "value": "5182451599",
+      "display": "(518) 245-1599"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.equineadvocates.org",
+  "intake_urls": [
+    {
+      "url": "https://www.equineadvocates.org/contact/",
+      "label": "Contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "equineadvocates",
+      "url": "https://instagram.com/equineadvocates"
+    },
+    {
+      "platform": "facebook",
+      "handle": "EquineAdvocates",
+      "url": "https://facebook.com/EquineAdvocates"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Founded 1996; 173-acre sanctuary near Chatham (Columbia County) home to 80+ rescued horses, ponies, donkeys and mules saved from slaughter, abuse and neglect. Runs a Humane Education program that specifically addresses the NYC urban carriage-horse trade. Building a Rehabilitation Center (10 stalls + vet clinic). Regional (upstate) - flagged as not NYC-local, but a relevant intake/education contact for NYC equine-welfare situations. Email: (via equineadvocates.org contact form) Intake: PO Box 354, Chatham NY 12037 Intake: (518) 245-1599",
+  "type_raw": "Horse/equine sanctuary & rescue",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.equineadvocates.org/sanctuary/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

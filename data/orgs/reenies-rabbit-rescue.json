@@ -1,0 +1,86 @@
+{
+  "id": "reenies-rabbit-rescue",
+  "name": "Reenie's Rabbit Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "rabbit",
+    "cat",
+    "small-mammal",
+    "farm",
+    "wildlife"
+  ],
+  "needs": [
+    "adoption",
+    "boarding"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Serves the greater NY area; based Salisbury Mills (Orange County, ~60 mi N of NYC)",
+  "zips": [
+    "12577"
+  ],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [
+    {
+      "value": "8455917751",
+      "display": "(845) 591-7751",
+      "label": "call or text"
+    }
+  ],
+  "emails": [
+    {
+      "value": "reeniesrabbitrescue@gmail.com"
+    }
+  ],
+  "website": "https://www.reeniesrabbitrescue.com",
+  "intake_urls": [
+    {
+      "url": "https://www.reeniesrabbitrescue.com/contact/",
+      "label": "Contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "reeniesrabbitrescue",
+      "url": "https://instagram.com/reeniesrabbitrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "ReeniesRabbit",
+      "url": "https://facebook.com/ReeniesRabbit"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Helping NY-area bunnies since 2014; now guinea pigs, pocket pets and cats too. Offers bonding, boarding, grooming and advice. Based in Orange County (out-of-city) but serves the wider NY area - flagged as regional, not NYC-local. Also runs a wildlife-rehab program. Intake: /adopt/ Intake: /wildlife-rehab/ Other channel: Petfinder ny1289",
+  "type_raw": "Rescue / adoption / bonding / boarding; also wildlife rehab",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.reeniesrabbitrescue.com/contact/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

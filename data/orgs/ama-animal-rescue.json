@@ -1,0 +1,85 @@
+{
+  "id": "ama-animal-rescue",
+  "name": "AMA Animal Rescue (Angels for Mistreated Animals)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "South Brooklyn (based Gravesend/Bath Beach); citywide + beyond",
+  "zips": [
+    "11214"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [
+    {
+      "value": "3474485944",
+      "display": "(347) 448-5944"
+    }
+  ],
+  "emails": [
+    {
+      "value": "amaanimalrescue@gmail.com"
+    }
+  ],
+  "website": "https://amaanimalrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://amaanimalrescue.org/adoption-application/",
+      "label": "Adopt/apply"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "amaanimalrescue",
+      "url": "https://instagram.com/amaanimalrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "AmaAnimalRescue",
+      "url": "https://facebook.com/AmaAnimalRescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYS 501(c)(3) no-kill shelter since 2014, ~1,200 sq ft facility (by appointment only, not walk-in). Focus on severe abuse/neglect/medical cases (dogs + cats). Phone + email confirmed. Not primarily a TNR group. Re-verified 2026-08-26. Intake: //amaanimalrescue.org/adoption-application/ Other channel: 2815 Cropsey Ave, Brooklyn 11214 (BY APPOINTMENT ONLY, 7 days 9am-6pm)\n\nNYS 501(c)(3) since 2014, no-kill. Has a physical 1,200 sq ft facility at 2815 Cropsey Ave 11214 with indoor enclosures + fenced outdoor space, but visits are BY APPOINTMENT ONLY (call first). Focus is the most severe abuse/neglect/medical cases, domestic and abroad; dogs and cats. Strong, active social presence. Email: (via site contact form) Intake: visits BY APPOINTMENT ONLY",
+  "type_raw": "rescue+adoption (physical shelter)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.yelp.com/biz/ama-animal-rescue-brooklyn",
+    "https://amaanimalrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

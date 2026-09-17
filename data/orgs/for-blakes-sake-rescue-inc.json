@@ -1,0 +1,73 @@
+{
+  "id": "for-blakes-sake-rescue-inc",
+  "name": "For Blake's Sake Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "medical-special-needs"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island (adopts within ~4-hr driving radius)",
+  "zips": [
+    "10303"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "7324135006",
+      "display": "(732) 413-5006"
+    }
+  ],
+  "emails": [
+    {
+      "value": "forblakessakerescue@gmail.com"
+    }
+  ],
+  "website": "https://sites.google.com/ps69dolphins.com/forblakessake/home",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "forblakessakerescue",
+      "url": "https://instagram.com/forblakessakerescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "forblakessakerescueinc",
+      "url": "https://facebook.com/forblakessakerescueinc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Volunteer 501(c)(3) (EIN 83-2992337, NYS 2018), youth-involved, 'judgment-free.' Rescues cats + dogs incl. special-needs (e.g. blind cats). DISAMBIGUATION: a separate DOG-ONLY 'For Blake's Sake Rescue' exists at forblakessake.org - this SI cat-inclusive one is the ps69dolphins.com/Petfinder NY1488 entity. Verified 2026-08-26. Intake: Adoption via Petfinder Intake: contact by email/phone Other channel: 496a Lisk Ave, SI 10303",
+  "type_raw": "rescue+adoption (cats + dogs, special-needs friendly)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/staten-island/for-blakes-sake-rescue-inc-ny1488/",
+    "https://www.guidestar.org/profile/83-2992337"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

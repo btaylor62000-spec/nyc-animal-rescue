@@ -1,0 +1,71 @@
+{
+  "id": "woof-dog-rescue-inc",
+  "name": "Woof Dog Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "NYC-based; adopts NY/NJ/CT tri-state",
+  "zips": [],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.woofdogrescue.com",
+  "intake_urls": [
+    {
+      "url": "https://www.woofdogrescue.com/",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "woofdogrescue",
+      "url": "https://instagram.com/woofdogrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "woofdogrescue",
+      "url": "https://facebook.com/woofdogrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2003 (founder Rhoda Glass), ACC New Hope partner. Pulls adoptable dogs and cats from the NYC shelter system into foster homes for medical care, re-socialization, and retraining. Small, high-touch, relationship-driven (adopters report lifelong support). Process: email application -> meet & greet. Fee $350. Adopts NY/NJ/CT (exceptions for the right home). Phone: (no public phone; email preferred) Email: (via site contact form) Intake: email app + meet & greet",
+  "type_raw": "Rescue+adoption (dogs & cats, foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.woofdogrescue.com/about-us"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

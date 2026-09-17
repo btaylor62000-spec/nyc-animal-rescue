@@ -1,0 +1,75 @@
+{
+  "id": "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals",
+  "name": "Brooklyn Cat Cafe / Brooklyn Bridge Animal Welfare Coalition - Small Animals program",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "small-mammal",
+    "cat",
+    "rabbit",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "microchip"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn / NYC",
+  "zips": [
+    "11201"
+  ],
+  "region_note": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "phones": [
+    {
+      "value": "3479462286",
+      "display": "(347) 946-2286",
+      "label": "cafe"
+    }
+  ],
+  "emails": [
+    {
+      "value": "brooklynbridgeanimals@yahoo.com"
+    }
+  ],
+  "website": "https://catcafebk.com/small-animals",
+  "intake_urls": [
+    {
+      "url": "https://catcafebk.com/small-animals"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "catcafebk",
+      "url": "https://instagram.com/catcafebk"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "The BBAWC cafe and its foster homes host a rotating variety of rescue small animals (rats ~$85 altered/microchipped, mice ~$25, chinchillas, guinea pigs). Staff will discuss small-animal care with prospective adopters. Primarily a cat rescue - small-animal availability rotates. Intake: Small-animal adoption info at Intake: email to inquire",
+  "type_raw": "Rescue / adoption (small-animal arm of a cat rescue)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://catcafebk.com/small-animals/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

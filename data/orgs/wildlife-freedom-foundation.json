@@ -1,0 +1,73 @@
+{
+  "id": "wildlife-freedom-foundation",
+  "name": "Wildlife Freedom Foundation (WFF)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber",
+    "sanctuary"
+  ],
+  "animals": [
+    "wildlife",
+    "cat",
+    "bird-wild"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City; wildlife-rehab area + cat sanctuary on Roosevelt Island (SouthPoint Park)",
+  "zips": [
+    "10044"
+  ],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "wffny@wffny.org"
+    }
+  ],
+  "website": "https://www.wildlifefreedomfoundation.org",
+  "intake_urls": [
+    {
+      "url": "https://www.wildlifefreedomfoundation.org/contact/",
+      "label": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "WildlifeFreedomFoundation",
+      "url": "https://facebook.com/WildlifeFreedomFoundation"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYC 501(c)(3) (NYS Ag & Markets reg. RR350) with a state- and federally-licensed wildlife rehabilitator. Rescues, rehabilitates and releases injured/orphaned NYC wildlife; runs a wildlife-rehab area alongside its Roosevelt Island cat sanctuary. An in-city wildlife-rehab option (complements the Wild Bird Fund and WINORR). Contact by email; confirm species/capacity first. Phone: (no public phone; email) Intake: email wffny@wffny.org Intake: /rehabilitating-wildlife-2/",
+  "type_raw": "Wildlife rehabilitation (NYC-based, state + federally licensed) + cat sanctuaries",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.wildlifefreedomfoundation.org/contact/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

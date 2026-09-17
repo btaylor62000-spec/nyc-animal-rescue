@@ -1,0 +1,69 @@
+{
+  "id": "house-of-pancakes-reptile-rescue",
+  "name": "House of Pancakes Reptile Rescue (HoPRR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "reptile",
+    "amphibian",
+    "fish"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender",
+    "foster",
+    "medical-special-needs"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Poughkeepsie (Dutchess County, NY) + Lakewood, PA; regional - surrenders drop off in Poughkeepsie or Lakewood",
+  "zips": [
+    "12601"
+  ],
+  "region_note": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "phones": [],
+  "emails": [],
+  "website": "https://houseofpancakesrr.com",
+  "intake_urls": [
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYdJp4fr7_qXzWFo7vccytuWMqrPai9bDbdivtcPANoftl9w/viewform",
+      "label": "Adoption/foster app"
+    },
+    {
+      "url": "https://houseofpancakesrr.com"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "houseofpancakesrr",
+      "url": "https://instagram.com/houseofpancakesrr"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based 501(c)(3) focused on medically fragile / special-needs reptiles other rescues can't resource. Will NOT take any species native to New York (refers those to the DEC rehabber list) or aquatic turtles/leopard geckos/large snakes/sulcata tortoises. Surrender fee $50/animal (as of 2026-01-01); surrenders must be dropped in Poughkeepsie or Lakewood. Regional - flagged as not NYC-local but the nearest dedicated non-turtle reptile rescue. Phone: (no public phone; contact form + forms) Email: (via site contact form) Intake: surrender form + courtesy-rehoming request linked at Other channel: Etsy storefront Other channel: appears at NY Metro Reptile Expo (White Plains)",
+  "type_raw": "Reptile rescue / rehab / adoption (foster-based; special-needs focus)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://houseofpancakesrr.com/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

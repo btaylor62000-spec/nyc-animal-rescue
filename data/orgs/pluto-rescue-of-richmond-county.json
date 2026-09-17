@@ -1,0 +1,84 @@
+{
+  "id": "pluto-rescue-of-richmond-county",
+  "name": "P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island",
+  "zips": [
+    "10301",
+    "10302",
+    "10303",
+    "10304",
+    "10305",
+    "10306",
+    "10307",
+    "10308",
+    "10309",
+    "10310",
+    "10311",
+    "10312",
+    "10313",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "7182270553",
+      "display": "(718) 227-0553"
+    }
+  ],
+  "emails": [
+    {
+      "value": "plutorescuerc@gmail.com"
+    }
+  ],
+  "website": "https://www.plutorescue.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "PLUTO Rescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "No-kill 501(c)(3) since 2001. Cats + dogs (strays + owner surrender), full vetting. Runs a LOW-COST SPAY/NEUTER program + supports TNR for feral cats. Phone + email confirmed on own listings. Verified 2026-08-26. Intake: Pre-adopt form + home visit Intake: Sat adoptions 12-3 at Petco 2752 Veterans Rd W 10309 Other channel: PO Box 140889, Staten Island 10314 Other channel: contact Lisa Rooney",
+  "type_raw": "rescue+adoption / TNR / low-cost spay-neuter",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.plutorescue.com/",
+    "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

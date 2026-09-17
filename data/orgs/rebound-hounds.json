@@ -1,0 +1,72 @@
+{
+  "id": "rebound-hounds",
+  "name": "Rebound Hounds (Rebound Hounds Res-Q)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender",
+    "foster",
+    "medical-special-needs",
+    "senior",
+    "sanctuary",
+    "breed-specific"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn/NYC-based; pulls from NYC ACC shelter system",
+  "zips": [],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.reboundhounds.org",
+  "intake_urls": [
+    {
+      "url": "https://www.reboundhounds.org/adoption-application.html",
+      "label": "Apply"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "reboundhounds",
+      "url": "https://instagram.com/reboundhounds"
+    },
+    {
+      "platform": "facebook",
+      "handle": "ReboundHounds",
+      "url": "https://facebook.com/ReboundHounds"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2011 (EIN 27-3790447); ~3,000 dogs saved. Foster-based, no shelter; rehabilitates and rehomes dogs from the NYC/ACC shelter system. Runs a FOSPICE program (lifetime foster homes for seniors and terminal-medical dogs). Matches on lifestyle/energy/experience; screens app + references + vet ref + home visit, then follow-up. Fees: $500 small-breed/puppy <6mo, $400 adult, $300 senior 7+. Phone: (no public phone; contact via site) Email: (via site contact form)",
+  "type_raw": "Rescue+adoption (all-breed, foster-based) + Fospice",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.reboundhounds.org/adoption-application.html"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

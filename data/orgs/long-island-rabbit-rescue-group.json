@@ -1,0 +1,64 @@
+{
+  "id": "long-island-rabbit-rescue-group",
+  "name": "Long Island Rabbit Rescue Group (LIRRG)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "rabbit"
+  ],
+  "needs": [
+    "adoption",
+    "spay-neuter",
+    "referral"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Long Island (regional / NYC-adjacent)",
+  "zips": [],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "information@longislandrabbitrescue.org"
+    }
+  ],
+  "website": "https://www.longislandrabbitrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.longislandrabbitrescue.org/contact/information/",
+      "label": "Contact / info form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Long Island Rabbit Rescue Group"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3) based on Long Island. Rescues abused/neglected/abandoned rabbits, has them medically treated and spayed/neutered, and places them in loving indoor homes. Regional (Long Island) - flagged as NYC-adjacent, not NYC-local; a useful referral for the Queens/Nassau border and eastern NYC. Phone: (no public phone; email) Intake: email information@longislandrabbitrescue.org",
+  "type_raw": "Rescue / rehab / adoption (rabbits)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.longislandrabbitrescue.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

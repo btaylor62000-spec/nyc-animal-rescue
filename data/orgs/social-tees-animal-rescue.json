@@ -1,0 +1,76 @@
+{
+  "id": "social-tees-animal-rescue",
+  "name": "Social Tees Animal Rescue (S.T.A.R.)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "East Village, Manhattan-based; NYC",
+  "zips": [
+    "10009"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "adopt@socialteesnyc.org"
+    },
+    {
+      "value": "fostertoadopt@socialteesnyc.org"
+    }
+  ],
+  "website": "https://socialteesnyc.org",
+  "intake_urls": [
+    {
+      "url": "https://socialteesnyc.org/foster-to-adopt",
+      "label": "Foster-to-adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "socialtees",
+      "url": "https://instagram.com/socialtees"
+    },
+    {
+      "platform": "facebook",
+      "handle": "socialteesnyc",
+      "url": "https://facebook.com/socialteesnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) strictly no-kill, foster-based, from the East Village (office 443 E 9th St 10009). Pulls abandoned dogs and cats from overcrowded shelters, vets them, and rehomes. Known for a strong, well-run FOSTER-TO-ADOPT program (one-week trial with concierge-style support). Rescues large groups most Saturdays plus ad-hoc pulls. Consistent, community-integrated, quick to communicate. Phone: (no public phone; email preferred) Intake: Apply then email to process",
+  "type_raw": "Rescue+adoption (foster-based, no-kill) - dogs & cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://socialteesnyc.org/foster-to-adopt"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

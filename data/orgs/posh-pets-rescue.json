@@ -1,0 +1,79 @@
+{
+  "id": "posh-pets-rescue",
+  "name": "Posh Pets Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "senior"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Long Beach (LI) shelter + Westchester center; runs adoption events across NYC",
+  "zips": [],
+  "region_note": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "phones": [
+    {
+      "value": "5164317674",
+      "display": "(516) 431-7674"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@poshpetsrescueny.org"
+    },
+    {
+      "value": "dogadopt@poshpetsrescueny.org"
+    }
+  ],
+  "website": "https://poshpetsrescueny.org",
+  "intake_urls": [
+    {
+      "url": "https://www.shelterluv.com/matchme/adopt/POSH/Dog",
+      "label": "Dog app"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "poshpetsrescue",
+      "url": "https://instagram.com/poshpetsrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "poshpetsrescue",
+      "url": "https://facebook.com/poshpetsrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2006, dogs + cats, foster network. NOTE ON FOOTPRINT: its physical sites are Long Island (Long Beach, 770 Park Pl 11561, by appt) and a Westchester adoption center - NOT a NYC borough. Included because it runs regular off-site adoption events ACROSS NYC via a mobile adoption vehicle, so it's a real NYC-serving channel. Adoption = application + interview + home visit + references. Dog fees ~ $325 senior 8+, $425 adult 1-8, $550 puppy/purebred-mix. Confirm which NYC events are upcoming.",
+  "type_raw": "Rescue+adoption (foster-based + LI shelter); NYC via mobile events",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://poshpetsrescueny.org/contact/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

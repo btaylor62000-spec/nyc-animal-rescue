@@ -1,0 +1,62 @@
+{
+  "id": "ny-cat-warriors",
+  "name": "NY Cat Warriors (NYCW)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "bronx",
+    "manhattan",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs; MOST activity in Queens, Brooklyn & the Bronx",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [],
+  "website": "https://nycatwarriors.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycatwarriors",
+      "url": "https://instagram.com/nycatwarriors"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), ACC New Hope partner. Specializes in URGENT/COMPLEX MEDICAL cases + TNR. Own site states Brooklyn is a core service area (not just nominal citywide). Good route for a sick/injured street cat. Contact via site. Verified 2026-08-26. Intake: Contact / adoption via site Other channel: NYS-licensed rescue",
+  "type_raw": "rescue+adoption / TNR (multi-borough, medical focus)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nycatwarriors.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

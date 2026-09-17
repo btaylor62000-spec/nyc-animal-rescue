@@ -1,0 +1,73 @@
+{
+  "id": "bay-ridge-kittens",
+  "name": "Bay Ridge Kittens",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "neonatal",
+    "medical-special-needs"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bay Ridge and South Brooklyn",
+  "zips": [
+    "11209",
+    "11220",
+    "11228"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [
+    {
+      "url": "https://bit.ly/brkadopt",
+      "label": "jotform"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bayridgekittens",
+      "url": "https://instagram.com/bayridgekittens"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bayridgekittens",
+      "url": "https://facebook.com/bayridgekittens"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Tiny all-volunteer rescue = one person, Maggie Shnayerson (@bayridgekittens, 30K); also Medical Coordinator for Flatbush Cats (not a vet). SPECIALTY: critically ill / underage neonatal kittens + Bay Ridge TNR. Adopts kittens in pairs. Contact via IG/adoption form; Venmo @bayridgekittens; weekend adoptions at My Natural Pet Store, 8318 5th Ave. Textbook first-class solo rescuer. Re-verified 2026-08-26. Intake: Adoption app Other channel: Venmo @bayridgekittens Other channel: weekend adoptions at My Natural Pet Store, 8318 5th Ave",
+  "type_raw": "solo rescuer / TNR / neonatal rescue",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/brooklyn/bay-ridge-kittens-ny1588/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

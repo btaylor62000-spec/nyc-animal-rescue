@@ -1,0 +1,55 @@
+{
+  "id": "aspca-animal-poison-control-center",
+  "name": "ASPCA Animal Poison Control Center",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "exotic-vet",
+    "clinic"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "exotic-vet",
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):",
+  "phones": [
+    {
+      "value": "8884264435",
+      "display": "(888) 426-4435",
+      "label": "ASPCA Animal Poison Control Center"
+    }
+  ],
+  "emails": [],
+  "website": "https://aspca.org/pet-care/animal-poison-control",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "24/7",
+  "notes": "(888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Exotic-vet & emergency care — Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mighty-mutts-and-ollies-place",
+  "name": "Mighty Mutts & Ollie's Place",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-wide; Saturday adoption drive at Union Square",
+  "zips": [
+    "10002",
+    "11214"
+  ],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.mightymutts.org",
+  "intake_urls": [
+    {
+      "url": "https://mighty-mutts.squarespace.com/adopt",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "mightymutts",
+      "url": "https://instagram.com/mightymutts"
+    },
+    {
+      "platform": "facebook",
+      "handle": "mightymutts",
+      "url": "https://facebook.com/mightymutts"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3) no-kill (founder John Contino) rescuing NYC street/shelter dogs and cats. Dogs shown at a SATURDAY ADOPTION DRIVE at 14th St & Union Square West; cats at Ollie's Place (430 E 9th St). Application -> phone interview (within 14 days) -> home visit. NOTE: for all DOG adoptions they require permanent child-safety window guards on every window (they advise on install). PO Box 614 NY 10002 / PO Box 140139 Brooklyn 11214. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: 14th St & Union Sq West",
+  "type_raw": "Rescue+adoption (dogs & cats, no-kill)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mighty-mutts.squarespace.com/adopt"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

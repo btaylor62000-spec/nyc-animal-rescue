@@ -1,0 +1,77 @@
+{
+  "id": "advocat-rescue-inc",
+  "name": "AdvoCat Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Forest Hills / Rego Park / Kew Gardens, Queens; adopts to NYC Metro",
+  "zips": [
+    "11374",
+    "11375",
+    "11415",
+    "11418"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [
+    {
+      "value": "3476888901",
+      "display": "(347) 688-8901"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@advocatrescue.org"
+    }
+  ],
+  "website": "https://www.advocatrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.shelterluv.com/matchme/adopt/ADVR/Cat",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "advocatrescue",
+      "url": "https://instagram.com/advocatrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer foster-based 501(c)(3), grew from a Queens social-media rescuer network. Pulls cats/kittens from streets + kill shelters (creating shelter space), vets + socializes, then adopts. Queens-based, adopts NYC Metro. Phone + email confirmed on own site. Verified 2026-08-26. Intake: email info@ 'Interested in Fostering' Other channel: Best Friends + ACC New Hope partner",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.advocatrescue.org/about",
+    "https://www.idealist.org/en/nonprofit/cc1c1f7fc2fd421f9700037f1d2c240e-advocat-rescue-inc-forest-hills"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "kisos-pet-food-pantry",
+  "name": "Kiso's Pet Food Pantry (Brooklyn)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [],
+  "emails": [],
+  "website": "https://facebook.com/Kisos-Pet-Food-Pantry",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free pet food, focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.\n\nfree pet food, with a focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

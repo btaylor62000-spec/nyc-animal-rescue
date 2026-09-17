@@ -1,0 +1,86 @@
+{
+  "id": "new-beginning-animal-rescue",
+  "name": "New Beginning Animal Rescue (NBAR)",
+  "aka": [
+    "NYC New Beginning Animal Rescue (formerly NYC's Top Dog)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "The Bronx (physical facility); serves NYC + NY/NJ/CT",
+  "zips": [
+    "10462"
+  ],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [
+    {
+      "value": "3476913282",
+      "display": "(347) 691-3282"
+    },
+    {
+      "value": "3477978107",
+      "display": "(347) 797-8107"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adopt@nbanimalrescue.org"
+    }
+  ],
+  "website": "https://www.nbanimalrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "NBARthebronx",
+      "url": "https://facebook.com/NBARthebronx"
+    },
+    {
+      "platform": "instagram",
+      "handle": "nycnewbeginning",
+      "url": "https://instagram.com/nycnewbeginning"
+    },
+    {
+      "platform": "facebook",
+      "handle": "NYCNewBeginningAnimalRescue",
+      "url": "https://facebook.com/NYCNewBeginningAnimalRescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (formerly NYC's Top Dog, est. 2010), founder Pedro Rosario (16 yrs at NYC ACC). Bills itself as the only no-kill facility shelter in the Bronx; houses ~40 cats + ~60 dogs. Rare Bronx WALK-IN option. DISAMBIGUATION: unrelated 'New Beginnings Animal Rescue' orgs exist in TX/MS - this is the Bronx one. Verified 2026-08-26. Intake: Adoption via site/email Intake: walk-in facility Other channel: 2515 Newbold Ave, Bronx 10462 Other channel: founder Pedro Rosario\n\nVolunteer-based no-kill shelter at 2515 Newbold Ave, Bronx 10462. Frequently described as one of the very few dedicated rescue shelters actually BASED in the Bronx. Takes in unwanted, abandoned, abused, and stray animals and rehomes them; also runs community programs. Confirm current intake capacity and hours before referring - small volunteer operation. (Formerly known as NYC's Top Dog.) Email: (via site / social) Intake: Adopt/volunteer via site & social",
+  "type_raw": "rescue+adoption (physical shelter)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/89777-new-beginning-animal-rescue-bronx-new-york",
+    "https://www.idealist.org/en/nonprofit/19901e2866aa4d088d9053838710e9e2-nyc-new-beginning-animal-rescue-bronx"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,47 @@
+{
+  "id": "animal-relief-fund",
+  "name": "Animal Relief Fund (ARF)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [],
+  "emails": [],
+  "website": "https://animalrelieffund.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "NYC org providing pet food to people in need. animalrelieffund.org.\n\nNYC organization providing pet food to people in need. animalrelieffund.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

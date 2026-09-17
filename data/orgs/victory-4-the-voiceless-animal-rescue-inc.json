@@ -1,0 +1,83 @@
+{
+  "id": "victory-4-the-voiceless-animal-rescue-inc",
+  "name": "Victory 4 the Voiceless Animal Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs",
+    "retrovirus"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island",
+  "zips": [
+    "10301",
+    "10302",
+    "10303",
+    "10304",
+    "10305",
+    "10306",
+    "10307",
+    "10308",
+    "10309",
+    "10310",
+    "10311",
+    "10312",
+    "10313",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "victory4thevoiceless@gmail.com"
+    },
+    {
+      "value": "adoptvictory4thevoiceless@gmail.com",
+      "label": "adoptions"
+    }
+  ],
+  "website": "https://www.victory4thevoiceless.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Victory4thevoiceless",
+      "url": "https://facebook.com/Victory4thevoiceless"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Volunteer-based no-kill 501(c)(3) (EIN 47-1251216); all lead members TNR-certified with 10+ yrs experience (formed from the SI Abandoned Cats hoarding rescue). TNR + rescue + adoption, cats & dogs, FIV+/special-needs cats vetted. Email confirmed on own listings. Verified 2026-08-26. Intake: Contact via email Intake: adoption application on site Other channel: PO Box 61544, Staten Island NY 10306",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.victory4thevoiceless.com/contact",
+    "https://www.guidestar.org/profile/47-1251216"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

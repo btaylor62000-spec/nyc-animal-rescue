@@ -1,0 +1,47 @@
+{
+  "id": "safe-place-for-pets",
+  "name": "Safe Place for Pets (RedRover)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "phones": [],
+  "emails": [],
+  "website": "https://safeplaceforpets.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "searchable directory of programs by ZIP. safeplaceforpets.org.\n\nsearchable directory of programs ready to help survivors and pets, by ZIP. safeplaceforpets.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

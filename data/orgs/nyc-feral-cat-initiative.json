@@ -1,0 +1,45 @@
+{
+  "id": "nyc-feral-cat-initiative",
+  "name": "NYC Feral Cat Initiative (Bideawee)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "trap-bank",
+    "tnr"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)",
+  "phones": [],
+  "emails": [],
+  "website": "https://nycfci.happyfox.com/new",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "trap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

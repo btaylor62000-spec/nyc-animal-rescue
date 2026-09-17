@@ -1,0 +1,73 @@
+{
+  "id": "mama-chris-animal-rescue-inc",
+  "name": "Mama Chris Animal Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "colony-care",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island community",
+  "zips": [
+    "10301",
+    "10302",
+    "10303",
+    "10304",
+    "10305",
+    "10306",
+    "10307",
+    "10308",
+    "10309",
+    "10310",
+    "10311",
+    "10312",
+    "10313",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "3479832240",
+      "display": "(347) 983-2240"
+    }
+  ],
+  "emails": [],
+  "website": "https://mamachrisrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 82-3313014), 'every stray is worthy.' TNR of SI feral colonies (pulls friendly cats/kittens to socialize + adopt) + helps caretakers with spay/neuter, resources and support to run their own colonies. Text preferred. Verified 2026-08-26. Phone: text Intake: Adoption application on site Intake: colony-caretaker support via text/email Other channel: FB /mamachrisrescue1 (11K) Other channel: PO Box 70059, Staten Island 10307",
+  "type_raw": "TNR / rescue+adoption / colony support",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mamachrisrescue.org/",
+    "https://www.guidestar.org/profile/82-3313014"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

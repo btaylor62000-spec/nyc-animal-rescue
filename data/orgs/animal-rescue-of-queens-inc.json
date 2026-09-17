@@ -1,0 +1,77 @@
+{
+  "id": "animal-rescue-of-queens-inc",
+  "name": "Animal Rescue of Queens, Inc. (ARQ)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet",
+    "adoption",
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "education",
+    "surrender",
+    "foster",
+    "behavior-training",
+    "owner-support"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens-wide (based Astoria)",
+  "zips": [],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://arqadopt.org",
+  "intake_urls": [
+    {
+      "url": "https://arqadopt.org"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "animalrescueofqueens",
+      "url": "https://instagram.com/animalrescueofqueens"
+    },
+    {
+      "platform": "facebook",
+      "handle": "AnimalRescueofQueens",
+      "url": "https://facebook.com/AnimalRescueofQueens"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2013 (EIN 45-3123005). TNR + spay/neuter assistance + COLONY CARETAKER SUPPORT (food, winter shelters, emergency vet care) + adoption + education. Building an adoption center. Queens-wide. Verified 2026-08-26. Intake: Contact + adoption via Other channel: Best Friends partner\n\n501(c)(3) since 2013, genuinely Queens-based. Dogs and cats, foster-based now, actively building a dedicated Adoption Center with 'Real Life Rooms' (home-furnished spaces) and playgroups to teach city-living skills for smoother transitions. Uses encouragement-based training. Also offers spay/neuter assistance + programs to keep pets with their families (surrender prevention). A Best Friends Network partner. Confirm current dog availability. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site Intake: spay/neuter assistance + retention programs",
+  "type_raw": "TNR / rescue+adoption / colony support",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://arqadopt.org/",
+    "https://www.guidestar.org/profile/45-3123005"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

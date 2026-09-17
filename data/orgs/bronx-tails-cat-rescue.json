@@ -1,0 +1,71 @@
+{
+  "id": "bronx-tails-cat-rescue",
+  "name": "Bronx Tails Cat Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "tnr",
+    "colony-care",
+    "retrovirus",
+    "transport"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "bronx",
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bronx & Harlem (primary); own listing notes 'a little bit of Brooklyn' + Westchester",
+  "zips": [],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "bronxtailscatrescue@gmail.com",
+      "label": "general"
+    },
+    {
+      "value": "tnrjamie@gmail.com",
+      "label": "TNR"
+    }
+  ],
+  "website": "https://bronxtails.org",
+  "intake_urls": [
+    {
+      "url": "https://bit.ly/btcradopt",
+      "label": "Adopt"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), no shelter, no surrenders. TNR + colony care + rescue in Bronx/Harlem; runs ASPCA TNR transports. FeLV+ cat adoption specialty. Bronx-primary but adopts to anyone in/around NYC and does some Brooklyn. Active 2026. Verified 2026-08-26. Intake: TNR advice via FB/IG DM Other channel: IG/FB @bronxtailscatrescue",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bronxtails.org/about/",
+    "https://www.adoptapet.com/shelter/83848-bronx-tails-cat-rescue-bronx-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,60 @@
+{
+  "id": "brooklyn-paws-foundation",
+  "name": "Brooklyn Paws Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (services within NY State, focus Brooklyn)",
+  "zips": [],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://brooklynpawsfoundation.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "brooklynpawsfoundation",
+      "url": "https://instagram.com/brooklynpawsfoundation"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) no-kill (EIN 87-3422366), ACC New Hope partner. Provides rescue, rehab, TNR, spay/neuter, fostering and placement, focused on Brooklyn - fills gaps where government and other nonprofits fall short. Note: site content skews heavily to cats, but organization scope is stated as dogs + cats; confirm current dog availability. Foster-based, no walk-in shelter. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Foster/adopt/volunteer forms on site",
+  "type_raw": "Rescue+adoption / TNR (dogs & cats, foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://brooklynpawsfoundation.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

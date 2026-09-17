@@ -1,0 +1,68 @@
+{
+  "id": "city-critters",
+  "name": "City Critters",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan-based; serves NYC area, pulls from citywide ACC",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "adoptions@citycritters.org"
+    }
+  ],
+  "website": "https://www.citycritters.org",
+  "intake_urls": [
+    {
+      "url": "https://citycritters.org/adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "citycritters",
+      "url": "https://instagram.com/citycritters"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small all-volunteer 501(c)(3) since 1994, no shelter. Cat rescue/adoption + some TNR. Primarily Manhattan - confirm Brooklyn capacity before relying for a BK case. Intake: Adoption application at Other channel: in-person meets PetSmart Flatiron (24th & Broadway)",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.citycritters.org/adopt"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

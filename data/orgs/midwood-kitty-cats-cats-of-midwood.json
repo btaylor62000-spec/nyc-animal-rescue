@@ -1,0 +1,59 @@
+{
+  "id": "midwood-kitty-cats-cats-of-midwood",
+  "name": "Midwood Kitty Cats / Cats of Midwood",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Midwood",
+  "zips": [
+    "11230"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "midwood_kittycats",
+      "url": "https://instagram.com/midwood_kittycats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local Midwood group (Cats of Midwood Inc is a Best Friends network partner). Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / TNR",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/",
+    "https://bestfriends.org/partners/cats-midwood-inc"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

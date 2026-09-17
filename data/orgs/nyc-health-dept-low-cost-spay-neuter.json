@@ -1,0 +1,59 @@
+{
+  "id": "nyc-health-dept-low-cost-spay-neuter",
+  "name": "NYC Health Dept - Low-Cost Spay/Neuter (APCP)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (contracted through ASPCA, designated zips)",
+  "zips": [],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "311",
+      "display": "311"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "NYC's official low-cost spay/neuter resource page (Animal Population Control Program funds the ASPCA-contracted services). Good authoritative starting point + lists additional providers. Verified 2026-08-26. Intake: NYC DOHMH Animal Population Control Program - free/low-cost s/n via ASPCA mobile/clinics Intake: call 311 or see page Other channel: Official city resource list (updates as providers change)",
+  "type_raw": "municipal spay-neuter program (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

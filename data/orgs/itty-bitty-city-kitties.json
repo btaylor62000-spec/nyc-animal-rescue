@@ -1,0 +1,69 @@
+{
+  "id": "itty-bitty-city-kitties",
+  "name": "Itty Bitty City Kitties",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "tnr",
+    "low-cost-vet",
+    "neonatal"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "manhattan",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Rockaway Beach, Queens facility; specialist neonatal resource used citywide",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "ittybittycitykitties@gmail.com"
+    }
+  ],
+  "website": "https://www.ittybittycitykitties.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "ittybittycitykitties",
+      "url": "https://instagram.com/ittybittycitykitties"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "100%-volunteer 501(c)(3) (EIN 85-4284614). SPECIALIST: neonatal/orphaned bottle-baby kittens + mom-and-litter care, with a dedicated nursery facility (rare + high-value). Also TNR support + low-cost vet access. Queens-based but the go-to resource when a Brooklyn rescuer pulls kittens too young to survive in foster. Confirm current intake capacity (kitten-season dependent). Verified 2026-08-26. Intake: Adoption application on site Intake: contact via email/Venmo @ittykitties Other channel: state-of-the-art nursery suites",
+  "type_raw": "neonatal kitten nursery / rescue+adoption / TNR support",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.ittybittycitykitties.org/",
+    "https://www.guidestar.org/profile/85-4284614"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

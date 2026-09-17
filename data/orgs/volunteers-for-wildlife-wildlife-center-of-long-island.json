@@ -1,0 +1,67 @@
+{
+  "id": "volunteers-for-wildlife-wildlife-center-of-long-island",
+  "name": "Volunteers for Wildlife / Wildlife Center of Long Island",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "wildlife",
+    "pigeon",
+    "reptile",
+    "amphibian"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "education"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Long Island (Nassau & western Suffolk); at Bailey Arboretum, Locust Valley",
+  "zips": [
+    "11560"
+  ],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "5166740982",
+      "display": "(516) 674-0982"
+    }
+  ],
+  "emails": [
+    {
+      "value": "wildlifeadvisory@gmail.com"
+    }
+  ],
+  "website": "https://www.volunteersforwildlife.org",
+  "intake_urls": [
+    {
+      "url": "https://wildlifecenterli.org"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) wildlife hospital & education center founded 1982; ~2,000+ animals/yr and 10,000+ emergency calls a year. The primary injured/orphaned-wildlife resource for Long Island (Nassau & western Suffolk). Federally licensed, so can take most species. Doesn't do pickups except very locally - call first. Regional (Long Island) - flagged as NYC-adjacent, not NYC-local; useful for eastern-Queens/LI-border situations. Intake: Call in advance 516-674-0982 (8am-4pm Mon-Fri; email checked after hours). 194 Bayville Rd, Locust Valley. Also Other channel: IG/FB Volunteers for Wildlife / Wildlife Center of Long Island",
+  "type_raw": "Wildlife hospital & rehabilitation (federally licensed)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,76 @@
+{
+  "id": "flatbush-cats",
+  "name": "Flatbush Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "emergency-vet",
+    "adoption",
+    "surrender",
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Flatbush and East Flatbush (own-project area); Brooklyn-wide via Flatbush Vet",
+  "zips": [
+    "11203",
+    "11210",
+    "11225",
+    "11226"
+  ],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "help@flatbushcats.org"
+    },
+    {
+      "value": "adopt-a-cat@flatbushcats.org"
+    },
+    {
+      "value": "contact@flatbushvet.org",
+      "label": "clinic"
+    }
+  ],
+  "website": "https://www.flatbushcats.org",
+  "intake_urls": [
+    {
+      "url": "https://www.flatbushcats.org/help",
+      "label": "service request form"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3), founded 2018. Direct TNR/rescue help LIMITED to Flatbush/East Flatbush (11203, 11225, 11226, 11210 north of Ave H); ~24hr response, not an emergency line, priority to TNR-certified volunteers; refers others to Mayor's Alliance/Neighborhood Cats. NOT an intake shelter. Runs Flatbush Vet (see clinic row) - Brooklyn-wide low-cost spay/neuter, 7,500+ surgeries/yr. Re-verified 2026-08-26. Other channel: IG/FB @flatbushcatsTNR Other channel: mailing 2319 Nostrand Ave #100015, Brooklyn 11210",
+  "type_raw": "TNR / rescue+adoption / spay-neuter clinic",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.flatbushcats.org/help"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

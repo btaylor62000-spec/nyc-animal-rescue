@@ -1,0 +1,66 @@
+{
+  "id": "loving-touch-inc",
+  "name": "Loving Touch, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "spay-neuter",
+    "senior"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Flushing & surrounding Queens",
+  "zips": [
+    "11365"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [
+    {
+      "value": "7188209220",
+      "display": "(718) 820-9220"
+    }
+  ],
+  "emails": [
+    {
+      "value": "puppygrl52@gmail.com"
+    },
+    {
+      "value": "admin@lovingtouchrescue.org"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer foster-based 501(c)(3). Cats + dogs; helps owners who can no longer keep pets, spays/neuters all rescues, does courtesy posts (incl. senior cats). Small, modest web presence - reach via email. Verified 2026-08-26. Intake: Contact by email Intake: foster-to-adopt (~1 month) + home check Intake: adoptables on Petfinder Other channel: Petfinder: loving-touch-inc NY151 Other channel: PO Box 650404, Flushing 11365",
+  "type_raw": "rescue+adoption (foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/flushing/loving-touch-inc-ny151/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

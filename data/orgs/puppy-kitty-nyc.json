@@ -1,0 +1,83 @@
+{
+  "id": "puppy-kitty-nyc",
+  "name": "Puppy Kitty NYC (PKNYC)",
+  "aka": [
+    "PuppyKitty NYC"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "manhattan",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (foster homes citywide); base Middle Village, Queens",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@puppykittynyc.org"
+    },
+    {
+      "value": "volunteers@puppykittynyc.com"
+    },
+    {
+      "value": "foodbank@puppykittynyc.org"
+    }
+  ],
+  "website": "https://www.puppykittynyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "puppykittynycity",
+      "url": "https://instagram.com/puppykittynycity"
+    },
+    {
+      "platform": "facebook",
+      "handle": "puppykittynycity",
+      "url": "https://facebook.com/puppykittynycity"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), founded 2014. Takes critically sick/injured street cats others turn away; TNR a primary focus. Small shelter + foster network. High volume. Intake: //www.puppykittynyc.org/contact-us.html\n\nruns a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org - puppykittynyc.org.\n\nruns a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org, puppykittynyc.org.",
+  "type_raw": "rescue+adoption / TNR (multi-borough)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.puppykittynyc.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

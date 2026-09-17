@@ -1,0 +1,73 @@
+{
+  "id": "stray-from-the-heart",
+  "name": "Stray from the Heart",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; adopts NY metro",
+  "zips": [
+    "10025"
+  ],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@strayfromtheheart.org"
+    }
+  ],
+  "website": "https://www.strayfromtheheart.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "strayfromtheheart",
+      "url": "https://instagram.com/strayfromtheheart"
+    },
+    {
+      "platform": "facebook",
+      "handle": "strayfromtheheart",
+      "url": "https://facebook.com/strayfromtheheart"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC foster-based dog rescue (Upper West Side mailing) rescuing strays and shelter dogs, rehabilitating them in foster homes, and rehoming across the NY metro area. Foster-based, no facility. Long-running group. Confirm current availability via site. Phone: (no public phone; contact via site) Intake: Adopt/foster via site",
+  "type_raw": "Rescue+adoption (foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.strayfromtheheart.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

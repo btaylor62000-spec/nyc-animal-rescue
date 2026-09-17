@@ -1,0 +1,58 @@
+{
+  "id": "amc",
+  "name": "AMC (Schwarzman Animal Medical Center)",
+  "aka": [
+    "AMC"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):",
+  "phones": [
+    {
+      "value": "2128388100",
+      "display": "(212) 838-8100"
+    }
+  ],
+  "emails": [
+    {
+      "value": "funds@amcny.org"
+    }
+  ],
+  "website": "https://amcny.org/financial-assistance",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Honey Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nKiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.\n\nCharlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Financial aid & low-cost care — EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

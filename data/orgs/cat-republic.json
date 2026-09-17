@@ -1,0 +1,84 @@
+{
+  "id": "cat-republic",
+  "name": "Cat Republic",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "referral-hub"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "education",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "South Brooklyn: Borough Park, Bay Ridge, Bensonhurst, Gravesend, Midwood, Brighton Beach, Sheepshead Bay, Marine Park; also Park Slope/Gowanus. Based Sunset Park & Kensington",
+  "zips": [
+    "11204",
+    "11209",
+    "11214",
+    "11218",
+    "11220",
+    "11223",
+    "11224",
+    "11229",
+    "11234",
+    "11235"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [
+    {
+      "value": "9293593765",
+      "display": "(929) 359-3765"
+    }
+  ],
+  "emails": [
+    {
+      "value": "hello@catrepublic.com"
+    }
+  ],
+  "website": "https://catrepublic.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "catrepublic",
+      "url": "https://instagram.com/catrepublic"
+    },
+    {
+      "platform": "facebook",
+      "handle": "catrepublicnyc",
+      "url": "https://facebook.com/catrepublicnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 82-2880856, NYS Charities reg 46-53-49), founders Soma & Jen (of Brooklyn Brainery), based Sunset Park & Kensington. Covers the widest South Brooklyn footprint; will connect further-away requests to other orgs. Produces multilingual TNR outreach materials + a TNR-nonprofit startup guide. Strong first call for South/SW Brooklyn. Re-verified 2026-08-26 (service area confirmed on own site). Intake: //forms.gle/8w2N9jJLQWvGTRe5A Intake: email/call/IG for help",
+  "type_raw": "TNR / rescue+adoption / referral hub",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://catrepublic.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

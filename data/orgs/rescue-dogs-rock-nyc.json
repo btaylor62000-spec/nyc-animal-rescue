@@ -1,0 +1,70 @@
+{
+  "id": "rescue-dogs-rock-nyc",
+  "name": "Rescue Dogs Rock NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender",
+    "foster",
+    "medical-special-needs",
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; national intake, adopts NY metro + beyond",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@rescuedogsrocknyc.org"
+    }
+  ],
+  "website": "https://rescuedogsrocknyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "rescuedogsrocknyc",
+      "url": "https://instagram.com/rescuedogsrocknyc"
+    },
+    {
+      "platform": "facebook",
+      "handle": "RescueDogsRockNYC",
+      "url": "https://facebook.com/RescueDogsRockNYC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC-based, high-volume rescue known for taking in severe medical and cruelty cases from overcrowded shelters nationwide and rehabilitating them in NYC-area foster homes. Foster-based. A referral option for critical-medical dogs, though confirm current capacity given intake volume. Verify contact details via the site before urgent handoff. Phone: (no public phone; email preferred) Intake: Adopt/foster/donate via site",
+  "type_raw": "Rescue+adoption (medical/critical cases; foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://rescuedogsrocknyc.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,74 @@
+{
+  "id": "meowsquad-nyc",
+  "name": "MeowSquad NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn and Queens (foster-based; volunteers tri-state)",
+  "zips": [],
+  "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@meowsquadnyc.org"
+    },
+    {
+      "value": "adoptions@meowsquadnyc.org"
+    },
+    {
+      "value": "meowsquad.nyc@gmail.com"
+    }
+  ],
+  "website": "https://www.meowsquadnyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "meowsquad.nyc",
+      "url": "https://instagram.com/meowsquad.nyc"
+    },
+    {
+      "platform": "facebook",
+      "handle": "MeowSquadNYC",
+      "url": "https://facebook.com/MeowSquadNYC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Women-run 501(c)(3) (EIN 84-2533806), founded 2019, foster-based. TNR + fostering across Brooklyn & Queens; also relocates un-returnable cats to working/barn homes. STATUS FLAG (re-verified 2026-08-26): own site says NOT taking new TNR requests right now - 'at max capacity,' expanding facilities. Kept in - adoption/foster/surrender/working-cat forms still open, and TNR may reopen. Base is in Queens (Howard Beach). Intake: //linktr.ee/Meowsquadnyc Other channel: base Howard Beach, Queens 11414",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.meowsquadnyc.org/adoptions"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BROOKLYN-WIDE (serve all of Kings County)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

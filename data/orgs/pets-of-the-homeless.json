@@ -1,0 +1,45 @@
+{
+  "id": "pets-of-the-homeless",
+  "name": "Pets of the Homeless",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [],
+  "emails": [],
+  "website": "https://petsofthehomeless.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free pet food and vet care through partner sites for people who are homeless or at risk. petsofthehomeless.org.\n\norg) - national org providing FREE pet food + vet/dental/emergency care specifically for pets of homeless + at-risk people; find NYC-area donation/host sites on their map.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

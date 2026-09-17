@@ -1,0 +1,47 @@
+{
+  "id": "sheltering-animals-and-families-together",
+  "name": "Sheltering Animals & Families Together (SAF-T)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "phones": [],
+  "emails": [],
+  "website": "https://alliephillips.com/saf-tprogram",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "helps DV shelters house pets on-site. alliephillips.com/saf-tprogram.\n\nhelps DV shelters house pets on-site; alliephillips.com/saf-tprogram.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

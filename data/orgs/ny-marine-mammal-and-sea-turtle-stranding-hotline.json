@@ -1,0 +1,75 @@
+{
+  "id": "ny-marine-mammal-and-sea-turtle-stranding-hotline",
+  "name": "NY Marine Mammal & Sea Turtle Stranding Hotline (NY Marine Rescue Center)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber",
+    "hotline"
+  ],
+  "animals": [
+    "wildlife",
+    "reptile",
+    "marine"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "legal"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "NY coastal waters incl. NYC shorelines; facility Riverhead (Long Island)",
+  "zips": [
+    "11901"
+  ],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "6313699829",
+      "display": "(631) 369-9829",
+      "label": "24-hr stranding hotline"
+    }
+  ],
+  "emails": [
+    {
+      "value": "mmontello@nymarinerescue.org",
+      "label": "program"
+    }
+  ],
+  "website": "https://www.nymarinerescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nymarinerescue",
+      "url": "https://instagram.com/nymarinerescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NY's sole facility permitted to rehabilitate marine mammals and sea turtles. If you see a seal, whale, dolphin or sea turtle ashore, keep your distance and call the hotline - do NOT attempt rescue. Hauled-out seals resting on a beach are often healthy. Intake: Report a stranded/distressed marine mammal or sea turtle to the hotline 631-369-9829",
+  "type_raw": "Marine-mammal & sea-turtle stranding response (state's only such facility)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://dec.ny.gov/news/press-releases/2023/1/dec-urges-new-yorkers-to-avoid-close-encounters-with-marine-mammals"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

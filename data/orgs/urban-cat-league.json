@@ -1,0 +1,68 @@
+{
+  "id": "urban-cat-league",
+  "name": "Urban Cat League",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "neonatal",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC citywide (Manhattan-origin); education & TNR support, not a Brooklyn field-response group",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [],
+  "website": "https://urbancatleague.org",
+  "intake_urls": [
+    {
+      "url": "https://urbancatleague.org/contact-us/",
+      "label": "Contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "urbancatleague",
+      "url": "https://instagram.com/urbancatleague"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 91-2185105). Focus: community-cat education (taming feral kittens, bottle-feeding, winter shelters), TNR certification support, and working-cat placement for un-adoptable cats. More a support/education resource than hands-on Brooklyn trapping. Contact via form. Verified 2026-08-26. Other channel: YouTube (taming/socialization how-tos)",
+  "type_raw": "TNR support / education / working-cat placement (citywide)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://urbancatleague.org/contact-us/",
+    "https://www.guidestar.org/profile/91-2185105"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

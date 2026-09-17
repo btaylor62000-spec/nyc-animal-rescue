@@ -1,0 +1,53 @@
+{
+  "id": "acc-food-pantry-the-aspca-food-bank-for-ny",
+  "name": "ACC food pantry (Bronx Resource Center) + the ASPCA / Food Bank For NY",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "food-assistance"
+  ],
+  "boroughs": [
+    "bronx",
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "FOOD & SUPPLY help (species-appropriate):",
+  "phones": [],
+  "emails": [],
+  "website": "https://foodbanknyc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "ACC food pantry (Bronx Resource Center) + the ASPCA / Food Bank For NYC partnership (250+ pantries citywide via foodbanknyc.org) distribute pet food - ask whether they stock rabbit/small-animal/bird food specifically.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Financial aid & low-cost care — FOOD & SUPPLY help (species-appropriate):",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

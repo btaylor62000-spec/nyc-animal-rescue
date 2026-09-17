@@ -1,0 +1,72 @@
+{
+  "id": "urban-utopia-wildlife-rehabilitation",
+  "name": "Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]",
+  "aka": [
+    "Urban Utopia Wildlife Rehabilitation (UUWR)  [ON HIATUS - info resource]"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber",
+    "government",
+    "directory"
+  ],
+  "animals": [
+    "wildlife",
+    "rabbit"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (volunteer, home-based network; no facility)",
+  "zips": [],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "6464816259",
+      "display": "(646) 481-6259"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@urbanutopiawildlife.org"
+    }
+  ],
+  "website": "https://www.urbanutopiawildlife.org",
+  "intake_urls": [
+    {
+      "url": "https://www.urbanutopiawildlife.org/local-rehabbers",
+      "label": "Found a distressed animal"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) volunteer, home-based NYC wildlife-mammal group. IMPORTANT: currently ON HIATUS from active rehabilitation per its own site - serves mainly as an information resource. Kept in the file because its Local Rehabbers page is a genuinely useful by-species, by-county NYC-area rehabber directory. Note UUWR documents that there are NO NYC-licensed rehabbers for raccoons, skunks or bats (Rabies Vector Species) - those go to surrounding counties via the DEC list; for RVS in the city call 311 / Urban Park Rangers. Intake: guidance + NYC/Nassau/Suffolk/Westchester rehabber spreadsheet at Intake: /faq Other channel: IG/FB @urbanutopiawildlife",
+  "type_raw": "Wildlife info resource + NYC rehabber directory (rehab currently on hiatus)",
+  "confidence": "Medium",
+  "status": "hiatus",
+  "status_note": "Source says this organization is paused or on hiatus.",
+  "source_urls": [
+    "https://www.urbanutopiawildlife.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

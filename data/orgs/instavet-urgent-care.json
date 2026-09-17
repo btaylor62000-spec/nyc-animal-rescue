@@ -1,0 +1,59 @@
+{
+  "id": "instavet-urgent-care",
+  "name": "InstaVet Urgent Care",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11101"
+  ],
+  "region_note": "QUEENS - 24-hour ER",
+  "phones": [
+    {
+      "value": "9175252579",
+      "display": "(917) 525-2579"
+    }
+  ],
+  "emails": [],
+  "website": "https://instavet.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "44-16 23rd St",
+    "zip": "11101"
+  },
+  "hours": null,
+  "notes": "44-16 23rd St, LIC 11101 - (917) 525-2579 - call/site for hours.\n\n44-16 23rd St, Long Island City 11101. (917) 525-2579. instavet.com (call/site for hours).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — QUEENS - 24-hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

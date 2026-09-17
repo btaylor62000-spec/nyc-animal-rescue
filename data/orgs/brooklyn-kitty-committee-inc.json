@@ -1,0 +1,55 @@
+{
+  "id": "brooklyn-kitty-committee-inc",
+  "name": "Brooklyn Kitty Committee, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (general)",
+  "zips": [],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [],
+  "website": "https://brooklynkittycommittee.bigcartel.com/",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "brooklynkittycommittee",
+      "url": "https://instagram.com/brooklynkittycommittee"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) foster-based cat rescue. Structured adoption process (virtual interview, foster-to-adopt if resident pets). No public phone/email; apply via form/IG. Intake: Adoption application via Petfinder / site",
+  "type_raw": "rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/brooklyn/brooklyn-kitty-committee-ny1613/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

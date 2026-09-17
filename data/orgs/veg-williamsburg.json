@@ -1,0 +1,61 @@
+{
+  "id": "veg-williamsburg",
+  "name": "VEG Williamsburg",
+  "aka": [
+    "VEG - Williamsburg"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11249"
+  ],
+  "region_note": "BROOKLYN - 24 hour ER",
+  "phones": [
+    {
+      "value": "9174236444",
+      "display": "(917) 423-6444"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "87 Kent Ave",
+    "zip": "11249"
+  },
+  "hours": "24/7",
+  "notes": "87 Kent Ave 11249 - (917) 423-6444 - 24/7.\n\n87 Kent Ave, Brooklyn 11249. (917) 423-6444. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

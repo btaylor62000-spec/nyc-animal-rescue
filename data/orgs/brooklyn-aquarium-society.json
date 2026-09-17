@@ -1,0 +1,64 @@
+{
+  "id": "brooklyn-aquarium-society",
+  "name": "Brooklyn Aquarium Society (BASNY)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "club-society",
+    "rescue-foster"
+  ],
+  "animals": [
+    "fish",
+    "reptile",
+    "farm",
+    "invertebrate"
+  ],
+  "needs": [
+    "surrender",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn / NYC; meets at New York Aquarium Education Hall, Coney Island",
+  "zips": [
+    "11224"
+  ],
+  "region_note": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.basny.org",
+  "intake_urls": [
+    {
+      "url": "https://basny.org/events"
+    }
+  ],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Brooklyn Aquarium Society"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Non-profit aquarium society founded 1911; monthly meetings (2nd Friday, except summer) with a live auction of donated fish, plants and corals - the practical way NYC aquarists rehome fish and get set-up advice. Not a formal rescue, but a real, active NYC venue for placing aquatic livestock responsibly. NEVER release aquarium fish/plants into local waters (invasive + illegal). Phone: (via basny.org contacts) Email: (via basny.org about-contacts) Intake: Rehome fish/plants/corals by donating to the monthly live auction (2nd Friday, New York Aquarium Education Hall, 610 Surf Ave, Brooklyn) Intake: members get a 50/50 split on livestock. Details + contacts at  and /about-contacts Other channel: basny.org",
+  "type_raw": "Aquarium hobbyist society - rehoming via monthly auctions",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.basny.org/resources/aquarium-societies"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

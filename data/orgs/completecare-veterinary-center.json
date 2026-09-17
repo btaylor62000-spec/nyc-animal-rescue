@@ -1,0 +1,59 @@
+{
+  "id": "completecare-veterinary-center",
+  "name": "CompleteCare Veterinary Center",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10301"
+  ],
+  "region_note": "STATEN ISLAND - 24 hour ER",
+  "phones": [
+    {
+      "value": "7187204211",
+      "display": "(718) 720-4211"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "1293 Clove Rd",
+    "zip": "10301"
+  },
+  "hours": "24 hours",
+  "notes": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — STATEN ISLAND - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

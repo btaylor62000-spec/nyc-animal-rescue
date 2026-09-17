@@ -1,0 +1,69 @@
+{
+  "id": "paws-of-hope-nyc",
+  "name": "Paws of Hope NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (East New York / citywide foster network)",
+  "zips": [
+    "11239"
+  ],
+  "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "phones": [],
+  "emails": [],
+  "website": "https://pawsofhopenyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "pawsofhopenyc",
+      "url": "https://instagram.com/pawsofhopenyc"
+    },
+    {
+      "platform": "facebook",
+      "handle": "PAWSOFHOPENYC",
+      "url": "https://facebook.com/PAWSOFHOPENYC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based Brooklyn rescue (all cats in foster homes) - rescue + medical care + TNR support (EIN 85-0996451). Structured adoption (application, interview, home check). No public phone/email; apply via form / DM. Intake: Adoption application via Petfinder Intake: email list signup on site",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://pawsofhopenyc.org/",
+    "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

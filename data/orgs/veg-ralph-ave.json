@@ -1,0 +1,61 @@
+{
+  "id": "veg-ralph-ave",
+  "name": "VEG Ralph Ave",
+  "aka": [
+    "VEG - Ralph Ave"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11234"
+  ],
+  "region_note": "BROOKLYN - 24 hour ER",
+  "phones": [
+    {
+      "value": "7186776700",
+      "display": "(718) 677-6700"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "1950 Ralph Ave",
+    "zip": "11234"
+  },
+  "hours": "24/7",
+  "notes": "1950 Ralph Ave 11234 - (718) 677-6700 - 24/7 (you stay with your pet).\n\n1950 Ralph Ave, Brooklyn 11234. (718) 677-6700. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

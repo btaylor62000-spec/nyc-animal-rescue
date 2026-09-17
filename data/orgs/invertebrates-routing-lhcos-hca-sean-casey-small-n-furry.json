@@ -1,0 +1,81 @@
+{
+  "id": "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry",
+  "name": "Invertebrates - routing (hermit crabs, tarantulas, insects): LHCOS / HCA / Sean Casey / Small n Furry",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "referral-hub"
+  ],
+  "animals": [
+    "invertebrate"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC (via national programs that connect local rehomers & adopters) + a regional NJ exotic rescue",
+  "zips": [],
+  "region_note": "INVERTEBRATES (tarantulas, hermit crabs, insects)",
+  "phones": [
+    {
+      "value": "7184365163",
+      "display": "(718) 436-5163",
+      "label": "Sean Casey, tarantulas/exotics"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@nyanimalrescue.org",
+      "label": "Sean Casey"
+    }
+  ],
+  "website": "https://lhcos.org/our-programs/adoption/",
+  "intake_urls": [
+    {
+      "url": "https://lhcos.org/our-programs/adoption/",
+      "label": "Hermit crabs"
+    },
+    {
+      "url": "https://hermitcrabassociation.com",
+      "label": "Hermit crabs"
+    },
+    {
+      "url": "https://nyanimalrescue.org/contact",
+      "label": "Tarantulas/exotics in NYC"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "hcainsta",
+      "url": "https://instagram.com/hcainsta"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "No standalone NYC invertebrate-only rescue exists. Best paths: for LAND HERMIT CRABS, the Land Hermit Crab Owners Society (LHCOS) runs a structured national adoption program with a location-based map that connects NYC rehomers with approved local adopters (free adoptions, science-based care standards); the Hermit Crab Association (HCA) is a second community. For TARANTULAS and other exotic invertebrates, Sean Casey Animal Rescue (Brooklyn) has taken them and is the best in-city call; Small n Furry Rescue (central NJ) is a regional exotic rescue experienced with hermit crabs and invertebrates. Never release pet inverts outdoors. Intake: LHCOS adoption/rehoming application  (free adoptions; location-based adopter map) or Hermit Crab Association Intake: Sean Casey Animal Rescue Intake: Regional NJ exotic/hermit-crab rescue: Small n Furry Rescue Other channel: LHCOS on Facebook Other channel: Small n Furry Rescue on Facebook",
+  "type_raw": "Routing entry - national adoption programs + in-city/regional rescues",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://lhcos.org/our-programs/adoption/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "INVERTEBRATES (tarantulas, hermit crabs, insects)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

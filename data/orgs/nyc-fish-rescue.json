@@ -1,0 +1,53 @@
+{
+  "id": "nyc-fish-rescue",
+  "name": "NYC Fish Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "fish",
+    "reptile"
+  ],
+  "needs": [
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A NYC volunteer network (~1,100+ followers) that re-homes fish that are unwanted or can no longer be cared for, and will pick up the fish and tank/equipment. Fills a category with essentially no formal rescue. NEVER flush or release aquarium fish (goldfish especially become invasive and harm waterways). Confirm current activity via the Facebook page; also try aquarium-society and hobbyist groups for species-specific rehoming. Phone: (via Facebook page) Email: (via Facebook Messenger) Intake: Message NYC Fish Rescue on Facebook to rehome fish you can no longer keep - they will come collect the fish and equipment Other channel: Facebook: NYC Fish Rescue",
+  "type_raw": "Fish rehoming network (volunteer, Facebook-based)",
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

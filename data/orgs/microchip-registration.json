@@ -1,0 +1,45 @@
+{
+  "id": "microchip-registration",
+  "name": "Microchip registration",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "microchip",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "VACCINE + MICROCHIP EVENTS",
+  "phones": [],
+  "emails": [],
+  "website": "https://24pet.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "after any chip event, register the chip with the microchip company (e.g. 24Petwatch 24pet.com free, HomeAgain homeagain.com) so your contact info is on file.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — VACCINE + MICROCHIP EVENTS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

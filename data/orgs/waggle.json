@@ -1,0 +1,52 @@
+{
+  "id": "waggle",
+  "name": "Waggle",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "financial-aid",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
+  "phones": [],
+  "emails": [],
+  "website": "https://waggle.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.\n\nvet-bill crowdfunding, 100% to the vet (waggle.org). Dial 211 or nyc.gov/211 for a live operator with current local assistance programs.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

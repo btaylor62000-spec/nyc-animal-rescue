@@ -1,0 +1,60 @@
+{
+  "id": "brooklyn-waterfront-cats",
+  "name": "Brooklyn Waterfront Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn waterfront (Red Hook / DUMBO / industrial areas)",
+  "zips": [
+    "11201",
+    "11231"
+  ],
+  "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bkwaterfrontcats",
+      "url": "https://instagram.com/bkwaterfrontcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local waterfront colony/TNR group. Instagram-primary; confirm via IG. Useful for Red Hook / industrial-zone cases often missed by neighborhood groups. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / TNR / colony care",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BROOKLYN-WIDE (serve all of Kings County)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

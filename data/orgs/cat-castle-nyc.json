@@ -1,0 +1,79 @@
+{
+  "id": "cat-castle-nyc",
+  "name": "Cat Castle NYC",
+  "aka": [
+    "Cat Castle NYC (Manhattan)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet",
+    "neonatal",
+    "medical-special-needs",
+    "senior",
+    "owner-support",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "bronx",
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Upper Manhattan-based (fosters Manhattan/Bronx); serves all NYC + nearby",
+  "zips": [
+    "10033"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "9737527750",
+      "display": "(973) 752-7750"
+    }
+  ],
+  "emails": [],
+  "website": "https://catcastlenyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "catcastlenyc",
+      "url": "https://instagram.com/catcastlenyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) founded 2018, high-volume foster network (30+ cats at once). SPECIALTY: hard cases others won't take + kittens as young as ONE DAY (neonatal) through seniors (16 yrs). Also HELPS OTHER RESCUERS + public with TNR projects, low-cost spay/neuter, and end-of-life services. Explicit non-discrimination adoption policy. Upper-Manhattan based, serves all NYC. Verified 2026-08-26. Intake: Adoption application on site Intake: contact via site Other channel: foster homes in Manhattan/Bronx\n\nthrough-senior (up to ~16 yrs) and hard cases others won't take. (973) 752-7750 - catcastlenyc.org.",
+  "type_raw": "rescue+adoption / TNR (neonatal + hard cases)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://catcastlenyc.org/",
+    "https://www.petfinder.com/member/us/ny/new-york/cat-castle-nyc-ny1467/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

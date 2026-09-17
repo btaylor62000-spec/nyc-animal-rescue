@@ -1,0 +1,56 @@
+{
+  "id": "veg",
+  "name": "VEG (Veterinary Emergency Group)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "MANHATTAN - 24 hour ER",
+  "phones": [
+    {
+      "value": "2122233500",
+      "display": "(212) 223-3500"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "1215 2nd Ave"
+  },
+  "hours": "24/7",
+  "notes": "1215 2nd Ave (UES) - (212) 223-3500 - 24/7.\n\nUpper East Side, 1215 2nd Ave. (212) 223-3500. Open 24h; you stay with your pet.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — MANHATTAN - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

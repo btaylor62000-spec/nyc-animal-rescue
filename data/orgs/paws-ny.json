@@ -1,0 +1,58 @@
+{
+  "id": "paws-ny",
+  "name": "PAWS NY",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "senior",
+    "boarding",
+    "food-assistance"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment",
+  "phones": [
+    {
+      "value": "2122034760",
+      "display": "(212) 203-4760"
+    }
+  ],
+  "emails": [
+    {
+      "value": "referrals@pawsny.org"
+    }
+  ],
+  "website": "https://pawsny.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free in-home help (litter changing, feeding, vet-trip coordination) for low-income seniors and people with illness/disability who struggle with daily pet care. Also runs a pet food pantry. pawsny.org - (212) 203-4760.\n\nHospital Respite Program for people who are hospitalized or in rehab, plus a Substance Use Recovery Program for those entering inpatient treatment. referrals@pawsny.org - (212) 203-4760 ext. 306.\n\nassists with emergency fostering for domestic-violence survivors seeking safety. referrals@pawsny.org - (212) 203-4760 ext. 306.\n\nHospital Respite Program for people who are hospitalized or in a rehab facility, plus a Substance Use Recovery Program for those entering inpatient treatment. referrals@pawsny.org, (212) 203-4760 ext. 306, pawsny.org.\n\nassists with emergency fostering for domestic-violence survivors seeking safety. referrals@pawsny.org, (212) 203-4760 ext. 306.\n\noperates a pet food pantry alongside its in-home care (pawsny.org, (212) 203-4760).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

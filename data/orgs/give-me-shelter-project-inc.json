@@ -1,0 +1,66 @@
+{
+  "id": "give-me-shelter-project-inc",
+  "name": "Give Me Shelter Project, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "advocacy",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "manhattan",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Queens/Nassau field footprint; TNR education + advocacy citywide",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [
+    {
+      "value": "9174105900",
+      "display": "(917) 410-5900"
+    }
+  ],
+  "emails": [
+    {
+      "value": "givemeshelterproject@gmail.com"
+    }
+  ],
+  "website": "https://givemeshelterproject.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) rescue/education/advocacy, foster-based, ©2026 active. NICHE: 'supposedly unadoptable' cats (Conner's Cause) + pet emergency-directive education + TNR workshops. Field footprint is Queens/Nassau, not Brooklyn - listed as education/advocacy support. Phone + email confirmed on own site. Verified 2026-08-26. Intake: Adoption via site Intake: cats viewable at PetSmart 1600 Marcus Ave, New Hyde Park 11040 Other channel: 248-25 Northern Blvd Suite 1J-355, Little Neck NY 11362",
+  "type_raw": "rescue+adoption / TNR education (Queens/LI-primary)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://givemeshelterproject.org/contact-us/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

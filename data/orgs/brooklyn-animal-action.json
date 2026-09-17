@@ -1,0 +1,95 @@
+{
+  "id": "brooklyn-animal-action",
+  "name": "Brooklyn Animal Action (BAA)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "referral-hub"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "education",
+    "referral",
+    "surrender",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-wide (all of Kings County)",
+  "zips": [
+    "11215"
+  ],
+  "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
+  "phones": [
+    {
+      "value": "8774154889",
+      "display": "(877) 415-4889"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@brooklynanimalaction.org"
+    },
+    {
+      "value": "adopt@brooklynanimalaction.org"
+    },
+    {
+      "value": "volunteer@brooklynanimalaction.org"
+    },
+    {
+      "value": "brooklynanimalaction@gmail.com"
+    }
+  ],
+  "website": "https://brooklynanimalaction.org",
+  "intake_urls": [
+    {
+      "url": "https://brooklynanimalaction.org/contact/",
+      "label": "contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "brooklynanimalaction",
+      "url": "https://instagram.com/brooklynanimalaction"
+    },
+    {
+      "platform": "facebook",
+      "handle": "BrooklynAnimalAction",
+      "url": "https://facebook.com/BrooklynAnimalAction"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), founded 2010. TNR + adoption + rescuer support/education. No shelter; foster-based. Provides tools/advice so residents can help animals themselves. adopt@ confirmed on own adoptable-pets page. Re-verified 2026-08-26.\n\nAll-volunteer 501(c)(3) since 2010, ACC New Hope partner. Primarily a cat and TNR organization that has also rehomed some dogs and can pull dogs as a New Hope partner - included with that note. Foster-based, no shelter. For dogs, confirm current availability. Mailing 626 2nd Ave-area, Brooklyn 11215. Intake: Foster/adopt via site Intake: email preferred",
+  "type_raw": "TNR / rescue+adoption / referral hub",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://brooklynanimalaction.org/contact/",
+    "https://brooklynanimalaction.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN-WIDE (serve all of Kings County)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

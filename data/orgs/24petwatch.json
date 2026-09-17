@@ -1,0 +1,45 @@
+{
+  "id": "24petwatch",
+  "name": "24PetWatch",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "microchip",
+    "lost-found"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)",
+  "phones": [],
+  "emails": [],
+  "website": "https://24pet.com/products/registry",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "com/products/registry) - North America's largest registry, FREE registration, any chip brand.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Lost-found & behavior — MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

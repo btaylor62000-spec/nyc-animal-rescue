@@ -1,0 +1,7836 @@
+{
+  "800-kitties-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "a-helping-wing-parrot-rescue-and-sanctuary": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "a-tail-of-two-kitties": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "acc-new-hope-program": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    }
+  ],
+  "acc-working-cats-program": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "working-cat",
+      "field": "name",
+      "matched": "Working Cats"
+    },
+    {
+      "tag": "government",
+      "field": "type",
+      "matched": "municipal"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "working-cat placement"
+    }
+  ],
+  "advocat-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "all-about-rabbits-rescue": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbits"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "ama-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "medical cases"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (by appt)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "amazing-animals-rescue-and-adoptions": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "amsterdog-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "anarchy-animal-rescue-and-rehabilitation": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "animal-care-centers-of-nyc": [
+    {
+      "tag": "dog",
+      "field": "section",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "surrender"
+    },
+    {
+      "tag": "lost-found",
+      "field": "notes",
+      "matched": "Lost & Found"
+    },
+    {
+      "tag": "shelter-open-admission",
+      "field": "type",
+      "matched": "Open-admission"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    },
+    {
+      "tag": "government",
+      "field": "type",
+      "matched": "municipal"
+    }
+  ],
+  "animal-care-centers-of-nyc-brooklyn": [
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "section",
+      "matched": "SPAY"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "shelter-open-admission",
+      "field": "notes",
+      "matched": "Open-admission"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    },
+    {
+      "tag": "government",
+      "field": "type",
+      "matched": "municipal"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "animal-care-centers-of-nyc-guinea-pigs-and-small-animals": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "notes",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "name",
+      "matched": "Guinea Pigs"
+    },
+    {
+      "tag": "farm",
+      "field": "name",
+      "matched": "Pigs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "lost-found",
+      "field": "notes",
+      "matched": "lost-and-found"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "shelter-open-admission",
+      "field": "type",
+      "matched": "Open-admission"
+    },
+    {
+      "tag": "government",
+      "field": "type",
+      "matched": "municipal"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "section",
+      "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "animal-haven": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "Surrender"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (walk-in)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "animal-lighthouse-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "satos"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "notes",
+      "matched": "no-kill shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "animal-lovers-rescue-and-adoptions": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "animal-rescue-of-queens-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "training"
+    },
+    {
+      "tag": "owner-support",
+      "field": "notes",
+      "matched": "surrender prevention"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "anjellicle-cats-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "aspca-animal-poison-control-center-24-7-hotline": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "name",
+      "matched": "24/7"
+    },
+    {
+      "tag": "poison-control",
+      "field": "name",
+      "matched": "Poison Control"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "section",
+      "matched": "SPAY"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "name",
+      "matched": "24/7"
+    },
+    {
+      "tag": "hotline",
+      "field": "name",
+      "matched": "HOTLINE"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    }
+  ],
+  "aspca-community-veterinary-clinic-brooklyn": [
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "aspca-spay-neuter-nyc": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "astoria-cat-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "atlantic-critter-rescue": [
+    {
+      "tag": "small-mammal",
+      "field": "type",
+      "matched": "small animals"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "pigs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "section",
+      "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "backyard-cats-of-bed-stuy": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "badass-animal-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "notes",
+      "matched": "physical shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "barbey-street-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "barc-shelter": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "outreach"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (walk-in)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "bay-ridge-kittens": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Kitten"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "Adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "neonatal"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "critically ill"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "bed-stuy-kitty-crew": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "bedford-corners-community-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "name",
+      "matched": "Community Cats"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "best-friends-animal-society-nyc": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "best-friends-pet-adoption-center-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (walk-in)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "big-city-little-kitty": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "bobbi-and-the-strays": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (walk-in)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "boomers-feline-friends": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feline"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "bronx-community-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "name",
+      "matched": "Community Cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "neuter"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "bronx-tails-cat-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "retrovirus",
+      "field": "notes",
+      "matched": "FeLV"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "brooklyn-animal-action": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "brooklyn-aquarium-society": [
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "turtles"
+    },
+    {
+      "tag": "fish",
+      "field": "name",
+      "matched": "Aquarium"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "livestock"
+    },
+    {
+      "tag": "invertebrate",
+      "field": "animals_served",
+      "matched": "invertebrates"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "education",
+      "field": "areas",
+      "matched": "Education"
+    },
+    {
+      "tag": "club-society",
+      "field": "type",
+      "matched": "society"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "fish",
+      "field": "section",
+      "matched": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic tur"
+    }
+  ],
+  "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    }
+  ],
+  "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "rabbit",
+      "field": "animals_served",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "name",
+      "matched": "Small Animals"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "pigs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "section",
+      "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "brooklyn-kitty-committee-inc": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "brooklyn-lost-cat-finder": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "lost-found",
+      "field": "name",
+      "matched": "Lost Cat"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    }
+  ],
+  "brooklyn-neighborhood-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "brooklyn-paws-foundation": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "brooklyn-waterfront-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "bully-baby-rescue": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "bully breed"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "training"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "bully breeds"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "clinic"
+    }
+  ],
+  "bully-project": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "pit"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "pit"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "bunnies-and-beyond": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Bunnies"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "notes",
+      "matched": "guinea pigs"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "pigs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "bushwick-street-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "certification"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "carroll-street-cat-club": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "cat-castle-nyc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "neonatal"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "hard cases"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "seniors"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "cat-republic": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "outreach"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    }
+  ],
+  "cats-in-the-cradle-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "advocacy",
+      "field": "areas",
+      "matched": "pulls from ACC"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "cats-n-queens": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "cats-of-meow-york": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "neonatal"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "catskill-animal-sanctuary": [
+    {
+      "tag": "bird-companion",
+      "field": "notes",
+      "matched": "chickens"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "ducks"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "farmed animals"
+    },
+    {
+      "tag": "equine",
+      "field": "type",
+      "matched": "horse"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "intake"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "cruelty"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs,"
+    }
+  ],
+  "catstoria-cat-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "city-critters": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "city-pitties": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "Pit"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "Bully-breed"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "resource hub"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "network"
+    }
+  ],
+  "connecticut-parrot-rescue": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "earthlings-nyc-turtle-team": [
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "Turtle"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "AMPHIBIANS"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "surrender"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    }
+  ],
+  "eastchester-bay-stray-cat-project-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "empty-cages-collective": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "notes",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "notes",
+      "matched": "small animals"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "retrovirus",
+      "field": "notes",
+      "matched": "FeLV"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "empty-cages-collective-small-animal-guinea-pig-program": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "name",
+      "matched": "small-animal"
+    },
+    {
+      "tag": "farm",
+      "field": "name",
+      "matched": "pig"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "section",
+      "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "equine-advocates-rescue-and-sanctuary": [
+    {
+      "tag": "farm",
+      "field": "animals_served",
+      "matched": "goats"
+    },
+    {
+      "tag": "equine",
+      "field": "name",
+      "matched": "Equine"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "Education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "clinic"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "equine",
+      "field": "section",
+      "matched": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-gr"
+    }
+  ],
+  "equine-rescue-inc": [
+    {
+      "tag": "equine",
+      "field": "name",
+      "matched": "Equine"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "equine",
+      "field": "section",
+      "matched": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-gr"
+    }
+  ],
+  "faithful-friends-animal-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "DISCOUNTED"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "feather-friends-parrot-adoption-services": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "flatbush-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "24hr"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    }
+  ],
+  "flatbush-vet": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "fluffle-farms-rabbit-rehab-and-sanctuary": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "for-animals-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "for-blakes-sake-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "foster-dogs-inc": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "Foster"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Foster"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "friends-of-animals-spay-neuter-certificates": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "feral"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "certificate program"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "certificate program"
+    }
+  ],
+  "give-me-shelter-project-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "good-home-pet-adoptions": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "trap-bank",
+      "field": "type",
+      "matched": "trap bank"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "greater-city-aquarium-society": [
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "turtles"
+    },
+    {
+      "tag": "fish",
+      "field": "name",
+      "matched": "Aquarium"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "club-society",
+      "field": "type",
+      "matched": "society"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "fish",
+      "field": "section",
+      "matched": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic tur"
+    }
+  ],
+  "greenpoint-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "greenpoint-cats-club": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "Community cat"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "guardian-angel-rescue": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "bully breed"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "bully breeds"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "happy-homes-animal-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "hard-hat-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "working-cat",
+      "field": "notes",
+      "matched": "WORKING CATS"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "working-cat placement"
+    }
+  ],
+  "harlem-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "harman-cat-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "hearts-and-bones-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "transport",
+      "field": "type",
+      "matched": "transport"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "house-of-pancakes-reptile-rescue": [
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "Reptile"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "AMPHIBIANS"
+    },
+    {
+      "tag": "fish",
+      "field": "notes",
+      "matched": "aquatic"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "Surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "notes",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    }
+  ],
+  "humane-society-of-new-york": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "Free spay"
+    },
+    {
+      "tag": "boarding",
+      "field": "notes",
+      "matched": "boarding"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "india-street-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": [
+    {
+      "tag": "invertebrate",
+      "field": "name",
+      "matched": "Invertebrates"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "Routing entry"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "Routing entry"
+    },
+    {
+      "tag": "invertebrate",
+      "field": "section",
+      "matched": "INVERTEBRATES (tarantulas, hermit crabs, insects)"
+    }
+  ],
+  "itty-bitty-city-kitties": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "kitten"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "neonatal"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "itty-bitty-kitty-ny": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "k9kastle": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "kittens-and-barbells-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Kitten"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "neonatal"
+    },
+    {
+      "tag": "senior",
+      "field": "type",
+      "matched": "senior"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "kittykind": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "senior"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "hub"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "placement partner"
+    }
+  ],
+  "korean-k9-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "training"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "Transport"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "lic-feral-feeders-and-cat-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feral"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    }
+  ],
+  "lincoln-terrace-park-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "Colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "little-wanderers-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "long-island-parrot-society": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "boarding",
+      "field": "notes",
+      "matched": "sitters"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "bereavement"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "REFERRAL"
+    },
+    {
+      "tag": "club-society",
+      "field": "type",
+      "matched": "Membership"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "long-island-rabbit-rescue-group": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "los-sures-cats-williamsburg": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "louies-legacy-animal-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "loving-touch-inc": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "Cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "senior"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "luv-n-bunns-rabbit-rescue": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "magnificat-cat-rescue-and-rehoming": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "mainely-rat-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "Cat"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "name",
+      "matched": "Rat"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "pigs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "section",
+      "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "mama-chris-animal-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "mayors-alliance-for-nycs-animals": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "notes",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "name",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "Information hub"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "network"
+    }
+  ],
+  "meowroof": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "food-assistance",
+      "field": "notes",
+      "matched": "pet food"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "meowsquad-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "midwood-kitty-cats-cats-of-midwood": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "mighty-mutts-and-ollies-place": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "monroe-street-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "mr-bones-and-co": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "s/n"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "hard cases"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "type",
+      "matched": "behavior"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "notes",
+      "matched": "grants"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "government",
+      "field": "notes",
+      "matched": "municipal"
+    }
+  ],
+  "muddy-paws-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "muffins-pet-connection-mama-program": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "feral"
+    },
+    {
+      "tag": "colony-care",
+      "field": "areas",
+      "matched": "community cats"
+    },
+    {
+      "tag": "trap-bank",
+      "field": "type",
+      "matched": "trap rental"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "voucher"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "voucher"
+    }
+  ],
+  "narn-central-brooklyn": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "network"
+    }
+  ],
+  "neighborhood-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "Certification"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    }
+  ],
+  "new-beginning-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "physical shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "new-york-bully-crew": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "BULLY BREED"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "trainer"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "BULLY BREEDS"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "new-york-city-animal-rescue-girls": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "new-york-city-pigeon-rescue-central": [
+    {
+      "tag": "cat",
+      "field": "section",
+      "matched": "FERAL"
+    },
+    {
+      "tag": "pigeon",
+      "field": "name",
+      "matched": "Pigeon"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "Wild Bird"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "advice hub"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "network"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "FERAL / URBAN BIRDS (domestic pigeons, king pigeons, doves, "
+    },
+    {
+      "tag": "bird-wild",
+      "field": "section",
+      "matched": "FERAL / URBAN BIRDS (domestic pigeons, king pigeons, doves, "
+    }
+  ],
+  "new-york-meow-sanctuary": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "new-york-turtle-and-tortoise-society": [
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "Turtle"
+    },
+    {
+      "tag": "amphibian",
+      "field": "notes",
+      "matched": "amphibian"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "permit"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "club-society",
+      "field": "type",
+      "matched": "Society"
+    },
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    }
+  ],
+  "noahs-ark-animal-rescue-ny-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "north-brooklyn-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "northeast-avian-rescue": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Avian"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "ny-cat-warriors": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "medical focus"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "ny-marine-mammal-and-sea-turtle-stranding-hotline": [
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "Turtle"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "marine",
+      "field": "name",
+      "matched": "Marine Mammal"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "permit"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "section",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "hotline",
+      "field": "name",
+      "matched": "Hotline"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "nyc-cat-coalition": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "nyc-emergency-animal-rescue": [
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "notes",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "network"
+    }
+  ],
+  "nyc-feral-cat-initiative-bideawee": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "trap-bank",
+      "field": "notes",
+      "matched": "trap loan"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "free spay"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "Training"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "certification"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "referral-hub",
+      "field": "type",
+      "matched": "referral hub"
+    }
+  ],
+  "nyc-fish-rescue": [
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "turtles"
+    },
+    {
+      "tag": "fish",
+      "field": "name",
+      "matched": "Fish"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "fish",
+      "field": "section",
+      "matched": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic tur"
+    }
+  ],
+  "nyc-health-dept-low-cost-spay-neuter": [
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "name",
+      "matched": "Low-Cost"
+    },
+    {
+      "tag": "government",
+      "field": "name",
+      "matched": "NYC Health"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "nyc-new-beginning-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "notes",
+      "matched": "no-kill shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "nyc-second-chance-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "critical medical"
+    },
+    {
+      "tag": "lost-found",
+      "field": "notes",
+      "matched": "lost/found"
+    },
+    {
+      "tag": "legal",
+      "field": "type",
+      "matched": "cruelty"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "nyc-teens-for-animals-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "advocacy"
+    }
+  ],
+  "nys-dec-find-a-wildlife-rehabilitator": [
+    {
+      "tag": "reptile",
+      "field": "notes",
+      "matched": "reptiles"
+    },
+    {
+      "tag": "amphibian",
+      "field": "notes",
+      "matched": "amphibians"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "name",
+      "matched": "directory"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "name",
+      "matched": "Wildlife Rehab"
+    },
+    {
+      "tag": "government",
+      "field": "type",
+      "matched": "State licensing"
+    },
+    {
+      "tag": "directory",
+      "field": "type",
+      "matched": "licensing directory"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "oak-street-cat-gang-death-row-cats-nyc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "advocacy",
+      "field": "name",
+      "matched": "Death Row"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    },
+    {
+      "tag": "advocacy",
+      "field": "type",
+      "matched": "advocacy"
+    }
+  ],
+  "ocean-hill-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "park-slope-veterinary-center": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "DISCOUNTED"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "parrot-rescue-new-york": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "paul-the-cat-guy-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "paws-crossed-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "shelter (walk-in)"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "paws-of-hope-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "pet-poison-helpline-24-7-hotline": [
+    {
+      "tag": "emergency-vet",
+      "field": "name",
+      "matched": "24/7"
+    },
+    {
+      "tag": "poison-control",
+      "field": "name",
+      "matched": "Poison Helpline"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "section",
+      "matched": "SPAY"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "name",
+      "matched": "24/7"
+    },
+    {
+      "tag": "hotline",
+      "field": "name",
+      "matched": "Helpline"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    }
+  ],
+  "place-for-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "pluto-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "retrovirus",
+      "field": "notes",
+      "matched": "FIV"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "pluto-rescue-of-richmond-county": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "posh-pets-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "senior"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "pound-hounds-res-q": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "puppy-kitty-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Puppy"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "Cottontail"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "euthanas"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "notes",
+      "matched": "physical shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "ready-for-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "rebound-hounds": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "Fospice"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "seniors"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "lifetime foster"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "notes",
+      "matched": "small-breed"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "red-hook-dog-rescue": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "senior",
+      "field": "type",
+      "matched": "senior"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "trainer"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "reenies-rabbit-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "notes",
+      "matched": "guinea pigs"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "pigs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "type",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "boarding",
+      "field": "type",
+      "matched": "boarding"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "wildlife rehab"
+    },
+    {
+      "tag": "rabbit",
+      "field": "section",
+      "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "rescue-city": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "rescue-coop": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "rescue-dogs-rock-nyc": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "intake"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "cruelty cases"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "cruelty"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "rescue-nyc": [
+    {
+      "tag": "dog",
+      "field": "section",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "rescuenyc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "name",
+      "matched": "Community Cat"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "saint-spiro-cat-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "Foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "save-the-animals-rescue-foundation": [
+    {
+      "tag": "bird-wild",
+      "field": "type",
+      "matched": "raptors"
+    },
+    {
+      "tag": "wildlife",
+      "field": "type",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "24-hour"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "permit"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "24-hour"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "Wildlife rehab"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "savekitty-foundation": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "pet-loss",
+      "field": "notes",
+      "matched": "pet-loss"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "sean-casey-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "small-mammal",
+      "field": "notes",
+      "matched": "small mammals"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "ducks"
+    },
+    {
+      "tag": "reptile",
+      "field": "notes",
+      "matched": "reptiles"
+    },
+    {
+      "tag": "fish",
+      "field": "notes",
+      "matched": "fish"
+    },
+    {
+      "tag": "farm",
+      "field": "animals_served",
+      "matched": "farm animals"
+    },
+    {
+      "tag": "wildlife",
+      "field": "type",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "invertebrate",
+      "field": "animals_served",
+      "matched": "tarantulas"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "No-kill shelter"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "wildlife rehab"
+    }
+  ],
+  "second-chance-bird-and-reptile-rescue": [
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRD"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "Reptile"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "surrender"
+    },
+    {
+      "tag": "behavior-training",
+      "field": "notes",
+      "matched": "behavior"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "snarr-northeast": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "name",
+      "matched": "Special Needs"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "social-tees-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "south-slope-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "spca-of-westchester-equine-rescue": [
+    {
+      "tag": "equine",
+      "field": "name",
+      "matched": "Equine"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "cruelty cases"
+    },
+    {
+      "tag": "legal",
+      "field": "type",
+      "matched": "cruelty"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "equine",
+      "field": "section",
+      "matched": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-gr"
+    }
+  ],
+  "staten-island-bird-club": [
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRD"
+    },
+    {
+      "tag": "pigeon",
+      "field": "section",
+      "matched": "doves"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "poultry"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "lost-found",
+      "field": "notes",
+      "matched": "lost-and-found"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    },
+    {
+      "tag": "club-society",
+      "field": "type",
+      "matched": "club"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "section",
+      "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
+    }
+  ],
+  "staten-island-council-for-animal-welfare": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "staten-island-hope-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "stray-from-the-heart": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "stray-pride-animal-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "reptile",
+      "field": "type",
+      "matched": "reptiles"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "AMPHIBIANS"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "referral"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    },
+    {
+      "tag": "reptile",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    },
+    {
+      "tag": "amphibian",
+      "field": "section",
+      "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
+    }
+  ],
+  "strays-hope-for-life-rescue": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "sugar-mutts-rescue": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "pit"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "notes",
+      "matched": "pit"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "sunset-park-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "tavi-and-friends": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "senior",
+      "field": "type",
+      "matched": "senior"
+    },
+    {
+      "tag": "retrovirus",
+      "field": "notes",
+      "matched": "FIV"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "lifetime foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "the-5-kittens-rescue": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Kitten"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "the-animal-project-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "the-brooklyn-rescues": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "the-good-life-dog-rescue": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "the-poor-animals-of-st-francis-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
+  "the-sato-project": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Sato"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "satos"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "the-toby-project": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "Free spay"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    }
+  ],
+  "the-toby-project-feral-spay-neuter-clinic": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "notes",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "FREE spay"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
+    },
+    {
+      "tag": "government",
+      "field": "section",
+      "matched": "MUNICIPAL"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "(support"
+    }
+  ],
+  "the-wild-bird-fund": [
+    {
+      "tag": "small-mammal",
+      "field": "notes",
+      "matched": "small mammals"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "notes",
+      "matched": "budgies"
+    },
+    {
+      "tag": "pigeon",
+      "field": "notes",
+      "matched": "doves"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "name",
+      "matched": "Wild Bird"
+    },
+    {
+      "tag": "farm",
+      "field": "animals_served",
+      "matched": "poultry"
+    },
+    {
+      "tag": "wildlife",
+      "field": "type",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "Wildlife rehab"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "thundercats-tnr": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "TNR"
+    },
+    {
+      "tag": "tnr",
+      "field": "name",
+      "matched": "TNR"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "tnr-utopia": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "TNR"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "surrender"
+    },
+    {
+      "tag": "tnr",
+      "field": "name",
+      "matched": "TNR"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "urban-cat-league": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "neonatal",
+      "field": "notes",
+      "matched": "bottle-feed"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "support-program",
+      "field": "type",
+      "matched": "working-cat placement"
+    }
+  ],
+  "urban-utopia-wildlife-rehabilitation": [
+    {
+      "tag": "rabbit",
+      "field": "animals_served",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "directory"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "name",
+      "matched": "Wildlife Rehab"
+    },
+    {
+      "tag": "government",
+      "field": "notes",
+      "matched": "311"
+    },
+    {
+      "tag": "directory",
+      "field": "type",
+      "matched": "directory"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "victory-4-the-voiceless-animal-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "retrovirus",
+      "field": "notes",
+      "matched": "FIV"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "volunteers-for-wildlife-wildlife-center-of-long-island": [
+    {
+      "tag": "pigeon",
+      "field": "animals_served",
+      "matched": "pigeons"
+    },
+    {
+      "tag": "reptile",
+      "field": "animals_served",
+      "matched": "reptiles"
+    },
+    {
+      "tag": "amphibian",
+      "field": "animals_served",
+      "matched": "amphibians"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "section",
+      "matched": "rehabber"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "waggytail-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "seniors"
+    },
+    {
+      "tag": "microchip",
+      "field": "notes",
+      "matched": "microchip"
+    },
+    {
+      "tag": "breed-specific",
+      "field": "type",
+      "matched": "small-breed"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "notes",
+      "matched": "physical shelter"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "waldos-rescue-pen": [
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ],
+  "washington-heights-cat-colony": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "name",
+      "matched": "Colony"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "west-street-whiskers": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "colony"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "solo-rescuer",
+      "field": "type",
+      "matched": "solo rescuer"
+    }
+  ],
+  "whiskers-a-gogo": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "notes",
+      "matched": "foster"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    }
+  ],
+  "wildlife-freedom-foundation": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cat"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "Wild Bird"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "Wildlife rehab"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "winorr-wildlife-in-need-of-rescue-and-rehabilitation": [
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "raptors"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "name",
+      "matched": "Rehabilitat"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "Wildlife rehab"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "notes",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "woodstock-farm-sanctuary": [
+    {
+      "tag": "rabbit",
+      "field": "animals_served",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "bird-companion",
+      "field": "notes",
+      "matched": "chickens"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "section",
+      "matched": "ducks"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "farmed animals"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "intake"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "notes",
+      "matched": "help with"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "farm",
+      "field": "section",
+      "matched": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs,"
+    }
+  ],
+  "woof-dog-rescue-inc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
+    }
+  ]
+}

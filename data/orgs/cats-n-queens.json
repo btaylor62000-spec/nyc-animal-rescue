@@ -1,0 +1,58 @@
+{
+  "id": "cats-n-queens",
+  "name": "Cats 'n Queens",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens County (based Flushing)",
+  "zips": [],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [
+    {
+      "value": "7183596424",
+      "display": "(718) 359-6424"
+    }
+  ],
+  "emails": [
+    {
+      "value": "lgedo@nyc.rr.com"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Part-time local cat rescue + adoption serving Queens County (contact Louis Gedo). Small/solo operation - phone + email confirmed on own listing. Verified 2026-08-26. Intake: Contact Louis Gedo by phone/email Intake: adoption via Petfinder Other channel: Petfinder: cats-n-queens",
+  "type_raw": "solo rescuer / rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/80200-cats-n-queens-flushing-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "flatbush-vet",
+  "name": "Flatbush Vet (nonprofit clinic, by Flatbush Cats)",
+  "aka": [
+    "Flatbush Vet"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-wide: low-income pet owners + rescue/TNR volunteers across Brooklyn",
+  "zips": [
+    "11210"
+  ],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [],
+  "emails": [
+    {
+      "value": "contact@flatbushvet.org"
+    }
+  ],
+  "website": "https://flatbushvet.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "1460 Flatbush Ave",
+    "zip": "11210"
+  },
+  "hours": null,
+  "notes": "High-volume nonprofit spay/neuter + preventative wellness clinic (cats & dogs), 7,500+ surgeries/yr, open to rescue/TNR volunteers ALL over Brooklyn (broader than Flatbush Cats' own TNR service zips). Handles unhandleable cats in traps ($60+), sedated exams, low-cost end-of-life. NOT full-service/emergency. Re-verified 2026-08-26. Intake: Online scheduler Intake: email contact@ re: subsidized options Other channel: 1460 Flatbush Avenue, Brooklyn NY 11210\n\n1460 Flatbush Ave 11210 - contact@flatbushvet.org - nonprofit s/n for rescue/TNR volunteers Brooklyn-wide (rescuer scheduler); handles cats in traps.",
+  "type_raw": "spay-neuter clinic (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://flatbushvet.org/rescuer/",
+    "https://flatbushvet.org/services/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

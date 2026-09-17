@@ -1,0 +1,98 @@
+{
+  "id": "staten-island-hope-animal-rescue",
+  "name": "Staten Island Hope Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "medical-special-needs",
+    "pet-loss",
+    "surrender",
+    "advocacy"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island (serves other NYC areas when needed)",
+  "zips": [
+    "10301",
+    "10302",
+    "10303",
+    "10304",
+    "10305",
+    "10306",
+    "10307",
+    "10308",
+    "10309",
+    "10310",
+    "10311",
+    "10312",
+    "10313",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "8004779168",
+      "display": "(800) 477-9168"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@statenislandhoperescue.org"
+    }
+  ],
+  "website": "https://www.statenislandhopeanimalrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "x",
+      "handle": "SIHopeRescue",
+      "url": "https://x.com/SIHopeRescue"
+    },
+    {
+      "platform": "instagram",
+      "handle": "statenislandhope",
+      "url": "https://instagram.com/statenislandhope"
+    },
+    {
+      "platform": "facebook",
+      "handle": "statenislandhopeanimalrescue",
+      "url": "https://facebook.com/statenislandhopeanimalrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based 501(c)(3) (EIN 27-2122819). Rescue + placement of abused/abandoned/disabled cats (+other animals) + TNRV; works with city animal control to save euthanasia-risk cats. SI-primary, extends to other NYC areas when necessary. Phone + email confirmed on own site. Verified 2026-08-26. Intake: Adoption application on site Intake: weekend pet-store adoption events Other channel: PO Box 30351, Staten Island NY 10303\n\nStaten Island-based foster rescue and ACC New Hope partner rehoming at-risk dogs (and cats). Foster-based, no walk-in shelter. Confirm current availability; contact via site. Included as a genuinely SI-based option. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.statenislandhopeanimalrescue.org/",
+    "https://www.guidestar.org/profile/27-2122819"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

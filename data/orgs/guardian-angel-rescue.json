@@ -1,0 +1,74 @@
+{
+  "id": "guardian-angel-rescue",
+  "name": "Guardian Angel Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "breed-specific",
+    "advocacy",
+    "pet-loss",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Brewster (Putnam); serves NY metro incl. NYC adopters",
+  "zips": [
+    "10509"
+  ],
+  "region_note": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "phones": [],
+  "emails": [
+    {
+      "value": "gina@guardianangelrescue.org"
+    }
+  ],
+  "website": "https://www.guardianangelrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "guardianangelrescueny",
+      "url": "https://instagram.com/guardianangelrescueny"
+    },
+    {
+      "platform": "facebook",
+      "handle": "guardianangelrescue",
+      "url": "https://facebook.com/guardianangelrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), ACC New Hope partner, focused on the breeds that get overlooked - primarily BULLY BREEDS - plus dogs in danger of euthanasia for space/abuse. Foster-based (Brewster/Putnam), adopts into the NY metro incl. NYC. A useful specialty referral for pit/bully-type dogs and a New Hope partner that pulls NYC ACC dogs. Confirm current NYC-area capacity. Contact gina@guardianangelrescue.org. Phone: (no public phone; email preferred) Intake: Adopt/volunteer via site & Petfinder",
+  "type_raw": "Rescue+adoption (bully breeds + overlooked dogs; foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.guardianangelrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "happy-homes-animal-rescue-inc",
+  "name": "Happy Homes Animal Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "education",
+    "pet-loss"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island + Old Bridge/East Brunswick NJ (foster network)",
+  "zips": [
+    "10309"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "9143938292",
+      "display": "(914) 393-8292"
+    }
+  ],
+  "emails": [],
+  "website": "https://happyhomesinc.org",
+  "intake_urls": [
+    {
+      "url": "https://happyhomesinc.org",
+      "label": "+ formsite link"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based rescue spanning Staten Island + central NJ (Old Bridge/East Brunswick). Reduces shelter euthanasia + street TNR + community spay/neuter education. Cats viewable at the SI Petco habitat + NJ Petco/PetSmart events. Verified 2026-08-26. Intake: by appointment + weekend events Other channel: IG/FB @happyhomesrescue Other channel: SI habitat: Petco 165 Bricktown Way 10309 (Sun)",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://happyhomesinc.org/",
+    "https://www.happyhomesinc.org/adopt"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

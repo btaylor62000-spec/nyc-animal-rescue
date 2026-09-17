@@ -1,0 +1,76 @@
+{
+  "id": "northeast-avian-rescue",
+  "name": "Northeast Avian Rescue (NEAR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Northeastern US incl. NYC; facility in East Greenbush, NY (near Albany), by appointment",
+  "zips": [
+    "12061"
+  ],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [
+    {
+      "value": "5187086091",
+      "display": "(518) 708-6091",
+      "label": "hotline"
+    }
+  ],
+  "emails": [],
+  "website": "https://rescueparrots.org",
+  "intake_urls": [
+    {
+      "url": "https://rescueparrots.org/surrenders",
+      "label": "Surrender"
+    }
+  ],
+  "social": [
+    {
+      "platform": "x",
+      "handle": "parrot",
+      "url": "https://x.com/parrot"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3). Rescues, rehabilitates and rehomes abused/neglected/unwanted parrots and exotic birds. As a rule charges no adoption fee; adoption process is stringent. Member of Mayor's Alliance for NYC's Animals and Northeast Parrot Placement Cooperative. Open by appointment only. Email: (via site contact page) Intake: /adoptions/adoption-app Intake: /adoptions/available-birds",
+  "type_raw": "Rescue / rehab / adoption (avian specialty shelter)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://rescueparrots.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

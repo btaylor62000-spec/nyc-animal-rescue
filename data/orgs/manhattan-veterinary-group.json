@@ -1,0 +1,58 @@
+{
+  "id": "manhattan-veterinary-group",
+  "name": "Manhattan Veterinary Group",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10075"
+  ],
+  "region_note": "MANHATTAN - 24-hour ER",
+  "phones": [
+    {
+      "value": "2129881000",
+      "display": "(212) 988-1000"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "240 East 80th St",
+    "zip": "10075"
+  },
+  "hours": "Open 24h",
+  "notes": "240 East 80th St (btwn 2nd/3rd), NY 10075. (212) 988-1000. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

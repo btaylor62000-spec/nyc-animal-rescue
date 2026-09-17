@@ -1,0 +1,78 @@
+{
+  "id": "anarchy-animal-rescue-and-rehabilitation",
+  "name": "Anarchy Animal Rescue & Rehabilitation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (Dyker Heights/Bay Ridge area); NYC",
+  "zips": [
+    "11228"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@anarchyanimalrescue.org"
+    }
+  ],
+  "website": "https://anarchyanimalrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://anarchyanimalrescue.org/dogs",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://anarchyanimalrescue.org/contact-us",
+      "label": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "anarchyanimalrescue",
+      "url": "https://instagram.com/anarchyanimalrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "anarchyanimalrescue",
+      "url": "https://facebook.com/anarchyanimalrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Brooklyn-based 501(c)(3) foster rescue (11228) taking dogs and cats, including harder placements (e.g. dogs needing a fenced yard/single-family home or a resident dog buddy - noted per-dog on their site). Careful, needs-matched placement. Foster-based, no walk-in shelter. Email is the reliable channel. Phone: (no public phone; email preferred)",
+  "type_raw": "Rescue+adoption (dogs & cats, foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://anarchyanimalrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

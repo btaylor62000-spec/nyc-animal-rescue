@@ -1,0 +1,80 @@
+{
+  "id": "nyc-feral-cat-initiative-bideawee",
+  "name": "NYC Feral Cat Initiative (FCI) - Bideawee",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group",
+    "referral-hub"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "trap-bank",
+    "spay-neuter",
+    "low-cost-vet",
+    "behavior-training",
+    "transport",
+    "education",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All NYC (5 boroughs) + Long Island",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [
+    {
+      "value": "2123300033",
+      "display": "(212) 330-0033"
+    }
+  ],
+  "emails": [
+    {
+      "value": "nycferalcatinitiative@bideawee.org"
+    }
+  ],
+  "website": "https://www.bideawee.org/programs/feral-cat-initiative/",
+  "intake_urls": [
+    {
+      "url": "https://nycfci.happyfox.com/new",
+      "label": "7-day helpdesk for certified caretakers"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycfci",
+      "url": "https://instagram.com/nycfci"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Citywide TNR backbone. Free certification, free spay/neuter, free trap loans, transport, help desk for Certified TNR Caretakers. Training/support infrastructure, not hands-on rescue. Register colonies here + Cat Stats. Re-verified 2026-08-26: 7-day help desk (nycfci.happyfox.com/new), (212) 330-0033, and email all confirmed current on Bideawee's own site. Intake: FCI Help Desk Other channel: 244 Fifth Ave, Suite R290, NY 10001",
+  "type_raw": "referral hub / TNR support (citywide backbone)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bideawee.org/programs/feral-cat-initiative/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

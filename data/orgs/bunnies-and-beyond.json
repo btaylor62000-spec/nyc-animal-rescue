@@ -1,0 +1,79 @@
+{
+  "id": "bunnies-and-beyond",
+  "name": "Bunnies & Beyond",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "rabbit",
+    "small-mammal",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "education"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC (pulls from NYC ACC); Manhattan base",
+  "zips": [
+    "10128"
+  ],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "volunteering@bunniesandbeyond.org"
+    }
+  ],
+  "website": "https://bunniesandbeyond.org",
+  "intake_urls": [
+    {
+      "url": "https://bunniesandbeyond.org/adopt/",
+      "label": "Adopt (Google Forms application)"
+    },
+    {
+      "url": "https://bunniesandbeyond.org/surrender.html",
+      "label": "routes owner surrenders to NYC ACC"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bunnies_and_beyond",
+      "url": "https://instagram.com/bunnies_and_beyond"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bunniesandbeyond",
+      "url": "https://facebook.com/bunniesandbeyond"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Adoption/education non-profit founded by Cindy Stutts (25+ yrs rescuing rabbits). Finds indoor homes for rabbits and guinea pigs abandoned or surrendered to the NYC Animal Care Center; provides medical care and foster prior to adoption. Resources do not allow taking most owner surrenders directly - owner surrenders are routed to NYC ACC. Chewy wishlist supports foster program. Phone: (no public phone; email only) Intake: /fostering/",
+  "type_raw": "Rescue / adoption / education",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bunniesandbeyond.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

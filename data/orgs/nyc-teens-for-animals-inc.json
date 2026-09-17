@@ -1,0 +1,72 @@
+{
+  "id": "nyc-teens-for-animals-inc",
+  "name": "NYC Teens for Animals, Inc. (NYCTFA)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "advocacy"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-based (Bay Ridge P.O. box); serves NYC-area foster network",
+  "zips": [
+    "11209"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "nycteensforanimals@gmail.com"
+    }
+  ],
+  "website": "https://nyctfa.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycteensforanimals",
+      "url": "https://instagram.com/nycteensforanimals"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small foster-based 501(c)(3) (EIN 82-2535966), founded by Sofia Annunziata (started at age 12). Rescues cats/kittens (and some dogs), full vet care before adoption, advocates spay/neuter + TNR. Email confirmed on own listings. Active site 2026. Verified 2026-08-26. Intake: //linktr.ee/NYCTFA Intake: contact form on site Other channel: P.O. Box 09-0325, Brooklyn NY 11209",
+  "type_raw": "rescue+adoption / TNR advocacy",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/119551-nyc-teens-for-animals-inc-brooklyn-new-york",
+    "https://www.guidestar.org/profile/82-2535966"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "elmhurst-animal-emergency-hospital",
+  "name": "Elmhurst Animal Emergency Hospital",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11373"
+  ],
+  "region_note": "QUEENS - 24 hour ER",
+  "phones": [
+    {
+      "value": "7184264444",
+      "display": "(718) 426-4444"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "87-06 Queens Blvd",
+    "zip": "11373"
+  },
+  "hours": "24 hours",
+  "notes": "87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.\n\n87-06 Queens Blvd (btwn 55th Ave/55th Rd), Elmhurst/Rego Park 11373. (718) 426-4444. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — QUEENS - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,61 @@
+{
+  "id": "staten-island-bird-club",
+  "name": "Staten Island Bird Club",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "club-society"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "lost-found",
+    "education"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island, NYC",
+  "zips": [
+    "10314"
+  ],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.facebook.com/StatenIslandBirdClub",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Staten Island Bird Club"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "A Staten Island companion-bird club focused on proper care, handling and rearing of pet birds - one of the few IN-NYC-borough bird resources. Not a formal shelter, but a real local community for care advice, member rehoming and lost-and-found. Confirm current meeting schedule/venue via Facebook before attending. Phone: (via club / All Saints Episcopal Church venue) Email: (via club contacts / FB) Intake: Attend a meeting (historically 3rd Thursday, All Saints Episcopal Church, Woolley Ave, Staten Island) or reach via Facebook Intake: club offers care guidance and member-to-member rehoming/lost-found",
+  "type_raw": "Companion-bird club (education, care, community; some adoption/lost-found)",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "http://www.birdsnways.com/birds/assoc.htm"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

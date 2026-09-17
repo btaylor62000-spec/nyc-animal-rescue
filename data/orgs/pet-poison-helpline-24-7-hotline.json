@@ -1,0 +1,61 @@
+{
+  "id": "pet-poison-helpline-24-7-hotline",
+  "name": "Pet Poison Helpline - 24/7 HOTLINE",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "emergency-vet",
+    "poison-control",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National hotline (alternate to ASPCA APCC)",
+  "zips": [],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "8557647661",
+      "display": "(855) 764-7661"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.petpoisonhelpline.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Second national 24/7 animal poison-control hotline - useful alternate when the ASPCA line is busy. Same purpose: toxicology guidance for you + your ER vet. Verified 2026-08-26. Intake: Call 24/7/365 (per-incident fee). Good backup if ASPCA APCC line is busy. Other channel: Per-incident consultation fee",
+  "type_raw": "poison control hotline (emergency, 24/7)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petpoisonhelpline.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

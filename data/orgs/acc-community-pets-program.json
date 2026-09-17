@@ -1,0 +1,54 @@
+{
+  "id": "acc-community-pets-program",
+  "name": "ACC Community Pets Program",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "behavior-training",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [
+    {
+      "value": "admissions@nycacc.org"
+    }
+  ],
+  "website": "https://nycacc.org/services/behavior-resources",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free dog training (in person or via Zoom/FaceTime) through partner trainers; behavior guides at nycacc.org/services/behavior-resources. Contact: admissions@nycacc.org, (212) 788-4000.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

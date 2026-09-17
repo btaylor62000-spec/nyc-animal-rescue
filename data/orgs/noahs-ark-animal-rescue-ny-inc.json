@@ -1,0 +1,55 @@
+{
+  "id": "noahs-ark-animal-rescue-ny-inc",
+  "name": "Noah's Ark Animal Rescue NY, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Rockaway Beach community, Queens",
+  "zips": [
+    "11691",
+    "11692",
+    "11693",
+    "11694"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://noahsarkny.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3), founded 2015. Cats/kittens focus (orphaned/neglected/abandoned) in Rockaway Beach + TNR. DISAMBIGUATION: several unrelated 'Noah's Ark' orgs exist out of state (IA/TN/NJ) - this is the Rockaway/Queens NY one at noahsarkny.com ONLY. Verified 2026-08-26. Email: via contact form at noahsarkny.com (staff use @noahsarkny.com) Intake: Contact form on site Intake: adoption + foster + volunteer Other channel: FB /Noah's Ark Animal Rescue NY Other channel: Pres./Co-Founder Denise Hock",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://noahsarkny.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

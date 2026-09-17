@@ -1,0 +1,76 @@
+{
+  "id": "the-animal-project-nyc",
+  "name": "The Animal Project NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (Upper West Side / Washington Heights)",
+  "zips": [
+    "10024",
+    "10025",
+    "10031",
+    "10032",
+    "10033",
+    "10040"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.animalprojectnyc.org",
+  "intake_urls": [
+    {
+      "url": "https://form.jotform.com/201353227523042",
+      "label": "Pre-adoption form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "animalprojectnyc",
+      "url": "https://instagram.com/animalprojectnyc"
+    },
+    {
+      "platform": "facebook",
+      "handle": "AnimalProjectNYC",
+      "url": "https://facebook.com/AnimalProjectNYC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3), volunteer/foster-based, run 15+ yrs by Carol Moon. TNR (~360 spay/neuters/yr) + cat/kitten rescue + adoption (150+/yr), Petco Foundation partner. Manhattan (UWS/Washington Heights). Reach via site form / adoption events / IG. Verified 2026-08-26. Intake: Sat adoption events 2-6pm at Petco 92nd/Broadway Other channel: director Carol Moon",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalprojectnyc.org/",
+    "https://www.petfinder.com/member/us/ny/new-york/the-animal-project-ny714/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

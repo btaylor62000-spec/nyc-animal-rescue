@@ -1,0 +1,62 @@
+{
+  "id": "carroll-street-cat-club",
+  "name": "Carroll Street Cat Club",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Prospect Heights, western Crown Heights, Prospect Lefferts Gardens",
+  "zips": [
+    "11216",
+    "11225",
+    "11238"
+  ],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.carrollstreetcatclub.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "carroll.street.cat.club",
+      "url": "https://instagram.com/carroll.street.cat.club"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Started 2021 from one Carroll St colony; now TNR + rescue across Prospect Heights/W Crown Heights/PLG. Site has TNR request + foster forms. No public phone. Intake: TNR support request + adoption/foster application on site Other channel: bio.site/carrollstreetcatclub",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.carrollstreetcatclub.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

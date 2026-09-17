@@ -1,0 +1,61 @@
+{
+  "id": "acc",
+  "name": "ACC",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "support-program",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding",
+    "legal",
+    "food-assistance",
+    "microchip",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "VACCINE + MICROCHIP EVENTS",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [
+    {
+      "value": "admissions@nycacc.org"
+    }
+  ],
+  "website": "https://nycacc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "can coordinate options for people entering DHS temporary housing. admissions@nycacc.org - (212) 788-4000.\n\ncan coordinate options for people entering DHS temporary housing or facing military deployment. admissions@nycacc.org, (212) 788-4000.\n\nACC accepts emergency-medical and public-safety cases at any time; call (212) 788-4000. For other situations, the options above may help. Availability changes - confirm current programs when you reach out.\n\nmay provide food, harnesses, and other supplies directly; ask Admissions (admissions@nycacc.org).\n\ncheck nycacc.org (events) and the DOHMH Same-Day Licensing/Vaccination schedule.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — VACCINE + MICROCHIP EVENTS",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

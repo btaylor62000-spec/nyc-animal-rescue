@@ -1,0 +1,60 @@
+{
+  "id": "new-york-city-animal-rescue-girls",
+  "name": "New York City Animal Rescue Girls",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; pulls from NYC ACC",
+  "zips": [],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.instagram.com/nycanimalrescuegirls",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycanimalrescuegirls",
+      "url": "https://instagram.com/nycanimalrescuegirls"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small volunteer-driven NYC group pulling and fostering at-risk dogs from the NYC shelter system, operating primarily through social media. Social-primary contact, so verify directly before relying. Representative of the many hyper-local, Instagram-based dog rescuers active in NYC. Phone: (no public phone; DM via social) Email: (via Instagram DM) Intake: Adopt via Instagram DM (@nycanimalrescuegirls) / Petfinder listings",
+  "type_raw": "Rescue+adoption (foster-based; solo/small volunteer group)",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalalliancenyc.org/need-help/groups/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

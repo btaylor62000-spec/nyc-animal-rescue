@@ -1,0 +1,59 @@
+{
+  "id": "greater-state-veterinary-specialists",
+  "name": "Greater State Veterinary Specialists (GSiVS)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND - 24 hour ER",
+  "phones": [
+    {
+      "value": "9178301380",
+      "display": "(917) 830-1380"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "3135 Victory Blvd",
+    "zip": "10314"
+  },
+  "hours": "24/7",
+  "notes": "3135 Victory Blvd 10314 - (917) 830-1380 - 24/7.\n\n3135 Victory Blvd, Staten Island 10314. (917) 830-1380. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — STATEN ISLAND - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

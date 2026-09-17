@@ -1,0 +1,44 @@
+{
+  "id": "aspca-community-engagement-animal-haven-community-engagement-program",
+  "name": "ASPCA Community Engagement + Animal Haven Community Engagement Program",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "food-assistance"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD / SUPPLIES (dog-specific pantries + directories)",
+  "phones": [],
+  "emails": [],
+  "website": "https://animalhaven.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org, aspca.org).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — PET FOOD / SUPPLIES (dog-specific pantries + directories)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "animal-lighthouse-rescue",
+  "name": "Animal Lighthouse Rescue (ALR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "transport",
+    "breed-specific"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan-based (NYC volunteers); rescue ops in Puerto Rico",
+  "zips": [
+    "10011"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@alrcares.com"
+    }
+  ],
+  "website": "https://www.alrcares.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "alrcares",
+      "url": "https://instagram.com/alrcares"
+    },
+    {
+      "platform": "facebook",
+      "handle": "AnimalLighthouseRescue",
+      "url": "https://facebook.com/AnimalLighthouseRescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) rescuing 'satos' (Puerto Rican street dogs) via its no-kill shelter El Faro de los Animales in PR + a NYC volunteer/foster network. Dogs flown to NYC for adoption. Small-to-medium mixed-breed island dogs. PO Box 30349, New York 10011. Confirm transport timing; dogs meet adopters after arrival. Similar model to The Sato Project. Phone: (no public phone; email preferred) Intake: Adopt/foster via site & Petfinder",
+  "type_raw": "Rescue+adoption (Puerto Rico satos; foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/new-york/animal-lighthouse-rescue-ny1199/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

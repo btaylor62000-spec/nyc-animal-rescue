@@ -1,0 +1,67 @@
+{
+  "id": "stray-pride-animal-rescue",
+  "name": "Stray Pride Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "reptile",
+    "amphibian",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "strayprideanimalrescue@gmail.com"
+    }
+  ],
+  "website": "https://www.straypride.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "strayprideanimalrescue",
+      "url": "https://instagram.com/strayprideanimalrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYC 501(c)(3) that finds foster and permanent homes for reptiles and (mostly black) cats. Listed by the NY Turtle & Tortoise Society as a turtle-accepting rescue - confirmed on its own site as a reptile + cat rescue. A rare in-city reptile-rehoming option alongside the turtle-focused groups. Confirm current reptile-intake capacity by email/DM before referral. Phone: (no public phone; email + IG) Intake: //www.straypride.org Intake: email Strayprideanimalrescue@gmail.com Intake: DM IG @strayprideanimalrescue",
+  "type_raw": "Rescue / foster / adoption (reptiles + cats)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.straypride.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

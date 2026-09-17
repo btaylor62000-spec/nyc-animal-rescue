@@ -1,0 +1,74 @@
+{
+  "id": "paws-crossed-animal-rescue",
+  "name": "Paws Crossed Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "advocacy"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Elmsford (Westchester); pulls FROM NYC ACC + South US + Cayman; adopts NYC metro",
+  "zips": [
+    "10523"
+  ],
+  "region_note": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "phones": [
+    {
+      "value": "9143727878",
+      "display": "(914) 372-7878"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.pawscrossedny.org",
+  "intake_urls": [
+    {
+      "url": "https://www.pawscrossedny.org/adopt",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "pawscrossedny",
+      "url": "https://instagram.com/pawscrossedny"
+    },
+    {
+      "platform": "facebook",
+      "handle": "pawscrossed",
+      "url": "https://facebook.com/pawscrossed"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2015 (NYS Reg #RR184), ACC New Hope partner. WALK-IN no-kill shelter at 100 Warehouse Lane South, Elmsford 10523 (~25 min north of the Bronx), Mon-Fri 11-3, Sat 10-4. Explicitly RESCUES FROM NYC ACC plus the US South and Cayman Islands - so NYC dogs are literally here. First-come-first-adopt for pre-approved questionnaires; private meet-and-greet rooms. A close option to meet dogs in person; a short drive north of the Bronx. Email: (via site contact form) Intake: walk-in shelter, questionnaire first",
+  "type_raw": "Rescue+adoption / shelter (walk-in) - dogs & cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.pawscrossedny.org/adopt"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

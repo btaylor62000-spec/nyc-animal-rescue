@@ -1,0 +1,50 @@
+{
+  "id": "petco-vetco-vetco-vaccine-clinics",
+  "name": "Petco Vetco / Vetco vaccine clinics",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "phones": [],
+  "emails": [],
+  "website": "https://vetcoclinics.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "no exam fee; rabies ~$20, other vaccines ~$34; packages available. vetcoclinics.com.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

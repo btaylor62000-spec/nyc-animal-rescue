@@ -1,0 +1,66 @@
+{
+  "id": "new-york-turtle-and-tortoise-society",
+  "name": "New York Turtle and Tortoise Society (NYTTS)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "club-society"
+  ],
+  "animals": [
+    "reptile",
+    "amphibian"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "legal",
+    "education"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC metro; meetings at Prime Produce, 464 W 54th St, Manhattan; mail White Plains",
+  "zips": [
+    "10605"
+  ],
+  "region_note": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "qanda@nytts.org",
+      "label": "general info + adoptions"
+    }
+  ],
+  "website": "https://www.nytts.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "NewYorkTurtleAndTortoiseSociety",
+      "url": "https://facebook.com/NewYorkTurtleAndTortoiseSociety"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3). Rescue/rehab and public-education programs. Red-eared slider adoption is limited - high surrender volume means few local homes; sometimes members with ponds take sliders. Does not accept individual adoption postings. Wild-turtle rehab led by Lorri Cramer (lorric750@gmail.com). Note DEC now requires a permit to keep any NY-native reptile/amphibian, incl. all 12 NY turtle species. Phone: (no public phone; email committee chairs) Intake: Email qanda@nytts.org with contact info, species, and habitat photos Intake: adoptions handled through official NYTTS channels only",
+  "type_raw": "Society - rescue / rehab / adoption / education",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nytts.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

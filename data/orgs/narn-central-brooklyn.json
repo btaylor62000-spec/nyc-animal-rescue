@@ -1,0 +1,71 @@
+{
+  "id": "narn-central-brooklyn",
+  "name": "NARN - Central Brooklyn (NARN-CB)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Central Brooklyn: Bed-Stuy, Ocean Hill, Crown Heights",
+  "zips": [
+    "11216",
+    "11221",
+    "11233",
+    "11238"
+  ],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [],
+  "website": "https://bio.site/narn_cb",
+  "intake_urls": [
+    {
+      "url": "https://forms.gle/iqqbezsxPS2qxoBM7",
+      "label": "Foster"
+    },
+    {
+      "url": "https://forms.gle/Q6ME54xouQ3vUCco9",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "narn_cb",
+      "url": "https://instagram.com/narn_cb"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Network of individual Central-Brooklyn rescuers, no facility. No public email/phone; reach via IG DM or Google Forms. First-class solo/hyper-local network. Other channel: adoptapet.com/shelter/106350",
+  "type_raw": "solo rescuer network / TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bio.site/narn_cb"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

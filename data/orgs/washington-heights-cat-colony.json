@@ -1,0 +1,73 @@
+{
+  "id": "washington-heights-cat-colony",
+  "name": "Washington Heights Cat Colony (WaHi Cats)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "colony-care",
+    "education"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Upper Manhattan (Washington Heights / Inwood)",
+  "zips": [
+    "10032",
+    "10033",
+    "10034",
+    "10040"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "9174563212",
+      "display": "(917) 456-3212"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@wahicats.org"
+    }
+  ],
+  "website": "https://www.wahicats.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "wahicats",
+      "url": "https://instagram.com/wahicats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small all-volunteer 501(c)(3) TNR group (NYS RR215) in Upper Manhattan. TNR + colony care (food/water/shelter/medical) + adoptable placement + community education. Email + phone confirmed on own listings. Verified 2026-08-26. Intake: Contact via email Intake: volunteer/foster/adopt via site Other channel: 521 W 185th St, New York NY",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.wahicats.org/",
+    "https://www.idealist.org/en/nonprofit/e2246af5471f49048717627453877c61-washington-heights-cat-colony-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

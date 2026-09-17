@@ -1,0 +1,61 @@
+{
+  "id": "bluepearl-queens",
+  "name": "BluePearl Queens",
+  "aka": [
+    "BluePearl - Queens"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11375"
+  ],
+  "region_note": "QUEENS - 24 hour ER",
+  "phones": [
+    {
+      "value": "7182630099",
+      "display": "(718) 263-0099"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "107-28 71st Rd",
+    "zip": "11375"
+  },
+  "hours": "24/7",
+  "notes": "107-28 71st Rd, Forest Hills 11375 - (718) 263-0099 - 24/7. ONLY NYC animal hospital with hemodialysis (toxin ingestion / kidney failure).\n\n107-28 71st Road (btwn 71st Rd/72nd Ave), Forest Hills 11375. (718) 263-0099. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — QUEENS - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

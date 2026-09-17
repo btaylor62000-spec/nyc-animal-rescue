@@ -1,0 +1,55 @@
+{
+  "id": "mama-coupon",
+  "name": "MAMA Coupon (Muffin's Pet Connection)",
+  "aka": [
+    "MAMA Coupon (Muffin's Pet Connection + Mayor's Alliance)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CITYWIDE (work in every borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://muffins.org/MAMA.htm",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "community-cat s/n $58 female / $45 male incl. rabies + eartip - muffins.org/MAMA.htm.\n\nlow-cost s/n coupon: ~$58 female / $45 male, includes s/n + rabies + eartip. Participating vets + guidelines at www.muffins.org/MAMA.htm.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — CITYWIDE (work in every borough)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

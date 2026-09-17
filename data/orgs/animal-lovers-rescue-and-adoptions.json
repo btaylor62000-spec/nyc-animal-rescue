@@ -1,0 +1,53 @@
+{
+  "id": "animal-lovers-rescue-and-adoptions",
+  "name": "Animal Lovers Rescue and Adoptions",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Whitestone & surrounding Queens",
+  "zips": [
+    "11357"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Small Whitestone rescue: takes in animals, adoption + advice + community TNR. Only verifiable channel is the Adoptapet listing (no independent site/email/phone found). Real but reach via listing. Verified 2026-08-26. Intake: Adoption application + vet check Intake: contact via Adoptapet listing Other channel: Adoptapet: animal-lovers-rescue-and-adoptions",
+  "type_raw": "solo rescuer / rescue+adoption / TNR",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

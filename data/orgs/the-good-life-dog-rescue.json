@@ -1,0 +1,57 @@
+{
+  "id": "the-good-life-dog-rescue",
+  "name": "The Good Life Dog Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; adopts NY metro",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.thegldr.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "thegoodlifedogrescue",
+      "url": "https://instagram.com/thegoodlifedogrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC foster-based dog rescue (ACC New Hope partner) rehoming at-risk shelter dogs. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "type_raw": "Rescue+adoption (foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.thegldr.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

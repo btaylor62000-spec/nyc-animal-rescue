@@ -1,0 +1,67 @@
+{
+  "id": "earthlings-nyc-turtle-team",
+  "name": "Earthlings NYC - Turtle Team",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "reptile",
+    "amphibian"
+  ],
+  "needs": [
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (Prime Produce Guildhall, Hell's Kitchen) / NYC",
+  "zips": [
+    "10019"
+  ],
+  "region_note": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hanunah@earthlings.nyc"
+    }
+  ],
+  "website": "https://www.earthlings.nyc/adoptions",
+  "intake_urls": [
+    {
+      "url": "https://www.earthlings.nyc/adoptions",
+      "label": "Turtle adoption & surrender"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "earthlings.nyc",
+      "url": "https://instagram.com/earthlings.nyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Volunteer 'Turtle Team' running since 2023; care in 'Parent Pods' at Prime Produce, Hell's Kitchen. Handles pet-turtle surrenders and adoptions and overwinters/rehabs native turtles (Diamondback Terrapins, snapping turtles). Also runs the NYC Charity Turtle Race for ecology fundraising. Phone: (no public phone; email) Intake: /the-turtle-team Intake: program inquiries hanunah@primeproduce.org",
+  "type_raw": "Rescue / rehab / adoption / surrender (turtles)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.earthlings.nyc/the-turtle-team"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

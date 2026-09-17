@@ -1,0 +1,65 @@
+{
+  "id": "lic-feral-feeders-and-cat-rescue",
+  "name": "LIC Feral Feeders and Cat Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Long Island City, Queens & surrounding areas",
+  "zips": [
+    "11101",
+    "11109"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://licferalfeeders.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "licferalfeeders",
+      "url": "https://instagram.com/licferalfeeders"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based 501(c)(3) (EIN 92-2593031), formed 2017/incorporated 2023. TNR + rescue + adoption + helps community members access low-cost spay/neuter clinic appointments (cats AND dogs). Queens-local. Verified 2026-08-26. Intake: Contact via site Intake: responds to community 'all things cat' calls Other channel: 10-34 49th Ave, LIC 11101",
+  "type_raw": "TNR / rescue+adoption / low-cost clinic access",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://licferalfeeders.org/",
+    "https://www.guidestar.org/profile/92-2593031"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

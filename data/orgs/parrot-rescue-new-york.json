@@ -1,0 +1,56 @@
+{
+  "id": "parrot-rescue-new-york",
+  "name": "Parrot Rescue New York",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Suffolk County, Long Island (regional / NYC-adjacent)",
+  "zips": [],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.facebook.com/parrotrescuenewyork",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Parrot Rescue New York"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Non-profit in Suffolk County (Long Island) that rescues, rehabilitates and rehomes displaced, abused and neglected parrots and companion birds, including emergency situations; no adoption fee to approved adopters. Regional (LI) - flagged as NYC-adjacent, not NYC-local. Verify current intake capacity and exact contact before referring. Phone: (via site/social) Email: (via site/social) Intake: Adoption/surrender via Parrot Rescue New York (Suffolk County LI) - reach via its Facebook page Intake: charges NO adoption fee to approved homes",
+  "type_raw": "Rescue / rehab / adoption (parrots) - no adoption fee",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.trendingbreeds.com/bird-rescues-in-new-york/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

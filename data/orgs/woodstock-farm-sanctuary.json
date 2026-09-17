@@ -1,0 +1,69 @@
+{
+  "id": "woodstock-farm-sanctuary",
+  "name": "Woodstock Farm Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "sanctuary"
+  ],
+  "animals": [
+    "farm",
+    "rabbit",
+    "bird-companion",
+    "bird-wild",
+    "wildlife"
+  ],
+  "needs": [
+    "surrender",
+    "financial-aid",
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Hudson Valley (High Falls, NY); takes farmed animals from NYC live markets & situations",
+  "zips": [
+    "12440"
+  ],
+  "region_note": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "animalhelp@woodstocksanctuary.org"
+    }
+  ],
+  "website": "https://woodstocksanctuary.org",
+  "intake_urls": [
+    {
+      "url": "https://woodstocksanctuary.org/rescueresources",
+      "label": "contact: /contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "woodstocksanctuary",
+      "url": "https://instagram.com/woodstocksanctuary"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3), founded 2004; ~400 rescued farmed animals on 150 acres. Handles FARMED animals only - cannot help with companion animals, exotics or wildlife (its Rescue Resources page refers those out). Has rescued chickens/roosters from NYC live-kill markets and religious rituals. Phone: (see contact page) Intake: Rescue Resources page first:   then AnimalHelp@woodstocksanctuary.org",
+  "type_raw": "Farmed-animal sanctuary (lifelong care; limited intake)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://woodstocksanctuary.org/contact"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

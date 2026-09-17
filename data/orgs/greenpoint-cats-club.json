@@ -1,0 +1,57 @@
+{
+  "id": "greenpoint-cats-club",
+  "name": "Greenpoint Cats Club",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Greenpoint",
+  "zips": [
+    "11222"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": "https://greenpointcatclub.weebly.com/",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "greenpointcatclub",
+      "url": "https://instagram.com/greenpointcatclub"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Community cat club that pools neighborhood resources for stray/colony care. Separate from Greenpoint Cats. Meeting-based; contact via IG/site. Intake: Newsletter signup on site Intake: monthly meetings in Greenpoint",
+  "type_raw": "solo rescuer / community group",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://greenpointcatclub.weebly.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

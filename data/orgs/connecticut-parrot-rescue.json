@@ -1,0 +1,67 @@
+{
+  "id": "connecticut-parrot-rescue",
+  "name": "Connecticut Parrot Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm",
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "adoption",
+    "surrender",
+    "foster"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Connecticut (tri-state; NYC-adjacent)",
+  "zips": [],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.ctparrotrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.ctparrotrescue.org",
+      "label": "foster-home-based"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "Connecticut",
+      "url": "https://instagram.com/Connecticut"
+    },
+    {
+      "platform": "facebook",
+      "handle": "IG Connecticut Parrot Rescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (since 2015/2016) run entirely by CT-based volunteer foster homes; rehabilitates and rehomes companion parrots with a detailed application, phone interview, home visit and bonding visits. Tri-state/regional; a further option given how few parrot rescues serve the NYC area. Phone: (via site) Email: (via ctparrotrescue.org contact) Intake: Adoption application + surrender via",
+  "type_raw": "Rescue / foster / adoption (parrots)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.ctparrotrescue.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

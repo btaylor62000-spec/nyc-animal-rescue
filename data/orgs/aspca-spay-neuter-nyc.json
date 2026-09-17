@@ -1,0 +1,77 @@
+{
+  "id": "aspca-spay-neuter-nyc",
+  "name": "ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet",
+    "transport"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (mobile vans + stationary clinics in designated zips)",
+  "zips": [],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "2123300033",
+      "display": "(212) 330-0033"
+    }
+  ],
+  "emails": [
+    {
+      "value": "clientservices@aspca.org"
+    },
+    {
+      "value": "tnrtrapbank@aspca.org",
+      "label": "trap bank"
+    }
+  ],
+  "website": "https://clinic.aspca.org/locations/new-york-city",
+  "intake_urls": [
+    {
+      "url": "https://clinic.aspca.org",
+      "label": "aspcapro.org/scheduler"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Free/low-cost spay/neuter for cats + dogs across all 5 boroughs. Community-cat package (rabies, tattoo, nail trim, eartip) free for Certified TNR Caretakers via RSS; public via Same-Day Waitlist. Also free trap-bank + transport for registered rescuers. High demand - capacity limited. Verified 2026-08-26. Phone: 877-SPAY-NYC Intake: join the Same-Day Waitlist at  TNR: register via Rescuer Services Scheduler Other channel: Income-qualifying residents pay $0 with proof of assistance",
+  "type_raw": "spay-neuter clinic (support, all boroughs)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://clinic.aspca.org/locations/new-york-city",
+    "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

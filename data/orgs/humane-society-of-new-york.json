@@ -1,0 +1,83 @@
+{
+  "id": "humane-society-of-new-york",
+  "name": "Humane Society of New York (HSNY)",
+  "aka": [
+    "Humane Society of NY (HSNY)",
+    "Humane Society of NY",
+    "The Humane Society of NY",
+    "The Humane Society of New York"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "wildlife",
+    "bird-wild"
+  ],
+  "needs": [
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet",
+    "boarding",
+    "financial-aid",
+    "owner-support",
+    "wildlife-rehab"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Citywide (clinic in Manhattan); community-cat spay/neuter for all boroughs",
+  "zips": [
+    "10022"
+  ],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "2127524840",
+      "display": "(212) 752-4840"
+    },
+    {
+      "value": "2127524842",
+      "display": "(212) 752-4842"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.humanesocietyny.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "306 E 59th St"
+  },
+  "hours": null,
+  "notes": "Free spay/neuter for community cats + left eartip, rabies, flea/ear-mite meds. Each cat must arrive in a separate covered trap - no exceptions. No post-surgery boarding. Verify appt availability. Intake: Call to schedule Intake: 30-9:30am day of surgery Other channel: 306 East 59th Street, New York, NY 10022\n\n306 E 59th St, Manhattan - (212) 752-4840 - low-cost s/n for all cats (pet + feral) + dogs, 7 days, appt only. Each cat in a separate covered trap.\n\n306 E 59th St 10022 - (212) 752-4840 - low-cost s/n, pets + ferals (see citywide).\n\nsome cases receive full/partial funding via its Animal Emergency Appeal; ask when booking. 306 E 59th St - (212) 752-4842.\n\nhas a dedicated 'doggy dentist' doing dentals 4-5 days/week (~4 dogs/day); low-cost, volunteer-supported. Books up fast via a waitlist - call early. 306 E 59th St, (212) 752-4842.\n\nsome cases receive full or partial funding through its Animal Emergency Appeal; ask when booking. 306 East 59th St, NY 10022, (212) 752-4842.\n\nDr. Shackar Malka treats wildlife; 306 East 59th St, Manhattan, (212) 752-4840 (by appointment). A Manhattan option.",
+  "type_raw": "spay-neuter clinic (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

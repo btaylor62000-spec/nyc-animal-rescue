@@ -1,0 +1,82 @@
+{
+  "id": "louies-legacy-animal-rescue",
+  "name": "Louie's Legacy Animal Rescue (NY)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "spay-neuter",
+    "microchip"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island NY base (also Ohio); serves NY/NJ/CT Northeast",
+  "zips": [
+    "10306"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island-based / SI-serving dog rescues)",
+  "phones": [
+    {
+      "value": "6463975527",
+      "display": "(646) 397-5527"
+    }
+  ],
+  "emails": [
+    {
+      "value": "newyork@louieslegacy.org"
+    }
+  ],
+  "website": "https://www.louieslegacy.org",
+  "intake_urls": [
+    {
+      "url": "https://www.louieslegacy.org/adopt",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://louieslegacy.org/get-involved/foster",
+      "label": "Foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "louieslegacy",
+      "url": "https://instagram.com/louieslegacy"
+    },
+    {
+      "platform": "facebook",
+      "handle": "LouiesLegacy",
+      "url": "https://facebook.com/LouiesLegacy"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3), one of the nation's largest foster-based rescues, with bases in Ohio and NYC. NY office 3204 Amboy Rd, Staten Island 10306. Foster-based - no walk-in shelter; meet dogs at weekend adoption events (check FB for weekly album + event locations). Dogs come fully vetted, spayed/neutered, microchipped, heartworm-tested; age/breed/size not guaranteed (shelter origin). Post-adoption support team. Application at the link; high volume, so not every applicant is contacted.",
+  "type_raw": "Rescue+adoption (all-breed, foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.louieslegacy.org/adopt"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "STATEN ISLAND (Staten Island-based / SI-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

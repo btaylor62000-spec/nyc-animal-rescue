@@ -1,0 +1,71 @@
+{
+  "id": "second-chance-bird-and-reptile-rescue",
+  "name": "Second Chance Bird and Reptile Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "reptile",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "behavior-training",
+    "advocacy",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Rochester, NY (Monroe County) - far western NY; ACC New Hope partner (pulls from NYC ACC)",
+  "zips": [
+    "14624"
+  ],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [
+    {
+      "value": "5853707157",
+      "display": "(585) 370-7157"
+    }
+  ],
+  "emails": [],
+  "website": "https://secondchancebirdandreptilerescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Second Chance Bird And Reptile Rescue Inc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) exotic-bird and reptile rescue (33+ yrs experience) providing shelter, medical care and nutrition for surrendered/abandoned birds and reptiles; accepts surrenders and does adoptions; specializes in behavior. It is an ACC New Hope partner, so it pulls at-risk birds/reptiles from NYC Animal Care Centers. REGIONAL - based in Rochester (~5.5 hrs from NYC); included for completeness because in-city companion-bird/reptile rescue is scarce, but it is a long-distance option, not a local NYC referral. Email: (via secondchancebirdandreptilerescue.org contact) Intake: //secondchancebirdandreptilerescue.org Intake: call (585) 370-7157",
+  "type_raw": "Rescue / adoption / surrender (exotic birds & reptiles)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://secondchancebirdandreptilerescue.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,76 @@
+{
+  "id": "the-sato-project",
+  "name": "The Sato Project",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "spay-neuter",
+    "microchip",
+    "transport",
+    "breed-specific"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn HQ (admin); rescue ops in Puerto Rico; adopts East Coast (pickup NY/NJ)",
+  "zips": [
+    "11201"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "adoption@thesatoproject.org"
+    }
+  ],
+  "website": "https://www.thesatoproject.org",
+  "intake_urls": [
+    {
+      "url": "https://www.thesatoproject.org/applicationform",
+      "label": "Apply"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "thesatoproject",
+      "url": "https://instagram.com/thesatoproject"
+    },
+    {
+      "platform": "facebook",
+      "handle": "thesatoproject",
+      "url": "https://facebook.com/thesatoproject"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2011 (founder Christina Beckles); 8,000+ 'satos' (Puerto Rican street dogs) rehomed. Brooklyn address (130 Water St 11201) is an ADMIN office only - dogs are in Puerto Rico and flown to the NY/NJ area; adopters meet virtually first, then pick up on arrival. Adoption fee $650 (spay/neuter, full vetting, vaccines, microchip). East Coast adopters who can reach NY/NJ pickup are eligible. Teaches the 3-3-3 adjustment rule. Also runs Operation Sato (free island s/n) + SATO United (free transport). Phone: (no public phone; email preferred)",
+  "type_raw": "Rescue+adoption (Puerto Rico satos; foster + direct)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.thesatoproject.org/adopt"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

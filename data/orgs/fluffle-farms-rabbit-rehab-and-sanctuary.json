@@ -1,0 +1,61 @@
+{
+  "id": "fluffle-farms-rabbit-rehab-and-sanctuary",
+  "name": "Fluffle Farms Rabbit Rehab & Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "sanctuary"
+  ],
+  "animals": [
+    "rabbit"
+  ],
+  "needs": [
+    "surrender",
+    "sanctuary",
+    "advocacy",
+    "referral"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Chatham, NY (Columbia County / Hudson Valley); pulls NYC rabbits via ACC New Hope",
+  "zips": [
+    "12037"
+  ],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hello@flufflefarms.org"
+    }
+  ],
+  "website": "https://www.flufflefarms.org",
+  "intake_urls": [
+    {
+      "url": "https://www.flufflefarms.org/contact",
+      "label": "Contact form"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) rabbit rehab & sanctuary in Chatham, NY. An ACC New Hope partner, so it pulls at-risk rabbits from NYC Animal Care Centers. Out-of-city (Columbia County) - flagged as REGIONAL, but relevant because of its NYC ACC pulling relationship. Confirm intake capacity before referral. Phone: (no public phone; email + form) Intake: email Hello@FluffleFarms.org Other channel: IG/FB @FluffleFarmsNY",
+  "type_raw": "Rescue / rehab / sanctuary (rabbits) - ACC New Hope partner",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.flufflefarms.org/contact"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

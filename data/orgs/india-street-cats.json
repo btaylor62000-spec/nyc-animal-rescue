@@ -1,0 +1,59 @@
+{
+  "id": "india-street-cats",
+  "name": "India Street Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Greenpoint (India St area)",
+  "zips": [
+    "11222"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "indiastreetcats",
+      "url": "https://instagram.com/indiastreetcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local colony/TNR group in Greenpoint. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / colony care / TNR",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

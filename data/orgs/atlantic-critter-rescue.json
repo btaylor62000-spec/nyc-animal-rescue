@@ -1,0 +1,52 @@
+{
+  "id": "atlantic-critter-rescue",
+  "name": "Atlantic Critter Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "small-mammal",
+    "farm"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Egg Harbor City, NJ (regional / tri-state)",
+  "zips": [],
+  "region_note": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.facebook.com/atlanticcrittersrescue/",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Atlantic Critter Rescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "New Jersey small-animal/exotic rescue listed among NYC-region small-mammal options. Regional (southern NJ) - a further option for pocket pets given how few dedicated small-mammal rescues serve the NYC area. Confirm capacity/logistics before referring. Phone: (via Facebook) Email: (via Facebook) Intake: Reach Atlantic Critter Rescue via its Facebook page for small-animal adoption/surrender",
+  "type_raw": "Rescue / adoption (exotic small animals)",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mainelyratrescue.org/rattieblog2/rat-or-small-animal-rescues/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

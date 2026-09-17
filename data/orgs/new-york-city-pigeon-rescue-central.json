@@ -1,0 +1,69 @@
+{
+  "id": "new-york-city-pigeon-rescue-central",
+  "name": "New York City Pigeon Rescue Central (NYCPRC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "pigeon",
+    "bird-wild",
+    "cat"
+  ],
+  "needs": [
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs",
+  "zips": [],
+  "region_note": "FERAL / URBAN BIRDS (domestic pigeons, king pigeons, doves, waterfowl)",
+  "phones": [],
+  "emails": [],
+  "website": "https://nycprc.org",
+  "intake_urls": [
+    {
+      "url": "https://nycprc.org/HelpWanted/HelpWantedSubmit.html",
+      "label": "Help Request form"
+    },
+    {
+      "url": "https://groups.google.com/g/nycprc",
+      "label": "discussion group"
+    }
+  ],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "NYCPRC",
+      "url": "https://facebook.com/NYCPRC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer group helping individual urban pigeons. Provides rescue how-to (catching, feeding, string-removal, first aid) and connects finders with experienced members. Encourages finders to bring injured birds to the Wild Bird Fund. Domestic/king pigeons cannot survive released to the wild. Phone: (no central phone; Help Request form + Google Group) Email: (via Google Group + Help Request form) Other channel: Google Group forum",
+  "type_raw": "Volunteer rescue network / advice hub",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nycprc.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "FERAL / URBAN BIRDS (domestic pigeons, king pigeons, doves, waterfowl)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

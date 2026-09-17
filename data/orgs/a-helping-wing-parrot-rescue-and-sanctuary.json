@@ -1,0 +1,62 @@
+{
+  "id": "a-helping-wing-parrot-rescue-and-sanctuary",
+  "name": "A Helping Wing Parrot Rescue & Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "sanctuary"
+  ],
+  "animals": [
+    "bird-companion",
+    "pigeon",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Warren County, NJ (tri-state; NYC-adjacent)",
+  "zips": [],
+  "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.ahelpingwing.org",
+  "intake_urls": [
+    {
+      "url": "https://www.ahelpingwing.org",
+      "label": "contact + adoptables"
+    }
+  ],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "ahelpingwing",
+      "url": "https://facebook.com/ahelpingwing"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) parrot rescue in Warren County, NJ working with all bird types from small to large. Tri-state/regional - a reasonable option for NYC bird owners willing to travel to NJ. Confirm intake capacity before referring. Phone: (via site) Email: (via ahelpingwing.org contact) Intake: Adoption/surrender via",
+  "type_raw": "Rescue / sanctuary / adoption (parrots)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.ahelpingwing.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

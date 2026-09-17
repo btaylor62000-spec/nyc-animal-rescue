@@ -1,0 +1,55 @@
+{
+  "id": "banfield-pet-hospital",
+  "name": "Banfield Pet Hospital",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11201"
+  ],
+  "region_note": "BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "phones": [],
+  "emails": [],
+  "website": "https://banfield.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "238 Atlantic Ave",
+    "zip": "11201"
+  },
+  "hours": null,
+  "notes": "not free but lower-cost; e.g. Brooklyn 238 Atlantic Ave 11201; pricing at banfield.com. Free first vet visit for newly adopted pets.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,61 @@
+{
+  "id": "bluepearl-brooklyn",
+  "name": "BluePearl Brooklyn",
+  "aka": [
+    "BluePearl - Brooklyn (Gowanus)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11217"
+  ],
+  "region_note": "BROOKLYN - 24 hour ER",
+  "phones": [
+    {
+      "value": "7185960099",
+      "display": "(718) 596-0099"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "190 3rd Ave",
+    "zip": "11217"
+  },
+  "hours": "24/7",
+  "notes": "190 3rd Ave (Gowanus) 11217 - (718) 596-0099 - 24/7, MRI/neurosurgery/critical care.\n\n190 Third Ave (at Douglass St), Brooklyn 11217. (718) 596-0099. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

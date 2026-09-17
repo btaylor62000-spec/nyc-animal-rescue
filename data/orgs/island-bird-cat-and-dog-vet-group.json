@@ -1,0 +1,57 @@
+{
+  "id": "island-bird-cat-and-dog-vet-group",
+  "name": "Island Bird Cat & Dog Vet Group",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND - feral-friendly / low-cost clinics",
+  "phones": [
+    {
+      "value": "7183709472",
+      "display": "(718) 370-9472"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "375 Manor Rd",
+    "zip": "10314"
+  },
+  "hours": null,
+  "notes": "375 Manor Rd 10314 - (718) 370-9472 - feral-friendly (Bideawee list).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — STATEN ISLAND - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

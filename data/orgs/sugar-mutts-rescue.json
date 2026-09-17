@@ -1,0 +1,73 @@
+{
+  "id": "sugar-mutts-rescue",
+  "name": "Sugar Mutts Rescue",
+  "aka": [
+    "Sugar Mutts Rescue  [RELOCATED - no longer NYC]"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "breed-specific",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "FORMERLY East Williamsburg, Brooklyn; now Pocono Mountains, PA",
+  "zips": [
+    "11206"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "sugarmuttsrescue@gmail.com"
+    },
+    {
+      "value": "sugarmuttsrescue@yahoo.com"
+    }
+  ],
+  "website": "https://www.sugarmuttsrescue.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "sugarmuttsrescue",
+      "url": "https://instagram.com/sugarmuttsrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "sugarmuttsrescue",
+      "url": "https://facebook.com/sugarmuttsrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "IMPORTANT STATUS UPDATE: 501(c)(3) founded 2007 in Brooklyn (East Williamsburg) by Amy Marciano as a pit/staffie-advocacy dog rescue pulling from NYC ACC - but it PERMANENTLY RELOCATED to the Pocono Mountains region of Pennsylvania in early 2018 due to NYC operating costs. It still adopts into the NY-area but is no longer NYC-based. Kept here (flagged) because it's frequently still listed as a Brooklyn rescue - verify NY-area availability directly before relying. Phone: (email preferred) Intake: Adopt/foster via site & Petfinder",
+  "type_raw": "Rescue+adoption (foster-based) - MOVED to PA in 2018",
+  "confidence": "Low",
+  "status": "relocated",
+  "status_note": "Source says this organization has moved out of New York City.",
+  "source_urls": [
+    "https://www.sugarmuttsrescue.com/about/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

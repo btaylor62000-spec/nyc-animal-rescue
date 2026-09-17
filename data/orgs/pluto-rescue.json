@@ -1,0 +1,66 @@
+{
+  "id": "pluto-rescue",
+  "name": "P.L.U.T.O. Rescue (Pet Lovers United Together as One)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "retrovirus",
+    "microchip"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island-based (Richmond County); NYC",
+  "zips": [
+    "10309",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island-based / SI-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.plutorescue.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "plutorescue",
+      "url": "https://instagram.com/plutorescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "P.L.U.T.ORescue",
+      "url": "https://facebook.com/P.L.U.T.ORescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3) no-kill on Staten Island. Uses the Merry Mutts Play & Stay facility (654A Sharrotts Rd, SI 10309) plus volunteer fosters. Dogs HW-tested; cats FIV/FeLV-tested; all vetted + altered + microchipped before adoption. Adoption donation: dog/puppy $180, purebred dog/puppy $280, cat/kitten $80 (incl. full vetting). App reviewed -> home visit -> paperwork at the visit. Mail: PO Box 140889, Staten Island 10314. Solid SI option beyond Louie's Legacy. Phone: (no public phone; contact via FB/site) Email: (via Facebook message / site) Intake: Adopt/foster via site, Petfinder & Adoptapet Intake: Saturday adoption events Intake: application -> home visit",
+  "type_raw": "Rescue+adoption (dogs & cats, no-kill) - uses a facility",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "STATEN ISLAND (Staten Island-based / SI-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "animal-care-centers-of-nyc",
+  "name": "Animal Care Centers of NYC (ACC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-open-admission",
+    "rescue-foster",
+    "government"
+  ],
+  "animals": [
+    "dog",
+    "cat",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "lost-found",
+    "owner-support"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "bronx",
+    "manhattan",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (adoption sites: Manhattan, Queens, Staten Island; Brooklyn closed for renovation, reopening 2026; Bronx full-service opens 2027)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.nycacc.org",
+  "intake_urls": [
+    {
+      "url": "https://nycacc.app",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.nycacc.org/services/surrender/",
+      "label": "Surrender (by appt)"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nycacc",
+      "url": "https://instagram.com/nycacc"
+    },
+    {
+      "platform": "facebook",
+      "handle": "nycacc",
+      "url": "https://facebook.com/nycacc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "The city's only open-admission shelter, 501(c)(3) contracted by NYC; takes in 25,000+ animals/yr regardless of breed/age/medical. Surrender is by appointment only - they push surrender-prevention resources first. Adoption fee waived for veterans and for adopters 60+ taking a pet 6+ yrs; IDNYC = $25 off. Also runs Lost & Found (call before visiting). The first call for both adoption and surrender. Email: (via site forms; surrender questionnaire online)",
+  "type_raw": "Open-admission municipal shelter / adoption / surrender",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/services/surrender/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

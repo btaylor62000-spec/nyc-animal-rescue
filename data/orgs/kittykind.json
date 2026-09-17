@@ -1,0 +1,80 @@
+{
+  "id": "kittykind",
+  "name": "KittyKind",
+  "aka": [
+    "KittyKind (Manhattan)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs",
+    "senior",
+    "referral",
+    "owner-support",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan adoption center (Petco Union Square); accepts adoptable cats citywide from TNR rescuers",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "adopt@kittykind.org",
+      "label": "adoptions"
+    },
+    {
+      "value": "foster@kittykind.org"
+    },
+    {
+      "value": "info@kittykind.org"
+    }
+  ],
+  "website": "https://kittykind.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "kittykind",
+      "url": "https://instagram.com/kittykind"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer no-kill 501(c)(3) (est. 1999), 400+ cats/yr. Manhattan-based adoption hub - NOT Brooklyn field response - but a key PLACEMENT partner that takes in adoptable friendlies from rescuers' TNR efforts, incl. special-needs/senior cats. Useful downstream when a Brooklyn rescuer needs an adoption channel. Emails confirmed on own site. Verified 2026-08-26. Intake: Email adopt@kittykind.org Intake: adoption center Petco Union Square, 860 Broadway / 44 Union Square 10003 Other channel: adoption center staffed evenings + weekends\n\nsenior + special-needs placement. adopt@kittykind.org - kittykind.org.",
+  "type_raw": "rescue+adoption (Manhattan hub; TNR placement partner)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://kittykind.org/contact/",
+    "https://kittykind.org/about/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

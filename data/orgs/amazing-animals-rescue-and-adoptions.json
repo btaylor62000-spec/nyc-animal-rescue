@@ -1,0 +1,63 @@
+{
+  "id": "amazing-animals-rescue-and-adoptions",
+  "name": "Amazing Animals Rescue and Adoptions",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Whitestone & surrounding Queens",
+  "zips": [
+    "11357"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [
+    {
+      "value": "7187910477",
+      "display": "(718) 791-0477",
+      "label": "call/text, responsive"
+    }
+  ],
+  "emails": [
+    {
+      "value": "amazinanimals17@aol.com"
+    }
+  ],
+  "website": "https://www.facebook.com/amazinganimalsrescueandadoptions",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Small Queens cat + dog rescue doing adoption + TNR. Phone-responsive (call/text, 'answer within 5 min' if you leave a message); email is slow. FB-primary web presence, no formal 501(c)(3) status confirmed - Medium confidence. Contacts confirmed on own listings. Verified 2026-08-26. Intake: Application + vet reference required Intake: call/text to start Other channel: FB /amazinganimalsrescueandadoptions (Michelerescuer)",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/77285-amazing-animals-rescue-and-adoption-whitestone-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

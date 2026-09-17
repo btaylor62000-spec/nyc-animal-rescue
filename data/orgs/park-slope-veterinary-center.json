@@ -1,0 +1,64 @@
+{
+  "id": "park-slope-veterinary-center",
+  "name": "Park Slope Veterinary Center (feral spay/neuter)",
+  "aka": [
+    "Park Slope Veterinary Center"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (clinic in Gowanus/Park Slope); Certified TNR Caretakers",
+  "zips": [
+    "11232"
+  ],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "7183697387",
+      "display": "(718) 369-7387"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.parkslopevetcenter.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "639 4th Ave",
+    "zip": "11232"
+  },
+  "hours": null,
+  "notes": "Private Brooklyn vet center offering DISCOUNTED spay/neuter + related services for feral/stray cats to Certified TNR Caretakers (per Bideawee FCI's provider list). Confirm current pricing/eligibility when booking. Verified 2026-08-26. Intake: Call to schedule Intake: low-cost feral/stray spay/neuter for Certified TNR Caretakers Other channel: 639 4th Avenue, Brooklyn NY 11232\n\n639 4th Ave 11232 - (718) 369-7387 - discounted feral s/n for Certified TNR Caretakers.",
+  "type_raw": "spay-neuter clinic (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

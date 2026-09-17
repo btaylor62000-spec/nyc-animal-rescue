@@ -1,0 +1,60 @@
+{
+  "id": "oak-street-cat-gang-death-row-cats-nyc",
+  "name": "Oak Street Cat Gang / Death Row Cats NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "solo-rescuer",
+    "advocacy"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "North Brooklyn + citywide ACC at-risk advocacy",
+  "zips": [],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "oakstreetcatgang",
+      "url": "https://instagram.com/oakstreetcatgang"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local rescuer that also networks urgent/at-risk shelter (ACC) cats citywide. Instagram-primary. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / ACC advocacy",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

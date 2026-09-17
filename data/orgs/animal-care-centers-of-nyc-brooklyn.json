@@ -1,0 +1,75 @@
+{
+  "id": "animal-care-centers-of-nyc-brooklyn",
+  "name": "Animal Care Centers of NYC (ACC) - Brooklyn",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "shelter-open-admission",
+    "referral-hub",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "spay-neuter",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs (system-wide); NOTE Brooklyn physical center closed for renovation",
+  "zips": [],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000",
+      "label": "also 311"
+    }
+  ],
+  "emails": [
+    {
+      "value": "communitypets@nycacc.org",
+      "label": "keep-your-pet resources"
+    }
+  ],
+  "website": "https://www.nycacc.org",
+  "intake_urls": [
+    {
+      "url": "https://www.nycacc.org/get-involved/new-hope/nhpartners",
+      "label": "New Hope partner list"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Open-admission municipal shelter (501(c)(3)), 25,000+ animals/yr, 200+ New Hope rescue partners. IMPORTANT (re-verified 2026-08-26): the BROOKLYN center is CLOSED for a full renovation (intakes/adoptions there ended July 2024) - use the phone line, other-borough centers, or online tools, not the Linden Blvd building. System-wide services (surrender-by-appt, keep-your-pet resources: free/reduced vet, deferred intake, DV/hospitalization help, New Hope placement) still fully operating. The safety net / surrender-avoidance referral. Intake: Surrender BY APPOINTMENT only via (212) 788-4000 Other channel: Brooklyn ACC: 2336 Linden Blvd 11208 (CLOSED for renovation, reopening ~2026/2027) Other channel: open centers: Manhattan (326 E 110th St), Staten Island (3139 Veterans Rd W)",
+  "type_raw": "referral hub / municipal shelter (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/locations-and-hours/",
+    "https://www.nycacc.org/services/surrender/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

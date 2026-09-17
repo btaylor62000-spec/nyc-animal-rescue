@@ -1,0 +1,75 @@
+{
+  "id": "the-wild-bird-fund",
+  "name": "The Wild Bird Fund",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "wildlife",
+    "small-mammal",
+    "bird-companion",
+    "pigeon",
+    "bird-wild",
+    "farm"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "education"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs; walk-in center on Manhattan's Upper West Side",
+  "zips": [
+    "10024"
+  ],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "6463062862",
+      "display": "(646) 306-2862"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.wildbirdfund.org",
+  "intake_urls": [
+    {
+      "url": "https://wildbirdfund.org/how-to-help/rescue"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "wildbirdfund",
+      "url": "https://instagram.com/wildbirdfund"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYC's only wildlife rehabilitation and education center. 501(c)(3). Accepts wild birds and small mammals 7 days a week; no appointment needed (leave a message if arriving near close). IMPORTANT LIMITATION: WBF CANNOT take exotic birds (budgies, parrots) or domestic birds (chickens, quail, domestic geese, tame doves) - for those go to ACC (as of 2022 the drop-off for domestic/exotic birds). WBF CAN take rock/domestic pigeons. Between 87th & 88th Streets. Email: (via wildbirdfund.org/contact) Intake: 'Found a Bird?' guidance at Intake: walk-in 565 Columbus Ave, daily 9am-7pm",
+  "type_raw": "Wildlife rehabilitation & education center (NYC's main wildlife hospital)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.wildbirdfund.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

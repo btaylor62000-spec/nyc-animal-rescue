@@ -1,0 +1,45 @@
+{
+  "id": "aspca-behavior-guides",
+  "name": "ASPCA behavior guides",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "behavior-training",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
+  "phones": [],
+  "emails": [],
+  "website": "https://aspca.org/pet-care/dog-care",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "aspca.org/pet-care/dog-care. Find a credentialed trainer at ccpdt.org, or a veterinary behaviorist at dacvb.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

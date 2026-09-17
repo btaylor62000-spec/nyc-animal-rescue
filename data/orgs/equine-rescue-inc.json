@@ -1,0 +1,53 @@
+{
+  "id": "equine-rescue-inc",
+  "name": "Equine Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "sanctuary"
+  ],
+  "animals": [
+    "equine"
+  ],
+  "needs": [
+    "adoption",
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Hudson Valley, NY (regional)",
+  "zips": [],
+  "region_note": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.equine-rescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.equine-rescue.org",
+      "label": "contact/adopt links in site nav"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) specializing in critical-care horses; Hudson Valley sanctuary that does not euthanize for space and promises lifelong homes to non-placeable horses. Regional - flagged as not NYC-local. Phone: (see equine-rescue.org) Email: (via equine-rescue.org contact) Intake: Adoption + surrender inquiry via Other channel: (see site)",
+  "type_raw": "Horse rescue / rehab / adoption / sanctuary",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.equine-rescue.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

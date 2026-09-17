@@ -1,0 +1,65 @@
+{
+  "id": "waldos-rescue-pen",
+  "name": "Waldo's Rescue Pen",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; pulls from NYC ACC + overcrowded shelters",
+  "zips": [],
+  "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.waldosrescuepen.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "waldosrescuepen",
+      "url": "https://instagram.com/waldosrescuepen"
+    },
+    {
+      "platform": "facebook",
+      "handle": "waldosrescuepen",
+      "url": "https://facebook.com/waldosrescuepen"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC foster-based dog rescue pulling at-risk dogs from NYC ACC and overcrowded shelters, with a strong social-media adoption presence. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "type_raw": "Rescue+adoption (foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalalliancenyc.org/need-help/groups/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

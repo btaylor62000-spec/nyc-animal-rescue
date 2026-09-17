@@ -1,0 +1,61 @@
+{
+  "id": "bluepearl-midtown",
+  "name": "BluePearl - Midtown",
+  "aka": [
+    "BluePearl Midtown"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10019"
+  ],
+  "region_note": "MANHATTAN - 24-hour ER",
+  "phones": [
+    {
+      "value": "2127670099",
+      "display": "(212) 767-0099"
+    }
+  ],
+  "emails": [],
+  "website": "https://bluepearlvet.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "410 West 55th St",
+    "zip": "10019"
+  },
+  "hours": "Open 24h",
+  "notes": "410 W 55th St 10019 - (212) 767-0099 - 24/7.\n\n410 West 55th St (btwn 9th/10th), NY 10019. (212) 767-0099. bluepearlvet.com. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

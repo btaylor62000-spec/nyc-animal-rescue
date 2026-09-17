@@ -1,0 +1,47 @@
+{
+  "id": "food-help-nyc",
+  "name": "Food Help NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [],
+  "emails": [],
+  "website": "https://finder.nyc.gov/foodhelp",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "nyc.gov/foodhelp) lists food pantries, some of which stock pet food; the donateNYC Directory (donatenyc.org) has a Pet Care/Food category.\n\nfind nearby food pantries (some stock pet food): finder.nyc.gov/foodhelp. The donateNYC Directory lists a Pet Care/Food category: donatenyc.org.\n\ngov/foodhelp) - find human food pantries; many also stock pet food. donateNYC Directory has a Pet Care/Food category.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

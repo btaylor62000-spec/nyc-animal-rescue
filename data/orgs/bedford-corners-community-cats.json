@@ -1,0 +1,67 @@
+{
+  "id": "bedford-corners-community-cats",
+  "name": "Bedford Corners Community Cats (BC3)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "East New York / Bedford corners area",
+  "zips": [
+    "11207",
+    "11208"
+  ],
+  "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bc3cats",
+      "url": "https://instagram.com/bc3cats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "BC3cats",
+      "url": "https://facebook.com/BC3cats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Targeted TNR + cat/kitten rescue group in East New York. Longtime Bushwick Street Cats partner. Instagram/FB-primary; confirm via DM. Intake: Via Instagram/Facebook DM",
+  "type_raw": "solo rescuer / TNR / rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.instagram.com/bc3cats/",
+    "https://www.facebook.com/BC3cats/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

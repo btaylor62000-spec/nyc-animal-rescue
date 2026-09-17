@@ -1,0 +1,72 @@
+{
+  "id": "ocean-hill-cats",
+  "name": "Ocean Hill Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Ocean Hill and nearby Central/East Brooklyn",
+  "zips": [
+    "11212",
+    "11233"
+  ],
+  "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@oceanhillcats.com"
+    }
+  ],
+  "website": "https://www.oceanhillcats.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "oceanhillcats",
+      "url": "https://instagram.com/oceanhillcats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "oceanhillcats",
+      "url": "https://facebook.com/oceanhillcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Very local 501(c)(3) (EIN 88-0563037, IRS ruling 2022; reg. address 434 Marion St, Brooklyn 11233), fully foster-based (no walk-in). info@ email confirmed on own site. TNR + friendly placement + colony care; helps low-income owners access low-cost vet/spay-neuter. Re-verified 2026-08-26. Intake: //linktr.ee/oceanhillcats",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.oceanhillcats.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

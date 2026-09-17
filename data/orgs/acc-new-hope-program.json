@@ -1,0 +1,75 @@
+{
+  "id": "acc-new-hope-program",
+  "name": "ACC New Hope Program",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "rescue-foster",
+    "government"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "behavior-training",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Citywide (the mechanism 200+ NYC rescues use to pull ACC dogs)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [
+    {
+      "value": "newhopeprogram@nycacc.org"
+    }
+  ],
+  "website": "https://www.nycacc.org/programs/new-hope/",
+  "intake_urls": [
+    {
+      "url": "https://www.nycacc.org/programs/new-hope/",
+      "label": "Partner application"
+    },
+    {
+      "url": "https://www.nycacc.org/emergency-placement/",
+      "label": "Foster/adopter pre-screener"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "How nearly every NYC rescue gets ACC dogs out. Rescues take ownership of ACC animals (often medical/behavior cases) and rehome through their own process. If you want to foster/adopt an at-risk 'New Hope Only' dog, fill out the pre-screener and ACC matches you to a partner rescue. Partner packet mails to 11 Park Place Suite 805, NY 10007. Not a direct-to-public adoption channel - it feeds the rescues in this sheet. Other channel: At-risk list updated daily on nycacc.org",
+  "type_raw": "Rescue-partner pipeline / at-risk placement / foster matching",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

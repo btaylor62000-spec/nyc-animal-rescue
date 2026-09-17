@@ -1,0 +1,58 @@
+{
+  "id": "acc-pet-food-pantry",
+  "name": "ACC Pet Food Pantry",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [
+    {
+      "value": "communitypets@nycacc.org"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "at the ACC Bronx Resource Center; contact for location, hours, eligibility. CommunityPets@nycacc.org - (212) 788-4000.\n\nat the ACC Bronx Resource Center; contact for location, hours, and eligibility. CommunityPets@nycacc.org, (212) 788-4000.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,68 @@
+{
+  "id": "foster-dogs-inc",
+  "name": "Foster Dogs, Inc.",
+  "aka": [
+    "Foster Dogs Inc"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "education",
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-based; NYC-wide foster & adoption facilitation",
+  "zips": [
+    "11215"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.fosterdogsnyc.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "fosterdogs",
+      "url": "https://instagram.com/fosterdogs"
+    },
+    {
+      "platform": "facebook",
+      "handle": "fosterdogsnyc",
+      "url": "https://facebook.com/fosterdogsnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Brooklyn-based nonprofit whose role is to CONNECT rescuers, fosters and adopters - it facilitates fostering and adoption (education, marketing, no-fee services) rather than running its own shelter. Useful when someone wants to FOSTER but isn't sure which org, or an org needs foster homes. Mailing 626 2nd Ave, Brooklyn 11215. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Foster/adopt info & applications on site Intake: email via contact form\n\nBrooklyn nonprofit that helps connect owners in crisis with temporary fostering. fosterdogsnyc.com.",
+  "type_raw": "Foster-matching / adoption facilitation (support org)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.fosterdogsnyc.com"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

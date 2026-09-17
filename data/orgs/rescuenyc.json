@@ -1,0 +1,58 @@
+{
+  "id": "rescuenyc",
+  "name": "RescueNYC (Community Cat Program)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC citywide; TNR recovery/holding space + caretaker guidance",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@rescuenyc.org"
+    }
+  ],
+  "website": "http://www.rescuenyc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Community Cat Program provides pre/post spay-neuter holding, minor-medical holding, and support for caretakers doing large-scale TNR (removes the holding-space barrier). Support resource for caretakers, incl. Brooklyn. Email confirmed on own site. Verified 2026-08-26. Intake: Email Info@rescuenyc.org for community-cat guidance / TNR recovery program",
+  "type_raw": "TNR support / recovery holding (citywide)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "http://www.rescuenyc.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

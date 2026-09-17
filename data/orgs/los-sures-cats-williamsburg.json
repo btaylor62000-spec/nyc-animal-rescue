@@ -1,0 +1,59 @@
+{
+  "id": "los-sures-cats-williamsburg",
+  "name": "Los Sures Cats Williamsburg",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Williamsburg (Southside / Los Sures)",
+  "zips": [
+    "11211",
+    "11249"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "gatoslossures",
+      "url": "https://instagram.com/gatoslossures"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local Williamsburg TNR group (bilingual). Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / TNR",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

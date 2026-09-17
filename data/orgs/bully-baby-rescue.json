@@ -1,0 +1,81 @@
+{
+  "id": "bully-baby-rescue",
+  "name": "Bully Baby Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "spay-neuter",
+    "low-cost-vet",
+    "behavior-training",
+    "breed-specific",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Port Chester (Westchester); serves NY metro incl. NYC",
+  "zips": [
+    "10573"
+  ],
+  "region_note": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "phones": [
+    {
+      "value": "9145651512",
+      "display": "(914) 565-1512"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@bullybabyrescue.org"
+    }
+  ],
+  "website": "https://www.bullybabyrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bullybabyrescue",
+      "url": "https://instagram.com/bullybabyrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bullybabyrescue",
+      "url": "https://facebook.com/bullybabyrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Nonprofit focused on BULLY BREEDS (pit bull terriers + breeds mislabeled as aggressive) - restoring their reputation, plus FREE/LOW-COST spay-neuter clinics and training assistance. Foster-based, pulls from shelters. Port Chester (Westchester), serves the NY metro incl. NYC. Both a bully adoption referral and a low-cost s/n resource. Confirm current clinic schedule. Intake: Adopt/foster via site Intake: also runs free/low-cost s/n clinics\n\ninfo@bullybabyrescue.org, (914) 565-1512.",
+  "type_raw": "Rescue+adoption (bully breeds) + free/low-cost spay/neuter",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bullybabyrescue.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

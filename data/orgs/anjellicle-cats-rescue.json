@@ -1,0 +1,74 @@
+{
+  "id": "anjellicle-cats-rescue",
+  "name": "Anjellicle Cats Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan-based; works across the 5 boroughs (foster/TNR)",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "6464572130",
+      "display": "(646) 457-2130"
+    }
+  ],
+  "emails": [
+    {
+      "value": "foster@anjelliclecats.com"
+    },
+    {
+      "value": "adopt@anjelliclecats.com"
+    }
+  ],
+  "website": "https://www.anjelliclecats.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "anjelliclecats",
+      "url": "https://instagram.com/anjelliclecats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), founded 20+ yrs ago; one of the most active cat rescues in the 5 boroughs. Pulls sick/injured/'unadoptable' cats from city shelters (ACC), TNR-certified, foster-based. Manhattan adoption centers but works citywide. Re-verified 2026-08-26. Intake: Foster/adopt via email Intake: adoption centers: Cat Room @ Spoiled Brats (340 W 49th 10019), Petco 86 (1280 Lexington 10028), Koneko Cat Cafe Other channel: PO Box 2084, Radio City Station, NY 10101",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.anjelliclecats.com/",
+    "https://www.idealist.org/en/nonprofit/97576440e6b34cb5b0cf339304c3383a-anjellicle-cats-rescue-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

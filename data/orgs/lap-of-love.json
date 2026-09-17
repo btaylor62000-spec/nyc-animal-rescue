@@ -1,0 +1,53 @@
+{
+  "id": "lap-of-love",
+  "name": "Lap of Love",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "senior",
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HOSPICE / SENIOR + LIFETIME-CARE placement",
+  "phones": [
+    {
+      "value": "8559335683",
+      "display": "(855) 933-5683"
+    }
+  ],
+  "emails": [],
+  "website": "https://lapoflove.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "in-home hospice and end-of-life veterinary care across NYC. lapoflove.com - (855) 933-5683.\n\nin-home hospice and end-of-life veterinary care across NYC. lapoflove.com, (855) 933-5683.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — HOSPICE / SENIOR + LIFETIME-CARE placement",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

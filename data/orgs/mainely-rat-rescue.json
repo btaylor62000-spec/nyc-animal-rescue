@@ -1,0 +1,56 @@
+{
+  "id": "mainely-rat-rescue",
+  "name": "Mainely Rat Rescue (NYC-metro coverage)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "small-mammal",
+    "cat",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "New England + NYC metro (limited); foster-based, no facility",
+  "zips": [],
+  "region_note": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "phones": [],
+  "emails": [],
+  "website": "https://mainelyratrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Mainely Rat Rescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based rat & small-animal rescue covering New England and, on a LIMITED basis, the NYC metro. One of the few rescues specifically oriented to pet RATS (which are otherwise hard to place). Rats are highly social and should be adopted in pairs/groups. Confirm NYC-area capacity before referring; if unavailable, try Sean Casey, Brooklyn Cat Cafe small-animals, ACC, or a local pet-rat Facebook group. Phone: (via site) Email: (via mainelyratrescue.org contact) Intake: //mainelyratrescue.org (foster-based; NYC-metro coverage is limited - confirm they can help in your area first)",
+  "type_raw": "Rescue / adoption (rats & small animals) - foster-based",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mainelyratrescue.org/rattieblog2/rat-or-small-animal-rescues/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,62 @@
+{
+  "id": "bbawc-rescue-clinic",
+  "name": "BBAWC Rescue Clinic",
+  "aka": [
+    "BBAWC Rescue Clinic (Brooklyn Bridge Animal Welfare Coalition)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11201"
+  ],
+  "region_note": "BROOKLYN - feral-friendly / low-cost clinics",
+  "phones": [
+    {
+      "value": "9174263335",
+      "display": "(917) 426-3335",
+      "label": "s/n, TNR, sedated exams, basic care"
+    }
+  ],
+  "emails": [],
+  "website": "https://bbawc.org/clinic",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "76 Montague St",
+    "zip": "11201"
+  },
+  "hours": null,
+  "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — BROOKLYN - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,47 @@
+{
+  "id": "aspca-community-engagement",
+  "name": "ASPCA Community Engagement",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition",
+  "phones": [],
+  "emails": [],
+  "website": "https://aspca.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "may provide free/subsidized short-term boarding during a crisis; ask about eligibility via aspca.org.\n\nmay provide free or subsidized short-term boarding during a crisis; ask about eligibility via aspca.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

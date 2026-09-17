@@ -1,0 +1,66 @@
+{
+  "id": "all-about-rabbits-rescue",
+  "name": "All About Rabbits Rescue (AARR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "rabbit"
+  ],
+  "needs": [
+    "adoption",
+    "advocacy",
+    "pet-loss"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Based Queens; serves NYC, Long Island, northern NJ",
+  "zips": [
+    "11101"
+  ],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [
+    {
+      "value": "3479932300",
+      "display": "(347) 993-2300"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@allaboutrabbitsrescue.org"
+    }
+  ],
+  "website": "https://allaboutrabbitsrescue.org",
+  "intake_urls": [
+    {
+      "url": "http://allaboutrabbitsrescue.org/contactus/",
+      "label": "Contact form"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) based in Queens. New Hope Partner - certified to pull rabbits from NYC Animal Care Centers to prevent euthanasia. Adoptions-only partner at several NYC Petland Discounts locations. Rabbit consultant for Pet Help Partners. Holds regular adoption events; frequent same-day response to inquiries. Intake: /adoption-policies/ Intake: include phone in message Other channel: IG/FB @AllAboutRabbitsRescue",
+  "type_raw": "Rescue / adoption (ACC New Hope partner)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://allaboutrabbitsrescue.org/contactus/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

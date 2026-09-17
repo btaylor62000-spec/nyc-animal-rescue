@@ -1,0 +1,57 @@
+{
+  "id": "big-city-little-kitty",
+  "name": "Big City Little Kitty",
+  "aka": [
+    "Big City Little Kitty (RETIRED - do not rely)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Formerly North Brooklyn / NYC",
+  "zips": [],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "bigcitylittlekitty@yahoo.com",
+      "label": "historical"
+    }
+  ],
+  "website": "http://bigcitylittlekitty.blogspot.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Solo foster/TNR rescuer (Lisa) historically tied to North Brooklyn Cats & Bushwick Street Cats. The blog states the project has RETIRED. Listed only so you know the name = inactive; do NOT route live cases here. Founders' current work is via NBC / BSC. Other channel: Petfinder: bigcitylittlekitty (historical)",
+  "type_raw": "solo rescuer (inactive)",
+  "confidence": "Low",
+  "status": "retired",
+  "status_note": "Source marks this organization as retired.",
+  "source_urls": [
+    "http://bigcitylittlekitty.blogspot.com/p/about-us-north-brooklyn-cats-bushwick.html"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

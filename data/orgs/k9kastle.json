@@ -1,0 +1,85 @@
+{
+  "id": "k9kastle",
+  "name": "K9Kastle",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "medical-special-needs",
+    "surrender",
+    "foster"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Southern Brooklyn Petco catteries (Bensonhurst, Sheepshead Bay, Kings Plaza/Marine Park) + Park Slope adoption events",
+  "zips": [
+    "10003",
+    "11204",
+    "11214",
+    "11215",
+    "11223",
+    "11229",
+    "11234"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "k9kastle@gmail.com"
+    }
+  ],
+  "website": "https://www.k9kastle.org",
+  "intake_urls": [
+    {
+      "url": "https://www.k9kastle.org/adoption",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "k9kastle",
+      "url": "https://instagram.com/k9kastle"
+    },
+    {
+      "platform": "facebook",
+      "handle": "k9kastle",
+      "url": "https://facebook.com/k9kastle"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (incorporated Manhattan 10003 but cat ops are physically in southern Brooklyn). NICHE: special-needs cats (3-legged, neurological/wobbly, treatable conditions) pulled from NYCACC, plus TNR. Houses cats in 3 Brooklyn Petco catteries. Email confirmed on own site. Verified 2026-08-26. Intake: Adoption/foster application (PDF) emailed to k9kastle@gmail.com Other channel: Cats housed in south-Brooklyn Petco stores Other channel: Sunday adoption events in Park Slope\n\nAll-volunteer 501(c)(3) rescuing dogs and cats from NYC ACC, with a focus on treatable special-needs cases (e.g. a dog with a remediable injury). Foster-based plus Petco/adoption-event locations in Brooklyn; no walk-in shelter of its own. Cats make up much of its intake, but it does place dogs - confirm current dog availability. Adopts locally and to other areas where references and a home check can be arranged. Donation requested at adoption. Phone: (no public phone; email preferred) Intake: Sunday adoption events in Park Slope Intake: application emailed then processed",
+  "type_raw": "rescue+adoption / TNR (special-needs cats)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.k9kastle.org/fostervolunteer",
+    "https://www.k9kastle.org/adoption"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "strays-hope-for-life-rescue",
+  "name": "Strays Hope for Life Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island (fosters in SI/Brooklyn/Queens/LI); adopts tri-state",
+  "zips": [
+    "10306",
+    "10308"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "9089862505",
+      "display": "(908) 986-2505"
+    }
+  ],
+  "emails": [
+    {
+      "value": "strayshopeforlife@gmail.com"
+    },
+    {
+      "value": "adoptshfl@outlook.com"
+    }
+  ],
+  "website": "https://strayshopeforliferescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "strayshopeforlife",
+      "url": "https://instagram.com/strayshopeforlife"
+    },
+    {
+      "platform": "facebook",
+      "handle": "strayshopeforlife",
+      "url": "https://facebook.com/strayshopeforlife"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small foster-based 501(c)(3) on Staten Island. Takes in stray/abandoned cats + kittens indiscriminately - 'sick, bruised, or broken' - and vets them for adoption. Fosters across SI/Brooklyn/Queens/LI. Phone + emails confirmed on own site. Verified 2026-08-26. Intake: Adoption application on site Intake: visits by appointment only",
+  "type_raw": "rescue+adoption (sick/injured focus)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://strayshopeforliferescue.org/contact-us",
+    "https://www.petfinder.com/member/us/ny/staten-island/strays-hope-for-life-ny1423/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

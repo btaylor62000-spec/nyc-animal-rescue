@@ -1,0 +1,60 @@
+{
+  "id": "monroe-street-cats",
+  "name": "Monroe Street Cats (Bed Stuy)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bedford-Stuyvesant (Monroe St area)",
+  "zips": [
+    "11221",
+    "11233"
+  ],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "monroestreetcats",
+      "url": "https://instagram.com/monroestreetcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local Bed-Stuy colony/TNR group. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / TNR",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

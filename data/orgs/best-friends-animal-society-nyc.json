@@ -1,0 +1,73 @@
+{
+  "id": "best-friends-animal-society-nyc",
+  "name": "Best Friends Animal Society - NYC (SoHo Lifesaving Center)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (SoHo) center; all 5 boroughs + Tri-State reach",
+  "zips": [
+    "10013"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "9292928300",
+      "display": "(929) 292-8300"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adoptnyc@bestfriends.org"
+    }
+  ],
+  "website": "https://bestfriends.org/new-york-city",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bestfriendsnyc",
+      "url": "https://instagram.com/bestfriendsnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "National no-kill org's NYC center; showcases adoptable cats from ACC + local rescues, runs spay/neuter + shelter-support programs. STATUS FLAG (2026): SoHo center CLOSED to public ~June 4-mid-Sept 2026 for Companion Animal Care Act renovations; most cats temporarily at 232 Varet St, Brooklyn 11206 (11am-7pm daily) + foster - confirm current location before visiting. Adoption partner, not a TNR field group. Verified 2026-08-26. Intake: Cat/dog adoption survey on site Intake: showcases ACC + local-rescue cats Other channel: 307 W Broadway, NY 10013",
+  "type_raw": "rescue+adoption / spay-neuter (adoption center)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://ny.bestfriends.org/adopt",
+    "https://bestfriends.org/new-york-city/who-we-are"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

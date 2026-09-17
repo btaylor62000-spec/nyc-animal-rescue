@@ -1,0 +1,68 @@
+{
+  "id": "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe",
+  "name": "Brooklyn Bridge Animal Welfare Coalition (BBAWC) / Brooklyn Cat Cafe",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "clinic",
+    "referral-hub"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "spay-neuter",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "All of Brooklyn (Kings County) for vetting & fostering support",
+  "zips": [],
+  "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
+  "phones": [
+    {
+      "value": "7183609918",
+      "display": "(718) 360-9918"
+    }
+  ],
+  "emails": [
+    {
+      "value": "brooklynbridgeanimals@yahoo.com"
+    }
+  ],
+  "website": "https://bbawc.org",
+  "intake_urls": [
+    {
+      "url": "https://www.bbawc.org/bbawc_location/email-bbawc/",
+      "label": "contact form"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) coalition of rescuers (EIN 26-1482964), founded 2007, 8,000+ cats rescued. Not a traditional shelter. Serves all Kings County for vetting/fostering; does NOT run TNR projects itself (refers to Neighborhood Cats/FCI) but runs the BBAWC Rescue Clinic (spay/neuter) inside the Brooklyn Cat Cafe. PO Box 22948, Brooklyn 11202. Re-verified 2026-08-26. Other channel: Brooklyn Cat Cafe: (347) 946-2286, 76 Montague St Other channel: catcafebk.com",
+  "type_raw": "rescue+adoption / referral hub / spay-neuter clinic",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bbawc.org/bbawc_location/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BROOKLYN-WIDE (serve all of Kings County)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

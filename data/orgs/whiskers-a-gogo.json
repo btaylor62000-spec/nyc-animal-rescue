@@ -1,0 +1,65 @@
+{
+  "id": "whiskers-a-gogo",
+  "name": "Whiskers-A-GoGo (WaGG)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "North Brooklyn and surrounding areas",
+  "zips": [
+    "11211",
+    "11222"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "whiskersagogo.nyc@gmail.com"
+    }
+  ],
+  "website": "https://www.whiskers-agogo.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "whiskers_agogo",
+      "url": "https://instagram.com/whiskers_agogo"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Founded 2012, all-volunteer 501(c)(3) (EIN 81-2882799), foster-based, visits by appointment only. TNR in North Brooklyn; pulls at-risk cats from NYC shelters. Re-verified 2026-08-26: their own Contact page + FB list ONLY the gmail - no public phone (the (718) number previously floated was unconfirmable and has been removed). Intake: Adoption/foster application via site & Petfinder Other channel: events at Bushwick Bark, 181 Irving Ave",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.whiskers-agogo.org/contact"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

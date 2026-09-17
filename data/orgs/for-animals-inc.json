@@ -1,0 +1,65 @@
+{
+  "id": "for-animals-inc",
+  "name": "For Animals Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "transport",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "NYC all five boroughs (incl. Brooklyn colonies)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.foranimalsinc.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "foranimalsinc",
+      "url": "https://instagram.com/foranimalsinc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2001 (EIN 26-2321902). High-volume spay/neuter + coordinated TNR across all five boroughs + adoption + community education/transport for low-income owners. Citywide support that does take Brooklyn colony projects. Verified 2026-08-26. Intake: Contact + adoption/TNR request via site",
+  "type_raw": "TNR / spay-neuter / rescue+adoption (citywide)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.foranimalsinc.com/about/",
+    "https://www.guidestar.org/profile/26-2321902"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "acc-working-cats-program",
+  "name": "ACC Working Cats Program",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "working-cat"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs - official ACC program placing feral shelter cats as working cats",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000"
+    }
+  ],
+  "emails": [
+    {
+      "value": "workingcats@nycacc.org"
+    }
+  ],
+  "website": "https://www.nycacc.org/workingcats",
+  "intake_urls": [
+    {
+      "url": "https://nycacc.org/workingcats"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "NYCACC's official Working Cats program: places feral/under-socialized shelter cats (not adoption-suited) as working cats for barns, businesses, gardens, buildings. Placed in bonded pairs; caretaker provides food/water/shelter + can trap for vet care (ACC loans traps). The municipal route for working cats. Verified 2026-08-26. Intake: Apply to adopt working cats at Intake: ACC identifies suitable ferals + can loan traps Other channel: Pairs of bonded cats placed together (an 'only cat' becomes a 'lonely cat')",
+  "type_raw": "working-cat placement (municipal, citywide)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/workingcats/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

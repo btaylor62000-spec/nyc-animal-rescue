@@ -1,0 +1,56 @@
+{
+  "id": "the-5-kittens-rescue",
+  "name": "The 5 Kittens Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "North Brooklyn (Williamsburg/Greenpoint/Bushwick)",
+  "zips": [],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "the5kittensrescue",
+      "url": "https://instagram.com/the5kittensrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local/solo rescue listed in North Brooklyn Cats' vetted directory. Instagram-primary; confirm scope and contact via IG. Intake: Via Instagram DM",
+  "type_raw": "solo rescuer / rescue+adoption",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

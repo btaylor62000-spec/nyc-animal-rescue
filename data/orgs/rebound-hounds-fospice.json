@@ -1,0 +1,46 @@
+{
+  "id": "rebound-hounds-fospice",
+  "name": "Rebound Hounds Fospice",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "senior",
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HOSPICE / FOSPICE + SENIOR-DOG PLACEMENT",
+  "phones": [],
+  "emails": [],
+  "website": "https://reboundhounds.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "lifetime foster homes for senior and terminal-medical dogs, with medical costs covered by the rescue. reboundhounds.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — HOSPICE / FOSPICE + SENIOR-DOG PLACEMENT",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

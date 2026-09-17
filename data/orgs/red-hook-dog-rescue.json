@@ -1,0 +1,72 @@
+{
+  "id": "red-hook-dog-rescue",
+  "name": "Red Hook Dog Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "medical-special-needs",
+    "senior",
+    "behavior-training",
+    "owner-support",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Red Hook, Brooklyn-based; adopts within ~2 hrs of NYC (NY/NJ/CT/NE PA)",
+  "zips": [
+    "11231"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "harithspi@gmail.com"
+    }
+  ],
+  "website": "https://www.redhookdogrescue.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "redhookdogrescue",
+      "url": "https://instagram.com/redhookdogrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "redhookdogrescue",
+      "url": "https://facebook.com/redhookdogrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2015, run by CPDT-KA certified trainer Harriet Zucker out of Red Hook (110 King St 11231). A true hyper-local, hands-on solo-led rescue with a 'rescue well, rather than rescue big' philosophy. SPECIALIZES IN special-needs dogs (blind, deaf, amputee, behavioral) and seniors pulled from local overcrowded shelters. Every adoption starts as a foster. Adopters 21+, references + vet check + home visit; may require (free) obedience lessons. Fees ~$250 adult / $350 puppy. Stands by its dogs for life. Phone: (no public phone; email preferred) Intake: Apply via site / Petfinder Intake: references + home visit required\n\nspecial-needs and senior dogs (blind, deaf, amputee), foster-based, Brooklyn. harithspi@gmail.com, redhookdogrescue.org.",
+  "type_raw": "Rescue+adoption (special-needs & senior dogs; foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.guidestar.org/profile/47-3575159"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

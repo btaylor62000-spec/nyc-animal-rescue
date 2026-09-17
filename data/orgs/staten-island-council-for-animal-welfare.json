@@ -1,0 +1,84 @@
+{
+  "id": "staten-island-council-for-animal-welfare",
+  "name": "Staten Island Council for Animal Welfare (SICAW)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island (serves surrounding boroughs + NJ)",
+  "zips": [
+    "10301",
+    "10302",
+    "10303",
+    "10304",
+    "10305",
+    "10306",
+    "10307",
+    "10308",
+    "10309",
+    "10310",
+    "10311",
+    "10312",
+    "10313",
+    "10314"
+  ],
+  "region_note": "STATEN ISLAND (Staten Island cat groups)",
+  "phones": [
+    {
+      "value": "7189485623",
+      "display": "(718) 948-5623",
+      "label": "Clo"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.sicawsaves.org",
+  "intake_urls": [
+    {
+      "url": "https://sicawsaves.org/application",
+      "label": "Pre-adoption form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "sicaw",
+      "url": "https://instagram.com/sicaw"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Long-running Staten Island cat rescue (founded 1972), 100% volunteer, donation-funded. Rescue + adoption + TNR; cats viewable at PetSmart Forest Ave & Petco Bricktown Way or foster homes. Home visit required. SI-based, serves surrounding boroughs + NJ. Verified 2026-08-26. Intake: home visit required Other channel: Cats at PetSmart Forest Ave + Petco 165 Bricktown Way",
+  "type_raw": "rescue+adoption / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.sicawsaves.org/",
+    "https://www.adoptapet.com/shelter/83487-staten-island-council-for-animal-welfare-staten-island-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "STATEN ISLAND (Staten Island cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

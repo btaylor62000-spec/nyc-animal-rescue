@@ -1,0 +1,75 @@
+{
+  "id": "city-pitties",
+  "name": "City Pitties",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "advocacy"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "breed-specific",
+    "advocacy",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Bay Ridge, Brooklyn-based; affiliated with 19 rescues across all 5 boroughs + NJ/CT/LI",
+  "zips": [
+    "11209"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.citypitties.org",
+  "intake_urls": [
+    {
+      "url": "https://www.citypitties.org",
+      "label": "Foster/adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "citypitties",
+      "url": "https://instagram.com/citypitties"
+    },
+    {
+      "platform": "facebook",
+      "handle": "citypitties",
+      "url": "https://facebook.com/citypitties"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYC-based bully-breed foster and advocacy network (Bay Ridge, Brooklyn), affiliated with 19 shelters/rescues across all five boroughs, Central NJ, CT, and Long Island. Focuses on the American Pit Bull Terrier, pit mixes, and other bully breeds (incl. American Bulldogs, American Bull Terriers); connects them with tri-state foster homes (min ~3 weeks, breed experience requested) and adopters. Advocates on NYCHA breed/weight rules. Also a resource hub for bully owners and rescues. Phone: (no public phone; email/app) Email: (application via site) Intake: home + reference check required",
+  "type_raw": "Bully-breed foster network + adoption facilitation (advocacy)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.citypitties.org/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

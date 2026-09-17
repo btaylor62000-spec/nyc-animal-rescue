@@ -1,0 +1,51 @@
+{
+  "id": "aspca",
+  "name": "ASPCA",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "queens",
+    "bronx",
+    "manhattan",
+    "brooklyn",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CITYWIDE (work in every borough)",
+  "phones": [],
+  "emails": [],
+  "website": "https://aspcapro.org/scheduler",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "free/low-cost s/n citywide: public via Same-Day Waitlist (clinic.aspca.org); rescuers via RSS (aspcapro.org/scheduler). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — CITYWIDE (work in every borough)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sicaw-certificate-program",
+  "name": "SICAW Certificate Program",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "STATEN ISLAND - feral-friendly / low-cost clinics",
+  "phones": [],
+  "emails": [],
+  "website": "https://sicawsaves.org/resources",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "low-cost s/n certificates w/ partner SI vets (under half normal price); apply at sicawsaves.org/resources.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — STATEN ISLAND - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

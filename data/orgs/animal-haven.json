@@ -1,0 +1,83 @@
+{
+  "id": "animal-haven",
+  "name": "Animal Haven",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "tnr",
+    "behavior-training"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (SoHo/Little Italy) shelter; serves NYC + Tri-State",
+  "zips": [
+    "10013"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "2122748511",
+      "display": "(212) 274-8511"
+    }
+  ],
+  "emails": [
+    {
+      "value": "dogsandcats@ah-nyc.org"
+    }
+  ],
+  "website": "https://animalhaven.org",
+  "intake_urls": [
+    {
+      "url": "https://animalhaven.org/adopt/adoption-process/",
+      "label": "Adoption process"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "animalhavenshelter",
+      "url": "https://instagram.com/animalhavenshelter"
+    },
+    {
+      "platform": "facebook",
+      "handle": "animalhaven",
+      "url": "https://facebook.com/animalhaven"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Established 501(c)(3) since 1967 (EIN 11-6101487), NYS RR086, 4-star Charity Navigator. Limited-admission Manhattan shelter/adoption center (cats + dogs) with behavior intervention + mobile adoption van. Accepts owner surrender via intake form. Not a TNR field group but a major Manhattan adoption + surrender-alternative resource. Verified 2026-08-26. Intake: Adoption Interest Form + Animal Intake (surrender) Form on site Intake: walk-in adoptions during hours Other channel: 200 Centre St, NY 10013 (closed Mon; phones 12-7 daily)\n\n501(c)(3) since 1967, one of NYC's most established no-kill shelters. WALK-IN adoption center at 251 Centre St, SoHo 10013 (5 days/wk, weekend appts) + mobile adoption van. Dogs and cats; in-house behavior-intervention program (Behavior Buddies) that works with dogs needing behavior support. Animals stay as long as it takes. Surrender: read their rehoming resources first, then contact. Email: (via site contact form) Intake: walk-in 5 days/wk, appts weekends",
+  "type_raw": "rescue+adoption (physical shelter)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://animalhaven.org/about/visit-us",
+    "https://animalhaven.org/contact-us",
+    "https://animalhaven.org/adopt/adoption-process/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

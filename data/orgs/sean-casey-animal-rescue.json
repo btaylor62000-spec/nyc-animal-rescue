@@ -1,0 +1,124 @@
+{
+  "id": "sean-casey-animal-rescue",
+  "name": "Sean Casey Animal Rescue (SCAR)",
+  "aka": [
+    "Sean Casey Animal Rescue"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster",
+    "wildlife-rehabber",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "small-mammal",
+    "reptile",
+    "wildlife",
+    "bird-wild",
+    "fish",
+    "farm",
+    "invertebrate",
+    "rabbit",
+    "bird-companion"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "medical-special-needs",
+    "wildlife-rehab",
+    "low-cost-vet",
+    "exotic-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-wide; physical shelter in Windsor Terrace/Kensington",
+  "zips": [
+    "11218",
+    "11232"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [
+    {
+      "value": "7184365163",
+      "display": "(718) 436-5163"
+    },
+    {
+      "value": "3475991500",
+      "display": "(347) 599-1500",
+      "label": "Sunset Park"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@nyanimalrescue.org"
+    },
+    {
+      "value": "adopt@nyanimalrescue.org"
+    }
+  ],
+  "website": "https://www.nyanimalrescue.org",
+  "intake_urls": [
+    {
+      "url": "https://www.nyanimalrescue.org/adopt",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.nyanimalrescue.org/contact",
+      "label": "Contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nyanimalrescue",
+      "url": "https://instagram.com/nyanimalrescue"
+    },
+    {
+      "platform": "instagram",
+      "handle": "seancaseyanimalrescue",
+      "url": "https://instagram.com/seancaseyanimalrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "SeanCaseyAnimalRescue",
+      "url": "https://facebook.com/SeanCaseyAnimalRescue"
+    }
+  ],
+  "address": {
+    "street": "153 East 3rd St",
+    "zip": "11218"
+  },
+  "hours": null,
+  "notes": "501(c)(3) no-kill shelter since 1998 (NYS RR160). Rare Brooklyn org with a physical, walk-in facility. Takes cats + dogs + reptiles/birds/small mammals. STATUS FLAG (re-verified 2026-08-26): historically took the hardest medical cases 'because no one else will,' but their own site says they're SCALING DOWN the critical-care program due to finances and moving toward only already-adoptable intake - confirm before routing a critical medical case. (A former second location at 551 39th St no longer appears on their own contact page - use 153 E 3rd St.) Intake: Adopt via phone/email Intake: open 7 days 11am-7pm Intake: walk-ins welcome Other channel: 153 East 3rd Street, Brooklyn 11218\n\n501(c)(3) no-kill (EIN 35-2244558). One of the very few Brooklyn rescues with an actual WALK-IN shelter - two sites: 153 East 3rd St (Windsor Terrace) 11218 and 551 39th St (Sunset Park) 11232, open 7 days 11am-7pm. Takes dogs, cats, reptiles, birds, small mammals + works with licensed wildlife rehabbers. Historically THE org for the hardest medical cases, but has announced it is SCALING DOWN its critical-care program (may only take already-adoptable animals) - confirm current intake before referring a medical case. 5-borough adopters complete a dog-license application at adoption. Intake: walk in daily 11am-7pm\n\n501(c)(3) no-kill shelter serving NYC since 1998; NYS Dept of Agriculture & Markets reg. RR160. Takes in 2,000+ animals/yr - the most of any private NY rescue - including reptiles, birds and small mammals surrendered or brought by the ACC van (snakes, iguanas, hamsters, birds, fish). Founder Sean Casey is a NYS-licensed Assistant Wildlife Rehabilitator, so injured/orphaned wildlife (squirrels, opossums, ducks, geese) also route here. Open 7 days 11am-7pm; the single most cross-cutting in-city option for non-cat/dog animals. Intake: /adopt Intake: /before-adopting Intake: visit 153 East 3rd St, Brooklyn Other channel: adoptables via Petango petango.com/nyanimalrescue\n\n153 East 3rd St 11218, (718) 436-5163; nyanimalrescue.org.\n\nBrooklyn 11218; (718) 436-5163) runs low-cost vaccine/microchip clinics and takes in exotics; ask what species/services are covered.",
+  "type_raw": "rescue+adoption (physical shelter)",
+  "confidence": "High",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://www.nyanimalrescue.org/contact",
+    "https://www.nyanimalrescue.org/adopt",
+    "https://www.nyanimalrescue.org/about-1"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

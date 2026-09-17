@@ -1,0 +1,58 @@
+{
+  "id": "friends-of-animals",
+  "name": "Friends of Animals",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CITYWIDE - free / low-cost SPAY-NEUTER",
+  "phones": [
+    {
+      "value": "8003217387",
+      "display": "(800) 321-7387"
+    }
+  ],
+  "emails": [],
+  "website": "https://friendsofanimals.org/our-programs/spay-neuter",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "certificates (cat spay ~$65 / neuter ~$51), redeem at feral-friendly vets - 1-800-321-PETS.\n\nlow-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — CITYWIDE - free / low-cost SPAY-NEUTER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

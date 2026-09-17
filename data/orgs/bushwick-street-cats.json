@@ -1,0 +1,77 @@
+{
+  "id": "bushwick-street-cats",
+  "name": "Bushwick Street Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "education"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bushwick and surrounding areas",
+  "zips": [
+    "11206",
+    "11207",
+    "11221",
+    "11237"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "bushwickstreetcats@gmail.com"
+    }
+  ],
+  "website": "https://bushwickstreetcats.org",
+  "intake_urls": [
+    {
+      "url": "https://bushwickstreetcats.org/contact/",
+      "label": "Help Request form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bushwickcats",
+      "url": "https://instagram.com/bushwickcats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bushwickstreetcats",
+      "url": "https://facebook.com/bushwickstreetcats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small volunteer 501(c)(3), primarily TNR; fosters/adopts friendlies. Not a shelter; does not take cats from shelters or people. Best first step: TNR certification.",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bushwickstreetcats.org/contact/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

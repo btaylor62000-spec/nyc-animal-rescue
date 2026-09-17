@@ -1,0 +1,78 @@
+{
+  "id": "rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society",
+  "name": "Rabbit Rescue & Rehab (NYC Metro Rabbits) - NYC Chapter, House Rabbit Society",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "rabbit",
+    "wildlife"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "pet-loss"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Greater NYC area (all five boroughs + metro); mailing address White Plains",
+  "zips": [
+    "10605"
+  ],
+  "region_note": "RABBITS (largest NYC exotic-rescue category)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "nyc.metro.rabbits@gmail.com"
+    }
+  ],
+  "website": "https://www.rabbitrescueandrehab.org",
+  "intake_urls": [
+    {
+      "url": "https://www.rabbitrescueandrehab.org/contact-us"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "rabbit_rescue_and_rehab",
+      "url": "https://instagram.com/rabbit_rescue_and_rehab"
+    },
+    {
+      "platform": "facebook",
+      "handle": "RabbitRescueRehab",
+      "url": "https://facebook.com/RabbitRescueRehab"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer 501(c)(3), founded 1998. Rescues shelter rabbits at risk of euthanasia; foster network, no physical shelter. Currently at capacity and cannot accept most owner surrenders - offers surrender-prevention coaching and adopter screening instead. For WILD rabbits refers to Cottontail Cottage, (914) 933-7559, cottontailrehab.com. Phone: (no public phone; email only) Intake: Contact form + email Intake: /adoptable-rabbits Intake: /foster\n\nSome contact details for this entry are personal and are withheld until the individual confirms they want to be listed publicly.",
+  "type_raw": "Rescue / rehab / adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.rabbitrescueandrehab.org/contact-us"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "RABBITS (largest NYC exotic-rescue category)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": true
+}

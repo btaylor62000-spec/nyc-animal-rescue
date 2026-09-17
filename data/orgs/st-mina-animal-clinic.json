@@ -1,0 +1,57 @@
+{
+  "id": "st-mina-animal-clinic",
+  "name": "St. Mina Animal Clinic",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11421"
+  ],
+  "region_note": "QUEENS - feral-friendly / low-cost clinics",
+  "phones": [
+    {
+      "value": "7182960500",
+      "display": "(718) 296-0500"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "76-23 Jamaica Ave",
+    "zip": "11421"
+  },
+  "hours": null,
+  "notes": "76-23 Jamaica Ave, Woodhaven 11421 - (718) 296-0500 - feral-friendly (Bideawee list).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — QUEENS - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

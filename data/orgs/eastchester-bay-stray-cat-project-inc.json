@@ -1,0 +1,63 @@
+{
+  "id": "eastchester-bay-stray-cat-project-inc",
+  "name": "Eastchester Bay Stray Cat Project, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "City Island, Pelham Bay Park & NE Bronx",
+  "zips": [
+    "10464"
+  ],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "eastchesterbaystraycats",
+      "url": "https://instagram.com/eastchesterbaystraycats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "EastchesterBayStrayCatProject",
+      "url": "https://facebook.com/EastchesterBayStrayCatProject"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 85-4258275, NYS 2020) volunteer TNR group focused on City Island + Pelham Bay Park + NE Bronx; also rescues feral kittens + friendly strays. Pursuing 'Lock the Block' 100% TNR on City Island (unique bridge-only geography). Reach via Petfinder/FB/IG. Verified 2026-08-26. Intake: Contact via Petfinder / Facebook / Instagram DM Other channel: 48 Hawkins St, Bronx 10464",
+  "type_raw": "TNR / rescue (hyper-local)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/bronx/eastchester-bay-stray-cat-project-ny1509/",
+    "https://www.charitynavigator.org/ein/854258275"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

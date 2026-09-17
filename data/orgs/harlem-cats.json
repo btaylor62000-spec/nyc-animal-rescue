@@ -1,0 +1,67 @@
+{
+  "id": "harlem-cats",
+  "name": "Harlem Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Upper Manhattan / Harlem",
+  "zips": [
+    "10026",
+    "10027",
+    "10029",
+    "10030",
+    "10031",
+    "10035",
+    "10037",
+    "10039"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.harlemcats.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "harlemcatsnyc",
+      "url": "https://instagram.com/harlemcatsnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Small volunteer group trained in TNR feeding + caring for Harlem/Upper Manhattan feral colonies; also rescues friendly strays for foster/adoption. STATUS (2026): their IG says the group is 'on a hiatus while travelling the world' - kept in and worth a message via site/FB, but confirm they're active before relying. Reach via site/FB/IG. Verified 2026-08-26. Intake: Contact via site / Facebook Intake: foster/adopt/donate Other channel: FB /harlemcats (small volunteer group)",
+  "type_raw": "TNR / rescue+adoption (volunteer group)",
+  "confidence": "Medium",
+  "status": "hiatus",
+  "status_note": "Source says this organization is paused or on hiatus.",
+  "source_urls": [
+    "https://www.harlemcats.com/",
+    "https://www.facebook.com/harlemcats/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

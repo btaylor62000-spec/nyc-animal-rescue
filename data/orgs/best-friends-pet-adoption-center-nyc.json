@@ -1,0 +1,73 @@
+{
+  "id": "best-friends-pet-adoption-center-nyc",
+  "name": "Best Friends Pet Adoption Center - NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "spay-neuter",
+    "behavior-training",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "SoHo, Manhattan; NYC (national org's NYC hub)",
+  "zips": [
+    "10013"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://bestfriends.org/new-york-city",
+  "intake_urls": [
+    {
+      "url": "https://bestfriends.org/new-york-city",
+      "label": "Adopt/foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bestfriendsny",
+      "url": "https://instagram.com/bestfriendsny"
+    },
+    {
+      "platform": "facebook",
+      "handle": "bestfriendsanimalsociety",
+      "url": "https://facebook.com/bestfriendsanimalsociety"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYC center of the national 501(c)(3) Best Friends Animal Society, 307 W Broadway, SoHo 10013, open daily 11-7. Cats on-site daily; most DOGS are in foster homes, so CALL AHEAD to meet a specific dog. Works collaboratively with ACC + local rescues. Cannot take owner surrenders (unless previously adopted from them) but provides keep-your-pet resources + partner referrals. Also offers spay/neuter referrals + behavior guidance. Phone: (no public adoption phone; contact via site) Email: (via site contact form) Intake: open daily 11am-7pm",
+  "type_raw": "Rescue+adoption / shelter (walk-in) - dogs & cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bestfriends.org/new-york-city"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

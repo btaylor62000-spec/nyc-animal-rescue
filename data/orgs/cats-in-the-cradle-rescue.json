@@ -1,0 +1,63 @@
+{
+  "id": "cats-in-the-cradle-rescue",
+  "name": "Cats In The Cradle Rescue (CITCR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "advocacy",
+    "pet-loss"
+  ],
+  "boroughs": [
+    "queens",
+    "manhattan",
+    "brooklyn",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Queens-based (Forest Hills); pulls from ACC citywide",
+  "zips": [
+    "11375"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.catsinthecradlerescuenyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Cats in the Cradle Rescue NYC"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Queens nonprofit. Rescues social cats/kittens at high euthanasia risk from NYC ACC + found/surrendered cats; adopts via weekend events + Petco habitats + Petfinder. NOT the several out-of-state 'Cat's Cradle' orgs (OR/CA/NC/VA/BC). Verified 2026-08-26. Intake: Adoption via weekend events, two Petco habitats & Petfinder Intake: contact via site/FB Other channel: PO Box 754078, Forest Hills 11375",
+  "type_raw": "rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.catsinthecradlerescuenyc.org/",
+    "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

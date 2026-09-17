@@ -1,0 +1,73 @@
+{
+  "id": "pound-hounds-res-q",
+  "name": "Pound Hounds Res-Q",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "behavior-training",
+    "pet-loss"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based (Manhattan mailing); pulls from NYC ACC + local shelters",
+  "zips": [
+    "10011"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "poundhoundsresq@gmail.com"
+    }
+  ],
+  "website": "https://www.poundhoundsresq.org",
+  "intake_urls": [
+    {
+      "url": "https://www.poundhoundsresq.org/",
+      "label": "Adopt/foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "poundhoundsresq",
+      "url": "https://instagram.com/poundhoundsresq"
+    },
+    {
+      "platform": "facebook",
+      "handle": "PoundHoundsResQ",
+      "url": "https://facebook.com/PoundHoundsResQ"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2014, one of the highest-volume rescues pulling dogs off the euthanasia list at NYC ACC + local shelters. Foster-based, no physical facility. Thoughtful matchmaking (considers dog's behavior + household dynamics); application, interview, and home check required. About half of foster dogs are adopted by their fosters. Mailing NY, NY 10011. Phone: (no public phone; email preferred) Intake: app + interview + home check",
+  "type_raw": "Rescue+adoption (all-breed, foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.poundhoundsresq.org/about-us"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

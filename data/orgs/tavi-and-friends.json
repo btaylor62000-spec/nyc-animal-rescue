@@ -1,0 +1,74 @@
+{
+  "id": "tavi-and-friends",
+  "name": "Tavi & Friends",
+  "aka": [
+    "Tavi & Friends (Brooklyn)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "medical-special-needs",
+    "senior",
+    "retrovirus",
+    "sanctuary",
+    "owner-support"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-based (Bay Ridge P.O. box); NYC foster network",
+  "zips": [
+    "11209"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [
+    {
+      "value": "6468721533",
+      "display": "(646) 872-1533"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adopt@taviandfriends.org"
+    }
+  ],
+  "website": "https://taviandfriends.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Small all-volunteer 501(c)(3), foster-based. NICHE: senior + special-care/FIV+ cats (lifetime foster if unadoptable), plus TNR and American Curl breed rescue; uses TTouch/holistic therapies. The place to route hard-to-place medical/senior cats. Phone + email confirmed on own contact page. Verified 2026-08-26. Intake: Adoption application downloadable from site Other channel: P.O. Box 090325, Brooklyn NY 11209\n\nsenior + FIV lifetime care; the specialist. 646-872-1533 - adopt@taviandfriends.org.",
+  "type_raw": "rescue+adoption / TNR (senior & special-needs cats)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://taviandfriends.org/contact.html"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

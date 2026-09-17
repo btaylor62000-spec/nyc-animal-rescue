@@ -1,0 +1,75 @@
+{
+  "id": "sunset-park-cats",
+  "name": "Sunset Park Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Sunset Park",
+  "zips": [
+    "11220",
+    "11232"
+  ],
+  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@sunsetparkcats.org"
+    }
+  ],
+  "website": "https://www.sunsetparkcats.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "sunsetparkcats",
+      "url": "https://instagram.com/sunsetparkcats"
+    },
+    {
+      "platform": "tiktok",
+      "handle": "sunsetparkcats",
+      "url": "https://tiktok.com/@sunsetparkcats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "SunsetParkCats",
+      "url": "https://facebook.com/SunsetParkCats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) formed 2019, TNR-focused with fostering/adoption (started from a 30+ cat alley colony still managed today). Rescues EXCLUSIVELY in Brooklyn; adopts out across NYC area. Email + active social confirmed. EIN 93-4209914. Re-verified 2026-08-26. Intake: Adopt/foster applications on site Other channel: PO Box 205222, Brooklyn 11220",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.sunsetparkcats.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

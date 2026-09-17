@@ -1,0 +1,59 @@
+{
+  "id": "place-for-cats",
+  "name": "Place for Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan-based, foster-based; adopts citywide - not a Brooklyn field-response group",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based cat groups)",
+  "phones": [
+    {
+      "value": "2127512093",
+      "display": "(212) 751-2093"
+    }
+  ],
+  "emails": [],
+  "website": "https://placeforcats.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Small long-running 501(c)(3) (est. 1990, nonprofit 1994), Manhattan-based, foster-based cat rescue/adoption. Not set up for Brooklyn street/colony response - listed as citywide adoption support; confirm Brooklyn capacity before relying. Phone confirmed on own site. Verified 2026-08-26. Intake: Call for appointment Intake: adopter/foster network signup on site Other channel: Appointment-only Other channel: foster-based (15-25 cats)",
+  "type_raw": "rescue+adoption (Manhattan-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://placeforcats.org/about-us/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "MANHATTAN (Manhattan-based cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

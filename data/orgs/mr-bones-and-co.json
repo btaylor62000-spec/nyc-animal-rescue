@@ -1,0 +1,83 @@
+{
+  "id": "mr-bones-and-co",
+  "name": "Mr. Bones & Co.",
+  "aka": [
+    "Mr. Bones & Co"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "spay-neuter",
+    "medical-special-needs",
+    "microchip",
+    "behavior-training",
+    "financial-aid",
+    "owner-support",
+    "senior",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Greater NYC-based (Manhattan mailing) + Hudson Valley; adopts NY/NJ/CT",
+  "zips": [
+    "10011"
+  ],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@mrbonesandco.org"
+    }
+  ],
+  "website": "https://mrbonesandco.org",
+  "intake_urls": [
+    {
+      "url": "https://mrbonesandco.org/adoptme/",
+      "label": "Adopt"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "mrbonesandco",
+      "url": "https://instagram.com/mrbonesandco"
+    },
+    {
+      "platform": "facebook",
+      "handle": "mrbonesandco",
+      "url": "https://facebook.com/mrbonesandco"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) since 2013, volunteer-based, greater NYC + Hudson Valley. Signature 'One Lucky Pup' program takes dogs facing EXTRAORDINARY challenges - complex medical, traumatic injury, behavioral, breed discrimination, or no other path out of municipal shelters. Individualized care per dog for complex medical and behavior cases. Foster-based (needs NY/CT/NJ foster homes). Fee $500 (covers surgery/specialty care, vaccines, s/n, microchip, foster costs). Also funds grants + s/n events. Phone: (no public phone; email preferred) Intake: online application\n\ntakes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.",
+  "type_raw": "Rescue+adoption (medical/behavioral hard cases; foster-based)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mrbonesandco.org/adoptme/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

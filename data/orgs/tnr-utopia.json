@@ -1,0 +1,80 @@
+{
+  "id": "tnr-utopia",
+  "name": "TNR Utopia",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "surrender",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "North Queens ONLY: North Flushing, Whitestone, Bayside, College Point",
+  "zips": [
+    "11354",
+    "11356",
+    "11357",
+    "11358",
+    "11360",
+    "11361"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [
+    {
+      "value": "3478502287",
+      "display": "(347) 850-2287",
+      "label": "text/VM preferred"
+    }
+  ],
+  "emails": [
+    {
+      "value": "hello@tnrutopia.org"
+    },
+    {
+      "value": "tnr@tnrutopia.org"
+    },
+    {
+      "value": "adopt@tnrutopia.org"
+    }
+  ],
+  "website": "https://www.tnrutopia.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "tnrutopia",
+      "url": "https://instagram.com/tnrutopia"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 82-2975355). TNR-only for North Queens caretakers; does NOT serve Brooklyn, does NOT take owner surrenders or emergencies, planned work only. Included for borough completeness - route Brooklyn cases elsewhere. Verified 2026-08-26. Intake: TNR request via site Intake: no public intake / no emergencies",
+  "type_raw": "TNR (North Queens only)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.tnrutopia.org/about",
+    "https://www.tnrutopia.org/contact"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

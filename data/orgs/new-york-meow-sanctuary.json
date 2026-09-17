@@ -1,0 +1,58 @@
+{
+  "id": "new-york-meow-sanctuary",
+  "name": "New York Meow Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Flushing, Queens",
+  "zips": [
+    "11354",
+    "11355",
+    "11356",
+    "11357",
+    "11358"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Group of Flushing cat rescuers: TNR + adoption + sick-cat medical support + neighborhood feeding + DIY winter shelters. Only verifiable channel is the Petfinder profile - no independent email/phone/website found. Real but reach via Petfinder. Verified 2026-08-26. Intake: Contact via Petfinder profile messaging Other channel: Petfinder: new-york-meow-sanctuary Other channel: Amazon wishlist for donations",
+  "type_raw": "solo rescuer / TNR / rescue+adoption",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,68 @@
+{
+  "id": "little-wanderers-nyc",
+  "name": "Little Wanderers NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "bronx",
+    "manhattan",
+    "queens",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All 5 boroughs; primary focus South Bronx/East Harlem; will help Brooklyn if needed",
+  "zips": [],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [
+    {
+      "value": "9292822271",
+      "display": "(929) 282-2271",
+      "label": "Rescue line (IG)"
+    }
+  ],
+  "emails": [],
+  "website": "https://lwnyc.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "littlewanderersnyc",
+      "url": "https://instagram.com/littlewanderersnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer, foster-based 501(c)(3). Specializes in severely injured/medically needy cats + ACC New Hope partner. Bronx-focused but helps other boroughs. Use rescue form / IG. Intake: //lwnyc.org/rescue-form",
+  "type_raw": "TNR / rescue+adoption (Bronx-based, multi-borough)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://lwnyc.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

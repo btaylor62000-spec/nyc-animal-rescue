@@ -1,0 +1,50 @@
+{
+  "id": "bronx-community-cats",
+  "name": "Bronx Community Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "The Bronx",
+  "zips": [],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.bronxcommunitycats.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 85-3303434). TNRM organizers - help Bronx community members trap-neuter-return-monitor free-roaming cats; coordinate placement via partners (e.g. RescueNYC). Bronx-focused. Verified 2026-08-26. Intake: Contact via site Intake: help for community members doing TNRM Other channel: IG/FB @bronxcommunitycats",
+  "type_raw": "TNR / colony support",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bronxcommunitycats.org/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

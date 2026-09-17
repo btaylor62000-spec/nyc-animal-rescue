@@ -1,0 +1,52 @@
+{
+  "id": "safe-haven-program-map-foster",
+  "name": "Safe Haven Program / MAP Foster",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "phones": [
+    {
+      "value": "8006214673",
+      "display": "(800) 621-4673"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "networks of foster homes partnered with DV shelters to care for a pet temporarily when the shelter can't take animals, then reunite. Ask a DV caseworker or the NYC DV Hotline (800) 621-4673.\n\nnetworks of foster homes partnered with DV shelters to care for a pet temporarily when the shelter can't take animals, then reunite. Ask a DV caseworker or the NYC DV Hotline (800) 621-4673 to connect you.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

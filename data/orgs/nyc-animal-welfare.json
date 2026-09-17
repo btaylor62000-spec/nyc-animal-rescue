@@ -1,0 +1,45 @@
+{
+  "id": "nyc-animal-welfare",
+  "name": "NYC Animal Welfare",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "legal"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HOUSING SUPPORT",
+  "phones": [],
+  "emails": [],
+  "website": "https://nyc.gov/site/animalwelfare/resources/evictions.page",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Animals & Housing/Evictions page (nyc.gov/site/animalwelfare/resources/evictions.page): tenant pet-law guide and resources.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — HOUSING SUPPORT",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

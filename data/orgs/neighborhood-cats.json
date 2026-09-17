@@ -1,0 +1,80 @@
+{
+  "id": "neighborhood-cats",
+  "name": "Neighborhood Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group",
+    "referral-hub"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter",
+    "education",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All NYC (5 boroughs)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "phones": [
+    {
+      "value": "2126625761",
+      "display": "(212) 662-5761"
+    }
+  ],
+  "emails": [
+    {
+      "value": "help@neighborhoodcats.org",
+      "label": "certified caretakers"
+    },
+    {
+      "value": "headcat@neighborhoodcats.org",
+      "label": "general"
+    }
+  ],
+  "website": "https://www.neighborhoodcats.org",
+  "intake_urls": [
+    {
+      "url": "https://www.neighborhoodcats.org/tnr-in-nyc/workshops",
+      "label": "Workshops"
+    },
+    {
+      "url": "https://www.catstats.org/nyc",
+      "label": "Cat Stats"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Founded the NYC TNR community; primary mentor org. Certification, SNAP spay/neuter funding (jackie@neighborhoodcats.org), colony registry, expert help line for certified NYC caretakers. Re-verified 2026-08-26: help@ + headcat@ emails and (212) 662-5761 confirmed on own site. Other channel: TNR in NYC groups.io network Other channel: 244 Fifth Ave, Suite 222, NY 10001",
+  "type_raw": "referral hub / TNR support (citywide backbone)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.neighborhoodcats.org/tnr-in-nyc"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

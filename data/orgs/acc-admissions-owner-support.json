@@ -1,0 +1,57 @@
+{
+  "id": "acc-admissions-owner-support",
+  "name": "ACC Admissions / Owner Support",
+  "aka": [],
+  "parent_org": "animal-care-centers-of-nyc",
+  "org_types": [
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ACC OWNER SUPPORT",
+  "phones": [
+    {
+      "value": "2127884000",
+      "display": "(212) 788-4000",
+      "label": "ACC Admissions / Owner Support"
+    }
+  ],
+  "emails": [
+    {
+      "value": "admissions@nycacc.org",
+      "label": "ACC Admissions / Owner Support"
+    }
+  ],
+  "website": "https://nycacc.org/services/surrender",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — ACC OWNER SUPPORT",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,62 @@
+{
+  "id": "backyard-cats-of-bed-stuy",
+  "name": "Backyard Cats of Bed-Stuy",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bedford-Stuyvesant",
+  "zips": [
+    "11205",
+    "11206",
+    "11216",
+    "11221",
+    "11233"
+  ],
+  "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.backyardcatsofbedstuy.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "backyardcatsofbedstuy",
+      "url": "https://instagram.com/backyardcatsofbedstuy"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Solo TNR-certified independent rescuer (Nicole), active since 2020. TNRM + friendly placement + resource-sharing. Exactly the kind of one-person rescuer who often actually responds. Contact via site form/IG. Intake: Contact form Intake: adoption & foster applications on site Other channel: Venmo @Nicole-Torre",
+  "type_raw": "solo rescuer / TNR",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.backyardcatsofbedstuy.com/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

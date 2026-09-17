@@ -1,0 +1,65 @@
+{
+  "id": "spca-of-westchester-equine-rescue",
+  "name": "SPCA of Westchester - Equine Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "equine"
+  ],
+  "needs": [
+    "medical-special-needs",
+    "legal"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Westchester County (NYC-adjacent)",
+  "zips": [
+    "10595"
+  ],
+  "region_note": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "phones": [
+    {
+      "value": "9149412896",
+      "display": "(914) 941-2896"
+    }
+  ],
+  "emails": [],
+  "website": "https://spcawestchester.org/donate/equine-rescue",
+  "intake_urls": [
+    {
+      "url": "https://spcawestchester.org/donate/equine-rescue",
+      "label": "Report equine cruelty"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "spcawestchester",
+      "url": "https://instagram.com/spcawestchester"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Runs an Equine Rescue fund and Humane Law Enforcement unit handling horse cruelty/neglect in Westchester. NYC-adjacent - the nearest county-level equine cruelty resource north of the city. Phone: ext. 112 Email: (via spcawestchester.org) Intake: Humane Law Enforcement (914) 941-2896 ext. 112",
+  "type_raw": "Humane-law-enforcement equine rescue (cruelty cases)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://spcawestchester.org/donate/equine-rescue"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

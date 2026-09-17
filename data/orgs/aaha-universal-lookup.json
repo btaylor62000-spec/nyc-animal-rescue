@@ -1,0 +1,45 @@
+{
+  "id": "aaha-universal-lookup",
+  "name": "AAHA Universal Lookup",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "microchip",
+    "lost-found"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
+  "phones": [],
+  "emails": [],
+  "website": "https://petmicrochiplookup.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Lost-found & microchip — MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

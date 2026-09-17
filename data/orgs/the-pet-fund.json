@@ -1,0 +1,61 @@
+{
+  "id": "the-pet-fund",
+  "name": "The Pet Fund",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "financial-aid",
+    "owner-support"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "VET-BILL FINANCIAL AID (when care is unaffordable)",
+  "phones": [
+    {
+      "value": "9164436007",
+      "display": "(916) 443-6007"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@thepetfund.com"
+    }
+  ],
+  "website": "https://thepetfund.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com - (916) 443-6007.\n\nhelp for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com, (916) 443-6007, thepetfund.com.\n\nnon-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com, (916) 443-6007, thepetfund.com.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — VET-BILL FINANCIAL AID (when care is unaffordable)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

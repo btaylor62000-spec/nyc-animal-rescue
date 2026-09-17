@@ -14,7 +14,11 @@
     {
       "id": "winorr-home-and-cells",
       "kind": "personal-phone",
-      "value": ["5162930587", "5169873961", "5168516045"],
+      "value": [
+        "5162930587",
+        "5169873961",
+        "5168516045"
+      ],
       "person": "Bobby & Cathy Horvath (WINORR)",
       "found_in": "Exotic workbook row 55 Phone; 'Wildlife rehabilitation' tab line 10",
       "reason": "A home line plus two personal mobiles, for a rehab operation run out of a private residence. Published by NYC Bird Alliance on a public referral page, so arguably already public -- but republishing a home number is a decision for them, not us.",
@@ -28,15 +32,6 @@
       "found_in": "'Wildlife rehabilitation' tab line 11",
       "reason": "An individual volunteer's mobile, not an organizational line.",
       "ask": "Confirm he is willing to be listed publicly for bird-of-prey transport."
-    },
-    {
-      "id": "mama-chris-si-mobile",
-      "kind": "personal-phone",
-      "value": "3479832240",
-      "person": "'Mama Chris' (Staten Island trap bank)",
-      "found_in": "'Colony & feral care' tab lines 21 and 69",
-      "reason": "An individual's mobile, listed as text-only, with no organizational identity attached.",
-      "ask": "Confirm before listing; a text-only line may not want public traffic."
     }
   ],
   "name_holds": [
@@ -48,5 +43,14 @@
       "action": "Strip the first name, keep the organization and its number."
     }
   ],
-  "cleared": []
+  "cleared": [
+    {
+      "id": "mama-chris-si-mobile",
+      "kind": "personal-phone",
+      "value": "3479832240",
+      "cleared_on": "2026-09-17",
+      "reason_cleared": "Not a private individual. 'Mama Chris' is Mama Chris Animal Rescue, Inc., a registered 501(c)(3) (EIN 82-3313014) with its own website (mamachrisrescue.org), a PO Box and an 11K-follower Facebook page. The number is published by the organization as its own contact line, so it is organizational, not personal. Withholding it left a real Staten Island rescue with no direct contact at all.",
+      "note": "The source says 'text 347-983-2240' -- text is the preferred channel. That belongs in the record's notes, not in a privacy hold."
+    }
+  ]
 }

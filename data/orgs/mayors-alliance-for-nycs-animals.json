@@ -1,0 +1,87 @@
+{
+  "id": "mayors-alliance-for-nycs-animals",
+  "name": "Mayor's Alliance for NYC's Animals",
+  "aka": [
+    "Mayor's Alliance for NYC's Animals (citywide referral hub)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "referral-hub",
+    "advocacy",
+    "government",
+    "directory",
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "adoption",
+    "spay-neuter",
+    "low-cost-vet",
+    "advocacy",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Citywide (info hub; 150+ partner shelters & rescues)",
+  "zips": [],
+  "region_note": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.animalalliancenyc.org",
+  "intake_urls": [
+    {
+      "url": "https://www.animalalliancenyc.org/apocenter/",
+      "label": "Resource directories"
+    },
+    {
+      "url": "https://animalalliancenyc.org/need-help"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "mayorsalliance",
+      "url": "https://instagram.com/mayorsalliance"
+    },
+    {
+      "platform": "facebook",
+      "handle": "mayorsalliance",
+      "url": "https://facebook.com/mayorsalliance"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) founded 2003; an information and advocacy backbone, NOT a shelter - it does not house or adopt out animals. Best used as a curated directory when you need a partner org, low-cost s/n, licensing help, or emergency-vet lists. Mailing 244 5th Ave, NY. Runs the Adoptapalooza mega-adoption events. Phone: (no public adoption phone line - info org) Email: (via contact form on site) Intake: adoption, spay/neuter, microchip, dog licensing, emergency vets, lost & found\n\n501(c)(3) founded 2003; NYC's central animal-welfare information hub and network of ~35+ Participating Organizations (shelters/rescues). Not itself a shelter, but the best single starting point to find a NYC-area rescue for a given species - many members take rabbits, exotics and birds in addition to cats/dogs. Also a good way to discover hyper-local/newer rescues not individually listed here. Cross-listed with the cat & dog references. Phone: (via animalalliancenyc.org) Email: (via animalalliancenyc.org contact) Intake: Not an intake org - use its directory of Participating Organizations + resources at Intake: some member orgs take rabbits/exotics/birds. Hosts periodic Adoptapalooza / Paws in the Park mega-adoption events (feature rabbits and some small animals). Other channel: IG/FB @mayorsalliancenyc",
+  "type_raw": "Advocacy / resource directory (does NOT take in or adopt out animals)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalalliancenyc.org/"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

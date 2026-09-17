@@ -1,0 +1,57 @@
+{
+  "id": "queens-low-cost-vet",
+  "name": "Queens Low Cost Vet",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11103"
+  ],
+  "region_note": "QUEENS - feral-friendly / low-cost clinics",
+  "phones": [
+    {
+      "value": "6469947962",
+      "display": "(646) 994-7962"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "28-27 Steinway St",
+    "zip": "11103"
+  },
+  "hours": null,
+  "notes": "28-27 Steinway St, Astoria 11103 - 646-994-7962 - low-cost s/n (ask what's included).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Clinics, traps & support — QUEENS - feral-friendly / low-cost clinics",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "catstoria-cat-rescue-inc",
+  "name": "Catstoria Cat Rescue Inc. (Kitty Haven)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Astoria & Long Island City, Queens",
+  "zips": [
+    "11101",
+    "11102",
+    "11103",
+    "11105",
+    "11106"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "catstoriarescue@gmail.com"
+    }
+  ],
+  "website": "https://catstoria.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "catstoria",
+      "url": "https://instagram.com/catstoria"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) (EIN 92-2795566). SPECIALTY: kitten rescue, dumped house cats, and SICK & INJURED ferals + TNR. Runs 'Kitty Haven,' a staffed cat house where cats recover from illness/surgery until adopted. Distinct from Astoria Cat Rescue & SaveKitty. Email confirmed. Verified 2026-08-26. Intake: Adoption via Petfinder Intake: contact via email Other channel: runs 'Kitty Haven' cat house",
+  "type_raw": "rescue+adoption / TNR (sick/injured + kittens)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://catstoria.com/",
+    "https://www.petfinder.com/member/us/ny/astoria/catstoria-cat-rescue-ny1697/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

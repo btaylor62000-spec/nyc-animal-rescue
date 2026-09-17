@@ -1,0 +1,56 @@
+{
+  "id": "brooklyn-lost-cat-finder",
+  "name": "Brooklyn Lost Cat Finder",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "referral-hub"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "colony-care",
+    "lost-found",
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-wide (lost/found cats)",
+  "zips": [],
+  "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "brooklynlostcatfinder",
+      "url": "https://instagram.com/brooklynlostcatfinder"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Not a rescue - a Brooklyn-wide lost/found cat networking resource. Useful to route people whose cat is missing rather than a street/colony case. Intake: Via Instagram DM",
+  "type_raw": "referral hub / lost-cat support",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BROOKLYN-WIDE (serve all of Kings County)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

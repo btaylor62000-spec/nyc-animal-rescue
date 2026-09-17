@@ -1,0 +1,62 @@
+{
+  "id": "rescue-coop",
+  "name": "Rescue Coop",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "NYC-based; pulls from NYC ACC + local shelters",
+  "zips": [],
+  "region_note": "MANHATTAN (Manhattan-based dog rescues)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.rescuecoop.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "rescuecoop",
+      "url": "https://instagram.com/rescuecoop"
+    },
+    {
+      "platform": "facebook",
+      "handle": "rescuecoop",
+      "url": "https://facebook.com/rescuecoop"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) NYC foster-based rescue and ACC New Hope partner pulling at-risk dogs (and cats) from the NYC shelter system. Foster-based, no facility. Confirm current dog availability; contact via site form. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "type_raw": "Rescue+adoption (foster-based)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope-partners/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "MANHATTAN (Manhattan-based dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

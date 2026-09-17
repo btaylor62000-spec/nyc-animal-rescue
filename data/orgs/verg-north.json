@@ -1,0 +1,58 @@
+{
+  "id": "verg-north",
+  "name": "VERG North (Veterinary Emergency & Referral Group)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11201"
+  ],
+  "region_note": "BROOKLYN - 24-hour ER",
+  "phones": [
+    {
+      "value": "7185229400",
+      "display": "(718) 522-9400"
+    }
+  ],
+  "emails": [],
+  "website": "https://verg-brooklyn.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "318 Warren St",
+    "zip": "11201"
+  },
+  "hours": "Open 24h",
+  "notes": "318 Warren St (btwn Court/Smith), Brooklyn 11201. (718) 522-9400. verg-brooklyn.com. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

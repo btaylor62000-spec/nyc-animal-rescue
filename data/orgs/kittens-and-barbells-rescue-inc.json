@@ -1,0 +1,72 @@
+{
+  "id": "kittens-and-barbells-rescue-inc",
+  "name": "Kittens and Barbells Rescue, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "neonatal",
+    "senior"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bronx-based; services NYC + Westchester",
+  "zips": [
+    "10469"
+  ],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.kittensandbarbells.org",
+  "intake_urls": [
+    {
+      "url": "https://kittensandbarbells.org/adoptus",
+      "label": "email response up to 72 hrs"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "kittensandbarbells_",
+      "url": "https://instagram.com/kittensandbarbells_"
+    },
+    {
+      "platform": "facebook",
+      "handle": "kittensandbarbells",
+      "url": "https://facebook.com/kittensandbarbells"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Foster-based 501(c)(3), co-founders Katie (TNR-certified, neonatal tube/bottle-feed trained) & Donovan. TNR + rescue of the most vulnerable felines of ALL AGES - neonatal kittens through seniors, incl. sick/injured. Satellite nurseries. Bronx-based, works NYC + Westchester. Verified 2026-08-26.",
+  "type_raw": "TNR / rescue+adoption (all-ages, neonatal-senior)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.kittensandbarbells.org/",
+    "https://www.kittensandbarbells.org/meet-the-team"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

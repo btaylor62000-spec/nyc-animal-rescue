@@ -1,0 +1,65 @@
+{
+  "id": "animal-medical-center",
+  "name": "Animal Medical Center (AMC / Schwarzman)",
+  "aka": [
+    "Animal Medical Center (AMC)"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10065"
+  ],
+  "region_note": "MANHATTAN - 24-hour ER",
+  "phones": [
+    {
+      "value": "2128388100",
+      "display": "(212) 838-8100"
+    },
+    {
+      "value": "2128387053",
+      "display": "(212) 838-7053"
+    }
+  ],
+  "emails": [],
+  "website": "https://amcny.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "510 East 62nd St",
+    "zip": "10065"
+  },
+  "hours": "Open 24h",
+  "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appts (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

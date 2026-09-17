@@ -1,0 +1,56 @@
+{
+  "id": "thundercats-tnr",
+  "name": "Thundercats TNR",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "North/Central Brooklyn (Bushwick area & beyond)",
+  "zips": [],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "thundercatsTNR",
+      "url": "https://facebook.com/thundercatsTNR"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Longtime Brooklyn TNR group, frequent Bushwick Street Cats / North Brooklyn Cats partner. Facebook-primary; confirm current activity + scope via DM. Intake: Via Facebook DM",
+  "type_raw": "solo rescuer / TNR",
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://www.facebook.com/thundercatsTNR/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

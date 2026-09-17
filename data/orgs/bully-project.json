@@ -1,0 +1,62 @@
+{
+  "id": "bully-project",
+  "name": "Bully Project",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "breed-specific",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "NYC-focused; foster-based",
+  "zips": [],
+  "region_note": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.adoptapet.com/shelter/83710-bully-project-new-york-new-york",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "thebullyproject",
+      "url": "https://instagram.com/thebullyproject"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Volunteer group working to END DOGFIGHTING IN NYC and promote responsible pit/bully ownership, rehoming bully-type dogs. Foster-based, application emailed on request. A niche but genuinely NYC-focused bully referral. Social/aggregator-primary contact, so verify directly before relying. Phone: (no public phone; email app) Email: (application emailed on request) Intake: application emailed on request via the Adoptapet page above Intake: DM IG @thebullyproject",
+  "type_raw": "Rescue+adoption (pit/bully breeds; foster-based)",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.adoptapet.com/shelter/83710-bully-project-new-york-new-york"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "NYC-ADJACENT (Westchester / lower Hudson / Putnam) - not NYC-based but actively serve NYC adopters & pull from NYC ACC",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

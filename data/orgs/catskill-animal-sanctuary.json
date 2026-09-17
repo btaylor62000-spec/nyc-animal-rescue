@@ -1,0 +1,85 @@
+{
+  "id": "catskill-animal-sanctuary",
+  "name": "Catskill Animal Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "sanctuary"
+  ],
+  "animals": [
+    "farm",
+    "bird-companion",
+    "bird-wild",
+    "equine"
+  ],
+  "needs": [
+    "surrender",
+    "sanctuary",
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "Hudson Valley (Saugerties, NY); regional intake incl. NYC-area situations",
+  "zips": [
+    "12477"
+  ],
+  "region_note": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
+  "phones": [
+    {
+      "value": "8453368447",
+      "display": "(845) 336-8447"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@casanctuary.org"
+    }
+  ],
+  "website": "https://casanctuary.org",
+  "intake_urls": [
+    {
+      "url": "https://casanctuary.org/contact-us/",
+      "label": "Contact page"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "casanctuary",
+      "url": "https://instagram.com/casanctuary"
+    },
+    {
+      "platform": "facebook",
+      "handle": "catskillanimalsanctuary",
+      "url": "https://facebook.com/catskillanimalsanctuary"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "501(c)(3) founded 2001 (Kathy Stevens); 100+ acre Hudson Valley refuge ~100 mi north of NYC, 5,000+ rescues over 25 years. Provides lifelong refuge to ten species of farmed animals - cows, pigs, sheep, goats, HORSES, chickens, turkeys, ducks and others - rescued from cruelty/neglect. Out-of-city (Saugerties) - logged as REGIONAL intake, not NYC-local. Verify current intake capacity before referral; sanctuaries fill quickly. Intake: general inquiries info@CASanctuary.org Intake: 316 Old Stage Rd, Saugerties",
+  "type_raw": "Farmed-animal + horse sanctuary (regional intake)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.hudsonvalleyhorsesource.com/rescue_adoption.html"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,64 @@
+{
+  "id": "cats-of-meow-york",
+  "name": "Cats of Meow York (COMY)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "neonatal"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Woodhaven, Queens (+ other parts of NYC)",
+  "zips": [
+    "11421"
+  ],
+  "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@catsofmeowyork.org"
+    }
+  ],
+  "website": "https://www.catsofmeowyork.org",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "catsofmeowyork",
+      "url": "https://instagram.com/catsofmeowyork"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "High-volume 501(c)(3) (EIN 88-1221020), founded 2017 as The Crazy Cat Family, rebranded 2022. Heavy TNRM + SPECIALTY in neonatal kitten care. One of few NYC rescues with a holding space. Queens-based, works other parts of NYC too. Verified 2026-08-26. Intake: Contact + foster/adopt apps on site Intake: Linktree in IG bio Other channel: founder Farhana Haq Other channel: women-of-color-led",
+  "type_raw": "TNR / rescue+adoption (neonatal specialty)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.catsofmeowyork.org/",
+    "https://www.orgcouncil.com/ein/881221020"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "QUEENS (Queens-based / Queens-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

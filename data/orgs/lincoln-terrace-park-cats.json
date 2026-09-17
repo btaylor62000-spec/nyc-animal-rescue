@@ -1,0 +1,71 @@
+{
+  "id": "lincoln-terrace-park-cats",
+  "name": "Lincoln Terrace Park Cats (LTPC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group",
+    "solo-rescuer"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Crown Heights / Brownsville (Lincoln Terrace Park area)",
+  "zips": [
+    "11212",
+    "11213",
+    "11233"
+  ],
+  "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "lincolnterraceparkcats@gmail.com"
+    }
+  ],
+  "website": "https://www.lincolnterraceparkcats.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "lincolnterraceparkcats",
+      "url": "https://instagram.com/lincolnterraceparkcats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "LincolnTerraceParkCats",
+      "url": "https://facebook.com/LincolnTerraceParkCats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Hyper-local 501(c)(3) founded 2019 by Michelle Marwitz (TNR-certified 2018). Colony care + rescue near Lincoln Terrace Park. Email + IG. EIN 85-2797295. Intake: Adopt/contact via site",
+  "type_raw": "solo rescuer / TNR / rescue+adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.lincolnterraceparkcats.com/contact"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

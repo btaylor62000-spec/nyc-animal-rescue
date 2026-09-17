@@ -1,0 +1,58 @@
+{
+  "id": "verg-south",
+  "name": "VERG South",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11234"
+  ],
+  "region_note": "BROOKLYN - 24-hour ER",
+  "phones": [
+    {
+      "value": "7186776700",
+      "display": "(718) 677-6700"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "2220 Flatbush Ave",
+    "zip": "11234"
+  },
+  "hours": "Open 24h",
+  "notes": "2220 Flatbush Ave (btwn Ave R/Fillmore), Brooklyn 11234. (718) 677-6700. Open 24h.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

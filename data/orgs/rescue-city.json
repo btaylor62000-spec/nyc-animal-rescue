@@ -1,0 +1,79 @@
+{
+  "id": "rescue-city",
+  "name": "Rescue City",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "microchip",
+    "transport"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn-based; pulls from open-intake shelters; serves NYC metro",
+  "zips": [
+    "11214"
+  ],
+  "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "phones": [
+    {
+      "value": "7189150786",
+      "display": "(718) 915-0786"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.rescuecity.nyc",
+  "intake_urls": [
+    {
+      "url": "https://www.rescuecity.nyc/apply-to-adopt/",
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.rescuecity.nyc/apply-to-foster/",
+      "label": "Foster"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "rescuecity",
+      "url": "https://instagram.com/rescuecity"
+    },
+    {
+      "platform": "facebook",
+      "handle": "rescuecity",
+      "url": "https://facebook.com/rescuecity"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "NYS 501(c)(3) (EIN 47-4041234, Ag & Markets Reg #RR128). Professional foster-based dog rescue; transports from open-intake shelters with low save rates. All breeds/sizes/ages/medical; every dog fully vetted, altered, microchipped, vaccinated before adoption. Strong foster and foster-to-adopt program (RC covers medical costs + some supplies during fostering). Runs the Therapaw therapy-dog program. Mailing 8700 25th Ave, Brooklyn. Email: (via site contact form)",
+  "type_raw": "Rescue+adoption (all-breed, foster-based) + foster-to-adopt",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.rescuecity.nyc/"
+  ],
+  "last_verified": "2026-08-27",
+  "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

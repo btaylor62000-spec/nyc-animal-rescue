@@ -1,0 +1,55 @@
+{
+  "id": "aspca-community-veterinary-clinics",
+  "name": "ASPCA Community Veterinary Clinics",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "LOW-COST DOG DENTAL (periodontal disease affects ~80% of dogs over age 3)",
+  "phones": [
+    {
+      "value": "8446927722",
+      "display": "(844) 692-7722"
+    }
+  ],
+  "emails": [],
+  "website": "https://S.Bronx",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "501 E 161st St"
+  },
+  "hours": null,
+  "notes": "subsidized dental cleanings + extractions alongside wellness, income <=$50k. Waitlist via (844) 692-7722.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — LOW-COST DOG DENTAL (periodontal disease affects ~80% of dogs over age 3)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

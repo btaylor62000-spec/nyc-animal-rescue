@@ -1,0 +1,62 @@
+{
+  "id": "a-tail-of-two-kitties",
+  "name": "A Tail of Two Kitties",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Ridgewood/Bushwick border area",
+  "zips": [
+    "11237",
+    "11385"
+  ],
+  "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "atailoftwokittiesnyc",
+      "url": "https://instagram.com/atailoftwokittiesnyc"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer nonprofit (founder Carissa Aguirre) serving primarily Ridgewood/Bushwick via TNR + foster/adopt. Confirmed still active (2026 press coverage). Instagram/adoption-page primary; no direct public email verified. Re-verified 2026-08-26. Intake: Adopt/foster via IG or Petfinder inquiry Other channel: FB 'A Tail of Two Kitties'",
+  "type_raw": "TNR / rescue+adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/",
+    "https://www.adoptapet.com/shelter/86261-a-tail-of-two-kitties-ridgewood-new-york"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,51 @@
+{
+  "id": "free-housing-legal-help",
+  "name": "Free housing legal help",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "legal"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HOUSING SUPPORT",
+  "phones": [
+    {
+      "value": "2129624795",
+      "display": "(212) 962-4795",
+      "label": "Free housing legal help"
+    }
+  ],
+  "emails": [],
+  "website": "https://housingcourtanswers.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "call 311 and ask for tenant legal services, or NYC Housing Court Answers (housingcourtanswers.org, (212) 962-4795).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — HOUSING SUPPORT",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

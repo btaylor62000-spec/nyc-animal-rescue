@@ -1,0 +1,67 @@
+{
+  "id": "nys-dec-find-a-wildlife-rehabilitator",
+  "name": "NYS DEC - Find a Wildlife Rehabilitator (directory)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber",
+    "government",
+    "directory"
+  ],
+  "animals": [
+    "wildlife",
+    "reptile",
+    "amphibian"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York State, searchable by county & species",
+  "zips": [],
+  "region_note": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "phones": [
+    {
+      "value": "8443323267",
+      "display": "(844) 332-3267",
+      "label": "DEC, after-hours/general"
+    }
+  ],
+  "emails": [],
+  "website": "https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab",
+  "intake_urls": [
+    {
+      "url": "https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Official NYS DEC database of licensed wildlife rehabilitators, searchable by county and species. Only DEC-licensed rehabbers may legally handle wild animals; most wildlife cannot legally be kept. Not all rehabbers can accept every animal - try the next-nearest listing if one is full. To report illegal sale of NY reptiles/amphibians: 1-800-847-7332. Email: (use online search tool) Intake: Searchable licensed-rehabber database at Other channel: n/a (government)",
+  "type_raw": "State licensing directory (official)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://dec.ny.gov/nature/wildlife-health/rehabilitators"
+  ],
+  "last_verified": "2026-08-29",
+  "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
+  "source_files": [
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

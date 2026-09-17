@@ -1,0 +1,58 @@
+{
+  "id": "urgent-vets-11369",
+  "name": "Urgent Vets",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet",
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11369"
+  ],
+  "region_note": "QUEENS - 24-hour ER",
+  "phones": [
+    {
+      "value": "7185075600",
+      "display": "(718) 507-5600"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "32-33 Junction Blvd",
+    "zip": "11369"
+  },
+  "hours": null,
+  "notes": "32-33 Junction Blvd, Queens 11369. (718) 507-5600 (late urgent care, not 24h - call).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — QUEENS - 24-hour ER",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

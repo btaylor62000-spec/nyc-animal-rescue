@@ -1,0 +1,62 @@
+{
+  "id": "aspca-animal-poison-control",
+  "name": "ASPCA Animal Poison Control (APCC)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
+  ],
+  "needs": [
+    "poison-control",
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "POISON / TOXIN INGESTION (call FIRST, then go to an ER)",
+  "phones": [
+    {
+      "value": "8884264435",
+      "display": "(888) 426-4435",
+      "label": "ASPCA Animal Poison Control (APCC)"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "24/7",
+  "notes": "(888) 426-4435 - 24/7, vet toxicologists. Consult fee ~$95 (waived w/ HomeAgain microchip).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Emergency & poison control — POISON / TOXIN INGESTION (call FIRST, then go to an ER)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

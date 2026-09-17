@@ -1,0 +1,64 @@
+{
+  "id": "faithful-friends-animal-hospital",
+  "name": "Faithful Friends Animal Hospital (feral spay/neuter)",
+  "aka": [
+    "Faithful Friends Animal Hospital"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "government",
+    "support-program"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (clinic in Gravesend/Midwood); Certified TNR Caretakers",
+  "zips": [
+    "11223"
+  ],
+  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "phones": [
+    {
+      "value": "7183397387",
+      "display": "(718) 339-7387"
+    }
+  ],
+  "emails": [],
+  "website": "https://faithfulfriendsny.com",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "2455 McDonald Ave",
+    "zip": "11223"
+  },
+  "hours": null,
+  "notes": "Private Brooklyn vet hospital offering DISCOUNTED spay/neuter + related services for feral/stray cats to Certified TNR Caretakers (per Bideawee FCI's provider list). Confirm current pricing/eligibility when booking. Verified 2026-08-26. Intake: Call to schedule Intake: low-cost feral/stray spay/neuter for Certified TNR Caretakers Other channel: 2455 McDonald Avenue, Brooklyn NY 11223\n\n2455 McDonald Ave 11223 - (718) 339-7387 - discounted feral s/n for Certified TNR Caretakers.",
+  "type_raw": "spay-neuter clinic (support)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

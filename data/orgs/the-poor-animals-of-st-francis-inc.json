@@ -1,0 +1,67 @@
+{
+  "id": "the-poor-animals-of-st-francis-inc",
+  "name": "The Poor Animals of St. Francis, Inc.",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "colony-care"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "The Bronx (Throggs Neck area)",
+  "zips": [
+    "10465"
+  ],
+  "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "phones": [
+    {
+      "value": "7188220043",
+      "display": "(718) 822-0043"
+    }
+  ],
+  "emails": [
+    {
+      "value": "petsofstfrancis@aol.com"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "Poor-Animals-of-St-Francis",
+      "url": "https://facebook.com/Poor-Animals-of-St-Francis"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "Bronx cat + dog rescue: permanent-home placement + helps feed colonies. Older-style operation (AOL email, Petfinder/FB presence, no standalone website) - Medium confidence, confirm current activity. Contacts consistent across listings. Verified 2026-08-26. Intake: Email/call for adoption application Intake: adoptable pets on Petfinder Other channel: PO Box 701, Bronx 10465 Other channel: Petfinder NY587",
+  "type_raw": "rescue+adoption / colony feeding",
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/"
+  ],
+  "last_verified": "2026-08-26",
+  "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}
