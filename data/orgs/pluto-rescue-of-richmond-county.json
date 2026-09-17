@@ -1,18 +1,23 @@
 {
   "id": "pluto-rescue-of-richmond-county",
   "name": "P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)",
-  "aka": [],
+  "aka": [
+    "P.L.U.T.O. Rescue (Pet Lovers United Together as One)"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster",
     "tnr-group"
   ],
   "animals": [
-    "cat",
-    "dog"
+    "dog",
+    "cat"
   ],
   "needs": [
     "adoption",
+    "foster",
+    "retrovirus",
+    "microchip",
     "surrender",
     "tnr",
     "spay-neuter",
@@ -56,24 +61,35 @@
   "intake_urls": [],
   "social": [
     {
+      "platform": "instagram",
+      "handle": "plutorescue",
+      "url": "https://instagram.com/plutorescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "P.L.U.T.ORescue",
+      "url": "https://facebook.com/P.L.U.T.ORescue"
+    },
+    {
       "platform": "facebook",
       "handle": "PLUTO Rescue"
     }
   ],
   "address": null,
   "hours": null,
-  "notes": "No-kill 501(c)(3) since 2001. Cats + dogs (strays + owner surrender), full vetting. Runs a LOW-COST SPAY/NEUTER program + supports TNR for feral cats. Phone + email confirmed on own listings. Verified 2026-08-26. Intake: Pre-adopt form + home visit Intake: Sat adoptions 12-3 at Petco 2752 Veterans Rd W 10309 Other channel: PO Box 140889, Staten Island 10314 Other channel: contact Lisa Rooney",
+  "notes": "All-volunteer 501(c)(3) no-kill on Staten Island. Uses the Merry Mutts Play & Stay facility (654A Sharrotts Rd, SI 10309) plus volunteer fosters. Dogs HW-tested; cats FIV/FeLV-tested; all vetted + altered + microchipped before adoption. Adoption donation: dog/puppy $180, purebred dog/puppy $280, cat/kitten $80 (incl. full vetting). App reviewed -> home visit -> paperwork at the visit. Mail: PO Box 140889, Staten Island 10314. Solid SI option beyond Louie's Legacy. Phone: (no public phone; contact via FB/site) Email: (via Facebook message / site) Intake: Adopt/foster via site, Petfinder & Adoptapet Intake: Saturday adoption events Intake: application -> home visit\n\nNo-kill 501(c)(3) since 2001. Cats + dogs (strays + owner surrender), full vetting. Runs a LOW-COST SPAY/NEUTER program + supports TNR for feral cats. Phone + email confirmed on own listings. Verified 2026-08-26. Intake: Pre-adopt form + home visit Intake: Sat adoptions 12-3 at Petco 2752 Veterans Rd W 10309 Other channel: PO Box 140889, Staten Island 10314 Other channel: contact Lisa Rooney",
   "type_raw": "rescue+adoption / TNR / low-cost spay-neuter",
   "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.plutorescue.com/",
-    "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york"
+    "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york",
+    "https://www.plutorescue.com/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-08-27",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx",
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": null,

@@ -9,7 +9,8 @@
       "DOM.Iterable"
     ],
     "types": [
-      "node"
+      "node",
+      "@cloudflare/workers-types"
     ],
     "strict": true,
     "noUncheckedIndexedAccess": true,
@@ -22,6 +23,7 @@
   "include": [
     "scripts/**/*.ts",
     "src/**/*.ts",
-    "tests/**/*.ts"
+    "tests/**/*.ts",
+    "functions/**/*.ts"
   ]
 }

@@ -4,8 +4,8 @@ Generated 2026-09-17 from the three source workbooks and the wildlife guide.
 
 ## Totals
 
-- **297** organizations after de-duplication
-- **72** duplicate clusters merged
+- **287** organizations after de-duplication
+- **75** duplicate clusters merged
 - **19** guide pages generated
 - **12** entries flagged as not currently active
 - **2** entries with no way at all to make contact
@@ -17,14 +17,14 @@ Generated 2026-09-17 from the three source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 207 |
-| dog | 140 |
+| cat | 199 |
+| dog | 139 |
 | wildlife | 28 |
 | rabbit | 25 |
 | bird-companion | 24 |
 | reptile | 24 |
-| small-mammal | 22 |
 | farm | 21 |
+| small-mammal | 21 |
 | pigeon | 11 |
 | bird-wild | 10 |
 | amphibian | 6 |
@@ -37,25 +37,25 @@ Generated 2026-09-17 from the three source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 152 |
-| tnr | 95 |
+| adoption | 150 |
+| tnr | 94 |
 | foster | 88 |
 | surrender | 59 |
 | spay-neuter | 53 |
-| owner-support | 47 |
-| low-cost-vet | 38 |
+| owner-support | 45 |
+| low-cost-vet | 40 |
 | referral | 34 |
 | advocacy | 32 |
-| emergency-vet | 31 |
+| emergency-vet | 29 |
 | colony-care | 29 |
 | wildlife-rehab | 24 |
 | medical-special-needs | 23 |
 | education | 22 |
-| financial-aid | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
-| boarding | 16 |
-| senior | 16 |
+| financial-aid | 16 |
+| boarding | 15 |
+| senior | 15 |
 | microchip | 14 |
 | food-assistance | 13 |
 | lost-found | 10 |
@@ -63,36 +63,36 @@ Generated 2026-09-17 from the three source workbooks and the wildlife guide.
 | transport | 10 |
 | breed-specific | 10 |
 | pet-loss | 9 |
-| trap-bank | 7 |
 | exotic-vet | 6 |
+| trap-bank | 6 |
 | neonatal | 6 |
 | retrovirus | 5 |
-| poison-control | 4 |
 | working-cat | 2 |
+| poison-control | 2 |
 
 ### By borough
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 159 |
-| queens | 117 |
-| manhattan | 113 |
-| bronx | 98 |
-| staten-island | 98 |
+| brooklyn | 155 |
+| queens | 114 |
+| manhattan | 108 |
+| bronx | 94 |
+| staten-island | 94 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 158 |
-| High | 110 |
+| Medium | 149 |
+| High | 109 |
 | Low | 29 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 285 |
+| active | 275 |
 | verify | 7 |
 | hiatus | 3 |
 | retired | 1 |
@@ -147,7 +147,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (91)
+### Never verified (83)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -168,14 +168,16 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (72)
+### Merged (75)
 
+- `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
 - `ama-animal-rescue` ← 2 records
 - `k9kastle` ← 2 records
 - `sean-casey-animal-rescue` ← 5 records
 - `tavi-and-friends` ← 2 records
 - `brooklyn-animal-action` ← 2 records
+- `neighborhood-cats` ← 2 records
 - `puppy-kitty-nyc` ← 3 records
 - `the-toby-project` ← 3 records
 - `animal-rescue-of-queens-inc` ← 2 records
@@ -195,14 +197,15 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `foster-dogs-inc` ← 2 records
 - `red-hook-dog-rescue` ← 2 records
 - `mr-bones-and-co` ← 2 records
+- `pluto-rescue-of-richmond-county` ← 2 records
 - `bully-baby-rescue` ← 2 records
-- `aspca-animal-poison-control-center` ← 2 records
-- `pet-poison-helpline` ← 2 records
+- `aspca-animal-poison-control-center-24-7-hotline` ← 3 records
+- `pet-poison-helpline-24-7-hotline` ← 3 records
 - `bluepearl-brooklyn` ← 2 records
 - `veg-ralph-ave` ← 2 records
 - `veg-williamsburg` ← 2 records
 - `fifth-avenue-veterinary-hospital` ← 2 records
-- `animal-medical-center` ← 2 records
+- `animal-medical-center` ← 7 records
 - `bluepearl-midtown` ← 2 records
 - `bluepearl-downtown` ← 2 records
 - `veg` ← 2 records
@@ -212,6 +215,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `completecare-veterinary-center` ← 2 records
 - `greater-state-veterinary-specialists` ← 2 records
 - `friends-of-animals` ← 2 records
+- `muffins-pet-connection-mama-program` ← 2 records
 - `bbawc-rescue-clinic` ← 2 records
 - `acc-community-pets-program` ← 3 records
 - `acc-pet-food-pantry` ← 2 records
@@ -220,7 +224,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `food-bank-for-new-york-city` ← 2 records
 - `prince-chunk-foundation` ← 2 records
 - `kisos-pet-food-pantry` ← 2 records
-- `paws-ny` ← 6 records
+- `paws-ny` ← 7 records
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
 - `aspca-community-engagement` ← 2 records
 - `animal-haven-community-engagement` ← 2 records
@@ -232,20 +236,20 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `lap-of-love` ← 2 records
 - `nysave` ← 2 records
 - `aspca-animal-hospital` ← 2 records
-- `redrover-relief` ← 4 records
+- `redrover-relief` ← 5 records
 - `the-pet-fund` ← 3 records
 - `frankies-friends` ← 3 records
 - `waggle` ← 3 records
 - `carecredit` ← 3 records
 - `pets-of-the-homeless` ← 2 records
-- `aspca-community-veterinary-clinic` ← 3 records
+- `aspca-community-veterinary-clinic-brooklyn` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records
 - `vinegar-hill-veterinary-group` ← 2 records
-- `amc` ← 3 records
 
-### Deliberately kept apart (1)
+### Deliberately kept apart (2)
 
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
+- "ASPCA Community Veterinary Clinic" resolved to 3 distinct locations; kept separate rather than merged
 
 ### Conflicts between sources (5)
 

@@ -80,6 +80,9 @@ export const NEVER_MERGE: Array<[string, string]> = [
 export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   { pattern: /^ACC$/i, canonicalName: 'Animal Care Centers of NYC (ACC)' },
   { pattern: /^ASPCA$/i, canonicalName: 'ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)' },
+  // The hospital and its assistance funds are one organization; the guide tabs
+  // name it three different ways and the merge key strips "Center".
+  { pattern: /^AMC\b/i, canonicalName: 'Animal Medical Center (AMC / Schwarzman)' },
 ];
 
 /**

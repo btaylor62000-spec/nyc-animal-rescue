@@ -25,6 +25,7 @@ import { applyPrivacyHolds } from './privacy.ts';
 import { buildAllGuidePages, unusedTabs, writeGuidePages } from './guide-pages.ts';
 import { ORG_SCHEMA } from './schema.ts';
 import { buildReport } from './report.ts';
+import { buildOrgCorpus, chunkGuide, type CorpusGuide } from './corpus.ts';
 import type { TagTrace } from './tag.ts';
 
 const ORGS_DIR = 'data/orgs';
@@ -175,6 +176,28 @@ function main(): void {
   const pages = buildAllGuidePages();
   writeGuidePages(pages, GUIDES_DIR);
   console.log(`Wrote ${pages.length} guide pages to ${GUIDES_DIR}/`);
+
+  // The corpus the chat assistant retrieves against, generated here so it can
+  // never drift from what the site publishes.
+  const orgCorpus = buildOrgCorpus(sorted);
+  const guideCorpus: CorpusGuide[] = pages.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    summary: p.summary,
+    topics: p.topics,
+    chunks: chunkGuide(p.markdown, p.title),
+  }));
+  writeFileSync(
+    'data/chat-corpus.json',
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus }, null, 0)}\n`,
+    'utf8',
+  );
+  const excluded = sorted.length - orgCorpus.length;
+  console.log(
+    `Wrote data/chat-corpus.json (${orgCorpus.length} organizations, ` +
+      `${guideCorpus.reduce((n, g) => n + g.chunks.length, 0)} guide sections, ` +
+      `${excluded} closed or relocated excluded)`,
+  );
 
   const report = buildReport({
     orgs: sorted,

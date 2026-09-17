@@ -14,7 +14,7 @@
  *     silently combining them would publish a wrong number for an urgent case.
  */
 import type { Confidence, Org, Status } from '../../src/types.ts';
-import { mergeKey } from './normalize.ts';
+import { mergeKey, mergeTokens } from './normalize.ts';
 import { AGGREGATOR_DOMAINS, DROP_NAMES, NAME_ALIASES, NEVER_MERGE } from './overrides.ts';
 
 export interface MergeConflict {
@@ -109,6 +109,17 @@ function locationConflict(a: Org, b: Org): string | null {
   const bz = b.address?.zip;
   if (az && bz && az !== bz) return `different address ZIPs (${az} vs ${bz})`;
 
+  // Many records extracted from guide prose name a borough but no street, so
+  // the checks above cannot see them. A chain that runs one clinic per borough
+  // -- the ASPCA community clinics, for instance -- would otherwise collapse
+  // into a single record and lose two of the three locations.
+  if (!a.citywide && !b.citywide && a.boroughs.length && b.boroughs.length) {
+    const shared = a.boroughs.some((x) => b.boroughs.includes(x));
+    if (!shared) {
+      return `different boroughs (${a.boroughs.join('/')} vs ${b.boroughs.join('/')})`;
+    }
+  }
+
   return null;
 }
 
@@ -158,6 +169,78 @@ function keyFor(name: string): string {
   return mergeKey(alias ? alias.canonicalName : name);
 }
 
+/**
+ * Is `short` a leading run of words in `long`, substantial enough that the two
+ * are plausibly the same organization under a longer descriptive name?
+ *
+ * Guide prose repeats organizations this way -- "Pet Poison Helpline" and
+ * "Pet Poison Helpline - 24/7 HOTLINE". But "Second Chance" opens two
+ * unrelated rescues, and "Brooklyn" opens a dozen, so a short lead is not
+ * enough on its own.
+ */
+function isNamePrefix(short: string[], long: string[]): boolean {
+  if (short.length === 0 || short.length >= long.length) return false;
+  for (let i = 0; i < short.length; i++) if (short[i] !== long[i]) return false;
+
+  const chars = short.join('').length;
+  if (short.length >= 3) return true;
+  if (short.length === 2 && chars >= 14) return true;
+  if (short.length === 1 && chars >= 10) return true;
+  return false;
+}
+
+function domainsOf(orgs: Org[]): Set<string> {
+  const out = new Set<string>();
+  for (const o of orgs) {
+    const h = hostOf(o.website);
+    if (h && !AGGREGATOR_DOMAINS.has(h)) out.add(h);
+  }
+  return out;
+}
+
+/**
+ * Two groups disagree about who they are when each names a different domain.
+ * That is the strongest available evidence that a promising-looking name
+ * prefix is a coincidence.
+ */
+function domainsIncompatible(a: Org[], b: Org[]): boolean {
+  const da = domainsOf(a);
+  const db = domainsOf(b);
+  if (da.size === 0 || db.size === 0) return false;
+  for (const d of da) if (db.has(d)) return false;
+  return true;
+}
+
+/**
+ * Fold groups whose name is a leading run of another group's name.
+ *
+ * Guarded three ways: the lead has to be substantial, the two must not name
+ * different domains, and neither may claim a different physical location.
+ */
+function foldPrefixGroups(groups: Map<string, Org[]>): void {
+  const entries = [...groups.entries()]
+    .filter(([k]) => !k.startsWith('__unique:'))
+    .map(([key, orgs]) => ({ key, orgs, tokens: mergeTokens(orgs[0]!.name) }))
+    .sort((a, b) => a.tokens.length - b.tokens.length);
+
+  for (const shortEntry of entries) {
+    const shortGroup = groups.get(shortEntry.key);
+    if (!shortGroup) continue;
+
+    for (const longEntry of entries) {
+      if (longEntry.key === shortEntry.key) continue;
+      const longGroup = groups.get(longEntry.key);
+      if (!longGroup) continue;
+      if (!isNamePrefix(shortEntry.tokens, longEntry.tokens)) continue;
+      if (domainsIncompatible(shortGroup, longGroup)) continue;
+      if (shortGroup.some((a) => longGroup.some((b) => locationConflict(a, b)))) continue;
+
+      shortGroup.push(...longGroup);
+      groups.delete(longEntry.key);
+    }
+  }
+}
+
 export function mergeOrgs(all: Org[]): MergeResult {
   const dropped = all.filter((o) => DROP_NAMES.some((p) => p.test(o.name.trim())));
   const kept = all.filter((o) => !dropped.includes(o));
@@ -173,6 +256,8 @@ export function mergeOrgs(all: Org[]): MergeResult {
     if (bucket) bucket.push(org);
     else groups.set(key, [org]);
   }
+
+  foldPrefixGroups(groups);
 
   const orgs: Org[] = [];
   const merged: MergeResult['merged'] = [];

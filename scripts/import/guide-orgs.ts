@@ -247,8 +247,8 @@ function splitEntry(text: string): { name: string; rest: string; borough: string
   if (!name) {
     // No usable dash: take the leading clause before the first sentence break.
     const lead = /^([^.,:]{3,70})[.,:]\s*(.*)$/.exec(parts.join(' - '));
-    if (lead) return { name: trimVerbPhrase(balanced(lead[1]!.trim())), rest: lead[2]!.trim(), borough };
-    return { name: trimVerbPhrase(balanced(text.slice(0, 70).trim())), rest: text, borough };
+    if (lead) return { name: balanced(trimVerbPhrase(lead[1]!.trim())), rest: lead[2]!.trim(), borough };
+    return { name: balanced(trimVerbPhrase(text.slice(0, 70).trim())), rest: text, borough };
   }
 
   // Everything after a colon is description, not name: both
@@ -268,7 +268,7 @@ function splitEntry(text: string): { name: string; rest: string; borough: string
     rest = `${comma[2]} ${rest}`.trim();
   }
 
-  return { name: trimVerbPhrase(balanced(name.slice(0, 80).trim())), rest, borough };
+  return { name: balanced(trimVerbPhrase(name.slice(0, 80).trim())), rest, borough };
 }
 
 /**
@@ -299,7 +299,17 @@ const TRAILING_VERB_RE =
   /\s+\b(runs?|provides?|hosts?|offers?|maintains?|operates?|accepts?|covers?|assists?|helps?|handles?|supports?|serves?|takes?|gives?|works?|is|are|was|were|has|have|will|can|does)\b\s+.*$/i;
 
 function trimVerbPhrase(name: string): string {
-  const trimmed = name.replace(TRAILING_VERB_RE, '').trim();
+  const m = TRAILING_VERB_RE.exec(name);
+  if (!m) return name;
+
+  // Never cut inside a parenthetical: "PAWS NY (Pets Are Wonderful Support)"
+  // would otherwise become "PAWS NY (Pets", because "Are" looks like a verb.
+  const before = name.slice(0, m.index);
+  const opens = (before.match(/\(/g) ?? []).length;
+  const closes = (before.match(/\)/g) ?? []).length;
+  if (opens > closes) return name;
+
+  const trimmed = before.trim();
   return trimmed.length >= 3 ? trimmed : name;
 }
 

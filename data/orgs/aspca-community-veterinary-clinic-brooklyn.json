@@ -1,69 +1,42 @@
 {
   "id": "aspca-community-veterinary-clinic-brooklyn",
-  "name": "ASPCA Community Veterinary Clinic - Brooklyn (East New York)",
+  "name": "ASPCA Community Veterinary Clinic (Lewyt)",
   "aka": [],
   "parent_org": null,
   "org_types": [
-    "clinic",
-    "government",
-    "support-program"
+    "clinic"
   ],
   "animals": [
-    "cat"
+    "dog"
   ],
   "needs": [
-    "spay-neuter"
+    "low-cost-vet"
   ],
   "boroughs": [
-    "brooklyn",
-    "manhattan",
-    "queens",
-    "bronx",
-    "staten-island"
+    "brooklyn"
   ],
-  "citywide": true,
+  "citywide": false,
   "outside_nyc": false,
-  "neighborhoods": "Brooklyn clinic (East New York) + citywide mobile/waitlist",
-  "zips": [
-    "11203",
-    "11210",
-    "11225",
-    "11226",
-    "11234",
-    "11236",
-    "11239"
-  ],
-  "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
-  "phones": [
-    {
-      "value": "8446927722",
-      "display": "(844) 692-7722",
-      "label": "mobile clinic"
-    }
-  ],
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)",
+  "phones": [],
   "emails": [],
   "website": "https://clinic.aspca.org/locations/new-york-city",
-  "intake_urls": [
-    {
-      "url": "https://www.aspca.org/nyc/spay-neuter-services/rescue-professionals",
-      "label": "Rescuer services (RSS)"
-    }
-  ],
+  "intake_urls": [],
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "KEEP + REACH OUT even though status is limited: As of 2026 the ASPCA is NOT accepting NEW rescue clients (their words: 'look forward to opening to new groups in the future') - existing rescue clients still use the online RSS scheduler. The East New York clinic does wellness/vaccines by appt for eligible low-income owners (proof of public assistance + in-zip); spay/neuter for the public now runs via the MOBILE clinic + 6am-day-of virtual waitlist (Brooklyn zips 11203/11210/11225/11226/11234/11236/11239). Trap/equipment rental pickup at East New York, $50 refundable deposit, 14-day loan. Capacity limited by staffing. Re-verified 2026-08-26. Intake: owners join Same-Day Waitlist Other channel: Community clinic in East New York, Brooklyn",
-  "type_raw": "spay-neuter clinic (support)",
-  "confidence": "High",
-  "status": "hiatus",
-  "status_note": "Source says this organization is paused or on hiatus.",
-  "source_urls": [
-    "https://clinic.aspca.org/locations/new-york-city"
-  ],
-  "last_verified": "2026-08-26",
-  "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
+  "notes": "East New York: s/n + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Low-cost vet, s-n & licensing — ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": null,
   "check_status": "unchecked",

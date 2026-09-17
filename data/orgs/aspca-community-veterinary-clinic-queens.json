@@ -1,10 +1,7 @@
 {
-  "id": "aspca-community-veterinary-clinic",
-  "name": "ASPCA Community Veterinary Clinic",
-  "aka": [
-    "ASPCA Community Veterinary Clinic (Lewyt)",
-    "ASPCA Community Veterinary Clinic (Rachael Ray Foundation)"
-  ],
+  "id": "aspca-community-veterinary-clinic-queens",
+  "name": "ASPCA Community Veterinary Clinic (Rachael Ray Foundation)",
+  "aka": [],
   "parent_org": null,
   "org_types": [
     "clinic"
@@ -16,8 +13,6 @@
     "low-cost-vet"
   ],
   "boroughs": [
-    "bronx",
-    "brooklyn",
     "queens"
   ],
   "citywide": false,
@@ -32,7 +27,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "South Bronx: s/n + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income <= $50k.)\n\nEast New York: s/n + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.\n\nLong Island City: s/n + wellness + routine care by appointment for eligible Queens residents. clinic.aspca.org/locations/new-york-city.",
+  "notes": "Long Island City: s/n + wellness + routine care by appointment for eligible Queens residents. clinic.aspca.org/locations/new-york-city.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",

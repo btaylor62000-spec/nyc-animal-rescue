@@ -333,6 +333,26 @@ export function slugify(name: string): string {
  * boilerplate and generic rescue words so "Animal Haven" and
  * "Animal Haven, Inc." collapse, while keeping enough to stay distinctive.
  */
+/**
+ * The words of a merge key, before they are squashed together.
+ *
+ * Prefix comparison has to happen on words: "brooklyn" is a prefix of the
+ * string "brooklynkittycommittee" but not of the words
+ * ["brooklyn", "kitty", "committee"] in any sense that means they are the same
+ * organization.
+ */
+export function mergeTokens(name: string): string[] {
+  return name
+    .toLowerCase()
+    .replace(/\[[^\]]*\]|\([^)]*\)/g, ' ')
+    .replace(/['\u2019]s\b/g, '')
+    .replace(/\b(inc|llc|corp|co|nyc|ny|new york|the|a|of|and|for)\b/g, ' ')
+    .replace(/\b(rescue|rescues|animal|animals|foundation|society|project|group|adoption|adoptions)\b/g, ' ')
+    .replace(/\b(program|programme|programs|programmes|initiative|services|service|center|centre|centers|centres)\b/g, ' ')
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+}
+
 export function mergeKey(name: string): string {
   return name
     .toLowerCase()

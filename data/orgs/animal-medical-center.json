@@ -2,19 +2,30 @@
   "id": "animal-medical-center",
   "name": "Animal Medical Center (AMC / Schwarzman)",
   "aka": [
-    "Animal Medical Center (AMC)"
+    "Animal Medical Center (AMC)",
+    "AMC (Schwarzman Animal Medical Center, Manhattan) funds",
+    "AMC (Schwarzman Animal Medical Center, Manhattan) financial-assistance funds",
+    "AMC (Schwarzman Animal Medical Center)",
+    "AMC"
   ],
   "parent_org": null,
   "org_types": [
     "emergency-vet",
-    "clinic"
+    "clinic",
+    "support-program"
   ],
   "animals": [
     "cat",
-    "dog"
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
   ],
   "needs": [
-    "emergency-vet"
+    "emergency-vet",
+    "financial-aid",
+    "owner-support"
   ],
   "boroughs": [
     "manhattan"
@@ -36,7 +47,11 @@
       "display": "(212) 838-7053"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "funds@amcny.org"
+    }
+  ],
   "website": "https://amcny.org",
   "intake_urls": [],
   "social": [],
@@ -45,7 +60,7 @@
     "zip": "10065"
   },
   "hours": "Open 24h",
-  "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appts (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.",
+  "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appts (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nHoney Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nKiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.\n\nCharlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -55,7 +70,8 @@
   "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
-    "research/NYC_Dog_Rescue_Reference.xlsx"
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": null,
   "check_status": "unchecked",

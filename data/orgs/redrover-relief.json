@@ -1,7 +1,9 @@
 {
   "id": "redrover-relief",
   "name": "RedRover Relief",
-  "aka": [],
+  "aka": [
+    "RedRover Relief Safe Escape"
+  ],
   "parent_org": null,
   "org_types": [
     "support-program"
@@ -37,7 +39,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "grants (avg ~$250) toward urgent, life-threatening care; income under $60,000/yr; paid to the vet. redrover.org/relief - (916) 429-2457.\n\nSafe Escape grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.\n\ngrants (avg ~$250) toward urgent, life-threatening care; household income under $60,000/yr; paid to the vet. redrover.org/relief, (916) 429-2457.\n\nurgent/life-threatening care grants (avg ~$250); explicitly assists birds, rabbits and guinea pigs, not just cats/dogs; household income under ~$60k; paid to the vet. redrover.org/relief, (916) 429-2457. Also has a domestic-violence/pets program.",
+  "notes": "grants (avg ~$250) toward urgent, life-threatening care; income under $60,000/yr; paid to the vet. redrover.org/relief - (916) 429-2457.\n\nSafe Escape grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.\n\ngrants (avg ~$250) toward urgent, life-threatening care; household income under $60,000/yr; paid to the vet. redrover.org/relief, (916) 429-2457.\n\nurgent/life-threatening care grants (avg ~$250); explicitly assists birds, rabbits and guinea pigs, not just cats/dogs; household income under ~$60k; paid to the vet. redrover.org/relief, (916) 429-2457. Also has a domestic-violence/pets program.\n\ngrants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
