@@ -1,0 +1,8 @@
+---
+interface Props { urgent?: boolean }
+const { urgent = false } = Astro.props;
+---
+<p class={`notice${urgent ? ' notice--urgent' : ''}`}>
+  <span aria-hidden="true">{urgent ? '⚠' : 'ℹ'}</span>
+  <span><slot /></span>
+</p>

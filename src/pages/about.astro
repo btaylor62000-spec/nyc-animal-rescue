@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import { ORGS, STALE_DAYS } from '../data/orgs.ts';
+import { REPORT_ISSUE_BASE } from '../data/site.ts';
+
+/**
+ * The "recent changes" feed is built from each record's change_log. It is
+ * empty until the Phase 4 update agent runs; showing the section anyway, with
+ * an honest empty state, is better than hiding how the site is maintained.
+ */
+const changes = ORGS.flatMap((org) =>
+  org.change_log.map((c) => ({ org, change: c })),
+)
+  .sort((a, b) => b.change.date.localeCompare(a.change.date))
+  .slice(0, 40);
+
+const counts = {
+  total: ORGS.length,
+  high: ORGS.filter((o) => o.confidence === 'High').length,
+  medium: ORGS.filter((o) => o.confidence === 'Medium').length,
+  low: ORGS.filter((o) => o.confidence === 'Low').length,
+  flagged: ORGS.filter((o) => o.status !== 'active').length,
+};
+---
+
+<Base
+  title="About"
+  description="How this directory is put together, what the confidence levels mean, and how it is kept current."
+>
+  <div class="wrap prose">
+    <h1>About this directory</h1>
+
+    <p class="lede">
+      A free, non-commercial directory of animal help in New York City. No ads, no tracking,
+      no accounts. It exists because the information people need in a crisis is scattered across
+      dozens of sites, and half of it is out of date.
+    </p>
+
+    <h2>What is in it</h2>
+    <p>
+      {counts.total} organizations: rescues, shelters, TNR groups, 24-hour emergency vets,
+      low-cost clinics, wildlife rehabilitators, trap banks, hotlines and owner-support
+      programmes, across all five boroughs. It covers cats, dogs, rabbits, birds, reptiles,
+      small mammals, farm animals and wildlife.
+    </p>
+
+    <h2 id="confidence">What the confidence levels mean</h2>
+    <dl>
+      <dt><strong>High</strong> ({counts.high} entries)</dt>
+      <dd>The contact details were confirmed on the organization's own website on the date shown.</dd>
+      <dt><strong>Medium</strong> ({counts.medium} entries)</dt>
+      <dd>
+        Confirmed through an authoritative listing — the city shelter's partner roster, a state
+        licence register, a well-maintained referral directory — or the entry carries a caveat,
+        such as being based outside the city.
+      </dd>
+      <dt><strong>Low</strong> ({counts.low} entries)</dt>
+      <dd>
+        A real group, but reachable mainly through a social media account or a third-party
+        directory. These are worth knowing about, and worth checking before you rely on them.
+      </dd>
+    </dl>
+
+    <p>
+      Confidence is about <em>evidence</em>, not quality. A small, excellent, one-person rescue
+      that only uses Instagram is Low confidence; that is a statement about how firmly we could
+      verify its contact details, not about the rescue.
+    </p>
+
+    <h2>Whether a group is still operating</h2>
+    <p>
+      That is tracked separately from confidence, because they are different problems. A
+      well-verified group that has since shut down is more dangerous to a person in a hurry than
+      a thinly-verified group that is thriving. {counts.flagged} entries are currently flagged as
+      closed, paused, moved out of the city, or needing confirmation, and each says so on its card.
+    </p>
+
+    <h2>Why entries say "confirm before relying on this"</h2>
+    <p>
+      Rescue contact details go stale fast. Volunteers move on, small groups fold quietly, and
+      phone numbers get reassigned. Any entry that is Low confidence, flagged as not currently
+      active, or that has not been verified in the last {STALE_DAYS} days carries that reminder.
+      It is not a warning about the organization — it is a reminder that this directory is a
+      starting point, not a guarantee.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+      Some of the research behind this site contained private individuals' phone numbers —
+      a volunteer's mobile, a home line for a rehabilitator working out of their house. Those are
+      withheld by default until the person confirms they want to be listed publicly. Where that
+      leaves an entry without a direct contact, the entry says so.
+    </p>
+    <p>
+      The site sets no cookies, runs no analytics, and asks for nothing about you.
+    </p>
+
+    <h2>How it is kept current</h2>
+    <p>
+      An automated check will run every week against each organization's own website, looking for
+      changed phone numbers and emails, dead domains, and language like "we have closed" or "not
+      currently accepting intakes". It is deliberately cautious:
+    </p>
+    <ul>
+      <li>A contact detail is only changed automatically when the new value appears on the organization's own site <em>and</em> the old one no longer does.</li>
+      <li>Nothing is ever deleted automatically. Entries that fail repeatedly are flagged for a person to look at.</li>
+      <li>Anything ambiguous is flagged rather than quietly overwritten.</li>
+      <li>If a single run would change more than a small fraction of the directory, it changes nothing — that pattern means the checker broke, not that half of New York's rescues moved.</li>
+    </ul>
+    <p>Every change is recorded, and shown below.</p>
+
+    <h2>Recent changes</h2>
+    {changes.length === 0 ? (
+      <p class="muted">
+        No automated changes yet — the weekly check has not run. Everything currently in the
+        directory came from the initial research, verified in August 2026.
+      </p>
+    ) : (
+      <ul>
+        {changes.map(({ org, change }) => (
+          <li>
+            <strong>{change.date}</strong> — <a href={`/org/${org.id}`}>{org.name}</a>:
+            {' '}{change.field} changed{change.from && <> from <code>{change.from}</code></>}
+            {change.to && <> to <code>{change.to}</code></>}
+            {change.evidence_url && <> (<a href={change.evidence_url} rel="noopener nofollow">evidence</a>)</>}
+          </li>
+        ))}
+      </ul>
+    )}
+
+    <h2 id="report">Report a problem</h2>
+    <p>
+      If an entry is wrong, out of date, or should not be here, say so. Every organization page
+      has a "report it" link that opens a pre-filled issue with the entry already identified.
+      You can also <a href={REPORT_ISSUE_BASE} rel="noopener">open one directly</a>.
+    </p>
+    <p class="muted" style="font-size:.92rem">
+      Reports go to a public issue tracker, which means a report is visible to anyone. That is the
+      trade-off for running this with no server, no database and no cost — there is nowhere
+      private to put a message. Do not include anything you would not want public.
+    </p>
+
+    <h2>Corrections and takedowns</h2>
+    <p>
+      If you run one of these organizations and want your entry changed or removed, open an issue
+      and it will be done. Nothing here is scraped from anywhere that asked not to be.
+    </p>
+  </div>
+</Base>

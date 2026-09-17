@@ -1,0 +1,32 @@
+---
+interface Props {
+  /** Where a no-JS submit should land. */
+  action?: string;
+  value?: string;
+  label?: string;
+  placeholder?: string;
+  autofocus?: boolean;
+}
+const {
+  action = '/directory',
+  value = '',
+  label = 'Search for help',
+  placeholder = 'Search by name, need, neighbourhood or zip',
+  autofocus = false,
+} = Astro.props;
+---
+<form class="searchbox" role="search" action={action} method="get">
+  <label class="visually-hidden" for="q">{label}</label>
+  <input
+    type="search"
+    id="q"
+    name="q"
+    value={value}
+    placeholder={placeholder}
+    autocomplete="off"
+    autocorrect="off"
+    spellcheck="false"
+    autofocus={autofocus || undefined}
+  />
+  <button class="btn btn--primary" type="submit">Search</button>
+</form>

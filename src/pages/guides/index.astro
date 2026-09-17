@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GUIDES_ORDERED } from '../../data/guides.ts';
+---
+
+<Base
+  title="Guides"
+  description="Plain-language guides for the situations people actually arrive in: injured birds, found kittens, lost pets, rehoming, and exotic pet emergencies."
+>
+  <div class="wrap">
+    <h1>Guides</h1>
+    <p class="lede">
+      What to do, in the order it needs doing. Written for someone standing on a
+      pavement with a phone in one hand.
+    </p>
+
+    <ul class="tiles">
+      {GUIDES_ORDERED.map((g) => (
+        <li>
+          <a class="tile" href={`/guides/${g.slug}`}>
+            <strong>{g.title}</strong>
+            <span>{g.summary}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>

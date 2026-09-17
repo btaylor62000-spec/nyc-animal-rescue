@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Page path, used to mark the current nav item. */
+  path?: string;
+}
+
+const { title, description, path = Astro.url.pathname } = Astro.props;
+const fullTitle = title === 'NYC Animal Rescue' ? title : `${title} — NYC Animal Rescue`;
+
+const nav = [
+  { href: '/directory', label: 'Find help' },
+  { href: '/guides', label: 'Guides' },
+  { href: '/about', label: 'About' },
+];
+
+const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`);
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Set before first paint so no-JS styling never flashes. -->
+    <script is:inline>document.documentElement.classList.remove('no-js');</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="site-title" href="/">NYC Animal Rescue</a>
+        <nav class="site-nav" aria-label="Main">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          A free, community-maintained directory of animal help in New York City.
+          Contact details go stale — <strong>confirm a number is still live before you rely on it in an emergency.</strong>
+        </p>
+        <p>
+          <a href="/about">How this is maintained</a> ·
+          <a href="/about#report">Report a problem with an entry</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

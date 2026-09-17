@@ -1,0 +1,226 @@
+---
+import Base from '../../layouts/Base.astro';
+import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
+import {
+  ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, ORGS, ORGS_BY_ID, ORG_TYPE_LABELS,
+  STATUS_LABELS, daysSinceVerified, needsConfirmation, programmesOf,
+} from '../../data/orgs.ts';
+import { REPORT_ISSUE_BASE } from '../../data/site.ts';
+
+export function getStaticPaths() {
+  return ORGS.map((org) => ({ params: { id: org.id } }));
+}
+
+const { id } = Astro.params;
+const org = ORGS_BY_ID.get(id!)!;
+
+const age = daysSinceVerified(org);
+const confirm = needsConfirmation(org);
+const parent = org.parent_org ? ORGS_BY_ID.get(org.parent_org) : undefined;
+const programmes = programmesOf(org.id);
+
+const where = org.citywide
+  ? 'All five boroughs'
+  : org.boroughs.length
+    ? org.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ')
+    : org.outside_nyc
+      ? 'Based outside New York City'
+      : null;
+
+/** Host name for a link, without throwing on anything unusual in the data. */
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url;
+  }
+}
+
+const issueTitle = encodeURIComponent(`Problem with listing: ${org.name}`);
+const issueBody = encodeURIComponent(
+  [
+    `Entry: ${org.name}`,
+    `Page: /org/${org.id}`,
+    '',
+    'What is wrong? (phone, email, hours, the group has closed, something else)',
+    '',
+    '',
+    'Where did you see the correct information?',
+    '',
+  ].join('\n'),
+);
+const reportUrl = `${REPORT_ISSUE_BASE}?title=${issueTitle}&body=${issueBody}&labels=data-fix`;
+
+const contactCount = org.phones.length + org.emails.length + org.intake_urls.length + (org.website ? 1 : 0);
+---
+
+<Base
+  title={org.name}
+  description={org.notes?.slice(0, 155) ?? `Contact details and services for ${org.name} in New York City.`}
+>
+  <div class="wrap">
+    <p class="muted" style="margin:1rem 0 0"><a href="/directory">&larr; All resources</a></p>
+    <h1>{org.name}</h1>
+
+    {parent && <p class="muted">Part of <a href={`/org/${parent.id}`}>{parent.name}</a></p>}
+
+    <ul class="card__tags" style="margin:.5rem 0 1rem">
+      <li><ConfidenceBadge confidence={org.confidence} /></li>
+      {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
+      {org.org_types.map((t) => <li><span class="tag">{ORG_TYPE_LABELS[t]}</span></li>)}
+    </ul>
+
+    {org.status !== 'active' && org.status_note && (
+      <p class="notice notice--urgent">
+        <span aria-hidden="true">&#9888;</span>
+        <span>{org.status_note}</span>
+      </p>
+    )}
+
+    {confirm && org.status === 'active' && (
+      <p class="notice">
+        <span aria-hidden="true">&#9888;</span>
+        <span>
+          {org.confidence === 'Low'
+            ? 'This entry comes from a directory or social channel rather than the organization’s own site. Confirm this contact is still active before relying on it.'
+            : age === null
+              ? 'This entry has not been independently verified yet. Confirm this contact is still active before relying on it.'
+              : `Last verified ${age} days ago. Confirm this contact is still active before relying on it.`}
+        </span>
+      </p>
+    )}
+
+    {org.privacy_hold && (
+      <p class="notice">
+        <span aria-hidden="true">&#9432;</span>
+        <span>
+          Some contact details for this entry belong to a private individual and are withheld
+          until they confirm they are willing to be listed publicly.
+        </span>
+      </p>
+    )}
+
+    <div class="layout">
+      <div>
+        <h2>Contact</h2>
+        {contactCount === 0 ? (
+          <p class="muted">No contact details are recorded for this entry yet.</p>
+        ) : (
+          <ul class="contact-list">
+            {org.phones.map((p) => (
+              <li>
+                <a href={`tel:+1${p.value}`}>
+                  <span aria-hidden="true">&#9742;</span>
+                  <span>{p.display}{p.label && <> <span class="label">({p.label})</span></>}</span>
+                </a>
+              </li>
+            ))}
+            {org.emails.map((e) => (
+              <li>
+                <a href={`mailto:${e.value}`}>
+                  <span aria-hidden="true">&#9993;</span>
+                  <span>{e.value}{e.label && <> <span class="label">({e.label})</span></>}</span>
+                </a>
+              </li>
+            ))}
+            {org.intake_urls.map((u) => (
+              <li>
+                <a href={u.url} rel="noopener nofollow">
+                  <span aria-hidden="true">&#9654;</span>
+                  <span>{u.label ?? 'Help / intake form'} <span class="label">{hostOf(u.url)}</span></span>
+                </a>
+              </li>
+            ))}
+            {org.website && (
+              <li>
+                <a href={org.website} rel="noopener nofollow">
+                  <span aria-hidden="true">&#8599;</span>
+                  <span>Website <span class="label">{hostOf(org.website)}</span></span>
+                </a>
+              </li>
+            )}
+            {org.social.map((s) => (
+              <li>
+                {s.url ? (
+                  <a href={s.url} rel="noopener nofollow">
+                    <span aria-hidden="true">&#9679;</span>
+                    <span>{s.platform} <span class="label">{s.handle}</span></span>
+                  </a>
+                ) : (
+                  <span class="label" style="display:block;padding:.5rem .8rem">
+                    {s.platform}: {s.handle} — search this name on {s.platform}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {org.notes && (
+          <>
+            <h2>About</h2>
+            <div class="prose">
+              {org.notes.split('\n\n').map((para) => <p>{para}</p>)}
+            </div>
+          </>
+        )}
+
+        {programmes.length > 0 && (
+          <>
+            <h2>Programmes</h2>
+            <ul>
+              {programmes.map((p) => <li><a href={`/org/${p.id}`}>{p.name}</a></li>)}
+            </ul>
+          </>
+        )}
+      </div>
+
+      <aside>
+        <h2>Details</h2>
+        <dl class="definition">
+          {where && <><dt>Serves</dt><dd>{where}</dd></>}
+          {org.neighborhoods && <><dt>Area</dt><dd>{org.neighborhoods}</dd></>}
+          {org.address?.street && (
+            <><dt>Address</dt><dd>{org.address.street}{org.address.zip && <>, {org.address.zip}</>}</dd></>
+          )}
+          {org.hours && <><dt>Hours</dt><dd>{org.hours}</dd></>}
+          {org.animals.length > 0 && (
+            <><dt>Animals</dt><dd>{org.animals.map((a) => ANIMAL_LABELS[a]).join(', ')}</dd></>
+          )}
+          <dt>Last verified</dt>
+          <dd>{org.last_verified ?? 'Not yet verified'}</dd>
+        </dl>
+
+        {org.needs.length > 0 && (
+          <>
+            <h2>Helps with</h2>
+            <ul class="card__tags">
+              {org.needs.map((n) => (
+                <li><a class="tag tag--strong" href={`/directory?need=${n}`}>{NEED_LABELS[n]}</a></li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {org.source_urls.length > 0 && (
+          <>
+            <h2>Sources</h2>
+            <ul class="muted" style="font-size:.88rem;padding-left:1.1rem">
+              {org.source_urls.map((u) => (
+                <li style="word-break:break-all">
+                  <a href={u} rel="noopener nofollow">{hostOf(u)}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <h2>Something wrong?</h2>
+        <p class="muted" style="font-size:.92rem">
+          Numbers change and small groups fold. If this entry is out of date,
+          <a href={reportUrl} rel="noopener">report it</a> — it opens a pre-filled issue.
+        </p>
+      </aside>
+    </div>
+  </div>
+</Base>

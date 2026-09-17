@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import SearchBox from '../components/SearchBox.astro';
+---
+<Base title="Page not found">
+  <div class="wrap prose">
+    <h1>That page isn’t here</h1>
+    <p class="lede">
+      The link may be old, or an entry may have been renamed. Search for what you need instead.
+    </p>
+    <SearchBox label="Search every resource" autofocus={true} />
+
+    <p class="notice notice--urgent">
+      <span aria-hidden="true">&#9888;</span>
+      <span>
+        If this is an emergency, go straight to the
+        <a href="/directory?need=emergency-vet">24-hour emergency vets</a>.
+      </span>
+    </p>
+
+    <p>
+      Or start from <a href="/">the home page</a>, browse <a href="/directory">every resource</a>,
+      or read the <a href="/guides">guides</a>.
+    </p>
+  </div>
+</Base>

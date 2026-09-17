@@ -1,0 +1,14 @@
+---
+import type { Confidence } from '../types.ts';
+
+interface Props { confidence: Confidence }
+const { confidence } = Astro.props;
+
+const meta: Record<Confidence, { cls: string; title: string }> = {
+  High: { cls: 'badge--high', title: "Confirmed on the organization's own website" },
+  Medium: { cls: 'badge--medium', title: 'Confirmed via an authoritative listing, or has a caveat' },
+  Low: { cls: 'badge--low', title: 'Reachable mainly through a directory or social channel — verify first' },
+};
+const { cls, title } = meta[confidence];
+---
+<span class={`badge ${cls}`} title={title}>{confidence} confidence</span>

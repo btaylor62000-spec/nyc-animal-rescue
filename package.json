@@ -8,7 +8,10 @@
     "import": "tsx scripts/import/index.ts",
     "validate": "tsx scripts/validate.ts",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@types/node": "^22.20.3",
@@ -16,5 +19,10 @@
     "ajv-formats": "^3.0.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "astro": "^5.18.2",
+    "marked": "^18.0.13",
+    "minisearch": "^7.2.0"
   }
 }

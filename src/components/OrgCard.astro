@@ -1,0 +1,73 @@
+---
+import type { Org } from '../types.ts';
+import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, needsConfirmation } from '../data/orgs.ts';
+import ConfidenceBadge from './ConfidenceBadge.astro';
+
+interface Props { org: Org }
+const { org } = Astro.props;
+
+const age = daysSinceVerified(org);
+const confirm = needsConfirmation(org);
+
+const where = org.citywide
+  ? 'All five boroughs'
+  : org.boroughs.length
+    ? org.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ')
+    : org.outside_nyc
+      ? 'Outside NYC, serves New Yorkers'
+      : 'Area not recorded';
+
+// A card shows what someone needs to decide whether to tap: what it is, where
+// it works, and how fresh the information is. Everything else is on the page.
+const topNeeds = org.needs.slice(0, 4);
+const phone = org.phones[0];
+---
+<li
+  class="card"
+  data-org-id={org.id}
+  data-name={org.name}
+  data-animals={org.animals.join(',')}
+  data-needs={org.needs.join(',')}
+  data-boroughs={org.boroughs.join(',')}
+  data-zips={org.zips.join(',')}
+  data-citywide={org.citywide ? '1' : '0'}
+  data-confidence={org.confidence}
+  data-status={org.status}
+  data-has-phone={org.phones.length ? '1' : '0'}
+  data-verified={org.last_verified ?? ''}
+>
+  <h3 class="card__title"><a href={`/org/${org.id}`}>{org.name}</a></h3>
+
+  <p class="card__meta">
+    {where}
+    {org.animals.length > 0 && <> · {org.animals.slice(0, 3).map((a) => ANIMAL_LABELS[a]).join(', ')}</>}
+  </p>
+
+  <ul class="card__tags">
+    <li><ConfidenceBadge confidence={org.confidence} /></li>
+    {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
+    {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
+  </ul>
+
+  {(phone || org.website) && (
+    <div class="card__actions">
+      {phone && <a class="btn btn--primary" href={`tel:+1${phone.value}`}>Call {phone.display}</a>}
+      <a class="btn" href={`/org/${org.id}`}>Details</a>
+    </div>
+  )}
+
+  {confirm && (
+    <p class="notice">
+      <span aria-hidden="true">&#9888;</span>
+      <span>
+        {org.status !== 'active' && org.status_note
+          ? org.status_note
+          : org.confidence === 'Low'
+            ? 'Listed from a directory or social channel. Confirm this contact is still active before relying on it.'
+            : age === null
+              ? 'Not yet independently verified. Confirm this contact is still active before relying on it.'
+              : `Last verified ${age} days ago. Confirm this contact is still active before relying on it.`}
+      </span>
+    </p>
+  )}
+</li>

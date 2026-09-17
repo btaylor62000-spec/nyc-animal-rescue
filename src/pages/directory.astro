@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import FilterPanel from '../components/FilterPanel.astro';
+import OrgCard from '../components/OrgCard.astro';
+import SearchBox from '../components/SearchBox.astro';
+import { CONFIDENCE_ORDER, ORGS } from '../data/orgs.ts';
+
+/**
+ * Every record is rendered server-side. That keeps the page usable without
+ * JavaScript, removes any loading state, and lets filtering be a DOM pass
+ * rather than a re-render.
+ *
+ * Default order matches the sort the client applies with no query: firmest
+ * evidence first, then most recently verified.
+ */
+const orgs = [...ORGS].sort((a, b) => {
+  const c = CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence];
+  if (c !== 0) return c;
+  const av = a.last_verified ?? '';
+  const bv = b.last_verified ?? '';
+  if (av !== bv) return bv.localeCompare(av);
+  return a.name.localeCompare(b.name);
+});
+---
+
+<Base
+  title="Find help"
+  description="Search and filter every animal rescue, clinic, hotline and rehabilitator in New York City."
+>
+  <div class="wrap">
+    <h1>Find help</h1>
+    <SearchBox label="Search every resource" action="/directory" />
+
+    <button class="btn filters-toggle" id="filters-toggle" type="button" aria-expanded="false" aria-controls="filters" data-requires-js>
+      Show filters
+    </button>
+
+    <div class="layout">
+      <aside aria-labelledby="filters-heading">
+        <h2 id="filters-heading" class="visually-hidden">Filters</h2>
+        <FilterPanel />
+      </aside>
+
+      <section aria-labelledby="results-heading">
+        <h2 id="results-heading" class="visually-hidden">Results</h2>
+        <p id="results-summary" role="status" class="muted" style="margin-bottom:.75rem">
+          Showing all {orgs.length} resources
+        </p>
+
+        <ul class="results" id="results">
+          {orgs.map((org) => <OrgCard org={org} />)}
+        </ul>
+
+        <p id="no-results" hidden class="notice">
+          <span aria-hidden="true">&#9432;</span>
+          <span>
+            Nothing matches those filters. Try removing one, or
+            <a href="/directory">start over</a>. If you cannot find what you need,
+            <a href="/org/mayors-alliance-for-nycs-animals">the Mayor’s Alliance directory</a>
+            lists smaller and newer groups.
+          </span>
+        </p>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<script>
+  import '../client/directory.ts';
+</script>

@@ -1,0 +1,92 @@
+---
+import {
+  ANIMAL_FACETS, ANIMAL_LABELS, BOROUGH_FACETS, BOROUGH_LABELS, NEED_FACETS, NEED_LABELS, ORGS,
+} from '../data/orgs.ts';
+
+/**
+ * A real <form>, so the controls are keyboard- and screen-reader-native.
+ * Without JavaScript it simply submits to /directory and everything is shown;
+ * with JavaScript nothing is submitted and filtering happens in place.
+ */
+const count = (pick: (o: (typeof ORGS)[number]) => string[], tag: string) =>
+  ORGS.filter((o) => pick(o).includes(tag)).length;
+
+// The needs people arrive with most often, first; the rest stay alphabetical.
+const PRIORITY_NEEDS = [
+  'emergency-vet', 'wildlife-rehab', 'adoption', 'surrender', 'owner-support',
+  'tnr', 'low-cost-vet', 'spay-neuter', 'lost-found', 'financial-aid',
+];
+const needFacets = [...NEED_FACETS].sort((a, b) => {
+  const ia = PRIORITY_NEEDS.indexOf(a);
+  const ib = PRIORITY_NEEDS.indexOf(b);
+  if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  return NEED_LABELS[a].localeCompare(NEED_LABELS[b]);
+});
+---
+<form class="filters" id="filters" method="get" action="/directory">
+  <fieldset>
+    <legend>Borough</legend>
+    {BOROUGH_FACETS.map((b) => (
+      <label>
+        <input type="checkbox" name="borough" value={b} />
+        <span>{BOROUGH_LABELS[b]} <span class="filters__count">({count((o) => o.boroughs, b)})</span></span>
+      </label>
+    ))}
+  </fieldset>
+
+  <fieldset>
+    <legend><label for="zip">Zip code</label></legend>
+    <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 11217" />
+    <p class="filters__count" style="margin:.4rem 0 0">Shows groups covering that zip, plus citywide services.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Animal</legend>
+    {ANIMAL_FACETS.map((a) => (
+      <label>
+        <input type="checkbox" name="animal" value={a} />
+        <span>{ANIMAL_LABELS[a]} <span class="filters__count">({count((o) => o.animals, a)})</span></span>
+      </label>
+    ))}
+  </fieldset>
+
+  <fieldset>
+    <legend>What you need</legend>
+    {needFacets.map((n) => (
+      <label>
+        <input type="checkbox" name="need" value={n} />
+        <span>{NEED_LABELS[n]} <span class="filters__count">({count((o) => o.needs, n)})</span></span>
+      </label>
+    ))}
+  </fieldset>
+
+  <fieldset>
+    <legend>Confidence</legend>
+    {(['High', 'Medium', 'Low'] as const).map((c) => (
+      <label>
+        <input type="checkbox" name="confidence" value={c} />
+        <span>{c} <span class="filters__count">({ORGS.filter((o) => o.confidence === c).length})</span></span>
+      </label>
+    ))}
+  </fieldset>
+
+  <fieldset>
+    <legend>Other</legend>
+    <label>
+      <input type="checkbox" name="phone" value="1" />
+      <span>Has a phone line</span>
+    </label>
+    <label>
+      <input type="checkbox" name="active" value="1" />
+      <span>Hide entries flagged inactive</span>
+    </label>
+  </fieldset>
+
+  <p data-requires-js style="margin-top:1rem">
+    <button class="btn" type="button" id="clear-filters">Clear all filters</button>
+  </p>
+  <p class="nojs-note">
+    <button class="btn btn--primary" type="submit">Apply filters</button>
+    <span class="filters__count">Filtering works best with JavaScript on; without it, this page lists everything.</span>
+  </p>
+</form>

@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
+import { renderMarkdown } from '../../data/markdown.ts';
+
+export function getStaticPaths() {
+  return GUIDES.map((g) => ({ params: { slug: g.slug } }));
+}
+
+const { slug } = Astro.params;
+const guide = GUIDES_BY_SLUG.get(slug!)!;
+
+// The guide's own <h1> comes from the Markdown, so the body is rendered as-is
+// and the page heading is not duplicated above it.
+const html = renderMarkdown(guide.body);
+
+/** Guides where the first thing to know is that this may be an emergency. */
+const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);
+const isUrgent = URGENT.has(guide.slug);
+---
+
+<Base title={guide.title} description={guide.summary}>
+  <div class="wrap">
+    <p class="muted" style="margin:1rem 0 0"><a href="/guides">&larr; All guides</a></p>
+
+    {isUrgent && (
+      <p class="notice notice--urgent" style="margin-top:1rem">
+        <span aria-hidden="true">&#9888;</span>
+        <span>
+          If the animal is bleeding, struggling to breathe, collapsed, or has been caught by a cat,
+          it needs care now. <a href="/directory?need=emergency-vet">24-hour emergency vets</a>.
+        </span>
+      </p>
+    )}
+
+    <article class="guide-body" set:html={html} />
+
+    <hr style="margin:2.5rem 0 1rem;border:0;border-top:1px solid var(--border)" />
+    <p class="muted" style="font-size:.9rem">
+      This guide is compiled from the project's research files. Contact details inside it can go
+      stale — check the <a href="/directory">directory</a> for the current listing, and confirm a
+      number is live before you rely on it.
+    </p>
+  </div>
+</Base>
