@@ -1,13 +1,16 @@
 {
   "id": "animal-haven-community-engagement",
   "name": "Animal Haven Community Engagement",
-  "aka": [],
+  "aka": [
+    "Animal Haven Community Engagement Program"
+  ],
   "parent_org": null,
   "org_types": [
     "support-program"
   ],
   "animals": [
-    "cat"
+    "cat",
+    "dog"
   ],
   "needs": [
     "owner-support",
@@ -31,7 +34,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511 - animalhaven.org.",
+  "notes": "short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511 - animalhaven.org.\n\nshort-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511, animalhaven.org.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -40,7 +43,8 @@
   "last_verified": null,
   "section": "Owner support & surrender prev. — TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": null,
   "check_status": "unchecked",

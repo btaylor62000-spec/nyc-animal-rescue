@@ -70,6 +70,27 @@ export const NEVER_MERGE: Array<[string, string]> = [
 ];
 
 /**
+ * Bare fragments pulled out of guide prose that are really the parent
+ * organization under a shorthand name.
+ *
+ * "ACC" on its own is not a programme of Animal Care Centers of NYC, it *is*
+ * Animal Care Centers of NYC -- so its contacts are folded into that record
+ * rather than published as a separate, unnameable entry.
+ */
+export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
+  { pattern: /^ACC$/i, canonicalName: 'Animal Care Centers of NYC (ACC)' },
+  { pattern: /^ASPCA$/i, canonicalName: 'ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)' },
+];
+
+/**
+ * Names that are a fragment of a sentence rather than an organization, and
+ * that no general rule catches. Records matching these are dropped.
+ */
+export const DROP_NAMES: RegExp[] = [
+  /^Food$/i, // from "Food Help NYC" split mid-phrase
+];
+
+/**
  * Programme-level records extracted from guide prose that belong to a larger
  * organization already in the directory.
  *

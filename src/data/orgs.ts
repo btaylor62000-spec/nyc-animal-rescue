@@ -7,6 +7,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import type { Animal, Borough, Confidence, Need, Org, OrgType } from '../types.ts';
 import { ANIMALS, BOROUGHS, NEEDS } from '../types.ts';
+import { keywordsFor } from './synonyms.ts';
 
 const DIR = 'data/orgs';
 
@@ -19,6 +20,22 @@ function load(): Org[] {
 
 export const ORGS: Org[] = load();
 export const ORGS_BY_ID = new Map(ORGS.map((o) => [o.id, o]));
+
+/**
+ * A short fingerprint of the current data, appended to the search index URL.
+ *
+ * The index can then be cached hard, while a deploy that changes the data
+ * changes the URL -- so nobody searches a stale index and silently misses an
+ * organization that was added or corrected.
+ */
+export const DATA_VERSION: string = (() => {
+  let hash = 0;
+  for (const o of ORGS) {
+    const line = `${o.id}|${o.last_checked ?? ''}|${o.last_verified ?? ''}|${o.phones.length}|${o.status}`;
+    for (let i = 0; i < line.length; i++) hash = (Math.imul(31, hash) + line.charCodeAt(i)) | 0;
+  }
+  return (hash >>> 0).toString(36);
+})();
 
 /** Days after which an entry carries a "confirm before relying on it" note. */
 export const STALE_DAYS = 90;
@@ -163,6 +180,8 @@ export interface SearchRecord {
   zips: string[];
   /** Neighbourhoods and notes, trimmed -- enough to match on, not to display. */
   text: string;
+  /** Words people actually type, derived from this record's tags. */
+  keywords: string;
 }
 
 export function toSearchRecord(o: Org): SearchRecord {
@@ -179,5 +198,6 @@ export function toSearchRecord(o: Org): SearchRecord {
       .join(' ')
       .replace(/\s+/g, ' ')
       .slice(0, 280),
+    keywords: keywordsFor(o.animals, o.needs, o.org_types),
   };
 }

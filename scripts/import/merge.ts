@@ -15,7 +15,7 @@
  */
 import type { Confidence, Org, Status } from '../../src/types.ts';
 import { mergeKey } from './normalize.ts';
-import { AGGREGATOR_DOMAINS, NEVER_MERGE } from './overrides.ts';
+import { AGGREGATOR_DOMAINS, DROP_NAMES, NAME_ALIASES, NEVER_MERGE } from './overrides.ts';
 
 export interface MergeConflict {
   ids: string[];
@@ -152,10 +152,19 @@ function detectAddressConflicts(all: Org[]): MergeConflict[] {
   return out;
 }
 
+/** The merge key, after resolving a curated shorthand to its full name. */
+function keyFor(name: string): string {
+  const alias = NAME_ALIASES.find((a) => a.pattern.test(name.trim()));
+  return mergeKey(alias ? alias.canonicalName : name);
+}
+
 export function mergeOrgs(all: Org[]): MergeResult {
+  const dropped = all.filter((o) => DROP_NAMES.some((p) => p.test(o.name.trim())));
+  const kept = all.filter((o) => !dropped.includes(o));
+
   const groups = new Map<string, Org[]>();
-  for (const org of all) {
-    const key = mergeKey(org.name);
+  for (const org of kept) {
+    const key = keyFor(org.name);
     if (!key) {
       groups.set(`__unique:${org.id}`, [org]);
       continue;

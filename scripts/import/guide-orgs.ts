@@ -193,6 +193,10 @@ const GEO_PREFIX_RE =
 function looksLikeOrgName(name: string): boolean {
   const n = name.trim();
   if (n.length < 3 || n.length > 80) return false;
+  // A bullet that lists several organizations at once. There is no safe way to
+  // split the contacts back onto the right names, so it stays in the prose.
+  if (/\s\+\s/.test(n)) return false;
+  if ((n.match(/\s\/\s/g) ?? []).length >= 2) return false;
   if (GEO_PREFIX_RE.test(n)) return false;
   if (/^\d+[.)]\s/.test(n)) return false; // "1. Check ACC..."
   if (/[?]$/.test(n)) return false;
@@ -292,7 +296,7 @@ function balanced(name: string): string {
  * Animal Rescue". Applied only when something substantial is left.
  */
 const TRAILING_VERB_RE =
-  /\s+\b(runs?|provides?|hosts?|offers?|maintains?|operates?|accepts?|covers?|is|are|was|were|has|have|will|can|does)\b\s+.*$/i;
+  /\s+\b(runs?|provides?|hosts?|offers?|maintains?|operates?|accepts?|covers?|assists?|helps?|handles?|supports?|serves?|takes?|gives?|works?|is|are|was|were|has|have|will|can|does)\b\s+.*$/i;
 
 function trimVerbPhrase(name: string): string {
   const trimmed = name.replace(TRAILING_VERB_RE, '').trim();

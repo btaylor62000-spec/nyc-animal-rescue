@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
-import { CONFIDENCE_ORDER, ORGS } from '../data/orgs.ts';
+import { CONFIDENCE_ORDER, DATA_VERSION, ORGS } from '../data/orgs.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -47,7 +47,7 @@ const orgs = [...ORGS].sort((a, b) => {
           Showing all {orgs.length} resources
         </p>
 
-        <ul class="results" id="results">
+        <ul class="results" id="results" data-index-url={`/search-index.json?v=${DATA_VERSION}`}>
           {orgs.map((org) => <OrgCard org={org} />)}
         </ul>
 

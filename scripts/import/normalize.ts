@@ -337,7 +337,13 @@ export function mergeKey(name: string): string {
   return name
     .toLowerCase()
     .replace(/\[[^\]]*\]|\([^)]*\)/g, ' ')
+    // Possessives: "ACC's Community Pets" and "ACC Community Pets" are one thing.
+    .replace(/['\u2019]s\b/g, '')
     .replace(/\b(inc|llc|corp|co|nyc|ny|new york|the|a|of|and|for)\b/g, ' ')
     .replace(/\b(rescue|rescues|animal|animals|foundation|society|project|group|adoption|adoptions)\b/g, ' ')
+    // Words that describe the kind of thing rather than name it. Without this
+    // "ACC Community Pets Program", "ACC CommunityPets" and "ACC's Community
+    // Pets Program" stay three separate records for one service.
+    .replace(/\b(program|programme|programs|programmes|initiative|services|service|center|centre|centers|centres)\b/g, ' ')
     .replace(/[^a-z0-9]/g, '');
 }

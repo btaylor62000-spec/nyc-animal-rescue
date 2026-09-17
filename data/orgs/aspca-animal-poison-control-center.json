@@ -1,24 +1,36 @@
 {
   "id": "aspca-animal-poison-control-center",
   "name": "ASPCA Animal Poison Control Center",
-  "aka": [],
+  "aka": [
+    "ASPCA Animal Poison Control (APCC)"
+  ],
   "parent_org": null,
   "org_types": [
+    "hotline",
     "exotic-vet",
     "clinic"
   ],
   "animals": [
+    "cat",
+    "dog",
     "rabbit",
     "small-mammal",
     "bird-companion",
     "reptile"
   ],
   "needs": [
-    "exotic-vet",
-    "emergency-vet"
+    "poison-control",
+    "emergency-vet",
+    "exotic-vet"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
@@ -27,7 +39,7 @@
     {
       "value": "8884264435",
       "display": "(888) 426-4435",
-      "label": "ASPCA Animal Poison Control Center"
+      "label": "ASPCA Animal Poison Control (APCC)"
     }
   ],
   "emails": [],
@@ -36,7 +48,7 @@
   "social": [],
   "address": null,
   "hours": "24/7",
-  "notes": "(888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.",
+  "notes": "(888) 426-4435 - 24/7, vet toxicologists. Consult fee ~$95 (waived w/ HomeAgain microchip).\n\n(888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -45,6 +57,7 @@
   "last_verified": null,
   "section": "Exotic-vet & emergency care — Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):",
   "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": null,

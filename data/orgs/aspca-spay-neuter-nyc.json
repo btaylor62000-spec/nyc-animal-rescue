@@ -1,7 +1,9 @@
 {
   "id": "aspca-spay-neuter-nyc",
   "name": "ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)",
-  "aka": [],
+  "aka": [
+    "ASPCA"
+  ],
   "parent_org": null,
   "org_types": [
     "clinic",
@@ -55,7 +57,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "Free/low-cost spay/neuter for cats + dogs across all 5 boroughs. Community-cat package (rabies, tattoo, nail trim, eartip) free for Certified TNR Caretakers via RSS; public via Same-Day Waitlist. Also free trap-bank + transport for registered rescuers. High demand - capacity limited. Verified 2026-08-26. Phone: 877-SPAY-NYC Intake: join the Same-Day Waitlist at  TNR: register via Rescuer Services Scheduler Other channel: Income-qualifying residents pay $0 with proof of assistance",
+  "notes": "Free/low-cost spay/neuter for cats + dogs across all 5 boroughs. Community-cat package (rabies, tattoo, nail trim, eartip) free for Certified TNR Caretakers via RSS; public via Same-Day Waitlist. Also free trap-bank + transport for registered rescuers. High demand - capacity limited. Verified 2026-08-26. Phone: 877-SPAY-NYC Intake: join the Same-Day Waitlist at  TNR: register via Rescuer Services Scheduler Other channel: Income-qualifying residents pay $0 with proof of assistance\n\nfree/low-cost s/n citywide: public via Same-Day Waitlist (clinic.aspca.org); rescuers via RSS (aspcapro.org/scheduler). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.",
   "type_raw": "spay-neuter clinic (support, all boroughs)",
   "confidence": "High",
   "status": "active",

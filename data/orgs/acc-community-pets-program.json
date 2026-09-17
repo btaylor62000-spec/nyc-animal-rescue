@@ -1,17 +1,23 @@
 {
   "id": "acc-community-pets-program",
   "name": "ACC Community Pets Program",
-  "aka": [],
+  "aka": [
+    "ACC CommunityPets",
+    "ACC's Community Pets Program"
+  ],
   "parent_org": "animal-care-centers-of-nyc",
   "org_types": [
+    "government",
     "support-program"
   ],
   "animals": [
+    "cat",
     "dog"
   ],
   "needs": [
-    "behavior-training",
-    "owner-support"
+    "owner-support",
+    "surrender",
+    "behavior-training"
   ],
   "boroughs": [],
   "citywide": false,
@@ -27,6 +33,9 @@
   ],
   "emails": [
     {
+      "value": "communitypets@nycacc.org"
+    },
+    {
       "value": "admissions@nycacc.org"
     }
   ],
@@ -35,7 +44,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "free dog training (in person or via Zoom/FaceTime) through partner trainers; behavior guides at nycacc.org/services/behavior-resources. Contact: admissions@nycacc.org, (212) 788-4000.",
+  "notes": "CommunityPets@nycacc.org - (212) 788-4000. Free/reduced vet referrals, spay/neuter, deferred/managed intake, and help during a crisis so a cat can stay in its home. Ask about the surrender-prevention questionnaire; a counselor follows up.\n\nfree dog training (in person or via Zoom/FaceTime) through partner trainers; behavior guides at nycacc.org/services/behavior-resources. Contact: admissions@nycacc.org, (212) 788-4000.\n\nACC's Community Pets Program provides free resources to help owners care for their dogs. Contact via nycacc.org/programs/community-resources or ACC (212) 788-4000.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -44,6 +53,7 @@
   "last_verified": null,
   "section": "Owner support & surrender prev. — BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
   "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": null,

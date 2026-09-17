@@ -13,6 +13,8 @@ export const GET: APIRoute = () =>
   new Response(JSON.stringify(ORGS.map(toSearchRecord)), {
     headers: {
       'content-type': 'application/json; charset=utf-8',
-      'cache-control': 'public, max-age=300',
+      // Safe to cache hard: the page requests this with a ?v= fingerprint of
+      // the data, so a deploy that changes the data changes the URL.
+      'cache-control': 'public, max-age=86400',
     },
   });

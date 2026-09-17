@@ -7,19 +7,12 @@
  * and "Emergency vet" never downloads it.
  *
  * Filter state lives in the URL so a result list can be shared or bookmarked.
+ *
+ * The search behaviour itself lives in ../data/search.ts, shared with the
+ * tests and with the chat assistant's server-side retrieval.
  */
-import MiniSearch from 'minisearch';
-
-interface SearchRecord {
-  id: string;
-  name: string;
-  aka: string[];
-  animals: string[];
-  needs: string[];
-  boroughs: string[];
-  zips: string[];
-  text: string;
-}
+import type MiniSearch from 'minisearch';
+import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
 
 interface FilterState {
   q: string;
@@ -76,35 +69,16 @@ if (form && list) {
     });
   });
 
-  let index: MiniSearch<SearchRecord> | null = null;
+  let index: MiniSearch<SearchRecordLike> | null = null;
   let indexLoading: Promise<void> | null = null;
 
-  /**
-   * Field weights follow how people actually search: a name is a near-certain
-   * match, a need or animal is a strong one, a neighbourhood narrows, and the
-   * notes are a last resort that should never outrank a name.
-   */
   async function loadIndex(): Promise<void> {
     if (index) return;
     if (indexLoading) return indexLoading;
     indexLoading = (async () => {
-      const res = await fetch('/search-index.json');
-      const records: SearchRecord[] = await res.json();
-      const mini = new MiniSearch<SearchRecord>({
-        fields: ['name', 'aka', 'needs', 'animals', 'boroughs', 'zips', 'text'],
-        storeFields: ['id'],
-        searchOptions: {
-          prefix: true,
-          fuzzy: 0.2,
-          boost: { name: 6, aka: 4, needs: 3, animals: 3, boroughs: 2, zips: 2, text: 1 },
-        },
-        extractField: (doc, field) => {
-          const v = (doc as unknown as Record<string, unknown>)[field];
-          return Array.isArray(v) ? v.join(' ') : String(v ?? '');
-        },
-      });
-      mini.addAll(records);
-      index = mini;
+      const url = list!.dataset.indexUrl ?? '/search-index.json';
+      const records: SearchRecordLike[] = await (await fetch(url)).json();
+      index = buildIndex(records);
     })();
     return indexLoading;
   }
@@ -179,13 +153,9 @@ if (form && list) {
       // when it does not, so we try AND first and widen to OR when that leaves
       // too little to choose from. MiniSearch still ranks documents matching
       // more terms higher, so the best answers stay on top either way.
-      let hits = index!.search(state.q, { combineWith: 'AND' });
-      if (hits.length < 5) {
-        const loose = index!.search(state.q, { combineWith: 'OR' });
-        if (loose.length > hits.length) hits = loose;
-      }
-      matched = new Set(hits.map((h) => h.id as string));
-      rank = new Map(hits.map((h, i) => [h.id as string, i]));
+      const hits = runSearch(index!, state.q);
+      matched = new Set(hits.map((h) => h.id));
+      rank = new Map(hits.map((h, i) => [h.id, i]));
       // A query that matches nothing fuzzily still deserves a substring pass,
       // so "bluepearl" finds "BluePearl" and a partial zip still works.
       if (matched.size === 0) {
