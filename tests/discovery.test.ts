@@ -1,5 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+
+const DISCOVERED = 'data/discovered.json';
 import { alreadyKnown, extractRoster, summariseCoverage } from '../scripts/agent/discover.ts';
 import { candidateToOrg } from '../scripts/import/discovered.ts';
 import { mergeKey } from '../scripts/import/normalize.ts';
@@ -149,4 +153,72 @@ test('a malformed link is not stored as an organization website', () => {
 
   assert.equal(byName.get('Rescue NYC'), undefined, 'a host that is not a domain is rejected outright');
   assert.equal(byName.get('Real Rescue Group'), 'https://www.realrescue.org/about', 'a real link still works');
+});
+
+/*
+ * A roster gives a name and a link, nothing more. That used to mean a new
+ * entry had no way to be contacted -- and no way ever to become verified,
+ * because the weekly check confirms stored contacts rather than finding them.
+ * Discovery now reads the organization's own site once and keeps what it
+ * publishes, so an entry arrives usable and honest about its provenance.
+ */
+test('a candidate carries the contacts discovery read from its own site', () => {
+  const o = candidateToOrg({
+    name: 'Example Rescue',
+    website: 'https://www.examplerescue.org',
+    source: 'ACC New Hope partners',
+    sourceUrl: 'https://www.nycacc.org/new-hope-partners',
+    firstSeen: '2026-09-18',
+    phones: ['7185551234'],
+    emails: ['help@examplerescue.org'],
+    contactsFrom: 'https://www.examplerescue.org/contact',
+  });
+
+  assert.deepEqual(o.phones, [{ value: '7185551234', display: '(718) 555-1234' }]);
+  assert.deepEqual(o.emails, [{ value: 'help@examplerescue.org' }]);
+
+  // Usable, but never claiming to be checked.
+  assert.equal(o.confidence, 'Low');
+  assert.equal(o.last_verified, null);
+  assert.match(o.notes ?? '', /nobody has confirmed them/);
+
+  // And where they came from is on the record, not just asserted.
+  const contacts = o.change_log.find((c) => c.field === 'contacts');
+  assert.ok(contacts, 'the source of the contacts is in the change log');
+  assert.equal(contacts?.evidence_url, 'https://www.examplerescue.org/contact');
+});
+
+test('a candidate with nothing readable still enters, and says so', () => {
+  const o = candidateToOrg({
+    name: 'Quiet Rescue',
+    website: 'https://www.quietrescue.org',
+    source: 'ACC New Hope partners',
+    sourceUrl: 'https://www.nycacc.org/new-hope-partners',
+    firstSeen: '2026-09-18',
+  });
+  assert.deepEqual(o.phones, []);
+  assert.match(o.notes ?? '', /Nothing about this entry has been checked yet/);
+});
+
+/*
+ * Importing the agent must not run it.
+ *
+ * This file imports three pure helpers from `discover.ts`. While that module
+ * called `main()` at the top level, doing so performed a real discovery run
+ * and rewrote `data/discovered.json` and the monthly report on every
+ * `npm test` -- so the documented pre-push command quietly staged unreviewed
+ * candidate records. Now that discovery also fetches each new organization's
+ * website, the same slip would make the test suite crawl the internet.
+ *
+ * Checked in a child process, because by the time a test runs, this file's own
+ * import has already happened.
+ */
+test('importing the discovery agent does not run it', () => {
+  const before = readFileSync(DISCOVERED, 'utf8');
+  execFileSync(
+    process.execPath,
+    ['--import', 'tsx', '--input-type=module', '-e', "await import('./scripts/agent/discover.ts');"],
+    { stdio: 'pipe', timeout: 60_000 },
+  );
+  assert.equal(readFileSync(DISCOVERED, 'utf8'), before, 'importing the module must write nothing');
 });

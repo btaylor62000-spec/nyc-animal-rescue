@@ -10,6 +10,8 @@
  * very little and flags readily: everything it is unsure about ends up in the
  * report for a person to look at, and nothing is ever deleted.
  */
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
 import type { Org } from '../../src/types.ts';
 import { AGENT } from './config.ts';
@@ -247,4 +249,19 @@ async function main(): Promise<void> {
   if (summary.safetyValveTripped) process.exitCode = 1;
 }
 
-void main();
+/*
+ * Run only when this file is the program being executed.
+ *
+ * Without this, *importing* the module runs the whole job: `tests/discovery.test.ts`
+ * imports three pure helpers from here, and merely doing so performed a real
+ * discovery run and rewrote `data/discovered.json` and the report on every
+ * `npm test`. Anyone following the documented pre-push command would stage
+ * unreviewed candidate records into an emergency directory without knowing.
+ *
+ * It matters more now that discovery fetches each new organization's website:
+ * an import side effect would make the test suite crawl the internet.
+ */
+const invokedDirectly =
+  process.argv[1] !== undefined && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (invokedDirectly) void main();

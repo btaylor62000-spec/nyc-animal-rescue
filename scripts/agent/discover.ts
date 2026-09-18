@@ -22,14 +22,23 @@
  *      verified", and they stay out of the assistant's answers until a weekly
  *      check has actually found a working contact on their own site.
  */
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import type { Org } from '../../src/types.ts';
 import { AGENT } from './config.ts';
 import { fetchPage, hostOf } from './fetch.ts';
+import { extractContacts } from './extract.ts';
 import { htmlToText } from './extract.ts';
 import { mergeKey } from '../import/normalize.ts';
 
 const DISCOVERED_PATH = 'data/discovered.json';
+
+/*
+ * Above this many numbers or addresses on one page, we are almost certainly
+ * looking at a list of other organizations rather than this one's own details.
+ */
+const MAX_CONTACTS_FROM_PAGE = 3;
 const COVERAGE_PATH = 'data/wildlife-coverage.json';
 const REPORT_PATH = 'build/reports/monthly-discovery.md';
 
@@ -145,6 +154,22 @@ export interface Candidate {
   source: string;
   sourceUrl: string;
   firstSeen: string;
+  /*
+   * Contacts read off the organization's own site when the candidate was
+   * found. A roster gives a name and a link and nothing else, which used to
+   * mean a new entry had no way to be contacted at all -- and no way ever to
+   * be verified, since the weekly check confirms stored contacts rather than
+   * finding them. So discovery reads the site once and takes what is there.
+   *
+   * These are not confirmed by anyone. They enter at Low confidence, say so on
+   * the card, and sort below everything that has been checked. An entry
+   * carrying an unconfirmed number helps more people than an entry carrying
+   * none, provided it never pretends to be more than it is.
+   */
+  phones?: string[];
+  emails?: string[];
+  /** Where those contacts were read from, for the record's change log. */
+  contactsFrom?: string;
 }
 
 interface RosterSource {
@@ -347,6 +372,37 @@ async function main(): Promise<void> {
     }
   }
 
+  // --- fill in what each new organization publishes about itself ---------
+  //
+  // One page each, and only for the ones found this run. It is the same fetch
+  // and the same extractor the weekly check uses; the difference is that this
+  // populates a record rather than comparing against one.
+  if (fresh.length) {
+    console.log(`\nReading ${fresh.length} new organization site(s) for contact details...`);
+    let withContacts = 0;
+    for (const c of fresh) {
+      if (!c.website) continue;
+      const page = await fetchPage(c.website);
+      if (!page.ok || !page.html) continue;
+      // Only what the organization publishes on its own domain counts.
+      if (hostOf(page.finalUrl) !== hostOf(c.website)) continue;
+
+      const found = extractContacts(htmlToText(page.html));
+      if (found.phones.length === 0 && found.emails.length === 0) continue;
+
+      // A page listing many numbers is a directory, a footer of partners, or a
+      // staff list -- not one organization's contact details. Taking the first
+      // of nine would be a guess dressed as a fact.
+      if (found.phones.length <= MAX_CONTACTS_FROM_PAGE) c.phones = found.phones;
+      if (found.emails.length <= MAX_CONTACTS_FROM_PAGE) c.emails = found.emails;
+      if (c.phones?.length || c.emails?.length) {
+        c.contactsFrom = page.finalUrl;
+        withContacts++;
+      }
+    }
+    console.log(`  ${withContacts} of ${fresh.length} published a contact we could read`);
+  }
+
   // --- write -------------------------------------------------------------
   mkdirSync('build/reports', { recursive: true });
 
@@ -455,4 +511,19 @@ function buildReport(
   return `${out.join('\n')}\n`;
 }
 
-void main();
+/*
+ * Run only when this file is the program being executed.
+ *
+ * Without this, *importing* the module runs the whole job: `tests/discovery.test.ts`
+ * imports three pure helpers from here, and merely doing so performed a real
+ * discovery run and rewrote `data/discovered.json` and the report on every
+ * `npm test`. Anyone following the documented pre-push command would stage
+ * unreviewed candidate records into an emergency directory without knowing.
+ *
+ * It matters more now that discovery fetches each new organization's website:
+ * an import side effect would make the test suite crawl the internet.
+ */
+const invokedDirectly =
+  process.argv[1] !== undefined && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (invokedDirectly) void main();

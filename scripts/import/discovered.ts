@@ -16,7 +16,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import type { Animal, Need, Org } from '../../src/types.ts';
 import { ANIMAL_RULES, NEED_RULES, ORG_TYPE_RULES } from './taxonomy.ts';
 import { applyRules } from './tag.ts';
-import { slugify } from './normalize.ts';
+import { formatPhone, slugify } from './normalize.ts';
 
 const DISCOVERED_PATH = 'data/discovered.json';
 
@@ -26,6 +26,10 @@ interface Candidate {
   source: string;
   sourceUrl: string;
   firstSeen: string;
+  /** Contacts discovery read off the organization's own site. Unconfirmed. */
+  phones?: string[];
+  emails?: string[];
+  contactsFrom?: string;
 }
 
 export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {
@@ -66,16 +70,19 @@ export function candidateToOrg(c: Candidate): Org {
     neighborhoods: null,
     zips: [],
     region_note: null,
-    phones: [],
-    emails: [],
+    phones: (c.phones ?? []).map((value) => ({ value, display: formatPhone(value) })),
+    emails: (c.emails ?? []).map((value) => ({ value })),
     website: c.website,
     intake_urls: [],
     social: [],
     address: null,
     hours: null,
-    notes:
-      `Found on ${c.source} on ${c.firstSeen}. Nothing about this entry has been checked yet — ` +
-      'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.',
+    notes: c.contactsFrom
+      ? `Found on ${c.source} on ${c.firstSeen}. The contact details below were read from their own website ` +
+        'on the same day, but nobody has confirmed them, and we do not know whether they are still operating. ' +
+        'Confirm before relying on it.'
+      : `Found on ${c.source} on ${c.firstSeen}. Nothing about this entry has been checked yet — ` +
+        'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.',
     type_raw: null,
     confidence: 'Low',
     status: 'active',
@@ -97,6 +104,21 @@ export function candidateToOrg(c: Candidate): Org {
         source: 'monthly-discovery',
         note: `Listed on ${c.source}.`,
       },
+      // Where the contacts came from, so the claim is auditable rather than
+      // something the record simply asserts.
+      ...(c.contactsFrom
+        ? [
+            {
+              date: c.firstSeen,
+              field: 'contacts',
+              from: null,
+              to: [...(c.phones ?? []), ...(c.emails ?? [])].join(', '),
+              evidence_url: c.contactsFrom,
+              source: 'monthly-discovery',
+              note: 'Read from the organization’s own site when it was found. Not confirmed by a person.',
+            },
+          ]
+        : []),
     ],
     privacy_hold: false,
   };

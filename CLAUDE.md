@@ -87,13 +87,13 @@ If you add a new way for the assistant to produce text, it goes through the
 redactor. There is a test that feeds a fake number split across five chunks and
 asserts nothing leaks.
 
-### 2. Automation never deletes, and never guesses
+### 2. Automation never deletes, and never *changes* a contact on a guess
 
 `scripts/agent/rules.ts` is pure — no network, no clock, no file access. That
 is what makes it testable, and being testable is what makes it safe to let it
 edit an emergency directory unattended.
 
-It may change a contact only when the old value has gone from the
+It may **change** an existing contact only when the old value has gone from the
 organization's own domain **and** exactly one replacement is there. Two
 candidates is `needs-review`. Anything ambiguous is `needs-review`. Three
 consecutive unreachable weeks flags the record and downgrades confidence
@@ -102,6 +102,26 @@ directory it applies nothing and reports itself broken.
 
 Add a decision path and you add a test for it, including that it cannot produce
 a deletion.
+
+**Filling an empty record is a different question, and the answer is yes.**
+This used to be forbidden too, and the cost was hidden: an organization found
+on a roster arrived with a name and a link and nothing else, could not be
+contacted, and could never become verified either — the weekly check confirms
+stored contacts rather than finding them, so a record with none stayed
+unverifiable for ever. A hundred and sixty organizations sat in that state,
+invisible to everyone.
+
+So discovery now reads each new organization's own website once and keeps the
+phones and emails it publishes. That *is* a guess, and it is handled by being
+honest rather than by being withheld: Low confidence, a note on the record
+saying nobody has confirmed it, the source page in the change log, and last
+place in every ranking. A page listing more than three numbers is treated as a
+directory of other people rather than one organization's details, and nothing
+is taken from it.
+
+The line is between **adding** and **overwriting**. An unconfirmed number where
+there was none helps someone; an unconfirmed number replacing a checked one
+does not. The first is allowed, the second is still forbidden.
 
 ### 3. Personal contacts stay withheld until the person agrees
 
@@ -167,6 +187,12 @@ thinly-verified group that is thriving. Do not collapse them.
 `check_status` is owned by the weekly agent. `new-unverified` means discovery
 found it and nothing has checked it; those are labelled on the site and
 excluded from the assistant entirely.
+
+**`/status` publishes all of this.** How many entries are checked, how many
+have never been, what is flagged for a person, what is withheld pending
+consent, and when each scheduled job last ran — generated from the data at
+build time, so it cannot drift from what the entries say. It exists because
+none of it used to be visible anywhere except by reading the repository.
 
 ### Regenerating
 
