@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { STATUS } from '../data/status.ts';
+import { NEED_LABELS } from '../data/orgs.ts';
+
+/**
+ * How well this directory is being kept.
+ *
+ * Written for two readers at once: someone deciding how far to trust an entry,
+ * and whoever maintains this deciding what to do next. Both were previously
+ * served only by reading the repository.
+ */
+const { total, byConfidence, byCheck, needingAPerson, unverified, awaitingConsent, jobs, pendingImport } = STATUS;
+
+const checked = byCheck.ok ?? 0;
+const never = byCheck.unchecked ?? 0;
+const pct = (n: number) => Math.round((n / total) * 100);
+
+const confidenceRows = [
+  { key: 'High', label: 'High', blurb: 'Confirmed on the organization’s own website.' },
+  { key: 'Medium', label: 'Medium', blurb: 'Confirmed through an authoritative listing, or carries a caveat.' },
+  { key: 'Low', label: 'Low', blurb: 'From a directory or social channel, or found automatically and not yet confirmed.' },
+] as const;
+---
+
+<Base
+  title="Directory status"
+  description="How current this directory is: what has been checked, what is waiting on a person, and when the automated checks last ran."
+>
+  <div class="wrap">
+    <h1>Directory status</h1>
+    <p class="lede">
+      What has been checked, what has not, and what is waiting on a person. This page is
+      generated from the data itself every time the site is built, so it cannot fall out of
+      step with what you see on the entries.
+    </p>
+
+    <section class="section">
+      <span class="eyebrow">Where the {total} entries stand</span>
+      <h2>How firmly each entry is evidenced</h2>
+      <ul class="results">
+        {confidenceRows.map((row) => (
+          <li class="card">
+            <h3 class="card__title">
+              {byConfidence[row.key] ?? 0} <span class="muted" style="font-weight:400">{row.label} confidence</span>
+            </h3>
+            <p class="card__meta" style="margin:0">{row.blurb}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Automated upkeep</span>
+      <h2>When the checks last ran</h2>
+      <ul class="results">
+        {Object.values(jobs).map((job) => (
+          <li class="card">
+            <h3 class="card__title">{job.name}</h3>
+            <p class="card__meta">Runs {job.cadence}</p>
+            <p style="margin:0 0 .5rem">{job.what}</p>
+            {job.lastRun ? (
+              <p class="muted" style="margin:0">Last run {job.lastRun} · {job.records} entries affected</p>
+            ) : (
+              <p class="notice" style="margin:0">
+                <Icon name="alert" size={17} />
+                <span>Has never run. Until it does, nothing it would catch is being caught.</span>
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Waiting on a person</span>
+      <h2>What automation will not decide on its own</h2>
+      <div class="panel">
+        <dl class="definition" style="grid-template-columns:max-content 1fr;gap:.6rem 1.25rem">
+          <dt>{never}</dt>
+          <dd>never machine-checked ({pct(never)}% of the directory)</dd>
+          <dt>{checked}</dt>
+          <dd>confirmed on the organization’s own site</dd>
+          <dt>{needingAPerson.length}</dt>
+          <dd>flagged for a person to look at — something ambiguous the checker would not guess</dd>
+          <dt>{unverified.length}</dt>
+          <dd>found automatically and published unconfirmed, sorted below everything checked</dd>
+          <dt>{awaitingConsent.length}</dt>
+          <dd>contacts withheld until the individual agrees to be listed</dd>
+          {pendingImport > 0 && (
+            <>
+              <dt>{pendingImport}</dt>
+              <dd>found but not yet published — the data needs rebuilding</dd>
+            </>
+          )}
+        </dl>
+      </div>
+    </section>
+
+    {needingAPerson.length > 0 && (
+      <section class="section">
+        <h2>Entries flagged for review</h2>
+        <ul class="results">
+          {needingAPerson.slice(0, 25).map((org) => (
+            <li class="card">
+              <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
+              <p class="card__meta" style="margin:0">
+                {org.status_note ?? 'Flagged by the weekly check.'}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {awaitingConsent.length > 0 && (
+      <section class="section">
+        <h2>Contacts withheld pending permission</h2>
+        <p class="prose">
+          Some details in the research behind this site belong to private individuals rather than
+          organizations — a volunteer’s mobile, a home line for a rehabilitator working out of their
+          house. They stay withheld until the person says they are willing to be listed.
+        </p>
+        <ul class="prose">
+          {awaitingConsent.map((h) => <li><strong>{h.person}</strong> — {h.ask}</li>)}
+        </ul>
+      </section>
+    )}
+
+    <section class="section">
+      <div class="panel">
+        <span class="eyebrow"><Icon name="shield" size={14} /> What this means for you</span>
+        <h2>Read the badge on the entry</h2>
+        <p>
+          Every entry carries how firmly it is evidenced and when it was last checked. Results are
+          ordered with the best-evidenced first, so what you see at the top of a search is what we
+          are most sure of. <strong>Confirm a number is live before you rely on it</strong> — that is
+          true of the whole directory, not only the entries flagged here.
+        </p>
+        <p style="margin-bottom:0"><a href="/about#confidence">What the confidence levels mean</a></p>
+      </div>
+    </section>
+  </div>
+</Base>
