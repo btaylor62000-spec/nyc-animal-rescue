@@ -33,7 +33,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
   "intake_urls": [],
   "social": [],
   "address": {
@@ -43,19 +43,29 @@
   "hours": "24/7",
   "notes": "1950 Ralph Ave 11234 - (718) 677-6700 - 24/7 (you stay with your pet).\n\n1950 Ralph Ave, Brooklyn 11234. (718) 677-6700. Open 24h.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-09-18",
   "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-18",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-18",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-09-18",
+      "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+      "source": "manual",
+      "note": "(718) 677-6700 confirmed as VEG Ralph Ave on VEG’s own location page, at 1950 Ralph Avenue. This is the number that was also attached to the VERG South record; it belongs to VEG."
+    }
+  ],
   "privacy_hold": false
 }

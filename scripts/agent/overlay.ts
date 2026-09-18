@@ -30,6 +30,16 @@ export interface OverlayEntry {
   phones?: Org['phones'];
   emails?: Org['emails'];
   website?: string | null;
+  /**
+   * Replacement prose.
+   *
+   * Clearing `phones` does not remove a number that the source also wrote into
+   * the record's free text, and the org page renders that text -- so a number
+   * withdrawn from the contact list can still be sitting in the notes for a
+   * reader to dial. The rules engine never writes this; it exists so a person
+   * correcting the agent can take a wrong contact out of the prose too.
+   */
+  notes?: string | null;
   /** Appended to the record's change log, never replacing it. */
   change_log?: ChangeLogEntry[];
 }

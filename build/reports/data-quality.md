@@ -1,14 +1,14 @@
 # Data quality report
 
-Generated 2026-09-17 from the three source workbooks and the wildlife guide.
+Generated 2026-09-18 from the three source workbooks and the wildlife guide.
 
 ## Totals
 
 - **287** organizations after de-duplication
 - **75** duplicate clusters merged
 - **19** guide pages generated
-- **12** entries flagged as not currently active
-- **2** entries with no way at all to make contact
+- **14** entries flagged as not currently active
+- **3** entries with no way at all to make contact
 - **4** personal contact details withheld
 
 ## Coverage
@@ -84,18 +84,18 @@ Generated 2026-09-17 from the three source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 149 |
-| High | 109 |
-| Low | 29 |
+| Medium | 140 |
+| High | 117 |
+| Low | 30 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 275 |
-| verify | 7 |
+| active | 273 |
+| verify | 8 |
 | hiatus | 3 |
-| retired | 1 |
+| retired | 2 |
 | relocated | 1 |
 
 ## Gaps in coverage
@@ -109,12 +109,13 @@ Animal types with three or fewer organizations. The source notes say several of 
 
 ## Entries needing attention
 
-### No contact method at all (2)
+### No contact method at all (3)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
+- **VERG South** — BROOKLYN - 24-hour ER
 
 ### Reachable only through social media (22)
 
@@ -147,7 +148,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (83)
+### Never verified (75)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -165,6 +166,8 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Source says this organization is paused or on hiatus.
+- **VERG North (Veterinary Emergency & Referral Group)** — `verify`: VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.
+- **VERG South** — `retired`: Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.
 
 ## De-duplication
 

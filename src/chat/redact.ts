@@ -15,7 +15,21 @@ const PHONE_RE = /(?:\+?1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}\b/g;
 const EMAIL_RE = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
 const URL_RE = /\b(?:https?:\/\/)?(?:www\.)?[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)+(?:\/[^\s)]*)?/gi;
 
-const REPLACEMENT = '[see the card below]';
+/*
+ * What the reader sees in place of a removed contact.
+ *
+ * This used to say "[see the card below]", which was wrong every single time
+ * it appeared. A contact is only replaced when it is *not* in the retrieved
+ * set -- and the cards are built from exactly that set -- so a replaced number
+ * can never be on a card. The reader was being sent to look for something that
+ * by construction did not exist.
+ *
+ * Saying what actually happened is both honest and more useful: the model
+ * offered a contact this directory does not hold, so it was withheld.
+ */
+const REPLACEMENT_PHONE = '[number not listed here]';
+const REPLACEMENT_EMAIL = '[email not listed here]';
+const REPLACEMENT_LINK = '[link not listed here]';
 
 /** Domains that are always safe to mention: this site, and 311. */
 const ALWAYS_ALLOWED = new Set(['nycanimalrescue.org', 'nyc.gov', '311']);
@@ -55,12 +69,12 @@ export function allowedFrom(
 
 /** Remove any contact detail that is not in the allow-list. */
 export function redact(text: string, allowed: AllowedContacts): string {
-  let out = text.replace(EMAIL_RE, (m) => (allowed.emails.has(m.toLowerCase()) ? m : REPLACEMENT));
+  let out = text.replace(EMAIL_RE, (m) => (allowed.emails.has(m.toLowerCase()) ? m : REPLACEMENT_EMAIL));
 
   out = out.replace(PHONE_RE, (m) => {
     const d = digits(m);
     if (d === '311') return m;
-    return allowed.phones.has(d) ? m : REPLACEMENT;
+    return allowed.phones.has(d) ? m : REPLACEMENT_PHONE;
   });
 
   out = out.replace(URL_RE, (m) => {
@@ -71,7 +85,7 @@ export function redact(text: string, allowed: AllowedContacts): string {
     const h = host(m);
     if (!h.includes('.')) return m;
     if (h.endsWith('.org') || h.endsWith('.com') || h.endsWith('.net') || h.endsWith('.gov') || h.endsWith('.app') || h.endsWith('.nyc')) {
-      return allowed.hosts.has(h) ? m : REPLACEMENT;
+      return allowed.hosts.has(h) ? m : REPLACEMENT_LINK;
     }
     return m;
   });

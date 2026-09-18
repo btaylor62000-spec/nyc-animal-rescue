@@ -33,7 +33,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://bluepearlvet.com",
   "intake_urls": [],
   "social": [],
   "address": {
@@ -43,19 +43,29 @@
   "hours": "24/7",
   "notes": "1 W 15th St 10011 - (212) 924-3311 - 24/7 (specialty + urgent).\n\n1 West 15th St (btwn 5th/6th), NY 10011. (212) 924-3311. Open 24h (specialty + urgent).",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-09-18",
   "section": "Emergency & poison control — MANHATTAN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-18",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-18",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-09-18",
+      "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+      "source": "manual",
+      "note": "(212) 924-3311 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+    }
+  ],
   "privacy_hold": false
 }

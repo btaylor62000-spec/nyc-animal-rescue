@@ -42,17 +42,27 @@
   "notes": "318 Warren St (btwn Court/Smith), Brooklyn 11201. (718) 522-9400. verg-brooklyn.com. Open 24h.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "status": "verify",
+  "status_note": "VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
   "source_urls": [],
   "last_verified": null,
   "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-18",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-18",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "evidence_url": "https://verg-brooklyn.com/",
+      "source": "manual",
+      "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
+    }
+  ],
   "privacy_hold": false
 }

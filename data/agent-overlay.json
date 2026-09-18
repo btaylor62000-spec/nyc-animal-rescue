@@ -1,5 +1,221 @@
 {
   "$comment": "Written by the automated checks in scripts/agent and applied by the importer as its last step, so re-running the import never discards what the checks learned. Edit by hand only to correct the agent. To discard an automated change, delete its entry and re-run the import.",
-  "updated": "1970-01-01T00:00:00.000Z",
-  "entries": {}
+  "updated": "2026-09-18T00:00:00.000Z",
+  "entries": {
+    "animal-medical-center": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://www.amcny.org",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://www.amcny.org/visit-amc/contact-us/",
+          "source": "manual",
+          "note": "Primary line (212) 838-8100 and the 510 East 62nd Street address confirmed on AMC\u2019s own contact page. The secondary number already on the record was not listed there, so it is kept but not independently confirmed."
+        }
+      ]
+    },
+    "bluepearl-brooklyn": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://bluepearlvet.com",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "source": "manual",
+          "note": "(718) 596-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+        }
+      ]
+    },
+    "bluepearl-downtown": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://bluepearlvet.com",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "source": "manual",
+          "note": "(212) 924-3311 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+        }
+      ]
+    },
+    "bluepearl-midtown": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://bluepearlvet.com",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "source": "manual",
+          "note": "(212) 767-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+        }
+      ]
+    },
+    "bluepearl-queens": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://bluepearlvet.com",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "source": "manual",
+          "note": "(718) 263-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+        }
+      ]
+    },
+    "veg-ralph-ave": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+          "source": "manual",
+          "note": "(718) 677-6700 confirmed as VEG Ralph Ave on VEG\u2019s own location page, at 1950 Ralph Avenue. This is the number that was also attached to the VERG South record; it belongs to VEG."
+        }
+      ]
+    },
+    "veg-williamsburg": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://www.veg.com/locations/new-york/williamsburg",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
+          "source": "manual",
+          "note": "(917) 423-6444 confirmed as VEG Williamsburg on VEG\u2019s own location page, at 87 Kent Avenue."
+        }
+      ]
+    },
+    "verg": {
+      "last_checked": "2026-09-18",
+      "last_verified": "2026-09-18",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "High",
+      "website": "https://verg-brooklyn.com",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-09-18",
+          "evidence_url": "https://verg-brooklyn.com/",
+          "source": "manual",
+          "note": "196 4th Ave, Brooklyn 11217 and (718) 522-9400 match VERG\u2019s own site exactly. Their site currently shows this as their only hospital."
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@vergbrooklyn.com"
+        }
+      ]
+    },
+    "verg-north": {
+      "last_checked": "2026-09-18",
+      "check_status": "needs-review",
+      "consecutive_failures": 0,
+      "website": "https://verg-brooklyn.com",
+      "status": "verify",
+      "status_note": "VERG\u2019s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "status",
+          "from": "active",
+          "to": "verify",
+          "evidence_url": "https://verg-brooklyn.com/",
+          "source": "manual",
+          "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG\u2019s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
+        }
+      ]
+    },
+    "verg-south": {
+      "last_checked": "2026-09-18",
+      "check_status": "changed",
+      "consecutive_failures": 0,
+      "confidence": "Low",
+      "status": "retired",
+      "status_note": "Closed. VERG\u2019s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.",
+      "phones": [],
+      "change_log": [
+        {
+          "date": "2026-09-18",
+          "field": "phones",
+          "from": "(718) 677-6700",
+          "to": null,
+          "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+          "source": "manual",
+          "note": "Removed: this number is VEG Ralph Ave\u2019s, confirmed on VEG\u2019s own site. It was on a VERG record at a third address, so anyone calling it expecting VERG South reached a different company. A wrong number on an emergency listing does more harm than a missing one."
+        },
+        {
+          "date": "2026-09-18",
+          "field": "status",
+          "from": "active",
+          "to": "retired",
+          "evidence_url": "https://verg-brooklyn.com/",
+          "source": "manual",
+          "note": "VERG\u2019s own site lists only 196 4th Ave; the Flatbush Ave location is closed."
+        },
+        {
+          "date": "2026-09-18",
+          "field": "notes",
+          "from": "2220 Flatbush Ave (btwn Ave R/Fillmore), Brooklyn 11234. (718) 677-6700. Open 24h.",
+          "to": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn.",
+          "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+          "source": "manual",
+          "note": "The same wrong number was written into the record's prose as well as its phone list, and the org page renders the prose. Removing it from one and not the other still left it there to dial. The replacement deliberately names the new street but not its zip, because the notes are indexed for search and a foreign zip in them makes this record answer the wrong zip query."
+        }
+      ],
+      "notes": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn."
+    }
+  }
 }

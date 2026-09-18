@@ -30,8 +30,12 @@
       "display": "(718) 522-9400"
     }
   ],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "info@vergbrooklyn.com"
+    }
+  ],
+  "website": "https://verg-brooklyn.com",
   "intake_urls": [],
   "social": [],
   "address": {
@@ -41,18 +45,28 @@
   "hours": "24/7",
   "notes": "196 4th Ave 11217 - (718) 522-9400 - 24/7.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-09-18",
   "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-18",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-18",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-09-18",
+      "evidence_url": "https://verg-brooklyn.com/",
+      "source": "manual",
+      "note": "196 4th Ave, Brooklyn 11217 and (718) 522-9400 match VERG’s own site exactly. Their site currently shows this as their only hospital."
+    }
+  ],
   "privacy_hold": false
 }

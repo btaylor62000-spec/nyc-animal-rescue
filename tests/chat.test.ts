@@ -20,7 +20,27 @@ test('a retrieved phone number survives', () => {
 test('an invented phone number is removed', () => {
   const out = redact('Call them on (555) 123-4567.', allowed);
   assert.doesNotMatch(out, /555/);
-  assert.match(out, /card below/);
+  assert.match(out, /not listed here/);
+});
+
+/*
+ * A replacement only ever fires for a contact that is NOT in the retrieved
+ * set, and the cards are built from that same set -- so no replaced contact
+ * can ever appear on a card. Pointing the reader at one sent them looking for
+ * something that did not exist, which a reader in a hurry reads as "the number
+ * is here somewhere".
+ */
+test('a removed contact never claims it can be found on a card', () => {
+  const cases = [
+    'Call the cruelty hotline at (555) 123-4567, ext. 4450.',
+    'Email them at someone@invented.org.',
+    'See invented-rescue.org for details.',
+  ];
+  for (const text of cases) {
+    const out = redact(text, allowed);
+    assert.doesNotMatch(out, /card/i, `must not promise a card: ${out}`);
+    assert.match(out, /not listed here/, `must say what happened: ${out}`);
+  }
 });
 
 test('the same number written differently is still allowed', () => {

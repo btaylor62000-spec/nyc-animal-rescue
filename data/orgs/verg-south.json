@@ -24,12 +24,7 @@
     "11234"
   ],
   "region_note": "BROOKLYN - 24-hour ER",
-  "phones": [
-    {
-      "value": "7186776700",
-      "display": "(718) 677-6700"
-    }
-  ],
+  "phones": [],
   "emails": [],
   "website": null,
   "intake_urls": [],
@@ -39,20 +34,48 @@
     "zip": "11234"
   },
   "hours": "Open 24h",
-  "notes": "2220 Flatbush Ave (btwn Ave R/Fillmore), Brooklyn 11234. (718) 677-6700. Open 24h.",
+  "notes": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn.",
   "type_raw": null,
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "retired",
+  "status_note": "Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.",
   "source_urls": [],
   "last_verified": null,
   "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-18",
+  "check_status": "changed",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-18",
+      "field": "phones",
+      "from": "(718) 677-6700",
+      "to": null,
+      "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+      "source": "manual",
+      "note": "Removed: this number is VEG Ralph Ave’s, confirmed on VEG’s own site. It was on a VERG record at a third address, so anyone calling it expecting VERG South reached a different company. A wrong number on an emergency listing does more harm than a missing one."
+    },
+    {
+      "date": "2026-09-18",
+      "field": "status",
+      "from": "active",
+      "to": "retired",
+      "evidence_url": "https://verg-brooklyn.com/",
+      "source": "manual",
+      "note": "VERG’s own site lists only 196 4th Ave; the Flatbush Ave location is closed."
+    },
+    {
+      "date": "2026-09-18",
+      "field": "notes",
+      "from": "2220 Flatbush Ave (btwn Ave R/Fillmore), Brooklyn 11234. (718) 677-6700. Open 24h.",
+      "to": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn.",
+      "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
+      "source": "manual",
+      "note": "The same wrong number was written into the record's prose as well as its phone list, and the org page renders the prose. Removing it from one and not the other still left it there to dial. The replacement deliberately names the new street but not its zip, because the notes are indexed for search and a foreign zip in them makes this record answer the wrong zip query."
+    }
+  ],
   "privacy_hold": false
 }
