@@ -87,3 +87,61 @@ test('the most recent verification date wins', () => {
   ]);
   assert.equal(r.orgs[0]?.last_verified, '2026-08-29');
 });
+
+/*
+ * "Rescue NYC" is made entirely of words the merge key discards -- `rescue`
+ * and `nyc` -- so it reduces to an empty key and cannot be grouped by name.
+ * Such records fall back to grouping by their own id, and that bucket used to
+ * be assigned rather than appended to: a second record with the same slug
+ * replaced the first outright. A bare discovery candidate wiped the real
+ * record's animals, needs, boroughs and area, and nothing reported it, because
+ * as far as the merge was concerned no cluster had been combined.
+ */
+test('a name that reduces to an empty merge key still merges rather than overwriting', () => {
+  const real = org({
+    id: 'rescue-nyc', name: 'Rescue NYC',
+    org_types: ['rescue-foster'], animals: ['dog'], needs: ['adoption'],
+    boroughs: ['manhattan'], neighborhoods: 'Manhattan-based',
+    website: 'https://www.rescuenyc.org', source_files: ['dog.xlsx'],
+  });
+  const candidate = org({
+    id: 'rescue-nyc', name: 'Rescue NYC',
+    confidence: 'Low', check_status: 'new-unverified', source_files: ['discovery'],
+  });
+
+  const r = mergeOrgs([real, candidate]);
+
+  assert.equal(r.orgs.length, 1, 'one record out');
+  assert.equal(r.merged.length, 1, 'and it must be reported as a merge, not vanish silently');
+  const out = r.orgs[0]!;
+  assert.deepEqual(out.animals, ['dog'], 'the real record keeps its animals');
+  assert.deepEqual(out.needs, ['adoption']);
+  assert.deepEqual(out.boroughs, ['manhattan']);
+  assert.deepEqual(out.org_types, ['rescue-foster']);
+  assert.equal(out.neighborhoods, 'Manhattan-based');
+  assert.equal(out.website, 'https://www.rescuenyc.org');
+  assert.deepEqual(out.source_files.sort(), ['discovery', 'dog.xlsx']);
+});
+
+/*
+ * The same guarantee stated as a rule rather than a case: a discovery
+ * candidate carries almost no detail, and merging one in must never take
+ * detail away from a record that has it, whichever order they arrive in.
+ */
+test('a sparse candidate never empties a populated field', () => {
+  const populated: Partial<Org> = {
+    org_types: ['rescue-foster'], animals: ['cat'],
+    needs: ['adoption'], boroughs: ['queens'],
+  };
+  for (const order of ['real-first', 'candidate-first'] as const) {
+    const real = org({ id: 'kitty-corner', name: 'Kitty Corner', ...populated, source_files: ['cat.xlsx'] });
+    const cand = org({ id: 'kitty-corner', name: 'Kitty Corner', confidence: 'Low', source_files: ['discovery'] });
+    const r = mergeOrgs(order === 'real-first' ? [real, cand] : [cand, real]);
+    const out = r.orgs[0]!;
+    assert.equal(r.orgs.length, 1, order);
+    assert.ok(out.animals.includes('cat'), `${order}: animals survived`);
+    assert.ok(out.needs.includes('adoption'), `${order}: needs survived`);
+    assert.ok(out.boroughs.includes('queens'), `${order}: boroughs survived`);
+    assert.ok(out.org_types.includes('rescue-foster'), `${order}: org types survived`);
+  }
+});

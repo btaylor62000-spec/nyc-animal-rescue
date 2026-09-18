@@ -207,6 +207,23 @@ const NOT_AN_ORG =
  * pages get redesigned, and a brittle scraper that silently returns nothing is
  * worse than one that plainly reports it found nothing.
  */
+/**
+ * Does this host look like a real domain?
+ *
+ * `new URL()` is happy to parse a malformed href -- a roster page carrying
+ * `http://http//www.example.org/.org` yields the hostname `http`, which is not
+ * internal, is not a platform host, and so used to be stored verbatim as an
+ * organization's website. The stored value was then unusable: it could never be
+ * fetched, so the weekly check could never verify the record either.
+ *
+ * Requiring a dotted name with an alphabetic suffix rejects that without
+ * needing a list of valid endings.
+ */
+function looksLikeDomain(host: string | null): boolean {
+  if (!host) return false;
+  return /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)*\.[a-z]{2,}$/i.test(host);
+}
+
 export function extractRoster(html: string, pageUrl: string): Array<{ name: string; website: string | null }> {
   const found = new Map<string, string | null>();
   const pageHost = hostOf(pageUrl);
@@ -229,7 +246,11 @@ export function extractRoster(html: string, pageUrl: string): Array<{ name: stri
         // An outbound link is the organization's own site; an internal one is
         // navigation on the roster page itself.
         const internal = !host || host === pageHost || PLATFORM_HOSTS.test(host);
-        if (!internal) website = `${resolved.origin}${resolved.pathname}`.replace(/\/$/, '');
+        // A malformed href can parse into a hostname that is not a domain at
+        // all, and storing it would create a record nothing can ever verify.
+        if (!internal && looksLikeDomain(host)) {
+          website = `${resolved.origin}${resolved.pathname}`.replace(/\/$/, '');
+        }
       }
     } catch {
       continue;

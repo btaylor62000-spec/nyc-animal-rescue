@@ -203,6 +203,28 @@ function main(): void {
   for (const f of readdirSync(GUIDES_DIR)) if (f.endsWith('.md')) rmSync(`${GUIDES_DIR}/${f}`);
 
   const sorted = [...merge.orgs].sort((a, b) => a.id.localeCompare(b.id));
+
+  /*
+   * Records are written one file per id, so two records sharing an id means
+   * one is silently destroyed by the other -- and the loss is invisible,
+   * because the file count still looks plausible. That is exactly how a bare
+   * discovery candidate replaced the real "Rescue NYC" record. Merging should
+   * make this impossible; this is here so that if it ever becomes possible
+   * again the import stops instead of quietly deleting an organization.
+   */
+  const seenIds = new Map<string, string>();
+  const collisions: string[] = [];
+  for (const org of sorted) {
+    const prev = seenIds.get(org.id);
+    if (prev) collisions.push(`${org.id} (${prev} / ${org.name})`);
+    else seenIds.set(org.id, org.name);
+  }
+  if (collisions.length) {
+    throw new Error(
+      `${collisions.length} record(s) share an id and would overwrite each other: ${collisions.join('; ')}`,
+    );
+  }
+
   for (const org of sorted) writeFileSync(`${ORGS_DIR}/${org.id}.json`, stableStringify(org), 'utf8');
   console.log(`Wrote ${sorted.length} files to ${ORGS_DIR}/`);
 

@@ -249,7 +249,23 @@ export function mergeOrgs(all: Org[]): MergeResult {
   for (const org of kept) {
     const key = keyFor(org.name);
     if (!key) {
-      groups.set(`__unique:${org.id}`, [org]);
+      /*
+       * A name made entirely of words the merge key discards -- "Rescue NYC"
+       * is `rescue` and `nyc`, both stripped -- reduces to an empty key, so it
+       * cannot be grouped by name and falls back to its own id.
+       *
+       * This must accumulate like any other bucket. It used to `set`, which
+       * meant two records that reduced to an empty key *and* shared a slug
+       * silently overwrote one another: the real "Rescue NYC" from the dog
+       * workbook was replaced wholesale by a bare discovery candidate of the
+       * same name, losing its animals, needs, boroughs and area. Nothing
+       * reported it, because no cluster had been merged -- one record simply
+       * stopped existing.
+       */
+      const own = `__unique:${org.id}`;
+      const existing = groups.get(own);
+      if (existing) existing.push(org);
+      else groups.set(own, [org]);
       continue;
     }
     const bucket = groups.get(key);

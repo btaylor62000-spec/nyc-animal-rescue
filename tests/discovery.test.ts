@@ -130,3 +130,23 @@ test('tags are guessed only as far as the name supports', () => {
   const opaque = candidateToOrg({ ...CANDIDATE, name: 'Air Twiga Animal Rescue' });
   assert.deepEqual(opaque.animals, [], 'a name that says nothing must not produce tags');
 });
+
+/*
+ * A roster page carrying a malformed href -- "http://http//www.example.org/.org"
+ * -- parses without throwing, and its hostname is "http". That is not the page's
+ * own host and not a platform host, so it used to be accepted and stored as an
+ * organization's website. The stored value could never be fetched, so the
+ * weekly check could never verify that record either: a candidate that was
+ * permanently unverifiable from the moment it was created.
+ */
+test('a malformed link is not stored as an organization website', () => {
+  const html = `
+    <a href="http://http//www.rescuenyc.org/.org">Rescue NYC</a>
+    <a href="https://www.realrescue.org/about">Real Rescue Group</a>
+  `;
+  const found = extractRoster(html, 'https://www.nycacc.org/new-hope-partners');
+  const byName = new Map(found.map((f) => [f.name, f.website]));
+
+  assert.equal(byName.get('Rescue NYC'), undefined, 'a host that is not a domain is rejected outright');
+  assert.equal(byName.get('Real Rescue Group'), 'https://www.realrescue.org/about', 'a real link still works');
+});
