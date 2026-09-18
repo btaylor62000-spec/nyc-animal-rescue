@@ -14,7 +14,7 @@
  */
 import { existsSync, readFileSync } from 'node:fs';
 import type { Animal, Need, Org } from '../../src/types.ts';
-import { ANIMAL_RULES, NEED_RULES, ORG_TYPE_RULES } from './taxonomy.ts';
+import { ANIMAL_RULES, NEED_RULES, ORG_TYPE_RULES, inferRegion } from './taxonomy.ts';
 import { applyRules } from './tag.ts';
 import { formatPhone, slugify } from './normalize.ts';
 
@@ -56,6 +56,11 @@ export function candidateToOrg(c: Candidate): Org {
   const needs = applyRules(NEED_RULES, src).tags as Need[];
   const orgTypes = applyRules(ORG_TYPE_RULES, src).tags;
 
+  // The roster these come from lists rescues that pull animals out of NYC
+  // shelters, which is not the same as being in New York. Say where they are,
+  // so a group in Connecticut does not compete with a local one in search.
+  const region = inferRegion({ name: c.name, phones: c.phones ?? [] });
+
   return {
     id: slugify(c.name),
     name: c.name,
@@ -66,10 +71,10 @@ export function candidateToOrg(c: Candidate): Org {
     needs,
     boroughs: [],
     citywide: false,
-    outside_nyc: false,
+    outside_nyc: region.outsideNyc,
     neighborhoods: null,
     zips: [],
-    region_note: null,
+    region_note: region.note,
     phones: (c.phones ?? []).map((value) => ({ value, display: formatPhone(value) })),
     emails: (c.emails ?? []).map((value) => ({ value })),
     website: c.website,
@@ -78,10 +83,12 @@ export function candidateToOrg(c: Candidate): Org {
     address: null,
     hours: null,
     notes: c.contactsFrom
-      ? `Found on ${c.source} on ${c.firstSeen}. The contact details below were read from their own website ` +
+      ? `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
+        'The contact details below were read from their own website ' +
         'on the same day, but nobody has confirmed them, and we do not know whether they are still operating. ' +
         'Confirm before relying on it.'
-      : `Found on ${c.source} on ${c.firstSeen}. Nothing about this entry has been checked yet — ` +
+      : `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
+        'Nothing about this entry has been checked yet — ' +
         'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.',
     type_raw: null,
     confidence: 'Low',

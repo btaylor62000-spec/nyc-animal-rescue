@@ -225,3 +225,97 @@ export const STATUS_RULES: Array<{ tag: Status; pattern: RegExp; note: string }>
     note: 'Source flags this entry as needing confirmation before you rely on it.',
   },
 ];
+
+// --- where an organization is, when nothing says so directly ---------------
+
+/**
+ * The city's own area codes.
+ *
+ * A phone number is the most reliable thing a discovered organization gives us
+ * about where it is. The roster we read it from -- the city shelter's New Hope
+ * partners -- lists rescues approved to pull animals *out of* NYC shelters,
+ * which is a different thing from resources a New Yorker can call. Most of
+ * them are in Pennsylvania, Connecticut, New Jersey or upstate. Left untagged
+ * they would compete with local groups in search results for no good reason.
+ */
+export const NYC_AREA_CODES = new Set(['212', '646', '332', '917', '718', '347', '929']);
+
+/**
+ * Nearby regions worth naming, so a card can say where a group actually is.
+ * Anything not listed is simply "outside the New York City area" -- better a
+ * vague true statement than a confident guess at a place.
+ */
+const AREA_CODE_REGIONS: Record<string, string> = {
+  '914': 'Westchester', '845': 'the Hudson Valley',
+  '516': 'Long Island', '631': 'Long Island',
+  '201': 'New Jersey', '551': 'New Jersey', '862': 'New Jersey', '973': 'New Jersey',
+  '908': 'New Jersey', '732': 'New Jersey', '848': 'New Jersey', '856': 'New Jersey', '609': 'New Jersey',
+  '203': 'Connecticut', '475': 'Connecticut', '860': 'Connecticut', '959': 'Connecticut',
+  '215': 'Pennsylvania', '267': 'Pennsylvania', '484': 'Pennsylvania', '570': 'Pennsylvania',
+  '610': 'Pennsylvania', '717': 'Pennsylvania', '724': 'Pennsylvania', '814': 'Pennsylvania', '878': 'Pennsylvania',
+  '315': 'upstate New York', '518': 'upstate New York', '585': 'upstate New York',
+  '607': 'upstate New York', '716': 'upstate New York', '838': 'upstate New York',
+};
+
+/** Places in a name that put an organization outside the city. */
+const REGIONAL_NAME =
+  /\b(connecticut|\bCT\b|new jersey|\bNJ\b|pennsylvania|\bPA\b|long island|westchester|hudson valley|upstate|delaware|maryland|virginia|new england|mid[- ]atlantic|maine|vermont|massachusetts|rhode island|philadelphia|boston)\b/i;
+
+/**
+ * Abbreviations and bare adjectives, written the way a person would say them,
+ * preposition included -- one is *on* Long Island but *in* Connecticut.
+ */
+function readablePlace(match: string): string {
+  // Punctuation becomes a space, not nothing: "Mid-Atlantic" must key as
+  // "mid atlantic" rather than "midatlantic", which matches nothing.
+  const key = match.toLowerCase().replace(/[^a-z]+/g, ' ').trim();
+  const said: Record<string, string> = {
+    nj: 'in New Jersey', ct: 'in Connecticut', pa: 'in Pennsylvania',
+    'mid atlantic': 'in the Mid-Atlantic', 'mid-atlantic': 'in the Mid-Atlantic',
+    'new england': 'in New England', 'long island': 'on Long Island',
+    'hudson valley': 'in the Hudson Valley', upstate: 'in upstate New York',
+  };
+  if (said[key]) return said[key]!;
+  return `in ${key.replace(/\b[a-z]/g, (c) => c.toUpperCase())}`;
+}
+
+export interface RegionGuess {
+  outsideNyc: boolean;
+  /** Plain-language note for the record, or null when it looks local. */
+  note: string | null;
+}
+
+/**
+ * Work out whether a discovered organization is in the city.
+ *
+ * Deliberately asymmetric. A New York City area code is treated as proof it is
+ * local; everything else is only ever evidence that it is not. Getting this
+ * wrong in the cautious direction labels a local group "outside NYC", which is
+ * a visible, correctable annoyance. Getting it wrong the other way puts a
+ * Connecticut poodle rescue in front of someone in Brooklyn looking for a cat.
+ */
+export function inferRegion(input: { name: string; phones: string[] }): RegionGuess {
+  const areaCodes = input.phones
+    .map((p) => p.replace(/\D/g, ''))
+    .filter((d) => d.length === 10)
+    .map((d) => d.slice(0, 3));
+
+  if (areaCodes.some((a) => NYC_AREA_CODES.has(a))) return { outsideNyc: false, note: null };
+
+  const region = areaCodes.map((a) => AREA_CODE_REGIONS[a]).find(Boolean);
+  if (region) {
+    return { outsideNyc: true, note: `Based in ${region}, from its phone number. Works with New York City shelters.` };
+  }
+  if (areaCodes.length > 0) {
+    return { outsideNyc: true, note: 'Based outside the New York City area, from its phone number. Works with New York City shelters.' };
+  }
+
+  const named = REGIONAL_NAME.exec(input.name);
+  if (named) {
+    return {
+      outsideNyc: true,
+      note: `Its name places it ${readablePlace(named[1]!)}, outside New York City.`,
+    };
+  }
+  return { outsideNyc: false, note: null };
+}
