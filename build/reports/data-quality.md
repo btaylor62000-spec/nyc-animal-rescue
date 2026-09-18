@@ -9,7 +9,7 @@ Generated 2026-09-18 from the three source workbooks and the wildlife guide.
 - **19** guide pages generated
 - **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
-- **4** personal contact details withheld
+- **5** personal contact details withheld
 
 ## Coverage
 
@@ -277,7 +277,7 @@ Every row received at least one animal, need, organization type and borough.
 
 ## Privacy
 
-### Contact details withheld (4 removals)
+### Contact details withheld (5 removals)
 
 These are personal numbers belonging to individuals, not organizational lines. Nothing here reaches the published site. Each needs the person's permission before it can be listed.
 

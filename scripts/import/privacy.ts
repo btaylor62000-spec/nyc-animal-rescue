@@ -50,6 +50,63 @@ function digits(s: string): string {
   return s.replace(/\D/g, '');
 }
 
+/**
+ * Contact prose left stranded when a hold removes the numbers it described.
+ *
+ * The importer files prose that was sitting in a contact column into the notes,
+ * tagged with the column it came from ("Phone: Home Phone: cell (Bobby)"). That
+ * is useful while the numbers are there. Once a hold strips them it is worse
+ * than useless: it still names the person, still reads as an invitation, and
+ * "call directly (numbers at left)" points at numbers that are no longer on the
+ * page. This is the same failure `scrubText` exists to prevent in guide prose --
+ * cutting the digits and leaving "contact Divya at [withheld]" -- so records get
+ * the same treatment.
+ */
+/** Every label the importer writes when filing contact-column prose into notes. */
+const ANY_LABEL = /(?:^|\s)(?:Phone|Email|Cell|Home Phone|Other channel|Intake|Website):/gi;
+
+/** The subset describing a route that a hold has just taken away. */
+const WITHHELD_LABEL = /^(?:Phone|Email|Cell|Home Phone|Other channel):/i;
+
+/** Segments that only make sense if the withheld contacts were still shown. */
+const POINTS_AT_CONTACTS = /\b(?:numbers? (?:at left|above|below)|at left|call directly|reach by phone|contact by phone)\b/i;
+
+function stripStrandedContactProse(notes: string): string {
+  // Split on every label, not just the ones being dropped: bounding a segment
+  // by the next label of any kind is what stops "Phone: ..." swallowing the
+  // "Intake: ..." text that follows it and is still perfectly valid.
+  const parts: string[] = [];
+  const marks = [...notes.matchAll(ANY_LABEL)].map((m) => m.index!);
+  if (marks.length === 0) return notes;
+  if (marks[0]! > 0) parts.push(notes.slice(0, marks[0]!));
+  for (let i = 0; i < marks.length; i++) {
+    parts.push(notes.slice(marks[i]!, marks[i + 1] ?? notes.length));
+  }
+
+  const kept: string[] = [];
+  for (const part of parts) {
+    const trimmed = part.trim();
+    if (!trimmed) continue;
+
+    // A segment labelled with a route that has just been withheld goes whole.
+    if (WITHHELD_LABEL.test(trimmed)) continue;
+
+    // Any other segment is kept, minus only the sentences that send the reader
+    // to the missing numbers. Dropping the whole segment would also lose true
+    // statements sitting beside them -- "Listed by NYC Bird Alliance" is the
+    // route that still works, and it shared a segment with "call directly".
+    if (POINTS_AT_CONTACTS.test(trimmed)) {
+      const sentences = trimmed.split(/(?<=[.!?])\s+/).filter((x) => !POINTS_AT_CONTACTS.test(x));
+      const rest = sentences.join(' ').trim();
+      if (rest) kept.push(rest);
+      continue;
+    }
+    kept.push(trimmed);
+  }
+
+  return kept.join(' ').replace(/\s{2,}/g, ' ').replace(/\s+([.,;])/g, '$1').trim();
+}
+
 export function applyPrivacyHolds(orgs: Org[], path?: string): PrivacyReport {
   const { held, nameHolds } = loadHolds(path);
   const removals: PrivacyReport['removals'] = [];
@@ -62,6 +119,9 @@ export function applyPrivacyHolds(orgs: Org[], path?: string): PrivacyReport {
 
   for (const org of orgs) {
     let touched = false;
+    // A name hold is not a reason to rewrite contact prose; only a withheld
+    // phone or email leaves that prose describing something that is gone.
+    let contactWithheld = false;
 
     // Structured phone fields.
     const keptPhones = org.phones.filter((p) => {
@@ -69,6 +129,7 @@ export function applyPrivacyHolds(orgs: Org[], path?: string): PrivacyReport {
       if (!holdId) return true;
       removals.push({ org_id: org.id, org_name: org.name, hold_id: holdId, where: 'phones' });
       touched = true;
+      contactWithheld = true;
       return false;
     });
     org.phones = keptPhones;
@@ -89,6 +150,7 @@ export function applyPrivacyHolds(orgs: Org[], path?: string): PrivacyReport {
         next = next.replace(pattern, '[contact withheld pending permission]');
         removals.push({ org_id: org.id, org_name: org.name, hold_id: holdId, where: field });
         touched = true;
+        contactWithheld = true;
       }
       if (next !== value) (org[field] as string) = next;
     }
@@ -107,6 +169,17 @@ export function applyPrivacyHolds(orgs: Org[], path?: string): PrivacyReport {
 
     if (touched) {
       org.privacy_hold = true;
+
+      // The numbers are gone from the fields; take the prose that described
+      // them out of the notes as well, or the page still reads as though a
+      // phone route exists.
+      if (contactWithheld && typeof org.notes === 'string') {
+        const cleaned = stripStrandedContactProse(org.notes);
+        if (cleaned !== org.notes) {
+          org.notes = cleaned;
+          removals.push({ org_id: org.id, org_name: org.name, hold_id: 'stranded-contact-prose', where: 'notes' });
+        }
+      }
       const note = 'Some contact details for this entry are personal and are withheld until the individual confirms they want to be listed publicly.';
       org.notes = org.notes ? `${org.notes}\n\n${note}` : note;
     }
