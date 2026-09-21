@@ -45,13 +45,13 @@
   "status": "verify",
   "status_note": "VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-09-21",
   "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-18",
-  "check_status": "needs-review",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

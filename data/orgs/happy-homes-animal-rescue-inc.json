@@ -30,8 +30,8 @@
   "region_note": "STATEN ISLAND (Staten Island cat groups)",
   "phones": [
     {
-      "value": "9143938292",
-      "display": "(914) 393-8292"
+      "value": "7325886578",
+      "display": "(732) 588-6578"
     }
   ],
   "emails": [],
@@ -54,14 +54,24 @@
     "https://happyhomesinc.org/",
     "https://www.happyhomesinc.org/adopt"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-09-21",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "changed",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "phones",
+      "from": "9143938292",
+      "to": "7325886578",
+      "evidence_url": "https://happyhomesinc.org/",
+      "source": "weekly-check",
+      "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    }
+  ],
   "privacy_hold": false
 }

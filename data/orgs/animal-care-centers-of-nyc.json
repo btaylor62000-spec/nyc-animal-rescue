@@ -87,14 +87,14 @@
   "source_urls": [
     "https://www.nycacc.org/services/surrender/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-09-21",
   "section": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

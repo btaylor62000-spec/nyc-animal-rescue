@@ -73,13 +73,13 @@
   "source_urls": [
     "https://www.reeniesrabbitrescue.com/contact/"
   ],
-  "last_verified": "2026-08-29",
+  "last_verified": "2026-09-21",
   "section": "RABBITS (largest NYC exotic-rescue category)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

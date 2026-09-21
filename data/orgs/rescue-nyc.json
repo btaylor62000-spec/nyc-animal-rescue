@@ -36,21 +36,23 @@
   ],
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) NYC foster-based rescue and ACC New Hope partner. Pulls at-risk animals from the NYC shelter system into foster homes for rehoming. Foster-based, no facility. Verify contact via site before relying (site occasionally lists redirect URLs on aggregators). Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "notes": "501(c)(3) NYC foster-based rescue and ACC New Hope partner. Pulls at-risk animals from the NYC shelter system into foster homes for rehoming. Foster-based, no facility. Verify contact via site before relying (site occasionally lists redirect URLs on aggregators). Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site\n\nFound on ACC New Hope partners on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
   "type_raw": "Rescue+adoption (foster-based)",
   "confidence": "Low",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.nycacc.org/programs/new-hope-partners/"
+    "https://www.nycacc.org/programs/new-hope-partners/",
+    "https://www.nycacc.org/new-hope-partners"
   ],
   "last_verified": "2026-08-27",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
-    "research/NYC_Dog_Rescue_Reference.xlsx"
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "discovery"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

@@ -29,8 +29,8 @@
   "region_note": "MANHATTAN (Manhattan-based cat groups)",
   "phones": [
     {
-      "value": "6464572130",
-      "display": "(646) 457-2130"
+      "value": "5854964660",
+      "display": "(585) 496-4660"
     }
   ],
   "emails": [
@@ -61,14 +61,24 @@
     "https://www.anjelliclecats.com/",
     "https://www.idealist.org/en/nonprofit/97576440e6b34cb5b0cf339304c3383a-anjellicle-cats-rescue-new-york"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-09-21",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "changed",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "phones",
+      "from": "6464572130",
+      "to": "5854964660",
+      "evidence_url": "https://www.anjelliclecats.com/",
+      "source": "weekly-check",
+      "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    }
+  ],
   "privacy_hold": false
 }

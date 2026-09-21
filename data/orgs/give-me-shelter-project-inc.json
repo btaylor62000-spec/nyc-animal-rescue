@@ -53,13 +53,13 @@
   "source_urls": [
     "https://givemeshelterproject.org/contact-us/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-09-21",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

@@ -71,13 +71,13 @@
     "https://www.sicawsaves.org/",
     "https://www.adoptapet.com/shelter/83487-staten-island-council-for-animal-welfare-staten-island-new-york"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-09-21",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

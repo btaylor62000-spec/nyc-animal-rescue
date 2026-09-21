@@ -35,7 +35,7 @@
   ],
   "emails": [
     {
-      "value": "dogsandcats@ah-nyc.org"
+      "value": "info@animalhaven.org"
     }
   ],
   "website": "https://animalhaven.org",
@@ -69,15 +69,25 @@
     "https://animalhaven.org/contact-us",
     "https://animalhaven.org/adopt/adoption-process/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-09-21",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "changed",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "emails",
+      "from": "dogsandcats@ah-nyc.org",
+      "to": "info@animalhaven.org",
+      "evidence_url": "https://animalhaven.org/",
+      "source": "weekly-check",
+      "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    }
+  ],
   "privacy_hold": false
 }

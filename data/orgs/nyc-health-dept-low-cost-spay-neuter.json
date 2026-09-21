@@ -28,8 +28,8 @@
   "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "phones": [
     {
-      "value": "311",
-      "display": "311"
+      "value": "2126399675",
+      "display": "(212) 639-9675"
     }
   ],
   "emails": [],
@@ -46,14 +46,24 @@
   "source_urls": [
     "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-09-21",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "changed",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "phones",
+      "from": "311",
+      "to": "2126399675",
+      "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
+      "source": "weekly-check",
+      "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    }
+  ],
   "privacy_hold": false
 }

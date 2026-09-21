@@ -79,14 +79,14 @@
     "https://www.adoptapet.com/adoption_rescue/78830-empty-cages-collective-brooklyn-new-york",
     "https://www.emptycagescollective.org/guinea-pigs-of-ecc.html"
   ],
-  "last_verified": "2026-08-29",
+  "last_verified": "2026-09-21",
   "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

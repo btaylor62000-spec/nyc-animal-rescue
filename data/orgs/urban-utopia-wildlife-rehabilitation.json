@@ -55,7 +55,7 @@
   "type_raw": "Wildlife info resource + NYC rehabber directory (rehab currently on hiatus)",
   "confidence": "Medium",
   "status": "hiatus",
-  "status_note": "Source says this organization is paused or on hiatus.",
+  "status_note": "Their own site says it is paused. Checked 2026-09-21.",
   "source_urls": [
     "https://www.urbanutopiawildlife.org/"
   ],
@@ -64,9 +64,19 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "status",
+      "from": "hiatus",
+      "to": "hiatus",
+      "evidence_url": "https://www.urbanutopiawildlife.org/",
+      "source": "weekly-check",
+      "note": "ALWAYS try to reunite a baby animal with its mother first. Human care is a last resort. WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time, and this is only an informational website. If you find an animal"
+    }
+  ],
   "privacy_hold": false
 }

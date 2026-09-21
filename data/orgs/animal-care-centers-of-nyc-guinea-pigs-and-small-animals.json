@@ -67,8 +67,8 @@
   "notes": "NYC's open-admission municipal shelter system; takes in and adopts out guinea pigs, rabbits and other small animals as well as cats and dogs. Rescues can pull at-risk animals through ACC's New Hope program. Also provides wildlife guidance and lost-and-found. Email: (see nycacc.org contact form)",
   "type_raw": "Open-admission municipal shelter",
   "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "status": "hiatus",
+  "status_note": "Their own site says it is not accepting intakes. Checked 2026-09-21.",
   "source_urls": [
     "https://www.nycacc.org/GuineaPigs"
   ],
@@ -77,9 +77,19 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-21",
+      "field": "status",
+      "from": "active",
+      "to": "hiatus",
+      "evidence_url": "https://www.nycacc.org/adoption/process/",
+      "source": "weekly-check",
+      "note": "g prospective adopters to have no more than two people in their adoption party. If we are currently at capacity, adopters will be directed to sign up for a waitlist. From there, you will be texted when it is your turn to adopt! Adoption counselors an"
+    }
+  ],
   "privacy_hold": false
 }

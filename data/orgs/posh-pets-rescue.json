@@ -66,13 +66,13 @@
   "source_urls": [
     "https://poshpetsrescueny.org/contact/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-09-21",
   "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false

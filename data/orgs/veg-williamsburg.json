@@ -28,8 +28,8 @@
   "region_note": "BROOKLYN - 24 hour ER",
   "phones": [
     {
-      "value": "9174236444",
-      "display": "(917) 423-6444"
+      "value": "2014387122",
+      "display": "(201) 438-7122"
     }
   ],
   "emails": [],
@@ -47,14 +47,14 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-09-18",
+  "last_verified": "2026-09-21",
   "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-18",
-  "check_status": "ok",
+  "last_checked": "2026-09-21",
+  "check_status": "changed",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -65,6 +65,15 @@
       "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
       "source": "manual",
       "note": "(917) 423-6444 confirmed as VEG Williamsburg on VEG’s own location page, at 87 Kent Avenue."
+    },
+    {
+      "date": "2026-09-21",
+      "field": "phones",
+      "from": "9174236444",
+      "to": "2014387122",
+      "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
+      "source": "weekly-check",
+      "note": "The previous value was no longer on their site and exactly one replacement was found there."
     }
   ],
   "privacy_hold": false

@@ -42,9 +42,9 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
-  "consecutive_failures": 0,
+  "last_checked": "2026-09-21",
+  "check_status": "unreachable",
+  "consecutive_failures": 1,
   "change_log": [],
   "privacy_hold": false
 }

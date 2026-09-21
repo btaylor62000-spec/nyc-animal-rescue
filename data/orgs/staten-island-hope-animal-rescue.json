@@ -84,14 +84,14 @@
     "https://www.statenislandhopeanimalrescue.org/",
     "https://www.guidestar.org/profile/27-2122819"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-09-21",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-09-21",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false
