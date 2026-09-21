@@ -1,0 +1,66 @@
+{
+  "id": "your-local-nypd-precinct",
+  "name": "Your local NYPD precinct",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT",
+  "phones": [],
+  "emails": [],
+  "website": "https://nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page - report in-progress cruelty directly and ask for the ASPCA Liaison Officer. If a precinct says it has none, ask for the Neighborhood Coordination Officer or the Community Affairs Officer and say you want to file an animal abuse complaint. Not anonymous.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Report animal abuse — WHO TO CONTACT",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

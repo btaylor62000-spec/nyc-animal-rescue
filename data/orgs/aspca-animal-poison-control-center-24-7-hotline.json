@@ -2,12 +2,14 @@
   "id": "aspca-animal-poison-control-center-24-7-hotline",
   "name": "ASPCA Animal Poison Control Center (APCC) - 24/7 HOTLINE",
   "aka": [
+    "ASPCA Animal Poison Control",
     "ASPCA Animal Poison Control (APCC)",
     "ASPCA Animal Poison Control Center"
   ],
   "parent_org": null,
   "org_types": [
     "hotline",
+    "support-program",
     "exotic-vet",
     "clinic",
     "emergency-vet",
@@ -19,9 +21,20 @@
     "rabbit",
     "small-mammal",
     "bird-companion",
-    "reptile"
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
   ],
   "needs": [
+    "legal",
+    "owner-support",
     "poison-control",
     "emergency-vet",
     "exotic-vet",
@@ -42,8 +55,7 @@
   "phones": [
     {
       "value": "8884264435",
-      "display": "(888) 426-4435",
-      "label": "ASPCA Animal Poison Control (APCC)"
+      "display": "(888) 426-4435"
     }
   ],
   "emails": [],
@@ -52,7 +64,7 @@
   "social": [],
   "address": null,
   "hours": "24/7",
-  "notes": "(888) 426-4435 - 24/7, vet toxicologists. Consult fee ~$95 (waived w/ HomeAgain microchip).\n\n(888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.\n\nTHE call for a suspected poisoning/toxin ingestion (lilies, meds, antifreeze, rodenticide, etc.) - staffed 24/7 by vet toxicologists who guide you AND your ER vet with a treatment plan. Lilies are deadly to cats even in tiny amounts. Then go to a 24hr ER (see Emergency tab). Verified 2026-08-26. Intake: Call 24/7/365. If a cat ate/contacted something toxic, call BEFORE inducing anything. Other channel: Consultation fee may apply (~$95; waived w/ HomeAgain-enrolled microchip)",
+  "notes": "(888) 426-4435 - aspca.org/pet-care/animal-poison-control - if an animal has been poisoned or exposed to a toxin. Staffed 24/7, 365 days a year.\n\n(888) 426-4435 - 24/7, vet toxicologists. Consult fee ~$95 (waived w/ HomeAgain microchip).\n\n(888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.\n\nTHE call for a suspected poisoning/toxin ingestion (lilies, meds, antifreeze, rodenticide, etc.) - staffed 24/7 by vet toxicologists who guide you AND your ER vet with a treatment plan. Lilies are deadly to cats even in tiny amounts. Then go to a 24hr ER (see Emergency tab). Verified 2026-08-26. Intake: Call 24/7/365. If a cat ate/contacted something toxic, call BEFORE inducing anything. Other channel: Consultation fee may apply (~$95; waived w/ HomeAgain-enrolled microchip)",
   "type_raw": "poison control hotline (emergency, 24/7)",
   "confidence": "High",
   "status": "active",
@@ -64,6 +76,7 @@
   "last_verified": "2026-09-21",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx",
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],

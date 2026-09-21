@@ -38,6 +38,9 @@ interface TabSpec {
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
 const WB_DOG = 'research/NYC_Dog_Rescue_Reference.xlsx';
 const WB_EXOTIC = 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx';
+// Its own source: abuse reporting is not a tab on any species workbook, and
+// is not about a species.
+const WB_ABUSE = 'research/NYC_Animal_Abuse_Reporting.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -45,6 +48,12 @@ const WB_EXOTIC = 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_ABUSE, tab: 'Report animal abuse', slug: 'report-animal-abuse',
+    title: 'Reporting animal abuse or neglect',
+    summary: 'Who to call in New York City, what to write down, and why it is the police rather than the ASPCA.',
+    topics: ['animal abuse', 'animal cruelty', 'neglect', 'report abuse', 'dogfighting', 'hoarding', '311'],
+  },
   {
     file: WB_CAT, tab: 'Emergency & poison control', slug: 'animal-emergency',
     title: 'Animal emergencies and poison control',

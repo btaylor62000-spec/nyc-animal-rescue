@@ -4,9 +4,9 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 ## Totals
 
-- **287** organizations after de-duplication
+- **293** organizations after de-duplication
 - **75** duplicate clusters merged
-- **19** guide pages generated
+- **20** guide pages generated
 - **16** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **5** personal contact details withheld
@@ -17,21 +17,21 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 199 |
-| dog | 139 |
-| wildlife | 28 |
-| rabbit | 25 |
-| bird-companion | 24 |
-| reptile | 24 |
-| farm | 21 |
-| small-mammal | 21 |
-| pigeon | 11 |
-| bird-wild | 10 |
-| amphibian | 6 |
-| fish | 5 |
-| equine | 4 |
-| invertebrate | 3 |
-| marine | 1 |
+| cat | 205 |
+| dog | 145 |
+| wildlife | 36 |
+| rabbit | 32 |
+| bird-companion | 31 |
+| reptile | 31 |
+| farm | 29 |
+| small-mammal | 28 |
+| pigeon | 19 |
+| bird-wild | 18 |
+| amphibian | 14 |
+| fish | 13 |
+| equine | 12 |
+| invertebrate | 11 |
+| marine | 9 |
 
 ### By need
 
@@ -42,15 +42,16 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 | foster | 88 |
 | surrender | 59 |
 | spay-neuter | 53 |
-| owner-support | 45 |
+| owner-support | 48 |
 | low-cost-vet | 40 |
-| referral | 34 |
+| referral | 38 |
 | advocacy | 32 |
 | emergency-vet | 29 |
 | colony-care | 29 |
 | wildlife-rehab | 24 |
 | medical-special-needs | 23 |
 | education | 22 |
+| legal | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
 | financial-aid | 16 |
@@ -59,7 +60,6 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 | microchip | 14 |
 | food-assistance | 13 |
 | lost-found | 10 |
-| legal | 10 |
 | transport | 10 |
 | breed-specific | 10 |
 | pet-loss | 9 |
@@ -74,17 +74,17 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 155 |
-| queens | 114 |
-| manhattan | 108 |
-| bronx | 94 |
-| staten-island | 94 |
+| brooklyn | 162 |
+| queens | 121 |
+| manhattan | 115 |
+| bronx | 101 |
+| staten-island | 101 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 139 |
+| Medium | 145 |
 | High | 117 |
 | Low | 31 |
 
@@ -92,7 +92,7 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 271 |
+| active | 277 |
 | verify | 8 |
 | hiatus | 5 |
 | retired | 2 |
@@ -100,12 +100,7 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 ## Gaps in coverage
 
-Animal types with three or fewer organizations. The source notes say several of these are genuine gaps in the city rather than oversights.
-
-| Animal | Organizations |
-| --- | ---: |
-| invertebrate | 3 |
-| marine | 1 |
+No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
@@ -148,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (56)
+### Never verified (62)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -204,7 +199,8 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `mr-bones-and-co` ← 2 records
 - `pluto-rescue-of-richmond-county` ← 2 records
 - `bully-baby-rescue` ← 2 records
-- `aspca-animal-poison-control-center-24-7-hotline` ← 3 records
+- `uri-pals` ← 3 records
+- `aspca-animal-poison-control-center-24-7-hotline` ← 4 records
 - `pet-poison-helpline-24-7-hotline` ← 3 records
 - `bluepearl-brooklyn` ← 2 records
 - `veg-ralph-ave` ← 2 records
@@ -233,7 +229,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
 - `aspca-community-engagement` ← 2 records
 - `animal-haven-community-engagement` ← 2 records
-- `uri-pals` ← 2 records
 - `safe-haven-program-map-foster` ← 2 records
 - `safe-place-for-pets` ← 2 records
 - `safe-havens-mapping-project` ← 2 records
@@ -310,6 +305,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 13415 |
+| Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |
 | Low-cost clinics and trap banks | 8203 |
 | Community cats, colonies and starting TNR | 6880 |

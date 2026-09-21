@@ -93,10 +93,31 @@ export function parsePhones(raw: string | null): Parsed<Phone> {
   const residue: string[] = [];
   if (!raw) return { values, residue };
 
+  /*
+   * Civic short codes are real, dialable numbers that the ten-digit pattern
+   * cannot see. Until now one was only recognised when it was the entire cell,
+   * so a listing written as "NYC 311 - 311 - portal.311.nyc.gov" produced a
+   * record with no number at all — for 311, which is the most important number
+   * in the whole directory for reporting cruelty.
+   *
+   * Matched as a whole token only, and never when it is glued to a dot, slash
+   * or another digit, so the 311 in "portal.311.nyc.gov" and the 988 in a ZIP
+   * or a street number are left alone.
+   *
+   * 911 is deliberately absent. "Call 911 if..." is ordinary safety prose all
+   * over this directory, so reading it as a contact gave a Facebook group a
+   * phone number of 911 — and, because records sharing a number are merged,
+   * pulled an unrelated entry into it. Nobody needs a directory to find 911.
+   */
+  for (const m of raw.matchAll(/(^|[^\w.\/-])(311|988)(?![\w.\/-])/g)) {
+    const code = m[2]!;
+    if (!values.some((v) => v.value === code)) values.push({ value: code, display: code });
+  }
+
   for (const seg of segments(raw)) {
     // Short municipal codes are real numbers but do not match the pattern.
     if (/^3-?1-?1$/.test(seg.trim())) {
-      values.push({ value: '311', display: '311' });
+      if (!values.some((v) => v.value === '311')) values.push({ value: '311', display: '311' });
       continue;
     }
     const { core, label } = splitLabel(seg);

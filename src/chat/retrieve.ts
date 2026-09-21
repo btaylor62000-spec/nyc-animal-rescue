@@ -28,6 +28,13 @@ export interface Signals {
   zips: string[];
   /** The question describes an animal in immediate danger. */
   emergency: boolean;
+  /**
+   * The question is about someone harming or neglecting an animal, rather than
+   * an animal needing care. It routes somewhere completely different — to the
+   * police, not to a vet or a rescue — so it cannot be left to overlap with
+   * the general "legal" tag, which also covers bite reports and housing law.
+   */
+  abuse: boolean;
   /** True when we know neither where they are nor what animal it is. */
   needsLocation: boolean;
   needsAnimal: boolean;
@@ -89,6 +96,31 @@ const NEED_WORDS = (() => {
  * someone to an emergency vet who did not need one costs a phone call, while
  * missing one can cost the animal.
  */
+/*
+ * Reporting cruelty someone else is committing.
+ *
+ * Deliberately not matching a person escaping an abusive partner. "I'm
+ * leaving an abusive partner and can't take my dog" contains the same words
+ * and is a completely different request: they need somewhere for the dog, not
+ * a tip line. That routes to the owner-support guides, which already carry
+ * the domestic-violence pet programmes, and there is an eval case that fails
+ * if this pattern swallows it.
+ */
+const ABUSE_RE =
+  /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|starv\w*|hoard\w*|dog ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law)\b/i;
+
+/*
+ * The same words, from the other side.
+ *
+ * "abusive" matches the pattern above, but someone leaving an abusive partner
+ * is not reporting cruelty — they need somewhere for their pet, which is the
+ * owner-support route and already carries the domestic-violence programmes.
+ * The giveaway is that the abuser is *theirs*: a partner, an ex, a household.
+ * An abusive owner or neighbour is still a report.
+ */
+const ABUSE_VICTIM_RE =
+  /\b(domestic violence|abusive (partner|ex|husband|wife|boyfriend|girlfriend|relationship|home|household)|(leaving|escap\w*|flee\w*) (an?|my) (abusive|violent))\b/i;
+
 const EMERGENCY_RE =
   /\b(emergenc\w*|urgent|dying|dead|bleed\w*|blood|broken|fracture\w*|seizure|seizing|convuls\w*|collaps\w*|unconscious|limp|not breathing|can'?t breathe|struggling to breathe|breathing (funny|hard|heavy|fast|weird|strange)|labou?red breathing|wheez\w*|gasping|choking|hit by|hit a car|run over|attacked|mauled|bitten|bite|caught by a cat|cat (got|caught|brought)|brought (it |me |in )?(a |home)|poison\w*|toxic|ate .{0,20}(chocolate|lily|lilies|rat poison|antifreeze|pill)|overdose|hit (?:the |a |my |our |his |her |its )?window|window strike|flew into|stuck|trapped|drowning|hypothermi\w*|freezing|shock|won'?t move|can'?t stand|can'?t walk|paralys\w*|gushing|severe|critical|24 ?hours?|24\/7|right now|tonight|asap|\d{1,2} ?[ap]m)\b/i;
 
@@ -138,6 +170,10 @@ export function extractSignals(question: string): Signals {
     NOT_EATING_RE.test(q) && (animals.has('rabbit') || animals.has('small-mammal') || animals.has('bird-companion'));
 
   const emergency = EMERGENCY_RE.test(q) || catAttack || gutStasis;
+  const abuse = ABUSE_RE.test(q) && !ABUSE_VICTIM_RE.test(q);
+  // Reporting cruelty is a legal matter, so the tag that carries the police
+  // and tip lines is added whether or not the wording tripped it on its own.
+  if (abuse) needs.add('legal');
   if (emergency) needs.add('emergency-vet');
   if (NEONATE_RE.test(q)) needs.add('neonatal');
 
@@ -154,6 +190,7 @@ export function extractSignals(question: string): Signals {
     boroughs,
     zips,
     emergency,
+    abuse,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
   };
@@ -219,7 +256,14 @@ const NEED_PRIORITY = [
   'foster',
 ] as const;
 
-function primaryNeed(needs: string[]): string | null {
+function primaryNeed(needs: string[], abuse = false): string | null {
+  /*
+   * Reporting cruelty outranks the whole list. The phrase "animal abuse" puts
+   * `wildlife-rehab` into the needs by way of the word "animal", and that sits
+   * second in this order, so without this the results were led by wildlife
+   * hospitals for a question about the police.
+   */
+  if (abuse && needs.includes('legal')) return 'legal';
   for (const n of NEED_PRIORITY) if (needs.includes(n)) return n;
   return needs[0] ?? null;
 }
@@ -300,11 +344,26 @@ export class Retriever {
     let score = 0;
 
     // 1. The one thing they need most.
-    const primary = primaryNeed(s.needs);
+    const primary = primaryNeed(s.needs, s.abuse);
     if (primary && org.needs.includes(primary)) score += 25;
     if (s.needs.length) {
       score += s.needs.filter((n) => n !== primary && org.needs.includes(n)).length * 4;
     }
+
+    /*
+     * 1b. A cruelty report goes to a reporting channel, not to a support
+     *     programme. Every contact on the abuse guide carries `legal`, so that
+     *     tag alone cannot separate "call this to report it" from "call this
+     *     if a person is in danger too" — and the domestic-violence hotline
+     *     wins on plain relevance, because its description is full of the word
+     *     abuse. The reporting channels are the ones that are also a referral
+     *     route, so that pairing is what gets the nudge.
+     *
+     *     The support lines are still retrieved, just below; a question that
+     *     mentions someone being at risk scores them up on its own terms.
+     */
+    if (s.abuse && org.needs.includes('legal') && org.needs.includes('referral')) score += 12;
+    if (s.abuse && !org.needs.includes('legal')) score -= 15;
 
     // 2. The right animal. A rabbit question answered with a cat rescue is a
     //    wasted phone call, and species specificity is a real signal: the bird
@@ -388,6 +447,16 @@ export class Retriever {
     const has = (n: string) => s.needs.includes(n);
     const animal = (a: string) => s.animals.includes(a);
     const exotic = animal('rabbit') || animal('small-mammal') || animal('bird-companion') || animal('reptile') || animal('amphibian') || animal('fish');
+
+    /*
+     * Abuse before anything else, including wildlife.
+     *
+     * Someone reporting cruelty is not asking for animal care at all — they
+     * need the police. And "animal abuse" trips the wildlife vocabulary on the
+     * word "animal", so without this the question "how do I report animal
+     * abuse?" answered with a wild bird hospital. A reviewer hit exactly that.
+     */
+    if (s.abuse) return 'report-animal-abuse';
 
     // Wildlife first: it is the route people most often get wrong, and the
     // consequences of getting it wrong are the least reversible.

@@ -47,6 +47,12 @@ const tiles = [
     title: 'Found wildlife',
     blurb: 'Only licensed rehabbers may handle wild animals.',
   },
+  {
+    href: '/guides/report-animal-abuse',
+    icon: 'shield',
+    title: 'Report abuse or neglect',
+    blurb: 'In New York City this goes to the police, not the ASPCA.',
+  },
 ] as const;
 
 const orgCount = ORGS.length;
@@ -107,7 +113,7 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
 
     <section class="section">
       <span class="eyebrow">Start from what happened</span>
-      <h2>Six situations people arrive with</h2>
+      <h2>Situations people arrive with</h2>
       <ul class="tiles">
         {tiles.map((t) => (
           <li>

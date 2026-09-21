@@ -1,0 +1,71 @@
+{
+  "id": "hsus-dogfighting-tip-line",
+  "name": "HSUS dogfighting tip line",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT",
+  "phones": [
+    {
+      "value": "8778474787",
+      "display": "(877) 847-4787"
+    }
+  ],
+  "emails": [],
+  "website": "https://humaneworld.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "(877) 847-4787 - humaneworld.org - suspected organised dogfighting that is not in progress. Also reachable as 877-TIP-HSUS. Reward up to $5,000 for a tip leading to a conviction. For fighting in progress call 911. Takes anonymous reports.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Report animal abuse — WHO TO CONTACT",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

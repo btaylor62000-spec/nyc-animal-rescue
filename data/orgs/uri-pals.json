@@ -1,26 +1,53 @@
 {
   "id": "uri-pals",
-  "name": "URI PALS (Urban Resource Institute, People and Animals Living Safely)",
-  "aka": [],
+  "name": "URI PALS",
+  "aka": [
+    "URI PALS (Urban Resource Institute, People and Animals Living Safely)"
+  ],
   "parent_org": null,
   "org_types": [
+    "hotline",
     "support-program"
   ],
   "animals": [
     "cat",
-    "dog"
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
   ],
   "needs": [
+    "legal",
     "owner-support",
     "boarding"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "region_note": "IF PEOPLE ARE AT RISK TOO",
   "phones": [
+    {
+      "value": "6465880030",
+      "display": "(646) 588-0030"
+    },
     {
       "value": "8006214673",
       "display": "(800) 621-4673",
@@ -28,20 +55,21 @@
     }
   ],
   "emails": [],
-  "website": "https://urinyc.org",
+  "website": "https://urinyc.org/uripals",
   "intake_urls": [],
   "social": [],
   "address": null,
   "hours": "24/7",
-  "notes": "the largest DV shelter provider in the U.S.; NYC co-living shelters let survivors bring pets, with private pet-friendly areas. Free. urinyc.org (ask about PALS); NYC DV Hotline (24/7): (800) 621-HOPE / (800) 621-4673.\n\nthe largest DV shelter provider in the U.S.; its NYC co-living shelters let survivors bring their pets, with private pet-friendly areas and a dog park. Free. urinyc.org (ask about PALS); NYC DV Hotline (24/7): (800) 621-HOPE / (800) 621-4673.",
+  "notes": "(646) 588-0030 - urinyc.org/uripals - for a survivor who needs to leave but cannot abandon a pet. A New York City shelter programme that houses survivors together with their pets: dogs, cats and small animals.\n\nthe largest DV shelter provider in the U.S.; NYC co-living shelters let survivors bring pets, with private pet-friendly areas. Free. urinyc.org (ask about PALS); NYC DV Hotline (24/7): (800) 621-HOPE / (800) 621-4673.\n\nthe largest DV shelter provider in the U.S.; its NYC co-living shelters let survivors bring their pets, with private pet-friendly areas and a dog park. Free. urinyc.org (ask about PALS); NYC DV Hotline (24/7): (800) 621-HOPE / (800) 621-4673.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [],
   "last_verified": "2026-09-21",
-  "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "section": "Report animal abuse — IF PEOPLE ARE AT RISK TOO",
   "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx",
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],

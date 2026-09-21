@@ -1,0 +1,71 @@
+{
+  "id": "nyc-domestic-violence-hotline",
+  "name": "NYC Domestic Violence Hotline",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "IF PEOPLE ARE AT RISK TOO",
+  "phones": [
+    {
+      "value": "8006214673",
+      "display": "(800) 621-4673"
+    }
+  ],
+  "emails": [],
+  "website": "https://nyc.gov/content/endgbv/pages/hotlines",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "24/7",
+  "notes": "(800) 621-4673 - nyc.gov/content/endgbv/pages/hotlines - abuse of a person alongside a pet, safety planning, leaving safely. Also reachable as 800-621-HOPE. 24/7, confidential, multilingual. Takes anonymous calls.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Report animal abuse — IF PEOPLE ARE AT RISK TOO",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

@@ -1,0 +1,71 @@
+{
+  "id": "suicide-and-crisis-lifeline",
+  "name": "Suicide & Crisis Lifeline (988)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "IF PEOPLE ARE AT RISK TOO",
+  "phones": [
+    {
+      "value": "988",
+      "display": "988"
+    }
+  ],
+  "emails": [],
+  "website": "https://988lifeline.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "24/7",
+  "notes": "988 - 988lifeline.org - if you or someone else needs mental health or crisis support. Free, confidential, multilingual, 24/7. New York City routes its mental health crisis line through 988. Takes anonymous calls.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Report animal abuse — IF PEOPLE ARE AT RISK TOO",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

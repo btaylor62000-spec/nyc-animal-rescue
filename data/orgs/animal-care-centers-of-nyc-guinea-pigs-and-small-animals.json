@@ -34,6 +34,10 @@
   "region_note": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
   "phones": [
     {
+      "value": "311",
+      "display": "311"
+    },
+    {
       "value": "2127884000",
       "display": "(212) 788-4000",
       "label": "311 for NYC"

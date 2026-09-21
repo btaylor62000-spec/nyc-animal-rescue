@@ -1,0 +1,71 @@
+{
+  "id": "nypd-crime-stoppers",
+  "name": "NYPD Crime Stoppers",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT",
+  "phones": [
+    {
+      "value": "8005778477",
+      "display": "(800) 577-8477"
+    }
+  ],
+  "emails": [],
+  "website": "https://crimestoppers.nypdonline.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "(800) 577-8477 - crimestoppers.nypdonline.org - anonymous tip on ongoing abuse, fighting, or a specific location. Also reachable as 800-577-TIPS. Fully anonymous tip line and online form.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Report animal abuse — WHO TO CONTACT",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

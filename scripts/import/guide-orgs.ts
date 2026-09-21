@@ -8,6 +8,7 @@
  * records here rather than left as text.
  */
 import type { Animal, Borough, Need, Org, OrgType } from '../../src/types.ts';
+import { ANIMALS } from '../../src/types.ts';
 import { parseGuideTab, type GuideBullet } from './guide-parse.ts';
 import { BOROUGH_PATTERNS, NEIGHBORHOOD_BOROUGH, zipToBorough } from './taxonomy.ts';
 import { parseEmails, parsePhones, parseUrls, slugify } from './normalize.ts';
@@ -34,11 +35,41 @@ export interface GuideOrgSpec {
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
 const WB_DOG = 'research/NYC_Dog_Rescue_Reference.xlsx';
 const WB_EXOTIC = 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx';
+const WB_ABUSE = 'research/NYC_Animal_Abuse_Reporting.xlsx';
 
 const PETS_ALL: Animal[] = ['cat', 'dog'];
 const EXOTIC_PETS: Animal[] = ['rabbit', 'small-mammal', 'bird-companion', 'reptile'];
+/* Cruelty reporting is not about a species: the same call covers any animal. */
+const ANY_ANIMAL: Animal[] = [...ANIMALS];
 
 export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
+  {
+    /*
+     * The reporting lines themselves become records, so search and the
+     * assistant can reach them. Before this the assistant had nothing to point
+     * at: asked how to report cruelty it named the ASPCA hotline and the NYPD,
+     * the redactor stripped both numbers because no such record existed, and
+     * the reader was left with a sentence and no way to act on it.
+     *
+     * Only the two contact sections are read. The advice sections carry no
+     * contact details, so nothing in them can be mistaken for an organization.
+     */
+    file: WB_ABUSE,
+    tab: 'Report animal abuse',
+    animals: ANY_ANIMAL,
+    rules: [
+      {
+        pattern: /WHO TO CONTACT/i,
+        needs: ['legal', 'referral'],
+        orgTypes: ['hotline', 'government'],
+      },
+      {
+        pattern: /PEOPLE ARE AT RISK/i,
+        needs: ['legal', 'owner-support'],
+        orgTypes: ['hotline', 'support-program'],
+      },
+    ],
+  },
   {
     file: WB_CAT,
     tab: 'Emergency & poison control',
