@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
 import Icon from '../../components/Icon.astro';
+import { telHref } from '../../data/tel.ts';
 import {
   ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, ORGS, ORGS_BY_ID, ORG_TYPE_LABELS,
   STATUS_LABELS, daysSinceVerified, needsConfirmation, programmesOf,
@@ -110,7 +111,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
           <ul class="contact-list" translate="no">
             {org.phones.map((p) => (
               <li>
-                <a href={`tel:+1${p.value}`}>
+                <a href={telHref(p.value)}>
                   <Icon name="phone" size={18} />
                   <span>{p.display}{p.label && <> <span class="label">({p.label})</span></>}</span>
                 </a>

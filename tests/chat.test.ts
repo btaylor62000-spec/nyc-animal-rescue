@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { StreamRedactor, allowedFrom, redact } from '../src/chat/redact.ts';
+import { telHref } from '../src/data/tel.ts';
 import { extractSignals, Retriever, type Corpus } from '../src/chat/retrieve.ts';
 import { buildContext } from '../src/chat/system-prompt.ts';
 
@@ -153,4 +154,17 @@ test('the prompt context stays small enough to be affordable', () => {
   // Roughly four characters to a token; the whole prompt needs to stay near
   // 2,500 tokens for the free daily allocation to stretch across a day.
   assert.ok(worst < 9000, `context was ${worst} characters (about ${Math.round(worst / 4)} tokens)`);
+});
+
+/*
+ * `tel:+1311` does not connect. Ten-digit numbers need the country code so
+ * they dial from anywhere; civic short codes only work dialled as they are.
+ * This shipped briefly: the Call button on the 311 record — the number the
+ * abuse guide sends people to — could not place the call.
+ */
+test('a short code dials as itself, a full number gets the country code', () => {
+  assert.equal(telHref('311'), 'tel:311');
+  assert.equal(telHref('988'), 'tel:988');
+  assert.equal(telHref('7186776700'), 'tel:+17186776700');
+  assert.equal(telHref('8884264435'), 'tel:+18884264435');
 });

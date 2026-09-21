@@ -11,6 +11,7 @@
  *   - Nothing is stored. The conversation lives in this tab and is gone when
  *     it closes.
  */
+import { telHref } from '../data/tel.ts';
 import type { ChatCard, ChatEvent } from '../data/chat-types.ts';
 
 interface Turn {
@@ -145,7 +146,7 @@ if (form && input && log) {
       for (const phone of card.phones.slice(0, 2)) {
         const a = document.createElement('a');
         a.className = 'btn btn--primary';
-        a.href = `tel:+1${phone.replace(/\D/g, '')}`;
+        a.href = telHref(phone.replace(/\D/g, ''));
         a.textContent = `Call ${phone}`;
         a.translate = false; // a reformatted number is a wrong number
 

@@ -3,6 +3,7 @@ import type { Org } from '../types.ts';
 import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
 import ConfidenceBadge from './ConfidenceBadge.astro';
 import Icon from './Icon.astro';
+import { telHref } from '../data/tel.ts';
 
 interface Props { org: Org }
 const { org } = Astro.props;
@@ -56,7 +57,7 @@ const phone = org.phones[0];
   {(phone || org.website) && (
     <div class="card__actions">
       {phone && (
-        <a class="btn btn--primary" href={`tel:+1${phone.value}`}>
+        <a class="btn btn--primary" href={telHref(phone.value)}>
           <Icon name="phone" size={17} />
           Call <span translate="no">{phone.display}</span>
         </a>
