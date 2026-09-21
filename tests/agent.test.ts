@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
+import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
 import { parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { decide, isCheckable, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
+import { decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -252,4 +253,81 @@ test('an almost-empty page is treated as a broken fetch', () => {
   const decision = decide(record, evidenceFromHtml(record, '<html><body><p>Loading…</p></body></html>', DATE));
   assert.equal(decision.kind, 'needs-review');
   assert.match((decision as { reason: string }).reason, /almost no readable text/i);
+});
+
+// --- guards on replacing a contact ----------------------------------------
+//
+// All three come from one live failure. On 2026-09-21 the check set both VEG
+// emergency hospitals to a New Jersey number at High confidence, citing VEG's
+// own page — which does not carry that number as a reader sees it. VEG renders
+// its location numbers in the browser, so a plain fetch reads markup nobody is
+// shown. Every clause of the rule was satisfied; the result was a wrong number
+// on a 24-hour emergency listing.
+
+/** Evidence shaped like the VEG page: the real number absent, one other present. */
+function pageWith(numbers: string[], record: Org) {
+  const html = `<html><body><main><p>Open 24 hours. Call us.</p>
+    ${numbers.map((n) => `<p>Phone: ${n}</p>`).join('\n')}
+    <p>${'Emergency and critical care for pets across the city. '.repeat(8)}</p>
+  </main></body></html>`;
+  return evidenceFromHtml(record, html, DATE);
+}
+
+test('an emergency listing is never rewritten unattended', () => {
+  const er = org({
+    id: 'veg-ralph-ave', name: 'VEG Ralph Ave',
+    needs: ['emergency-vet'],
+    phones: [{ value: '7186776700', display: '(718) 677-6700' }],
+    emails: [],
+  });
+  const d = decide(er, pageWith(['(201) 438-7122'], er));
+  assert.equal(d.kind, 'needs-review', 'must flag rather than apply');
+  if (d.kind === 'needs-review') assert.match(d.reason, /emergency listing/i);
+});
+
+test('the same evidence on an ordinary record still applies', () => {
+  const ordinary = org({
+    phones: [{ value: '7185550142', display: '(718) 555-0142' }],
+    emails: [],
+    needs: ['tnr'],
+  });
+  const d = decide(ordinary, pageWith(['(718) 555-9000'], ordinary));
+  assert.equal(d.kind, 'apply', 'the guard must not freeze the whole directory');
+});
+
+test('a replacement that leaves the city is flagged, not applied', () => {
+  const rec = org({
+    phones: [{ value: '7185550142', display: '(718) 555-0142' }],
+    emails: [],
+    needs: ['tnr'],
+  });
+  const d = decide(rec, pageWith(['(201) 438-7122'], rec));
+  assert.equal(d.kind, 'needs-review');
+  if (d.kind === 'needs-review') assert.match(d.reason, /outside New York City/i);
+});
+
+test('a template placeholder is never taken as a contact', () => {
+  const rec = org({
+    phones: [{ value: '9292822271', display: '(929) 282-2271' }],
+    emails: [],
+    needs: ['adoption'],
+  });
+  const d = decide(rec, pageWith(['(212) 222-1234'], rec));
+  assert.equal(d.kind, 'needs-review');
+  if (d.kind === 'needs-review') assert.match(d.reason, /placeholder/i);
+});
+
+test('placeholder detection covers the usual template numbers', () => {
+  for (const bad of ['2122221234', '9999999999', '1234567890', '0000000000']) {
+    assert.equal(isPlaceholderPhone(bad), true, `${bad} is not a real contact`);
+  }
+  for (const good of ['7186776700', '9174236444', '2018858987', '5854964660']) {
+    assert.equal(isPlaceholderPhone(good), false, `${good} is a real number`);
+  }
+});
+
+test('moving into the city, or within it, is not treated as suspicious', () => {
+  assert.equal(leavesTheCity('7186776700', '2014387122'), true, '718 -> 201 leaves');
+  assert.equal(leavesTheCity('7186776700', '9174236444'), false, '718 -> 917 stays');
+  assert.equal(leavesTheCity('2014387122', '7186776700'), false, 'arriving is fine');
 });

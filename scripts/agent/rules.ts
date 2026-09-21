@@ -59,6 +59,86 @@ export interface FieldChange {
   evidenceUrl: string;
 }
 
+// --- guards on replacing a contact -----------------------------------------
+//
+// Added after a live failure. On 2026-09-21 the check set both VEG emergency
+// hospitals to a New Jersey number at High confidence, citing VEG's own
+// location page. The number was not on that page as a reader sees it: VEG
+// renders each hospital's number in the browser, so a plain fetch reads markup
+// nobody is shown. The old value was genuinely absent from that markup and
+// exactly one other number was present, so every clause of the rule was
+// satisfied and the outcome was a wrong number on a 24-hour emergency listing.
+//
+// The lesson is not "fetch harder". It is that "the old one is gone and there
+// is exactly one other" is weaker evidence than it appears, so the cases where
+// being wrong is most costly should not rest on it.
+
+/** New York City's own area codes. */
+const NYC_AREA_CODES = new Set(['212', '646', '332', '917', '718', '347', '929']);
+
+const areaCode = (digits: string): string | null =>
+  /^\d{10}$/.test(digits) ? digits.slice(0, 3) : null;
+
+/*
+ * Local, rather than imported from the importer's normalizer. This module's
+ * value is that it depends on nothing and therefore cannot surprise anyone;
+ * reaching across for three lines of string formatting would cost more than it
+ * saves.
+ */
+function formatPhone(digits: string): string {
+  return /^\d{10}$/.test(digits)
+    ? `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`
+    : digits;
+}
+
+/**
+ * Numbers that are template furniture rather than contacts.
+ *
+ * The same run took (212) 222-1234 from a rescue's website — the unedited
+ * placeholder from their theme, present only as a hidden `tel:` link and never
+ * shown on the page.
+ *
+ * Deliberately not rejecting the whole 555 exchange. It is the range reserved
+ * for fiction, so it is what this project's own test fixtures use, and barring
+ * it would mean rewriting them to guard against something no real
+ * organization publishes.
+ */
+export function isPlaceholderPhone(digits: string): boolean {
+  if (!/^\d{10}$/.test(digits)) return true;
+  if (/^(\d)\1{9}$/.test(digits)) return true;               // 9999999999
+  if (/^(\d)\1\1(?:1234|0000|1111)$/.test(digits.slice(3))) return true; // 222-1234
+  if (digits === '1234567890' || digits === '0123456789') return true;
+  return false;
+}
+
+/**
+ * Would this replacement move the organization out of the city?
+ *
+ * A local number becoming a distant one is the shape of the VEG failure: a
+ * corporate or sister-site number standing in for the one that could not be
+ * read. It may be legitimate — organizations do move — but it is never so
+ * obvious that nobody should look.
+ */
+export function leavesTheCity(from: string, to: string): boolean {
+  const a = areaCode(from);
+  const b = areaCode(to);
+  if (!a || !b) return false;
+  return NYC_AREA_CODES.has(a) && !NYC_AREA_CODES.has(b);
+}
+
+/**
+ * Records where a wrong number is worst.
+ *
+ * Someone reading an emergency-vet listing is holding an animal that is dying.
+ * They will not notice that the area code looks unfamiliar, and there is no
+ * second chance to get it right. These still get checked every week and still
+ * get flagged the moment anything looks off — what they no longer get is an
+ * unattended rewrite.
+ */
+export function tooCriticalToRewrite(org: Org): boolean {
+  return org.needs.includes('emergency-vet');
+}
+
 /** Can this organization be checked automatically at all? */
 export function isCheckable(org: Org): { checkable: boolean; reason?: string } {
   const hasOwnSite = Boolean(org.website) || org.intake_urls.length > 0;
@@ -165,7 +245,40 @@ export function decide(org: Org, evidence: Evidence): Decision {
   if (allPhonesGone && sawAnyPhone) {
     const candidates = foundPhones.filter((p) => !storedPhones.includes(p));
     if (candidates.length === 1) {
-      changes.push({ field: 'phones', from: storedPhones.join(', '), to: candidates[0]!, evidenceUrl });
+      const replacement = candidates[0]!;
+
+      if (tooCriticalToRewrite(org)) {
+        return {
+          kind: 'needs-review',
+          reason:
+            `The recorded phone number is no longer on their site and ${formatPhone(replacement)} is there instead. ` +
+            'This is an emergency listing, so the number is not changed automatically — a person should confirm it.',
+          evidenceUrl,
+        };
+      }
+
+      if (isPlaceholderPhone(replacement)) {
+        return {
+          kind: 'needs-review',
+          reason:
+            `The recorded phone number is no longer on their site, and the only number there (${formatPhone(replacement)}) ` +
+            'looks like an unedited placeholder from their website template rather than a real contact.',
+          evidenceUrl,
+        };
+      }
+
+      if (storedPhones.some((p) => leavesTheCity(p, replacement))) {
+        return {
+          kind: 'needs-review',
+          reason:
+            `The recorded phone number is no longer on their site, and the replacement (${formatPhone(replacement)}) ` +
+            'has an area code outside New York City. That can mean they moved, or that the page shows a head-office ' +
+            'number instead of this location\u2019s. Someone should look.',
+          evidenceUrl,
+        };
+      }
+
+      changes.push({ field: 'phones', from: storedPhones.join(', '), to: replacement, evidenceUrl });
     } else {
       return {
         kind: 'needs-review',
@@ -178,6 +291,15 @@ export function decide(org: Org, evidence: Evidence): Decision {
   if (allEmailsGone && sawAnyEmail) {
     const candidates = foundEmails.filter((e) => !storedEmails.includes(e));
     if (candidates.length === 1) {
+      if (tooCriticalToRewrite(org)) {
+        return {
+          kind: 'needs-review',
+          reason:
+            `The recorded email is no longer on their site and ${candidates[0]!} is there instead. ` +
+            'This is an emergency listing, so it is not changed automatically.',
+          evidenceUrl,
+        };
+      }
       changes.push({ field: 'emails', from: storedEmails.join(', '), to: candidates[0]!, evidenceUrl });
     } else {
       return {
