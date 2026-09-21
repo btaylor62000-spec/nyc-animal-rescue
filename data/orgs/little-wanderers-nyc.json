@@ -28,12 +28,7 @@
   "neighborhoods": "All 5 boroughs; primary focus South Bronx/East Harlem; will help Brooklyn if needed",
   "zips": [],
   "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
-  "phones": [
-    {
-      "value": "2122221234",
-      "display": "(212) 222-1234"
-    }
-  ],
+  "phones": [],
   "emails": [],
   "website": "https://lwnyc.org",
   "intake_urls": [],
@@ -48,9 +43,9 @@
   "hours": null,
   "notes": "All-volunteer, foster-based 501(c)(3). Specializes in severely injured/medically needy cats + ACC New Hope partner. Bronx-focused but helps other boroughs. Use rescue form / IG. Intake: //lwnyc.org/rescue-form",
   "type_raw": "TNR / rescue+adoption (Bronx-based, multi-borough)",
-  "confidence": "Medium",
+  "confidence": "Low",
   "status": "active",
-  "status_note": null,
+  "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website.",
   "source_urls": [
     "https://lwnyc.org/"
   ],
@@ -60,7 +55,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-21",
-  "check_status": "changed",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -71,6 +66,15 @@
       "evidence_url": "https://lwnyc.org/",
       "source": "weekly-check",
       "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    },
+    {
+      "date": "2026-09-21",
+      "field": "phones",
+      "from": "2122221234",
+      "to": null,
+      "evidence_url": "https://lwnyc.org/",
+      "source": "manual",
+      "note": "Removed: (212) 222-1234 is the unedited placeholder from their site theme. It is present only as a hidden tel: link and is never displayed to a reader. A placeholder on a rescue listing is a wrong number, and a wrong number is worse than none."
     }
   ],
   "privacy_hold": false

@@ -1,13 +1,13 @@
 # Data quality report
 
-Generated 2026-09-18 from the three source workbooks and the wildlife guide.
+Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 ## Totals
 
 - **287** organizations after de-duplication
 - **75** duplicate clusters merged
 - **19** guide pages generated
-- **14** entries flagged as not currently active
+- **16** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **5** personal contact details withheld
 
@@ -84,17 +84,17 @@ Generated 2026-09-18 from the three source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 140 |
+| Medium | 139 |
 | High | 117 |
-| Low | 30 |
+| Low | 31 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 273 |
+| active | 271 |
 | verify | 8 |
-| hiatus | 3 |
+| hiatus | 5 |
 | retired | 2 |
 | relocated | 1 |
 
@@ -148,24 +148,26 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (75)
+### Never verified (56)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
+- **Animal Care Centers of NYC (ACC) - Guinea Pigs & small animals** — `hiatus`: Their own site says it is not accepting intakes. Checked 2026-09-21.
 - **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Muddy Paws Rescue** — `hiatus`: Their own site says it is not accepting intakes. Checked 2026-09-21.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Source says this organization is paused or on hiatus.
+- **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Their own site says it is paused. Checked 2026-09-21.
 - **VERG North (Veterinary Emergency & Referral Group)** — `verify`: VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.
 - **VERG South** — `retired`: Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.
 
