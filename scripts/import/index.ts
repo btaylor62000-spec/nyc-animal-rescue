@@ -230,7 +230,7 @@ function main(): void {
 
   writeFileSync('schema/org.schema.json', `${JSON.stringify(ORG_SCHEMA, null, 2)}\n`, 'utf8');
 
-  const pages = buildAllGuidePages();
+  const pages = buildAllGuidePages(sorted);
   writeGuidePages(pages, GUIDES_DIR);
   console.log(`Wrote ${pages.length} guide pages to ${GUIDES_DIR}/`);
 

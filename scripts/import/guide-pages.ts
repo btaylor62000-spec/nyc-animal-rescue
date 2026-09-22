@@ -12,6 +12,7 @@ import { writeFileSync } from 'node:fs';
 import { parseGuideTab, guideTabsOf } from './guide-parse.ts';
 import { readDocxParagraphs } from '../lib/docx-lite.ts';
 import { scrubText } from './privacy.ts';
+import type { Org } from '../../src/types.ts';
 
 export interface GuidePage {
   slug: string;
@@ -263,13 +264,101 @@ function looksLikeHeading(text: string): boolean {
   return t.endsWith('?') || /[-–:]$/.test(t) || !/[.!]$/.test(t);
 }
 
-export function buildWildlifeDocPage(path = 'research/injured-birds-wildlife-guide.docx'): GuidePage {
+/*
+ * Edits to the wildlife document's prose, applied as it is read.
+ *
+ * The document is a volunteer's own writing and is read as delivered, so a
+ * change to what it says is recorded here with its reason rather than made
+ * silently in the file. Safety guidance is never touched; these are asides.
+ * A stale edit throws, the same way a stale override does.
+ */
+const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string }> = [
+  {
+    find: 'Imprinting is great for socializing cats and dogs who need safe homes, and we all know there are plenty of those to go around! ',
+    replace: '',
+    reason:
+      'An aside about pets on a page for someone holding an injured wild animal. A reviewer asked for the cat references that are not safety guidance to go.',
+  },
+];
+
+/*
+ * Links in the document that have moved since it was written. NYC Audubon
+ * became NYC Bird Alliance and the old domain no longer answers; the DEC
+ * retired its old licence-search application for a new one.
+ */
+const WILDLIFE_LINK_UPDATES: Array<{ from: string; to: string; reason: string }> = [
+  { from: 'https://www.nycaudubon.org/', to: 'https://nycbirdalliance.org/', reason: 'nycaudubon.org no longer resolves; the same pages exist at the new name.' },
+  {
+    from: 'https://www.dec.ny.gov/cfmx/extapps/sls_searches/index.cfm?p=live_rehab',
+    to: 'https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab',
+    reason: 'The old search redirects to a generic page; this is the DEC licensed-rehabilitator search itself.',
+  },
+];
+
+/** A record the guide relies on. Throws when it is gone, so the guide cannot quietly point at nothing. */
+function must(orgs: Org[], id: string): Org {
+  const org = orgs.find((o) => o.id === id);
+  if (!org) throw new Error(`The wildlife guide refers to record "${id}", which no longer exists. Update guide-pages.ts.`);
+  return org;
+}
+
+function phoneOf(org: Org): string {
+  const p = org.phones[0];
+  return p ? p.display : '';
+}
+
+/*
+ * The block at the top of the wildlife guide. A reviewer timed how long it
+ * took to reach a phone number on the page: the whole document. Contacts here
+ * are read from the records, so whatever the weekly check or the overlay
+ * corrects is corrected here too, and each line links to the record.
+ */
+function whoToCallNow(orgs: Org[]): string[] {
+  const wbf = must(orgs, 'the-wild-bird-fund');
+  const wff = must(orgs, 'wildlife-freedom-foundation');
+  const cottontail = must(orgs, 'cottontail-cottage-wildlife-rehab');
+  const dec = must(orgs, 'nys-dec-find-a-wildlife-rehabilitator');
+  const marine = must(orgs, 'ny-marine-mammal-and-sea-turtle-stranding-hotline');
+  const winorr = must(orgs, 'winorr-wildlife-in-need-of-rescue-and-rehabilitation');
+  const link = (o: Org, text = o.name): string => `[${text}](/org/${o.id})`;
+
+  return [
+    '## Who to call right now',
+    '',
+    'Put the animal in a cardboard box with small air holes, somewhere dark and quiet, and do not give it food or water. Then:',
+    '',
+    // Address and hours are from the document below, which is where they are maintained.
+    `- **Injured bird or small mammal, any borough:** ${link(wbf, 'The Wild Bird Fund')}, 565 Columbus Ave, Manhattan. Walk in any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
+    '- **Cannot get there:** email the NYC Bird Alliance injured-bird volunteers at injuredbird@nycbirdalliance.org with your exact location and phone number. The reply is automatic and carries instructions; read them.',
+    `- **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is ${link(winorr, 'WINORR')}.`,
+    `- **Wild baby cottontail, or a fox, raccoon or other mammal:** ${link(cottontail, 'Cottontail Cottage')}, ${phoneOf(cottontail)}, any hour. Or find the nearest licensed rehabilitator in the ${link(dec, 'DEC directory')}; the DEC line is ${phoneOf(dec)}.`,
+    `- **Also in the city:** ${link(wff, 'Wildlife Freedom Foundation')}, a licensed rehabilitator on Roosevelt Island, by email.`,
+    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}.`,
+    '',
+  ];
+}
+
+export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds-wildlife-guide.docx'): GuidePage {
   const paragraphs = readDocxParagraphs(path);
   const redactions = new Set<string>();
+  const applied = new Set<string>();
   const clean = (s: string): string => {
     const r = scrubText(s);
     for (const id of r.removed) redactions.add(id);
-    return r.text.replace(/https?:\/\/\S+/g, (u) => cleanUrl(u));
+    let text = r.text;
+    for (const e of WILDLIFE_DOC_EDITS) {
+      if (text.includes(e.find)) {
+        text = text.replace(e.find, e.replace);
+        applied.add(e.find);
+      }
+    }
+    for (const u of WILDLIFE_LINK_UPDATES) {
+      if (text.includes(u.from)) {
+        text = text.split(u.from).join(u.to);
+        applied.add(u.from);
+      }
+    }
+    return text.replace(/https?:\/\/\S+/g, (u) => cleanUrl(u));
   };
 
   const title = paragraphs[0]?.text ?? 'Injured birds and other wildlife';
@@ -278,13 +367,18 @@ export function buildWildlifeDocPage(path = 'research/injured-birds-wildlife-gui
     '',
     '_How to help an injured bird or wild animal in New York City, and the things that quietly make it worse._',
     '',
-    '> **If a cat may have touched it, treat it as an emergency.** Cat saliva carries bacteria that are fatal to birds and small mammals without prompt antibiotics, and a cat bite often leaves no visible wound.',
-    '',
+    ...whoToCallNow(orgs),
   ];
 
   for (const p of paragraphs.slice(1)) {
     const text = clean(p.text);
     if (!text) continue; // wholly withheld
+    // The cat-bite warning is the document's first paragraph and its most
+    // important one. It is copied as written; it just gets a heading so it
+    // reads as the instruction it is, not as a preamble.
+    if (/^If a bird or small mammal is attacked by a cat/.test(text)) {
+      lines.push('', '## If a cat may have touched it', '');
+    }
     // Bare URLs read better as links on their own line.
     if (/^https?:\/\/\S+$/.test(text)) {
       lines.push(`<${text}>`);
@@ -305,19 +399,27 @@ export function buildWildlifeDocPage(path = 'research/injured-birds-wildlife-gui
     lines.push('');
   }
 
+  const stale = [...WILDLIFE_DOC_EDITS.map((e) => e.find), ...WILDLIFE_LINK_UPDATES.map((u) => u.from)].filter((k) => !applied.has(k));
+  if (stale.length) {
+    throw new Error(
+      `Wildlife guide edits no longer match the document: ${stale.map((k) => JSON.stringify(k.slice(0, 60))).join(', ')}.\n` +
+        'The document changed; remove the edit or update it in guide-pages.ts.',
+    );
+  }
+
   return {
     slug: 'found-an-injured-bird',
     title: 'Found an injured bird',
-    summary: 'How to catch, contain and transport an injured bird, and why food, water and heat can kill it.',
-    topics: ['injured bird', 'window strike', 'baby bird', 'pigeon', 'fledgling', 'bird hit window'],
+    summary: 'Who to call first, how to catch, contain and transport an injured bird, and why food, water and heat can kill it.',
+    topics: ['injured bird', 'window strike', 'baby bird', 'pigeon', 'fledgling', 'bird hit window', 'baby squirrel', 'baby rabbit'],
     markdown: lines.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n',
     source: path,
     redactions: [...redactions],
   };
 }
 
-export function buildAllGuidePages(): GuidePage[] {
-  return [buildWildlifeDocPage(), ...GUIDE_PAGES.map(buildTabPage)];
+export function buildAllGuidePages(orgs: Org[]): GuidePage[] {
+  return [buildWildlifeDocPage(orgs), ...GUIDE_PAGES.map(buildTabPage)];
 }
 
 export function writeGuidePages(pages: GuidePage[], dir = 'content/guides'): void {

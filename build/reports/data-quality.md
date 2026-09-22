@@ -302,7 +302,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 13415 |
+| Found an injured bird | 14526 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |

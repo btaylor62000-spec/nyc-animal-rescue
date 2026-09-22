@@ -1,15 +1,26 @@
 ---
 title: "Found an injured bird"
 slug: found-an-injured-bird
-summary: "How to catch, contain and transport an injured bird, and why food, water and heat can kill it."
-topics: ["injured bird","window strike","baby bird","pigeon","fledgling","bird hit window"]
+summary: "Who to call first, how to catch, contain and transport an injured bird, and why food, water and heat can kill it."
+topics: ["injured bird","window strike","baby bird","pigeon","fledgling","bird hit window","baby squirrel","baby rabbit"]
 source: "research/injured-birds-wildlife-guide.docx"
 ---
 # Injured birds and other wildlife
 
 _How to help an injured bird or wild animal in New York City, and the things that quietly make it worse._
 
-> **If a cat may have touched it, treat it as an emergency.** Cat saliva carries bacteria that are fatal to birds and small mammals without prompt antibiotics, and a cat bite often leaves no visible wound.
+## Who to call right now
+
+Put the animal in a cardboard box with small air holes, somewhere dark and quiet, and do not give it food or water. Then:
+
+- **Injured bird or small mammal, any borough:** [The Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave, Manhattan. Walk in any day 9am–7pm, no appointment. (646) 306-2862.
+- **Cannot get there:** email the NYC Bird Alliance injured-bird volunteers at injuredbird@nycbirdalliance.org with your exact location and phone number. The reply is automatic and carries instructions; read them.
+- **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation).
+- **Wild baby cottontail, or a fox, raccoon or other mammal:** [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab), (914) 933-7559, any hour. Or find the nearest licensed rehabilitator in the [DEC directory](/org/nys-dec-find-a-wildlife-rehabilitator); the DEC line is (844) 332-3267.
+- **Also in the city:** [Wildlife Freedom Foundation](/org/wildlife-freedom-foundation), a licensed rehabilitator on Roosevelt Island, by email.
+- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call [the stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829.
+
+## If a cat may have touched it
 
 If a bird or small mammal is attacked by a cat, it is an emergency. Cats have an anaerobic bacterium called Pasteurella in their saliva which is deadly. If an animal attacked by a cat does not get the proper antibiotic in a short time (usually within the day) it is likely fatal. Please also note that very often a cat bite will leave NO visible wounds, even if the teeth have punctured the skin. Even more reason to get to a rehabber immediately! If cats are in the area where you find an injured bird, assume it may have been bitten, and get to a rehabber immediately.
 
@@ -69,11 +80,11 @@ Email injuredbird@nycbirdalliance.org and someone will reply shortly. The email 
 
 There are more tips at-
 
-<https://www.nycaudubon.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird>
+<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird>
 
 If it’s a large bird or bird of prey, don’t try to approach or handle yourself. It is dangerous! Contact NYC Bird Alliance (there’s a team specializing in large birds) or call Urban Park Rangers. This link has more on wildlife care in NYC-
 
-<https://www.nycaudubon.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
+<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
 
 ## WBF bird rescue resources
 
@@ -83,7 +94,7 @@ Animal help now (find licensed rehabbers anywhere) https://ahnow.org
 
 ## DEC Find a Licensed Rehabber search tool
 
-<https://www.dec.ny.gov/cfmx/extapps/sls_searches/index.cfm?p=live_rehab>
+<https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab>
 
 ## List of Licensed rehabbers in NY State
 
@@ -102,7 +113,7 @@ Giving any injured or sick bird (or any wildlife) food or water is never ok. Thi
 - When a bird is physically injured, it is also in diminished mental capacity, such as stress or shock. They are not in a coherent mental state, and can’t make the right decision to abstain from food or water, so it’s best not to offer any to them.
 - An emaciated bird cannot process solid food, and needs a rehabber to evaluate specific circumstances before introducing nutrition
 - Wildlife also has very specific nutritional needs, especially when injured (yes, even pigeons!) Licensed rehabbers go through extensive training and work with scientists to ensure this nutritional knowledge is current. The products they use are not the same as used for pets, many are not even commercially available. When the bird is well enough to eat, they will be fed many nutritious, species appropriate meals.
-- the other danger of improper feeding is imprinting. Imprinting refers to when an animal forms attachments to other living beings-ideally their parents. It’s crucial to develop their sense of self. When wildlife imprints into humans, they rely on us, instead of developing their instincts to hunt and forage to survive. They do not recognize others of their species, and will not understand other crucial behaviors like nesting, migration, and mating. They can approach humans in inappropriate ways-whether it’s begging for food from people who may harm them (intentionally or not) or even biting and attacking people when they don’t get food (like the very bold squirrel in Prospect Park). Often these “nuisance” wildlife end up euthanized if authorities consider them a threat to public safety. It leads to death either way. Imprinting is incredibly difficult to reverse in wildlife, it is believed to cause a physical change in the brain. Unfortunately there are a lot of videos online showing the improper care for injured wildlife, usually viral videos shared by major media outlets. Many of these videos conclude by showing released wildlife continuing coming back to a particular person’s home for food and care. As cute as this may seem, it is highly unethical, as it’s a death sentence for wildlife. Imprinting is great for socializing cats and dogs who need safe homes, and we all know there are plenty of those to go around! To avoid imprinting, rehabbers have ways to hide themselves or use surrogates, allowing wildlife to maintain a healthy distance and caution around humans.
+- the other danger of improper feeding is imprinting. Imprinting refers to when an animal forms attachments to other living beings-ideally their parents. It’s crucial to develop their sense of self. When wildlife imprints into humans, they rely on us, instead of developing their instincts to hunt and forage to survive. They do not recognize others of their species, and will not understand other crucial behaviors like nesting, migration, and mating. They can approach humans in inappropriate ways-whether it’s begging for food from people who may harm them (intentionally or not) or even biting and attacking people when they don’t get food (like the very bold squirrel in Prospect Park). Often these “nuisance” wildlife end up euthanized if authorities consider them a threat to public safety. It leads to death either way. Imprinting is incredibly difficult to reverse in wildlife, it is believed to cause a physical change in the brain. Unfortunately there are a lot of videos online showing the improper care for injured wildlife, usually viral videos shared by major media outlets. Many of these videos conclude by showing released wildlife continuing coming back to a particular person’s home for food and care. As cute as this may seem, it is highly unethical, as it’s a death sentence for wildlife. To avoid imprinting, rehabbers have ways to hide themselves or use surrogates, allowing wildlife to maintain a healthy distance and caution around humans.
 
 ## Why is some wildlife euthanized
 
