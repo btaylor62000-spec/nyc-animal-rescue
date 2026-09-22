@@ -41,6 +41,8 @@ const WB_EXOTIC = 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx';
 // Its own source: abuse reporting is not a tab on any species workbook, and
 // is not about a species.
 const WB_ABUSE = 'research/NYC_Animal_Abuse_Reporting.xlsx';
+// Also its own source: the at-risk list is an ACC process, not a species topic.
+const WB_NEWHOPE = 'research/NYC_ACC_At_Risk_New_Hope.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -48,6 +50,12 @@ const WB_ABUSE = 'research/NYC_Animal_Abuse_Reporting.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_NEWHOPE, tab: 'Save an animal from the at-risk list', slug: 'save-an-at-risk-animal',
+    title: 'Save an animal from the shelter\u2019s at-risk list',
+    summary: 'How to get an at-risk animal out of the city shelter, who can actually pull it, and what to say.',
+    topics: ['at risk list', 'at-risk', 'new hope', 'euthanasia', 'euthanized', 'put down', 'put to sleep', 'death row', 'kill list', 'urgent list', 'ACC', 'pull', 'rescue partner', 'save a dog', 'save a cat', 'foster to save'],
+  },
   {
     file: WB_ABUSE, tab: 'Report animal abuse', slug: 'report-animal-abuse',
     title: 'Reporting animal abuse or neglect',

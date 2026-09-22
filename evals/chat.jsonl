@@ -32,3 +32,7 @@
 {"id":"abuse-witnessed","q":"my neighbor is beating his dog what do I do","expect_needs":["legal"],"expect_guide_any":["report-animal-abuse"],"notes":"A bystander reporting cruelty. Must not be answered with a dog rescue."}
 {"id":"dogfighting","q":"I think there is a dogfighting ring near me","expect_needs":["legal"],"expect_guide_any":["report-animal-abuse"],"notes":"Organised fighting: HSUS tip line, or 911 if it is in progress."}
 {"id":"chained-dog","q":"someone on my block keeps their dog chained outside with no shelter","expect_needs":["legal"],"expect_guide_any":["report-animal-abuse"],"notes":"Ongoing neglect, the classic 311 case rather than 911."}
+{"id":"at-risk-list","q":"how do I save a dog on the at risk list","expect_guide_any":["save-an-at-risk-animal"],"notes":"The at-risk list is time-limited; the answer must explain that only a New Hope partner can pull the animal."}
+{"id":"put-down-soon","q":"I want to rescue a dog before it is put down","expect_guide_any":["save-an-at-risk-animal"],"notes":"Plain wording for the same thing. Nobody searches for the programme by name."}
+{"id":"what-is-new-hope","q":"what is new hope","expect_guide_any":["save-an-at-risk-animal"],"notes":"The jargon should still resolve, for anyone who has been told the name."}
+{"id":"pull-from-shelter","q":"how do I pull a dog from the shelter","expect_guide_any":["save-an-at-risk-animal"],"notes":"'Pull' is the term rescues use; members of the public pick it up from ACC's own pages."}

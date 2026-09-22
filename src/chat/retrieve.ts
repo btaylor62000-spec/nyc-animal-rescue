@@ -497,6 +497,14 @@ export class Retriever {
     if (has('legal') || has('licensing')) return exotic ? 'exotic-pet-legality' : 'dog-behavior-and-legal';
     if (has('behavior-training')) return animal('dog') ? 'dog-behavior-and-legal' : 'lost-and-found-cat';
     if (has('boarding')) return exotic ? 'exotic-boarding-and-planning' : 'keeping-your-cat';
+    /*
+     * `advocacy` is, in this directory, almost entirely about the shelter's
+     * at-risk list: its vocabulary is "at risk, death row, pull, rescue
+     * partner, new hope". Someone asking to save an animal before it is put
+     * down was being answered with breed-specific rescue, which cannot pull
+     * from ACC on their behalf.
+     */
+    if (has('advocacy')) return 'save-an-at-risk-animal';
     if (has('breed-specific')) return 'breed-specific-dog-rescue';
 
     return null;

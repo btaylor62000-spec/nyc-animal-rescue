@@ -43,12 +43,20 @@
   "website": "https://www.nycacc.org/programs/new-hope/",
   "intake_urls": [
     {
-      "url": "https://www.nycacc.org/programs/new-hope/",
-      "label": "Partner application"
+      "url": "https://newhope.shelterbuddy.com/Animal/List",
+      "label": "Live at-risk list — the animals that need placing now"
     },
     {
-      "url": "https://www.nycacc.org/emergency-placement/",
-      "label": "Foster/adopter pre-screener"
+      "url": "https://forms.gle/ozHex3uqvNkQt2dq9",
+      "label": "ACC pre-screener — submit if you have a home ready (needs a Google sign-in)"
+    },
+    {
+      "url": "https://nycacc.org/emergency-placement/",
+      "label": "ACC emergency placement page"
+    },
+    {
+      "url": "https://nycacc.org/programs/new-hope-partners/",
+      "label": "ACC's full list of New Hope partners"
     }
   ],
   "social": [],
@@ -67,9 +75,19 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-22",
+      "field": "intake_urls",
+      "from": "https://www.nycacc.org/programs/new-hope/, https://www.nycacc.org/emergency-placement/",
+      "to": "the live at-risk list and the pre-screener, first",
+      "evidence_url": "https://nycacc.org/emergency-placement/",
+      "source": "manual",
+      "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs — which animals need placing now, and the form that says you have a home — are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
+    }
+  ],
   "privacy_hold": false
 }

@@ -64,7 +64,7 @@ export const NEED_SYNONYMS: Record<Need, string> = {
   legal: 'legal law cruelty abuse neglect report hoarding bite report landlord',
   'breed-specific': 'breed specific pit bull bully breed husky chihuahua german shepherd sato',
   education: 'education workshop class certification learn training course',
-  advocacy: 'advocacy at risk death row pull rescue partner new hope',
+  advocacy: 'advocacy at risk death row pull rescue partner new hope urgent list kill list put down put to sleep euthanasia list save before',
   licensing: 'licence license permit registration legal to own',
   'pet-loss': 'pet loss grief bereavement euthanasia died death saying goodbye',
   referral: 'directory referral where do i start who can help list of rescues',

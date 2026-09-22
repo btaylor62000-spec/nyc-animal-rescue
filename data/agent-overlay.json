@@ -43,10 +43,39 @@
       "last_verified": "2026-09-21"
     },
     "acc-new-hope-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-21",
+      "intake_urls": [
+        {
+          "url": "https://newhope.shelterbuddy.com/Animal/List",
+          "label": "Live at-risk list \u2014 the animals that need placing now"
+        },
+        {
+          "url": "https://forms.gle/ozHex3uqvNkQt2dq9",
+          "label": "ACC pre-screener \u2014 submit if you have a home ready (needs a Google sign-in)"
+        },
+        {
+          "url": "https://nycacc.org/emergency-placement/",
+          "label": "ACC emergency placement page"
+        },
+        {
+          "url": "https://nycacc.org/programs/new-hope-partners/",
+          "label": "ACC's full list of New Hope partners"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-09-22",
+          "field": "intake_urls",
+          "from": "https://www.nycacc.org/programs/new-hope/, https://www.nycacc.org/emergency-placement/",
+          "to": "the live at-risk list and the pre-screener, first",
+          "evidence_url": "https://nycacc.org/emergency-placement/",
+          "source": "manual",
+          "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs \u2014 which animals need placing now, and the form that says you have a home \u2014 are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
+        }
+      ]
     },
     "acc-pet-food-pantry": {
       "last_checked": "2026-09-21",
