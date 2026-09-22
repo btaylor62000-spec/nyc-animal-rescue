@@ -96,3 +96,16 @@ test('merge keys collapse corporate boilerplate', () => {
     mergeKey("Mayor's Alliance for NYC's Animals (citywide referral hub)"),
   );
 });
+
+test('phone: labels beside each number stay with that number', () => {
+  const r = parsePhones('Home 516-293-0587; cell 516-987-3961 (Bobby) / 516-851-6045 (Cathy)');
+  assert.deepEqual(
+    r.values.map((v) => [v.value, v.label]),
+    [
+      ['5162930587', 'Home'],
+      ['5169873961', 'Bobby'],
+      ['5168516045', 'Cathy'],
+    ],
+  );
+  assert.deepEqual(r.residue, [], 'the words were labels, not notes');
+});

@@ -1,0 +1,35 @@
+{
+  "policy": "withhold-by-default",
+  "held": [
+    {
+      "id": "divya-personal-mobile",
+      "kind": "personal-phone",
+      "value": "7183444424",
+      "person": "Divya (test fixture)",
+      "reason": "test",
+      "ask": "test"
+    },
+    {
+      "id": "winorr-home-and-cells",
+      "kind": "personal-phone",
+      "value": [
+        "5162930587",
+        "5169873961",
+        "5168516045"
+      ],
+      "person": "Bobby & Cathy Horvath (test fixture)",
+      "reason": "test",
+      "ask": "test"
+    }
+  ],
+  "name_holds": [
+    {
+      "id": "cottontail-cottage-first-name",
+      "kind": "personal-name",
+      "value": "Briggitte",
+      "reason": "test",
+      "action": "strip"
+    }
+  ],
+  "cleared": []
+}

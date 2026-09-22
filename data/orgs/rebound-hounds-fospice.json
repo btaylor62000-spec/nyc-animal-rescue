@@ -14,8 +14,14 @@
     "senior",
     "sanctuary"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],

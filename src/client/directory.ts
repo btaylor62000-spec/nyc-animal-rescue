@@ -13,6 +13,7 @@
  */
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
+import { zipToBorough } from '../data/geo.ts';
 
 interface FilterState {
   q: string;
@@ -179,7 +180,15 @@ if (form && list) {
         ok = m.citywide || [...state.borough].some((b) => m.boroughs.includes(b));
       }
       if (ok && state.confidence.size && !state.confidence.has(m.confidence)) ok = false;
-      if (ok && state.zip) ok = m.zips.includes(state.zip) || m.citywide;
+      if (ok && state.zip) {
+        // A group that names zips is specific to them. One that names only a
+        // borough serves the whole borough, so it answers a zip in it too.
+        const zipBorough = zipToBorough(state.zip);
+        ok =
+          m.zips.includes(state.zip) ||
+          m.citywide ||
+          (zipBorough !== null && m.zips.length === 0 && m.boroughs.includes(zipBorough));
+      }
       if (ok && state.phone && !m.hasPhone) ok = false;
       if (ok && state.activeOnly && m.status !== 'active') ok = false;
 

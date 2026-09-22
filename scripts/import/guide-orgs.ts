@@ -410,9 +410,19 @@ export function extractGuideOrgs(spec: GuideOrgSpec): Org[] {
       // "(see citywide)" is a cross-reference to another section, not a claim
       // that this resource serves the whole city.
       const scopeText = `${geoPrefix ?? ''} ${section.heading} ${text}`.replace(/see citywide/gi, '');
+      // A microchip registry, a vet-bill fund, a domestic-violence programme
+      // or an online guide has no borough because it has no door: it is used
+      // from anywhere in the city. Without this, 44 such rows had no location
+      // at all and vanished from every borough and zip filter.
+      const noDoor =
+        boroughs.size === 0 &&
+        /MICROCHIP REGISTR|HELP PAYING VET BILLS|VET-BILL FINANCIAL AID|DOMESTIC-VIOLENCE PET|TEMPORARY \/ CRISIS CARE|HOSPICE|HOUSING SUPPORT|BEHAVIOR SUPPORT|SENIOR \/ DISABILITY|VACCINE \+ MICROCHIP|ACC OWNER SUPPORT|TRAP BANKS|PET FOOD PANTRIES/i.test(
+          section.heading,
+        );
       const citywide =
         /citywide|all 5 boroughs|national hotline|use from anywhere|nationwide/i.test(scopeText) ||
-        rule.orgTypes.includes('hotline');
+        rule.orgTypes.includes('hotline') ||
+        noDoor;
       if (citywide) for (const b of ['manhattan', 'brooklyn', 'queens', 'bronx', 'staten-island'] as Borough[]) boroughs.add(b);
 
       out.push({

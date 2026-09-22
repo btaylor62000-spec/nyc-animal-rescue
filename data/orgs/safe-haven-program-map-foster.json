@@ -14,8 +14,14 @@
     "owner-support",
     "boarding"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
@@ -23,7 +29,8 @@
   "phones": [
     {
       "value": "8006214673",
-      "display": "(800) 621-4673"
+      "display": "(800) 621-4673",
+      "label": "Hotline"
     }
   ],
   "emails": [],

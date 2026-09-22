@@ -26,9 +26,13 @@
     "sanctuary"
   ],
   "boroughs": [
-    "manhattan"
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
   ],
-  "citywide": false,
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": "Greater NYC-based (Manhattan mailing) + Hudson Valley; adopts NY/NJ/CT",
   "zips": [

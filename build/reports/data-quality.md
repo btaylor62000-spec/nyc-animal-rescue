@@ -9,7 +9,7 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 - **21** guide pages generated
 - **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
-- **5** personal contact details withheld
+- **1** personal contact details withheld
 
 ## Coverage
 
@@ -74,11 +74,11 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 162 |
-| queens | 121 |
-| manhattan | 116 |
-| bronx | 101 |
-| staten-island | 101 |
+| brooklyn | 201 |
+| queens | 160 |
+| manhattan | 154 |
+| bronx | 140 |
+| staten-island | 140 |
 
 ### By confidence
 
@@ -272,37 +272,22 @@ Every row received at least one animal, need, organization type and borough.
 
 ## Privacy
 
-### Contact details withheld (5 removals)
+### Contact details withheld (1 removals)
 
 These are personal numbers belonging to individuals, not organizational lines. Nothing here reaches the published site. Each needs the person's permission before it can be listed.
 
-- **Divya (co-founder, Flatbush Cats; volunteers with NYC Bird Alliance)** — Offered as a personal contact for questions in a document shared privately. A personal mobile on a public crisis page invites unbounded call volume.
-  - Found in: research/injured-birds-wildlife-guide.docx, closing paragraph
-  - To ask: Confirm with Divya whether she wants to be listed, and if so under what hours and which number.
-  - Removed from: guide page: Found an injured bird
-- **Bobby & Cathy Horvath (WINORR)** — A home line plus two personal mobiles, for a rehab operation run out of a private residence. Published by NYC Bird Alliance on a public referral page, so arguably already public -- but republishing a home number is a decision for them, not us.
-  - Found in: Exotic workbook row 55 Phone; 'Wildlife rehabilitation' tab line 10
-  - To ask: Ask WINORR which number they want listed. Keep the organization record either way; it routes NYC raptor cases.
-  - Removed from: WINORR - Wildlife In Need Of Rescue and Rehabilitation (Bobby & Cathy Horvath) (phones); guide page: Found injured or orphaned wildlife
-- **Robert Spragg (raptor transport volunteer)** — An individual volunteer's mobile, not an organizational line.
-  - Found in: 'Wildlife rehabilitation' tab line 11
-  - To ask: Confirm he is willing to be listed publicly for bird-of-prey transport.
-  - Removed from: guide page: Found injured or orphaned wildlife
 - **Name withheld: Briggitte** — The organization (Cottontail Cottage, cottontailrehab.com) and its number are public; the operator's first name adds nothing for a user in a crisis.
   - Strip the first name, keep the organization and its number. (applied in 1 place(s))
 
-### Records affected by a hold (2)
+### Records affected by a hold (1)
 
 - **Rabbit Rescue & Rehab (NYC Metro Rabbits) - NYC Chapter, House Rabbit Society** — still has a direct contact
-- **WINORR - Wildlife In Need Of Rescue and Rehabilitation (Bobby & Cathy Horvath)** — **now has no phone or email**
-
-> 1 of these are now reachable only through a website or directory listing. That is the cost of withholding, and it is worth weighing: WINORR - Wildlife In Need Of Rescue and Rehabilitation (Bobby & Cathy Horvath). Asking permission would restore a direct line.
 
 ## Guide pages
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 14526 |
+| Found an injured bird | 14773 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |
@@ -316,18 +301,13 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
 | Breed-specific dog rescue | 13722 |
-| Found injured or orphaned wildlife | 6194 |
+| Found injured or orphaned wildlife | 6640 |
 | Exotic pet emergencies | 4123 |
 | What you can legally keep in New York City | 3073 |
 | Help paying for veterinary care | 6412 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |
 | Lost or found a rabbit, bird or reptile | 2266 |
 | Boarding, pet sitting and planning ahead | 6022 |
-
-Pages with a withheld contact detail:
-
-- Found an injured bird — divya-personal-mobile
-- Found injured or orphaned wildlife — winorr-home-and-cells, robert-spragg-cell
 
 ### Source tabs not turned into a page (4)
 

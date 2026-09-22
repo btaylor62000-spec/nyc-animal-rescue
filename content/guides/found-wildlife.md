@@ -23,6 +23,8 @@ LIMITATION: WBF CANNOT take exotic birds (budgerigars, parrots) or domestic bird
 
 Can't transport an injured bird yourself?
 
+- Bobby & Cathy Horvath / WINORR - the usual go-to rehabbers for NYC raptors, but advise/help on anything, everywhere, no hour limit. Home 516-293-0587; cell 516-987-3961 (Bobby) / 516-851-6045 (Cathy). Run from North Massapequa; also provide sanctuary/placement for non-releasable wildlife.
+- Robert Spragg - retrieves & transports BIRDS OF PREY ONLY (eagles, hawks, owls), travels anywhere in the 5 boroughs, 8am-8pm 7 days. Cell 917-328-4315.
 - Urban Park Rangers - will try to pick up a bird in a NYC park (priority to less-common birds; limited resources for raptors outside parks). Primary 646-613-1200; Manhattan 212-628-2345 (9am-5pm daily); nycgovparks.org.
 - Email the Urban Wildlife Alliance helpline: helpline@urbanwildlifenyc.org (urbanwildlifenyc.org). NYC Bird Alliance also maintains an authoritative NYC injured-bird routing page (all listed rehabbers accept birds; many take other wildlife): https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers.
 

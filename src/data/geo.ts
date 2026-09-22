@@ -56,3 +56,31 @@ export function boroughsIn(text: string): BoroughId[] {
   for (const n of NEIGHBORHOOD_BOROUGH) if (n.pattern.test(text)) found.add(n.tag);
   return [...found];
 }
+
+/*
+ * Which borough a zip code falls in. Shared with the browser so the
+ * directory's zip filter can show borough-wide groups that list no zip of
+ * their own: 82 records had neither a zip nor the citywide flag and vanished
+ * from every zip search.
+ */
+const ZIP_RANGES: Array<{ tag: BoroughId; from: number; to: number }> = [
+  { tag: 'manhattan', from: 10001, to: 10282 },
+  { tag: 'staten-island', from: 10301, to: 10314 },
+  { tag: 'bronx', from: 10451, to: 10475 },
+  { tag: 'queens', from: 11001, to: 11005 },
+  { tag: 'brooklyn', from: 11201, to: 11256 },
+  { tag: 'queens', from: 11101, to: 11120 },
+  { tag: 'queens', from: 11351, to: 11697 },
+];
+
+export function zipToBorough(zip: string): BoroughId | null {
+  const n = Number(zip);
+  if (!Number.isInteger(n)) return null;
+  for (const r of ZIP_RANGES) if (n >= r.from && n <= r.to) return r.tag;
+  return null;
+}
+
+
+export function isNycZip(zip: string): boolean {
+  return zipToBorough(zip) !== null;
+}

@@ -214,6 +214,17 @@ function buildDraft(
     /citywide|all (5|five) boroughs|all boroughs|five boroughs|^\s*new york city\s*$|\bnew york city\b|national hotline|use from anywhere|new york state|statewide/i.test(
       scopeText,
     );
+  // A microchip registry, a vet-bill fund, a domestic-violence programme or
+  // an online guide has no borough because it has no door: it is used from
+  // anywhere. Without this, those rows had no location at all and vanished
+  // from every borough and zip filter.
+  if (
+    !citywide &&
+    nycBoroughsDetected === 0 &&
+    /MICROCHIP REGISTR|HELP PAYING VET BILLS|VET-BILL FINANCIAL AID|DOMESTIC-VIOLENCE PET|TEMPORARY \/ CRISIS CARE|HOSPICE|HOUSING SUPPORT|BEHAVIOR SUPPORT|SENIOR \/ DISABILITY|VACCINE \+ MICROCHIP|ACC OWNER SUPPORT/i.test(section)
+  ) {
+    citywide = true;
+  }
   if (citywide) for (const b of ['manhattan', 'brooklyn', 'queens', 'bronx', 'staten-island'] as Borough[]) boroughs.add(b);
 
   // Based outside the city. A regional group that explicitly serves NYC is

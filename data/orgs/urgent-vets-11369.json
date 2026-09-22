@@ -27,7 +27,8 @@
   "phones": [
     {
       "value": "7185075600",
-      "display": "(718) 507-5600"
+      "display": "(718) 507-5600",
+      "label": "late urgent care, not 24h - call"
     }
   ],
   "emails": [],

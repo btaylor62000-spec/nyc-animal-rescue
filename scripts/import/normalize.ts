@@ -121,13 +121,17 @@ export function parsePhones(raw: string | null): Parsed<Phone> {
       continue;
     }
     const { core, label } = splitLabel(seg);
-    const matches = core.match(PHONE_RE);
-    if (!matches || matches.length === 0) {
+    const matches = [...core.matchAll(PHONE_RE)];
+    if (matches.length === 0) {
       residue.push(seg);
       continue;
     }
+    // Labels that belong to one number rather than the segment: a bracket
+    // right after it, or a short word right before it. "cell 516-987-3961
+    // (Bobby) / 516-851-6045 (Cathy)" used to give both numbers to Cathy.
+    let consumed = core;
     for (const m of matches) {
-      let digits = dial(m);
+      let digits = dial(m[0]);
       if (digits.length === 11 && digits.startsWith('1')) digits = digits.slice(1);
       if (digits.length !== 10) {
         residue.push(seg);
@@ -135,11 +139,24 @@ export function parsePhones(raw: string | null): Parsed<Phone> {
       }
       if (values.some((p) => p.value === digits)) continue;
       const phone: Phone = { value: digits, display: formatPhone(digits) };
-      if (label) phone.label = label;
+      const start = m.index ?? 0;
+      const after = /^\s*\(([^()]{2,40})\)/.exec(core.slice(start + m[0].length));
+      // Only words that name a kind of line. "Call 718-..." must not label
+      // a number "Call".
+      const before = /(?:^|[\s/,;])(home|cell|mobile|office|text|fax|main|hotline|direct|clinic|intake)\s*:?\s*$/i.exec(core.slice(0, start));
+      if (after) {
+        phone.label = after[1]!.trim();
+        consumed = consumed.replace(after[0], ' ');
+      } else if (label) {
+        phone.label = label;
+      } else if (before) {
+        phone.label = before[1]!;
+      }
+      if (before) consumed = consumed.replace(before[0], ' ');
       values.push(phone);
     }
     // Keep any surrounding words that carried meaning ("ext. 112", hours).
-    const leftover = core.replace(PHONE_RE, '').replace(/[\s,;|-]+/g, ' ').trim();
+    const leftover = consumed.replace(PHONE_RE, '').replace(/[\s,;|/-]+/g, ' ').trim();
     if (leftover.length > 3) residue.push(leftover);
   }
   return { values, residue };
