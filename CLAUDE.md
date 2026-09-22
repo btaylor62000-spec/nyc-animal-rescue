@@ -197,8 +197,13 @@ edit an emergency directory unattended.
 It may **change** an existing contact only when the old value has gone from the
 organization's own domain **and** exactly one replacement is there. Two
 candidates is `needs-review`. Anything ambiguous is `needs-review`. Three
-consecutive unreachable weeks flags the record and downgrades confidence
-**once** — not every week after. If a run would change more than 15% of the
+consecutive unreachable weeks flags the record, downgrades confidence
+**once** — not every week after — and sets `status` to `verify`, because a
+`status_note` is only rendered on a record that is not active and the caveat
+used to be written where nobody saw it. The status is lifted again when the
+site answers, and only when it was this code that set it (recognised by the
+exact note text), so a `verify` or `hiatus` from the source research is never
+overwritten. If a run would change more than 15% of the
 directory it applies nothing and reports itself broken.
 
 Add a decision path and you add a test for it, including that it cannot produce

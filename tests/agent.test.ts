@@ -6,7 +6,7 @@ import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
 import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
 import { parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
+import { UNREACHABLE_NOTE, decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -175,14 +175,44 @@ test('three unreachable weeks flags the record and downgrades confidence once', 
   assert.equal(patch.check_status, 'needs-review');
   assert.equal(patch.confidence, 'Medium');
   assert.match(String(patch.status_note), /may no longer be active/i);
-  assert.equal(log[0]?.field, 'confidence');
+  // The note is only rendered on a record that is not active, so the flag has
+  // to change the status or nobody ever sees it.
+  assert.equal(patch.status, 'verify');
+  assert.deepEqual(log.map((l) => l.field).sort(), ['confidence', 'status']);
 
-  // A fourth failure must not downgrade a second time.
-  const later = org({ consecutive_failures: 3, confidence: 'Medium' });
+  // A fourth failure must not downgrade a second time. By then the record
+  // carries what the third week wrote.
+  const later = org({ consecutive_failures: 3, confidence: 'Medium', status: 'verify', status_note: UNREACHABLE_NOTE });
   const laterDecision = decide(later, { orgId: later.id, date: DATE, pages: [
     { url: 'https://example.org', finalUrl: 'https://example.org', status: 500, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], error: 'server error' },
   ] });
-  assert.equal(toPatch(later, laterDecision, DATE).patch.confidence, undefined);
+  const laterPatch = toPatch(later, laterDecision, DATE);
+  assert.equal(laterPatch.patch.confidence, undefined);
+  assert.equal(laterPatch.patch.status, 'verify', 'the caveat stays while the site stays down');
+  assert.equal(laterPatch.log.length, 0, 'but it is only logged on the week it is first set');
+});
+
+test('a source-marked pause keeps its own caveat when the site is also unreachable', () => {
+  const record = org({ consecutive_failures: 2, status: 'hiatus', status_note: 'Paused intake until spring, per their site.' });
+  const decision = { kind: 'unreachable', failures: 3, flagged: true } as const;
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.status, undefined);
+  assert.equal(patch.status_note, undefined);
+});
+
+test('the needs-confirming status is lifted when the site answers again, and only then', () => {
+  const flagged = org({ status: 'verify', status_note: UNREACHABLE_NOTE, consecutive_failures: 4 });
+  const { patch, log } = toPatch(flagged, { kind: 'ok', verified: true }, DATE);
+  assert.equal(patch.status, 'active');
+  assert.equal(patch.status_note, null);
+  assert.equal(log[0]?.field, 'status');
+  assert.equal(log[0]?.to, 'active');
+
+  // A "verify" the source research gave the record is not ours to lift.
+  const sourced = org({ status: 'verify', status_note: 'The workbook could not confirm this group is still running.' });
+  const kept = toPatch(sourced, { kind: 'ok', verified: true }, DATE);
+  assert.equal(kept.patch.status, undefined);
+  assert.equal(kept.log.length, 0);
 });
 
 test('a redirect off the domain is flagged rather than followed', () => {
@@ -394,4 +424,6 @@ test('bookkeeping patches carry no change log, reader-visible ones always do', (
   for (const decision of visible) {
     assert.ok(toPatch(record, decision as never, DATE).log.length > 0, decision.kind);
   }
+  const recovering = org({ status: 'verify', status_note: UNREACHABLE_NOTE });
+  assert.ok(toPatch(recovering, { kind: 'ok', verified: true }, DATE).log.length > 0, 'lifting the caveat');
 });

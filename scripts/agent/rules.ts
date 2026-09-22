@@ -355,6 +355,15 @@ export interface Applied {
  * so the reasoning can be tested without the bookkeeping, and the bookkeeping
  * without the reasoning.
  */
+/**
+ * The caveat shown on a listing whose website has stopped answering. Kept as
+ * one exact string because it is also how a later run recognises that the
+ * "needs confirming" status was set by this code, and not by the source
+ * research, and so may be lifted again when the site comes back.
+ */
+export const UNREACHABLE_NOTE =
+  'This organization may no longer be active — their website has not responded for several weeks.';
+
 export function toPatch(org: Org, decision: Decision, date: string): Applied {
   const base = { last_checked: date };
 
@@ -365,16 +374,31 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
         log: [],
       };
 
-    case 'ok':
-      return {
-        patch: {
-          ...base,
-          check_status: 'ok',
-          consecutive_failures: 0,
-          ...(decision.verified ? { last_verified: date } : {}),
-        },
-        log: [],
+    case 'ok': {
+      const patch: Record<string, unknown> = {
+        ...base,
+        check_status: 'ok',
+        consecutive_failures: 0,
+        ...(decision.verified ? { last_verified: date } : {}),
       };
+      const log: ChangeLogEntry[] = [];
+      // The site is answering again. Lift the "needs confirming" status only
+      // if it was this code that set it: a status the source research gave
+      // the record is not ours to change.
+      if (org.status === 'verify' && org.status_note === UNREACHABLE_NOTE) {
+        patch.status = 'active';
+        patch.status_note = null;
+        log.push({
+          date,
+          field: 'status',
+          from: 'verify',
+          to: 'active',
+          source: 'weekly-check',
+          note: 'Their website is responding again.',
+        });
+      }
+      return { patch, log };
+    }
 
     case 'apply': {
       const log: ChangeLogEntry[] = decision.changes.map((c) => ({
@@ -425,7 +449,25 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
             note: `Their website has been unreachable for ${decision.failures} weekly checks running.`,
           });
         }
-        patch.status_note = 'This organization may no longer be active — their website has not responded for several weeks.';
+        // A record only shows its status_note when it is not active, so the
+        // caveat used to be written and never seen. Three weeks of silence
+        // means nobody knows whether they are operating, which is exactly
+        // what "needs confirming" says. Records the source already marked as
+        // paused, moved or closed keep their own, stronger caveat.
+        if (org.status === 'active' || org.status_note === UNREACHABLE_NOTE) {
+          patch.status = 'verify';
+          patch.status_note = UNREACHABLE_NOTE;
+          if (org.status === 'active') {
+            log.push({
+              date,
+              field: 'status',
+              from: org.status,
+              to: 'verify',
+              source: 'weekly-check',
+              note: `Their website has been unreachable for ${decision.failures} weekly checks running.`,
+            });
+          }
+        }
       }
       return {
         patch,
