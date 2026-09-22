@@ -159,12 +159,13 @@ export function validate(req: ContributeRequest): Validated | Invalid {
     if (!req.orgId || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(req.orgId)) return { ok: false, message: 'Which entry is this about?' };
     const anything = website || phone || email || what || zip || address || hours || boroughs.length || animals.length;
     if (!anything) return { ok: false, message: 'Change at least one thing.' };
-    if (name) return { ok: false, message: 'Names cannot be changed here. If the organization has been renamed, say so in the reason and a person will do it.' };
+    // The form carries the current name in a locked box, so a name always
+    // arrives with a correction. It is not a rename request; it is ignored.
   } else {
     return { ok: false, message: 'That request did not make sense.' };
   }
 
-  if (name) out.name = name;
+  if (name && req.kind === 'add') out.name = name;
   if (website) out.website = website;
   if (phone) out.phone = phone;
   if (email) out.email = email;

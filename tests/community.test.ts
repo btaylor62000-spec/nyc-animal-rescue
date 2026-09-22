@@ -52,10 +52,14 @@ test('a website without a scheme gets one; a bare word does not pass', () => {
   assert.equal(normalizeWebsiteInput('makinbiscuits'), null);
 });
 
-test('a correction must change something and cannot rename', () => {
+test('a correction must change something, and the locked name it carries is ignored', () => {
   assert.equal(validate({ kind: 'correct', orgId: 'x-y', fields: {} }).ok, false);
-  assert.equal(validate({ kind: 'correct', orgId: 'x-y', fields: { name: 'New Name' } }).ok, false);
-  assert.equal(validate({ kind: 'correct', orgId: 'x-y', fields: { phone: '718-555-0100' } }).ok, true);
+  // The form always sends the current name from its read-only box; that is
+  // not a change, and it must neither count as one nor be refused.
+  assert.equal(validate({ kind: 'correct', orgId: 'x-y', fields: { name: 'Same Name' } }).ok, false);
+  const v = validate({ kind: 'correct', orgId: 'x-y', fields: { name: 'Same Name', hours: 'By appointment' } });
+  assert.equal(v.ok, true);
+  if (v.ok) assert.equal(v.fields.name, undefined);
 });
 
 test('an addition publishes as a labelled, low-confidence, unverified record with tags from its own words', () => {

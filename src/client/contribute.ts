@@ -74,7 +74,8 @@ if (form) {
     const data = new FormData(form!);
     const text = (k: string) => String(data.get(k) ?? '').trim();
     const fields: SubmittedFields = {
-      name: text('name') || undefined,
+      // A correction cannot rename; the locked name box is display only.
+      name: kind === 'add' ? text('name') || undefined : undefined,
       website: text('website') || undefined,
       phone: text('phone') || undefined,
       email: text('email') || undefined,
