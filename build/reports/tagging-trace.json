@@ -726,6 +726,16 @@
   ],
   "aspca-community-veterinary-clinic-brooklyn": [
     {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
       "tag": "spay-neuter",
       "field": "type",
       "matched": "spay"
@@ -2563,6 +2573,16 @@
     }
   ],
   "faithful-friends-animal-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
     {
       "tag": "cat",
       "field": "name",
@@ -5460,6 +5480,16 @@
     }
   ],
   "park-slope-veterinary-center": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
     {
       "tag": "cat",
       "field": "name",

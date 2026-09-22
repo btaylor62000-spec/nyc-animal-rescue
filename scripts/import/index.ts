@@ -27,7 +27,7 @@ import { ORG_SCHEMA } from './schema.ts';
 import { buildReport } from './report.ts';
 import { buildOrgCorpus, chunkGuide, type CorpusGuide } from './corpus.ts';
 import { applyOverlay, loadOverlay } from '../agent/overlay.ts';
-import { discoveredOrgs } from './discovered.ts';
+import { discoveredOrgs, unpublishedCandidateCount } from './discovered.ts';
 import { applyCorrections, loadSubmissions, submissionToOrg } from './community.ts';
 import type { TagTrace } from './tag.ts';
 
@@ -137,11 +137,13 @@ function main(): void {
   // (most are outside the city), and while it is pending every plain import
   // -- including the ones the workflows run -- must not quietly make it.
   const publishDiscovered = process.argv.includes('--publish-discovered');
-  const discovered = publishDiscovered ? discoveredOrgs() : [];
+  const discovered = discoveredOrgs(undefined, publishDiscovered);
+  const heldBack = publishDiscovered ? 0 : unpublishedCandidateCount();
   if (discovered.length) {
-    console.log(`  found   ${String(discovered.length).padStart(3)} unverified candidates from monthly discovery`);
-  } else if (discoveredOrgs().length) {
-    console.log(`  (${discoveredOrgs().length} discovery candidates held back; pass --publish-discovered to include them)`);
+    console.log(`  found   ${String(discovered.length).padStart(3)} unverified candidates from discovery, marked for publishing by a person`);
+  }
+  if (heldBack) {
+    console.log(`  (${heldBack} discovery candidates held back; mark one with "publish": true, or pass --publish-discovered for all)`);
   }
 
   // What visitors have added through the site. Additions are merged like any

@@ -47,7 +47,9 @@
         "2123580785"
       ],
       "emails": [],
-      "contactsFrom": "https://www.abcanimalhosp.com/"
+      "contactsFrom": "https://www.abcanimalhosp.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22"
     },
     {
       "name": "Adopt A Boxer*",
@@ -127,7 +129,12 @@
       "emails": [
         "info@allcreatures-bk.com"
       ],
-      "contactsFrom": "https://www.allcreaturesvetbrooklyn.com/"
+      "contactsFrom": "https://www.allcreaturesvetbrooklyn.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "brooklyn"
+      ]
     },
     {
       "name": "All God's Creatures Inc.",
@@ -433,7 +440,9 @@
       "emails": [
         "btrmission@gmail.com"
       ],
-      "contactsFrom": "https://www.btrmission.org/"
+      "contactsFrom": "https://www.btrmission.org/",
+      "publish": true,
+      "publishedOn": "2026-09-22"
     },
     {
       "name": "Bullmastiff Rescue",
@@ -606,7 +615,13 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-22",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "brooklyn"
+      ],
+      "checkedBy": "A person read the site on 2026-09-22 and confirmed it is in New York City."
     },
     {
       "name": "Dalmatian Adoptions, Inc.",
@@ -706,7 +721,13 @@
       "emails": [
         "info@everylastonerescue.org"
       ],
-      "contactsFrom": "https://www.everylastonerescue.org/"
+      "contactsFrom": "https://www.everylastonerescue.org/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "checkedBy": "A person read the site on 2026-09-22 and confirmed it is in New York City.",
+      "animals": [
+        "dog"
+      ]
     },
     {
       "name": "F.A.C.T.(Feline Advocates Coming Together)*",
@@ -730,7 +751,12 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "staten-island"
+      ]
     },
     {
       "name": "Feline Urban Rescue & Rehab",
@@ -1272,7 +1298,13 @@
       "emails": [
         "meow@meowparlour.com"
       ],
-      "contactsFrom": "https://www.meowparlour.com/"
+      "contactsFrom": "https://www.meowparlour.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "manhattan"
+      ],
+      "checkedBy": "A person read the site on 2026-09-22 and confirmed it is in New York City."
     },
     {
       "name": "Metropolitan Maltese Rescue*",
@@ -1437,7 +1469,12 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-22",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "animals": [
+        "dog"
+      ]
     },
     {
       "name": "Ollie's Angels Animal Rescue",
@@ -1622,7 +1659,13 @@
       "emails": [
         "nypeticare@aol.com"
       ],
-      "contactsFrom": "https://nypeticare.com/"
+      "contactsFrom": "https://nypeticare.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "animals": [
+        "cat",
+        "dog"
+      ]
     },
     {
       "name": "Pets Alive",
@@ -1867,7 +1910,16 @@
       "emails": [
         "shelterfreerescueny@gmail.com"
       ],
-      "contactsFrom": "https://shelterfreerescueny.com/"
+      "contactsFrom": "https://shelterfreerescueny.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "queens"
+      ],
+      "checkedBy": "A person read the site on 2026-09-22 and confirmed it is in New York City.",
+      "animals": [
+        "dog"
+      ]
     },
     {
       "name": "Shelter Survivors*",
@@ -1971,7 +2023,12 @@
         "2125040845"
       ],
       "emails": [],
-      "contactsFrom": "https://www.symphonyvet.com/"
+      "contactsFrom": "https://www.symphonyvet.com/",
+      "publish": true,
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "manhattan"
+      ]
     },
     {
       "name": "The Cat Maffia Rescue",

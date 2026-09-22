@@ -49,6 +49,10 @@ export const SECTION_ANIMALS: Array<{ pattern: RegExp; tags: Animal[] }> = [
 ];
 
 export const ANIMAL_RULES: Rule<Animal>[] = [
+  // A general veterinary practice sees cats and dogs. Without this a hospital
+  // found on a roster carried no animal at all and appeared in no filter.
+  { tag: 'cat', pattern: /veterinary (hospital|center|centre|group|clinic)|animal hospital|\bvet center\b/i, fields: ['name'] },
+  { tag: 'dog', pattern: /veterinary (hospital|center|centre|group|clinic)|animal hospital|\bvet center\b|\bshibas?\b/i, fields: ['name'] },
   { tag: 'cat', pattern: /\bcats?\b|\bfeline|\bkitten|\bTNR\b|\bferal\b|colony/i, fields: ALL },
   {
     // "Bulldog Rescue" and "Sheepdog Rescue" are dog rescues, but the word

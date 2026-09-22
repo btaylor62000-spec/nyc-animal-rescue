@@ -1,0 +1,72 @@
+{
+  "id": "pet-i-care",
+  "name": "Pet-I-Care",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "3479968324",
+      "display": "(347) 996-8324"
+    }
+  ],
+  "emails": [
+    {
+      "value": "nypeticare@aol.com"
+    }
+  ],
+  "website": "http://nypeticare.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Found on ACC New Hope partners on 2026-09-22. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/new-hope-partners"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-22",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-09-22",
+      "field": "contacts",
+      "from": null,
+      "to": "3479968324, nypeticare@aol.com",
+      "evidence_url": "https://nypeticare.com/",
+      "source": "monthly-discovery",
+      "note": "Read from the organization’s own site when it was found. Not confirmed by a person."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

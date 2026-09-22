@@ -52,14 +52,17 @@ Ordered by how much harm it prevents, not by size.
    adds records labelled unverified and excluded from the assistant, and item
    2 decides whether those should be published at all.
 
-2. **Decide what happens to the 160 discovery candidates.** They sit in
-   `data/discovered.json` and are not in `data/orgs/`, so every `npm run
-   import` produces a 159-file diff. Publishing them is a real decision —
-   they enter labelled "newly found, not yet verified" and stay out of the
-   assistant — but the inconsistency should not persist either way, because
-   CLAUDE.md promises that `git status` after an import is a real signal and
-   right now it is not. Most of them are not in New York: see "Discovery finds
-   mostly out-of-city organizations" below.
+2. **Keep marking discovery candidates by hand.** Decided 2026-09-22:
+   discovery finds mostly out-of-city rescues, so nothing it finds is
+   published until a person sets `"publish": true` on the candidate in
+   `data/discovered.json` (with `boroughs` and `checkedBy` when they confirmed
+   where it is). Discovery re-ran that day, read 200 sites, and 11 were
+   published: 7 with a city number or name, 4 confirmed by reading the site.
+   67 are outside the city and stay unpublished. About 120 gave no phone and
+   nothing in the name places them; the site can now read them again only
+   for new candidates, so those wait for a person. Three that looked local
+   had dead or broken sites that day: Fosterlings, Urban Wildlife Alliance,
+   Zani's Furry Friends.
 
 3. **Add the remaining wildlife contacts the reviewer found.** Cottontail
    Cottage and Frankie's Feline Fund were added on 2026-09-22, each confirmed

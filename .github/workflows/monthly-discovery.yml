@@ -49,8 +49,9 @@ jobs:
       - name: Look for new resources
         run: npm run agent:discover -- ${{ inputs.dry_run == true && '--dry' || '' }}
 
-      # Turns the candidates into records and regenerates everything derived
-      # from them, so the site, the search index and the chat corpus agree.
+      # Regenerates the data. Candidates are not published by this: a person
+      # marks the ones that belong (`"publish": true` in data/discovered.json)
+      # after looking, because the roster is mostly out-of-city rescues.
       - name: Rebuild the data
         if: inputs.dry_run != true
         run: npm run import

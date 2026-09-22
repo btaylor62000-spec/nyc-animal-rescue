@@ -4,7 +4,7 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **295** organizations after de-duplication
+- **306** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 206 |
-| dog | 145 |
+| cat | 213 |
+| dog | 155 |
 | wildlife | 37 |
 | rabbit | 32 |
 | bird-companion | 31 |
@@ -74,11 +74,11 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 201 |
-| queens | 160 |
-| manhattan | 154 |
+| brooklyn | 203 |
+| queens | 161 |
+| manhattan | 156 |
+| staten-island | 141 |
 | bronx | 140 |
-| staten-island | 140 |
 
 ### By confidence
 
@@ -86,13 +86,13 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | Medium | 145 |
 | High | 119 |
-| Low | 31 |
+| Low | 42 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 281 |
+| active | 292 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (63)
+### Never verified (74)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 

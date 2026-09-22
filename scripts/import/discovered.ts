@@ -13,7 +13,8 @@
  * crisis is not handed one as though it were checked.
  */
 import { existsSync, readFileSync } from 'node:fs';
-import type { Animal, Need, Org } from '../../src/types.ts';
+import type { Animal, Borough, Need, Org } from '../../src/types.ts';
+import { BOROUGH_PATTERNS } from '../../src/data/geo.ts';
 import { ANIMAL_RULES, NEED_RULES, ORG_TYPE_RULES, inferRegion } from './taxonomy.ts';
 import { applyRules } from './tag.ts';
 import { formatPhone, slugify } from './normalize.ts';
@@ -30,6 +31,17 @@ interface Candidate {
   phones?: string[];
   emails?: string[];
   contactsFrom?: string;
+  contactsChecked?: string;
+  /**
+   * Set by a person, after looking. Discovery finds mostly out-of-city
+   * rescues, so nothing it finds is published until someone marks it.
+   */
+  publish?: boolean;
+  publishedOn?: string;
+  /** Set by the person who marked it, when they confirmed where it is. */
+  boroughs?: Borough[];
+  animals?: Animal[];
+  checkedBy?: string;
 }
 
 export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {
@@ -52,7 +64,7 @@ export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {
  */
 export function candidateToOrg(c: Candidate): Org {
   const src = { name: c.name, type: '', notes: '', section: '', animals_served: '', areas: '' };
-  const animals = applyRules(ANIMAL_RULES, src).tags as Animal[];
+  const animals = [...new Set([...(c.animals ?? []), ...(applyRules(ANIMAL_RULES, src).tags as Animal[])])];
   const needs = applyRules(NEED_RULES, src).tags as Need[];
   const orgTypes = applyRules(ORG_TYPE_RULES, src).tags;
 
@@ -60,6 +72,11 @@ export function candidateToOrg(c: Candidate): Org {
   // shelters, which is not the same as being in New York. Say where they are,
   // so a group in Connecticut does not compete with a local one in search.
   const region = inferRegion({ name: c.name, phones: c.phones ?? [] });
+
+  // A borough in the name is as good as the research workbooks get, and the
+  // person who marked the candidate may have confirmed one.
+  const boroughs = new Set<Borough>(c.boroughs ?? []);
+  for (const bp of BOROUGH_PATTERNS) if (bp.pattern.test(c.name)) boroughs.add(bp.tag);
 
   return {
     id: slugify(c.name),
@@ -69,9 +86,9 @@ export function candidateToOrg(c: Candidate): Org {
     org_types: orgTypes,
     animals,
     needs,
-    boroughs: [],
+    boroughs: [...boroughs],
     citywide: false,
-    outside_nyc: region.outsideNyc,
+    outside_nyc: region.outsideNyc && boroughs.size === 0,
     neighborhoods: null,
     zips: [],
     region_note: region.note,
@@ -82,14 +99,14 @@ export function candidateToOrg(c: Candidate): Org {
     social: [],
     address: null,
     hours: null,
-    notes: c.contactsFrom
+    notes: `${c.checkedBy ? `${c.checkedBy} ` : ''}` + (c.contactsFrom
       ? `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
         'The contact details below were read from their own website ' +
         'on the same day, but nobody has confirmed them, and we do not know whether they are still operating. ' +
         'Confirm before relying on it.'
       : `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
         'Nothing about this entry has been checked yet — ' +
-        'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.',
+        'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.'),
     type_raw: null,
     confidence: 'Low',
     status: 'active',
@@ -132,6 +149,13 @@ export function candidateToOrg(c: Candidate): Org {
   };
 }
 
-export function discoveredOrgs(path = DISCOVERED_PATH): Org[] {
-  return loadDiscovered(path).map(candidateToOrg);
+/** The candidates a person has marked for publishing, or all of them when asked. */
+export function discoveredOrgs(path = DISCOVERED_PATH, all = false): Org[] {
+  return loadDiscovered(path)
+    .filter((c) => all || c.publish === true)
+    .map(candidateToOrg);
+}
+
+export function unpublishedCandidateCount(path = DISCOVERED_PATH): number {
+  return loadDiscovered(path).filter((c) => c.publish !== true).length;
 }

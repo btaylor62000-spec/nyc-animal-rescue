@@ -1,0 +1,68 @@
+{
+  "id": "shelter-free-rescue-ny",
+  "name": "Shelter Free Rescue NY",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "dog"
+  ],
+  "needs": [],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [],
+  "emails": [
+    {
+      "value": "shelterfreerescueny@gmail.com"
+    }
+  ],
+  "website": "https://shelterfreerescueny.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A person read the site on 2026-09-22 and confirmed it is in New York City. Found on ACC New Hope partners on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/new-hope-partners"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-17",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-09-17",
+      "field": "contacts",
+      "from": null,
+      "to": "shelterfreerescueny@gmail.com",
+      "evidence_url": "https://shelterfreerescueny.com/",
+      "source": "monthly-discovery",
+      "note": "Read from the organization’s own site when it was found. Not confirmed by a person."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}
