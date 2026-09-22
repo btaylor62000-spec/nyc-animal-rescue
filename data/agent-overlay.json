@@ -1,50 +1,56 @@
 {
   "$comment": "Written by the automated checks in scripts/agent and applied by the importer as its last step, so re-running the import never discards what the checks learned. Edit by hand only to correct the agent. To discard an automated change, delete its entry and re-run the import.",
-  "updated": "2026-09-22T00:00:00.000Z",
+  "updated": "2026-09-22T20:44:18.966Z",
   "entries": {
     "24petwatch": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "24petwatch-north-americas-largest-registry-free-regi": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "800-kitties-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "a-helping-wing-parrot-rescue-and-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "a-tail-of-two-kitties": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "aaha-universal-lookup": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
-    "acc-admissions-owner-support": {
-      "last_checked": "2026-09-21",
+    "abc-animal-hospital": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "acc-admissions-owner-support": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "acc-community-pets-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "acc-new-hope-program": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-09-21",
       "intake_urls": [
@@ -78,64 +84,70 @@
       ]
     },
     "acc-pet-food-pantry": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "acc-working-cats-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "advocat-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "akc-reunite": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "all-about-rabbits-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "all-creatures-veterinary-hospital-of-brooklyn": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "ama-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "amazing-animals-rescue-and-adoptions": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "amsterdog-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "anarchy-animal-rescue-and-rehabilitation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "animal-care-centers-of-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "animal-care-centers-of-nyc-brooklyn": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "animal-care-centers-of-nyc-guinea-pigs-and-small-animals": {
       "last_checked": "2026-09-22",
@@ -207,17 +219,18 @@
       ],
       "source_urls": [
         "https://www.nycacc.org"
-      ]
+      ],
+      "last_verified": "2026-09-22"
     },
     "animal-clinic-of-bay-ridge": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "animal-general": {
-      "last_checked": "2026-09-21",
-      "check_status": "unchecked",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "website": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
       "source_urls": [
         "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny"
@@ -233,13 +246,15 @@
           "source": "manual",
           "note": "Website added from the reviewer’s 2026-09-21 document and confirmed on the page, which also confirms the address and number. The page describes dog and cat care only, so the wildlife claim she asked us to check is not applied."
         }
-      ]
+      ],
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "animal-haven": {
-      "last_checked": "2026-09-21",
-      "check_status": "changed",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "emails": [
         {
           "value": "info@animalhaven.org"
@@ -258,24 +273,24 @@
       ]
     },
     "animal-haven-community-engagement": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "animal-lighthouse-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "animal-lovers-rescue-and-adoptions": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "animal-medical-center": {
-      "last_checked": "2026-09-21",
-      "last_verified": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "last_verified": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -293,20 +308,20 @@
       ]
     },
     "animal-relief-fund": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "animal-rescue-of-queens-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "anjellicle-cats-rescue": {
-      "last_checked": "2026-09-21",
-      "check_status": "changed",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "phones": [
         {
           "value": "5854964660",
@@ -326,127 +341,127 @@
       ]
     },
     "aspca-animal-hospital": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-animal-poison-control-center-24-7-hotline": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "aspca-behavior-guides": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-community-engagement": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-community-veterinary-clinic-brooklyn": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-community-veterinary-clinic-brooklyn-brooklyn": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-community-veterinary-clinic-queens": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-community-veterinary-clinics": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "aspca-spay-neuter-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-trap-bank": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "astoria-cat-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "atlantic-critter-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "backyard-cats-of-bed-stuy": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "badass-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "banfield-pet-hospital": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "barbey-street-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "barc-shelter": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "bay-ridge-kittens": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "bbawc-rescue-clinic": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "bed-stuy-kitty-crew": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "bedford-corners-community-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "best-friends-animal-society-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "best-friends-pet-adoption-center-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "big-city-little-kitty": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "bluepearl-brooklyn": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-18",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -465,7 +480,7 @@
       ]
     },
     "bluepearl-downtown": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-18",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -484,7 +499,7 @@
       ]
     },
     "bluepearl-midtown": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-18",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -503,7 +518,7 @@
       ]
     },
     "bluepearl-queens": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-18",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -522,319 +537,353 @@
       ]
     },
     "bobbi-and-the-strays": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "boomers-feline-friends": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "bronx-community-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "bronx-tails-cat-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "brooklyn-animal-action": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-aquarium-society": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "brooklyn-kitty-committee-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-lost-cat-finder": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "brooklyn-neighborhood-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "brooklyn-paws-foundation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-waterfront-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "brown-dog-foundation": {
-      "last_checked": "2026-09-21",
-      "check_status": "unreachable",
-      "consecutive_failures": 1
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
     },
-    "bully-baby-rescue": {
-      "last_checked": "2026-09-21",
+    "bull-terrier-rescue-mission": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "bully-baby-rescue": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "bully-project": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "bunnies-and-beyond": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "bushwick-street-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cancercare-pet-assistance-and-wellness-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "carecredit": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "carroll-street-cat-club": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cat-castle-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cat-republic": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "cats-in-the-cradle-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "cats-n-queens": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "cats-of-meow-york": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "catskill-animal-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "catstoria-cat-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "city-critters": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "city-pitties": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "completecare-veterinary-center": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "condition-specific": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "connecticut-parrot-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "cottontail-cottage-wildlife-rehab": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
+    },
+    "cypress-feline-rescue": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "earthlings-nyc-turtle-team": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "eastchester-bay-stray-cat-project-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "elmhurst-animal-emergency-hospital": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "empty-cages-collective": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "equine-advocates-rescue-and-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "equine-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
-    "faithful-friends-animal-hospital": {
-      "last_checked": "2026-09-21",
+    "every-last-one-rescue": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "faithful-friends-animal-hospital": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "feather-friends-parrot-adoption-services": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "feeding-pets-of-the-homeless": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "feline-rescue-of-staten-island": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "fifth-avenue-veterinary-hospital": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "flatbush-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "flatbush-vet": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "fluffle-farms-rabbit-rehab-and-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "food-bank-for-new-york-city": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "for-animals-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "for-blakes-sake-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "foster-dogs-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
+    "frankies-feline-fund": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
+    },
     "frankies-friends": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "free-housing-legal-help": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "friends-of-animals": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "friends-of-animals-spay-neuter-certificates": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "give-me-shelter-project-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "good-home-pet-adoptions": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "greater-city-aquarium-society": {
-      "last_checked": "2026-09-21",
-      "check_status": "unreachable",
-      "consecutive_failures": 1
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "greater-state-veterinary-specialists": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "greenpoint-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "greenpoint-cats-club": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "guardian-angel-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "happy-homes-animal-rescue-inc": {
-      "last_checked": "2026-09-21",
-      "check_status": "changed",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "phones": [
         {
           "value": "7325886578",
@@ -854,115 +903,124 @@
       ]
     },
     "hard-hat-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "harlem-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "harman-cat-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "hearts-and-bones-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "homeagain": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "house-of-pancakes-reptile-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
+    "hsus-dogfighting-tip-line": {
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
+    },
     "humane-society-of-new-york": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "india-street-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "instavet-urgent-care": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "island-bird-cat-and-dog-vet-group": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "check_status": "unchecked"
+    },
+    "island-wildlife-inc": {
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "itty-bitty-city-kitties": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "itty-bitty-kitty-ny": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "k9kastle": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "kisos-pet-food-pantry": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "kittens-and-barbells-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "kittykind": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "korean-k9-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "lap-of-love": {
-      "last_checked": "2026-09-21",
-      "check_status": "ok",
-      "consecutive_failures": 0,
+      "last_checked": "2026-09-22",
+      "check_status": "unreachable",
+      "consecutive_failures": 1,
       "last_verified": "2026-09-21"
     },
     "lic-feral-feeders-and-cat-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "lincoln-terrace-park-cats": {
-      "last_checked": "2026-09-21",
-      "check_status": "unreachable",
-      "consecutive_failures": 1
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
     },
     "little-wanderers-nyc": {
-      "last_checked": "2026-09-21",
-      "check_status": "needs-review",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-09-21",
       "phones": [],
@@ -990,108 +1048,114 @@
       "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website."
     },
     "long-island-bird-and-exotics-vet-clinic": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "long-island-parrot-society": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "long-island-rabbit-rescue-group": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "los-sures-cats-williamsburg": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "louies-legacy-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "loving-touch-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "luv-n-bunns-rabbit-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "magnificat-cat-rescue-and-rehoming": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "mainely-rat-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "mama-chris-animal-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "mama-coupon": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "manhattan-veterinary-group": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "mayors-alliance-for-nycs-animals": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
-    "meowroof": {
-      "last_checked": "2026-09-21",
-      "check_status": "unreachable",
-      "consecutive_failures": 1
-    },
-    "meowsquad-nyc": {
-      "last_checked": "2026-09-21",
+    "meow-parlour-cats": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "meowroof": {
+      "last_checked": "2026-09-22",
+      "check_status": "unreachable",
+      "consecutive_failures": 2
+    },
+    "meowsquad-nyc": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "microchip-registration": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "midwood-kitty-cats-cats-of-midwood": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "mighty-mutts-and-ollies-place": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "monroe-street-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "mr-bones-and-co": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "muddy-paws-rescue": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "status": "active",
       "status_note": "They do not take owner surrenders or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. Still adopting out.",
@@ -1127,20 +1191,20 @@
       "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out."
     },
     "muffins-pet-connection-mama-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "narn-central-brooklyn": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "neighborhood-cats": {
-      "last_checked": "2026-09-21",
-      "check_status": "changed",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "emails": [
         {
           "value": "hello@neighborhoodcats.org"
@@ -1159,109 +1223,125 @@
       ]
     },
     "new-beginning-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "new-york-bully-crew": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "new-york-city-animal-rescue-girls": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "new-york-city-pigeon-rescue-central": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "new-york-common-pantry": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "new-york-meow-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "new-york-turtle-and-tortoise-society": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "noahs-ark-animal-rescue-ny-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "north-brooklyn-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "northeast-avian-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "ny-cat-warriors": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "ny-marine-mammal-and-sea-turtle-stranding-hotline": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "nyc-311": {
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "nyc-animal-welfare": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "nyc-cat-coalition": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "nyc-dohmh-low-cost-s-n-index": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
+    "nyc-domestic-violence-hotline": {
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
+    },
     "nyc-emergency-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "nyc-feral-cat-initiative": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "nyc-feral-cat-initiative-bideawee": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "nyc-fish-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "nyc-health-dept-low-cost-spay-neuter": {
-      "last_checked": "2026-09-21",
-      "check_status": "changed",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-09-22",
       "phones": [
         {
           "value": "2126399675",
@@ -1281,401 +1361,439 @@
       ]
     },
     "nyc-second-chance-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
-    "nyc-teens-for-animals-inc": {
-      "last_checked": "2026-09-21",
+    "nyc-shiba-rescue": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
+    "nyc-teens-for-animals-inc": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "nypd-crime-stoppers": {
+      "last_checked": "2026-09-22",
+      "check_status": "unreachable",
+      "consecutive_failures": 1
+    },
     "nys-dec-find-a-wildlife-rehabilitator": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
+    },
+    "nys-dec-region-2": {
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "nysave": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "oak-street-cat-gang-death-row-cats-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "ocean-hill-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "park-slope-veterinary-center": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "parrot-rescue-new-york": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "paul-the-cat-guy-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "paws-crossed-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "paws-ny": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "paws-of-hope-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "paws-of-war": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
-    "pet-poison-helpline-24-7-hotline": {
-      "last_checked": "2026-09-21",
+    "pet-i-care": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "pet-poison-helpline-24-7-hotline": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "petco-vetco-vetco-vaccine-clinics": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "pets-of-the-homeless": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "place-for-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "pluto-rescue-of-richmond-county": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "posh-pets-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "pound-hounds-res-q": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "prince-chunk-foundation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "puppy-kitty-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "queens-low-cost-vet": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "ready-for-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "rebound-hounds": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rebound-hounds-fospice": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "red-hook-dog-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "redrover-relief": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "reenies-rabbit-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "rescue-city": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescue-coop": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescue-dogs-rock-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "rescue-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescuenyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "safe-haven-program-map-foster": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "safe-havens-mapping-project": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "safe-place-for-pets": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "saint-spiro-cat-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "save-the-animals-rescue-foundation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "savekitty-foundation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "scratchpay": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "sean-casey-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "second-chance-bird-and-reptile-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
+    },
+    "shelter-free-rescue-ny": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "sheltering-animals-and-families-together": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "sicaw-certificate-program": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "snarr-northeast": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "social-tees-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "south-slope-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "spca-of-westchester-equine-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "st-mina-animal-clinic": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "staten-island-bird-club": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "staten-island-council-for-animal-welfare": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "staten-island-hope-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "stray-from-the-heart": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "stray-pride-animal-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "strays-hope-for-life-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "strong-paws-rescue-community-pet-pantry": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "sugar-mutts-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "suicide-and-crisis-lifeline": {
+      "last_checked": "2026-09-22",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "sunset-park-cats": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "symphony-vet-center": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "tavi-and-friends": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "the-5-kittens-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "the-animal-project-nyc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "the-brooklyn-rescues": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "the-center-for-avian-and-exotic-medicine": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "the-good-life-dog-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "the-pet-fund": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "the-poor-animals-of-st-francis-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "the-sato-project": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "the-toby-project": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "the-toby-project-feral-spay-neuter-clinic": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "the-wild-bird-fund": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "thundercats-tnr": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "tnr-utopia": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "urban-cat-league": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "urban-utopia-wildlife-rehabilitation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "status": "hiatus",
@@ -1693,33 +1811,45 @@
       ]
     },
     "urgent-vets": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "urgent-vets-11369": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "urgent-vets-bronx": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "uri-pals": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
+    },
+    "usda-report-sick-birds-line": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
+    },
+    "usfws-wildlife-crime-tip-line": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-09-22"
     },
     "veg": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "veg-ralph-ave": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-21",
-      "check_status": "ok",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
@@ -1760,9 +1890,9 @@
       ]
     },
     "veg-williamsburg": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "last_verified": "2026-09-21",
-      "check_status": "ok",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/williamsburg",
@@ -1803,8 +1933,8 @@
       ]
     },
     "verg": {
-      "last_checked": "2026-09-21",
-      "last_verified": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "last_verified": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -1827,7 +1957,7 @@
       ]
     },
     "verg-north": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://verg-brooklyn.com",
@@ -1844,10 +1974,10 @@
           "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
         }
       ],
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "verg-south": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -1886,77 +2016,82 @@
       "notes": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn."
     },
     "victory-4-the-voiceless-animal-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "vinegar-hill-veterinary-group": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "vip-petcare-clinics": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "volunteers-for-wildlife-wildlife-center-of-long-island": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "waggle": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "waggytail-rescue": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "waldos-rescue-pen": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "washington-heights-cat-colony": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "west-street-whiskers": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "unchecked"
     },
     "whiskers-a-gogo": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "wildlife-freedom-foundation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "winorr-wildlife-in-need-of-rescue-and-rehabilitation": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "woodstock-farm-sanctuary": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21"
+      "last_verified": "2026-09-22"
     },
     "woof-dog-rescue-inc": {
-      "last_checked": "2026-09-21",
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "your-local-nypd-precinct": {
+      "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
     }

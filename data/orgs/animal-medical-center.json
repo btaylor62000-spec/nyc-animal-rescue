@@ -66,14 +66,14 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

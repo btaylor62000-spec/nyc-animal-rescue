@@ -54,13 +54,13 @@
     "https://happyhomesinc.org/",
     "https://www.happyhomesinc.org/adopt"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
-  "check_status": "changed",
+  "last_checked": "2026-09-22",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

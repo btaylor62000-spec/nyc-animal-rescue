@@ -54,12 +54,12 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

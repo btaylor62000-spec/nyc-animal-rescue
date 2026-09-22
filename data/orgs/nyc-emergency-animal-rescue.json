@@ -49,9 +49,9 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "unreachable",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "change_log": [],
   "privacy_hold": false,
   "community": null

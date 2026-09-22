@@ -53,12 +53,12 @@
   "source_urls": [
     "https://www.nytts.org/"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

@@ -65,12 +65,12 @@
   "source_urls": [
     "https://bobbiandthestrays.org/adopt-a-dog/"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

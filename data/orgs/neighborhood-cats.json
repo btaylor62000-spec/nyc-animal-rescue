@@ -71,13 +71,13 @@
   "source_urls": [
     "https://www.neighborhoodcats.org/tnr-in-nyc"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
-  "check_status": "changed",
+  "last_checked": "2026-09-22",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

@@ -56,12 +56,12 @@
   "source_urls": [
     "https://woodstocksanctuary.org/contact"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

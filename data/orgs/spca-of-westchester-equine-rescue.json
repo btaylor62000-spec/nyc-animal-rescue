@@ -58,12 +58,12 @@
   "source_urls": [
     "https://spcawestchester.org/donate/equine-rescue"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-09-22",
   "section": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-ground equine rescue; these are regional",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
+  "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
