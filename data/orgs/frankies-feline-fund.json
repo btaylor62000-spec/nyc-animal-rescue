@@ -35,7 +35,7 @@
       "value": "frankiesfelinefund@gmail.com"
     }
   ],
-  "website": "https://frankiesfelinefund.org",
+  "website": "https://frankiesfelinefund.org/",
   "intake_urls": [],
   "social": [
     {
@@ -45,7 +45,7 @@
     }
   ],
   "address": null,
-  "hours": null,
+  "hours": "By appointment",
   "notes": "All-volunteer 501(c)(3) rescuing abandoned elderly and special-needs cats. Adoption ($75 fee) and a senior-to-senior foster programme. Accepts owner surrenders of senior cats to keep them out of the shelter system. A different organization from Frankie's Friends, which helps pay vet bills. Intake: Email frankiesfelinefund@gmail.com or call 917-514-0228",
   "type_raw": "Rescue / adoption (foster-based; senior and special-needs cats; owner surrenders)",
   "confidence": "High",
@@ -54,7 +54,7 @@
   "source_urls": [
     "https://frankiesfelinefund.org"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": null,
   "section": "SENIOR & SPECIAL-NEEDS CATS - rescue, adoption and owner surrender (Manhattan)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -62,7 +62,29 @@
   "last_checked": null,
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-22",
+      "field": "website",
+      "from": "https://frankiesfelinefund.org",
+      "to": "https://frankiesfelinefund.org/",
+      "evidence_url": "https://frankiesfelinefund.org/",
+      "source": "community",
+      "note": "Corrected by a visitor to the site."
+    },
+    {
+      "date": "2026-09-22",
+      "field": "hours",
+      "from": null,
+      "to": "By appointment",
+      "evidence_url": "https://frankiesfelinefund.org/",
+      "source": "community",
+      "note": "Corrected by a visitor to the site."
+    }
+  ],
   "privacy_hold": false,
-  "community": null
+  "community": {
+    "added_on": null,
+    "corrected_on": "2026-09-22"
+  }
 }
