@@ -158,6 +158,14 @@ if (form && input && log) {
       details.textContent = 'Details';
       actions.append(details);
 
+      // Anyone can fix an entry, and the person who just called a dead number
+      // is exactly who should be able to.
+      const fix = document.createElement('a');
+      fix.className = 'btn btn--ghost btn--fix';
+      fix.href = `${card.url}/correct`;
+      fix.textContent = 'Fix this entry';
+      actions.append(fix);
+
       li.append(name, where, actions);
 
       if (card.needsConfirmation) {

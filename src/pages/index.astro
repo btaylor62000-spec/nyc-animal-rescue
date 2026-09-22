@@ -76,7 +76,7 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
       <h1>Find help for an animal in New York City</h1>
       <p class="lede">
         {orgCount} rescues, clinics, hotlines and rehabilitators across the five boroughs.
-        Free to use, kept current, and honest about what it does not know.
+        Free to use, kept current by New Yorkers like you, and honest about what it does not know.
       </p>
 
       <div class="hero__actions">
@@ -141,6 +141,26 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
         Not sure what to search for? <a href="/ask">Describe what is happening</a> and get pointed
         to the right place.
       </p>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <span class="eyebrow"><Icon name="heart" size={14} /> Kept by the community</span>
+        <h2>Know a rescue that is missing? Spot a wrong number?</h2>
+        <p>
+          This directory is kept up to date by the people who use it. Anyone can add a rescue,
+          clinic or hotline, and every entry has a <strong>Fix this entry</strong> button. What you
+          send is checked against the organization's own website and goes live in a few minutes,
+          marked as added or fixed by a visitor.
+        </p>
+        <div class="hero__actions" style="margin-bottom:0">
+          <a class="btn btn--primary" href="/contribute">
+            <Icon name="plus" size={17} />
+            Add a resource
+          </a>
+          <a class="btn" href="/directory">Find an entry to fix</a>
+        </div>
+      </div>
     </section>
 
     <section class="section">

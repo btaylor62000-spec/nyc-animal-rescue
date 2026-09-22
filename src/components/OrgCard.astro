@@ -62,17 +62,19 @@ const phone = org.phones[0];
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>
 
-  {(phone || org.website) && (
-    <div class="card__actions">
-      {phone && (
-        <a class="btn btn--primary" href={telHref(phone.value)}>
-          <Icon name="phone" size={17} />
-          Call <span translate="no">{phone.display}</span>
-        </a>
-      )}
-      <a class="btn" href={`/org/${org.id}`}>Details</a>
-    </div>
-  )}
+  <div class="card__actions">
+    {phone && (
+      <a class="btn btn--primary" href={telHref(phone.value)}>
+        <Icon name="phone" size={17} />
+        Call <span translate="no">{phone.display}</span>
+      </a>
+    )}
+    <a class="btn" href={`/org/${org.id}`}>Details</a>
+    <a class="btn btn--ghost btn--fix" href={`/org/${org.id}/correct`} title="Wrong number, closed, moved? Fix it here.">
+      <Icon name="alert" size={15} />
+      Fix this entry
+    </a>
+  </div>
 
   {confirm && (
     <p class="notice">

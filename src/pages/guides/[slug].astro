@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
 import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
 
@@ -34,6 +35,15 @@ const isUrgent = URGENT.has(guide.slug);
     )}
 
     <article class="guide-body" set:html={html} />
+
+    <p class="notice" style="margin-top:2rem">
+      <Icon name="alert" size={17} />
+      <span>
+        <strong>Wrong number, or something missing?</strong> Every organization named here has its own entry
+        with a <strong>Fix this entry</strong> button; <a href="/directory">find it in the directory</a>.
+        Know a place that should be here? <a href="/contribute">Add a resource</a>. Changes go live in minutes.
+      </span>
+    </p>
 
     <hr style="margin:2.5rem 0 1rem;border:0;border-top:1px solid var(--border)" />
     <p class="muted" style="font-size:.9rem">

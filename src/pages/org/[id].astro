@@ -72,6 +72,19 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
       {org.org_types.map((t) => <li><span class="tag">{ORG_TYPE_LABELS[t]}</span></li>)}
     </ul>
 
+    <div class="card__actions" style="margin:0 0 1.25rem">
+      {org.phones[0] && (
+        <a class="btn btn--primary" href={telHref(org.phones[0].value)}>
+          <Icon name="phone" size={17} />
+          Call <span translate="no">{org.phones[0].display}</span>
+        </a>
+      )}
+      <a class="btn" href={`/org/${org.id}/correct`}>
+        <Icon name="alert" size={17} />
+        Something wrong? Fix this entry
+      </a>
+    </div>
+
     {org.community?.added_on && (
       <p class="notice">
         <Icon name="alert" size={17} />
