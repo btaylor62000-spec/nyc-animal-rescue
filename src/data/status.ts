@@ -31,6 +31,7 @@ function ranAt(stamp: string | undefined): string | null {
 }
 
 interface OverlayEntryShape {
+  last_checked?: string;
   change_log?: Array<{ date?: string; source?: string }>;
 }
 const overlay = readJson<{ updated?: string; entries?: Record<string, OverlayEntryShape> }>(
@@ -42,19 +43,18 @@ const overlay = readJson<{ updated?: string; entries?: Record<string, OverlayEnt
  * The overlay's own `updated` stamp is not evidence the weekly check ran: a
  * person correcting the agent by hand writes to the same file. Reporting a
  * hand edit as a completed automated run is precisely the false reassurance
- * this page exists to prevent, so the run date comes from change-log entries
- * the check itself wrote.
+ * this page exists to prevent. `last_checked` is written only by the check,
+ * on every record it visits, so the newest one is the date it last ran. (It
+ * used to come from change-log entries the check wrote, which stopped being
+ * true the day the check stopped changing anything.)
  */
-const weeklyEntries = Object.values(overlay.entries ?? {}).filter((e) =>
-  (e.change_log ?? []).some((c) => c.source === 'weekly-check'),
-);
 const weeklyLastRun =
-  weeklyEntries
-    .flatMap((e) => (e.change_log ?? []).filter((c) => c.source === 'weekly-check'))
-    .map((c) => c.date)
+  Object.values(overlay.entries ?? {})
+    .map((e) => e.last_checked)
     .filter((d): d is string => Boolean(d))
     .sort()
     .pop() ?? undefined;
+const weeklyEntries = Object.values(overlay.entries ?? {}).filter((e) => e.last_checked === weeklyLastRun);
 const discovered = readJson<{ updated?: string; candidates?: Array<{ name: string }> }>(
   'data/discovered.json',
   {},
