@@ -47,10 +47,28 @@ export const AGENT = {
 } as const;
 
 /** Phrases that mean an organization has stopped, paused, or closed intake. */
-export const CLOSURE_PATTERNS: Array<{ pattern: RegExp; severity: 'closed' | 'paused'; label: string }> = [
+export const CLOSURE_PATTERNS: Array<{ pattern: RegExp; severity: 'closed' | 'paused' | 'review'; label: string }> = [
   { pattern: /\b(we (have|'ve) (now )?closed|permanently closed|has closed its doors|ceased operations|no longer operating|no longer in operation)\b/i, severity: 'closed', label: 'says it has closed' },
   { pattern: /\b(this (organization|organisation|rescue|charity) (has|is) (now )?(closed|dissolved|shut down))\b/i, severity: 'closed', label: 'says it has closed' },
   { pattern: /\b(we are (currently )?(on )?(a )?(hiatus|pause|paused)|on hiatus|operations are paused|temporarily closed|we are taking a break)\b/i, severity: 'paused', label: 'says it is paused' },
-  { pattern: /\b(not (currently )?accepting (new )?(intakes?|surrenders?|animals|applications)|intakes? (are )?(currently )?(closed|paused|suspended)|surrenders? (are )?(currently )?(closed|paused|suspended)|at capacity)\b/i, severity: 'paused', label: 'says it is not accepting intakes' },
+  { pattern: /\b(not (currently )?accepting (new )?(intakes?|surrenders?|animals|applications)|intakes? (are )?(currently )?(closed|paused|suspended)|surrenders? (are )?(currently )?(closed|paused|suspended))\b/i, severity: 'paused', label: 'says it is not accepting intakes' },
+  /*
+   * "At capacity" on its own is not a closure.
+   *
+   * It flagged the city's open-admission shelter as not accepting intakes, on
+   * the strength of "if we are currently at capacity, adopters will be
+   * directed to sign up for a waitlist" — a conditional, on an adoption page,
+   * about visitors rather than intake. ACC cannot refuse intake; telling
+   * someone in a crisis that it had would send them nowhere.
+   *
+   * It also flagged a rescue whose page said "our foster homes are at
+   * capacity", which limits owner surrenders and says nothing about the
+   * organization having paused.
+   *
+   * So it asks a person instead of deciding. The conditional forms are
+   * excluded outright, since they describe what would happen rather than
+   * what is.
+   */
+  { pattern: /(?<!\b(?:if|when|unless|should|whenever)\b[^.!?]{0,40})\bat (?:full )?capacity\b/i, severity: 'review', label: 'mentions being at capacity' },
   { pattern: /\b(domain (is )?for sale|this domain is available|parked domain|buy this domain)\b/i, severity: 'closed', label: 'domain appears to be parked or for sale' },
 ];

@@ -31,6 +31,14 @@ export interface OverlayEntry {
   emails?: Org['emails'];
   website?: string | null;
   /**
+   * Replacement intake links.
+   *
+   * A dead link on a record is the same problem as a dead phone number, and
+   * these are what a reader taps to surrender or adopt. Two of ACC's returned
+   * 404 and there was no way to correct them without editing generated files.
+   */
+  intake_urls?: Org['intake_urls'];
+  /**
    * Replacement prose.
    *
    * Clearing `phones` does not remove a number that the source also wrote into

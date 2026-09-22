@@ -68,8 +68,8 @@
   "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site",
   "type_raw": "Rescue+adoption (all-breed, foster-based)",
   "confidence": "High",
-  "status": "hiatus",
-  "status_note": "Their own site says it is not accepting intakes. Checked 2026-09-21.",
+  "status": "active",
+  "status_note": "They do not take owner surrenders or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. Still adopting out.",
   "source_urls": [
     "https://www.muddypawsrescue.org/contact-us"
   ],
@@ -78,8 +78,8 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
-  "check_status": "needs-review",
+  "last_checked": "2026-09-22",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -90,6 +90,15 @@
       "evidence_url": "https://www.muddypawsrescue.org/adopt",
       "source": "weekly-check",
       "note": "renders or stray pets that were not originally adopted from Muddy Paws, as all our foster homes are at capacity with dogs that we take in from open-intake shelter partners. We recommend reaching out to Animal Care Centers of NYC - they will accept the"
+    },
+    {
+      "date": "2026-09-22",
+      "field": "status",
+      "from": "hiatus",
+      "to": "active",
+      "evidence_url": "https://www.muddypawsrescue.org/adopt",
+      "source": "manual",
+      "note": "Reverted. \"Our foster homes are at capacity\" limits which animals they can take; it does not mean the rescue has paused. The limitation is now written in the status note, where it is useful, rather than shown as a closure."
     }
   ],
   "privacy_hold": false

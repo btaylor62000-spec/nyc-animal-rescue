@@ -331,3 +331,41 @@ test('moving into the city, or within it, is not treated as suspicious', () => {
   assert.equal(leavesTheCity('7186776700', '9174236444'), false, '718 -> 917 stays');
   assert.equal(leavesTheCity('2014387122', '7186776700'), false, 'arriving is fine');
 });
+
+// --- "at capacity" is not a closure ---------------------------------------
+//
+// The 2026-09-21 run flagged the city's open-admission shelter as not
+// accepting intakes, on the strength of "if we are currently at capacity,
+// adopters will be directed to sign up for a waitlist" — a conditional, on an
+// adoption page, about visitors rather than intake. ACC cannot refuse intake;
+// showing it closed would send someone with nowhere else to go nowhere at all.
+
+test('a conditional about capacity is not a closure signal at all', () => {
+  const text =
+    'Adoption process: we ask prospective adopters to have no more than two people in their party. ' +
+    'If we are currently at capacity, adopters will be directed to sign up for a waitlist.';
+  assert.deepEqual(detectClosure(text), [], 'a hypothetical is not a statement');
+});
+
+test('capacity language asks a person rather than closing the record', () => {
+  const text = 'We cannot take owner surrenders, as all our foster homes are at capacity with dogs from open-intake partners.';
+  const signals = detectClosure(text);
+  assert.equal(signals.length, 1);
+  assert.equal(signals[0]?.severity, 'review', 'a full foster network is not a paused organization');
+});
+
+test('a real closure or pause still decides on its own', () => {
+  assert.equal(detectClosure('We have closed our doors after 20 years.')[0]?.severity, 'closed');
+  assert.equal(detectClosure('WUUWR is on hiatus from wildlife rehab.')[0]?.severity, 'paused');
+  assert.equal(detectClosure('We are not currently accepting new intakes.')[0]?.severity, 'paused');
+});
+
+test('a review-level signal produces needs-review, not a status change', () => {
+  const rec = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const html = `<html><body><main><p>Our foster homes are at capacity right now.</p>
+    <p>${'We rehome dogs across the five boroughs and run adoption events. '.repeat(6)}</p>
+    <p>Call (718) 555-0142.</p></main></body></html>`;
+  const d = decide(rec, evidenceFromHtml(rec, html, DATE));
+  assert.equal(d.kind, 'needs-review');
+  if (d.kind === 'needs-review') assert.match(d.reason, /may or may not/i);
+});

@@ -182,11 +182,25 @@ export function decide(org: Org, evidence: Evidence): Decision {
   // Checked before contacts: if they have closed, their phone number being
   // unchanged is not reassuring.
   for (const page of ownPages) {
-    const worst = page.closure.find((c) => c.severity === 'closed') ?? page.closure[0];
+    const worst =
+      page.closure.find((c) => c.severity === 'closed') ??
+      page.closure.find((c) => c.severity === 'paused') ??
+      page.closure[0];
     if (!worst) continue;
+
+    // Softer than a closure: something on the page might mean they have
+    // stopped, and might just as easily not. Those get a person, not a status.
+    if (worst.severity === 'review') {
+      return {
+        kind: 'needs-review',
+        reason: `Their own site ${worst.label}, which may or may not mean they have stopped taking animals: "${worst.quote.slice(0, 180)}"`,
+        evidenceUrl: page.finalUrl,
+      };
+    }
+
     return {
       kind: 'closed',
-      severity: worst.severity,
+      severity: worst.severity as 'closed' | 'paused',
       reason: `Their own site ${worst.label}.`,
       evidenceUrl: page.finalUrl,
       quote: worst.quote,

@@ -88,7 +88,14 @@ export function extractContacts(text: string): PageContacts {
 }
 
 export interface ClosureSignal {
-  severity: 'closed' | 'paused';
+  /**
+   * `review` is a signal that something may have changed without being clear
+   * enough to act on. "At capacity" is the case that forced it: it appears in
+   * conditionals ("if we are currently at capacity, adopters join a waitlist")
+   * and about parts of an organization rather than the whole ("our foster
+   * homes are at capacity"), and neither means it has stopped operating.
+   */
+  severity: 'closed' | 'paused' | 'review';
   label: string;
   /** The sentence it was found in, for the evidence link and the banner. */
   quote: string;

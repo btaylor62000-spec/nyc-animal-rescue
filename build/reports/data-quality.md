@@ -1,13 +1,13 @@
 # Data quality report
 
-Generated 2026-09-21 from the three source workbooks and the wildlife guide.
+Generated 2026-09-22 from the three source workbooks and the wildlife guide.
 
 ## Totals
 
 - **293** organizations after de-duplication
 - **75** duplicate clusters merged
 - **20** guide pages generated
-- **16** entries flagged as not currently active
+- **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **5** personal contact details withheld
 
@@ -92,9 +92,9 @@ Generated 2026-09-21 from the three source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 277 |
+| active | 279 |
 | verify | 8 |
-| hiatus | 5 |
+| hiatus | 3 |
 | retired | 2 |
 | relocated | 1 |
 
@@ -149,13 +149,11 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## Not currently active
 
-- **Animal Care Centers of NYC (ACC) - Guinea Pigs & small animals** — `hiatus`: Their own site says it is not accepting intakes. Checked 2026-09-21.
 - **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Muddy Paws Rescue** — `hiatus`: Their own site says it is not accepting intakes. Checked 2026-09-21.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.

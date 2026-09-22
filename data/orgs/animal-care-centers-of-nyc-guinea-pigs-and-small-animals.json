@@ -44,19 +44,19 @@
     }
   ],
   "emails": [],
-  "website": "https://www.nycacc.org/GuineaPigs",
+  "website": "https://www.nycacc.org",
   "intake_urls": [
     {
-      "url": "https://www.nycacc.org/GuineaPigs",
-      "label": "Small animals"
-    },
-    {
-      "url": "https://nycacc.org/services/surrender-a-pet",
-      "label": "surrender a pet"
+      "url": "https://nycacc.org/services/surrender",
+      "label": "Surrender a pet"
     },
     {
       "url": "https://nycacc.org/adopt",
-      "label": "adopt"
+      "label": "Adopt"
+    },
+    {
+      "url": "https://www.nycacc.org/emergency-placement/",
+      "label": "At-risk foster or adopter pre-screener"
     }
   ],
   "social": [
@@ -71,8 +71,8 @@
   "notes": "NYC's open-admission municipal shelter system; takes in and adopts out guinea pigs, rabbits and other small animals as well as cats and dogs. Rescues can pull at-risk animals through ACC's New Hope program. Also provides wildlife guidance and lost-and-found. Email: (see nycacc.org contact form)",
   "type_raw": "Open-admission municipal shelter",
   "confidence": "High",
-  "status": "hiatus",
-  "status_note": "Their own site says it is not accepting intakes. Checked 2026-09-21.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/GuineaPigs"
   ],
@@ -81,8 +81,8 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-21",
-  "check_status": "needs-review",
+  "last_checked": "2026-09-22",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -93,6 +93,33 @@
       "evidence_url": "https://www.nycacc.org/adoption/process/",
       "source": "weekly-check",
       "note": "g prospective adopters to have no more than two people in their adoption party. If we are currently at capacity, adopters will be directed to sign up for a waitlist. From there, you will be texted when it is your turn to adopt! Adoption counselors an"
+    },
+    {
+      "date": "2026-09-22",
+      "field": "status",
+      "from": "hiatus",
+      "to": "active",
+      "evidence_url": "https://www.nycacc.org/adoption/process/",
+      "source": "manual",
+      "note": "Reverted. The weekly check read \"if we are currently at capacity, adopters will be directed to sign up for a waitlist\" from ACC’s adoption page as a statement that it had stopped taking animals. It is a conditional, it is about visitors rather than intake, and ACC is the city’s open-admission shelter, which cannot refuse intake. Showing it as closed would send someone with nowhere else to go nowhere at all."
+    },
+    {
+      "date": "2026-09-22",
+      "field": "website",
+      "from": "https://www.nycacc.org/GuineaPigs",
+      "to": "https://www.nycacc.org",
+      "evidence_url": "https://www.nycacc.org",
+      "source": "manual",
+      "note": "The old address returns 404."
+    },
+    {
+      "date": "2026-09-22",
+      "field": "intake_urls",
+      "from": "https://www.nycacc.org/GuineaPigs, https://nycacc.org/services/surrender-a-pet",
+      "to": "https://nycacc.org/services/surrender, https://nycacc.org/adopt, https://www.nycacc.org/emergency-placement/",
+      "evidence_url": "https://nycacc.org/services/surrender",
+      "source": "manual",
+      "note": "Both old links returned 404. The surrender page moved to /services/surrender; the small-animal page is gone, so the general adopt and surrender routes replace it."
     }
   ],
   "privacy_hold": false
