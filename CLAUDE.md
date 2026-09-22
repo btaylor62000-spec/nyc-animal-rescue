@@ -17,7 +17,7 @@ production; nothing here is aspirational.
 | Repository | `btaylor62000-spec/nyc-animal-rescue` (public) |
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
-| Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Discovery has run once, 2026-09-17 |
+| Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 
@@ -34,15 +34,19 @@ Two things about the local git setup, because they are not obvious:
 
 Ordered by how much harm it prevents, not by size.
 
-1. **Make the weekly check open a pull request instead of pushing to `main`.**
-   This is the most valuable thing on the list. It has now run once, on
-   2026-09-21, unattended and straight to production, and it made five wrong
-   changes — described under "What the automated run got wrong" below. The
-   guards added since stop that particular class, but the shape of the risk is
-   unchanged: an unattended job writes to a live emergency directory and
-   nobody sees it until a reader does. `.github/workflows/weekly-check.yml`
-   already commits and pushes; opening a PR instead is a small change to that
-   step.
+1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
+   it pushes reader-visible changes (a contact, a status, a confidence level)
+   to the `weekly-check` branch and opens a PR; bookkeeping-only weeks still
+   commit to `main` as the heartbeat. The split is decided by `proposed` in
+   `build/reports/weekly-summary.json`, which the run writes, and there is a
+   test that the change log is written exactly when a reader could see the
+   difference. What has *not* been verified: the repository setting **Allow
+   GitHub Actions to create and approve pull requests** (Settings → Actions →
+   General) must be on, or the PR step fails — the branch is still pushed, so
+   nothing is lost. Turn it on, then run the workflow by hand without dry-run
+   to see it through once. Discovery still pushes straight to `main`; it only
+   adds records labelled unverified and excluded from the assistant, and item
+   2 decides whether those should be published at all.
 
 2. **Decide what happens to the 160 discovery candidates.** They sit in
    `data/discovered.json` and are not in `data/orgs/`, so every `npm run

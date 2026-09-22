@@ -163,11 +163,14 @@ misnamed.
 
 ## 4. Switch on the weekly checks
 
-Nothing to configure. The workflows use the token GitHub provides
-automatically.
+The workflows use the token GitHub provides automatically, but one repository
+setting has to be on or the weekly check cannot open its pull request.
 
-1. Repository → **Actions** tab → enable workflows if prompted.
-2. Open **Weekly data check** → **Run workflow** → tick **dry run** → run it.
+1. Repository → **Settings** → **Actions** → **General** → **Workflow
+   permissions** → tick **Allow GitHub Actions to create and approve pull
+   requests** → Save.
+2. Repository → **Actions** tab → enable workflows if prompted.
+3. Open **Weekly data check** → **Run workflow** → tick **dry run** → run it.
 
 **Check it worked:** the run finishes green and the log ends with something
 like `250 unchanged (180 re-verified), 2 updated, 9 flagged`. Nothing was
@@ -176,9 +179,23 @@ committed, because it was a dry run.
 Then let it run for real on its own on Monday morning, or run it again without
 the dry-run tick.
 
-> GitHub switches off scheduled workflows in repositories that have had no
-> activity for 60 days. This one commits its report every week, which keeps it
-> awake. If you ever see the schedule disabled, one manual run re-enables it.
+**What a real run does with what it finds:**
+
+- **Only bookkeeping changed** (check dates, failure counts, items flagged for
+  the issue): it commits to `main` directly. Nothing a reader sees is
+  different, and the weekly commit is what keeps the schedule alive — GitHub
+  switches off scheduled workflows in repositories with no activity for 60
+  days. If you ever see the schedule disabled, one manual run re-enables it.
+- **A contact, a status or a confidence level changed:** it pushes to the
+  `weekly-check` branch and opens a pull request, or rewrites last week's if
+  it is still open. **Nothing reaches the live site until someone merges it.**
+  Cloudflare Pages builds a preview of the branch; open it and look at each
+  changed listing as a reader would before merging. If the proposal is wrong,
+  close it — next Monday's run replaces the branch and re-checks from `main`.
+
+The pull request exists because the first unattended run pushed a wrong number
+onto a 24-hour emergency listing. The rules are tighter now, but a person is
+the last line.
 
 ---
 
@@ -236,6 +253,12 @@ checker broke rather than the world changing. Nothing was applied. Read
 **A build fails after a weekly commit.** The data no longer validates. Run
 `npm run import` locally to see the error, then remove the offending entry from
 `data/agent-overlay.json` and re-run.
+
+**The weekly check fails at "Open or update the pull request".** The
+repository setting in step 4 is off: Settings → Actions → General → Workflow
+permissions → "Allow GitHub Actions to create and approve pull requests". The
+changes are safe on the `weekly-check` branch; open the pull request by hand
+this once, then switch the setting on.
 
 **Report links point at the wrong repository.** `GITHUB_REPO` in
 `src/data/site.ts` has not been updated, or the deployment predates the change.

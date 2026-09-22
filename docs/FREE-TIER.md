@@ -19,7 +19,7 @@ look" column is the thing to trust.
 | | |
 | --- | --- |
 | **Free allowance** | Unlimited requests and bandwidth. 500 builds a month. 20,000 files per site, 25 MiB per file. |
-| **What we use** | About 320 files. Roughly 5–8 builds a month: one per weekly check, one for the monthly discovery, plus whatever you push. |
+| **What we use** | About 320 files. Roughly 5–10 builds a month: one per weekly check, a preview build for any week that opens a pull request, one for the monthly discovery, plus whatever you push. |
 | **When it runs out** | Builds stop until the next month. The site stays up and keeps serving — an exhausted build allowance freezes the site, it does not take it down. |
 | **Where to look** | Workers & Pages → your project → Deployments. |
 
@@ -67,8 +67,9 @@ Not a realistic concern at this scale.
 
 The real risk here is not cost. **GitHub disables scheduled workflows in
 repositories with no activity for 60 days.** The weekly check commits its
-report every week specifically to prevent that. If you ever find the schedule
-switched off, one manual run turns it back on.
+report and bookkeeping every week specifically to prevent that; anything a
+reader could see goes to a pull request instead, which is also a push. If you
+ever find the schedule switched off, one manual run turns it back on.
 
 ### GitHub Issues — problem reports
 

@@ -369,3 +369,29 @@ test('a review-level signal produces needs-review, not a status change', () => {
   assert.equal(d.kind, 'needs-review');
   if (d.kind === 'needs-review') assert.match(d.reason, /may or may not/i);
 });
+
+// The workflow commits bookkeeping straight to main and sends anything else
+// to a pull request, using "did the patch carry a change-log entry" as the
+// test. That only works if the log is written exactly when a reader could see
+// the difference, so pin that down.
+test('bookkeeping patches carry no change log, reader-visible ones always do', () => {
+  const record = org({ phones: [{ value: '2125551234', display: '(212) 555-1234' }], consecutive_failures: 0 });
+  const quiet = [
+    { kind: 'skipped', reason: 'no website' },
+    { kind: 'ok', verified: true },
+    { kind: 'needs-review', reason: 'two candidates' },
+    { kind: 'unreachable', failures: 1, flagged: false },
+  ] as const;
+  for (const decision of quiet) {
+    assert.equal(toPatch(record, decision as never, DATE).log.length, 0, decision.kind);
+  }
+
+  const visible = [
+    { kind: 'apply', changes: [{ field: 'phones', from: '2125551234', to: '2125556789', evidenceUrl: 'https://x.org' }] },
+    { kind: 'closed', severity: 'closed', reason: 'closed', quote: 'we have closed', evidenceUrl: 'https://x.org' },
+    { kind: 'unreachable', failures: 3, flagged: true },
+  ] as const;
+  for (const decision of visible) {
+    assert.ok(toPatch(record, decision as never, DATE).log.length > 0, decision.kind);
+  }
+});

@@ -1,12 +1,18 @@
 # Weekly contact check.
 #
 # Free for public repositories. Fetches each organization's own pages, applies
-# the rules in scripts/agent/rules.ts, and commits what it learned. The commit
-# triggers a Cloudflare Pages rebuild, so a corrected phone number is live
-# within a few minutes without anyone doing anything.
+# the rules in scripts/agent/rules.ts, and opens a pull request with what it
+# learned. Nothing reaches the live site until a person merges it.
 #
-# It is built to be ignorable: the site keeps working whether or not anyone
-# reads the issue it opens.
+# It used to push straight to main. The first unattended run, on 2026-09-21,
+# put a wrong phone number on a 24-hour emergency listing for seven hours
+# before anyone saw it. The rules have been tightened since, but the shape of
+# the risk has not changed: an unattended job writing to a live emergency
+# directory. So the job now writes to a branch, and a human decides.
+#
+# Weeks with nothing to change still commit their report to main. That is
+# deliberate: it is a visible heartbeat, and it is what keeps GitHub from
+# switching the schedule off for inactivity.
 name: Weekly data check
 
 on:
@@ -34,6 +40,12 @@ concurrency:
 permissions:
   contents: write
   issues: write
+  pull-requests: write
+
+# Every data-changing run lands on this one branch, replaced each week, so
+# there is only ever one pull request to look at.
+env:
+  PROPOSAL_BRANCH: weekly-check
 
 jobs:
   check:
@@ -70,26 +82,97 @@ jobs:
         run: npm run import
 
       - name: Commit what changed
+        id: commit
         if: steps.check.outcome == 'success' && inputs.dry_run != true
         run: |
           git config user.name "nyc-animal-rescue-bot"
           git config user.email "noreply@users.noreply.github.com"
 
-          # The report is committed every week even when nothing changed.
-          # Two reasons: it is a visible heartbeat showing the check really ran,
-          # and GitHub disables scheduled workflows after 60 days without
-          # repository activity — a quiet directory would eventually switch its
-          # own maintenance off.
           git add data content build/reports/weekly-check.md
           if git diff --cached --quiet; then
             echo "Nothing to commit."
+            echo "outcome=nothing" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit --file build/reports/weekly-commit-message.txt
 
-          # Someone may have pushed while the check was running.
-          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # Bookkeeping only — check dates, failure counts, a flag for the
+          # issue — nothing a reader could act on. That goes to main directly.
+          # Committing every week is a visible heartbeat, and GitHub disables
+          # scheduled workflows after 60 days without repository activity — a
+          # quiet directory would eventually switch its own maintenance off.
+          proposed=$(jq -r '.proposed' build/reports/weekly-summary.json)
+          if [ "$proposed" = "0" ]; then
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+            echo "outcome=bookkeeping" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # A contact, a status or a confidence level changed. It goes to a branch and a
+          # pull request, never to main. The branch is replaced each week, so
+          # an unmerged proposal is superseded rather than piled on: the next
+          # run re-checks everything from what is actually on main.
+          git push --force origin "HEAD:refs/heads/${PROPOSAL_BRANCH}"
+          echo "outcome=proposed" >> "$GITHUB_OUTPUT"
+
+      # Open the pull request, or rewrite last week's if nobody dealt with it.
+      # Cloudflare Pages builds a preview of the branch, so the changes can be
+      # looked at on a real page before they reach anyone in a hurry.
+      - name: Open or update the pull request
+        if: steps.commit.outputs.outcome == 'proposed'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const { owner, repo } = context.repo;
+            const head = process.env.PROPOSAL_BRANCH;
+            const base = process.env.GITHUB_REF_NAME;
+
+            const message = fs.readFileSync('build/reports/weekly-commit-message.txt', 'utf8');
+            const title = message.split('\n')[0];
+
+            let report;
+            try {
+              report = fs.readFileSync('build/reports/weekly-check.md', 'utf8');
+            } catch {
+              report = 'The check did not produce a report. Look at the workflow logs.';
+            }
+
+            let body = [
+              'Proposed by the weekly check. **Nothing here is live until this is merged.**',
+              '',
+              'Before merging, open the preview deployment and look at each changed listing as a reader would.',
+              'The first unattended run put a wrong number on an emergency listing because the page it cited',
+              'renders its numbers in the browser; a fetched page is not always the page a person sees.',
+              '',
+              `If this is wrong, close it: the branch is replaced by next week's run, which re-checks from \`${base}\`.`,
+              '',
+              '---',
+              '',
+              report,
+            ].join('\n');
+            if (body.length > 60000) body = body.slice(0, 60000) + '\n\n…truncated. See build/reports/weekly-check.md on the branch.';
+
+            const open = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${head}`, base, per_page: 5 });
+            if (open.data.length) {
+              const pr = open.data[0];
+              await github.rest.pulls.update({ owner, repo, pull_number: pr.number, title, body });
+              core.notice(`Updated pull request #${pr.number}: ${pr.html_url}`);
+              return;
+            }
+
+            try {
+              const pr = await github.rest.pulls.create({ owner, repo, head, base, title, body });
+              core.notice(`Opened pull request #${pr.data.number}: ${pr.data.html_url}`);
+            } catch (err) {
+              // The branch is pushed either way, so nothing is lost. The usual
+              // cause is the repository setting that stops Actions creating
+              // pull requests: Settings → Actions → General → Workflow
+              // permissions → "Allow GitHub Actions to create and approve pull
+              // requests". See docs/DEPLOY.md.
+              core.setFailed(`Could not open a pull request from ${head}: ${err.message}. The changes are on the branch; open one by hand.`);
+            }
 
       # One issue, reopened and rewritten each week, rather than a new one
       # every Monday. Anything the checker would not decide on its own is in

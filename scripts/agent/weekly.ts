@@ -24,6 +24,9 @@ import { commitMessage, writeReport, type RunSummary } from './report.ts';
 const ORGS_DIR = 'data/orgs';
 const REPORT_PATH = 'build/reports/weekly-check.md';
 const COMMIT_MESSAGE_PATH = 'build/reports/weekly-commit-message.txt';
+// Read by the workflow to decide whether the run may commit to main
+// (bookkeeping only) or must open a pull request (a reader could see it).
+const SUMMARY_PATH = 'build/reports/weekly-summary.json';
 
 function loadOrgs(): Org[] {
   return readdirSync(ORGS_DIR)
@@ -147,6 +150,7 @@ async function main(): Promise<void> {
     unreachable: 0,
     closed: 0,
     skipped: 0,
+    proposed: 0,
     flags: [],
     changes: [],
     safetyValveTripped: false,
@@ -195,6 +199,9 @@ async function main(): Promise<void> {
     }
 
     if (flag) summary.flags.push({ id: org.id, name: org.name, text: flag });
+    // A change-log entry is written exactly when a field a reader can see
+    // changes, so it is the honest test of "does a person need to look".
+    if (log.length) summary.proposed++;
     patches.set(org.id, { ...(patch as OverlayEntry), ...(log.length ? { change_log: log } : {}) });
   }
 
@@ -213,6 +220,7 @@ async function main(): Promise<void> {
       patches.set(id, { last_checked: patch.last_checked });
     }
     summary.changes = summary.changes.slice(0, 50);
+    summary.proposed = 0;
   }
 
   mkdirSync('build/reports', { recursive: true });
@@ -221,6 +229,8 @@ async function main(): Promise<void> {
   // in hand, and a commit message built out of shell quoting is a bug waiting
   // to happen.
   writeFileSync(COMMIT_MESSAGE_PATH, `${commitMessage(summary)}\n`, 'utf8');
+  const { flags: _flags, changes: _changes, ...counts } = summary;
+  writeFileSync(SUMMARY_PATH, `${JSON.stringify(counts, null, 2)}\n`, 'utf8');
 
   if (!dryRun) {
     const overlay = loadOverlay();

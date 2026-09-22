@@ -15,6 +15,13 @@ export interface RunSummary {
   unreachable: number;
   closed: number;
   skipped: number;
+  /**
+   * Records whose patch changes something a reader can see: a contact, a
+   * status, or a confidence level. Bookkeeping (check dates, failure counts,
+   * a needs-review flag) does not count. The workflow uses this to decide
+   * whether the run goes to main or to a pull request.
+   */
+  proposed: number;
   flags: Array<{ id: string; name: string; text: string }>;
   changes: Array<{ org: string; id: string; field: string; from: string | null; to: string | null; evidenceUrl: string }>;
   safetyValveTripped: boolean;
@@ -104,11 +111,15 @@ export function commitMessage(s: RunSummary): string {
   if (s.needsReview) bits.push(`${s.needsReview} flagged`);
   if (s.verified) bits.push(`${s.verified} re-verified`);
   const headline = bits.length ? bits.join(', ') : 'no changes';
+  const proposal = s.proposed
+    ? `Proposes ${s.proposed} change(s) a reader would see; nothing is live until this is merged.`
+    : '';
 
   return [
     `Weekly data check ${s.date}: ${headline}`,
     '',
     `Checked ${s.total} organizations against their own websites.`,
+    proposal,
     s.changed
       ? `Applied ${s.changed} contact change(s), each with the old value gone and exactly one replacement on the organization's own site.`
       : 'No contact details met the bar for an automatic change.',
