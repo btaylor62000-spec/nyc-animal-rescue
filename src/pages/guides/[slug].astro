@@ -36,6 +36,10 @@ const isUrgent = URGENT.has(guide.slug);
 
     <article class="guide-body" set:html={html} />
 
+    {guide.byline && (
+      <p class="muted" style="margin-top:1.5rem;font-size:.95rem">Written by {guide.byline}.</p>
+    )}
+
     <p class="notice" style="margin-top:2rem">
       <Icon name="alert" size={17} />
       <span>

@@ -25,6 +25,12 @@ export interface GuidePage {
   source: string;
   /** Privacy holds that fired while building this page. */
   redactions: string[];
+  /**
+   * Who wrote the words. Only for a guide written in the first person by a
+   * named person, which the wildlife document is; the workbook tabs are
+   * compiled research and carry none.
+   */
+  byline?: string;
 }
 
 interface TabSpec {
@@ -264,6 +270,13 @@ function looksLikeHeading(text: string): boolean {
   return t.endsWith('?') || /[-–:]$/.test(t) || !/[.!]$/.test(t);
 }
 
+/**
+ * The wildlife document is one volunteer's own writing, in the first person,
+ * and the page should say whose. Set to null until the author has given a
+ * name to publish; the page then shows nothing rather than a guess.
+ */
+export const WILDLIFE_GUIDE_BYLINE: string | null = null;
+
 /*
  * Edits to the wildlife document's prose, applied as it is read.
  *
@@ -425,6 +438,7 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
     markdown: lines.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n',
     source: path,
     redactions: [...redactions],
+    ...(WILDLIFE_GUIDE_BYLINE ? { byline: WILDLIFE_GUIDE_BYLINE } : {}),
   };
 }
 
@@ -441,6 +455,7 @@ export function writeGuidePages(pages: GuidePage[], dir = 'content/guides'): voi
       `summary: ${JSON.stringify(page.summary)}`,
       `topics: ${JSON.stringify(page.topics)}`,
       `source: ${JSON.stringify(page.source)}`,
+      ...(page.byline ? [`byline: ${JSON.stringify(page.byline)}`] : []),
       '---',
       '',
     ].join('\n');

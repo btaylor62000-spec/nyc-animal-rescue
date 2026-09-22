@@ -14,6 +14,8 @@ export interface Guide {
   summary: string;
   topics: string[];
   source: string;
+  /** The named author, for a guide written in the first person. */
+  byline: string | null;
   body: string;
 }
 
@@ -46,6 +48,7 @@ function load(): Guide[] {
         summary: (data.summary as string) ?? '',
         topics: (data.topics as string[]) ?? [],
         source: (data.source as string) ?? '',
+        byline: typeof data.byline === 'string' && data.byline ? data.byline : null,
         body,
       };
     })
