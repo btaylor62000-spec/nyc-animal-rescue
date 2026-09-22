@@ -36,8 +36,9 @@ Two things about the local git setup, because they are not obvious:
 Ordered by how much harm it prevents, not by size.
 
 1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
-   it pushes reader-visible changes (a contact, a status, a confidence level)
-   to the `weekly-check` branch and opens a PR; bookkeeping-only weeks still
+   the check verifies and flags only; the one reader-visible change it can
+   still make (a `verify` status after three dead weeks, and lifting it) goes
+   to the `weekly-check` branch as a PR; bookkeeping-only weeks still
    commit to `main` as the heartbeat. The split is decided by `proposed` in
    `build/reports/weekly-summary.json`, which the run writes, and there is a
    test that the change log is written exactly when a reader could see the
@@ -106,11 +107,11 @@ A reviewer caught the damage. Worth reading before trusting a future run.
 - **A rescue was marked on hiatus** for saying its foster homes were at
   capacity, which limits what it can take and says nothing about it stopping.
 
-The guards in `scripts/agent/rules.ts` now stop each of these: emergency
-listings are never rewritten unattended, a replacement that leaves the city's
-area codes is flagged, template placeholders are rejected, and "at capacity" on
-its own asks a person instead of deciding. Two of the eight changes that run
-made were correct and were kept.
+The guards added in `scripts/agent/rules.ts` afterwards stopped each of these,
+and on 2026-09-22 the decision was made to go further: the check no longer
+rewrites anything. Every changed contact and every closure sentence is a flag
+with the evidence attached. Two of the eight changes that run made were correct
+and were kept.
 
 ### Discovery finds mostly out-of-city organizations
 
@@ -188,26 +189,29 @@ If you add a new way for the assistant to produce text, it goes through the
 redactor. There is a test that feeds a fake number split across five chunks and
 asserts nothing leaks.
 
-### 2. Automation never deletes, and never *changes* a contact on a guess
+### 2. Automation never deletes, and never *changes* a contact or a status
 
 `scripts/agent/rules.ts` is pure — no network, no clock, no file access. That
 is what makes it testable, and being testable is what makes it safe to let it
-edit an emergency directory unattended.
+run against an emergency directory unattended.
 
-It may **change** an existing contact only when the old value has gone from the
-organization's own domain **and** exactly one replacement is there. Two
-candidates is `needs-review`. Anything ambiguous is `needs-review`. Three
-consecutive unreachable weeks flags the record, downgrades confidence
-**once** — not every week after — and sets `status` to `verify`, because a
-`status_note` is only rendered on a record that is not active and the caveat
-used to be written where nobody saw it. The status is lifted again when the
-site answers, and only when it was this code that set it (recognised by the
-exact note text), so a `verify` or `hiatus` from the source research is never
-overwritten. If a run would change more than 15% of the
-directory it applies nothing and reports itself broken.
+It **verifies and flags. It does not edit.** Its first unattended run, on
+2026-09-21, could still rewrite a contact when the old one had gone from the
+organization's own site and exactly one replacement was there; it met that
+rule five times and was wrong four of them. It is good at noticing that
+something changed and bad at deciding what the change means, so as of
+2026-09-22 a changed number, a changed email, or closure wording on a page all
+become a flag that names what was found and the page it was found on, and a
+person decides. The one status it may set on its own is `verify` after three
+consecutive unreachable weeks — a statement of ignorance, not a conclusion —
+and it lifts that again when the site answers, only when it was this code
+that set it (recognised by the exact note text). Confidence is downgraded
+**once** at that point, not every week after. If a run would flag more than
+15% of the directory it records nothing but the check date and reports itself
+broken.
 
-Add a decision path and you add a test for it, including that it cannot produce
-a deletion.
+Add a decision path and you add a test for it, including that it cannot change
+a contact and cannot produce a deletion.
 
 **Filling an empty record is a different question, and the answer is yes.**
 This used to be forbidden too, and the cost was hidden: an organization found

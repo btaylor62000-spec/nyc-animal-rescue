@@ -186,7 +186,8 @@ the dry-run tick.
   different, and the weekly commit is what keeps the schedule alive — GitHub
   switches off scheduled workflows in repositories with no activity for 60
   days. If you ever see the schedule disabled, one manual run re-enables it.
-- **A contact, a status or a confidence level changed:** it pushes to the
+- **A status or confidence level changed** (the check never changes a
+  contact; it flags what it found for a person): it pushes to the
   `weekly-check` branch and opens a pull request, or rewrites last week's if
   it is still open. **Nothing reaches the live site until someone merges it.**
   Cloudflare Pages builds a preview of the branch; open it and look at each
@@ -246,9 +247,9 @@ is hammering it — check that Turnstile is configured, since without
 `TURNSTILE_SECRET_KEY` the endpoint skips verification entirely.
 
 **The weekly check fails with "the safety valve tripped".** Working as
-intended: it wanted to change more than 15% of the directory, which means the
-checker broke rather than the world changing. Nothing was applied. Read
-`build/reports/weekly-check.md` to see what it wanted to do.
+intended: it flagged more than 15% of the directory, which means the checker
+broke rather than the world changing. Nothing but the check date was written.
+Read `build/reports/weekly-check.md` to see what it saw.
 
 **A build fails after a weekly commit.** The data no longer validates. Run
 `npm run import` locally to see the error, then remove the offending entry from

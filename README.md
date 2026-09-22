@@ -110,10 +110,10 @@ Two files sit alongside the records and are applied by the import:
 These are not style preferences. Each exists because breaking it would hurt
 someone holding an injured animal.
 
-**A wrong contact is worse than a stale one.** The weekly check changes a phone
-number only when the old one has gone from the organization's own site *and*
-exactly one replacement is there. Two candidates is a question, and questions
-go to a person. Nothing is ever deleted automatically.
+**A wrong contact is worse than a stale one.** The weekly check never changes a
+contact. It confirms the ones stored against the organization's own site, and
+when it cannot, it says what it found and where, and a person decides. Nothing
+is ever deleted automatically.
 
 **The assistant cannot invent a contact.** Organizations are chosen by
 retrieval, not by the model, and reach the reader as cards built from the real

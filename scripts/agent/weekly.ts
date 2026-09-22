@@ -17,7 +17,7 @@ import type { Org } from '../../src/types.ts';
 import { AGENT } from './config.ts';
 import { fetchPage, sameSite } from './fetch.ts';
 import { detectClosure, extractContacts, htmlToText } from './extract.ts';
-import { decide, toPatch, tooManyChanges, type Decision, type Evidence, type PageEvidence } from './rules.ts';
+import { decide, toPatch, tooManyFlags, type Decision, type Evidence, type PageEvidence } from './rules.ts';
 import { loadOverlay, saveOverlay, type OverlayEntry } from './overlay.ts';
 import { commitMessage, writeReport, type RunSummary } from './report.ts';
 
@@ -145,14 +145,11 @@ async function main(): Promise<void> {
     total: orgs.length,
     ok: 0,
     verified: 0,
-    changed: 0,
     needsReview: 0,
     unreachable: 0,
-    closed: 0,
     skipped: 0,
     proposed: 0,
     flags: [],
-    changes: [],
     safetyValveTripped: false,
   };
 
@@ -169,29 +166,12 @@ async function main(): Promise<void> {
         summary.ok++;
         if (decision.verified) summary.verified++;
         break;
-      case 'apply':
-        summary.changed++;
-        summary.changes.push(
-          ...decision.changes.map((c) => ({
-            org: org.name,
-            id: org.id,
-            field: c.field,
-            from: c.from,
-            to: c.to,
-            evidenceUrl: c.evidenceUrl,
-          })),
-        );
-        break;
       case 'needs-review':
         summary.needsReview++;
         break;
       case 'unreachable':
         summary.unreachable++;
         if (decision.flagged) summary.needsReview++;
-        break;
-      case 'closed':
-        summary.closed++;
-        summary.needsReview++;
         break;
       case 'skipped':
         summary.skipped++;
@@ -206,20 +186,19 @@ async function main(): Promise<void> {
   }
 
   // --- the safety valve ---------------------------------------------------
-  // A run that wants to rewrite a big share of the directory has broken. Keep
-  // the report, discard the edits.
-  if (tooManyChanges(summary.changed, orgs.length)) {
+  // A run that flags a big share of the directory has broken. Keep the
+  // report, write nothing but the check dates.
+  if (tooManyFlags(summary.needsReview, orgs.length)) {
     summary.safetyValveTripped = true;
     console.error(
-      `\nSTOPPING: this run wanted to change ${summary.changed} of ${orgs.length} records ` +
+      `\nSTOPPING: this run flagged ${summary.needsReview} of ${orgs.length} records ` +
         `(over ${Math.round(AGENT.maxChangeShare * 100)}%). That almost always means the checker is broken, ` +
-        'not that the directory changed. No edits have been written; the report explains what it wanted to do.',
+        'not that the directory changed. Nothing but the check date has been written; the report lists what it saw.',
     );
     for (const [id, patch] of patches) {
       // Keep only the harmless bookkeeping.
       patches.set(id, { last_checked: patch.last_checked });
     }
-    summary.changes = summary.changes.slice(0, 50);
     summary.proposed = 0;
   }
 
@@ -229,7 +208,7 @@ async function main(): Promise<void> {
   // in hand, and a commit message built out of shell quoting is a bug waiting
   // to happen.
   writeFileSync(COMMIT_MESSAGE_PATH, `${commitMessage(summary)}\n`, 'utf8');
-  const { flags: _flags, changes: _changes, ...counts } = summary;
+  const { flags: _flags, ...counts } = summary;
   writeFileSync(SUMMARY_PATH, `${JSON.stringify(counts, null, 2)}\n`, 'utf8');
 
   if (!dryRun) {
@@ -249,9 +228,8 @@ async function main(): Promise<void> {
   }
 
   console.log(
-    `\n${summary.ok} unchanged (${summary.verified} re-verified), ${summary.changed} updated, ` +
-      `${summary.needsReview} flagged, ${summary.unreachable} unreachable, ${summary.closed} closed or paused, ` +
-      `${summary.skipped} not checkable`,
+    `\n${summary.ok} unchanged (${summary.verified} re-verified), ` +
+      `${summary.needsReview} flagged, ${summary.unreachable} unreachable, ${summary.skipped} not checkable`,
   );
   console.log(`Report: ${REPORT_PATH}`);
 

@@ -1,8 +1,10 @@
 # Weekly contact check.
 #
-# Free for public repositories. Fetches each organization's own pages, applies
-# the rules in scripts/agent/rules.ts, and opens a pull request with what it
-# learned. Nothing reaches the live site until a person merges it.
+# Free for public repositories. Fetches each organization's own pages and
+# confirms the stored contacts are still there. It never changes a contact:
+# anything it cannot confirm is flagged, with the page it looked at, in the
+# issue below. The one thing it may change on its own is a status after weeks
+# of a dead website, and that goes to a pull request, not to the live site.
 #
 # It used to push straight to main. The first unattended run, on 2026-09-21,
 # put a wrong phone number on a 24-hour emergency listing for seven hours

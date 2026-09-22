@@ -38,26 +38,28 @@ export interface Evidence {
   pages: PageEvidence[];
 }
 
+/*
+ * There is deliberately no "apply" decision. The check used to rewrite a
+ * contact when the old one had gone from the organization's own site and
+ * exactly one replacement was there. Its first unattended run satisfied that
+ * rule five times and was wrong four of them: numbers rendered by the
+ * browser and so absent from a plain fetch, a template placeholder hidden in
+ * the markup, a conditional sentence read as a closure. What it is good at is
+ * noticing that something changed. What it is bad at is deciding what the
+ * change means. So it reports what it saw, with the page it saw it on, and a
+ * person decides. The one status it may set on its own is "needs confirming"
+ * after weeks of a dead website, which is a statement of ignorance, not a
+ * conclusion.
+ */
 export type Decision =
   /** Nothing to do. `verified` means the stored contacts were seen on their own site. */
   | { kind: 'ok'; verified: boolean }
-  /** A contact detail changed, with evidence good enough to apply it. */
-  | { kind: 'apply'; changes: FieldChange[] }
   /** Something a person should look at. Never applied automatically. */
   | { kind: 'needs-review'; reason: string; evidenceUrl?: string; quote?: string }
   /** The site could not be reached. */
   | { kind: 'unreachable'; failures: number; flagged: boolean }
-  /** The organization says it has closed or paused. */
-  | { kind: 'closed'; severity: 'closed' | 'paused'; reason: string; evidenceUrl: string; quote: string }
   /** Not checkable by machine. */
   | { kind: 'skipped'; reason: string };
-
-export interface FieldChange {
-  field: 'phones' | 'emails' | 'website';
-  from: string | null;
-  to: string | null;
-  evidenceUrl: string;
-}
 
 // --- guards on replacing a contact -----------------------------------------
 //
@@ -198,10 +200,12 @@ export function decide(org: Org, evidence: Evidence): Decision {
       };
     }
 
+    // Even a plain "we have closed" is reported rather than acted on: the
+    // sentence that read as a pause on the first run was about foster homes
+    // being full, on a rescue that was still adopting out.
     return {
-      kind: 'closed',
-      severity: worst.severity as 'closed' | 'paused',
-      reason: `Their own site ${worst.label}.`,
+      kind: 'needs-review',
+      reason: `Their own site ${worst.label}. If that is right, set the status by hand: "${worst.quote.slice(0, 180)}"`,
       evidenceUrl: page.finalUrl,
       quote: worst.quote,
     };
@@ -239,7 +243,6 @@ export function decide(org: Org, evidence: Evidence): Decision {
   const allPhonesGone = storedPhones.length > 0 && phonesStillThere.length === 0;
   const allEmailsGone = storedEmails.length > 0 && emailsStillThere.length === 0;
 
-  const changes: FieldChange[] = [];
   const evidenceUrl = ownPages[0]!.finalUrl;
 
   // Not finding a contact is weak evidence on its own.
@@ -292,7 +295,13 @@ export function decide(org: Org, evidence: Evidence): Decision {
         };
       }
 
-      changes.push({ field: 'phones', from: storedPhones.join(', '), to: replacement, evidenceUrl });
+      return {
+        kind: 'needs-review',
+        reason:
+          `The recorded phone number is no longer on their site and ${formatPhone(replacement)} is there instead. ` +
+          'Confirm it on the page and update the record by hand.',
+        evidenceUrl,
+      };
     } else {
       return {
         kind: 'needs-review',
@@ -314,7 +323,13 @@ export function decide(org: Org, evidence: Evidence): Decision {
           evidenceUrl,
         };
       }
-      changes.push({ field: 'emails', from: storedEmails.join(', '), to: candidates[0]!, evidenceUrl });
+      return {
+        kind: 'needs-review',
+        reason:
+          `The recorded email is no longer on their site and ${candidates[0]!} is there instead. ` +
+          'Confirm it on the page and update the record by hand.',
+        evidenceUrl,
+      };
     } else {
       return {
         kind: 'needs-review',
@@ -323,8 +338,6 @@ export function decide(org: Org, evidence: Evidence): Decision {
       };
     }
   }
-
-  if (changes.length) return { kind: 'apply', changes };
 
   // Verified means we saw what we already had, on their own site, today.
   // When we did not, the record simply does not get its date refreshed, and
@@ -400,35 +413,6 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
       return { patch, log };
     }
 
-    case 'apply': {
-      const log: ChangeLogEntry[] = decision.changes.map((c) => ({
-        date,
-        field: c.field,
-        from: c.from,
-        to: c.to,
-        evidence_url: c.evidenceUrl,
-        source: 'weekly-check',
-        note: 'The previous value was no longer on their site and exactly one replacement was found there.',
-      }));
-
-      const patch: Record<string, unknown> = { ...base, check_status: 'changed', consecutive_failures: 0, last_verified: date };
-      for (const c of decision.changes) {
-        if (c.field === 'phones' && c.to) {
-          const digits = c.to;
-          patch.phones = [
-            { value: digits, display: `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}` },
-          ];
-        }
-        if (c.field === 'emails' && c.to) patch.emails = [{ value: c.to }];
-        if (c.field === 'website') patch.website = c.to;
-      }
-      return {
-        patch,
-        log,
-        flag: `${org.name}: ${decision.changes.map((c) => `${c.field} ${c.from} → ${c.to}`).join('; ')}`,
-      };
-    }
-
     case 'unreachable': {
       const patch: Record<string, unknown> = {
         ...base,
@@ -478,29 +462,6 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
       };
     }
 
-    case 'closed':
-      return {
-        patch: {
-          ...base,
-          check_status: 'needs-review',
-          consecutive_failures: 0,
-          status: decision.severity === 'closed' ? 'retired' : 'hiatus',
-          status_note: `${decision.reason} Checked ${date}.`,
-        },
-        log: [
-          {
-            date,
-            field: 'status',
-            from: org.status,
-            to: decision.severity === 'closed' ? 'retired' : 'hiatus',
-            evidence_url: decision.evidenceUrl,
-            source: 'weekly-check',
-            note: decision.quote.slice(0, 300),
-          },
-        ],
-        flag: `${org.name}: ${decision.reason} (${decision.evidenceUrl})`,
-      };
-
     case 'needs-review':
       return {
         patch: {
@@ -517,11 +478,12 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
 /**
  * The safety valve.
  *
- * If a run wants to change an implausible share of the directory, the checker
- * has broken -- a parser regression, a captive-portal network, a CDN serving
- * one error page for every request. Report, change nothing.
+ * If a run flags an implausible share of the directory, the checker has
+ * broken -- a parser regression, a captive-portal network, a CDN serving one
+ * error page for every request -- and its flags are noise that would bury the
+ * real ones. Report, write nothing but the check date.
  */
-export function tooManyChanges(changeCount: number, total: number): boolean {
+export function tooManyFlags(flagCount: number, total: number): boolean {
   if (total === 0) return false;
-  return changeCount / total > AGENT.maxChangeShare;
+  return flagCount / total > AGENT.maxChangeShare;
 }

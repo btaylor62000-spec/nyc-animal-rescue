@@ -6,7 +6,7 @@ import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
 import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
 import { parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { UNREACHABLE_NOTE, decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyChanges } from '../scripts/agent/rules.ts';
+import { UNREACHABLE_NOTE, decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -110,16 +110,19 @@ test('an unchanged page verifies the record', () => {
   assert.equal(patch.check_status, 'ok');
 });
 
-test('a single replacement number is applied, with evidence', () => {
+test('a single replacement number is reported with the page it was seen on, never applied', () => {
   const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
   const decision = decide(record, evidenceFromHtml(record, fixture('changed-phone.html'), DATE));
-  assert.equal(decision.kind, 'apply');
+  assert.equal(decision.kind, 'needs-review');
+  if (decision.kind === 'needs-review') {
+    assert.match(decision.reason, /555-0999/, 'the person must be told what was found');
+    assert.ok(decision.evidenceUrl, 'and where');
+  }
 
   const { patch, log } = toPatch(record, decision, DATE);
-  assert.deepEqual(patch.phones, [{ value: '7185550999', display: '(718) 555-0999' }]);
-  assert.equal(log[0]?.from, '7185550142');
-  assert.equal(log[0]?.to, '7185550999');
-  assert.ok(log[0]?.evidence_url, 'a change must record where it was seen');
+  assert.equal(patch.phones, undefined, 'the stored number is untouched');
+  assert.equal(log.length, 0);
+  assert.equal(patch.check_status, 'needs-review');
 });
 
 test('two candidate numbers are a question for a person, not a change', () => {
@@ -132,24 +135,27 @@ test('two candidate numbers are a question for a person, not a change', () => {
   assert.equal(patch.check_status, 'needs-review');
 });
 
-test('a closure is flagged and the record is never deleted', () => {
+test('a closure is flagged with the sentence, and the status is left for a person', () => {
   const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
   const decision = decide(record, evidenceFromHtml(record, fixture('closed.html'), DATE));
-  assert.equal(decision.kind, 'closed');
+  assert.equal(decision.kind, 'needs-review');
+  if (decision.kind === 'needs-review') {
+    assert.match(decision.reason, /closed/i);
+    assert.ok(decision.evidenceUrl);
+  }
 
-  const { patch, log, flag } = toPatch(record, decision, DATE);
-  assert.equal(patch.status, 'retired');
-  assert.match(String(patch.status_note), /closed/i);
-  assert.ok(log[0]?.evidence_url);
+  const { patch, flag } = toPatch(record, decision, DATE);
+  assert.equal(patch.status, undefined, 'the first run marked a thriving rescue as paused; status is a decision for a person');
+  assert.equal(patch.status_note, undefined);
   assert.ok(flag);
   assert.equal(patch.phones, undefined, 'a closed organization keeps its contacts on the record');
 });
 
-test('a pause sets hiatus rather than closed', () => {
+test('a pause is flagged the same way', () => {
   const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
   const decision = decide(record, evidenceFromHtml(record, fixture('paused.html'), DATE));
-  assert.equal(decision.kind, 'closed');
-  assert.equal(toPatch(record, decision, DATE).patch.status, 'hiatus');
+  assert.equal(decision.kind, 'needs-review');
+  assert.equal(toPatch(record, decision, DATE).patch.status, undefined);
 });
 
 test('one unreachable week is not yet a problem', () => {
@@ -237,10 +243,10 @@ test('a social-only organization is skipped, not failed', () => {
   assert.equal(patch.confidence, undefined, 'a group we cannot check must not be penalised for it');
 });
 
-test('the safety valve trips when too much of the directory would change', () => {
-  assert.equal(tooManyChanges(10, 300), false);
-  assert.equal(tooManyChanges(50, 300), true, '50 of 300 is well past the threshold');
-  assert.equal(tooManyChanges(0, 0), false);
+test('the safety valve trips when too much of the directory is flagged at once', () => {
+  assert.equal(tooManyFlags(10, 300), false);
+  assert.equal(tooManyFlags(50, 300), true, '50 of 300 is well past the threshold');
+  assert.equal(tooManyFlags(0, 0), false);
 });
 
 test('a check never produces a deletion', () => {
@@ -315,14 +321,15 @@ test('an emergency listing is never rewritten unattended', () => {
   if (d.kind === 'needs-review') assert.match(d.reason, /emergency listing/i);
 });
 
-test('the same evidence on an ordinary record still applies', () => {
+test('the same evidence on an ordinary record names the number it found', () => {
   const ordinary = org({
     phones: [{ value: '7185550142', display: '(718) 555-0142' }],
     emails: [],
     needs: ['tnr'],
   });
   const d = decide(ordinary, pageWith(['(718) 555-9000'], ordinary));
-  assert.equal(d.kind, 'apply', 'the guard must not freeze the whole directory');
+  assert.equal(d.kind, 'needs-review');
+  if (d.kind === 'needs-review') assert.match(d.reason, /555-9000/);
 });
 
 test('a replacement that leaves the city is flagged, not applied', () => {
@@ -416,11 +423,8 @@ test('bookkeeping patches carry no change log, reader-visible ones always do', (
     assert.equal(toPatch(record, decision as never, DATE).log.length, 0, decision.kind);
   }
 
-  const visible = [
-    { kind: 'apply', changes: [{ field: 'phones', from: '2125551234', to: '2125556789', evidenceUrl: 'https://x.org' }] },
-    { kind: 'closed', severity: 'closed', reason: 'closed', quote: 'we have closed', evidenceUrl: 'https://x.org' },
-    { kind: 'unreachable', failures: 3, flagged: true },
-  ] as const;
+  // The only reader-visible changes the check may make on its own.
+  const visible = [{ kind: 'unreachable', failures: 3, flagged: true }] as const;
   for (const decision of visible) {
     assert.ok(toPatch(record, decision as never, DATE).log.length > 0, decision.kind);
   }
