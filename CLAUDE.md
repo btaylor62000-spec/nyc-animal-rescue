@@ -17,7 +17,9 @@ production; nothing here is aspirational.
 | Repository | `btaylor62000-spec/nyc-animal-rescue` (public) |
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
-| Scheduled checks | Both workflows active; weekly runs Mondays, discovery on the 1st |
+| Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Discovery has run once, 2026-09-17 |
+| Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
+| Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 
 Two things about the local git setup, because they are not obvious:
 
@@ -30,19 +32,110 @@ Two things about the local git setup, because they are not obvious:
 
 ### What to do next
 
-1. **Run the weekly check once.** Repo → Actions → *Weekly data check* → Run
-   workflow → tick dry run. It has never run; everything else is proven.
-2. **Ask the three people in `data/privacy-holds.json`** whether they want to
-   be listed. Two of them — WINORR and Robert Spragg — currently leave an
-   organization with no direct contact, and WINORR is where NYC raptor cases
-   go. Note that `research/` is public in this repository, so those numbers are
-   readable there anyway; asking is now courtesy rather than concealment.
-3. **Resolve the two emergency-room conflicts** in
-   `build/reports/data-quality.md`: VERG is listed at two addresses with one
-   phone number, and VEG Ralph Ave shares a number with VERG South. These are
-   emergency listings.
-4. **Give the wildlife guide a byline.** It is written in the first person by
+Ordered by how much harm it prevents, not by size.
+
+1. **Make the weekly check open a pull request instead of pushing to `main`.**
+   This is the most valuable thing on the list. It has now run once, on
+   2026-09-21, unattended and straight to production, and it made five wrong
+   changes — described under "What the automated run got wrong" below. The
+   guards added since stop that particular class, but the shape of the risk is
+   unchanged: an unattended job writes to a live emergency directory and
+   nobody sees it until a reader does. `.github/workflows/weekly-check.yml`
+   already commits and pushes; opening a PR instead is a small change to that
+   step.
+
+2. **Decide what happens to the 160 discovery candidates.** They sit in
+   `data/discovered.json` and are not in `data/orgs/`, so every `npm run
+   import` produces a 159-file diff. Publishing them is a real decision —
+   they enter labelled "newly found, not yet verified" and stay out of the
+   assistant — but the inconsistency should not persist either way, because
+   CLAUDE.md promises that `git status` after an import is a real signal and
+   right now it is not. Most of them are not in New York: see "Discovery finds
+   mostly out-of-city organizations" below.
+
+3. **Ask the three people in `data/privacy-holds.json`** whether they want to
+   be listed. WINORR is where NYC raptor cases go and has no direct contact on
+   the site. Their numbers are already published by NYC Bird Alliance on a page
+   this site links to, so asking is courtesy rather than concealment — but it
+   is still their decision.
+
+4. **Add the resources the reviewer found that are still missing.** Cottontail
+   Cottage (914-933-7559, cottontailrehab.com) is the clearest: `privacy-holds.json`
+   explicitly says the organization and its number should be published and only
+   the operator's first name withheld, and it is currently only a mention inside
+   another record. Frankie's Feline Fund (917-514-0228) is absent and its name
+   collides with the unrelated Frankie's Friends, so searching finds the wrong
+   one. Then six wildlife contacts from her 2026-09-21 document, several of
+   which she flagged caveats on herself — the USDA and USFWS lines are
+   *reporting* lines and belong in guidance rather than the rescue directory.
+
+5. **Backfill geography for the 82 records with neither a zip nor the citywide
+   flag.** They vanish from any zip search, which is 28% of the directory
+   invisible to one of the main filters.
+
+6. **Give the wildlife guide a byline.** It is written in the first person by
    whoever wrote the original document.
+
+### What the automated run got wrong
+
+The weekly check ran for the first time on 2026-09-21 and pushed to production.
+A reviewer caught the damage. Worth reading before trusting a future run.
+
+- **Both VEG emergency hospitals were given a New Jersey number**, at High
+  confidence, citing VEG's own page as evidence. That number is not on that
+  page as a reader sees it: VEG renders each hospital's number in the browser,
+  so a plain fetch reads markup nobody is shown. Every clause of the rule was
+  satisfied and the result was a wrong number on a 24-hour emergency listing,
+  live for about seven hours. Note that re-fetching the same page later showed
+  the number present — the failure is intermittent, so sampling a page once
+  does not prove it is safe.
+- **A rescue was given (212) 222-1234**, the unedited placeholder from its
+  website's theme, present only as a hidden `tel:` link.
+- **The city's open-admission shelter was marked as not accepting intakes**, on
+  the strength of "if we are currently at capacity, adopters will be directed
+  to sign up for a waitlist" — a conditional, about visitors, on an adoption
+  page. ACC cannot refuse intake.
+- **A rescue was marked on hiatus** for saying its foster homes were at
+  capacity, which limits what it can take and says nothing about it stopping.
+
+The guards in `scripts/agent/rules.ts` now stop each of these: emergency
+listings are never rewritten unattended, a replacement that leaves the city's
+area codes is flagged, template placeholders are rejected, and "at capacity" on
+its own asks a person instead of deciding. Two of the eight changes that run
+made were correct and were kept.
+
+### Discovery finds mostly out-of-city organizations
+
+The roster discovery reads is ACC's New Hope partner list: rescues approved to
+pull animals *out of* NYC shelters, which is a different thing from resources a
+New Yorker can call. Of the ten candidates whose phone numbers a dry run could
+read, two were New York City numbers; the rest were Pennsylvania, Connecticut,
+New Jersey and the Hudson Valley, and one was Californian. `inferRegion` in
+`scripts/import/taxonomy.ts` now sets `outside_nyc` from the area code and the
+name, but only 13 of the 160 stored candidates are tagged so far, because none
+of them have phone numbers yet — discovery has not re-run since it learned to
+read them.
+
+### Things that will waste your time if you do not know them
+
+- **`npm run import` is not safe to run casually.** `data/orgs/` and
+  `data/discovered.json` disagree at HEAD, so an import materialises 159
+  candidate records. To work on anything else, blank `candidates` in
+  `data/discovered.json`, import, then restore the file. Until item 2 above is
+  settled, every session has to do this.
+- **Check production, not just the build.** Three defects this week existed
+  only in the deployed page: a `tel:+1311` that could not dial, a dead link
+  that survived in `source_urls` after the website and intake links were fixed,
+  and a caveat written to `status_note`, which an *active* record never
+  displays. A passing build proves less than a cache-busted fetch of the real
+  URL.
+- **The overlay is the only way to correct a record.** `data/orgs/` is
+  regenerated, so hand edits there are destroyed by the next import.
+  `OverlayEntry` now covers `phones`, `emails`, `website`, `intake_urls`,
+  `source_urls`, `notes`, `status` and confidence — enough to fix anything a
+  reader can see.
+- **A record's `status_note` is only rendered when the record is not active.**
+  A caveat about an operating organization belongs in `notes`.
 
 ### Two bugs already fixed, so they are not re-introduced
 
@@ -211,6 +304,25 @@ importer coexist:
 would destroy it.
 
 ---
+
+### Adding a guide
+
+Two of the guides come from a reviewer's mockups rather than from the original
+research, and the pattern is worth repeating: write the source as a workbook in
+`research/`, register it in `GUIDE_PAGES` in `scripts/import/guide-pages.ts`,
+and let the importer generate the page. Nothing is hand-written into
+`content/guides/`, which is regenerated.
+
+The parser reads **column A only** and trims leading whitespace, so structure
+comes from `- ` bullets and from headings in capitals, not from indentation.
+A line carrying a contact detail becomes a listing. Register the tab in
+`GUIDE_ORG_SOURCES` as well and its contacts become organization records; leave
+it out and they stay as text on the page, which is the right choice when the
+organizations already have entries whose contacts are maintained.
+
+Write URLs in full, with `https://`, when they are the point of the page. The
+renderer autolinks those and leaves bare domains as text — fine for a
+reference, wrong for something someone has to act on.
 
 ## Tagging
 
