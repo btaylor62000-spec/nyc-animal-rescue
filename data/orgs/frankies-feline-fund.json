@@ -35,7 +35,7 @@
       "value": "frankiesfelinefund@gmail.com"
     }
   ],
-  "website": "https://frankiesfelinefund.org/",
+  "website": "https://frankiesfelinefund.org",
   "intake_urls": [],
   "social": [
     {
@@ -63,15 +63,6 @@
   "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [
-    {
-      "date": "2026-09-22",
-      "field": "website",
-      "from": "https://frankiesfelinefund.org",
-      "to": "https://frankiesfelinefund.org/",
-      "evidence_url": "https://frankiesfelinefund.org/",
-      "source": "community",
-      "note": "Corrected by a visitor to the site."
-    },
     {
       "date": "2026-09-22",
       "field": "hours",

@@ -21,7 +21,7 @@ production; nothing here is aspirational.
 | Sources | Three reference workbooks, the wildlife document, and `research/NYC_Reviewer_Additions.xlsx` for organizations a reviewer found missing (2 rows so far) |
 | Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
-| Visitor submissions | Built 2026-09-22: `/contribute` adds a resource, `/org/<id>/correct` corrects one. **Not live until `GITHUB_CONTRIB_TOKEN` is set** — see item 1 below |
+| Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Fix this entry". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
 Two things about the local git setup, because they are not obvious:
 
@@ -36,18 +36,7 @@ Two things about the local git setup, because they are not obvious:
 
 Ordered by how much harm it prevents, not by size.
 
-1. **Switch on visitor submissions.** Everything is built and tested; the
-   endpoint returns "not switched on yet" until a GitHub token exists. Create
-   a fine-grained personal access token on the `btaylor62000-spec` account
-   scoped to this one repository with **Contents: Read and write**, then run
-   `npx wrangler pages secret put GITHUB_CONTRIB_TOKEN --project-name=nyc-animal-rescue`
-   and paste it. Then submit a correction on a real entry from a real browser
-   (Turnstile refuses automated ones) and watch: the commit lands in
-   `data/community/`, the "Publish visitor submissions" workflow regenerates
-   the records, Cloudflare deploys. How it works is in "Visitor submissions"
-   below.
-
-2. **Confirm the weekly check can open its pull request.** As of 2026-09-22
+1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
    still make (a `verify` status after three dead weeks, and lifting it) goes
    to the `weekly-check` branch as a PR; bookkeeping-only weeks still
@@ -62,7 +51,7 @@ Ordered by how much harm it prevents, not by size.
    adds records labelled unverified and excluded from the assistant, and item
    2 decides whether those should be published at all.
 
-3. **Decide what happens to the 160 discovery candidates.** They sit in
+2. **Decide what happens to the 160 discovery candidates.** They sit in
    `data/discovered.json` and are not in `data/orgs/`, so every `npm run
    import` produces a 159-file diff. Publishing them is a real decision —
    they enter labelled "newly found, not yet verified" and stay out of the
@@ -71,13 +60,13 @@ Ordered by how much harm it prevents, not by size.
    right now it is not. Most of them are not in New York: see "Discovery finds
    mostly out-of-city organizations" below.
 
-4. **Ask the three people in `data/privacy-holds.json`** whether they want to
+3. **Ask the three people in `data/privacy-holds.json`** whether they want to
    be listed. WINORR is where NYC raptor cases go and has no direct contact on
    the site. Their numbers are already published by NYC Bird Alliance on a page
    this site links to, so asking is courtesy rather than concealment — but it
    is still their decision.
 
-5. **Add the remaining wildlife contacts the reviewer found.** Cottontail
+4. **Add the remaining wildlife contacts the reviewer found.** Cottontail
    Cottage and Frankie's Feline Fund were added on 2026-09-22, each confirmed
    on its own website, via `research/NYC_Reviewer_Additions.xlsx` — a workbook
    in the same layout as the reference ones, registered in `MAIN_SOURCES`, so
@@ -90,11 +79,11 @@ Ordered by how much harm it prevents, not by size.
    rescue, which is why the Cottontail row says "cottontails" and "around the
    clock".
 
-6. **Backfill geography for the 82 records with neither a zip nor the citywide
+5. **Backfill geography for the 82 records with neither a zip nor the citywide
    flag.** They vanish from any zip search, which is 28% of the directory
    invisible to one of the main filters.
 
-7. **Give the wildlife guide a byline.** It is written in the first person by
+6. **Give the wildlife guide a byline.** It is written in the first person by
    whoever wrote the original document.
 
 ### What the automated run got wrong

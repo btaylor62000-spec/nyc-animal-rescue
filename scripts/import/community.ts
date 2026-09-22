@@ -165,7 +165,11 @@ export function applyCorrections(orgs: Org[], submissions: Submission[]): Correc
       org.emails = [{ value: f.email }];
       changed.push('email');
     }
-    if (f.website && f.website !== org.website) {
+    // The form re-sends the current website, normalised with a trailing
+    // slash; that is not a change.
+    const sameSite = (a: string | null, b: string | null): boolean =>
+      (a ?? '').replace(/\/+$/, '').toLowerCase() === (b ?? '').replace(/\/+$/, '').toLowerCase();
+    if (f.website && !sameSite(f.website, org.website)) {
       org.change_log.push(entry('website', org.website, f.website));
       org.website = f.website;
       changed.push('website');

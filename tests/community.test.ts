@@ -100,14 +100,16 @@ test('a correction overwrites the contact, logs it with the page it was checked 
 });
 
 test('a correction that changes nothing leaves no trace, and one for a missing record is reported', () => {
-  const record = org({ id: 'some-rescue', phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const record = org({ id: 'some-rescue', phones: [{ value: '7185550142', display: '(718) 555-0142' }], website: 'https://example.org' });
   const same: Submission = {
     version: 1, kind: 'correct', org_id: 'some-rescue', submitted_at: NOW, submitter_email: null, reason: null,
     fields: { phone: '7185550142' },
     check: { page: 'https://example.org', phone_seen: true, email_seen: false, checked_at: NOW },
   };
+  // The form re-sends the current website with a trailing slash added.
+  const slash: Submission = { ...same, fields: { phone: '7185550142', website: 'https://example.org/' } };
   const gone: Submission = { ...same, org_id: 'no-such-record' };
-  const report = applyCorrections([record], [same, gone]);
+  const report = applyCorrections([record], [same, slash, gone]);
   assert.equal(report.applied.length, 0);
   assert.equal(record.community, null);
   assert.deepEqual(report.orphaned, ['no-such-record']);
