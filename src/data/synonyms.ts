@@ -26,7 +26,7 @@ export const ANIMAL_SYNONYMS: Record<Animal, string> = {
   fish: 'fish goldfish betta koi aquarium tank tropical fish guppy',
   farm: 'chicken rooster hen duck goose turkey pig piglet goat sheep lamb cow calf farm animal livestock poultry',
   equine: 'horse pony donkey mule foal equine carriage horse',
-  wildlife: 'wildlife wild animal squirrel raccoon opossum possum skunk bat chipmunk groundhog deer fox coyote rat wild baby orphaned nest',
+  wildlife: 'wildlife wild animal squirrel raccoon opossum possum skunk bat chipmunk groundhog deer fox coyote rat wild baby orphaned nest cottontail cottontails',
   marine: 'seal whale dolphin sea turtle porpoise stranded marine mammal beach',
   invertebrate: 'tarantula spider hermit crab insect snail scorpion invertebrate bug',
 };

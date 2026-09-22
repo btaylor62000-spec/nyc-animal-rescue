@@ -2283,6 +2283,38 @@
       "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
     }
   ],
+  "cottontail-cottage-wildlife-rehab": [
+    {
+      "tag": "small-mammal",
+      "field": "animals_served",
+      "matched": "small mammals"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Cottontail"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "section",
+      "matched": "referral"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "name",
+      "matched": "Wildlife Rehab"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REHABILITATION - wild cottontails and other native "
+    }
+  ],
   "earthlings-nyc-turtle-team": [
     {
       "tag": "reptile",
@@ -2839,6 +2871,43 @@
       "tag": "support-program",
       "field": "type",
       "matched": "(support"
+    }
+  ],
+  "frankies-feline-fund": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feline"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "surrender"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-needs"
+    },
+    {
+      "tag": "senior",
+      "field": "type",
+      "matched": "senior"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
     }
   ],
   "friends-of-animals-spay-neuter-certificates": [

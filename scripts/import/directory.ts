@@ -54,6 +54,11 @@ export const MAIN_SOURCES: SourceSpec[] = [
   { file: 'research/NYC_Cat_Rescue_TNR_Reference.xlsx', tab: 'NYC Cat Rescues', baseAnimals: ['cat'], label: 'cat' },
   { file: 'research/NYC_Dog_Rescue_Reference.xlsx', tab: 'NYC Dog Rescues', baseAnimals: ['dog'], label: 'dog' },
   { file: 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx', tab: 'Exotic, Small Animal & Wildlife', baseAnimals: [], label: 'exotic' },
+  // Organizations a reviewer found missing from the site, each confirmed on
+  // its own website before being added. Kept in a workbook of its own rather
+  // than edited into the reference workbooks, which are someone else's
+  // research and are read as they were delivered.
+  { file: 'research/NYC_Reviewer_Additions.xlsx', tab: 'Reviewer additions', baseAnimals: [], label: 'review' },
 ];
 
 function headerIndex(headerRow: string[]): Record<string, number> {

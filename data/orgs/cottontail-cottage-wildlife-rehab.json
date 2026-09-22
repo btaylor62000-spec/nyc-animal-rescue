@@ -1,0 +1,59 @@
+{
+  "id": "cottontail-cottage-wildlife-rehab",
+  "name": "Cottontail Cottage Wildlife Rehab",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "wildlife",
+    "small-mammal"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "referral"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Westchester County (Purchase, NY); where NYC rescues send callers who have found a wild baby cottontail",
+  "zips": [
+    "10577"
+  ],
+  "region_note": "WILDLIFE REHABILITATION - wild cottontails and other native wildlife (Westchester, takes NYC referrals)",
+  "phones": [
+    {
+      "value": "9149337559",
+      "display": "(914) 933-7559"
+    }
+  ],
+  "emails": [
+    {
+      "value": "hello@cottontailrehab.org"
+    }
+  ],
+  "website": "https://cottontailrehab.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "All-volunteer, licensed wildlife rehabilitators. The phone line is answered around the clock by voicemail; leave a message and they call back. Wild animals only: they are not a pet rescue, and everything they take in is wild and native to New York State. Mailing address P.O. Box 13, Purchase, NY 10577. Do not give a wild animal food or water while waiting. Intake: Call (914) 933-7559 at any hour and leave a message - they return calls as soon as they can",
+  "type_raw": "Licensed wildlife rehabilitator (wild cottontails, foxes, raccoons and other native NY species)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://cottontailrehab.com"
+  ],
+  "last_verified": "2026-09-22",
+  "section": "WILDLIFE REHABILITATION - wild cottontails and other native wildlife (Westchester, takes NYC referrals)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false
+}

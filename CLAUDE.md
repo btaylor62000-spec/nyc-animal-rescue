@@ -18,6 +18,7 @@ production; nothing here is aspirational.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
+| Sources | Three reference workbooks, the wildlife document, and `research/NYC_Reviewer_Additions.xlsx` for organizations a reviewer found missing (2 rows so far) |
 | Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 
@@ -63,15 +64,18 @@ Ordered by how much harm it prevents, not by size.
    this site links to, so asking is courtesy rather than concealment — but it
    is still their decision.
 
-4. **Add the resources the reviewer found that are still missing.** Cottontail
-   Cottage (914-933-7559, cottontailrehab.com) is the clearest: `privacy-holds.json`
-   explicitly says the organization and its number should be published and only
-   the operator's first name withheld, and it is currently only a mention inside
-   another record. Frankie's Feline Fund (917-514-0228) is absent and its name
-   collides with the unrelated Frankie's Friends, so searching finds the wrong
-   one. Then six wildlife contacts from her 2026-09-21 document, several of
-   which she flagged caveats on herself — the USDA and USFWS lines are
-   *reporting* lines and belong in guidance rather than the rescue directory.
+4. **Add the remaining wildlife contacts the reviewer found.** Cottontail
+   Cottage and Frankie's Feline Fund were added on 2026-09-22, each confirmed
+   on its own website, via `research/NYC_Reviewer_Additions.xlsx` — a workbook
+   in the same layout as the reference ones, registered in `MAIN_SOURCES`, so
+   the reviewer's research is never edited in place. Add further reviewer
+   finds as rows there. Still missing: six wildlife contacts from her
+   2026-09-21 document, several of which she flagged caveats on herself — the
+   USDA and USFWS lines are *reporting* lines and belong in guidance rather
+   than the rescue directory. Wording in that workbook matters: the tagging
+   rules read "24/7" as an emergency vet and "rabbit" as a domestic-rabbit
+   rescue, which is why the Cottontail row says "cottontails" and "around the
+   clock".
 
 5. **Backfill geography for the 82 records with neither a zip nor the citywide
    flag.** They vanish from any zip search, which is 28% of the directory

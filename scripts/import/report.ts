@@ -58,7 +58,7 @@ export function buildReport(input: ReportInput, today = new Date()): string {
 
   out.push('# Data quality report');
   out.push('');
-  out.push(`Generated ${today.toISOString().slice(0, 10)} from the three source workbooks and the wildlife guide.`);
+  out.push(`Generated ${today.toISOString().slice(0, 10)} from the source workbooks and the wildlife guide.`);
   out.push('');
 
   out.push('## Totals');

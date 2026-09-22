@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-09-22 from the three source workbooks and the wildlife guide.
+Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **293** organizations after de-duplication
+- **295** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,14 +17,14 @@ Generated 2026-09-22 from the three source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 205 |
+| cat | 206 |
 | dog | 145 |
-| wildlife | 36 |
+| wildlife | 37 |
 | rabbit | 32 |
 | bird-companion | 31 |
 | reptile | 31 |
 | farm | 29 |
-| small-mammal | 28 |
+| small-mammal | 29 |
 | pigeon | 19 |
 | bird-wild | 18 |
 | amphibian | 14 |
@@ -37,26 +37,26 @@ Generated 2026-09-22 from the three source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 150 |
+| adoption | 151 |
 | tnr | 94 |
-| foster | 88 |
-| surrender | 59 |
+| foster | 89 |
+| surrender | 60 |
 | spay-neuter | 53 |
 | owner-support | 48 |
 | low-cost-vet | 40 |
-| referral | 38 |
+| referral | 39 |
 | advocacy | 32 |
 | emergency-vet | 29 |
 | colony-care | 29 |
-| wildlife-rehab | 24 |
-| medical-special-needs | 23 |
+| wildlife-rehab | 25 |
+| medical-special-needs | 24 |
 | education | 22 |
 | legal | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
 | financial-aid | 16 |
+| senior | 16 |
 | boarding | 15 |
-| senior | 15 |
 | microchip | 14 |
 | food-assistance | 13 |
 | lost-found | 10 |
@@ -76,7 +76,7 @@ Generated 2026-09-22 from the three source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 162 |
 | queens | 121 |
-| manhattan | 115 |
+| manhattan | 116 |
 | bronx | 101 |
 | staten-island | 101 |
 
@@ -85,14 +85,14 @@ Generated 2026-09-22 from the three source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | Medium | 145 |
-| High | 117 |
+| High | 119 |
 | Low | 31 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 279 |
+| active | 281 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |

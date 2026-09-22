@@ -85,11 +85,32 @@ const ANIMAL_WORDS = buildLookup(withTranslations(ANIMAL_SYNONYMS, SPANISH_ANIMA
  * as a question about trap-neuter-return. A word that names an animal tells us
  * which animal, never which service.
  */
+/*
+ * Words that only mean something inside the phrase they came from. "new" is
+ * in the advocacy list because of "new hope", "home" because of "permanent
+ * home", "care" because of "vet care" and "temporary care" -- and on their
+ * own they turned "my elderly cat needs a new home and I can no longer care
+ * for her" into an advocacy, sanctuary and low-cost-vet question, with no
+ * surrender in it at all. The phrases people actually use for that are
+ * matched whole, below.
+ */
+const GENERIC_WORDS = ['new', 'home', 'care'];
+
 const NEED_WORDS = (() => {
   const needs = buildLookup(withTranslations(NEED_SYNONYMS, SPANISH_NEEDS));
   for (const word of ANIMAL_WORDS.keys()) needs.delete(word);
+  for (const word of GENERIC_WORDS) needs.delete(word);
   return needs;
 })();
+
+
+/*
+ * Giving an animal up, said the way people say it. The synonym lists match
+ * single words, and none of these sentences contains one: "needs a new home",
+ * "find her a home", "can no longer look after him".
+ */
+const REHOME_RE =
+  /\b(?:new home|(?:find|need|needs|looking for|get)\s+(?:\w+\s+){0,2}(?:a |another |good )?home|can(?:'t|not| no longer|t)\s+(?:care for|look after|keep|take care of|afford to keep|handle)|no longer (?:able to )?(?:care|keep|look after|take care|cope)|take (?:him|her|them|it|my \w+) in)\b/i;
 
 /**
  * Words that describe an animal in trouble now. Deliberately broad: sending
@@ -176,6 +197,7 @@ export function extractSignals(question: string): Signals {
   if (abuse) needs.add('legal');
   if (emergency) needs.add('emergency-vet');
   if (NEONATE_RE.test(q)) needs.add('neonatal');
+  if (REHOME_RE.test(q)) needs.add('surrender');
 
   // Wild animals go to rehabilitators, not to vets or rescues.
   if (wild) needs.add('wildlife-rehab');
