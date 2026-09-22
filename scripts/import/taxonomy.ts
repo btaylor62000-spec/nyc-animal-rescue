@@ -52,13 +52,13 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
   // A general veterinary practice sees cats and dogs. Without this a hospital
   // found on a roster carried no animal at all and appeared in no filter.
   { tag: 'cat', pattern: /veterinary (hospital|center|centre|group|clinic)|animal hospital|\bvet center\b/i, fields: ['name'] },
-  { tag: 'dog', pattern: /veterinary (hospital|center|centre|group|clinic)|animal hospital|\bvet center\b|\bshibas?\b/i, fields: ['name'] },
+  { tag: 'dog', pattern: /veterinary (hospital|center|centre|group|clinic)|animal hospital|\bvet center\b/i, fields: ['name'] },
   { tag: 'cat', pattern: /\bcats?\b|\bfeline|\bkitten|\bTNR\b|\bferal\b|colony/i, fields: ALL },
   {
     // "Bulldog Rescue" and "Sheepdog Rescue" are dog rescues, but the word
     // boundary in \bdogs?\b does not see the "dog" inside them.
     tag: 'dog',
-    pattern: /\bdogs?\b|\b(bull|sheep|lap|guard|sled|bird)dogs?\b|\bcanine|\bpupp(y|ies)|\bsato\b|bully breed|\bpit\b|\bhounds?\b|\bterriers?\b|\bretrievers?\b|\bshepherds?\b/i,
+    pattern: /\bdogs?\b|\b(bull|sheep|lap|guard|sled|bird)dogs?\b|\bcanine|\bpupp(y|ies)|\bsato\b|bully breed|\bpit\b|\bhounds?\b|\bterriers?\b|\bretrievers?\b|\bshepherds?\b|\bshibas?\b/i,
     fields: ALL,
   },
   { tag: 'rabbit', pattern: /\brabbits?\b|\bbunn(y|ies)\b|\blagomorph/i, fields: ALL },
