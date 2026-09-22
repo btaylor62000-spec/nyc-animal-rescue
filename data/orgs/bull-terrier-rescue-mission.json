@@ -8,8 +8,14 @@
     "dog"
   ],
   "needs": [],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
@@ -30,7 +36,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "Found on ACC New Hope partners on 2026-09-22. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
+  "notes": "A person read the site on 2026-09-22: based at 81 Murray St, Manhattan, serving the New York area. Found on ACC New Hope partners on 2026-09-22. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
   "confidence": "Low",
   "status": "active",

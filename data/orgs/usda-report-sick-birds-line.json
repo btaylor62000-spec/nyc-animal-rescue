@@ -1,0 +1,60 @@
+{
+  "id": "usda-report-sick-birds-line",
+  "name": "USDA Report Sick Birds line",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "wildlife",
+    "bird-companion",
+    "bird-wild",
+    "farm"
+  ],
+  "needs": [],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National hotline; use from anywhere",
+  "zips": [],
+  "region_note": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "phones": [
+    {
+      "value": "8665367593",
+      "display": "(866) 536-7593"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.aphis.usda.gov/livestock-poultry-disease/avian/defend-the-flock",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "USDA's Report Sick Birds line, run for poultry and backyard flocks; it also takes reports of sick or dead wild birds and routes them to the right agency. For a live injured bird call the city's wildlife hospital instead. Do not touch dead birds with bare hands; in the city you can also report dead birds to 311.",
+  "type_raw": "Federal reporting line for sick or dead birds, run for avian influenza surveillance; a reporting line that does not collect animals",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.aphis.usda.gov/sites/default/files/card-report-sick-birds.pdf"
+  ],
+  "last_verified": "2026-09-22",
+  "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

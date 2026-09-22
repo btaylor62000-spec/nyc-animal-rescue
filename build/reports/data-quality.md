@@ -4,7 +4,7 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **306** organizations after de-duplication
+- **311** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -19,19 +19,19 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | cat | 213 |
 | dog | 155 |
-| wildlife | 37 |
+| wildlife | 42 |
+| bird-companion | 32 |
 | rabbit | 32 |
-| bird-companion | 31 |
-| reptile | 31 |
-| farm | 29 |
-| small-mammal | 29 |
+| reptile | 32 |
+| farm | 30 |
+| small-mammal | 30 |
 | pigeon | 19 |
-| bird-wild | 18 |
+| bird-wild | 19 |
 | amphibian | 14 |
-| fish | 13 |
+| fish | 14 |
 | equine | 12 |
 | invertebrate | 11 |
-| marine | 9 |
+| marine | 10 |
 
 ### By need
 
@@ -43,15 +43,15 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 | surrender | 60 |
 | spay-neuter | 53 |
 | owner-support | 48 |
+| referral | 41 |
 | low-cost-vet | 40 |
-| referral | 39 |
 | advocacy | 32 |
 | emergency-vet | 29 |
 | colony-care | 29 |
-| wildlife-rehab | 25 |
+| wildlife-rehab | 26 |
 | medical-special-needs | 24 |
 | education | 22 |
-| legal | 18 |
+| legal | 19 |
 | sanctuary | 17 |
 | behavior-training | 16 |
 | financial-aid | 16 |
@@ -74,25 +74,25 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 203 |
-| queens | 161 |
-| manhattan | 156 |
-| staten-island | 141 |
-| bronx | 140 |
+| brooklyn | 217 |
+| queens | 175 |
+| manhattan | 171 |
+| staten-island | 155 |
+| bronx | 154 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | Medium | 145 |
-| High | 119 |
-| Low | 42 |
+| High | 123 |
+| Low | 43 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 292 |
+| active | 297 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (74)
+### Never verified (75)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -266,9 +266,11 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (0)
+### Rows the rules could not fully tag (3)
 
-Every row received at least one animal, need, organization type and borough.
+- **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
+- **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
+- **USDA Report Sick Birds line** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:14)
 
 ## Privacy
 
@@ -287,7 +289,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 14773 |
+| Found an injured bird | 15463 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |

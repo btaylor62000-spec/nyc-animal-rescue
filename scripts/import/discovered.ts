@@ -40,6 +40,8 @@ interface Candidate {
   publishedOn?: string;
   /** Set by the person who marked it, when they confirmed where it is. */
   boroughs?: Borough[];
+  /** A foster network or programme that works across the city. */
+  citywide?: boolean;
   animals?: Animal[];
   checkedBy?: string;
 }
@@ -77,6 +79,7 @@ export function candidateToOrg(c: Candidate): Org {
   // person who marked the candidate may have confirmed one.
   const boroughs = new Set<Borough>(c.boroughs ?? []);
   for (const bp of BOROUGH_PATTERNS) if (bp.pattern.test(c.name)) boroughs.add(bp.tag);
+  if (c.citywide) for (const b of ['manhattan', 'brooklyn', 'queens', 'bronx', 'staten-island'] as Borough[]) boroughs.add(b);
 
   return {
     id: slugify(c.name),
@@ -87,7 +90,7 @@ export function candidateToOrg(c: Candidate): Org {
     animals,
     needs,
     boroughs: [...boroughs],
-    citywide: false,
+    citywide: c.citywide === true,
     outside_nyc: region.outsideNyc && boroughs.size === 0,
     neighborhoods: null,
     zips: [],

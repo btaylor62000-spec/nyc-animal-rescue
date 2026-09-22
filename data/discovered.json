@@ -49,7 +49,11 @@
       "emails": [],
       "contactsFrom": "https://www.abcanimalhosp.com/",
       "publish": true,
-      "publishedOn": "2026-09-22"
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "manhattan"
+      ],
+      "checkedBy": "A person read the site on 2026-09-22: 200 Ave A, Manhattan, a dog and cat practice."
     },
     {
       "name": "Adopt A Boxer*",
@@ -442,7 +446,12 @@
       ],
       "contactsFrom": "https://www.btrmission.org/",
       "publish": true,
-      "publishedOn": "2026-09-22"
+      "publishedOn": "2026-09-22",
+      "boroughs": [
+        "manhattan"
+      ],
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-09-22: based at 81 Murray St, Manhattan, serving the New York area."
     },
     {
       "name": "Bullmastiff Rescue",
@@ -727,7 +736,8 @@
       "checkedBy": "A person read the site on 2026-09-22 and confirmed it is in New York City.",
       "animals": [
         "dog"
-      ]
+      ],
+      "citywide": true
     },
     {
       "name": "F.A.C.T.(Feline Advocates Coming Together)*",
@@ -1474,7 +1484,8 @@
       "publishedOn": "2026-09-22",
       "animals": [
         "dog"
-      ]
+      ],
+      "citywide": true
     },
     {
       "name": "Ollie's Angels Animal Rescue",
@@ -1665,7 +1676,9 @@
       "animals": [
         "cat",
         "dog"
-      ]
+      ],
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-09-22: a New York City foster-based adoption programme."
     },
     {
       "name": "Pets Alive",

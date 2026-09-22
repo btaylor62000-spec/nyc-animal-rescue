@@ -236,7 +236,14 @@ function buildDraft(
     );
 
   // A regional group that says it serves NYC is reachable from any borough.
-  if (outsideNyc && /incl\.? NYC|includ(es|ing) NYC|serves? .{0,25}\bNYC\b|greater NY area|NYC adopters|pull(s)? from NYC|serve NYC/i.test(scopeText)) {
+  // "NYC-adjacent" and "tri-state" are how the research describes a group it
+  // lists as an option for New Yorkers; "far from NYC" is how it says the
+  // opposite, and that wins.
+  if (
+    outsideNyc &&
+    !/far from NYC/i.test(scopeText) &&
+    /incl\.? NYC|includ(es|ing) NYC|serves? .{0,25}\bNYC\b|greater NY area|NYC adopters|pull(s)? from NYC|serve NYC|NYC-adjacent|tri-state/i.test(scopeText)
+  ) {
     for (const b of ['manhattan', 'brooklyn', 'queens', 'bronx', 'staten-island'] as Borough[]) boroughs.add(b);
     citywide = true;
   }

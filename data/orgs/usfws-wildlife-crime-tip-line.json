@@ -1,0 +1,65 @@
+{
+  "id": "usfws-wildlife-crime-tip-line",
+  "name": "USFWS wildlife crime tip line",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "wildlife",
+    "fish"
+  ],
+  "needs": [
+    "legal"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National hotline; use from anywhere",
+  "zips": [],
+  "region_note": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "phones": [
+    {
+      "value": "8443978477",
+      "display": "(844) 397-8477"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.fws.gov/story/how-report-wildlife-crime",
+  "intake_urls": [
+    {
+      "url": "https://www.fws.gov/wildlife-crime-tips",
+      "label": "Online tip form"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "The U.S. Fish and Wildlife Service tip line (1-844-FWS-TIPS) for suspected wildlife crime: killing or trapping protected birds and animals, selling wildlife or wildlife parts, or crimes on federal refuges. Reports can be anonymous. For cruelty to a pet or ordinary animal in New York City call 311 or 911 instead; for hunting or fishing violations off federal land, DEC Region 2.",
+  "type_raw": "Federal law-enforcement tip line for suspected wildlife crime - trafficking, killing or selling protected species; a reporting line that does not collect animals",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.fws.gov/story/how-report-wildlife-crime"
+  ],
+  "last_verified": "2026-09-22",
+  "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

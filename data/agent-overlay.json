@@ -50,11 +50,11 @@
       "intake_urls": [
         {
           "url": "https://newhope.shelterbuddy.com/Animal/List",
-          "label": "Live at-risk list \u2014 the animals that need placing now"
+          "label": "Live at-risk list — the animals that need placing now"
         },
         {
           "url": "https://forms.gle/ozHex3uqvNkQt2dq9",
-          "label": "ACC pre-screener \u2014 submit if you have a home ready (needs a Google sign-in)"
+          "label": "ACC pre-screener — submit if you have a home ready (needs a Google sign-in)"
         },
         {
           "url": "https://nycacc.org/emergency-placement/",
@@ -73,7 +73,7 @@
           "to": "the live at-risk list and the pre-screener, first",
           "evidence_url": "https://nycacc.org/emergency-placement/",
           "source": "manual",
-          "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs \u2014 which animals need placing now, and the form that says you have a home \u2014 are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
+          "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs — which animals need placing now, and the form that says you have a home — are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
         }
       ]
     },
@@ -160,7 +160,7 @@
           "to": "active",
           "evidence_url": "https://www.nycacc.org/adoption/process/",
           "source": "manual",
-          "note": "Reverted. The weekly check read \"if we are currently at capacity, adopters will be directed to sign up for a waitlist\" from ACC\u2019s adoption page as a statement that it had stopped taking animals. It is a conditional, it is about visitors rather than intake, and ACC is the city\u2019s open-admission shelter, which cannot refuse intake. Showing it as closed would send someone with nowhere else to go nowhere at all."
+          "note": "Reverted. The weekly check read \"if we are currently at capacity, adopters will be directed to sign up for a waitlist\" from ACC’s adoption page as a statement that it had stopped taking animals. It is a conditional, it is about visitors rather than intake, and ACC is the city’s open-admission shelter, which cannot refuse intake. Showing it as closed would send someone with nowhere else to go nowhere at all."
         },
         {
           "date": "2026-09-22",
@@ -217,7 +217,23 @@
     },
     "animal-general": {
       "last_checked": "2026-09-21",
-      "check_status": "unchecked"
+      "check_status": "unchecked",
+      "website": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "source_urls": [
+        "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny"
+      ],
+      "notes": "558 Columbus Ave 10024 - (212) 501-9600 - feral-friendly (Bideawee list). Now part of Thrive Pet Healthcare; its own page describes primary care for dogs and cats on the Upper West Side. A reviewer found it listed elsewhere as accepting wildlife, but its site does not say so, so it is not listed here as a wildlife vet: ask before bringing a wild animal.",
+      "change_log": [
+        {
+          "date": "2026-09-22",
+          "field": "website",
+          "from": null,
+          "to": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "Website added from the reviewer’s 2026-09-21 document and confirmed on the page, which also confirms the address and number. The page describes dog and cat care only, so the wildlife claim she asked us to check is not applied."
+        }
+      ]
     },
     "animal-haven": {
       "last_checked": "2026-09-21",
@@ -272,7 +288,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://www.amcny.org/visit-amc/contact-us/",
           "source": "manual",
-          "note": "Primary line (212) 838-8100 and the 510 East 62nd Street address confirmed on AMC\u2019s own contact page. The secondary number already on the record was not listed there, so it is kept but not independently confirmed."
+          "note": "Primary line (212) 838-8100 and the 510 East 62nd Street address confirmed on AMC’s own contact page. The secondary number already on the record was not listed there, so it is kept but not independently confirmed."
         }
       ]
     },
@@ -444,7 +460,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
-          "note": "(718) 596-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+          "note": "(718) 596-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
         }
       ]
     },
@@ -463,7 +479,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
-          "note": "(212) 924-3311 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+          "note": "(212) 924-3311 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
         }
       ]
     },
@@ -482,7 +498,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
-          "note": "(212) 767-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+          "note": "(212) 767-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
         }
       ]
     },
@@ -501,7 +517,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
-          "note": "(718) 263-0099 confirmed on BluePearl\u2019s own hospital page, which lists every New York City location together."
+          "note": "(718) 263-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
         }
       ]
     },
@@ -1715,7 +1731,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
           "source": "manual",
-          "note": "(718) 677-6700 confirmed as VEG Ralph Ave on VEG\u2019s own location page, at 1950 Ralph Avenue. This is the number that was also attached to the VERG South record; it belongs to VEG."
+          "note": "(718) 677-6700 confirmed as VEG Ralph Ave on VEG’s own location page, at 1950 Ralph Avenue. This is the number that was also attached to the VERG South record; it belongs to VEG."
         },
         {
           "date": "2026-09-21",
@@ -1733,7 +1749,7 @@
           "to": "7186776700",
           "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
           "source": "manual",
-          "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader \u2014 the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+          "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
         }
       ],
       "phones": [
@@ -1758,7 +1774,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
           "source": "manual",
-          "note": "(917) 423-6444 confirmed as VEG Williamsburg on VEG\u2019s own location page, at 87 Kent Avenue."
+          "note": "(917) 423-6444 confirmed as VEG Williamsburg on VEG’s own location page, at 87 Kent Avenue."
         },
         {
           "date": "2026-09-21",
@@ -1776,7 +1792,7 @@
           "to": "9174236444",
           "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
           "source": "manual",
-          "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader \u2014 the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+          "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
         }
       ],
       "phones": [
@@ -1801,7 +1817,7 @@
           "to": "2026-09-18",
           "evidence_url": "https://verg-brooklyn.com/",
           "source": "manual",
-          "note": "196 4th Ave, Brooklyn 11217 and (718) 522-9400 match VERG\u2019s own site exactly. Their site currently shows this as their only hospital."
+          "note": "196 4th Ave, Brooklyn 11217 and (718) 522-9400 match VERG’s own site exactly. Their site currently shows this as their only hospital."
         }
       ],
       "emails": [
@@ -1816,7 +1832,7 @@
       "consecutive_failures": 0,
       "website": "https://verg-brooklyn.com",
       "status": "verify",
-      "status_note": "VERG\u2019s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
+      "status_note": "VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -1825,7 +1841,7 @@
           "to": "verify",
           "evidence_url": "https://verg-brooklyn.com/",
           "source": "manual",
-          "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG\u2019s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
+          "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
         }
       ],
       "last_verified": "2026-09-21"
@@ -1836,7 +1852,7 @@
       "consecutive_failures": 0,
       "confidence": "Low",
       "status": "retired",
-      "status_note": "Closed. VERG\u2019s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.",
+      "status_note": "Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.",
       "phones": [],
       "change_log": [
         {
@@ -1846,7 +1862,7 @@
           "to": null,
           "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
           "source": "manual",
-          "note": "Removed: this number is VEG Ralph Ave\u2019s, confirmed on VEG\u2019s own site. It was on a VERG record at a third address, so anyone calling it expecting VERG South reached a different company. A wrong number on an emergency listing does more harm than a missing one."
+          "note": "Removed: this number is VEG Ralph Ave’s, confirmed on VEG’s own site. It was on a VERG record at a third address, so anyone calling it expecting VERG South reached a different company. A wrong number on an emergency listing does more harm than a missing one."
         },
         {
           "date": "2026-09-18",
@@ -1855,7 +1871,7 @@
           "to": "retired",
           "evidence_url": "https://verg-brooklyn.com/",
           "source": "manual",
-          "note": "VERG\u2019s own site lists only 196 4th Ave; the Flatbush Ave location is closed."
+          "note": "VERG’s own site lists only 196 4th Ave; the Flatbush Ave location is closed."
         },
         {
           "date": "2026-09-18",

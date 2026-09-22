@@ -18,7 +18,13 @@ Put the animal in a cardboard box with small air holes, somewhere dark and quiet
 - **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation).
 - **Wild baby cottontail, or a fox, raccoon or other mammal:** [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab), (914) 933-7559, any hour. Or find the nearest licensed rehabilitator in the [DEC directory](/org/nys-dec-find-a-wildlife-rehabilitator); the DEC line is (844) 332-3267.
 - **Also in the city:** [Wildlife Freedom Foundation](/org/wildlife-freedom-foundation), a licensed rehabilitator on Roosevelt Island, by email.
-- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call [the stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829.
+- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call [the stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829; if it does not answer, [NOAA](/org/noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline), (866) 755-6622.
+
+**Reporting, not rescue.** These lines take reports; they will not collect an animal.
+
+- **Deer, coyote or other large animal, or wildlife you think is being kept or hunted illegally:** [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 in the daytime.
+- **Several sick or dead birds in one place:** [the USDA line](/org/usda-report-sick-birds-line), (866) 536-7593, or 311. Do not touch them with bare hands.
+- **Someone selling or killing protected wildlife:** [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like.
 
 ## If a cat may have touched it
 

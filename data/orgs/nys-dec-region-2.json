@@ -1,0 +1,64 @@
+{
+  "id": "nys-dec-region-2",
+  "name": "NYS DEC Region 2 (New York City office)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "wildlife"
+  ],
+  "needs": [
+    "referral"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "bronx",
+    "manhattan",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs (Brooklyn, Bronx, Manhattan, Queens and Staten Island)",
+  "zips": [
+    "11101"
+  ],
+  "region_note": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "phones": [
+    {
+      "value": "7184824900",
+      "display": "(718) 482-4900",
+      "label": "daytime, Mon-Fri 8:30am-4:45pm"
+    },
+    {
+      "value": "8443323267",
+      "display": "(844) 332-3267",
+      "label": "DEC dispatch, after hours"
+    }
+  ],
+  "emails": [],
+  "website": "https://dec.ny.gov",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "The DEC office that covers the five boroughs, at 1 Hunters Point Plaza, 47-40 21st Street, Long Island City, NY 11101. Call in the daytime about deer, coyotes and other large animals, wildlife you think is being kept or hunted illegally, or to be pointed to a licensed wildlife carer. After hours the DEC dispatch line takes wildlife calls statewide. A reporting and referral line: they will not collect an injured bird.",
+  "type_raw": "State environmental agency, New York City regional office - large mammals, deer, wildlife questions, referrals to licensed wildlife carers; a government office that does not collect animals",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://dec.ny.gov/about/contact-us/statewide-office-information"
+  ],
+  "last_verified": "2026-09-22",
+  "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -17,8 +17,14 @@
     "adoption",
     "surrender"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": true,
   "neighborhoods": "Suffolk County, Long Island (regional / NYC-adjacent)",
   "zips": [],

@@ -30,7 +30,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
   "intake_urls": [],
   "social": [],
   "address": {
@@ -38,12 +38,14 @@
     "zip": "10024"
   },
   "hours": null,
-  "notes": "558 Columbus Ave 10024 - (212) 501-9600 - feral-friendly (Bideawee list).",
+  "notes": "558 Columbus Ave 10024 - (212) 501-9600 - feral-friendly (Bideawee list). Now part of Thrive Pet Healthcare; its own page describes primary care for dogs and cats on the Upper West Side. A reviewer found it listed elsewhere as accepting wildlife, but its site does not say so, so it is not listed here as a wildlife vet: ask before bringing a wild animal.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
+  "source_urls": [
+    "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny"
+  ],
   "last_verified": null,
   "section": "Clinics, traps & support — MANHATTAN - feral-friendly / low-cost clinics",
   "source_files": [
@@ -52,7 +54,17 @@
   "last_checked": "2026-09-21",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-09-22",
+      "field": "website",
+      "from": null,
+      "to": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "source": "manual",
+      "note": "Website added from the reviewer’s 2026-09-21 document and confirmed on the page, which also confirms the address and number. The page describes dog and cat care only, so the wildlife claim she asked us to check is not applied."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

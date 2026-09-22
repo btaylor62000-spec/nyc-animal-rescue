@@ -1,0 +1,58 @@
+{
+  "id": "noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline",
+  "name": "NOAA Greater Atlantic marine mammal and sea turtle stranding hotline",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline"
+  ],
+  "animals": [
+    "wildlife",
+    "reptile",
+    "marine"
+  ],
+  "needs": [],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National hotline; use from anywhere on the coast",
+  "zips": [],
+  "region_note": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "phones": [
+    {
+      "value": "8667556622",
+      "display": "(866) 755-6622"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.fisheries.noaa.gov/report",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "NOAA's stranding and entanglement hotline for the Greater Atlantic region, Maine to Virginia, which includes every New York City beach. Call it if the New York stranding line does not answer. Keep people and pets well away from the animal and do not push it back into the water; a seal resting on a beach is often healthy.",
+  "type_raw": "National reporting hotline for stranded, injured, entangled or dead seals, whales, dolphins and sea turtles; backup to the New York stranding line listed above",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.fisheries.noaa.gov/report"
+  ],
+  "last_verified": "2026-09-22",
+  "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

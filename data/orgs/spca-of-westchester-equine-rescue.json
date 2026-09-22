@@ -13,8 +13,14 @@
     "medical-special-needs",
     "legal"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": true,
   "neighborhoods": "Westchester County (NYC-adjacent)",
   "zips": [

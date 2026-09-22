@@ -18,8 +18,14 @@
     "surrender",
     "foster"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": true,
   "neighborhoods": "Connecticut (tri-state; NYC-adjacent)",
   "zips": [],

@@ -3527,6 +3527,43 @@
       "matched": "INVERTEBRATES (tarantulas, hermit crabs, insects)"
     }
   ],
+  "island-wildlife-inc": [
+    {
+      "tag": "small-mammal",
+      "field": "type",
+      "matched": "small mammals"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "section",
+      "matched": "WILDLIFE REHAB"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REHABILITATION - in the city (home-based rehabber, "
+    }
+  ],
   "itty-bitty-city-kitties": [
     {
       "tag": "cat",
@@ -4877,6 +4914,33 @@
       "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
     }
   ],
+  "noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline": [
+    {
+      "tag": "reptile",
+      "field": "name",
+      "matched": "turtle"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE"
+    },
+    {
+      "tag": "marine",
+      "field": "name",
+      "matched": "marine mammal"
+    },
+    {
+      "tag": "hotline",
+      "field": "name",
+      "matched": "hotline"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
+    }
+  ],
   "noahs-ark-animal-rescue-ny-inc": [
     {
       "tag": "cat",
@@ -5403,6 +5467,23 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "nys-dec-region-2": [
+    {
+      "tag": "wildlife",
+      "field": "type",
+      "matched": "deer"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
     }
   ],
   "oak-street-cat-gang-death-row-cats-nyc": [
@@ -7503,6 +7584,75 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "usda-report-sick-birds-line": [
+    {
+      "tag": "bird-companion",
+      "field": "type",
+      "matched": "avian"
+    },
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "wild birds"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "poultry"
+    },
+    {
+      "tag": "wildlife",
+      "field": "notes",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "hotline",
+      "field": "areas",
+      "matched": "hotline"
+    },
+    {
+      "tag": "government",
+      "field": "notes",
+      "matched": "311"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
+    }
+  ],
+  "usfws-wildlife-crime-tip-line": [
+    {
+      "tag": "fish",
+      "field": "notes",
+      "matched": "Fish"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "legal",
+      "field": "notes",
+      "matched": "cruelty"
+    },
+    {
+      "tag": "hotline",
+      "field": "areas",
+      "matched": "hotline"
+    },
+    {
+      "tag": "government",
+      "field": "notes",
+      "matched": "311"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
     }
   ],
   "victory-4-the-voiceless-animal-rescue-inc": [

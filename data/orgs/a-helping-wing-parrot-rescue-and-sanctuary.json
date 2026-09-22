@@ -17,8 +17,14 @@
     "surrender",
     "sanctuary"
   ],
-  "boroughs": [],
-  "citywide": false,
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
   "outside_nyc": true,
   "neighborhoods": "Warren County, NJ (tri-state; NYC-adjacent)",
   "zips": [],

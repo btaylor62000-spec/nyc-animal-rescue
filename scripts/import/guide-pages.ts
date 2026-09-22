@@ -320,6 +320,10 @@ function whoToCallNow(orgs: Org[]): string[] {
   const dec = must(orgs, 'nys-dec-find-a-wildlife-rehabilitator');
   const marine = must(orgs, 'ny-marine-mammal-and-sea-turtle-stranding-hotline');
   const winorr = must(orgs, 'winorr-wildlife-in-need-of-rescue-and-rehabilitation');
+  const decNyc = must(orgs, 'nys-dec-region-2');
+  const usda = must(orgs, 'usda-report-sick-birds-line');
+  const usfws = must(orgs, 'usfws-wildlife-crime-tip-line');
+  const noaa = must(orgs, 'noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline');
   const link = (o: Org, text = o.name): string => `[${text}](/org/${o.id})`;
 
   return [
@@ -333,7 +337,13 @@ function whoToCallNow(orgs: Org[]): string[] {
     `- **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is ${link(winorr, 'WINORR')}.`,
     `- **Wild baby cottontail, or a fox, raccoon or other mammal:** ${link(cottontail, 'Cottontail Cottage')}, ${phoneOf(cottontail)}, any hour. Or find the nearest licensed rehabilitator in the ${link(dec, 'DEC directory')}; the DEC line is ${phoneOf(dec)}.`,
     `- **Also in the city:** ${link(wff, 'Wildlife Freedom Foundation')}, a licensed rehabilitator on Roosevelt Island, by email.`,
-    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}.`,
+    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}; if it does not answer, ${link(noaa, 'NOAA')}, ${phoneOf(noaa)}.`,
+    '',
+    '**Reporting, not rescue.** These lines take reports; they will not collect an animal.',
+    '',
+    `- **Deer, coyote or other large animal, or wildlife you think is being kept or hunted illegally:** ${link(decNyc, 'DEC Region 2')}, ${phoneOf(decNyc)} in the daytime.`,
+    `- **Several sick or dead birds in one place:** ${link(usda, 'the USDA line')}, ${phoneOf(usda)}, or 311. Do not touch them with bare hands.`,
+    `- **Someone selling or killing protected wildlife:** ${link(usfws, 'the federal tip line')}, ${phoneOf(usfws)}, anonymously if you like.`,
     '',
   ];
 }

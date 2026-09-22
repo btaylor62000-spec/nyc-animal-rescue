@@ -11,7 +11,9 @@
     "dog"
   ],
   "needs": [],
-  "boroughs": [],
+  "boroughs": [
+    "manhattan"
+  ],
   "citywide": false,
   "outside_nyc": false,
   "neighborhoods": null,
@@ -29,7 +31,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "Found on ACC New Hope partners on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
+  "notes": "A person read the site on 2026-09-22: 200 Ave A, Manhattan, a dog and cat practice. Found on ACC New Hope partners on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
   "confidence": "Low",
   "status": "active",

@@ -18,7 +18,7 @@ production; nothing here is aspirational.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
-| Sources | Three reference workbooks, the wildlife document, and `research/NYC_Reviewer_Additions.xlsx` for organizations a reviewer found missing (2 rows so far) |
+| Sources | Three reference workbooks, the wildlife document, and `research/NYC_Reviewer_Additions.xlsx` for organizations a reviewer found missing (7 rows: two rescues, a Bronx rehabber, and four wildlife reporting lines that the injured-bird guide cites by record id) |
 | Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
@@ -64,32 +64,15 @@ Ordered by how much harm it prevents, not by size.
    had dead or broken sites that day: Fosterlings, Urban Wildlife Alliance,
    Zani's Furry Friends.
 
-3. **Add the remaining wildlife contacts the reviewer found.** Cottontail
-   Cottage and Frankie's Feline Fund were added on 2026-09-22, each confirmed
-   on its own website, via `research/NYC_Reviewer_Additions.xlsx` — a workbook
-   in the same layout as the reference ones, registered in `MAIN_SOURCES`, so
-   the reviewer's research is never edited in place. Add further reviewer
-   finds as rows there. Still missing: six wildlife contacts from her
-   2026-09-21 document, several of which she flagged caveats on herself — the
-   USDA and USFWS lines are *reporting* lines and belong in guidance rather
-   than the rescue directory. Wording in that workbook matters: the tagging
-   rules read "24/7" as an emergency vet and "rabbit" as a domestic-rabbit
-   rescue, which is why the Cottontail row says "cottontails" and "around the
-   clock".
+3. **Two regional records still carry no location, on purpose.** Of the six
+   regional exotic-animal rescues with no borough, four are now reachable
+   citywide because their rows call them "NYC-adjacent" or "tri-state"
+   (`directory.ts` reads those as serving the city, unless the row also says
+   "far from NYC"). Equine Rescue, Inc. (Hudson Valley, "regional") and
+   Luv-N-Bunns (Philadelphia, "far from NYC") stay outside-only: search finds
+   them, filters do not, which matches what the research says about them.
 
-4. **Locate the last 6 regional records.** On 2026-09-22 the 82 records
-   with neither a zip nor the citywide flag came down to 44: national and
-   online services (microchip registries, vet-bill funds, domestic-violence
-   programmes, pantries) are now flagged citywide by a rule on their section
-   heading in `guide-orgs.ts`, and the zip filter shows borough-wide groups
-   for any zip in their borough (`zipToBorough` moved to `src/data/geo.ts` so
-   the browser can use it). The 6 left with no borough at all are regional
-   exotic-animal rescues outside the city that serve it — parrot, small-mammal,
-   rabbit and equine groups in the exotic workbook. They need `outside_nyc`
-   plus citywide, which the "serves NYC" rule in `directory.ts` should give
-   them if their rows say so; check why it does not.
-
-5. **Give the wildlife guide a byline.** It is written in the first person by
+4. **Give the wildlife guide a byline.** It is written in the first person by
    whoever wrote the original document.
 
 ### What the automated run got wrong
