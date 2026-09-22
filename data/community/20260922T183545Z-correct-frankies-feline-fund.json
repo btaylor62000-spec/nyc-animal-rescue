@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "correct",
+  "org_id": "frankies-feline-fund",
+  "submitted_at": "2026-09-22T18:35:45.665Z",
+  "submitter_email": null,
+  "reason": null,
+  "fields": {
+    "website": "https://frankiesfelinefund.org/",
+    "phone": "9175140228",
+    "email": "frankiesfelinefund@gmail.com",
+    "hours": "By appointment",
+    "boroughs": [
+      "manhattan"
+    ],
+    "animals": [
+      "cat"
+    ]
+  },
+  "check": {
+    "page": "https://frankiesfelinefund.org/",
+    "phone_seen": true,
+    "email_seen": true,
+    "checked_at": "2026-09-22T18:35:45.665Z"
+  }
+}
