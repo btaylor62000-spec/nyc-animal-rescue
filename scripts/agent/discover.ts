@@ -170,6 +170,8 @@ export interface Candidate {
   emails?: string[];
   /** Where those contacts were read from, for the record's change log. */
   contactsFrom?: string;
+  /** ISO date the site was last read for contacts, whether or not it gave any. */
+  contactsChecked?: string;
 }
 
 interface RosterSource {
@@ -377,11 +379,17 @@ async function main(): Promise<void> {
   // One page each, and only for the ones found this run. It is the same fetch
   // and the same extractor the weekly check uses; the difference is that this
   // populates a record rather than comparing against one.
-  if (fresh.length) {
-    console.log(`\nReading ${fresh.length} new organization site(s) for contact details...`);
+  // Stored candidates that were found before this step existed have never
+  // had their site read either. They are read once; `contactsChecked` stops
+  // the same silent site being fetched every month.
+  const unread = existing.filter((c) => !c.phones?.length && !c.emails?.length && !c.contactsChecked);
+  const toRead = [...fresh, ...unread];
+  if (toRead.length) {
+    console.log(`\nReading ${toRead.length} organization site(s) for contact details (${fresh.length} new, ${unread.length} stored)...`);
     let withContacts = 0;
-    for (const c of fresh) {
+    for (const c of toRead) {
       if (!c.website) continue;
+      c.contactsChecked = today;
       const page = await fetchPage(c.website);
       if (!page.ok || !page.html) continue;
       // Only what the organization publishes on its own domain counts.
@@ -400,7 +408,7 @@ async function main(): Promise<void> {
         withContacts++;
       }
     }
-    console.log(`  ${withContacts} of ${fresh.length} published a contact we could read`);
+    console.log(`  ${withContacts} of ${toRead.length} published a contact we could read`);
   }
 
   // --- write -------------------------------------------------------------
