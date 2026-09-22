@@ -4,6 +4,7 @@ slug: found-an-injured-bird
 summary: "Who to call first, how to catch, contain and transport an injured bird, and why food, water and heat can kill it."
 topics: ["injured bird","window strike","baby bird","pigeon","fledgling","bird hit window","baby squirrel","baby rabbit"]
 source: "research/injured-birds-wildlife-guide.docx"
+byline: "community site admin"
 ---
 # Injured birds and other wildlife
 

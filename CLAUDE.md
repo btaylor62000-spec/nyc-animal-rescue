@@ -72,9 +72,6 @@ Ordered by how much harm it prevents, not by size.
    Luv-N-Bunns (Philadelphia, "far from NYC") stay outside-only: search finds
    them, filters do not, which matches what the research says about them.
 
-4. **Give the wildlife guide a byline.** It is written in the first person by
-   whoever wrote the original document.
-
 ### What the automated run got wrong
 
 The weekly check ran for the first time on 2026-09-21 and pushed to production.

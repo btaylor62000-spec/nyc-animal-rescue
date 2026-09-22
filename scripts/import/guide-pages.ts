@@ -275,7 +275,7 @@ function looksLikeHeading(text: string): boolean {
  * and the page should say whose. Set to null until the author has given a
  * name to publish; the page then shows nothing rather than a guess.
  */
-export const WILDLIFE_GUIDE_BYLINE: string | null = null;
+export const WILDLIFE_GUIDE_BYLINE: string | null = 'community site admin';
 
 /*
  * Edits to the wildlife document's prose, applied as it is read.
