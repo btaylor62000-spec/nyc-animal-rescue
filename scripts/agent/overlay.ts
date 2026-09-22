@@ -31,6 +31,14 @@ export interface OverlayEntry {
   emails?: Org['emails'];
   website?: string | null;
   /**
+   * Replacement source citations.
+   *
+   * These render as the record's "Sources" list, so a dead one is a 404 a
+   * reader can click. Completes the set with `website` and `intake_urls`:
+   * every link the page shows can now be corrected.
+   */
+  source_urls?: string[];
+  /**
    * Replacement intake links.
    *
    * A dead link on a record is the same problem as a dead phone number, and

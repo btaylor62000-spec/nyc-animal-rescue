@@ -150,6 +150,15 @@
           "evidence_url": "https://nycacc.org/services/surrender",
           "source": "manual",
           "note": "Both old links returned 404. The surrender page moved to /services/surrender; the small-animal page is gone, so the general adopt and surrender routes replace it."
+        },
+        {
+          "date": "2026-09-22",
+          "field": "source_urls",
+          "from": "https://www.nycacc.org/GuineaPigs",
+          "to": "https://www.nycacc.org",
+          "evidence_url": "https://www.nycacc.org",
+          "source": "manual",
+          "note": "The cited page is gone. It was still rendering under Sources, where a reader could click it and get a 404."
         }
       ],
       "website": "https://www.nycacc.org",
@@ -166,6 +175,9 @@
           "url": "https://www.nycacc.org/emergency-placement/",
           "label": "At-risk foster or adopter pre-screener"
         }
+      ],
+      "source_urls": [
+        "https://www.nycacc.org"
       ]
     },
     "animal-clinic-of-bay-ridge": {
@@ -1056,8 +1068,18 @@
           "evidence_url": "https://www.muddypawsrescue.org/adopt",
           "source": "manual",
           "note": "Reverted. \"Our foster homes are at capacity\" limits which animals they can take; it does not mean the rescue has paused. The limitation is now written in the status note, where it is useful, rather than shown as a closure."
+        },
+        {
+          "date": "2026-09-22",
+          "field": "notes",
+          "from": null,
+          "to": "They do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.",
+          "evidence_url": "https://www.muddypawsrescue.org/adopt",
+          "source": "manual",
+          "note": "Moved from the status note, which the page only shows for a record that is not active. Stored where a reader can actually see it."
         }
-      ]
+      ],
+      "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out."
     },
     "muffins-pet-connection-mama-program": {
       "last_checked": "2026-09-21",

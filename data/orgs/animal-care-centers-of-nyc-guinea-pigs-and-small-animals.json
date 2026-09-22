@@ -74,7 +74,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.nycacc.org/GuineaPigs"
+    "https://www.nycacc.org"
   ],
   "last_verified": "2026-08-29",
   "section": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hamsters, chinchillas, ferrets)",
@@ -120,6 +120,15 @@
       "evidence_url": "https://nycacc.org/services/surrender",
       "source": "manual",
       "note": "Both old links returned 404. The surrender page moved to /services/surrender; the small-animal page is gone, so the general adopt and surrender routes replace it."
+    },
+    {
+      "date": "2026-09-22",
+      "field": "source_urls",
+      "from": "https://www.nycacc.org/GuineaPigs",
+      "to": "https://www.nycacc.org",
+      "evidence_url": "https://www.nycacc.org",
+      "source": "manual",
+      "note": "The cited page is gone. It was still rendering under Sources, where a reader could click it and get a 404."
     }
   ],
   "privacy_hold": false
