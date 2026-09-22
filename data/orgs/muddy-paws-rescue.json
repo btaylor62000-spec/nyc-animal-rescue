@@ -110,5 +110,6 @@
       "note": "Moved from the status note, which the page only shows for a record that is not active. Stored where a reader can actually see it."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

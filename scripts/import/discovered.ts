@@ -128,6 +128,7 @@ export function candidateToOrg(c: Candidate): Org {
         : []),
     ],
     privacy_hold: false,
+    community: null,
   };
 }
 

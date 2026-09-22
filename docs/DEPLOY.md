@@ -200,7 +200,41 @@ the last line.
 
 ---
 
-## 5. Your own domain (optional)
+## 5. Switch on visitor submissions
+
+The add-a-resource and correct-an-entry forms commit to the repository through
+the GitHub API, so they need a token. Until it is set they answer "not switched
+on yet" and nothing else changes.
+
+1. GitHub → **Settings** → **Developer settings** → **Personal access tokens**
+   → **Fine-grained tokens** → **Generate new token**. Repository access: only
+   this repository. Permissions: **Contents: Read and write**. Set an expiry
+   you will remember to renew.
+2. In the project directory:
+
+   ```bash
+   npx wrangler pages secret put GITHUB_CONTRIB_TOKEN --project-name=nyc-animal-rescue
+   ```
+
+   Paste the token when asked.
+3. Redeploy (push any commit, or **Retry deployment** in the dashboard) so the
+   Function picks the secret up.
+
+**Check it worked:** from a real browser, open any organization page, follow
+**correct it**, change the hours, and send it. Within a minute a commit named
+"Visitor corrected …" appears in `data/community/`; the **Publish visitor
+submissions** workflow runs; a few minutes later the entry shows the change
+with an "Updated by a visitor" label.
+
+> Turnstile refuses automated browsers, so this cannot be tested from a
+> script. A failure from automation is not a bug.
+
+If the token is ever leaked, revoke it on GitHub. The worst it can do is
+commit files, and every commit is visible and reversible.
+
+---
+
+## 6. Your own domain (optional)
 
 1. **Cloudflare Registrar** → **Register domain**. Registrar sells at cost —
    no markup, no first-year discount that triples later.
@@ -215,7 +249,7 @@ the last line.
 
 ---
 
-## 6. Run the assistant's evals against the real model
+## 7. Run the assistant's evals against the real model
 
 Worth doing once, to see what it actually says rather than only what it
 retrieves.

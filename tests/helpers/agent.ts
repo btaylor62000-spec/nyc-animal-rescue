@@ -42,6 +42,7 @@ export function org(over: Partial<Org> = {}): Org {
     consecutive_failures: 0,
     change_log: [],
     privacy_hold: false,
+    community: null,
     ...over,
   };
 }

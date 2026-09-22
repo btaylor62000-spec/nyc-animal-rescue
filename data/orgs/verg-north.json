@@ -64,5 +64,6 @@
       "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

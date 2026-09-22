@@ -128,18 +128,26 @@ const counts = {
       </ul>
     )}
 
-    <h2 id="report">Report a problem</h2>
+    <h2 id="report">Add a resource, or correct an entry</h2>
+    <p>
+      Know a rescue, clinic or hotline that is missing? <a href="/contribute">Add it</a>. Every organization
+      page has a <strong>correct it</strong> link for anything that is wrong. In both cases the phone number or
+      email you give is checked against the organization's own website before it is published, and the
+      entry is marked as a visitor's until someone here confirms it. An addition never reaches the
+      assistant's answers until then.
+    </p>
+    <p>
+      Every submission is a commit in this site's public repository, so it is visible and reversible. If
+      you see one that is wrong, correct it or {HAS_REPO ? <a href={REPORT_ISSUE_BASE} rel="noopener">open an issue</a> : 'say so'}.
+    </p>
+    <h3>Prefer to tell a person?</h3>
     {HAS_REPO ? (
       <p>
-        If an entry is wrong, out of date, or should not be here, say so. Every organization page
-        has a "report it" link that opens a pre-filled issue with the entry already identified.
-        You can also <a href={REPORT_ISSUE_BASE} rel="noopener">open one directly</a>.
+        Every organization page also has a "report it" link that opens a pre-filled issue with the entry
+        already identified. You can also <a href={REPORT_ISSUE_BASE} rel="noopener">open one directly</a>.
       </p>
     ) : (
-      <p>
-        Reporting is not connected yet. Once this site's repository is public, every organization
-        page will carry a "report it" link that opens a pre-filled issue.
-      </p>
+      <p>Reporting to a person is not connected yet.</p>
     )}
     <p class="muted" style="font-size:.92rem">
       Reports go to a public issue tracker{HAS_REPO && <> at <code>{GITHUB_REPO}</code></>}, which means

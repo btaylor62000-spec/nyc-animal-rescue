@@ -131,5 +131,6 @@
       "note": "The cited page is gone. It was still rendering under Sources, where a reader could click it and get a 404."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

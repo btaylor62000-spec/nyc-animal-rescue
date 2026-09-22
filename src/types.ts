@@ -218,4 +218,11 @@ export interface Org {
 
   /** Set when contact details were withheld pending permission. */
   privacy_hold: boolean;
+
+  /**
+   * Set when a visitor to the site added or corrected this record through
+   * the contribute form. Shown on the card, because a visitor's word has
+   * passed one automated check and nothing else.
+   */
+  community: { added_on: string | null; corrected_on: string | null } | null;
 }

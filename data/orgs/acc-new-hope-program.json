@@ -89,5 +89,6 @@
       "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs — which animals need placing now, and the form that says you have a home — are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

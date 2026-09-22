@@ -11,7 +11,7 @@ import { NEED_LABELS } from '../data/orgs.ts';
  * and whoever maintains this deciding what to do next. Both were previously
  * served only by reading the repository.
  */
-const { total, byConfidence, byCheck, needingAPerson, unverified, awaitingConsent, jobs, pendingImport } = STATUS;
+const { total, byConfidence, byCheck, needingAPerson, unverified, fromVisitors, awaitingConsent, jobs, pendingImport } = STATUS;
 
 const checked = byCheck.ok ?? 0;
 const never = byCheck.unchecked ?? 0;
@@ -86,12 +86,14 @@ const confidenceRows = [
           <dd>flagged for a person to look at — something ambiguous the checker would not guess</dd>
           <dt>{unverified.length}</dt>
           <dd>found automatically and published unconfirmed, sorted below everything checked</dd>
+          <dt>{fromVisitors.length}</dt>
+          <dd>added or corrected by visitors through the site, labelled as such until a person checks them</dd>
           <dt>{awaitingConsent.length}</dt>
           <dd>contacts withheld until the individual agrees to be listed</dd>
           {pendingImport > 0 && (
             <>
               <dt>{pendingImport}</dt>
-              <dd>found but not yet published — the data needs rebuilding</dd>
+              <dd>found by the monthly discovery run and held back, pending a decision on publishing them</dd>
             </>
           )}
         </dl>

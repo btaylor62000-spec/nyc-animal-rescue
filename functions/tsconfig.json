@@ -16,7 +16,12 @@
     "../src/data/synonyms.ts",
     "../src/data/geo.ts",
     "../scripts/import/corpus.ts",
-    "../src/types.ts"
+    "../src/types.ts",
+    "../src/contribute/**/*.ts",
+    "../scripts/agent/extract.ts",
+    "../scripts/agent/rules.ts",
+    "../scripts/agent/config.ts",
+    "../scripts/import/normalize.ts"
   ],
   "exclude": []
 }

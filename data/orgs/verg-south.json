@@ -77,5 +77,6 @@
       "note": "The same wrong number was written into the record's prose as well as its phone list, and the org page renders the prose. Removing it from one and not the other still left it there to dial. The replacement deliberately names the new street but not its zip, because the notes are indexed for search and a foreign zip in them makes this record answer the wrong zip query."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

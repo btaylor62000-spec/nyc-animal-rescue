@@ -1,0 +1,151 @@
+---
+/**
+ * One form for both adding a resource and correcting an entry. For a
+ * correction the current values are pre-filled and the name is fixed.
+ */
+import type { Org } from '../types.ts';
+import { ANIMAL_LABELS, BOROUGH_LABELS } from '../data/orgs.ts';
+import { TURNSTILE_SITE_KEY } from '../data/site.ts';
+import { ANIMALS, BOROUGHS } from '../types.ts';
+import Icon from './Icon.astro';
+
+interface Props {
+  kind: 'add' | 'correct';
+  org?: Org;
+}
+const { kind, org } = Astro.props;
+const correcting = kind === 'correct' && org;
+const phone = org?.phones[0]?.display ?? '';
+const email = org?.emails[0]?.value ?? '';
+---
+
+<form
+  id="contribute-form"
+  class="contribute"
+  data-kind={kind}
+  data-org-id={org?.id}
+  data-turnstile-site-key={TURNSTILE_SITE_KEY}
+  novalidate
+>
+  {correcting ? (
+    <p class="notice">
+      <Icon name="alert" size={17} />
+      <span>
+        You are correcting <strong translate="no">{org.name}</strong>. Change only what is wrong.
+        A new phone number or email has to appear on their own website, which is how it is checked.
+      </span>
+    </p>
+  ) : (
+    <p class="notice">
+      <Icon name="alert" size={17} />
+      <span>
+        The phone number or email you give is checked against the website you give before anything is published.
+        The entry then appears labelled as added by a visitor until someone here confirms it.
+      </span>
+    </p>
+  )}
+
+  <div class="contribute__grid">
+    <label class="contribute__field">
+      <span>Organization name {!correcting && <em>required</em>}</span>
+      <input type="text" name="name" maxlength="120" value={org?.name ?? ''} readonly={Boolean(correcting)} required={!correcting} />
+    </label>
+
+    <label class="contribute__field">
+      <span>Their website {!correcting && <em>required</em>}</span>
+      <input type="url" name="website" inputmode="url" placeholder="https://" value={org?.website ?? ''} />
+    </label>
+
+    <label class="contribute__field">
+      <span>Phone number</span>
+      <input type="tel" name="phone" inputmode="tel" placeholder="(718) 555-0100" value={phone} />
+    </label>
+
+    <label class="contribute__field">
+      <span>Email address</span>
+      <input type="email" name="email" inputmode="email" value={email} />
+    </label>
+
+    <label class="contribute__field contribute__field--wide">
+      <span>{correcting ? 'Anything else that has changed' : 'What they do and who they help'} {!correcting && <em>required</em>}</span>
+      <textarea name="what" rows="3" maxlength="700" placeholder={correcting ? 'e.g. They no longer take owner surrenders' : 'e.g. Foster-based rescue for senior cats in Queens; takes owner surrenders by appointment'}></textarea>
+    </label>
+
+    <fieldset class="contribute__field contribute__field--wide">
+      <legend>Boroughs they serve {!correcting && <em>required, or give a zip</em>}</legend>
+      <div class="contribute__checks">
+        {BOROUGHS.map((b) => (
+          <label><input type="checkbox" name="boroughs" value={b} checked={org?.boroughs.includes(b)} /> {BOROUGH_LABELS[b]}</label>
+        ))}
+      </div>
+    </fieldset>
+
+    <label class="contribute__field">
+      <span>Zip code</span>
+      <input type="text" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" value={org?.zips[0] ?? ''} />
+    </label>
+
+    <label class="contribute__field">
+      <span>Street address, if they have a public one</span>
+      <input type="text" name="address" maxlength="160" value={org?.address?.street ?? ''} />
+    </label>
+
+    <fieldset class="contribute__field contribute__field--wide">
+      <legend>Animals</legend>
+      <div class="contribute__checks">
+        {ANIMALS.map((a) => (
+          <label><input type="checkbox" name="animals" value={a} checked={org?.animals.includes(a)} /> {ANIMAL_LABELS[a]}</label>
+        ))}
+      </div>
+    </fieldset>
+
+    <label class="contribute__field">
+      <span>Hours</span>
+      <input type="text" name="hours" maxlength="160" placeholder="e.g. Daily 9am–7pm, walk in" value={org?.hours ?? ''} />
+    </label>
+
+    {correcting && (
+      <label class="contribute__field">
+        <span>Why, or where you saw the correct information</span>
+        <input type="text" name="reason" maxlength="400" />
+      </label>
+    )}
+
+    <label class="contribute__field contribute__field--wide">
+      <span>Your email <em>optional</em></span>
+      <input type="email" name="submitter_email" inputmode="email" />
+      <small class="muted">
+        Only if you would like to be asked about this entry. Submissions are recorded in this site's public
+        change history, so an email given here is public too. Leave it blank if you would rather not.
+      </small>
+    </label>
+  </div>
+
+  <div id="turnstile-wrap" class="chat__turnstile" hidden>
+    <p class="chat__turnstile-label">One moment — just checking you are a person.</p>
+    <div id="turnstile-host"></div>
+  </div>
+
+  <p id="contribute-status" class="contribute__status" hidden aria-live="polite"></p>
+
+  <button class="btn btn--primary" type="submit">
+    <Icon name="arrow" size={17} />
+    {correcting ? 'Send the correction' : 'Add this resource'}
+  </button>
+</form>
+
+<div id="contribute-done" class="notice" hidden>
+  <Icon name="shield" size={17} />
+  <span>
+    Done. The site rebuilds in a few minutes; the entry will be at
+    <a data-record-link href="/directory">its page</a> once it does.
+  </span>
+</div>
+
+{TURNSTILE_SITE_KEY && (
+  <script is:inline async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+)}
+
+<script>
+  import '../client/contribute.ts';
+</script>

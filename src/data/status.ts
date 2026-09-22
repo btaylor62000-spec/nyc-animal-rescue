@@ -81,7 +81,9 @@ export const STATUS = {
   ),
 
   /** Found on a roster, published, but nothing has confirmed them. */
-  unverified: ORGS.filter((o) => o.check_status === 'new-unverified'),
+  unverified: ORGS.filter((o) => o.check_status === 'new-unverified' && !o.community?.added_on),
+  /** Added or corrected by visitors through the site, awaiting a person's check. */
+  fromVisitors: ORGS.filter((o) => o.community),
 
   /** Contacts withheld until the person agrees to be listed. */
   awaitingConsent: (holds.held ?? []).map((h) => ({ person: h.person ?? 'unnamed', ask: h.ask ?? '' })),

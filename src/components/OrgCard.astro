@@ -11,6 +11,8 @@ const { org } = Astro.props;
 const age = daysSinceVerified(org);
 const confirm = needsConfirmation(org);
 const newlyFound = isNewlyFound(org);
+const byVisitor = org.community?.added_on ?? null;
+const correctedByVisitor = org.community?.corrected_on ?? null;
 
 const where = org.citywide
   ? 'All five boroughs'
@@ -49,7 +51,13 @@ const phone = org.phones[0];
 
   <ul class="card__tags">
     <li><ConfidenceBadge confidence={org.confidence} /></li>
-    {newlyFound && <li><span class="tag tag--strong">Newly found — not yet verified</span></li>}
+    {byVisitor ? (
+      <li><span class="tag tag--strong">Added by a visitor — not yet checked</span></li>
+    ) : newlyFound ? (
+      <li><span class="tag tag--strong">Newly found — not yet verified</span></li>
+    ) : correctedByVisitor ? (
+      <li><span class="tag tag--strong">Updated by a visitor</span></li>
+    ) : null}
     {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>
@@ -70,8 +78,12 @@ const phone = org.phones[0];
     <p class="notice">
       <Icon name="alert" size={17} />
       <span>
-        {newlyFound
+        {byVisitor
+          ? `A visitor added this on ${byVisitor}. Their website showed the contact that day, but nobody here has checked it. Confirm before relying on it.`
+          : newlyFound
           ? 'We found this on an official list of rescue partners, but nothing about it has been checked yet. Confirm before relying on it.'
+          : correctedByVisitor
+          ? `A visitor corrected this entry on ${correctedByVisitor}; the new detail was seen on the organization’s own site that day, and nobody here has checked it yet.`
           : org.status !== 'active' && org.status_note
           ? org.status_note
           : org.confidence === 'Low'

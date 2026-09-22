@@ -65,5 +65,6 @@
   "check_status": "unreachable",
   "consecutive_failures": 1,
   "change_log": [],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

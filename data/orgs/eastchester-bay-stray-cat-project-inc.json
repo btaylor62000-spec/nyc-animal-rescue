@@ -59,5 +59,6 @@
   "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

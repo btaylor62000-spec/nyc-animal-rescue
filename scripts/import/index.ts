@@ -28,6 +28,7 @@ import { buildReport } from './report.ts';
 import { buildOrgCorpus, chunkGuide, type CorpusGuide } from './corpus.ts';
 import { applyOverlay, loadOverlay } from '../agent/overlay.ts';
 import { discoveredOrgs } from './discovered.ts';
+import { applyCorrections, loadSubmissions, submissionToOrg } from './community.ts';
 import type { TagTrace } from './tag.ts';
 
 const ORGS_DIR = 'data/orgs';
@@ -131,13 +132,28 @@ function main(): void {
   // Candidates from the monthly discovery run. They go through the same merge,
   // so anything already in the directory under another name folds into it
   // rather than appearing twice.
-  const discovered = discoveredOrgs();
+  //
+  // Only on request. Publishing them is a decision that has not been made
+  // (most are outside the city), and while it is pending every plain import
+  // -- including the ones the workflows run -- must not quietly make it.
+  const publishDiscovered = process.argv.includes('--publish-discovered');
+  const discovered = publishDiscovered ? discoveredOrgs() : [];
   if (discovered.length) {
     console.log(`  found   ${String(discovered.length).padStart(3)} unverified candidates from monthly discovery`);
+  } else if (discoveredOrgs().length) {
+    console.log(`  (${discoveredOrgs().length} discovery candidates held back; pass --publish-discovered to include them)`);
+  }
+
+  // What visitors have added through the site. Additions are merged like any
+  // other record; corrections are applied at the end, after the overlay.
+  const submissions = loadSubmissions();
+  const additions = submissions.filter((s) => s.kind === 'add').map(submissionToOrg);
+  if (submissions.length) {
+    console.log(`  visitor ${String(additions.length).padStart(3)} additions and ${submissions.length - additions.length} corrections from data/community/`);
   }
 
   console.log('De-duplicating…');
-  const merge = mergeOrgs([...mainOrgs, ...guideOrgs, ...discovered]);
+  const merge = mergeOrgs([...mainOrgs, ...guideOrgs, ...discovered, ...additions]);
   console.log(`  ${mainOrgs.length + guideOrgs.length} -> ${merge.orgs.length} (${merge.merged.length} clusters merged)`);
 
   const applied = applyOverrides(merge.orgs);
@@ -160,6 +176,16 @@ function main(): void {
     console.log(
       `Applied automated updates to ${applied.length} record(s)` +
         (orphaned.length ? `; ${orphaned.length} overlay entr(ies) no longer match a record: ${orphaned.slice(0, 5).join(', ')}` : ''),
+    );
+  }
+
+  // Visitors' corrections, last of all: the latest word on a contact wins,
+  // and the record is labelled as carrying it.
+  const corrections = applyCorrections(merge.orgs, submissions);
+  if (corrections.applied.length || corrections.orphaned.length) {
+    console.log(
+      `Applied ${corrections.applied.length} visitor correction(s)` +
+        (corrections.orphaned.length ? `; ${corrections.orphaned.length} refer to records that no longer exist: ${corrections.orphaned.slice(0, 5).join(', ')}` : ''),
     );
   }
 

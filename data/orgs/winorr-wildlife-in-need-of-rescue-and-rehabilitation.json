@@ -56,5 +56,6 @@
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
-  "privacy_hold": true
+  "privacy_hold": true,
+  "community": null
 }

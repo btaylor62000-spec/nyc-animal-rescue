@@ -115,6 +115,12 @@ contact. It confirms the ones stored against the organization's own site, and
 when it cannot, it says what it found and where, and a person decides. Nothing
 is ever deleted automatically.
 
+**Visitors can add and correct entries, and the site says so.** Anyone can add a
+resource or correct one. The contact given is checked against the
+organization's own website, and the entry is labelled as a visitor's until a
+person confirms it. A visitor's addition never reaches the assistant's answers
+until then.
+
 **The assistant cannot invent a contact.** Organizations are chosen by
 retrieval, not by the model, and reach the reader as cards built from the real
 records. Every phone number, email and web address the model writes is checked

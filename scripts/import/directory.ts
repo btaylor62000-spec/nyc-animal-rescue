@@ -277,6 +277,7 @@ function buildDraft(
     consecutive_failures: 0,
     change_log: [],
     privacy_hold: false,
+    community: null,
     _trace: trace,
     _untagged: untagged,
     _origin: `${spec.file}#${tab}:${rowNumber}`,

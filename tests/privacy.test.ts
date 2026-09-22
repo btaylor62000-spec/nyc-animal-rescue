@@ -11,7 +11,7 @@ function org(over: Partial<Org> & { id: string; name: string }): Org {
     hours: null, notes: null, type_raw: null, confidence: 'Medium', status: 'active',
     status_note: null, source_urls: [], last_verified: null, section: null,
     source_files: ['test'], last_checked: null, check_status: 'unchecked',
-    consecutive_failures: 0, change_log: [], privacy_hold: false,
+    consecutive_failures: 0, change_log: [], privacy_hold: false, community: null,
     ...over,
   };
 }

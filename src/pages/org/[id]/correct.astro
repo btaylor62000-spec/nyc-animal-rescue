@@ -1,0 +1,25 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ContributeForm from '../../../components/ContributeForm.astro';
+import { ORGS, ORGS_BY_ID } from '../../../data/orgs.ts';
+
+export function getStaticPaths() {
+  return ORGS.map((o) => ({ params: { id: o.id } }));
+}
+
+const { id } = Astro.params;
+const org = ORGS_BY_ID.get(id!)!;
+---
+
+<Base title={`Correct: ${org.name}`} description={`Correct the contact details for ${org.name}.`}>
+  <div class="wrap wrap--narrow">
+    <p class="muted" style="margin:1rem 0 0"><a href={`/org/${org.id}`}>&larr; Back to {org.name}</a></p>
+    <h1>Correct this entry</h1>
+    <p class="lede">
+      Numbers change and small groups fold. If something on this entry is wrong, fix it here. Changes go
+      live in a few minutes and are marked as a visitor's correction until someone here confirms them.
+    </p>
+
+    <ContributeForm kind="correct" org={org} />
+  </div>
+</Base>

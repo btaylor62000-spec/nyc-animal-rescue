@@ -21,7 +21,7 @@ export const ORG_SCHEMA = {
     'phones', 'emails', 'website', 'intake_urls', 'social', 'address', 'hours',
     'notes', 'type_raw', 'confidence', 'status', 'status_note', 'source_urls',
     'last_verified', 'section', 'source_files', 'last_checked', 'check_status',
-    'consecutive_failures', 'change_log', 'privacy_hold',
+    'consecutive_failures', 'change_log', 'privacy_hold', 'community',
   ],
   properties: {
     id: { type: 'string', pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$' },
@@ -134,5 +134,14 @@ export const ORG_SCHEMA = {
       },
     },
     privacy_hold: { type: 'boolean' },
+    community: {
+      type: ['object', 'null'],
+      additionalProperties: false,
+      required: ['added_on', 'corrected_on'],
+      properties: {
+        added_on: { type: ['string', 'null'], pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
+        corrected_on: { type: ['string', 'null'], pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
+      },
+    },
   },
 } as const;

@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContributeForm from '../../components/ContributeForm.astro';
+---
+
+<Base
+  title="Add a resource"
+  description="Know a rescue, clinic or hotline that is missing from this directory? Add it. The contact is checked against their website before it is published."
+>
+  <div class="wrap wrap--narrow">
+    <h1>Add a resource</h1>
+    <p class="lede">
+      Know a rescue, clinic, rehabber or hotline that is not here? Add it. You need their name, their own
+      website, one way to reach them, and a sentence on what they do.
+    </p>
+    <p class="muted">
+      Already listed but wrong? Open its page and use <strong>Correct this entry</strong> instead. Not sure?
+      <a href="/directory">Search the directory first.</a>
+    </p>
+
+    <ContributeForm kind="add" />
+
+    <p class="muted" style="font-size:.9rem;margin-top:2rem">
+      Please do not add an individual's personal phone number. If a group is reached through one person's
+      mobile, give their website and email, and a person here will ask them what they want listed.
+    </p>
+  </div>
+</Base>

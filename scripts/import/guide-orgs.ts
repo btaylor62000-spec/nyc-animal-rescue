@@ -453,6 +453,7 @@ export function extractGuideOrgs(spec: GuideOrgSpec): Org[] {
         consecutive_failures: 0,
         change_log: [],
         privacy_hold: false,
+        community: null,
       });
     }
   }

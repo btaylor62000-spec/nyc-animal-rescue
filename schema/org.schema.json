@@ -38,7 +38,8 @@
     "check_status",
     "consecutive_failures",
     "change_log",
-    "privacy_hold"
+    "privacy_hold",
+    "community"
   ],
   "properties": {
     "id": {
@@ -447,6 +448,33 @@
     },
     "privacy_hold": {
       "type": "boolean"
+    },
+    "community": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "added_on",
+        "corrected_on"
+      ],
+      "properties": {
+        "added_on": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "corrected_on": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
     }
   }
 }

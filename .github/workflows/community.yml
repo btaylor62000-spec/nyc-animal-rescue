@@ -1,0 +1,62 @@
+# Publishing what visitors submit.
+#
+# The contribute endpoint commits each accepted submission as a JSON file in
+# data/community/. This workflow turns those into records and commits the
+# regenerated data, which triggers the Cloudflare Pages build. If the data no
+# longer validates or the site no longer builds, nothing is committed and the
+# submission stays in its file for a person to look at.
+name: Publish visitor submissions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/community/**'
+  workflow_dispatch:
+
+concurrency:
+  group: publish-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # The regenerated data is committed by the bot below; that commit does not
+    # touch data/community/, so it cannot trigger this workflow again.
+    if: github.actor != 'nyc-animal-rescue-bot'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Rebuild the data
+        run: npm run import
+
+      - name: Check nothing broke
+        run: |
+          npm test
+          npm run build
+
+      - name: Commit the published records
+        run: |
+          git config user.name "nyc-animal-rescue-bot"
+          git config user.email "noreply@users.noreply.github.com"
+          git add data content build/reports
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+            exit 0
+          fi
+          git commit -m "Publish visitor submissions" \
+            -m "Records regenerated from data/community/. Additions are labelled as added by a visitor and excluded from the assistant until checked; corrections are applied and labelled."
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

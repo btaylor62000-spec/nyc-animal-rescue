@@ -77,5 +77,6 @@
       "note": "Removed: (212) 222-1234 is the unedited placeholder from their site theme. It is present only as a hidden tel: link and is never displayed to a reader. A placeholder on a rescue listing is a wrong number, and a wrong number is worse than none."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

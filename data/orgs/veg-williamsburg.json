@@ -85,5 +85,6 @@
       "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
     }
   ],
-  "privacy_hold": false
+  "privacy_hold": false,
+  "community": null
 }

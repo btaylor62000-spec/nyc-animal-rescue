@@ -72,6 +72,24 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
       {org.org_types.map((t) => <li><span class="tag">{ORG_TYPE_LABELS[t]}</span></li>)}
     </ul>
 
+    {org.community?.added_on && (
+      <p class="notice">
+        <Icon name="alert" size={17} />
+        <span>
+          A visitor added this entry on {org.community.added_on}. Their website showed the contact given that
+          day; nobody here has checked anything else about it. Confirm before relying on it.
+        </span>
+      </p>
+    )}
+    {org.community?.corrected_on && !org.community.added_on && (
+      <p class="notice">
+        <Icon name="alert" size={17} />
+        <span>
+          A visitor corrected this entry on {org.community.corrected_on}. The new detail was seen on the
+          organization’s own site that day. It has not yet been checked by a person here.
+        </span>
+      </p>
+    )}
     {org.status !== 'active' && org.status_note && (
       <p class="notice notice--urgent">
         <Icon name="alert" size={17} />
@@ -219,12 +237,11 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
 
         <h2>Something wrong?</h2>
         <p class="muted" style="font-size:.92rem">
-          {HAS_REPO ? (
-            <>Numbers change and small groups fold. If this entry is out of date,
-            <a href={reportUrl} rel="noopener"> report it</a> — it opens a pre-filled issue.</>
-          ) : (
-            <>Numbers change and small groups fold. Reporting is not connected yet —
-            see <a href="/about#report">how this is maintained</a>.</>
+          Numbers change and small groups fold. If this entry is out of date,
+          <a href={`/org/${org.id}/correct`}> correct it</a>. A new contact is checked against their own
+          website and goes live in a few minutes, marked as a visitor's correction.
+          {HAS_REPO && (
+            <> Prefer to tell a person? <a href={reportUrl} rel="noopener">Report it</a> instead.</>
           )}
         </p>
       </aside>
