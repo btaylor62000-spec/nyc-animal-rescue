@@ -28,6 +28,17 @@ import { formatPhone, slugify } from './normalize.ts';
 
 export const COMMUNITY_DIR = 'data/community';
 
+/**
+ * Did the quick check actually find the contact on the organization's site?
+ *
+ * Only a positive finding counts. Not finding it is weak evidence either way --
+ * most sites render a number in the browser or keep it on a contact page -- so
+ * it means "unconfirmed", never "wrong".
+ */
+function confirmedBy(s: Submission): boolean {
+  return s.check.phone_seen || s.check.email_seen;
+}
+
 export function loadSubmissions(dir = COMMUNITY_DIR): Submission[] {
   if (!existsSync(dir)) return [];
   const out: Submission[] = [];
@@ -78,9 +89,11 @@ export function submissionToOrg(s: Submission): Org {
       field: 'record',
       from: null,
       to: 'added',
-      evidence_url: s.check.page,
+      evidence_url: s.check.page ?? undefined,
       source: 'community',
-      note: 'Submitted by a visitor to the site. The contact given was found on the website given, and nothing else has been checked.',
+      note: confirmedBy(s)
+        ? 'Submitted by a visitor. The contact given was found on the website given, and nothing else has been checked.'
+        : `Submitted by a visitor. ${s.check.note ?? 'The contact could not be confirmed against their website.'} Nothing here has been checked by a person.`,
     },
   ];
 
@@ -127,6 +140,8 @@ export function submissionToOrg(s: Submission): Org {
 
 export interface CorrectionReport {
   applied: Array<{ id: string; fields: string[] }>;
+  /** Corrections that changed a contact we could not confirm on their site. */
+  unconfirmed: Array<{ id: string; fields: string[] }>;
   /** Corrections whose record no longer exists. */
   orphaned: string[];
 }
@@ -134,7 +149,7 @@ export interface CorrectionReport {
 /** Apply corrections, oldest first, so the latest word wins. */
 export function applyCorrections(orgs: Org[], submissions: Submission[]): CorrectionReport {
   const byId = new Map(orgs.map((o) => [o.id, o]));
-  const report: CorrectionReport = { applied: [], orphaned: [] };
+  const report: CorrectionReport = { applied: [], unconfirmed: [], orphaned: [] };
 
   for (const s of submissions.filter((x) => x.kind === 'correct')) {
     const org = byId.get(s.org_id);
@@ -150,7 +165,7 @@ export function applyCorrections(orgs: Org[], submissions: Submission[]): Correc
       field,
       from,
       to,
-      evidence_url: s.check.page,
+      evidence_url: s.check.page ?? undefined,
       source: 'community',
       note: s.reason ? `A visitor wrote: ${s.reason}` : 'Corrected by a visitor to the site.',
     });
@@ -210,6 +225,17 @@ export function applyCorrections(orgs: Org[], submissions: Submission[]): Correc
     // so its verification date no longer describes what is shown.
     org.last_verified = null;
     org.community = { added_on: org.community?.added_on ?? null, corrected_on: date };
+
+    // A correction we could not confirm has replaced something that may have
+    // been checked. The entry keeps the new details -- the person reporting a
+    // wrong number is usually right, and they have just rung it -- but it stops
+    // claiming to be well evidenced, and it is listed for someone to look at.
+    const touchedContact = changed.includes('phone') || changed.includes('email');
+    if (touchedContact && !confirmedBy(s)) {
+      org.confidence = 'Low';
+      org.check_status = 'needs-review';
+      report.unconfirmed.push({ id: org.id, fields: changed });
+    }
     report.applied.push({ id: org.id, fields: changed });
   }
   return report;

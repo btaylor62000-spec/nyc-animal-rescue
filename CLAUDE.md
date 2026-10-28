@@ -332,9 +332,33 @@ reference, wrong for something someone has to act on.
 
 Decided 2026-09-22, with the risk stated and accepted: additions auto-publish,
 labelled; corrections overwrite, labelled. No person is in the loop before
-publication. The only gate is the quick check, and it is worth being clear
-what it proves: that the phone or email given appears on the website given.
-Not that the website is the organization's, not that the organization exists.
+publication.
+
+**The quick check stopped being a gate on 2026-10-28.** It was refusing real
+contributors. Measured against 30 organizations whose numbers are known to be
+correct, requiring the contact to appear on the page given refused **63% of
+them** — the city's own shelter, the ASPCA and BluePearl among them — because
+sites render numbers in the browser, keep them on a contact page, or answer
+403 to anything automated. It is the same failure the weekly check had, for
+the same reason, and it has the same answer: not finding a contact means
+*unconfirmed*, never *wrong*.
+
+It never protected much either. As the old note here said, it proved the
+contact appeared on the page given — not that the page was the
+organization's. Anyone acting in bad faith controls the page they cite, so it
+turned away two thirds of honest people and nobody determined.
+
+So the check now records instead of refusing. `check.phone_seen` /
+`check.email_seen` say whether it found anything; `check.site_read` and
+`check.note` say why not. An unconfirmed addition is published at Low
+confidence, excluded from the assistant, labelled, with the reason in its
+change log. An unconfirmed **correction** is applied — someone reporting a
+wrong number has usually just rung it — but the record drops to Low
+confidence and `needs-review`, so it stops claiming to be well evidenced.
+
+What still refuses: a held personal number, a placeholder number, a duplicate
+(which points at the correction form instead), a missing required field, the
+bot check and the rate limit.
 
 How it moves:
 

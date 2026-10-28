@@ -62,11 +62,28 @@ export interface Submission {
   submitter_email: string | null;
   reason: string | null;
   fields: SubmittedFields;
-  /** What the quick check saw on the organization's own website. */
+  /**
+   * What the quick check saw on the organization's own website.
+   *
+   * This records, it does not gate. Measured against 30 organizations whose
+   * numbers are known to be right, requiring the contact to appear on the page
+   * refused 63% of them: numbers rendered by JavaScript, numbers on a contact
+   * page rather than the home page, and sites that answer 403 to anything that
+   * looks automated. It also stopped nobody acting in bad faith, who can put
+   * any number on a page they control.
+   *
+   * So an unconfirmed submission is published and said to be unconfirmed,
+   * which is the same answer this project reached for the weekly check.
+   */
   check: {
-    page: string;
+    /** The page actually read, or null if it could not be read. */
+    page: string | null;
     phone_seen: boolean;
     email_seen: boolean;
+    /** False when the site could not be read at all. */
+    site_read: boolean;
+    /** Why it could not be read, when it could not. */
+    note: string | null;
     checked_at: string;
   };
 }
@@ -79,6 +96,8 @@ export interface ContributeResponse {
   url?: string;
   /** When the check found the group already listed: where to correct it instead. */
   existing?: { id: string; name: string };
+  /** True when the contact was actually found on the organization's site. */
+  confirmed?: boolean;
 }
 
 export function normalizePhoneInput(raw: string): string | null {

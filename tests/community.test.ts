@@ -22,7 +22,7 @@ function addition(over: Partial<Submission['fields']> = {}): Submission {
       boroughs: ['queens'],
       ...over,
     },
-    check: { page: 'https://www.makinbiscuits.org/', phone_seen: false, email_seen: true, checked_at: NOW },
+    check: { page: 'https://www.makinbiscuits.org/', phone_seen: false, email_seen: true, site_read: true, note: null, checked_at: NOW },
   };
 }
 
@@ -86,7 +86,7 @@ test('a correction overwrites the contact, logs it with the page it was checked 
     submitter_email: null,
     reason: 'Their site shows the new number.',
     fields: { phone: '7185550999' },
-    check: { page: 'https://example.org/contact', phone_seen: true, email_seen: false, checked_at: NOW },
+    check: { page: 'https://example.org/contact', phone_seen: true, email_seen: false, site_read: true, note: null, checked_at: NOW },
   };
   const report = applyCorrections([record], [fix]);
   assert.deepEqual(report.applied, [{ id: 'some-rescue', fields: ['phone'] }]);
@@ -104,7 +104,7 @@ test('a correction that changes nothing leaves no trace, and one for a missing r
   const same: Submission = {
     version: 1, kind: 'correct', org_id: 'some-rescue', submitted_at: NOW, submitter_email: null, reason: null,
     fields: { phone: '7185550142' },
-    check: { page: 'https://example.org', phone_seen: true, email_seen: false, checked_at: NOW },
+    check: { page: 'https://example.org', phone_seen: true, email_seen: false, site_read: true, note: null, checked_at: NOW },
   };
   // The form re-sends the current website with a trailing slash added.
   const slash: Submission = { ...same, fields: { phone: '7185550142', website: 'https://example.org/' } };
@@ -113,4 +113,70 @@ test('a correction that changes nothing leaves no trace, and one for a missing r
   assert.equal(report.applied.length, 0);
   assert.equal(record.community, null);
   assert.deepEqual(report.orphaned, ['no-such-record']);
+});
+
+// --- an unconfirmed submission is published, not refused --------------------
+//
+// Requiring the contact to appear on the organization's own page refused 63%
+// of submissions whose details were correct: numbers rendered in the browser,
+// numbers on a contact page, sites that answer 403 to anything automated. The
+// contributor is told what could not be confirmed; they are not turned away.
+
+/** An addition whose contact the quick check could not find. */
+function unconfirmedAddition(note = 'The contact given was not found on their website.'): Submission {
+  const s = addition({ phone: '7185550142' });
+  s.check = { page: 'https://www.makinbiscuits.org/', phone_seen: false, email_seen: false, site_read: true, note, checked_at: NOW };
+  return s;
+}
+
+test('an addition we could not confirm is still published, and says so', () => {
+  const record = submissionToOrg(unconfirmedAddition());
+  assert.ok(record, 'the organization must be published');
+  assert.deepEqual(record!.phones.map((p) => p.value), ['7185550142'], 'with the contact the visitor gave');
+  assert.equal(record!.confidence, 'Low');
+  assert.equal(record!.check_status, 'new-unverified');
+  assert.match(record!.change_log[0]!.note ?? '', /not found on their website/i);
+});
+
+test('an addition whose website could not be read at all is still published', () => {
+  const s = unconfirmedAddition('Their website could not be reached.');
+  s.check.site_read = false;
+  s.check.page = null;
+  const record = submissionToOrg(s);
+  assert.ok(record);
+  assert.equal(record!.confidence, 'Low');
+  assert.match(record!.change_log[0]!.note ?? '', /could not be reached/i);
+});
+
+test('a confirmed addition says that instead', () => {
+  const record = submissionToOrg(addition());
+  assert.match(record!.change_log[0]!.note ?? '', /was found on the website/i);
+});
+
+test('an unconfirmed correction is applied but stops claiming to be verified', () => {
+  const target = org({ id: 'makin-biscuits', phones: [{ value: '7185550100', display: '(718) 555-0100' }], confidence: 'High', last_verified: '2026-08-26' });
+  const s: Submission = {
+    ...addition({ phone: '7185550142' }),
+    kind: 'correct',
+    check: { page: 'https://www.makinbiscuits.org/', phone_seen: false, email_seen: false, site_read: true, note: 'not found', checked_at: NOW },
+  };
+
+  const report = applyCorrections([target], [s]);
+  assert.deepEqual(target.phones.map((p) => p.value), ['7185550142'], 'someone reporting a wrong number has usually just rung it');
+  assert.equal(target.confidence, 'Low', 'but the entry must stop claiming to be well evidenced');
+  assert.equal(target.check_status, 'needs-review');
+  assert.equal(target.last_verified, null);
+  assert.equal(report.unconfirmed.length, 1, 'and it is listed for a person');
+});
+
+test('a confirmed correction keeps its confidence', () => {
+  const target = org({ id: 'makin-biscuits', phones: [{ value: '7185550100', display: '(718) 555-0100' }], confidence: 'High' });
+  const s: Submission = {
+    ...addition({ phone: '7185550142' }),
+    kind: 'correct',
+    check: { page: 'https://www.makinbiscuits.org/', phone_seen: true, email_seen: false, site_read: true, note: null, checked_at: NOW },
+  };
+  const report = applyCorrections([target], [s]);
+  assert.equal(target.confidence, 'High');
+  assert.equal(report.unconfirmed.length, 0);
 });

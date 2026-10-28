@@ -232,34 +232,51 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     // where the new number has to appear. The visitor does not get to name
     // the page that vouches for them.
     websiteToCheck = fields.website ?? target.website;
-    if (!websiteToCheck) {
-      return reply(400, { ok: false, message: 'This entry has no website on record, so a new contact cannot be checked. Give their website as well.' });
-    }
+    // No website on record means nothing to check against. That is a reason
+    // to label the result, not to turn the person away.
+
   }
 
   // --- the quick check ------------------------------------------------------
+  // It records what it saw. It does not refuse.
+  //
+  // Requiring the contact to appear on the page turned away 63% of
+  // submissions whose details were correct, because plenty of organizations
+  // render their number in the browser, keep it on a contact page, or answer
+  // 403 to anything automated. It never stopped a bad submission either: a
+  // page the submitter controls will always agree with them.
+  //
+  // What is published instead is the truth about what we know. An addition
+  // already arrives at Low confidence, excluded from the assistant and
+  // labelled as added by a visitor; an unconfirmed one says so on the record
+  // and is listed for a person. That is the same answer this project reached
+  // for the weekly check, for the same reason.
   const contactGiven = Boolean(fields.phone || fields.email);
   let phoneSeen = false;
   let emailSeen = false;
-  let page = websiteToCheck;
-  if (contactGiven || fields.website) {
+  let siteRead = false;
+  let checkNote: string | null = null;
+  let page: string | null = websiteToCheck;
+
+  if (websiteToCheck && (contactGiven || fields.website)) {
     const site = await readSite(websiteToCheck);
     if ('error' in site) {
-      return reply(422, { ok: false, message: `${site.error} The details are checked against the organization’s own website, so it has to be readable.` });
-    }
-    page = site.finalUrl;
-    if (site.text.length < 200) {
-      return reply(422, { ok: false, message: 'Their website shows almost no text to a plain reader, so the contact cannot be checked against it.' });
-    }
-    phoneSeen = fields.phone ? containsPhone(site.text, fields.phone) : false;
-    emailSeen = fields.email ? containsEmail(site.text, fields.email) : false;
-    if (contactGiven && !phoneSeen && !emailSeen) {
-      return reply(422, {
-        ok: false,
-        message: 'That contact does not appear on the website given. Check it against their site and try again, or give the page it is on as the website.',
-      });
+      checkNote = site.error;
+    } else if (site.text.length < 200) {
+      page = site.finalUrl;
+      checkNote = 'Their website shows almost no text to a plain reader.';
+    } else {
+      siteRead = true;
+      page = site.finalUrl;
+      phoneSeen = fields.phone ? containsPhone(site.text, fields.phone) : false;
+      emailSeen = fields.email ? containsEmail(site.text, fields.email) : false;
+      if (contactGiven && !phoneSeen && !emailSeen) {
+        checkNote = 'The contact given was not found on their website, which often means it is rendered in the browser or kept on another page.';
+      }
     }
   }
+
+  const confirmed = phoneSeen || emailSeen;
 
   const submission: Submission = {
     version: 1,
@@ -269,7 +286,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     submitter_email: body.submitterEmail ? String(body.submitterEmail).trim().slice(0, 120) || null : null,
     reason: body.reason ? String(body.reason).replace(/\s+/g, ' ').trim().slice(0, LIMITS.reasonMax) || null : null,
     fields,
-    check: { page, phone_seen: phoneSeen, email_seen: emailSeen, checked_at: new Date().toISOString() },
+    check: {
+      page,
+      phone_seen: phoneSeen,
+      email_seen: emailSeen,
+      site_read: siteRead,
+      note: checkNote,
+      checked_at: new Date().toISOString(),
+    },
   };
 
   const committed = await commitSubmission(env, submission);
@@ -283,12 +307,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     });
   }
 
-  return reply(200, {
-    ok: true,
-    message:
-      body.kind === 'add'
-        ? 'Thank you. It passed the check and will appear in the directory in a few minutes, labelled as added by a visitor.'
-        : 'Thank you. It passed the check and the entry will update in a few minutes.',
-    url: `/org/${orgId}`,
-  });
+  // Say plainly what will happen, including when we could not confirm it.
+  const added = body.kind === 'add';
+  const message = confirmed
+    ? added
+      ? 'Thank you. We found that contact on their website, and it will appear in the directory in a few minutes, labelled as added by a visitor.'
+      : 'Thank you. We found that contact on their website, and the entry will update in a few minutes.'
+    : added
+      ? 'Thank you — this will appear in the directory in a few minutes. We could not confirm the contact against their website, so the entry will say that it has not been checked. That is normal: many sites do not show their number in a way we can read.'
+      : 'Thank you — the entry will update in a few minutes. We could not confirm the new contact against their website, so the entry will say it has not been checked, and someone will look at it.';
+
+  return reply(200, { ok: true, message, url: `/org/${orgId}`, confirmed });
 };

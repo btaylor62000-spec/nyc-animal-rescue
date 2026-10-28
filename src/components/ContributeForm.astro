@@ -32,15 +32,18 @@ const email = org?.emails[0]?.value ?? '';
       <Icon name="alert" size={17} />
       <span>
         You are correcting <strong translate="no">{org.name}</strong>. Change only what is wrong.
-        A new phone number or email has to appear on their own website, which is how it is checked.
+        We look for a new number or email on their website. If we cannot find it that is fine —
+        plenty of sites do not show one in a way we can read — and the entry will say it has not
+        been confirmed.
       </span>
     </p>
   ) : (
     <p class="notice">
       <Icon name="alert" size={17} />
       <span>
-        The phone number or email you give is checked against the website you give before anything is published.
-        The entry then appears labelled as added by a visitor until someone here confirms it.
+        We look for the number or email on the website you give, but it is published either way.
+        The entry appears labelled as added by a visitor, and says whether we could confirm the
+        contact, until someone here checks it.
       </span>
     </p>
   )}
