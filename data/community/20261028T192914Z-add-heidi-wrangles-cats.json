@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "kind": "add",
+  "org_id": "heidi-wrangles-cats",
+  "submitted_at": "2026-10-28T19:29:14.422Z",
+  "submitter_email": null,
+  "reason": null,
+  "fields": {
+    "name": "Heidi Wrangles Cats",
+    "website": "https://heidiwranglescats.com/",
+    "email": "heidi@heidiwranglescats.com",
+    "what": "Heidi Wrangles Cats is a rescue based in Bed-Stuy, Brooklyn and is focused on helping cats and kittens directly in our neighborhood. Through TNR (trap, neuter, return), we work to combat the over population problem, lower the number of kittens born on the street, and provide a higher quality life for our feral community cats. We also specialize in socializing feral kittens that we trap, and are able to give a second chance at life to these kittens born on the street",
+    "boroughs": [
+      "brooklyn"
+    ],
+    "animals": [
+      "cat"
+    ]
+  },
+  "check": {
+    "page": "https://heidiwranglescats.com/",
+    "phone_seen": false,
+    "email_seen": false,
+    "site_read": true,
+    "note": "The contact given was not found on their website, which often means it is rendered in the browser or kept on another page.",
+    "checked_at": "2026-10-28T19:29:14.422Z"
+  }
+}
