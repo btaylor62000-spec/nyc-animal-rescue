@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-09-22 from the source workbooks and the wildlife guide.
+Generated 2026-10-28 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **311** organizations after de-duplication
+- **312** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,7 +17,7 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 213 |
+| cat | 214 |
 | dog | 155 |
 | wildlife | 42 |
 | bird-companion | 32 |
@@ -38,16 +38,16 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 | Need | Organizations |
 | --- | ---: |
 | adoption | 151 |
-| tnr | 94 |
+| tnr | 95 |
 | foster | 89 |
 | surrender | 60 |
-| spay-neuter | 53 |
+| spay-neuter | 54 |
 | owner-support | 48 |
 | referral | 41 |
 | low-cost-vet | 40 |
 | advocacy | 32 |
+| colony-care | 30 |
 | emergency-vet | 29 |
-| colony-care | 29 |
 | wildlife-rehab | 26 |
 | medical-special-needs | 24 |
 | education | 22 |
@@ -74,7 +74,7 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 217 |
+| brooklyn | 218 |
 | queens | 175 |
 | manhattan | 171 |
 | staten-island | 155 |
@@ -86,13 +86,13 @@ Generated 2026-09-22 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | Medium | 145 |
 | High | 123 |
-| Low | 43 |
+| Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 297 |
+| active | 298 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (75)
+### Never verified (67)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 

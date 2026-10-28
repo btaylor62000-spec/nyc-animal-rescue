@@ -1,0 +1,66 @@
+{
+  "id": "heidi-wrangles-cats",
+  "name": "Heidi Wrangles Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [],
+  "emails": [
+    {
+      "value": "heidi@heidiwranglescats.com"
+    }
+  ],
+  "website": "https://heidiwranglescats.com/",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Heidi Wrangles Cats is a rescue based in Bed-Stuy, Brooklyn and is focused on helping cats and kittens directly in our neighborhood. Through TNR (trap, neuter, return), we work to combat the over population problem, lower the number of kittens born on the street, and provide a higher quality life for our feral community cats. We also specialize in socializing feral kittens that we trap, and are able to give a second chance at life to these kittens born on the street\n\nAdded by a visitor to this site on 2026-10-28. Their website showed this contact detail on that day, but nobody here has checked it, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://heidiwranglescats.com/"
+  ],
+  "last_verified": null,
+  "section": "Added by visitors",
+  "source_files": [
+    "community"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-10-28",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://heidiwranglescats.com/",
+      "source": "community",
+      "note": "Submitted by a visitor. The contact given was not found on their website, which often means it is rendered in the browser or kept on another page. Nothing here has been checked by a person."
+    }
+  ],
+  "privacy_hold": false,
+  "community": {
+    "added_on": "2026-10-28",
+    "corrected_on": null
+  }
+}
