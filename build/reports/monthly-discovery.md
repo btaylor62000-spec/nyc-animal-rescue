@@ -1,71 +1,8 @@
-# Monthly discovery — 2026-10-01
+# Monthly discovery — 2026-11-01
 
-Found **30** organizations not already in the directory. 230 are awaiting verification in total.
+Found **0** organizations not already in the directory. 230 are awaiting verification in total.
 
 Nothing here is live on the site as a verified entry. Candidates are added as "newly found, not yet verified", and are kept out of the assistant’s answers until a weekly check finds a working contact on their own site.
-
-## New candidates
-
-- **Protectors of Paws & Claws** — https://pawsclawsprotectors.org  
-  From ACC New Hope partners
-- **Rawhide Rescue** — https://www.rawhiderescue.org  
-  From ACC New Hope partners
-- **Reenies Rabbit Rescue** — http://reeniesrabbitrescue.weebly.com  
-  From ACC New Hope partners
-- **Rescue Dogs Rescue Soldiers** — http://rescuedogsrescuesoldiers.org  
-  From ACC New Hope partners
-- **Responsible Pet Care of Oxford Hills, Inc.** — https://www.responsiblepetcare.org  
-  From ACC New Hope partners
-- **Rock n' Rescue** — https://rockandrescue.wordpress.com  
-  From ACC New Hope partners
-- **Scottish Terrier Club of Great New York Rescue*** — http://awos.petfinder.com/shelters/NJ441.html  
-  From ACC New Hope partners
-- **Seventh Heaven** — https://seventhheavenrescue.org  
-  From ACC New Hope partners
-- **Shiba Rescue of New England** — https://shibarescueofnewengland.org  
-  From ACC New Hope partners
-- **Short Noses Only Rescue Team** — http://www.snortrescue.org  
-  From ACC New Hope partners
-- **Southampton Animal Shelter** — https://southamptonanimalshelter.com  
-  From ACC New Hope partners
-- **Soft Landing Animal Rescue & Sanctuary, Inc.** — http://www.softlandinganimalrescue.org  
-  From ACC New Hope partners
-- **Spicy Cats Rescue** — https://www.spicycats.org  
-  From ACC New Hope partners
-- **Sunnyskies Bird & Animal Sanctuary*** — https://www.animalshelter.net/shelter/4662/sunnyskies-bird-animal-sanctuary-inc  
-  From ACC New Hope partners
-- **Tabby's Place** — https://www.tabbysplace.org  
-  From ACC New Hope partners
-- **The Gingerbread House Sanctuary & Rescue** — https://gingerbreaddogs.org  
-  From ACC New Hope partners
-- **The Odd Cat Sanctuary** — http://www.theoddcatsanctuary.com  
-  From ACC New Hope partners
-- **Timber's Legacy** — http://www.timberslegacy.org  
-  From ACC New Hope partners
-- **Treasure Fur-Ever Animal Rescue** — https://www.treasurefureveranimalrescue.com  
-  From ACC New Hope partners
-- **Twenty Paws Rescue** — http://www.twentypawsrescue.com  
-  From ACC New Hope partners
-- **United Yorkie Rescue, Inc.** — http://unitedyorkierescue.org  
-  From ACC New Hope partners
-- **Wayward Ranch Animal Sanctuary** — https://www.waywardranch.org  
-  From ACC New Hope partners
-- **Who Rescued Who Animal Rescue** — https://www.wrwtx.org  
-  From ACC New Hope partners
-- **Zion's Mission Animal Rescue*** — https://www.zionsmission.org  
-  From ACC New Hope partners
-- **Veterinary Technicians for Cleft Affected Animals** — http://www.techsforclefts.com  
-  From ACC New Hope partners
-- **Tiktok** — https://www.tiktok.com/@nycacc  
-  From ACC New Hope partners
-- **Text-Size** — http://www1.nyc.gov/home/text-size.page  
-  From NYC Animal Welfare resources
-- **Register to vote** — https://www.nycvotes.org  
-  From NYC Animal Welfare resources
-- **Emergency alerts** — https://a858-nycnotify.nyc.gov/notifynyc  
-  From NYC Animal Welfare resources
-- **Careers** — https://cityjobs.nyc.gov  
-  From NYC Animal Welfare resources
 
 ## Sources that no longer exist
 
