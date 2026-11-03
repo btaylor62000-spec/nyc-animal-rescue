@@ -33,6 +33,16 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!--
+      Phones ignore an SVG icon for a home-screen shortcut and fall back to
+      whatever they can find -- on one Android phone that was another
+      rescue's logo. These are the same paw, rasterised from favicon.svg.
+      "display: browser" in the manifest keeps the shortcut an ordinary
+      bookmark rather than turning the site into an installed app.
+    -->
+    <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--
       The body font, fetched in parallel with the stylesheet rather than after
       it. `font-display: swap` means text is readable either way; this just
       shortens how long it is readable in the fallback.
