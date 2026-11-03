@@ -50,8 +50,8 @@ Go to **<https://github.com/btaylor62000-spec/nyc-animal-rescue>**, click on
 `README.md` in the file list, then click the **pencil** icon near the top
 right.
 
-- If an editor opens and the button says **Commit changes**, you are in.
-  Leave without saving.
+- If an editor opens and there is a green **Commit changes** button, you are
+  in. Do not click it — just press the browser's back arrow.
 - If it instead offers to **fork** the project, the invitation has not been
   accepted yet. Go back to 1.1.
 
@@ -79,7 +79,7 @@ of files and work on them. You will come back to this in Part 4.
 
 ---
 
-# Part 3 — Node and GitHub Desktop (10 minutes)
+# Part 3 — Node and GitHub Desktop (15 minutes, plus a restart)
 
 ### 3.1 Install Node
 
@@ -110,7 +110,7 @@ common reason the next part appears not to work.
 ### 3.2 Install GitHub Desktop
 
 Go to **<https://desktop.github.com>**, download it, install it, and sign in
-with the GitHub account you made in Part 1.
+with the same GitHub account you were invited with.
 
 This is what saves you from typing commands to move files around. It gives you
 two buttons you will actually use: one to send your changes to GitHub, and one
@@ -217,14 +217,41 @@ it safe to try things.
 
 ### 5.3 Send a real change to the live site
 
-When you have made a change you actually want, ask:
+Now do one for real. This one is worth making: the project's notes should say
+who is looking after it.
 
-> Please run the full check, and if it passes, commit and push this.
+> Please add me to CLAUDE.md as the person now maintaining this project — my
+> name is [your name] and my GitHub username is [your username]. Then run the
+> full check, and if it passes, commit and push it.
 
-Then open **<https://nyc-animal-rescue.pages.dev>** and wait two or three
-minutes. Your change will be there.
+Claude Code will run every test before sending anything. If the checks fail it
+will stop and tell you, and nothing reaches the live site.
 
-That is the whole loop. Everything else is detail.
+When it says it has pushed, open **<https://nyc-animal-rescue.pages.dev>** and
+wait two or three minutes. The site rebuilds itself.
+
+That is the whole loop: change something, check it, push it, it goes live.
+Everything else is detail.
+
+> **Worth doing this one while the person handing over is on a call with you.**
+> It is the first time your access is properly tested, and if anything is wrong
+> it is a two-minute fix with them there.
+
+---
+
+## Every time you sit down to work
+
+**Open GitHub Desktop first and click "Pull origin"** (sometimes labelled
+*Fetch origin*, which turns into *Pull origin* when there is something to
+collect).
+
+This matters more here than on most projects. The site changes itself: an
+automatic check runs every Monday, another looks for new organizations monthly,
+and anyone who uses the "Fix this entry" button on the website causes a change
+too. If you start work without collecting those, your own changes will clash
+with them later — which is annoying to untangle and completely avoidable.
+
+Ten seconds, every time. Then open Claude Code and carry on.
 
 ---
 
