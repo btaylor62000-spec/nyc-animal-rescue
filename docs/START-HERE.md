@@ -96,12 +96,17 @@ It already has everything this project needs.
 
 ### 2.4 Choose the project
 
-On the page where you type, there is a row of controls under the message box.
-The first one chooses the repository. Click it and pick
-**btaylor62000-spec/nyc-animal-rescue**.
+Under the box where you type there are two small buttons: **Default** and
+**Repo**.
 
-Leave the other controls alone. The one next to it chooses which version of the
-project to start from, and `main` — the default — is the one you want.
+Click **Repo**. A search box opens — start typing `nyc` and
+**btaylor62000-spec/nyc-animal-rescue** appears underneath. Click it.
+
+A third button then appears showing **main**. That is the right version of the
+project to start from, so leave it as it is.
+
+Leave everything else alone too. **Default** on the left, and the model and
+**Auto** over on the right, are all already set correctly.
 
 ---
 
