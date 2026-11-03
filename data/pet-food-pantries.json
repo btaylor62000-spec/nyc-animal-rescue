@@ -5,80 +5,237 @@
     "sourceUrl": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
     "pressUrl": "https://abc7ny.com/post/free-pet-food-coming-22-nyc-pantries-boroughs/19955289/",
     "note": "A $500,000 city-funded programme putting free dog and cat food into 22 community food pantries across the five boroughs. The city's own map says \"Pet food assistance is available at these community pantries across New York City\". Reporting at the time said the food was expected to reach pantries about two weeks after the announcement, so it may not have arrived everywhere yet.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "listSourceUrl": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "caveat": "The city's own map says: \"Hours of operation vary for each site and are subject to change. Always confirm before visiting. Additional food locations may be available that are not shown on this map.\""
   },
   "pantries": [
-    { "name": "Part of the Solution (POTS)", "address": "2759 Webster Ave.", "zip": "10458", "borough": "bronx",
-      "phone": "7182204892", "website": "https://www.potsbronx.org", "contactFrom": "https://www.potsbronx.org", "ownSite": true },
-
-    { "name": "New York Common Pantry", "address": "8 East 109th St.", "zip": "10029", "borough": "manhattan",
-      "extraBorough": "bronx", "phone": "9177209700", "website": "https://www.nycommonpantry.org", "contactFrom": "https://www.nycommonpantry.org", "ownSite": true,
-      "note": "In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029." },
-
-    { "name": "Davidson Community Center", "address": "2038 Davidson Ave.", "zip": "10453", "borough": "bronx",
-      "phone": "7187316360", "contactFrom": "https://foodpantries.org/li/davidson_community_center_10453", "ownSite": false },
-
-    { "name": "Kingsbridge Heights Community Center", "address": "3067 Kingsbridge Terrace", "zip": "10463", "borough": "bronx",
-      "phone": "7188840700", "website": "https://khcc-nyc.org", "contactFrom": "https://khcc-nyc.org", "ownSite": true,
-      "note": "The programme lists 3067 Kingsbridge Terrace; the centre's other listings give 3101. Ring before travelling." },
-
-    { "name": "First United Methodist Church of Jamaica", "address": "162-10 Highland Ave.", "zip": "11432", "borough": "queens",
-      "phone": "7187392269", "contactFrom": "https://foodpantries.org/li/first_united_methodist_church_of_jamaica_11432", "ownSite": false },
-
-    { "name": "River Fund New York", "address": "89-11 Lefferts Blvd.", "zip": "11418", "borough": "queens",
-      "phone": "7184411125", "website": "https://river.fund", "contactFrom": "https://river.fund", "ownSite": true },
-
-    { "name": "Yeshua Worldwide Ministries Food Pantry", "address": "79-11 Caldwell Ave.", "zip": "11379", "borough": "queens",
-      "phone": "3477612268", "contactFrom": "https://www.foodhelpline.org/resources/yeshua-worldwide-ministries-food-pantry", "ownSite": false,
-      "note": "The programme writes the address as 7911 Caldwell Ave.; pantry listings give 79-11." },
-
-    { "name": "Hour Children Community Outreach", "address": "36-49 11th St.", "zip": "11106", "borough": "queens",
-      "phone": "7184828226", "website": "https://hourchildren.org/our-food-pantry/", "contactFrom": "https://hourchildren.org/our-food-pantry/", "ownSite": true,
-      "note": "The pantry is in a gated parking lot on 11th Street between 36th and 37th Avenues, under a green awning." },
-
-    { "name": "Community Help in Park Slope (CHiPS)", "address": "200 Fourth Ave.", "zip": "11217", "borough": "brooklyn",
-      "phone": "7182372962", "website": "https://www.chipsonline.org", "contactFrom": "https://www.coalitionforthehomeless.org/resources/chips-park-slope-christian/", "ownSite": false },
-
-    { "name": "Metropolitan Council on Jewish Poverty", "address": "5361 Preston Court", "zip": "11234", "borough": "brooklyn",
-      "phone": "2124539500", "website": "https://www.metcouncil.org", "contactFrom": "https://www.metcouncil.org", "ownSite": true,
-      "note": "The number is Met Council's main line; the pet food is at its Preston Court distribution centre." },
-
-    { "name": "On the Go Relief", "address": "2832 Fulton St.", "zip": "11207", "borough": "brooklyn",
-      "phone": "3479462914", "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf", "ownSite": false,
-      "note": "Also listed by the city as Expecting Relief at the same address. Ring ahead." },
-
-    { "name": "St. John's Bread and Life Food Pantry", "address": "795 Lexington Ave.", "zip": "11221", "borough": "brooklyn",
-      "phone": "7185740058", "website": "https://www.breadandlife.org", "contactFrom": "https://www.breadandlife.org", "ownSite": true },
-
-    { "name": "The Campaign Against Hunger", "address": "2004 Fulton St.", "zip": "11233", "borough": "brooklyn",
-      "phone": "7187733551", "website": "https://www.tcahnyc.org", "contactFrom": "https://www.tcahnyc.org", "ownSite": true,
-      "note": "The programme lists 2004 Fulton St.; their own site gives the office as 2010 Fulton St." },
-
-    { "name": "YMCA Community Market - Coney Island", "address": "2980 West 29th St.", "zip": "11224", "borough": "brooklyn",
-      "phone": "7182156910", "website": "https://ymcanyc.org", "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/pfred-directory-by-borough.pdf", "ownSite": false },
-
-    { "name": "Holy Apostles Soup Kitchen Pantry", "address": "296 Ninth Ave.", "zip": "10001", "borough": "manhattan",
-      "phone": "2129240167", "website": "https://holyapostlesnyc.org", "contactFrom": "https://holyapostlesnyc.org", "ownSite": true },
-
-    { "name": "St. Clement's Food Pantry", "address": "423 West 46th St.", "zip": "10036", "borough": "manhattan",
-      "phone": "2122467277", "website": "https://www.stclementsnyc.org", "contactFrom": "https://www.foodhelpline.org/resources/st-clement-s-food-pantry", "ownSite": false,
-      "note": "The programme writes the name as St. Clemens. Not open every week; dates are posted outside." },
-
-    { "name": "The Father's Heart Ministries", "address": "543-545 East 11th St.", "zip": "10009", "borough": "manhattan",
-      "website": "https://www.fathersheartnyc.org", "ownSite": false,
-      "note": "No phone number is published here on purpose: three different numbers appear in public listings and we could not confirm which is current on their own site. Use the website." },
-
-    { "name": "The Lower Eastside Girls Club", "address": "402 East 8th St.", "zip": "10009", "borough": "manhattan",
-      "phone": "2129821633", "website": "https://girlsclub.org", "contactFrom": "https://girlsclub.org", "ownSite": true },
-
-    { "name": "Trinity's Services and Food for the Homeless", "address": "602 East 9th St.", "zip": "10009", "borough": "manhattan",
-      "phone": "2122285254", "website": "https://safhnyc.org", "contactFrom": "https://www.henrystreet.org/wp-content/uploads/2025/11/Lower-East-Side-Food-Pantries-Resource_11.06.25.pdf", "ownSite": false },
-
-    { "name": "Project Hospitality", "address": "205 Canal St.", "zip": "10304", "borough": "staten-island",
-      "phone": "7184481544", "website": "https://projecthospitality.org", "contactFrom": "https://projecthospitality.org/contact-us/", "ownSite": true,
-      "note": "The number is Project Hospitality's main line (offices at 100 Park Ave.); the pantry is on Canal Street." },
-
-    { "name": "Feeding with TLC", "address": "309 St. Paul's Ave.", "zip": "10304", "borough": "staten-island",
-      "phone": "7184470526", "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf", "ownSite": false }
+    {
+      "name": "Part of the Solution (POTS)",
+      "address": "2759 Webster Ave.",
+      "zip": "10458",
+      "borough": "bronx",
+      "website": "https://www.potsbronx.org",
+      "contactFrom": "https://www.potsbronx.org",
+      "ownSite": true,
+      "programmePhone": "9295667980",
+      "mainPhone": "7182204892",
+      "mainPhoneFrom": "https://www.potsbronx.org"
+    },
+    {
+      "name": "New York Common Pantry",
+      "address": "8 East 109th St.",
+      "zip": "10029",
+      "borough": "manhattan",
+      "extraBorough": "bronx",
+      "website": "https://www.nycommonpantry.org",
+      "contactFrom": "https://www.nycommonpantry.org",
+      "ownSite": true,
+      "note": "In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029.",
+      "programmePhone": "9177209700",
+      "extraPhone": "9174232701",
+      "extraPhoneLabel": "Bronx site (1290 Hoe Ave.)"
+    },
+    {
+      "name": "Davidson Community Center",
+      "address": "2038 Davidson Ave.",
+      "zip": "10453",
+      "borough": "bronx",
+      "contactFrom": "https://foodpantries.org/li/davidson_community_center_10453",
+      "ownSite": false,
+      "programmePhone": "7187316360"
+    },
+    {
+      "name": "Kingsbridge Heights Community Center",
+      "address": "3067 Kingsbridge Terrace",
+      "zip": "10463",
+      "borough": "bronx",
+      "website": "https://khcc-nyc.org",
+      "contactFrom": "https://khcc-nyc.org",
+      "ownSite": true,
+      "note": "The programme lists 3067 Kingsbridge Terrace; the centre's other listings give 3101. Ring before travelling.",
+      "programmePhone": "7188840700"
+    },
+    {
+      "name": "First United Methodist Church of Jamaica",
+      "address": "162-10 Highland Ave.",
+      "zip": "11432",
+      "borough": "queens",
+      "contactFrom": "https://foodpantries.org/li/first_united_methodist_church_of_jamaica_11432",
+      "ownSite": false,
+      "programmePhone": "7187392269"
+    },
+    {
+      "name": "River Fund New York",
+      "address": "89-11 Lefferts Blvd.",
+      "zip": "11418",
+      "borough": "queens",
+      "website": "https://river.fund",
+      "contactFrom": "https://river.fund",
+      "ownSite": true,
+      "programmePhone": "7184421125",
+      "mainPhone": "7184411125",
+      "mainPhoneFrom": "https://river.fund"
+    },
+    {
+      "name": "Yeshua Worldwide Ministries Food Pantry",
+      "address": "79-11 Caldwell Ave.",
+      "zip": "11379",
+      "borough": "queens",
+      "contactFrom": "https://www.foodhelpline.org/resources/yeshua-worldwide-ministries-food-pantry",
+      "ownSite": false,
+      "note": "The programme writes the address as 7911 Caldwell Ave.; pantry listings give 79-11.",
+      "programmePhone": "3475071689"
+    },
+    {
+      "name": "Hour Children Community Outreach",
+      "address": "36-49 11th St.",
+      "zip": "11106",
+      "borough": "queens",
+      "website": "https://hourchildren.org/our-food-pantry/",
+      "contactFrom": "https://hourchildren.org/our-food-pantry/",
+      "ownSite": true,
+      "note": "The pantry is in a gated parking lot on 11th Street between 36th and 37th Avenues, under a green awning.",
+      "programmePhone": "7184828226"
+    },
+    {
+      "name": "Community Help in Park Slope (CHiPS)",
+      "address": "200 Fourth Ave.",
+      "zip": "11217",
+      "borough": "brooklyn",
+      "website": "https://www.chipsonline.org",
+      "contactFrom": "https://www.coalitionforthehomeless.org/resources/chips-park-slope-christian/",
+      "ownSite": false,
+      "programmePhone": "7182372962"
+    },
+    {
+      "name": "Metropolitan Council on Jewish Poverty",
+      "address": "5361 Preston Court",
+      "zip": "11234",
+      "borough": "brooklyn",
+      "website": "https://www.metcouncil.org",
+      "contactFrom": "https://www.metcouncil.org",
+      "ownSite": true,
+      "note": "The number is Met Council's main line; the pet food is at its Preston Court distribution centre.",
+      "programmePhone": "7187635318",
+      "mainPhone": "2124539500",
+      "mainPhoneFrom": "https://www.metcouncil.org"
+    },
+    {
+      "name": "On the Go Relief",
+      "address": "2832 Fulton St.",
+      "zip": "11207",
+      "borough": "brooklyn",
+      "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "ownSite": false,
+      "note": "Also listed by the city as Expecting Relief at the same address. Ring ahead.",
+      "programmePhone": "3479462914"
+    },
+    {
+      "name": "St. John's Bread and Life Food Pantry",
+      "address": "795 Lexington Ave.",
+      "zip": "11221",
+      "borough": "brooklyn",
+      "website": "https://www.breadandlife.org",
+      "contactFrom": "https://www.breadandlife.org",
+      "ownSite": true,
+      "programmePhone": "7185740058"
+    },
+    {
+      "name": "The Campaign Against Hunger",
+      "address": "2004 Fulton St.",
+      "zip": "11233",
+      "borough": "brooklyn",
+      "website": "https://www.tcahnyc.org",
+      "contactFrom": "https://www.tcahnyc.org",
+      "ownSite": true,
+      "note": "The programme lists 2004 Fulton St.; their own site gives the office as 2010 Fulton St.",
+      "programmePhone": "7187733551"
+    },
+    {
+      "name": "YMCA Community Market - Coney Island",
+      "address": "2980 West 29th St.",
+      "zip": "11224",
+      "borough": "brooklyn",
+      "website": "https://ymcanyc.org",
+      "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/pfred-directory-by-borough.pdf",
+      "ownSite": false,
+      "programmePhone": "7182156910"
+    },
+    {
+      "name": "Holy Apostles Soup Kitchen Pantry",
+      "address": "296 Ninth Ave.",
+      "zip": "10001",
+      "borough": "manhattan",
+      "website": "https://holyapostlesnyc.org",
+      "contactFrom": "https://holyapostlesnyc.org",
+      "ownSite": true,
+      "programmePhone": "6469986105",
+      "mainPhone": "2129240167",
+      "mainPhoneFrom": "https://holyapostlesnyc.org"
+    },
+    {
+      "name": "St. Clement's Food Pantry",
+      "address": "423 West 46th St.",
+      "zip": "10036",
+      "borough": "manhattan",
+      "website": "https://www.stclementsnyc.org",
+      "contactFrom": "https://www.foodhelpline.org/resources/st-clement-s-food-pantry",
+      "ownSite": false,
+      "note": "The programme writes the name as St. Clemens. Not open every week; dates are posted outside.",
+      "programmePhone": "2122467277"
+    },
+    {
+      "name": "The Father's Heart Ministries",
+      "address": "543-545 East 11th St.",
+      "zip": "10009",
+      "borough": "manhattan",
+      "website": "https://www.fathersheartnyc.org",
+      "ownSite": false,
+      "note": "Public directories circulate several numbers for this pantry; the one published here is the one the city lists for the pet food programme.",
+      "programmePhone": "2123751765"
+    },
+    {
+      "name": "The Lower Eastside Girls Club",
+      "address": "402 East 8th St.",
+      "zip": "10009",
+      "borough": "manhattan",
+      "website": "https://girlsclub.org",
+      "contactFrom": "https://girlsclub.org",
+      "ownSite": true,
+      "programmePhone": "2129821633"
+    },
+    {
+      "name": "Trinity's Services and Food for the Homeless",
+      "address": "602 East 9th St.",
+      "zip": "10009",
+      "borough": "manhattan",
+      "website": "https://safhnyc.org",
+      "contactFrom": "https://www.henrystreet.org/wp-content/uploads/2025/11/Lower-East-Side-Food-Pantries-Resource_11.06.25.pdf",
+      "ownSite": false,
+      "programmePhone": "2122285254"
+    },
+    {
+      "name": "Project Hospitality",
+      "address": "205 Canal St.",
+      "zip": "10304",
+      "borough": "staten-island",
+      "website": "https://projecthospitality.org",
+      "contactFrom": "https://projecthospitality.org/contact-us/",
+      "ownSite": true,
+      "note": "The number is Project Hospitality's main line (offices at 100 Park Ave.); the pantry is on Canal Street.",
+      "programmePhone": "7188150800",
+      "mainPhone": "7184481544",
+      "mainPhoneFrom": "https://projecthospitality.org/contact-us/"
+    },
+    {
+      "name": "Feeding with TLC",
+      "address": "309 St. Paul's Ave.",
+      "zip": "10304",
+      "borough": "staten-island",
+      "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "ownSite": false,
+      "programmePhone": "7184470526"
+    }
   ]
 }

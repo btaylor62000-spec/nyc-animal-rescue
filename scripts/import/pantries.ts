@@ -32,9 +32,16 @@ interface Pantry {
   borough: Borough;
   /** A second borough when one organization is in the programme twice. */
   extraBorough?: Borough;
-  phone?: string;
+  /** The number the city publishes for the pet food programme itself. */
+  programmePhone: string;
+  /** The organization's own main line, when it publishes a different one. */
+  mainPhone?: string;
+  mainPhoneFrom?: string;
+  /** A second site of the same organization in the programme. */
+  extraPhone?: string;
+  extraPhoneLabel?: string;
   website?: string;
-  /** The page the contact was read from. */
+  /** The page a non-programme contact was read from. */
   contactFrom?: string;
   /** True when that page was the organization's own site. */
   ownSite?: boolean;
@@ -48,6 +55,8 @@ interface Programme {
   pressUrl: string;
   note: string;
   addedOn: string;
+  listSourceUrl?: string;
+  caveat?: string;
 }
 
 interface File {
@@ -67,11 +76,18 @@ export function loadPantries(path = PANTRIES_PATH): File | null {
 export function pantryToOrg(p: Pantry, prog: Programme): Org {
   const boroughs = [p.borough, ...(p.extraBorough ? [p.extraBorough] : [])];
 
-  const sourced = p.phone
-    ? p.ownSite
-      ? 'The phone number was read on their own website on ' + prog.addedOn + '.'
-      : 'The phone number comes from a public pantry directory rather than their own website, so confirm it before relying on it.'
-    : '';
+  // The city lists a named member of staff against each pantry. Those are
+  // people, not organizations, so none of the names reach a record -- only the
+  // line the city gives for the programme.
+  const phones = [
+    { value: p.programmePhone, display: formatPhone(p.programmePhone), label: 'Pet food programme' },
+    ...(p.extraPhone ? [{ value: p.extraPhone, display: formatPhone(p.extraPhone), label: p.extraPhoneLabel ?? 'Second site' }] : []),
+    ...(p.mainPhone ? [{ value: p.mainPhone, display: formatPhone(p.mainPhone), label: 'Main line' }] : []),
+  ];
+
+  const sourced =
+    'The first number is the one the city publishes for the pet food programme itself.' +
+    (p.mainPhone ? ' The main line below was read on their own website on ' + prog.addedOn + ', and is a different number.' : '');
 
   return {
     id: slugify(p.name),
@@ -87,7 +103,7 @@ export function pantryToOrg(p: Pantry, prog: Programme): Org {
     neighborhoods: null,
     zips: [p.zip],
     region_note: null,
-    phones: p.phone ? [{ value: p.phone, display: formatPhone(p.phone) }] : [],
+    phones,
     emails: [],
     website: p.website ?? null,
     intake_urls: [],
@@ -97,12 +113,13 @@ export function pantryToOrg(p: Pantry, prog: Programme): Org {
     notes:
       'A human food pantry taking part in the city\'s pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. ' +
       'The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. ' +
+      'The city says hours vary by site and change, and to confirm before visiting. ' +
       `${sourced}${p.note ? ` ${p.note}` : ''}`.trim(),
     type_raw: null,
-    confidence: p.ownSite ? 'Medium' : 'Low',
+    confidence: 'Medium',
     status: 'active',
     status_note: null,
-    source_urls: [prog.sourceUrl, ...(p.contactFrom && p.contactFrom !== prog.sourceUrl ? [p.contactFrom] : [])],
+    source_urls: [prog.sourceUrl, ...(p.mainPhoneFrom && p.mainPhoneFrom !== prog.sourceUrl ? [p.mainPhoneFrom] : [])],
     last_verified: null,
     section: 'City pet food pantry programme',
     source_files: ['pet-food-pantries'],
@@ -121,19 +138,15 @@ export function pantryToOrg(p: Pantry, prog: Programme): Org {
         source: 'pet-food-pantries',
         note: `Listed in the city's pet food pantry programme, announced ${prog.announced}.`,
       },
-      ...(p.phone
-        ? [
-            {
-              date: prog.addedOn,
-              field: 'phones',
-              from: null,
-              to: formatPhone(p.phone),
-              evidence_url: p.contactFrom ?? prog.sourceUrl,
-              source: 'pet-food-pantries',
-              note: p.ownSite ? 'Read on their own website.' : 'Read on a public pantry directory, not their own website.',
-            },
-          ]
-        : []),
+      {
+        date: prog.addedOn,
+        field: 'phones',
+        from: null,
+        to: formatPhone(p.programmePhone),
+        evidence_url: prog.sourceUrl,
+        source: 'pet-food-pantries',
+        note: "The number the city's own pet food pantry map lists for this site.",
+      },
     ],
   };
 }

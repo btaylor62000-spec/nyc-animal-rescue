@@ -27,7 +27,8 @@
   "phones": [
     {
       "value": "3479462914",
-      "display": "(347) 946-2914"
+      "display": "(347) 946-2914",
+      "label": "Pet food programme"
     }
   ],
   "emails": [],
@@ -40,9 +41,9 @@
     "borough": "brooklyn"
   },
   "hours": null,
-  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number comes from a public pantry directory rather than their own website, so confirm it before relying on it. Also listed by the city as Expecting Relief at the same address. Ring ahead.",
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The city says hours vary by site and change, and to confirm before visiting. The first number is the one the city publishes for the pet food programme itself. Also listed by the city as Expecting Relief at the same address. Ring ahead.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
@@ -73,7 +74,7 @@
       "to": "(347) 946-2914",
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
-      "note": "Read on a public pantry directory, not their own website."
+      "note": "The number the city's own pet food pantry map lists for this site."
     }
   ],
   "privacy_hold": false,

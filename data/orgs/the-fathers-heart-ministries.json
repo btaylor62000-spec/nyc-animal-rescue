@@ -24,7 +24,13 @@
     "10009"
   ],
   "region_note": null,
-  "phones": [],
+  "phones": [
+    {
+      "value": "2123751765",
+      "display": "(212) 375-1765",
+      "label": "Pet food programme"
+    }
+  ],
   "emails": [],
   "website": "https://www.fathersheartnyc.org",
   "intake_urls": [],
@@ -35,9 +41,9 @@
     "borough": "manhattan"
   },
   "hours": null,
-  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. No phone number is published here on purpose: three different numbers appear in public listings and we could not confirm which is current on their own site. Use the website.",
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The city says hours vary by site and change, and to confirm before visiting. The first number is the one the city publishes for the pet food programme itself. Public directories circulate several numbers for this pantry; the one published here is the one the city lists for the pet food programme.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
@@ -60,6 +66,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(212) 375-1765",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "The number the city's own pet food pantry map lists for this site."
     }
   ],
   "privacy_hold": false,

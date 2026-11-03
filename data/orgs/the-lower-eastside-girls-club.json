@@ -27,7 +27,8 @@
   "phones": [
     {
       "value": "2129821633",
-      "display": "(212) 982-1633"
+      "display": "(212) 982-1633",
+      "label": "Pet food programme"
     }
   ],
   "emails": [],
@@ -40,14 +41,13 @@
     "borough": "manhattan"
   },
   "hours": null,
-  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03.",
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The city says hours vary by site and change, and to confirm before visiting. The first number is the one the city publishes for the pet food programme itself.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
-    "https://girlsclub.org"
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
   ],
   "last_verified": null,
   "section": "City pet food pantry programme",
@@ -72,9 +72,9 @@
       "field": "phones",
       "from": null,
       "to": "(212) 982-1633",
-      "evidence_url": "https://girlsclub.org",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
-      "note": "Read on their own website."
+      "note": "The number the city's own pet food pantry map lists for this site."
     }
   ],
   "privacy_hold": false,

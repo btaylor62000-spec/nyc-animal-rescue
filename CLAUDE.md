@@ -424,20 +424,34 @@ These are **human** food pantries, which is why they are in none of the rescue
 research. They earn their place because the person choosing between feeding
 themselves and feeding their cat is exactly who this site is for.
 
-Three things are deliberate, and all three exist because someone might cross
-the city on the strength of one of these listings:
+The contacts come from the city's own map, which is a table of
+programme / contact / phone / address / zip / borough. Its text is drawn as
+outlined glyphs, so a plain fetch reads nothing; `scripts/` has no PDF reader
+and does not need one, but if you ever have to read it again, decode the
+font's `ToUnicode` CMap rather than trusting the raw stream.
+
+Four things are deliberate, and all four exist because someone might cross the
+city on the strength of one of these listings:
 
 - **Every record says the pet food is new and to ring first.** The programme
   was announced in October 2026, reporting said the food would reach pantries
   about two weeks later, and not one of the pantries mentions it on its own
-  website yet. The records do not claim pet food is there today.
-- **Confidence follows where the number came from.** `Medium` when it was read
-  on that organization's own site, `Low` when it came from a pantry directory,
-  and the record's notes say which. Eleven of the twenty-one are own-site.
-- **Where public listings disagreed, no number is published at all.** The
-  Father's Heart Ministries has three different numbers in circulation and
-  none on its own site, so that record carries the website and no phone. A
-  wrong number is worse than a missing one.
+  website yet. The records do not claim pet food is there today. The city's own
+  map says hours vary by site and to confirm before visiting, and so do we.
+- **The number the city lists for the programme comes first**, labelled *Pet
+  food programme*. This matters: six of the twenty-one differ from the number
+  the organization publishes as its main line, because the city lists a direct
+  line into the pet food scheme. Ringing the switchboard instead is how someone
+  gets told nobody has heard of it.
+- **Where the organization's own site gives a different number, both are
+  published**, the second labelled *Main line*. The River Fund is the reason:
+  the city says (718) 442-1125 and their own site says (718) 441-1125, one
+  digit apart, and there is no way to tell from here which is the typo. Publish
+  both and let the reader try the other one, rather than silently picking.
+- **The staff names in the source are not published.** The city lists a named
+  member of staff against every pantry. Those are individuals, and rule 3
+  applies to them as much as to a rehabber's mobile number. There is a test
+  that no record and no stored row contains one.
 
 Addresses matter here more than anywhere else on the site, because a pantry is
 a place you walk to. Note that `directory.ts` sets `address: null` — the

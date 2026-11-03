@@ -24,15 +24,20 @@
   "zips": [
     "10029"
   ],
-  "region_note": "PET FOOD PANTRIES (specific programs)",
+  "region_note": null,
   "phones": [
     {
       "value": "9177209700",
       "display": "(917) 720-9700"
+    },
+    {
+      "value": "9174232701",
+      "display": "(917) 423-2701",
+      "label": "Bronx site (1290 Hoe Ave.)"
     }
   ],
   "emails": [],
-  "website": "https://nycommonpantry.org",
+  "website": "https://www.nycommonpantry.org",
   "intake_urls": [],
   "social": [],
   "address": {
@@ -41,17 +46,16 @@
     "borough": "manhattan"
   },
   "hours": null,
-  "notes": "distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.\n\ndistributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.\n\nA human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03. In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029.",
+  "notes": "distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.\n\ndistributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.\n\nA human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The city says hours vary by site and change, and to confirm before visiting. The first number is the one the city publishes for the pet food programme itself. In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
-    "https://www.nycommonpantry.org"
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
   ],
   "last_verified": "2026-09-22",
-  "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
+  "section": "City pet food pantry programme",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx",
@@ -60,7 +64,26 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(917) 720-9700",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "The number the city's own pet food pantry map lists for this site."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
