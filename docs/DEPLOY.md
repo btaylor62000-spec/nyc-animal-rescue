@@ -26,7 +26,7 @@ The repository has to be **public**. That is what makes GitHub Actions free and
 unlimited, and it is what lets people report problems.
 
 ```bash
-cd "/Users/verityhealth/NYC Animal Rescue"
+cd /path/to/nyc-animal-rescue
 git remote add origin https://github.com/YOUR-USERNAME/nyc-animal-rescue.git
 git branch -M main
 git push -u origin main

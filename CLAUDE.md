@@ -24,14 +24,29 @@ production; nothing here is aspirational.
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Fix this entry". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
-Two things about the local git setup, because they are not obvious:
+**New here?** Read `docs/HANDOFF.md` first — what access you need, how to get
+it running, and the five things that save the most pain. Then come back to
+this file, which is the reference.
 
-- The push remote is `github-btaylor:btaylor62000-spec/...`, an SSH host alias
-  in `~/.ssh/config`. The machine's default GitHub key belongs to a *different*
-  account (`VerityHealth`), and GitHub will not accept one key on two accounts,
-  so this project has its own key at `~/.ssh/id_ed25519_btaylor`.
-- `npx wrangler` is logged in, so secrets can be set from the command line:
+Everyday work needs **GitHub write access only**. Cloudflare rebuilds and
+deploys on every push to `main`, so anything a reader sees can be changed
+without logging in to Cloudflare at all. Cloudflare is needed only for
+secrets, bindings, build logs, usage and a custom domain.
+
+Two things about local setup that are per-machine, so they may not be true of
+yours:
+
+- **The push remote may be an SSH host alias.** On the machine this was built
+  on it is `github-btaylor:btaylor62000-spec/...`, because that machine's
+  default GitHub key belongs to a different account and GitHub will not accept
+  one key on two accounts. `git remote -v` tells you what yours is; a plain
+  `git@github.com:btaylor62000-spec/nyc-animal-rescue.git` is fine if your own
+  key is on an account with access.
+- **Setting a Cloudflare secret needs `npx wrangler login` first**, once per
+  machine. Then:
   `wrangler pages secret put NAME --project-name=nyc-animal-rescue`.
+  Piping the value in avoids an interactive prompt that does not work from
+  every terminal.
 
 ### What to do next
 

@@ -28,6 +28,10 @@ than starting to charge.
 
 ---
 
+> **Taking this project over from someone?** Start with
+> [docs/HANDOFF.md](docs/HANDOFF.md) — access, setup, and the handful of things
+> that save the most pain. `CLAUDE.md` is the full reference.
+
 ## Running it
 
 Needs Node 20.
