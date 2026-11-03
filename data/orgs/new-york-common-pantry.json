@@ -15,12 +15,15 @@
     "owner-support"
   ],
   "boroughs": [
-    "bronx"
+    "bronx",
+    "manhattan"
   ],
   "citywide": false,
   "outside_nyc": false,
   "neighborhoods": null,
-  "zips": [],
+  "zips": [
+    "10029"
+  ],
   "region_note": "PET FOOD PANTRIES (specific programs)",
   "phones": [
     {
@@ -32,19 +35,27 @@
   "website": "https://nycommonpantry.org",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "address": {
+    "street": "8 East 109th St.",
+    "zip": "10029",
+    "borough": "manhattan"
+  },
   "hours": null,
-  "notes": "distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.\n\ndistributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.",
+  "notes": "distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.\n\ndistributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.\n\nA human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03. In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "https://www.nycommonpantry.org"
+  ],
   "last_verified": "2026-09-22",
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
-    "research/NYC_Dog_Rescue_Reference.xlsx"
+    "research/NYC_Dog_Rescue_Reference.xlsx",
+    "pet-food-pantries"
   ],
   "last_checked": "2026-09-22",
   "check_status": "ok",

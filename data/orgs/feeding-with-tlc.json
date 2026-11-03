@@ -1,0 +1,81 @@
+{
+  "id": "feeding-with-tlc",
+  "name": "Feeding with TLC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10304"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "7184470526",
+      "display": "(718) 447-0526"
+    }
+  ],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "309 St. Paul's Ave.",
+    "zip": "10304",
+    "borough": "staten-island"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number comes from a public pantry directory rather than their own website, so confirm it before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(718) 447-0526",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Read on a public pantry directory, not their own website."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-10-28 from the source workbooks and the wildlife guide.
+Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **312** organizations after de-duplication
+- **332** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-10-28 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 214 |
-| dog | 155 |
+| cat | 234 |
+| dog | 175 |
 | wildlife | 42 |
 | bird-companion | 32 |
 | rabbit | 32 |
@@ -40,11 +40,12 @@ Generated 2026-10-28 from the source workbooks and the wildlife guide.
 | adoption | 151 |
 | tnr | 95 |
 | foster | 89 |
+| owner-support | 68 |
 | surrender | 60 |
 | spay-neuter | 54 |
-| owner-support | 48 |
 | referral | 41 |
 | low-cost-vet | 40 |
+| food-assistance | 33 |
 | advocacy | 32 |
 | colony-care | 30 |
 | emergency-vet | 29 |
@@ -58,7 +59,6 @@ Generated 2026-10-28 from the source workbooks and the wildlife guide.
 | senior | 16 |
 | boarding | 15 |
 | microchip | 14 |
-| food-assistance | 13 |
 | lost-found | 10 |
 | transport | 10 |
 | breed-specific | 10 |
@@ -74,25 +74,25 @@ Generated 2026-10-28 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 218 |
-| queens | 175 |
-| manhattan | 171 |
-| staten-island | 155 |
-| bronx | 154 |
+| brooklyn | 224 |
+| queens | 179 |
+| manhattan | 177 |
+| bronx | 157 |
+| staten-island | 157 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 145 |
+| Medium | 155 |
 | High | 123 |
-| Low | 44 |
+| Low | 54 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 298 |
+| active | 318 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (67)
+### Never verified (87)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -219,7 +219,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `acc-community-pets-program` ← 3 records
 - `acc-pet-food-pantry` ← 2 records
 - `animal-relief-fund` ← 2 records
-- `new-york-common-pantry` ← 2 records
+- `new-york-common-pantry` ← 3 records
 - `food-bank-for-new-york-city` ← 2 records
 - `prince-chunk-foundation` ← 2 records
 - `kisos-pet-food-pantry` ← 2 records

@@ -19,6 +19,7 @@ import addFormats from 'ajv-formats';
 import type { Org } from '../../src/types.ts';
 import { MAIN_SOURCES, readDirectory, type DraftOrg } from './directory.ts';
 import { GUIDE_ORG_SOURCES, extractGuideOrgs } from './guide-orgs.ts';
+import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES } from './overrides.ts';
 import { applyPrivacyHolds } from './privacy.ts';
@@ -154,8 +155,16 @@ function main(): void {
     console.log(`  visitor ${String(additions.length).padStart(3)} additions and ${submissions.length - additions.length} corrections from data/community/`);
   }
 
+  // The city's pet food pantry programme. Human food pantries, so they are in
+  // none of the rescue research, but they are where someone who cannot afford
+  // to feed their pet is actually sent.
+  const pantries = pantryOrgs();
+  if (pantries.length) {
+    console.log(`  pantry  ${String(pantries.length).padStart(3)} pantries in the city pet food programme`);
+  }
+
   console.log('De-duplicating…');
-  const merge = mergeOrgs([...mainOrgs, ...guideOrgs, ...discovered, ...additions]);
+  const merge = mergeOrgs([...mainOrgs, ...guideOrgs, ...discovered, ...additions, ...pantries]);
   console.log(`  ${mainOrgs.length + guideOrgs.length} -> ${merge.orgs.length} (${merge.merged.length} clusters merged)`);
 
   const applied = applyOverrides(merge.orgs);

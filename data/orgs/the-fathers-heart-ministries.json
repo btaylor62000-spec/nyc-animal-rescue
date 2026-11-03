@@ -1,0 +1,67 @@
+{
+  "id": "the-fathers-heart-ministries",
+  "name": "The Father's Heart Ministries",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10009"
+  ],
+  "region_note": null,
+  "phones": [],
+  "emails": [],
+  "website": "https://www.fathersheartnyc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "543-545 East 11th St.",
+    "zip": "10009",
+    "borough": "manhattan"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. No phone number is published here on purpose: three different numbers appear in public listings and we could not confirm which is current on their own site. Use the website.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

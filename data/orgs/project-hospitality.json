@@ -1,0 +1,82 @@
+{
+  "id": "project-hospitality",
+  "name": "Project Hospitality",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10304"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "7184481544",
+      "display": "(718) 448-1544"
+    }
+  ],
+  "emails": [],
+  "website": "https://projecthospitality.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "205 Canal St.",
+    "zip": "10304",
+    "borough": "staten-island"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03. The number is Project Hospitality's main line (offices at 100 Park Ave.); the pantry is on Canal Street.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "https://projecthospitality.org/contact-us/"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(718) 448-1544",
+      "evidence_url": "https://projecthospitality.org/contact-us/",
+      "source": "pet-food-pantries",
+      "note": "Read on their own website."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,82 @@
+{
+  "id": "kingsbridge-heights-community-center",
+  "name": "Kingsbridge Heights Community Center",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10463"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "7188840700",
+      "display": "(718) 884-0700"
+    }
+  ],
+  "emails": [],
+  "website": "https://khcc-nyc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "3067 Kingsbridge Terrace",
+    "zip": "10463",
+    "borough": "bronx"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03. The programme lists 3067 Kingsbridge Terrace; the centre's other listings give 3101. Ring before travelling.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "https://khcc-nyc.org"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(718) 884-0700",
+      "evidence_url": "https://khcc-nyc.org",
+      "source": "pet-food-pantries",
+      "note": "Read on their own website."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,82 @@
+{
+  "id": "holy-apostles-soup-kitchen-pantry",
+  "name": "Holy Apostles Soup Kitchen Pantry",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10001"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "2129240167",
+      "display": "(212) 924-0167"
+    }
+  ],
+  "emails": [],
+  "website": "https://holyapostlesnyc.org",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "296 Ninth Ave.",
+    "zip": "10001",
+    "borough": "manhattan"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "https://holyapostlesnyc.org"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(212) 924-0167",
+      "evidence_url": "https://holyapostlesnyc.org",
+      "source": "pet-food-pantries",
+      "note": "Read on their own website."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

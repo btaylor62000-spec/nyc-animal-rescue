@@ -1,0 +1,82 @@
+{
+  "id": "hour-children-community-outreach",
+  "name": "Hour Children Community Outreach",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "11106"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "7184828226",
+      "display": "(718) 482-8226"
+    }
+  ],
+  "emails": [],
+  "website": "https://hourchildren.org/our-food-pantry/",
+  "intake_urls": [],
+  "social": [],
+  "address": {
+    "street": "36-49 11th St.",
+    "zip": "11106",
+    "borough": "queens"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The phone number was read on their own website on 2026-11-03. The pantry is in a gated parking lot on 11th Street between 36th and 37th Avenues, under a green awning.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+    "https://hourchildren.org/our-food-pantry/"
+  ],
+  "last_verified": null,
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(718) 482-8226",
+      "evidence_url": "https://hourchildren.org/our-food-pantry/",
+      "source": "pet-food-pantries",
+      "note": "Read on their own website."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

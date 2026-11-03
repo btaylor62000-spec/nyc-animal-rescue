@@ -413,6 +413,42 @@ A submission that breaks the schema or the build is not published: the
 workflow commits nothing and the file waits in `data/community/` for a person.
 To undo any submission, delete its file and re-run the import.
 
+## The city's pet food pantry programme
+
+Added 2026-11-03. `data/pet-food-pantries.json` holds the 22 community food
+pantries the city funded in October 2026 to hand out free dog and cat food;
+`scripts/import/pantries.ts` turns them into records, merged like any other
+source.
+
+These are **human** food pantries, which is why they are in none of the rescue
+research. They earn their place because the person choosing between feeding
+themselves and feeding their cat is exactly who this site is for.
+
+Three things are deliberate, and all three exist because someone might cross
+the city on the strength of one of these listings:
+
+- **Every record says the pet food is new and to ring first.** The programme
+  was announced in October 2026, reporting said the food would reach pantries
+  about two weeks later, and not one of the pantries mentions it on its own
+  website yet. The records do not claim pet food is there today.
+- **Confidence follows where the number came from.** `Medium` when it was read
+  on that organization's own site, `Low` when it came from a pantry directory,
+  and the record's notes say which. Eleven of the twenty-one are own-site.
+- **Where public listings disagreed, no number is published at all.** The
+  Father's Heart Ministries has three different numbers in circulation and
+  none on its own site, so that record carries the website and no phone. A
+  wrong number is worse than a missing one.
+
+Addresses matter here more than anywhere else on the site, because a pantry is
+a place you walk to. Note that `directory.ts` sets `address: null` — the
+workbook route cannot carry a street address — which is why this source builds
+records directly rather than going through a workbook.
+
+Three addresses in the programme's own list disagree with the organization's
+own listings (Kingsbridge Heights, The Campaign Against Hunger, Yeshua
+Worldwide). The programme's address is used, because that is where the pet
+food was sent, and the record notes the other one.
+
 ## Tagging
 
 `scripts/import/taxonomy.ts` is the single place that decides why an
