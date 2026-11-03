@@ -24,7 +24,9 @@ production; nothing here is aspirational.
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Fix this entry". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
-**New here?** Read `docs/HANDOFF.md` first — what access you need, how to get
+**New here?** Read `docs/START-HERE.md` if you want to be walked through
+setup one step at a time, or `docs/HANDOFF.md` if you are at home in a
+terminal — what access you need, how to get
 it running, and the five things that save the most pain. Then come back to
 this file, which is the reference.
 

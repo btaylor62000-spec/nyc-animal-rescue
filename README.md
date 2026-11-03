@@ -28,9 +28,10 @@ than starting to charge.
 
 ---
 
-> **Taking this project over from someone?** Start with
-> [docs/HANDOFF.md](docs/HANDOFF.md) — access, setup, and the handful of things
-> that save the most pain. `CLAUDE.md` is the full reference.
+> **Taking this project over from someone?** If you are comfortable with a
+> terminal, start with [docs/HANDOFF.md](docs/HANDOFF.md). If you would rather
+> be walked through it one step at a time, start with
+> [docs/START-HERE.md](docs/START-HERE.md). `CLAUDE.md` is the full reference.
 
 ## Running it
 

@@ -3,6 +3,11 @@
 For a new maintainer, on a new machine. It assumes you have not seen the
 project before and that someone has just handed it to you.
 
+> **Not comfortable in a terminal?** Read
+> [START-HERE.md](START-HERE.md) instead. It covers the same ground one click
+> at a time, and assumes nothing. Come back to this when you want the shape of
+> the project rather than the setup.
+
 Read `CLAUDE.md` after this. It is the real reference — every decision, every
 rule, and every trap that has already caught someone. Claude Code reads it
 automatically when you open this folder, so you do not have to paste it
