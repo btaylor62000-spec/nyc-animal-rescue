@@ -14,6 +14,7 @@ import { Retriever, type Corpus } from '../src/chat/retrieve.ts';
 import { SYSTEM_PROMPT, buildContext } from '../src/chat/system-prompt.ts';
 import { allowedFrom, redact } from '../src/chat/redact.ts';
 import { LIMITS } from '../src/chat/protocol.ts';
+import { isOpen24h } from '../src/data/hours.ts';
 
 interface EvalCase {
   id: string;
@@ -23,6 +24,8 @@ interface EvalCase {
   expect_needs?: string[];
   expect_signals?: { animals?: string[]; needs?: string[]; boroughs?: string[]; zips?: string[] };
   expect_emergency?: boolean;
+  /** The first vet offered must be open around the clock: the question gives no time, so it may be night. */
+  expect_first_vet_open_24h?: boolean;
   expect_guide_any?: string[];
   expect_no_answer?: boolean;
   expect_clarifying_question?: boolean;
@@ -111,6 +114,15 @@ function retrievalChecks(c: EvalCase): { checks: Check[]; retrieved: ReturnType<
     checks.push({
       name: c.expect_emergency ? 'treated as an emergency' : 'not treated as an emergency',
       pass: retrieved.signals.emergency === c.expect_emergency,
+    });
+  }
+
+  if (c.expect_first_vet_open_24h) {
+    const first = retrieved.orgs.find((o) => o.needs.includes('emergency-vet') && !o.needs.includes('poison-control'));
+    checks.push({
+      name: 'first vet offered is open 24/7',
+      pass: !!first && isOpen24h(first.hours),
+      detail: first ? `${first.name} (${first.hours ?? 'hours unknown'})` : 'no vet retrieved',
     });
   }
 

@@ -31,6 +31,9 @@ const HEADER_ALIASES: Record<string, string[]> = {
   confidence: ['confidence'],
   source_url: ['source url'],
   last_verified: ['last verified'],
+  // Optional. Without it every workbook row reached the page with no hours,
+  // so a 24-hour hospital could not say it was one.
+  hours: ['hours'],
 };
 
 export interface DraftOrg extends Org {
@@ -280,7 +283,7 @@ function buildDraft(
     intake_urls: intake.values,
     social: social.values,
     address: null,
-    hours: null,
+    hours: get(row, 'hours') || null,
     notes: notesParts.length ? notesParts.join(' ') : null,
     type_raw: typeRaw || null,
     confidence: confidenceOf(get(row, 'confidence')),

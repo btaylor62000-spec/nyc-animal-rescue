@@ -14,6 +14,7 @@ import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
 import { boroughsIn } from '../data/geo.ts';
+import { hasLimitedHours, isOpen24h } from '../data/hours.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
 
 export interface Corpus {
@@ -410,6 +411,16 @@ export class Retriever {
     //    without this it led every trauma question ahead of the actual
     //    emergency rooms.
     if (org.needs.includes('poison-control') && !s.needs.includes('poison-control')) score -= 10;
+
+    // 4b. Among vets that take emergencies, somewhere open at any hour beats
+    //     somewhere that may be closed. Daytime urgent care is still listed,
+    //     just after the 24-hour hospitals: the question rarely says what time
+    //     it is. Not gated on the question reading as an emergency, because
+    //     "ate a hair tie and is vomiting" reads as poisoning, not as one.
+    if (org.needs.includes('emergency-vet') && !org.needs.includes('poison-control')) {
+      if (isOpen24h(org.hours)) score += 5;
+      else if (hasLimitedHours(org.hours)) score -= 3;
+    }
 
     // 5. What we are surest about, and what they can act on now.
     score += org.confidence === 'High' ? 4 : org.confidence === 'Medium' ? 2 : 0;
