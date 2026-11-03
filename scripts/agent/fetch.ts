@@ -200,6 +200,10 @@ export async function fetchPage(url: string, fetcher: typeof fetch = fetch): Pro
       html,
     };
   } catch (err) {
-    return { ...base, error: (err as Error).message };
+    // Node's fetch reports every network failure as "fetch failed" and puts
+    // the reason in \`cause\`. The reason is the whole point: ENOTFOUND means
+    // the domain no longer exists, a timeout means a bad afternoon.
+    const cause = (err as { cause?: { code?: string } }).cause?.code;
+    return { ...base, error: cause ? `${(err as Error).message} (${cause})` : (err as Error).message };
   }
 }

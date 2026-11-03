@@ -11,7 +11,7 @@ import { NEED_LABELS } from '../data/orgs.ts';
  * and whoever maintains this deciding what to do next. Both were previously
  * served only by reading the repository.
  */
-const { total, byConfidence, byCheck, needingAPerson, unverified, fromVisitors, awaitingConsent, jobs, pendingImport } = STATUS;
+const { total, byConfidence, byCheck, needingAPerson, manualOnly, unverified, fromVisitors, awaitingConsent, jobs, pendingImport } = STATUS;
 
 const checked = byCheck.ok ?? 0;
 const never = byCheck.unchecked ?? 0;
@@ -84,6 +84,8 @@ const confidenceRows = [
           <dd>confirmed on the organization’s own site</dd>
           <dt>{needingAPerson.length}</dt>
           <dd>flagged for a person to look at — something ambiguous the checker would not guess</dd>
+          <dt>{manualOnly.length}</dt>
+          <dd>websites that turn automated checks away, so a person confirms them instead</dd>
           <dt>{unverified.length}</dt>
           <dd>found automatically and published unconfirmed, sorted below everything checked</dd>
           <dt>{fromVisitors.length}</dt>
@@ -109,6 +111,27 @@ const confidenceRows = [
               <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
               <p class="card__meta" style="margin:0">
                 {org.status_note ?? 'Flagged by the weekly check.'}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {manualOnly.length > 0 && (
+      <section class="section">
+        <h2>Checked by a person only</h2>
+        <p class="prose">
+          These organizations’ websites are up, but show automated checks a “prove you are human” test, so
+          the weekly check cannot read them. That says nothing about the organization, and they are not
+          treated as failing. A person confirms them instead; the ones confirmed longest ago are first.
+        </p>
+        <ul class="results">
+          {manualOnly.map((org) => (
+            <li class="card">
+              <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
+              <p class="card__meta" style="margin:0">
+                {org.last_verified ? `Last confirmed by a person on ${org.last_verified}` : 'Not yet confirmed by a person'}
               </p>
             </li>
           ))}

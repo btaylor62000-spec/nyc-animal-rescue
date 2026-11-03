@@ -162,6 +162,36 @@ read them.
 - **A record's `status_note` is only rendered when the record is not active.**
   A caveat about an operating organization belongs in `notes`.
 
+### Sites the weekly check cannot read
+
+Added 2026-11-03. A site that cannot be read is one of three things, and the
+check now tells them apart (`pageProblem` in `scripts/agent/rules.ts`):
+
+| What it sees | What it means | What happens |
+| --- | --- | --- |
+| The domain does not exist (`ENOTFOUND`) | Moved or closed | Flagged for a person **the same week**. The reader-visible status still waits three weeks |
+| 401/403/429, or a bot-check page ("Performing security verification") | The site is up but refuses robots | **Not a failure.** `check_status: manual-only`, listed in the weekly report and on `/status`, flagged again when no person has confirmed it for 90 days |
+| Timeout or server error | Could be a bad afternoon | Three weeks' grace, then "needs confirming", as before |
+
+Urban Wildlife Alliance, Petco Love Lost and United Spay Alliance are why: all
+three are live and all three show automated browsers a bot check. Under the old
+rule they would have been marked "may no longer be active" after three weeks.
+
+**The check never looks for a replacement site.** A dead domain is exactly when
+guessing is most tempting and most dangerous: the old domain may now belong to
+someone else. A person finds the new site and records it in the overlay
+(`website`, with a `manual` change-log entry), as was done for Greater Staten
+Island Veterinary Services and the ASPCA clinics.
+
+**To record a check made by hand** on a `manual-only` site: open it in a normal
+browser, confirm the contacts, and set `last_verified` on its overlay entry with
+a `manual` change-log entry saying what was seen. That resets the 90 days.
+
+**Testing the checker from a cloud session:** Node's own `fetch` does not use
+the session's proxy, so every domain looks dead and the safety valve trips.
+Run it with `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`.
+GitHub Actions has ordinary DNS and needs neither.
+
 ### Two bugs already fixed, so they are not re-introduced
 
 - **The Turnstile widget must be visible while it runs.** It was originally

@@ -395,7 +395,8 @@
         "unreachable",
         "needs-review",
         "new-unverified",
-        "unchecked"
+        "unchecked",
+        "manual-only"
       ]
     },
     "consecutive_failures": {

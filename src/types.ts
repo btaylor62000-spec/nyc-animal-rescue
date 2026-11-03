@@ -107,7 +107,11 @@ export const STATUSES = ['active', 'verify', 'hiatus', 'relocated', 'retired'] a
 export type Status = (typeof STATUSES)[number];
 
 /** Result of the most recent automated check (Phase 4). */
-export const CHECK_STATUSES = ['ok', 'changed', 'unreachable', 'needs-review', 'new-unverified', 'unchecked'] as const;
+/**
+ * `manual-only`: the site answers, but turns automated checks away (a bot
+ * check, or "access denied"), so only a person can confirm it.
+ */
+export const CHECK_STATUSES = ['ok', 'changed', 'unreachable', 'needs-review', 'new-unverified', 'unchecked', 'manual-only'] as const;
 export type CheckStatus = (typeof CHECK_STATUSES)[number];
 
 /** A phone number, kept alongside the role it serves ("intake", "TNR"). */
