@@ -25,10 +25,13 @@ production; nothing here is aspirational.
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Fix this entry". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
 **New here?** Read `docs/START-HERE.md` if you want to be walked through
-setup one step at a time, or `docs/HANDOFF.md` if you are at home in a
-terminal — what access you need, how to get
-it running, and the five things that save the most pain. Then come back to
-this file, which is the reference.
+setup one step at a time — it uses Claude Code in the browser
+(<https://claude.ai/code>), which needs nothing installed and so works on a
+Chromebook; `docs/LOCAL-SETUP.md` is the same thing on your own machine, which
+buys you a localhost preview and needs Windows or a Mac. Read
+`docs/HANDOFF.md` if you are at home in a terminal — what access you need, how
+to get it running, and the five things that save the most pain. Then come back
+to this file, which is the reference.
 
 Everyday work needs **GitHub write access only**. Cloudflare rebuilds and
 deploys on every push to `main`, so anything a reader sees can be changed
@@ -142,6 +145,13 @@ read them.
   and a caveat written to `status_note`, which an *active* record never
   displays. A passing build proves less than a cache-busted fetch of the real
   URL.
+- **Every branch gets its own copy of the live site**, which is the cheapest way
+  to satisfy the rule above before a change is public. Pushing a branch makes
+  Cloudflare build it at `<branch-name>.nyc-animal-rescue.pages.dev` — verified
+  2026-11-03, live about a minute after the push, the whole site including
+  `/status/`. Note the trailing slash: `/status` answers 308 to `/status/`.
+  Preview builds run `astro build` only, not the tests, so a preview proves the
+  page, not the project.
 - **The overlay is the only way to correct a record.** `data/orgs/` is
   regenerated, so hand edits there are destroyed by the next import.
   `OverlayEntry` now covers `phones`, `emails`, `website`, `intake_urls`,
@@ -491,3 +501,8 @@ npm run typecheck && npm test && npm run evals && npm run build
 
 If you touched the importer, also check it is still idempotent: run
 `npm run import` twice and confirm the second produces no diff.
+
+For anything a reader can see, push a branch first and look at
+`<branch-name>.nyc-animal-rescue.pages.dev` rather than merging and checking
+afterwards. It costs a minute and it is the only check that has ever caught the
+defects that live only in the deployed page.

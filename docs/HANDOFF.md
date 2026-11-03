@@ -5,8 +5,11 @@ project before and that someone has just handed it to you.
 
 > **Not comfortable in a terminal?** Read
 > [START-HERE.md](START-HERE.md) instead. It covers the same ground one click
-> at a time, and assumes nothing. Come back to this when you want the shape of
-> the project rather than the setup.
+> at a time, assumes nothing, and installs nothing — it works in a browser, so
+> it is also the only route that works on a Chromebook.
+> [LOCAL-SETUP.md](LOCAL-SETUP.md) is the click-by-click version of the setup
+> below. Come back to this when you want the shape of the project rather than
+> the setup.
 
 Read `CLAUDE.md` after this. It is the real reference — every decision, every
 rule, and every trap that has already caught someone. Claude Code reads it
