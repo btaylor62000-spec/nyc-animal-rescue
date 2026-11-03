@@ -151,7 +151,9 @@ read them.
   2026-11-03, live about a minute after the push, the whole site including
   `/status/`. Note the trailing slash: `/status` answers 308 to `/status/`.
   Preview builds run `astro build` only, not the tests, so a preview proves the
-  page, not the project.
+  page, not the project. Cloudflare cuts the name to its first 28 characters,
+  with `/` turned into `-`: branch `claude/festive-ramanujan-w3qytx` is at
+  `claude-festive-ramanujan-w3q`. The full name answers "Deployment Not Found".
 - **The overlay is the only way to correct a record.** `data/orgs/` is
   regenerated, so hand edits there are destroyed by the next import.
   `OverlayEntry` now covers `phones`, `emails`, `website`, `intake_urls`,
