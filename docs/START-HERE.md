@@ -105,11 +105,25 @@ In GitHub Desktop:
 1. **File → Clone repository**
 2. Choose the **GitHub.com** tab
 3. Find **btaylor62000-spec/nyc-animal-rescue** in the list and select it
-4. Note the **Local path** — that is where the files will live on your
-   computer. The default is fine. Remember roughly where it is.
+4. Leave **Local path** exactly as it is — the suggested folder is the right
+   one
 5. Click **Clone**
 
-It will take a minute. When it finishes, you have the whole project.
+It takes a minute or two. When the progress bar finishes, every file in the
+project is on your computer.
+
+**You do not need to remember where it put them.** GitHub Desktop always knows,
+and it will show you whenever you ask:
+
+> **Repository → Show in Finder** (on a Mac)
+> **Repository → Show in Explorer** (on Windows)
+
+That opens the folder. Use that menu any time you lose track of it — you never
+have to hunt through folders or type a path.
+
+For what it is worth, the folder is almost certainly called
+`nyc-animal-rescue`, inside a folder called `GitHub`, inside your `Documents`.
+But use the menu rather than trusting that.
 
 ---
 
@@ -117,12 +131,19 @@ It will take a minute. When it finishes, you have the whole project.
 
 ### 4.1 Open the folder in Claude Code
 
-In the Claude app, go to the **Code** section and open the folder GitHub
-Desktop just created. It will be called `nyc-animal-rescue`.
+First, find the folder: in GitHub Desktop, **Repository → Show in Finder**
+(or **Show in Explorer** on Windows). A window opens showing the project's
+files. Leave it open for a moment.
 
-Claude automatically reads the project's own notes when you open it, so it
-already knows what this is and how it works. You do not need to explain
-anything.
+Now, in the Claude app, go to the **Code** section and choose to open a
+folder — then pick `nyc-animal-rescue`, the one you were just looking at.
+
+If Claude asks you to confirm you trust the folder, say yes. It is your own
+project.
+
+Claude reads the project's own notes automatically when you open it, so it
+already knows what this is, how it works, and what the rules are. You do not
+have to explain anything or paste anything in.
 
 ### 4.2 Ask it to set up and check
 
