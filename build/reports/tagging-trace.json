@@ -26,6 +26,18 @@
       "matched": "solo rescuer"
     }
   ],
+  "911-parrot-alert": [
+    {
+      "tag": "bird-companion",
+      "field": "name",
+      "matched": "Parrot"
+    },
+    {
+      "tag": "lost-found",
+      "field": "section",
+      "matched": "LOST AND FOUND"
+    }
+  ],
   "a-helping-wing-parrot-rescue-and-sanctuary": [
     {
       "tag": "bird-companion",
@@ -172,6 +184,33 @@
       "tag": "support-program",
       "field": "type",
       "matched": "working-cat placement"
+    }
+  ],
+  "ace-of-spays": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "Low-cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
     }
   ],
   "advocat-rescue-inc": [
@@ -566,6 +605,75 @@
       "matched": "Rescue"
     }
   ],
+  "animal-help-now-wildlife-emergency-finder": [
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "Wild Bird"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "notes",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "directory"
+    },
+    {
+      "tag": "directory",
+      "field": "type",
+      "matched": "directory"
+    },
+    {
+      "tag": "wildlife",
+      "field": "section",
+      "matched": "WILDLIFE - national finder, from the Mayor's Alliance injure"
+    }
+  ],
+  "animal-kind-veterinary-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "emergency vet"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "emergency vet"
+    }
+  ],
   "animal-lighthouse-rescue": [
     {
       "tag": "dog",
@@ -850,6 +958,33 @@
       "tag": "support-program",
       "field": "type",
       "matched": "(support"
+    }
+  ],
+  "astoria-animal-society": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
     }
   ],
   "astoria-cat-rescue-inc": [
@@ -1234,6 +1369,28 @@
       "matched": "Rescue"
     }
   ],
+  "best-friends-spay-neuter-resource-map": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    }
+  ],
   "big-city-little-kitty": [
     {
       "tag": "cat",
@@ -1291,6 +1448,33 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "Rescue"
+    }
+  ],
+  "bond-vet": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "urgent care"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "clinic"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "urgent care"
     }
   ],
   "boomers-feline-friends": [
@@ -1392,6 +1576,43 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "bronx-veterinary-center": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Veterinary Center"
     }
   ],
   "brooklyn-animal-action": [
@@ -1915,6 +2136,23 @@
       "matched": "TNR"
     }
   ],
+  "canine-cancer-alliance-cancer-treatment-funds": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Canine"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "section",
+      "matched": "HELP PAYING"
+    }
+  ],
   "carroll-street-cat-club": [
     {
       "tag": "cat",
@@ -2374,6 +2612,28 @@
       "matched": "WILDLIFE REHABILITATION - wild cottontails and other native "
     }
   ],
+  "domesticsheltersorg": [
+    {
+      "tag": "owner-support",
+      "field": "type",
+      "matched": "domestic violence"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "directory"
+    },
+    {
+      "tag": "hotline",
+      "field": "section",
+      "matched": "hotline"
+    },
+    {
+      "tag": "directory",
+      "field": "type",
+      "matched": "directory"
+    }
+  ],
   "earthlings-nyc-turtle-team": [
     {
       "tag": "reptile",
@@ -2700,6 +2960,23 @@
       "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
     }
   ],
+  "fidoalert": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "lost pet"
+    }
+  ],
   "flatbush-cats": [
     {
       "tag": "cat",
@@ -2908,6 +3185,23 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "rescue"
+    }
+  ],
+  "for-the-love-of-alex": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "section",
+      "matched": "HELP PAYING"
     }
   ],
   "foster-dogs-inc": [
@@ -3238,6 +3532,43 @@
       "matched": "Rescue"
     }
   ],
+  "halo-veterinary-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Veterinary Hospital"
+    }
+  ],
   "happy-homes-animal-rescue-inc": [
     {
       "tag": "cat",
@@ -3403,6 +3734,65 @@
       "matched": "Rescue"
     }
   ],
+  "helping-paw": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "notes",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
+    }
+  ],
+  "home-to-home": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
+    }
+  ],
   "house-of-pancakes-reptile-rescue": [
     {
       "tag": "reptile",
@@ -3505,6 +3895,28 @@
       "tag": "support-program",
       "field": "type",
       "matched": "(support"
+    }
+  ],
+  "humane-world-for-animals-help-affording-a-pet": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "help with"
+    },
+    {
+      "tag": "food-assistance",
+      "field": "type",
+      "matched": "pet food"
     }
   ],
   "india-street-cats": [
@@ -3729,6 +4141,33 @@
       "matched": "Rescue"
     }
   ],
+  "kent-animal-shelter-spay-neuter-clinic": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
+    }
+  ],
   "kittens-and-barbells-rescue-inc": [
     {
       "tag": "cat",
@@ -3860,6 +4299,13 @@
       "matched": "Rescue"
     }
   ],
+  "lana-law-group": [
+    {
+      "tag": "legal",
+      "field": "name",
+      "matched": "Legal"
+    }
+  ],
   "lic-feral-feeders-and-cat-rescue": [
     {
       "tag": "cat",
@@ -3984,6 +4430,33 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "long-island-animal-surgery": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
     }
   ],
   "long-island-parrot-society": [
@@ -4174,6 +4647,43 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "rescue"
+    }
+  ],
+  "low-cost-vet-mobile": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Vet Center"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Vet Center"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "name",
+      "matched": "Low Cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "type",
+      "matched": "clinic"
     }
   ],
   "luv-n-bunns-rabbit-rescue": [
@@ -4662,6 +5172,23 @@
       "matched": "voucher"
     }
   ],
+  "mylostpetalert": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "lost pet"
+    }
+  ],
   "narn-central-brooklyn": [
     {
       "tag": "cat",
@@ -4697,6 +5224,18 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "network"
+    }
+  ],
+  "national-domestic-violence-hotline": [
+    {
+      "tag": "owner-support",
+      "field": "name",
+      "matched": "Domestic Violence"
+    },
+    {
+      "tag": "hotline",
+      "field": "name",
+      "matched": "Hotline"
     }
   ],
   "neighborhood-cats": [
@@ -4830,6 +5369,23 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "Rescue"
+    }
+  ],
+  "new-york-city-bar-free-legal-services": [
+    {
+      "tag": "owner-support",
+      "field": "animals_served",
+      "matched": "eviction"
+    },
+    {
+      "tag": "legal",
+      "field": "name",
+      "matched": "legal"
+    },
+    {
+      "tag": "hotline",
+      "field": "notes",
+      "matched": "hotline"
     }
   ],
   "new-york-city-pigeon-rescue-central": [
@@ -5609,6 +6165,43 @@
       "matched": "TNR"
     }
   ],
+  "one-love-animal-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    }
+  ],
   "park-slope-veterinary-center": [
     {
       "tag": "cat",
@@ -5735,6 +6328,23 @@
       "matched": "TNR"
     }
   ],
+  "pawboost": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "Lost and found"
+    }
+  ],
   "paws-crossed-animal-rescue": [
     {
       "tag": "cat",
@@ -5799,6 +6409,23 @@
       "matched": "TNR"
     }
   ],
+  "pet-fbi": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "lost and found"
+    }
+  ],
   "pet-poison-helpline-24-7-hotline": [
     {
       "tag": "emergency-vet",
@@ -5829,6 +6456,50 @@
       "tag": "government",
       "field": "section",
       "matched": "MUNICIPAL"
+    }
+  ],
+  "petamberalert": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "lost pet"
+    }
+  ],
+  "petchester-veterinary": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "type",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
     }
   ],
   "place-for-cats": [
@@ -5974,6 +6645,33 @@
       "matched": "Rescue"
     }
   ],
+  "positive-tails": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "notes",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "section",
+      "matched": "HELP PAYING"
+    }
+  ],
   "pound-hounds-res-q": [
     {
       "tag": "dog",
@@ -6088,6 +6786,18 @@
       "tag": "rabbit",
       "field": "section",
       "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "rabbitorg": [
+    {
+      "tag": "rabbit",
+      "field": "name",
+      "matched": "Rabbit"
+    },
+    {
+      "tag": "education",
+      "field": "type",
+      "matched": "education"
     }
   ],
   "ready-for-rescue": [
@@ -6266,6 +6976,23 @@
       "tag": "rabbit",
       "field": "section",
       "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "rehome-by-adopt-a-pet": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehoming"
     }
   ],
   "rescue-city": [
@@ -6448,6 +7175,43 @@
       "matched": "TNR"
     }
   ],
+  "riverside-animal-hospital-north": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "section",
+      "matched": "SPAY"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    }
+  ],
   "saint-spiro-cat-rescue-inc": [
     {
       "tag": "cat",
@@ -6488,6 +7252,43 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "save-a-pet-low-cost-veterinary-clinic": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "name",
+      "matched": "Low-Cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
     }
   ],
   "save-the-animals-rescue-foundation": [
@@ -6797,6 +7598,33 @@
       "tag": "solo-rescuer",
       "field": "type",
       "matched": "solo rescuer"
+    }
+  ],
+  "spayusa": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "Referral"
     }
   ],
   "spca-of-westchester-equine-rescue": [
@@ -7125,6 +7953,33 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "tara-spay-neuter-clinic": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
     }
   ],
   "tavi-and-friends": [
@@ -7556,6 +8411,23 @@
       "matched": "TNR"
     }
   ],
+  "tripawds-foundation-asap": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "notes",
+      "matched": "grants"
+    }
+  ],
   "urban-cat-league": [
     {
       "tag": "cat",
@@ -7684,6 +8556,28 @@
       "matched": "Emergency vet"
     }
   ],
+  "urvet-care-upper-east-side": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "urgent care"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "urgent care"
+    }
+  ],
   "usda-report-sick-birds-line": [
     {
       "tag": "bird-companion",
@@ -7751,6 +8645,43 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
+    }
+  ],
+  "value-veterinary-clinic": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Clinic"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "section",
+      "matched": "SPAY"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
     }
   ],
   "vca-veterinary-referral-and-emergency-center-of-westbury": [

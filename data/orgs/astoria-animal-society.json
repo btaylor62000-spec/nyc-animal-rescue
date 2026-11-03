@@ -1,0 +1,61 @@
+{
+  "id": "astoria-animal-society",
+  "name": "Astoria Animal Society",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens - Astoria",
+  "zips": [
+    "11103"
+  ],
+  "region_note": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "phones": [
+    {
+      "value": "7187521488",
+      "display": "(718) 752-1488"
+    }
+  ],
+  "emails": [
+    {
+      "value": "astoriaanimalsociety@gmail.com"
+    }
+  ],
+  "website": "https://astoriaanimals.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "30-89 38th Street, Astoria, NY 11103. Listed by the Mayor's Alliance for reduced-cost spay/neuter, including for community cats. The number is the one printed on its page; the page's tap-to-call link dials a different number, (718) 777-2018, so if one does not answer try the other.",
+  "type_raw": "Vet practice offering spay/neuter and general care",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://astoriaanimals.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

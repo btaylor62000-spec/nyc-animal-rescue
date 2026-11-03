@@ -1,0 +1,55 @@
+{
+  "id": "animal-help-now-wildlife-emergency-finder",
+  "name": "Animal Help Now - wildlife emergency finder",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "directory"
+  ],
+  "animals": [
+    "wildlife",
+    "bird-wild"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National; use from anywhere",
+  "zips": [],
+  "region_note": "WILDLIFE - national finder, from the Mayor's Alliance injured animals page",
+  "phones": [],
+  "emails": [],
+  "website": "https://ahnow.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A website and free phone app that finds the nearest wildlife help for where you are, including people licensed to care for injured wildlife (rehabilitators). It does not respond to emergencies itself. In the city, the Wild Bird Fund is the first call for birds.",
+  "type_raw": "Online directory and referral service for wildlife emergencies",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://ahnow.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "WILDLIFE - national finder, from the Mayor's Alliance injured animals page",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

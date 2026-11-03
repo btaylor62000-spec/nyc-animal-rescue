@@ -1,0 +1,56 @@
+{
+  "id": "canine-cancer-alliance-cancer-treatment-funds",
+  "name": "Canine Cancer Alliance - cancer treatment funds",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national list)",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hello@caninecanceralliance.org"
+    }
+  ],
+  "website": "https://www.ccralliance.org/post/financial_assistance",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A list of nonprofits that help pay for cancer treatment; contact each fund directly.",
+  "type_raw": "List of funds that help pay for a pet's cancer treatment",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.ccralliance.org/post/financial_assistance"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

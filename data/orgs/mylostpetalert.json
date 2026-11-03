@@ -1,0 +1,52 @@
+{
+  "id": "mylostpetalert",
+  "name": "MyLostPetAlert",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [],
+  "region_note": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "phones": [],
+  "emails": [],
+  "website": "https://mylostpetalert.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A paid service that faxes shelters and vets, calls neighbours and shares a flyer when a pet goes missing.",
+  "type_raw": "Paid lost pet alerts by fax, phone and social media",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mylostpetalert.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

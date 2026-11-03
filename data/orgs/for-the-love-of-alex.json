@@ -1,0 +1,52 @@
+{
+  "id": "for-the-love-of-alex",
+  "name": "For The Love Of Alex",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national fund)",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.fortheloveofalex.org/help-my-pet",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Helps pay for urgent medical care for cats and dogs. Pays the vet or pharmacy directly, and asks for proof of income, such as a tax return, before approving.",
+  "type_raw": "Fund for urgent vet care for dogs and cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.fortheloveofalex.org/help-my-pet"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

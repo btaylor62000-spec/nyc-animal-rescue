@@ -1,0 +1,55 @@
+{
+  "id": "rabbitorg",
+  "name": "Rabbit.org",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "rabbit"
+  ],
+  "needs": [
+    "education"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National; use from anywhere",
+  "zips": [],
+  "region_note": "RABBIT CARE - national information, from the Mayor's Alliance rabbits page",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@rabbit.org"
+    }
+  ],
+  "website": "https://rabbit.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Care and health guides for pet rabbits from long-time rabbit educators. For local help in the city, see the rabbit groups listed separately.",
+  "type_raw": "National information and education on caring for pet rabbits",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://rabbit.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "RABBIT CARE - national information, from the Mayor's Alliance rabbits page",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

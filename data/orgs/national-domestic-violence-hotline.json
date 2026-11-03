@@ -1,0 +1,56 @@
+{
+  "id": "national-domestic-violence-hotline",
+  "name": "National Domestic Violence Hotline",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline"
+  ],
+  "animals": [],
+  "needs": [
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National hotline; use from anywhere",
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SUPPORT - national hotline and shelter finder, from the Mayor's Alliance domestic violence page",
+  "phones": [
+    {
+      "value": "8007997233",
+      "display": "(800) 799-7233"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.thehotline.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "24/7",
+  "notes": "Free and confidential, answered at any hour. Also offers live chat and text on its website. Its own site warns that internet use can be monitored; if that is a risk, call instead.",
+  "type_raw": "National hotline for people experiencing domestic abuse - call, text or chat",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.thehotline.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "DOMESTIC-VIOLENCE PET SUPPORT - national hotline and shelter finder, from the Mayor's Alliance domestic violence page",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

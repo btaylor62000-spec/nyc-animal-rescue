@@ -1,0 +1,57 @@
+{
+  "id": "urvet-care-upper-east-side",
+  "name": "URvet Care Upper East Side",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan - Upper East Side (2nd Ave at 74th-75th St)",
+  "zips": [
+    "10021"
+  ],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [
+    {
+      "value": "6465359220",
+      "display": "(646) 535-9220"
+    }
+  ],
+  "emails": [],
+  "website": "https://urvetcare.com/locations/upper-east-side/",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "Mon-Fri 8:30am-6:30pm, Sat 9am-5pm, Sun 9am-3pm",
+  "notes": "1432 Second Avenue, New York, NY 10021. Walk-ins and same-day appointments during opening hours. Not open overnight: URvet Care's Midtown hospital, listed separately, is.",
+  "type_raw": "Vet practice with same-day urgent care and walk-ins; daytime hours",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://urvetcare.com/locations/upper-east-side/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

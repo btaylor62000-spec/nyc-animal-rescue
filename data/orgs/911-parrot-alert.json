@@ -1,0 +1,51 @@
+{
+  "id": "911-parrot-alert",
+  "name": "911 Parrot Alert",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "bird-companion"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (international registry)",
+  "zips": [],
+  "region_note": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.911parrotalert.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Running since 2003. Report a lost or found companion bird here and to the city's shelter.",
+  "type_raw": "Registry of lost, stolen, found and sighted pet birds",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.911parrotalert.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

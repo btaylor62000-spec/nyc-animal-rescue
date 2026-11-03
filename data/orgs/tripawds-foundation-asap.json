@@ -1,0 +1,52 @@
+{
+  "id": "tripawds-foundation-asap",
+  "name": "Tripawds Foundation ASAP",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national fund)",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "phones": [],
+  "emails": [],
+  "website": "https://tripawds.org/2016/12/tripawds-asap/",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "The Amputation Surgery Assistance Program gives grants toward the vet bill for a dog or cat having a leg amputated.",
+  "type_raw": "Fund toward amputation surgery for dogs and cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://tripawds.org/2016/12/tripawds-asap/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

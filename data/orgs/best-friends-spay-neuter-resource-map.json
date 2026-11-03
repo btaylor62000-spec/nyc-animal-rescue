@@ -1,0 +1,53 @@
+{
+  "id": "best-friends-spay-neuter-resource-map",
+  "name": "Best Friends Spay/Neuter Resource Map",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national map)",
+  "zips": [],
+  "region_note": "FINDING LOW-COST SPAY/NEUTER - national search tools that cover New York City",
+  "phones": [],
+  "emails": [],
+  "website": "https://bestfriends.org/network/resources-tools/spayneuter-resource-map",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Best Friends Animal Society's map of spay and neuter providers, searchable by location.",
+  "type_raw": "Online map of spay/neuter providers",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bestfriends.org/network/resources-tools/spayneuter-resource-map"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FINDING LOW-COST SPAY/NEUTER - national search tools that cover New York City",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

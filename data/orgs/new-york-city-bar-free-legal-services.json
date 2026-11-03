@@ -1,0 +1,59 @@
+{
+  "id": "new-york-city-bar-free-legal-services",
+  "name": "New York City Bar - free legal services",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline"
+  ],
+  "animals": [],
+  "needs": [
+    "owner-support",
+    "legal"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [
+    "10036"
+  ],
+  "region_note": "LEGAL HELP - from the Mayor's Alliance legal page. Individual lawyers named there are not listed here.",
+  "phones": [
+    {
+      "value": "2126267383",
+      "display": "(212) 626-7383"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.nycbar.org/serving-the-community/free-low-cost-legal-services/",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": "Mon-Thu 10am-12pm and 2pm-4pm, Fri 9am-12pm",
+  "notes": "The City Bar Justice Center gives free legal help to low-income New Yorkers. Call the legal hotline in its hours or apply online. Intake: Apply online through the same page",
+  "type_raw": "Free legal help for low-income New Yorkers (City Bar Justice Center)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycbar.org/serving-the-community/free-low-cost-legal-services/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LEGAL HELP - from the Mayor's Alliance legal page. Individual lawyers named there are not listed here.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

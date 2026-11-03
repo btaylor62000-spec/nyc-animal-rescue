@@ -1,0 +1,52 @@
+{
+  "id": "fidoalert",
+  "name": "FidoAlert",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national network)",
+  "zips": [],
+  "region_note": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.fidoalert.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A free network that alerts local volunteers when a dog or cat goes missing; register a pet before it is lost.",
+  "type_raw": "Free lost pet alert service",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.fidoalert.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}
