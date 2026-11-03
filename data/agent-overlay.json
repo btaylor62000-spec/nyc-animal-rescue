@@ -2120,6 +2120,57 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
+    },
+    "urban-wildlife-alliance": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://urbanwildlifenyc.org",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
+    },
+    "petco-love-lost": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://petcolove.org/lost/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
+    },
+    "united-spay-alliance-feline-fix-by-five": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://www.unitedspayalliance.org/feline-fix-by-five/contact/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
     }
   }
 }

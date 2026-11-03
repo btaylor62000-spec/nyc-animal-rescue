@@ -1,0 +1,67 @@
+{
+  "id": "petco-love-lost",
+  "name": "Petco Love Lost",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (online, national)",
+  "zips": [],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [],
+  "emails": [],
+  "website": "https://petcolove.org/lost/",
+  "intake_urls": [
+    {
+      "url": "https://petcolove.zendesk.com/hc/en-us/requests/new",
+      "label": "Help centre"
+    }
+  ],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "Upload a photo of a lost or found pet and it searches the national database of lost and found pets by facial recognition. Free. Recommended by the Mayor's Alliance alongside filing a report with the city's shelter. A reviewer confirmed this on the organization's own site on 2026-11-03. The site shows automated checks a bot test, so the weekly check cannot read it and a person re-confirms it instead.",
+  "type_raw": "Free national lost and found pet database with photo matching",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://petcolove.org/lost/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": "2026-11-03",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-03",
+      "evidence_url": "https://petcolove.org/lost/",
+      "source": "manual",
+      "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,57 @@
+{
+  "id": "vet-wheels-mobile-clinic",
+  "name": "Vet Wheels Mobile Clinic",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn and Queens",
+  "zips": [],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [
+    {
+      "value": "7184902412",
+      "display": "(718) 490-2412",
+      "label": "Text only"
+    }
+  ],
+  "emails": [],
+  "website": "https://vetwheels.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A mobile clinic serving Brooklyn and Queens, listed by the Mayor's Alliance for reduced-cost vet care. Text, do not call. A reviewer gave this number on 2026-11-03; the website would not open for an automated check that day, so a person re-confirms it.",
+  "type_raw": "Mobile low-cost vet clinic - Brooklyn and Queens",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://vetwheels.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

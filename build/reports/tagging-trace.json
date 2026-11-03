@@ -3310,6 +3310,28 @@
       "matched": "certificate program"
     }
   ],
+  "friends-of-the-feathered-and-furry-wildlife-center": [
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "wildlife-rehab",
+      "field": "type",
+      "matched": "rehabilitat"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "wildlife-rehabber",
+      "field": "type",
+      "matched": "wildlife rehab"
+    }
+  ],
   "give-me-shelter-project-inc": [
     {
       "tag": "cat",
@@ -6502,6 +6524,23 @@
       "matched": "LOW-COST"
     }
   ],
+  "petco-love-lost": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "lost-found",
+      "field": "type",
+      "matched": "lost and found"
+    }
+  ],
   "place-for-cats": [
     {
       "tag": "cat",
@@ -8428,6 +8467,18 @@
       "matched": "grants"
     }
   ],
+  "united-spay-alliance-feline-fix-by-five": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feline"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    }
+  ],
   "urban-cat-league": [
     {
       "tag": "cat",
@@ -8505,6 +8556,33 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "urban-wildlife-alliance": [
+    {
+      "tag": "bird-wild",
+      "field": "notes",
+      "matched": "Wild Bird"
+    },
+    {
+      "tag": "wildlife",
+      "field": "name",
+      "matched": "Wildlife"
+    },
+    {
+      "tag": "transport",
+      "field": "notes",
+      "matched": "transport"
+    },
+    {
+      "tag": "referral",
+      "field": "type",
+      "matched": "referral"
+    },
+    {
+      "tag": "hotline",
+      "field": "type",
+      "matched": "helpline"
     }
   ],
   "urvet-care-astoria": [
@@ -8758,6 +8836,28 @@
       "tag": "emergency-vet",
       "field": "type",
       "matched": "Emergency vet"
+    }
+  ],
+  "vet-wheels-mobile-clinic": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Clinic"
     }
   ],
   "victory-4-the-voiceless-animal-rescue-inc": [

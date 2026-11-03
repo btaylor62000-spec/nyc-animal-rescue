@@ -4,10 +4,10 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **377** organizations after de-duplication
+- **382** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
-- **14** entries flagged as not currently active
+- **15** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -17,15 +17,15 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 272 |
-| dog | 213 |
-| wildlife | 43 |
+| cat | 275 |
+| dog | 215 |
+| wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
 | reptile | 32 |
 | farm | 30 |
 | small-mammal | 30 |
-| bird-wild | 20 |
+| bird-wild | 21 |
 | pigeon | 19 |
 | amphibian | 14 |
 | fish | 14 |
@@ -41,26 +41,26 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 | tnr | 95 |
 | foster | 89 |
 | owner-support | 71 |
-| spay-neuter | 70 |
+| spay-neuter | 71 |
 | surrender | 62 |
-| low-cost-vet | 56 |
-| referral | 45 |
+| low-cost-vet | 57 |
+| referral | 47 |
 | emergency-vet | 40 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
-| wildlife-rehab | 27 |
+| wildlife-rehab | 28 |
 | medical-special-needs | 24 |
 | education | 23 |
 | legal | 21 |
 | financial-aid | 21 |
+| lost-found | 17 |
 | sanctuary | 17 |
-| lost-found | 16 |
 | behavior-training | 16 |
 | senior | 16 |
 | boarding | 15 |
 | microchip | 14 |
-| transport | 11 |
+| transport | 12 |
 | breed-specific | 10 |
 | pet-loss | 9 |
 | exotic-vet | 6 |
@@ -74,29 +74,29 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 249 |
-| manhattan | 205 |
-| queens | 205 |
-| bronx | 181 |
-| staten-island | 180 |
+| brooklyn | 253 |
+| queens | 209 |
+| manhattan | 208 |
+| bronx | 184 |
+| staten-island | 183 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 169 |
-| Medium | 164 |
+| High | 170 |
+| Medium | 168 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 363 |
+| active | 367 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
-| relocated | 1 |
+| relocated | 2 |
 
 ## Gaps in coverage
 
@@ -152,6 +152,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Friends of the Feathered and Furry Wildlife Center** — `relocated`: Source says this organization has moved out of New York City.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
@@ -266,7 +267,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (26)
+### Rows the rules could not fully tag (28)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -294,6 +295,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Rabbit.org** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:71)
 - **New York City Bar - free legal services** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:73)
 - **LANA Law Group (Legal Action Network for Animals)** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:74)
+- **United Spay Alliance - Feline Fix by Five** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:77)
+- **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:78)
 
 ## Privacy
 
