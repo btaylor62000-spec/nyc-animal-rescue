@@ -86,26 +86,28 @@ of files and work on them. You will come back to this in Part 4.
 Node is what runs the website on your own computer so you can look at changes
 before anyone else sees them. You will never type the word "node" yourself.
 
-Go to **<https://nodejs.org/en/download>**. The page shows a row of dropdowns
-reading something like *"Get Node.js for … using … with npm"*, and underneath
-it a block of commands. **Ignore the commands.** You want an ordinary
-installer, and two dropdowns stand between you and it:
+**Click the link for your computer. It downloads an installer straight away.**
 
-1. **The version** (first dropdown) — choose the one starting **22**, marked
-   LTS. Not the newest. 22 is the version this project is known to work with.
-2. **"using"** (the third dropdown, which probably says *fnm* or *nvm*) —
-   change it to **Prebuilt Installer**.
+- **Windows:**
+  <https://nodejs.org/dist/v22.23.4/node-v22.23.4-x64.msi>
+- **Mac:**
+  <https://nodejs.org/dist/v22.23.4/node-v22.23.4.pkg>
 
-The block of commands is then replaced by a **Download** button. Click it, run
-the file it downloads, and accept every default.
+Run the file it downloads and click through, accepting every default.
 
-**Then restart your computer.** Node adds itself to your system in a way that
-other programs only notice after a restart. Skipping this is the single most
-common reason the next part appears not to work.
+**Then restart your computer.** Node adds itself to your system in a way other
+programs only notice after a restart. Skipping this is the most common reason
+the next part appears not to work.
 
-> If you cannot find the version dropdown, the newest LTS will almost
-> certainly be fine too — but if anything later complains about the Node
-> version, come back and install 22.
+> **Why a direct link rather than the website?** nodejs.org's download page
+> offers a row of dropdowns and a block of commands aimed at developers, and
+> the plain installer is not where you would expect to find it. The links above
+> are the installer itself, from nodejs.org, so there is nothing to choose.
+>
+> Version 22 is deliberate: it is the long-term-support release this project is
+> known to work with. If these links are ever out of date, ask Claude Code —
+> *"what is the current Node 22 LTS installer link for Windows?"* — rather than
+> fighting the website.
 
 ### 3.2 Install GitHub Desktop
 
