@@ -13,6 +13,11 @@ test('ZIPs map to the right borough', () => {
 
 test('out-of-city ZIPs are rejected', () => {
   assert.equal(zipToBorough('11758'), null, 'North Massapequa is Nassau County');
+  assert.equal(zipToBorough('11590'), null, 'Westbury is Nassau County');
+  assert.equal(zipToBorough('11530'), null, 'Garden City is Nassau County');
+  assert.equal(zipToBorough('11003'), null, 'Elmont is Nassau County');
+  assert.equal(zipToBorough('11004'), 'queens', 'Glen Oaks is Queens');
+  assert.equal(zipToBorough('11694'), 'queens', 'Rockaway is Queens');
   assert.equal(zipToBorough('06antoni'), null);
   assert.equal(isNycZip('90210'), false);
 });

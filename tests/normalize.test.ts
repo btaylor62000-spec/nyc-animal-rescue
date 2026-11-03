@@ -60,6 +60,13 @@ test('url: labelled intake links keep their role', () => {
   assert.equal(r.values[1]?.label, 'Surrender (by appt)');
 });
 
+test('abbreviated place names are not read as web addresses', () => {
+  // This produced a live "https://S.Bronx" link on the ASPCA clinics' entry.
+  const r = parseUrls('ASPCA Community Veterinary Clinics (S.Bronx 501 E 161st St / E.NY Brooklyn / LIC Queens)');
+  assert.deepEqual(r.values, []);
+  assert.deepEqual(parseUrls('see Muffins.org').values, ['https://Muffins.org']);
+});
+
 test('social: a page name with spaces yields no link', () => {
   const r = parseSocial('FB /WINORR - Wildlife In Need of Rescue and Rehabilitation');
   assert.equal(r.values[0]?.platform, 'facebook');
