@@ -18,7 +18,7 @@ is the normal way to use it.
 
 Four things, in this order:
 
-1. A **GitHub** account — where the project's files live
+1. Your **GitHub** invitation accepted — where the project's files live
 2. **Claude Code** — where you will do the work
 3. **Node** — the engine that runs the site on your computer
 4. **GitHub Desktop** — moves files between your computer and GitHub
@@ -27,30 +27,41 @@ Then you open the project and check it works.
 
 ---
 
-# Part 1 — GitHub (5 minutes)
+# Part 1 — GitHub (2 minutes)
 
 GitHub stores the project. Every change goes through it, and the website
 rebuilds itself whenever something changes there.
 
-### 1.1 Make an account
+You already have a GitHub account — it is the one you were invited with. You
+do not need a new one.
 
-Go to **<https://github.com/signup>** and sign up. Any email, any username.
-It is free.
+### 1.1 Accept the invitation
 
-### 1.2 Accept the invitation
-
-Whoever handed you this project will have invited you. Check your email for a
-message from GitHub saying you have been invited to
+Check your email for a message from GitHub saying you have been invited to
 `btaylor62000-spec/nyc-animal-rescue`, and click **Accept invitation**.
 
-If you cannot find it, ask them to send it again — they need your GitHub
-username, so tell them what you chose.
+It may be in spam. If you cannot find it at all, you can accept it directly at
+**<https://github.com/btaylor62000-spec/nyc-animal-rescue/invitations>** while
+signed in.
 
-### 1.3 Check it worked
+### 1.2 Check it worked
 
-Go to **<https://github.com/btaylor62000-spec/nyc-animal-rescue>**. You should
-see a list of folders and files. If you see "404" instead, the invitation has
-not gone through yet.
+Go to **<https://github.com/btaylor62000-spec/nyc-animal-rescue>**, click on
+`README.md` in the file list, then click the **pencil** icon near the top
+right.
+
+- If an editor opens and the button says **Commit changes**, you are in.
+  Leave without saving.
+- If it instead offers to **fork** the project, the invitation has not been
+  accepted yet. Go back to 1.1.
+
+That is the real test: forking is what GitHub offers people who can read but
+not write.
+
+> **Starting fresh rather than taking over?** If you have landed here without
+> an invitation, make an account at <https://github.com/signup> — free, any
+> email — and ask whoever runs the project to add you, giving them your
+> username.
 
 ---
 
