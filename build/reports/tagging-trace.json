@@ -302,6 +302,33 @@
       "matched": "TNR"
     }
   ],
+  "ambuvet-pet-ambulance": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "transport",
+      "field": "type",
+      "matched": "transport"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    }
+  ],
   "amsterdog-rescue": [
     {
       "tag": "dog",
@@ -653,6 +680,28 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "Rescue"
+    }
+  ],
+  "animal-specialty-center": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
     }
   ],
   "anjellicle-cats-rescue": [
@@ -7586,6 +7635,55 @@
       "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
     }
   ],
+  "urvet-care-astoria": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "urvet-care-midtown": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "clinic"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
   "usda-report-sick-birds-line": [
     {
       "tag": "bird-companion",
@@ -7653,6 +7751,82 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE REPORTING LINES - who to call about sick, dead, str"
+    }
+  ],
+  "vca-veterinary-referral-and-emergency-center-of-westbury": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "referral",
+      "field": "name",
+      "matched": "Referral"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    }
+  ],
+  "veg-chelsea": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-new-dorp": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dogs"
+    },
+    {
+      "tag": "rabbit",
+      "field": "type",
+      "matched": "rabbits"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
     }
   ],
   "victory-4-the-voiceless-animal-rescue-inc": [

@@ -1,0 +1,55 @@
+{
+  "id": "animal-specialty-center",
+  "name": "Animal Specialty Center (Yonkers)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Yonkers, Westchester County - outside NYC",
+  "zips": [
+    "10701"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals just outside the city (Yonkers and Long Island), from the same list",
+  "phones": [
+    {
+      "value": "9144574000",
+      "display": "(914) 457-4000"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.animalspecialtycenter.com",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "9 Odell Plaza, Yonkers, NY 10701. Open 24 hours for emergencies, with specialists on site. Outside the city, in Westchester.",
+  "type_raw": "Emergency and specialty vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalspecialtycenter.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals just outside the city (Yonkers and Long Island), from the same list",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

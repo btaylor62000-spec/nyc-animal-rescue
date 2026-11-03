@@ -1,0 +1,57 @@
+{
+  "id": "veg-chelsea",
+  "name": "VEG Chelsea",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan - Chelsea (6th Ave between W 24th and W 25th St)",
+  "zips": [
+    "10010"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "phones": [
+    {
+      "value": "6465828882",
+      "display": "(646) 582-8882"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-york/chelsea",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "735 6th Avenue, New York, NY 10010. Open 24/7, 365 days; no appointments - call or walk in, and you can call and speak to a doctor first. You can stay with your pet. Part of Veterinary Emergency Group (VEG), which runs several other 24/7 hospitals in the city.",
+  "type_raw": "Emergency vet hospital, open 24/7 (no appointment, walk in)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-york/chelsea"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

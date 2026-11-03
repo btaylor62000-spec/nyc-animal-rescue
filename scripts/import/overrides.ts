@@ -14,10 +14,21 @@ export interface Override {
   reason: string;
   addAnimals?: Animal[];
   addNeeds?: Need[];
-  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note'>>;
+  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka'>>;
 }
 
 export const OVERRIDES: Override[] = [
+  {
+    // The id keeps the old spelling so the page's address does not change;
+    // the old name stays as an alias so a search for it still lands here.
+    id: 'greater-state-veterinary-specialists',
+    reason:
+      "Both reference workbooks call Staten Island's 24-hour hospital \"Greater State Veterinary Specialists\". Its own site (gsvs.org/staten-island-ny, read 2026-11-03) and the Mayor's Alliance list call it Greater Staten Island Veterinary Services. It belongs to the GSVS group, whose other hospitals are Garden State Veterinary Specialists, which is probably where the mix-up came from.",
+    set: {
+      name: 'Greater Staten Island Veterinary Services',
+      aka: ['GSiVS', 'Greater State Veterinary Specialists (GSiVS)'],
+    },
+  },
   {
     id: 'animal-care-centers-of-nyc',
     reason:

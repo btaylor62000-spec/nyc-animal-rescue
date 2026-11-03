@@ -379,7 +379,19 @@
     "aspca-community-veterinary-clinics": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": "https://clinic.aspca.org/locations/new-york-city",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "website",
+          "from": "https://S.Bronx",
+          "to": "https://clinic.aspca.org/locations/new-york-city",
+          "evidence_url": "https://clinic.aspca.org/locations/new-york-city",
+          "source": "manual",
+          "note": "The importer had read the abbreviation \"S.Bronx\" in the source as a web address and published it as a link. That parsing is fixed; this is the ASPCA page listing the South Bronx, East New York and Long Island City clinics, read on 2026-11-03."
+        }
+      ]
     },
     "aspca-spay-neuter-nyc": {
       "last_checked": "2026-09-22",
@@ -862,7 +874,21 @@
     },
     "greater-state-veterinary-specialists": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "website": "https://www.gsvs.org/staten-island-ny/",
+      "confidence": "High",
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "website",
+          "from": null,
+          "to": "https://www.gsvs.org/staten-island-ny/",
+          "evidence_url": "https://www.gsvs.org/staten-island-ny/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-03: the page names Greater Staten Island Veterinary Services, 3135 Victory Boulevard, Staten Island 10314, 917-830-1380, open 24/7 365 days a year, no appointment needed for emergencies. Same number as stored. Prompted by the Mayor's Alliance emergency vet list."
+        }
+      ]
     },
     "greenpoint-cats": {
       "last_checked": "2026-09-22",

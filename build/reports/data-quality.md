@@ -4,7 +4,7 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **332** organizations after de-duplication
+- **339** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,11 +17,11 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 234 |
-| dog | 175 |
+| cat | 241 |
+| dog | 182 |
 | wildlife | 42 |
+| rabbit | 33 |
 | bird-companion | 32 |
-| rabbit | 32 |
 | reptile | 32 |
 | farm | 30 |
 | small-mammal | 30 |
@@ -43,12 +43,12 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 | owner-support | 68 |
 | surrender | 60 |
 | spay-neuter | 54 |
-| referral | 41 |
+| referral | 42 |
 | low-cost-vet | 40 |
+| emergency-vet | 36 |
 | food-assistance | 33 |
 | advocacy | 32 |
 | colony-care | 30 |
-| emergency-vet | 29 |
 | wildlife-rehab | 26 |
 | medical-special-needs | 24 |
 | education | 22 |
@@ -59,8 +59,8 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 | senior | 16 |
 | boarding | 15 |
 | microchip | 14 |
+| transport | 11 |
 | lost-found | 10 |
-| transport | 10 |
 | breed-specific | 10 |
 | pet-loss | 9 |
 | exotic-vet | 6 |
@@ -74,25 +74,25 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 224 |
-| queens | 179 |
-| manhattan | 177 |
-| bronx | 157 |
-| staten-island | 157 |
+| brooklyn | 225 |
+| queens | 181 |
+| manhattan | 180 |
+| staten-island | 159 |
+| bronx | 158 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 165 |
-| High | 123 |
+| Medium | 164 |
+| High | 131 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 318 |
+| active | 325 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (87)
+### Never verified (86)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
