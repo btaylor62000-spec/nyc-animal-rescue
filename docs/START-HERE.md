@@ -83,11 +83,29 @@ of files and work on them. You will come back to this in Part 4.
 
 ### 3.1 Install Node
 
-Go to **<https://nodejs.org>** and download the version labelled **LTS**. Run
-the installer and accept the defaults.
-
 Node is what runs the website on your own computer so you can look at changes
 before anyone else sees them. You will never type the word "node" yourself.
+
+Go to **<https://nodejs.org/en/download>**. The page shows a row of dropdowns
+reading something like *"Get Node.js for … using … with npm"*, and underneath
+it a block of commands. **Ignore the commands.** You want an ordinary
+installer, and two dropdowns stand between you and it:
+
+1. **The version** (first dropdown) — choose the one starting **22**, marked
+   LTS. Not the newest. 22 is the version this project is known to work with.
+2. **"using"** (the third dropdown, which probably says *fnm* or *nvm*) —
+   change it to **Prebuilt Installer**.
+
+The block of commands is then replaced by a **Download** button. Click it, run
+the file it downloads, and accept every default.
+
+**Then restart your computer.** Node adds itself to your system in a way that
+other programs only notice after a restart. Skipping this is the single most
+common reason the next part appears not to work.
+
+> If you cannot find the version dropdown, the newest LTS will almost
+> certainly be fine too — but if anything later complains about the Node
+> version, come back and install 22.
 
 ### 3.2 Install GitHub Desktop
 
@@ -157,6 +175,10 @@ project depends on and then running every test.
 
 **What you want to see:** it tells you everything passed. If anything fails,
 paste what it says back to it and ask it to fix it.
+
+If it says something like *"node is not recognised"* or *"command not found"*,
+Node was installed but your computer has not noticed yet — restart, and try
+again.
 
 ### 4.3 Look at the site on your own computer
 
