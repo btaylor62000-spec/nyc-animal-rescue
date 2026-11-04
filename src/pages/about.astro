@@ -135,7 +135,7 @@ const counts = {
       </p>
     ) : (
       <ul>
-        {changes.map(({ org, change }) => (
+        {changes.map(({ org, change, undone }) => (
           <li>
             <strong>{change.date}</strong> — <a href={`/org/${org.id}`}>{org.name}</a>:
             {undone ? (
