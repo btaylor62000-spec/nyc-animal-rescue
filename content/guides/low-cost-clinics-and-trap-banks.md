@@ -80,8 +80,6 @@ Verified against Bideawee Feral-Friendly Vets, KittyKind's low-cost list, ASPCA,
 
 ## OWNER-SUPPORT / SURRENDER PREVENTION (keep a cat in its home - ACC prevented 3,813 surrenders in one year)
 
-Note: this tab is a quick-reference layer; the same clinics/orgs also appear (with fuller detail) in the main sheet's 'Clinics' section and borough sections. Feral cats MUST go to a feral-experienced clinic in a covered trap.
-
 - ACC CommunityPets - CommunityPets@nycacc.org - free/reduced vet referrals, deferred intake, help during hospitalization/DV/eviction; the surrender-avoidance line. ACC runs a PET FOOD PANTRY at its Bronx Resource Center (email for location/hours).
 - ASPCA + Food Bank For NYC partnership - free pet food distributed through 250+ Food Bank partner pantries in ALL 5 boroughs; recipients also get access to ASPCA affordable vet care/spay-neuter. Find a pantry via foodbanknyc.org or City Harvest's food-locator map (cityharvest.org).
 - PAWS NY - paws.nyc.org - pet food pantry + low-income vet care + in-home help (litter, feeding, walking) for low-income NYers with impaired mobility (age/illness/disability).
@@ -89,3 +87,5 @@ Note: this tab is a quick-reference layer; the same clinics/orgs also appear (wi
 - Feeding Pets of the Homeless (petsofthehomeless.org) - pet food via partner pantries/soup kitchens/shelters for people who are homeless or in crisis.
 - Local rescues that point to pantry days: Bronx Community Cats, ARQ (Queens), MeowRoof (Queens), Loving Touch, Mama Chris (SI) - or ask 311 for the nearest current one.
 - RescueNYC - holding/recovery space so a caretaker isn't forced to surrender during a TNR or medical situation.
+
+Note: this tab is a quick-reference layer; the same clinics/orgs also appear (with fuller detail) in the main sheet's 'Clinics' section and borough sections. Feral cats MUST go to a feral-experienced clinic in a covered trap.

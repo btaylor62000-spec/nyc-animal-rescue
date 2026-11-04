@@ -57,10 +57,10 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 
 ## WORKING-CAT / BARN PLACEMENT (un-adoptable ferals placed as working cats)
 
-Contacts above are the verified channel from the main sheet. A group appears here AND in its borough section. Confirm current capacity before relying - specialist intake is the first thing that closes when a group is full.
-
 - Urban Cat League (citywide) - working-cat placement + taming education. urbancatleague.org/contact-us
 - MeowSquad (Brooklyn/Queens) - relocates un-returnable cats to working/barn homes. info@meowsquadnyc.org | meowsquadnyc.org
 - For Animals Inc. (citywide) - working-cat options. foranimalsinc.com
 - Hard Hat Cats (citywide) - places ferals at businesses. hardhatcats@gmail.com | hardhatcats.org
 - ACC Working Cats Program (municipal) - workingcats@nycacc.org | (212) 788-4000 | nycacc.org/workingcats
+
+Contacts above are the verified channel from the main sheet. A group appears here AND in its borough section. Confirm current capacity before relying - specialist intake is the first thing that closes when a group is full.

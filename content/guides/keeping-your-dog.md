@@ -15,15 +15,13 @@ Resources for owners who need help caring for a dog - food, in-home care, tempor
 
 ## ACC OWNER SUPPORT
 
+- ACC Admissions / Owner Support: email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.
+
 What ACC can help with: reduced-fee routine vet care and spay/neuter; funding for emergency vet care; behavior advice and trainer referrals; reduced-fee pet boarding; tenant/landlord dispute help including NYCHA; help for people entering DHS temporary housing; help for military deployment.
 
 To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new home yourself.
 
-- ACC Admissions / Owner Support: email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.
-
 ## PET FOOD PANTRIES (specific programs)
-
-Petco Love 'We Are Family' - collects pet food and litter and distributes through human food-pantry partners across the five boroughs; ask your local pantry if they participate.
 
 - NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.
@@ -31,6 +29,9 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 - Animal Relief Fund (ARF) - NYC organization that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.
 - Food Bank For New York City - pet food is sometimes available at its member pantries (varies by donations). foodbanknyc.org; find a pantry at foodbanknyc.org/get-help.
+
+Petco Love 'We Are Family' - collects pet food and litter and distributes through human food-pantry partners across the five boroughs; ask your local pantry if they participate.
+
 - Prince Chunk Foundation - provides pet food and short-term assistance to families in crisis. princechunkfoundation.org.
 - Strong Paws Rescue Community Pet Pantry - periodic food/supply distributions in the Bronx and Westchester. request@strongpawsrescue.org, strongpawsrescue.org/pet-pantry.
 - Kiso's Pet Food Pantry (Brooklyn) - free pet food, with a focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.
@@ -64,13 +65,13 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 
 ## HOSPICE / FOSPICE + SENIOR-DOG PLACEMENT
 
-There is no NYC-based senior-dog sanctuary; senior-specialist sanctuaries in nearby states (e.g. Lily's Legacy, Frosted Faces, Young at Heart) are options for those able to travel.
-
 - Rebound Hounds Fospice - lifetime foster homes for senior and terminal-medical dogs, with medical costs covered by the rescue. reboundhounds.org.
 - Mr. Bones & Co. - takes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.
 - Red Hook Dog Rescue - special-needs and senior dogs (blind, deaf, amputee), foster-based, Brooklyn. harithspi@gmail.com, redhookdogrescue.org.
 - Muddy Paws Rescue + Rescue City - foster-based rescues that place seniors and can advise on hospice fostering. muddypawsrescue.org; rescuecity.nyc.
 - Lap of Love - in-home hospice and end-of-life veterinary care across NYC. lapoflove.com, (855) 933-5683.
+
+There is no NYC-based senior-dog sanctuary; senior-specialist sanctuaries in nearby states (e.g. Lily's Legacy, Frosted Faces, Young at Heart) are options for those able to travel.
 
 ## BEHAVIOR SUPPORT (a common, workable reason owners seek help)
 

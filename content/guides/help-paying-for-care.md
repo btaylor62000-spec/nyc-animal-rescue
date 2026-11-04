@@ -51,8 +51,8 @@ Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics tr
 
 ## FOOD & SUPPLY help (species-appropriate):
 
-How to use aid effectively: get a written itemized estimate + proof of need (SNAP/Medicaid/income), then apply to MULTIPLE programs the same day. For an AMC fund, the pet must be seen at AMC and you must apply within 5 business days of starting treatment - so raise it with AMC staff immediately, not after the fact.
-
 - Rescue Chewy wishlists / supply drives (e.g. Bunnies & Beyond) and rescue care pages provide correct-diet guidance - rabbits need unlimited grass hay, guinea pigs need vitamin C + a companion, many 'pet-store' foods are harmful.
 - ACC food pantry (Bronx Resource Center) + the ASPCA / Food Bank For NYC partnership (250+ pantries citywide via foodbanknyc.org) distribute pet food - ask whether they stock rabbit/small-animal/bird food specifically.
 - Feeding Pets of the Homeless (petsofthehomeless.org) and PAWS NY (pawsny.org, (212) 203-4760) help people in crisis or with mobility limits keep and feed their animals; ask about exotics.
+
+How to use aid effectively: get a written itemized estimate + proof of need (SNAP/Medicaid/income), then apply to MULTIPLE programs the same day. For an AMC fund, the pet must be seen at AMC and you must apply within 5 business days of starting treatment - so raise it with AMC staff immediately, not after the fact.

@@ -24,9 +24,9 @@ Training, behavior support, service/therapy-dog programs, and NYC legal/reportin
 
 Helpful credentials: CPDT-KA / CPDT-KSA (Cert. Council for Professional Dog Trainers), KPA-CTP (Karen Pryor Academy), CBCC-KA, or a Veterinary Behaviorist (DACVB) for complex cases.
 
-Many owners look for reward-based, force-free methods and ask a trainer about their approach to reactivity, counter-conditioning, and desensitization before booking.
-
 - Directories: ccpdt.org, apdt.com (Assoc. of Professional Dog Trainers), iaabc.org (Intl. Assoc. of Animal Behavior Consultants), dacvb.org (board-certified veterinary behaviorists).
+
+Many owners look for reward-based, force-free methods and ask a trainer about their approach to reactivity, counter-conditioning, and desensitization before booking.
 
 ## NYC BEHAVIOR + REACTIVITY SPECIALISTS
 
@@ -38,8 +38,6 @@ Many owners look for reward-based, force-free methods and ask a trainer about th
 
 ## FREE SERVICE DOGS - veterans / people with disabilities (NY-serving)
 
-These organizations provide dogs at no cost to the recipient; the ADA does not require any certificate or registration for a service dog.
-
 - America's VetDogs - Smithtown, NY: free service + guide dogs for veterans, active-duty, and first responders (PTSD, mobility, hearing/vision, seizures); all costs including transport covered. vetdogs.org, (631) 930-9000.
 - Guide Dog Foundation - Smithtown, NY: free guide dogs for people who are blind or low-vision. guidedog.org, (631) 930-9000.
 - Canine Companions - Northeast Region (Medford, NY): free service dogs for adults, children, and veterans with disabilities. canine.org, (631) 561-0200.
@@ -47,11 +45,13 @@ These organizations provide dogs at no cost to the recipient; the ADA does not r
 - Pups4Patriots (American Humane) - free service dogs for veterans. americanhumane.org, (866) 242-1877.
 - PAVE (Paws Assisting Veterans) - free service dogs for veterans. paveusa.org.
 
+These organizations provide dogs at no cost to the recipient; the ADA does not require any certificate or registration for a service dog.
+
 ## THERAPY + EMOTIONAL-SUPPORT DOGS
 
-Emotional Support Animal (ESA): housing protections may apply with a letter from a licensed provider; an ESA is different from a service dog and does not have public-access rights.
-
 - Therapy-dog certification (to volunteer with your own dog at hospitals/schools): The Good Dog Foundation (NYC-based, thegooddogfoundation.org), Pet Partners (petpartners.org), Alliance of Therapy Dogs (therapydogs.com).
+
+Emotional Support Animal (ESA): housing protections may apply with a letter from a licensed provider; an ESA is different from a service dog and does not have public-access rights.
 
 ## QUALITY-OF-LIFE + GRIEF SUPPORT
 
@@ -62,9 +62,9 @@ Emotional Support Animal (ESA): housing protections may apply with a letter from
 
 In NYC, animal bites are reported to the Health Department within 24 hours - by anyone involved.
 
-After a bite, a dog is typically observed for 10 days for rabies. Anyone bitten should seek medical advice, especially if the dog's rabies vaccination can't be confirmed.
-
 - How to report: call 311, or the DOHMH Animal Bite Unit at (646) 364-1799 (or DOHMH (212) 676-2483), or file online at the NYC Health Department animal-bite reporting page. Keep the confirmation number.
+
+After a bite, a dog is typically observed for 10 days for rabies. Anyone bitten should seek medical advice, especially if the dog's rabies vaccination can't be confirmed.
 
 ## NY STATE LAW - what owners may want to know (Ag & Markets Law 108 & 123)
 
@@ -76,17 +76,17 @@ NYC has no breed ban. NYCHA and some landlords/insurers set their own breed or w
 
 ## LEGAL AID + REFERRALS
 
-To report suspected animal cruelty in NYC: call 911 or 311.
-
 - Animal Legal Defense Fund - resource lists + referrals: aldf.org.
 - ASPCA - has at times provided legal help in NYC cases; ask for a current referral at aspca.org or (212) 876-7700.
 - Housing / breed-restriction disputes: ACC assists with tenant/landlord and NYCHA matters (admissions@nycacc.org, (212) 788-4000); tenant legal help via 311 or NYC Housing Court Answers, housingcourtanswers.org, (212) 962-4795.
 
+To report suspected animal cruelty in NYC: call 911 or 311.
+
 ## BREED / HOUSING-RESTRICTION SUPPORT
 
-A dog-DNA test (Embark, Wisdom Panel) is sometimes used to document a mixed-breed dog's makeup for a landlord or insurer; results are not guaranteed to satisfy any given policy.
-
 - Pet-inclusive + pet-friendly housing search: petsandhousing.org (Pet-Inclusive Housing Initiative).
+
+A dog-DNA test (Embark, Wisdom Panel) is sometimes used to document a mixed-breed dog's makeup for a landlord or insurer; results are not guaranteed to satisfy any given policy.
 
 ## ACC tenant advocacy (above) can help work through a housing issue before other steps.
 

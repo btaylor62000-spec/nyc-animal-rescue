@@ -81,8 +81,6 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## PET INSURANCE (for planning ahead, not a bill you already have)
 
-Note: some resources here (ASPCA, PAWS NY, ACC, Pets of the Homeless) also appear on the 'Clinics, traps & support' tab; contacts are repeated here so this tab stands alone.
-
 - Pet insurance reimburses a percentage of FUTURE covered vet costs after you pay the vet; it does NOT cover pre-existing conditions, so it helps most when started while a cat is young and healthy. Compare deductible, reimbursement %, annual limit, and exclusions.
 - Trupanion - trupanion.com - (855) 591-3100. Per-condition deductible; can pay the vet directly at participating clinics; 90% reimbursement.
 - Healthy Paws - healthypaws.com - (855) 898-8991. Annual deductible, unlimited annual coverage, 70-90% reimbursement; fast claims.
@@ -91,3 +89,5 @@ Note: some resources here (ASPCA, PAWS NY, ACC, Pets of the Homeless) also appea
 - Pets Best - petsbest.com - (877) 738-7237. Direct-vet-pay option.
 - Others widely reviewed for 2026: Embrace, Figo, Lemonade, Spot, Pumpkin, Fetch, MetLife. Get 2-3 quotes and read each policy's exclusions before choosing.
 - Tip: ask the insurer in writing how they define a pre-existing condition, and whether curable conditions (e.g. an upper-respiratory infection) can be covered later.
+
+Note: some resources here (ASPCA, PAWS NY, ACC, Pets of the Homeless) also appear on the 'Clinics, traps & support' tab; contacts are repeated here so this tab stands alone.

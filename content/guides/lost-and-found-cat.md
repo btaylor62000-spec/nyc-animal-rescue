@@ -48,8 +48,6 @@ Verified against ACC, Petco Love Lost, 24PetWatch, and Urban Cat League, 2026-08
 
 ## BEHAVIOR / SOCIALIZATION - part B: OWNED-cat problems (these are the #1 surrender triggers - solvable!)
 
-Prevention beats everything: a registered microchip + keeping cats indoors is the single strongest safety net. A loud noise or sudden movement can send an outdoor cat running - think of a cat outside as a toddler alone.
-
 - FREE National Cat Behavior Helpline - email felinehelpline@gmail.com with your contact info + a one-line issue ('cat not using litter box'); free counseling aimed at keeping cats in their homes.
 - FIRST STEP for any sudden behavior change (esp. litter box) = a VET VISIT to rule out a medical cause (UTI, kidney, pain). Behavior fixes won't work if it's medical.
 - Litter box (10%+ of cats): one box per cat PLUS one extra, scoop daily, unscented clumping litter ~2in deep, big uncovered box, quiet accessible spot. Never punish or place the cat in the box. Spraying (vertical, small amount) is marking, not a box problem - neuter fixes ~90%.
@@ -57,3 +55,5 @@ Prevention beats everything: a registered microchip + keeping cats indoors is th
 - Scratching: it's normal (stretching/marking) - provide tall sturdy posts + horizontal cardboard, don't declaw (harmful; alternatives exist). Reward using the post.
 - Authoritative free libraries: ASPCA Common Cat Behavior Issues (aspca.org/pet-care/cat-care), Pam Johnson-Bennett (catbehaviorassociates.com), Best Friends, Cornell Feline Health Center.
 - For serious/persistent cases: ask your vet for a referral to a board-certified veterinary behaviorist (Dip ACVB) or Certified Applied Animal Behaviorist (CAAB).
+
+Prevention beats everything: a registered microchip + keeping cats indoors is the single strongest safety net. A loud noise or sudden movement can send an outdoor cat running - think of a cat outside as a toddler alone.

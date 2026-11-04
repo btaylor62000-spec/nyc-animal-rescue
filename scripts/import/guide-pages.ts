@@ -241,18 +241,21 @@ export function buildTabPage(spec: TabSpec): GuidePage {
       lines.push(`## ${clean(section.heading)}`);
       lines.push('');
     }
-    for (const p of section.paragraphs) {
-      const t = clean(p);
+    let inList = false;
+    for (const item of section.items) {
+      const t = clean(item.text);
       if (!t) continue;
-      lines.push(t);
-      lines.push('');
+      if (item.kind === 'p') {
+        if (inList) lines.push('');
+        lines.push(t);
+        lines.push('');
+        inList = false;
+      } else {
+        lines.push(`${'  '.repeat(item.depth)}- ${t}`);
+        inList = true;
+      }
     }
-    for (const b of section.bullets) {
-      const t = clean(b.text);
-      if (!t) continue;
-      lines.push(`${'  '.repeat(b.depth)}- ${t}`);
-    }
-    if (section.bullets.length) lines.push('');
+    if (inList) lines.push('');
   }
 
   return {

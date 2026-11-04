@@ -338,13 +338,13 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Cats needing specialist help | 4787 |
 | Lost or found a cat | 6279 |
 | Help keeping your cat | 10376 |
-| Help keeping your dog | 8955 |
-| Low-cost vet care, spay/neuter and dog licensing | 11750 |
+| Help keeping your dog | 8956 |
+| Low-cost vet care, spay/neuter and dog licensing | 11752 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
-| Breed-specific dog rescue | 13770 |
-| Found injured or orphaned wildlife | 6640 |
-| Exotic pet emergencies | 4123 |
+| Breed-specific dog rescue | 13771 |
+| Found injured or orphaned wildlife | 9901 |
+| Exotic pet emergencies | 4124 |
 | What you can legally keep in New York City | 3073 |
 | Help paying for veterinary care | 6387 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |

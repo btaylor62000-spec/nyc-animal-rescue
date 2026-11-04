@@ -49,7 +49,7 @@ Verified against Bideawee + Mayor's Alliance emergency lists, 2026-08-26. Hours/
 
 ## BRONX - urgent care (for TRUE 24hr ER, Bronx residents are advised to use Manhattan - AMC/BluePearl)
 
-Two things that save time in a crisis: (1) call ahead so the ER preps for you; (2) if it's a toxin, call poison control FIRST - they give the ER the exact protocol. Keep this tab handy offline.
-
 - Urgent Vets - 3800 E Tremont Ave 10465 - (347) 281-9700 - Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr).
 - After those hours: go to Animal Medical Center or a Manhattan BluePearl (see Manhattan).
+
+Two things that save time in a crisis: (1) call ahead so the ER preps for you; (2) if it's a toxin, call poison control FIRST - they give the ER the exact protocol. Keep this tab handy offline.

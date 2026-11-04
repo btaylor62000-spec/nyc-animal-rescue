@@ -197,7 +197,9 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     // personal mobile. Those are people, not organizations, and they are
     // covered by the privacy holds -- so only the veterinary practices that
     // accept wildlife are promoted to records here.
-    skip: /^Bobby & Cathy|^Robert Spragg/i,
+    // The two directory pointers and Animal Help Now's situations are guide
+    // text, not organizations (AHNow and DEC have their own entries).
+    skip: /^Bobby & Cathy|^Robert Spragg|^Animal Help Now:|^New York State's register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
     rules: [{ pattern: /veterinarians who will see WILDLIFE/i, needs: ['wildlife-rehab'], orgTypes: ['clinic'] }],
   },
 ];
