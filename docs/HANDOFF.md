@@ -191,7 +191,7 @@ date — trust it over this section if they disagree. At the time of writing:
 - **A scheduled job failed** — repository → Actions. Both jobs are built so
   that failing changes nothing.
 - **A record is wrong** — fix it in `data/agent-overlay.json`, run
-  `npm run import`, push. Or use the site's own "Fix this entry" button, which
+  `npm run import`, push. Or use the site's own "Report a problem" button, which
   goes through the same pipeline.
 - **The assistant says it is resting** — the free daily allowance is spent. It
   comes back tomorrow, and the directory is unaffected.

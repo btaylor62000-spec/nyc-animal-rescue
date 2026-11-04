@@ -141,7 +141,7 @@ collect).
 
 This matters more here than on most projects. The site changes itself: an
 automatic check runs every Monday, another looks for new organizations monthly,
-and anyone who uses the "Fix this entry" button on the website causes a change
+and anyone who uses the "Report a problem" button on the website causes a change
 too. If you start work without collecting those, your own changes will clash
 with them later — which is annoying to untangle and completely avoidable.
 

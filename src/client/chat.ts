@@ -163,7 +163,7 @@ if (form && input && log) {
       const fix = document.createElement('a');
       fix.className = 'btn btn--ghost btn--fix';
       fix.href = `${card.url}/correct`;
-      fix.textContent = 'Fix this entry';
+      fix.textContent = 'Report a problem';
       actions.append(fix);
 
       li.append(name, where, actions);

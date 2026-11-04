@@ -86,9 +86,8 @@ const hoursUnknown = takesEmergencies && !org.hours;
       </a>
     )}
     <a class="btn" href={`/org/${org.id}`}>Details</a>
-    <a class="btn btn--ghost btn--fix" href={`/org/${org.id}/correct`} title="Wrong number, closed, moved? Fix it here.">
-      <Icon name="alert" size={15} />
-      Fix this entry
+    <a class="btn btn--ghost btn--fix" href={`/org/${org.id}/correct`} title="Wrong number, closed or moved? Tell us and it gets corrected.">
+      Report a problem
     </a>
   </div>
 
