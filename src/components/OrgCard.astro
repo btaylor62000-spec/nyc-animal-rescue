@@ -60,6 +60,11 @@ const hoursUnknown = takesEmergencies && !org.hours;
   data-status={org.status}
   data-has-phone={org.phones.length ? '1' : '0'}
   data-verified={org.last_verified ?? ''}
+  data-lat={org.geo?.lat}
+  data-lon={org.geo?.lon}
+  data-geo={org.geo?.precision}
+  data-hours={org.hours ?? undefined}
+  data-outside={org.outside_nyc ? '1' : '0'}
 >
   <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
 
@@ -67,6 +72,7 @@ const hoursUnknown = takesEmergencies && !org.hours;
     <Icon name="pin" size={15} />
     {where}
     {org.animals.length > 0 && <> · {org.animals.slice(0, 3).map((a) => ANIMAL_LABELS[a]).join(', ')}</>}
+    <span class="card__distance" hidden></span>
   </p>
 
   <ul class="card__tags">
@@ -80,7 +86,7 @@ const hoursUnknown = takesEmergencies && !org.hours;
     ) : null}
     {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
     {open24 && <li><span class="tag tag--strong">Open 24/7</span></li>}
-    {daytimeOnly && <li><span class="tag tag--strong" title={org.hours ?? undefined}>Not open overnight</span></li>}
+    {daytimeOnly && <li><span class="tag tag--strong" data-open-tag title={org.hours ?? undefined}>Not open overnight</span></li>}
     {hoursUnknown && <li><span class="tag tag--strong">Hours not confirmed – call first</span></li>}
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>

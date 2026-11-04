@@ -56,7 +56,11 @@ import Icon from '../components/Icon.astro';
           <p id="results-summary" role="status" class="results-bar__count">
             Showing all {orgs.length} resources
           </p>
-          <p class="filters__count" style="margin:0">Strongest evidence first</p>
+          <p class="results-bar__order">
+            <span id="results-order" class="filters__count">Strongest evidence first</span>
+            <button id="near-me" class="btn btn--ghost btn--small" type="button" hidden>Nearest to me</button>
+          </p>
+          <p id="near-me-note" class="filters__count" hidden></p>
         </div>
 
         <ul class="results" id="results" data-index-url={`/search-index.json?v=${DATA_VERSION}`}>

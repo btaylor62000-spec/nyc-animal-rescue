@@ -683,6 +683,10 @@ a:hover { text-decoration-thickness: 2px; }
   border-bottom: 1px solid var(--border);
 }
 .results-bar__count { margin: 0; font-size: 0.95rem; color: var(--text-muted); }
+.results-bar__order { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; margin: 0; }
+.btn--small { padding: 0.35rem 0.75rem; font-size: 0.9rem; min-height: 2.25rem; border-color: var(--border); }
+.card__distance { font-weight: 600; color: var(--text); }
+.card__distance::before { content: '· '; font-weight: 400; color: var(--text-muted); }
 .results-bar__count strong {
   color: var(--text);
   font-weight: 700;
