@@ -84,8 +84,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 193 |
-| Medium | 154 |
+| High | 194 |
+| Medium | 153 |
 | Low | 53 |
 
 ### By operating status
@@ -326,7 +326,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the NYC shelter’s urgent list | 8201 |
+| Save an animal from the NYC shelter’s urgent list | 8213 |
 | Reporting animal abuse or neglect | 5732 |
 | Animal emergencies and poison control | 3213 |
 | Low-cost clinics and trap banks | 8438 |

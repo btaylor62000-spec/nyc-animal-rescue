@@ -8,9 +8,27 @@ import { GITHUB_REPO, HAS_REPO, REPORT_ISSUE_BASE } from '../data/site.ts';
  * empty until the Phase 4 update agent runs; showing the section anyway, with
  * an honest empty state, is better than hiding how the site is maintained.
  */
+/*
+ * A change a person later undid is shown as undone. The first automated run
+ * (2026-09-21) made several wrong changes that were reversed the next day, and
+ * the feed listed them as plain facts -- "phones changed to (201) 438-7122" --
+ * so a reader took a corrected mistake for the current number.
+ */
+type Change = (typeof ORGS)[number]['change_log'][number];
+const undoneBy = (log: Change[], i: number): Change | undefined => {
+  const c = log[i]!;
+  return log.slice(i + 1).find((d) => d.field === c.field && d.from === c.to && (d.to === c.from || d.to === null || c.from === null));
+};
+const SOURCE_WORDS: Record<string, string> = {
+  'weekly-check': 'automated weekly check',
+  'monthly-discovery': 'automated discovery',
+  manual: 'checked by a person',
+  community: 'a visitor',
+};
 const changes = ORGS.flatMap((org) =>
-  org.change_log.map((c) => ({ org, change: c })),
+  org.change_log.map((c, i) => ({ org, change: c, undone: undoneBy(org.change_log, i), isUndo: org.change_log.slice(0, i).some((p, j) => undoneBy(org.change_log, j) === c) })),
 )
+  .filter((x) => !x.isUndo)
   .sort((a, b) => b.change.date.localeCompare(a.change.date))
   .slice(0, 40);
 
@@ -120,9 +138,19 @@ const counts = {
         {changes.map(({ org, change }) => (
           <li>
             <strong>{change.date}</strong> — <a href={`/org/${org.id}`}>{org.name}</a>:
-            {' '}{change.field} changed{change.from && <> from <code>{change.from}</code></>}
-            {change.to && <> to <code>{change.to}</code></>}
-            {change.evidence_url && <> (<a href={change.evidence_url} rel="noopener nofollow">evidence</a>)</>}
+            {undone ? (
+              <>
+                {' '}<s>{change.field} changed{change.from && <> from <code>{change.from}</code></>}{change.to && <> to <code>{change.to}</code></>}</s>
+                {' '}<strong>Undone on {undone.date}: this change was wrong.</strong> The listing shows {undone.to ? <code>{undone.to}</code> : 'the corrected value'}.
+              </>
+            ) : (
+              <>
+                {' '}{change.field} changed{change.from && <> from <code>{change.from}</code></>}
+                {change.to && <> to <code>{change.to}</code></>}
+                {change.evidence_url && <> (<a href={change.evidence_url} rel="noopener nofollow">evidence</a>)</>}
+              </>
+            )}
+            {change.source && <span class="muted"> — {SOURCE_WORDS[change.source] ?? change.source}</span>}
           </li>
         ))}
       </ul>

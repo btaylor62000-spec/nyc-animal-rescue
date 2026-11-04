@@ -36,9 +36,9 @@ ACC states that being on the at-risk list does not mean an animal is automatical
 
 - Live at-risk list, cats and dogs, updated Sunday, Tuesday and Thursday at 6 PM - https://newhope.shelterbuddy.com/Animal/List
 - ACC's pre-screener, to submit if you have a home ready - https://forms.gle/ozHex3uqvNkQt2dq9 - needs a Google sign-in.
-- ACC's emergency placement page, which carries the list and the form together - https://nycacc.org/emergency-placement/
-- ACC's full official list of its approved rescue groups, which it calls “New Hope partners”, around 250 of them - https://nycacc.org/programs/new-hope-partners/
-- How ACC's rescue-partner programme (New Hope) works, in ACC's own words - https://nycacc.org/programs/new-hope/
+- ACC's emergency placement page, which carries the list and the form together - https://www.nycacc.org/emergency-placement/
+- ACC's full official list of its approved rescue groups, which it calls “New Hope partners”, around 250 of them - https://www.nycacc.org/programs/new-hope-partners/
+- How ACC's rescue-partner programme (New Hope) works, in ACC's own words - https://www.nycacc.org/programs/new-hope/
 - Outcomes for animals that were previously listed - https://nycacc.org/adoption/at-risk-outcomes/
 
 ## WHAT TO SAY

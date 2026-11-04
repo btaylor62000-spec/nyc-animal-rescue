@@ -41,6 +41,7 @@ import { buildOrgCorpus, chunkGuide, type CorpusGuide } from './corpus.ts';
 import { applyOverlay, loadOverlay } from '../agent/overlay.ts';
 import { discoveredOrgs, unpublishedCandidateCount } from './discovered.ts';
 import { applyCorrections, loadSubmissions, submissionToOrg } from './community.ts';
+import { fixUrl, fixUrlsInText } from '../../src/data/url-fixes.ts';
 import type { TagTrace } from './tag.ts';
 
 const ORGS_DIR = 'data/orgs';
@@ -211,6 +212,19 @@ function main(): void {
     );
   }
 
+  // Known address corrections, after every source has had its say, so a link
+  // fixed once stays fixed whichever workbook it comes back from. The change
+  // log is history and is left as it was.
+  for (const org of merge.orgs) {
+    if (org.website) org.website = fixUrl(org.website);
+    const seenUrl = new Set<string>();
+    org.intake_urls = org.intake_urls
+      .map((i) => ({ ...i, url: fixUrl(i.url) }))
+      .filter((i) => !seenUrl.has(i.url) && seenUrl.add(i.url));
+    org.source_urls = [...new Set(org.source_urls.map(fixUrl))];
+    if (org.notes) org.notes = fixUrlsInText(org.notes);
+  }
+
   // A place on the map for distance sorting, once every address is final.
   const geo = attachGeo(merge.orgs);
   console.log(`  ${geo.address} placed by street address, ${geo.zip} by zip code centre`);
@@ -282,7 +296,7 @@ function main(): void {
 
   writeFileSync('schema/org.schema.json', `${JSON.stringify(ORG_SCHEMA, null, 2)}\n`, 'utf8');
 
-  const pages = buildAllGuidePages(sorted);
+  const pages = buildAllGuidePages(sorted).map((p) => ({ ...p, markdown: fixUrlsInText(p.markdown) }));
   writeGuidePages(pages, GUIDES_DIR);
   console.log(`Wrote ${pages.length} guide pages to ${GUIDES_DIR}/`);
 

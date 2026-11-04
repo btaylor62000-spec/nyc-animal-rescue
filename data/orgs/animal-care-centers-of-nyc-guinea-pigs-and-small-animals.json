@@ -47,11 +47,11 @@
   "website": "https://www.nycacc.org",
   "intake_urls": [
     {
-      "url": "https://nycacc.org/services/surrender",
+      "url": "https://www.nycacc.org/services/surrender/",
       "label": "Surrender a pet"
     },
     {
-      "url": "https://nycacc.org/adopt",
+      "url": "https://nycacc.app/",
       "label": "Adopt"
     },
     {

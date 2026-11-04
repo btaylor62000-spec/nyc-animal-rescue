@@ -37,10 +37,10 @@
       "value": "workingcats@nycacc.org"
     }
   ],
-  "website": "https://www.nycacc.org/workingcats",
+  "website": "https://www.nycacc.org/workingcats/",
   "intake_urls": [
     {
-      "url": "https://nycacc.org/workingcats"
+      "url": "https://www.nycacc.org/workingcats/"
     }
   ],
   "social": [],
