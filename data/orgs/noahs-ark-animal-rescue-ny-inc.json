@@ -35,7 +35,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3), founded 2015. Cats/kittens focus (orphaned/neglected/abandoned) in Rockaway Beach + TNR. DISAMBIGUATION: several unrelated 'Noah's Ark' orgs exist out of state (IA/TN/NJ) - this is the Rockaway/Queens NY one at noahsarkny.com ONLY. Verified 2026-08-26. Email: via contact form at noahsarkny.com (staff use @noahsarkny.com) Intake: Contact form on site Intake: adoption + foster + volunteer Other channel: FB /Noah's Ark Animal Rescue NY Other channel: Pres./Co-Founder Denise Hock",
+  "notes": "501(c)(3), founded 2015. Cats/kittens focus (orphaned/neglected/abandoned) in Rockaway Beach + TNR. DISAMBIGUATION: several unrelated 'Noah's Ark' orgs exist out of state (IA/TN/NJ) - this is the Rockaway/Queens NY one at noahsarkny.com ONLY. Email: via contact form at noahsarkny.com (staff use @noahsarkny.com) Intake: Contact form on site Intake: adoption + foster + volunteer Other channel: FB /Noah's Ark Animal Rescue NY Other channel: Pres./Co-Founder Denise Hock",
   "type_raw": "rescue+adoption / TNR",
   "confidence": "Medium",
   "status": "active",
@@ -48,7 +48,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

@@ -9,3 +9,13 @@
 /org/aspca-community-veterinary-clinics/*                   /org/aspca-community-veterinary-clinic/:splat 301
 /org/aspca-community-veterinary-clinic-brooklyn-brooklyn    /org/aspca-community-veterinary-clinic-brooklyn/ 301
 /org/aspca-community-veterinary-clinic-brooklyn-brooklyn/*  /org/aspca-community-veterinary-clinic-brooklyn/:splat 301
+/org/bully-project    /org/the-good-life-dog-rescue/ 301
+/org/bully-project/*  /org/the-good-life-dog-rescue/:splat 301
+/org/safe-havens-mapping-project    /org/safe-havens-for-pets/ 301
+/org/safe-havens-mapping-project/*  /org/safe-havens-for-pets/:splat 301
+/org/prince-chunk-foundation    /guides/help-paying-for-care/ 301
+/org/prince-chunk-foundation/*  /guides/help-paying-for-care/ 301
+/org/aspca-community-engagement    /guides/keeping-your-cat/ 301
+/org/aspca-community-engagement/*  /guides/keeping-your-cat/ 301
+/org/mama-coupon    /guides/low-cost-clinics-and-trap-banks/ 301
+/org/mama-coupon/*  /guides/low-cost-clinics-and-trap-banks/ 301

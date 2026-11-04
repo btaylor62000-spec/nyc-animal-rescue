@@ -58,7 +58,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3), founded 20+ yrs ago; one of the most active cat rescues in the 5 boroughs. Pulls sick/injured/'unadoptable' cats from city shelters (ACC), TNR-certified, foster-based. Manhattan adoption centers but works citywide. Re-verified 2026-08-26. Intake: Foster/adopt via email Intake: adoption centers: Cat Room @ Spoiled Brats (340 W 49th 10019), Petco 86 (1280 Lexington 10028), Koneko Cat Cafe Other channel: PO Box 2084, Radio City Station, NY 10101",
+  "notes": "All-volunteer 501(c)(3), founded 20+ years ago; one of the most active cat rescues in the 5 boroughs. Pulls sick/injured/'unadoptable' cats from city shelters (ACC), TNR-certified, foster-based. Manhattan adoption centers but works citywide. Intake: Foster/adopt via email Intake: adoption centers: Cat Room @ Spoiled Brats (340 W 49th 10019), Petco 86 (1280 Lexington 10028), Koneko Cat Cafe Other channel: PO Box 2084, Radio City Station, NY 10101",
   "type_raw": "rescue+adoption / TNR",
   "confidence": "High",
   "status": "active",
@@ -72,7 +72,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

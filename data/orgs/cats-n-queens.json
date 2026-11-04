@@ -38,7 +38,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Part-time local cat rescue + adoption serving Queens County (contact Louis Gedo). Small/solo operation - phone + email confirmed on own listing. Verified 2026-08-26. Intake: Contact Louis Gedo by phone/email Intake: adoption via Petfinder Other channel: Petfinder: cats-n-queens",
+  "notes": "Part-time local cat rescue + adoption serving Queens County (contact Louis Gedo). Small/solo operation - phone + email confirmed on own listing. Intake: Contact Louis Gedo by phone/email Intake: adoption via Petfinder Other channel: Petfinder: cats-n-queens",
   "type_raw": "solo rescuer / rescue+adoption",
   "confidence": "Medium",
   "status": "active",
@@ -51,7 +51,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [],

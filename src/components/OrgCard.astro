@@ -11,8 +11,13 @@ const { org } = Astro.props;
 
 const confirm = needsConfirmation(org);
 const newlyFound = isNewlyFound(org);
-const byVisitor = org.community?.added_on ?? null;
-const correctedByVisitor = org.community?.corrected_on ?? null;
+// A visitor's label stops applying once the record has been confirmed on the
+// organization's own site after the visitor's change: Frankie's Feline Fund
+// kept "Updated by a visitor" for six weeks after the weekly check had
+// re-confirmed every contact on it.
+const checkedSince = (d: string | null | undefined) => !!(d && org.last_verified && org.last_verified > d);
+const byVisitor = checkedSince(org.community?.added_on) ? null : org.community?.added_on ?? null;
+const correctedByVisitor = checkedSince(org.community?.corrected_on) ? null : org.community?.corrected_on ?? null;
 
 // Based outside the city comes first: a Great Neck clinic or a Connecticut
 // parrot rescue that serves New Yorkers was labelled "All five boroughs",

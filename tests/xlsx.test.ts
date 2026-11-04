@@ -30,5 +30,7 @@ test('the wildlife document reads as paragraphs', () => {
   const ps = readDocxParagraphs('research/injured-birds-wildlife-guide.docx');
   assert.ok(ps.length > 40);
   assert.match(ps[0]!.text, /Injured birds/i);
-  assert.ok(ps.some((p) => /Pasteurella/.test(p.text)), 'the cat-bite warning must survive');
+  // The source still carries the bite warning that the guide rewords (see
+  // WILDLIFE_DOC_EDITS); if it vanished, the guide would lose the instruction.
+  assert.ok(ps.some((p) => /attacked by a cat, it is an emergency/.test(p.text)), 'the bite warning must survive');
 });

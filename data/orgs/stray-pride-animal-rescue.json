@@ -47,7 +47,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "NYC 501(c)(3) that finds foster and permanent homes for reptiles and (mostly black) cats. Listed by the NY Turtle & Tortoise Society as a turtle-accepting rescue - confirmed on its own site as a reptile + cat rescue. A rare in-city reptile-rehoming option alongside the turtle-focused groups. Confirm current reptile-intake capacity by email/DM before referral. Phone: (no public phone; email + IG) Intake: //www.straypride.org Intake: email Strayprideanimalrescue@gmail.com Intake: DM IG @strayprideanimalrescue",
+  "notes": "NYC 501(c)(3) that finds foster and permanent homes for reptiles and (mostly black) cats. Listed by the NY Turtle & Tortoise Society as a turtle-accepting rescue - confirmed on its own site as a reptile + cat rescue. A rare in-city reptile-rehoming option alongside the turtle-focused groups. Confirm current reptile-intake capacity by email/DM before referral. Phone: (no public phone; email + IG) Intake: //www.straypride.org Intake: email Strayprideanimalrescue@gmail.com Intake: DM Instagram @strayprideanimalrescue",
   "type_raw": "Rescue / foster / adoption (reptiles + cats)",
   "confidence": "High",
   "status": "active",
@@ -55,12 +55,12 @@
   "source_urls": [
     "https://www.straypride.org/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; red-eared sliders a major NYC issue)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

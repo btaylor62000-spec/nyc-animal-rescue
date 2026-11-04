@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Exotic-vet 
 
 _Rabbits, birds, reptiles and small mammals need an exotic-capable vet. Call ahead._
 
-> Exotic-vet & emergency care
-
 Why a separate list: most general small-animal vets do NOT treat rabbits, birds, reptiles or other exotics. Exotic species hide illness and decline fast, so line up a rabbit/bird/'exotics-savvy' vet BEFORE you need one. Confirm each clinic still sees your species, and their current hours and emergency policy, by phone on the clinic's own line before relying on it.
 
 ## Finding an exotics vet you can trust
@@ -33,11 +31,11 @@ Why a separate list: most general small-animal vets do NOT treat rabbits, birds,
 
 ## Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):
 
-- ASPCA Animal Poison Control Center: (888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.
-- Pet Poison Helpline: (855) 764-7661 - 24/7 (fee applies).
+- ASPCA Animal Poison Control Center: (888) 426-4435 - 24/7. aspca.org/pet-care/animal-poison-control.
+- Pet Poison Helpline: (855) 764-7661 - 24/7.
 
 These lines cover exotic pets, not just cats and dogs. Have the species, weight, and the substance/amount ready.
 
 Note on wildlife
 
-- A wild animal is not a candidate for a pet-clinic visit - route it to a licensed wildlife rehabber or the Wild Bird Fund (646-306-2862). See the Wildlife rehabilitation tab.
+- A wild animal is not a candidate for a pet-clinic visit - route it to a licensed wildlife rehabber or the Wild Bird Fund (646-306-2862). See https://nyc-animal-rescue.pages.dev/guides/found-wildlife

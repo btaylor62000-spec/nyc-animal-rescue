@@ -1,7 +1,9 @@
 {
   "id": "the-good-life-dog-rescue",
   "name": "The Good Life Dog Rescue",
-  "aka": [],
+  "aka": [
+    "Bully Project"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster"
@@ -13,47 +15,86 @@
     "adoption",
     "surrender",
     "foster",
-    "advocacy"
+    "advocacy",
+    "breed-specific",
+    "referral"
   ],
   "boroughs": [
-    "manhattan"
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
   ],
-  "citywide": false,
+  "citywide": true,
   "outside_nyc": false,
   "neighborhoods": "NYC-based; adopts NY metro",
   "zips": [],
   "region_note": "MANHATTAN (Manhattan-based dog rescues)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "hello@thegldr.org"
+    }
+  ],
   "website": "https://www.thegldr.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.thegldr.org/adoption-questionnaire",
+      "label": "Adoption questionnaire"
+    },
+    {
+      "url": "https://www.thegldr.org/foster-questionnaire",
+      "label": "Foster questionnaire"
+    },
+    {
+      "url": "https://www.thegldr.org/connect",
+      "label": "Contact form"
+    }
+  ],
   "social": [
     {
       "platform": "instagram",
-      "handle": "thegoodlifedogrescue",
-      "url": "https://instagram.com/thegoodlifedogrescue"
+      "handle": "thegoodlifedogrescuenyc",
+      "url": "https://www.instagram.com/thegoodlifedogrescuenyc/"
+    },
+    {
+      "platform": "facebook",
+      "handle": "thegoodlifedogrescuenyc",
+      "url": "https://www.facebook.com/thegoodlifedogrescuenyc/"
     }
   ],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) NYC foster-based dog rescue (ACC New Hope partner) rehoming at-risk shelter dogs. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
+  "notes": "Formed when Rescuzilla and Bully Project NYC merged. A volunteer-run, foster-based dog rescue with no shelter building, for the New York City metro area, including pit bulls and other bully breeds; Bully Project NYC worked against dogfighting in the city. Start with the adoption or foster questionnaire on its site, or email hello@thegldr.org. Mailing address: 178 Columbus Ave, PO Box #230090, New York, NY 10023 (not a place to visit). No public phone.",
   "type_raw": "Rescue+adoption (foster-based)",
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.thegldr.org/"
+    "https://www.thegldr.org/",
+    "https://www.thegldr.org/connect"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "501(c)(3) NYC foster-based dog rescue (ACC New Hope partner) rehoming at-risk shelter dogs. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site\n\nVolunteer group working to END DOGFIGHTING IN NYC and promote responsible pit/bully ownership, rehoming bully-type dogs. Foster-based, application emailed on request. A niche but genuinely NYC-focused bully referral. Social/aggregator-primary contact, so verify directly before relying. Phone: (no public phone; email app) Email: (application emailed on request) Intake: application emailed on request via the Adoptapet page above Intake: DM IG @thebullyproject",
+      "to": null,
+      "evidence_url": "https://www.thegldr.org/",
+      "source": "manual",
+      "note": "A reviewer found the Bully Project entry wrong. Its own site, read 2026-11-04: \"Rescuzilla + Bully Project NYC have merged into The Good Life Dog Rescue\"; contact page gives 178 Columbus Ave, PO Box #230090, NY 10023 and hello@thegldr.org; Instagram is @thegoodlifedogrescuenyc (the stored @thegoodlifedogrescue was wrong). The Bully Project entry, which pointed at an old Adoptapet page with no contact, is folded into this one; /org/bully-project redirects here."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

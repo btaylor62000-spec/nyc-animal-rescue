@@ -28,9 +28,26 @@
   ],
   "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "phones": [],
-  "emails": [],
-  "website": null,
-  "intake_urls": [],
+  "emails": [
+    {
+      "value": "kittensandbarbellsnyc@gmail.com"
+    }
+  ],
+  "website": "https://dolphin-coyote-9c2r.squarespace.com",
+  "intake_urls": [
+    {
+      "url": "https://dolphin-coyote-9c2r.squarespace.com/adoptus",
+      "label": "Adoption application"
+    },
+    {
+      "url": "https://dolphin-coyote-9c2r.squarespace.com/apply-foster",
+      "label": "Foster application"
+    },
+    {
+      "url": "https://dolphin-coyote-9c2r.squarespace.com/contact",
+      "label": "Contact form"
+    }
+  ],
   "social": [
     {
       "platform": "instagram",
@@ -50,22 +67,22 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Foster-based 501(c)(3), co-founders Katie (TNR-certified, neonatal tube/bottle-feed trained) & Donovan. TNR + rescue of the most vulnerable felines of ALL AGES - neonatal kittens through seniors, incl. sick/injured. Satellite nurseries. Bronx-based, works NYC + Westchester. Verified 2026-08-26.",
+  "notes": "Foster-based 501(c)(3) cat rescue for New York City and Westchester, taking the most vulnerable cats: newborn kittens through seniors, including sick and injured cats, plus trap-neuter-return and a hospice-foster programme. Its contact page says it gets more requests than it has foster homes for and may take up to 72 hours to answer email; in an emergency, go to your local shelter.",
   "type_raw": "TNR / rescue+adoption (all-ages, neonatal-senior)",
   "confidence": "High",
-  "status": "verify",
-  "status_note": "Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
-    "https://www.kittensandbarbells.org/",
-    "https://www.kittensandbarbells.org/meet-the-team"
+    "https://dolphin-coyote-9c2r.squarespace.com/",
+    "https://dolphin-coyote-9c2r.squarespace.com/contact"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -76,6 +93,69 @@
       "evidence_url": "https://www.kittensandbarbells.org",
       "source": "manual",
       "note": "The link check found kittensandbarbells.org redirecting to www.sgmigrant.com/bn-covid19, an Indonesian online gambling site: the domain has lapsed and been taken. Website and form links removed; Instagram and Facebook kept. Not replaced with a guess."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://dolphin-coyote-9c2r.squarespace.com",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "kittensandbarbellsnyc@gmail.com",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com/contact",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": null,
+      "to": "https://dolphin-coyote-9c2r.squarespace.com/adoptus, https://dolphin-coyote-9c2r.squarespace.com/apply-foster, https://dolphin-coyote-9c2r.squarespace.com/contact",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.",
+      "to": null,
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "Foster-based 501(c)(3), co-founders Katie (TNR-certified, neonatal tube/bottle-feed trained) & Donovan. TNR + rescue of the most vulnerable felines of ALL AGES - neonatal kittens through seniors, incl. sick/injured. Satellite nurseries. Bronx-based, works NYC + Westchester. Verified 2026-08-26.",
+      "to": "Foster-based 501(c)(3) cat rescue for New York City and Westchester, taking the most vulnerable cats: newborn kittens through seniors, including sick and injured cats, plus trap-neuter-return and a hospice-foster programme. Its contact page says it gets more requests than it has foster homes for and may take up to 72 hours to answer email; in an emergency, go to your local shelter.",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-26",
+      "to": "2026-11-04",
+      "evidence_url": "https://dolphin-coyote-9c2r.squarespace.com/contact",
+      "source": "manual",
+      "note": "A reviewer found its current site on 2026-11-04; read in a browser the same day. It says: \"We are a 501(c)3 foster-based rescue that services NYC and the Westchester area\", gives KITTENSANDBARBELLSNYC@GMAIL.COM, an adoption application, a foster application and a contact form, and links Instagram @kittensandbarbells_."
     }
   ],
   "privacy_hold": false,

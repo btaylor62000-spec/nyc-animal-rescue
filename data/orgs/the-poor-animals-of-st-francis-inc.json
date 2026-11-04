@@ -51,7 +51,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Bronx cat + dog rescue: permanent-home placement + helps feed colonies. Older-style operation (AOL email, Petfinder/FB presence, no standalone website) - Medium confidence, confirm current activity. Contacts consistent across listings. Verified 2026-08-26. Intake: Email/call for adoption application Intake: adoptable pets on Petfinder Other channel: PO Box 701, Bronx 10465 Other channel: Petfinder NY587",
+  "notes": "Bronx cat + dog rescue: permanent-home placement + helps feed colonies. Older-style operation (AOL email, Petfinder/FB presence, no standalone website) - Medium confidence, confirm current activity. Contacts consistent across listings. Intake: Email/call for adoption application Intake: adoptable pets on Petfinder Other channel: PO Box 701, Bronx 10465 Other channel: Petfinder NY587",
   "type_raw": "rescue+adoption / colony feeding",
   "confidence": "Medium",
   "status": "verify",
@@ -64,8 +64,8 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "manual-only",
+  "last_checked": "2026-11-04",
+  "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

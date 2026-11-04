@@ -31,7 +31,7 @@
   "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
   "phones": [],
   "emails": [],
-  "website": "https://pawsofhopenyc.org",
+  "website": null,
   "intake_urls": [],
   "social": [
     {
@@ -50,11 +50,10 @@
   "hours": null,
   "notes": "Foster-based Brooklyn rescue (all cats in foster homes) - rescue + medical care + TNR support (EIN 85-0996451). Structured adoption (application, interview, home check). No public phone/email; apply via form / DM. Intake: Adoption application via Petfinder Intake: email list signup on site",
   "type_raw": "rescue+adoption / TNR",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
   "source_urls": [
-    "https://pawsofhopenyc.org/",
     "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
   ],
   "last_verified": "2026-08-26",
@@ -62,10 +61,45 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://pawsofhopenyc.org",
+      "to": null,
+      "evidence_url": "https://pawsofhopenyc.org",
+      "source": "manual",
+      "note": "pawsofhopenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "evidence_url": "https://pawsofhopenyc.org",
+      "source": "manual",
+      "note": "pawsofhopenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

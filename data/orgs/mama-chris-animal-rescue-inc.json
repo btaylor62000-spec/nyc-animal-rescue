@@ -53,7 +53,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) (EIN 82-3313014), 'every stray is worthy.' TNR of SI feral colonies (pulls friendly cats/kittens to socialize + adopt) + helps caretakers with spay/neuter, resources and support to run their own colonies. Text preferred. Verified 2026-08-26. Intake: Adoption application on site Intake: colony-caretaker support via text/email Other channel: FB /mamachrisrescue1 (11K) Other channel: PO Box 70059, Staten Island 10307",
+  "notes": "501(c)(3) (EIN 82-3313014), 'every stray is worthy.' TNR of SI feral colonies (pulls friendly cats/kittens to socialize + adopt) + helps caretakers with spay/neuter, resources and support to run their own colonies. Text preferred. Intake: Adoption application on site Intake: colony-caretaker support via text/email Other channel: FB /mamachrisrescue1 (11K) Other channel: PO Box 70059, Staten Island 10307",
   "type_raw": "TNR / rescue+adoption / colony support",
   "confidence": "High",
   "status": "active",
@@ -67,7 +67,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

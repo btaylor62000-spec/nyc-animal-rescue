@@ -38,7 +38,7 @@
   "phones": [],
   "emails": [
     {
-      "value": "info@nycsecondchancerescue.org"
+      "value": "rescue@nycscr.org"
     }
   ],
   "website": "https://nycsecondchancerescue.org",
@@ -67,7 +67,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) since 2009. SPECIALTY: critically injured/neglected/abused dogs & cats pulled from ACC 'death row' - many need emergency vet care. Foster + private-boarding based, no shelter. Queens-based but rescues citywide. Contact via site. Verified 2026-08-26. Intake: Contact form + adoption app at Other channel: PO Box 570701, Whitestone NY 11357\n\n501(c)(3) since 2009; 17,000+ animals saved. NYC-based, foster-based, known for taking CRITICALLY injured, neglected, and abused dogs & cats (many bully + mixed breeds) from overcrowded shelters and funding medical care and rehabilitation. No walk-in shelter. Also publishes lost/found guidance. Mailing New York, NY. Phone: (no public phone; contact via site) Intake: Lost-pet tips at /lost-pet",
+  "notes": "501(c)(3) since 2009. SPECIALTY: critically injured/neglected/abused dogs & cats pulled from ACC 'death row' - many need emergency vet care. Foster + private-boarding based, no shelter. Queens-based but rescues citywide. Contact via site. Intake: Contact form + adoption app at Other channel: PO Box 570701, Whitestone NY 11357\n\n501(c)(3) since 2009; 17,000+ animals saved. NYC-based, foster-based, known for taking CRITICALLY injured, neglected, and abused dogs & cats (many bully + mixed breeds) from overcrowded shelters and funding medical care and rehabilitation. No walk-in shelter. Also publishes lost/found guidance. Mailing New York, NY. Phone: (no public phone; contact via site) Intake: Lost-pet tips at /lost-pet",
   "type_raw": "Rescue+adoption (critical medical/cruelty cases; foster-based)",
   "confidence": "High",
   "status": "active",
@@ -76,16 +76,69 @@
     "https://nycsecondchancerescue.org/",
     "https://www.adoptapet.com/shelter/84725-nyc-second-chance-rescue-long-island-city-new-york"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://nycsecondchancerescue.org",
+      "source": "manual",
+      "note": "Its contact page, read in a browser 2026-11-04, gives General Inquiries rescue@nycscr.org and a mailing address, PO Box 570701, Whitestone, NY 11357; info@nycsecondchancerescue.org is not on it. The weekly check had counted its robots.txt as the site being down."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": null,
+      "evidence_url": "https://nycsecondchancerescue.org",
+      "source": "manual",
+      "note": "Its contact page, read in a browser 2026-11-04, gives General Inquiries rescue@nycscr.org and a mailing address, PO Box 570701, Whitestone, NY 11357; info@nycsecondchancerescue.org is not on it. The weekly check had counted its robots.txt as the site being down."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://nycsecondchancerescue.org",
+      "source": "manual",
+      "note": "Its contact page, read in a browser 2026-11-04, gives General Inquiries rescue@nycscr.org and a mailing address, PO Box 570701, Whitestone, NY 11357; info@nycsecondchancerescue.org is not on it. The weekly check had counted its robots.txt as the site being down."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "info@nycsecondchancerescue.org",
+      "to": "rescue@nycscr.org",
+      "evidence_url": "https://nycsecondchancerescue.org/contact/",
+      "source": "manual",
+      "note": "Its contact page, read in a browser 2026-11-04, gives General Inquiries rescue@nycscr.org and a mailing address, PO Box 570701, Whitestone, NY 11357; info@nycsecondchancerescue.org is not on it. The weekly check had counted its robots.txt as the site being down."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

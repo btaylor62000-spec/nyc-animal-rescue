@@ -58,7 +58,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) founded 2018, high-volume foster network (30+ cats at once). SPECIALTY: hard cases others won't take + kittens as young as ONE DAY (neonatal) through seniors (16 yrs). Also HELPS OTHER RESCUERS + public with TNR projects, low-cost spay/neuter, and end-of-life services. Explicit non-discrimination adoption policy. Upper-Manhattan based, serves all NYC. Verified 2026-08-26. Intake: Adoption application on site Intake: contact via site Other channel: foster homes in Manhattan/Bronx\n\nthrough-senior (up to ~16 yrs) and hard cases others won't take. (973) 752-7750 - catcastlenyc.org.",
+  "notes": "501(c)(3) founded 2018, high-volume foster network (30+ cats at once). SPECIALTY: hard cases others won't take + kittens as young as ONE DAY (neonatal) through seniors (16 years). Also HELPS OTHER RESCUERS + public with TNR projects, low-cost spay/neuter, and end-of-life services. Explicit non-discrimination adoption policy. Upper-Manhattan based, serves all NYC. Intake: Adoption application on site Intake: contact via site Other channel: foster homes in Manhattan/Bronx\n\nthrough-senior (up to about 16 years) and hard cases others won't take. (973) 752-7750 - catcastlenyc.org.",
   "type_raw": "rescue+adoption / TNR (neonatal + hard cases)",
   "confidence": "High",
   "status": "active",
@@ -72,7 +72,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

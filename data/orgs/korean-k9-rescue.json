@@ -53,7 +53,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) No-Kill based in Queens/LIC and Bundang, South Korea. Transports dogs rescued in South Korea plus local at-risk NYC dogs as an ACC New Hope partner. Foster-based in NYC (dogs live in foster homes until adopted). Thorough screening: requires proper supplies and adopter enrolls in training. Adopts within ~150 miles of NYC (excludes RI and NH); also places in Boston and LA. 3,500+ dogs rehomed. Phone: (no public phone; contact via site) Email: (via site contact form)",
+  "notes": "501(c)(3) No-Kill based in Queens/LIC and Bundang, South Korea. Transports dogs rescued in South Korea plus local at-risk NYC dogs as an approved ACC rescue partner. Foster-based in NYC (dogs live in foster homes until adopted). Thorough screening: requires proper supplies and adopter enrolls in training. Adopts within about 150 miles of NYC (excludes RI and NH); also places in Boston and LA. 3,500+ dogs rehomed. Phone: (no public phone; contact via site) Email: (via site contact form)",
   "type_raw": "Rescue+adoption (foster-based, No-Kill) + ACC New Hope partner",
   "confidence": "High",
   "status": "active",
@@ -66,9 +66,9 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,
   "community": null

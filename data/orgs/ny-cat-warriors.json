@@ -46,7 +46,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3), ACC New Hope partner. Specializes in URGENT/COMPLEX MEDICAL cases + TNR. Own site states Brooklyn is a core service area (not just nominal citywide). Good route for a sick/injured street cat. Contact via site. Verified 2026-08-26. Intake: Contact / adoption via site Other channel: NYS-licensed rescue",
+  "notes": "All-volunteer 501(c)(3), approved ACC rescue partner. Specializes in URGENT/COMPLEX MEDICAL cases + TNR. Own site states Brooklyn is a core service area (not just nominal citywide). Good route for a sick/injured street cat. Contact via site. Intake: Contact / adoption via site Other channel: NYS-licensed rescue",
   "type_raw": "rescue+adoption / TNR (multi-borough, medical focus)",
   "confidence": "Medium",
   "status": "active",
@@ -54,12 +54,12 @@
   "source_urls": [
     "https://nycatwarriors.org/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

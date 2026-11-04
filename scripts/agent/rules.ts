@@ -206,9 +206,20 @@ const BOT_WALL =
 
 export type PageProblem = 'gone' | 'blocked' | 'down' | null;
 
+const ROBOTS_REFUSED = /robots\.txt asks us not to/;
+const GOOGLE_SORRY = /^https?:\/\/(www\.)?google\.com\/sorry\//i;
+
 export function pageProblem(page: PageEvidence): PageProblem {
   if (page.error && DNS_GONE.test(page.error)) return 'gone';
   if ([401, 403, 429].includes(page.status)) return 'blocked';
+  // The checker obeys robots.txt, so a site that asks robots to stay away was
+  // never fetched at all. That says nothing about whether it is up; counting
+  // it as a failure nearly marked Stray from the Heart and NYC Second Chance
+  // "may no longer be active" on 2026-11-04, when both were answering.
+  if (page.error && ROBOTS_REFUSED.test(page.error)) return 'blocked';
+  // Blogger sends robots to Google's "unusual traffic" page; Big City Little
+  // Kitty was reported as having moved to google.com because of it.
+  if (GOOGLE_SORRY.test(page.finalUrl)) return 'blocked';
   // A challenge page usually arrives as an ordinary 200 with a few lines of
   // text; read as a page, it was reported as "almost no readable text".
   if (page.ok && page.text.length < 1500 && BOT_WALL.test(page.text)) return 'blocked';
@@ -315,7 +326,7 @@ export function decide(org: Org, evidence: Evidence): Decision {
   // --- a redirect that left the domain ----------------------------------
   // A shortener or form link is meant to land elsewhere; four of the 58
   // flags on 2026-11-02 were bit.ly and forms.gle doing exactly that.
-  const wandered = evidence.pages.find((p) => p.offDomain && !REDIRECTOR.test(p.url));
+  const wandered = evidence.pages.find((p) => p.offDomain && !REDIRECTOR.test(p.url) && pageProblem(p) !== 'blocked');
   if (wandered) {
     return {
       kind: 'needs-review',

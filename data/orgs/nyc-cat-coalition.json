@@ -41,7 +41,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "100% no-kill, all-volunteer 501(c)(3) (EIN 13-3144256). TNR in/around the Bronx + rescue from streets & owner surrender + adoption. Checks email regularly. Active 2026. Verified 2026-08-26. Intake: Email for adoption application Intake: adoption center at Pelham Manor PetSmart Other channel: FB @NYCCatCoalition",
+  "notes": "100% no-kill, all-volunteer 501(c)(3) (EIN 13-3144256). TNR in/around the Bronx + rescue from streets & owner surrender + adoption. Checks email regularly. Active 2026. Intake: Email for adoption application Intake: adoption center at Pelham Manor PetSmart Other channel: FB @NYCCatCoalition",
   "type_raw": "TNR / rescue+adoption",
   "confidence": "High",
   "status": "active",
@@ -55,7 +55,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [],

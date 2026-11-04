@@ -61,15 +61,59 @@
   "source_urls": [
     "https://www.strayfromtheheart.org/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://www.strayfromtheheart.org",
+      "source": "manual",
+      "note": "Its site loads in a browser (2026-11-04) and shows info@StrayfromtheHeart.org and 212.726.DOGS. The weekly check had counted its robots.txt, which asks robots to stay away, as the site being down."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": null,
+      "evidence_url": "https://www.strayfromtheheart.org",
+      "source": "manual",
+      "note": "Its site loads in a browser (2026-11-04) and shows info@StrayfromtheHeart.org and 212.726.DOGS. The weekly check had counted its robots.txt, which asks robots to stay away, as the site being down."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Low",
+      "to": "Medium",
+      "evidence_url": "https://www.strayfromtheheart.org",
+      "source": "manual",
+      "note": "Its site loads in a browser (2026-11-04) and shows info@StrayfromtheHeart.org and 212.726.DOGS. The weekly check had counted its robots.txt, which asks robots to stay away, as the site being down."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

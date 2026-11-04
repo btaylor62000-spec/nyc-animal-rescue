@@ -50,7 +50,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "All-volunteer foster-based 501(c)(3). Cats + dogs; helps owners who can no longer keep pets, spays/neuters all rescues, does courtesy posts (incl. senior cats). Small, modest web presence - reach via email. Verified 2026-08-26. Intake: Contact by email Intake: foster-to-adopt (~1 month) + home check Intake: adoptables on Petfinder Other channel: Petfinder: loving-touch-inc NY151 Other channel: PO Box 650404, Flushing 11365",
+  "notes": "All-volunteer foster-based 501(c)(3). Cats + dogs; helps owners who can no longer keep pets, spays/neuters all rescues, does courtesy posts (incl. senior cats). Small, modest web presence - reach via email. Intake: Contact by email Intake: foster-to-adopt (about 1 month) + home check Intake: adoptables on Petfinder Other channel: Petfinder: loving-touch-inc NY151 Other channel: PO Box 650404, Flushing 11365",
   "type_raw": "rescue+adoption (foster-based)",
   "confidence": "Medium",
   "status": "active",
@@ -63,7 +63,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [],

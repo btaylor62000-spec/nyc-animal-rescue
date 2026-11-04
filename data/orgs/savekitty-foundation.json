@@ -30,16 +30,13 @@
   "phones": [],
   "emails": [
     {
-      "value": "adoptions@savekittyfoundation.org",
-      "label": "Adoptions"
+      "value": "adoptions@savekittyfoundation.org"
     },
     {
-      "value": "tnr@savekittyfoundation.org",
-      "label": "Trap-neuter-return (TNR)"
+      "value": "tnr@savekittyfoundation.org"
     },
     {
-      "value": "petbereavement@savekitty.org",
-      "label": "Pet bereavement support"
+      "value": "petbereavement@savekittyfoundation.org"
     }
   ],
   "website": "https://savekitty.org",
@@ -48,21 +45,21 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "No-kill all-volunteer 501(c)(3) (EIN 76-0791179), TNR-primary (500-800 cats/yr) + friendly rescue/adoption. Queens-based but states it works across NYC neighborhoods. Also runs free pet-loss bereavement support groups (licensed facilitator). Site last dated 2019 - confirm current activity. Verified 2026-08-26. Email: contact via site Intake: Online adoption application on site Other channel: P.O. Box 260096 Other channel: on NYC DOHMH official TNR list",
+  "notes": "No-kill, all-volunteer 501(c)(3) in Queens that works across New York City: trap-neuter-return for street cats, and friendly cats and kittens fostered in volunteers' homes for adoption (it is not a shelter). It also runs free pet-loss support groups. Email the address for what you need: adoptions, TNR or pet bereavement. Mailing address: P.O. Box 260096, Bellerose, NY 11426.",
   "type_raw": "TNR / rescue+adoption (multi-borough)",
-  "confidence": "Medium",
-  "status": "verify",
-  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://savekitty.org/",
     "https://www.guidestar.org/profile/76-0791179"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
@@ -73,6 +70,60 @@
       "to": "adoptions@savekittyfoundation.org; tnr@savekittyfoundation.org; petbereavement@savekitty.org",
       "source": "manual",
       "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "Its site answers (2026-11-04). The contact page lists adoptions@, tnr@, mediarelations@ and petbereavement@savekittyfoundation.org; it is a member of the Mayor's Alliance. The site's copyright line says 2019, which dates the site, not the group."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Source flags this entry as needing confirmation before you rely on it.",
+      "to": null,
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "Its site answers (2026-11-04). The contact page lists adoptions@, tnr@, mediarelations@ and petbereavement@savekittyfoundation.org; it is a member of the Mayor's Alliance. The site's copyright line says 2019, which dates the site, not the group."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "adoptions@savekittyfoundation.org, tnr@savekittyfoundation.org, petbereavement@savekitty.org",
+      "to": "adoptions@savekittyfoundation.org, tnr@savekittyfoundation.org, petbereavement@savekittyfoundation.org",
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "petbereavement@savekitty.org corrected to petbereavement@savekittyfoundation.org, as its contact page gives it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "Its site answers (2026-11-04). The contact page lists adoptions@, tnr@, mediarelations@ and petbereavement@savekittyfoundation.org; it is a member of the Mayor's Alliance. The site's copyright line says 2019, which dates the site, not the group."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "No-kill all-volunteer 501(c)(3) (EIN 76-0791179), TNR-primary (500-800 cats/yr) + friendly rescue/adoption. Queens-based but states it works across NYC neighborhoods. Also runs free pet-loss bereavement support groups (licensed facilitator). Site last dated 2019 - confirm current activity. Verified 2026-08-26. Email: contact via site Intake: Online adoption application on site Other channel: P.O. Box 260096 Other channel: on NYC DOHMH official TNR list",
+      "to": "No-kill, all-volunteer 501(c)(3) in Queens that works across New York City: trap-neuter-return for street cats, and friendly cats and kittens fostered in volunteers' homes for adoption (it is not a shelter). It also runs free pet-loss support groups. Email the address for what you need: adoptions, TNR or pet bereavement. Mailing address: P.O. Box 260096, Bellerose, NY 11426.",
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "Its site answers (2026-11-04). The contact page lists adoptions@, tnr@, mediarelations@ and petbereavement@savekittyfoundation.org; it is a member of the Mayor's Alliance. The site's copyright line says 2019, which dates the site, not the group."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-26",
+      "to": "2026-11-04",
+      "evidence_url": "https://savekitty.org/page9.html",
+      "source": "manual",
+      "note": "Its site answers (2026-11-04). The contact page lists adoptions@, tnr@, mediarelations@ and petbereavement@savekittyfoundation.org; it is a member of the Mayor's Alliance. The site's copyright line says 2019, which dates the site, not the group."
     }
   ],
   "privacy_hold": false,

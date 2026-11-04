@@ -64,7 +64,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) founded 2001 (Kathy Stevens); 100+ acre Hudson Valley refuge ~100 mi north of NYC, 5,000+ rescues over 25 years. Provides lifelong refuge to ten species of farmed animals - cows, pigs, sheep, goats, HORSES, chickens, turkeys, ducks and others - rescued from cruelty/neglect. Out-of-city (Saugerties) - logged as REGIONAL intake, not NYC-local. Verify current intake capacity before referral; sanctuaries fill quickly. Intake: general inquiries info@CASanctuary.org Intake: 316 Old Stage Rd, Saugerties",
+  "notes": "501(c)(3) founded 2001 (Kathy Stevens); 100+ acre Hudson Valley refuge about 100 mi north of NYC, 5,000+ rescues over 25 years. Provides lifelong refuge to ten species of farmed animals - cows, pigs, sheep, goats, HORSES, chickens, turkeys, ducks and others - rescued from cruelty/neglect. Out-of-city (Saugerties) - logged as REGIONAL intake, not NYC-local. Verify current intake capacity before referral; sanctuaries fill quickly. Intake: general inquiries info@CASanctuary.org Intake: 316 Old Stage Rd, Saugerties",
   "type_raw": "Farmed-animal + horse sanctuary (regional intake)",
   "confidence": "Medium",
   "status": "active",
@@ -72,12 +72,12 @@
   "source_urls": [
     "https://www.hudsonvalleyhorsesource.com/rescue_adoption.html"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "FARMED ANIMALS & SANCTUARY (chickens, roosters, ducks, pigs, goats, sheep, cows, turkeys)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

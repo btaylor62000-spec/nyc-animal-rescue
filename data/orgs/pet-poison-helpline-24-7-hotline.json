@@ -51,7 +51,7 @@
   "geo": null,
   "address": null,
   "hours": "24/7",
-  "notes": "(855) 764-7661 - 24/7 backup line, per-incident fee.\n\n(855) 764-7661 - 24/7 (fee applies).\n\nSecond national 24/7 animal poison-control hotline - useful alternate when the ASPCA line is busy. Same purpose: toxicology guidance for you + your ER vet. Verified 2026-08-26. Intake: Call 24/7/365 (per-incident fee). Good backup if ASPCA APCC line is busy. Other channel: Per-incident consultation fee",
+  "notes": "(855) 764-7661 - 24/7 backup line.\n\n(855) 764-7661 - 24/7.\n\nSecond national 24/7 animal poison-control hotline - useful alternate when the ASPCA line is busy. Same purpose: toxicology guidance for you + your ER vet. Intake: Call 24/7/365. Good backup if ASPCA APCC line is busy.",
   "type_raw": "poison control hotline (emergency, 24/7)",
   "confidence": "High",
   "status": "active",
@@ -59,13 +59,13 @@
   "source_urls": [
     "https://www.petpoisonhelpline.com/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

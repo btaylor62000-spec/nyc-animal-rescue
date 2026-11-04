@@ -63,7 +63,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "NYS 501(c)(3) no-kill shelter since 2014, ~1,200 sq ft facility (by appointment only, not walk-in). Focus on severe abuse/neglect/medical cases (dogs + cats). Phone + email confirmed. Not primarily a TNR group. Re-verified 2026-08-26. Intake: //amaanimalrescue.org/adoption-application/ Other channel: 2815 Cropsey Ave, Brooklyn 11214 (BY APPOINTMENT ONLY, 7 days 9am-6pm)\n\nNYS 501(c)(3) since 2014, no-kill. Has a physical 1,200 sq ft facility at 2815 Cropsey Ave 11214 with indoor enclosures + fenced outdoor space, but visits are BY APPOINTMENT ONLY (call first). Focus is the most severe abuse/neglect/medical cases, domestic and abroad; dogs and cats. Strong, active social presence. Email: (via site contact form) Intake: visits BY APPOINTMENT ONLY",
+  "notes": "NYS 501(c)(3) no-kill shelter since 2014, about 1,200 sq ft facility (by appointment only, not walk-in). Focus on severe abuse/neglect/medical cases (dogs + cats). Phone + email confirmed. Not primarily a TNR group. Intake: //amaanimalrescue.org/adoption-application/ Other channel: 2815 Cropsey Ave, Brooklyn 11214 (BY APPOINTMENT ONLY, 7 days 9am-6pm)\n\nNYS 501(c)(3) since 2014, no-kill. Has a physical 1,200 sq ft facility at 2815 Cropsey Ave 11214 with indoor enclosures + fenced outdoor space, but visits are BY APPOINTMENT ONLY (call first). Focus is the most severe abuse/neglect/medical cases, domestic and abroad; dogs and cats. Strong, active social presence. Email: (via site contact form) Intake: visits BY APPOINTMENT ONLY",
   "type_raw": "rescue+adoption (physical shelter)",
   "confidence": "High",
   "status": "active",
@@ -78,7 +78,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

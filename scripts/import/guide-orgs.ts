@@ -176,7 +176,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     file: WB_EXOTIC,
     tab: 'Exotic-vet & emergency care',
     animals: EXOTIC_PETS,
-    skip: /^Wildlife is not|^If the animal is wild/i,
+    skip: /^Wildlife is not|^If the animal is wild|^A wild animal is not/i,
     rules: [{ pattern: /exotic|avian|vet/i, needs: ['exotic-vet', 'emergency-vet'], orgTypes: ['exotic-vet', 'clinic'] }],
   },
   {
@@ -199,7 +199,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     // accept wildlife are promoted to records here.
     // The two directory pointers and Animal Help Now's situations are guide
     // text, not organizations (AHNow and DEC have their own entries).
-    skip: /^Bobby & Cathy|^Robert Spragg|^Animal Help Now:|^New York State's register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
+    skip: /^Bobby & Cathy|^Robert Spragg|^Most of the city's licensed wildlife|^Or New York State's own register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
     rules: [{ pattern: /veterinarians who will see WILDLIFE/i, needs: ['wildlife-rehab'], orgTypes: ['clinic'] }],
   },
 ];

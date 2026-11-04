@@ -9,13 +9,11 @@ source: "research/NYC_Dog_Rescue_Reference.xlsx — Lost-found & microchip"
 
 _The first hours matter most. Where to look, who to call, and how microchips help._
 
-> LOST & FOUND DOGS + MICROCHIP REGISTRIES (contacts inline)
-
-Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current. Verified against ACC, Mayor's Alliance, Petco Love Lost, and 24Petwatch on 2026-08-27.
+Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current.
 
 ## LOST A DOG - do all of these NOW
 
-- 1. Check ACC 24/7: search + file a LOST report at nycacc.org/services/lost-and-found - ACC takes in found pets citywide; your dog could already be there. Also call ACC (212) 788-4000.
+- 1. Check ACC first: search + file a LOST report at nycacc.org/services/lost-and-found - ACC takes in found pets citywide; your dog could already be there. Also call ACC (212) 788-4000.
 - 2. Report + search on Petco Love Lost (FREE, uses facial recognition): petcolove.org/lost - upload a clear FACE photo; it auto-matches against found reports from shelters + neighbors and generates printable flyers.
 - 3. Update your MICROCHIP: call your chip company, confirm your contact info is current, and mark the pet LOST. Don't know the company? Use the AAHA Microchip Registry Lookup (aaha.org/petmicrochiplookup) with the chip number.
 
@@ -38,7 +36,7 @@ You can bring a found dog to any ACC Care Center during business hours (call ahe
 ## MICROCHIP REGISTRIES - register the chip (implanting is not registering)
 
 - 24Petwatch (by PetPlace) - North America's largest registry; FREE registration, no mandatory fees. Register/update/report lost at petplace.com/pet-microchip-registry or 24pet.com. Recovery specialists run real-time found searches.
-- HomeAgain - homeagain.com; enrolled chips also WAIVE the ASPCA Poison Control consultation fee.
+- HomeAgain - homeagain.com.
 - AKC Reunite - akcreunite.org, (800) 252-7894; lifetime registration.
 - Petkey / Save This Life / Michelson Found Animals (foundanimals.org - free) - other registries.
 - AAHA Universal Lookup - petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).

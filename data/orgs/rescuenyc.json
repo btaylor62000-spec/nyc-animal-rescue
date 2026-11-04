@@ -38,7 +38,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Community Cat Program provides pre/post spay-neuter holding, minor-medical holding, and support for caretakers doing large-scale TNR (removes the holding-space barrier). Support resource for caretakers, incl. Brooklyn. Email confirmed on own site. Verified 2026-08-26. Intake: Email Info@rescuenyc.org for community-cat guidance / TNR recovery program",
+  "notes": "Community Cat Program provides pre/post spay-neuter holding, minor-medical holding, and support for caretakers doing large-scale TNR (removes the holding-space barrier). Support resource for caretakers, incl. Brooklyn. Email confirmed on own site. Intake: Email Info@rescuenyc.org for community-cat guidance / TNR recovery program",
   "type_raw": "TNR support / recovery holding (citywide)",
   "confidence": "Medium",
   "status": "active",
@@ -46,12 +46,12 @@
   "source_urls": [
     "http://www.rescuenyc.org/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

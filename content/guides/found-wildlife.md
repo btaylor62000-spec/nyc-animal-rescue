@@ -9,18 +9,16 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Wildlife re
 
 _Only licensed rehabilitators may legally handle wild animals. Where to take them, and what not to do._
 
-> Wildlife rehabilitation - critical and legally distinct
-
 The rule first: only NYS-licensed wildlife rehabilitators may legally handle wild animals in New York, and most wild animals cannot legally be kept as pets. Wildlife is a rehabilitation-and-release matter, NOT an adoption matter. If you find injured, sick or orphaned wildlife, contact a licensed rehabber for advice before handling it - some species need special handling and some carry diseases transmissible to people.
 
-## Find a licensed rehabber near you, right now
+## Licensed rehabbers who work from home
 
-- Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It lists every licensed wildlife rehabilitator near you, including the many who work from home, with the animals each takes, and puts first those available right now; tap a listing for its phone number. It is kept current from the state's licence lists, so it is more up to date than any copy could be.
-- New York State's register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal. The official record of who is licensed.
+- Most of the city's licensed wildlife rehabilitators are individuals caring for animals at home. They are not listed one by one here; the organizations and hospitals are, below. To reach a home rehabber near you, use Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It shows each licensed rehabber nearby, the animals they take and their phone number (tap a listing), with those available right now first, kept current from the state's licence lists.
+- Or New York State's own register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal.
 
 ## NYC's main wildlife hospital - The Wild Bird Fund
 
-- 565 Columbus Avenue (between 87th & 88th), New York, NY 10024. Phone 646-306-2862. Open daily 9am-7pm. NYC's only wildlife rehabilitation & education center. Takes injured/sick/orphaned wild birds AND small mammals (pigeons, waterfowl, raptors, songbirds, squirrels, opossums) 7 days a week; walk-in, no appointment needed (leave a message if arriving near closing). Found-a-bird guidance: wildbirdfund.org/how-to-help/rescue. IG @wildbirdfund.
+- 565 Columbus Avenue (between 87th & 88th), New York, NY 10024. Phone 646-306-2862. Open daily 9am-7pm. NYC's only wildlife rehabilitation & education center. Takes injured/sick/orphaned wild birds AND small mammals (pigeons, waterfowl, raptors, songbirds, squirrels, opossums) 7 days a week; walk-in, no appointment needed (leave a message if arriving near closing). Found-a-bird guidance: wildbirdfund.org/how-to-help/rescue. Instagram @wildbirdfund.
 - LIMITATION: WBF CANNOT take exotic birds (budgerigars, parrots) or domestic birds (chickens, quail, domestic geese, tame doves). It CAN take rock/domestic pigeons. For exotic or domestic birds WBF can't take, Animal Care Centers of NYC (311 / 212-788-4000) is the drop-off (as of 2022): chukars, chickens, domestic geese, budgerigars, etc.
 
 ## NYC-area licensed rehabbers - raptors & general (state + federally licensed):
@@ -67,7 +65,7 @@ DON'T: try to raise or keep wildlife yourself (illegal and usually fatal for the
 
 ## More situations - Animal Help Now's guidance, in its own words (https://ahnow.org/resources.php)
 
-- Is it really orphaned? "Always remember that baby wild animals left alone for long periods of time (up to 14 hours) may not have been abandoned. Do not interfere unless you are certain the animal has been abandoned or separated from her mother. ... If the mother is confirmed dead or the baby animal is covered with blood or insects, has been caught by a cat, dog or wild animal or is cold, use Animal Help Now to contact a nearby wildlife rehabilitator."
+- Is it really orphaned? "Always remember that baby wild animals left alone for long periods of time (up to 14 hours) may not have been abandoned. Do not interfere unless you are certain the animal has been abandoned or separated from her mother. ... If the mother is confirmed dead or the baby animal is covered with blood or insects, has been caught by [another animal] or is cold, use Animal Help Now to contact a nearby wildlife rehabilitator."
 - Baby duck, goose or other ground-nesting bird: "If you know the mother is dead, or if the baby is injured, secure the bird in a safe, well-ventilated box or paper sack and call a wildlife rehabilitator right away. If the baby is separated from the mother and you know where the mother is, place the baby close by so the mother can hear her. If the mother does not claim the baby within an hour, secure the bird in a safe, well-ventilated box or paper sack and contact a wildlife rehabilitator."
 - Injured deer: "Adult deer don't handle the stress of capture and captivity well ... If the deer can walk and is in a relatively safe place, simply leave the deer alone. ... do not approach the deer - injured and scared deer could easily injure you or make her injury worse. If she is severely injured or near a busy road, contact a wildlife emergency professional through Animal Help Now for advice, or call 911 or Animal Control."
 - Stuck in a glue trap, or with mange: Animal Help Now links step-by-step guidance for both from its resources page. Do not pull an animal off a glue trap; call a rehabber.

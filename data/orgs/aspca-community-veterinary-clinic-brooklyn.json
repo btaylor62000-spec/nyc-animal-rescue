@@ -50,7 +50,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Free basic vet care for cats and dogs for East New York residents, supported by the Lewyt Charitable Trust. Only for owners living in zip codes 11207, 11208 or 11212. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Traps and equipment can be borrowed here (refundable deposit). Not taking on new rescue groups as clients at the moment; that does not affect pet owners.",
+  "notes": "Free basic vet care for cats and dogs for East New York residents, supported by the Lewyt Charitable Trust. Only for owners living in zip codes 11207, 11208 or 11212. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Traps and equipment can be borrowed here (refundable deposit). Not taking on new rescue groups as clients at the moment; that does not affect pet owners.",
   "type_raw": "spay-neuter clinic (support)",
   "confidence": "High",
   "status": "active",
@@ -64,7 +64,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

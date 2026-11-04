@@ -40,6 +40,14 @@ interface TabSpec {
   title: string;
   summary: string;
   topics: string[];
+  /**
+   * Sections still read for the directory (GUIDE_ORG_SOURCES) but not shown
+   * in the guide. A reviewer asked on 2026-11-04 for guides to be the
+   * know-how the directory cannot give, not a second copy of it: a list of
+   * hospitals in a guide falls out of date beside the listings shown, kept
+   * current, at the foot of the same page.
+   */
+  omitSections?: RegExp;
 }
 
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
@@ -85,12 +93,16 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Animal emergencies and poison control',
     summary: 'Where to go right now if an animal is injured, collapsed, bleeding, or has swallowed something toxic.',
     topics: ['emergency', 'poisoning', '24 hour vet', 'hit by car', 'bleeding'],
+    // Every hospital is listed, with hours and open-now, below the guide.
+    omitSections: /^(BROOKLYN|MANHATTAN|QUEENS|STATEN ISLAND|BRONX) - /,
   },
   {
     file: WB_CAT, tab: 'Clinics, traps & support', slug: 'low-cost-clinics-and-trap-banks',
     title: 'Low-cost clinics and trap banks',
-    summary: 'Free and low-cost spay/neuter by borough, and where to borrow a humane trap.',
+    summary: 'How to get a cat spayed or neutered for free or cheaply, where to borrow a humane trap, and dental care for feral cats.',
     topics: ['low-cost vet', 'spay neuter', 'borrow a trap', 'trap bank'],
+    // Borough clinic lists, vet-bill help and owner support are listed below and have their own guides.
+    omitSections: /^(BROOKLYN|MANHATTAN|QUEENS|BRONX|STATEN ISLAND) - |^HELP PAYING VET BILLS|^OWNER-SUPPORT/,
   },
   {
     file: WB_CAT, tab: 'Colony & feral care', slug: 'starting-tnr',
@@ -115,18 +127,24 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: "Help keeping your cat",
     summary: 'Food, vet bills, housing, and temporary care, before surrender becomes the only option.',
     topics: ['cannot keep my cat', 'surrender', 'pet food help', 'cannot afford vet'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^HELP PAYING VET BILLS|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Owner support & surrender prev.', slug: 'keeping-your-dog',
     title: 'Help keeping your dog',
     summary: 'Support with costs, housing and behaviour, plus how surrender works if you still need it.',
     topics: ['cannot keep my dog', 'rehome dog', 'surrender dog', 'dog food help'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Low-cost vet, s-n & licensing', slug: 'low-cost-dog-care',
     title: 'Low-cost vet care, spay/neuter and dog licensing',
     summary: 'Affordable veterinary care across the five boroughs, and how to license a dog in NYC.',
     topics: ['low cost vet dog', 'dog license', 'spay neuter dog'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Training, behavior & legal', slug: 'dog-behavior-and-legal',
@@ -224,11 +242,9 @@ export function buildTabPage(spec: TabSpec): GuidePage {
   lines.push(`_${clean(spec.summary)}_`);
   lines.push('');
 
-  // The source's own title line often carries a caveat worth keeping.
-  if (doc.title && doc.title !== spec.title) {
-    lines.push(`> ${clean(doc.title)}`);
-    lines.push('');
-  }
+  // The source's own title line is not shown: on review (2026-11-04) every
+  // one was a spreadsheet label ("OWNER SUPPORT & KEEPING YOUR DOG (contacts
+  // inline)") repeating the page title in shouting capitals.
   for (const p of doc.intro) {
     const t = clean(p);
     if (!t) continue;
@@ -237,6 +253,7 @@ export function buildTabPage(spec: TabSpec): GuidePage {
   }
 
   for (const section of doc.sections) {
+    if (spec.omitSections && section.heading && spec.omitSections.test(section.heading)) continue;
     if (section.heading) {
       lines.push(`## ${clean(section.heading)}`);
       lines.push('');
@@ -300,6 +317,17 @@ export const WILDLIFE_GUIDE_BYLINE: string | null = 'community site admin';
  * A stale edit throws, the same way a stale override does.
  */
 const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string }> = [
+  {
+    find: 'If a bird or small mammal is attacked by a cat, it is an emergency. Cats have an anaerobic bacterium called Pasteurella in their saliva which is deadly. If an animal attacked by a cat does not get the proper antibiotic in a short time (usually within the day) it is likely fatal. Please also note that very often a cat bite will leave NO visible wounds, even if the teeth have punctured the skin. Even more reason to get to a rehabber immediately! If cats are in the area where you find an injured bird, assume it may have been bitten, and get to a rehabber immediately.',
+    replace: 'If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound. A bite can leave no visible mark and still cause an infection that needs antibiotics from a rehabber or vet the same day. If you are not sure whether it was caught, assume it may have been, and get it to a rehabber immediately.',
+    reason:
+      'Decided by the reviewer 2026-11-04. The original named the germ in cat saliva and called it deadly, and a reader who wants to harm cats can use that against them. The instruction itself is kept whole: caught by an animal means an emergency, even with no wound, antibiotics the same day, assume it if unsure.',
+  },
+  {
+    find: 'Never touch a bird after touching a cat. Wash your hands between animals.',
+    replace: 'Wash your hands before you handle the bird, especially after touching any other animal, and between animals.',
+    reason: 'Same decision: the hygiene instruction without singling out cats.',
+  },
   {
     find: 'Imprinting is great for socializing cats and dogs who need safe homes, and we all know there are plenty of those to go around! ',
     replace: '',
@@ -410,11 +438,11 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
   for (const p of paragraphs.slice(1)) {
     const text = clean(p.text);
     if (!text) continue; // wholly withheld
-    // The cat-bite warning is the document's first paragraph and its most
-    // important one. It is copied as written; it just gets a heading so it
-    // reads as the instruction it is, not as a preamble.
-    if (/^If a bird or small mammal is attacked by a cat/.test(text)) {
-      lines.push('', '## If a cat may have touched it', '');
+    // The bite warning is the document's first paragraph and its most
+    // important one. It gets a heading so it reads as the instruction it is,
+    // not as a preamble.
+    if (/^If a bird or small animal has been caught or bitten/.test(text)) {
+      lines.push('', '## If it was caught or bitten by an animal', '');
     }
     // Bare URLs read better as links on their own line.
     if (/^https?:\/\/\S+$/.test(text)) {

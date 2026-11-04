@@ -83,7 +83,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
       </a>
     </div>
 
-    {org.community?.added_on && (
+    {org.community?.added_on && !(org.last_verified && org.last_verified > org.community.added_on) && (
       <p class="notice">
         <Icon name="alert" size={17} />
         <span>
@@ -92,7 +92,7 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
         </span>
       </p>
     )}
-    {org.community?.corrected_on && !org.community.added_on && (
+    {org.community?.corrected_on && !org.community.added_on && !(org.last_verified && org.last_verified > org.community.corrected_on) && (
       <p class="notice">
         <Icon name="alert" size={17} />
         <span>

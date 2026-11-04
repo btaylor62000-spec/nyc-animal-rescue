@@ -1,21 +1,18 @@
 {
   "id": "muffins-pet-connection-mama-program",
   "name": "Muffin's Pet Connection - MAMA Program",
-  "aka": [
-    "Muffin's Pet Connection"
-  ],
+  "aka": [],
   "parent_org": null,
   "org_types": [
-    "support-program",
-    "government"
+    "government",
+    "support-program"
   ],
   "animals": [
     "cat"
   ],
   "needs": [
-    "trap-bank",
-    "tnr",
     "colony-care",
+    "trap-bank",
     "spay-neuter",
     "low-cost-vet",
     "financial-aid"
@@ -34,23 +31,18 @@
   "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "phones": [],
   "emails": [],
-  "website": "https://www.muffins.org",
-  "intake_urls": [
-    {
-      "url": "https://muffins.org/MAMA.htm"
-    }
-  ],
+  "website": null,
+  "intake_urls": [],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "rents humane cat traps (muffins.org).\n\nMAMA (low-cost feral spay/neuter voucher) program - flat feral package incl. rabies + eartip at participating vets; get an estimate before extra services. Also rents humane cat traps. Verified 2026-08-26. Intake: See  for participating vets + guidelines Intake: also rents humane cat traps Other channel: Feral package ~$45 (males): spay/neuter + rabies + left eartip",
+  "notes": "MAMA (low-cost feral spay/neuter voucher) program - flat feral package incl. rabies + eartip at participating vets; get an estimate before extra services. Also rents humane cat traps.",
   "type_raw": "spay-neuter voucher / trap rental (support)",
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "status": "retired",
+  "status_note": "This programme's website now belongs to an unrelated business, and nothing shows the coupon still runs. For low-cost spay/neuter, see the guide Low-cost clinics and trap banks.",
   "source_urls": [
-    "https://www.muffins.org/MAMA.htm",
     "https://www.aspcapro.org/sites/default/files/Local%20NYC%20resources-online%2011-14.pdf"
   ],
   "last_verified": "2026-08-26",
@@ -58,10 +50,20 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "retired",
+      "evidence_url": "https://www.muffins.org/",
+      "source": "manual",
+      "note": "muffins.org, the programme's only address, is now the site of an artisan muffin bakery (read 2026-11-04), and the newest mention of the MAMA coupon anywhere is from 2009. No longer listed; nobody should be sent to the bakery."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -52,7 +52,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Very local 501(c)(3) (EIN 88-0563037, IRS ruling 2022; reg. address 434 Marion St, Brooklyn 11233), fully foster-based (no walk-in). info@ email confirmed on own site. TNR + friendly placement + colony care; helps low-income owners access low-cost vet/spay-neuter. Re-verified 2026-08-26. Intake: //linktr.ee/oceanhillcats",
+  "notes": "Very local 501(c)(3) (EIN 88-0563037, IRS ruling 2022; reg. address 434 Marion St, Brooklyn 11233), fully foster-based (no walk-in). info@ email confirmed on own site. TNR + friendly placement + colony care; helps low-income owners access low-cost vet/spay-neuter. Intake: //linktr.ee/oceanhillcats",
   "type_raw": "TNR / rescue+adoption",
   "confidence": "High",
   "status": "active",
@@ -60,12 +60,12 @@
   "source_urls": [
     "https://www.oceanhillcats.com/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

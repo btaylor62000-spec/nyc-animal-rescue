@@ -71,7 +71,15 @@ Ordered by how much harm it prevents, not by size.
    `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
    saying what was read, then `npm run import` (see item 2).
 
-1. **The weekly check had not saved anything since 2026-09-21.** Every run
+1. **The weekly check ran properly on 2026-11-04** (by hand, after the fix
+   below) and opened PR #8: 175 listings re-confirmed, 43 flagged. Its branch
+   was merged into the 2026-11-04 work rather than merged alone, because it
+   would have marked 14 rescues "may no longer be active": two were sites
+   whose robots.txt asks robots to stay away (now "blocked", a person checks,
+   never a failure), eight really are gone, two are parked. Every flag a
+   person must resolve is in `docs/manual-checks-2026-11-04.md`.
+
+   Earlier: **the weekly check had not saved anything since 2026-09-21.** Every run
    from 2026-09-28 to 2026-11-02 tripped its safety valve (over 15% flagged)
    and exited before committing, discarding about a hundred re-confirmations
    a week. On 2026-11-04, 233 of 395 listings were last confirmed 31-90 days
@@ -300,6 +308,7 @@ check now tells them apart (`pageProblem` in `scripts/agent/rules.ts`):
 | The domain does not exist (`ENOTFOUND`) | Moved or closed | Flagged for a person **the same week**. The reader-visible status still waits three weeks |
 | 401/403/429, or a bot-check page ("Performing security verification") | The site is up but refuses robots | **Not a failure.** `check_status: manual-only`, listed in the weekly report and on `/status`, flagged again when no person has confirmed it for 90 days |
 | Timeout or server error | Could be a bad afternoon | Three weeks' grace, then "needs confirming", as before |
+| robots.txt asks robots not to fetch it (added 2026-11-04) | The site is up; we obey its wish | Same as 401/403: `manual-only`, never a failure. Counting it as down nearly marked Stray from the Heart and NYC Second Chance as closed |
 
 Urban Wildlife Alliance, Petco Love Lost and United Spay Alliance are why: all
 three are live and all three show automated browsers a bot check. Under the old
@@ -425,14 +434,25 @@ Several warnings are counter-intuitive and people act on them under stress:
 - A window-strike bird must **not** be given supplemental heat, even though a
   cold nestling should be warmed.
 - Injured wildlife must **never** be offered food or water.
-- A cat's bite or claws are an emergency for a bird or small mammal even with
-  no visible wound.
+- A bird or small mammal caught or bitten by any animal is an emergency even
+  with no visible wound. (Worded this way since 2026-11-04, at the reviewer's
+  request: the original named the germ in cat saliva and called it deadly,
+  which someone could use against cats. The instruction is unchanged; see
+  `WILDLIFE_DOC_EDITS`. Never name germs or call an animal dangerous.)
 - Most fledglings on the ground should be left alone.
 - Never release a domestic animal outdoors.
 
 Paraphrasing risks softening exactly the instruction that matters.
 
-### 5. Configuration has exactly one home for each kind of thing
+### 5. No prices anywhere a reader can see
+
+Decided by the reviewer 2026-11-04. Prices go stale first, and a fee printed
+beside the poison control number can stop someone ringing it.
+`src/data/prices.ts` removes them at import from every listing and guide
+(income limits are kept: they say who qualifies), and a test fails if one
+reappears. Write "free" or "low-cost" if it matters; never a figure.
+
+### 6. Configuration has exactly one home for each kind of thing
 
 Because `wrangler.toml` exists, Cloudflare treats it as the source of truth and
 the dashboard only manages encrypted secrets. So:
@@ -444,7 +464,7 @@ the dashboard only manages encrypted secrets. So:
 Do not add a build-time public value as a Pages environment variable. It will
 appear to work in the dashboard and silently not reach the build.
 
-### 6. It must not be able to cost money
+### 7. It must not be able to cost money
 
 Stay on the Workers Free plan. No database, no paid API, no stored state. See
 `docs/FREE-TIER.md` for what each service allows and what happens at the limit.
@@ -497,6 +517,18 @@ would destroy it.
 ---
 
 ### Adding a guide
+
+**A guide is the know-how the directory cannot give, not a second copy of
+it** (reviewer, 2026-11-04). Every guide already ends with every matching
+listing, kept current. Where a workbook tab's rows are needed for the
+directory but would only repeat that list, hide them from the guide with
+`omitSections` in `GUIDE_PAGES`; the rows still become records. Workbook
+shorthand (s/n, IG, Bklyn, [Medium], "Verified ... 2026-08-27", "ACC New
+Hope partner") is spelt out at import by `src/data/plain-words.ts`; a
+reference to a spreadsheet "tab" must be rewritten at the row as a link to
+the guide it means. Note that adding a URL to a guide row inside a
+`GUIDE_ORG_SOURCES` tab can create a record: check `ls data/orgs` before and
+after, and use that tab's `skip`.
 
 Two of the guides come from a reviewer's mockups rather than from the original
 research, and the pattern is worth repeating: write the source as a workbook in

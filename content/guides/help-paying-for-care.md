@@ -9,9 +9,7 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Financial a
 
 _Grants, funds and low-cost options when you cannot afford treatment._
 
-> Financial aid, low-cost care, insurance & food help (exotic-specific)
-
-Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics treat exotics, and most aid programs are written for cats and dogs. Below are the programs that actually cover exotics (birds, rabbits, small mammals, reptiles), plus the general funds that don't exclude them. Apply to SEVERAL at once - funds are limited and run out. Grants are paid to the veterinarian, not to you. Confirm eligibility and current status before relying on any single one.
+Every fund, grant and payment plan in the directory, for cats, dogs and every other animal, is listed at the end of this page. This page explains how to apply, which funds also cover rabbits, birds, reptiles and small mammals (most are written for cats and dogs, and exotic care costs more), and how pet insurance works. Apply to several at once - funds are limited and run out. Grants are paid to the veterinarian, not to you. Confirm eligibility and current status before relying on any single one.
 
 ## EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):
 
@@ -21,7 +19,7 @@ Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics tr
 
 ## GENERAL vet-bill funds that cover exotics (birds, rabbits, guinea pigs, etc.):
 
-- RedRover Relief - urgent/life-threatening care grants (avg ~$250); explicitly assists birds, rabbits and guinea pigs, not just cats/dogs; household income under ~$60k; paid to the vet. redrover.org/relief, (916) 429-2457. Also has a domestic-violence/pets program.
+- RedRover Relief - urgent/life-threatening care grants; explicitly assists birds, rabbits and guinea pigs, not just cats/dogs; household income under ~$60k; paid to the vet. redrover.org/relief, (916) 429-2457. Also has a domestic-violence/pets program.
 - The Pet Fund - non-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.
 - Frankie's Friends - lifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.
 - The Mosby Foundation, Brown Dog Foundation, Onyx & Breezy Foundation - additional illness/injury funds that consider companion animals broadly; read each fund's species scope before applying.
@@ -85,4 +83,4 @@ How to use aid effectively: get a written itemized estimate + proof of need (SNA
 - Pawp - https://pawp.com - a membership with 24/7 online vet advice and an emergency fund for one emergency a year.
 - Pet Assure - https://www.petassure.com - a discount plan at participating vets, not insurance.
 - Wagmo - https://wagmo.io - wellness plans for routine care.
-- Chewy CarePlus - https://www.chewy.com/app/content/careplus - wellness plans and insurance options through Chewy.
+- Chewy CarePlus - https://www.chewy.com/pet-insurance/ - wellness plans and insurance options through Chewy.

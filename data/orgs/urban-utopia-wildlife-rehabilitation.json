@@ -56,17 +56,17 @@
   "type_raw": "Wildlife info resource + NYC rehabber directory (rehab currently on hiatus)",
   "confidence": "Medium",
   "status": "hiatus",
-  "status_note": "Their own site says it is paused. Checked 2026-09-21.",
+  "status_note": "Not taking animals. Its own site says: \"WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time, and this is only an informational website. If you find an animal in distress, please take it to your borough’s ACC location immediately.\" Its pages of advice by species are still useful.",
   "source_urls": [
     "https://www.urbanutopiawildlife.org/"
   ],
-  "last_verified": "2026-08-29",
+  "last_verified": "2026-11-04",
   "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -77,6 +77,24 @@
       "evidence_url": "https://www.urbanutopiawildlife.org/",
       "source": "weekly-check",
       "note": "ALWAYS try to reunite a baby animal with its mother first. Human care is a last resort. WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time, and this is only an informational website. If you find an animal"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Their own site says it is paused. Checked 2026-09-21.",
+      "to": "Not taking animals. Its own site says: \"WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time, and this is only an informational website. If you find an animal in distress, please take it to your borough’s ACC location immediately.\" Its pages of advice by species are still useful.",
+      "evidence_url": "https://www.urbanutopiawildlife.org/",
+      "source": "manual",
+      "note": "Read in a browser 2026-11-04; the home page says it in those words."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-29",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.urbanutopiawildlife.org/",
+      "source": "manual",
+      "note": "Home page read in a browser 2026-11-04: on hiatus, information only, phone and email unchanged."
     }
   ],
   "privacy_hold": false,

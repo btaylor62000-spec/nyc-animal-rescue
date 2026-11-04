@@ -48,7 +48,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3) (EIN 87-3147518), no shelter. Contact form ONLY. Help requests MUST include location + 1-2 photos and come directly from the person needing help (not a third party); don't call the store. Maintains an excellent Brooklyn rescue directory at /resources. Re-verified 2026-08-26. Intake: Contact form on homepage Other channel: weekly event Sun 1-4pm, Bushwick Bark, 181 Irving Ave 11237",
+  "notes": "All-volunteer 501(c)(3) (EIN 87-3147518), no shelter. Contact form ONLY. Help requests MUST include location + 1-2 photos and come directly from the person needing help (not a third party); don't call the store. Maintains an excellent Brooklyn rescue directory at /resources. Intake: Contact form on homepage Other channel: weekly event Sun 1-4pm, Bushwick Bark, 181 Irving Ave 11237",
   "type_raw": "TNR / rescue+adoption",
   "confidence": "High",
   "status": "active",
@@ -61,7 +61,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

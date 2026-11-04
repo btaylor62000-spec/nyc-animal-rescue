@@ -67,7 +67,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) since 2013, volunteer-based, greater NYC + Hudson Valley. Signature 'One Lucky Pup' program takes dogs facing EXTRAORDINARY challenges - complex medical, traumatic injury, behavioral, breed discrimination, or no other path out of municipal shelters. Individualized care per dog for complex medical and behavior cases. Foster-based (needs NY/CT/NJ foster homes). Fee $500 (covers surgery/specialty care, vaccines, s/n, microchip, foster costs). Also funds grants + s/n events. Phone: (no public phone; email preferred) Intake: online application\n\ntakes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.",
+  "notes": "501(c)(3) since 2013, volunteer-based, greater NYC + Hudson Valley. Signature 'One Lucky Pup' program takes dogs facing EXTRAORDINARY challenges - complex medical, traumatic injury, behavioral, breed discrimination, or no other path out of municipal shelters. Individualized care per dog for complex medical and behavior cases. Foster-based (needs NY/CT/NJ foster homes). Also funds grants + spay/neuter events. Phone: (no public phone; email preferred) Intake: online application\n\ntakes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.",
   "type_raw": "Rescue+adoption (medical/behavioral hard cases; foster-based)",
   "confidence": "High",
   "status": "active",
@@ -75,12 +75,12 @@
   "source_urls": [
     "https://mrbonesandco.org/adopt/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

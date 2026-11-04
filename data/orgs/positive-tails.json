@@ -50,13 +50,13 @@
   "source_urls": [
     "https://www.positivetails.org"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

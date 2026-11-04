@@ -68,7 +68,7 @@
     "zip": "11201"
   },
   "hours": null,
-  "notes": "Founded the NYC TNR community; primary mentor org. Certification, SNAP spay/neuter funding (jackie@neighborhoodcats.org), colony registry, expert help line for certified NYC caretakers. Re-verified 2026-08-26: help@ + headcat@ emails and (212) 662-5761 confirmed on own site. Other channel: TNR in NYC groups.io network Other channel: 244 Fifth Ave, Suite 222, NY 10001\n\nreserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.",
+  "notes": "Founded the NYC TNR community; primary mentor org. Certification, SNAP spay/neuter funding (jackie@neighborhoodcats.org), colony registry, expert help line for certified NYC caretakers.: help@ + headcat@ emails and (212) 662-5761 confirmed on own site. Other channel: TNR in NYC groups.io network Other channel: 244 Fifth Ave, Suite 222, NY 10001\n\nreserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.",
   "type_raw": "referral hub / TNR support (citywide backbone)",
   "confidence": "High",
   "status": "active",
@@ -76,12 +76,12 @@
   "source_urls": [
     "https://www.neighborhoodcats.org/tnr-in-nyc"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

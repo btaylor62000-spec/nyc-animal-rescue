@@ -59,7 +59,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer no-kill 501(c)(3) (est. 1999), 400+ cats/yr. Manhattan-based adoption hub - NOT Brooklyn field response - but a key PLACEMENT partner that takes in adoptable friendlies from rescuers' TNR efforts, incl. special-needs/senior cats. Useful downstream when a Brooklyn rescuer needs an adoption channel. Emails confirmed on own site. Verified 2026-08-26. Intake: Email adopt@kittykind.org Intake: adoption center Petco Union Square, 860 Broadway / 44 Union Square 10003 Other channel: adoption center staffed evenings + weekends\n\nsenior + special-needs placement. adopt@kittykind.org - kittykind.org.",
+  "notes": "All-volunteer no-kill 501(c)(3) (est. 1999), 400+ cats/yr. Manhattan-based adoption hub - NOT Brooklyn field response - but a key PLACEMENT partner that takes in adoptable friendlies from rescuers' TNR efforts, incl. special-needs/senior cats. Useful downstream when a Brooklyn rescuer needs an adoption channel. Emails confirmed on own site. Intake: Email adopt@kittykind.org Intake: adoption center Petco Union Square, 860 Broadway / 44 Union Square 10003 Other channel: adoption center staffed evenings + weekends\n\nsenior + special-needs placement. adopt@kittykind.org - kittykind.org.",
   "type_raw": "rescue+adoption (Manhattan hub; TNR placement partner)",
   "confidence": "Medium",
   "status": "active",
@@ -73,7 +73,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

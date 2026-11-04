@@ -51,7 +51,7 @@
     "zip": "11201"
   },
   "hours": null,
-  "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.\n\nBook online only; reception is very limited. Spay/neuter appointments are open to owned and homeless cats; the rescue clinic's exams are for homeless cats. Appointments are paid in advance, refundable with 24 hours' notice.",
+  "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (spay/neuter, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.\n\nBook online only; reception is very limited. Spay/neuter appointments are open to owned and homeless cats; the rescue clinic's exams are for homeless cats. Appointments are paid in advance, refundable with 24 hours' notice.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
@@ -63,7 +63,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

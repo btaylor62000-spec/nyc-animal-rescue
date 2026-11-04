@@ -1,6 +1,6 @@
 {
   "id": "animal-relief-fund",
-  "name": "Animal Relief Fund (ARF)",
+  "name": "Animal Relief Fund (ARF!)",
   "aka": [],
   "parent_org": null,
   "org_types": [
@@ -27,27 +27,39 @@
   "zips": [],
   "region_note": "PET FOOD PANTRIES (specific programs)",
   "phones": [],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "susan@arf-ny.org"
+    }
+  ],
+  "website": "https://www.arf-ny.org",
   "intake_urls": [],
-  "social": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "ARF-The-Animal-Relief-Fund",
+      "url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/"
+    }
+  ],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "NYC org that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.\n\nNYC organization that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.",
+  "notes": "A New York charity that gives pet food to human food pantries, so people can keep their dogs and cats. Email before relying on it: the newest post on its Facebook page that we could see is from 2013.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "Low",
   "status": "verify",
-  "status_note": "The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.",
-  "source_urls": [],
-  "last_verified": null,
+  "status_note": "Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.",
+  "source_urls": [
+    "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -58,6 +70,69 @@
       "evidence_url": "https://www.animalrelieffund.org/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: animalrelieffund.org is \"Animal Rescue Friends, DBA Animal Relief Fund ... Southern Maryland\", an adoption group, not the New York charity founded by Susan Kaufman that supplied pet food to human food pantries. arf-ny.org, found in news coverage, did not answer. Link removed so nobody is sent to the wrong organisation."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "susan@arf-ny.org",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://www.arf-ny.org",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": null,
+      "to": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "NYC org that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.\n\nNYC organization that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.",
+      "to": "A New York charity that gives pet food to human food pantries, so people can keep their dogs and cats. Email before relying on it: the newest post on its Facebook page that we could see is from 2013.",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.",
+      "to": "Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
+      "source": "manual",
+      "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
     }
   ],
   "privacy_hold": false,

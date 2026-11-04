@@ -31,7 +31,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A way of rehoming a pet yourself. Create a profile for your pet, review applications and choose the new home yourself. Charges a small one-time listing fee per pet.",
+  "notes": "A way of rehoming a pet yourself. Create a profile for your pet, review applications and choose the new home yourself.",
   "type_raw": "Online platform for placing a pet directly with a new home",
   "confidence": "High",
   "status": "active",
@@ -44,8 +44,8 @@
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

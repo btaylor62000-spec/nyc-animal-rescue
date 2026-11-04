@@ -56,7 +56,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Volunteer 501(c)(3) (EIN 83-2992337, NYS 2018), youth-involved, 'judgment-free.' Rescues cats + dogs incl. special-needs (e.g. blind cats). DISAMBIGUATION: a separate DOG-ONLY 'For Blake's Sake Rescue' exists at forblakessake.org - this SI cat-inclusive one is the ps69dolphins.com/Petfinder NY1488 entity. Verified 2026-08-26. Intake: Adoption via Petfinder Intake: contact by email/phone Other channel: 496a Lisk Ave, SI 10303",
+  "notes": "Volunteer 501(c)(3) (EIN 83-2992337, NYS 2018), youth-involved, 'judgment-free.' Rescues cats + dogs incl. special-needs (e.g. blind cats). DISAMBIGUATION: a separate DOG-ONLY 'For Blake's Sake Rescue' exists at forblakessake.org - this SI cat-inclusive one is the ps69dolphins.com/Petfinder NY1488 entity. Intake: Adoption via Petfinder Intake: contact by email/phone Other channel: 496a Lisk Ave, SI 10303",
   "type_raw": "rescue+adoption (cats + dogs, special-needs friendly)",
   "confidence": "Medium",
   "status": "active",
@@ -70,7 +70,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

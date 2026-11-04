@@ -39,20 +39,20 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "low-cost s/n certificates w/ partner SI vets (under half normal price). As of 2026-11-04 SICAW's website no longer mentions the certificates: ask SICAW, (718) 948-5623 or sicawsaves@gmail.com, whether they still run.",
+  "notes": "low-cost spay/neuter certificates with partner SI vets (under half normal price). As of 2026-11-04 SICAW's website no longer mentions the certificates: ask SICAW, (718) 948-5623 or sicawsaves@gmail.com, whether they still run.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.",
+  "status": "retired",
+  "status_note": "SICAW no longer offers spay/neuter certificates on its website. For low-cost spay/neuter on Staten Island, search the directory for \"spay neuter Staten Island\".",
   "source_urls": [
     "https://www.sicawsaves.org/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — STATEN ISLAND - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
@@ -64,6 +64,33 @@
       "evidence_url": "https://www.sicawsaves.org/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04. sicawsaves.org/resources returns \"We couldn't find the page\"; its Resources link now opens a disaster-plan page; nothing on the site mentions certificates or spay/neuter. SICAW itself is active: (718) 948-5623 and sicawsaves@gmail.com from its own footer are added so someone can ask."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "retired",
+      "evidence_url": "https://www.sicawsaves.org/",
+      "source": "manual",
+      "note": "SICAW's site, read in full 2026-11-04, no longer mentions spay/neuter certificates or vouchers, and the page this listing linked to is gone. A listing for a programme nobody can find only sends people on a wasted call, so it is no longer listed. SICAW itself stays listed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.",
+      "to": "SICAW no longer offers spay/neuter certificates on its website. For low-cost spay/neuter on Staten Island, search the directory for \"spay neuter Staten Island\".",
+      "evidence_url": "https://www.sicawsaves.org/",
+      "source": "manual",
+      "note": "SICAW's site, read in full 2026-11-04, no longer mentions spay/neuter certificates or vouchers, and the page this listing linked to is gone. A listing for a programme nobody can find only sends people on a wasted call, so it is no longer listed. SICAW itself stays listed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.sicawsaves.org/",
+      "source": "manual",
+      "note": "SICAW's site, read in full 2026-11-04, no longer mentions spay/neuter certificates or vouchers, and the page this listing linked to is gone. A listing for a programme nobody can find only sends people on a wasted call, so it is no longer listed. SICAW itself stays listed."
     }
   ],
   "privacy_hold": false,

@@ -46,7 +46,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) (EIN 85-4258275, NYS 2020) volunteer TNR group focused on City Island + Pelham Bay Park + NE Bronx; also rescues feral kittens + friendly strays. Pursuing 'Lock the Block' 100% TNR on City Island (unique bridge-only geography). Reach via Petfinder/FB/IG. Verified 2026-08-26. Intake: Contact via Petfinder / Facebook / Instagram DM Other channel: 48 Hawkins St, Bronx 10464",
+  "notes": "501(c)(3) (EIN 85-4258275, NYS 2020) volunteer TNR group focused on City Island + Pelham Bay Park + NE Bronx; also rescues feral kittens + friendly strays. Pursuing 'Lock the Block' 100% TNR on City Island (unique bridge-only geography). Reach via Petfinder/FB/IG. Intake: Contact via Petfinder / Facebook / Instagram DM Other channel: 48 Hawkins St, Bronx 10464",
   "type_raw": "TNR / rescue (hyper-local)",
   "confidence": "Medium",
   "status": "active",
@@ -60,7 +60,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "unchecked",
   "consecutive_failures": 0,
   "change_log": [],

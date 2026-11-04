@@ -23,7 +23,7 @@
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": "BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "region_note": "OTHER LOWER-COST VET CLINICS",
   "phones": [],
   "emails": [],
   "website": "https://vippetcare.com",
@@ -39,11 +39,11 @@
   "status_note": null,
   "source_urls": [],
   "last_verified": "2026-11-04",
-  "section": "Low-cost vet, s-n & licensing — BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
+  "section": "Low-cost vet, s-n & licensing — OTHER LOWER-COST VET CLINICS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

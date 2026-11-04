@@ -54,7 +54,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3), ACC New Hope partner, focused on the breeds that get overlooked - primarily BULLY BREEDS - plus dogs in danger of euthanasia for space/abuse. Foster-based (Brewster/Putnam), adopts into the NY metro incl. NYC. A useful specialty referral for pit/bully-type dogs and a New Hope partner that pulls NYC ACC dogs. Confirm current NYC-area capacity. Contact gina@guardianangelrescue.org. Phone: (no public phone; email preferred) Intake: Adopt/volunteer via site & Petfinder",
+  "notes": "All-volunteer 501(c)(3), approved ACC rescue partner, focused on the breeds that get overlooked - primarily BULLY BREEDS - plus dogs in danger of euthanasia for space/abuse. Foster-based (Brewster/Putnam), adopts into the NY metro incl. NYC. A useful specialty referral for pit/bully-type dogs and a New Hope partner that pulls NYC ACC dogs. Confirm current NYC-area capacity. Contact gina@guardianangelrescue.org. Phone: (no public phone; email preferred) Intake: Adopt/volunteer via site & Petfinder",
   "type_raw": "Rescue+adoption (bully breeds + overlooked dogs; foster-based)",
   "confidence": "Medium",
   "status": "active",
@@ -67,7 +67,7 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

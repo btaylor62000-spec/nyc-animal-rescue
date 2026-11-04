@@ -59,7 +59,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) (EIN 82-2975355). TNR-only for North Queens caretakers; does NOT serve Brooklyn, does NOT take owner surrenders or emergencies, planned work only. Included for borough completeness - route Brooklyn cases elsewhere. Verified 2026-08-26. Intake: TNR request via site Intake: no public intake / no emergencies",
+  "notes": "501(c)(3) (EIN 82-2975355). TNR-only for North Queens caretakers; does NOT serve Brooklyn, does NOT take owner surrenders or emergencies, planned work only. Included for borough completeness - route Brooklyn cases elsewhere. Intake: TNR request via site Intake: no public intake / no emergencies",
   "type_raw": "TNR (North Queens only)",
   "confidence": "High",
   "status": "active",
@@ -68,12 +68,12 @@
     "https://www.tnrutopia.org/about",
     "https://www.tnrutopia.org/contact"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "QUEENS (Queens-based / Queens-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

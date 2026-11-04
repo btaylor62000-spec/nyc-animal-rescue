@@ -53,13 +53,13 @@
   "source_urls": [
     "https://urvetcare.com/locations/midtown/"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

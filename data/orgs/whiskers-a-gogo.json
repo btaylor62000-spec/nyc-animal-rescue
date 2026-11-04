@@ -45,7 +45,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Founded 2012, all-volunteer 501(c)(3) (EIN 81-2882799), foster-based, visits by appointment only. TNR in North Brooklyn; pulls at-risk cats from NYC shelters. Re-verified 2026-08-26: their own Contact page + FB list ONLY the gmail - no public phone (the (718) number previously floated was unconfirmable and has been removed). Intake: Adoption/foster application via site & Petfinder Other channel: events at Bushwick Bark, 181 Irving Ave",
+  "notes": "Founded 2012, all-volunteer 501(c)(3) (EIN 81-2882799), foster-based, visits by appointment only. TNR in North Brooklyn; pulls at-risk cats from NYC shelters.: their own Contact page + FB list ONLY the gmail - no public phone (the (718) number previously floated was unconfirmable and has been removed). Intake: Adoption/foster application via site & Petfinder Other channel: events at Bushwick Bark, 181 Irving Ave",
   "type_raw": "TNR / rescue+adoption",
   "confidence": "High",
   "status": "active",
@@ -53,12 +53,12 @@
   "source_urls": [
     "https://www.whiskers-agogo.org/contact"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

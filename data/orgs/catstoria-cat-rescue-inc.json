@@ -46,7 +46,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) (EIN 92-2795566). SPECIALTY: kitten rescue, dumped house cats, and SICK & INJURED ferals + TNR. Runs 'Kitty Haven,' a staffed cat house where cats recover from illness/surgery until adopted. Distinct from Astoria Cat Rescue & SaveKitty. Email confirmed. Verified 2026-08-26. Intake: Adoption via Petfinder Intake: contact via email Other channel: runs 'Kitty Haven' cat house",
+  "notes": "501(c)(3) (EIN 92-2795566). SPECIALTY: kitten rescue, dumped house cats, and SICK & INJURED ferals + TNR. Runs 'Kitty Haven,' a staffed cat house where cats recover from illness/surgery until adopted. Distinct from Astoria Cat Rescue & SaveKitty. Email confirmed. Intake: Adoption via Petfinder Intake: contact via email Other channel: runs 'Kitty Haven' cat house",
   "type_raw": "rescue+adoption / TNR (sick/injured + kittens)",
   "confidence": "Medium",
   "status": "active",
@@ -60,9 +60,9 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,
   "community": null

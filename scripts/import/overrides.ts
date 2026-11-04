@@ -19,6 +19,13 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // A reviewer: nobody outside rescue knows what "New Hope" is. Named for
+    // what someone is trying to do; the old name stays searchable.
+    id: 'acc-new-hope-program',
+    reason: 'Renamed in the reader\u2019s words, to match the guide "Save an animal from the NYC shelter\u2019s urgent list" (2026-11-04).',
+    set: { name: 'ACC urgent (at-risk) list: adopt or rescue a shelter animal', aka: ['ACC New Hope Program', 'New Hope', 'ACC at-risk list'] },
+  },
+  {
     // A reviewer found the ASPCA clinics muddled: the generic entry carried
     // the South Bronx address, the "Brooklyn" one described the South Bronx
     // and was marked paused, and Long Island City was barely there. One entry
@@ -178,6 +185,10 @@ export const NEVER_MERGE: Array<[string, string]> = [
  */
 export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   { pattern: /^ACC$/i, canonicalName: 'Animal Care Centers of NYC (ACC)' },
+  // Rescuzilla and Bully Project NYC merged into The Good Life Dog Rescue
+  // (its own site, read 2026-11-04). A reviewer found the old Bully Project
+  // entry still pointing at an Adoptapet page with no way to reach anyone.
+  { pattern: /^(the )?bully project( nyc)?$|^rescuzilla$/i, canonicalName: 'The Good Life Dog Rescue' },
   { pattern: /^ASPCA$/i, canonicalName: 'ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)' },
   // The hospital and its assistance funds are one organization; the guide tabs
   // name it three different ways and the merge key strips "Center".

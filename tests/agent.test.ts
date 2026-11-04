@@ -525,6 +525,20 @@ test('a blocked site comes back to a person when nobody has confirmed it for nin
   assert.match(flagOf(never) ?? '', /no person has confirmed it yet/);
 });
 
+test('a site whose robots.txt turns us away is blocked, never counted as down', () => {
+  const page = failedPage({ error: 'robots.txt asks us not to' });
+  assert.equal(pageProblem(page), 'blocked');
+  const record = org();
+  assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
+});
+
+test("Google's robot check is blocked, not a move to google.com", () => {
+  const page = failedPage({ status: 200, ok: true, offDomain: true, url: 'http://example.blogspot.com/contact', finalUrl: 'http://www.google.com/sorry/index?continue=x' });
+  assert.equal(pageProblem(page), 'blocked');
+  const record = org();
+  assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
+});
+
 test('a timeout is still just a bad week', () => {
   const page = failedPage({ error: 'fetch failed (UND_ERR_CONNECT_TIMEOUT)' });
   assert.equal(pageProblem(page), 'down');

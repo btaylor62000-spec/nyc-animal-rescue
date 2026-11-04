@@ -26,12 +26,8 @@
   ],
   "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
   "phones": [],
-  "emails": [
-    {
-      "value": "info@catsofmeowyork.org"
-    }
-  ],
-  "website": "https://www.catsofmeowyork.org",
+  "emails": [],
+  "website": null,
   "intake_urls": [],
   "social": [
     {
@@ -47,13 +43,12 @@
   },
   "address": null,
   "hours": null,
-  "notes": "High-volume 501(c)(3) (EIN 88-1221020), founded 2017 as The Crazy Cat Family, rebranded 2022. Heavy TNRM + SPECIALTY in neonatal kitten care. One of few NYC rescues with a holding space. Queens-based, works other parts of NYC too. Verified 2026-08-26. Intake: Contact + foster/adopt apps on site Intake: Linktree in IG bio Other channel: founder Farhana Haq Other channel: women-of-color-led",
+  "notes": "High-volume 501(c)(3) (EIN 88-1221020), founded 2017 as The Crazy Cat Family, rebranded 2022. Heavy TNRM + SPECIALTY in neonatal kitten care. One of few NYC rescues with a holding space. Queens-based, works other parts of NYC too. Intake: Contact + foster/adopt apps on site Intake: Linktree in IG bio Other channel: founder Farhana Haq Other channel: women-of-color-led",
   "type_raw": "TNR / rescue+adoption (neonatal specialty)",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
   "source_urls": [
-    "https://www.catsofmeowyork.org/",
     "https://www.orgcouncil.com/ein/881221020"
   ],
   "last_verified": "2026-08-26",
@@ -61,10 +56,54 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://www.catsofmeowyork.org",
+      "to": null,
+      "evidence_url": "https://www.catsofmeowyork.org",
+      "source": "manual",
+      "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "info@catsofmeowyork.org",
+      "to": null,
+      "evidence_url": "https://www.catsofmeowyork.org",
+      "source": "manual",
+      "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it. An address on a domain that no longer exists cannot receive mail."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "evidence_url": "https://www.catsofmeowyork.org",
+      "source": "manual",
+      "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -44,7 +44,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Foster-based 501(c)(3) (EIN 92-2593031), formed 2017/incorporated 2023. TNR + rescue + adoption + helps community members access low-cost spay/neuter clinic appointments (cats AND dogs). Queens-local. Verified 2026-08-26. Intake: Contact via site Intake: responds to community 'all things cat' calls Other channel: 10-34 49th Ave, LIC 11101",
+  "notes": "Foster-based 501(c)(3) (EIN 92-2593031), formed 2017/incorporated 2023. TNR + rescue + adoption + helps community members access low-cost spay/neuter clinic appointments (cats AND dogs). Queens-local. Intake: Contact via site Intake: responds to community 'all things cat' calls Other channel: 10-34 49th Ave, LIC 11101",
   "type_raw": "TNR / rescue+adoption / low-cost clinic access",
   "confidence": "High",
   "status": "active",
@@ -58,7 +58,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

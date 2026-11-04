@@ -41,7 +41,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Sells low-cost spay/neuter CERTIFICATES redeemable at participating vets - useful when ASPCA/Toby/HSNY appointments are booked. IMPORTANT for feral cats: only use a clinic experienced with ferals (their Feral-Friendly Veterinarians page). Verified 2026-08-26. Intake: Buy discounted spay/neuter certificates online, redeem at participating vets Other channel: Cat spay ~$65 / cat neuter ~$51 certificates",
+  "notes": "Sells low-cost spay/neuter CERTIFICATES redeemable at participating vets - useful when ASPCA/Toby/HSNY appointments are booked. IMPORTANT for feral cats: only use a clinic experienced with ferals (their Feral-Friendly Veterinarians page). Intake: Buy discounted spay/neuter certificates online",
   "type_raw": "spay-neuter certificate program (support, nationwide/NYC)",
   "confidence": "High",
   "status": "active",
@@ -54,7 +54,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [],

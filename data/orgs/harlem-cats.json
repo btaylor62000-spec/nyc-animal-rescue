@@ -56,7 +56,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Small volunteer group trained in TNR feeding + caring for Harlem/Upper Manhattan feral colonies; also rescues friendly strays for foster/adoption. STATUS (2026): their IG says the group is 'on a hiatus while travelling the world' - kept in and worth a message via site/FB, but confirm they're active before relying. Reach via site/FB/IG. Verified 2026-08-26. Intake: Contact via site / Facebook Intake: foster/adopt/donate Other channel: FB /harlemcats (small volunteer group)",
+  "notes": "Small volunteer group trained in TNR feeding + caring for Harlem/Upper Manhattan feral colonies; also rescues friendly strays for foster/adoption. STATUS (2026): their IG says the group is 'on a hiatus while travelling the world' - kept in and worth a message via site/FB, but confirm they're active before relying. Reach via site/FB/IG. Intake: Contact via site / Facebook Intake: foster/adopt/donate Other channel: FB /harlemcats (small volunteer group)",
   "type_raw": "TNR / rescue+adoption (volunteer group)",
   "confidence": "Medium",
   "status": "hiatus",
@@ -70,8 +70,8 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "manual-only",
+  "last_checked": "2026-11-04",
+  "check_status": "unchecked",
   "consecutive_failures": 2,
   "change_log": [
     {

@@ -47,7 +47,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Small Queens cat + dog rescue doing adoption + TNR. Phone-responsive (call/text, 'answer within 5 min' if you leave a message); email is slow. FB-primary web presence, no formal 501(c)(3) status confirmed - Medium confidence. Contacts confirmed on own listings. Verified 2026-08-26. Intake: Application + vet reference required Intake: call/text to start Other channel: FB /amazinganimalsrescueandadoptions (Michelerescuer)",
+  "notes": "Small Queens cat + dog rescue doing adoption + TNR. Phone-responsive (call/text, 'answer within 5 min' if you leave a message); email is slow. FB-primary web presence, no formal 501(c)(3) status confirmed - Medium confidence. Contacts confirmed on own listings. Intake: Application + vet reference required Intake: call/text to start Other channel: FB /amazinganimalsrescueandadoptions (Michelerescuer)",
   "type_raw": "rescue+adoption / TNR",
   "confidence": "Medium",
   "status": "active",
@@ -60,8 +60,8 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
+  "last_checked": "2026-11-04",
+  "check_status": "unchecked",
   "consecutive_failures": 2,
   "change_log": [],
   "privacy_hold": false,

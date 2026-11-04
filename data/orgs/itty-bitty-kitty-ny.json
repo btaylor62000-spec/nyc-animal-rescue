@@ -41,7 +41,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Small all-volunteer Bay Ridge community-cat rescue (NOT a 501(c)(3); donations not tax-deductible). TNR + friendly rescue/adoption; adopts kittens in pairs. Lost donated holding space in 2020 (foster-based since). Site live and adopting as of 2026 re-check; co-founder George Politis (featured in 'The Cat Rescuers') long the primary caretaker - confirm current capacity via application/IG. Re-verified 2026-08-26. Intake: Adoption/foster application on site Intake: urgent-request page",
+  "notes": "Small all-volunteer Bay Ridge community-cat rescue (NOT a 501(c)(3); donations not tax-deductible). TNR + friendly rescue/adoption; adopts kittens in pairs. Lost donated holding space in 2020 (foster-based since). Site live and adopting as of 2026 re-check; co-founder George Politis (featured in 'The Cat Rescuers') long the primary caretaker - confirm current capacity via application/IG. Intake: Adoption/foster application on site Intake: urgent-request page",
   "type_raw": "TNR / rescue+adoption",
   "confidence": "Medium",
   "status": "active",
@@ -54,7 +54,7 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

@@ -46,7 +46,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer, foster-based 501(c)(3). Specializes in severely injured/medically needy cats + ACC New Hope partner. Bronx-focused but helps other boroughs. Use rescue form / IG. Intake: //lwnyc.org/rescue-form",
+  "notes": "All-volunteer, foster-based 501(c)(3). Specializes in severely injured/medically needy cats + approved ACC rescue partner. Bronx-focused but helps other boroughs. Use rescue form / IG. Intake: //lwnyc.org/rescue-form",
   "type_raw": "TNR / rescue+adoption (Bronx-based, multi-borough)",
   "confidence": "Low",
   "status": "active",
@@ -59,8 +59,8 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {

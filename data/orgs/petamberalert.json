@@ -36,7 +36,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A paid service: a one-time alert starts at $39.95 and calls neighbours and faxes vets and shelters near where the pet was last seen. The free options above are worth trying first.",
+  "notes": "The free options above are worth trying first.",
   "type_raw": "Paid lost pet alerts by phone, fax and social media",
   "confidence": "High",
   "status": "active",
@@ -44,13 +44,13 @@
   "source_urls": [
     "https://www.petamberalert.com/lost-and-found-pets/new-york/"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,
