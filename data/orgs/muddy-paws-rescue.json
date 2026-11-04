@@ -11,7 +11,6 @@
   ],
   "needs": [
     "adoption",
-    "surrender",
     "foster",
     "behavior-training"
   ],
@@ -78,13 +77,13 @@
   "source_urls": [
     "https://www.muddypawsrescue.org/contact-us"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -113,6 +112,24 @@
       "evidence_url": "https://www.muddypawsrescue.org/adopt",
       "source": "manual",
       "note": "Moved from the status note, which the page only shows for a record that is not active. Stored where a reader can actually see it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "needs",
+      "from": "adoption, surrender, foster, behavior-training",
+      "to": "adoption, foster, behavior-training",
+      "evidence_url": "https://www.muddypawsrescue.org/contact-us",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-27",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.muddypawsrescue.org/contact-us",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
     }
   ],
   "privacy_hold": false,

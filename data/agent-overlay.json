@@ -179,10 +179,10 @@
     },
     "acc-pet-food-pantry": {
       "last_checked": "2026-11-04",
-      "check_status": "ok",
-      "website": "https://www.nycacc.org/programs/community-resources/",
-      "status": "verify",
-      "status_note": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+      "check_status": "manual-only",
+      "website": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "status": "active",
+      "status_note": null,
       "source_urls": [
         "https://www.nycacc.org/programs/community-resources/"
       ],
@@ -195,10 +195,57 @@
           "evidence_url": "https://www.nycacc.org/programs/community-resources/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04. ACC's Community Resources page gives \"Email us at CommunityPets@nycacc.org\" and its contact page gives 1-212-788-4000, both as stored, but neither page mentions a pet food pantry any more; the Bronx pantry is known only from older news reports. Marked to confirm rather than removed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://www.nycacc.org/programs/community-resources/",
+          "to": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+          "to": null,
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.\n\nat the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.",
+          "to": "ACC's pet food pantry for owners who are struggling to feed their pets. Its page on ACC's site gives the details; email CommunityPets@nycacc.org or ring (212) 788-4000 before you travel, to check what is available and where. The city's 22 community pet food pantries are listed separately.",
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
         }
       ],
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "notes": "ACC's pet food pantry for owners who are struggling to feed their pets. Its page on ACC's site gives the details; email CommunityPets@nycacc.org or ring (212) 788-4000 before you travel, to check what is available and where. The city's 22 community pet food pantries are listed separately.",
+      "confidence": "Medium"
     },
     "acc-working-cats-program": {
       "last_checked": "2026-11-04",
@@ -366,7 +413,7 @@
     },
     "animal-general": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "manual-only",
       "website": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
       "source_urls": [
         "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny"
@@ -390,6 +437,33 @@
           "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
           "source": "manual",
           "note": "Its own page, read in a browser, shows \"Call (212) 501-9600\" and also \"Phone: (332) 248-0876\" (fax (212) 501-9349, not listed). Both numbers kept; the existing one was not replaced. Facebook page from the same site."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "2125019600, 3322480876",
+          "to": "2125019600",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
         }
       ],
       "consecutive_failures": 0,
@@ -398,10 +472,6 @@
         {
           "value": "2125019600",
           "display": "(212) 501-9600"
-        },
-        {
-          "value": "3322480876",
-          "display": "(332) 248-0876"
         }
       ],
       "social": [
@@ -411,7 +481,8 @@
           "url": "https://www.facebook.com/animalgeneral/"
         }
       ],
-      "confidence": "High"
+      "confidence": "High",
+      "hours": "Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm"
     },
     "animal-haven": {
       "last_checked": "2026-11-04",
@@ -570,6 +641,15 @@
           "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
           "source": "manual",
           "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.bizapedia.com/ny/animal-relief-fund-inc.html",
+          "source": "manual",
+          "note": "A reviewer found that New York State still lists Animal Relief Fund Inc. as an active not-for-profit corporation (filed 2008). That shows it was never dissolved, not that it still supplies pantries; the registered agent's home address is not published here."
         }
       ],
       "emails": [
@@ -1011,8 +1091,61 @@
     },
     "bay-ridge-kittens": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "website": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+          "evidence_url": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has no website; its Adopt-a-Pet page, Facebook and Instagram @bayridgekittens are its channels."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/bayridgekittens, https://facebook.com/bayridgekittens",
+          "to": "https://www.instagram.com/bayridgekittens/, https://www.facebook.com/bayridgekittens/",
+          "evidence_url": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has no website; its Adopt-a-Pet page, Facebook and Instagram @bayridgekittens are its channels."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-26",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has no website; its Adopt-a-Pet page, Facebook and Instagram @bayridgekittens are its channels."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "High",
+          "to": "Medium",
+          "evidence_url": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has no website; its Adopt-a-Pet page, Facebook and Instagram @bayridgekittens are its channels."
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "bayridgekittens",
+          "url": "https://www.instagram.com/bayridgekittens/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "bayridgekittens",
+          "url": "https://www.facebook.com/bayridgekittens/"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "bbawc-rescue-clinic": {
       "last_checked": "2026-11-04",
@@ -1441,7 +1574,7 @@
     },
     "brown-dog-foundation": {
       "last_checked": "2026-11-04",
-      "check_status": "ok",
+      "check_status": "manual-only",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -1452,8 +1585,28 @@
           "evidence_url": "https://browndogfoundation.org",
           "source": "manual",
           "note": "Tried on 2026-11-04: browndogfoundation.org renders nothing to an automated browser (it loaded once with its heading \"Bridging the gap between the cost of medical care and saving the family pet\"). Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://browndogfoundation.org",
+          "to": "https://www.browndogfoundation.org/",
+          "evidence_url": "https://www.browndogfoundation.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live (copyright 2026): \"Bridging the gap between the cost of medical care and saving the family pet.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.browndogfoundation.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live (copyright 2026): \"Bridging the gap between the cost of medical care and saving the family pet.\""
         }
-      ]
+      ],
+      "website": "https://www.browndogfoundation.org/",
+      "last_verified": "2026-11-04"
     },
     "bull-terrier-rescue-mission": {
       "last_checked": "2026-11-04",
@@ -1754,7 +1907,19 @@
     "catstoria-cat-rescue-inc": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-26",
+          "to": "2026-11-04",
+          "evidence_url": "https://catstoria.com/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live and gives catstoriarescue@gmail.com; it runs Kitty Haven, a cat house for recovering and adoptable cats, and focuses on kittens, dumped house cats and sick or injured ferals."
+        }
+      ]
     },
     "city-critters": {
       "last_checked": "2026-11-04",
@@ -2288,8 +2453,31 @@
     },
     "for-the-love-of-alex": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "notes": "Helps pay for urgent veterinary care for cats and dogs only, paying the vet or pharmacy directly. One pet per household; proof of income is needed. It does not pay for vaccinations, spay/neuter, cancer treatment (chemotherapy or radiation) or routine care. Start with the short pre-application on its Help My Pet page. A small charity in Bethlehem, Pennsylvania, so it cannot take every case.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "Helps pay for urgent medical care for cats and dogs. Pays the vet or pharmacy directly, and asks for proof of income, such as a tax return, before approving.",
+          "to": "Helps pay for urgent veterinary care for cats and dogs only, paying the vet or pharmacy directly. One pet per household; proof of income is needed. It does not pay for vaccinations, spay/neuter, cancer treatment (chemotherapy or radiation) or routine care. Start with the short pre-application on its Help My Pet page. A small charity in Bethlehem, Pennsylvania, so it cannot take every case.",
+          "evidence_url": "https://www.fortheloveofalex.org/help-my-pet",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Help My Pet page is live (copyright 2026). It funds urgent care for cats and dogs only, pays the vet directly, one pet per household, after a pre-application; not vaccinations, spay/neuter, cancer treatment or routine care. P.O. Box 4457, Bethlehem, PA."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-03",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.fortheloveofalex.org/help-my-pet",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Help My Pet page is live (copyright 2026). It funds urgent care for cats and dogs only, pays the vet directly, one pet per household, after a pre-application; not vaccinations, spay/neuter, cancer treatment or routine care. P.O. Box 4457, Bethlehem, PA."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "foster-dogs-inc": {
       "last_checked": "2026-11-04",
@@ -2492,7 +2680,64 @@
     "halfway-cats-nyc": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "halfwaycats@gmail.com"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "halfwaycats@gmail.com",
+          "evidence_url": "https://www.facebook.com/halfwaycats/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/halfwaycats, https://facebook.com/halfwaycats",
+          "to": "https://www.instagram.com/halfwaycats/, https://www.facebook.com/halfwaycats/",
+          "evidence_url": "https://www.facebook.com/halfwaycats/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.facebook.com/halfwaycats/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.facebook.com/halfwaycats/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "halfwaycats",
+          "url": "https://www.instagram.com/halfwaycats/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "halfwaycats",
+          "url": "https://www.facebook.com/halfwaycats/"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "halo-veterinary-hospital": {
       "last_checked": "2026-11-04",
@@ -2554,8 +2799,8 @@
     },
     "harlem-cats": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "website": null,
       "emails": [
         {
@@ -2586,8 +2831,18 @@
           "evidence_url": "https://www.instagram.com/harlemcatsnyc/",
           "source": "manual",
           "note": "Re-checked 2026-11-04 after a reviewer pointed out it had not been since August: harlemcats.com has no DNS record (Google public DNS), so the link is removed; its Instagram still describes the group as on hiatus (as indexed; Instagram needs a login to view). Facebook page and the email it lists added so someone can ask. Hiatus kept, now dated."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-26",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.instagram.com/harlemcatsnyc/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Instagram still says: \"On a hiatus while travelling the world!\""
         }
-      ]
+      ],
+      "last_verified": "2026-11-04"
     },
     "harman-cat-rescue": {
       "last_checked": "2026-11-04",
@@ -2862,7 +3117,7 @@
     },
     "island-wildlife-inc": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "manual-only",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2872,8 +3127,30 @@
           "source": "manual",
           "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
           "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.facebook.com/islandwildlife/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives (914) 309-0279, and New York State lists Island Wildlife, Inc. (City Island, Bronx, filed 2018) as an active not-for-profit. The agent's home address is not published here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.facebook.com/islandwildlife/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives (914) 309-0279, and New York State lists Island Wildlife, Inc. (City Island, Bronx, filed 2018) as an active not-for-profit. The agent's home address is not published here."
         }
-      ]
+      ],
+      "status": "active",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "Medium"
     },
     "itty-bitty-city-kitties": {
       "last_checked": "2026-11-04",
@@ -2916,8 +3193,8 @@
     },
     "kisos-pet-food-pantry": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
+      "check_status": "ok",
+      "consecutive_failures": 0,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2927,8 +3204,77 @@
           "evidence_url": "https://facebook.com/Kisos-Pet-Food-Pantry",
           "source": "manual",
           "note": "Tried on 2026-11-04: Its only page is on Facebook, which asks for a login. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://facebook.com/Kisos-Pet-Food-Pantry",
+          "to": "https://www.kisospetfoodpantry.org/",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9177275584",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "woof@kisospetfoodpantry.org",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "free pet food, focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.\n\nfree pet food, with a focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.",
+          "to": "A pet food pantry for Brooklyn's seniors and their pets, run with the food pantry at Good Shepherd Lutheran Church, so that nobody has to choose between feeding themselves and feeding their pet. Ring or email to ask when and where the next distribution is.",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.kisospetfoodpantry.org/contact-9",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: it has its own site now, kisospetfoodpantry.org, giving 917-727-5584 and woof@kisospetfoodpantry.org: \"a pet food pantry supporting Brooklyn's seniors and the pets who love them\", run with Good Shepherd Lutheran Church's food pantry."
         }
-      ]
+      ],
+      "website": "https://www.kisospetfoodpantry.org/",
+      "phones": [
+        {
+          "value": "9177275584",
+          "display": "(917) 727-5584"
+        }
+      ],
+      "emails": [
+        {
+          "value": "woof@kisospetfoodpantry.org"
+        }
+      ],
+      "notes": "A pet food pantry for Brooklyn's seniors and their pets, run with the food pantry at Good Shepherd Lutheran Church, so that nobody has to choose between feeding themselves and feeding their pet. Ring or email to ask when and where the next distribution is.",
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "kittens-and-barbells-rescue-inc": {
       "last_checked": "2026-11-04",
@@ -3046,7 +3392,49 @@
     "korean-k9-rescue": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "info@koreank9rescue.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@koreank9rescue.org",
+          "evidence_url": "https://www.koreank9rescue.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its site gives info@koreank9rescue.org and P.O. Box 1092, Long Island City, NY 11101; it brings dogs from South Korea to homes mainly in and around New York City."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "adoption, surrender, foster, behavior-training, transport, advocacy",
+          "to": "adoption, foster, behavior-training, transport, advocacy",
+          "evidence_url": "https://www.koreank9rescue.org/",
+          "source": "manual",
+          "note": "It rehomes dogs it brings from South Korea; nothing on its site offers to take in owners' pets."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-27",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.koreank9rescue.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its site gives info@koreank9rescue.org and P.O. Box 1092, Long Island City, NY 11101; it brings dogs from South Korea to homes mainly in and around New York City."
+        }
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "behavior-training",
+        "transport",
+        "advocacy"
+      ],
+      "last_verified": "2026-11-04"
     },
     "lana-law-group": {
       "last_checked": "2026-11-04",
@@ -3206,12 +3594,36 @@
     "lost-cat": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.lost-cat.org/en-us/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
+        }
+      ]
     },
     "lost-dog": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.lost-dog.org/en-us/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
+        }
+      ]
     },
     "louies-legacy-animal-rescue": {
       "last_checked": "2026-11-04",
@@ -3523,15 +3935,52 @@
           "evidence_url": "https://www.instagram.com/mightymuttsnyc/",
           "source": "manual",
           "note": "A reviewer read its Instagram profile on 2026-11-04: \"No-kill cat and dog rescue organization dedicated to finding forever homes for the mighty mutts and meows of NYC. Union square south, New York\", info@mightymutts.org, mightymutts.org. mightymutts.org could not be opened from here: its security certificate is for a different site (*.bluehost.com), so browsers show a warning."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "info@mightymutts.org",
+          "to": "info@mightymutts.org, cats@mightymutts.org",
+          "evidence_url": "https://www.instagram.com/mightymutts/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Instagram (@mightymutts) is posting actively; Facebook gives info@mightymutts.org and, for cats, cats@mightymutts.org; mailing address P.O. Box 140139, Brooklyn, NY 11214."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/mightymutts, https://facebook.com/mightymutts",
+          "to": "https://www.instagram.com/mightymutts/",
+          "evidence_url": "https://www.instagram.com/mightymutts/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Instagram (@mightymutts) is posting actively; Facebook gives info@mightymutts.org and, for cats, cats@mightymutts.org; mailing address P.O. Box 140139, Brooklyn, NY 11214."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.instagram.com/mightymutts/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Instagram (@mightymutts) is posting actively; Facebook gives info@mightymutts.org and, for cats, cats@mightymutts.org; mailing address P.O. Box 140139, Brooklyn, NY 11214."
         }
       ],
       "confidence": "Medium",
       "emails": [
         {
           "value": "info@mightymutts.org"
+        },
+        {
+          "value": "cats@mightymutts.org"
         }
       ],
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "mightymutts",
+          "url": "https://www.instagram.com/mightymutts/"
+        }
+      ]
     },
     "monroe-street-cats": {
       "last_checked": "2026-11-04",
@@ -3545,7 +3994,7 @@
     },
     "muddy-paws-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "status": "active",
       "status_note": "They do not take owner surrenders or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. Still adopting out.",
@@ -3576,9 +4025,34 @@
           "evidence_url": "https://www.muddypawsrescue.org/adopt",
           "source": "manual",
           "note": "Moved from the status note, which the page only shows for a record that is not active. Stored where a reader can actually see it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "adoption, surrender, foster, behavior-training",
+          "to": "adoption, foster, behavior-training",
+          "evidence_url": "https://www.muddypawsrescue.org/contact-us",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-27",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.muddypawsrescue.org/contact-us",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
         }
       ],
-      "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out."
+      "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.",
+      "needs": [
+        "adoption",
+        "foster",
+        "behavior-training"
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "muffins-pet-connection-mama-program": {
       "last_checked": "2026-11-04",
@@ -3978,8 +4452,8 @@
     "nyc-fish-rescue": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 2,
-      "status_note": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
+      "consecutive_failures": 0,
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3989,8 +4463,55 @@
           "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
           "source": "manual",
           "note": "Facebook sends a robot to its log-in page, so this cannot be read from here; a person checks it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "6462865594",
+          "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
+          "to": null,
+          "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-29",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
         }
-      ]
+      ],
+      "phones": [
+        {
+          "value": "6462865594",
+          "display": "(646) 286-5594"
+        }
+      ],
+      "status": "active",
+      "needs": [
+        "surrender"
+      ],
+      "last_verified": "2026-11-04"
     },
     "nyc-health-dept-low-cost-spay-neuter": {
       "last_checked": "2026-11-04",
@@ -4140,8 +4661,20 @@
     },
     "nys-dec-find-a-wildlife-rehabilitator": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-29",
+          "to": "2026-11-04",
+          "evidence_url": "https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
+        }
+      ]
     },
     "nys-dec-region-2": {
       "last_checked": "2026-11-04",
@@ -4422,7 +4955,7 @@
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-03",
+      "last_verified": "2026-11-04",
       "change_log": [
         {
           "date": "2026-11-03",
@@ -4432,6 +4965,15 @@
           "evidence_url": "https://petcolove.org/lost/",
           "source": "manual",
           "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-03",
+          "to": "2026-11-04",
+          "evidence_url": "https://petcolove.org/lost/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
         }
       ]
     },
@@ -4448,8 +4990,33 @@
           "evidence_url": "https://vetcoclinics.com",
           "source": "manual",
           "note": "Tried on 2026-11-04: vetcoclinics.com and Petco's Vetco page render nothing to an automated browser. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+          "evidence_url": "https://vetcoclinics.com",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its booking finder lists vaccination clinics inside Petco stores across the city with appointments the next day."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://vetcoclinics.com",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its booking finder lists vaccination clinics inside Petco stores across the city with appointments the next day."
         }
-      ]
+      ],
+      "intake_urls": [
+        {
+          "url": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+          "label": "Find a clinic and book"
+        }
+      ],
+      "last_verified": "2026-11-04"
     },
     "pets-of-the-homeless": {
       "last_checked": "2026-11-04",
@@ -4744,7 +5311,7 @@
     },
     "safe-place-for-pets": {
       "last_checked": "2026-11-04",
-      "check_status": "ok",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -4764,10 +5331,28 @@
           "evidence_url": "https://redrover.org/relief-dv/",
           "source": "manual",
           "note": "Link check, 2026-11-04: safeplaceforpets.org redirects to redrover.org with no directory. RedRover's relief-dv page lists Safe Escape Grants and Safe Housing Grants for shelters, not a ZIP search. Link pointed at that page; marked to confirm."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://redrover.org/relief-dv/",
+          "source": "manual",
+          "note": "safeplaceforpets.org now opens RedRover's home page and its directory is gone; the directory a reviewer found for the same purpose is AWI's Safe Havens for Pets, which is listed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.",
+          "to": "This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home.",
+          "evidence_url": "https://redrover.org/relief-dv/",
+          "source": "manual",
+          "note": "safeplaceforpets.org now opens RedRover's home page and its directory is gone; the directory a reviewer found for the same purpose is AWI's Safe Havens for Pets, which is listed."
         }
       ],
-      "status": "verify",
-      "status_note": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes."
+      "status": "retired",
+      "status_note": "This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home."
     },
     "saint-spiro-cat-rescue-inc": {
       "last_checked": "2026-11-04",
@@ -5424,7 +6009,7 @@
     },
     "the-center-for-avian-and-exotic-medicine": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "manual-only",
       "last_verified": "2026-11-04",
       "website": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
       "source_urls": [
@@ -5433,14 +6018,8 @@
       "hours": "Mon-Sun 9am-7pm",
       "phones": [
         {
-          "value": "3322392408",
-          "display": "(332) 239-2408",
-          "label": "Number on its website"
-        },
-        {
           "value": "2125018750",
-          "display": "(212) 501-8750",
-          "label": "Long-standing number, in the research and every directory"
+          "display": "(212) 501-8750"
         }
       ],
       "change_log": [
@@ -5452,9 +6031,37 @@
           "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
           "source": "manual",
           "note": "Read in a browser on its own page (Thrive Pet Care): 562 Columbus Ave, New York 10024, Monday-Sunday 9:00am-7:00pm. The page shows (332) 239-2408, not the (212) 501-8750 in the research and in every directory. Both are published, the website's first, rather than guessing which one is answered; the 332 number may be a call-tracking line that forwards. Not a 24-hour hospital."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "3322392408, 2125018750",
+          "to": "2125018750",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-04",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
         }
       ],
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "confidence": "High"
     },
     "the-fathers-heart-ministries": {
       "check_status": "ok",
@@ -5582,7 +6189,41 @@
     },
     "the-poor-animals-of-st-francis-inc": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "status": "active",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Source flags this entry as needing confirmation before you rely on it.",
+          "to": null,
+          "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-08-26",
+          "to": "2026-11-04",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+        }
+      ],
+      "status_note": null,
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "Medium"
     },
     "the-sato-project": {
       "last_checked": "2026-11-04",
@@ -5724,7 +6365,29 @@
     },
     "thundercats-tnr": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked"
+      "check_status": "needs-review",
+      "status": "relocated",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "relocated",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its own page says: \"Thundercats TNR is a trap, neuter, and return project based in Portland, OR since 2016. We started in Bushwick, Brooklyn in 2012.\" It no longer works in New York."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Source flags this entry as needing confirmation before you rely on it.",
+          "to": "Moved to Portland, Oregon, in 2016; it no longer works in New York City.",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: its own page says: \"Thundercats TNR is a trap, neuter, and return project based in Portland, OR since 2016. We started in Bushwick, Brooklyn in 2012.\" It no longer works in New York."
+        }
+      ],
+      "status_note": "Moved to Portland, Oregon, in 2016; it no longer works in New York City."
     },
     "timbers-legacy": {
       "last_checked": "2026-11-04",
@@ -5823,7 +6486,7 @@
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-03",
+      "last_verified": "2026-11-04",
       "change_log": [
         {
           "date": "2026-11-03",
@@ -5833,6 +6496,15 @@
           "evidence_url": "https://urbanwildlifenyc.org",
           "source": "manual",
           "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": "2026-11-03",
+          "to": "2026-11-04",
+          "evidence_url": "https://urbanwildlifenyc.org",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
         }
       ]
     },
@@ -6506,7 +7178,7 @@
     "safe-havens-for-pets": {
       "last_checked": "2026-11-04",
       "check_status": "manual-only",
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -6568,12 +7240,91 @@
           "evidence_url": "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/",
           "source": "manual",
           "note": "The old project domain no longer exists; AWI runs the directory as Safe Havens for Pets at awionline.org/safe-havens. The guide rows were corrected, which renamed the entry."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://awionline.org/safe-havens",
+          "to": "https://www.safehavensforpets.org/",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "safehavens@awionline.org",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "High",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
         }
       ],
-      "confidence": "Low",
+      "confidence": "High",
       "source_urls": [
         "https://awionline.org/safe-havens",
         "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/"
+      ],
+      "website": "https://www.safehavensforpets.org/",
+      "emails": [
+        {
+          "value": "safehavens@awionline.org"
+        }
+      ],
+      "last_verified": "2026-11-04"
+    },
+    "breaking-ground": {
+      "needs": [
+        "owner-support",
+        "boarding",
+        "referral"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": null,
+          "to": "owner-support, boarding, referral",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
+        }
+      ]
+    },
+    "volunteers-of-america-greater-new-york": {
+      "needs": [
+        "owner-support",
+        "boarding",
+        "referral"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": null,
+          "to": "owner-support, boarding, referral",
+          "evidence_url": "https://www.safehavensforpets.org/",
+          "source": "manual",
+          "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
+        }
       ]
     }
   }

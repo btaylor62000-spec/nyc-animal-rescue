@@ -33,17 +33,17 @@
       "value": "communitypets@nycacc.org"
     }
   ],
-  "website": "https://www.nycacc.org/programs/community-resources/",
+  "website": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
   "intake_urls": [],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.\n\nat the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.",
+  "notes": "ACC's pet food pantry for owners who are struggling to feed their pets. Its page on ACC's site gives the details; email CommunityPets@nycacc.org or ring (212) 788-4000 before you travel, to check what is available and where. The city's 22 community pet food pantries are listed separately.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/community-resources/"
   ],
@@ -54,7 +54,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "ok",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -65,6 +65,51 @@
       "evidence_url": "https://www.nycacc.org/programs/community-resources/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04. ACC's Community Resources page gives \"Email us at CommunityPets@nycacc.org\" and its contact page gives 1-212-788-4000, both as stored, but neither page mentions a pet food pantry any more; the Bronx pantry is known only from older news reports. Marked to confirm rather than removed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://www.nycacc.org/programs/community-resources/",
+      "to": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+      "to": null,
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.\n\nat the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.",
+      "to": "ACC's pet food pantry for owners who are struggling to feed their pets. Its page on ACC's site gives the details; email CommunityPets@nycacc.org or ring (212) 788-4000 before you travel, to check what is available and where. The city's 22 community pet food pantries are listed separately.",
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: ACC has a pet food pantry page on its own site at this address, so the programme is still running."
     }
   ],
   "privacy_hold": false,

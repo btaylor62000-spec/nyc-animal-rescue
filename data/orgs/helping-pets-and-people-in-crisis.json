@@ -1,0 +1,62 @@
+{
+  "id": "helping-pets-and-people-in-crisis",
+  "name": "Helping Pets and People in Crisis (Mayor's Alliance)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs",
+  "zips": [
+    "10001"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "2122522350",
+      "display": "(212) 252-2350"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.animalalliancenyc.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "The Mayor's Alliance for NYC's Animals' crisis programme, (212) 252-2350: boarding for the pets of New Yorkers in a crisis such as domestic violence or losing their home. Listed in AWI's Safe Havens for Pets directory (last re-checked by AWI 2025-04-13). Contacts as AWI's directory gives them, read 2026-11-04; not yet confirmed on the organization's own site.",
+  "type_raw": "Temporary boarding for pets of New Yorkers in a crisis",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.safehavensforpets.org/"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

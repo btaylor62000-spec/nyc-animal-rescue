@@ -133,6 +133,15 @@
       "evidence_url": "https://www.facebook.com/people/ARF-The-Animal-Relief-Fund/100067436413308/",
       "source": "manual",
       "note": "A reviewer found its Facebook page on 2026-11-04, which gives arf-ny.org and susan@arf-ny.org (the organization's own address, published on its own page) and says: \"ARF!'s mission is to keep pets with their families and reduce the number of abandoned dogs and cats by distributing pet food to local food pantries.\" The newest post visible without logging in is from January 2013; the state lists the corporation as active, which shows it was never dissolved, not that it is running. arf-ny.org could not be opened from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.bizapedia.com/ny/animal-relief-fund-inc.html",
+      "source": "manual",
+      "note": "A reviewer found that New York State still lists Animal Relief Fund Inc. as an active not-for-profit corporation (filed 2008). That shows it was never dissolved, not that it still supplies pantries; the registered agent's home address is not published here."
     }
   ],
   "privacy_hold": false,

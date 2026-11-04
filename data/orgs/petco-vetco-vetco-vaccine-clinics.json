@@ -27,7 +27,12 @@
   "phones": [],
   "emails": [],
   "website": "https://vetcoclinics.com",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+      "label": "Find a clinic and book"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
@@ -38,7 +43,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — OTHER LOWER-COST VET CLINICS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -55,6 +60,24 @@
       "evidence_url": "https://vetcoclinics.com",
       "source": "manual",
       "note": "Tried on 2026-11-04: vetcoclinics.com and Petco's Vetco page render nothing to an automated browser. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": null,
+      "to": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+      "evidence_url": "https://vetcoclinics.com",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its booking finder lists vaccination clinics inside Petco stores across the city with appointments the next day."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://vetcoclinics.com",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its booking finder lists vaccination clinics inside Petco stores across the city with appointments the next day."
     }
   ],
   "privacy_hold": false,

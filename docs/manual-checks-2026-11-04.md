@@ -134,58 +134,65 @@ The checker found a different phone or email on the organisation's own site. It 
 
 These refuse robots, show a blank page to them, or are Facebook or Instagram only. Open each in a normal browser (log in to Facebook where needed) and confirm the phone, email and that the group is still active.
 
-- [ ] **ACC Pet Food Pantry** — ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
+- [x] **ACC Pet Food Pantry** — ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
   - Entry: https://nyc-animal-rescue.pages.dev/org/acc-pet-food-pantry/  ·  Site: https://www.nycacc.org/programs/community-resources/  ·  Phone: (212) 788-4000
-- [ ] **Animal General** — Their site returned a page with almost no readable text. (https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny)
+- [x] **Animal General** — Their site returned a page with almost no readable text. (https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny)
   - Entry: https://nyc-animal-rescue.pages.dev/org/animal-general/  ·  Site: https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny  ·  Phone: (212) 501-9600, (332) 248-0876
-- [ ] **Animal Relief Fund (ARF!)** — Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
+- [x] **Animal Relief Fund (ARF!)** — Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
   - Entry: https://nyc-animal-rescue.pages.dev/org/animal-relief-fund/  ·  Site: https://www.arf-ny.org  ·  Phone: no phone listed
-- [ ] **Bay Ridge Kittens** — None of the recorded pages on the organization’s own domain could be read.
+- [x] **Bay Ridge Kittens** — None of the recorded pages on the organization’s own domain could be read.
   - Entry: https://nyc-animal-rescue.pages.dev/org/bay-ridge-kittens/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Brown Dog Foundation** — Its site turns automated checks away.
+- [x] **Brown Dog Foundation** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/brown-dog-foundation/  ·  Site: https://browndogfoundation.org  ·  Phone: no phone listed
-- [ ] **Catstoria Cat Rescue Inc. (Kitty Haven)** — Its site turns automated checks away.
+- [x] **Catstoria Cat Rescue Inc. (Kitty Haven)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/catstoria-cat-rescue-inc/  ·  Site: https://catstoria.com  ·  Phone: no phone listed
-- [ ] **For The Love Of Alex** — Their site returned a page with almost no readable text. (https://www.fortheloveofalex.org/help-my-pet)
+- [x] **For The Love Of Alex** — Their site returned a page with almost no readable text. (https://www.fortheloveofalex.org/help-my-pet)
   - Entry: https://nyc-animal-rescue.pages.dev/org/for-the-love-of-alex/  ·  Site: https://www.fortheloveofalex.org/help-my-pet  ·  Phone: no phone listed
-- [ ] **Halfway Cats NYC** — Its site turns automated checks away.
+- [x] **Halfway Cats NYC** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/halfway-cats-nyc/  ·  Site: https://linktr.ee/halfwaycats  ·  Phone: no phone listed
-- [ ] **Harlem Cats** — Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
+- [x] **Harlem Cats** — Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
   - Entry: https://nyc-animal-rescue.pages.dev/org/harlem-cats/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Island Wildlife Inc** — Its site turns automated checks away.
+- [x] **Island Wildlife Inc** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/island-wildlife-inc/  ·  Site: (no website)  ·  Phone: (914) 309-0279
-- [ ] **Kiso's Pet Food Pantry (Brooklyn)** — Its site turns automated checks away.
+- [x] **Kiso's Pet Food Pantry (Brooklyn)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/kisos-pet-food-pantry/  ·  Site: https://facebook.com/Kisos-Pet-Food-Pantry  ·  Phone: no phone listed
-- [ ] **Korean K9 Rescue (KK9R)** — Its site turns automated checks away.
+- [x] **Korean K9 Rescue (KK9R)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/korean-k9-rescue/  ·  Site: https://www.koreank9rescue.org  ·  Phone: no phone listed
-- [ ] **Lost Cat (lost-cat.org)** — Its site turns automated checks away.
+- [x] **Lost Cat (lost-cat.org)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/lost-cat/  ·  Site: https://www.lost-cat.org/en-us/  ·  Phone: no phone listed
-- [ ] **Lost Dog (lost-dog.org)** — Its site turns automated checks away.
+- [x] **Lost Dog (lost-dog.org)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/lost-dog/  ·  Site: https://www.lost-dog.org/en-us/  ·  Phone: no phone listed
-- [ ] **Mighty Mutts & Ollie's Place** — Its website shows a security warning (the certificate is for another site). Check Instagram @mightymuttsnyc that it is still holding adoption events, and whether info@mightymutts.org answers.
+- [x] **Mighty Mutts & Ollie's Place** — Its website shows a security warning (the certificate is for another site). Check Instagram @mightymuttsnyc that it is still holding adoption events, and whether info@mightymutts.org answers.
   - Entry: https://nyc-animal-rescue.pages.dev/org/mighty-mutts-and-ollies-place/  ·  Site: https://www.mightymutts.org  ·  Phone: no phone listed
-- [ ] **Muddy Paws Rescue** — Their own site mentions being at capacity, which may or may not mean they have stopped taking animals: "renders or stray pets that were not originally adopted from Muddy Paws, as all our foster homes are at capacity with dogs that we take in from open-intake shelter partners. We reco" (https://www.m
+- [x] **Muddy Paws Rescue** — Their own site mentions being at capacity, which may or may not mean they have stopped taking animals: "renders or stray pets that were not originally adopted from Muddy Paws, as all our foster homes are at capacity with dogs that we take in from open-intake shelter partners. We reco" (https://www.m
   - Entry: https://nyc-animal-rescue.pages.dev/org/muddy-paws-rescue/  ·  Site: https://www.muddypawsrescue.org  ·  Phone: (646) 598-7297
-- [ ] **NYC Fish Rescue** — It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.
+- [x] **NYC Fish Rescue** — It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.
   - Entry: https://nyc-animal-rescue.pages.dev/org/nyc-fish-rescue/  ·  Site: https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/  ·  Phone: no phone listed
-- [ ] **NYS DEC - Find a Wildlife Rehabilitator (directory)** — Their site returned a page with almost no readable text. (https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab)
+- [x] **NYS DEC - Find a Wildlife Rehabilitator (directory)** — Their site returned a page with almost no readable text. (https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab)
   - Entry: https://nyc-animal-rescue.pages.dev/org/nys-dec-find-a-wildlife-rehabilitator/  ·  Site: https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab  ·  Phone: (844) 332-3267
-- [ ] **Petco Love Lost** — Its site turns automated checks away.
+- [x] **Petco Love Lost** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/petco-love-lost/  ·  Site: https://petcolove.org/lost/  ·  Phone: no phone listed
-- [ ] **Petco Vetco / Vetco vaccine clinics** — its site turns automated checks away, and no person has confirmed it yet. Check it by hand and record the date.
+- [x] **Petco Vetco / Vetco vaccine clinics** — its site turns automated checks away, and no person has confirmed it yet. Check it by hand and record the date.
   - Entry: https://nyc-animal-rescue.pages.dev/org/petco-vetco-vetco-vaccine-clinics/  ·  Site: https://vetcoclinics.com  ·  Phone: no phone listed
-- [ ] **Safe Havens for Pets (Animal Welfare Institute)** — Its site turns automated checks away.
+- [x] **Safe Havens for Pets (Animal Welfare Institute)** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/safe-havens-for-pets/  ·  Site: https://awionline.org/safe-havens  ·  Phone: no phone listed
-- [ ] **Safe Place for Pets (RedRover)** — Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
+- [x] **Safe Place for Pets (RedRover)** — Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
   - Entry: https://nyc-animal-rescue.pages.dev/org/safe-place-for-pets/  ·  Site: https://redrover.org/relief-dv/  ·  Phone: no phone listed
-- [ ] **The Center for Avian & Exotic Medicine** — Their site returned a page with almost no readable text. (https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine)
+- [x] **The Center for Avian & Exotic Medicine** — Their site returned a page with almost no readable text. (https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine)
   - Entry: https://nyc-animal-rescue.pages.dev/org/the-center-for-avian-and-exotic-medicine/  ·  Site: https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine  ·  Phone: (332) 239-2408, (212) 501-8750
-- [ ] **The Poor Animals of St. Francis, Inc.** — The research could not confirm it is still active. Check its site or Facebook for recent activity.
+- [x] **The Poor Animals of St. Francis, Inc.** — The research could not confirm it is still active. Check its site or Facebook for recent activity.
   - Entry: https://nyc-animal-rescue.pages.dev/org/the-poor-animals-of-st-francis-inc/  ·  Site: (no website)  ·  Phone: (718) 822-0043
-- [ ] **Thundercats TNR** — The research could not confirm it is still active. Check its Facebook or Instagram for recent activity.
+- [x] **Thundercats TNR** — The research could not confirm it is still active. Check its Facebook or Instagram for recent activity.
   - Entry: https://nyc-animal-rescue.pages.dev/org/thundercats-tnr/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Urban Wildlife Alliance** — Its site turns automated checks away.
+- [x] **Urban Wildlife Alliance** — Its site turns automated checks away.
   - Entry: https://nyc-animal-rescue.pages.dev/org/urban-wildlife-alliance/  ·  Site: https://urbanwildlifenyc.org  ·  Phone: no phone listed
+
+**Done 2026-11-04 by the reviewer in a normal browser.**
+
+- Confirmed and dated: ACC pet food pantry (its own page found; back to active), Animal General and the Center for Avian & Exotic Medicine (hours; an extra number not on their pages removed), Bay Ridge Kittens, Brown Dog, Catstoria, For The Love Of Alex, Halfway Cats, Harlem Cats (still on hiatus), Island Wildlife, Korean K9 Rescue, Lost Cat, Lost Dog, Mighty Mutts (posting actively), Muddy Paws (operating; it only cannot take surrenders), NYC Fish Rescue (posted weeks ago; phone added), DEC's rehabber search, Petco Love Lost, Vetco, Safe Havens for Pets, Urban Wildlife Alliance, Poor Animals of St. Francis (adoptable pets on Petfinder).
+- Kiso's Pet Food Pantry has its own site now, with phone and email.
+- Thundercats TNR moved to Portland, Oregon in 2016: no longer listed. Safe Place for Pets (RedRover's directory) is gone: no longer listed; AWI's Safe Havens for Pets does the same job.
+- Added from AWI's Safe Havens directory, and named in the abuse and homelessness guides: Safe Horizon, Volunteers of America-Greater New York, Breaking Ground, and the Mayor's Alliance's Helping Pets and People in Crisis.
 
 ## 6. Never confirmed on their own site
 

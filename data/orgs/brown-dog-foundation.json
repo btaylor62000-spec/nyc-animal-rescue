@@ -26,7 +26,7 @@
   "region_note": "VET-BILL FINANCIAL AID (when care is unaffordable)",
   "phones": [],
   "emails": [],
-  "website": "https://browndogfoundation.org",
+  "website": "https://www.browndogfoundation.org/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -38,13 +38,13 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — VET-BILL FINANCIAL AID (when care is unaffordable)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "ok",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -55,6 +55,24 @@
       "evidence_url": "https://browndogfoundation.org",
       "source": "manual",
       "note": "Tried on 2026-11-04: browndogfoundation.org renders nothing to an automated browser (it loaded once with its heading \"Bridging the gap between the cost of medical care and saving the family pet\"). Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://browndogfoundation.org",
+      "to": "https://www.browndogfoundation.org/",
+      "evidence_url": "https://www.browndogfoundation.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live (copyright 2026): \"Bridging the gap between the cost of medical care and saving the family pet.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.browndogfoundation.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live (copyright 2026): \"Bridging the gap between the cost of medical care and saving the family pet.\""
     }
   ],
   "privacy_hold": false,

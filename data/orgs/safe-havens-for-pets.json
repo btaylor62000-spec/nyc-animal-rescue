@@ -27,8 +27,12 @@
   "zips": [],
   "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "phones": [],
-  "emails": [],
-  "website": "https://awionline.org/safe-havens",
+  "emails": [
+    {
+      "value": "safehavens@awionline.org"
+    }
+  ],
+  "website": "https://www.safehavensforpets.org/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -36,14 +40,14 @@
   "hours": null,
   "notes": "search by zip code for shelters with on-site pet housing, boarding partnerships, or foster care during a crisis: https://awionline.org/safe-havens",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://awionline.org/safe-havens",
     "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -51,7 +55,7 @@
   ],
   "last_checked": "2026-11-04",
   "check_status": "manual-only",
-  "consecutive_failures": 3,
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -113,6 +117,42 @@
       "evidence_url": "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/",
       "source": "manual",
       "note": "The old project domain no longer exists; AWI runs the directory as Safe Havens for Pets at awionline.org/safe-havens. The guide rows were corrected, which renamed the entry."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://awionline.org/safe-havens",
+      "to": "https://www.safehavensforpets.org/",
+      "evidence_url": "https://www.safehavensforpets.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "safehavens@awionline.org",
+      "evidence_url": "https://www.safehavensforpets.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.safehavensforpets.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Low",
+      "to": "High",
+      "evidence_url": "https://www.safehavensforpets.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the searchable directory itself is at safehavensforpets.org (managed by AWI, safehavens@awionline.org); search by zip or state, for domestic violence or homelessness. Each entry shows when AWI last re-checked it."
     }
   ],
   "privacy_hold": false,

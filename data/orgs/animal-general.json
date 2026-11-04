@@ -27,10 +27,6 @@
     {
       "value": "2125019600",
       "display": "(212) 501-9600"
-    },
-    {
-      "value": "3322480876",
-      "display": "(332) 248-0876"
     }
   ],
   "emails": [],
@@ -52,7 +48,7 @@
     "street": "558 Columbus Ave",
     "zip": "10024"
   },
-  "hours": null,
+  "hours": "Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm",
   "notes": "558 Columbus Ave 10024 - (212) 501-9600 - feral-friendly (Bideawee list). Now part of Thrive Pet Healthcare; its own page describes primary care for dogs and cats on the Upper West Side. A reviewer found it listed elsewhere as accepting wildlife, but its site does not say so, so it is not listed here as a wildlife vet: ask before bringing a wild animal.",
   "type_raw": null,
   "confidence": "High",
@@ -67,7 +63,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -87,6 +83,33 @@
       "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
       "source": "manual",
       "note": "Its own page, read in a browser, shows \"Call (212) 501-9600\" and also \"Phone: (332) 248-0876\" (fax (212) 501-9349, not listed). Both numbers kept; the existing one was not replaced. Facebook page from the same site."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "2125019600, 3322480876",
+      "to": "2125019600",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": null,
+      "to": "Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 558 Columbus Ave, New York 10024, (212) 501-9600; sees dogs and cats; Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm. (332) 248-0876 is not on its page."
     }
   ],
   "privacy_hold": false,

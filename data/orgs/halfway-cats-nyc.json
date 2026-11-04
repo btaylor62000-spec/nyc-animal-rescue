@@ -21,7 +21,11 @@
   "zips": [],
   "region_note": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "halfwaycats@gmail.com"
+    }
+  ],
   "website": "https://linktr.ee/halfwaycats",
   "intake_urls": [
     {
@@ -33,12 +37,12 @@
     {
       "platform": "instagram",
       "handle": "halfwaycats",
-      "url": "https://instagram.com/halfwaycats"
+      "url": "https://www.instagram.com/halfwaycats/"
     },
     {
       "platform": "facebook",
       "handle": "halfwaycats",
-      "url": "https://facebook.com/halfwaycats"
+      "url": "https://www.facebook.com/halfwaycats/"
     }
   ],
   "geo": null,
@@ -46,7 +50,7 @@
   "hours": null,
   "notes": "A small cat rescue focused on frightened and forgotten street cats: rescue, socializing and adoption. Its link page lists Instagram, Facebook and its adoptable cats on Petfinder, but no phone or email; reach it by Instagram or Facebook message. A phone number and email on third-party listings are not used here because none of the group's own pages confirm them.",
   "type_raw": "Cat rescue - street cats, socialization and adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
@@ -60,7 +64,44 @@
   "last_checked": "2026-11-04",
   "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "halfwaycats@gmail.com",
+      "evidence_url": "https://www.facebook.com/halfwaycats/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "https://instagram.com/halfwaycats, https://facebook.com/halfwaycats",
+      "to": "https://www.instagram.com/halfwaycats/, https://www.facebook.com/halfwaycats/",
+      "evidence_url": "https://www.facebook.com/halfwaycats/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.facebook.com/halfwaycats/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Low",
+      "to": "Medium",
+      "evidence_url": "https://www.facebook.com/halfwaycats/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives halfwaycats@gmail.com, Instagram @halfwaycats and linktr.ee/halfwaycats: \"Helping the forgotten cats find forever homes\"."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

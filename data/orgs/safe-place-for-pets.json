@@ -37,8 +37,8 @@
   "notes": "searchable directory of programs by ZIP. safeplaceforpets.org.\n\nsearchable directory of programs ready to help survivors and pets, by ZIP. safeplaceforpets.org.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.",
+  "status": "retired",
+  "status_note": "This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home.",
   "source_urls": [],
   "last_verified": null,
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
@@ -47,7 +47,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "ok",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -67,6 +67,24 @@
       "evidence_url": "https://redrover.org/relief-dv/",
       "source": "manual",
       "note": "Link check, 2026-11-04: safeplaceforpets.org redirects to redrover.org with no directory. RedRover's relief-dv page lists Safe Escape Grants and Safe Housing Grants for shelters, not a ZIP search. Link pointed at that page; marked to confirm."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "retired",
+      "evidence_url": "https://redrover.org/relief-dv/",
+      "source": "manual",
+      "note": "safeplaceforpets.org now opens RedRover's home page and its directory is gone; the directory a reviewer found for the same purpose is AWI's Safe Havens for Pets, which is listed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.",
+      "to": "This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home.",
+      "evidence_url": "https://redrover.org/relief-dv/",
+      "source": "manual",
+      "note": "safeplaceforpets.org now opens RedRover's home page and its directory is gone; the directory a reviewer found for the same purpose is AWI's Safe Havens for Pets, which is listed."
     }
   ],
   "privacy_hold": false,

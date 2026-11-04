@@ -65,14 +65,14 @@
     "https://www.harlemcats.com/",
     "https://www.facebook.com/harlemcats/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
-  "consecutive_failures": 2,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -82,6 +82,15 @@
       "evidence_url": "https://www.instagram.com/harlemcatsnyc/",
       "source": "manual",
       "note": "Re-checked 2026-11-04 after a reviewer pointed out it had not been since August: harlemcats.com has no DNS record (Google public DNS), so the link is removed; its Instagram still describes the group as on hiatus (as indexed; Instagram needs a login to view). Facebook page and the email it lists added so someone can ask. Hiatus kept, now dated."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-26",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.instagram.com/harlemcatsnyc/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Instagram still says: \"On a hiatus while travelling the world!\""
     }
   ],
   "privacy_hold": false,

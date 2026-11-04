@@ -44,7 +44,7 @@
   "source_urls": [
     "https://petcolove.org/lost/"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -61,6 +61,15 @@
       "evidence_url": "https://petcolove.org/lost/",
       "source": "manual",
       "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-03",
+      "to": "2026-11-04",
+      "evidence_url": "https://petcolove.org/lost/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
     }
   ],
   "privacy_hold": false,

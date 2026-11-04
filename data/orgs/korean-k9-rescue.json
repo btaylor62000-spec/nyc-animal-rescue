@@ -11,7 +11,6 @@
   ],
   "needs": [
     "adoption",
-    "surrender",
     "foster",
     "behavior-training",
     "transport",
@@ -26,7 +25,11 @@
   "zips": [],
   "region_note": "QUEENS (Queens-based / Queens-serving dog rescues)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "info@koreank9rescue.org"
+    }
+  ],
   "website": "https://www.koreank9rescue.org",
   "intake_urls": [
     {
@@ -61,7 +64,7 @@
   "source_urls": [
     "https://www.koreank9rescue.org/adopt/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "QUEENS (Queens-based / Queens-serving dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -69,7 +72,35 @@
   "last_checked": "2026-11-04",
   "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "info@koreank9rescue.org",
+      "evidence_url": "https://www.koreank9rescue.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its site gives info@koreank9rescue.org and P.O. Box 1092, Long Island City, NY 11101; it brings dogs from South Korea to homes mainly in and around New York City."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "needs",
+      "from": "adoption, surrender, foster, behavior-training, transport, advocacy",
+      "to": "adoption, foster, behavior-training, transport, advocacy",
+      "evidence_url": "https://www.koreank9rescue.org/",
+      "source": "manual",
+      "note": "It rehomes dogs it brings from South Korea; nothing on its site offers to take in owners' pets."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-27",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.koreank9rescue.org/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its site gives info@koreank9rescue.org and P.O. Box 1092, Long Island City, NY 11101; it brings dogs from South Korea to homes mainly in and around New York City."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
