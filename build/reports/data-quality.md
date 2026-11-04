@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-11-03 from the source workbooks and the wildlife guide.
+Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **382** organizations after de-duplication
+- **384** organizations after de-duplication
 - **75** duplicate clusters merged
 - **21** guide pages generated
 - **15** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 275 |
-| dog | 215 |
+| cat | 276 |
+| dog | 216 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -54,7 +54,7 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 | education | 23 |
 | legal | 21 |
 | financial-aid | 21 |
-| lost-found | 17 |
+| lost-found | 19 |
 | sanctuary | 17 |
 | behavior-training | 16 |
 | senior | 16 |
@@ -74,17 +74,17 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 253 |
-| queens | 209 |
-| manhattan | 208 |
-| bronx | 184 |
-| staten-island | 183 |
+| brooklyn | 255 |
+| queens | 211 |
+| manhattan | 210 |
+| bronx | 186 |
+| staten-island | 185 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 170 |
+| High | 172 |
 | Medium | 168 |
 | Low | 44 |
 
@@ -92,7 +92,7 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 367 |
+| active | 369 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -267,7 +267,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (28)
+### Rows the rules could not fully tag (30)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -297,6 +297,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **LANA Law Group (Legal Action Network for Animals)** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:74)
 - **United Spay Alliance - Feline Fix by Five** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:77)
 - **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:78)
+- **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:81)
+- **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
 
 ## Privacy
 

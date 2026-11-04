@@ -192,7 +192,7 @@ function downgrade(confidence: Confidence): Confidence {
  */
 const DNS_GONE = /\b(ENOTFOUND|ERR_NAME_NOT_RESOLVED)\b/;
 const BOT_WALL =
-  /performing security verification|verif(y|ying) you are (a )?human|confirm you are (a )?human|are you a robot|checking your browser|just a moment\.\.\.|attention required|enable javascript and cookies to continue|this will only take a few seconds|access denied/i;
+  /performing security verification|verif(y|ying) you are (a )?human|confirm you are (a )?human|are you a robot|checking your browser|just a moment\.\.\.|attention required|enable javascript and cookies to continue|this will only take a few seconds|if you are human and the page does not display|access denied/i;
 
 export type PageProblem = 'gone' | 'blocked' | 'down' | null;
 

@@ -505,6 +505,8 @@ test('a bot-check page that answers 200 is recognised as blocked, not as an empt
     text: 'Performing security verification. This website uses a security service to protect against malicious bots.',
   });
   assert.equal(pageProblem(page), 'blocked');
+  // Lost Dog and Lost Cat word theirs differently.
+  assert.equal(pageProblem(failedPage({ status: 200, ok: true, text: 'Loading... If you are human and the page does not display, please contact us at hello@lost-dog.org.' })), 'blocked');
   const record = org();
   assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
 });

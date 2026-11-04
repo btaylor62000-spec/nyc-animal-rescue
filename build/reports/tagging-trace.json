@@ -4602,6 +4602,30 @@
       "matched": "solo rescuer"
     }
   ],
+  "lost-cat": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cat"
+    },
+    {
+      "tag": "lost-found",
+      "field": "name",
+      "matched": "Lost Cat"
+    }
+  ],
+  "lost-dog": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dog"
+    },
+    {
+      "tag": "lost-found",
+      "field": "name",
+      "matched": "Lost Dog"
+    }
+  ],
   "louies-legacy-animal-rescue": [
     {
       "tag": "dog",
