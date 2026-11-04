@@ -164,7 +164,10 @@ export const NEED_RULES: Rule<Need>[] = [
   { tag: 'sanctuary', pattern: /\bsanctuary\b|lifelong care|lifetime (care|foster)|non-?releasable/i, fields: ALL },
   { tag: 'working-cat', pattern: /working cats?|barn cats?/i, fields: ALL },
   { tag: 'transport', pattern: /\btransport/i, fields: ALL },
-  { tag: 'legal', pattern: /\blegal\b|law enforcement|\bcruelty\b|bite report|\blegality\b|\bpermit/i, fields: ALL },
+  // "Cruelty" means a place to report it, not an animal's history: a farm
+  // sanctuary whose animals were "rescued from cruelty/neglect" was tagged
+  // legal and came up as a way to report abuse.
+  { tag: 'legal', pattern: /\blegal\b|law enforcement|(?<!from )\bcruelty\b(?![/ ]neglect)|bite report|\blegality\b|\bpermit/i, fields: ALL },
   { tag: 'breed-specific', pattern: /breed.?specific|bully.?breeds?|\bpit\b|pit.?bull|small-?breed|\bsatos?\b|specific breed/i, fields: TYPE_NOTES },
   { tag: 'advocacy', pattern: /\badvocacy\b|\bat-risk\b|death row|pull(s|ing)? from ACC|New Hope partner/i, fields: ALL },
   { tag: 'education', pattern: /\beducation|\boutreach\b|\bworkshop|\bcertification\b|\btrain(s|ing)? (volunteers|caretakers)/i, fields: ALL },

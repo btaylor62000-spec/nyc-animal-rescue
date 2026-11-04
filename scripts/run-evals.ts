@@ -21,6 +21,10 @@ interface EvalCase {
   q: string;
   expect_orgs?: string[];
   expect_any_org?: string[];
+  /** The first card must be one of these: what the reader sees first is what they ring. */
+  expect_first_org_any?: string[];
+  /** None of these may be the first card. */
+  expect_first_org_not?: string[];
   expect_needs?: string[];
   expect_signals?: { animals?: string[]; needs?: string[]; boroughs?: string[]; zips?: string[] };
   expect_emergency?: boolean;
@@ -91,6 +95,15 @@ function retrievalChecks(c: EvalCase): { checks: Check[]; retrieved: ReturnType<
       pass: hit,
       detail: hit ? undefined : `got: ${ids.slice(0, 5).join(', ')}`,
     });
+  }
+
+  if (c.expect_first_org_any) {
+    const hit = c.expect_first_org_any.includes(ids[0] ?? '');
+    checks.push({ name: `first card is one of ${c.expect_first_org_any.join(' / ')}`, pass: hit, detail: hit ? undefined : `got: ${ids.slice(0, 3).join(', ')}` });
+  }
+  if (c.expect_first_org_not) {
+    const ok = !c.expect_first_org_not.includes(ids[0] ?? '');
+    checks.push({ name: `first card is not ${c.expect_first_org_not.join(' / ')}`, pass: ok, detail: ok ? undefined : `got: ${ids[0]}` });
   }
 
   if (c.expect_needs) {

@@ -2483,11 +2483,6 @@
       "matched": "Sanctuary"
     },
     {
-      "tag": "legal",
-      "field": "notes",
-      "matched": "cruelty"
-    },
-    {
       "tag": "referral",
       "field": "notes",
       "matched": "referral"
@@ -9068,6 +9063,23 @@
       "tag": "emergency-vet",
       "field": "type",
       "matched": "Emergency vet"
+    }
+  ],
+  "vet-i-care": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "section",
+      "matched": "HELP PAYING"
     }
   ],
   "vet-wheels-mobile-clinic": [

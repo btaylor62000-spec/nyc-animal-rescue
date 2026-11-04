@@ -1,0 +1,62 @@
+{
+  "id": "vet-i-care",
+  "name": "Vet-I-Care",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": true,
+  "neighborhoods": "New York City (New Jersey-based fund)",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - from a reviewer's list, checked on each fund's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "7322131789",
+      "display": "(732) 213-1789"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@vet-i-care.org"
+    }
+  ],
+  "website": "http://vet-i-care.org/contact.php",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Listed by the Mayor's Alliance as helping families find the money for specialist and urgent treatment their pet needs. It is a fund, not a vet: it does not treat animals. Mailing address PO Box 41, Clarksburg, NJ 08510. The phone, email and address were supplied by a reviewer on 2026-11-04 from its contact page; our checks could not open its website (its security certificate is not valid), so ring or email to confirm before relying on it.",
+  "type_raw": "Fund that helps families pay vet bills for serious illness or injury",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalalliancenyc.org/need-help/vetcare/"
+  ],
+  "last_verified": null,
+  "section": "HELP PAYING VET BILLS - from a reviewer's list, checked on each fund's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **399** organizations after de-duplication
+- **400** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
 - **16** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 293 |
-| dog | 228 |
+| cat | 294 |
+| dog | 229 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -51,9 +51,9 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | advocacy | 32 |
 | wildlife-rehab | 28 |
 | medical-special-needs | 24 |
+| financial-aid | 23 |
 | education | 23 |
-| financial-aid | 22 |
-| legal | 21 |
+| legal | 20 |
 | lost-found | 18 |
 | senior | 18 |
 | sanctuary | 17 |
@@ -74,25 +74,25 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 261 |
-| queens | 220 |
-| manhattan | 216 |
-| bronx | 191 |
-| staten-island | 190 |
+| brooklyn | 262 |
+| queens | 221 |
+| manhattan | 217 |
+| bronx | 192 |
+| staten-island | 191 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 193 |
-| Medium | 153 |
+| Medium | 154 |
 | Low | 53 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 383 |
+| active | 384 |
 | verify | 10 |
 | retired | 3 |
 | hiatus | 2 |
@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (37)
+### Never verified (38)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -271,7 +271,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (32)
+### Rows the rules could not fully tag (33)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -304,7 +304,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:85)
 - **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:86)
 - **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:92)
-- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:94)
+- **Vet-I-Care** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:93)
+- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:95)
 
 ## Privacy
 

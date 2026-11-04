@@ -15,7 +15,6 @@
   "needs": [
     "surrender",
     "sanctuary",
-    "legal",
     "referral"
   ],
   "boroughs": [

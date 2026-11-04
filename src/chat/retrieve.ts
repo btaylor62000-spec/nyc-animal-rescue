@@ -46,6 +46,10 @@ export interface Signals {
    * the general "legal" tag, which also covers bite reports and housing law.
    */
   abuse: boolean;
+  /** Organised dog or animal fighting, which has its own tip line. */
+  fighting: boolean;
+  /** Escaping an abusive partner or household with a pet. */
+  fleeing: boolean;
   /**
    * The question is about losing a home: eviction, a city shelter, an
    * emotional support animal. It needs the housing guide -- intake addresses,
@@ -154,7 +158,10 @@ const HOUSING_RE =
   /\b(homeless\w*|evict\w*|(losing|lose|lost) (my|our|the) (home|apartment|place|housing|lease)|(homeless|city|dhs) shelters?|shelter system|emotional support animals?|\besa\b|reasonable accommodation|nowhere to (live|stay|sleep)|housing (crisis|emergency))\b/i;
 
 const ABUSE_RE =
-  /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|starv\w*|hoard\w*|dog ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law)\b/i;
+  /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|kick(s|ed|ing)?|tortur\w*|starv\w*|hoard\w*|dog ?fight\w*|cock ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law|maltrato|maltrat\w*|crueldad|abuso|denunci\w*)\b/i;
+
+/** Organised fighting has its own tip line; ordinary cruelty goes to 311 first. */
+const FIGHTING_RE = /\b(dog ?fight\w*|cock ?fight\w*|animal fighting|fighting (dogs|roosters|ring)|peleas? de (perros|gallos))\b/i;
 
 /*
  * The same words, from the other side.
@@ -166,7 +173,7 @@ const ABUSE_RE =
  * An abusive owner or neighbour is still a report.
  */
 const ABUSE_VICTIM_RE =
-  /\b(domestic violence|abusive (partner|ex|husband|wife|boyfriend|girlfriend|relationship|home|household)|(leaving|escap\w*|flee\w*) (an?|my) (abusive|violent))\b/i;
+  /\b(domestic violence|abusive (partner|ex|husband|wife|boyfriend|girlfriend|spouse|relationship|home|household)|(leaving|escap\w*|flee\w*) (an?|my) (abusive|violent)|(my|our) (partner|ex|husband|wife|boyfriend|girlfriend|spouse) (is|was|has been|gets) (abusive|violent)|violencia dom[eé]stica)\b/i;
 
 const EMERGENCY_RE =
   /\b(emergenc\w*|urgent|dying|dead|bleed\w*|blood|broken|fracture\w*|seizure|seizing|convuls\w*|collaps\w*|unconscious|limp|not breathing|can'?t breathe|struggling to breathe|breathing (funny|hard|heavy|fast|weird|strange)|labou?red breathing|wheez\w*|gasping|choking|hit by|hit a car|run over|attacked|mauled|bitten|bite|caught by a cat|cat (got|caught|brought)|brought (it |me |in )?(a |home)|poison\w*|toxic|ate .{0,20}(chocolate|lily|lilies|rat poison|antifreeze|pill)|overdose|hit (?:the |a |my |our |his |her |its )?window|window strike|flew into|stuck|trapped|drowning|hypothermi\w*|freezing|shock|won'?t move|can'?t stand|can'?t walk|paralys\w*|gushing|severe|critical|24 ?hours?|24\/7|right now|tonight|asap|\d{1,2} ?[ap]m)\b/i;
@@ -220,7 +227,15 @@ export function extractSignals(question: string): Signals {
     NOT_EATING_RE.test(q) && (animals.has('rabbit') || animals.has('small-mammal') || animals.has('bird-companion'));
 
   const emergency = EMERGENCY_RE.test(q) || catAttack || gutStasis;
-  const abuse = ABUSE_RE.test(q) && !ABUSE_VICTIM_RE.test(q);
+  const fleeing = ABUSE_VICTIM_RE.test(q);
+  const abuse = ABUSE_RE.test(q) && !fleeing;
+  // Someone escaping abuse needs a safe place for the pet and a hotline, not
+  // food pantries or a hospital, which is what plain relevance gave them.
+  if (fleeing) {
+    needs.add('owner-support');
+    needs.add('boarding');
+  }
+  const fighting = FIGHTING_RE.test(q);
   const housing = HOUSING_RE.test(q);
   if (housing) needs.add('owner-support');
   // Reporting cruelty is a legal matter, so the tag that carries the police
@@ -244,6 +259,8 @@ export function extractSignals(question: string): Signals {
     zips,
     emergency,
     abuse,
+    fighting,
+    fleeing,
     housing,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
@@ -420,6 +437,18 @@ export class Retriever {
      */
     if (s.abuse && org.needs.includes('legal') && org.needs.includes('referral')) score += 12;
     if (s.abuse && !org.needs.includes('legal')) score -= 15;
+    /*
+     * 1c. Who comes first. 311 is the front door for any cruelty report in
+     *     the city (the ASPCA's own NYC page says so); the dogfighting tip
+     *     line is for organised fighting and was leading every abuse answer.
+     */
+    if (s.abuse && org.id === 'nyc-311') score += 10;
+    if (s.abuse && /dogfight/.test(org.id) && !s.fighting) score -= 12;
+    // Pet-friendly domestic violence shelters and foster programmes carry
+    // both tags; the hotlines carry owner-support with no animal care at all.
+    if (s.fleeing && org.needs.includes('owner-support') && (org.needs.includes('boarding') || /violence/.test(org.id))) score += 20;
+    // Programmes built for survivors outrank general pet boarding.
+    if (s.fleeing && /domestic violence|\bDV\b|survivors?/i.test(`${org.name} ${org.summary}`)) score += 12;
 
     // 2. The right animal. A rabbit question answered with a cat rescue is a
     //    wasted phone call, and species specificity is a real signal: the bird
