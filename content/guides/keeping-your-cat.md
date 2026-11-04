@@ -85,9 +85,9 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Trupanion - trupanion.com - (855) 591-3100. Per-condition deductible; can pay the vet directly at participating clinics; 90% reimbursement.
 - Healthy Paws - healthypaws.com - (855) 898-8991. Annual deductible, unlimited annual coverage, 70-90% reimbursement; fast claims.
 - ASPCA Pet Health Insurance - aspcapetinsurance.com - (866) 204-6764. Customizable; optional wellness add-on; up to 270 days to submit a claim.
-- Nationwide - petinsurance.com - (877) 738-7874. Long-standing; some plans cover lost-pet advertising.
+- Nationwide - petinsurance.com - 1-888-899-4874. Long-standing; some plans cover lost-pet advertising.
 - Pets Best - petsbest.com - (877) 738-7237. Direct-vet-pay option.
-- Others widely reviewed for 2026: Embrace, Figo, Lemonade, Spot, Pumpkin, Fetch, MetLife. Get 2-3 quotes and read each policy's exclusions before choosing.
+- Every insurer selling to New Yorkers, with links and what to ask, is in the guide 'Help paying for care': https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
 - Tip: ask the insurer in writing how they define a pre-existing condition, and whether curable conditions (e.g. an upper-respiratory infection) can be covered later.
 
 Note: some resources here (ASPCA, PAWS NY, ACC, Pets of the Homeless) also appear on the 'Clinics, traps & support' tab; contacts are repeated here so this tab stands alone.

@@ -2935,6 +2935,21 @@
           "evidence_url": "https://scratchpay.com/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Scratchpay's site. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "(855) 727-2395",
+          "evidence_url": "https://scratchpay.com/",
+          "source": "manual",
+          "note": "Read on its own site in a browser on 2026-11-04, with \"available in all states\". Added so the listing and the help-paying guide agree."
+        }
+      ],
+      "phones": [
+        {
+          "value": "8557272395",
+          "display": "(855) 727-2395"
         }
       ]
     },

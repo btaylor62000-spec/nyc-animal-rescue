@@ -44,7 +44,7 @@ Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics tr
 
 ## EXOTIC PET INSURANCE (plan ahead - does NOT cover pre-existing conditions, so start while the animal is young/healthy):
 
-- Nationwide (petinsurance.com, (877) 738-7874) - the main insurer that covers birds, reptiles and many small mammals; the largest participating exotic-vet network. Ask specifically for its Avian & Exotic plan.
+- Nationwide (petinsurance.com, 1-888-899-4874) - the main insurer that covers birds, reptiles and many small mammals; the largest participating exotic-vet network. Ask specifically for its Avian & Exotic plan.
 - Pet Assure (petassure.com) - not insurance but a veterinary DISCOUNT plan (usually 25% off in-house services) that covers virtually ANY species incl. exotics, with no pre-existing-condition exclusion; only works at participating vets - confirm your exotic vet accepts it.
 - Some mainstream insurers (ASPCA Pet Health Insurance, others) cover certain small mammals/rabbits but not all exotics - always confirm species eligibility in writing before enrolling. Exotic wellness add-ons can cover beak/nail trims and routine exotic exams.
 - Ask any insurer, in writing: which species you cover, how you define a pre-existing condition, and whether a curable condition can be covered later. Get 2-3 quotes and read the exclusions.
@@ -56,3 +56,33 @@ Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics tr
 - Feeding Pets of the Homeless (petsofthehomeless.org) and PAWS NY (pawsny.org, (212) 203-4760) help people in crisis or with mobility limits keep and feed their animals; ask about exotics.
 
 How to use aid effectively: get a written itemized estimate + proof of need (SNAP/Medicaid/income), then apply to MULTIPLE programs the same day. For an AMC fund, the pet must be seen at AMC and you must apply within 5 business days of starting treatment - so raise it with AMC staff immediately, not after the fact.
+
+## PET INSURANCE - DOGS AND CATS (checked on each company’s own site, 2026-11-04)
+
+- No insurer pays for a condition your pet already has: insurance is for future bills. Ask before buying: is it sold in New York, how is a pre-existing condition defined, what is the deductible, the share they pay (usually 70-90%) and the yearly limit, and can they pay the vet directly. Get two or three quotes.
+- ASPCA Pet Health Insurance - https://www.aspcapetinsurance.com - also covers some rabbits and small mammals. Its 30-day money-back guarantee is not offered in New York.
+- Embrace - https://www.embracepetinsurance.com - (800) 511-9172.
+- Fetch - https://www.fetchpet.com - (866) 509-0163.
+- Figo - https://figopetinsurance.com
+- Hartville - https://www.hartvillepetinsurance.com
+- Healthy Paws - https://www.healthypawspetinsurance.com
+- Kanguro - https://www.kanguro.com
+- Lemonade - https://www.lemonade.com/pet - (844) 733-8666.
+- MetLife Pet Insurance - https://www.metlifepetinsurance.com
+- Nationwide - https://www.petinsurance.com - 1-888-899-4874. The main insurer that also covers birds, reptiles and other exotic pets.
+- Pets Best - https://www.petsbest.com
+- Prudent Pet - https://www.prudentpet.com - (888) 820-7739.
+- Pumpkin - https://www.pumpkin.care - (866) 273-6369.
+- Spot - https://spotpet.com - (800) 905-1595.
+- Trupanion - https://www.trupanion.com - can pay the vet directly at the checkout at many clinics. Its site refuses automated checks, so its details were not re-read here.
+- AKC Pet Insurance - https://www.akcpetinsurance.com - (866) 725-2747. Its free first 30 days of cover is not offered in New York; ask whether a policy is.
+
+## PAYING A BILL OVER TIME, AND DISCOUNT PLANS (these are not insurance)
+
+- CareCredit - https://www.carecredit.com/vetmed/ - a health credit card many vets accept; check the interest terms before using a promotional offer.
+- Scratchpay - https://scratchpay.com - (855) 727-2395. Payment plans through your vet, available in all states.
+- VetBilling - https://vetbilling.com - payment plans offered through participating vets.
+- Pawp - https://pawp.com - a membership with 24/7 online vet advice and an emergency fund for one emergency a year.
+- Pet Assure - https://www.petassure.com - a discount plan at participating vets, not insurance.
+- Wagmo - https://wagmo.io - wellness plans for routine care.
+- Chewy CarePlus - https://www.chewy.com/app/content/careplus - wellness plans and insurance options through Chewy.
