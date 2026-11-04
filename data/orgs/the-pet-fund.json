@@ -33,7 +33,8 @@
   "phones": [
     {
       "value": "9164436007",
-      "display": "(916) 443-6007"
+      "display": "(916) 443-6007",
+      "label": "Not on its website, which asks people to email first"
     }
   ],
   "emails": [
@@ -52,8 +53,10 @@
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://thepetfund.com/for-pet-owners"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — VET-BILL FINANCIAL AID (when care is unaffordable)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -63,7 +66,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "(916) 443-6007",
+      "to": "(916) 443-6007 (Not on its website, which asks people to email first)",
+      "evidence_url": "https://thepetfund.com/for-pet-owners",
+      "source": "manual",
+      "note": "Its page for pet owners: \"email us at info@thepetfund.com with a description of your animal's medical needs\". Email confirmed. The (916) 443-6007 number is not on any page of its site; kept, labelled, not deleted, for a person to ring."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

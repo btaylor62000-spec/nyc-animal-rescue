@@ -1,7 +1,10 @@
 {
   "id": "aspca-animal-hospital",
-  "name": "ASPCA Animal Hospital (AAH)",
-  "aka": [],
+  "name": "ASPCA Animal Hospital (Manhattan) - low-cost urgent care",
+  "aka": [
+    "ASPCA Animal Hospital (AAH)",
+    "AAH"
+  ],
   "parent_org": null,
   "org_types": [
     "support-program"
@@ -12,7 +15,8 @@
   ],
   "needs": [
     "financial-aid",
-    "owner-support"
+    "owner-support",
+    "low-cost-vet"
   ],
   "boroughs": [
     "manhattan",
@@ -26,21 +30,36 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "8446927722",
+      "display": "(844) 692-7722",
+      "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+    }
+  ],
   "emails": [],
-  "website": "https://aspca.org/nyc",
+  "website": "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc",
   "intake_urls": [],
   "social": [],
-  "geo": null,
-  "address": null,
-  "hours": null,
-  "notes": "low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT/SSI/VA/unemployment/TANF proof). aspca.org/nyc.\n\nlow-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT / SSI / VA / unemployment / TANF proof). Apply via aspca.org/nyc.",
+  "geo": {
+    "lat": 40.78022,
+    "lon": -73.94561,
+    "precision": "address"
+  },
+  "address": {
+    "street": "424 East 92nd Street",
+    "zip": "10128"
+  },
+  "hours": "By appointment only, Monday to Friday; no walk-ins",
+  "notes": "Low-cost urgent care for cats and dogs whose owners live in New York City and have a household income under $50,000, for a qualifying medical problem. 424 East 92nd Street (between 1st and York Avenues), Manhattan. By appointment only, Monday to Friday; no walk-ins, closed on major holidays. Not free: bring an EBT card, SSI award letter, VA benefits letter, proof of unemployment or workers' compensation, or proof of TANF to apply for help with the cost. It does not do check-ups, vaccines or routine dental care. For a medical emergency, go to an emergency hospital.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -49,7 +68,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc",
+      "source": "manual",
+      "note": "Rebuilt from the ASPCA Animal Hospital's own page, read in a browser: address, hours, eligibility, what it does not do."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

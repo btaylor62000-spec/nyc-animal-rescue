@@ -25,30 +25,44 @@
     "staten-island"
   ],
   "citywide": false,
-  "outside_nyc": false,
+  "outside_nyc": true,
   "neighborhoods": null,
   "zips": [],
   "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
   "phones": [
     {
       "value": "5164821101",
-      "display": "(516) 482-1101"
+      "display": "(516) 482-1101",
+      "label": "Main line"
+    },
+    {
+      "value": "5164412726",
+      "display": "(516) 441-2726",
+      "label": "After-hours emergencies, 9pm to midnight (the on-call doctor calls back)"
     }
   ],
   "emails": [],
   "website": "https://birdexoticsvet.com",
   "intake_urls": [],
   "social": [],
-  "geo": null,
-  "address": null,
+  "geo": {
+    "lat": 40.77938,
+    "lon": -73.73232,
+    "precision": "address"
+  },
+  "address": {
+    "street": "333 Great Neck Road",
+    "city": "Great Neck",
+    "zip": "11021"
+  },
   "hours": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
-  "notes": "the only avian & exotic hospital in Nassau; serves all of NYC (Manhattan, Queens, Brooklyn, Bronx, Staten Island) plus Westchester/NJ/CT. Treats birds, reptiles, parrots, sugar gliders, rabbits, chinchillas and other small mammals; offers endoscopy, anesthesia, minimally invasive surgery, emergency services, MEDICAL BOARDING and grooming (birdexoticsvet.com). A strong exotics-only option for outer-borough/LI residents.",
+  "notes": "the only avian & exotic hospital in Nassau; serves all of NYC (Manhattan, Queens, Brooklyn, Bronx, Staten Island) plus Westchester/NJ/CT. Treats birds, reptiles, parrots, sugar gliders, rabbits, chinchillas and other small mammals; offers endoscopy, anesthesia, minimally invasive surgery, emergency services, MEDICAL BOARDING and grooming (birdexoticsvet.com). A strong exotics-only option for outer-borough/LI residents.\n\n333 Great Neck Road, Great Neck, NY 11021, in Nassau County, just over the Queens line. Not a 24-hour hospital: in opening hours call the main line; from 9pm to midnight call the after-hours line and the on-call doctor calls back, and if nobody has called back within 15 minutes go to a 24-hour emergency hospital. From midnight to 9am, go straight to a 24-hour emergency hospital.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
@@ -74,6 +88,24 @@
       "evidence_url": "https://www.birdexoticsvet.com/",
       "source": "manual",
       "note": "The record had no phone number. Its own site says \"To schedule an appointment, call (516) 482-1101\". Added where there was none; nothing replaced."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "address",
+      "from": null,
+      "to": "333 Great Neck Road, Great Neck, NY 11021",
+      "evidence_url": "https://www.birdexoticsvet.com/contact/",
+      "source": "manual",
+      "note": "From its own contact page, read in a browser. Asked for by a reviewer. The entry had shown all five boroughs as though it were in the city; it is in Nassau County."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "(516) 482-1101",
+      "to": "(516) 482-1101; (516) 441-2726",
+      "evidence_url": "https://www.birdexoticsvet.com/emergency-vet/",
+      "source": "manual",
+      "note": "After-hours line from its own emergency page: \"you may reach our emergency phone line between 9 PM and midnight at 516-441-2726\". Added beside the main line."
     }
   ],
   "privacy_hold": false,

@@ -12,14 +12,19 @@
  */
 const OPEN_24H = /\b24\s*\/\s*7\b|\b24\s*h(?:(?:ou)?rs?)?\b|\b24-hour\b/i;
 const NOT_24H = /\bnot\s+24|\bno\b.{0,12}\b24/i;
+// Hours that report a disagreement ("its website says 24 hours, other
+// listings show daytime only") or defer to a phone call. Mentioning "24
+// hours" there is a report of a claim, not a confirmation of it, and reading
+// it as one would put "Open now" on a door that may be locked at 3am.
+const DOUBTFUL = /\bnot\s+confirmed\b|\bunconfirmed\b|\bcall\s+for\s+hours\b|\blist(?:ed|ings?)\b|\bsays?\b/i;
 
 /** True when the hours positively say 24 hours; null hours are not evidence. */
 export function isOpen24h(hours: string | null | undefined): boolean {
   if (!hours) return false;
-  return OPEN_24H.test(hours) && !NOT_24H.test(hours);
+  return OPEN_24H.test(hours) && !NOT_24H.test(hours) && !DOUBTFUL.test(hours);
 }
 
 /** Hours are known and are not around the clock. */
 export function hasLimitedHours(hours: string | null | undefined): boolean {
-  return !!hours && !isOpen24h(hours);
+  return !!hours && !isOpen24h(hours) && !(OPEN_24H.test(hours) && DOUBTFUL.test(hours));
 }

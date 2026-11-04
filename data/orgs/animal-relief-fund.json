@@ -28,7 +28,7 @@
   "region_note": "PET FOOD PANTRIES (specific programs)",
   "phones": [],
   "emails": [],
-  "website": "https://animalrelieffund.org",
+  "website": null,
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -37,8 +37,8 @@
   "notes": "NYC org providing pet food to people in need. animalrelieffund.org.\n\nNYC organization providing pet food to people in need. animalrelieffund.org.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "status": "verify",
+  "status_note": "The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.",
   "source_urls": [],
   "last_verified": null,
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
@@ -47,9 +47,19 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://animalrelieffund.org",
+      "to": null,
+      "evidence_url": "https://www.animalrelieffund.org/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: animalrelieffund.org is \"Animal Rescue Friends, DBA Animal Relief Fund ... Southern Maryland\", an adoption group, not the New York charity founded by Susan Kaufman that supplied pet food to human food pantries. arf-ny.org, found in news coverage, did not answer. Link removed so nobody is sent to the wrong organisation."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -19,3 +19,16 @@ test('hours: unknown hours claim nothing either way', () => {
   assert.equal(isOpen24h(null), false);
   assert.equal(hasLimitedHours(null), false);
 });
+
+test('hours: a reported, unconfirmed "24 hours" is not open around the clock', () => {
+  // Written when a clinic's own site and the other listings disagree. The
+  // phrase "24 hours" is in the text, but as a claim somebody made.
+  for (const h of [
+    'Not confirmed - older listings say 24 hours, recent ones daytime only. Call before going',
+    'Call for hours. Listed as 24 hours elsewhere',
+    'Its website says open 24 hours; other listings give late hours only - call before going',
+  ]) {
+    assert.equal(isOpen24h(h), false, h);
+    assert.equal(hasLimitedHours(h), false, h);
+  }
+});

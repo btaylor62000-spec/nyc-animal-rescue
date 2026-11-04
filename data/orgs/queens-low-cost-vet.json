@@ -25,12 +25,22 @@
   "region_note": "QUEENS - feral-friendly / low-cost clinics",
   "phones": [
     {
+      "value": "7186852332",
+      "display": "(718) 685-2332",
+      "label": "Main number"
+    },
+    {
       "value": "6469947962",
-      "display": "(646) 994-7962"
+      "display": "(646) 994-7962",
+      "label": "Call and text"
     }
   ],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "qvc2827@gmail.com"
+    }
+  ],
+  "website": "https://queensvet.online/",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -45,19 +55,31 @@
   "hours": null,
   "notes": "28-27 Steinway St, Astoria 11103 - 646-994-7962 - low-cost s/n (ask what's included).",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://queensvet.online/"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — QUEENS - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "(646) 994-7962",
+      "to": "(718) 685-2332 (Main number), (646) 994-7962 (Call and text)",
+      "evidence_url": "https://queensvet.online/",
+      "source": "manual",
+      "note": "Found its own website, queensvet.online, and read it in a browser: \"2827 STEINWAY STREET ASTORIA NY, 11103\", \"(718)685-2332 main number\", \"(646)994-7962 CALL&TEXT\", qvc2827@gmail.com. The stored number is confirmed; the main number and email are added from the same page."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

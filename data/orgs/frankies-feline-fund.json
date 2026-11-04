@@ -55,7 +55,7 @@
   "source_urls": [
     "https://frankiesfelinefund.org"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "SENIOR & SPECIAL-NEEDS CATS - rescue, adoption and owner surrender (Manhattan)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -64,6 +64,15 @@
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://frankiesfelinefund.org/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: 917-514-0228 and frankiesfelinefund@gmail.com both on its home page. Same as stored."
+    },
     {
       "date": "2026-09-22",
       "field": "hours",

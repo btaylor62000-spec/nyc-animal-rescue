@@ -4,11 +4,11 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **391** organizations after de-duplication
-- **77** duplicate clusters merged
+- **390** organizations after de-duplication
+- **78** duplicate clusters merged
 - **22** guide pages generated
-- **14** entries flagged as not currently active
-- **3** entries with no way at all to make contact
+- **16** entries flagged as not currently active
+- **4** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 285 |
-| dog | 221 |
+| cat | 287 |
+| dog | 220 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -40,12 +40,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | adoption | 156 |
 | tnr | 95 |
 | foster | 91 |
-| spay-neuter | 72 |
+| spay-neuter | 74 |
 | owner-support | 71 |
 | surrender | 63 |
 | low-cost-vet | 58 |
 | referral | 47 |
-| emergency-vet | 38 |
+| emergency-vet | 37 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
@@ -74,28 +74,28 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 257 |
-| queens | 213 |
-| manhattan | 211 |
-| bronx | 186 |
-| staten-island | 185 |
+| brooklyn | 255 |
+| queens | 211 |
+| manhattan | 210 |
+| bronx | 185 |
+| staten-island | 184 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 184 |
-| Medium | 163 |
+| High | 193 |
+| Medium | 153 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 377 |
-| verify | 7 |
-| hiatus | 3 |
+| active | 374 |
+| verify | 10 |
 | retired | 3 |
+| hiatus | 2 |
 | relocated | 1 |
 
 ## Gaps in coverage
@@ -104,11 +104,12 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (3)
+### No contact method at all (4)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
+- **Animal Relief Fund (ARF)** — PET FOOD PANTRIES (specific programs)
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
@@ -143,13 +144,14 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (81)
+### Never verified (28)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
-- **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
+- **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
+- **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
@@ -157,6 +159,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
@@ -166,7 +169,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (77)
+### Merged (78)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -185,6 +188,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `cat-castle-nyc` ← 2 records
 - `kittykind` ← 2 records
 - `staten-island-hope-animal-rescue` ← 2 records
+- `aspca-community-veterinary-clinic-brooklyn` ← 2 records
 - `aspca-spay-neuter-nyc` ← 2 records
 - `faithful-friends-animal-hospital` ← 2 records
 - `flatbush-vet` ← 2 records
@@ -242,14 +246,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `carecredit` ← 3 records
 - `pets-of-the-homeless` ← 2 records
 - `24petwatch` ← 2 records
-- `aspca-community-veterinary-clinic-brooklyn` ← 2 records
+- `aspca-community-veterinary-clinic` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records
 - `vinegar-hill-veterinary-group` ← 2 records
 
-### Deliberately kept apart (2)
+### Deliberately kept apart (1)
 
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
-- "ASPCA Community Veterinary Clinic" resolved to 3 distinct locations; kept separate rather than merged
 
 ### Conflicts between sources (6)
 
@@ -325,7 +328,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
 | Save an animal from the shelter’s at-risk list | 7523 |
-| Reporting animal abuse or neglect | 5443 |
+| Reporting animal abuse or neglect | 5732 |
 | Animal emergencies and poison control | 3014 |
 | Low-cost clinics and trap banks | 8203 |
 | Community cats, colonies and starting TNR | 6880 |

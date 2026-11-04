@@ -221,10 +221,19 @@ export function applyCorrections(orgs: Org[], submissions: Submission[]): Correc
     }
 
     if (!changed.length) continue;
+    org.community = { added_on: org.community?.added_on ?? null, corrected_on: date };
+    // A person who checked the record after this correction (a manual entry
+    // in the overlay, dated later) has confirmed what is now shown, so the
+    // correction neither clears that date nor downgrades the record. Without
+    // this, one visitor's correction made a record unverifiable for ever: the
+    // overlay is applied first, so every later check was wiped on import.
+    if (org.last_verified && org.last_verified > date) {
+      report.applied.push({ id: org.id, fields: changed });
+      continue;
+    }
     // The record has been touched by someone whose work nothing has checked,
     // so its verification date no longer describes what is shown.
     org.last_verified = null;
-    org.community = { added_on: org.community?.added_on ?? null, corrected_on: date };
 
     // A correction we could not confirm has replaced something that may have
     // been checked. The entry keeps the new details -- the person reporting a

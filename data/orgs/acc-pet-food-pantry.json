@@ -33,7 +33,7 @@
       "value": "communitypets@nycacc.org"
     }
   ],
-  "website": null,
+  "website": "https://www.nycacc.org/programs/community-resources/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -42,9 +42,11 @@
   "notes": "at the ACC Bronx Resource Center; contact for location, hours, eligibility. CommunityPets@nycacc.org - (212) 788-4000.\n\nat the ACC Bronx Resource Center; contact for location, hours, and eligibility. CommunityPets@nycacc.org, (212) 788-4000.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
-  "source_urls": [],
+  "status": "verify",
+  "status_note": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+  "source_urls": [
+    "https://www.nycacc.org/programs/community-resources/"
+  ],
   "last_verified": null,
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
   "source_files": [
@@ -52,9 +54,19 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "evidence_url": "https://www.nycacc.org/programs/community-resources/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04. ACC's Community Resources page gives \"Email us at CommunityPets@nycacc.org\" and its contact page gives 1-212-788-4000, both as stored, but neither page mentions a pet food pantry any more; the Bronx pantry is known only from older news reports. Marked to confirm rather than removed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

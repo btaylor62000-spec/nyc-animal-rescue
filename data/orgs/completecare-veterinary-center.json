@@ -31,7 +31,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://completecarevets.com",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -43,8 +43,8 @@
     "street": "1293 Clove Rd",
     "zip": "10301"
   },
-  "hours": "24 hours",
-  "notes": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
+  "hours": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+  "notes": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -57,9 +57,27 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": "24 hours",
+      "to": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+      "evidence_url": "https://completecarevets.com/contact",
+      "source": "manual",
+      "note": "Its website, completecarevets.com, refused every automated read on 2026-11-04. A search index of its contact page shows \"Open today 08:00 am - 08:00 pm\" at 1293 Clove Road; Yelp shows daytime hours with Sunday closed; it is not on the Mayor's Alliance emergency list. Only Bideawee's old list says 24 hours. The listing no longer claims to be open around the clock. Number and address unchanged. A person should open the site in a normal browser."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
+      "to": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+      "source": "manual",
+      "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

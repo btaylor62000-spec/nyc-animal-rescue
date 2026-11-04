@@ -17,6 +17,8 @@ export interface ChatCard {
   website: string | null;
   boroughs: string[];
   citywide: boolean;
+  /** Based outside the city, though serving it. */
+  outside?: boolean;
   confidence: string;
   status: string;
   statusNote: string | null;

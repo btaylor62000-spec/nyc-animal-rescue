@@ -28,7 +28,7 @@
   "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "phones": [],
   "emails": [],
-  "website": "https://alliephillips.com/saf-tprogram",
+  "website": "https://saftprogram.org/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -39,8 +39,10 @@
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://saftprogram.org/"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -49,7 +51,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://alliephillips.com/saf-tprogram",
+      "to": "https://saftprogram.org/",
+      "evidence_url": "https://saftprogram.org/",
+      "source": "manual",
+      "note": "The old address, alliephillips.com/saf-tprogram, now says \"nothing was found\". Allie Phillips's own site links the programme's current home, saftprogram.org, read in a browser: \"Sheltering Animals & Families Together (SAF-T) launched the global movement to create pet-friendly domestic violence shelters.\""
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

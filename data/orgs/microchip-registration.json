@@ -27,7 +27,7 @@
   "region_note": "VACCINE + MICROCHIP EVENTS",
   "phones": [],
   "emails": [],
-  "website": "https://24pet.com",
+  "website": "https://www.petplace.com/pet-microchip-registry",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -39,7 +39,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — VACCINE + MICROCHIP EVENTS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -47,7 +47,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://24pet.com",
+      "to": "https://www.petplace.com/pet-microchip-registry",
+      "evidence_url": "https://www.24pet.com/",
+      "source": "manual",
+      "note": "24pet.com now says: \"24Petwatch microchip accounts have moved to PetPlace.com\". Linked to the PetPlace registry, the same page the 24Petwatch entry uses."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

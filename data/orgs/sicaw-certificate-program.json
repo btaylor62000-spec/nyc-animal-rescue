@@ -21,9 +21,19 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "STATEN ISLAND - feral-friendly / low-cost clinics",
-  "phones": [],
-  "emails": [],
-  "website": "https://sicawsaves.org/resources",
+  "phones": [
+    {
+      "value": "7189485623",
+      "display": "(718) 948-5623",
+      "label": "SICAW, on its website"
+    }
+  ],
+  "emails": [
+    {
+      "value": "sicawsaves@gmail.com"
+    }
+  ],
+  "website": "https://www.sicawsaves.org/contact",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -32,18 +42,30 @@
   "notes": "low-cost s/n certificates w/ partner SI vets (under half normal price); apply at sicawsaves.org/resources.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
-  "source_urls": [],
+  "status": "verify",
+  "status_note": "SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.",
+  "source_urls": [
+    "https://www.sicawsaves.org/"
+  ],
   "last_verified": null,
   "section": "Clinics, traps & support — STATEN ISLAND - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "evidence_url": "https://www.sicawsaves.org/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04. sicawsaves.org/resources returns \"We couldn't find the page\"; its Resources link now opens a disaster-plan page; nothing on the site mentions certificates or spay/neuter. SICAW itself is active: (718) 948-5623 and sicawsaves@gmail.com from its own footer are added so someone can ask."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

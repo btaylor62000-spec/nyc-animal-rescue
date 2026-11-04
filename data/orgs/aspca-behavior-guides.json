@@ -39,7 +39,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — BEHAVIOR SUPPORT (a common, workable reason owners seek help)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -47,7 +47,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.aspca.org/pet-care/dog-care",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: The ASPCA's dog care page, with health and behaviour guides. Working."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

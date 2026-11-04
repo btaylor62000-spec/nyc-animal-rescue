@@ -14,12 +14,16 @@ const newlyFound = isNewlyFound(org);
 const byVisitor = org.community?.added_on ?? null;
 const correctedByVisitor = org.community?.corrected_on ?? null;
 
-const where = org.citywide
-  ? 'All five boroughs'
-  : org.boroughs.length
-    ? org.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ')
-    : org.outside_nyc
-      ? 'Outside NYC, serves New Yorkers'
+// Based outside the city comes first: a Great Neck clinic or a Connecticut
+// parrot rescue that serves New Yorkers was labelled "All five boroughs",
+// which reads as though it were round the corner. It still appears in every
+// borough filter, because it does serve them.
+const where = org.outside_nyc
+  ? 'Outside NYC, serves New Yorkers'
+  : org.citywide
+    ? 'All five boroughs'
+    : org.boroughs.length
+      ? org.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ')
       : 'Area not recorded';
 
 // A card shows what someone needs to decide whether to tap: what it is, where

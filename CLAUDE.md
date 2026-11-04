@@ -20,7 +20,7 @@ production; nothing here is aspirational.
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 68 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
 | Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's at-risk list, and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
-| Directory | 385 listed of 391 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 34 emergency vets, 24 of them open 24/7, every one with hours. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Directory | 384 listed of 390 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
@@ -94,6 +94,24 @@ Ordered by how much harm it prevents, not by size.
    as described in *Sites the weekly check cannot read*. The first weekly run
    under the blocked / gone / down rules, and with the address notes, has not
    happened yet: read that report closely.
+
+   **The never-confirmed listings were re-checked on 2026-11-04**, every one
+   read in a browser on its own site (72 then; 28 still have no check date).
+   What is left needs a phone call or a normal browser, not a robot:
+   - *Ring them* (hours or number in doubt): Urgent Vets Queens (its site
+     says 24 hours and gives (718) 305-4791; the Mayor's Alliance gives
+     limited hours and (718) 507-5600 -- both published), CompleteCare
+     (Staten Island), Elmhurst Animal Emergency, Fifth Avenue Veterinary
+     Hospital, St. Mina, the HSUS dogfighting line (its own 2025 poster
+     gives only an email), The Pet Fund's (916) number (its site says email).
+   - *Marked "confirm before relying"*: Animal Relief Fund (its old domain is
+     now a Maryland rescue), SICAW's certificates (no longer on its site),
+     ACC's pet food pantry (no longer on ACC's pages).
+   - *Sites that refuse robots*: nyc.gov (four entries), Brown Dog, Prince
+     Chunk, MAMA, Vetco, Safe Havens Mapping, Safe Place for Pets, plus Kiso's
+     and Island Wildlife (Facebook only).
+   - The five pet food pantries with no website stay as the city listed them
+     in October: that list is the source, and ringing is the only check.
 
 4. **Things a reviewer raised that could not be confirmed**, left out on
    purpose until someone can: NYC 211, Bideawee's and the ASPCA's surrender
@@ -184,6 +202,11 @@ read them.
   anything a reader can see. (It is applied by spreading the entry onto the
   record, so `address`, `social` and `needs` work too; a name or alias change
   belongs in `scripts/import/overrides.ts`.)
+- **When a record's id goes away, add a redirect.** Merging two entries or
+  folding a duplicate changes which id survives, and the old `/org/<id>` page
+  stops being built. `public/_redirects` sends each retired id to its
+  successor (Cloudflare Pages reads it), so shared and bookmarked links keep
+  working. Compare `git ls-tree` of `data/orgs/` before and after to find them.
 - **A record's `status_note` is only rendered when the record is not active.**
   A caveat about an operating organization belongs in `notes`.
 
@@ -591,6 +614,19 @@ only breaks ties.
   tick "Use my location". The directory keeps it on the device; the assistant
   receives it rounded to two decimal places (about a kilometre), uses it to
   order results, and never logs or stores it.
+- **A phone can report the wrong place.** `src/data/position.ts` checks every
+  position before it is used, in the directory and the assistant alike: more
+  than 30 miles from the city (a VPN, a stale fix) is not used and the reader
+  is told so; a fix vaguer than about 2 miles is used but flagged; blocked or
+  failed location says so and points to the zip box. Location only ever
+  orders results -- nothing is hidden by it -- so a bad position costs order,
+  never information. Tested 2026-11-04 with location ON on emulated iPhone and
+  Android, five boroughs, 11pm and 3pm, plus blocked, Chicago and vague fixes.
+- **Testing the assistant's server code.** The bot check refuses automated
+  browsers, so the deployed assistant cannot be driven from a script.
+  `npx tsx scripts/dev/chat-harness.ts "question" "lat,lon" "ISO time"` runs
+  the real `/api/chat` handler locally without Turnstile or the model and
+  prints the cards it would send, with distance and open-now.
 - **No location services needed.** Many people never turn them on. A zip typed
   into "or nearest to zip" in the directory, or written in a question to the
   assistant ("I'm in 11215"), is measured from that zip's centre

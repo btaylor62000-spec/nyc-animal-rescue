@@ -44,17 +44,29 @@
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — CITYWIDE - free / low-cost SPAY-NEUTER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Its certificate page: \"call 1-800-321-PETS (7387) M-F, 9-5 EST\". Same number as stored."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

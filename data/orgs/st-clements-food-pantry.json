@@ -54,13 +54,13 @@
   "source_urls": [
     "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "City pet food pantry programme",
   "source_files": [
     "pet-food-pantries"
   ],
   "last_checked": null,
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -80,6 +80,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "The number the city's own pet food pantry map lists for this site."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.stclementsnyc.org/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Its site shows 212-246-7277. Same as stored."
     }
   ],
   "privacy_hold": false,

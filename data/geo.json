@@ -31,6 +31,18 @@
    "lon": -73.88102,
    "matched": "9 ODELL PLZ, YONKERS, NY, 10701"
   },
+  "aspca-animal-hospital": {
+   "query": "424 East 92nd Street, NY 10128",
+   "lat": 40.78022,
+   "lon": -73.94561,
+   "matched": "424 E 92ND ST, NEW YORK, NY, 10128"
+  },
+  "aspca-community-veterinary-clinic": {
+   "query": "501 E 161st St, Bronx, NY 10451",
+   "lat": 40.82321,
+   "lon": -73.91031,
+   "matched": "501 E 161ST ST, BRONX, NY, 10451"
+  },
   "astoria-animal-society": {
    "query": "30-89 38th Street, Astoria, NY 11103",
    "lat": 40.76197,
@@ -204,6 +216,12 @@
    "lat": 40.87727,
    "lon": -73.90075,
    "matched": "3067 KINGSBRIDGE TER, BRONX, NY, 10463"
+  },
+  "long-island-bird-and-exotics-vet-clinic": {
+   "query": "333 Great Neck Road, Great Neck, NY 11021",
+   "lat": 40.77938,
+   "lon": -73.73232,
+   "matched": "333 GREAT NECK RD, GREAT NECK, NY, 11021"
   },
   "low-cost-vet-mobile": {
    "query": "159-19 Horace Harding Expressway, Fresh Meadows, NY 11365",
@@ -404,7 +422,7 @@
    "matched": "609 CANTIAGUE ROCK RD, WESTBURY, NY, 11590"
   },
   "veg": {
-   "query": "1215 2nd Ave, New York, NY",
+   "query": "1215 2nd Avenue, New York, NY 10065",
    "lat": 40.76356,
    "lon": -73.96228,
    "matched": "1215 2ND AVE, NEW YORK, NY, 10065"
