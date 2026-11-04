@@ -22,6 +22,7 @@ import { GUIDE_ORG_SOURCES, extractGuideOrgs } from './guide-orgs.ts';
 import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES } from './overrides.ts';
+import { GUIDANCE_ONLY } from '../../src/data/listing.ts';
 import { applyPrivacyHolds } from './privacy.ts';
 import { buildAllGuidePages, unusedTabs, writeGuidePages } from './guide-pages.ts';
 import { ORG_SCHEMA } from './schema.ts';
@@ -287,11 +288,12 @@ function main(): void {
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;
+  const guidanceOut = sorted.filter((o) => GUIDANCE_ONLY.has(o.id)).length;
   const unverifiedOut = sorted.filter((o) => o.check_status === 'new-unverified').length;
   console.log(
     `Wrote data/chat-corpus.json (${orgCorpus.length} organizations, ` +
       `${guideCorpus.reduce((n, g) => n + g.chunks.length, 0)} guide sections; ` +
-      `${closedOut} closed or relocated and ${unverifiedOut} not yet verified are excluded)`,
+      `${closedOut} closed or relocated, ${guidanceOut} guidance-only reporting lines and ${unverifiedOut} not yet verified are excluded)`,
   );
 
   const report = buildReport({

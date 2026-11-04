@@ -8,6 +8,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import type { Animal, Borough, Confidence, Need, Org, OrgType } from '../types.ts';
 import { ANIMALS, BOROUGHS, NEEDS } from '../types.ts';
 import { keywordsFor } from './synonyms.ts';
+import { isListed } from './listing.ts';
 
 const DIR = 'data/orgs';
 
@@ -31,7 +32,7 @@ export const ORGS_BY_ID = new Map(ORGS.map((o) => [o.id, o]));
  * built, so an old link or a search engine lands on "this has closed, go here
  * instead" rather than nothing. Paused groups stay listed: they may resume.
  */
-export const LISTED_ORGS: Org[] = ORGS.filter((o) => o.status !== 'retired' && o.status !== 'relocated');
+export const LISTED_ORGS: Org[] = ORGS.filter(isListed);
 
 /**
  * A short fingerprint of the current data, appended to the search index URL.

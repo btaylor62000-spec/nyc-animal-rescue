@@ -84,8 +84,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 178 |
-| Medium | 164 |
+| High | 179 |
+| Medium | 163 |
 | Low | 44 |
 
 ### By operating status

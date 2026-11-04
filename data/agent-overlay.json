@@ -261,10 +261,37 @@
           "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
           "source": "manual",
           "note": "Website added from the reviewer’s 2026-09-21 document and confirmed on the page, which also confirms the address and number. The page describes dog and cat care only, so the wildlife claim she asked us to check is not applied."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(212) 501-9600",
+          "to": "(212) 501-9600; (332) 248-0876",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "Its own page, read in a browser, shows \"Call (212) 501-9600\" and also \"Phone: (332) 248-0876\" (fax (212) 501-9349, not listed). Both numbers kept; the existing one was not replaced. Facebook page from the same site."
         }
       ],
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "2125019600",
+          "display": "(212) 501-9600"
+        },
+        {
+          "value": "3322480876",
+          "display": "(332) 248-0876"
+        }
+      ],
+      "social": [
+        {
+          "platform": "facebook",
+          "handle": "animalgeneral",
+          "url": "https://www.facebook.com/animalgeneral/"
+        }
+      ],
+      "confidence": "High"
     },
     "animal-haven": {
       "last_checked": "2026-09-22",

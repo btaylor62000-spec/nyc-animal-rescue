@@ -15,6 +15,8 @@
  */
 import type { Org } from '../../src/types.ts';
 import { keywordsFor } from '../../src/data/synonyms.ts';
+import { isListed } from '../../src/data/listing.ts';
+
 
 export interface CorpusOrg {
   id: string;
@@ -52,8 +54,6 @@ export interface CorpusGuide {
   chunks: Array<{ heading: string; text: string }>;
 }
 
-/** Statuses the assistant must never recommend. */
-const EXCLUDED: ReadonlyArray<Org['status']> = ['retired', 'relocated'];
 
 /**
  * A newly discovered organization is real, but nothing about it has been
@@ -76,7 +76,8 @@ function firstSentences(text: string | null, max = 200): string {
 
 export function buildOrgCorpus(orgs: Org[]): CorpusOrg[] {
   return orgs
-    .filter((o) => !EXCLUDED.includes(o.status) && !isUnverifiedDiscovery(o))
+    // The same rule as the directory (src/data/listing.ts), so the two agree.
+    .filter((o) => isListed(o) && !isUnverifiedDiscovery(o))
     .map((o) => ({
       id: o.id,
       name: o.name,
