@@ -31,27 +31,39 @@
       "value": "tnrtrapbank@aspca.org"
     }
   ],
-  "website": null,
+  "website": "https://www.aspca.org/veterinary-services/rescue-professionals",
   "intake_urls": [],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "free for registered rescuers (RSS); email TNRtrapbank@aspca.org.",
+  "notes": "The ASPCA rents traps, dividers and carriers to TNR-certified rescuers who have an ASPCA Terms of Use Agreement on file. Book through the Rescuer Services Scheduler or by email to TNRtrapbank@aspca.org; pick-up and return Mon-Fri 10:30am-3pm in East New York, Brooklyn; $50 refundable deposit per trap or carrier, cash or check; keep for 14 days. The page says the ASPCA is taking on new rescue partners in Los Angeles and Miami, not New York, so this is for rescuers who already have an account. Everyone else: see the other trap banks in the TNR guide.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.aspca.org/veterinary-services/rescue-professionals"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "free for registered rescuers (RSS); email TNRtrapbank@aspca.org.",
+      "to": "The ASPCA rents traps, dividers and carriers to TNR-certified rescuers who have an ASPCA Terms of Use Agreement on file. Book through the Rescuer Services Scheduler or by email to TNRtrapbank@aspca.org; pick-up and return Mon-Fri 10:30am-3pm in East New York, Brooklyn; $50 refundable deposit per trap or carrier, cash or check; keep for 14 days. The page says the ASPCA is taking on new rescue partners in Los Angeles and Miami, not New York, so this is for rescuers who already have an account. Everyone else: see the other trap banks in the TNR guide.",
+      "evidence_url": "https://www.aspca.org/veterinary-services/rescue-professionals",
+      "source": "manual",
+      "note": "Read on the ASPCA's rescue professionals page on 2026-11-04 (NYC tab): equipment rental terms, hours, deposit, and the TNRtrapbank@aspca.org address. The old note said \"free\"; it takes a $50 refundable deposit."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

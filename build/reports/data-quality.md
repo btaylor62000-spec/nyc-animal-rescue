@@ -7,7 +7,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **390** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **15** entries flagged as not currently active
+- **16** entries flagged as not currently active
 - **4** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -84,16 +84,16 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 190 |
-| Medium | 156 |
+| High | 193 |
+| Medium | 153 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 375 |
-| verify | 9 |
+| active | 374 |
+| verify | 10 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -144,12 +144,13 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (32)
+### Never verified (28)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
+- **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
 - **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.

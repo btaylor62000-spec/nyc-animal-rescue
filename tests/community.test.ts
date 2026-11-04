@@ -180,3 +180,28 @@ test('a confirmed correction keeps its confidence', () => {
   assert.equal(target.confidence, 'High');
   assert.equal(report.unconfirmed.length, 0);
 });
+
+test('a person\'s check made after a correction is kept, not wiped by it', () => {
+  // The overlay is applied before corrections, so a later manual check
+  // arrives on the record first. It confirmed what the correction shows.
+  const record = org({ id: 'some-rescue', phones: [{ value: '7185550142', display: '(718) 555-0142' }], last_verified: '2026-11-04', confidence: 'High' });
+  const fix: Submission = {
+    version: 1,
+    kind: 'correct',
+    org_id: 'some-rescue',
+    submitted_at: NOW,
+    submitter_email: null,
+    reason: null,
+    fields: { phone: '7185550999' },
+    check: { page: null, phone_seen: false, email_seen: false, site_read: false, note: null, checked_at: NOW },
+  };
+  applyCorrections([record], [fix]);
+  assert.equal(record.last_verified, '2026-11-04');
+  assert.equal(record.confidence, 'High');
+  assert.equal(record.community?.corrected_on, '2026-09-22');
+
+  const older = org({ id: 'some-rescue', phones: [{ value: '7185550142', display: '(718) 555-0142' }], last_verified: '2026-09-01', confidence: 'High' });
+  applyCorrections([older], [fix]);
+  assert.equal(older.last_verified, null, 'a check from before the correction says nothing about it');
+  assert.equal(older.confidence, 'Low');
+});

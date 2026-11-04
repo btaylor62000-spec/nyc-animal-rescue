@@ -125,7 +125,24 @@
     },
     "acc-pet-food-pantry": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "needs-review",
+      "website": "https://www.nycacc.org/programs/community-resources/",
+      "status": "verify",
+      "status_note": "ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.",
+      "source_urls": [
+        "https://www.nycacc.org/programs/community-resources/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "verify",
+          "evidence_url": "https://www.nycacc.org/programs/community-resources/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04. ACC's Community Resources page gives \"Email us at CommunityPets@nycacc.org\" and its contact page gives 1-212-788-4000, both as stored, but neither page mentions a pet food pantry any more; the Bronx pantry is known only from older news reports. Marked to confirm rather than removed."
+        }
+      ]
     },
     "acc-working-cats-program": {
       "last_checked": "2026-09-22",
@@ -645,7 +662,25 @@
     },
     "aspca-trap-bank": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "website": "https://www.aspca.org/veterinary-services/rescue-professionals",
+      "notes": "The ASPCA rents traps, dividers and carriers to TNR-certified rescuers who have an ASPCA Terms of Use Agreement on file. Book through the Rescuer Services Scheduler or by email to TNRtrapbank@aspca.org; pick-up and return Mon-Fri 10:30am-3pm in East New York, Brooklyn; $50 refundable deposit per trap or carrier, cash or check; keep for 14 days. The page says the ASPCA is taking on new rescue partners in Los Angeles and Miami, not New York, so this is for rescuers who already have an account. Everyone else: see the other trap banks in the TNR guide.",
+      "last_verified": "2026-11-04",
+      "confidence": "High",
+      "source_urls": [
+        "https://www.aspca.org/veterinary-services/rescue-professionals"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "free for registered rescuers (RSS); email TNRtrapbank@aspca.org.",
+          "to": "The ASPCA rents traps, dividers and carriers to TNR-certified rescuers who have an ASPCA Terms of Use Agreement on file. Book through the Rescuer Services Scheduler or by email to TNRtrapbank@aspca.org; pick-up and return Mon-Fri 10:30am-3pm in East New York, Brooklyn; $50 refundable deposit per trap or carrier, cash or check; keep for 14 days. The page says the ASPCA is taking on new rescue partners in Los Angeles and Miami, not New York, so this is for rescuers who already have an account. Everyone else: see the other trap banks in the TNR guide.",
+          "evidence_url": "https://www.aspca.org/veterinary-services/rescue-professionals",
+          "source": "manual",
+          "note": "Read on the ASPCA's rescue professionals page on 2026-11-04 (NYC tab): equipment rental terms, hours, deposit, and the TNRtrapbank@aspca.org address. The old note said \"free\"; it takes a $50 refundable deposit."
+        }
+      ]
     },
     "astoria-cat-rescue-inc": {
       "last_checked": "2026-09-22",
@@ -1606,11 +1641,38 @@
     },
     "island-bird-cat-and-dog-vet-group": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "website": "https://www.islandbirdcatdogvetgroup.com/",
+      "last_verified": "2026-11-04",
+      "confidence": "High",
+      "source_urls": [
+        "https://www.islandbirdcatdogvetgroup.com/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.islandbirdcatdogvetgroup.com/",
+          "evidence_url": "https://www.islandbirdcatdogvetgroup.com/",
+          "source": "manual",
+          "note": "Found its own website and read it in a browser: Island Bird Cat & Dog Veterinary Group, Staten Island, the practice of Dr. Frank Scandaglia, (718) 370-9472. Same number as stored. It also specialises in birds and exotic pets."
+        }
+      ]
     },
     "island-wildlife-inc": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "source": "manual",
+          "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+        }
+      ]
     },
     "itty-bitty-city-kitties": {
       "last_checked": "2026-09-22",
@@ -2402,7 +2464,41 @@
     },
     "queens-low-cost-vet": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "website": "https://queensvet.online/",
+      "phones": [
+        {
+          "value": "7186852332",
+          "display": "(718) 685-2332",
+          "label": "Main number"
+        },
+        {
+          "value": "6469947962",
+          "display": "(646) 994-7962",
+          "label": "Call and text"
+        }
+      ],
+      "emails": [
+        {
+          "value": "qvc2827@gmail.com"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High",
+      "source_urls": [
+        "https://queensvet.online/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(646) 994-7962",
+          "to": "(718) 685-2332 (Main number), (646) 994-7962 (Call and text)",
+          "evidence_url": "https://queensvet.online/",
+          "source": "manual",
+          "note": "Found its own website, queensvet.online, and read it in a browser: \"2827 STEINWAY STREET ASTORIA NY, 11103\", \"(718)685-2332 main number\", \"(646)994-7962 CALL&TEXT\", qvc2827@gmail.com. The stored number is confirmed; the main number and email are added from the same page."
+        }
+      ]
     },
     "rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society": {
       "last_checked": "2026-09-22",
@@ -2484,7 +2580,17 @@
     },
     "safe-haven-program-map-foster": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "source": "manual",
+          "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+        }
+      ]
     },
     "safe-havens-mapping-project": {
       "last_checked": "2026-09-22",
@@ -2670,7 +2776,17 @@
     },
     "st-mina-animal-clinic": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "source": "manual",
+          "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+        }
+      ]
     },
     "staten-island-bird-club": {
       "last_checked": "2026-09-22",

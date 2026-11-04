@@ -30,7 +30,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://www.islandbirdcatdogvetgroup.com/",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -45,19 +45,31 @@
   "hours": null,
   "notes": "375 Manor Rd 10314 - (718) 370-9472 - feral-friendly (Bideawee list).",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.islandbirdcatdogvetgroup.com/"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — STATEN ISLAND - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://www.islandbirdcatdogvetgroup.com/",
+      "evidence_url": "https://www.islandbirdcatdogvetgroup.com/",
+      "source": "manual",
+      "note": "Found its own website and read it in a browser: Island Bird Cat & Dog Veterinary Group, Staten Island, the practice of Dr. Frank Scandaglia, (718) 370-9472. Same number as stored. It also specialises in birds and exotic pets."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

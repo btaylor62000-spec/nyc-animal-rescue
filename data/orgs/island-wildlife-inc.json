@@ -60,9 +60,18 @@
     "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "check_status",
+      "from": null,
+      "to": "manual-only",
+      "source": "manual",
+      "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

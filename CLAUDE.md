@@ -95,6 +95,24 @@ Ordered by how much harm it prevents, not by size.
    under the blocked / gone / down rules, and with the address notes, has not
    happened yet: read that report closely.
 
+   **The never-confirmed listings were re-checked on 2026-11-04**, every one
+   read in a browser on its own site (72 then; 28 still have no check date).
+   What is left needs a phone call or a normal browser, not a robot:
+   - *Ring them* (hours or number in doubt): Urgent Vets Queens (its site
+     says 24 hours and gives (718) 305-4791; the Mayor's Alliance gives
+     limited hours and (718) 507-5600 -- both published), CompleteCare
+     (Staten Island), Elmhurst Animal Emergency, Fifth Avenue Veterinary
+     Hospital, St. Mina, the HSUS dogfighting line (its own 2025 poster
+     gives only an email), The Pet Fund's (916) number (its site says email).
+   - *Marked "confirm before relying"*: Animal Relief Fund (its old domain is
+     now a Maryland rescue), SICAW's certificates (no longer on its site),
+     ACC's pet food pantry (no longer on ACC's pages).
+   - *Sites that refuse robots*: nyc.gov (four entries), Brown Dog, Prince
+     Chunk, MAMA, Vetco, Safe Havens Mapping, Safe Place for Pets, plus Kiso's
+     and Island Wildlife (Facebook only).
+   - The five pet food pantries with no website stay as the city listed them
+     in October: that list is the source, and ringing is the only check.
+
 4. **Things a reviewer raised that could not be confirmed**, left out on
    purpose until someone can: NYC 211, Bideawee's and the ASPCA's surrender
    lines (both pages are gone), Vet-I-Care (broken certificate), DEC's

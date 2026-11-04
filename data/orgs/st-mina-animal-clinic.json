@@ -55,9 +55,18 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "check_status",
+      "from": null,
+      "to": "manual-only",
+      "source": "manual",
+      "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
