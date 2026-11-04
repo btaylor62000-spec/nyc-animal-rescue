@@ -58,7 +58,10 @@ export const NEED_SYNONYMS: Record<Need, string> = {
   microchip: 'microchip chip scanner registry register chip id tag',
   'behavior-training': 'behaviour behavior training trainer aggression biting litter box spraying barking socialisation socialization',
   'financial-aid': 'financial aid grant fund help paying vet bill cannot afford money assistance copay',
-  'food-assistance': 'pet food pantry food bank free food kibble supplies litter feed feeding hungry starving afford to feed',
+  // No bare "free": the list is read word by word, so "free food" put "free"
+  // here and "is there a free vet for my cat" was answered with food pantries.
+  // "food" still catches "free food".
+  'food-assistance': 'pet food pantry food bank kibble supplies litter feed feeding hungry starving afford to feed',
   'owner-support': 'keep my pet surrender prevention crisis housing eviction homeless hospital hospitalised hospitalized domestic violence abuse abusive partner fleeing escape safe temporary care deployment rehab treatment',
   boarding: 'boarding kennel pet sitter sitting daycare while away vacation',
   sanctuary: 'sanctuary lifelong permanent home unadoptable non releasable',
