@@ -71,7 +71,19 @@ Ordered by how much harm it prevents, not by size.
    `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
    saying what was read, then `npm run import` (see item 2).
 
-1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
+1. **The weekly check had not saved anything since 2026-09-21.** Every run
+   from 2026-09-28 to 2026-11-02 tripped its safety valve (over 15% flagged)
+   and exited before committing, discarding about a hundred re-confirmations
+   a week. On 2026-11-04, 233 of 395 listings were last confirmed 31-90 days
+   earlier, 125 within the week, 37 never. Fixed the same day (the valve now
+   also needs low re-confirmations; harmless redirects and Facebook pages
+   are not flags). **After merging, run "Weekly data check" by hand from the
+   Actions tab** and read its report: it is the first run that can save.
+   `.github/workflows/site-check.yml` now also drives the live site weekly
+   (zip and borough searches, location on/blocked/far/vague); a failure
+   emails the owner.
+
+1b. **Confirm the weekly check can open its pull request.** As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
    still make (a `verify` status after three dead weeks, and lifting it) goes
    to the `weekly-check` branch as a PR; bookkeeping-only weeks still
