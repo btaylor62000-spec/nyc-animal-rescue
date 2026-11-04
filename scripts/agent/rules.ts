@@ -52,8 +52,13 @@ export interface Evidence {
  * conclusion.
  */
 export type Decision =
-  /** Nothing to do. `verified` means the stored contacts were seen on their own site. */
-  | { kind: 'ok'; verified: boolean }
+  /**
+   * Nothing to do. `verified` means the stored contacts were seen on their own
+   * site. `addressNotSeen` is a note for a person, not a flag: plenty of sites
+   * show their address only on a map, so it must never count towards the
+   * safety valve or change anything.
+   */
+  | { kind: 'ok'; verified: boolean; addressNotSeen?: string }
   /** Something a person should look at. Never applied automatically. */
   | { kind: 'needs-review'; reason: string; evidenceUrl?: string; quote?: string }
   /**
@@ -204,6 +209,34 @@ export function pageProblem(page: PageEvidence): PageProblem {
   if (page.ok && page.text.length < 1500 && BOT_WALL.test(page.text)) return 'blocked';
   if (!page.ok) return 'down';
   return null;
+}
+
+// --- is the stored street address still on their site? ---------------------
+
+/*
+ * VERG North sat in the directory for seven weeks at 318 Warren St after
+ * VERG's own site had stopped listing it: the check confirmed the phone
+ * number, which the old and new addresses shared, and never looked at the
+ * address. For a place someone travels to, that is the detail that matters.
+ */
+const ORDINALS: Record<string, string> = {
+  '1st': 'first', '2nd': 'second', '3rd': 'third', '4th': 'fourth', '5th': 'fifth',
+  '6th': 'sixth', '7th': 'seventh', '8th': 'eighth', '9th': 'ninth', '10th': 'tenth',
+  '11th': 'eleventh', '12th': 'twelfth',
+};
+const DIRECTIONS = new Set(['e', 'w', 'n', 's', 'east', 'west', 'north', 'south']);
+
+/** True or false when the street can be looked for; null when it cannot. */
+export function addressOnPage(street: string, pageText: string): boolean | null {
+  const m = street.trim().match(/^([\d-]+[a-z]?)\s+(.+)$/i);
+  if (!m) return null;
+  const number = m[1]!;
+  const words = m[2]!.toLowerCase().replace(/[.,]/g, '').split(/\s+/).filter((w) => !DIRECTIONS.has(w));
+  const core = words[0];
+  if (!core) return null;
+  const alternatives = [core, ORDINALS[core]].filter(Boolean).map((w) => w!.replace(/[-]/g, '\\-'));
+  const near = new RegExp(`(^|[^\\d-])${number.replace(/-/g, '\\-')}\\b[^\\n]{0,40}?\\b(${alternatives.join('|')})\\b`, 'i');
+  return near.test(pageText);
 }
 
 function daysBetween(from: string, to: string): number {
@@ -413,7 +446,9 @@ export function decide(org: Org, evidence: Evidence): Decision {
     return { kind: 'needs-review', reason: 'Their site returned a page with almost no readable text.', evidenceUrl };
   }
 
-  return { kind: 'ok', verified };
+  const street = org.address?.street;
+  const seen = street ? addressOnPage(street, pageText) : null;
+  return seen === false ? { kind: 'ok', verified, addressNotSeen: street! } : { kind: 'ok', verified };
 }
 
 // --- turning a decision into a record change -------------------------------

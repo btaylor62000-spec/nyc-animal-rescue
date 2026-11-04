@@ -152,8 +152,13 @@ async function main(): Promise<void> {
     proposed: 0,
     flags: [],
     manualOnly: [],
+    addressesNotSeen: [],
     safetyValveTripped: false,
   };
+
+  const siteCount = new Map<string, number>();
+  for (const o of loadOrgs()) if (o.website) siteCount.set(o.website, (siteCount.get(o.website) ?? 0) + 1);
+  const sharedSites = new Set([...siteCount].filter(([, n]) => n > 1).map(([site]) => site));
 
   const patches = new Map<string, OverlayEntry>();
 
@@ -167,6 +172,12 @@ async function main(): Promise<void> {
       case 'ok':
         summary.ok++;
         if (decision.verified) summary.verified++;
+        // A website several listings share is a chain's home page, which
+        // names no one branch: all four BluePearl hospitals were reported
+        // as "address not seen" against bluepearlvet.com.
+        if (decision.addressNotSeen && !sharedSites.has(org.website ?? '')) {
+          summary.addressesNotSeen.push({ id: org.id, name: org.name, street: decision.addressNotSeen, website: org.website });
+        }
         break;
       case 'needs-review':
         summary.needsReview++;
@@ -218,7 +229,7 @@ async function main(): Promise<void> {
   // in hand, and a commit message built out of shell quoting is a bug waiting
   // to happen.
   writeFileSync(COMMIT_MESSAGE_PATH, `${commitMessage(summary)}\n`, 'utf8');
-  const { flags: _flags, manualOnly: _manualOnly, ...counts } = summary;
+  const { flags: _flags, manualOnly: _manualOnly, addressesNotSeen: _addresses, ...counts } = summary;
   writeFileSync(SUMMARY_PATH, `${JSON.stringify(counts, null, 2)}\n`, 'utf8');
 
   if (!dryRun) {

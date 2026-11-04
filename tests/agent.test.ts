@@ -6,7 +6,7 @@ import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
 import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
 import { fetchPage, parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { UNREACHABLE_NOTE, decide, isCheckable, isPlaceholderPhone, leavesTheCity, pageProblem, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
+import { UNREACHABLE_NOTE, addressOnPage, decide, isCheckable, isPlaceholderPhone, leavesTheCity, pageProblem, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -542,4 +542,31 @@ test('the network reason survives the fetch, so a dead domain can be told from a
   };
   const page = await fetchPage('https://no-such-rescue.example/', dead as unknown as typeof fetch);
   assert.match(page.error ?? '', /ENOTFOUND/);
+});
+
+// --- addresses ----------------------------------------------------------------
+
+test('a stored address is recognised however the site writes it', () => {
+  assert.equal(addressOnPage('196 4th Ave', '196 4th Ave, Brooklyn, NY 11217'), true);
+  assert.equal(addressOnPage('196 4th Ave', 'Visit us at 196 Fourth Avenue in Park Slope'), true);
+  assert.equal(addressOnPage('3800 E Tremont Ave', '3800 East Tremont Avenue, Bronx'), true);
+  assert.equal(addressOnPage('32-33 Junction Blvd', '32-33 Junction Boulevard, East Elmhurst'), true);
+});
+
+test('a moved address is noticed, and a lookalike number is not mistaken for it', () => {
+  // VERG's site after it left Warren St.
+  assert.equal(addressOnPage('318 Warren St', 'Call Us at (718) 522-9400. 196 4th Ave, Brooklyn, NY 11217'), false);
+  assert.equal(addressOnPage('96 4th Ave', '196 4th Ave, Brooklyn'), false);
+  assert.equal(addressOnPage('PO Box 27192', 'anything'), null, 'not a street address');
+});
+
+test('an address missing from the page is a note for a person, never a change or a flag', () => {
+  const record = org({ address: { street: '318 Warren St', zip: '11201' }, emails: [{ value: 'bushwickstreetcats@gmail.com' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('unchanged.html'), DATE));
+  assert.equal(decision.kind, 'ok');
+  assert.equal((decision as { addressNotSeen?: string }).addressNotSeen, '318 Warren St');
+  const { patch, log, flag } = toPatch(record, decision, DATE);
+  assert.equal(flag, undefined);
+  assert.equal(log.length, 0);
+  assert.ok(!('address' in patch) && !('status' in patch));
 });

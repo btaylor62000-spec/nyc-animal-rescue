@@ -30,6 +30,8 @@ export interface RunSummary {
    * list doubles as a to-do: the top of it is what has gone longest unseen.
    */
   manualOnly: Array<{ id: string; name: string; website: string | null; lastConfirmed: string | null }>;
+  /** Street addresses not found on the organization's own pages this week. */
+  addressesNotSeen: Array<{ id: string; name: string; street: string; website: string | null }>;
   safetyValveTripped: boolean;
 }
 
@@ -79,6 +81,19 @@ export function writeReport(s: RunSummary): string {
     out.push('## Nothing to do');
     out.push('');
     out.push('No contact details changed and nothing needs attention. The directory is as it was.');
+    out.push('');
+  }
+
+  if (s.addressesNotSeen.length) {
+    out.push(`## Addresses not seen on their own site (${s.addressesNotSeen.length})`);
+    out.push('');
+    out.push(
+      'The stored street address was not found on the pages read. Often that only means the site shows it on a map ' +
+        'or a page the check did not open, so this is a list to look through, not a set of errors. If an organization ' +
+        'has moved, record the new address or close the old entry by hand.',
+    );
+    out.push('');
+    for (const a of s.addressesNotSeen) out.push(`- ${a.name}: ${a.street}${a.website ? ` (${a.website})` : ''}`);
     out.push('');
   }
 
