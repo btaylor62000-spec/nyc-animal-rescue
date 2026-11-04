@@ -24,7 +24,7 @@ Verified against Bideawee Feral-Friendly Vets, KittyKind's low-cost list, ASPCA,
 ## TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)
 
 - Neighborhood Cats Trap Bank - reserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.
-- ASPCA Trap Bank - free for registered rescuers (RSS); email TNRtrapbank@aspca.org.
+- ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); $50 refundable deposit per trap or carrier; email TNRtrapbank@aspca.org.
 - NYC Feral Cat Initiative (Bideawee) - trap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).
 - Muffin's Pet Connection - rents humane cat traps (muffins.org).
 - Good Home Pet Adoptions (Crown Heights) - community TRAP BANK, info@goodhomepetadoptions.org.
@@ -57,7 +57,7 @@ Verified against Bideawee Feral-Friendly Vets, KittyKind's low-cost list, ASPCA,
 
 ## STATEN ISLAND - feral-friendly / low-cost clinics
 
-- SICAW Certificate Program - low-cost s/n certificates w/ partner SI vets (under half normal price); apply at sicawsaves.org/resources.
+- SICAW Certificate Program - low-cost s/n certificates w/ partner SI vets (under half normal price). As of 2026-11-04 SICAW's website no longer mentions the certificates: ask SICAW, (718) 948-5623 or sicawsaves@gmail.com, whether they still run.
 - Island Bird Cat & Dog Vet Group - 375 Manor Rd 10314 - (718) 370-9472 - feral-friendly (Bideawee list).
 - P.L.U.T.O. Rescue - runs a low-cost s/n program (see Staten Island rescues).
 - Toby stationary clinic (Brooklyn) serves SI community cats - (347) 816-2899.

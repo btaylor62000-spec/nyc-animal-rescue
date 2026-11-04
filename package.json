@@ -16,7 +16,8 @@
     "agent:weekly": "tsx scripts/agent/weekly.ts",
     "agent:discover": "tsx scripts/agent/discover.ts",
     "geo:zips": "tsx scripts/geo/zip-centroids.ts",
-    "geocode": "tsx scripts/geo/geocode.ts"
+    "geocode": "tsx scripts/geo/geocode.ts",
+    "agent:links": "tsx scripts/agent/links.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",

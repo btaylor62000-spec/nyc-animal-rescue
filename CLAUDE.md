@@ -9,7 +9,9 @@ matter.
 ## Where things stand
 
 **The site is live and deployed.** Everything below already works in
-production; nothing here is aspirational.
+production; nothing here is aspirational. Figures last refreshed 2026-11-04
+from the data itself (`data/orgs/`, `content/guides/`, the workbooks) -- when
+you change them, recount rather than adjust.
 
 | | |
 | --- | --- |
@@ -18,9 +20,10 @@ production; nothing here is aspirational.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
-| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 68 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's at-risk list, and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
-| Directory | 384 listed of 390 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 69 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
+| Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Discovery | 230 candidates from ACC's New Hope partner roster. 20 published, every one read by a person and placed in the city; 210 held back. All 219 that were waiting were read in a browser on 2026-11-04: `docs/discovery-review-2026-11-04.md` says what was found for each |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
@@ -58,6 +61,16 @@ yours:
 
 Ordered by how much harm it prevents, not by size.
 
+0. **Do this first next session: the reviewer is reviewing the 210 held-back
+   discovery candidates by hand.** Asked for on 2026-11-04 so it is not
+   forgotten. Start from `docs/discovery-review-2026-11-04.md`, which sorts
+   every one by what its own site said (outside the city, no location,
+   unreadable, not an organisation). The 90 "say nothing about where they
+   are" are where a person's judgement is needed. For each one they decide
+   to publish, set `"publish": true` in `data/discovered.json` with
+   `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
+   saying what was read, then `npm run import` (see item 2).
+
 1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
    still make (a `verify` status after three dead weeks, and lifting it) goes
@@ -78,14 +91,16 @@ Ordered by how much harm it prevents, not by size.
 2. **Keep marking discovery candidates by hand.** Decided 2026-09-22:
    discovery finds mostly out-of-city rescues, so nothing it finds is
    published until a person sets `"publish": true` on the candidate in
-   `data/discovered.json` (with `boroughs` and `checkedBy` when they confirmed
-   where it is). Discovery re-ran that day, read 200 sites, and 11 were
-   published: 7 with a city number or name, 4 confirmed by reading the site.
-   67 are outside the city and stay unpublished. About 120 gave no phone and
-   nothing in the name places them; the site can now read them again only
-   for new candidates, so those wait for a person. Three that looked local
-   had dead or broken sites that day: Fosterlings, Urban Wildlife Alliance,
-   Zani's Furry Friends.
+   `data/discovered.json` (with `boroughs` or `citywide`, and `checkedBy`
+   saying what was read). On 2026-11-04 every waiting candidate (219) was
+   opened in a browser and 9 more were published, each because its own site
+   places it in the city or says it serves the city (`animals` and `needs`
+   can now be set on a candidate too, since the name alone rarely says).
+   What is left, in `docs/discovery-review-2026-11-04.md`: 63 give an
+   address outside the city, 90 say nothing about where they are, 41 could
+   not be read, 11 are not organisations to list or are already listed (the
+   roster scrape picked up "Careers", "Register to vote", the Bronx Zoo).
+   The 90 are the work for a person: a contact page or a phone call.
 
 3. **Check the sites only a person can read, monthly.** `/status` lists them
    under "Checked by a person only" (Urban Wildlife Alliance, Petco Love
@@ -113,19 +128,68 @@ Ordered by how much harm it prevents, not by size.
    - The five pet food pantries with no website stay as the city listed them
      in October: that list is the source, and ringing is the only check.
 
-4. **Things a reviewer raised that could not be confirmed**, left out on
-   purpose until someone can: NYC 211, Bideawee's and the ASPCA's surrender
-   lines (both pages are gone), Vet-I-Care (broken certificate), DEC's
-   general email, a yearly cap on NYSAVE grants, an ASPCA temporary-boarding
-   offer. Individual volunteers' personal contacts (Save Kitty) stay off.
+4. **Things a reviewer raised, followed up 2026-11-04.**
+   - *NYC 211*: there is no separate one. The city's own 311 page says
+     211's help-and-referral service is provided through 311 in New York
+     City, so the guides now say "call 311", not "dial 211 (nyc.gov/211)".
+   - *Surrender lines*: neither Bideawee nor the ASPCA has one. The ASPCA's
+     NYC FAQ sends owners to rehoming sites and ACC's surrender service
+     (appointment only, 212-788-4000, which is already listed). Bideawee
+     publishes a surrender-prevention packet instead.
+   - *DEC's general email*: r2info@dec.ny.gov, from DEC's own "Guide to
+     DEC" (revised 2023). Added to the Region 2 entry.
+   - *NYSAVE yearly cap*: its guidelines set none per household. The
+     "~$2,000/yr" in the research had no source and is gone.
+   - *Vet-I-Care*: added 2026-11-04 with the phone, email and PO box a
+     reviewer read on its contact page (its site still has a self-signed
+     certificate, so our checks cannot open it). Medium, labelled as
+     reviewer-supplied, tagged as a fund, not an emergency vet.
+   - *Still out*: an ASPCA temporary-boarding offer (never confirmed). The
+     abuse guide's referrals@aspca.org for ASPCA Community Engagement could
+     not be confirmed on the ASPCA's page either; it stays in the guide,
+     unlisted. Individual volunteers' personal contacts (Save
+     Kitty) stay off.
+   - *No 24-hour hospital in the Bronx*: the Mayor's Alliance lists only
+     Urgent Vets there (limited hours). Directories that call four Bronx
+     clinics "24/7" are auto-generated and give every clinic a duplicate
+     "Emergency" row. From the Bronx the nearest 24/7 options are Animal
+     Specialty Center (Yonkers) and the Manhattan and Astoria hospitals.
 
-5. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
+5. **Wildlife rehabilitators: the state register and AHNow, compared
+   2026-11-04.** DEC's register (appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab)
+   is the authority on who is *licensed*; AHNow says it draws its rehabber
+   data from the same state lists. Searched for the five boroughs plus Nassau
+   and Westchester: 127 licence holders, 73 in the five boroughs, **every one
+   an individual** (personal name, phone, email), none under an
+   organization's name. AHNow itself hides those names and shows only
+   "Wildlife Rehabilitator", the animals and a zip. Rule 3 applies: they are
+   not republished here; the guides link the DEC search and AHNow instead,
+   and each listed organization can be checked against the register.
+   Every *organization or hotline* AHNow names for the five boroughs is
+   already listed (Animal General, Island Wildlife, NYTTS, the marine
+   stranding lines, DEC Region 2, USDA, US Fish & Wildlife) except two that
+   need a phone call first: The Broken Antler (deer search and rescue,
+   Calverton, Suffolk, run by two named people) and Staten Island Animal
+   Hospital (VCA; AHNow lists it for wildlife, its own pages say dogs and
+   cats). Whether to list individual rehabbers who agree to it is the
+   reviewer's decision, not made yet.
+
+6. **Links are checked weekly** (`npm run agent:links`, results on
+   `/status`): every listing's website and forms and every address in every
+   guide. It reports and never edits. Read the report before acting: from a
+   cloud session plain `http://` addresses and bare domains such as
+   `aspca.org` fail to resolve and 502s come from the proxy, so only HTTP
+   answers (404, a parked or taken-over domain) are evidence there. Known
+   corrections live in `src/data/url-fixes.ts`, applied to every listing and
+   guide at import, each with where the right address was read.
+
+7. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
    whose pages show only today's hours and whose own page description gives
    different ones, would be 21 "hours not confirmed" cards in every emergency
    search. One Love and Bronx Veterinary Center were split by branch on
    2026-11-04 because their hours and addresses could be confirmed.
 
-6. **Two regional records still carry no location, on purpose.** Of the six
+8. **Two regional records still carry no location, on purpose.** Of the six
    regional exotic-animal rescues with no borough, four are now reachable
    citywide because their rows call them "NYC-adjacent" or "tri-state"
    (`directory.ts` reads those as serving the city, unless the row also says
@@ -431,6 +495,18 @@ A line carrying a contact detail becomes a listing. Register the tab in
 it out and they stay as text on the page, which is the right choice when the
 organizations already have entries whose contacts are maintained.
 
+**Guides and listings must not disagree.** Guide prose is copied research;
+listings are kept current. Five guides (`GUIDE_LISTINGS` in
+`src/data/guide-listings.ts`) end with every matching listing, built from the
+records at each build, so a new fund or pantry appears there without anyone
+editing the guide. A line in a guide that names an organization with an entry
+should use that entry's contacts; on 2026-11-04 several did not (numbers not
+on the organization's own site), and were corrected at the workbook row. A
+guide line carrying a link inside a `GUIDE_ORG_SOURCES` tab becomes a record:
+use that tab's `skip` for pointers like "NYC's free pet food pantries".
+The directory's search also shows the matching guide above the results
+(`src/data/guide-match.ts`), from each guide's `topics`.
+
 Write URLs in full, with `https://`, when they are the point of the page. The
 renderer autolinks those and leaves bare domains as text — fine for a
 reference, wrong for something someone has to act on.
@@ -634,6 +710,12 @@ only breaks ties.
   have a place on the map, distance replaces the assistant's old "is it in
   your exact zip" bonus, which had put a closed clinic above an open hospital
   half a mile away.
+- **A zip shows its whole borough.** Stored zips say where an organization
+  *is* (often just its street address), not who it helps, so the directory's
+  zip filter shows everything serving that zip's borough plus everything
+  citywide, ordered from the zip (`src/data/area.ts`). Reading stored zips as
+  a service area once hid BluePearl Brooklyn and about sixty other Brooklyn
+  resources from someone typing 11203.
 - Workbook rows can carry **Hours** and **Address** columns. Use them: a row
   without hours cannot say it is open, and one without an address cannot be
   sorted by distance.

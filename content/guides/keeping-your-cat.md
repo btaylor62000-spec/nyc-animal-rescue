@@ -20,9 +20,9 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## PET FOOD PANTRIES (specific programs)
 
-- ACC Pet Food Pantry - at the ACC Bronx Resource Center; contact for location, hours, eligibility. CommunityPets@nycacc.org - (212) 788-4000.
+- ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org - puppykittynyc.org.
-- Animal Relief Fund (ARF) - NYC org providing pet food to people in need. animalrelieffund.org.
+- Animal Relief Fund (ARF) - NYC org that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.
 - Food Bank For New York City - pet food is sometimes available at member pantries (varies by donations). foodbanknyc.org/get-help.
 - ASPCA + Food Bank For NYC partnership - free pet food distributed through Food Bank partner pantries citywide.
@@ -31,7 +31,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Kiso's Pet Food Pantry (Brooklyn) - free pet food, focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.
 - Feeding Pets of the Homeless - free pet food + vet care via partner sites for people who are homeless or at risk. petsofthehomeless.org.
 - Food Help NYC (finder.nyc.gov/foodhelp) lists food pantries, some of which stock pet food; the donateNYC Directory (donatenyc.org) has a Pet Care/Food category.
-- NEW (2026): the city budget funds pop-up PET FOOD PANTRIES + spay/neuter in every borough via community events - watch ACC + borough-rescue feeds for dates.
+- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
 
 ## SENIOR / DISABILITY / ILLNESS - in-home pet care
 
@@ -54,7 +54,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - RedRover Relief Safe Escape - grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
 - Safe Place for Pets (RedRover) - searchable directory of programs by ZIP. safeplaceforpets.org.
 - Safe Havens Mapping Project (Animal Welfare Institute) - directory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com.
-- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. alliephillips.com/saf-tprogram.
+- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. https://saftprogram.org.
 - SPCA Westchester Pet Safety Program - safe-keeping for pets in DV-affected households (Westchester-adjacent). spcawestchester.org/pet-safety - (914) 941-2896.
 
 ## HOSPICE / SENIOR + LIFETIME-CARE placement
@@ -67,16 +67,16 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)
 
-- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.
+- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. (917) 669-7281 - info@nysave.org - nysave.org.
 - AMC (Schwarzman Animal Medical Center, Manhattan) funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.
 - ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT/SSI/VA/unemployment/TANF proof). aspca.org/nyc.
 - RedRover Relief - grants (avg ~$250) toward urgent, life-threatening care; income under $60,000/yr; paid to the vet. redrover.org/relief - (916) 429-2457.
-- The Pet Fund - non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com - (916) 443-6007.
+- The Pet Fund - non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website).
 - Frankie's Friends - lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.
 - Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
 - Condition-specific (cats): cancer - Live Like Roo (livelikeroo.org), Magic Bullet Fund (themagicbulletfund.org), Riedel & Cody Fund; FIP/retrovirus + chronic - The Pet Fund; Feline Veterinary Emergency Assistance Program (VAS/ISS); Diabetic Cats in Need (insulin help).
 - Humane Society of NY - some cases receive full/partial funding via its Animal Emergency Appeal; ask when booking. 306 E 59th St - (212) 752-4842.
-- Dial 211 (nyc.gov/211) for a live operator with current local assistance funds.
+- Call 311 for a live operator with current local assistance programs: in New York City the 211 help-and-referral service is provided through 311 (https://portal.311.nyc.gov/article/?kanumber=KA-02498).
 - CareCredit (carecredit.com / (800) 677-0718) and Scratchpay (scratchpay.com) - vet-care financing accepted at most NYC vets. HOW: get a written itemized estimate + proof of need (SNAP/Medicaid/income), then apply to several funds at once.
 
 ## PET INSURANCE (for planning ahead, not a bill you already have)

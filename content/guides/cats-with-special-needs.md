@@ -18,7 +18,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - Itty Bitty City Kitties (Queens/Rockaway) - dedicated neonatal nursery; the specialist. ittybittycitykitties@gmail.com | ittybittycitykitties.org
 - Cats of Meow York (Queens/Woodhaven) - heavy neonatal focus + holding space. info@catsofmeowyork.org | catsofmeowyork.org | IG @catsofmeowyork
 - Bay Ridge Kittens (Brooklyn) - solo neonatal/critical-kitten rescuer (Flatbush Cats med coord). IG @bayridgekittens (contact via IG/adoption form)
-- Kittens and Barbells Rescue (Bronx) - TNR-cert + neonatal tube/bottle-feed trained. kittensandbarbells.org/adoptus | IG @kittensandbarbells_
+- Kittens and Barbells Rescue (Bronx) - TNR-cert + neonatal tube/bottle-feed trained. Instagram @kittensandbarbells_ (its old website now belongs to someone else) | IG @kittensandbarbells_
 - Cat Castle NYC (Manhattan) - takes kittens as young as one day old. (973) 752-7750 | catcastlenyc.org | IG @catcastlenyc
 - Noah's Ark Animal Rescue NY (Queens/Rockaway) - noahsarkny.com (contact form). Catstoria/Kitty Haven (Queens) - catstoriarescue@gmail.com | catstoria.com
 
@@ -26,7 +26,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 
 - NY Cat Warriors (multi-borough) - urgent/complex medical; ACC New Hope partner. nycatwarriors.org | IG @nycatwarriors
 - NYC Second Chance Rescue (Queens) - critically injured/neglected from ACC 'death row'. nycsecondchancerescue.org | IG @nycscr
-- Little Wanderers NYC (Bronx) - neediest cats, heavy vetting. Rescue line (IG) 929-282-2271 | lwnyc.org
+- Little Wanderers NYC (Bronx) - neediest cats, heavy vetting. email@lwnyc.org | lwnyc.org
 - Puppy Kitty NYC (multi-borough) - severe medical/cruelty cases. info@puppykittynyc.org | puppykittynyc.org
 - Catstoria / Kitty Haven (Queens) - sick & injured ferals + recovery house. catstoriarescue@gmail.com | catstoria.com
 - Strays Hope for Life (Staten Island) - 'sick, bruised, or broken.' (908) 986-2505 | strayshopeforlife@gmail.com
@@ -45,7 +45,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - Tavi & Friends (Brooklyn-based) - senior + FIV lifetime care; the specialist. 646-872-1533 | adopt@taviandfriends.org
 - Cat Castle NYC (Manhattan) - through-senior (up to 16 yrs). (973) 752-7750 | catcastlenyc.org
 - KittyKind (Manhattan) - senior + special-needs placement. adopt@kittykind.org | kittykind.org
-- Kittens and Barbells (Bronx) - all ages incl. seniors. kittensandbarbells.org | IG @kittensandbarbells_
+- Kittens and Barbells (Bronx) - all ages incl. seniors. Instagram @kittensandbarbells_ (its old website now belongs to someone else) | IG @kittensandbarbells_
 
 ## FeLV+ / FIV+ (retrovirus-positive cats)
 

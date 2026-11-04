@@ -28,8 +28,14 @@
   "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "phones": [
     {
+      "value": "311",
+      "display": "311",
+      "label": "From any phone in New York City"
+    },
+    {
       "value": "2126399675",
-      "display": "(212) 639-9675"
+      "display": "(212) 639-9675",
+      "label": "311 from outside the city (212-NEW-YORK)"
     }
   ],
   "emails": [],
@@ -64,6 +70,15 @@
       "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
       "source": "weekly-check",
       "note": "The previous value was no longer on their site and exactly one replacement was found there."
+    },
+    {
+      "date": "2026-11-04",
+      "source": "manual",
+      "field": "phones",
+      "from": "2126399675",
+      "to": "311, 2126399675",
+      "evidence_url": "https://portal.311.nyc.gov/article/?kanumber=KA-02498",
+      "note": "The weekly check replaced 311 with (212) 639-9675 on 2026-09-21. That number is 311 itself, for callers outside the city (212-NEW-YORK), as the city's 311 page says. 311 is restored first and the long number kept second, labelled. A reviewer caught it."
     }
   ],
   "privacy_hold": false,

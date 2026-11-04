@@ -13,7 +13,8 @@
  */
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
-import { zipToBorough } from '../data/geo.ts';
+import { servesBoroughs, servesZip } from '../data/area.ts';
+import { guidesFor, type GuideTopics } from '../data/guide-match.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
 import { checkPosition } from '../data/position.ts';
@@ -178,6 +179,8 @@ if (form && list) {
       }
     }
 
+    showGuideHints(state.q);
+
     let shown = 0;
     const visible: Array<{ id: string; m: NonNullable<ReturnType<typeof meta.get>> }> = [];
 
@@ -186,20 +189,13 @@ if (form && list) {
       if (matched && !matched.has(id)) ok = false;
       if (ok && state.animal.size && !hasAll(m.animals, state.animal)) ok = false;
       if (ok && state.need.size && !hasAll(m.needs, state.need)) ok = false;
-      if (ok && state.borough.size) {
-        // Boroughs are an OR: someone in Queens wants anything serving Queens.
-        ok = m.citywide || [...state.borough].some((b) => m.boroughs.includes(b));
-      }
+      // Boroughs are an OR: someone in Queens wants anything serving Queens.
+      if (ok && state.borough.size) ok = servesBoroughs(m, state.borough);
       if (ok && state.confidence.size && !state.confidence.has(m.confidence)) ok = false;
-      if (ok && state.zip) {
-        // A group that names zips is specific to them. One that names only a
-        // borough serves the whole borough, so it answers a zip in it too.
-        const zipBorough = zipToBorough(state.zip);
-        ok =
-          m.zips.includes(state.zip) ||
-          m.citywide ||
-          (zipBorough !== null && m.zips.length === 0 && m.boroughs.includes(zipBorough));
-      }
+      // A zip shows its whole borough plus everything citywide; the ordering
+      // below puts what is near the zip first. See src/data/area.ts for why
+      // stored zips must not hide anything.
+      if (ok && state.zip) ok = servesZip(m, state.zip);
       if (ok && state.phone && !m.hasPhone) ok = false;
       if (ok && state.activeOnly && m.status !== 'active') ok = false;
 
@@ -216,9 +212,20 @@ if (form && list) {
     // relevant place wins rather than the best-worded far one.
     const emergency = state.need.has('emergency-vet') || EMERGENCY_QUERY.test(state.q);
     const now = new Date();
-    if (origin || emergency) {
+    // A zip typed into the filters orders from that zip too, unless the
+    // reader has already given a closer origin (their location, or the
+    // "nearest to zip" box). Showing the whole borough is only useful if what
+    // is around the corner comes first.
+    filterZipOrigin = null;
+    if (!origin && /^\d{5}$/.test(state.zip)) {
+      const c = (await centres())[state.zip];
+      if (c) filterZipOrigin = { lat: c[0], lon: c[1] };
+    }
+    showDistances();
+    const from = origin ?? filterZipOrigin;
+    if (from || emergency) {
       const keyOf = (id: string, m: (typeof visible)[number]['m']) => {
-        const k = rankKey({ needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin, now, emergency });
+        const k = rankKey({ needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin: from, now, emergency });
         // Search wording only breaks ties: the query has already narrowed the
         // list, and among what is left, open, near and well evidenced matter.
         return [...k, rank?.get(id) ?? 0, m.order];
@@ -249,6 +256,37 @@ if (form && list) {
     });
     for (const { m } of visible) list!.appendChild(m.el);
     finish(shown, updateUrl, state);
+  }
+
+  // A search that names a situation gets the guide for it above the
+  // organizations: the steps first, then who to call.
+  const hintBox = document.getElementById('guide-hints');
+  let guideTopics: GuideTopics[] = [];
+  try {
+    guideTopics = JSON.parse(document.getElementById('guide-topics')?.textContent ?? '[]');
+  } catch {
+    guideTopics = [];
+  }
+  function showGuideHints(q: string): void {
+    if (!hintBox) return;
+    const found = q ? guidesFor(q, guideTopics) : [];
+    hintBox.replaceChildren();
+    hintBox.hidden = found.length === 0;
+    for (const g of found) {
+      const a = document.createElement('a');
+      a.className = 'guide-hint';
+      a.href = `/guides/${g.slug}`;
+      const label = document.createElement('span');
+      label.className = 'guide-hint__label';
+      label.textContent = 'Guide: what to do';
+      const title = document.createElement('strong');
+      title.textContent = g.title;
+      const summary = document.createElement('span');
+      summary.className = 'guide-hint__summary';
+      summary.textContent = g.summary;
+      a.append(label, title, summary);
+      hintBox.append(a);
+    }
   }
 
   function finish(shown: number, updateUrl: boolean, state: FilterState): void {
@@ -320,28 +358,44 @@ if (form && list) {
   const nearZip = document.getElementById('near-zip') as HTMLInputElement | null;
   let zipCentres: Record<string, [number, number]> | null = null;
   let originFromZip = false;
+  let filterZipOrigin: Origin | null = null;
+  async function centres(): Promise<Record<string, [number, number]>> {
+    if (!zipCentres) {
+      try {
+        zipCentres = await (await fetch('/zip-centres.json')).json();
+      } catch {
+        // Ordering by distance is a nicety; filtering still works without it.
+        return {};
+      }
+    }
+    return zipCentres!;
+  }
   const nearBtn = document.getElementById('near-me') as HTMLButtonElement | null;
   const nearNote = document.getElementById('near-me-note');
   const orderLabel = document.getElementById('results-order');
 
   function describeOrder(emergency: boolean): void {
     if (!orderLabel) return;
-    const where = originFromZip && nearZip ? `nearest to ${nearZip.value.trim()}` : 'nearest to you';
-    const parts = [emergency ? 'Open now first' : null, origin ? where : null].filter(Boolean) as string[];
+    const typedZip = (form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim();
+    const where = origin
+      ? originFromZip && nearZip ? `nearest to ${nearZip.value.trim()}` : 'nearest to you'
+      : `nearest to ${typedZip}`;
+    const parts = [emergency ? 'Open now first' : null, origin || filterZipOrigin ? where : null].filter(Boolean) as string[];
     orderLabel.textContent = parts.length
       ? `${parts.join(', then ')}, then strongest evidence`
       : searchInput?.value.trim() ? 'Best match first' : 'Strongest evidence first';
   }
 
   function showDistances(): void {
+    const from = origin ?? filterZipOrigin;
     for (const m of meta.values()) {
       const span = m.el.querySelector<HTMLElement>('.card__distance');
       if (!span) continue;
-      if (!origin || !m.geo) {
+      if (!from || !m.geo) {
         span.hidden = true;
         continue;
       }
-      const miles = distanceMiles(origin, m.geo);
+      const miles = distanceMiles(from, m.geo);
       const shown = miles < 10 ? miles.toFixed(1) : String(Math.round(miles));
       // A zip code's centre is not the door; say so.
       span.textContent = `${m.geo.precision === 'zip' ? 'about ' : ''}${shown} mi`;
@@ -366,8 +420,7 @@ if (form && list) {
       }
       return;
     }
-    if (!zipCentres) zipCentres = await (await fetch('/zip-centres.json')).json();
-    const c = zipCentres![zip];
+    const c = (await centres())[zip];
     if (nearNote) nearNote.hidden = false;
     if (!c) {
       if (nearNote) nearNote.textContent = `${zip} is not a New York City zip code we know.`;

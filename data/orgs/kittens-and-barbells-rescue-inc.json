@@ -29,13 +29,8 @@
   "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "phones": [],
   "emails": [],
-  "website": "https://www.kittensandbarbells.org",
-  "intake_urls": [
-    {
-      "url": "https://kittensandbarbells.org/adoptus",
-      "label": "email response up to 72 hrs"
-    }
-  ],
+  "website": null,
+  "intake_urls": [],
   "social": [
     {
       "platform": "instagram",
@@ -58,8 +53,8 @@
   "notes": "Foster-based 501(c)(3), co-founders Katie (TNR-certified, neonatal tube/bottle-feed trained) & Donovan. TNR + rescue of the most vulnerable felines of ALL AGES - neonatal kittens through seniors, incl. sick/injured. Satellite nurseries. Bronx-based, works NYC + Westchester. Verified 2026-08-26.",
   "type_raw": "TNR / rescue+adoption (all-ages, neonatal-senior)",
   "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "status": "verify",
+  "status_note": "Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.",
   "source_urls": [
     "https://www.kittensandbarbells.org/",
     "https://www.kittensandbarbells.org/meet-the-team"
@@ -72,7 +67,17 @@
   "last_checked": "2026-09-22",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://www.kittensandbarbells.org, https://kittensandbarbells.org/adoptus",
+      "to": null,
+      "evidence_url": "https://www.kittensandbarbells.org",
+      "source": "manual",
+      "note": "The link check found kittensandbarbells.org redirecting to www.sgmigrant.com/bn-covid19, an Indonesian online gambling site: the domain has lapsed and been taken. Website and form links removed; Instagram and Facebook kept. Not replaced with a guess."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

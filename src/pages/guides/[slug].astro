@@ -3,6 +3,9 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
+import { BOROUGH_LABELS } from '../../data/orgs.ts';
+import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
+import { telHref } from '../../data/tel.ts';
 
 export function getStaticPaths() {
   return GUIDES.map((g) => ({ params: { slug: g.slug } }));
@@ -18,6 +21,9 @@ const html = renderMarkdown(guide.body);
 /** Guides where the first thing to know is that this may be an emergency. */
 const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);
 const isUrgent = URGENT.has(guide.slug);
+const blocks = (GUIDE_LISTINGS[guide.slug] ?? []).map((b) => ({ ...b, orgs: listingsFor(b), href: directoryHref(b) }));
+const where = (o: (typeof blocks)[number]['orgs'][number]) =>
+  o.outside_nyc ? 'Outside NYC, serves New Yorkers' : o.citywide ? 'Citywide' : o.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ');
 ---
 
 <Base title={guide.title} description={guide.summary}>
@@ -36,6 +42,41 @@ const isUrgent = URGENT.has(guide.slug);
 
     <article class="guide-body" set:html={html} />
 
+    {blocks.length > 0 && (
+      <section class="guide-listings" aria-labelledby="guide-listings-heading">
+        <h2 id="guide-listings-heading">Every listing for this in the directory</h2>
+        <p class="muted">
+          Built from the directory's own entries, so the numbers here are the ones kept current there.
+          Tap a name for hours, address and how recently it was checked.
+        </p>
+        {blocks.map((b) => {
+          const items = (
+            <ul>
+              {b.orgs.map((o) => (
+                <li>
+                  <a href={`/org/${o.id}`}>{o.name}</a>
+                  <span class="muted"> · {where(o) || 'Area not recorded'}</span>
+                  {o.phones[0] && <> · <a href={telHref(o.phones[0].value)}>{o.phones[0].display}</a></>}
+                  {o.status !== 'active' && <> <span class="tag tag--strong">Confirm it is still running</span></>}
+                </li>
+              ))}
+            </ul>
+          );
+          return (
+            <div class="guide-listings__block">
+              <h3>{b.heading} <span class="muted">({b.orgs.length})</span></h3>
+              {b.orgs.length > 15 ? (
+                <details>
+                  <summary>Show all {b.orgs.length}</summary>
+                  {items}
+                </details>
+              ) : items}
+              {b.href && <p><a href={b.href}>See these in the directory, nearest to you first &rarr;</a></p>}
+            </div>
+          );
+        })}
+      </section>
+    )}
     {guide.byline && (
       <p class="muted" style="margin-top:1.5rem;font-size:.95rem">Written by {guide.byline}.</p>
     )}

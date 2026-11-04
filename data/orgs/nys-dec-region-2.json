@@ -36,7 +36,12 @@
       "label": "DEC dispatch, after hours"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "r2info@dec.ny.gov",
+      "label": "General enquiries (not for emergencies)"
+    }
+  ],
   "website": "https://dec.ny.gov",
   "intake_urls": [],
   "social": [],
@@ -67,7 +72,17 @@
   "last_checked": "2026-09-22",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "r2info@dec.ny.gov",
+      "evidence_url": "https://extapps.dec.ny.gov/docs/administration_pdf/decguide.pdf",
+      "source": "manual",
+      "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -1,0 +1,242 @@
+# Discovery candidates reviewed 2026-11-04
+
+Every unpublished candidate in `data/discovered.json` (219) was opened in a browser on 2026-11-04 and read for where it is. Only a candidate whose own site places it in New York City, or says it serves the city, was published (`"publish": true`, with `boroughs` or `citywide` and a `checkedBy` note saying what was read). Everything else stays held back; nothing was deleted.
+
+## Published (9)
+
+- Abandoned Angel Cocker Spaniel Rescue — https://www.nyabandonedangels.com
+- Adore-A-Bullie Paws and Claws* — http://www.adore-a-bullie.org
+- Alleykattz — https://www.alleykattz.org
+- Beastly Rescue * — https://www.beastlyrescue.org
+- For Our Friends — http://www.forourfriends.org
+- Rescue Dogs Rescue Soldiers — http://rescuedogsrescuesoldiers.org
+- Timber's Legacy — http://www.timberslegacy.org
+- Zani's Furry Friends — https://zanisfurryfriends.org
+- Zion's Mission Animal Rescue* — https://www.zionsmission.org
+
+## Not organisations to list, or already listed (11)
+
+- Bronx Zoo — a zoo, not a rescue resource
+- Careers — a city jobs page
+- Emergency alerts — Notify NYC, the city's alert service
+- Register to vote — not an animal organisation
+- Tiktok — a social media link
+- Text-Size — a page widget, not an organisation
+- Alley Pond Environmental Center Inc — a nature education centre in Douglaston, Queens; not a rescue
+- Center for Avian & Exotics — already listed as The Center for Avian & Exotic Medicine (its other site shows yet another number, (332) 286-2383)
+- Rabbit Rescue & Rehab — already listed
+- Rescue NYC — already listed
+- Urban Wildlife Alliance — already listed
+
+## Read, and outside the city or with no NYC base (5 checked by hand)
+
+- ECHO East Coast Herding Dog Organization — tri-state herding-dog rescue, no NYC base stated
+- Italian Greyhound Rescue — regional affiliate page; unclear who covers the city
+- Karma K-9 Rescue — pulls from NYC shelters; no base stated
+- The Cat Maffia Rescue — Ronkonkoma, Suffolk County
+- Skylands Sanctuary — New Jersey
+
+## Its site gives an address outside the city
+
+- 3 Hearts 4 Paws — https://www.3hearts4paws.com (NJ 07751)
+- Adopt A Boxer* — https://www.adoptaboxerrescue.com (PA 18447)
+- All About Cats Rescue — http://www.allaboutcats.org (New 11520)
+- Almost Home Animal Rescue & Adoptions, Inc. — https://www.almosthomeli.org (NY 11772)
+- Animal Farm Foundation — https://www.animalfarmfoundation.org (NY 12506)
+- Animal Kind — http://www.animalkindny.com (NY 12534)
+- Animal Nation, Inc — https://www.animalnation.org (NY 10590)
+- Animal Rescue Fund of the Hamptons (ARF) — http://www.arfhamptons.org (New 11937, New 11962)
+- Australian Cattle Dog Rescue Association — http://www.acdra.org (NY 11530)
+- Big East Akita Rescue — http://bigeastakitarescue.org (NJ 08753)
+- Buddha Pooch Dog Rescue Project — http://www.buddhapoochdrp.com (NJ 07931)
+- Camp Papillon Pet Adoption & Rescue — https://www.camppapillon.org (PA 18360)
+- Care of DC* — https://careofdc.org (NY 12590)
+- Cat Assistance Inc.* — http://www.catassistanceny.org (NY 10502)
+- Doberman Rescue Unlimited — http://www.dru.org (NH 03873)
+- Ellen M Gifford Cat Shelter — http://www.giffordcatshelter.org (MA 02135)
+- Emerald City Rescue, Inc — http://www.emeraldcityrescuenj.com (NJ 07837)
+- F.A.C.T.(Feline Advocates Coming Together)* — https://www.felineadvocatescomingtogether.org (NY 12804)
+- Feline Urban Rescue & Rehab — https://www.felineurbanrescueandrehab.org (NJ 08886)
+- For the Love of Dog Rottweiler Rescue of NH — http://www.4theloveofdog.org (NH 03244)
+- Franklin Township Animal Shelter — http://secondchanceforanimals.org (NJ 08875)
+- Friends of Homeless Animals — http://secondchanceforanimals.org (NJ 08875)
+- German Shepherd Rescue of the Finger Lakes — https://www.gsrfingerlakes.org (NY 13084)
+- Happy Go Lucky Mastiff Rescue — https://happygoluckymastiffrescue.com (MD 21502)
+- Happy Life Animal Rescue — https://happylifeanimalrescue.org (NY 12564)
+- Homeward Bound Schnauzer Rescue — http://hbschnauzerrescue.com (MD 21108)
+- Hope Alliance For Animals Incorporated — https://www.hopeallianceinc.org (CT 06419)
+- Hudson Valley Humane Society — http://www.hvhumane.org (NY 10970)
+- Hudson Valley SPCA* — http://www.hudsonvalleyspca.com (NY 12553, NY 10924)
+- Humane Society of Westchester — https://humanesocietyofwestchester.org (NY 10801)
+- Hunter Hollow Bunny Bed & Breakfast — https://hunterhollow.org (NY 13211, NY 13088)
+- Jersey Shore Animal Center — https://jerseyshoreanimalcenter.org (New 08723)
+- Kitten Associates — http://kittenassociates.org (CT 06470)
+- Labs 4 Rescue — http://www.labs4rescue.com (CT 06419)
+- Long Beach Humane Society* — http://www.longbeachhumanesociety.net (NY 11561)
+- Lucky Dog Refuge CT — https://luckydogrefuge.com (Connecticut 06902)
+- Mastiffs to Mutts Rescue* — http://www.mastiffstomutts.org (PA 17201)
+- Meade Canine Rescue Foundation — http://www.meadecaninerescue.net (NY 12594)
+- Next Chance Rescue — http://www.nextchancerescue.org (NJ 07304)
+- Next Stop Forever Small Dog Rescue* — https://www.noahsarps.com (PA 19480)
+- Noah's Ark Rescue Project & Sanctuary — https://www.noahsarps.com (PA 19480)
+- North Country Pet Adoption Services, Inc — http://www.northcountrypetadoption.org (New 13343)
+- NY Pet Rescue — https://ny-petrescue.org (NY 10528, NY 10538)
+- Passion 4 Paws — https://passion4paws.org (CT 06241)
+- Pawsitive Possibilities Rescue Inc. — https://pawsitiverescue.org (NY 11757)
+- Pet Animal Welfare Society of Connecticut — http://www.pawsct.org (CT 06851)
+- Pibbles & More Animal Rescue, Inc.* — http://www.pmarinc.org (N 13902)
+- Poodle Rescue Connecticut, Inc. — http://www.poodlerescuect.org (CT 06770)
+- Real Dog Rescue — https://www.realdogrescue.org (NJ 07430)
+- Responsible Pet Care of Oxford Hills, Inc. — https://www.responsiblepetcare.org (ME 04281)
+- ROAR - Ridgefield Operation for Animal Rescue — https://roar-ridgefield.org (CT 06877)
+- Seventh Heaven — https://seventhheavenrescue.org (New 13215)
+- Shiba Rescue of New Jersey — http://www.shibarescuenj.org (NJ 08753)
+- Short & Stumpy Pups Inc — https://ourbestfriendsrescue.org (NY 11520)
+- Short Noses Only Rescue Team — http://www.snortrescue.org (NJ 07030)
+- Southampton Animal Shelter — https://southamptonanimalshelter.com (NY 11946)
+- SPCA of Westchester — https://spca914.org (NY 10510)
+- Starting Over Animal Rescue — http://www.startingoveranimalrescue.org (PA 18078)
+- Sunnyskies Bird & Animal Sanctuary* — https://www.animalshelter.net/shelter/4662/sunnyskies-bird-animal-sanctuary-inc (New 10990)
+- The Gingerbread House Sanctuary & Rescue — https://gingerbreaddogs.org (NJ 07885)
+- The Mr. Mo Project — http://www.mrmoproject.com (NY 12065)
+- TIG's Journey Animal Rescue & Sanctuary — http://www.tigjars.org (VT 05701)
+- Ulster County SPCA — https://www.ucspca.org (NY 12401)
+
+## Its site says nothing about where it is
+
+These wait for a person: phone them, or look for an address on a contact page. A non-NYC area code is a strong hint.
+
+- 3 Acres Rescue — http://3acresrescue.com
+- Air Twiga Animal Rescue — https://www.airtwiga.org
+- All About Spay Neuter — http://www.allaboutspayneuter.com (area code 516)
+- All Creatures Big & Small — http://allcreaturesbigandsmall.org
+- All God's Creatures Inc. — https://www.petfinder.com/member/us/nj/hightstown/all-gods-creatures-inc-nj864
+- Almost Home Animal Sanctuary — http://www.almosthomeanimalsanctuary.com (area code 484)
+- American Belgian Malinois Rescue — https://www.malinoisrescue.org
+- American Bulldog Rescue — http://americanbulldogrescue.org
+- American Maltese Association Rescue* — http://www.americanmalteserescue.org
+- Animal Rescue Force (ARF) — http://arforce.rescueme.org
+- Animals Are Forever Inc — https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299
+- Australian Shepherds Furever — https://www.australianshepherdsfurever.org
+- Best Bullies — https://www.bestbullies.org
+- Bichon Frise Rescue of Northern New Jersey* — http://www.bichonrescuenj.com
+- Blue Barn Farm & Sanctuary — http://www.bluebarnrescue.org (area code 780)
+- Cameron Animal Hospital Rescue — http://www.petfinder.com/member/us/nj/montclair/cameron-animal-hospital-rescue-nj150
+- Cane Corso Rescue — https://canecorsorescue.org
+- Cats in Bloom — http://catsinbloom.org (area code 570)
+- Cats Under the Stars — https://catsunderthestars.org (area code 516)
+- Cavalier Rescue USA* — http://www.cavalierrescueusa.org
+- Compact Canine Rescue — http://www.compactcaninerescue.org
+- Dalmatian Adoptions, Inc. — https://www.petfinder.com/member/us/ny/brooklyn/dalmatian-adoption-inc-ny505
+- Doberman Pinscher Rescue of PA, Inc. — https://www.dprpa.org
+- Eleventh Hour Rescue — http://www.ehrdogs.org
+- Farm Sanctuary — https://www.farmsanctuary.org
+- Friends of Wayne Animals (FOWA) — http://www.fowarescue.com
+- Friends with Four Paws — http://www.friendswithfourpaws.org
+- Gatto Pups & Friends — https://gattopupsandfriends.com
+- Happily Furever After Rescue — https://www.happilyfureverafter.org
+- Happy Tails Pet Rescue — https://www.happytailspetrescue.org
+- Hermione's Home — https://www.hermioneshome.com
+- Hopewell Rescue Inc — https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354
+- Hurricane Pets Rescue — http://hurricanepetsrescue.org
+- Husky House NJ — http://www.huskyhouse.org
+- Jenny's Dream — http://www.jennysdreamrescue.org (area code 814)
+- Kindred Spirits Dog Adoption — https://www.ksdadopt.com
+- King’s Pride Kitten Rescue — https://kings-pride.org
+- Last Chance Animal Rescue — http://www.lcarescue.org
+- Lend-a-Paw — https://lendapawinc.com (area code 516)
+- Linus & Friends — https://www.linusandfriends.org
+- Long Island Bulldog Rescue* — http://longislandbulldogrescue.org
+- Lucky Dog Rehab — https://luckydogrehab.org (area code 717)
+- Metropolitan Maltese Rescue* — https://www.malteserescue.com
+- Mid Atlantic Great Dane Rescue League — http://nydanerescue.com
+- NEPA — https://nepapetrescue.com (area code 570)
+- New Jersey Schnauzer Rescue Network* — http://www.njsrn.org (area code 973)
+- North Shore Animal League America — http://www.animalleague.org
+- Northeast Boston Terrier Rescue — http://nebostonrescue.com
+- Ollie's Angels Animal Rescue — http://www.olliesangelsanimalrescue.org
+- Only Maine Coons Rescue — http://www.omcrescue.org
+- Pathway to Hope — http://www.apathwaytohope.org
+- Patricia Ladew Foundation — http://www.theladewcatsanctuary.org
+- Pawsitively Pom Rescue — http://pawsitivelypom.rescuegroups.org
+- Pawsome Squad, Inc. — https://www.pawsomesquad.org/about-us
+- Peace Love and Poms Rescue — https://peacelovepoms.rescuegroups.org
+- Peace Love Rescue New York — https://www.petfinder.com/member/us/ny/manorville/peace-love-rescue-new-york-ny1511
+- Peis & Strays — http://www.peisandstrays.com
+- Pekingese Rescue Network, Inc. — https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403
+- Pioneers for Animal Welfare Society, Inc. — http://paws-li.org
+- Project Precious Rescue — http://www.pprct.org
+- Protectors of Paws & Claws — https://pawsclawsprotectors.org
+- Pug Rescue of New England — http://pugrescueofnewengland.org
+- Pupstarz Rescue* — https://www.pupstarzrescue.org
+- Purrfect Pals, Inc* — https://purrfectpalsinc.petfinder.com
+- Redemption Rescues* — https://www.redemptionrescueinc.com
+- Reenies Rabbit Rescue — http://reeniesrabbitrescue.weebly.com
+- Riverhead Shelter Volunteer Program(RSVP) — https://rsvpinc.org
+- Ruff Dog Rescue Northeast — http://www.rdrne.org
+- Sarama Animal Rescue — http://sarama.org
+- Save A Yorkie Rescue, Inc. — https://www.saveayorkierescue.org (area code 717)
+- Saving Paws Rescue, Inc.* — http://savingpawsrescue.org (area code 866)
+- Shelter Chic — http://www.shelterchic.org
+- Shelter Survivors* — http://www.sheltersurvivors.com
+- Shih Tzus & Furbabies — https://stfbr.org
+- Soft Landing Animal Rescue & Sanctuary, Inc. — http://www.softlandinganimalrescue.org (area code 570)
+- Spicy Cats Rescue — https://www.spicycats.org
+- Suruluna Animal Rescue — http://www.suruluna.org
+- Tabby's Place — https://www.tabbysplace.org
+- The Odd Cat Sanctuary — http://www.theoddcatsanctuary.com
+- Tibetan Mastiff Rescue — http://www.tibetanmastiffrescueinc.org
+- Treasure Fur-Ever Animal Rescue — https://www.treasurefureveranimalrescue.com
+- Twenty Paws Rescue — http://www.twentypawsrescue.com
+- Two by Two Rescue Group — http://twobytworescue.com
+- United Yorkie Rescue, Inc. — http://unitedyorkierescue.org
+- Valley Cats & Friends — http://valleycatsandfriends.com
+- Veterinary Technicians for Cleft Affected Animals — http://www.techsforclefts.com
+- Wag On Inn Rescue — https://wagoninn.rescuegroups.org
+- Wise Animal Rescue — http://www.wiseanimalrescue.org
+- With a Golden Spirit (WAGS)* — http://wagsrescue.homestead.com
+- WRAP- Whippet Rescue and Placement — http://whippet-rescue.org
+
+## Its site could not be read from an automated browser
+
+- All Sentient Beings — https://www.asbrescue.org
+- American Alliance for Protection of Animals — https://www.animalsprotectors.org
+- Big Hands Little Paws — http://bighandslittlepaws.org
+- Blue Ridge Bull Terrier Group — http://www.brbtc.com
+- Bullmastiff Rescue — http://www.bullmastiffrescuers.net
+- Cavalier Alliance for Rescue & Research — http://www.cavalieralliance.org
+- Charwills German Shepherd Rescue — https://www.charwillsgsdrescuekennels.com
+- Col Potter Cairn Rescue Network — https://www.cairnrescue.com
+- Columbia-Greene Humane Society/SPCA — http://www.cghs.org
+- Dawn of a New Day Animal Rescue, Inc. — https://dawnofanewdayanimalrescue.com
+- Everlasting Hope Animal Advocacy & Rescue — http://awos.petfinder.com/shelters/ny1061.html
+- Fosterlings — http://fosterlings.org
+- Furry Flights to Freedom — http://www.furryflightstofreedom.org
+- Get A Bull — http://www.getabull.org
+- Gimme Shelter Animal Rescue, Inc. — http://www.gimmeshelteranimalrescue.org
+- Humane Long Island — https://www.humanelongisland.org
+- Hunterdon Somerset — http://hunterdonsomersetarc.webs.com
+- Jet's Rehab Rescue — https://jetsrehabrescue.com
+- Kizzy's Place — https://kizzysplace.org
+- Little Shelter* — http://littleshelter.com
+- Mid-Atlantic Basset Hound Rescue — https://www.midatlanticbassets.com
+- Mountain Rottie Rescue — https://mountainrottierescue.net
+- New Hope Rescue Ranch, Inc. — https://www.newhoperescueranch.com
+- Paws 4 Life — https://paws4lifect.com
+- Paws4Survival Rescue, Inc. — http://www.paws4survival.com
+- Peace4Paws — https://www.peace4paws.org
+- Peppertree — http://www.peppertree.org
+- Pets Alive — http://www.petsalive.com
+- Pit of Our Souls Rescue Inc. — http://pitofoursoulsrescue.com
+- Pitties Love Peace — http://www.pittieslovepeace.com
+- Rawhide Rescue — https://www.rawhiderescue.org
+- Remember Me Rescue — https://www.remembermerescueny.net
+- Rock n' Rescue — https://rockandrescue.wordpress.com
+- Safe Tails Animal Rescue Corp. — https://www.safetails.org
+- Scottish Terrier Club of Great New York Rescue* — http://awos.petfinder.com/shelters/NJ441.html
+- Shiba Rescue of New England — https://shibarescueofnewengland.org
+- Shore Saves — https://shoresaves.com
+- They All Want To Live — https://theyallwanttolive.org
+- Wayward Ranch Animal Sanctuary — https://www.waywardranch.org
+- Wells Valley Cat Rescue — https://wellsvalleycatrescue.org
+- Who Rescued Who Animal Rescue — https://www.wrwtx.org

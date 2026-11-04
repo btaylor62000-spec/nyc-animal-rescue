@@ -48,7 +48,7 @@
   "website": "https://mrbonesandco.org",
   "intake_urls": [
     {
-      "url": "https://mrbonesandco.org/adoptme/",
+      "url": "https://mrbonesandco.org/adopt/",
       "label": "Adopt"
     }
   ],
@@ -73,7 +73,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://mrbonesandco.org/adoptme/"
+    "https://mrbonesandco.org/adopt/"
   ],
   "last_verified": "2026-09-22",
   "section": "MANHATTAN (Manhattan-based dog rescues)",

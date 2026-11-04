@@ -4,11 +4,11 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **390** organizations after de-duplication
+- **400** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **16** entries flagged as not currently active
-- **4** entries with no way at all to make contact
+- **19** entries flagged as not currently active
+- **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -17,19 +17,19 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 287 |
-| dog | 220 |
+| cat | 294 |
+| dog | 229 |
 | wildlife | 45 |
-| rabbit | 36 |
+| rabbit | 37 |
 | bird-companion | 33 |
 | reptile | 32 |
 | farm | 30 |
 | small-mammal | 30 |
 | bird-wild | 21 |
-| pigeon | 19 |
 | amphibian | 14 |
 | fish | 14 |
 | equine | 12 |
+| pigeon | 11 |
 | invertebrate | 11 |
 | marine | 10 |
 
@@ -37,23 +37,23 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 156 |
+| adoption | 165 |
+| foster | 99 |
 | tnr | 95 |
-| foster | 91 |
-| spay-neuter | 74 |
+| spay-neuter | 75 |
 | owner-support | 71 |
-| surrender | 63 |
+| surrender | 64 |
 | low-cost-vet | 58 |
 | referral | 47 |
 | emergency-vet | 37 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
-| wildlife-rehab | 28 |
 | medical-special-needs | 24 |
+| wildlife-rehab | 24 |
+| financial-aid | 23 |
 | education | 23 |
-| financial-aid | 22 |
-| legal | 21 |
+| legal | 20 |
 | lost-found | 18 |
 | senior | 18 |
 | sanctuary | 17 |
@@ -61,7 +61,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | boarding | 15 |
 | microchip | 13 |
 | transport | 12 |
-| breed-specific | 10 |
+| breed-specific | 11 |
 | pet-loss | 9 |
 | neonatal | 7 |
 | exotic-vet | 6 |
@@ -74,26 +74,26 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 255 |
-| queens | 211 |
-| manhattan | 210 |
-| bronx | 185 |
-| staten-island | 184 |
+| brooklyn | 262 |
+| queens | 221 |
+| manhattan | 217 |
+| bronx | 192 |
+| staten-island | 191 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 193 |
+| High | 194 |
 | Medium | 153 |
-| Low | 44 |
+| Low | 53 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 374 |
-| verify | 10 |
+| active | 381 |
+| verify | 13 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -104,16 +104,17 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (4)
+### No contact method at all (5)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
 - **Animal Relief Fund (ARF)** — PET FOOD PANTRIES (specific programs)
+- **Magnificat Cat Rescue and Rehoming** — CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
-### Reachable only through social media (22)
+### Reachable only through social media (23)
 
 The weekly automated check cannot verify these, because Instagram and Facebook cannot be reliably scraped. They stay at Low confidence and carry a "verify via their social channel" note.
 
@@ -130,6 +131,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 - **Eastchester Bay Stray Cat Project, Inc.** — instagram eastchesterbaystraycats, facebook EastchesterBayStrayCatProject
 - **Harman Cat Rescue** — instagram harman_catrescue
 - **India Street Cats** — instagram indiastreetcats
+- **Kittens and Barbells Rescue, Inc.** — instagram kittensandbarbells_, facebook kittensandbarbells
 - **Los Sures Cats Williamsburg** — instagram gatoslossures
 - **Midwood Kitty Cats / Cats of Midwood** — instagram midwood_kittycats
 - **Monroe Street Cats (Bed Stuy)** — instagram monroestreetcats
@@ -144,7 +146,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (28)
+### Never verified (38)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -153,10 +155,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
 - **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
-- **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Feather Friends Parrot Adoption Services** — `verify`: Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
-- **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Kittens and Barbells Rescue, Inc.** — `verify`: Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.
+- **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
+- **Mighty Mutts & Ollie's Place** — `verify`: Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Safe Place for Pets (RedRover)** — `verify`: Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
@@ -254,7 +259,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
 
-### Conflicts between sources (6)
+### Conflicts between sources (5)
 
 Nothing here is auto-corrected. These are disagreements between the workbooks that a person should resolve.
 
@@ -264,8 +269,6 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
   - Sources give different domains for what looks like the same organization.
 - **website** — nycacc.org  vs  petsandhousing.org
   - Sources give different domains for what looks like the same organization.
-- **website** — 24pet.com  vs  petplace.com
-  - Sources give different domains for what looks like the same organization.
 - **address** — VERG (Veterinary Emergency & Referral Group): 196 4th Ave  vs  VERG North (Veterinary Emergency & Referral Group): 318 Warren St
   - Same phone line (7185229400) listed at different addresses. One source is probably out of date -- verify before relying on either.
 - **address** — VEG Ralph Ave: 1950 Ralph Ave  vs  VERG South: 2220 Flatbush Ave
@@ -273,7 +276,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (32)
+### Rows the rules could not fully tag (33)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -306,7 +309,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:85)
 - **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:86)
 - **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:92)
-- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:94)
+- **Vet-I-Care** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:93)
+- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:95)
 
 ## Privacy
 
@@ -327,23 +331,23 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the shelter’s at-risk list | 7523 |
+| Save an animal from the NYC shelter’s urgent list | 8220 |
 | Reporting animal abuse or neglect | 5732 |
-| Animal emergencies and poison control | 3014 |
-| Low-cost clinics and trap banks | 8203 |
+| Animal emergencies and poison control | 3213 |
+| Low-cost clinics and trap banks | 8438 |
 | Community cats, colonies and starting TNR | 6880 |
-| Cats needing specialist help | 4701 |
-| Lost or found a cat | 6225 |
-| Help keeping your cat | 9840 |
-| Help keeping your dog | 8474 |
-| Low-cost vet care, spay/neuter and dog licensing | 11542 |
+| Cats needing specialist help | 4787 |
+| Lost or found a cat | 6279 |
+| Help keeping your cat | 10376 |
+| Help keeping your dog | 8955 |
+| Low-cost vet care, spay/neuter and dog licensing | 11750 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
-| Breed-specific dog rescue | 13722 |
+| Breed-specific dog rescue | 13770 |
 | Found injured or orphaned wildlife | 6640 |
 | Exotic pet emergencies | 4123 |
 | What you can legally keep in New York City | 3073 |
-| Help paying for veterinary care | 6412 |
+| Help paying for veterinary care | 6387 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |
 | Lost or found a rabbit, bird or reptile | 2266 |
 | Boarding, pet sitting and planning ahead | 6022 |

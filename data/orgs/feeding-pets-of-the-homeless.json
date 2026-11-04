@@ -26,7 +26,11 @@
   "zips": [],
   "region_note": "PET FOOD PANTRIES (specific programs)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "info@petsofthehomeless.org"
+    }
+  ],
   "website": "https://petsofthehomeless.org",
   "intake_urls": [],
   "social": [],
@@ -56,6 +60,15 @@
       "evidence_url": "https://petsofthehomeless.org/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: Feeding Pets of the Homeless: pet food and emergency vet care for pets of people experiencing homelessness. Working."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "info@petsofthehomeless.org",
+      "evidence_url": "https://petsofthehomeless.org/contact-us/",
+      "source": "manual",
+      "note": "Read on its contact page in a browser on 2026-11-04."
     }
   ],
   "privacy_hold": false,

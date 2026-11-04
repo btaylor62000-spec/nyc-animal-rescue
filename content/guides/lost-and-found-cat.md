@@ -34,7 +34,7 @@ Verified against ACC, Petco Love Lost, 24PetWatch, and Urban Cat League, 2026-08
 
 ## MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)
 
-- 24PetWatch (24pet.com/products/registry) - North America's largest registry, FREE registration, any chip brand.
+- 24PetWatch (now at petplace.com/pet-microchip-registry; 24Petwatch accounts moved to PetPlace) - North America's largest registry, FREE registration, any chip brand.
 - Petco Love Lost - free, doubles as the lost/found database above.
 - Don't know the chip company? Look up the number at found.org/owners or the AAHA Universal Lookup (petmicrochiplookup.org).
 - Where to GET a cat chipped cheaply: ACC, HSNY, most low-cost clinics on the 'Clinics, traps & support' tab do microchipping at the s/n visit.

@@ -29,7 +29,11 @@
   "zips": [],
   "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "email@lwnyc.org"
+    }
+  ],
   "website": "https://lwnyc.org",
   "intake_urls": [],
   "social": [
@@ -76,6 +80,15 @@
       "evidence_url": "https://lwnyc.org/",
       "source": "manual",
       "note": "Removed: (212) 222-1234 is the unedited placeholder from their site theme. It is present only as a hidden tel: link and is never displayed to a reader. A placeholder on a rescue listing is a wrong number, and a wrong number is worse than none."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "email@lwnyc.org",
+      "evidence_url": "https://lwnyc.org/contact",
+      "source": "manual",
+      "note": "Read on its contact page in a browser on 2026-11-04. The guides gave adopt@lwnyc.org and a \"rescue line\" number, neither on its site; both replaced in the guides with this address."
     }
   ],
   "privacy_hold": false,

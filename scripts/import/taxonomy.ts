@@ -89,7 +89,11 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
     pattern: /\bparrots?\b|\bbudgies?\b|\bcockatiels?\b|\bfinch(es)?\b|\bcockatoo|\bmacaw|\bconure|\bavian\b|companion bird|domestic bird|backyard poultry|\bchickens?\b/i,
     fields: ALL,
   },
-  { tag: 'pigeon', pattern: /\bpigeons?\b|\bking pigeon|\bdoves?\b/i, fields: ALL },
+  // "Doves" in the pet-bird section heading ("parrots, budgies ... doves") made
+  // every parrot rescue a pigeon rescue; doves count only where a group's own
+  // type or notes say so.
+  { tag: 'pigeon', pattern: /\bpigeons?\b|\bking pigeon/i, fields: ALL },
+  { tag: 'pigeon', pattern: /\bdoves?\b/i, fields: TYPE_NOTES },
   {
     tag: 'bird-wild',
     pattern: /\bwild birds?\b|\bsongbird|\braptors?\b|\bhawks?\b|\bowls?\b|\beagles?\b|\bfalcons?\b|birds? of prey|\bwaterfowl\b|\bgeese\b|\bducks?\b|\bgulls?\b|window.?strike|fledgling/i,
@@ -128,7 +132,9 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
 export const NEED_RULES: Rule<Need>[] = [
   { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|\b24hr\b|emergency (vet|hospital|care)|\bER\b|urgent care/i, fields: ALL, requires: IS_VET_PROVIDER },
   { tag: 'poison-control', pattern: /poison control|poison helpline|toxicolog/i, fields: ALL },
-  { tag: 'wildlife-rehab', pattern: /rehabilitat|\brehabber/i, fields: ALL },
+  // Parrot rescues "rehabilitate and rehome" pets; that is not wildlife rehab,
+  // and it put two of them in the injured-bird answers.
+  { tag: 'wildlife-rehab', pattern: /rehabilitat(?!\w*\s+(and|&)\s+re-?home)|\brehabber/i, fields: ALL },
   { tag: 'adoption', pattern: /\badopt/i, fields: TYPE_NOTES },
   { tag: 'surrender', pattern: /\bsurrender|\brehom(e|ing)|\bintake\b|\bgive up\b|owner.?relinquish/i, fields: TYPE_NOTES },
   { tag: 'foster', pattern: /\bfoster/i, fields: TYPE_NOTES },
@@ -164,7 +170,10 @@ export const NEED_RULES: Rule<Need>[] = [
   { tag: 'sanctuary', pattern: /\bsanctuary\b|lifelong care|lifetime (care|foster)|non-?releasable/i, fields: ALL },
   { tag: 'working-cat', pattern: /working cats?|barn cats?/i, fields: ALL },
   { tag: 'transport', pattern: /\btransport/i, fields: ALL },
-  { tag: 'legal', pattern: /\blegal\b|law enforcement|\bcruelty\b|bite report|\blegality\b|\bpermit/i, fields: ALL },
+  // "Cruelty" means a place to report it, not an animal's history: a farm
+  // sanctuary whose animals were "rescued from cruelty/neglect" was tagged
+  // legal and came up as a way to report abuse.
+  { tag: 'legal', pattern: /\blegal\b|law enforcement|(?<!from )\bcruelty\b(?![/ ]neglect)|bite report|\blegality\b|\bpermit/i, fields: ALL },
   { tag: 'breed-specific', pattern: /breed.?specific|bully.?breeds?|\bpit\b|pit.?bull|small-?breed|\bsatos?\b|specific breed/i, fields: TYPE_NOTES },
   { tag: 'advocacy', pattern: /\badvocacy\b|\bat-risk\b|death row|pull(s|ing)? from ACC|New Hope partner/i, fields: ALL },
   { tag: 'education', pattern: /\beducation|\boutreach\b|\bworkshop|\bcertification\b|\btrain(s|ing)? (volunteers|caretakers)/i, fields: ALL },

@@ -45,11 +45,6 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
@@ -2483,11 +2478,6 @@
       "matched": "Sanctuary"
     },
     {
-      "tag": "legal",
-      "field": "notes",
-      "matched": "cruelty"
-    },
-    {
       "tag": "referral",
       "field": "notes",
       "matched": "referral"
@@ -2611,22 +2601,12 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -3009,11 +2989,6 @@
       "tag": "bird-companion",
       "field": "name",
       "matched": "Parrot"
-    },
-    {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
     },
     {
       "tag": "farm",
@@ -4610,11 +4585,6 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
@@ -5812,22 +5782,12 @@
       "matched": "Avian"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -6530,22 +6490,12 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -7121,11 +7071,6 @@
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -7710,11 +7655,6 @@
       "matched": "COMPANION BIRD"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "reptile",
       "field": "name",
       "matched": "Reptile"
@@ -7930,11 +7870,6 @@
       "tag": "bird-companion",
       "field": "section",
       "matched": "COMPANION BIRD"
-    },
-    {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
     },
     {
       "tag": "farm",
@@ -8595,6 +8530,11 @@
     {
       "tag": "pigeon",
       "field": "notes",
+      "matched": "pigeons"
+    },
+    {
+      "tag": "pigeon",
+      "field": "notes",
       "matched": "doves"
     },
     {
@@ -9068,6 +9008,23 @@
       "tag": "emergency-vet",
       "field": "type",
       "matched": "Emergency vet"
+    }
+  ],
+  "vet-i-care": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "section",
+      "matched": "HELP PAYING"
     }
   ],
   "vet-wheels-mobile-clinic": [

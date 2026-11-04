@@ -104,6 +104,9 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
   {
     file: WB_CAT,
     tab: 'Owner support & surrender prev.',
+    // A pointer to the 22 city pantries, which are listed one by one from
+    // data/pet-food-pantries.json; as a record it would be a 23rd, fake one.
+    skip: /^NYC's free pet food pantries/i,
     animals: ['cat'],
     rules: [
       { pattern: /ACC OWNER SUPPORT/i, needs: ['owner-support', 'surrender'], orgTypes: ['government', 'support-program'] },
@@ -118,6 +121,9 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
   {
     file: WB_DOG,
     tab: 'Owner support & surrender prev.',
+    // A pointer to the 22 city pantries, which are listed one by one from
+    // data/pet-food-pantries.json; as a record it would be a 23rd, fake one.
+    skip: /^NYC's free pet food pantries/i,
     animals: ['dog'],
     rules: [
       { pattern: /ACC OWNER SUPPORT/i, needs: ['owner-support', 'surrender'], orgTypes: ['government', 'support-program'] },

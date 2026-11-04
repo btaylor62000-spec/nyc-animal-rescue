@@ -20,8 +20,8 @@ anywhere.
 
 ## What you are taking on
 
-A free public directory of animal help in New York City: around 300
-organizations, 21 guides, a search page, an assistant that answers questions in
+A free public directory of animal help in New York City: about 390
+organizations, 22 guides, a search page, an assistant that answers questions in
 plain language, and two scheduled jobs that re-check the data and look for new
 resources.
 

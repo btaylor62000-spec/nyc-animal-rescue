@@ -1301,7 +1301,19 @@
     "feather-friends-parrot-adoption-services": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": null,
+      "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "http://www.nycparrot.com",
+          "to": null,
+          "source": "manual",
+          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+        }
+      ]
     },
     "feeding-pets-of-the-homeless": {
       "last_checked": "2026-09-22",
@@ -1317,6 +1329,20 @@
           "evidence_url": "https://petsofthehomeless.org/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Feeding Pets of the Homeless: pet food and emergency vet care for pets of people experiencing homelessness. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@petsofthehomeless.org",
+          "evidence_url": "https://petsofthehomeless.org/contact-us/",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04."
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@petsofthehomeless.org"
         }
       ]
     },
@@ -1522,7 +1548,7 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22",
+      "last_verified": "2026-11-04",
       "phones": [
         {
           "value": "7325886578",
@@ -1538,8 +1564,25 @@
           "evidence_url": "https://happyhomesinc.org/",
           "source": "weekly-check",
           "note": "The previous value was no longer on their site and exactly one replacement was found there."
+        },
+        {
+          "date": "2026-11-04",
+          "source": "manual",
+          "field": "emails",
+          "from": null,
+          "to": "Happyhomesrescue1@gmail.com",
+          "evidence_url": "https://happyhomesinc.org",
+          "note": "Read on its own site on 2026-11-04: \"located in Old Bridge, NJ\", volunteers in East Brunswick, Old Bridge and Staten Island, main phone 732-588-6578 (the number the weekly check put in on 2026-09-21, which was right), email Happyhomesrescue1@gmail.com. Marked as outside the city, serving Staten Island."
         }
-      ]
+      ],
+      "emails": [
+        {
+          "value": "Happyhomesrescue1@gmail.com"
+        }
+      ],
+      "outside_nyc": true,
+      "confidence": "High",
+      "notes": "Foster-based rescue spanning Staten Island + central NJ (Old Bridge/East Brunswick). Reduces shelter euthanasia + street TNR + community spay/neuter education. Cats viewable at the SI Petco habitat + NJ Petco/PetSmart events. Verified 2026-08-26. Intake: by appointment + weekend events Other channel: IG/FB @happyhomesrescue Other channel: SI habitat: Petco 165 Bricktown Way 10309 (Sun)\n\nBased in Old Bridge, New Jersey (P.O. Box 614, Old Bridge, NJ 08857), a foster-home rescue with volunteers on Staten Island; meet-and-greets are arranged with a foster."
     },
     "hard-hat-cats": {
       "last_checked": "2026-09-22",
@@ -1628,7 +1671,23 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "emails": [
+        {
+          "value": "info.hsny@verizon.net"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info.hsny@verizon.net",
+          "evidence_url": "https://humanesocietyny.org/contact/",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04, beside 212-752-4840 and 212-752-4842 (both already listed). The low-cost dog care guide gave this address."
+        }
+      ]
     },
     "india-street-cats": {
       "last_checked": "2026-09-22",
@@ -1727,7 +1786,22 @@
     "kittens-and-barbells-rescue-inc": {
       "last_checked": "2026-09-22",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": null,
+      "intake_urls": [],
+      "status": "verify",
+      "status_note": "Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://www.kittensandbarbells.org, https://kittensandbarbells.org/adoptus",
+          "to": null,
+          "evidence_url": "https://www.kittensandbarbells.org",
+          "source": "manual",
+          "note": "The link check found kittensandbarbells.org redirecting to www.sgmigrant.com/bn-covid19, an Indonesian online gambling site: the domain has lapsed and been taken. Website and form links removed; Instagram and Facebook kept. Not replaced with a guess."
+        }
+      ]
     },
     "kittykind": {
       "last_checked": "2026-09-22",
@@ -1779,10 +1853,24 @@
           "evidence_url": "https://lwnyc.org/",
           "source": "manual",
           "note": "Removed: (212) 222-1234 is the unedited placeholder from their site theme. It is present only as a hidden tel: link and is never displayed to a reader. A placeholder on a rescue listing is a wrong number, and a wrong number is worse than none."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "email@lwnyc.org",
+          "evidence_url": "https://lwnyc.org/contact",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04. The guides gave adopt@lwnyc.org and a \"rescue line\" number, neither on its site; both replaced in the guides with this address."
         }
       ],
       "confidence": "Low",
-      "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website."
+      "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website.",
+      "emails": [
+        {
+          "value": "email@lwnyc.org"
+        }
+      ]
     },
     "long-island-bird-and-exotics-vet-clinic": {
       "last_checked": "2026-09-22",
@@ -1883,7 +1971,19 @@
     "magnificat-cat-rescue-and-rehoming": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": null,
+      "status_note": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "http://www.magnificatrescue.webs.com",
+          "to": null,
+          "source": "manual",
+          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+        }
+      ]
     },
     "mainely-rat-rescue": {
       "last_checked": "2026-09-22",
@@ -1981,8 +2081,22 @@
     },
     "mighty-mutts-and-ollies-place": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "needs-review",
+      "consecutive_failures": 2,
+      "intake_urls": [],
+      "status": "verify",
+      "status_note": "Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": "https://mighty-mutts.squarespace.com/adopt",
+          "to": null,
+          "evidence_url": "https://mighty-mutts.squarespace.com/adopt",
+          "source": "manual",
+          "note": "Link check, 2026-11-04: the adoption link answers \"Squarespace - Website Expired\" (404), and www.mightymutts.org presents a certificate for another name, so browsers warn. Adoption link removed; marked to confirm."
+        }
+      ]
     },
     "monroe-street-cats": {
       "last_checked": "2026-09-22",
@@ -2125,7 +2239,23 @@
     "ny-cat-warriors": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "nycw@nycatwarriors.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "nycw@nycatwarriors.org",
+          "evidence_url": "https://nycatwarriors.org/",
+          "source": "manual",
+          "note": "Read on its own site in a browser on 2026-11-04. The guide to the shelter's urgent list gave this address and the listing had none."
+        }
+      ]
     },
     "ny-marine-mammal-and-sea-turtle-stranding-hotline": {
       "last_checked": "2026-09-22",
@@ -2242,8 +2372,14 @@
       "last_verified": "2026-09-22",
       "phones": [
         {
+          "value": "311",
+          "display": "311",
+          "label": "From any phone in New York City"
+        },
+        {
           "value": "2126399675",
-          "display": "(212) 639-9675"
+          "display": "(212) 639-9675",
+          "label": "311 from outside the city (212-NEW-YORK)"
         }
       ],
       "change_log": [
@@ -2255,6 +2391,15 @@
           "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
           "source": "weekly-check",
           "note": "The previous value was no longer on their site and exactly one replacement was found there."
+        },
+        {
+          "date": "2026-11-04",
+          "source": "manual",
+          "field": "phones",
+          "from": "2126399675",
+          "to": "311, 2126399675",
+          "evidence_url": "https://portal.311.nyc.gov/article/?kanumber=KA-02498",
+          "note": "The weekly check replaced 311 with (212) 639-9675 on 2026-09-21. That number is 311 itself, for callers outside the city (212-NEW-YORK), as the city's 311 page says. 311 is restored first and the long number kept second, labelled. A reviewer caught it."
         }
       ]
     },
@@ -2311,14 +2456,31 @@
     "nys-dec-region-2": {
       "last_checked": "2026-09-22",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "r2info@dec.ny.gov",
+          "label": "General enquiries (not for emergencies)"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "r2info@dec.ny.gov",
+          "evidence_url": "https://extapps.dec.ny.gov/docs/administration_pdf/decguide.pdf",
+          "source": "manual",
+          "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
+        }
+      ]
     },
     "nysave": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
-      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
+      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2328,6 +2490,15 @@
           "evidence_url": "https://www.nysave.org/pet-owners/",
           "source": "manual",
           "note": "Eligibility added from its own pet owners page, read in a browser. A reviewer also mentioned a yearly cap per household; its site does not state one, so none is given."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "~$2,000/yr per household",
+          "to": "no fixed yearly amount per household",
+          "evidence_url": "https://www.nysave.org/hospitals/program-guidelines/",
+          "source": "manual",
+          "note": "A reviewer asked whether NYSAVE caps grants per household per year. Its program guidelines, read in a browser on 2026-11-04, set eligibility (city poverty level, turned down for CareCredit or Scratchpay) but no yearly amount per household; the only figures on its site are the $2,500-$10,000 yearly grants it gives partner hospitals. The \"~$2,000/yr per household\" in the research had no source and is removed."
         }
       ]
     },
@@ -2628,7 +2799,7 @@
     },
     "safe-place-for-pets": {
       "last_checked": "2026-09-22",
-      "check_status": "manual-only",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -2639,8 +2810,19 @@
           "evidence_url": "https://safeplaceforpets.org",
           "source": "manual",
           "note": "Tried on 2026-11-04: safeplaceforpets.org shows a \"Confirm you are human\" bot check. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "verify",
+          "evidence_url": "https://redrover.org/relief-dv/",
+          "source": "manual",
+          "note": "Link check, 2026-11-04: safeplaceforpets.org redirects to redrover.org with no directory. RedRover's relief-dv page lists Safe Escape Grants and Safe Housing Grants for shelters, not a ZIP search. Link pointed at that page; marked to confirm."
         }
-      ]
+      ],
+      "status": "verify",
+      "status_note": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes."
     },
     "saint-spiro-cat-rescue-inc": {
       "last_checked": "2026-09-22",
@@ -2780,7 +2962,29 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "emails": [
+        {
+          "value": "adopt@socialteesnyc.org"
+        },
+        {
+          "value": "fostertoadopt@socialteesnyc.org"
+        },
+        {
+          "value": "contact@socialteesnyc.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org",
+          "to": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org, contact@socialteesnyc.org",
+          "evidence_url": "https://socialteesnyc.org/contact",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04; the urgent-list guide gave it. The guide's phone number, (212) 614-9653, is not on its site and has been taken out of the guide."
+        }
+      ]
     },
     "south-slope-cats": {
       "last_checked": "2026-09-22",
