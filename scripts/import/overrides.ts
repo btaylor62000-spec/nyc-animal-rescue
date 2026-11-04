@@ -19,6 +19,16 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    id: 'anjellicle-cats-rescue',
+    reason: 'Its own site lists "sweet seniors" among the cats it is placing; the research row does not say so.',
+    addNeeds: ['senior'],
+  },
+  {
+    id: 'brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe',
+    reason: 'Its own rescue page offers to help rehome an owned cat, through its foster network, when surrender is truly necessary.',
+    addNeeds: ['surrender'],
+  },
+  {
     id: '24petwatch',
     reason: 'The registry now runs under PetPlace; one name for what the two workbooks wrote two ways.',
     set: { name: '24Petwatch microchip registry (PetPlace)', aka: ['24PetWatch', '24Petwatch', 'PetPlace microchip registry'] },

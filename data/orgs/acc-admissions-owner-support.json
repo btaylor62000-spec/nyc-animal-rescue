@@ -44,7 +44,7 @@
   "social": [],
   "address": null,
   "hours": null,
-  "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.",
+  "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.\n\nDeferred intake: if you cannot keep a pet but do not want to bring it to a shelter, ACC can look for a placement while the animal stays at home with you, and can work with partner groups to help you keep it. Call 212-788-4000 and explain your situation.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -58,7 +58,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://www.nycacc.org/services/surrender/",
+      "source": "manual",
+      "note": "From ACC's own surrender page, read in a browser: \"Our deferred intake program allows ACC to seek placement for your animal while they remain in the comfort of your home.\""
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

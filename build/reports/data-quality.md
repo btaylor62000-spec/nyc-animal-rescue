@@ -55,8 +55,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | financial-aid | 22 |
 | legal | 21 |
 | lost-found | 18 |
+| senior | 18 |
 | sanctuary | 17 |
-| senior | 17 |
 | behavior-training | 16 |
 | boarding | 15 |
 | microchip | 13 |

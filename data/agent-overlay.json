@@ -56,7 +56,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.\n\nDeferred intake: if you cannot keep a pet but do not want to bring it to a shelter, ACC can look for a placement while the animal stays at home with you, and can work with partner groups to help you keep it. Call 212-788-4000 and explain your situation.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.nycacc.org/services/surrender/",
+          "source": "manual",
+          "note": "From ACC's own surrender page, read in a browser: \"Our deferred intake program allows ACC to seek placement for your animal while they remain in the comfort of your home.\""
+        }
+      ]
     },
     "acc-community-pets-program": {
       "last_checked": "2026-09-22",
@@ -374,7 +386,7 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22",
+      "last_verified": "2026-11-04",
       "phones": [
         {
           "value": "5854964660",
@@ -390,6 +402,27 @@
           "evidence_url": "https://www.anjelliclecats.com/",
           "source": "weekly-check",
           "note": "The previous value was no longer on their site and exactly one replacement was found there."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@anjelliclecats.com",
+          "evidence_url": "https://www.anjelliclecats.com/",
+          "source": "manual",
+          "note": "Shown on its own home page, read in a browser, with \"Tel: (585) 496-4660\", the number already listed (a Rochester area code, but it is the one the rescue publishes)."
+        }
+      ],
+      "emails": [
+        {
+          "value": "foster@anjelliclecats.com"
+        },
+        {
+          "value": "adopt@anjelliclecats.com"
+        },
+        {
+          "value": "info@anjelliclecats.com",
+          "label": "General"
         }
       ]
     },
@@ -678,7 +711,27 @@
     "brooklyn-animal-action": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "needs": [
+        "adoption",
+        "foster",
+        "tnr",
+        "education",
+        "referral",
+        "advocacy"
+      ],
+      "notes": "All-volunteer 501(c)(3), founded 2010. TNR + adoption + rescuer support/education. No shelter; foster-based. Provides tools/advice so residents can help animals themselves. adopt@ confirmed on own adoptable-pets page. Re-verified 2026-08-26.\n\nAll-volunteer 501(c)(3) since 2010, ACC New Hope partner. Primarily a cat and TNR organization that has also rehomed some dogs and can pull dogs as a New Hope partner - included with that note. Foster-based, no shelter. For dogs, confirm current availability. Mailing 626 2nd Ave-area, Brooklyn 11215. Intake: Foster/adopt via site Intake: email preferred\n\nIt does not take in owned pets: its own site says it is not a shelter and points owners to rehoming a pet themselves. Good for adopting, fostering and TNR help.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "surrender",
+          "to": null,
+          "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
+          "source": "manual",
+          "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+        }
+      ]
     },
     "brooklyn-aquarium-society": {
       "last_checked": "2026-09-22",
@@ -688,7 +741,28 @@
     "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "brooklynbridgeanimals@yahoo.com"
+        },
+        {
+          "value": "help@bbawc.org",
+          "label": "Rehoming help"
+        }
+      ],
+      "notes": "501(c)(3) coalition of rescuers (EIN 26-1482964), founded 2007, 8,000+ cats rescued. Not a traditional shelter. Serves all Kings County for vetting/fostering; does NOT run TNR projects itself (refers to Neighborhood Cats/FCI) but runs the BBAWC Rescue Clinic (spay/neuter) inside the Brooklyn Cat Cafe. PO Box 22948, Brooklyn 11202. Re-verified 2026-08-26. Other channel: Brooklyn Cat Cafe: (347) 946-2286, 76 Montague St Other channel: catcafebk.com\n\nIf you must give up a cat: its rescue page says it can help rehome it, either while you foster it or through its foster network. It asks first for medical records, and the cat to be spayed or neutered, examined, vaccinated and tested. Email help@bbawc.org.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "help@bbawc.org",
+          "evidence_url": "https://bbawc.org/rescue/",
+          "source": "manual",
+          "note": "From its own rescue page, read in a browser: \"If it's absolutely necessary for you to surrender your pet, we can help you rehome them... please email us at help@bbawc.org.\""
+        }
+      ]
     },
     "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals": {
       "last_checked": "2026-09-22",
