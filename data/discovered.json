@@ -1,6 +1,6 @@
 {
   "$comment": "Organizations found on authoritative rosters that are not yet in the directory. The importer turns these into records marked \"newly found, not yet verified\": low confidence, labelled on the site, and kept out of the assistant’s answers until a weekly check finds a working contact on their own site.",
-  "updated": "2026-11-01T15:38:40.382Z",
+  "updated": "2026-11-04",
   "candidates": [
     {
       "name": "3 Acres Rescue",
@@ -34,7 +34,21 @@
       "emails": [
         "rescue@nyabandonedangels.com"
       ],
-      "contactsFrom": "https://www.nyabandonedangels.com/"
+      "contactsFrom": "https://www.nyabandonedangels.com/",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "boroughs": [
+        "queens"
+      ],
+      "checkedBy": "A person read the site on 2026-11-04: a cocker spaniel rescue, PO Box 545426, Flushing, NY 11354.",
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "breed-specific"
+      ]
     },
     {
       "name": "ABC Animal Hospital",
@@ -69,7 +83,20 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04: founded \"to save NYC's surrendered pets\", fostering and spay/neuter support. Contact is by the form on its website; the number its page shows (3901-392-912) is not a real phone number and is not used.",
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "spay-neuter"
+      ]
     },
     {
       "name": "Air Twiga Animal Rescue",
@@ -183,10 +210,20 @@
       "contactsChecked": "2026-09-22",
       "phones": [],
       "emails": [
-        "pt.alleykattz@gmail.com",
         "adopt.alleykattz@gmail.com"
       ],
-      "contactsFrom": "https://www.alleykattz.org/"
+      "contactsFrom": "https://www.alleykattz.org/",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04: an all-volunteer cat rescue \"serving Long Island, New York City Metro, and the surrounding areas\". Only the adoption email is on its site now.",
+      "animals": [
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ]
     },
     {
       "name": "Almost Home Animal Rescue & Adoptions, Inc.",
@@ -342,7 +379,18 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04: \"A woman-run dog rescue in NYC. Est. 2011\", pulling dogs from New York City shelters. Contact is by the form on its website; it publishes no phone or email.",
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ]
     },
     {
       "name": "Best Bullies",
@@ -810,7 +858,30 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-11-04",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "boroughs": [
+        "queens"
+      ],
+      "phones": [
+        "9178642443",
+        "7185952161"
+      ],
+      "emails": [
+        "fofdogrescue@yahoo.com"
+      ],
+      "contactsFrom": "https://www.forourfriends.org/contact",
+      "checkedBy": "A person read the site on 2026-11-04: an all-volunteer rescue for NYC and Long Island, P.O. Box 203, Oakland Gardens, NY 11364 (Queens); numbers and email from its contact page.",
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "surrender"
+      ]
     },
     {
       "name": "For the Love of Dog Rottweiler Rescue of NH",
@@ -1879,7 +1950,17 @@
       "emails": [
         "info@rescuedogsrescuesoldiers.org"
       ],
-      "contactsFrom": "https://rescuedogsrescuesoldiers.org/"
+      "contactsFrom": "https://rescuedogsrescuesoldiers.org/",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04: rescue dogs trained as service dogs for veterans, \"serving the New York area\"; 917-553-0591 and the email are on its home page.",
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption"
+      ]
     },
     {
       "name": "Rescue NYC",
@@ -2325,7 +2406,21 @@
       "emails": [
         "info@timberslegacy.org"
       ],
-      "contactsFrom": "http://www.timberslegacy.org/"
+      "contactsFrom": "http://www.timberslegacy.org/",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "boroughs": [
+        "queens"
+      ],
+      "checkedBy": "A person read the site on 2026-11-04: \"a new all-volunteer rescue group located in Glendale, Queens\", mainly cats.",
+      "animals": [
+        "cat",
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ]
     },
     {
       "name": "Treasure Fur-Ever Animal Rescue",
@@ -2469,7 +2564,20 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04 (it had been down in September): \"a dog & cat rescue in NYC\", adopting in NYC and New Jersey. Contact is through its website; no phone or email is published.",
+      "animals": [
+        "dog",
+        "cat",
+        "rabbit"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ]
     },
     {
       "name": "Zion's Mission Animal Rescue*",
@@ -2477,7 +2585,19 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-10-01",
-      "contactsChecked": "2026-10-01"
+      "contactsChecked": "2026-10-01",
+      "publish": true,
+      "publishedOn": "2026-11-04",
+      "citywide": true,
+      "checkedBy": "A person read the site on 2026-11-04: \"a foster based rescue that serves the New York City area\". Contact is by the form on its website.",
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ]
     }
   ]
 }

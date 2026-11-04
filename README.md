@@ -20,8 +20,8 @@ than starting to charge.
 
 | | |
 | --- | --- |
-| **287 organizations** | Across all five boroughs, each with confidence, the date it was last verified, and whether it is still operating |
-| **19 guides** | What to do, in the order it needs doing |
+| **393 organizations** | Across all five boroughs, each with confidence, the date it was last verified, and whether it is still operating |
+| **22 guides** | What to do, in the order it needs doing |
 | **Search and filters** | Client-side, works on a phone on a weak connection, no JavaScript required to browse |
 | **An assistant** | Describe what is happening in plain words, in English or Spanish, and get the right organizations |
 | **Weekly checks** | Every organization re-checked against its own website, automatically |
@@ -173,7 +173,9 @@ original document. It needs a byline, or rewriting in the site's voice.
 month, marked "newly found, not yet verified" and excluded from the assistant
 until a weekly check finds a working contact. That pace is deliberate: the
 first pass over the city shelter's partner roster found 226 organizations, and
-adding them all at once would bury the 287 that have actually been checked.
+adding them all at once would bury the ones that have actually been checked. As of
+2026-11-04, 20 of 230 candidates are published, each placed in the city by a
+person who read its site.
 
 ---
 

@@ -135,6 +135,13 @@ test('tags are guessed only as far as the name supports', () => {
   assert.deepEqual(opaque.animals, [], 'a name that says nothing must not produce tags');
 });
 
+test('what a person read on the site adds tags the name could not give', () => {
+  const read = candidateToOrg({ ...CANDIDATE, name: 'Air Twiga Animal Rescue', animals: ['cat'], needs: ['adoption', 'foster'] });
+  assert.deepEqual(read.animals, ['cat']);
+  assert.deepEqual(read.needs, ['adoption', 'foster']);
+  assert.equal(read.check_status, 'new-unverified', 'reading it for tags does not make it verified');
+});
+
 /*
  * A roster page carrying a malformed href -- "http://http//www.example.org/.org"
  * -- parses without throwing, and its hostname is "http". That is not the page's

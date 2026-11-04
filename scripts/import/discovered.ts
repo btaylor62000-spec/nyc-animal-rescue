@@ -43,6 +43,8 @@ interface Candidate {
   /** A foster network or programme that works across the city. */
   citywide?: boolean;
   animals?: Animal[];
+  /** What it offers, from reading its site; the name alone rarely says. */
+  needs?: Need[];
   checkedBy?: string;
 }
 
@@ -67,7 +69,7 @@ export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {
 export function candidateToOrg(c: Candidate): Org {
   const src = { name: c.name, type: '', notes: '', section: '', animals_served: '', areas: '' };
   const animals = [...new Set([...(c.animals ?? []), ...(applyRules(ANIMAL_RULES, src).tags as Animal[])])];
-  const needs = applyRules(NEED_RULES, src).tags as Need[];
+  const needs = [...new Set([...(c.needs ?? []), ...(applyRules(NEED_RULES, src).tags as Need[])])];
   const orgTypes = applyRules(ORG_TYPE_RULES, src).tags;
 
   // The roster these come from lists rescues that pull animals out of NYC

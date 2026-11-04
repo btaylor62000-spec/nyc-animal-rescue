@@ -9,7 +9,9 @@ matter.
 ## Where things stand
 
 **The site is live and deployed.** Everything below already works in
-production; nothing here is aspirational.
+production; nothing here is aspirational. Figures last refreshed 2026-11-04
+from the data itself (`data/orgs/`, `content/guides/`, the workbooks) -- when
+you change them, recount rather than adjust.
 
 | | |
 | --- | --- |
@@ -20,7 +22,8 @@ production; nothing here is aspirational.
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 68 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
 | Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's at-risk list, and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
-| Directory | 384 listed of 390 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Discovery | 230 candidates from ACC's New Hope partner roster. 20 published, every one read by a person and placed in the city; 210 held back. All 219 that were waiting were read in a browser on 2026-11-04: `docs/discovery-review-2026-11-04.md` says what was found for each |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
@@ -78,14 +81,16 @@ Ordered by how much harm it prevents, not by size.
 2. **Keep marking discovery candidates by hand.** Decided 2026-09-22:
    discovery finds mostly out-of-city rescues, so nothing it finds is
    published until a person sets `"publish": true` on the candidate in
-   `data/discovered.json` (with `boroughs` and `checkedBy` when they confirmed
-   where it is). Discovery re-ran that day, read 200 sites, and 11 were
-   published: 7 with a city number or name, 4 confirmed by reading the site.
-   67 are outside the city and stay unpublished. About 120 gave no phone and
-   nothing in the name places them; the site can now read them again only
-   for new candidates, so those wait for a person. Three that looked local
-   had dead or broken sites that day: Fosterlings, Urban Wildlife Alliance,
-   Zani's Furry Friends.
+   `data/discovered.json` (with `boroughs` or `citywide`, and `checkedBy`
+   saying what was read). On 2026-11-04 every waiting candidate (219) was
+   opened in a browser and 9 more were published, each because its own site
+   places it in the city or says it serves the city (`animals` and `needs`
+   can now be set on a candidate too, since the name alone rarely says).
+   What is left, in `docs/discovery-review-2026-11-04.md`: 63 give an
+   address outside the city, 90 say nothing about where they are, 41 could
+   not be read, 11 are not organisations to list or are already listed (the
+   roster scrape picked up "Careers", "Register to vote", the Bronx Zoo).
+   The 90 are the work for a person: a contact page or a phone call.
 
 3. **Check the sites only a person can read, monthly.** `/status` lists them
    under "Checked by a person only" (Urban Wildlife Alliance, Petco Love
