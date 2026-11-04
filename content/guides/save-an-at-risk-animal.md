@@ -64,11 +64,11 @@ Contact every organisation that takes your animal's species, through every chann
 - Big Apple Cats - Manhattan - @bigapplecats - bigapplecatrescue@gmail.com
 - Bronx Tails - the Bronx - @bronxtailscatrescue - https://bronxtails.org/adopt
 - Brooklyn Bridge Animal Welfare Coalition - Brooklyn - (718) 360-9918 - BrooklynBridgeAnimals@yahoo.com - @bbawc - https://bbawc.org
-- City Critters - Manhattan - (212) 252-3183 - adoptions@citycritters.org - https://citycritters.org/adopt
+- City Critters - Manhattan - adoptions@citycritters.org - https://citycritters.org/adopt
 - Greenpoint Cats - Brooklyn - @greenpointcats - https://greenpointcats.org/adopt-a-cat
 - Itty Bitty City Kitties - Queens - @ittybittycitykitties - https://ittybittycitykitties.org
-- Kitty Kind - Manhattan - (212) 726-2652 - adopt@kittykind.org
-- Little Wanderers NYC - the Bronx and Manhattan - @littlewanderersnyc - adopt@lwnyc.org
+- Kitty Kind - Manhattan - adopt@kittykind.org
+- Little Wanderers NYC - the Bronx and Manhattan - @littlewanderersnyc - email@lwnyc.org
 - NY Cat Warriors - citywide - @nycatwarriors - nycw@nycatwarriors.org
 - NYC Cat Coalition - the Bronx - nycatcoal@yahoo.com
 - RescueNYC - citywide - info@rescuenyc.org
@@ -83,7 +83,7 @@ Contact every organisation that takes your animal's species, through every chann
 
 ## Cats and dogs
 
-- Louie's Legacy - citywide - @louieslegacy - adopt@louieslegacy.org - https://louieslegacy.org
+- Louie's Legacy - citywide - @louieslegacy - newyork@louieslegacy.org - https://louieslegacy.org
 - Rescue City - Brooklyn - @rescuecity - https://rescuecity.nyc
 - Second Chance Rescue - citywide - @nycscr - https://nycsecondchancerescue.org/contact
 - Waggytail Rescue - Manhattan - @waggytailrescue - adopt@waggytailrescue.org - https://waggytailrescue.org
@@ -91,12 +91,12 @@ Contact every organisation that takes your animal's species, through every chann
 ## Cats, dogs and small or exotic animals
 
 - Sean Casey Animal Rescue - Brooklyn - (718) 436-5163 - info@nyanimalrescue.org - @seancaseyanimalrescue
-- Social Tees - Manhattan - (212) 614-9653 - contact@socialteesnyc.org - @socialteesnyc - https://socialteesnyc.org
+- Social Tees - Manhattan - contact@socialteesnyc.org - @socialteesnyc - https://socialteesnyc.org
 - Puppy Kitty NYCity - Queens - cats and small animals - @puppykittynycity - info@puppykittynyc.org
 
 ## Rabbits and small animals
 
-- All About Rabbits Rescue - Queens - (347) 993-2300 - allaboutrabbitsrescue@gmail.com - @allaboutrabbitsrescue
+- All About Rabbits Rescue - Queens - (347) 993-2300 - info@allaboutrabbitsrescue.org - @allaboutrabbitsrescue
 - Long Island Rabbit Rescue - Long Island - information@longislandrabbitrescue.org - @longislandrabbitrescue
 - Luv-N-Bunns Rabbit Rescue - citywide - bunnies@luvnbunns.org - @luvnbunns
 - Rabbit Rescue & Rehab - citywide - nyc.metro.rabbits@gmail.com - @rabbitrescuerehab

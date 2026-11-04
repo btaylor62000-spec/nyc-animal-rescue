@@ -326,15 +326,15 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the NYC shelter’s urgent list | 8251 |
+| Save an animal from the NYC shelter’s urgent list | 8201 |
 | Reporting animal abuse or neglect | 5732 |
 | Animal emergencies and poison control | 3213 |
 | Low-cost clinics and trap banks | 8438 |
 | Community cats, colonies and starting TNR | 6880 |
-| Cats needing specialist help | 4701 |
+| Cats needing specialist help | 4687 |
 | Lost or found a cat | 6279 |
-| Help keeping your cat | 10159 |
-| Help keeping your dog | 8583 |
+| Help keeping your cat | 10376 |
+| Help keeping your dog | 8955 |
 | Low-cost vet care, spay/neuter and dog licensing | 11750 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |

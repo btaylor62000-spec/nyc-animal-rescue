@@ -20,7 +20,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## PET FOOD PANTRIES (specific programs)
 
-- ACC Pet Food Pantry - at the ACC Bronx Resource Center; contact for location, hours, eligibility. CommunityPets@nycacc.org - (212) 788-4000.
+- ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org - puppykittynyc.org.
 - Animal Relief Fund (ARF) - NYC org that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.
@@ -31,7 +31,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Kiso's Pet Food Pantry (Brooklyn) - free pet food, focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.
 - Feeding Pets of the Homeless - free pet food + vet care via partner sites for people who are homeless or at risk. petsofthehomeless.org.
 - Food Help NYC (finder.nyc.gov/foodhelp) lists food pantries, some of which stock pet food; the donateNYC Directory (donatenyc.org) has a Pet Care/Food category.
-- NEW (2026): the city budget funds pop-up PET FOOD PANTRIES + spay/neuter in every borough via community events - watch ACC + borough-rescue feeds for dates.
+- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
 
 ## SENIOR / DISABILITY / ILLNESS - in-home pet care
 

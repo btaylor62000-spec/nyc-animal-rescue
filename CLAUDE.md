@@ -20,8 +20,8 @@ you change them, recount rather than adjust.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
-| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 68 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's at-risk list, and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 69 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
+| Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | 230 candidates from ACC's New Hope partner roster. 20 published, every one read by a person and placed in the city; 210 held back. All 219 that were waiting were read in a browser on 2026-11-04: `docs/discovery-review-2026-11-04.md` says what was found for each |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
@@ -60,6 +60,16 @@ yours:
 ### What to do next
 
 Ordered by how much harm it prevents, not by size.
+
+0. **Do this first next session: the reviewer is reviewing the 210 held-back
+   discovery candidates by hand.** Asked for on 2026-11-04 so it is not
+   forgotten. Start from `docs/discovery-review-2026-11-04.md`, which sorts
+   every one by what its own site said (outside the city, no location,
+   unreadable, not an organisation). The 90 "say nothing about where they
+   are" are where a person's judgement is needed. For each one they decide
+   to publish, set `"publish": true` in `data/discovered.json` with
+   `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
+   saying what was read, then `npm run import` (see item 2).
 
 1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
@@ -130,9 +140,14 @@ Ordered by how much harm it prevents, not by size.
      DEC" (revised 2023). Added to the Region 2 entry.
    - *NYSAVE yearly cap*: its guidelines set none per household. The
      "~$2,000/yr" in the research had no source and is gone.
-   - *Still out*: Vet-I-Care (vet-i-care.org still has a self-signed
-     certificate and does not load), and an ASPCA temporary-boarding offer
-     (never confirmed). Individual volunteers' personal contacts (Save
+   - *Vet-I-Care*: added 2026-11-04 with the phone, email and PO box a
+     reviewer read on its contact page (its site still has a self-signed
+     certificate, so our checks cannot open it). Medium, labelled as
+     reviewer-supplied, tagged as a fund, not an emergency vet.
+   - *Still out*: an ASPCA temporary-boarding offer (never confirmed). The
+     abuse guide's referrals@aspca.org for ASPCA Community Engagement could
+     not be confirmed on the ASPCA's page either; it stays in the guide,
+     unlisted. Individual volunteers' personal contacts (Save
      Kitty) stay off.
    - *No 24-hour hospital in the Bronx*: the Mayor's Alliance lists only
      Urgent Vets there (limited hours). Directories that call four Bronx
@@ -452,6 +467,18 @@ A line carrying a contact detail becomes a listing. Register the tab in
 it out and they stay as text on the page, which is the right choice when the
 organizations already have entries whose contacts are maintained.
 
+**Guides and listings must not disagree.** Guide prose is copied research;
+listings are kept current. Five guides (`GUIDE_LISTINGS` in
+`src/data/guide-listings.ts`) end with every matching listing, built from the
+records at each build, so a new fund or pantry appears there without anyone
+editing the guide. A line in a guide that names an organization with an entry
+should use that entry's contacts; on 2026-11-04 several did not (numbers not
+on the organization's own site), and were corrected at the workbook row. A
+guide line carrying a link inside a `GUIDE_ORG_SOURCES` tab becomes a record:
+use that tab's `skip` for pointers like "NYC's free pet food pantries".
+The directory's search also shows the matching guide above the results
+(`src/data/guide-match.ts`), from each guide's `topics`.
+
 Write URLs in full, with `https://`, when they are the point of the page. The
 renderer autolinks those and leaves bare domains as text — fine for a
 reference, wrong for something someone has to act on.
@@ -655,6 +682,12 @@ only breaks ties.
   have a place on the map, distance replaces the assistant's old "is it in
   your exact zip" bonus, which had put a closed clinic above an open hospital
   half a mile away.
+- **A zip shows its whole borough.** Stored zips say where an organization
+  *is* (often just its street address), not who it helps, so the directory's
+  zip filter shows everything serving that zip's borough plus everything
+  citywide, ordered from the zip (`src/data/area.ts`). Reading stored zips as
+  a service area once hid BluePearl Brooklyn and about sixty other Brooklyn
+  resources from someone typing 11203.
 - Workbook rows can carry **Hours** and **Address** columns. Use them: a row
   without hours cannot say it is open, and one without an address cannot be
   sorted by distance.

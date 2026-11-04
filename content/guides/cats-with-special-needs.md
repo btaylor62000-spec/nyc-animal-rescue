@@ -26,7 +26,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 
 - NY Cat Warriors (multi-borough) - urgent/complex medical; ACC New Hope partner. nycatwarriors.org | IG @nycatwarriors
 - NYC Second Chance Rescue (Queens) - critically injured/neglected from ACC 'death row'. nycsecondchancerescue.org | IG @nycscr
-- Little Wanderers NYC (Bronx) - neediest cats, heavy vetting. Rescue line (IG) 929-282-2271 | lwnyc.org
+- Little Wanderers NYC (Bronx) - neediest cats, heavy vetting. email@lwnyc.org | lwnyc.org
 - Puppy Kitty NYC (multi-borough) - severe medical/cruelty cases. info@puppykittynyc.org | puppykittynyc.org
 - Catstoria / Kitty Haven (Queens) - sick & injured ferals + recovery house. catstoriarescue@gmail.com | catstoria.com
 - Strays Hope for Life (Staten Island) - 'sick, bruised, or broken.' (908) 986-2505 | strayshopeforlife@gmail.com

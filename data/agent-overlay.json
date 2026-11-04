@@ -1317,6 +1317,20 @@
           "evidence_url": "https://petsofthehomeless.org/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Feeding Pets of the Homeless: pet food and emergency vet care for pets of people experiencing homelessness. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@petsofthehomeless.org",
+          "evidence_url": "https://petsofthehomeless.org/contact-us/",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04."
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@petsofthehomeless.org"
         }
       ]
     },
@@ -1628,7 +1642,23 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "emails": [
+        {
+          "value": "info.hsny@verizon.net"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info.hsny@verizon.net",
+          "evidence_url": "https://humanesocietyny.org/contact/",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04, beside 212-752-4840 and 212-752-4842 (both already listed). The low-cost dog care guide gave this address."
+        }
+      ]
     },
     "india-street-cats": {
       "last_checked": "2026-09-22",
@@ -1779,10 +1809,24 @@
           "evidence_url": "https://lwnyc.org/",
           "source": "manual",
           "note": "Removed: (212) 222-1234 is the unedited placeholder from their site theme. It is present only as a hidden tel: link and is never displayed to a reader. A placeholder on a rescue listing is a wrong number, and a wrong number is worse than none."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "email@lwnyc.org",
+          "evidence_url": "https://lwnyc.org/contact",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04. The guides gave adopt@lwnyc.org and a \"rescue line\" number, neither on its site; both replaced in the guides with this address."
         }
       ],
       "confidence": "Low",
-      "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website."
+      "status_note": "We do not have a confirmed phone number. Their website's only telephone link is (212) 222-1234, a template placeholder that is never shown on the page, and the number we previously held is no longer there either. Reach them through their website.",
+      "emails": [
+        {
+          "value": "email@lwnyc.org"
+        }
+      ]
     },
     "long-island-bird-and-exotics-vet-clinic": {
       "last_checked": "2026-09-22",
@@ -2125,7 +2169,23 @@
     "ny-cat-warriors": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "nycw@nycatwarriors.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "nycw@nycatwarriors.org",
+          "evidence_url": "https://nycatwarriors.org/",
+          "source": "manual",
+          "note": "Read on its own site in a browser on 2026-11-04. The guide to the shelter's urgent list gave this address and the listing had none."
+        }
+      ]
     },
     "ny-marine-mammal-and-sea-turtle-stranding-hotline": {
       "last_checked": "2026-09-22",
@@ -2806,7 +2866,29 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "emails": [
+        {
+          "value": "adopt@socialteesnyc.org"
+        },
+        {
+          "value": "fostertoadopt@socialteesnyc.org"
+        },
+        {
+          "value": "contact@socialteesnyc.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org",
+          "to": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org, contact@socialteesnyc.org",
+          "evidence_url": "https://socialteesnyc.org/contact",
+          "source": "manual",
+          "note": "Read on its contact page in a browser on 2026-11-04; the urgent-list guide gave it. The guide's phone number, (212) 614-9653, is not on its site and has been taken out of the guide."
+        }
+      ]
     },
     "south-slope-cats": {
       "last_checked": "2026-09-22",

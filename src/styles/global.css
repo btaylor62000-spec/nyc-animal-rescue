@@ -1089,3 +1089,10 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .guide-hint strong { font-size: 1.05rem; color: var(--accent); }
 .guide-hint__label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
 .guide-hint__summary { font-size: 0.92rem; color: var(--text-muted); }
+
+/* The directory's own listings at the foot of a guide. */
+.guide-listings { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.guide-listings h2 { margin-bottom: 0.25rem; }
+.guide-listings__block h3 { margin: 1.25rem 0 0.4rem; font-size: 1.05rem; }
+.guide-listings__block ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+.guide-listings__block li { line-height: 1.45; }

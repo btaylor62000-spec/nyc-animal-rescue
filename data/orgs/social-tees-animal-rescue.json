@@ -32,6 +32,9 @@
     },
     {
       "value": "fostertoadopt@socialteesnyc.org"
+    },
+    {
+      "value": "contact@socialteesnyc.org"
     }
   ],
   "website": "https://socialteesnyc.org",
@@ -76,7 +79,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org",
+      "to": "adopt@socialteesnyc.org, fostertoadopt@socialteesnyc.org, contact@socialteesnyc.org",
+      "evidence_url": "https://socialteesnyc.org/contact",
+      "source": "manual",
+      "note": "Read on its contact page in a browser on 2026-11-04; the urgent-list guide gave it. The guide's phone number, (212) 614-9653, is not on its site and has been taken out of the guide."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

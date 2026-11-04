@@ -25,7 +25,8 @@ To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new 
 
 Petco Love 'We Are Family' - collects pet food and litter and distributes through human food-pantry partners across the five boroughs; ask your local pantry if they participate.
 
-- ACC Pet Food Pantry - at the ACC Bronx Resource Center; contact for location, hours, and eligibility. CommunityPets@nycacc.org, (212) 788-4000.
+- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
+- ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org, puppykittynyc.org.
 - Animal Relief Fund (ARF) - NYC organization that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.

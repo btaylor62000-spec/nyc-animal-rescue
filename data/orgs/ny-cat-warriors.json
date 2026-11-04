@@ -29,7 +29,11 @@
   "zips": [],
   "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "nycw@nycatwarriors.org"
+    }
+  ],
   "website": "https://nycatwarriors.org",
   "intake_urls": [],
   "social": [
@@ -58,7 +62,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "nycw@nycatwarriors.org",
+      "evidence_url": "https://nycatwarriors.org/",
+      "source": "manual",
+      "note": "Read on its own site in a browser on 2026-11-04. The guide to the shelter's urgent list gave this address and the listing had none."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
