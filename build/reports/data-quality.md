@@ -4,10 +4,10 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **391** organizations after de-duplication
-- **77** duplicate clusters merged
+- **390** organizations after de-duplication
+- **78** duplicate clusters merged
 - **22** guide pages generated
-- **14** entries flagged as not currently active
+- **13** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 285 |
-| dog | 221 |
+| cat | 287 |
+| dog | 220 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -40,7 +40,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | adoption | 156 |
 | tnr | 95 |
 | foster | 91 |
-| spay-neuter | 72 |
+| spay-neuter | 74 |
 | owner-support | 71 |
 | surrender | 63 |
 | low-cost-vet | 58 |
@@ -74,18 +74,18 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 257 |
-| queens | 213 |
-| manhattan | 211 |
-| bronx | 186 |
-| staten-island | 185 |
+| brooklyn | 255 |
+| queens | 211 |
+| manhattan | 210 |
+| bronx | 185 |
+| staten-island | 184 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 184 |
-| Medium | 163 |
+| High | 187 |
+| Medium | 159 |
 | Low | 44 |
 
 ### By operating status
@@ -94,8 +94,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | active | 377 |
 | verify | 7 |
-| hiatus | 3 |
 | retired | 3 |
+| hiatus | 2 |
 | relocated | 1 |
 
 ## Gaps in coverage
@@ -143,13 +143,12 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (81)
+### Never verified (77)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
-- **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
@@ -166,7 +165,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (77)
+### Merged (78)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -185,6 +184,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `cat-castle-nyc` ← 2 records
 - `kittykind` ← 2 records
 - `staten-island-hope-animal-rescue` ← 2 records
+- `aspca-community-veterinary-clinic-brooklyn` ← 2 records
 - `aspca-spay-neuter-nyc` ← 2 records
 - `faithful-friends-animal-hospital` ← 2 records
 - `flatbush-vet` ← 2 records
@@ -242,14 +242,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `carecredit` ← 3 records
 - `pets-of-the-homeless` ← 2 records
 - `24petwatch` ← 2 records
-- `aspca-community-veterinary-clinic-brooklyn` ← 2 records
+- `aspca-community-veterinary-clinic` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records
 - `vinegar-hill-veterinary-group` ← 2 records
 
-### Deliberately kept apart (2)
+### Deliberately kept apart (1)
 
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
-- "ASPCA Community Veterinary Clinic" resolved to 3 distinct locations; kept separate rather than merged
 
 ### Conflicts between sources (6)
 

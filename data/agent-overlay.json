@@ -429,7 +429,45 @@
     "aspca-animal-hospital": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "boroughs": [
+        "manhattan",
+        "brooklyn",
+        "queens",
+        "bronx",
+        "staten-island"
+      ],
+      "citywide": true,
+      "website": "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc",
+      "source_urls": [
+        "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc"
+      ],
+      "address": {
+        "street": "424 East 92nd Street",
+        "zip": "10128"
+      },
+      "hours": "By appointment only, Monday to Friday; no walk-ins",
+      "phones": [
+        {
+          "value": "8446927722",
+          "display": "(844) 692-7722",
+          "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "notes": "Low-cost urgent care for cats and dogs whose owners live in New York City and have a household income under $50,000, for a qualifying medical problem. 424 East 92nd Street (between 1st and York Avenues), Manhattan. By appointment only, Monday to Friday; no walk-ins, closed on major holidays. Not free: bring an EBT card, SSI award letter, VA benefits letter, proof of unemployment or workers' compensation, or proof of TANF to apply for help with the cost. It does not do check-ups, vaccines or routine dental care. For a medical emergency, go to an emergency hospital.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc",
+          "source": "manual",
+          "note": "Rebuilt from the ASPCA Animal Hospital's own page, read in a browser: address, hours, eligibility, what it does not do."
+        }
+      ]
     },
     "aspca-animal-poison-control-center-24-7-hotline": {
       "last_checked": "2026-09-22",
@@ -450,32 +488,103 @@
     "aspca-community-veterinary-clinic-brooklyn": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
-    },
-    "aspca-community-veterinary-clinic-brooklyn-brooklyn": {
-      "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "boroughs": [
+        "brooklyn"
+      ],
+      "citywide": false,
+      "zips": [
+        "11207",
+        "11208",
+        "11212"
+      ],
+      "website": "https://clinic.aspca.org/clinics/new-york-city/east-new-york",
+      "source_urls": [
+        "https://clinic.aspca.org/clinics/new-york-city/east-new-york"
+      ],
+      "intake_urls": [
+        {
+          "url": "https://clinic.aspca.org/eligibility/clinic-eligibility",
+          "label": "Check eligibility and book"
+        }
+      ],
+      "phones": [
+        {
+          "value": "8446927722",
+          "display": "(844) 692-7722",
+          "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+        }
+      ],
+      "status": "active",
+      "status_note": null,
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "notes": "Free basic vet care for cats and dogs for East New York residents, supported by the Lewyt Charitable Trust. Only for owners living in zip codes 11207, 11208 or 11212. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Traps and equipment can be borrowed here (refundable deposit). Not taking on new rescue groups as clients at the moment; that does not affect pet owners.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://clinic.aspca.org/clinics/new-york-city/east-new-york",
+          "source": "manual",
+          "note": "Rebuilt from the ASPCA's own page for the East New York clinic. Its 'paused' status was wrong: the research said the ASPCA is not taking new rescue-group clients, which the importer read as the clinic being paused for everyone. Its notes had also carried the South Bronx clinic's description, and it claimed all five boroughs."
+        }
+      ]
     },
     "aspca-community-veterinary-clinic-queens": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
-    },
-    "aspca-community-veterinary-clinics": {
-      "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2,
-      "website": "https://clinic.aspca.org/locations/new-york-city",
+      "consecutive_failures": 0,
+      "boroughs": [
+        "queens"
+      ],
+      "citywide": false,
+      "zips": [
+        "11101",
+        "11102",
+        "11103",
+        "11104",
+        "11105",
+        "11106",
+        "11368",
+        "11369",
+        "11370",
+        "11372",
+        "11373",
+        "11377"
+      ],
+      "website": "https://clinic.aspca.org/clinics/new-york-city/long-island-city",
+      "source_urls": [
+        "https://clinic.aspca.org/clinics/new-york-city/long-island-city"
+      ],
+      "intake_urls": [
+        {
+          "url": "https://clinic.aspca.org/eligibility/clinic-eligibility",
+          "label": "Check eligibility and book"
+        }
+      ],
+      "phones": [
+        {
+          "value": "8446927722",
+          "display": "(844) 692-7722",
+          "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+        }
+      ],
+      "status": "active",
+      "status_note": null,
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "notes": "Free basic vet care for cats and dogs for western Queens residents, supported by The Rachael Ray Foundation. Only for owners living in zip codes 11101-11106, 11368, 11369, 11370, 11372, 11373 or 11377 (Long Island City, Astoria, Sunnyside, Woodside, Corona, Jackson Heights, Elmhurst and nearby). Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead.",
       "change_log": [
         {
-          "date": "2026-11-03",
-          "field": "website",
-          "from": "https://S.Bronx",
-          "to": "https://clinic.aspca.org/locations/new-york-city",
-          "evidence_url": "https://clinic.aspca.org/locations/new-york-city",
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://clinic.aspca.org/clinics/new-york-city/long-island-city",
           "source": "manual",
-          "note": "The importer had read the abbreviation \"S.Bronx\" in the source as a web address and published it as a link. That parsing is fixed; this is the ASPCA page listing the South Bronx, East New York and Long Island City clinics, read on 2026-11-03."
+          "note": "Rebuilt from the ASPCA's own page for the Long Island City clinic: eligible zips, proof needed, free services."
         }
       ]
     },
@@ -2521,6 +2630,68 @@
           "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
         }
       ]
+    },
+    "aspca-community-veterinary-clinic": {
+      "last_checked": "2026-09-22",
+      "check_status": "ok",
+      "consecutive_failures": 2,
+      "website": "https://clinic.aspca.org/clinics/new-york-city/south-bronx",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "website",
+          "from": "https://S.Bronx",
+          "to": "https://clinic.aspca.org/locations/new-york-city",
+          "evidence_url": "https://clinic.aspca.org/locations/new-york-city",
+          "source": "manual",
+          "note": "The importer had read the abbreviation \"S.Bronx\" in the source as a web address and published it as a link. That parsing is fixed; this is the ASPCA page listing the South Bronx, East New York and Long Island City clinics, read on 2026-11-03."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://clinic.aspca.org/clinics/new-york-city/south-bronx",
+          "source": "manual",
+          "note": "Rebuilt from the ASPCA's own page for the South Bronx clinic, read in a browser: eligible zips, proof needed, free services. A reviewer found the ASPCA clinic entries muddled (South Bronx text under Brooklyn, Long Island City barely listed). The address comes from the research; the ASPCA's page does not show it."
+        }
+      ],
+      "boroughs": [
+        "bronx"
+      ],
+      "citywide": false,
+      "zips": [
+        "10451",
+        "10454",
+        "10455",
+        "10456",
+        "10459"
+      ],
+      "source_urls": [
+        "https://clinic.aspca.org/clinics/new-york-city/south-bronx"
+      ],
+      "intake_urls": [
+        {
+          "url": "https://clinic.aspca.org/eligibility/clinic-eligibility",
+          "label": "Check eligibility and book"
+        }
+      ],
+      "address": {
+        "street": "501 E 161st St",
+        "zip": "10451"
+      },
+      "phones": [
+        {
+          "value": "8446927722",
+          "display": "(844) 692-7722",
+          "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+        }
+      ],
+      "status": "active",
+      "status_note": null,
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "notes": "Free basic vet care for cats and dogs for South Bronx residents. Only for owners living in zip codes 10451, 10454, 10455, 10456 or 10459. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Also offers subsidized dental cleanings and extractions."
     }
   }
 }

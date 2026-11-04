@@ -184,6 +184,11 @@ read them.
   anything a reader can see. (It is applied by spreading the entry onto the
   record, so `address`, `social` and `needs` work too; a name or alias change
   belongs in `scripts/import/overrides.ts`.)
+- **When a record's id goes away, add a redirect.** Merging two entries or
+  folding a duplicate changes which id survives, and the old `/org/<id>` page
+  stops being built. `public/_redirects` sends each retired id to its
+  successor (Cloudflare Pages reads it), so shared and bookmarked links keep
+  working. Compare `git ls-tree` of `data/orgs/` before and after to find them.
 - **A record's `status_note` is only rendered when the record is not active.**
   A caveat about an operating organization belongs in `notes`.
 

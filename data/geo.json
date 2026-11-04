@@ -31,6 +31,18 @@
    "lon": -73.88102,
    "matched": "9 ODELL PLZ, YONKERS, NY, 10701"
   },
+  "aspca-animal-hospital": {
+   "query": "424 East 92nd Street, NY 10128",
+   "lat": 40.78022,
+   "lon": -73.94561,
+   "matched": "424 E 92ND ST, NEW YORK, NY, 10128"
+  },
+  "aspca-community-veterinary-clinic": {
+   "query": "501 E 161st St, Bronx, NY 10451",
+   "lat": 40.82321,
+   "lon": -73.91031,
+   "matched": "501 E 161ST ST, BRONX, NY, 10451"
+  },
   "astoria-animal-society": {
    "query": "30-89 38th Street, Astoria, NY 11103",
    "lat": 40.76197,

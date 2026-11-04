@@ -1,0 +1,11 @@
+# Listings merged into another keep their old addresses working: a link
+# shared or bookmarked last month should land on the current entry, not a
+# 404. Cloudflare Pages reads this file. Add a line whenever an id goes away.
+/org/urgent-vets                                            /org/urgent-vets-bronx/                      301
+/org/urgent-vets/*                                          /org/urgent-vets-bronx/:splat                301
+/org/24petwatch-north-americas-largest-registry-free-regi   /org/24petwatch/                             301
+/org/24petwatch-north-americas-largest-registry-free-regi/* /org/24petwatch/:splat                       301
+/org/aspca-community-veterinary-clinics                     /org/aspca-community-veterinary-clinic/      301
+/org/aspca-community-veterinary-clinics/*                   /org/aspca-community-veterinary-clinic/:splat 301
+/org/aspca-community-veterinary-clinic-brooklyn-brooklyn    /org/aspca-community-veterinary-clinic-brooklyn/ 301
+/org/aspca-community-veterinary-clinic-brooklyn-brooklyn/*  /org/aspca-community-veterinary-clinic-brooklyn/:splat 301

@@ -19,6 +19,35 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // A reviewer found the ASPCA clinics muddled: the generic entry carried
+    // the South Bronx address, the "Brooklyn" one described the South Bronx
+    // and was marked paused, and Long Island City was barely there. One entry
+    // per clinic now, each named for where it is.
+    id: 'aspca-community-veterinary-clinic',
+    reason: 'This entry carries the South Bronx clinic\u2019s address, 501 E 161st St. Its own ASPCA page (read 2026-11-04) says it serves cats and dogs and does spay/neuter, free for eligible owners; the research row covered only part of that.',
+    set: { name: 'ASPCA Community Veterinary Clinic - South Bronx', aka: ['ASPCA Community Veterinary Clinics', 'ASPCA clinic Bronx'] },
+    addAnimals: ['cat'],
+    addNeeds: ['spay-neuter'],
+  },
+  {
+    id: 'aspca-community-veterinary-clinic-brooklyn',
+    reason: 'The East New York, Brooklyn clinic (Lewyt). Its own ASPCA page (read 2026-11-04) says it serves cats and dogs and does spay/neuter, free for eligible owners; the research row covered only part of that.',
+    set: { name: 'ASPCA Community Veterinary Clinic - East New York (Brooklyn)', aka: ['ASPCA Community Veterinary Clinic (Lewyt)', 'ASPCA clinic Brooklyn'] },
+  },
+  {
+    id: 'aspca-community-veterinary-clinic-queens',
+    reason: 'The Long Island City, Queens clinic (Rachael Ray Foundation). Its own ASPCA page (read 2026-11-04) says it serves cats and dogs and does spay/neuter, free for eligible owners; the research row covered only part of that.',
+    set: { name: 'ASPCA Community Veterinary Clinic - Long Island City (Queens)', aka: ['ASPCA Community Veterinary Clinic (Rachael Ray Foundation)', 'ASPCA clinic Queens'] },
+    addAnimals: ['cat'],
+    addNeeds: ['spay-neuter'],
+  },
+  {
+    id: 'aspca-animal-hospital',
+    reason: 'Low-cost urgent care in Manhattan by its own page; it sends emergencies to an emergency hospital, so it is not tagged as one.',
+    set: { name: 'ASPCA Animal Hospital (Manhattan) - low-cost urgent care', aka: ['ASPCA Animal Hospital (AAH)', 'AAH'] },
+    addNeeds: ['low-cost-vet'],
+  },
+  {
     // Split by branch so each has its own place, hours and number; the first
     // branch keeps the original id so existing links still land.
     id: 'one-love-animal-hospital',
@@ -160,6 +189,13 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   { pattern: /^Urgent Vets - Bronx$/i, canonicalName: 'Urgent Vets' },
   // One registry, written two ways by the two workbooks, so it was listed twice.
   { pattern: /^24Pet ?watch\b/i, canonicalName: '24Petwatch microchip registry (PetPlace)' },
+  // The East New York clinic, named by its funder in one workbook and by its
+  // neighbourhood in the other, was two listings.
+  // Both workbooks describe the South Bronx clinic under the bare name, and
+  // the merge had folded one of those rows into the Brooklyn entry -- which
+  // is why "Brooklyn" described the South Bronx.
+  { pattern: /^ASPCA Community Veterinary Clinic$/i, canonicalName: 'ASPCA Community Veterinary Clinics' },
+  { pattern: /^ASPCA Community Veterinary Clinic \(Lewyt\)$/i, canonicalName: 'ASPCA Community Veterinary Clinic - Brooklyn (East New York)' },
 ];
 
 /**

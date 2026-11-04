@@ -1,0 +1,98 @@
+{
+  "id": "aspca-community-veterinary-clinic",
+  "name": "ASPCA Community Veterinary Clinic - South Bronx",
+  "aka": [
+    "ASPCA Community Veterinary Clinics",
+    "ASPCA clinic Bronx"
+  ],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "low-cost-vet",
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10451",
+    "10454",
+    "10455",
+    "10456",
+    "10459"
+  ],
+  "region_note": "ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)",
+  "phones": [
+    {
+      "value": "8446927722",
+      "display": "(844) 692-7722",
+      "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
+    }
+  ],
+  "emails": [],
+  "website": "https://clinic.aspca.org/clinics/new-york-city/south-bronx",
+  "intake_urls": [
+    {
+      "url": "https://clinic.aspca.org/eligibility/clinic-eligibility",
+      "label": "Check eligibility and book"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.82321,
+    "lon": -73.91031,
+    "precision": "address"
+  },
+  "address": {
+    "street": "501 E 161st St",
+    "zip": "10451"
+  },
+  "hours": null,
+  "notes": "Free basic vet care for cats and dogs for South Bronx residents. Only for owners living in zip codes 10451, 10454, 10455, 10456 or 10459. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Also offers subsidized dental cleanings and extractions.",
+  "type_raw": null,
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://clinic.aspca.org/clinics/new-york-city/south-bronx"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "Low-cost vet, s-n & licensing — ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": "2026-09-22",
+  "check_status": "ok",
+  "consecutive_failures": 2,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "website",
+      "from": "https://S.Bronx",
+      "to": "https://clinic.aspca.org/locations/new-york-city",
+      "evidence_url": "https://clinic.aspca.org/locations/new-york-city",
+      "source": "manual",
+      "note": "The importer had read the abbreviation \"S.Bronx\" in the source as a web address and published it as a link. That parsing is fixed; this is the ASPCA page listing the South Bronx, East New York and Long Island City clinics, read on 2026-11-03."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://clinic.aspca.org/clinics/new-york-city/south-bronx",
+      "source": "manual",
+      "note": "Rebuilt from the ASPCA's own page for the South Bronx clinic, read in a browser: eligible zips, proof needed, free services. A reviewer found the ASPCA clinic entries muddled (South Bronx text under Brooklyn, Long Island City barely listed). The address comes from the research; the ASPCA's page does not show it."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

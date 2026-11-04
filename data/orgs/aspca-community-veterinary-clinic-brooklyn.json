@@ -1,8 +1,9 @@
 {
   "id": "aspca-community-veterinary-clinic-brooklyn",
-  "name": "ASPCA Community Veterinary Clinic - Brooklyn (East New York)",
+  "name": "ASPCA Community Veterinary Clinic - East New York (Brooklyn)",
   "aka": [
-    "ASPCA Community Veterinary Clinic"
+    "ASPCA Community Veterinary Clinic (Lewyt)",
+    "ASPCA clinic Brooklyn"
   ],
   "parent_org": null,
   "org_types": [
@@ -11,70 +12,72 @@
     "support-program"
   ],
   "animals": [
-    "dog",
-    "cat"
+    "cat",
+    "dog"
   ],
   "needs": [
-    "low-cost-vet",
-    "spay-neuter"
+    "spay-neuter",
+    "low-cost-vet"
   ],
   "boroughs": [
-    "bronx",
-    "brooklyn",
-    "manhattan",
-    "queens",
-    "staten-island"
+    "brooklyn"
   ],
-  "citywide": true,
+  "citywide": false,
   "outside_nyc": false,
   "neighborhoods": "Brooklyn clinic (East New York) + citywide mobile/waitlist",
   "zips": [
-    "11203",
-    "11210",
-    "11225",
-    "11226",
-    "11234",
-    "11236",
-    "11239"
+    "11207",
+    "11208",
+    "11212"
   ],
   "region_note": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "phones": [
     {
       "value": "8446927722",
       "display": "(844) 692-7722",
-      "label": "mobile clinic"
+      "label": "ASPCA line (844-MY-ASPCA), as listed by the Mayor’s Alliance"
     }
   ],
   "emails": [],
-  "website": "https://clinic.aspca.org/locations/new-york-city",
+  "website": "https://clinic.aspca.org/clinics/new-york-city/east-new-york",
   "intake_urls": [
     {
-      "url": "https://www.aspca.org/nyc/spay-neuter-services/rescue-professionals",
-      "label": "Rescuer services (RSS)"
+      "url": "https://clinic.aspca.org/eligibility/clinic-eligibility",
+      "label": "Check eligibility and book"
     }
   ],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "South Bronx: s/n + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income <= $50k.)\n\nKEEP + REACH OUT even though status is limited: As of 2026 the ASPCA is NOT accepting NEW rescue clients (their words: 'look forward to opening to new groups in the future') - existing rescue clients still use the online RSS scheduler. The East New York clinic does wellness/vaccines by appt for eligible low-income owners (proof of public assistance + in-zip); spay/neuter for the public now runs via the MOBILE clinic + 6am-day-of virtual waitlist (Brooklyn zips 11203/11210/11225/11226/11234/11236/11239). Trap/equipment rental pickup at East New York, $50 refundable deposit, 14-day loan. Capacity limited by staffing. Re-verified 2026-08-26. Intake: owners join Same-Day Waitlist Other channel: Community clinic in East New York, Brooklyn",
+  "notes": "Free basic vet care for cats and dogs for East New York residents, supported by the Lewyt Charitable Trust. Only for owners living in zip codes 11207, 11208 or 11212. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Traps and equipment can be borrowed here (refundable deposit). Not taking on new rescue groups as clients at the moment; that does not affect pet owners.",
   "type_raw": "spay-neuter clinic (support)",
   "confidence": "High",
-  "status": "hiatus",
-  "status_note": "Source says this organization is paused or on hiatus.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
-    "https://clinic.aspca.org/locations/new-york-city"
+    "https://clinic.aspca.org/clinics/new-york-city/east-new-york"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
-    "research/NYC_Dog_Rescue_Reference.xlsx",
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://clinic.aspca.org/clinics/new-york-city/east-new-york",
+      "source": "manual",
+      "note": "Rebuilt from the ASPCA's own page for the East New York clinic. Its 'paused' status was wrong: the research said the ASPCA is not taking new rescue-group clients, which the importer read as the clinic being paused for everyone. Its notes had also carried the South Bronx clinic's description, and it claimed all five boroughs."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
