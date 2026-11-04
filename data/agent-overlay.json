@@ -1163,8 +1163,17 @@
           "evidence_url": "https://completecarevets.com/contact",
           "source": "manual",
           "note": "Its website, completecarevets.com, refused every automated read on 2026-11-04. A search index of its contact page shows \"Open today 08:00 am - 08:00 pm\" at 1293 Clove Road; Yelp shows daytime hours with Sunday closed; it is not on the Mayor's Alliance emergency list. Only Bideawee's old list says 24 hours. The listing no longer claims to be open around the clock. Number and address unchanged. A person should open the site in a normal browser."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
+          "to": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+          "source": "manual",
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
         }
-      ]
+      ],
+      "notes": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services."
     },
     "condition-specific": {
       "last_checked": "2026-09-22",
@@ -1248,8 +1257,17 @@
           "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
           "source": "manual",
           "note": "Read 2026-11-04. Its old website, eaeh.com, is now a parked domain selling ads, so it is not linked. The Mayor's Alliance lists it as \"Call for hours\" at 87-06 Queens Boulevard (btwn 55th Avenue & 55th Road), (718) 426-4444: number and address match. Only its Facebook page says 24 hours. The listing no longer claims to be open around the clock."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.\n\n87-06 Queens Blvd (btwn 55th Ave/55th Rd), Elmhurst/Rego Park 11373. (718) 426-4444. Open 24h.",
+          "to": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
+          "source": "manual",
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
         }
-      ]
+      ],
+      "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going."
     },
     "empty-cages-collective": {
       "last_checked": "2026-09-22",
