@@ -39,15 +39,25 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "check_status": "ok",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://nycfci.happyfox.com/new",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Bideawee's Feral Cat Initiative help desk form, working. It had been recorded as unreachable."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

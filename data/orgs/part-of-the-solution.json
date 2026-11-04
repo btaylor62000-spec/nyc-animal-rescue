@@ -60,13 +60,13 @@
     "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
     "https://www.potsbronx.org"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "City pet food pantry programme",
   "source_files": [
     "pet-food-pantries"
   ],
   "last_checked": null,
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -86,6 +86,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "The number the city's own pet food pantry map lists for this site."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://potsbronx.org/english/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Its site shows 718-220-4892. The first number is the one the city lists for the pet food programme."
     }
   ],
   "privacy_hold": false,

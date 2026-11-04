@@ -7,8 +7,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **390** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **13** entries flagged as not currently active
-- **3** entries with no way at all to make contact
+- **15** entries flagged as not currently active
+- **4** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -92,8 +92,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 377 |
-| verify | 7 |
+| active | 375 |
+| verify | 9 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -104,11 +104,12 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (3)
+### No contact method at all (4)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
+- **Animal Relief Fund (ARF)** — PET FOOD PANTRIES (specific programs)
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
@@ -143,12 +144,13 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (73)
+### Never verified (32)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
+- **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
@@ -156,6 +158,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
@@ -324,7 +327,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
 | Save an animal from the shelter’s at-risk list | 7523 |
-| Reporting animal abuse or neglect | 5443 |
+| Reporting animal abuse or neglect | 5732 |
 | Animal emergencies and poison control | 3014 |
 | Low-cost clinics and trap banks | 8203 |
 | Community cats, colonies and starting TNR | 6880 |

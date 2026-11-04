@@ -43,31 +43,49 @@
   "phones": [
     {
       "value": "8778474787",
-      "display": "(877) 847-4787"
+      "display": "(877) 847-4787",
+      "label": "Old line, not on its current materials - email first"
     }
   ],
-  "emails": [],
-  "website": "https://humaneworld.org",
+  "emails": [
+    {
+      "value": "animalfighting@humaneworld.org"
+    }
+  ],
+  "website": "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting",
   "intake_urls": [],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "(877) 847-4787 - humaneworld.org - suspected organised dogfighting that is not in progress. Also reachable as 877-TIP-HSUS. Reward up to $5,000 for a tip leading to a conviction. For fighting in progress call 911. Takes anonymous reports.",
+  "notes": "animalfighting@humaneworld.org - https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting - suspected organised dogfighting or cockfighting that is not in progress. The HSUS is now called Humane World for Animals, and its 2025 reward poster asks for tips by email; the old phone line, (877) 847-4787 (877-TIP-HSUS), is not on its current materials and may no longer be answered. Reward up to $5,000 for information leading to an arrest and conviction. For fighting in progress call 911. Your identity is protected.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
+    "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Report animal abuse — WHO TO CONTACT",
   "source_files": [
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "animalfighting@humaneworld.org",
+      "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
+      "source": "manual",
+      "note": "The HSUS is now Humane World for Animals. Its 2025 reward poster: \"will pay you up to $5,000 for information leading to the arrest and conviction of a dogfighter or cockfighter. Email tips to animalfighting@humaneworld.org. Your identity will be protected.\" No phone number on it or on its animal fighting page. The email is added in the abuse workbook; the old 877-TIP-HSUS number is kept but labelled, and a person should ring it to see whether it is still answered."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

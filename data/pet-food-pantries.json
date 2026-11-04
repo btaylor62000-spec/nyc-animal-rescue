@@ -160,7 +160,9 @@
       "website": "https://ymcanyc.org",
       "contactFrom": "https://www.nyc.gov/assets/hra/downloads/pdf/pfred-directory-by-borough.pdf",
       "ownSite": false,
-      "programmePhone": "7182156910"
+      "programmePhone": "7182156910",
+      "mainPhone": "7182156900",
+      "mainPhoneFrom": "https://ymcanyc.org/locations/coney-island-ymca"
     },
     {
       "name": "Holy Apostles Soup Kitchen Pantry",

@@ -47,7 +47,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Low-cost vet, s-n & licensing — BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -55,7 +55,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.banfield.com/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Banfield's site: 1,000+ hospitals, Optimum Wellness Plans. Working."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

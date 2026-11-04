@@ -45,9 +45,19 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "check_status",
+      "from": null,
+      "to": "manual-only",
+      "evidence_url": "https://muffins.org/MAMA.htm",
+      "source": "manual",
+      "note": "Tried on 2026-11-04: muffins.org/MAMA.htm answers \"400 Bad Request\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

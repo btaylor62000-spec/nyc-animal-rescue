@@ -39,7 +39,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -47,7 +47,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.livelikeroo.org/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: Live Like Roo: support and financial help for families whose pet has cancer. Working."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

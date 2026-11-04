@@ -44,8 +44,10 @@
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.cancercare.org/financial"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Owner support & surrender prev. — SENIOR / DISABILITY / ILLNESS - in-home pet care",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -54,7 +56,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.cancercare.org/financial",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: CancerCare's financial help page names the Pet Assistance and Wellness (PAW) Program and says to call 800-813-HOPE (4673). Same number as stored."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

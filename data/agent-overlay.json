@@ -43,8 +43,20 @@
     },
     "aaha-universal-lookup": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: petmicrochiplookup.org forwards to AAHA's Pet Microchip Registry Lookup, which asks for the 9-, 10- or 15-digit chip number. Working."
+        }
+      ]
     },
     "abc-animal-hospital": {
       "last_checked": "2026-09-22",
@@ -374,8 +386,22 @@
     },
     "animal-relief-fund": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "needs-review",
+      "consecutive_failures": 0,
+      "website": null,
+      "status": "verify",
+      "status_note": "The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://animalrelieffund.org",
+          "to": null,
+          "evidence_url": "https://www.animalrelieffund.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: animalrelieffund.org is \"Animal Rescue Friends, DBA Animal Relief Fund ... Southern Maryland\", an adoption group, not the New York charity founded by Susan Kaufman that supplied pet food to human food pantries. arf-ny.org, found in news coverage, did not answer. Link removed so nobody is sent to the wrong organisation."
+        }
+      ]
     },
     "animal-rescue-of-queens-inc": {
       "last_checked": "2026-09-22",
@@ -478,12 +504,36 @@
     "aspca-behavior-guides": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.aspca.org/pet-care/dog-care",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: The ASPCA's dog care page, with health and behaviour guides. Working."
+        }
+      ]
     },
     "aspca-community-engagement": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.aspca.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: The ASPCA's home page. Working."
+        }
+      ]
     },
     "aspca-community-veterinary-clinic-brooklyn": {
       "last_checked": "2026-09-22",
@@ -620,7 +670,19 @@
     "banfield-pet-hospital": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.banfield.com/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Banfield's site: 1,000+ hospitals, Optimum Wellness Plans. Working."
+        }
+      ]
     },
     "barbey-street-cats": {
       "last_checked": "2026-09-22",
@@ -932,8 +994,19 @@
     },
     "brown-dog-foundation": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://browndogfoundation.org",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: browndogfoundation.org renders nothing to an automated browser (it loaded once with its heading \"Bridging the gap between the cost of medical care and saving the family pet\"). Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "bull-terrier-rescue-mission": {
       "last_checked": "2026-09-22",
@@ -966,7 +1039,22 @@
     "cancercare-pet-assistance-and-wellness-program": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.cancercare.org/financial",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: CancerCare's financial help page names the Pet Assistance and Wellness (PAW) Program and says to call 800-813-HOPE (4673). Same number as stored."
+        }
+      ],
+      "source_urls": [
+        "https://www.cancercare.org/financial"
+      ]
     },
     "carecredit": {
       "last_checked": "2026-09-22",
@@ -1046,7 +1134,19 @@
     "condition-specific": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.livelikeroo.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Live Like Roo: support and financial help for families whose pet has cancer. Working."
+        }
+      ]
     },
     "connecticut-parrot-rescue": {
       "last_checked": "2026-09-22",
@@ -1153,12 +1253,37 @@
     "feeding-pets-of-the-homeless": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://petsofthehomeless.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Feeding Pets of the Homeless: pet food and emergency vet care for pets of people experiencing homelessness. Working."
+        }
+      ]
     },
     "feline-rescue-of-staten-island": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://felinerescueofstatenisland.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Site answers over https (the stored http address does not). Working."
+        }
+      ],
+      "website": "https://felinerescueofstatenisland.org"
     },
     "fifth-avenue-veterinary-hospital": {
       "last_checked": "2026-09-22",
@@ -1197,7 +1322,19 @@
     "food-bank-for-new-york-city": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.foodbanknyc.org/find-food/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Food Bank for NYC's find-food page: nearly 800 pantries, soup kitchens and mobile pantries. Working."
+        }
+      ]
     },
     "for-animals-inc": {
       "last_checked": "2026-09-22",
@@ -1218,12 +1355,35 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://frankiesfelinefund.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: 917-514-0228 and frankiesfelinefund@gmail.com both on its home page. Same as stored."
+        }
+      ]
     },
     "frankies-friends": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.frankiesfriends.org/apply-for-assistance-3",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Frankie's Friends application page: grants for emergency or specialty vet care. Working."
+        }
+      ]
     },
     "free-housing-legal-help": {
       "last_checked": "2026-09-22",
@@ -1233,8 +1393,23 @@
     },
     "friends-of-animals": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its certificate page: \"call 1-800-321-PETS (7387) M-F, 9-5 EST\". Same number as stored."
+        }
+      ],
+      "source_urls": [
+        "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/"
+      ]
     },
     "friends-of-animals-spay-neuter-certificates": {
       "last_checked": "2026-09-22",
@@ -1370,8 +1545,31 @@
     },
     "hsus-dogfighting-tip-line": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "8778474787",
+          "display": "(877) 847-4787",
+          "label": "Old line, not on its current materials - email first"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "source_urls": [
+        "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
+        "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "animalfighting@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
+          "source": "manual",
+          "note": "The HSUS is now Humane World for Animals. Its 2025 reward poster: \"will pay you up to $5,000 for information leading to the arrest and conviction of a dogfighter or cockfighter. Email tips to animalfighting@humaneworld.org. Your identity will be protected.\" No phone number on it or on its animal fighting page. The email is added in the abuse workbook; the old 877-TIP-HSUS number is kept but labelled, and a person should ring it to see whether it is still answered."
+        }
+      ]
     },
     "humane-society-of-new-york": {
       "last_checked": "2026-09-22",
@@ -1432,8 +1630,19 @@
     },
     "kisos-pet-food-pantry": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://facebook.com/Kisos-Pet-Food-Pantry",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: Its only page is on Facebook, which asks for a login. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "kittens-and-barbells-rescue-inc": {
       "last_checked": "2026-09-22",
@@ -1608,8 +1817,19 @@
     },
     "mama-coupon": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://muffins.org/MAMA.htm",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: muffins.org/MAMA.htm answers \"400 Bad Request\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "manhattan-veterinary-group": {
       "last_checked": "2026-09-22",
@@ -1660,7 +1880,20 @@
     "microchip-registration": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": "https://www.petplace.com/pet-microchip-registry",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://24pet.com",
+          "to": "https://www.petplace.com/pet-microchip-registry",
+          "evidence_url": "https://www.24pet.com/",
+          "source": "manual",
+          "note": "24pet.com now says: \"24Petwatch microchip accounts have moved to PetPlace.com\". Linked to the PetPlace registry, the same page the 24Petwatch entry uses."
+        }
+      ]
     },
     "midwood-kitty-cats-cats-of-midwood": {
       "last_checked": "2026-09-22",
@@ -1822,13 +2055,36 @@
     },
     "nyc-311": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://portal.311.nyc.gov/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: The city's 311 portal. Working."
+        }
+      ]
     },
     "nyc-animal-welfare": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://nyc.gov/site/animalwelfare/resources/evictions.page",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "nyc-cat-coalition": {
       "last_checked": "2026-09-22",
@@ -1837,13 +2093,35 @@
     },
     "nyc-dohmh-low-cost-s-n-index": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "nyc-domestic-violence-hotline": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "nyc-emergency-animal-rescue": {
       "last_checked": "2026-09-22",
@@ -1852,8 +2130,20 @@
     },
     "nyc-feral-cat-initiative": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://nycfci.happyfox.com/new",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Bideawee's Feral Cat Initiative help desk form, working. It had been recorded as unreachable."
+        }
+      ]
     },
     "nyc-feral-cat-initiative-bideawee": {
       "last_checked": "2026-09-22",
@@ -1896,7 +2186,20 @@
     "nyc-shiba-rescue": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.nycshibarescue.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Site answers at www over https (the stored http address does not). PO Box 20271 Greeley Square Station."
+        }
+      ],
+      "website": "https://www.nycshibarescue.org"
     },
     "nyc-teens-for-animals-inc": {
       "last_checked": "2026-09-22",
@@ -1905,8 +2208,20 @@
     },
     "nypd-crime-stoppers": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 1
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://crimestoppers.nypdonline.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its page: \"CALL 1-800-577-TIPS\", cash rewards, anonymous. 577-TIPS is 577-8477, as stored."
+        }
+      ]
     },
     "nys-dec-find-a-wildlife-rehabilitator": {
       "last_checked": "2026-09-22",
@@ -1983,7 +2298,19 @@
     "paws-of-war": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.pawsofwar.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Paws of War: veterans, first responders and rescued animals. Working."
+        }
+      ]
     },
     "pet-i-care": {
       "last_checked": "2026-09-22",
@@ -1999,13 +2326,36 @@
     },
     "petco-vetco-vetco-vaccine-clinics": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://vetcoclinics.com",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: vetcoclinics.com and Petco's Vetco page render nothing to an automated browser. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "pets-of-the-homeless": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://petsofthehomeless.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Same site as Feeding Pets of the Homeless. Working."
+        }
+      ]
     },
     "place-for-cats": {
       "last_checked": "2026-09-22",
@@ -2031,8 +2381,19 @@
     },
     "prince-chunk-foundation": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://princechunkfoundation.org",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: princechunkfoundation.org refused every automated read. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "puppy-kitty-nyc": {
       "last_checked": "2026-09-22",
@@ -2063,7 +2424,19 @@
     "rebound-hounds-fospice": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.reboundhounds.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Rebound Hounds: 3,000+ dogs saved since 2010. Working."
+        }
+      ]
     },
     "red-hook-dog-rescue": {
       "last_checked": "2026-09-22",
@@ -2115,13 +2488,35 @@
     },
     "safe-havens-mapping-project": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://safehavensmappingproject.com",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: safehavensmappingproject.com refused every connection. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "safe-place-for-pets": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://safeplaceforpets.org",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: safeplaceforpets.org shows a \"Confirm you are human\" bot check. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "saint-spiro-cat-rescue-inc": {
       "last_checked": "2026-09-22",
@@ -2166,7 +2561,19 @@
     "scratchpay": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://scratchpay.com/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Scratchpay's site. Working."
+        }
+      ]
     },
     "sean-casey-animal-rescue": {
       "last_checked": "2026-09-22",
@@ -2188,12 +2595,57 @@
     "sheltering-animals-and-families-together": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": "https://saftprogram.org/",
+      "last_verified": "2026-11-04",
+      "source_urls": [
+        "https://saftprogram.org/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://alliephillips.com/saf-tprogram",
+          "to": "https://saftprogram.org/",
+          "evidence_url": "https://saftprogram.org/",
+          "source": "manual",
+          "note": "The old address, alliephillips.com/saf-tprogram, now says \"nothing was found\". Allie Phillips's own site links the programme's current home, saftprogram.org, read in a browser: \"Sheltering Animals & Families Together (SAF-T) launched the global movement to create pet-friendly domestic violence shelters.\""
+        }
+      ]
     },
     "sicaw-certificate-program": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "needs-review",
+      "consecutive_failures": 0,
+      "website": "https://www.sicawsaves.org/contact",
+      "phones": [
+        {
+          "value": "7189485623",
+          "display": "(718) 948-5623",
+          "label": "SICAW, on its website"
+        }
+      ],
+      "emails": [
+        {
+          "value": "sicawsaves@gmail.com"
+        }
+      ],
+      "status": "verify",
+      "status_note": "SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.",
+      "source_urls": [
+        "https://www.sicawsaves.org/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "verify",
+          "evidence_url": "https://www.sicawsaves.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04. sicawsaves.org/resources returns \"We couldn't find the page\"; its Resources link now opens a disaster-plan page; nothing on the site mentions certificates or spay/neuter. SICAW itself is active: (718) 948-5623 and sicawsaves@gmail.com from its own footer are added so someone can ask."
+        }
+      ]
     },
     "snarr-northeast": {
       "last_checked": "2026-09-22",
@@ -2268,8 +2720,20 @@
     },
     "suicide-and-crisis-lifeline": {
       "last_checked": "2026-09-22",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://988lifeline.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: The 988 Lifeline's site, text and chat now also in Spanish. Working."
+        }
+      ]
     },
     "sunset-park-cats": {
       "last_checked": "2026-09-22",
@@ -2342,7 +2806,29 @@
     "the-pet-fund": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "9164436007",
+          "display": "(916) 443-6007",
+          "label": "Not on its website, which asks people to email first"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "source_urls": [
+        "https://thepetfund.com/for-pet-owners"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(916) 443-6007",
+          "to": "(916) 443-6007 (Not on its website, which asks people to email first)",
+          "evidence_url": "https://thepetfund.com/for-pet-owners",
+          "source": "manual",
+          "note": "Its page for pet owners: \"email us at info@thepetfund.com with a description of your animal's medical needs\". Email confirmed. The (916) 443-6007 number is not on any page of its site; kept, labelled, not deleted, for a person to ring."
+        }
+      ]
     },
     "the-poor-animals-of-st-francis-inc": {
       "last_checked": "2026-09-22",
@@ -2687,7 +3173,19 @@
     "vip-petcare-clinics": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://vippetcare.com/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: VIP Petcare: preventive care with upfront pricing, no appointment. Working."
+        }
+      ]
     },
     "volunteers-for-wildlife-wildlife-center-of-long-island": {
       "last_checked": "2026-09-22",
@@ -2697,7 +3195,19 @@
     "waggle": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.waggle.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Waggle's site. Working."
+        }
+      ]
     },
     "waggytail-rescue": {
       "last_checked": "2026-09-22",
@@ -2749,8 +3259,19 @@
     },
     "your-local-nypd-precinct": {
       "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "check_status",
+          "from": null,
+          "to": "manual-only",
+          "evidence_url": "https://nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page",
+          "source": "manual",
+          "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        }
+      ]
     },
     "urban-wildlife-alliance": {
       "last_checked": "2026-11-03",
@@ -2864,6 +3385,246 @@
       "confidence": "High",
       "last_verified": "2026-11-04",
       "notes": "Free basic vet care for cats and dogs for South Bronx residents. Only for owners living in zip codes 10451, 10454, 10455, 10456 or 10459. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Also offers subsidized dental cleanings and extractions."
+    },
+    "community-help-in-park-slope": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.chipsonline.org/contact-1",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: CHiPS contact page: 718-237-2962, 200 4th Avenue 11217. Its pantry page gives on-site pantry hours Thursdays and Saturdays 11:30am-1pm. Same number as stored."
+        }
+      ]
+    },
+    "holy-apostles-soup-kitchen-pantry": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://holyapostlesnyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site gives \"Soup Kitchen: 212-924-0167\", 296 9th Ave. The first number is the one the city lists for the pet food programme."
+        }
+      ]
+    },
+    "hour-children-community-outreach": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://hourchildren.org/our-food-pantry/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its food pantry page shows 718-482-8226. Same as stored."
+        }
+      ]
+    },
+    "kingsbridge-heights-community-center": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.khcc-nyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its home page shows 718-884-0700. Same as stored."
+        }
+      ]
+    },
+    "metropolitan-council-on-jewish-poverty": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://metcouncil.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 212-453-9500 (main line). The first number is the one the city lists for the pet food programme."
+        }
+      ]
+    },
+    "part-of-the-solution": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://potsbronx.org/english/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 718-220-4892. The first number is the one the city lists for the pet food programme."
+        }
+      ]
+    },
+    "project-hospitality": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.projecthospitality.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 718-448-1544. The first number is the one the city lists for the pet food programme."
+        }
+      ]
+    },
+    "river-fund-new-york": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.river.fund/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows (718) 441-1125. The city lists (718) 442-1125; both stay published, as before."
+        }
+      ]
+    },
+    "st-clements-food-pantry": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.stclementsnyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 212-246-7277. Same as stored."
+        }
+      ]
+    },
+    "st-johns-bread-and-life-food-pantry": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.breadandlife.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 718-574-0058. Same as stored."
+        }
+      ]
+    },
+    "the-campaign-against-hunger": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.tcahnyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 718-773-3551. Same as stored."
+        }
+      ]
+    },
+    "the-fathers-heart-ministries": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.fathersheartnyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 212-375-1765. Same as stored."
+        }
+      ]
+    },
+    "the-lower-eastside-girls-club": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.girlsclub.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 212-982-1633. Same as stored."
+        }
+      ]
+    },
+    "trinitys-services-and-food-for-the-homeless": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.safhnyc.org/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: Its site shows 212-228-5254. Same as stored."
+        }
+      ]
+    },
+    "ymca-community-market-coney-island": {
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://ymcanyc.org/locations/coney-island-ymca",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: The Coney Island YMCA page: 718-215-6900, 2980 West 29th Street 11224 (same address as the city's list). The city lists 718-215-6910 for the pet food programme, one digit different; both are now published, the city's first."
+        }
+      ]
     }
   }
 }

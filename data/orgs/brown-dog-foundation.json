@@ -44,9 +44,19 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "check_status",
+      "from": null,
+      "to": "manual-only",
+      "evidence_url": "https://browndogfoundation.org",
+      "source": "manual",
+      "note": "Tried on 2026-11-04: browndogfoundation.org renders nothing to an automated browser (it loaded once with its heading \"Bridging the gap between the cost of medical care and saving the family pet\"). Nothing changed; a person needs to open it in a normal browser and record what they see."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
