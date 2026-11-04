@@ -22,7 +22,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center; contact for location, hours, eligibility. CommunityPets@nycacc.org - (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org - puppykittynyc.org.
-- Animal Relief Fund (ARF) - NYC org providing pet food to people in need. animalrelieffund.org.
+- Animal Relief Fund (ARF) - NYC org that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.
 - Food Bank For New York City - pet food is sometimes available at member pantries (varies by donations). foodbanknyc.org/get-help.
 - ASPCA + Food Bank For NYC partnership - free pet food distributed through Food Bank partner pantries citywide.
@@ -54,7 +54,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - RedRover Relief Safe Escape - grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
 - Safe Place for Pets (RedRover) - searchable directory of programs by ZIP. safeplaceforpets.org.
 - Safe Havens Mapping Project (Animal Welfare Institute) - directory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com.
-- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. alliephillips.com/saf-tprogram.
+- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. https://saftprogram.org.
 - SPCA Westchester Pet Safety Program - safe-keeping for pets in DV-affected households (Westchester-adjacent). spcawestchester.org/pet-safety - (914) 941-2896.
 
 ## HOSPICE / SENIOR + LIFETIME-CARE placement
@@ -71,7 +71,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - AMC (Schwarzman Animal Medical Center, Manhattan) funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.
 - ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT/SSI/VA/unemployment/TANF proof). aspca.org/nyc.
 - RedRover Relief - grants (avg ~$250) toward urgent, life-threatening care; income under $60,000/yr; paid to the vet. redrover.org/relief - (916) 429-2457.
-- The Pet Fund - non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com - (916) 443-6007.
+- The Pet Fund - non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website).
 - Frankie's Friends - lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.
 - Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
 - Condition-specific (cats): cancer - Live Like Roo (livelikeroo.org), Magic Bullet Fund (themagicbulletfund.org), Riedel & Cody Fund; FIP/retrovirus + chronic - The Pet Fund; Feline Veterinary Emergency Assistance Program (VAS/ISS); Diabetic Cats in Need (insulin help).

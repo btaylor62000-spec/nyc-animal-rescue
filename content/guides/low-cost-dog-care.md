@@ -87,7 +87,7 @@ Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many
 - AMC (Schwarzman Animal Medical Center, Manhattan) financial-assistance funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.
 - ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT / SSI / VA / unemployment / TANF proof). Apply via aspca.org/nyc.
 - RedRover Relief - grants (avg ~$250) toward urgent, life-threatening care; household income under $60,000/yr; paid to the vet. redrover.org/relief, (916) 429-2457.
-- The Pet Fund - help for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com, (916) 443-6007, thepetfund.com.
+- The Pet Fund - help for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.
 - Frankie's Friends - grants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.
 - Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
 - The Humane Society of NY - some cases receive full or partial funding through its Animal Emergency Appeal; ask when booking. 306 East 59th St, NY 10022, (212) 752-4842.

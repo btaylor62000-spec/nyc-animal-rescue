@@ -39,12 +39,12 @@ Verified against Bideawee + Mayor's Alliance emergency lists, 2026-08-26. Hours/
 ## QUEENS - 24 hour ER
 
 - BluePearl Queens - 107-28 71st Rd, Forest Hills 11375 - (718) 263-0099 - 24/7. ONLY NYC animal hospital with hemodialysis (toxin ingestion / kidney failure).
-- Elmhurst Animal Emergency Hospital - 87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.
+- Elmhurst Animal Emergency Hospital - 87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - call for hours: older lists say 24 hours, but that could not be confirmed on 2026-11-04.
 - InstaVet Urgent Care - 44-16 23rd St, LIC 11101 - (917) 525-2579 - call/site for hours.
 
 ## STATEN ISLAND - 24 hour ER
 
-- CompleteCare Veterinary Center - 1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.
+- CompleteCare Veterinary Center - 1293 Clove Rd 10301 - (718) 720-4211 - hours not confirmed: older lists say 24 hours, recent ones show daytime and evening only. Call before going (checked 2026-11-04).
 - Greater State Veterinary Specialists (GSiVS) - 3135 Victory Blvd 10314 - (917) 830-1380 - 24/7.
 
 ## BRONX - urgent care (for TRUE 24hr ER, Bronx residents are advised to use Manhattan - AMC/BluePearl)

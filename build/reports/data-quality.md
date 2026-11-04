@@ -254,7 +254,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
 
-### Conflicts between sources (6)
+### Conflicts between sources (5)
 
 Nothing here is auto-corrected. These are disagreements between the workbooks that a person should resolve.
 
@@ -263,8 +263,6 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **website** — clinic.aspca.org  vs  aspcapro.org
   - Sources give different domains for what looks like the same organization.
 - **website** — nycacc.org  vs  petsandhousing.org
-  - Sources give different domains for what looks like the same organization.
-- **website** — 24pet.com  vs  petplace.com
   - Sources give different domains for what looks like the same organization.
 - **address** — VERG (Veterinary Emergency & Referral Group): 196 4th Ave  vs  VERG North (Veterinary Emergency & Referral Group): 318 Warren St
   - Same phone line (7185229400) listed at different addresses. One source is probably out of date -- verify before relying on either.
@@ -329,21 +327,21 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Keeping your pet if you are losing your home | 5551 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5732 |
-| Animal emergencies and poison control | 3014 |
-| Low-cost clinics and trap banks | 8203 |
+| Animal emergencies and poison control | 3213 |
+| Low-cost clinics and trap banks | 8438 |
 | Community cats, colonies and starting TNR | 6880 |
 | Cats needing specialist help | 4701 |
-| Lost or found a cat | 6225 |
-| Help keeping your cat | 9840 |
-| Help keeping your dog | 8474 |
-| Low-cost vet care, spay/neuter and dog licensing | 11542 |
+| Lost or found a cat | 6279 |
+| Help keeping your cat | 10007 |
+| Help keeping your dog | 8583 |
+| Low-cost vet care, spay/neuter and dog licensing | 11601 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
 | Breed-specific dog rescue | 13722 |
 | Found injured or orphaned wildlife | 6640 |
 | Exotic pet emergencies | 4123 |
 | What you can legally keep in New York City | 3073 |
-| Help paying for veterinary care | 6412 |
+| Help paying for veterinary care | 6471 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |
 | Lost or found a rabbit, bird or reptile | 2266 |
 | Boarding, pet sitting and planning ahead | 6022 |

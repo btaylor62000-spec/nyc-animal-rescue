@@ -27,7 +27,7 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center; contact for location, hours, and eligibility. CommunityPets@nycacc.org, (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org, puppykittynyc.org.
-- Animal Relief Fund (ARF) - NYC organization providing pet food to people in need. animalrelieffund.org.
+- Animal Relief Fund (ARF) - NYC organization that supplied pet food to human food pantries. No current website found as of 2026-11-04 (animalrelieffund.org is a different group, in Maryland), so it may no longer operate.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.
 - Food Bank For New York City - pet food is sometimes available at its member pantries (varies by donations). foodbanknyc.org; find a pantry at foodbanknyc.org/get-help.
 - Prince Chunk Foundation - provides pet food and short-term assistance to families in crisis. princechunkfoundation.org.
@@ -58,7 +58,7 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 - RedRover Relief - Safe Escape grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
 - Safe Place for Pets (RedRover) - searchable directory of programs ready to help survivors and pets, by ZIP. safeplaceforpets.org.
 - Safe Havens Mapping Project (Animal Welfare Institute) - directory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com / awionline.org.
-- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site; alliephillips.com/saf-tprogram.
+- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site; https://saftprogram.org.
 - SPCA Westchester Pet Safety Program - safe-keeping for pets in households affected by domestic violence (Westchester-adjacent). spcawestchester.org/pet-safety, (914) 941-2896.
 
 ## HOSPICE / FOSPICE + SENIOR-DOG PLACEMENT
