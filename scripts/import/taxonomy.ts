@@ -24,7 +24,24 @@ export interface Rule<T> {
   fields?: Field[];
   /** Human-readable justification shown in the tagging report. */
   why?: string;
+  /**
+   * The tag applies only if the record's name or type also matches this.
+   * For tags that describe what an organization *is*, where the trigger words
+   * also turn up in descriptions of what it does or needs.
+   */
+  requires?: RegExp;
 }
+
+/*
+ * What an emergency vet has to be.
+ *
+ * "24 hours", "emergency vet care" and "urgent care" also describe rescues:
+ * "colony support (food, winter shelters, emergency vet care)", "~24hr
+ * response, not an emergency line", "24-hour live answering service". Those
+ * put four rescues among the emergency vets, where someone with a bleeding
+ * dog would ring them. A vet's name or type says it is one.
+ */
+const IS_VET_PROVIDER = /\bvets?\b|veterinar|animal hospital|\bhospital\b|medical cent|urgent care|\bER\b|ambulance|\bVEG\b|\bVERG\b|BluePearl/i;
 
 const TYPE_NOTES: Field[] = ['type', 'notes'];
 const TYPE_ONLY: Field[] = ['type'];
@@ -109,7 +126,7 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
 // ---------------------------------------------------------------------------
 
 export const NEED_RULES: Rule<Need>[] = [
-  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|\b24hr\b|emergency (vet|hospital|care)|\bER\b|urgent care/i, fields: ALL },
+  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|\b24hr\b|emergency (vet|hospital|care)|\bER\b|urgent care/i, fields: ALL, requires: IS_VET_PROVIDER },
   { tag: 'poison-control', pattern: /poison control|poison helpline|toxicolog/i, fields: ALL },
   { tag: 'wildlife-rehab', pattern: /rehabilitat|\brehabber/i, fields: ALL },
   { tag: 'adoption', pattern: /\badopt/i, fields: TYPE_NOTES },
@@ -167,7 +184,7 @@ export const ORG_TYPE_RULES: Rule<OrgType>[] = [
   { tag: 'tnr-group', pattern: /\bTNR\b/i, fields: TYPE_ONLY },
   { tag: 'solo-rescuer', pattern: /solo rescuer|one-?person|solo\/hyper-local/i, fields: TYPE_NOTES },
   { tag: 'clinic', pattern: /\bclinic\b|veterinary (hospital|center|centre|group)|animal hospital/i, fields: ALL },
-  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|emergency (&|and)? ?(referral|vet|hospital)|\bER\b|urgent care/i, fields: ALL },
+  { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|emergency (&|and)? ?(referral|vet|hospital)|\bER\b|urgent care/i, fields: ALL, requires: IS_VET_PROVIDER },
   { tag: 'exotic-vet', pattern: /avian (&|and) exotic|exotic (vet|medicine)/i, fields: ALL },
   { tag: 'wildlife-rehabber', pattern: /wildlife rehab|licensed rehabilitator|rehabber/i, fields: ALL },
   { tag: 'sanctuary', pattern: /\bsanctuary\b/i, fields: TYPE_NOTES },

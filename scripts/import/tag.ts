@@ -34,6 +34,7 @@ export function applyRules<T extends string>(
   const trace: TagTrace[] = [];
 
   for (const rule of rules) {
+    if (rule.requires && !rule.requires.test(`${src.name} ${src.type}`)) continue;
     const fields = rule.fields ?? DEFAULT_FIELDS;
     for (const field of fields) {
       const text = src[field];
