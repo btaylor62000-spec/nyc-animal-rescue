@@ -11,7 +11,7 @@
  * byte-identical output, so `git status` after an import is a real signal that
  * something in the sources changed.
  */
-import { mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 // The 2020-12 entry point, matching the $schema the generated schema declares.
 import Ajv from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
@@ -24,6 +24,15 @@ import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES } from './overrides.ts';
 import { GUIDANCE_ONLY } from '../../src/data/listing.ts';
 import { attachGeo } from '../geo/attach.ts';
+import { isNycZip } from '../../src/data/geo.ts';
+
+/** The city's zip centres, for the assistant to place a zip written in a question. */
+function nycZipCentres(): Record<string, [number, number]> {
+  const all: Record<string, [number, number]> = existsSync('data/zip-centroids.json')
+    ? JSON.parse(readFileSync('data/zip-centroids.json', 'utf8')).zips
+    : {};
+  return Object.fromEntries(Object.entries(all).filter(([z]) => isNycZip(z)));
+}
 import { applyPrivacyHolds } from './privacy.ts';
 import { buildAllGuidePages, unusedTabs, writeGuidePages } from './guide-pages.ts';
 import { ORG_SCHEMA } from './schema.ts';
@@ -289,7 +298,7 @@ function main(): void {
   }));
   writeFileSync(
     'data/chat-corpus.json',
-    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus }, null, 0)}\n`,
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, zipCentres: nycZipCentres() }, null, 0)}\n`,
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;

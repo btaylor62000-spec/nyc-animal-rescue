@@ -316,13 +316,17 @@ if (form && list) {
   // and never written to the address bar or sent anywhere: the sorting happens
   // here, on the reader's own device.
   let origin: Origin | null = null;
+  const nearZip = document.getElementById('near-zip') as HTMLInputElement | null;
+  let zipCentres: Record<string, [number, number]> | null = null;
+  let originFromZip = false;
   const nearBtn = document.getElementById('near-me') as HTMLButtonElement | null;
   const nearNote = document.getElementById('near-me-note');
   const orderLabel = document.getElementById('results-order');
 
   function describeOrder(emergency: boolean): void {
     if (!orderLabel) return;
-    const parts = [emergency ? 'Open now first' : null, origin ? 'nearest to you' : null].filter(Boolean) as string[];
+    const where = originFromZip && nearZip ? `nearest to ${nearZip.value.trim()}` : 'nearest to you';
+    const parts = [emergency ? 'Open now first' : null, origin ? where : null].filter(Boolean) as string[];
     orderLabel.textContent = parts.length
       ? `${parts.join(', then ')}, then strongest evidence`
       : searchInput?.value.trim() ? 'Best match first' : 'Strongest evidence first';
@@ -345,6 +349,37 @@ if (form && list) {
     }
   }
 
+  // --- nearest to a zip code ---------------------------------------------------
+  // For everyone who keeps location services off: type a zip, and results are
+  // ordered from the middle of it. Not a filter -- the nearest hospital may be
+  // over a borough line -- and nothing about it leaves the page.
+  nearZip?.addEventListener('input', async () => {
+    const zip = nearZip.value.trim();
+    if (!/^\d{5}$/.test(zip)) {
+      if (originFromZip) {
+        origin = null;
+        originFromZip = false;
+        if (nearNote) nearNote.hidden = true;
+        showDistances();
+        void run(false);
+      }
+      return;
+    }
+    if (!zipCentres) zipCentres = await (await fetch('/zip-centres.json')).json();
+    const c = zipCentres![zip];
+    if (nearNote) nearNote.hidden = false;
+    if (!c) {
+      if (nearNote) nearNote.textContent = `${zip} is not a New York City zip code we know.`;
+      return;
+    }
+    origin = { lat: c[0], lon: c[1] };
+    originFromZip = true;
+    if (nearBtn) nearBtn.textContent = 'Nearest to me';
+    if (nearNote) nearNote.textContent = `Distances are from the middle of ${zip}, straight-line and approximate.`;
+    showDistances();
+    void run(false);
+  });
+
   if (nearBtn && 'geolocation' in navigator) {
     nearBtn.hidden = false;
     nearBtn.addEventListener('click', () => {
@@ -361,6 +396,8 @@ if (form && list) {
       navigator.geolocation.getCurrentPosition(
         (pos) => {
           origin = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+          originFromZip = false;
+          if (nearZip) nearZip.value = '';
           nearBtn.disabled = false;
           nearBtn.textContent = 'Stop sorting by distance';
           if (nearNote) {

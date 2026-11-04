@@ -1067,3 +1067,6 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 
 .chat__location { margin: 0.5rem 0 0; font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: center; }
 .chat__location label { display: inline-flex; gap: 0.4rem; align-items: center; cursor: pointer; }
+
+.near-zip { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: var(--text-muted); }
+.near-zip input { width: 5.5rem; padding: 0.3rem 0.5rem; font: inherit; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--surface); color: var(--text); }

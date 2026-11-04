@@ -168,7 +168,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   // What the card and the model are told about each place right now.
   const extras = new Map(
     retrieved.orgs.map((r) => {
-      const miles = origin && r.geo ? distanceMiles(origin, r.geo) : null;
+      const from = retrieved.origin;
+      const miles = from && r.geo ? distanceMiles(from, r.geo) : null;
       const distance = miles === null ? null : `${r.geo!.precision === 'zip' ? 'about ' : ''}${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi`;
       const openNow = takesEmergencies(r) ? openLabel(openState(r.hours, now), now) : null;
       return [r.id, { distance, openNow }] as const;
