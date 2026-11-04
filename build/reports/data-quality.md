@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **400** organizations after de-duplication
+- **401** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
 - **18** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 294 |
-| dog | 229 |
+| cat | 295 |
+| dog | 230 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -37,12 +37,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 165 |
+| adoption | 166 |
 | foster | 99 |
 | tnr | 95 |
 | spay-neuter | 75 |
 | owner-support | 71 |
-| surrender | 64 |
+| surrender | 65 |
 | low-cost-vet | 58 |
 | referral | 48 |
 | emergency-vet | 37 |
@@ -76,7 +76,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 262 |
 | queens | 221 |
-| manhattan | 217 |
+| manhattan | 218 |
 | bronx | 192 |
 | staten-island | 191 |
 
@@ -84,7 +84,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 194 |
+| High | 195 |
 | Medium | 153 |
 | Low | 53 |
 
@@ -92,7 +92,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 382 |
+| active | 383 |
 | verify | 12 |
 | retired | 3 |
 | hiatus | 2 |

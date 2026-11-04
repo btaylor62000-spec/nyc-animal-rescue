@@ -4060,6 +4060,18 @@
           "note": "Read in a browser on 2026-11-04: The Coney Island YMCA page: 718-215-6900, 2980 West 29th Street 11224 (same address as the city's list). The city lists 718-215-6910 for the pet food programme, one digit different; both are now published, the city's first."
         }
       ]
+    },
+    "bideawee-manhattan-adoption-center": {
+      "intake_urls": [
+        {
+          "url": "https://new.shelterluv.com/matchme/owner-surrender/WEE/Dog",
+          "label": "Surrender a dog (application)"
+        },
+        {
+          "url": "https://new.shelterluv.com/matchme/owner-surrender/WEE/Cat",
+          "label": "Surrender a cat (application)"
+        }
+      ]
     }
   }
 }

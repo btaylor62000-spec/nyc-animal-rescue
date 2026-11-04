@@ -67,6 +67,12 @@
    "lon": -73.99609,
    "matched": "76 MONTAGUE ST, BROOKLYN, NY, 11201"
   },
+  "bideawee-manhattan-adoption-center": {
+   "query": "152 W 24th St, New York, NY 10011",
+   "lat": 40.74415,
+   "lon": -73.99386,
+   "matched": "152 W 24TH ST, NEW YORK, NY, 10011"
+  },
   "bluepearl-brooklyn": {
    "query": "190 3rd Ave, Brooklyn, NY 11217",
    "lat": 40.68086,

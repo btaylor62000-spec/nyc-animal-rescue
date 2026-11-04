@@ -1398,6 +1398,33 @@
       "matched": "LOW-COST"
     }
   ],
+  "bideawee-manhattan-adoption-center": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "type",
+      "matched": "surrender"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    }
+  ],
   "big-city-little-kitty": [
     {
       "tag": "cat",

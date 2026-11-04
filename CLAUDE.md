@@ -132,10 +132,14 @@ Ordered by how much harm it prevents, not by size.
    - *NYC 211*: there is no separate one. The city's own 311 page says
      211's help-and-referral service is provided through 311 in New York
      City, so the guides now say "call 311", not "dial 211 (nyc.gov/211)".
-   - *Surrender lines*: neither Bideawee nor the ASPCA has one. The ASPCA's
-     NYC FAQ sends owners to rehoming sites and ACC's surrender service
-     (appointment only, 212-788-4000, which is already listed). Bideawee
-     publishes a surrender-prevention packet instead.
+   - *Surrender lines* (corrected the same day): **Bideawee does take
+     surrenders**, by online application (one form for dogs, one for cats),
+     at its Manhattan Adoption Center, 152 W 24th St; it had no listing at
+     all and now does. The first answer here said it had none, from its
+     home page alone; the Mayor's Alliance surrender page showed otherwise.
+     The ASPCA's own pages give no surrender line and its NYC FAQ sends
+     owners to ACC; the "(212) 876-7700 ext. 5" on the Mayor's Alliance page
+     is not confirmed by the ASPCA and is not listed.
    - *DEC's general email*: r2info@dec.ny.gov, from DEC's own "Guide to
      DEC" (revised 2023). Added to the Region 2 entry.
    - *NYSAVE yearly cap*: its guidelines set none per household. The
