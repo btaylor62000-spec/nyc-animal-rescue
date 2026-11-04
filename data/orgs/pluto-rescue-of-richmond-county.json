@@ -82,7 +82,7 @@
   "type_raw": "rescue+adoption / TNR / low-cost spay-neuter",
   "confidence": "Medium",
   "status": "verify",
-  "status_note": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+  "status_note": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
   "source_urls": [
     "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york"
   ],
@@ -93,8 +93,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -129,6 +129,15 @@
       "evidence_url": "https://www.plutorescue.com",
       "source": "manual",
       "note": "https://www.plutorescue.com now resolves to a domain-parking traffic service (pltraffic7.com, 162.4.84.215, checked through Google DNS 2026-11-04) and serves no site. Link removed so nobody is sent to whoever holds the domain now."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+      "to": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
+      "evidence_url": "https://www.facebook.com/groups/142243179210/about",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Older directories give (718) 227-0553 and PlutoRescue@aol.com; its Facebook group is the only current channel found, and activity could not be confirmed."
     }
   ],
   "privacy_hold": false,

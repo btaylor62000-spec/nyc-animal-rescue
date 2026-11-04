@@ -1408,11 +1408,11 @@
     },
     "cats-in-the-cradle-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Low",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1447,11 +1447,57 @@
           "evidence_url": "https://www.catsinthecradlerescuenyc.org",
           "source": "manual",
           "note": "catsinthecradlerescuenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9175026543",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "Cats in the Cradle Rescue NYC",
+          "to": "https://www.instagram.com/catsinthecradlenyc/, https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
         }
       ],
       "website": null,
       "source_urls": [
         "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
+      ],
+      "phones": [
+        {
+          "value": "9175026543",
+          "display": "(917) 502-6543",
+          "label": "From its Facebook page"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "catsinthecradlenyc",
+          "url": "https://www.instagram.com/catsinthecradlenyc/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "Cats-in-the-Cradle-Rescue-NYC",
+          "url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/"
+        }
       ]
     },
     "cats-n-queens": {
@@ -1460,11 +1506,11 @@
     },
     "cats-of-meow-york": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1508,13 +1554,76 @@
           "evidence_url": "https://www.catsofmeowyork.org",
           "source": "manual",
           "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://linktr.ee/catsofmeowyork",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://form.jotform.com/210068411079046, https://form.jotform.com/211150793502144",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/catsofmeowyork",
+          "to": "https://www.instagram.com/catsofmeowyork/, https://www.tiktok.com/@catsofmeowyorkrescue, https://www.facebook.com/catsofmewyork/",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
         }
       ],
-      "website": null,
+      "website": "https://linktr.ee/catsofmeowyork",
       "source_urls": [
         "https://www.orgcouncil.com/ein/881221020"
       ],
-      "emails": []
+      "emails": [],
+      "intake_urls": [
+        {
+          "url": "https://form.jotform.com/210068411079046",
+          "label": "Adoption application"
+        },
+        {
+          "url": "https://form.jotform.com/211150793502144",
+          "label": "Foster application"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "catsofmeowyork",
+          "url": "https://www.instagram.com/catsofmeowyork/"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "catsofmeowyorkrescue",
+          "url": "https://www.tiktok.com/@catsofmeowyorkrescue"
+        },
+        {
+          "platform": "facebook",
+          "handle": "catsofmewyork",
+          "url": "https://www.facebook.com/catsofmewyork/"
+        }
+      ]
     },
     "catskill-animal-sanctuary": {
       "last_checked": "2026-11-04",
@@ -1535,11 +1644,11 @@
     },
     "city-pitties": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Low",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1583,11 +1692,55 @@
           "evidence_url": "https://www.citypitties.org",
           "source": "manual",
           "note": "citypitties.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "citypitties@yahoo.com",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/citypitties, https://facebook.com/citypitties",
+          "to": "https://www.instagram.com/city_pitties/, https://facebook.com/citypitties",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
         }
       ],
       "website": null,
       "intake_urls": [],
-      "source_urls": []
+      "source_urls": [],
+      "emails": [
+        {
+          "value": "citypitties@yahoo.com"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "city_pitties",
+          "url": "https://www.instagram.com/city_pitties/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "citypitties",
+          "url": "https://facebook.com/citypitties"
+        }
+      ]
     },
     "community-help-in-park-slope": {
       "check_status": "ok",
@@ -1811,10 +1964,10 @@
     },
     "feather-friends-parrot-adoption-services": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
-      "website": null,
-      "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "website": "https://nycparrot.wordpress.com/",
+      "status_note": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1824,6 +1977,40 @@
           "source": "manual",
           "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
           "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://nycparrot.wordpress.com/",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9178655042",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+          "to": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "9178655042",
+          "display": "(917) 865-5042",
+          "label": "From parrot rescue directories"
         }
       ]
     },
@@ -2840,10 +3027,10 @@
     },
     "magnificat-cat-rescue-and-rehoming": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
-      "website": null,
-      "status_note": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "website": "https://magnificat9.wixsite.com/magnificatrescue",
+      "status_note": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2853,6 +3040,38 @@
           "source": "manual",
           "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
           "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://magnificat9.wixsite.com/magnificatrescue",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "magnificatrescue2@gmail.com",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+          "to": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        }
+      ],
+      "emails": [
+        {
+          "value": "magnificatrescue2@gmail.com"
         }
       ]
     },
@@ -2926,10 +3145,10 @@
     "meowroof": {
       "last_checked": "2026-11-04",
       "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "retired",
+      "status_note": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2964,6 +3183,24 @@
           "evidence_url": "https://www.meowroof.org",
           "source": "manual",
           "note": "meowroof.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
+          "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
         }
       ],
       "website": null,
@@ -3196,10 +3433,10 @@
     "new-beginning-animal-rescue": {
       "last_checked": "2026-11-04",
       "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "retired",
+      "status_note": "Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3243,6 +3480,24 @@
           "evidence_url": "https://www.nbanimalrescue.org",
           "source": "manual",
           "note": "nbanimalrescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://www.facebook.com/NBARthebronx/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Bronx location is closed. (A different group with a similar name, A New Beginning Animal Rescue on Long Island, nbrescue.org, is not this one.)"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.",
+          "evidence_url": "https://www.facebook.com/NBARthebronx/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Bronx location is closed. (A different group with a similar name, A New Beginning Animal Rescue on Long Island, nbrescue.org, is not this one.)"
         }
       ],
       "website": null,
@@ -3753,11 +4008,11 @@
     },
     "paws-of-hope-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3792,11 +4047,43 @@
           "evidence_url": "https://pawsofhopenyc.org",
           "source": "manual",
           "note": "pawsofhopenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "pawsofhopenyc@gmail.com",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
         }
       ],
-      "website": null,
+      "website": "https://gissell182.wixsite.com/pawsofhopenyc",
       "source_urls": [
         "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
+      ],
+      "emails": [
+        {
+          "value": "pawsofhopenyc@gmail.com"
+        }
       ]
     },
     "paws-of-war": {
@@ -3903,11 +4190,11 @@
     },
     "pluto-rescue-of-richmond-county": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+      "status_note": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3942,6 +4229,15 @@
           "evidence_url": "https://www.plutorescue.com",
           "source": "manual",
           "note": "https://www.plutorescue.com now resolves to a domain-parking traffic service (pltraffic7.com, 162.4.84.215, checked through Google DNS 2026-11-04) and serves no site. Link removed so nobody is sent to whoever holds the domain now."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+          "to": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
+          "evidence_url": "https://www.facebook.com/groups/142243179210/about",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Older directories give (718) 227-0553 and PlutoRescue@aol.com; its Facebook group is the only current channel found, and activity could not be confirmed."
         }
       ],
       "website": null,
@@ -4344,11 +4640,11 @@
     },
     "second-chance-bird-and-reptile-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "ok",
+      "consecutive_failures": 0,
       "confidence": "Medium",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4383,10 +4679,58 @@
           "evidence_url": "https://secondchancebirdandreptilerescue.org",
           "source": "manual",
           "note": "secondchancebirdandreptilerescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.secondchancerescueroc.org/",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": null,
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "501(c)(3) exotic-bird and reptile rescue (33+ years experience) providing shelter, medical care and nutrition for surrendered/abandoned birds and reptiles; accepts surrenders and does adoptions; specializes in behavior. It is an approved ACC rescue partner, so it pulls at-risk birds/reptiles from NYC Animal Care Centers. REGIONAL - based in Rochester (about 5.5 hours from NYC); included for completeness because in-city companion-bird/reptile rescue is scarce, but it is a long-distance option, not a local NYC referral. Email: (via secondchancebirdandreptilerescue.org contact) Intake: //secondchancebirdandreptilerescue.org Intake: call (585) 370-7157",
+          "to": "A bird and reptile rescue in Rochester, New York, far from the city: 36 Normandale Dr, Rochester, (585) 370-7157. Its website says it is under construction and asks people to reach it on Facebook meanwhile.",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "boroughs",
+          "from": "manhattan, brooklyn, queens, bronx, staten-island",
+          "to": null,
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
         }
       ],
-      "website": null,
-      "source_urls": []
+      "website": "https://www.secondchancerescueroc.org/",
+      "source_urls": [],
+      "notes": "A bird and reptile rescue in Rochester, New York, far from the city: 36 Normandale Dr, Rochester, (585) 370-7157. Its website says it is under construction and asks people to reach it on Facebook meanwhile.",
+      "boroughs": [],
+      "last_verified": "2026-11-04"
     },
     "shelter-free-rescue-ny": {
       "last_checked": "2026-11-04",
@@ -4952,11 +5296,11 @@
     },
     "the-toby-project": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
-      "confidence": "Low",
-      "status": "verify",
-      "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "confidence": "Medium",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4973,8 +5317,67 @@
           "to": "verify",
           "source": "weekly-check",
           "note": "Their website has been unreachable for 3 weekly checks running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://tobyproject.org",
+          "to": null,
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "This organization may no longer be active — their website has not responded for several weeks.",
+          "to": null,
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": null,
+          "to": "https://www.instagram.com/thetobyprojectnyc/, https://www.facebook.com/thetobyproject/",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
         }
-      ]
+      ],
+      "website": null,
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "thetobyprojectnyc",
+          "url": "https://www.instagram.com/thetobyprojectnyc/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "thetobyproject",
+          "url": "https://www.facebook.com/thetobyproject/"
+        }
+      ],
+      "last_verified": "2026-11-04"
     },
     "the-toby-project-feral-spay-neuter-clinic": {
       "last_checked": "2026-11-04",
@@ -5568,11 +5971,11 @@
     },
     "waldos-rescue-pen": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
-      "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "Medium",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -5607,9 +6010,81 @@
           "evidence_url": "https://www.waldosrescuepen.org",
           "source": "manual",
           "note": "waldosrescuepen.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.waldosrescue.org/",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@waldosrescue.org",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/waldosrescuepen, https://facebook.com/waldosrescuepen",
+          "to": "https://www.instagram.com/waldosrescue/, https://www.facebook.com/WaldosRescue/",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": null,
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
         }
       ],
-      "website": null
+      "website": "https://www.waldosrescue.org/",
+      "emails": [
+        {
+          "value": "info@waldosrescue.org"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "waldosrescue",
+          "url": "https://www.instagram.com/waldosrescue/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "WaldosRescue",
+          "url": "https://www.facebook.com/WaldosRescue/"
+        }
+      ],
+      "last_verified": "2026-11-04"
     },
     "washington-heights-cat-colony": {
       "last_checked": "2026-11-04",

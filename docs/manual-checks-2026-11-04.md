@@ -58,30 +58,37 @@ Each VEG page showed the checker a New Jersey number, (201) 438-7122, instead of
 
 The address does not exist any more (or now points at a parking or gambling page), so the link has been taken off the entry. Search Instagram, Facebook, Petfinder or Adopt-a-Pet for the group. If you find a new site, send it to Claude; if they have closed, say so.
 
-- [ ] **Cats In The Cradle Rescue (CITCR)** — Website gone. Is the group still running, and where?
+- [x] **Cats In The Cradle Rescue (CITCR)** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/cats-in-the-cradle-rescue/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Cats of Meow York (COMY)** — Website gone. Is the group still running, and where?
+- [x] **Cats of Meow York (COMY)** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/cats-of-meow-york/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **City Pitties** — Website gone. Is the group still running, and where?
+- [x] **City Pitties** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/city-pitties/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **MeowRoof** — Website gone. Is the group still running, and where?
+- [x] **MeowRoof** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/meowroof/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **New Beginning Animal Rescue (NBAR)** — Website gone. Is the group still running, and where?
+- [x] **New Beginning Animal Rescue (NBAR)** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/new-beginning-animal-rescue/  ·  Site: (no website)  ·  Phone: (347) 691-3282, (347) 797-8107
-- [ ] **Paws of Hope NYC** — Website gone. Is the group still running, and where?
+- [x] **Paws of Hope NYC** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/paws-of-hope-nyc/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Second Chance Bird and Reptile Rescue** — Website gone. Is the group still running, and where?
+- [x] **Second Chance Bird and Reptile Rescue** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/second-chance-bird-and-reptile-rescue/  ·  Site: (no website)  ·  Phone: (585) 370-7157
-- [ ] **Waldo's Rescue Pen** — Website gone. Is the group still running, and where?
+- [x] **Waldo's Rescue Pen** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/waldos-rescue-pen/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)** — Website gone. Is the group still running, and where?
+- [x] **P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/pluto-rescue-of-richmond-county/  ·  Site: (no website)  ·  Phone: (718) 227-0553
-- [ ] **Feather Friends Parrot Adoption Services** — Website gone. Is the group still running, and where?
+- [x] **Feather Friends Parrot Adoption Services** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/feather-friends-parrot-adoption-services/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **Magnificat Cat Rescue and Rehoming** — Website gone. Is the group still running, and where?
+- [x] **Magnificat Cat Rescue and Rehoming** — Website gone. Is the group still running, and where?
   - Entry: https://nyc-animal-rescue.pages.dev/org/magnificat-cat-rescue-and-rehoming/  ·  Site: (no website)  ·  Phone: no phone listed
-- [ ] **The Toby Project (Brooklyn feral coordinator)** — tobyproject.org does not answer (it has not for three weeks). This is a major free spay/neuter service: please check its Instagram or ring (347) 816-2899.
+- [x] **The Toby Project (Brooklyn feral coordinator)** — tobyproject.org does not answer (it has not for three weeks). This is a major free spay/neuter service: please check its Instagram or ring (347) 816-2899.
   - Entry: https://nyc-animal-rescue.pages.dev/org/the-toby-project/  ·  Site: https://tobyproject.org  ·  Phone: (347) 816-2899, (212) 315-5251
+
+**Done 2026-11-04: the reviewer searched every group; Claude read every site found.** Instagram and Facebook cannot be read from here, so activity was judged from what could be read:
+
+- **Still running, re-listed with new details:** The Toby Project (Bideawee's Feral Cat Initiative still lists it with the same phone and email; its own site is down), Waldo's Rescue (new site waldosrescue.org), Second Chance Bird and Reptile (new site; it is in Rochester, now labelled as outside the city).
+- **Closed, no longer listed:** MeowRoof (New York State lists its corporation as inactive), New Beginning Animal Rescue in the Bronx (location closed).
+- **Activity not confirmed, listed with a warning and the contacts found:** Cats in the Cradle, Cats of Meow York (Linktree and application forms live, but no animals on Adopt-a-Pet and no events), City Pitties and Paws of Hope (no animals on Adopt-a-Pet), P.L.U.T.O., Feathered Friends Parrot Adoption, Magnificat (only an unfinished 2015 template site).
+- **To settle the unconfirmed ones:** open each one's Instagram or Facebook and note the date of the latest post. Within about six months, it counts as active; older, it will be marked closed.
 
 ## 4. A contact on their own site has changed: which one is right?
 

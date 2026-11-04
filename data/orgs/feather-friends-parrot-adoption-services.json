@@ -23,13 +23,19 @@
     "11378"
   ],
   "region_note": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "9178655042",
+      "display": "(917) 865-5042",
+      "label": "From parrot rescue directories"
+    }
+  ],
   "emails": [
     {
       "value": "nycparrot@verizon.net"
     }
   ],
-  "website": null,
+  "website": "https://nycparrot.wordpress.com/",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -43,7 +49,7 @@
   "type_raw": "Parrot adoption service (NYC-based) [VERIFY - may be inactive]",
   "confidence": "Low",
   "status": "verify",
-  "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+  "status_note": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
   "source_urls": [
     "https://birdsupplies.com/pages/parrot-rescues-and-adoption-programs"
   ],
@@ -53,8 +59,8 @@
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
-  "consecutive_failures": 2,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -64,6 +70,33 @@
       "source": "manual",
       "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
       "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://nycparrot.wordpress.com/",
+      "evidence_url": "https://nycparrot.wordpress.com/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "9178655042",
+      "evidence_url": "https://nycparrot.wordpress.com/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+      "to": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
+      "evidence_url": "https://nycparrot.wordpress.com/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
     }
   ],
   "privacy_hold": false,

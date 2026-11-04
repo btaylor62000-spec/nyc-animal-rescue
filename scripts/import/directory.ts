@@ -248,7 +248,7 @@ function buildDraft(
   // both `outside_nyc` (so we can label it honestly) and reachable citywide.
   const outsideNyc =
     nycBoroughsDetected === 0 &&
-    /NYC-ADJACENT|not NYC-based|out-of-city|\bregional\b|Westchester|Long Island|New Jersey|\bNJ\b|Connecticut|\bCT\b|Suffolk|Nassau|Hudson|Orange County|Rochester|Monroe County|Salisbury Mills|East Greenbush|Northeastern US|greater NY area|upstate|Pennsylvania|\bPA\b/i.test(
+    /NYC-ADJACENT|not NYC-based|out-of-city|\bregional\b|Westchester|Long Island|New Jersey|\bNJ\b|Connecticut|\bCT\b|Suffolk|Nassau|Hudson|Orange County|Rockland|Rochester|Monroe County|Salisbury Mills|East Greenbush|Northeastern US|greater NY area|upstate|Pennsylvania|\bPA\b/i.test(
       scopeText,
     );
 

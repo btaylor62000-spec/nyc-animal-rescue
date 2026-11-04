@@ -8988,6 +8988,28 @@
       "matched": "24/7"
     }
   ],
+  "veg-carle-place": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
   "veg-chelsea": [
     {
       "tag": "cat",
@@ -9054,6 +9076,50 @@
       "matched": "Emergency vet"
     }
   ],
+  "veg-millburn": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-nanuet": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
   "veg-new-dorp": [
     {
       "tag": "cat",
@@ -9082,6 +9148,50 @@
     }
   ],
   "veg-paramus": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-princeton": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-white-plains": [
     {
       "tag": "cat",
       "field": "animals_served",

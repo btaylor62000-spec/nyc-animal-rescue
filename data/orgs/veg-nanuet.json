@@ -1,0 +1,64 @@
+{
+  "id": "veg-nanuet",
+  "name": "VEG Nanuet (Rockland)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Rockland - outside NYC",
+  "zips": [
+    "10954"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "8455365645",
+      "display": "(845) 536-5645"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-york/nanuet",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 41.0992,
+    "lon": -74.013,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "123 NY-59",
+    "city": "Nanuet",
+    "zip": "10954"
+  },
+  "hours": "Open 24/7",
+  "notes": "123 NY-59, Nanuet, NY 10954. Open 24/7, walk in, no appointment. Outside the city, in Rockland County. Read on VEG's own page, 2026-11-04 (a reviewer found it on VEG's locations list).",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-york/nanuet"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

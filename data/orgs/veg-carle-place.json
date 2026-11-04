@@ -1,0 +1,64 @@
+{
+  "id": "veg-carle-place",
+  "name": "VEG Carle Place (Long Island)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Long Island - outside NYC",
+  "zips": [
+    "11514"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "5166938859",
+      "display": "(516) 693-8859"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-york/carle-place",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.74775,
+    "lon": -73.61769,
+    "precision": "address"
+  },
+  "address": {
+    "street": "204b Glen Cove Road",
+    "city": "Carle Place",
+    "zip": "11514"
+  },
+  "hours": "Open 24/7",
+  "notes": "204b Glen Cove Road, Carle Place, NY 11514. Open 24/7, walk in, no appointment. Outside the city, in Nassau County, Long Island. Read on VEG's own page, 2026-11-04 (a reviewer found it on VEG's locations list).",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-york/carle-place"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

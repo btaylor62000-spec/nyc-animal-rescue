@@ -27,13 +27,32 @@
   "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
   "phones": [],
   "emails": [],
-  "website": null,
-  "intake_urls": [],
+  "website": "https://linktr.ee/catsofmeowyork",
+  "intake_urls": [
+    {
+      "url": "https://form.jotform.com/210068411079046",
+      "label": "Adoption application"
+    },
+    {
+      "url": "https://form.jotform.com/211150793502144",
+      "label": "Foster application"
+    }
+  ],
   "social": [
     {
       "platform": "instagram",
       "handle": "catsofmeowyork",
-      "url": "https://instagram.com/catsofmeowyork"
+      "url": "https://www.instagram.com/catsofmeowyork/"
+    },
+    {
+      "platform": "tiktok",
+      "handle": "catsofmeowyorkrescue",
+      "url": "https://www.tiktok.com/@catsofmeowyorkrescue"
+    },
+    {
+      "platform": "facebook",
+      "handle": "catsofmewyork",
+      "url": "https://www.facebook.com/catsofmewyork/"
     }
   ],
   "geo": {
@@ -47,7 +66,7 @@
   "type_raw": "TNR / rescue+adoption (neonatal specialty)",
   "confidence": "Medium",
   "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "status_note": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
   "source_urls": [
     "https://www.orgcouncil.com/ein/881221020"
   ],
@@ -57,8 +76,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -102,6 +121,42 @@
       "evidence_url": "https://www.catsofmeowyork.org",
       "source": "manual",
       "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://linktr.ee/catsofmeowyork",
+      "evidence_url": "https://linktr.ee/catsofmeowyork",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": null,
+      "to": "https://form.jotform.com/210068411079046, https://form.jotform.com/211150793502144",
+      "evidence_url": "https://linktr.ee/catsofmeowyork",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "https://instagram.com/catsofmeowyork",
+      "to": "https://www.instagram.com/catsofmeowyork/, https://www.tiktok.com/@catsofmeowyorkrescue, https://www.facebook.com/catsofmewyork/",
+      "evidence_url": "https://linktr.ee/catsofmeowyork",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
+      "evidence_url": "https://linktr.ee/catsofmeowyork",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
     }
   ],
   "privacy_hold": false,

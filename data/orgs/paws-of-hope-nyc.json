@@ -30,8 +30,12 @@
   ],
   "region_note": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
   "phones": [],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "pawsofhopenyc@gmail.com"
+    }
+  ],
+  "website": "https://gissell182.wixsite.com/pawsofhopenyc",
   "intake_urls": [],
   "social": [
     {
@@ -52,7 +56,7 @@
   "type_raw": "rescue+adoption / TNR",
   "confidence": "Medium",
   "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "status_note": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
   "source_urls": [
     "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
   ],
@@ -62,8 +66,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -98,6 +102,33 @@
       "evidence_url": "https://pawsofhopenyc.org",
       "source": "manual",
       "note": "pawsofhopenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://gissell182.wixsite.com/pawsofhopenyc",
+      "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "pawsofhopenyc@gmail.com",
+      "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+      "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
     }
   ],
   "privacy_hold": false,

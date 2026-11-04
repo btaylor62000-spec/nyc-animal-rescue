@@ -44,8 +44,8 @@
   "notes": "Volunteer-run Flushing nonprofit. Year-round TNR + winter stray shelters + rescue/foster/adoption + caregiver support (pet food donations, spay/neuter events) + community education. Has a physical address. Intake: Contact + adoption via site Other channel: 39-09 Main Street, Flushing NY 11354",
   "type_raw": "TNR / rescue+adoption / colony support",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "status": "retired",
+  "status_note": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
   "source_urls": [
     "https://www.idealist.org/en/nonprofit/4c09c6984eb54fa283ff9379c70a535a-meowroof-flushing"
   ],
@@ -56,7 +56,7 @@
   ],
   "last_checked": "2026-11-04",
   "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -91,6 +91,24 @@
       "evidence_url": "https://www.meowroof.org",
       "source": "manual",
       "note": "meowroof.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "retired",
+      "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
+      "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
     }
   ],
   "privacy_hold": false,

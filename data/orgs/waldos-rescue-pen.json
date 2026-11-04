@@ -27,19 +27,23 @@
   "zips": [],
   "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
   "phones": [],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "info@waldosrescue.org"
+    }
+  ],
+  "website": "https://www.waldosrescue.org/",
   "intake_urls": [],
   "social": [
     {
       "platform": "instagram",
-      "handle": "waldosrescuepen",
-      "url": "https://instagram.com/waldosrescuepen"
+      "handle": "waldosrescue",
+      "url": "https://www.instagram.com/waldosrescue/"
     },
     {
       "platform": "facebook",
-      "handle": "waldosrescuepen",
-      "url": "https://facebook.com/waldosrescuepen"
+      "handle": "WaldosRescue",
+      "url": "https://www.facebook.com/WaldosRescue/"
     }
   ],
   "geo": null,
@@ -47,20 +51,20 @@
   "hours": null,
   "notes": "501(c)(3) NYC foster-based dog rescue pulling at-risk dogs from NYC ACC and overcrowded shelters, with a strong social-media adoption presence. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
   "type_raw": "Rescue+adoption (foster-based)",
-  "confidence": "Low",
-  "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.animalalliancenyc.org/need-help/groups/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "ok",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -95,6 +99,60 @@
       "evidence_url": "https://www.waldosrescuepen.org",
       "source": "manual",
       "note": "waldosrescuepen.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://www.waldosrescue.org/",
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "info@waldosrescue.org",
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "https://instagram.com/waldosrescuepen, https://facebook.com/waldosrescuepen",
+      "to": "https://www.instagram.com/waldosrescue/, https://www.facebook.com/WaldosRescue/",
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": null,
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Low",
+      "to": "Medium",
+      "evidence_url": "https://www.waldosrescue.org/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
     }
   ],
   "privacy_hold": false,

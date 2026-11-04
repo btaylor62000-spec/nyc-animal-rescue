@@ -32,14 +32,18 @@
   ],
   "region_note": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "citypitties@yahoo.com"
+    }
+  ],
   "website": null,
   "intake_urls": [],
   "social": [
     {
       "platform": "instagram",
-      "handle": "citypitties",
-      "url": "https://instagram.com/citypitties"
+      "handle": "city_pitties",
+      "url": "https://www.instagram.com/city_pitties/"
     },
     {
       "platform": "facebook",
@@ -54,7 +58,7 @@
   "type_raw": "Bully-breed foster network + adoption facilitation (advocacy)",
   "confidence": "Low",
   "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "status_note": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
   "source_urls": [],
   "last_verified": "2026-08-27",
   "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
@@ -62,8 +66,8 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -107,6 +111,33 @@
       "evidence_url": "https://www.citypitties.org",
       "source": "manual",
       "note": "citypitties.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "citypitties@yahoo.com",
+      "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "https://instagram.com/citypitties, https://facebook.com/citypitties",
+      "to": "https://www.instagram.com/city_pitties/, https://facebook.com/citypitties",
+      "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+      "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
     }
   ],
   "privacy_hold": false,
