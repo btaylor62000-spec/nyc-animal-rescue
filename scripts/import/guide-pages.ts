@@ -50,6 +50,9 @@ const WB_EXOTIC = 'research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx';
 const WB_ABUSE = 'research/NYC_Animal_Abuse_Reporting.xlsx';
 // Also its own source: the at-risk list is an ACC process, not a species topic.
 const WB_NEWHOPE = 'research/NYC_ACC_At_Risk_New_Hope.xlsx';
+// Its own source: a reviewer's question about a woman facing shelter with her
+// cat, checked line by line against the city's pages on 2026-11-04.
+const WB_HOUSING = 'research/NYC_Housing_Crisis_Pets.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -57,6 +60,12 @@ const WB_NEWHOPE = 'research/NYC_ACC_At_Risk_New_Hope.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_HOUSING, tab: 'Keep your pet if you lose your home', slug: 'keep-your-pet-if-you-lose-your-home',
+    title: 'Keeping your pet if you are losing your home',
+    summary: 'Homebase, bringing an emotional support animal into a city shelter, where to apply, and somewhere safe for your pet meanwhile.',
+    topics: ['homeless', 'homelessness', 'eviction', 'evicted', 'losing my home', 'lost my home', 'shelter with my pet', 'homeless shelter', 'emotional support animal', 'ESA', 'reasonable accommodation', 'Homebase', 'PATH', 'housing crisis', 'temporary boarding', 'keep my pet', 'nowhere to live'],
+  },
   {
     file: WB_NEWHOPE, tab: 'Save an animal from the at-risk list', slug: 'save-an-at-risk-animal',
     title: 'Save an animal from the shelter\u2019s at-risk list',

@@ -1,0 +1,55 @@
+{
+  "id": "tara-spay-neuter-clinic",
+  "name": "T.A.R.A. Spay/Neuter Clinic (Middletown)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Middletown, Orange County, Hudson Valley - outside NYC",
+  "zips": [],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "8453431000",
+      "display": "(845) 343-1000"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.tara-spayneuter.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "The Animal Rights Alliance runs a stationary dog clinic at 60 Enterprise Place, Middletown, NY, and a mobile clinic for cats. A long way from the city; listed because waits can be shorter.",
+  "type_raw": "Nonprofit spay/neuter clinic - mobile clinic for cats, stationary clinic for dogs",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.tara-spayneuter.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

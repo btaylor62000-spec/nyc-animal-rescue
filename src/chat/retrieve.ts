@@ -14,11 +14,19 @@ import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
 import { boroughsIn } from '../data/geo.ts';
+import { distanceBand, distanceMiles, takesEmergencies, type Origin } from '../data/rank.ts';
+import { openState } from '../data/schedule.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
 
 export interface Corpus {
   orgs: CorpusOrg[];
   guides: CorpusGuide[];
+}
+
+/** Where the reader is and what time it is, when known. */
+export interface RetrieveContext {
+  origin?: Origin | null;
+  now?: Date;
 }
 
 export interface Signals {
@@ -35,6 +43,12 @@ export interface Signals {
    * the general "legal" tag, which also covers bite reports and housing law.
    */
   abuse: boolean;
+  /**
+   * The question is about losing a home: eviction, a city shelter, an
+   * emotional support animal. It needs the housing guide -- intake addresses,
+   * the request an animal needs to come in -- whatever animal is involved.
+   */
+  housing: boolean;
   /** True when we know neither where they are nor what animal it is. */
   needsLocation: boolean;
   needsAnimal: boolean;
@@ -94,7 +108,12 @@ const ANIMAL_WORDS = buildLookup(withTranslations(ANIMAL_SYNONYMS, SPANISH_ANIMA
  * surrender in it at all. The phrases people actually use for that are
  * matched whole, below.
  */
-const GENERIC_WORDS = ['new', 'home', 'care'];
+// "vet" and "clinic" are in the exotic, low-cost and vet-bill vocabularies
+// ("exotic vet", "free vet clinic", "vet bills"), so on their own they asked
+// for all three: "emergency vet open now" put a Manhattan exotic clinic that
+// closes at 7pm above the 24/7 hospitals near the reader. The specific words
+// -- exotic, cheap, afford, bill -- still carry those needs.
+const GENERIC_WORDS = ['new', 'home', 'care', 'vet', 'vets', 'clinic', 'clinics'];
 
 const NEED_WORDS = (() => {
   const needs = buildLookup(withTranslations(NEED_SYNONYMS, SPANISH_NEEDS));
@@ -127,6 +146,10 @@ const REHOME_RE =
  * the domestic-violence pet programmes, and there is an eval case that fails
  * if this pattern swallows it.
  */
+/** Losing a home, or entering the city's shelter system, with an animal. */
+const HOUSING_RE =
+  /\b(homeless\w*|evict\w*|(losing|lose|lost) (my|our|the) (home|apartment|place|housing|lease)|(homeless|city|dhs) shelters?|shelter system|emotional support animals?|\besa\b|reasonable accommodation|nowhere to (live|stay|sleep)|housing (crisis|emergency))\b/i;
+
 const ABUSE_RE =
   /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|starv\w*|hoard\w*|dog ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law)\b/i;
 
@@ -192,6 +215,8 @@ export function extractSignals(question: string): Signals {
 
   const emergency = EMERGENCY_RE.test(q) || catAttack || gutStasis;
   const abuse = ABUSE_RE.test(q) && !ABUSE_VICTIM_RE.test(q);
+  const housing = HOUSING_RE.test(q);
+  if (housing) needs.add('owner-support');
   // Reporting cruelty is a legal matter, so the tag that carries the police
   // and tip lines is added whether or not the wording tripped it on its own.
   if (abuse) needs.add('legal');
@@ -213,6 +238,7 @@ export function extractSignals(question: string): Signals {
     zips,
     emergency,
     abuse,
+    housing,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
   };
@@ -362,7 +388,7 @@ export class Retriever {
    * who said they are in Brooklyn, so place, animal and need are scored
    * explicitly on top of it.
    */
-  private fit(org: CorpusOrg, s: Signals): number {
+  private fit(org: CorpusOrg, s: Signals, ctx: RetrieveContext = {}): number {
     let score = 0;
 
     // 1. The one thing they need most.
@@ -411,6 +437,24 @@ export class Retriever {
     //    emergency rooms.
     if (org.needs.includes('poison-control') && !s.needs.includes('poison-control')) score -= 10;
 
+    // 4b. The same ordering as the directory (src/data/rank.ts): among vets
+    //     that take emergencies, open now beats unknown beats closed. Read
+    //     from the hours at the moment of asking, so a daytime clinic is
+    //     offered at 3pm and not at 3am. Poison lines are left out of it:
+    //     they are 24/7 too, and must not creep back above the hospitals.
+    if (takesEmergencies(org)) {
+      const st = openState(org.hours, ctx.now ?? new Date()).state;
+      if (st === 'open') score += 5;
+      else if (st === 'closed') score -= 6;
+    }
+
+    // 4c. Nearer first, in the same rough bands as the directory, when the
+    //     reader shared a location. Citywide services have no place and are
+    //     neither helped nor hurt.
+    if (ctx.origin && org.geo) {
+      score += [8, 6, 4, 1, -2, 0][distanceBand(distanceMiles(ctx.origin, org.geo))]!;
+    }
+
     // 5. What we are surest about, and what they can act on now.
     score += org.confidence === 'High' ? 4 : org.confidence === 'Medium' ? 2 : 0;
     if (org.phones.length) score += 2;
@@ -420,7 +464,7 @@ export class Retriever {
     return score;
   }
 
-  retrieve(question: string, limit = 10): Retrieved {
+  retrieve(question: string, limit = 10, ctx: RetrieveContext = {}): Retrieved {
     const signals = extractSignals(question);
 
     // Free-text relevance, then re-ranked by how well each record fits the
@@ -445,7 +489,7 @@ export class Retriever {
       // Free-text relevance breaks ties; it does not decide the answer. Left
       // stronger, it put a general vet ahead of the city's bird hospital for
       // "a pigeon hit my window" simply because the wording matched better.
-      .map((org) => ({ org, score: this.fit(org, signals) + Math.min(relevance.get(org.id) ?? 0, 12) * 0.5 }))
+      .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * 0.5 }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
     return {
@@ -479,6 +523,10 @@ export class Retriever {
      * abuse?" answered with a wild bird hospital. A reviewer hit exactly that.
      */
     if (s.abuse) return 'report-animal-abuse';
+
+    // Losing a home is the situation, whatever the animal: the answer is
+    // intake, the emotional-support request and somewhere for the pet.
+    if (s.housing) return 'keep-your-pet-if-you-lose-your-home';
 
     // Wildlife first: it is the route people most often get wrong, and the
     // consequences of getting it wrong are the least reversible.

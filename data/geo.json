@@ -1,0 +1,431 @@
+{
+ "$comment": "Street addresses looked up with the Census Bureau geocoder by npm run geocode. Keyed by record id; a coordinate is used only while the record's address still produces the same query.",
+ "entries": {
+  "animal-clinic-of-bay-ridge": {
+   "query": "689 86th St, Brooklyn, NY 11228",
+   "lat": 40.61907,
+   "lon": -74.0221,
+   "matched": "689 86TH ST, BROOKLYN, NY, 11228"
+  },
+  "animal-general": {
+   "query": "558 Columbus Ave, New York, NY 10024",
+   "lat": 40.78724,
+   "lon": -73.97171,
+   "matched": "558 COLUMBUS AVE, NEW YORK, NY, 10024"
+  },
+  "animal-kind-veterinary-hospital": {
+   "query": "365 7th Avenue, Brooklyn, NY 11215",
+   "lat": 40.66577,
+   "lon": -73.98243,
+   "matched": "365 7TH AVE, BROOKLYN, NY, 11215"
+  },
+  "animal-medical-center": {
+   "query": "510 East 62nd St, New York, NY 10065",
+   "lat": 40.76043,
+   "lon": -73.95827,
+   "matched": "510 E 62ND ST, NEW YORK, NY, 10065"
+  },
+  "animal-specialty-center": {
+   "query": "9 Odell Plaza, Yonkers, NY 10701",
+   "lat": 40.96924,
+   "lon": -73.88102,
+   "matched": "9 ODELL PLZ, YONKERS, NY, 10701"
+  },
+  "astoria-animal-society": {
+   "query": "30-89 38th Street, Astoria, NY 11103",
+   "lat": 40.76197,
+   "lon": -73.91758,
+   "matched": "30-89 38TH ST, ASTORIA, NY, 11103"
+  },
+  "banfield-pet-hospital": {
+   "query": "238 Atlantic Ave, NY 11201",
+   "lat": 40.68924,
+   "lon": -73.99117,
+   "matched": "238 ATLANTIC AVE, BROOKLYN, NY, 11201"
+  },
+  "bbawc-rescue-clinic": {
+   "query": "76 Montague St, Brooklyn, NY 11201",
+   "lat": 40.69522,
+   "lon": -73.99609,
+   "matched": "76 MONTAGUE ST, BROOKLYN, NY, 11201"
+  },
+  "bluepearl-brooklyn": {
+   "query": "190 3rd Ave, Brooklyn, NY 11217",
+   "lat": 40.68086,
+   "lon": -73.98381,
+   "matched": "190 3RD AVE, BROOKLYN, NY, 11217"
+  },
+  "bluepearl-downtown": {
+   "query": "1 W 15th St, New York, NY 10011",
+   "lat": 40.73677,
+   "lon": -73.99315,
+   "matched": "1 W 15TH ST, NEW YORK, NY, 10011"
+  },
+  "bluepearl-midtown": {
+   "query": "410 West 55th St, New York, NY 10019",
+   "lat": 40.76675,
+   "lon": -73.98713,
+   "matched": "410 W 55TH ST, NEW YORK, NY, 10019"
+  },
+  "bluepearl-paramus": {
+   "query": "545 Route 17 S, Paramus, NJ 07652",
+   "lat": null,
+   "lon": null,
+   "matched": null
+  },
+  "bluepearl-queens": {
+   "query": "107-28 71st Rd, Queens, NY 11375",
+   "lat": 40.7201,
+   "lon": -73.84337,
+   "matched": "107-28 71ST RD, FOREST HILLS, NY, 11375"
+  },
+  "community-help-in-park-slope": {
+   "query": "200 Fourth Ave., Brooklyn, NY 11217",
+   "lat": 40.67819,
+   "lon": -73.9826,
+   "matched": "200 4TH AVE, BROOKLYN, NY, 11217"
+  },
+  "completecare-veterinary-center": {
+   "query": "1293 Clove Rd, Staten Island, NY 10301",
+   "lat": 40.61576,
+   "lon": -74.10292,
+   "matched": "1293 CLOVE RD, STATEN ISLAND, NY, 10301"
+  },
+  "davidson-community-center": {
+   "query": "2038 Davidson Ave., Bronx, NY 10453",
+   "lat": 40.85374,
+   "lon": -73.90848,
+   "matched": "2038 DAVIDSON AVE, BRONX, NY, 10453"
+  },
+  "elmhurst-animal-emergency-hospital": {
+   "query": "87-06 Queens Blvd, Queens, NY 11373",
+   "lat": 40.7354,
+   "lon": -73.87616,
+   "matched": "87-06 QUEENS BLVD, ELMHURST, NY, 11373"
+  },
+  "faithful-friends-animal-hospital": {
+   "query": "2455 McDonald Ave, Brooklyn, NY 11223",
+   "lat": 40.59211,
+   "lon": -73.97384,
+   "matched": "2455 MCDONALD AVE, BROOKLYN, NY, 11223"
+  },
+  "feeding-with-tlc": {
+   "query": "309 St. Paul's Ave., Staten Island, NY 10304",
+   "lat": 40.63055,
+   "lon": -74.08102,
+   "matched": "309 ST PAULS AVE, STATEN ISLAND, NY, 10304"
+  },
+  "fifth-avenue-veterinary-hospital": {
+   "query": "9102 5th Ave, Brooklyn, NY 11209",
+   "lat": 40.61856,
+   "lon": -74.02882,
+   "matched": "9102 5TH AVE, BROOKLYN, NY, 11209"
+  },
+  "first-united-methodist-church-of-jamaica": {
+   "query": "162-10 Highland Ave., Queens, NY 11432",
+   "lat": 40.70983,
+   "lon": -73.80086,
+   "matched": "162-10 HIGHLAND AVE, JAMAICA, NY, 11432"
+  },
+  "flatbush-vet": {
+   "query": "1460 Flatbush Ave, Brooklyn, NY 11210",
+   "lat": 40.63509,
+   "lon": -73.95017,
+   "matched": "1460 FLATBUSH AVE, BROOKLYN, NY, 11210"
+  },
+  "friends-of-the-feathered-and-furry-wildlife-center": {
+   "query": "10846 Route 23A, Hunter, NY 12442",
+   "lat": 42.23783,
+   "lon": -74.34572,
+   "matched": "10846 STATE RTE 23A, HUNTER, NY, 12442"
+  },
+  "greater-state-veterinary-specialists": {
+   "query": "3135 Victory Blvd, Staten Island, NY 10314",
+   "lat": 40.60704,
+   "lon": -74.16426,
+   "matched": "3135 VICTORY BLVD, STATEN ISLAND, NY, 10314"
+  },
+  "holy-apostles-soup-kitchen-pantry": {
+   "query": "296 Ninth Ave., New York, NY 10001",
+   "lat": 40.74939,
+   "lon": -73.99913,
+   "matched": "296 9TH AVE, NEW YORK, NY, 10001"
+  },
+  "hour-children-community-outreach": {
+   "query": "36-49 11th St., Queens, NY 11106",
+   "lat": 40.76042,
+   "lon": -73.94032,
+   "matched": "36-49 11TH ST, ASTORIA, NY, 11106"
+  },
+  "humane-society-of-new-york": {
+   "query": "306 E 59th St, NY 10022",
+   "lat": 40.76039,
+   "lon": -73.96397,
+   "matched": "306 E 59TH ST, NEW YORK, NY, 10022"
+  },
+  "instavet-urgent-care": {
+   "query": "44-16 23rd St, Queens, NY 11101",
+   "lat": null,
+   "lon": null,
+   "matched": null
+  },
+  "island-bird-cat-and-dog-vet-group": {
+   "query": "375 Manor Rd, Staten Island, NY 10314",
+   "lat": 40.61865,
+   "lon": -74.12336,
+   "matched": "375 MANOR RD, STATEN ISLAND, NY, 10314"
+  },
+  "kingsbridge-heights-community-center": {
+   "query": "3067 Kingsbridge Terrace, Bronx, NY 10463",
+   "lat": 40.87727,
+   "lon": -73.90075,
+   "matched": "3067 KINGSBRIDGE TER, BRONX, NY, 10463"
+  },
+  "low-cost-vet-mobile": {
+   "query": "159-19 Horace Harding Expressway, Fresh Meadows, NY 11365",
+   "lat": 40.73888,
+   "lon": -73.80916,
+   "matched": "159-19 HORACE HARDING EXPY, FRESH MEADOWS, NY, 11365"
+  },
+  "manhattan-veterinary-group": {
+   "query": "240 East 80th St, New York, NY 10075",
+   "lat": 40.77423,
+   "lon": -73.95522,
+   "matched": "240 E 80TH ST, NEW YORK, NY, 10075"
+  },
+  "metropolitan-council-on-jewish-poverty": {
+   "query": "5361 Preston Court, Brooklyn, NY 11234",
+   "lat": 40.63879,
+   "lon": -73.92338,
+   "matched": "5361 PRESTON CT, BROOKLYN, NY, 11234"
+  },
+  "neighborhood-cats": {
+   "query": "30 Prince St, NY 11201",
+   "lat": 40.697,
+   "lon": -73.98241,
+   "matched": "30 PRINCE ST, BROOKLYN, NY, 11201"
+  },
+  "new-york-common-pantry": {
+   "query": "8 East 109th St., NY 10029",
+   "lat": 40.7961,
+   "lon": -73.94957,
+   "matched": "8 E 109TH ST, NEW YORK, NY, 10029"
+  },
+  "nys-dec-region-2": {
+   "query": "47-40 21st Street, Long Island City, NY 11101",
+   "lat": 40.74334,
+   "lon": -73.94903,
+   "matched": "47-40 21ST ST, LONG ISLAND CITY, NY, 11101"
+  },
+  "on-the-go-relief": {
+   "query": "2832 Fulton St., Brooklyn, NY 11207",
+   "lat": 40.67819,
+   "lon": -73.89024,
+   "matched": "2832 FULTON ST, BROOKLYN, NY, 11207"
+  },
+  "park-slope-veterinary-center": {
+   "query": "639 4th Ave, Brooklyn, NY 11232",
+   "lat": 40.66371,
+   "lon": -73.99454,
+   "matched": "639 4TH AVE, BROOKLYN, NY, 11232"
+  },
+  "part-of-the-solution": {
+   "query": "2759 Webster Ave., Bronx, NY 10458",
+   "lat": 40.86568,
+   "lon": -73.88647,
+   "matched": "2759 WEBSTER AVE, BRONX, NY, 10458"
+  },
+  "petchester-veterinary": {
+   "query": "309 White Plains Road, Eastchester, NY 10709",
+   "lat": 40.95024,
+   "lon": -73.81753,
+   "matched": "309 WHITE PLAINS RD, EASTCHESTER, NY, 10709"
+  },
+  "project-hospitality": {
+   "query": "205 Canal St., Staten Island, NY 10304",
+   "lat": 40.62657,
+   "lon": -74.07819,
+   "matched": "205 CANAL ST, STATEN ISLAND, NY, 10304"
+  },
+  "queens-low-cost-vet": {
+   "query": "28-27 Steinway St, Queens, NY 11103",
+   "lat": 40.76501,
+   "lon": -73.914,
+   "matched": "28-27 STEINWAY ST, ASTORIA, NY, 11103"
+  },
+  "river-fund-new-york": {
+   "query": "89-11 Lefferts Blvd., Queens, NY 11418",
+   "lat": 40.69716,
+   "lon": -73.82944,
+   "matched": "89-11 LEFFERTS BLVD, RICHMOND HILL, NY, 11418"
+  },
+  "riverside-animal-hospital-north": {
+   "query": "250 W 108th Street, New York, NY 10025",
+   "lat": 40.8023,
+   "lon": -73.96624,
+   "matched": "250 W 108TH ST, NEW YORK, NY, 10025"
+  },
+  "sean-casey-animal-rescue": {
+   "query": "153 East 3rd St, NY 11218",
+   "lat": 40.64842,
+   "lon": -73.97828,
+   "matched": "153 E 3RD ST, BROOKLYN, NY, 11218"
+  },
+  "st-clements-food-pantry": {
+   "query": "423 West 46th St., New York, NY 10036",
+   "lat": 40.76142,
+   "lon": -73.99164,
+   "matched": "423 W 46TH ST, NEW YORK, NY, 10036"
+  },
+  "st-johns-bread-and-life-food-pantry": {
+   "query": "795 Lexington Ave., Brooklyn, NY 11221",
+   "lat": 40.69029,
+   "lon": -73.92874,
+   "matched": "795 LEXINGTON AVE, BROOKLYN, NY, 11221"
+  },
+  "st-mina-animal-clinic": {
+   "query": "76-23 Jamaica Ave, Queens, NY 11421",
+   "lat": 40.69166,
+   "lon": -73.8654,
+   "matched": "76-23 JAMAICA AVE, WOODHAVEN, NY, 11421"
+  },
+  "the-campaign-against-hunger": {
+   "query": "2004 Fulton St., Brooklyn, NY 11233",
+   "lat": 40.67862,
+   "lon": -73.91814,
+   "matched": "2004 FULTON ST, BROOKLYN, NY, 11233"
+  },
+  "the-center-for-avian-and-exotic-medicine": {
+   "query": "562 Columbus Avenue, New York, NY 10024",
+   "lat": 40.78736,
+   "lon": -73.97162,
+   "matched": "562 COLUMBUS AVE, NEW YORK, NY, 10024"
+  },
+  "the-fathers-heart-ministries": {
+   "query": "543-545 East 11th St., New York, NY 10009",
+   "lat": 40.72805,
+   "lon": -73.9807,
+   "matched": "545 E 11TH ST, NEW YORK, NY, 10009"
+  },
+  "the-lower-eastside-girls-club": {
+   "query": "402 East 8th St., New York, NY 10009",
+   "lat": 40.72426,
+   "lon": -73.97754,
+   "matched": "402 E 8TH ST, NEW YORK, NY, 10009"
+  },
+  "trinitys-services-and-food-for-the-homeless": {
+   "query": "602 East 9th St., New York, NY 10009",
+   "lat": 40.72618,
+   "lon": -73.98026,
+   "matched": "602 E 9TH ST, NEW YORK, NY, 10009"
+  },
+  "urgent-vets-11369": {
+   "query": "32-33 Junction Blvd, Queens, NY 11369",
+   "lat": 40.758,
+   "lon": -73.87421,
+   "matched": "32-33 JUNCTION BLVD, EAST ELMHURST, NY, 11369"
+  },
+  "urgent-vets-bronx": {
+   "query": "3800 E Tremont Ave, Bronx, NY 10465",
+   "lat": 40.82498,
+   "lon": -73.82061,
+   "matched": "3800 E TREMONT AVE, BRONX, NY, 10465"
+  },
+  "urvet-care-astoria": {
+   "query": "30-80 Steinway Street, Astoria, NY 11103",
+   "lat": 40.76185,
+   "lon": -73.91674,
+   "matched": "30-80 STEINWAY ST, ASTORIA, NY, 11103"
+  },
+  "urvet-care-midtown": {
+   "query": "252 E 57th Street, New York, NY 10022",
+   "lat": 40.7597,
+   "lon": -73.96639,
+   "matched": "252 E 57TH ST, NEW YORK, NY, 10022"
+  },
+  "urvet-care-upper-east-side": {
+   "query": "1432 Second Avenue, New York, NY 10021",
+   "lat": 40.7705,
+   "lon": -73.95704,
+   "matched": "1432 2ND AVE, NEW YORK, NY, 10021"
+  },
+  "value-veterinary-clinic": {
+   "query": "2074 Cross Bronx Expressway, Bronx, NY 10472",
+   "lat": 40.83118,
+   "lon": -73.85463,
+   "matched": "2074 CROSS BRONX EXPY, BRONX, NY, 10472"
+  },
+  "vca-veterinary-referral-and-emergency-center-of-westbury": {
+   "query": "609-5 Cantiague Rock Road, Westbury, NY 11590",
+   "lat": 40.77534,
+   "lon": -73.55204,
+   "matched": "609 CANTIAGUE ROCK RD, WESTBURY, NY, 11590"
+  },
+  "veg": {
+   "query": "1215 2nd Ave, New York, NY",
+   "lat": 40.76356,
+   "lon": -73.96228,
+   "matched": "1215 2ND AVE, NEW YORK, NY, 10065"
+  },
+  "veg-chelsea": {
+   "query": "735 6th Avenue, New York, NY 10010",
+   "lat": 40.74365,
+   "lon": -73.99235,
+   "matched": "735 6TH AVE, NEW YORK, NY, 10010"
+  },
+  "veg-new-dorp": {
+   "query": "2546 Hylan Blvd, Staten Island, NY 10306",
+   "lat": 40.56951,
+   "lon": -74.11063,
+   "matched": "2546 HYLAN BLVD, STATEN ISLAND, NY, 10306"
+  },
+  "veg-ralph-ave": {
+   "query": "1950 Ralph Ave, Brooklyn, NY 11234",
+   "lat": 40.62982,
+   "lon": -73.91843,
+   "matched": "1950 RALPH AVE, BROOKLYN, NY, 11234"
+  },
+  "veg-williamsburg": {
+   "query": "87 Kent Ave, Brooklyn, NY 11249",
+   "lat": 40.72135,
+   "lon": -73.96052,
+   "matched": "87 KENT AVE, BROOKLYN, NY, 11249"
+  },
+  "verg": {
+   "query": "196 4th Ave, Brooklyn, NY 11217",
+   "lat": 40.67831,
+   "lon": -73.98252,
+   "matched": "196 4TH AVE, BROOKLYN, NY, 11217"
+  },
+  "verg-north": {
+   "query": "318 Warren St, Brooklyn, NY 11201",
+   "lat": 40.68638,
+   "lon": -73.9939,
+   "matched": "318 WARREN ST, BROOKLYN, NY, 11201"
+  },
+  "verg-south": {
+   "query": "2220 Flatbush Ave, Brooklyn, NY 11234",
+   "lat": 40.6159,
+   "lon": -73.92957,
+   "matched": "2220 FLATBUSH AVE, BROOKLYN, NY, 11234"
+  },
+  "vinegar-hill-veterinary-group": {
+   "query": "57 Front St, Brooklyn, NY 11201",
+   "lat": 40.70261,
+   "lon": -73.99095,
+   "matched": "57 FRONT ST, BROOKLYN, NY, 11201"
+  },
+  "yeshua-worldwide-ministries-food-pantry": {
+   "query": "79-11 Caldwell Ave., Queens, NY 11379",
+   "lat": 40.72548,
+   "lon": -73.8805,
+   "matched": "79-11 CALDWELL AVE, MIDDLE VILLAGE, NY, 11379"
+  },
+  "ymca-community-market-coney-island": {
+   "query": "2980 West 29th St., Brooklyn, NY 11224",
+   "lat": 40.57337,
+   "lon": -73.99507,
+   "matched": "2980 W 29TH ST, BROOKLYN, NY, 11224"
+  }
+ }
+}

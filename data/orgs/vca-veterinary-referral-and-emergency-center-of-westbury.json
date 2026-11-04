@@ -1,0 +1,65 @@
+{
+  "id": "vca-veterinary-referral-and-emergency-center-of-westbury",
+  "name": "VCA Veterinary Referral & Emergency Center of Westbury",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet",
+    "referral"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Westbury, Nassau County, Long Island - outside NYC",
+  "zips": [
+    "11590"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals just outside the city (Yonkers and Long Island), from the same list",
+  "phones": [
+    {
+      "value": "5164200000",
+      "display": "(516) 420-0000"
+    }
+  ],
+  "emails": [],
+  "website": "https://vcahospitals.com/westbury",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.77534,
+    "lon": -73.55204,
+    "precision": "address"
+  },
+  "address": {
+    "street": "609-5 Cantiague Rock Road",
+    "city": "Westbury",
+    "zip": "11590"
+  },
+  "hours": "Open 24/7",
+  "notes": "609-5 Cantiague Rock Road, Westbury, NY 11590. Open 24 hours, seven days. Outside the city, in Nassau County on Long Island.",
+  "type_raw": "Emergency and specialty vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://vcahospitals.com/westbury"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals just outside the city (Yonkers and Long Island), from the same list",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

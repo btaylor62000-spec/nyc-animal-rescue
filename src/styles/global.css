@@ -683,6 +683,10 @@ a:hover { text-decoration-thickness: 2px; }
   border-bottom: 1px solid var(--border);
 }
 .results-bar__count { margin: 0; font-size: 0.95rem; color: var(--text-muted); }
+.results-bar__order { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; margin: 0; }
+.btn--small { padding: 0.35rem 0.75rem; font-size: 0.9rem; min-height: 2.25rem; border-color: var(--border); }
+.card__distance { font-weight: 600; color: var(--text); }
+.card__distance::before { content: '· '; font-weight: 400; color: var(--text-muted); }
 .results-bar__count strong {
   color: var(--text);
   font-weight: 700;
@@ -733,6 +737,7 @@ a:hover { text-decoration-thickness: 2px; }
   margin: 0 0 0.6rem;
 }
 .card__meta svg { flex: none; opacity: 0.8; }
+.card__checked { margin: 0.6rem 0 0; color: var(--text-muted); font-size: 0.85rem; }
 .card__tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.6rem 0 0; padding: 0; list-style: none; }
 .card__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.85rem; }
 
@@ -1059,3 +1064,6 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
    one who should be able to say so. */
 .btn--fix { color: var(--text-muted); gap: 0.35rem; }
 .btn--fix:hover { color: var(--text); }
+
+.chat__location { margin: 0.5rem 0 0; font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: center; }
+.chat__location label { display: inline-flex; gap: 0.4rem; align-items: center; cursor: pointer; }

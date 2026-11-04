@@ -56,6 +56,11 @@
       "url": "https://facebook.com/rescuecity"
     }
   ],
+  "geo": {
+    "lat": 40.5997,
+    "lon": -73.9964,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "NYS 501(c)(3) (EIN 47-4041234, Ag & Markets Reg #RR128). Professional foster-based dog rescue; transports from open-intake shelters with low save rates. All breeds/sizes/ages/medical; every dog fully vetted, altered, microchipped, vaccinated before adoption. Strong foster and foster-to-adopt program (RC covers medical costs + some supplies during fostering). Runs the Therapaw therapy-dog program. Mailing 8700 25th Ave, Brooklyn. Email: (via site contact form)",

@@ -34,6 +34,11 @@
   "website": "https://www.meowroof.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7682,
+    "lon": -73.8274,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Volunteer-run Flushing nonprofit. Year-round TNR + winter stray shelters + rescue/foster/adoption + caregiver support (pet food donations, spay/neuter events) + community education. Has a physical address. Verified 2026-08-26. Intake: Contact + adoption via site Other channel: 39-09 Main Street, Flushing NY 11354",

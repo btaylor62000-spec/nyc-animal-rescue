@@ -1,0 +1,63 @@
+{
+  "id": "long-island-animal-surgery",
+  "name": "Long Island Animal Surgery",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Glen Cove (Nassau) and Patchogue (Suffolk), Long Island - outside NYC",
+  "zips": [
+    "11542",
+    "11772"
+  ],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "5162771076",
+      "display": "(516) 277-1076",
+      "label": "Glen Cove"
+    },
+    {
+      "value": "6316276900",
+      "display": "(631) 627-6900",
+      "label": "Patchogue"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.longislandanimalsurgery.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Listed by the Mayor's Alliance for reduced-cost spay/neuter, including for community cats.",
+  "type_raw": "Spay/neuter and surgery practice, two locations",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.longislandanimalsurgery.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

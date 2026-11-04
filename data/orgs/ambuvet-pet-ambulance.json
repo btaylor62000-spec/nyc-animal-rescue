@@ -1,0 +1,61 @@
+{
+  "id": "ambuvet-pet-ambulance",
+  "name": "AmbuVet pet ambulance",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet",
+    "transport"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs; dispatched from NYC, tri-state pickups",
+  "zips": [],
+  "region_note": "PET AMBULANCE - 24/7 transport to a vet, from the Mayor's Alliance emergency vet list (2026-11-03), confirmed on its own site that day",
+  "phones": [
+    {
+      "value": "8002628838",
+      "display": "(800) 262-8838"
+    }
+  ],
+  "emails": [],
+  "website": "https://ambuvet.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": "24/7",
+  "notes": "A 24-hour pet ambulance for getting an animal to a vet when you cannot take it yourself. It is not a hospital: ring the vet hospital you are going to before pickup, as AmbuVet's own page asks. It charges for each trip, payment due at pickup or drop-off, and dispatch is first come, first served, so at busy times it may point you to a partner first. An owner is not guaranteed a ride along with the animal.",
+  "type_raw": "24/7 pet ambulance - transport to a vet, not a hospital; operated by a licensed veterinary technician",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://ambuvet.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "PET AMBULANCE - 24/7 transport to a vet, from the Mayor's Alliance emergency vet list (2026-11-03), confirmed on its own site that day",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

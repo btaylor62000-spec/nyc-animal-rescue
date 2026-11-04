@@ -45,6 +45,11 @@
       "url": "https://facebook.com/fosterdogsnyc"
     }
   ],
+  "geo": {
+    "lat": 40.6627,
+    "lon": -73.9867,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Brooklyn-based nonprofit whose role is to CONNECT rescuers, fosters and adopters - it facilitates fostering and adoption (education, marketing, no-fee services) rather than running its own shelter. Useful when someone wants to FOSTER but isn't sure which org, or an org needs foster homes. Mailing 626 2nd Ave, Brooklyn 11215. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Foster/adopt info & applications on site Intake: email via contact form\n\nBrooklyn nonprofit that helps connect owners in crisis with temporary fostering. fosterdogsnyc.com.",

@@ -1,7 +1,11 @@
 {
   "id": "narn-central-brooklyn",
   "name": "NARN - Central Brooklyn (NARN-CB)",
-  "aka": [],
+  "aka": [
+    "Neighborhood Animal Rescue Network",
+    "Neighborhood Animal Rescue Network - Central Brooklyn",
+    "NARN"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster",
@@ -48,6 +52,7 @@
       "url": "https://instagram.com/narn_cb"
     }
   ],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "Network of individual Central-Brooklyn rescuers, no facility. No public email/phone; reach via IG DM or Google Forms. First-class solo/hyper-local network. Other channel: adoptapet.com/shelter/106350",

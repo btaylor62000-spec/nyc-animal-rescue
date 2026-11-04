@@ -1,13 +1,18 @@
 {
   "id": "24petwatch",
-  "name": "24PetWatch",
-  "aka": [],
+  "name": "24Petwatch microchip registry (PetPlace)",
+  "aka": [
+    "24PetWatch",
+    "24Petwatch",
+    "PetPlace microchip registry"
+  ],
   "parent_org": null,
   "org_types": [
     "support-program"
   ],
   "animals": [
-    "cat"
+    "cat",
+    "dog"
   ],
   "needs": [
     "microchip",
@@ -25,28 +30,46 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "8337387523",
+      "display": "1-833-738-7523",
+      "label": "Help line"
+    }
+  ],
   "emails": [],
-  "website": "https://24pet.com/products/registry",
+  "website": "https://www.petplace.com/pet-microchip-registry",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
-  "notes": "com/products/registry) - North America's largest registry, FREE registration, any chip brand.",
+  "notes": "com/products/registry) - North America's largest registry, FREE registration, any chip brand.\n\n24Petwatch (by PetPlace) - North America's largest registry; FREE registration, no mandatory fees. Register/update/report lost at petplace.com/pet-microchip-registry or 24pet.com. Recovery specialists run real-time found searches.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Lost-found & behavior — MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "1-833-738-7523",
+      "evidence_url": "https://www.petplace.com/pet-microchip-registry",
+      "source": "manual",
+      "note": "24Petwatch's registry now runs on PetPlace. Its registry page, read in a browser, gives \"Need Help? Call 1-833-738-7523\". Supplied by a reviewer. Added where there was none; website moved from 24pet.com to the PetPlace page."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

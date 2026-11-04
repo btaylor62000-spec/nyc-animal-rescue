@@ -35,6 +35,11 @@
   "website": "https://www.chipsonline.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.67819,
+    "lon": -73.9826,
+    "precision": "address"
+  },
   "address": {
     "street": "200 Fourth Ave.",
     "zip": "11217",

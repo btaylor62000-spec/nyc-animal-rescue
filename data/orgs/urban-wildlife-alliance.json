@@ -1,0 +1,75 @@
+{
+  "id": "urban-wildlife-alliance",
+  "name": "Urban Wildlife Alliance",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline"
+  ],
+  "animals": [
+    "bird-wild",
+    "wildlife"
+  ],
+  "needs": [
+    "transport",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [],
+  "emails": [
+    {
+      "value": "helpline@urbanwildlifenyc.org",
+      "label": "Wildlife helpline"
+    },
+    {
+      "value": "info@urbanwildlifenyc.org",
+      "label": "General"
+    }
+  ],
+  "website": "https://urbanwildlifenyc.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "The Mayor's Alliance points people here when they have found an injured bird and cannot pick it up or have no way to transport it: email the helpline and an automatic reply arrives straight away with instructions. For a bird you can carry, the Wild Bird Fund is the first call. Do not give a wild animal food or water while waiting. A reviewer confirmed this on the organization's own site on 2026-11-03. The site shows automated checks a bot test, so the weekly check cannot read it and a person re-confirms it instead.",
+  "type_raw": "Volunteer wildlife helpline and referral (email) for people trying to help an injured bird or other wild animal",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalalliancenyc.org/wordpress/home/need-help/injorph/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": "2026-11-03",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-03",
+      "evidence_url": "https://urbanwildlifenyc.org",
+      "source": "manual",
+      "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

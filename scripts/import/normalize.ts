@@ -201,7 +201,10 @@ function bareDomain(token: string): string | null {
   if (!cleaned || cleaned.includes('@') || /^https?:/i.test(cleaned)) return null;
   const host = cleaned.split('/')[0]!;
   if (!/^(?:www\.)?[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)+$/i.test(host)) return null;
-  if (!/\.[a-z]{2,}$/i.test(host)) return null;
+  // Case-sensitive on purpose: the research abbreviates places as "S.Bronx"
+  // and "E.NY", which are shaped like domains. Nobody writes a real domain's
+  // ending in capitals, so a capitalised one is prose, not a link.
+  if (!/\.[a-z]{2,}$/.test(host)) return null;
   return cleaned;
 }
 

@@ -107,7 +107,11 @@ export const STATUSES = ['active', 'verify', 'hiatus', 'relocated', 'retired'] a
 export type Status = (typeof STATUSES)[number];
 
 /** Result of the most recent automated check (Phase 4). */
-export const CHECK_STATUSES = ['ok', 'changed', 'unreachable', 'needs-review', 'new-unverified', 'unchecked'] as const;
+/**
+ * `manual-only`: the site answers, but turns automated checks away (a bot
+ * check, or "access denied"), so only a person can confirm it.
+ */
+export const CHECK_STATUSES = ['ok', 'changed', 'unreachable', 'needs-review', 'new-unverified', 'unchecked', 'manual-only'] as const;
 export type CheckStatus = (typeof CHECK_STATUSES)[number];
 
 /** A phone number, kept alongside the role it serves ("intake", "TNR"). */
@@ -143,6 +147,19 @@ export interface Address {
   city?: string;
   borough?: Borough;
   zip?: string;
+}
+
+/**
+ * Where a listing is on the map, for sorting by distance.
+ *
+ * `address` is its street address, looked up once with the Census Bureau's
+ * geocoder (data/geo.json). `zip` is only the centre of its one zip code: good
+ * enough to rank by, not to give anyone directions.
+ */
+export interface Geo {
+  lat: number;
+  lon: number;
+  precision: 'address' | 'zip';
 }
 
 /** One automated or manual change to a record, for the public changes feed. */
@@ -192,6 +209,8 @@ export interface Org {
   intake_urls: LabeledUrl[];
   social: SocialLink[];
   address: Address | null;
+  /** Set by the importer for every record; null when it has no single place. */
+  geo?: Geo | null;
   hours: string | null;
 
   notes: string | null;

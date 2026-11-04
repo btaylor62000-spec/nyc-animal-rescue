@@ -63,6 +63,11 @@
       "url": "https://facebook.com/muddypawsrescue"
     }
   ],
+  "geo": {
+    "lat": 40.7657,
+    "lon": -73.9851,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.",

@@ -1,0 +1,59 @@
+{
+  "id": "bond-vet",
+  "name": "Bond Vet (New York City clinics)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "queens",
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan, Brooklyn and Queens - 21 clinics",
+  "zips": [],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [],
+  "emails": [],
+  "website": "https://bondvet.com/regions/new-york-city",
+  "intake_urls": [
+    {
+      "url": "https://bondvet.com/regions/new-york-city",
+      "label": "Book or text through each clinic's page"
+    }
+  ],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": "Daytime only; hours vary by clinic (Chelsea: 8am-6pm)",
+  "notes": "Primary care and same-day urgent care at 21 clinics across Manhattan, Brooklyn and Queens. Bond Vet's own site describes its urgent care as for problems that are not life-threatening - diarrhea, wounds, rashes, coughing. For anything life-threatening, or at night, go to a hospital open around the clock instead. Each clinic has its own text line on its page.",
+  "type_raw": "Vet practice with same-day urgent care, 21 clinics; daytime hours",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bondvet.com/regions/new-york-city"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

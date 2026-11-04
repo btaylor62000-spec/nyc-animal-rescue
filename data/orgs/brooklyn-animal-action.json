@@ -18,7 +18,6 @@
     "tnr",
     "education",
     "referral",
-    "surrender",
     "advocacy"
   ],
   "boroughs": [
@@ -70,9 +69,14 @@
       "url": "https://facebook.com/BrooklynAnimalAction"
     }
   ],
+  "geo": {
+    "lat": 40.6627,
+    "lon": -73.9867,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3), founded 2010. TNR + adoption + rescuer support/education. No shelter; foster-based. Provides tools/advice so residents can help animals themselves. adopt@ confirmed on own adoptable-pets page. Re-verified 2026-08-26.\n\nAll-volunteer 501(c)(3) since 2010, ACC New Hope partner. Primarily a cat and TNR organization that has also rehomed some dogs and can pull dogs as a New Hope partner - included with that note. Foster-based, no shelter. For dogs, confirm current availability. Mailing 626 2nd Ave-area, Brooklyn 11215. Intake: Foster/adopt via site Intake: email preferred",
+  "notes": "All-volunteer 501(c)(3), founded 2010. TNR + adoption + rescuer support/education. No shelter; foster-based. Provides tools/advice so residents can help animals themselves. adopt@ confirmed on own adoptable-pets page. Re-verified 2026-08-26.\n\nAll-volunteer 501(c)(3) since 2010, ACC New Hope partner. Primarily a cat and TNR organization that has also rehomed some dogs and can pull dogs as a New Hope partner - included with that note. Foster-based, no shelter. For dogs, confirm current availability. Mailing 626 2nd Ave-area, Brooklyn 11215. Intake: Foster/adopt via site Intake: email preferred\n\nIt does not take in owned pets: its own site says it is not a shelter and points owners to rehoming a pet themselves. Good for adopting, fostering and TNR help.",
   "type_raw": "TNR / rescue+adoption / referral hub",
   "confidence": "High",
   "status": "active",
@@ -90,7 +94,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "needs",
+      "from": "surrender",
+      "to": null,
+      "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
+      "source": "manual",
+      "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

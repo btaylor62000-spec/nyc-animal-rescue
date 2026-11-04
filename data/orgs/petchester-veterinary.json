@@ -1,0 +1,68 @@
+{
+  "id": "petchester-veterinary",
+  "name": "Petchester Veterinary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Eastchester, Westchester County - outside NYC",
+  "zips": [
+    "10709"
+  ],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "9147717387",
+      "display": "(914) 771-7387"
+    }
+  ],
+  "emails": [
+    {
+      "value": "petchestervets@gmail.com"
+    }
+  ],
+  "website": "https://www.petchesterveterinary.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.95024,
+    "lon": -73.81753,
+    "precision": "address"
+  },
+  "address": {
+    "street": "309 White Plains Road",
+    "city": "Eastchester",
+    "zip": "10709"
+  },
+  "hours": null,
+  "notes": "309 White Plains Road, Eastchester, NY 10709. Call or text for an appointment. Listed by the Mayor's Alliance among the places to have a rabbit spayed or neutered.",
+  "type_raw": "Vet practice; spays and neuters rabbits as well as dogs and cats",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petchesterveterinary.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

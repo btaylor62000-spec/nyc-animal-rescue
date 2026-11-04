@@ -1,0 +1,71 @@
+{
+  "id": "value-veterinary-clinic",
+  "name": "Value Veterinary Clinic (Bronx)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bronx - Parkchester",
+  "zips": [
+    "10472"
+  ],
+  "region_note": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "phones": [
+    {
+      "value": "7188227387",
+      "display": "(718) 822-7387"
+    }
+  ],
+  "emails": [
+    {
+      "value": "valuevetclinic2@gmail.com"
+    }
+  ],
+  "website": "https://valuevethospital.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.83118,
+    "lon": -73.85463,
+    "precision": "address"
+  },
+  "address": {
+    "street": "2074 Cross Bronx Expressway",
+    "city": "Bronx",
+    "zip": "10472"
+  },
+  "hours": "Mon-Sat 9am-5pm",
+  "notes": "2074 Cross Bronx Expressway, Bronx, NY 10472, near the 6 train at Parkchester.",
+  "type_raw": "Vet practice listed for reduced-cost care",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://valuevethospital.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

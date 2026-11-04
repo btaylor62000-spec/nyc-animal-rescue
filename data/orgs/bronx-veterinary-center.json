@@ -1,0 +1,70 @@
+{
+  "id": "bronx-veterinary-center",
+  "name": "Bronx Veterinary Center",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Bronx - Fordham (Webster Ave) and Morris Park (Eastchester Rd)",
+  "zips": [
+    "10458",
+    "10461"
+  ],
+  "region_note": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "phones": [
+    {
+      "value": "7189331002",
+      "display": "(718) 933-1002",
+      "label": "Webster Ave"
+    },
+    {
+      "value": "7182157387",
+      "display": "(718) 215-7387",
+      "label": "Eastchester Rd"
+    }
+  ],
+  "emails": [
+    {
+      "value": "clientservices@bronxvetcenter.com"
+    }
+  ],
+  "website": "https://bronxvetcenter.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": "Mon-Fri 9am-6pm, Sat 9am-3:30pm",
+  "notes": "Webster Avenue: 2460 Webster Avenue, Bronx, NY 10458. Eastchester Road: 1640 Eastchester Rd, Bronx, NY 10461 (moved there from Westchester). Exams and vaccinations by appointment only.",
+  "type_raw": "Vet practice, two locations; listed for reduced-cost care and spay/neuter",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bronxvetcenter.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,84 @@
+{
+  "id": "one-love-animal-hospital",
+  "name": "One Love Animal Hospital",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn (Boerum Hill, Bay Ridge) and Manhattan (Upper East Side)",
+  "zips": [
+    "11201"
+  ],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [
+    {
+      "value": "7185327410",
+      "display": "(718) 532-7410",
+      "label": "Boerum Hill"
+    },
+    {
+      "value": "3475494050",
+      "display": "(347) 549-4050",
+      "label": "Bay Ridge"
+    },
+    {
+      "value": "2122498802",
+      "display": "(212) 249-8802",
+      "label": "Upper East Side"
+    }
+  ],
+  "emails": [
+    {
+      "value": "onelove@onelovevet.com"
+    }
+  ],
+  "website": "https://www.onelovevet.com",
+  "intake_urls": [
+    {
+      "url": "https://www.onelovevet.com/after-hours-emergencies",
+      "label": "Overnight emergencies"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.6937,
+    "lon": -73.9899,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm; Sun closed (Bay Ridge: Sun 10am-6pm)",
+  "notes": "Boerum Hill: 317 Atlantic Ave, Brooklyn 11201. Bay Ridge: 8209 3rd Ave, Brooklyn. Upper East Side: 227 E 84th St, New York. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones.",
+  "type_raw": "Vet practice that sees urgent problems and most emergencies during opening hours; three locations",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.onelovevet.com/contact-us"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -35,6 +35,11 @@
   "website": "https://www.breadandlife.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.69029,
+    "lon": -73.92874,
+    "precision": "address"
+  },
   "address": {
     "street": "795 Lexington Ave.",
     "zip": "11221",

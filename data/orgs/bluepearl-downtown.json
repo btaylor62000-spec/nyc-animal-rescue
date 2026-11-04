@@ -33,9 +33,14 @@
     }
   ],
   "emails": [],
-  "website": "https://bluepearlvet.com",
+  "website": "https://bluepearlvet.com/hospital/downtown-nyc/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.73677,
+    "lon": -73.99315,
+    "precision": "address"
+  },
   "address": {
     "street": "1 W 15th St",
     "zip": "10011"
@@ -65,6 +70,15 @@
       "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
       "source": "manual",
       "note": "(212) 924-3311 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://bluepearlvet.com",
+      "to": "https://bluepearlvet.com/hospital/downtown-nyc/",
+      "evidence_url": "https://bluepearlvet.com/hospital/downtown-nyc/",
+      "source": "manual",
+      "note": "Pointed at this hospital's own page rather than BluePearl's home page, which names no hospital, so the weekly check can confirm the address and number each week. The page, read in a browser on 2026-11-04, shows the same address and phone as this entry and '24/7 Emergency and Specialty'; a reviewer confirmed the same on BluePearl's hospital finder."
     }
   ],
   "privacy_hold": false,

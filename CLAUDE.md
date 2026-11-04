@@ -22,7 +22,7 @@ production; nothing here is aspirational.
 | Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
-| Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Fix this entry". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
+| Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
 **New here?** Read `docs/START-HERE.md` if you want to be walked through
 setup one step at a time — it uses Claude Code in the browser
@@ -151,7 +151,9 @@ read them.
   2026-11-03, live about a minute after the push, the whole site including
   `/status/`. Note the trailing slash: `/status` answers 308 to `/status/`.
   Preview builds run `astro build` only, not the tests, so a preview proves the
-  page, not the project.
+  page, not the project. Cloudflare cuts the name to its first 28 characters,
+  with `/` turned into `-`: branch `claude/festive-ramanujan-w3qytx` is at
+  `claude-festive-ramanujan-w3q`. The full name answers "Deployment Not Found".
 - **The overlay is the only way to correct a record.** `data/orgs/` is
   regenerated, so hand edits there are destroyed by the next import.
   `OverlayEntry` now covers `phones`, `emails`, `website`, `intake_urls`,
@@ -159,6 +161,36 @@ read them.
   reader can see.
 - **A record's `status_note` is only rendered when the record is not active.**
   A caveat about an operating organization belongs in `notes`.
+
+### Sites the weekly check cannot read
+
+Added 2026-11-03. A site that cannot be read is one of three things, and the
+check now tells them apart (`pageProblem` in `scripts/agent/rules.ts`):
+
+| What it sees | What it means | What happens |
+| --- | --- | --- |
+| The domain does not exist (`ENOTFOUND`) | Moved or closed | Flagged for a person **the same week**. The reader-visible status still waits three weeks |
+| 401/403/429, or a bot-check page ("Performing security verification") | The site is up but refuses robots | **Not a failure.** `check_status: manual-only`, listed in the weekly report and on `/status`, flagged again when no person has confirmed it for 90 days |
+| Timeout or server error | Could be a bad afternoon | Three weeks' grace, then "needs confirming", as before |
+
+Urban Wildlife Alliance, Petco Love Lost and United Spay Alliance are why: all
+three are live and all three show automated browsers a bot check. Under the old
+rule they would have been marked "may no longer be active" after three weeks.
+
+**The check never looks for a replacement site.** A dead domain is exactly when
+guessing is most tempting and most dangerous: the old domain may now belong to
+someone else. A person finds the new site and records it in the overlay
+(`website`, with a `manual` change-log entry), as was done for Greater Staten
+Island Veterinary Services and the ASPCA clinics.
+
+**To record a check made by hand** on a `manual-only` site: open it in a normal
+browser, confirm the contacts, and set `last_verified` on its overlay entry with
+a `manual` change-log entry saying what was seen. That resets the 90 days.
+
+**Testing the checker from a cloud session:** Node's own `fetch` does not use
+the session's proxy, so every domain looks dead and the safety valve trips.
+Run it with `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`.
+GitHub Actions has ordinary DNS and needs neither.
 
 ### Two bugs already fixed, so they are not re-introduced
 
@@ -510,6 +542,33 @@ pure text relevance kept putting a general vet ahead of the city's bird
 hospital.
 
 ---
+
+## Nearest, open now, best evidenced
+
+Added 2026-11-04. One ordering, `src/data/rank.ts`, used by the directory in
+the browser and by the assistant on the server, so they cannot disagree: in an
+emergency, open now before unknown before closed; then distance in rough bands
+(under 1.5, 3, 6, 12 miles); then evidence; then exact distance. Search wording
+only breaks ties.
+
+- **Where things are.** `npm run geocode` looks each street address up once with
+  the Census Bureau's free geocoder and caches it in `data/geo.json` with the
+  exact query; the import attaches it only while the address still gives the
+  same query, so a corrected address never keeps the old point. One zip and no
+  street means the zip's centre (`data/zip-centroids.json`, `npm run geo:zips`),
+  shown as "about". Citywide services have no place. The import never touches
+  the network. After adding addresses: `npm run import && npm run geocode &&
+  npm run import` (in a cloud session, with the proxy variables above).
+- **Open now.** `src/data/schedule.ts` reads hours into a timetable in New York
+  time. Hours it cannot read with certainty are *unknown*, never open: a wrong
+  "Open now" sends someone to a locked door.
+- **The reader's location** is asked for only when they tap "Nearest to me" or
+  tick "Use my location". The directory keeps it on the device; the assistant
+  receives it rounded to two decimal places (about a kilometre), uses it to
+  order results, and never logs or stores it.
+- Workbook rows can carry **Hours** and **Address** columns. Use them: a row
+  without hours cannot say it is open, and one without an address cannot be
+  sorted by distance.
 
 ## Changing the assistant
 

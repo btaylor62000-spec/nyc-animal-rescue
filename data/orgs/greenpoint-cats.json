@@ -42,6 +42,11 @@
       "url": "https://facebook.com/Greenpointcats"
     }
   ],
+  "geo": {
+    "lat": 40.7278,
+    "lon": -73.9476,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) (EIN 84-2272610), volunteer-run, no shelter. No public phone/email; intake via rescue-request form. TNR then foster/adopt of friendlies. Re-verified 2026-08-26. Intake: //www.greenpointcats.org/tnr-requests Other channel: Venmo @greenpoint_cats",

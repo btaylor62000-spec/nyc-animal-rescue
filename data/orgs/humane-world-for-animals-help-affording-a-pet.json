@@ -1,0 +1,54 @@
+{
+  "id": "humane-world-for-animals-help-affording-a-pet",
+  "name": "Humane World for Animals - help affording a pet",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid",
+    "food-assistance"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national list)",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.humaneworld.org/en/resources/having-trouble-affording-your-pet",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "The organization formerly called the Humane Society of the United States. A long list of places that help with vet bills, pet food and other costs.",
+  "type_raw": "List of help with vet bills, pet food and other costs",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.humaneworld.org/en/resources/having-trouble-affording-your-pet"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

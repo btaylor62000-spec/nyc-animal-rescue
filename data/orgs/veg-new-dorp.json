@@ -1,0 +1,67 @@
+{
+  "id": "veg-new-dorp",
+  "name": "VEG New Dorp (Staten Island)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island - New Dorp (Hylan Blvd between Ross Ave and New Dorp Ln)",
+  "zips": [
+    "10306"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "phones": [
+    {
+      "value": "7183621390",
+      "display": "(718) 362-1390"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-york/new-dorp",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.56951,
+    "lon": -74.11063,
+    "precision": "address"
+  },
+  "address": {
+    "street": "2546 Hylan Blvd",
+    "city": "Staten Island",
+    "zip": "10306"
+  },
+  "hours": "Open 24/7",
+  "notes": "2546 Hylan Blvd, Staten Island, NY 10306. Open 24/7, including holidays; no appointments - call or walk in, and you can call and speak to a doctor first. Its own page says it treats dogs, cats, rabbits, birds and exotic animals. Parking in the driveway to the right of the building. Not on the Mayor's Alliance list; found on VEG's own list of New York hospitals while checking the others.",
+  "type_raw": "Emergency vet hospital, open 24/7 (no appointment, walk in); also treats rabbits, birds and exotic pets",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-york/new-dorp"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
-import { CONFIDENCE_ORDER, DATA_VERSION, ORGS } from '../data/orgs.ts';
+import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -13,7 +13,7 @@ import { CONFIDENCE_ORDER, DATA_VERSION, ORGS } from '../data/orgs.ts';
  * Default order matches the sort the client applies with no query: firmest
  * evidence first, then most recently verified.
  */
-const orgs = [...ORGS].sort((a, b) => {
+const orgs = [...LISTED_ORGS].sort((a, b) => {
   const c = CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence];
   if (c !== 0) return c;
   const av = a.last_verified ?? '';
@@ -31,7 +31,7 @@ import Icon from '../components/Icon.astro';
   <div class="wrap">
     <h1>Find help</h1>
     <p class="muted" style="margin:.25rem 0 .75rem">
-      Kept up to date by the people who use it. Every entry has a <strong>Fix this entry</strong> button.
+      Kept up to date by the people who use it. If a number is wrong or a place has closed, use <strong>Report a problem</strong> on its listing.
       Missing something? <a href="/contribute">Add a resource</a>.
     </p>
     <p class="lede">
@@ -56,7 +56,11 @@ import Icon from '../components/Icon.astro';
           <p id="results-summary" role="status" class="results-bar__count">
             Showing all {orgs.length} resources
           </p>
-          <p class="filters__count" style="margin:0">Strongest evidence first</p>
+          <p class="results-bar__order">
+            <span id="results-order" class="filters__count">Strongest evidence first</span>
+            <button id="near-me" class="btn btn--ghost btn--small" type="button" hidden>Nearest to me</button>
+          </p>
+          <p id="near-me-note" class="filters__count" hidden></p>
         </div>
 
         <ul class="results" id="results" data-index-url={`/search-index.json?v=${DATA_VERSION}`}>

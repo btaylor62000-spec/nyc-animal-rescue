@@ -1,0 +1,67 @@
+{
+  "id": "urvet-care-midtown",
+  "name": "URvet Care Midtown",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan - Midtown East (57th St between 2nd and 3rd Ave)",
+  "zips": [
+    "10022"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "phones": [
+    {
+      "value": "6462211200",
+      "display": "(646) 221-1200"
+    }
+  ],
+  "emails": [],
+  "website": "https://urvetcare.com/locations/midtown/",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7597,
+    "lon": -73.96639,
+    "precision": "address"
+  },
+  "address": {
+    "street": "252 E 57th Street",
+    "city": "New York",
+    "zip": "10022"
+  },
+  "hours": "Open 24/7",
+  "notes": "252 E 57th Street, New York, NY 10022. Open 24/7 for emergencies. URvet Care's other clinic on this side of town is a daytime clinic, not an emergency hospital.",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://urvetcare.com/locations/midtown/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -14,7 +14,9 @@
     "preview": "astro preview",
     "evals": "tsx scripts/run-evals.ts",
     "agent:weekly": "tsx scripts/agent/weekly.ts",
-    "agent:discover": "tsx scripts/agent/discover.ts"
+    "agent:discover": "tsx scripts/agent/discover.ts",
+    "geo:zips": "tsx scripts/geo/zip-centroids.ts",
+    "geocode": "tsx scripts/geo/geocode.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260702.1",

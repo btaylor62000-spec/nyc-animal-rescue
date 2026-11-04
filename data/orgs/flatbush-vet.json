@@ -38,6 +38,11 @@
   "website": "https://flatbushvet.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.63509,
+    "lon": -73.95017,
+    "precision": "address"
+  },
   "address": {
     "street": "1460 Flatbush Ave",
     "zip": "11210"

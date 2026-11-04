@@ -1,14 +1,14 @@
 ---
 import type { Org } from '../types.ts';
-import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
+import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, checkedLine, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
 import ConfidenceBadge from './ConfidenceBadge.astro';
 import Icon from './Icon.astro';
 import { telHref } from '../data/tel.ts';
+import { hasLimitedHours, isOpen24h } from '../data/hours.ts';
 
 interface Props { org: Org }
 const { org } = Astro.props;
 
-const age = daysSinceVerified(org);
 const confirm = needsConfirmation(org);
 const newlyFound = isNewlyFound(org);
 const byVisitor = org.community?.added_on ?? null;
@@ -24,8 +24,28 @@ const where = org.citywide
 
 // A card shows what someone needs to decide whether to tap: what it is, where
 // it works, and how fresh the information is. Everything else is on the page.
-const topNeeds = org.needs.slice(0, 4);
+// The tags that say what is particular about a group come first. Cut at four
+// in source order, Frankie's Feline Fund showed adoption, surrender, foster
+// and special needs, and dropped "Senior animals" -- the one thing it exists
+// for. General tags that half the directory carries go last.
+const GENERAL_NEEDS = ['adoption', 'foster', 'surrender', 'education', 'advocacy', 'referral', 'spay-neuter'];
+const topNeeds = [...org.needs]
+  .sort((a, b) => Number(GENERAL_NEEDS.includes(a)) - Number(GENERAL_NEEDS.includes(b)))
+  .slice(0, 4);
 const phone = org.phones[0];
+
+// For anything that takes emergencies, whether it is open now is the first
+// question. Daytime practices are listed, because by day they are the
+// quickest help, but the card says so before anyone sets off at night.
+// Not on a closed, paused or moved entry: "Closed" beside "Open 24/7" is
+// a contradiction, and the status is the one that matters.
+const takesEmergencies =
+  org.needs.includes('emergency-vet') && !org.needs.includes('poison-control') && ['active', 'verify'].includes(org.status);
+const open24 = takesEmergencies && isOpen24h(org.hours);
+const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
+// Every vet that takes emergencies carries exactly one of the three, so the
+// absence of a tag never has to be interpreted.
+const hoursUnknown = takesEmergencies && !org.hours;
 ---
 <li
   class="card"
@@ -40,6 +60,11 @@ const phone = org.phones[0];
   data-status={org.status}
   data-has-phone={org.phones.length ? '1' : '0'}
   data-verified={org.last_verified ?? ''}
+  data-lat={org.geo?.lat}
+  data-lon={org.geo?.lon}
+  data-geo={org.geo?.precision}
+  data-hours={org.hours ?? undefined}
+  data-outside={org.outside_nyc ? '1' : '0'}
 >
   <h3 class="card__title"><a href={`/org/${org.id}`} translate="no">{org.name}</a></h3>
 
@@ -47,6 +72,7 @@ const phone = org.phones[0];
     <Icon name="pin" size={15} />
     {where}
     {org.animals.length > 0 && <> · {org.animals.slice(0, 3).map((a) => ANIMAL_LABELS[a]).join(', ')}</>}
+    <span class="card__distance" hidden></span>
   </p>
 
   <ul class="card__tags">
@@ -59,6 +85,9 @@ const phone = org.phones[0];
       <li><span class="tag tag--strong">Updated by a visitor</span></li>
     ) : null}
     {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
+    {open24 && <li><span class="tag tag--strong">Open 24/7</span></li>}
+    {daytimeOnly && <li><span class="tag tag--strong" data-open-tag title={org.hours ?? undefined}>Not open overnight</span></li>}
+    {hoursUnknown && <li><span class="tag tag--strong">Hours not confirmed – call first</span></li>}
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>
 
@@ -70,13 +99,14 @@ const phone = org.phones[0];
       </a>
     )}
     <a class="btn" href={`/org/${org.id}`}>Details</a>
-    <a class="btn btn--ghost btn--fix" href={`/org/${org.id}/correct`} title="Wrong number, closed, moved? Fix it here.">
-      <Icon name="alert" size={15} />
-      Fix this entry
+    <a class="btn btn--ghost btn--fix" href={`/org/${org.id}/correct`} title="Wrong number, closed or moved? Tell us and it gets corrected.">
+      Report a problem
     </a>
   </div>
 
-  {confirm && (
+  <p class="card__checked">{checkedLine(org)}</p>
+
+  {(confirm || byVisitor || newlyFound || correctedByVisitor) && (
     <p class="notice">
       <Icon name="alert" size={17} />
       <span>
@@ -86,13 +116,9 @@ const phone = org.phones[0];
           ? 'We found this on an official list of rescue partners, but nothing about it has been checked yet. Confirm before relying on it.'
           : correctedByVisitor
           ? `A visitor corrected this entry on ${correctedByVisitor}; the new detail was seen on the organization’s own site that day, and nobody here has checked it yet.`
-          : org.status !== 'active' && org.status_note
-          ? org.status_note
-          : org.confidence === 'Low'
-            ? 'Listed from a directory or social channel. Confirm this contact is still active before relying on it.'
-            : age === null
-              ? 'Not yet independently verified. Confirm this contact is still active before relying on it.'
-              : `Last verified ${age} days ago. Confirm this contact is still active before relying on it.`}
+          : org.status !== 'active'
+          ? org.status_note ?? 'This organization may not be operating as listed. Confirm before relying on it.'
+          : 'Listed from a directory or social channel rather than its own website. Confirm this contact before relying on it.'}
       </span>
     </p>
   )}

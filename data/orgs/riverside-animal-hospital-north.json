@@ -1,0 +1,67 @@
+{
+  "id": "riverside-animal-hospital-north",
+  "name": "Riverside Animal Hospital North",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan - Upper West Side / Morningside Heights",
+  "zips": [
+    "10025"
+  ],
+  "region_note": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "phones": [
+    {
+      "value": "2128652224",
+      "display": "(212) 865-2224"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.riversideanimalhospitalnorth.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.8023,
+    "lon": -73.96624,
+    "precision": "address"
+  },
+  "address": {
+    "street": "250 W 108th Street",
+    "city": "New York",
+    "zip": "10025"
+  },
+  "hours": "Mon-Fri 9am-6pm, Sat 9am-5pm, Sun closed",
+  "notes": "250 W 108th Street, New York, NY 10025. Also takes texts at (973) 649-9472. Ask about cost when booking.",
+  "type_raw": "Vet practice listed by the Mayor's Alliance for reduced-cost care",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.riversideanimalhospitalnorth.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

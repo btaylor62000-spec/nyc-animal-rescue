@@ -1,0 +1,59 @@
+{
+  "id": "spayusa",
+  "name": "SpayUSA (North Shore Animal League America)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [],
+  "region_note": "FINDING LOW-COST SPAY/NEUTER - national search tools that cover New York City",
+  "phones": [],
+  "emails": [
+    {
+      "value": "spayusa@animalleague.org"
+    }
+  ],
+  "website": "https://www.animalleague.org/get-involved/spay-usa/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A referral service run by North Shore Animal League America that points you to affordable spay/neuter near you.",
+  "type_raw": "Referral service for low-cost spay/neuter",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalleague.org/get-involved/spay-usa/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FINDING LOW-COST SPAY/NEUTER - national search tools that cover New York City",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

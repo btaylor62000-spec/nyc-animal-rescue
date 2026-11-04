@@ -40,6 +40,11 @@
   "website": "https://www.nycommonpantry.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7961,
+    "lon": -73.94957,
+    "precision": "address"
+  },
   "address": {
     "street": "8 East 109th St.",
     "zip": "10029",

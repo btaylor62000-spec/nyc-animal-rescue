@@ -5,6 +5,8 @@
  * issue that is reopened and rewritten each week, so the flagged items are in
  * one place rather than scattered across a new issue every Monday.
  */
+import { AGENT } from './config.ts';
+
 export interface RunSummary {
   date: string;
   total: number;
@@ -12,6 +14,8 @@ export interface RunSummary {
   verified: number;
   needsReview: number;
   unreachable: number;
+  /** Sites that turn automated checks away; only a person can confirm them. */
+  blocked: number;
   skipped: number;
   /**
    * Records whose patch changes something a reader can see: a contact, a
@@ -21,6 +25,13 @@ export interface RunSummary {
    */
   proposed: number;
   flags: Array<{ id: string; name: string; text: string }>;
+  /**
+   * Every site only a person can check, oldest confirmation first, so the
+   * list doubles as a to-do: the top of it is what has gone longest unseen.
+   */
+  manualOnly: Array<{ id: string; name: string; website: string | null; lastConfirmed: string | null }>;
+  /** Street addresses not found on the organization's own pages this week. */
+  addressesNotSeen: Array<{ id: string; name: string; street: string; website: string | null }>;
   safetyValveTripped: boolean;
 }
 
@@ -50,6 +61,7 @@ export function writeReport(s: RunSummary): string {
   out.push(`| …of those, contacts re-confirmed on their own site | ${s.verified} |`);
   out.push(`| Flagged for a person | ${s.needsReview} |`);
   out.push(`| Website unreachable | ${s.unreachable} |`);
+  out.push(`| Site turns automated checks away (a person checks these) | ${s.blocked} |`);
   out.push(`| Not checkable (social only, or no website) | ${s.skipped} |`);
   out.push('');
 
@@ -69,6 +81,37 @@ export function writeReport(s: RunSummary): string {
     out.push('## Nothing to do');
     out.push('');
     out.push('No contact details changed and nothing needs attention. The directory is as it was.');
+    out.push('');
+  }
+
+  if (s.addressesNotSeen.length) {
+    out.push(`## Addresses not seen on their own site (${s.addressesNotSeen.length})`);
+    out.push('');
+    out.push(
+      'The stored street address was not found on the pages read. Often that only means the site shows it on a map ' +
+        'or a page the check did not open, so this is a list to look through, not a set of errors. If an organization ' +
+        'has moved, record the new address or close the old entry by hand.',
+    );
+    out.push('');
+    for (const a of s.addressesNotSeen) out.push(`- ${a.name}: ${a.street}${a.website ? ` (${a.website})` : ''}`);
+    out.push('');
+  }
+
+  if (s.manualOnly.length) {
+    out.push(`## Checked by a person only (${s.manualOnly.length})`);
+    out.push('');
+    out.push(
+      'These sites are up but show automated checks a bot test or "access denied", so the checker cannot read them. ' +
+        `They are not counted as failures. Each one is flagged above once nobody has confirmed it for ${AGENT.manualRecheckDays} days. ` +
+        'To record a check, open the site in a normal browser, confirm the contacts, and set `last_verified` for it in ' +
+        '`data/agent-overlay.json` with a `manual` change-log entry.',
+    );
+    out.push('');
+    out.push('| Entry | Site | Last confirmed by a person |');
+    out.push('| --- | --- | --- |');
+    for (const m of s.manualOnly) {
+      out.push(`| ${m.name} | ${m.website ?? '—'} | ${m.lastConfirmed ?? 'never'} |`);
+    }
     out.push('');
   }
 

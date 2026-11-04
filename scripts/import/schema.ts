@@ -89,6 +89,16 @@ export const ORG_SCHEMA = {
         },
       },
     },
+    geo: {
+      type: ['object', 'null'],
+      additionalProperties: false,
+      required: ['lat', 'lon', 'precision'],
+      properties: {
+        lat: { type: 'number', minimum: 38, maximum: 45 },
+        lon: { type: 'number', minimum: -80, maximum: -71 },
+        precision: { enum: ['address', 'zip'] },
+      },
+    },
     address: {
       type: ['object', 'null'],
       additionalProperties: false,

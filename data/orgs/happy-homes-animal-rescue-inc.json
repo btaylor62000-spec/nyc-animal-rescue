@@ -43,6 +43,11 @@
     }
   ],
   "social": [],
+  "geo": {
+    "lat": 40.5298,
+    "lon": -74.2198,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Foster-based rescue spanning Staten Island + central NJ (Old Bridge/East Brunswick). Reduces shelter euthanasia + street TNR + community spay/neuter education. Cats viewable at the SI Petco habitat + NJ Petco/PetSmart events. Verified 2026-08-26. Intake: by appointment + weekend events Other channel: IG/FB @happyhomesrescue Other channel: SI habitat: Petco 165 Bricktown Way 10309 (Sun)",

@@ -36,6 +36,11 @@
   "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.62982,
+    "lon": -73.91843,
+    "precision": "address"
+  },
   "address": {
     "street": "1950 Ralph Ave",
     "zip": "11234"

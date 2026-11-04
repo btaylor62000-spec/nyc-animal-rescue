@@ -1,0 +1,54 @@
+{
+  "id": "lana-law-group",
+  "name": "LANA Law Group (Legal Action Network for Animals)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [],
+  "needs": [
+    "legal"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "LEGAL HELP - from the Mayor's Alliance legal page. Individual lawyers named there are not listed here.",
+  "phones": [],
+  "emails": [
+    {
+      "value": "attorney@lanalawgroup.org"
+    }
+  ],
+  "website": "https://lanalawgroup.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A not-for-profit group of lawyers that takes animal cases and advises people with a legal problem involving an animal.",
+  "type_raw": "Not-for-profit group of lawyers for animal legal issues",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://lanalawgroup.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LEGAL HELP - from the Mayor's Alliance legal page. Individual lawyers named there are not listed here.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

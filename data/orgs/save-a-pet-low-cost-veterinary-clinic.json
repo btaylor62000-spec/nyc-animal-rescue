@@ -1,0 +1,65 @@
+{
+  "id": "save-a-pet-low-cost-veterinary-clinic",
+  "name": "Save-A-Pet Low-Cost Veterinary Clinic",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Port Jefferson Station, Suffolk County, Long Island - outside NYC",
+  "zips": [
+    "11776"
+  ],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "6314736333",
+      "display": "(631) 473-6333"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@saveapetusa.org"
+    }
+  ],
+  "website": "https://saveapetusa.org/services",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.9135,
+    "lon": -73.0457,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "Fees are on its services page. Dogs and cats five or older need blood work at least a week before surgery.",
+  "type_raw": "Shelter clinic offering low-cost spay/neuter",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://saveapetusa.org/services"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

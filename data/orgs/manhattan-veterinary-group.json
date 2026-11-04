@@ -34,6 +34,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.77423,
+    "lon": -73.95522,
+    "precision": "address"
+  },
   "address": {
     "street": "240 East 80th St",
     "zip": "10075"

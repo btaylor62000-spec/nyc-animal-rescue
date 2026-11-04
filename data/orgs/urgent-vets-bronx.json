@@ -1,7 +1,10 @@
 {
   "id": "urgent-vets-bronx",
-  "name": "Urgent Vets - Bronx",
-  "aka": [],
+  "name": "Urgent Vets (Bronx)",
+  "aka": [
+    "Urgent Vets",
+    "Urgent Vets - Bronx"
+  ],
   "parent_org": null,
   "org_types": [
     "emergency-vet",
@@ -34,12 +37,17 @@
   "website": "https://urgent-vets.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.82498,
+    "lon": -73.82061,
+    "precision": "address"
+  },
   "address": {
     "street": "3800 E Tremont Ave",
     "zip": "10465"
   },
-  "hours": null,
-  "notes": "3800 E Tremont Ave, Bronx 10465. (347) 281-9700. urgent-vets.com (extended urgent care; call for hours - not guaranteed 24h).",
+  "hours": "Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr)",
+  "notes": "3800 E Tremont Ave 10465 - (347) 281-9700 - Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr).\n\n3800 E Tremont Ave, Bronx 10465. (347) 281-9700. urgent-vets.com (extended urgent care; call for hours - not guaranteed 24h).",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -48,6 +56,7 @@
   "last_verified": "2026-09-22",
   "section": "Emergency & poison control — BRONX - nearest 24-hour ER",
   "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",

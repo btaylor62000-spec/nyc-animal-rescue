@@ -80,6 +80,14 @@ export const STATUS = {
     (o) => o.check_status === 'needs-review' || (o.status !== 'active' && o.status !== 'retired'),
   ),
 
+  /**
+   * Up, but turning automated checks away: only a person can confirm these.
+   * Oldest confirmation first, because that is the order to work through it.
+   */
+  manualOnly: ORGS.filter((o) => o.check_status === 'manual-only').sort(
+    (a, b) => (a.last_verified ?? '').localeCompare(b.last_verified ?? '') || a.name.localeCompare(b.name),
+  ),
+
   /** Found on a roster, published, but nothing has confirmed them. */
   unverified: ORGS.filter((o) => o.check_status === 'new-unverified' && !o.community?.added_on),
   /** Added or corrected by visitors through the site, awaiting a person's check. */

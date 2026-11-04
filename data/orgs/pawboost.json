@@ -1,0 +1,57 @@
+{
+  "id": "pawboost",
+  "name": "PawBoost",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (online, national)",
+  "zips": [],
+  "region_note": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "phones": [],
+  "emails": [
+    {
+      "value": "help@pawboost.com"
+    }
+  ],
+  "website": "https://www.pawboost.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Posting a lost or found pet alert to local Facebook and Nextdoor groups is free; paid upgrades are offered.",
+  "type_raw": "Lost and found pet alerts on Facebook and Nextdoor",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.pawboost.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

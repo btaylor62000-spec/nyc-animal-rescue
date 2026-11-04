@@ -40,6 +40,11 @@
   "website": "https://projecthospitality.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.62657,
+    "lon": -74.07819,
+    "precision": "address"
+  },
   "address": {
     "street": "205 Canal St.",
     "zip": "10304",

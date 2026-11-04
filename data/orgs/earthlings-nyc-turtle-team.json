@@ -44,6 +44,11 @@
       "url": "https://instagram.com/earthlings.nyc"
     }
   ],
+  "geo": {
+    "lat": 40.7657,
+    "lon": -73.9851,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Volunteer 'Turtle Team' running since 2023; care in 'Parent Pods' at Prime Produce, Hell's Kitchen. Handles pet-turtle surrenders and adoptions and overwinters/rehabs native turtles (Diamondback Terrapins, snapping turtles). Also runs the NYC Charity Turtle Race for ecology fundraising. Phone: (no public phone; email) Intake: /the-turtle-team Intake: program inquiries hanunah@primeproduce.org",

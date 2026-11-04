@@ -56,6 +56,11 @@
       "url": "https://facebook.com/amsterdog"
     }
   ],
+  "geo": {
+    "lat": 40.7097,
+    "lon": -74.0166,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) all-volunteer foster-based rescue helping dogs in NYC city shelters + the greater NY/NJ/PA area, placing across the East Coast. Process: online application, then a phone conversation. One of the few smaller NYC dog rescues that publishes a direct phone line. Mailing New York 10280.",

@@ -4,7 +4,6 @@
   "aka": [],
   "parent_org": null,
   "org_types": [
-    "emergency-vet",
     "wildlife-rehabber"
   ],
   "animals": [
@@ -12,7 +11,6 @@
     "bird-wild"
   ],
   "needs": [
-    "emergency-vet",
     "wildlife-rehab",
     "legal"
   ],
@@ -39,6 +37,11 @@
   "website": "https://www.savetheanimalsrescue.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.8925,
+    "lon": -72.9512,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Long Island wildlife-rehab foundation that takes raptors (and occasionally gulls, volume permitting). 24-hour live answering service. Regional (Suffolk County) - flagged as NYC-adjacent, not NYC-local; a raptor-specific backup to WINORR/Wild Bird Fund. Intake: Call 631-736-8207 Intake: email info@savetheanimalsrescue.org Other channel: FB Save the Animals Rescue Foundation (STAR)",

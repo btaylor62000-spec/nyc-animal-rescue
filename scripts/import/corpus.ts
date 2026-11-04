@@ -15,6 +15,8 @@
  */
 import type { Org } from '../../src/types.ts';
 import { keywordsFor } from '../../src/data/synonyms.ts';
+import { isListed } from '../../src/data/listing.ts';
+
 
 export interface CorpusOrg {
   id: string;
@@ -37,6 +39,8 @@ export interface CorpusOrg {
   intake: string | null;
   hours: string | null;
   address: string | null;
+  /** Where it is, for nearest-first ordering; null for citywide services. */
+  geo: Org['geo'];
   /** One line, for the prompt. Full notes stay on the organization's page. */
   summary: string;
   keywords: string;
@@ -52,8 +56,6 @@ export interface CorpusGuide {
   chunks: Array<{ heading: string; text: string }>;
 }
 
-/** Statuses the assistant must never recommend. */
-const EXCLUDED: ReadonlyArray<Org['status']> = ['retired', 'relocated'];
 
 /**
  * A newly discovered organization is real, but nothing about it has been
@@ -76,7 +78,8 @@ function firstSentences(text: string | null, max = 200): string {
 
 export function buildOrgCorpus(orgs: Org[]): CorpusOrg[] {
   return orgs
-    .filter((o) => !EXCLUDED.includes(o.status) && !isUnverifiedDiscovery(o))
+    // The same rule as the directory (src/data/listing.ts), so the two agree.
+    .filter((o) => isListed(o) && !isUnverifiedDiscovery(o))
     .map((o) => ({
       id: o.id,
       name: o.name,
@@ -99,6 +102,7 @@ export function buildOrgCorpus(orgs: Org[]): CorpusOrg[] {
       address: o.address?.street
         ? `${o.address.street}${o.address.zip ? `, ${o.address.zip}` : ''}`
         : null,
+      geo: o.geo ?? null,
       summary: firstSentences(o.notes),
       keywords: keywordsFor(o.animals, o.needs, o.org_types),
       text: [o.neighborhoods, o.type_raw, o.notes].filter(Boolean).join(' ').replace(/\s+/g, ' ').slice(0, 280),

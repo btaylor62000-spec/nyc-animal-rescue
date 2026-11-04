@@ -56,6 +56,11 @@
   "website": "https://www.humanesocietyny.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.76039,
+    "lon": -73.96397,
+    "precision": "address"
+  },
   "address": {
     "street": "306 E 59th St"
   },

@@ -34,11 +34,16 @@
   "website": "https://instavet.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7471,
+    "lon": -73.9397,
+    "precision": "zip"
+  },
   "address": {
     "street": "44-16 23rd St",
     "zip": "11101"
   },
-  "hours": null,
+  "hours": "8am-10pm every day, including holidays",
   "notes": "44-16 23rd St, LIC 11101 - (917) 525-2579 - call/site for hours.\n\n44-16 23rd St, Long Island City 11101. (917) 525-2579. instavet.com (call/site for hours).",
   "type_raw": null,
   "confidence": "Medium",
@@ -54,7 +59,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": null,
+      "to": "8am-10pm every day, including holidays",
+      "evidence_url": "https://instavet.com/",
+      "source": "manual",
+      "note": "Read in a browser on its own site: \"We're open from 8 am - 10 pm, 365 days/year\". Walk-in urgent care, not overnight."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

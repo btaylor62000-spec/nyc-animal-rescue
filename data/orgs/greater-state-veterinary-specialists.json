@@ -1,7 +1,10 @@
 {
   "id": "greater-state-veterinary-specialists",
-  "name": "Greater State Veterinary Specialists (GSiVS)",
-  "aka": [],
+  "name": "Greater Staten Island Veterinary Services",
+  "aka": [
+    "GSiVS",
+    "Greater State Veterinary Specialists (GSiVS)"
+  ],
   "parent_org": null,
   "org_types": [
     "emergency-vet",
@@ -31,9 +34,14 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://www.gsvs.org/staten-island-ny/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.60704,
+    "lon": -74.16426,
+    "precision": "address"
+  },
   "address": {
     "street": "3135 Victory Blvd",
     "zip": "10314"
@@ -41,20 +49,30 @@
   "hours": "24/7",
   "notes": "3135 Victory Blvd 10314 - (917) 830-1380 - 24/7.\n\n3135 Victory Blvd, Staten Island 10314. (917) 830-1380. Open 24h.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-03",
   "section": "Emergency & poison control — STATEN ISLAND - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "website",
+      "from": null,
+      "to": "https://www.gsvs.org/staten-island-ny/",
+      "evidence_url": "https://www.gsvs.org/staten-island-ny/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-03: the page names Greater Staten Island Veterinary Services, 3135 Victory Boulevard, Staten Island 10314, 917-830-1380, open 24/7 365 days a year, no appointment needed for emergencies. Same number as stored. Prompted by the Mayor's Alliance emergency vet list."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -42,6 +42,13 @@ export const AGENT = {
    */
   maxChangeShare: 0.15,
 
+  /**
+   * A site that turns automated checks away can only be confirmed by a
+   * person. After this many days without one, it is flagged for a person
+   * again, so "we cannot check it" never quietly becomes "nobody checks it".
+   */
+  manualRecheckDays: 90,
+
   /** Paths worth checking beyond the recorded ones. */
   contactPaths: ['/contact', '/contact-us', '/about', '/help'],
 } as const;

@@ -36,6 +36,11 @@
       "url": "https://instagram.com/barbeystreetcats"
     }
   ],
+  "geo": {
+    "lat": 40.6702,
+    "lon": -73.8938,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Hyper-local East New York colony/TNR group. Instagram-primary; confirm via IG. Intake: Via Instagram DM",

@@ -147,11 +147,18 @@ async function main(): Promise<void> {
     verified: 0,
     needsReview: 0,
     unreachable: 0,
+    blocked: 0,
     skipped: 0,
     proposed: 0,
     flags: [],
+    manualOnly: [],
+    addressesNotSeen: [],
     safetyValveTripped: false,
   };
+
+  const siteCount = new Map<string, number>();
+  for (const o of loadOrgs()) if (o.website) siteCount.set(o.website, (siteCount.get(o.website) ?? 0) + 1);
+  const sharedSites = new Set([...siteCount].filter(([, n]) => n > 1).map(([site]) => site));
 
   const patches = new Map<string, OverlayEntry>();
 
@@ -165,6 +172,12 @@ async function main(): Promise<void> {
       case 'ok':
         summary.ok++;
         if (decision.verified) summary.verified++;
+        // A website several listings share is a chain's home page, which
+        // names no one branch: all four BluePearl hospitals were reported
+        // as "address not seen" against bluepearlvet.com.
+        if (decision.addressNotSeen && !sharedSites.has(org.website ?? '')) {
+          summary.addressesNotSeen.push({ id: org.id, name: org.name, street: decision.addressNotSeen, website: org.website });
+        }
         break;
       case 'needs-review':
         summary.needsReview++;
@@ -172,6 +185,11 @@ async function main(): Promise<void> {
       case 'unreachable':
         summary.unreachable++;
         if (decision.flagged) summary.needsReview++;
+        break;
+      case 'blocked':
+        summary.blocked++;
+        if (decision.stale) summary.needsReview++;
+        summary.manualOnly.push({ id: org.id, name: org.name, website: org.website, lastConfirmed: decision.lastConfirmed });
         break;
       case 'skipped':
         summary.skipped++;
@@ -202,13 +220,16 @@ async function main(): Promise<void> {
     summary.proposed = 0;
   }
 
+  // Never-confirmed first, then oldest: the top of the list is the to-do.
+  summary.manualOnly.sort((a, b) => (a.lastConfirmed ?? '').localeCompare(b.lastConfirmed ?? '') || a.name.localeCompare(b.name));
+
   mkdirSync('build/reports', { recursive: true });
   writeFileSync(REPORT_PATH, writeReport(summary), 'utf8');
   // Written here rather than assembled in the workflow: the summary is already
   // in hand, and a commit message built out of shell quoting is a bug waiting
   // to happen.
   writeFileSync(COMMIT_MESSAGE_PATH, `${commitMessage(summary)}\n`, 'utf8');
-  const { flags: _flags, ...counts } = summary;
+  const { flags: _flags, manualOnly: _manualOnly, addressesNotSeen: _addresses, ...counts } = summary;
   writeFileSync(SUMMARY_PATH, `${JSON.stringify(counts, null, 2)}\n`, 'utf8');
 
   if (!dryRun) {
@@ -229,7 +250,7 @@ async function main(): Promise<void> {
 
   console.log(
     `\n${summary.ok} unchanged (${summary.verified} re-verified), ` +
-      `${summary.needsReview} flagged, ${summary.unreachable} unreachable, ${summary.skipped} not checkable`,
+      `${summary.needsReview} flagged, ${summary.unreachable} unreachable, ${summary.blocked} for a person to check, ${summary.skipped} not checkable`,
   );
   console.log(`Report: ${REPORT_PATH}`);
 

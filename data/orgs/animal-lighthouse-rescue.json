@@ -46,6 +46,11 @@
       "url": "https://facebook.com/AnimalLighthouseRescue"
     }
   ],
+  "geo": {
+    "lat": 40.7418,
+    "lon": -74.0005,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) rescuing 'satos' (Puerto Rican street dogs) via its no-kill shelter El Faro de los Animales in PR + a NYC volunteer/foster network. Dogs flown to NYC for adoption. Small-to-medium mixed-breed island dogs. PO Box 30349, New York 10011. Confirm transport timing; dogs meet adopters after arrival. Similar model to The Sato Project. Phone: (no public phone; email preferred) Intake: Adopt/foster via site & Petfinder",

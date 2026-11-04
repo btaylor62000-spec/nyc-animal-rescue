@@ -38,6 +38,11 @@
       "handle": "Staten Island Bird Club"
     }
   ],
+  "geo": {
+    "lat": 40.6007,
+    "lon": -74.1643,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "A Staten Island companion-bird club focused on proper care, handling and rearing of pet birds - one of the few IN-NYC-borough bird resources. Not a formal shelter, but a real local community for care advice, member rehoming and lost-and-found. Confirm current meeting schedule/venue via Facebook before attending. Phone: (via club / All Saints Episcopal Church venue) Email: (via club contacts / FB) Intake: Attend a meeting (historically 3rd Thursday, All Saints Episcopal Church, Woolley Ave, Staten Island) or reach via Facebook Intake: club offers care guidance and member-to-member rehoming/lost-found",

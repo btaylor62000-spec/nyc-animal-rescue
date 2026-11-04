@@ -50,6 +50,11 @@
       "url": "https://facebook.com/heartsandbonesrescue"
     }
   ],
+  "geo": {
+    "lat": 40.7506,
+    "lon": -73.9973,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) foster-based dog rescue operating in NYC + Dallas; partners with shelters in high-intake areas and transports dogs to NYC-area foster homes. Emphasizes responsible, well-matched placements + ongoing adopter support. Foster-based, no walk-in shelter. Online application then virtual meet-and-greet. Mailing New York, NY. Phone: (no public phone; email preferred) Intake: online app + virtual meet",

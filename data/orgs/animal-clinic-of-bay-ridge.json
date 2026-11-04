@@ -33,6 +33,11 @@
   "website": "https://animalclinicofbayridgebrooklyn.net",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.61907,
+    "lon": -74.0221,
+    "precision": "address"
+  },
   "address": {
     "street": "689 86th St",
     "zip": "11228"

@@ -5,8 +5,8 @@ import { readFileSync } from 'node:fs';
 import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
 import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
-import { parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { UNREACHABLE_NOTE, decide, isCheckable, isPlaceholderPhone, leavesTheCity, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
+import { fetchPage, parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
+import { UNREACHABLE_NOTE, addressOnPage, decide, isCheckable, isPlaceholderPhone, leavesTheCity, pageProblem, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -262,6 +262,24 @@ test('a check never produces a deletion', () => {
   }
 });
 
+test('no blocked, dead or down site can touch a contact', () => {
+  const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const failures = [
+    { status: 403 },
+    { status: 429 },
+    { status: 200, ok: true, text: 'Just a moment... Checking your browser' },
+    { error: 'fetch failed (ENOTFOUND)' },
+    { error: 'fetch failed (UND_ERR_CONNECT_TIMEOUT)' },
+  ];
+  for (const f of failures) {
+    const page = { url: 'https://example.org', finalUrl: 'https://example.org', status: 0, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], ...f };
+    const { patch } = toPatch(record, decide(record, { orgId: record.id, date: DATE, pages: [page] }), DATE);
+    for (const field of ['phones', 'emails', 'website', 'intake_urls', 'id']) {
+      assert.ok(!(field in patch), `${JSON.stringify(f)} touched ${field}`);
+    }
+  }
+});
+
 test('a contact we simply could not read is not reported as a change', () => {
   // Their number is in an image or loaded by script: we see no numbers at all.
   const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
@@ -418,6 +436,10 @@ test('bookkeeping patches carry no change log, reader-visible ones always do', (
     { kind: 'ok', verified: true },
     { kind: 'needs-review', reason: 'two candidates' },
     { kind: 'unreachable', failures: 1, flagged: false },
+    // A dead domain is flagged at once, but only for a person: no reader-visible change.
+    { kind: 'unreachable', failures: 1, flagged: true, gone: true },
+    { kind: 'blocked', lastConfirmed: null, stale: true },
+    { kind: 'blocked', lastConfirmed: '2026-09-01', stale: false },
   ] as const;
   for (const decision of quiet) {
     assert.equal(toPatch(record, decision as never, DATE).log.length, 0, decision.kind);
@@ -430,4 +452,121 @@ test('bookkeeping patches carry no change log, reader-visible ones always do', (
   }
   const recovering = org({ status: 'verify', status_note: UNREACHABLE_NOTE });
   assert.ok(toPatch(recovering, { kind: 'ok', verified: true }, DATE).log.length > 0, 'lifting the caveat');
+});
+
+// --- blocked, gone and down are three different things ------------------------
+
+function failedPage(over: Partial<import('../scripts/agent/rules.ts').PageEvidence>) {
+  return {
+    url: 'https://example.org', finalUrl: 'https://example.org', status: 0, ok: false, offDomain: false,
+    ownDomain: true, text: '', phones: [], emails: [], closure: [], ...over,
+  };
+}
+
+test('a domain that no longer exists is flagged the first week, without changing what readers see', () => {
+  const record = org({ consecutive_failures: 0 });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    failedPage({ error: 'fetch failed (ENOTFOUND)' }),
+  ] });
+  assert.deepEqual(decision, { kind: 'unreachable', failures: 1, flagged: true, gone: true });
+
+  const { patch, log, flag } = toPatch(record, decision, DATE);
+  assert.match(flag ?? '', /domain no longer exists/);
+  assert.equal(patch.status, undefined, 'the status still waits the usual three weeks');
+  assert.equal(patch.confidence, undefined);
+  assert.equal(log.length, 0, 'nothing a reader sees has changed');
+});
+
+test('a dead domain still changes the status only after three weeks', () => {
+  const record = org({ consecutive_failures: 2 });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [failedPage({ error: 'fetch failed (ENOTFOUND)' })] });
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.status, 'verify');
+});
+
+test('a site that refuses robots is not counted as failing, and never marks a live group doubtful', () => {
+  // Two weeks of "failure" already: a third would have tipped it into
+  // "may no longer be active" under the old rule.
+  const record = org({ consecutive_failures: 2, last_verified: '2026-09-01' });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [failedPage({ status: 403 })] });
+  assert.equal(decision.kind, 'blocked');
+
+  const { patch, log } = toPatch(record, decision, DATE);
+  assert.equal(patch.check_status, 'manual-only');
+  assert.equal(patch.consecutive_failures, 0);
+  assert.equal(patch.status, undefined);
+  assert.equal(patch.confidence, undefined);
+  assert.equal(log.length, 0);
+});
+
+test('a bot-check page that answers 200 is recognised as blocked, not as an empty site', () => {
+  const page = failedPage({
+    status: 200, ok: true,
+    text: 'Performing security verification. This website uses a security service to protect against malicious bots.',
+  });
+  assert.equal(pageProblem(page), 'blocked');
+  // Lost Dog and Lost Cat word theirs differently.
+  assert.equal(pageProblem(failedPage({ status: 200, ok: true, text: 'Loading... If you are human and the page does not display, please contact us at hello@lost-dog.org.' })), 'blocked');
+  const record = org();
+  assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
+});
+
+test('a blocked site comes back to a person when nobody has confirmed it for ninety days', () => {
+  const page = failedPage({ status: 403 });
+  const recent = org({ last_verified: '2026-08-01' });
+  const old = org({ last_verified: '2026-05-01' });
+  const never = org({ last_verified: null });
+  const flagOf = (r: Org) => toPatch(r, decide(r, { orgId: r.id, date: DATE, pages: [page] }), DATE).flag;
+  assert.equal(flagOf(recent), undefined);
+  assert.match(flagOf(old) ?? '', /since 2026-05-01/);
+  assert.match(flagOf(never) ?? '', /no person has confirmed it yet/);
+});
+
+test('a timeout is still just a bad week', () => {
+  const page = failedPage({ error: 'fetch failed (UND_ERR_CONNECT_TIMEOUT)' });
+  assert.equal(pageProblem(page), 'down');
+  const record = org();
+  assert.deepEqual(decide(record, { orgId: record.id, date: DATE, pages: [page] }), { kind: 'unreachable', failures: 1, flagged: false });
+});
+
+test('one readable page outweighs a blocked one', () => {
+  const record = org();
+  const evidence = evidenceFromHtml(record, fixture('unchanged.html'), DATE);
+  evidence.pages.push(failedPage({ url: 'https://bushwickstreetcats.org/contact', status: 403 }));
+  assert.notEqual(decide(record, evidence).kind, 'blocked');
+});
+
+test('the network reason survives the fetch, so a dead domain can be told from a slow one', async () => {
+  const dead = async () => {
+    throw Object.assign(new TypeError('fetch failed'), { cause: { code: 'ENOTFOUND' } });
+  };
+  const page = await fetchPage('https://no-such-rescue.example/', dead as unknown as typeof fetch);
+  assert.match(page.error ?? '', /ENOTFOUND/);
+});
+
+// --- addresses ----------------------------------------------------------------
+
+test('a stored address is recognised however the site writes it', () => {
+  assert.equal(addressOnPage('196 4th Ave', '196 4th Ave, Brooklyn, NY 11217'), true);
+  assert.equal(addressOnPage('196 4th Ave', 'Visit us at 196 Fourth Avenue in Park Slope'), true);
+  assert.equal(addressOnPage('3800 E Tremont Ave', '3800 East Tremont Avenue, Bronx'), true);
+  assert.equal(addressOnPage('32-33 Junction Blvd', '32-33 Junction Boulevard, East Elmhurst'), true);
+});
+
+test('a moved address is noticed, and a lookalike number is not mistaken for it', () => {
+  // VERG's site after it left Warren St.
+  assert.equal(addressOnPage('318 Warren St', 'Call Us at (718) 522-9400. 196 4th Ave, Brooklyn, NY 11217'), false);
+  assert.equal(addressOnPage('96 4th Ave', '196 4th Ave, Brooklyn'), false);
+  assert.equal(addressOnPage('PO Box 27192', 'anything'), null, 'not a street address');
+});
+
+test('an address missing from the page is a note for a person, never a change or a flag', () => {
+  const record = org({ address: { street: '318 Warren St', zip: '11201' }, emails: [{ value: 'bushwickstreetcats@gmail.com' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('unchanged.html'), DATE));
+  assert.equal(decision.kind, 'ok');
+  assert.equal((decision as { addressNotSeen?: string }).addressNotSeen, '318 Warren St');
+  const { patch, log, flag } = toPatch(record, decision, DATE);
+  assert.equal(flag, undefined);
+  assert.equal(log.length, 0);
+  assert.ok(!('address' in patch) && !('status' in patch));
 });

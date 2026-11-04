@@ -34,6 +34,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7354,
+    "lon": -73.87616,
+    "precision": "address"
+  },
   "address": {
     "street": "87-06 Queens Blvd",
     "zip": "11373"

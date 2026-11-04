@@ -1,0 +1,55 @@
+{
+  "id": "kent-animal-shelter-spay-neuter-clinic",
+  "name": "Kent Animal Shelter Spay/Neuter Clinic",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Suffolk County, Long Island - outside NYC",
+  "zips": [],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "6317275731",
+      "display": "(631) 727-5731"
+    }
+  ],
+  "emails": [],
+  "website": "https://kentanimalshelter.com/clinic/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Spay and neuter for the public at one of the lowest prices on Long Island, by its own description, plus low-cost vaccinations. Use extension 2 for the clinic. Phone: ext. 2",
+  "type_raw": "Shelter clinic offering low-cost spay/neuter and vaccines to the public",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://kentanimalshelter.com/clinic/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

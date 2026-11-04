@@ -35,6 +35,11 @@
   "website": "https://safhnyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.72618,
+    "lon": -73.98026,
+    "precision": "address"
+  },
   "address": {
     "street": "602 East 9th St.",
     "zip": "10009",

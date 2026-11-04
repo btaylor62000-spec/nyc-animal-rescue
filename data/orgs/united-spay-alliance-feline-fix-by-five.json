@@ -1,0 +1,67 @@
+{
+  "id": "united-spay-alliance-feline-fix-by-five",
+  "name": "United Spay Alliance - Feline Fix by Five",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "spay-neuter"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national organization)",
+  "zips": [],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [
+    {
+      "value": "8555647875",
+      "display": "(855) 564-7875"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.unitedspayalliance.org/feline-fix-by-five/contact/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "United Spay Alliance's Feline Fix by Five programme, for getting kittens spayed or neutered by five months, before they can have litters of their own. Listed by the Mayor's Alliance among the spay/neuter finders. A reviewer confirmed this on the organization's own site on 2026-11-03. The site shows automated checks a bot test, so the weekly check cannot read it and a person re-confirms it instead.",
+  "type_raw": "Spay/neuter programme encouraging cats to be spayed or neutered by five months old",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.unitedspayalliance.org/feline-fix-by-five/contact/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": "2026-11-03",
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-03",
+      "evidence_url": "https://www.unitedspayalliance.org/feline-fix-by-five/contact/",
+      "source": "manual",
+      "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

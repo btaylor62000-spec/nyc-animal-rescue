@@ -34,6 +34,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.61576,
+    "lon": -74.10292,
+    "precision": "address"
+  },
   "address": {
     "street": "1293 Clove Rd",
     "zip": "10301"

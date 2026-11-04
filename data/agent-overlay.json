@@ -5,12 +5,28 @@
     "24petwatch": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
-    },
-    "24petwatch-north-americas-largest-registry-free-regi": {
-      "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": "https://www.petplace.com/pet-microchip-registry",
+      "phones": [
+        {
+          "value": "8337387523",
+          "display": "1-833-738-7523",
+          "label": "Help line"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "1-833-738-7523",
+          "evidence_url": "https://www.petplace.com/pet-microchip-registry",
+          "source": "manual",
+          "note": "24Petwatch's registry now runs on PetPlace. Its registry page, read in a browser, gives \"Need Help? Call 1-833-738-7523\". Supplied by a reviewer. Added where there was none; website moved from 24pet.com to the PetPlace page."
+        }
+      ]
     },
     "800-kitties-rescue": {
       "last_checked": "2026-09-22",
@@ -40,7 +56,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.\n\nDeferred intake: if you cannot keep a pet but do not want to bring it to a shelter, ACC can look for a placement while the animal stays at home with you, and can work with partner groups to help you keep it. Call 212-788-4000 and explain your situation.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.nycacc.org/services/surrender/",
+          "source": "manual",
+          "note": "From ACC's own surrender page, read in a browser: \"Our deferred intake program allows ACC to seek placement for your animal while they remain in the comfort of your home.\""
+        }
+      ]
     },
     "acc-community-pets-program": {
       "last_checked": "2026-09-22",
@@ -245,10 +273,37 @@
           "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
           "source": "manual",
           "note": "Website added from the reviewer’s 2026-09-21 document and confirmed on the page, which also confirms the address and number. The page describes dog and cat care only, so the wildlife claim she asked us to check is not applied."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(212) 501-9600",
+          "to": "(212) 501-9600; (332) 248-0876",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
+          "source": "manual",
+          "note": "Its own page, read in a browser, shows \"Call (212) 501-9600\" and also \"Phone: (332) 248-0876\" (fax (212) 501-9349, not listed). Both numbers kept; the existing one was not replaced. Facebook page from the same site."
         }
       ],
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "2125019600",
+          "display": "(212) 501-9600"
+        },
+        {
+          "value": "3322480876",
+          "display": "(332) 248-0876"
+        }
+      ],
+      "social": [
+        {
+          "platform": "facebook",
+          "handle": "animalgeneral",
+          "url": "https://www.facebook.com/animalgeneral/"
+        }
+      ],
+      "confidence": "High"
     },
     "animal-haven": {
       "last_checked": "2026-09-22",
@@ -304,8 +359,18 @@
           "evidence_url": "https://www.amcny.org/visit-amc/contact-us/",
           "source": "manual",
           "note": "Primary line (212) 838-8100 and the 510 East 62nd Street address confirmed on AMC’s own contact page. The secondary number already on the record was not listed there, so it is kept but not independently confirmed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.amcny.org/financial-assistance/",
+          "source": "manual",
+          "note": "Funds and the 5-business-day deadline from its own financial assistance page."
         }
-      ]
+      ],
+      "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appts (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nHoney Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nKiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.\n\nCharlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).\n\nHelp paying, from its financial assistance page (read 2026-11-04): Charlie's Patient Assistance Fund; the Buddy Fund for cancer treatment; SAVE for people aged 65 and over; and others for particular animals. The pet is treated at AMC, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting. Email funds@amcny.org."
     },
     "animal-relief-fund": {
       "last_checked": "2026-09-22",
@@ -321,7 +386,7 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22",
+      "last_verified": "2026-11-04",
       "phones": [
         {
           "value": "5854964660",
@@ -337,6 +402,27 @@
           "evidence_url": "https://www.anjelliclecats.com/",
           "source": "weekly-check",
           "note": "The previous value was no longer on their site and exactly one replacement was found there."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@anjelliclecats.com",
+          "evidence_url": "https://www.anjelliclecats.com/",
+          "source": "manual",
+          "note": "Shown on its own home page, read in a browser, with \"Tel: (585) 496-4660\", the number already listed (a Rochester area code, but it is the one the rescue publishes)."
+        }
+      ],
+      "emails": [
+        {
+          "value": "foster@anjelliclecats.com"
+        },
+        {
+          "value": "adopt@anjelliclecats.com"
+        },
+        {
+          "value": "info@anjelliclecats.com",
+          "label": "General"
         }
       ]
     },
@@ -379,7 +465,19 @@
     "aspca-community-veterinary-clinics": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": "https://clinic.aspca.org/locations/new-york-city",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "website",
+          "from": "https://S.Bronx",
+          "to": "https://clinic.aspca.org/locations/new-york-city",
+          "evidence_url": "https://clinic.aspca.org/locations/new-york-city",
+          "source": "manual",
+          "note": "The importer had read the abbreviation \"S.Bronx\" in the source as a web address and published it as a link. That parsing is fixed; this is the ASPCA page listing the South Bronx, East New York and Long Island City clinics, read on 2026-11-03."
+        }
+      ]
     },
     "aspca-spay-neuter-nyc": {
       "last_checked": "2026-09-22",
@@ -433,7 +531,25 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "emails": [
+        {
+          "value": "Clinic@bbawc.org"
+        }
+      ],
+      "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.\n\nBook online only; reception is very limited. Spay/neuter appointments are open to owned and homeless cats; the rescue clinic's exams are for homeless cats. Appointments are paid in advance, refundable with 24 hours' notice.",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://bbawc.org/clinic/",
+          "source": "manual",
+          "note": "Email and booking terms from its own clinic page, read in a browser: \"Contact: Clinic@bbawc.org | (917) 426-3335\"."
+        }
+      ]
     },
     "bed-stuy-kitty-crew": {
       "last_checked": "2026-09-22",
@@ -466,7 +582,7 @@
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
-      "website": "https://bluepearlvet.com",
+      "website": "https://bluepearlvet.com/hospital/brooklyn-ny/",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -476,6 +592,15 @@
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
           "note": "(718) 596-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://bluepearlvet.com",
+          "to": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
+          "source": "manual",
+          "note": "Pointed at this hospital's own page rather than BluePearl's home page, which names no hospital, so the weekly check can confirm the address and number each week. The page, read in a browser on 2026-11-04, shows the same address and phone as this entry and '24/7 Emergency and Specialty'; a reviewer confirmed the same on BluePearl's hospital finder."
         }
       ]
     },
@@ -485,7 +610,7 @@
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
-      "website": "https://bluepearlvet.com",
+      "website": "https://bluepearlvet.com/hospital/downtown-nyc/",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -495,6 +620,15 @@
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
           "note": "(212) 924-3311 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://bluepearlvet.com",
+          "to": "https://bluepearlvet.com/hospital/downtown-nyc/",
+          "evidence_url": "https://bluepearlvet.com/hospital/downtown-nyc/",
+          "source": "manual",
+          "note": "Pointed at this hospital's own page rather than BluePearl's home page, which names no hospital, so the weekly check can confirm the address and number each week. The page, read in a browser on 2026-11-04, shows the same address and phone as this entry and '24/7 Emergency and Specialty'; a reviewer confirmed the same on BluePearl's hospital finder."
         }
       ]
     },
@@ -504,7 +638,7 @@
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
-      "website": "https://bluepearlvet.com",
+      "website": "https://bluepearlvet.com/hospital/midtown-nyc/",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -514,6 +648,15 @@
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
           "note": "(212) 767-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://bluepearlvet.com",
+          "to": "https://bluepearlvet.com/hospital/midtown-nyc/",
+          "evidence_url": "https://bluepearlvet.com/hospital/midtown-nyc/",
+          "source": "manual",
+          "note": "Pointed at this hospital's own page rather than BluePearl's home page, which names no hospital, so the weekly check can confirm the address and number each week. The page, read in a browser on 2026-11-04, shows the same address and phone as this entry and '24/7 Emergency and Specialty'; a reviewer confirmed the same on BluePearl's hospital finder."
         }
       ]
     },
@@ -523,7 +666,7 @@
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
-      "website": "https://bluepearlvet.com",
+      "website": "https://bluepearlvet.com/hospital/queens-ny/",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -533,6 +676,15 @@
           "evidence_url": "https://bluepearlvet.com/hospital/brooklyn-ny/",
           "source": "manual",
           "note": "(718) 263-0099 confirmed on BluePearl’s own hospital page, which lists every New York City location together."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://bluepearlvet.com",
+          "to": "https://bluepearlvet.com/hospital/queens-ny/",
+          "evidence_url": "https://bluepearlvet.com/hospital/queens-ny/",
+          "source": "manual",
+          "note": "Pointed at this hospital's own page rather than BluePearl's home page, which names no hospital, so the weekly check can confirm the address and number each week. The page, read in a browser on 2026-11-04, shows the same address and phone as this entry and '24/7 Emergency and Specialty'; a reviewer confirmed the same on BluePearl's hospital finder."
         }
       ]
     },
@@ -559,7 +711,27 @@
     "brooklyn-animal-action": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "needs": [
+        "adoption",
+        "foster",
+        "tnr",
+        "education",
+        "referral",
+        "advocacy"
+      ],
+      "notes": "All-volunteer 501(c)(3), founded 2010. TNR + adoption + rescuer support/education. No shelter; foster-based. Provides tools/advice so residents can help animals themselves. adopt@ confirmed on own adoptable-pets page. Re-verified 2026-08-26.\n\nAll-volunteer 501(c)(3) since 2010, ACC New Hope partner. Primarily a cat and TNR organization that has also rehomed some dogs and can pull dogs as a New Hope partner - included with that note. Foster-based, no shelter. For dogs, confirm current availability. Mailing 626 2nd Ave-area, Brooklyn 11215. Intake: Foster/adopt via site Intake: email preferred\n\nIt does not take in owned pets: its own site says it is not a shelter and points owners to rehoming a pet themselves. Good for adopting, fostering and TNR help.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "surrender",
+          "to": null,
+          "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
+          "source": "manual",
+          "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+        }
+      ]
     },
     "brooklyn-aquarium-society": {
       "last_checked": "2026-09-22",
@@ -569,7 +741,28 @@
     "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "brooklynbridgeanimals@yahoo.com"
+        },
+        {
+          "value": "help@bbawc.org",
+          "label": "Rehoming help"
+        }
+      ],
+      "notes": "501(c)(3) coalition of rescuers (EIN 26-1482964), founded 2007, 8,000+ cats rescued. Not a traditional shelter. Serves all Kings County for vetting/fostering; does NOT run TNR projects itself (refers to Neighborhood Cats/FCI) but runs the BBAWC Rescue Clinic (spay/neuter) inside the Brooklyn Cat Cafe. PO Box 22948, Brooklyn 11202. Re-verified 2026-08-26. Other channel: Brooklyn Cat Cafe: (347) 946-2286, 76 Montague St Other channel: catcafebk.com\n\nIf you must give up a cat: its rescue page says it can help rehome it, either while you foster it or through its foster network. It asks first for medical records, and the cat to be spayed or neutered, examined, vaccinated and tested. Email help@bbawc.org.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "help@bbawc.org",
+          "evidence_url": "https://bbawc.org/rescue/",
+          "source": "manual",
+          "note": "From its own rescue page, read in a browser: \"If it's absolutely necessary for you to surrender your pet, we can help you rehome them... please email us at help@bbawc.org.\""
+        }
+      ]
     },
     "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals": {
       "last_checked": "2026-09-22",
@@ -718,7 +911,31 @@
     "cypress-feline-rescue": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "cypressfelinerescue@yahoo.com"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://www.cypressfelinerescue.com/contact-us/",
+          "label": "Contact form"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "cypressfelinerescue@yahoo.com",
+          "evidence_url": "https://www.cypressfelinerescue.com/contact-us/",
+          "source": "manual",
+          "note": "Its own contact page, read in a browser, gives the address written out as \"cypress feline rescue at yahoo dot com\". Supplied by a reviewer. Added where there was none."
+        }
+      ]
     },
     "earthlings-nyc-turtle-team": {
       "last_checked": "2026-09-22",
@@ -862,7 +1079,21 @@
     },
     "greater-state-veterinary-specialists": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "website": "https://www.gsvs.org/staten-island-ny/",
+      "confidence": "High",
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "website",
+          "from": null,
+          "to": "https://www.gsvs.org/staten-island-ny/",
+          "evidence_url": "https://www.gsvs.org/staten-island-ny/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-03: the page names Greater Staten Island Veterinary Services, 3135 Victory Boulevard, Staten Island 10314, 917-830-1380, open 24/7 365 days a year, no appointment needed for emergencies. Same number as stored. Prompted by the Mayor's Alliance emergency vet list."
+        }
+      ]
     },
     "greenpoint-cats": {
       "last_checked": "2026-09-22",
@@ -925,7 +1156,32 @@
     "homeagain": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "8884663242",
+          "display": "1-888-466-3242",
+          "label": "1-888-HOMEAGAIN, lost pet line"
+        }
+      ],
+      "emails": [
+        {
+          "value": "customerservice@homeagain.com"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "1-888-466-3242",
+          "evidence_url": "https://www.merck-animal-health-usa.com/products/homeagain/",
+          "source": "manual",
+          "note": "1-888-HOMEAGAIN and customerservice@homeagain.com, read in a browser on the page of Merck Animal Health, which makes HomeAgain. Supplied by a reviewer. Added where there was none."
+        }
+      ]
     },
     "house-of-pancakes-reptile-rescue": {
       "last_checked": "2026-09-22",
@@ -951,7 +1207,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "hours": "8am-10pm every day, including holidays",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "8am-10pm every day, including holidays",
+          "evidence_url": "https://instavet.com/",
+          "source": "manual",
+          "note": "Read in a browser on its own site: \"We're open from 8 am - 10 pm, 365 days/year\". Walk-in urgent care, not overnight."
+        }
+      ]
     },
     "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": {
       "last_checked": "2026-09-22",
@@ -1050,7 +1318,34 @@
     "long-island-bird-and-exotics-vet-clinic": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "hours": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
+      "phones": [
+        {
+          "value": "5164821101",
+          "display": "(516) 482-1101"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
+          "evidence_url": "https://www.birdexoticsvet.com/",
+          "source": "manual",
+          "note": "Office hours as shown on its own site, read in a browser."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "(516) 482-1101",
+          "evidence_url": "https://www.birdexoticsvet.com/",
+          "source": "manual",
+          "note": "The record had no phone number. Its own site says \"To schedule an appointment, call (516) 482-1101\". Added where there was none; nothing replaced."
+        }
+      ]
     },
     "long-island-parrot-society": {
       "last_checked": "2026-09-22",
@@ -1394,7 +1689,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.nysave.org/pet-owners/",
+          "source": "manual",
+          "note": "Eligibility added from its own pet owners page, read in a browser. A reviewer also mentioned a yearly cap per household; its site does not state one, so none is given."
+        }
+      ]
     },
     "oak-street-cat-gang-death-row-cats-nyc": {
       "last_checked": "2026-09-22",
@@ -1597,7 +1904,31 @@
     "savekitty-foundation": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "adoptions@savekittyfoundation.org",
+          "label": "Adoptions"
+        },
+        {
+          "value": "tnr@savekittyfoundation.org",
+          "label": "Trap-neuter-return (TNR)"
+        },
+        {
+          "value": "petbereavement@savekitty.org",
+          "label": "Pet bereavement support"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "petbereavement@savekitty.org",
+          "to": "adoptions@savekittyfoundation.org; tnr@savekittyfoundation.org; petbereavement@savekitty.org",
+          "source": "manual",
+          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement."
+        }
+      ]
     },
     "scratchpay": {
       "last_checked": "2026-09-22",
@@ -1810,13 +2141,20 @@
         }
       ]
     },
-    "urgent-vets": {
-      "last_checked": "2026-09-22",
-      "check_status": "unchecked"
-    },
     "urgent-vets-11369": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "unchecked",
+      "hours": "Late hours, not 24/7 - call for hours",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Late hours, not 24/7 - call for hours",
+          "source": "manual",
+          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+        }
+      ]
     },
     "urgent-vets-bronx": {
       "last_checked": "2026-09-22",
@@ -1961,8 +2299,8 @@
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://verg-brooklyn.com",
-      "status": "verify",
-      "status_note": "VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
+      "status": "retired",
+      "status_note": "Moved. VERG now runs a single Brooklyn hospital, at 196 4th Ave, Brooklyn 11217 — same phone number, (718) 522-9400. It is listed as VERG (Veterinary Emergency & Referral Group).",
       "change_log": [
         {
           "date": "2026-09-18",
@@ -1972,6 +2310,15 @@
           "evidence_url": "https://verg-brooklyn.com/",
           "source": "manual",
           "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://verg-brooklyn.com/",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04: VERG's site lists only 196 4th Ave, Brooklyn 11217, (718) 522-9400. 318 Warren St has been absent since at least 2026-09-18. Same organization and phone as the 196 4th Ave entry, so this is the old address of that hospital, not a second one. Decided by a reviewer."
         }
       ],
       "last_verified": "2026-09-22"
@@ -2094,6 +2441,57 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0
+    },
+    "urban-wildlife-alliance": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://urbanwildlifenyc.org",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
+    },
+    "petco-love-lost": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://petcolove.org/lost/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
+    },
+    "united-spay-alliance-feline-fix-by-five": {
+      "last_checked": "2026-11-03",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-03",
+      "change_log": [
+        {
+          "date": "2026-11-03",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-03",
+          "evidence_url": "https://www.unitedspayalliance.org/feline-fix-by-five/contact/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on the organization's own site. The site shows automated browsers a bot check (seen 2026-11-03), so it is checked by a person rather than by the weekly check."
+        }
+      ]
     }
   }
 }

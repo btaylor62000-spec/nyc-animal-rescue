@@ -1,0 +1,62 @@
+{
+  "id": "helping-paw",
+  "name": "Helping PAW (East Meadow)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit"
+  ],
+  "needs": [
+    "colony-care",
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "East Meadow, Nassau County, Long Island - outside NYC",
+  "zips": [
+    "11554"
+  ],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@helping-paw.org"
+    }
+  ],
+  "website": "https://www.helping-paw.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7201,
+    "lon": -73.5589,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A 501(c)(3) clinic in East Meadow serving owned pets, community cats and groups. Spay and neuter for dogs, cats and rabbits, wellness and vaccines, with fees published on its site. No phone number is published; book online or email. Intake: Request an appointment on the website",
+  "type_raw": "Nonprofit low-cost vet clinic - spay/neuter, vaccines, wellness",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.helping-paw.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

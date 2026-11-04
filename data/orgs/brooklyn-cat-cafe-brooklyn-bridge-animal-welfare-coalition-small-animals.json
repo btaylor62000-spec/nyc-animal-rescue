@@ -52,6 +52,11 @@
       "url": "https://instagram.com/catcafebk"
     }
   ],
+  "geo": {
+    "lat": 40.6937,
+    "lon": -73.9899,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "The BBAWC cafe and its foster homes host a rotating variety of rescue small animals (rats ~$85 altered/microchipped, mice ~$25, chinchillas, guinea pigs). Staff will discuss small-animal care with prospective adopters. Primarily a cat rescue - small-animal availability rotates. Intake: Small-animal adoption info at Intake: email to inquire",

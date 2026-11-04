@@ -1,0 +1,64 @@
+{
+  "id": "friends-of-the-feathered-and-furry-wildlife-center",
+  "name": "Friends of the Feathered and Furry Wildlife Center",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "wildlife-rehabber"
+  ],
+  "animals": [
+    "wildlife"
+  ],
+  "needs": [
+    "wildlife-rehab",
+    "referral"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Hunter, Greene County, upstate New York - outside NYC",
+  "zips": [
+    "12442"
+  ],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [
+    {
+      "value": "5189896534",
+      "display": "(518) 989-6534"
+    }
+  ],
+  "emails": [],
+  "website": "https://fffwildlifecenter.weebly.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 42.23783,
+    "lon": -74.34572,
+    "precision": "address"
+  },
+  "address": {
+    "street": "10846 Route 23A",
+    "city": "Hunter",
+    "zip": "12442"
+  },
+  "hours": null,
+  "notes": "10846 Route 23A, Hunter, NY 12442. A 501(c)(3) headed by a multiple-license wildlife rehabilitator. Far from the city, but the Mayor's Alliance lists it because it gives advice and referrals by phone when it cannot help directly. Its website is now on Weebly; the old fffwildlifecenter.com address no longer works. Do not give a wild animal food or water while waiting.",
+  "type_raw": "Licensed wildlife rehabilitator, upstate - advice and referrals by phone",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://fffwildlifecenter.weebly.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

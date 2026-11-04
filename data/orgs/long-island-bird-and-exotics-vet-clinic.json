@@ -29,13 +29,19 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
-  "phones": [],
+  "phones": [
+    {
+      "value": "5164821101",
+      "display": "(516) 482-1101"
+    }
+  ],
   "emails": [],
   "website": "https://birdexoticsvet.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
-  "hours": null,
+  "hours": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
   "notes": "the only avian & exotic hospital in Nassau; serves all of NYC (Manhattan, Queens, Brooklyn, Bronx, Staten Island) plus Westchester/NJ/CT. Treats birds, reptiles, parrots, sugar gliders, rabbits, chinchillas and other small mammals; offers endoscopy, anesthesia, minimally invasive surgery, emergency services, MEDICAL BOARDING and grooming (birdexoticsvet.com). A strong exotics-only option for outer-borough/LI residents.",
   "type_raw": null,
   "confidence": "Medium",
@@ -50,7 +56,26 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": null,
+      "to": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
+      "evidence_url": "https://www.birdexoticsvet.com/",
+      "source": "manual",
+      "note": "Office hours as shown on its own site, read in a browser."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "(516) 482-1101",
+      "evidence_url": "https://www.birdexoticsvet.com/",
+      "source": "manual",
+      "note": "The record had no phone number. Its own site says \"To schedule an appointment, call (516) 482-1101\". Added where there was none; nothing replaced."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -1,0 +1,56 @@
+{
+  "id": "lost-cat",
+  "name": "Lost Cat (lost-cat.org)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "lost-found"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (online, national)",
+  "zips": [],
+  "region_note": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hello@lost-cat.org"
+    }
+  ],
+  "website": "https://www.lost-cat.org/en-us/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Post a lost or found report, browse reports on a map and sign up for alerts near you. Listed on the Mayor's Alliance lost and found page; supplied by a reviewer on 2026-11-03. The home page shows automated browsers a loading screen, but its contact page can be read and shows hello@lost-cat.org. Intake: //www.lost-cat.org/en-us/contact",
+  "type_raw": "Online lost and found reports with a map and alerts",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.lost-cat.org/en-us/contact"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "FOUND BY A REVIEWER - organizations from the Mayor's Alliance lists whose sites turn automated checks away, or had moved; supplied and confirmed by a reviewer 2026-11-03",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

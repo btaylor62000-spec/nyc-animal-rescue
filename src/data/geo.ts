@@ -67,10 +67,16 @@ const ZIP_RANGES: Array<{ tag: BoroughId; from: number; to: number }> = [
   { tag: 'manhattan', from: 10001, to: 10282 },
   { tag: 'staten-island', from: 10301, to: 10314 },
   { tag: 'bronx', from: 10451, to: 10475 },
-  { tag: 'queens', from: 11001, to: 11005 },
+  // 11001 and 11003 are Floral Park and Elmont in Nassau; 11004 and 11005
+  // are Glen Oaks and Floral Park on the Queens side of the line.
+  { tag: 'queens', from: 11004, to: 11005 },
   { tag: 'brooklyn', from: 11201, to: 11256 },
   { tag: 'queens', from: 11101, to: 11120 },
-  { tag: 'queens', from: 11351, to: 11697 },
+  // Two ranges, not one: 11501-11599 in between is Nassau County (Mineola,
+  // Garden City, Westbury...). As one range it filed a Westbury hospital
+  // under Queens, and a Nassau zip typed into the search came back as Queens.
+  { tag: 'queens', from: 11351, to: 11436 },
+  { tag: 'queens', from: 11691, to: 11697 },
 ];
 
 export function zipToBorough(zip: string): BoroughId | null {

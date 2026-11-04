@@ -14,10 +14,68 @@ export interface Override {
   reason: string;
   addAnimals?: Animal[];
   addNeeds?: Need[];
-  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note'>>;
+  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka'>>;
 }
 
 export const OVERRIDES: Override[] = [
+  {
+    id: 'anjellicle-cats-rescue',
+    reason: 'Its own site lists "sweet seniors" among the cats it is placing; the research row does not say so.',
+    addNeeds: ['senior'],
+  },
+  {
+    id: 'brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe',
+    reason: 'Its own rescue page offers to help rehome an owned cat, through its foster network, when surrender is truly necessary.',
+    addNeeds: ['surrender'],
+  },
+  {
+    id: '24petwatch',
+    reason: 'The registry now runs under PetPlace; one name for what the two workbooks wrote two ways.',
+    set: { name: '24Petwatch microchip registry (PetPlace)', aka: ['24PetWatch', '24Petwatch', 'PetPlace microchip registry'] },
+  },
+  {
+    id: 'homeagain',
+    reason: 'A microchip registry for cats as well as dogs; it appears only in the dog workbook.',
+    addAnimals: ['cat'],
+  },
+  {
+    // A reviewer searched for the full name and found nothing: the research
+    // only ever wrote the initials.
+    id: 'narn-central-brooklyn',
+    reason: 'NARN stands for Neighborhood Animal Rescue Network; the source never spells it out.',
+    set: { aka: ['Neighborhood Animal Rescue Network', 'Neighborhood Animal Rescue Network - Central Brooklyn', 'NARN'] },
+  },
+  {
+    // Found by discovery with a name and a link and nothing it does, so no
+    // filter could ever show it.
+    id: 'cypress-feline-rescue',
+    reason: 'Its own site describes a cat adoption rescue (visits by appointment for approved applicants); the discovery record carried no animals or needs.',
+    addAnimals: ['cat'],
+    addNeeds: ['adoption'],
+  },
+  {
+    // Two clinics of one name: without the borough in it, two identical
+    // names sat side by side in the emergency vet list.
+    id: 'urgent-vets-bronx',
+    reason: 'Urgent Vets has a Bronx and a Queens clinic; the name says which is which.',
+    set: { name: 'Urgent Vets (Bronx)', aka: ['Urgent Vets', 'Urgent Vets - Bronx'] },
+  },
+  {
+    id: 'urgent-vets-11369',
+    reason: 'Urgent Vets has a Bronx and a Queens clinic; the name says which is which.',
+    set: { name: 'Urgent Vets (Queens)', aka: ['Urgent Vets'] },
+  },
+  {
+    // The id keeps the old spelling so the page's address does not change;
+    // the old name stays as an alias so a search for it still lands here.
+    id: 'greater-state-veterinary-specialists',
+    reason:
+      "Both reference workbooks call Staten Island's 24-hour hospital \"Greater State Veterinary Specialists\". Its own site (gsvs.org/staten-island-ny, read 2026-11-03) and the Mayor's Alliance list call it Greater Staten Island Veterinary Services. It belongs to the GSVS group, whose other hospitals are Garden State Veterinary Specialists, which is probably where the mix-up came from.",
+    set: {
+      name: 'Greater Staten Island Veterinary Services',
+      aka: ['GSiVS', 'Greater State Veterinary Specialists (GSiVS)'],
+    },
+  },
   {
     id: 'animal-care-centers-of-nyc',
     reason:
@@ -83,6 +141,13 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   // The hospital and its assistance funds are one organization; the guide tabs
   // name it three different ways and the merge key strips "Center".
   { pattern: /^AMC\b/i, canonicalName: 'Animal Medical Center (AMC / Schwarzman)' },
+  // One Bronx clinic, written two ways by the two workbooks. The Queens branch
+  // shares the plain name, which stopped the usual prefix match, so the Bronx
+  // clinic was listed twice among the emergency vets. The location check
+  // still keeps the Queens branch apart.
+  { pattern: /^Urgent Vets - Bronx$/i, canonicalName: 'Urgent Vets' },
+  // One registry, written two ways by the two workbooks, so it was listed twice.
+  { pattern: /^24Pet ?watch\b/i, canonicalName: '24Petwatch microchip registry (PetPlace)' },
 ];
 
 /**

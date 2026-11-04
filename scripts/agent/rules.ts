@@ -52,12 +52,28 @@ export interface Evidence {
  * conclusion.
  */
 export type Decision =
-  /** Nothing to do. `verified` means the stored contacts were seen on their own site. */
-  | { kind: 'ok'; verified: boolean }
+  /**
+   * Nothing to do. `verified` means the stored contacts were seen on their own
+   * site. `addressNotSeen` is a note for a person, not a flag: plenty of sites
+   * show their address only on a map, so it must never count towards the
+   * safety valve or change anything.
+   */
+  | { kind: 'ok'; verified: boolean; addressNotSeen?: string }
   /** Something a person should look at. Never applied automatically. */
   | { kind: 'needs-review'; reason: string; evidenceUrl?: string; quote?: string }
-  /** The site could not be reached. */
-  | { kind: 'unreachable'; failures: number; flagged: boolean }
+  /**
+   * The site could not be reached. `gone` means the domain itself no longer
+   * exists, which is flagged the same week; a status change still waits for
+   * the usual three weeks, because flagging is cheap and a status is not.
+   */
+  | { kind: 'unreachable'; failures: number; flagged: boolean; gone?: boolean }
+  /**
+   * The site answers, but turns automated checks away. Not a failure: the
+   * organization is very likely fine, and counting it as one would mark a
+   * live rescue "needs confirming" after three weeks. A person confirms it
+   * instead, and `stale` says nobody has for too long.
+   */
+  | { kind: 'blocked'; lastConfirmed: string | null; stale: boolean }
   /** Not checkable by machine. */
   | { kind: 'skipped'; reason: string };
 
@@ -161,6 +177,72 @@ function downgrade(confidence: Confidence): Confidence {
   return confidence === 'High' ? 'Medium' : 'Low';
 }
 
+// --- why a page could not be read --------------------------------------------
+
+/*
+ * Three different things used to look identical here, and each needs a
+ * different answer:
+ *
+ *   gone     the domain no longer exists. Near-certain the organization has
+ *            moved or closed; a person should look this week.
+ *   blocked  the site is up but refuses robots: a bot check, "access
+ *            denied", too many requests. Says nothing about the organization.
+ *   down     a timeout or server error. Could be a bad afternoon, so it gets
+ *            the three-week grace it always had.
+ *
+ * Urban Wildlife Alliance, Petco Love Lost and United Spay Alliance were the
+ * cases that showed it: all three are live and all three show automated
+ * browsers a bot check, which the old rule would have turned into "this
+ * organization may no longer be active".
+ */
+const DNS_GONE = /\b(ENOTFOUND|ERR_NAME_NOT_RESOLVED)\b/;
+const BOT_WALL =
+  /performing security verification|verif(y|ying) you are (a )?human|confirm you are (a )?human|are you a robot|checking your browser|just a moment\.\.\.|attention required|enable javascript and cookies to continue|this will only take a few seconds|if you are human and the page does not display|access denied/i;
+
+export type PageProblem = 'gone' | 'blocked' | 'down' | null;
+
+export function pageProblem(page: PageEvidence): PageProblem {
+  if (page.error && DNS_GONE.test(page.error)) return 'gone';
+  if ([401, 403, 429].includes(page.status)) return 'blocked';
+  // A challenge page usually arrives as an ordinary 200 with a few lines of
+  // text; read as a page, it was reported as "almost no readable text".
+  if (page.ok && page.text.length < 1500 && BOT_WALL.test(page.text)) return 'blocked';
+  if (!page.ok) return 'down';
+  return null;
+}
+
+// --- is the stored street address still on their site? ---------------------
+
+/*
+ * VERG North sat in the directory for seven weeks at 318 Warren St after
+ * VERG's own site had stopped listing it: the check confirmed the phone
+ * number, which the old and new addresses shared, and never looked at the
+ * address. For a place someone travels to, that is the detail that matters.
+ */
+const ORDINALS: Record<string, string> = {
+  '1st': 'first', '2nd': 'second', '3rd': 'third', '4th': 'fourth', '5th': 'fifth',
+  '6th': 'sixth', '7th': 'seventh', '8th': 'eighth', '9th': 'ninth', '10th': 'tenth',
+  '11th': 'eleventh', '12th': 'twelfth',
+};
+const DIRECTIONS = new Set(['e', 'w', 'n', 's', 'east', 'west', 'north', 'south']);
+
+/** True or false when the street can be looked for; null when it cannot. */
+export function addressOnPage(street: string, pageText: string): boolean | null {
+  const m = street.trim().match(/^([\d-]+[a-z]?)\s+(.+)$/i);
+  if (!m) return null;
+  const number = m[1]!;
+  const words = m[2]!.toLowerCase().replace(/[.,]/g, '').split(/\s+/).filter((w) => !DIRECTIONS.has(w));
+  const core = words[0];
+  if (!core) return null;
+  const alternatives = [core, ORDINALS[core]].filter(Boolean).map((w) => w!.replace(/[-]/g, '\\-'));
+  const near = new RegExp(`(^|[^\\d-])${number.replace(/-/g, '\\-')}\\b[^\\n]{0,40}?\\b(${alternatives.join('|')})\\b`, 'i');
+  return near.test(pageText);
+}
+
+function daysBetween(from: string, to: string): number {
+  return Math.floor((Date.parse(to) - Date.parse(from)) / 86_400_000);
+}
+
 /**
  * Decide what a week's evidence means for one organization.
  *
@@ -171,13 +253,27 @@ export function decide(org: Org, evidence: Evidence): Decision {
   const skip = isCheckable(org);
   if (!skip.checkable) return { kind: 'skipped', reason: skip.reason! };
 
-  const ownPages = evidence.pages.filter((p) => p.ownDomain && p.ok);
-  const reachable = evidence.pages.some((p) => p.ok);
+  const problems = evidence.pages.map(pageProblem);
+  const readable = evidence.pages.filter((_, i) => problems[i] === null);
+  const ownPages = readable.filter((p) => p.ownDomain);
 
-  // --- the site is not there -------------------------------------------
-  if (!reachable) {
+  if (readable.length === 0) {
+    // --- the site answers, but not to us -------------------------------
+    if (problems.includes('blocked')) {
+      const lastConfirmed = org.last_verified;
+      const stale = !lastConfirmed || daysBetween(lastConfirmed, evidence.date) > AGENT.manualRecheckDays;
+      return { kind: 'blocked', lastConfirmed, stale };
+    }
+
+    // --- the site is not there -----------------------------------------
     const failures = org.consecutive_failures + 1;
-    return { kind: 'unreachable', failures, flagged: failures >= AGENT.failuresBeforeReview };
+    const gone = problems.length > 0 && problems.every((p) => p === 'gone');
+    return {
+      kind: 'unreachable',
+      failures,
+      flagged: gone || failures >= AGENT.failuresBeforeReview,
+      ...(gone ? { gone: true } : {}),
+    };
   }
 
   // --- the organization says it has stopped -----------------------------
@@ -350,7 +446,9 @@ export function decide(org: Org, evidence: Evidence): Decision {
     return { kind: 'needs-review', reason: 'Their site returned a page with almost no readable text.', evidenceUrl };
   }
 
-  return { kind: 'ok', verified };
+  const street = org.address?.street;
+  const seen = street ? addressOnPage(street, pageText) : null;
+  return seen === false ? { kind: 'ok', verified, addressNotSeen: street! } : { kind: 'ok', verified };
 }
 
 // --- turning a decision into a record change -------------------------------
@@ -420,7 +518,10 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
         consecutive_failures: decision.failures,
       };
       const log: ChangeLogEntry[] = [];
-      if (decision.flagged) {
+      // A dead domain is flagged at once, but the reader-visible status still
+      // waits the usual three weeks: flagging costs a person a minute, a
+      // wrong "may no longer be active" costs the organization its callers.
+      if (decision.failures >= AGENT.failuresBeforeReview) {
         // Only downgrade once, on the run that crosses the threshold.
         if (decision.failures === AGENT.failuresBeforeReview) {
           patch.confidence = downgrade(org.confidence);
@@ -456,11 +557,24 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
       return {
         patch,
         log,
-        flag: decision.flagged
-          ? `${org.name}: website unreachable for ${decision.failures} weeks running`
-          : undefined,
+        flag: decision.gone
+          ? `${org.name}: the website's domain no longer exists (${org.website ?? 'no address'}). ` +
+            'The organization may have moved to a new site; find it and record it in the overlay by hand.'
+          : decision.flagged
+            ? `${org.name}: website unreachable for ${decision.failures} weeks running`
+            : undefined,
       };
     }
+
+    case 'blocked':
+      return {
+        patch: { ...base, check_status: 'manual-only', consecutive_failures: 0 },
+        log: [],
+        flag: decision.stale
+          ? `${org.name}: its site turns automated checks away, and no person has confirmed it ` +
+            `${decision.lastConfirmed ? `since ${decision.lastConfirmed}` : 'yet'}. Check it by hand and record the date.`
+          : undefined,
+      };
 
     case 'needs-review':
       return {

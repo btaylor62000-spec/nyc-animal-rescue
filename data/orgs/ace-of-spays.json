@@ -1,0 +1,65 @@
+{
+  "id": "ace-of-spays",
+  "name": "Ace of Spays (Hainesport, NJ)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Hainesport, New Jersey - outside NYC",
+  "zips": [
+    "08036"
+  ],
+  "region_note": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "phones": [
+    {
+      "value": "6092672111",
+      "display": "(609) 267-2111"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@aceofspays.com"
+    }
+  ],
+  "website": "https://aceofspays.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 39.978,
+    "lon": -74.8363,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "Hainesport, NJ, about 90 minutes' drive from the city by the Mayor's Alliance's estimate. The other numbers on its page are the after-hours hospitals it sends patients to after surgery, not the clinic.",
+  "type_raw": "Low-cost spay/neuter clinic",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://aceofspays.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

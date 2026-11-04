@@ -1,12 +1,12 @@
 # Data quality report
 
-Generated 2026-11-03 from the source workbooks and the wildlife guide.
+Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **332** organizations after de-duplication
-- **75** duplicate clusters merged
-- **21** guide pages generated
+- **387** organizations after de-duplication
+- **77** duplicate clusters merged
+- **22** guide pages generated
 - **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -17,16 +17,16 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 234 |
-| dog | 175 |
-| wildlife | 42 |
-| bird-companion | 32 |
-| rabbit | 32 |
+| cat | 281 |
+| dog | 217 |
+| wildlife | 45 |
+| rabbit | 36 |
+| bird-companion | 33 |
 | reptile | 32 |
 | farm | 30 |
 | small-mammal | 30 |
+| bird-wild | 21 |
 | pigeon | 19 |
-| bird-wild | 19 |
 | amphibian | 14 |
 | fish | 14 |
 | equine | 12 |
@@ -37,35 +37,35 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 151 |
+| adoption | 156 |
 | tnr | 95 |
-| foster | 89 |
-| owner-support | 68 |
-| surrender | 60 |
-| spay-neuter | 54 |
-| referral | 41 |
-| low-cost-vet | 40 |
-| food-assistance | 33 |
+| foster | 91 |
+| owner-support | 71 |
+| spay-neuter | 71 |
+| surrender | 63 |
+| low-cost-vet | 57 |
+| referral | 47 |
+| emergency-vet | 36 |
+| food-assistance | 34 |
+| colony-care | 33 |
 | advocacy | 32 |
-| colony-care | 30 |
-| emergency-vet | 29 |
-| wildlife-rehab | 26 |
+| wildlife-rehab | 28 |
 | medical-special-needs | 24 |
-| education | 22 |
-| legal | 19 |
+| education | 23 |
+| financial-aid | 22 |
+| legal | 21 |
+| lost-found | 18 |
+| senior | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
-| financial-aid | 16 |
-| senior | 16 |
 | boarding | 15 |
-| microchip | 14 |
-| lost-found | 10 |
-| transport | 10 |
+| microchip | 13 |
+| transport | 12 |
 | breed-specific | 10 |
 | pet-loss | 9 |
+| neonatal | 7 |
 | exotic-vet | 6 |
 | trap-bank | 6 |
-| neonatal | 6 |
 | retrovirus | 5 |
 | working-cat | 2 |
 | poison-control | 2 |
@@ -74,28 +74,28 @@ Generated 2026-11-03 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 224 |
-| queens | 179 |
-| manhattan | 177 |
-| bronx | 157 |
-| staten-island | 157 |
+| brooklyn | 255 |
+| queens | 213 |
+| manhattan | 211 |
+| bronx | 185 |
+| staten-island | 185 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 165 |
-| High | 123 |
+| High | 181 |
+| Medium | 162 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 318 |
-| verify | 8 |
+| active | 373 |
+| verify | 7 |
 | hiatus | 3 |
-| retired | 2 |
+| retired | 3 |
 | relocated | 1 |
 
 ## Gaps in coverage
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (87)
+### Never verified (81)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -161,12 +161,12 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Their own site says it is paused. Checked 2026-09-21.
-- **VERG North (Veterinary Emergency & Referral Group)** — `verify`: VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.
+- **VERG North (Veterinary Emergency & Referral Group)** — `retired`: Moved. VERG now runs a single Brooklyn hospital, at 196 4th Ave, Brooklyn 11217 — same phone number, (718) 522-9400. It is listed as VERG (Veterinary Emergency & Referral Group).
 - **VERG South** — `retired`: Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.
 
 ## De-duplication
 
-### Merged (75)
+### Merged (77)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -213,6 +213,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `instavet-urgent-care` ← 2 records
 - `completecare-veterinary-center` ← 2 records
 - `greater-state-veterinary-specialists` ← 2 records
+- `urgent-vets-bronx` ← 2 records
 - `friends-of-animals` ← 2 records
 - `muffins-pet-connection-mama-program` ← 2 records
 - `bbawc-rescue-clinic` ← 2 records
@@ -240,6 +241,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `waggle` ← 3 records
 - `carecredit` ← 3 records
 - `pets-of-the-homeless` ← 2 records
+- `24petwatch` ← 2 records
 - `aspca-community-veterinary-clinic-brooklyn` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records
 - `vinegar-hill-veterinary-group` ← 2 records
@@ -249,7 +251,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
 - "ASPCA Community Veterinary Clinic" resolved to 3 distinct locations; kept separate rather than merged
 
-### Conflicts between sources (5)
+### Conflicts between sources (6)
 
 Nothing here is auto-corrected. These are disagreements between the workbooks that a person should resolve.
 
@@ -259,6 +261,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
   - Sources give different domains for what looks like the same organization.
 - **website** — nycacc.org  vs  petsandhousing.org
   - Sources give different domains for what looks like the same organization.
+- **website** — 24pet.com  vs  petplace.com
+  - Sources give different domains for what looks like the same organization.
 - **address** — VERG (Veterinary Emergency & Referral Group): 196 4th Ave  vs  VERG North (Veterinary Emergency & Referral Group): 318 Warren St
   - Same phone line (7185229400) listed at different addresses. One source is probably out of date -- verify before relying on either.
 - **address** — VEG Ralph Ave: 1950 Ralph Ave  vs  VERG South: 2220 Flatbush Ave
@@ -266,11 +270,39 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (3)
+### Rows the rules could not fully tag (31)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
 - **USDA Report Sick Birds line** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:14)
+- **Astoria Animal Society** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:33)
+- **Long Island Animal Surgery** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:41)
+- **Petchester Veterinary** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:44)
+- **SpayUSA (North Shore Animal League America)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:48)
+- **Best Friends Spay/Neuter Resource Map** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:49)
+- **Positive Tails** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:51)
+- **For The Love Of Alex** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:52)
+- **Tripawds Foundation ASAP** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:53)
+- **Canine Cancer Alliance - cancer treatment funds** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:54)
+- **Humane World for Animals - help affording a pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:55)
+- **Home To Home** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:57)
+- **Rehome by Adopt a Pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:58)
+- **911 Parrot Alert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:60)
+- **PawBoost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:61)
+- **Pet FBI** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:62)
+- **FidoAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:63)
+- **PetAmberAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:64)
+- **MyLostPetAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:65)
+- **National Domestic Violence Hotline** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:67)
+- **DomesticShelters.org** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:68)
+- **Rabbit.org** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:72)
+- **New York City Bar - free legal services** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:74)
+- **LANA Law Group (Legal Action Network for Animals)** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:75)
+- **United Spay Alliance - Feline Fix by Five** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:78)
+- **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:79)
+- **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
+- **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:83)
+- **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:89)
 
 ## Privacy
 
@@ -290,6 +322,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 15463 |
+| Keeping your pet if you are losing your home | 5551 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |

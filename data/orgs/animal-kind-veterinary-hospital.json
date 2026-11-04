@@ -1,0 +1,72 @@
+{
+  "id": "animal-kind-veterinary-hospital",
+  "name": "Animal Kind Veterinary Hospital",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn - Park Slope (7th Ave between 10th and 11th St)",
+  "zips": [
+    "11215"
+  ],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [
+    {
+      "value": "7188323899",
+      "display": "(718) 832-3899"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.animalkind.com",
+  "intake_urls": [
+    {
+      "url": "https://www.animalkind.com/emergency",
+      "label": "Emergency page"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.66577,
+    "lon": -73.98243,
+    "precision": "address"
+  },
+  "address": {
+    "street": "365 7th Avenue",
+    "city": "Brooklyn",
+    "zip": "11215"
+  },
+  "hours": "Mon-Fri 8am-7pm, Sat 9am-5pm, Sun closed",
+  "notes": "365 7th Avenue, Brooklyn, NY 11215. Its own emergency page asks you to call (718) 832-3899 first so they are ready when you arrive. Has an intensive care unit. When it is closed, its own page points to BluePearl Brooklyn, VERG and VEG, which are open around the clock.",
+  "type_raw": "Vet practice that sees emergencies during opening hours - call first",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.animalkind.com/emergency"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

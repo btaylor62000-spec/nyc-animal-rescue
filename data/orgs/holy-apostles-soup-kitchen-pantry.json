@@ -40,6 +40,11 @@
   "website": "https://holyapostlesnyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.74939,
+    "lon": -73.99913,
+    "precision": "address"
+  },
   "address": {
     "street": "296 Ninth Ave.",
     "zip": "10001",

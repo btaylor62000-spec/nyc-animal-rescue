@@ -59,6 +59,11 @@
       "url": "https://facebook.com/LouiesLegacy"
     }
   ],
+  "geo": {
+    "lat": 40.5717,
+    "lon": -74.1243,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3), one of the nation's largest foster-based rescues, with bases in Ohio and NYC. NY office 3204 Amboy Rd, Staten Island 10306. Foster-based - no walk-in shelter; meet dogs at weekend adoption events (check FB for weekly album + event locations). Dogs come fully vetted, spayed/neutered, microchipped, heartworm-tested; age/breed/size not guaranteed (shelter origin). Post-adoption support team. Application at the link; high volume, so not every applicant is contacted.",

@@ -35,6 +35,11 @@
   "website": "https://khcc-nyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.87727,
+    "lon": -73.90075,
+    "precision": "address"
+  },
   "address": {
     "street": "3067 Kingsbridge Terrace",
     "zip": "10463",

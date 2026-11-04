@@ -1,0 +1,66 @@
+{
+  "id": "urvet-care-astoria",
+  "name": "URvet Care Astoria",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens - Astoria",
+  "zips": [
+    "11103"
+  ],
+  "region_note": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "phones": [
+    {
+      "value": "6462425200",
+      "display": "(646) 242-5200"
+    }
+  ],
+  "emails": [],
+  "website": "https://urvetcare.com/locations/astoria/",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.76185,
+    "lon": -73.91674,
+    "precision": "address"
+  },
+  "address": {
+    "street": "30-80 Steinway Street",
+    "city": "Astoria",
+    "zip": "11103"
+  },
+  "hours": "Open 24/7",
+  "notes": "30-80 Steinway Street, Astoria, NY 11103. Open 24/7 for emergencies. Ring this number for this hospital; URvet Care's main line, (646) 221-1200, is a different hospital.",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://urvetcare.com/locations/astoria/"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

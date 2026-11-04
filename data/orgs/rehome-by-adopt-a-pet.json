@@ -1,0 +1,53 @@
+{
+  "id": "rehome-by-adopt-a-pet",
+  "name": "Rehome by Adopt a Pet",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (online, national)",
+  "zips": [],
+  "region_note": "REHOMING A PET YOURSELF - placing a pet directly with a new family instead of a shelter, from the Mayor's Alliance surrender page",
+  "phones": [],
+  "emails": [],
+  "website": "https://rehome.adoptapet.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A way of rehoming a pet yourself. Create a profile for your pet, review applications and choose the new home yourself. Charges a small one-time listing fee per pet.",
+  "type_raw": "Online platform for placing a pet directly with a new home",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://rehome.adoptapet.com"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "REHOMING A PET YOURSELF - placing a pet directly with a new family instead of a shelter, from the Mayor's Alliance surrender page",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

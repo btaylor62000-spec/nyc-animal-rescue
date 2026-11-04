@@ -14,6 +14,8 @@
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { zipToBorough } from '../data/geo.ts';
+import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
+import { openLabel, openState } from '../data/schedule.ts';
 
 interface FilterState {
   q: string;
@@ -49,6 +51,9 @@ if (form && list) {
     hasPhone: boolean;
     verified: number;
     order: number;
+    hours: string | null;
+    outside: boolean;
+    geo: { lat: number; lon: number; precision: 'address' | 'zip' } | null;
   }>();
 
   const split = (v: string | undefined) => (v ? v.split(',').filter(Boolean) : []);
@@ -67,6 +72,11 @@ if (form && list) {
       hasPhone: el.dataset.hasPhone === '1',
       verified: el.dataset.verified ? Date.parse(el.dataset.verified) : 0,
       order,
+      hours: el.dataset.hours ?? null,
+      outside: el.dataset.outside === '1',
+      geo: el.dataset.lat && el.dataset.lon
+        ? { lat: Number(el.dataset.lat), lon: Number(el.dataset.lon), precision: el.dataset.geo === 'zip' ? 'zip' : 'address' }
+        : null,
     });
   });
 
@@ -199,6 +209,28 @@ if (form && list) {
       }
     }
 
+    // With a location, or when the reader needs a vet now, the shared ranking
+    // (src/data/rank.ts, also the assistant's) decides: open now, then nearest,
+    // then firmest evidence. Search relevance comes last, so the nearest
+    // relevant place wins rather than the best-worded far one.
+    const emergency = state.need.has('emergency-vet') || EMERGENCY_QUERY.test(state.q);
+    const now = new Date();
+    if (origin || emergency) {
+      const keyOf = (id: string, m: (typeof visible)[number]['m']) => {
+        const k = rankKey({ needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin, now, emergency });
+        // Search wording only breaks ties: the query has already narrowed the
+        // list, and among what is left, open, near and well evidenced matter.
+        return [...k, rank?.get(id) ?? 0, m.order];
+      };
+      const keys = new Map(visible.map(({ id, m }) => [id, keyOf(id, m)]));
+      visible.sort((a, b) => compareKeys(keys.get(a.id)!, keys.get(b.id)!));
+      for (const { m } of visible) list!.appendChild(m.el);
+      describeOrder(emergency);
+      finish(shown, updateUrl, state);
+      return;
+    }
+    describeOrder(false);
+
     // Best match first when there is a query; then firmest evidence; then the
     // most recently verified. Someone in a hurry should meet the surest entry.
     const CONF: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
@@ -215,7 +247,10 @@ if (form && list) {
       return a.m.order - b.m.order;
     });
     for (const { m } of visible) list!.appendChild(m.el);
+    finish(shown, updateUrl, state);
+  }
 
+  function finish(shown: number, updateUrl: boolean, state: FilterState): void {
     if (summary) {
       summary.textContent =
         shown === meta.size
@@ -275,6 +310,94 @@ if (form && list) {
   narrow.addEventListener('change', (e) => {
     if (!e.matches) form.removeAttribute('hidden');
   });
+
+  // --- nearest to me ---------------------------------------------------------
+  // The location is asked for only when the button is tapped, kept in memory,
+  // and never written to the address bar or sent anywhere: the sorting happens
+  // here, on the reader's own device.
+  let origin: Origin | null = null;
+  const nearBtn = document.getElementById('near-me') as HTMLButtonElement | null;
+  const nearNote = document.getElementById('near-me-note');
+  const orderLabel = document.getElementById('results-order');
+
+  function describeOrder(emergency: boolean): void {
+    if (!orderLabel) return;
+    const parts = [emergency ? 'Open now first' : null, origin ? 'nearest to you' : null].filter(Boolean) as string[];
+    orderLabel.textContent = parts.length
+      ? `${parts.join(', then ')}, then strongest evidence`
+      : searchInput?.value.trim() ? 'Best match first' : 'Strongest evidence first';
+  }
+
+  function showDistances(): void {
+    for (const m of meta.values()) {
+      const span = m.el.querySelector<HTMLElement>('.card__distance');
+      if (!span) continue;
+      if (!origin || !m.geo) {
+        span.hidden = true;
+        continue;
+      }
+      const miles = distanceMiles(origin, m.geo);
+      const shown = miles < 10 ? miles.toFixed(1) : String(Math.round(miles));
+      // A zip code's centre is not the door; say so.
+      span.textContent = `${m.geo.precision === 'zip' ? 'about ' : ''}${shown} mi`;
+      span.title = m.geo.precision === 'zip' ? 'Measured to the centre of its zip code' : 'Measured to its street address, as the crow flies';
+      span.hidden = false;
+    }
+  }
+
+  if (nearBtn && 'geolocation' in navigator) {
+    nearBtn.hidden = false;
+    nearBtn.addEventListener('click', () => {
+      if (origin) {
+        origin = null;
+        nearBtn.textContent = 'Nearest to me';
+        if (nearNote) nearNote.hidden = true;
+        showDistances();
+        void run(false);
+        return;
+      }
+      nearBtn.disabled = true;
+      nearBtn.textContent = 'Finding you…';
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          origin = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+          nearBtn.disabled = false;
+          nearBtn.textContent = 'Stop sorting by distance';
+          if (nearNote) {
+            nearNote.hidden = false;
+            nearNote.textContent = 'Distances are straight-line and approximate. Your location stays on this device.';
+          }
+          showDistances();
+          void run(false);
+        },
+        () => {
+          nearBtn.disabled = false;
+          nearBtn.textContent = 'Nearest to me';
+          if (nearNote) {
+            nearNote.hidden = false;
+            nearNote.textContent = 'Could not get your location. Type your zip code in the filters instead.';
+          }
+        },
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 },
+      );
+    });
+  }
+
+  // --- open now ----------------------------------------------------------------
+  // Built pages cannot know the time, so a daytime vet's "Not open overnight"
+  // becomes "Open now · until 7pm" or "Closed now · opens 9am" here. Hours this
+  // cannot read with certainty keep the plain tag.
+  function refreshOpenTags(): void {
+    const now = new Date();
+    for (const m of meta.values()) {
+      const tag = m.el.querySelector<HTMLElement>('[data-open-tag]');
+      if (!tag) continue;
+      const label = openLabel(openState(m.hours, now), now);
+      if (label) tag.textContent = label;
+    }
+  }
+  refreshOpenTags();
+  window.setInterval(refreshOpenTags, 60_000);
 
   applyUrlToForm();
   void run(false);

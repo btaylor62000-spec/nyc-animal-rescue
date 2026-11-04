@@ -7,7 +7,8 @@
     "support-program"
   ],
   "animals": [
-    "dog"
+    "dog",
+    "cat"
   ],
   "needs": [
     "microchip",
@@ -25,20 +26,31 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
-  "phones": [],
-  "emails": [],
+  "phones": [
+    {
+      "value": "8884663242",
+      "display": "1-888-466-3242",
+      "label": "1-888-HOMEAGAIN, lost pet line"
+    }
+  ],
+  "emails": [
+    {
+      "value": "customerservice@homeagain.com"
+    }
+  ],
   "website": "https://homeagain.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "homeagain.com; enrolled chips also WAIVE the ASPCA Poison Control consultation fee.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Lost-found & microchip — MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -46,7 +58,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "1-888-466-3242",
+      "evidence_url": "https://www.merck-animal-health-usa.com/products/homeagain/",
+      "source": "manual",
+      "note": "1-888-HOMEAGAIN and customerservice@homeagain.com, read in a browser on the page of Merck Animal Health, which makes HomeAgain. Supplied by a reviewer. Added where there was none."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

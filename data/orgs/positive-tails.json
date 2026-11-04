@@ -1,0 +1,64 @@
+{
+  "id": "positive-tails",
+  "name": "Positive Tails",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet",
+    "financial-aid"
+  ],
+  "boroughs": [
+    "brooklyn",
+    "manhattan",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "phones": [
+    {
+      "value": "6463971484",
+      "display": "(646) 397-1484"
+    }
+  ],
+  "emails": [
+    {
+      "value": "fixnyc@positivetails.org"
+    }
+  ],
+  "website": "https://www.positivetails.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A Brooklyn-based 501(c)(3) that pays for lifesaving vet treatment in a crisis for people who cannot afford it, and for animals that were abandoned or abused, and runs free and low-cost spay/neuter days across the city. Mailing address P.O. Box 27192, Brooklyn, NY 11202.",
+  "type_raw": "Nonprofit that pays for spay/neuter and lifesaving vet treatment for New Yorkers who cannot afford it",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.positivetails.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

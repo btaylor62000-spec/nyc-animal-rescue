@@ -1,0 +1,54 @@
+{
+  "id": "domesticsheltersorg",
+  "name": "DomesticShelters.org",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "directory"
+  ],
+  "animals": [],
+  "needs": [
+    "owner-support",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National directory; use from anywhere",
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SUPPORT - national hotline and shelter finder, from the Mayor's Alliance domestic violence page",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.domesticshelters.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Find a domestic violence shelter that has a pet programme. Its site offers a password-protected app for people whose phones may be watched.",
+  "type_raw": "Searchable directory of domestic violence shelters, including ones that accept pets",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.domesticshelters.org"
+  ],
+  "last_verified": "2026-11-03",
+  "section": "DOMESTIC-VIOLENCE PET SUPPORT - national hotline and shelter finder, from the Mayor's Alliance domestic violence page",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

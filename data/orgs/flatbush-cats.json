@@ -12,7 +12,6 @@
     "cat"
   ],
   "needs": [
-    "emergency-vet",
     "adoption",
     "surrender",
     "tnr",
@@ -53,6 +52,7 @@
     }
   ],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "501(c)(3), founded 2018. Direct TNR/rescue help LIMITED to Flatbush/East Flatbush (11203, 11225, 11226, 11210 north of Ave H); ~24hr response, not an emergency line, priority to TNR-certified volunteers; refers others to Mayor's Alliance/Neighborhood Cats. NOT an intake shelter. Runs Flatbush Vet (see clinic row) - Brooklyn-wide low-cost spay/neuter, 7,500+ surgeries/yr. Re-verified 2026-08-26. Other channel: IG/FB @flatbushcatsTNR Other channel: mailing 2319 Nostrand Ave #100015, Brooklyn 11210",

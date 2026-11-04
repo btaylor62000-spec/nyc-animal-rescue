@@ -22,6 +22,10 @@ export interface ChatCard {
   statusNote: string | null;
   lastVerified: string | null;
   needsConfirmation: boolean;
+  /** "0.7 mi", only when the reader shared a location. */
+  distance?: string | null;
+  /** "Open now · until 7pm" or "Closed now · opens 9am", for vets with readable hours. */
+  openNow?: string | null;
 }
 
 export type ChatEvent =
@@ -39,6 +43,12 @@ export interface ChatRequest {
   turnstileToken?: string;
   /** Short-lived pass issued after Turnstile, for later messages. */
   pass?: string;
+  /**
+   * Only when the reader ticks "Use my location". Rounded to two decimal
+   * places (about a kilometre) in the browser and again on the server, used to
+   * order results, and never logged or stored.
+   */
+  origin?: { lat: number; lon: number };
 }
 
 export const LIMITS = {
