@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
 import Skyline from '../components/Skyline.astro';
-import { ORGS } from '../data/orgs.ts';
+import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
 
 /**
  * The home page answers one question: what is happening, and where do I tap?
@@ -149,7 +149,7 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
         <h2>Know a rescue that is missing? Spot a wrong number?</h2>
         <p>
           This directory is kept up to date by the people who use it. Anyone can add a rescue,
-          clinic or hotline, and every entry has a <strong>Fix this entry</strong> button. What you
+          clinic or hotline, and every entry has a <strong>Report a problem</strong> button. What you
           send is checked against the organization's own website and goes live in a few minutes,
           marked as added or fixed by a visitor.
         </p>

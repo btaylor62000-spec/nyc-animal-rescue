@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { ORGS, toSearchRecord } from '../data/orgs.ts';
+import { LISTED_ORGS, toSearchRecord } from '../data/orgs.ts';
 
 /**
  * The compact record set used for text search in the browser.
@@ -10,7 +10,7 @@ import { ORGS, toSearchRecord } from '../data/orgs.ts';
  * against, so there is one index rather than two that can drift.
  */
 export const GET: APIRoute = () =>
-  new Response(JSON.stringify(ORGS.map(toSearchRecord)), {
+  new Response(JSON.stringify(LISTED_ORGS.map(toSearchRecord)), {
     headers: {
       'content-type': 'application/json; charset=utf-8',
       // Safe to cache hard: the page requests this with a ?v= fingerprint of

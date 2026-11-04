@@ -22,6 +22,18 @@ export const ORGS: Org[] = load();
 export const ORGS_BY_ID = new Map(ORGS.map((o) => [o.id, o]));
 
 /**
+ * What the directory lists: everything except organizations that have closed
+ * or moved out of the city.
+ *
+ * Those used to be listed with a label, which put a closed 24-hour hospital
+ * among the emergency vets for someone to scroll past at 2am. The assistant
+ * already left them out, so the two disagreed as well. Their pages are still
+ * built, so an old link or a search engine lands on "this has closed, go here
+ * instead" rather than nothing. Paused groups stay listed: they may resume.
+ */
+export const LISTED_ORGS: Org[] = ORGS.filter((o) => o.status !== 'retired' && o.status !== 'relocated');
+
+/**
  * A short fingerprint of the current data, appended to the search index URL.
  *
  * The index can then be cached hard, while a deploy that changes the data

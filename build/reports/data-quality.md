@@ -7,7 +7,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **383** organizations after de-duplication
 - **76** duplicate clusters merged
 - **21** guide pages generated
-- **15** entries flagged as not currently active
+- **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -92,11 +92,11 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 368 |
-| verify | 8 |
+| active | 369 |
+| verify | 7 |
 | hiatus | 3 |
-| retired | 2 |
-| relocated | 2 |
+| retired | 3 |
+| relocated | 1 |
 
 ## Gaps in coverage
 
@@ -152,7 +152,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **ASPCA Community Veterinary Clinic - Brooklyn (East New York)** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Friends of the Feathered and Furry Wildlife Center** — `relocated`: Source says this organization has moved out of New York City.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
@@ -162,7 +161,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Their own site says it is paused. Checked 2026-09-21.
-- **VERG North (Veterinary Emergency & Referral Group)** — `verify`: VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.
+- **VERG North (Veterinary Emergency & Referral Group)** — `retired`: Moved. VERG now runs a single Brooklyn hospital, at 196 4th Ave, Brooklyn 11217 — same phone number, (718) 522-9400. It is listed as VERG (Veterinary Emergency & Referral Group).
 - **VERG South** — `retired`: Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.
 
 ## De-duplication

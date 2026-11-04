@@ -42,8 +42,8 @@
   "notes": "318 Warren St (btwn Court/Smith), Brooklyn 11201. (718) 522-9400. verg-brooklyn.com. Open 24h.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "VERG’s own site now lists a single Brooklyn hospital at 196 4th Ave. The phone number here is correct, but the 318 Warren St address is not one they publish any more. Confirm which address is current before relying on it.",
+  "status": "retired",
+  "status_note": "Moved. VERG now runs a single Brooklyn hospital, at 196 4th Ave, Brooklyn 11217 — same phone number, (718) 522-9400. It is listed as VERG (Veterinary Emergency & Referral Group).",
   "source_urls": [],
   "last_verified": "2026-09-22",
   "section": "Emergency & poison control — BROOKLYN - 24-hour ER",
@@ -62,6 +62,15 @@
       "evidence_url": "https://verg-brooklyn.com/",
       "source": "manual",
       "note": "Phone (718) 522-9400 still correct, but the address on this record does not appear on VERG’s site. Flagged rather than merged with the 196 4th Ave record, because two Brooklyn addresses one block apart could be one hospital or two and the site does not say."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "retired",
+      "evidence_url": "https://verg-brooklyn.com/",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04: VERG's site lists only 196 4th Ave, Brooklyn 11217, (718) 522-9400. 318 Warren St has been absent since at least 2026-09-18. Same organization and phone as the 196 4th Ave entry, so this is the old address of that hospital, not a second one. Decided by a reviewer."
     }
   ],
   "privacy_hold": false,
