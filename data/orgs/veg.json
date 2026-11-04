@@ -33,9 +33,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.7647,
-    "lon": -73.9633,
-    "precision": "zip"
+    "lat": 40.76356,
+    "lon": -73.96228,
+    "precision": "address"
   },
   "address": {
     "street": "1215 2nd Avenue",

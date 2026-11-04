@@ -422,7 +422,7 @@
    "matched": "609 CANTIAGUE ROCK RD, WESTBURY, NY, 11590"
   },
   "veg": {
-   "query": "1215 2nd Ave, New York, NY",
+   "query": "1215 2nd Avenue, New York, NY 10065",
    "lat": 40.76356,
    "lon": -73.96228,
    "matched": "1215 2ND AVE, NEW YORK, NY, 10065"
