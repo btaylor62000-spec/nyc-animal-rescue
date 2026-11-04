@@ -102,6 +102,8 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 
 ## SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE
 
+Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists (checked 2026-11-04); ask ACC how to reach it. ACC New Hope partner. [Medium]
+
 - Waggytail Rescue - small-breed dogs, NYC (foster-based). adopt@waggytailrescue.org, waggytailrescue.org. [High]
 - Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. https://nextstopforeverinc.com. ACC New Hope partner. [Medium]
 - Metropolitan Maltese Rescue (MetroMalts) - Maltese + small white breeds, NY metro. https://www.malteserescue.com. [Medium]
@@ -109,7 +111,6 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 - United Yorkie Rescue - Yorkies, national incl. NY. http://unitedyorkierescue.org. [Low]
 - Doxie Rescue of Bucks County & NJ - dachshunds, serves NY metro. https://doxierescue.com. [Medium]
 - Compact Canine Rescue - small breeds, NY-serving. http://www.compactcaninerescue.org. [Medium]
-- Big Hands Little Paws - small/senior dogs, NYC. http://bighandslittlepaws.org. ACC New Hope partner. [Medium]
 
 ## POODLE / DOODLE / BICHON
 

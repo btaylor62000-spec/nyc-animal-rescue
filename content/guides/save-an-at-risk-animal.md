@@ -16,7 +16,7 @@ New York City's public animal shelter, Animal Care Centers of NYC (ACC), posts a
 - See the urgent list, and whether an animal is still available or already reserved: https://newhope.shelterbuddy.com/Animal/List - new animals are posted Sunday, Tuesday and Thursday at 6 PM.
 - To adopt the animal yourself: on that list, press Reserve, then check out (top right) within 15 minutes. It takes a $200 deposit plus a transaction fee: $50 goes toward the adoption fee and $150 is a spay/neuter deposit, refunded if the animal is already spayed or neutered. If the site gives you trouble, email adopt@nycacc.org.
 - To foster or adopt through a rescue group instead: fill in ACC's form at https://forms.gle/ozHex3uqvNkQt2dq9 - it needs a Google sign-in. ACC passes your details to its approved rescue groups. Then contact the groups below yourself as well.
-- To see what happened to an animal that was listed: https://nycacc.org/adoption/at-risk-outcomes/
+- To see what happened to an animal that was listed: https://www.nycacc.org/adoption/at-risk-outcomes
 
 ## HOW MUCH TIME YOU HAVE
 
@@ -39,7 +39,7 @@ ACC states that being on the at-risk list does not mean an animal is automatical
 - ACC's emergency placement page, which carries the list and the form together - https://www.nycacc.org/emergency-placement/
 - ACC's full official list of its approved rescue groups, which it calls “New Hope partners”, around 250 of them - https://www.nycacc.org/programs/new-hope-partners/
 - How ACC's rescue-partner programme (New Hope) works, in ACC's own words - https://www.nycacc.org/programs/new-hope/
-- Outcomes for animals that were previously listed - https://nycacc.org/adoption/at-risk-outcomes/
+- Outcomes for animals that were previously listed - https://www.nycacc.org/adoption/at-risk-outcomes
 
 ## WHAT TO SAY
 
@@ -76,7 +76,7 @@ Contact every organisation that takes your animal's species, through every chann
 
 ## Dogs
 
-- Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.com - https://heartsandbonesrescue.com
+- Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.com - https://heartsandbonesrescue.org/
 - Mr. Bones & Co - Brooklyn - @mrbonesandco - https://mrbonesandco.org
 - Pound Hounds Res-Q - citywide - @poundhoundsresq - https://poundhoundsresq.org
 - Pupstarz Rescue - citywide - @pupstarzrescue - https://pupstarzrescue.org

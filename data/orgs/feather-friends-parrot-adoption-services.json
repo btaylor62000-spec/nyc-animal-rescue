@@ -30,7 +30,7 @@
       "value": "nycparrot@verizon.net"
     }
   ],
-  "website": "http://www.nycparrot.com",
+  "website": null,
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -44,7 +44,7 @@
   "type_raw": "Parrot adoption service (NYC-based) [VERIFY - may be inactive]",
   "confidence": "Low",
   "status": "verify",
-  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
   "source_urls": [
     "https://birdsupplies.com/pages/parrot-rescues-and-adoption-programs"
   ],
@@ -56,7 +56,16 @@
   "last_checked": "2026-09-22",
   "check_status": "unreachable",
   "consecutive_failures": 2,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "http://www.nycparrot.com",
+      "to": null,
+      "source": "manual",
+      "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

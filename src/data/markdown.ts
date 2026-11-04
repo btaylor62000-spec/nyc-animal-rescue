@@ -55,6 +55,15 @@ const BARE_URL_RE =
   /(?<![@\w./:-])((?:www\.)?(?:[a-z0-9-]+\.)+(?:org|com|net|gov|edu|nyc|us|info|app|io|co|pet)(?:\/[^\s<>()"',;]*)?)(?![\w@])/gi;
 const EMAIL_RE = /(?<![\w.+-])([\w.+-]+@[\w-]+(?:\.[\w-]+)+)(?![\w-])/g;
 
+/** Every web address in a piece of prose, as the page will link it. */
+export function addressesIn(text: string): string[] {
+  const out = new Set<string>();
+  for (const m of text.matchAll(/https?:\/\/[^\s<>()"',;]+/g)) out.add(fixUrl(m[0].replace(/[.:]+$/, '')));
+  const rest = text.replace(/https?:\/\/[^\s<>()"',;]+/g, ' ').replace(EMAIL_RE, ' ');
+  for (const m of rest.matchAll(BARE_URL_RE)) out.add(fixUrl(`https://${m[1]!.replace(/[.:]+$/, '')}`));
+  return [...out];
+}
+
 export function linkAddresses(html: string): string {
   const parts = html.split(/(<[^>]+>)/);
   let inAnchor = 0;

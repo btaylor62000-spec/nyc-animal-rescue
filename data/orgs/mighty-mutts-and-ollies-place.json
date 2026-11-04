@@ -31,12 +31,7 @@
   "phones": [],
   "emails": [],
   "website": "https://www.mightymutts.org",
-  "intake_urls": [
-    {
-      "url": "https://mighty-mutts.squarespace.com/adopt",
-      "label": "Adopt"
-    }
-  ],
+  "intake_urls": [],
   "social": [
     {
       "platform": "instagram",
@@ -55,8 +50,8 @@
   "notes": "All-volunteer 501(c)(3) no-kill (founder John Contino) rescuing NYC street/shelter dogs and cats. Dogs shown at a SATURDAY ADOPTION DRIVE at 14th St & Union Square West; cats at Ollie's Place (430 E 9th St). Application -> phone interview (within 14 days) -> home visit. NOTE: for all DOG adoptions they require permanent child-safety window guards on every window (they advise on install). PO Box 614 NY 10002 / PO Box 140139 Brooklyn 11214. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: 14th St & Union Sq West",
   "type_raw": "Rescue+adoption (dogs & cats, no-kill)",
   "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "status": "verify",
+  "status_note": "Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.",
   "source_urls": [
     "https://mighty-mutts.squarespace.com/adopt"
   ],
@@ -66,9 +61,19 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unreachable",
+  "check_status": "needs-review",
   "consecutive_failures": 2,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": "https://mighty-mutts.squarespace.com/adopt",
+      "to": null,
+      "evidence_url": "https://mighty-mutts.squarespace.com/adopt",
+      "source": "manual",
+      "note": "Link check, 2026-11-04: the adoption link answers \"Squarespace - Website Expired\" (404), and www.mightymutts.org presents a certificate for another name, so browsers warn. Adoption link removed; marked to confirm."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

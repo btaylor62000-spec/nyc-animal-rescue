@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { STATUS } from '../data/status.ts';
 import { NEED_LABELS } from '../data/orgs.ts';
+import { existsSync, readFileSync } from 'node:fs';
 
 /**
  * How well this directory is being kept.
@@ -13,6 +14,22 @@ import { NEED_LABELS } from '../data/orgs.ts';
  */
 const { total, byConfidence, byCheck, needingAPerson, manualOnly, unverified, fromVisitors, awaitingConsent, jobs, pendingImport } = STATUS;
 
+// The weekly link check (scripts/agent/links.ts): every link on a listing or
+// in a guide. Only what needs a person is shown; "blocked" and "down" are
+// listed in the report but say nothing certain about the link.
+type LinkProblem = { url: string; verdict: string; status: number; finalUrl: string; places: Array<{ kind: string; id: string; name: string; field: string }> };
+const linkReport = existsSync('build/reports/link-check.json')
+  ? (JSON.parse(readFileSync('build/reports/link-check.json', 'utf8')) as { date: string; checked: number; problems: LinkProblem[] })
+  : null;
+const LINK_WORDS: Record<string, string> = {
+  taken: 'Now belongs to someone else (spam or gambling)',
+  gone: 'Page not found',
+  parked: 'Domain lapsed (parked or for sale)',
+  elsewhere: 'Sends readers to a different site',
+};
+// "gone" through a DNS failure is believable only from the scheduled run's
+// ordinary network, so a report written elsewhere shows HTTP answers only.
+const brokenLinks = (linkReport?.problems ?? []).filter((p) => p.verdict in LINK_WORDS && (p.verdict !== 'gone' || p.status > 0));
 const checked = byCheck.ok ?? 0;
 const never = byCheck.unchecked ?? 0;
 const pct = (n: number) => Math.round((n / total) * 100);
@@ -136,6 +153,32 @@ const confidenceRows = [
             </li>
           ))}
         </ul>
+      </section>
+    )}
+
+    {linkReport && (
+      <section class="section">
+        <h2>Links that need a person</h2>
+        <p class="prose">
+          Every link on an entry and in a guide is opened by the weekly link check; {linkReport.checked} were
+          checked on {linkReport.date}. It never changes a link itself: a dead address is exactly when guessing
+          the new one is most dangerous, so a person finds the right page on the organization's own site.
+        </p>
+        {brokenLinks.length === 0 ? (
+          <p class="muted">None at the last check.</p>
+        ) : (
+          <ul>
+            {brokenLinks.map((p) => (
+              <li>
+                <strong>{LINK_WORDS[p.verdict]}</strong>: <code>{p.url}</code>
+                {p.finalUrl !== p.url && <> &rarr; <code>{p.finalUrl}</code></>} &mdash; used on{' '}
+                {p.places.map((pl, i) => (
+                  <>{i > 0 && ', '}<a href={pl.kind === 'guide' ? `/guides/${pl.id}` : `/org/${pl.id}`}>{pl.name}</a></>
+                ))}
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     )}
 

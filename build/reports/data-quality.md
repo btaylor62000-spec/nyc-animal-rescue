@@ -7,8 +7,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **400** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **16** entries flagged as not currently active
-- **4** entries with no way at all to make contact
+- **19** entries flagged as not currently active
+- **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -92,8 +92,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 384 |
-| verify | 10 |
+| active | 381 |
+| verify | 13 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -104,16 +104,17 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (4)
+### No contact method at all (5)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
 - **Animal Relief Fund (ARF)** — PET FOOD PANTRIES (specific programs)
+- **Magnificat Cat Rescue and Rehoming** — CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
-### Reachable only through social media (22)
+### Reachable only through social media (23)
 
 The weekly automated check cannot verify these, because Instagram and Facebook cannot be reliably scraped. They stay at Low confidence and carry a "verify via their social channel" note.
 
@@ -130,6 +131,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 - **Eastchester Bay Stray Cat Project, Inc.** — instagram eastchesterbaystraycats, facebook EastchesterBayStrayCatProject
 - **Harman Cat Rescue** — instagram harman_catrescue
 - **India Street Cats** — instagram indiastreetcats
+- **Kittens and Barbells Rescue, Inc.** — instagram kittensandbarbells_, facebook kittensandbarbells
 - **Los Sures Cats Williamsburg** — instagram gatoslossures
 - **Midwood Kitty Cats / Cats of Midwood** — instagram midwood_kittycats
 - **Monroe Street Cats (Bed Stuy)** — instagram monroestreetcats
@@ -153,10 +155,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
 - **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
-- **Feather Friends Parrot Adoption Services** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Feather Friends Parrot Adoption Services** — `verify`: Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.
 - **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
-- **Magnificat Cat Rescue and Rehoming** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Kittens and Barbells Rescue, Inc.** — `verify`: Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.
+- **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
+- **Mighty Mutts & Ollie's Place** — `verify`: Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Safe Place for Pets (RedRover)** — `verify`: Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
@@ -326,19 +331,19 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15463 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the NYC shelter’s urgent list | 8213 |
+| Save an animal from the NYC shelter’s urgent list | 8220 |
 | Reporting animal abuse or neglect | 5732 |
 | Animal emergencies and poison control | 3213 |
 | Low-cost clinics and trap banks | 8438 |
 | Community cats, colonies and starting TNR | 6880 |
-| Cats needing specialist help | 4687 |
+| Cats needing specialist help | 4787 |
 | Lost or found a cat | 6279 |
 | Help keeping your cat | 10376 |
 | Help keeping your dog | 8955 |
 | Low-cost vet care, spay/neuter and dog licensing | 11750 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
-| Breed-specific dog rescue | 13722 |
+| Breed-specific dog rescue | 13770 |
 | Found injured or orphaned wildlife | 6640 |
 | Exotic pet emergencies | 4123 |
 | What you can legally keep in New York City | 3073 |

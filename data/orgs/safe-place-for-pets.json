@@ -28,7 +28,7 @@
   "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "phones": [],
   "emails": [],
-  "website": "https://safeplaceforpets.org",
+  "website": "https://redrover.org/relief-dv/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -37,8 +37,8 @@
   "notes": "searchable directory of programs by ZIP. safeplaceforpets.org.\n\nsearchable directory of programs ready to help survivors and pets, by ZIP. safeplaceforpets.org.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "status": "verify",
+  "status_note": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.",
   "source_urls": [],
   "last_verified": null,
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
@@ -47,7 +47,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "manual-only",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -58,6 +58,15 @@
       "evidence_url": "https://safeplaceforpets.org",
       "source": "manual",
       "note": "Tried on 2026-11-04: safeplaceforpets.org shows a \"Confirm you are human\" bot check. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "evidence_url": "https://redrover.org/relief-dv/",
+      "source": "manual",
+      "note": "Link check, 2026-11-04: safeplaceforpets.org redirects to redrover.org with no directory. RedRover's relief-dv page lists Safe Escape Grants and Safe Housing Grants for shelters, not a ZIP search. Link pointed at that page; marked to confirm."
     }
   ],
   "privacy_hold": false,

@@ -32,6 +32,25 @@ export const URL_FIXES: UrlFix[] = [
   { from: acc('workingcats'), to: `${ACC}/workingcats/`, why: 'canonical form, as linked from ACC pages' },
   { from: acc('GuineaPigs'), to: 'https://nycacc.app/', why: 'the old small-animals page is gone; small animals are in the adoption search' },
   { from: /^https?:\/\/nycacc\.org\/?$/i, to: `${ACC}/`, why: 'canonical form' },
+  { from: /^https?:\/\/(www\.)?nycacc\.org\/adoption\/at-risk-outcomes\/?$/i, to: `${ACC}/adoption/at-risk-outcomes`, why: "as ACC's at-risk list page links it" },
+
+  // Found by the link check on 2026-11-04 (404), replacement read on each
+  // organization's own site that day.
+  { from: /^https?:\/\/(www\.)?badassanimalrescue\.com\/find-a-dog\/?$/i, to: 'https://badassanimalrescue.com/find-a-dog-new', why: "its home page's 'Adopt' link" },
+  { from: /^https?:\/\/(www\.)?mrbonesandco\.org\/adoptme\/?$/i, to: 'https://mrbonesandco.org/adopt/', why: "its home page's 'Adopt' link" },
+  { from: /^https?:\/\/(www\.)?nybullycrew\.org\/surrender\/?$/i, to: 'https://www.nybullycrew.org/surrender-your-dog', why: "its home page's 'Surrender' link" },
+  { from: /^https?:\/\/(www\.)?animalalliancenyc\.org\/apocenter\/?$/i, to: 'https://www.animalalliancenyc.org/need-help/', why: "the old page is gone; the Mayor's Alliance 'Need help?' page lists its resources" },
+  { from: /^https?:\/\/(www\.)?frankiesfriends\.org\/apply-for-assistance\/?$/i, to: 'https://www.frankiesfriends.org/apply-for-assistance-3', why: 'the application page read on 2026-11-04' },
+  { from: /^https?:\/\/(www\.)?lapoflove\.com\/pet-loss-support\/?$/i, to: 'https://www.lapoflove.com/our-services/pet-loss-support', why: "its home page's 'Pet Loss Support' link" },
+  { from: /^https?:\/\/(www\.)?northbrooklyncats\.org\/help\/?$/i, to: 'https://northbrooklyncats.org/#contactus', why: "the help page is gone; its home page's 'Contact us'" },
+  { from: /^https?:\/\/clinic\.aspca\.org\/clinics\/new-york-city\/?$/i, to: 'https://clinic.aspca.org/locations/new-york-city', why: "the ASPCA's own page for its New York City clinics" },
+  { from: /^https?:\/\/(www\.)?bunniesandbeyond\.org\/surrender\.html$/i, to: 'https://bunniesandbeyond.org/', why: 'the surrender page is gone (404); its site now shows robots a bot check, so the home page' },
+  { from: /^https?:\/\/(www\.)?heartsandbonesrescue\.com\/?$/i, to: 'https://heartsandbonesrescue.org/', why: 'the .com now redirects to its .org site' },
+  { from: /^https?:\/\/(www\.)?heartsandbonesrescue\.com\/adopt\/?$/i, to: 'https://heartsandbonesrescue.org/adopt', why: 'the .com now redirects to its .org site' },
+  { from: /^https?:\/\/(www\.)?volunteersforwildlife\.org\/?$/i, to: 'https://wildlifecenterli.org/', why: 'renamed Wildlife Center of Long Island; the old address redirects there' },
+  { from: /^https?:\/\/(www\.)?safeplaceforpets\.org\/?$/i, to: 'https://redrover.org/relief-dv/', why: "the directory site now just opens RedRover's home page; RedRover's domestic-violence page is where its help for survivors' pets is" },
+  { from: /^https?:\/\/(www\.)?healthypaws\.com\/?$/i, to: 'https://www.healthypawspetinsurance.com/', why: 'where the old address redirects' },
+  { from: /^https?:\/\/(www\.)?agriculture\.ny\.gov\/hpai\/?$/i, to: 'https://agriculture.ny.gov/highly-pathogenic-avian-influenza-hpai', why: "the address the Department's own December 2025 release gives; its site refuses automated browsers" },
 ];
 
 /*

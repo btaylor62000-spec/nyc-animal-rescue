@@ -18,7 +18,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - Itty Bitty City Kitties (Queens/Rockaway) - dedicated neonatal nursery; the specialist. ittybittycitykitties@gmail.com | ittybittycitykitties.org
 - Cats of Meow York (Queens/Woodhaven) - heavy neonatal focus + holding space. info@catsofmeowyork.org | catsofmeowyork.org | IG @catsofmeowyork
 - Bay Ridge Kittens (Brooklyn) - solo neonatal/critical-kitten rescuer (Flatbush Cats med coord). IG @bayridgekittens (contact via IG/adoption form)
-- Kittens and Barbells Rescue (Bronx) - TNR-cert + neonatal tube/bottle-feed trained. kittensandbarbells.org/adoptus | IG @kittensandbarbells_
+- Kittens and Barbells Rescue (Bronx) - TNR-cert + neonatal tube/bottle-feed trained. Instagram @kittensandbarbells_ (its old website now belongs to someone else) | IG @kittensandbarbells_
 - Cat Castle NYC (Manhattan) - takes kittens as young as one day old. (973) 752-7750 | catcastlenyc.org | IG @catcastlenyc
 - Noah's Ark Animal Rescue NY (Queens/Rockaway) - noahsarkny.com (contact form). Catstoria/Kitty Haven (Queens) - catstoriarescue@gmail.com | catstoria.com
 
@@ -45,7 +45,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - Tavi & Friends (Brooklyn-based) - senior + FIV lifetime care; the specialist. 646-872-1533 | adopt@taviandfriends.org
 - Cat Castle NYC (Manhattan) - through-senior (up to 16 yrs). (973) 752-7750 | catcastlenyc.org
 - KittyKind (Manhattan) - senior + special-needs placement. adopt@kittykind.org | kittykind.org
-- Kittens and Barbells (Bronx) - all ages incl. seniors. kittensandbarbells.org | IG @kittensandbarbells_
+- Kittens and Barbells (Bronx) - all ages incl. seniors. Instagram @kittensandbarbells_ (its old website now belongs to someone else) | IG @kittensandbarbells_
 
 ## FeLV+ / FIV+ (retrovirus-positive cats)
 

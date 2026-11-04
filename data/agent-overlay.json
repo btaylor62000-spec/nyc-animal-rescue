@@ -1301,7 +1301,19 @@
     "feather-friends-parrot-adoption-services": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": null,
+      "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "http://www.nycparrot.com",
+          "to": null,
+          "source": "manual",
+          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+        }
+      ]
     },
     "feeding-pets-of-the-homeless": {
       "last_checked": "2026-09-22",
@@ -1774,7 +1786,22 @@
     "kittens-and-barbells-rescue-inc": {
       "last_checked": "2026-09-22",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": null,
+      "intake_urls": [],
+      "status": "verify",
+      "status_note": "Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://www.kittensandbarbells.org, https://kittensandbarbells.org/adoptus",
+          "to": null,
+          "evidence_url": "https://www.kittensandbarbells.org",
+          "source": "manual",
+          "note": "The link check found kittensandbarbells.org redirecting to www.sgmigrant.com/bn-covid19, an Indonesian online gambling site: the domain has lapsed and been taken. Website and form links removed; Instagram and Facebook kept. Not replaced with a guess."
+        }
+      ]
     },
     "kittykind": {
       "last_checked": "2026-09-22",
@@ -1944,7 +1971,19 @@
     "magnificat-cat-rescue-and-rehoming": {
       "last_checked": "2026-09-22",
       "check_status": "unreachable",
-      "consecutive_failures": 2
+      "consecutive_failures": 2,
+      "website": null,
+      "status_note": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "http://www.magnificatrescue.webs.com",
+          "to": null,
+          "source": "manual",
+          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+        }
+      ]
     },
     "mainely-rat-rescue": {
       "last_checked": "2026-09-22",
@@ -2042,8 +2081,22 @@
     },
     "mighty-mutts-and-ollies-place": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "needs-review",
+      "consecutive_failures": 2,
+      "intake_urls": [],
+      "status": "verify",
+      "status_note": "Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": "https://mighty-mutts.squarespace.com/adopt",
+          "to": null,
+          "evidence_url": "https://mighty-mutts.squarespace.com/adopt",
+          "source": "manual",
+          "note": "Link check, 2026-11-04: the adoption link answers \"Squarespace - Website Expired\" (404), and www.mightymutts.org presents a certificate for another name, so browsers warn. Adoption link removed; marked to confirm."
+        }
+      ]
     },
     "monroe-street-cats": {
       "last_checked": "2026-09-22",
@@ -2746,7 +2799,7 @@
     },
     "safe-place-for-pets": {
       "last_checked": "2026-09-22",
-      "check_status": "manual-only",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -2757,8 +2810,19 @@
           "evidence_url": "https://safeplaceforpets.org",
           "source": "manual",
           "note": "Tried on 2026-11-04: safeplaceforpets.org shows a \"Confirm you are human\" bot check. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "verify",
+          "evidence_url": "https://redrover.org/relief-dv/",
+          "source": "manual",
+          "note": "Link check, 2026-11-04: safeplaceforpets.org redirects to redrover.org with no directory. RedRover's relief-dv page lists Safe Escape Grants and Safe Housing Grants for shelters, not a ZIP search. Link pointed at that page; marked to confirm."
         }
-      ]
+      ],
+      "status": "verify",
+      "status_note": "Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes."
     },
     "saint-spiro-cat-rescue-inc": {
       "last_checked": "2026-09-22",

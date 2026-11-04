@@ -31,10 +31,10 @@
       "value": "info@heartsandbonesrescue.com"
     }
   ],
-  "website": "https://www.heartsandbonesrescue.com",
+  "website": "https://heartsandbonesrescue.org/",
   "intake_urls": [
     {
-      "url": "https://www.heartsandbonesrescue.com/adopt",
+      "url": "https://heartsandbonesrescue.org/adopt",
       "label": "Adopt/foster"
     }
   ],
@@ -63,7 +63,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://www.heartsandbonesrescue.com/"
+    "https://heartsandbonesrescue.org/"
   ],
   "last_verified": "2026-08-27",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
