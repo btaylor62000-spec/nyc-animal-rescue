@@ -1,10 +1,11 @@
 {
   "id": "acc-new-hope-program",
-  "name": "ACC urgent (at-risk) list: adopt or rescue a shelter animal",
+  "name": "ACC at-risk list: save a shelter animal from euthanasia (New Hope program)",
   "aka": [
     "ACC New Hope Program",
     "New Hope",
-    "ACC at-risk list"
+    "ACC at-risk list",
+    "ACC urgent list"
   ],
   "parent_org": "animal-care-centers-of-nyc",
   "org_types": [
@@ -41,6 +42,9 @@
   ],
   "emails": [
     {
+      "value": "adopt@nycacc.org"
+    },
+    {
       "value": "newhopeprogram@nycacc.org"
     }
   ],
@@ -63,7 +67,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Cats and dogs on ACC’s at-risk list must leave the shelter quickly or may be euthanised. On each animal’s page on the list there are two buttons. Press \"Reserve\" to adopt it yourself: it goes into a cart for 15 minutes, and you check out at the top right and pay the deposit by card. Press \"Pre-Screener Form\" to foster or adopt through one of ACC’s approved rescue groups (ACC calls them New Hope partners): it needs a Google sign-in, and then contact rescue groups yourself as well. New animals are posted Sunday, Tuesday and Thursday at 6 PM; each posting closes at noon two days later. Website trouble: adopt@nycacc.org. The guide \"Save an animal from the NYC shelter’s urgent list\" has every step and ready-made messages.",
+  "notes": "Three times a week ACC lists cats and dogs who may be euthanised if nobody takes them; each listing closes about 42 hours later (Sunday, Tuesday and Thursday at 6 PM, closing at noon two days later). Open the animal's page. If it says \"Sorry, this pet is for new hope partners only\", only an approved rescue group can take it: press \"Pre-Screener Form\" and contact rescue groups yourself at once. If it has a \"Reserve\" button, a member of the public may adopt it directly: it goes into a cart for 15 minutes, and you check out at the top right and pay the deposit by card. The Pre-Screener Form needs a Google sign-in. Website trouble: adopt@nycacc.org. New Hope program questions: newhopeprogram@nycacc.org. The guide \"Save a shelter animal from euthanasia\" has every step and ready-made messages for rescue groups.",
   "type_raw": "Rescue-partner pipeline / at-risk placement / foster matching",
   "confidence": "High",
   "status": "active",
@@ -97,6 +101,15 @@
       "evidence_url": "https://newhope.shelterbuddy.com/Animal/List",
       "source": "manual",
       "note": "Read on the list and an animal’s page 2026-11-04: every animal has \"Reserve [name]\" and \"Pre-Screener Form\" buttons; the list page gives the schedule, the 15-minute cart and adopt@nycacc.org. The old text said the list was \"updated daily\", which it is not."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": "Who may adopt directly",
+      "evidence_url": "https://newhope.shelterbuddy.com/Animal/List",
+      "source": "manual",
+      "note": "Every animal page read 2026-11-04: 22 of 46 say \"Sorry, this pet is for new hope partners only.\" and have only the Pre-Screener Form; 23 also have \"Reserve [name]\". newhopeprogram@nycacc.org is given on newhope.shelterbuddy.com; adopt@nycacc.org on the list page."
     }
   ],
   "privacy_hold": false,

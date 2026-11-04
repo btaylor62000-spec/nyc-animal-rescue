@@ -6,7 +6,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 - **397** organizations after de-duplication
 - **76** duplicate clusters merged
-- **22** guide pages generated
+- **23** guide pages generated
 - **26** entries flagged as not currently active
 - **6** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -340,9 +340,10 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 15287 |
+| Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the NYC shelter’s urgent list | 7583 |
-| Reporting animal abuse or neglect | 5659 |
+| Save a shelter animal from euthanasia: the NYC at-risk list | 8245 |
+| Reporting animal abuse or neglect | 5821 |
 | Animal emergencies and poison control | 2177 |
 | Low-cost clinics and trap banks | 3583 |
 | Community cats, colonies and starting TNR | 6943 |

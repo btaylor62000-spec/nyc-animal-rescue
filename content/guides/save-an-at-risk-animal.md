@@ -1,15 +1,15 @@
 ---
-title: "Save an animal from the NYC shelter’s urgent list"
+title: "Save a shelter animal from euthanasia: the NYC at-risk list"
 slug: save-an-at-risk-animal
-summary: "A cat or dog at the city shelter may be euthanised if nobody takes it. Check its status, adopt it yourself or apply through a rescue group, today."
+summary: "Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it."
 topics: ["urgent list","euthanasia list","at risk list","at-risk","new hope","euthanasia","euthanized","euthanised","put down","put to sleep","death row","kill list","ACC","pull","rescue partner","save a dog","save a cat","save a dog from the shelter","adopt from ACC","foster to save","reserve","A-number"]
 source: "research/NYC_ACC_At_Risk_New_Hope.xlsx — Save an animal from the at-risk list"
 ---
-# Save an animal from the NYC shelter’s urgent list
+# Save a shelter animal from euthanasia: the NYC at-risk list
 
-_A cat or dog at the city shelter may be euthanised if nobody takes it. Check its status, adopt it yourself or apply through a rescue group, today._
+_Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it._
 
-New York City's public animal shelter, Animal Care Centers of NYC (ACC), posts a list of cats and dogs who must leave the shelter quickly. ACC calls it the “at-risk list”. An animal on it may be euthanised if no home or rescue group takes it before the listing closes, so act today.
+Three times a week, New York City's public shelter, Animal Care Centers of NYC (ACC), lists cats and dogs who may be euthanised if nobody takes them. Each listing closes about 42 hours after it is posted. ACC calls it the “at-risk list”, and runs it through its New Hope program, which places animals with approved rescue groups. Act today.
 
 ## STEP 1: FIND THE ANIMAL AND CHECK IT IS STILL AVAILABLE
 
@@ -17,13 +17,15 @@ New York City's public animal shelter, Animal Care Centers of NYC (ACC), posts a
 - Tick “Show only available”, then press Filter. An animal marked Reserved already has someone taking it.
 - Press “View more..” under the animal. Its page shows its name, its ID number (for example #255268) and which care center it is at. Write these down: you will need them.
 
-## STEP 2: PRESS ONE OF THE TWO BUTTONS ON THE ANIMAL’S PAGE
+## STEP 2: READ THE ANIMAL’S PAGE: WHO IS ALLOWED TO TAKE IT?
 
-- “Reserve”: you will adopt the animal yourself. This is the fastest way out. It puts the animal in a cart for 15 minutes. Press “check out” at the top right before the 15 minutes run out and pay the deposit by card; ACC emails you a receipt, and that confirms your reservation. Registering on the site first (“Register”, top of the page) saves time.
-- “Pre-Screener Form”: you want to foster or adopt, but through one of ACC’s approved rescue groups instead of adopting from ACC yourself. It opens a Google form, so you need to sign in with a Google account. ACC passes your answers to its rescue groups. Then do Step 3 straight away: do not wait to hear back.
-- If the website gives you trouble, email adopt@nycacc.org.
+- If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: press “Pre-Screener Form”, then go straight to Step 3. On 2026-11-04 this was 22 of the 46 animals listed.
+- If the page has a “Reserve [name]” button, a member of the public may adopt this animal directly from ACC, without a rescue group. ACC’s own list page says: “To complete an adoption, please click reserve on the animal of your choice.” Pressing it puts the animal in a cart for 15 minutes; press “check out” at the top right before the time runs out and pay the deposit by card. ACC emails a receipt, which confirms the reservation. Registering on the site first (“Register”, top of the page) saves time.
+- An animal with a Reserve button can also go to a rescue group: if you want to foster, or adopt through a rescue instead, press “Pre-Screener Form” and do Step 3.
+- The Pre-Screener Form is a Google form, so it needs a Google sign-in. ACC passes your answers to its rescue groups. Do not wait to hear back.
+- If the website gives you trouble, email adopt@nycacc.org. Questions about the New Hope program: newhopeprogram@nycacc.org.
 
-## STEP 3 (IF YOU USED THE PRE-SCREENER FORM): CONTACT RESCUE GROUPS YOURSELF
+## STEP 3 (IF A RESCUE GROUP IS NEEDED): CONTACT RESCUE GROUPS YOURSELF
 
 - Only an approved rescue group can take the animal out for you. ACC calls these groups “New Hope partners”.
 - Contact every group in the list below that takes your kind of animal, through every way each one lists (phone, email, form, Instagram), all at once. Do not wait for one reply before trying the next.

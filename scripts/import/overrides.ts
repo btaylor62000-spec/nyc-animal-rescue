@@ -23,7 +23,7 @@ export const OVERRIDES: Override[] = [
     // what someone is trying to do; the old name stays searchable.
     id: 'acc-new-hope-program',
     reason: 'Renamed in the reader\u2019s words, to match the guide "Save an animal from the NYC shelter\u2019s urgent list" (2026-11-04).',
-    set: { name: 'ACC urgent (at-risk) list: adopt or rescue a shelter animal', aka: ['ACC New Hope Program', 'New Hope', 'ACC at-risk list'] },
+    set: { name: 'ACC at-risk list: save a shelter animal from euthanasia (New Hope program)', aka: ['ACC New Hope Program', 'New Hope', 'ACC at-risk list', 'ACC urgent list'] },
   },
   {
     // A reviewer found the ASPCA clinics muddled: the generic entry carried

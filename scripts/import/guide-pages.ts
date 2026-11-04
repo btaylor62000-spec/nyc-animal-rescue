@@ -61,6 +61,9 @@ const WB_NEWHOPE = 'research/NYC_ACC_At_Risk_New_Hope.xlsx';
 // Its own source: a reviewer's question about a woman facing shelter with her
 // cat, checked line by line against the city's pages on 2026-11-04.
 const WB_HOUSING = 'research/NYC_Housing_Crisis_Pets.xlsx';
+// Written 2026-11-04 at the reviewer's request, from NYC Emergency
+// Management's own published guidance; quotations are its words.
+const WB_DISASTER = 'research/NYC_Pets_In_A_Disaster.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -68,6 +71,12 @@ const WB_HOUSING = 'research/NYC_Housing_Crisis_Pets.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_DISASTER, tab: 'Pets in a disaster', slug: 'pets-in-a-disaster',
+    title: 'Pets in a disaster or evacuation',
+    summary: 'Evacuation shelters in New York City take pets. What to pack, how to get there, extreme heat, and first aid.',
+    topics: ['disaster', 'evacuation', 'evacuate', 'hurricane', 'flood', 'storm', 'fire', 'emergency plan', 'go bag', 'preparedness', 'heat wave', 'hot car', 'cooling center', 'evacuation shelter', 'pet first aid'],
+  },
   {
     file: WB_HOUSING, tab: 'Keep your pet if you lose your home', slug: 'keep-your-pet-if-you-lose-your-home',
     title: 'Keeping your pet if you are losing your home',
@@ -78,8 +87,8 @@ export const GUIDE_PAGES: TabSpec[] = [
     file: WB_NEWHOPE, tab: 'Save an animal from the at-risk list', slug: 'save-an-at-risk-animal',
     // Named in the reader's words. "New Hope" and "at-risk list" are ACC's
     // terms; a reviewer pointed out nobody searching in a hurry knows them.
-    title: 'Save an animal from the NYC shelter\u2019s urgent list',
-    summary: 'A cat or dog at the city shelter may be euthanised if nobody takes it. Check its status, adopt it yourself or apply through a rescue group, today.',
+    title: 'Save a shelter animal from euthanasia: the NYC at-risk list',
+    summary: 'Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it.',
     topics: ['urgent list', 'euthanasia list', 'at risk list', 'at-risk', 'new hope', 'euthanasia', 'euthanized', 'euthanised', 'put down', 'put to sleep', 'death row', 'kill list', 'ACC', 'pull', 'rescue partner', 'save a dog', 'save a cat', 'save a dog from the shelter', 'adopt from ACC', 'foster to save', 'reserve', 'A-number'],
   },
   {

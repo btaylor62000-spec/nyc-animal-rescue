@@ -48,6 +48,10 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
   'found-an-injured-bird': [{ heading: 'Wildlife rehabilitators who take birds', need: 'wildlife-rehab', animals: ['bird-wild', 'pigeon'] }],
   'found-wildlife': [{ heading: 'Wildlife rehabilitators', need: 'wildlife-rehab' }],
   'help-paying-for-care': [{ heading: 'Help paying vet bills', need: 'financial-aid' }],
+  'pets-in-a-disaster': [
+    { heading: 'Emergency and urgent-care vets', need: 'emergency-vet' },
+    { heading: 'Somewhere safe for your pet meanwhile', need: 'boarding' },
+  ],
   'keep-your-pet-if-you-lose-your-home': [
     { heading: 'Somewhere safe for your pet meanwhile', need: 'boarding' },
     { heading: 'Help keeping your pet', need: 'owner-support' },

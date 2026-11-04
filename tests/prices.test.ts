@@ -44,3 +44,9 @@ test('a clause that only made sense beside the price goes with it', () => {
 test('a bullet that was only a price disappears rather than leaving an empty dash', () => {
   assert.equal(withoutPrices('- one\n- Fees: $8.50 a year\n- two'), '- one\n- two');
 });
+
+test('a reward is kept: it is a reason to report', () => {
+  const t = 'Humane World offers a standing reward of $5,000 for information leading to a conviction.';
+  assert.equal(hasPrice(t), false);
+  assert.equal(withoutPrices(t), t);
+});
