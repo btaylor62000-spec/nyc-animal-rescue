@@ -1408,6 +1408,28 @@
       "matched": "solo rescuer"
     }
   ],
+  "bluepearl-paramus": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    }
+  ],
   "bobbi-and-the-strays": [
     {
       "tag": "cat",
