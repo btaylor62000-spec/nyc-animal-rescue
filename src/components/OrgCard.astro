@@ -30,7 +30,10 @@ const phone = org.phones[0];
 // For anything that takes emergencies, whether it is open now is the first
 // question. Daytime practices are listed, because by day they are the
 // quickest help, but the card says so before anyone sets off at night.
-const takesEmergencies = org.needs.includes('emergency-vet') && !org.needs.includes('poison-control');
+// Not on a closed, paused or moved entry: "Closed" beside "Open 24/7" is
+// a contradiction, and the status is the one that matters.
+const takesEmergencies =
+  org.needs.includes('emergency-vet') && !org.needs.includes('poison-control') && ['active', 'verify'].includes(org.status);
 const open24 = takesEmergencies && isOpen24h(org.hours);
 const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
 // Every vet that takes emergencies carries exactly one of the three, so the
