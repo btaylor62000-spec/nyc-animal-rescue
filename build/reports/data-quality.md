@@ -4,10 +4,10 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **400** organizations after de-duplication
+- **401** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **19** entries flagged as not currently active
+- **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 294 |
-| dog | 229 |
+| cat | 295 |
+| dog | 230 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -37,20 +37,20 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 165 |
+| adoption | 166 |
 | foster | 99 |
 | tnr | 95 |
 | spay-neuter | 75 |
 | owner-support | 71 |
-| surrender | 64 |
+| surrender | 65 |
 | low-cost-vet | 58 |
-| referral | 47 |
+| referral | 48 |
 | emergency-vet | 37 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
 | medical-special-needs | 24 |
-| wildlife-rehab | 24 |
+| wildlife-rehab | 23 |
 | financial-aid | 23 |
 | education | 23 |
 | legal | 20 |
@@ -60,7 +60,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | behavior-training | 16 |
 | boarding | 15 |
 | microchip | 13 |
-| transport | 12 |
+| transport | 13 |
 | breed-specific | 11 |
 | pet-loss | 9 |
 | neonatal | 7 |
@@ -76,7 +76,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 262 |
 | queens | 221 |
-| manhattan | 217 |
+| manhattan | 218 |
 | bronx | 192 |
 | staten-island | 191 |
 
@@ -84,7 +84,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 194 |
+| High | 195 |
 | Medium | 153 |
 | Low | 53 |
 
@@ -92,8 +92,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 381 |
-| verify | 13 |
+| active | 383 |
+| verify | 12 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -156,14 +156,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.
-- **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
+- **Harlem Cats** — `hiatus`: Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
 - **Kittens and Barbells Rescue, Inc.** — `verify`: Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
 - **Mighty Mutts & Ollie's Place** — `verify`: Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Safe Place for Pets (RedRover)** — `verify`: Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
@@ -338,16 +337,16 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Community cats, colonies and starting TNR | 6880 |
 | Cats needing specialist help | 4787 |
 | Lost or found a cat | 6279 |
-| Help keeping your cat | 10376 |
-| Help keeping your dog | 8955 |
-| Low-cost vet care, spay/neuter and dog licensing | 11750 |
+| Help keeping your cat | 10391 |
+| Help keeping your dog | 8956 |
+| Low-cost vet care, spay/neuter and dog licensing | 11768 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
-| Breed-specific dog rescue | 13770 |
-| Found injured or orphaned wildlife | 6640 |
-| Exotic pet emergencies | 4123 |
+| Breed-specific dog rescue | 13771 |
+| Found injured or orphaned wildlife | 9901 |
+| Exotic pet emergencies | 4124 |
 | What you can legally keep in New York City | 3073 |
-| Help paying for veterinary care | 6387 |
+| Help paying for veterinary care | 8868 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |
 | Lost or found a rabbit, bird or reptile | 2266 |
 | Boarding, pet sitting and planning ahead | 6022 |

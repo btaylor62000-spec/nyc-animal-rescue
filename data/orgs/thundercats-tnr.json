@@ -50,7 +50,7 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

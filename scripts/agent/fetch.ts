@@ -35,8 +35,25 @@ export function sameSite(a: string, b: string): boolean {
   if (!ha || !hb) return false;
   if (ha === hb) return true;
   // A move to a subdomain, or from one to the apex, is still the same site.
-  return ha.endsWith(`.${hb}`) || hb.endsWith(`.${ha}`);
+  if (ha.endsWith(`.${hb}`) || hb.endsWith(`.${ha}`)) return true;
+  // Two subdomains of one registrable domain: portal.311.nyc.gov sending its
+  // sign-in to www1.nyc.gov was flagged as "moved or lost the domain" weekly.
+  const base = (h: string) => h.split('.').slice(-2).join('.');
+  if (base(ha) === base(hb) && !SHARED_HOSTS.has(base(ha))) return true;
+  // The same name under another ending: heartsandbonesrescue.com -> .org.
+  const stem = (h: string) => h.split('.').slice(-2)[0]!;
+  if (stem(ha).length >= 6 && stem(ha) === stem(hb) && !SHARED_HOSTS.has(base(ha))) return true;
+  // Its own site on a hosting service: animalprojectnyc.org ->
+  // animalprojectnyc.squarespace.com.
+  const tenant = (h: string) => (SHARED_HOSTS.has(base(h)) ? h.split('.')[0]! : null);
+  return (tenant(hb) !== null && tenant(hb) === stem(ha)) || (tenant(ha) !== null && tenant(ha) === stem(hb));
 }
+
+/** Hosts where different subdomains belong to different people. */
+const SHARED_HOSTS = new Set(['squarespace.com', 'wixsite.com', 'blogspot.com', 'webs.com', 'wordpress.com', 'github.io', 'rescuegroups.org', 'rescueme.org', 'homestead.com', 'weebly.com', 'carrd.co', 'linktr.ee', 'google.com']);
+
+/** Links whose whole job is to send the reader to another site. */
+export const REDIRECTOR = /^https?:\/\/(www\.)?(bit\.ly|forms\.gle|tinyurl\.com|goo\.gl|t\.co|linktr\.ee|ow\.ly|rebrand\.ly)\//i;
 
 // --- robots.txt ------------------------------------------------------------
 

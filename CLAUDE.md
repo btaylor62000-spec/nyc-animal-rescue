@@ -71,7 +71,19 @@ Ordered by how much harm it prevents, not by size.
    `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
    saying what was read, then `npm run import` (see item 2).
 
-1. **Confirm the weekly check can open its pull request.** As of 2026-09-22
+1. **The weekly check had not saved anything since 2026-09-21.** Every run
+   from 2026-09-28 to 2026-11-02 tripped its safety valve (over 15% flagged)
+   and exited before committing, discarding about a hundred re-confirmations
+   a week. On 2026-11-04, 233 of 395 listings were last confirmed 31-90 days
+   earlier, 125 within the week, 37 never. Fixed the same day (the valve now
+   also needs low re-confirmations; harmless redirects and Facebook pages
+   are not flags). **After merging, run "Weekly data check" by hand from the
+   Actions tab** and read its report: it is the first run that can save.
+   `.github/workflows/site-check.yml` now also drives the live site weekly
+   (zip and borough searches, location on/blocked/far/vague); a failure
+   emails the owner.
+
+1b. **Confirm the weekly check can open its pull request.** As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
    still make (a `verify` status after three dead weeks, and lifting it) goes
    to the `weekly-check` branch as a PR; bookkeeping-only weeks still
@@ -132,10 +144,14 @@ Ordered by how much harm it prevents, not by size.
    - *NYC 211*: there is no separate one. The city's own 311 page says
      211's help-and-referral service is provided through 311 in New York
      City, so the guides now say "call 311", not "dial 211 (nyc.gov/211)".
-   - *Surrender lines*: neither Bideawee nor the ASPCA has one. The ASPCA's
-     NYC FAQ sends owners to rehoming sites and ACC's surrender service
-     (appointment only, 212-788-4000, which is already listed). Bideawee
-     publishes a surrender-prevention packet instead.
+   - *Surrender lines* (corrected the same day): **Bideawee does take
+     surrenders**, by online application (one form for dogs, one for cats),
+     at its Manhattan Adoption Center, 152 W 24th St; it had no listing at
+     all and now does. The first answer here said it had none, from its
+     home page alone; the Mayor's Alliance surrender page showed otherwise.
+     The ASPCA's own pages give no surrender line and its NYC FAQ sends
+     owners to ACC; the "(212) 876-7700 ext. 5" on the Mayor's Alliance page
+     is not confirmed by the ASPCA and is not listed.
    - *DEC's general email*: r2info@dec.ny.gov, from DEC's own "Guide to
      DEC" (revised 2023). Added to the Region 2 entry.
    - *NYSAVE yearly cap*: its guidelines set none per household. The

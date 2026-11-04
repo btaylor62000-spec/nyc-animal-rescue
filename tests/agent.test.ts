@@ -247,6 +247,9 @@ test('the safety valve trips when too much of the directory is flagged at once',
   assert.equal(tooManyFlags(10, 300), false);
   assert.equal(tooManyFlags(50, 300), true, '50 of 300 is well past the threshold');
   assert.equal(tooManyFlags(0, 0), false);
+  // 2026-11-02: 58 of 312 flagged, 102 re-confirmed on their own sites.
+  assert.equal(tooManyFlags(58, 312, 102), false, 'a checker that re-confirmed a third of the directory is working');
+  assert.equal(tooManyFlags(58, 312, 5), true, 'many flags and almost no confirmations is a broken checker');
 });
 
 test('a check never produces a deletion', () => {
@@ -569,4 +572,20 @@ test('an address missing from the page is a note for a person, never a change or
   assert.equal(flag, undefined);
   assert.equal(log.length, 0);
   assert.ok(!('address' in patch) && !('status' in patch));
+});
+
+import { REDIRECTOR } from '../scripts/agent/fetch.ts';
+
+test('same site: subdomains of one domain and the same name under .com/.org', () => {
+  assert.equal(sameSite('https://portal.311.nyc.gov/contact-us', 'https://www1.nyc.gov/account/x'), true);
+  assert.equal(sameSite('https://www.heartsandbonesrescue.com', 'https://heartsandbonesrescue.org/'), true);
+  assert.equal(sameSite('https://www.animalprojectnyc.org', 'https://animalprojectnyc.squarespace.com/'), true);
+  assert.equal(sameSite('https://www.kittensandbarbells.org', 'https://jablay123sos.org/game/pgr/3'), false, 'a takeover is still a different site');
+  assert.equal(sameSite('https://a.squarespace.com', 'https://b.squarespace.com'), false, 'two tenants of a host are different people');
+  assert.equal(REDIRECTOR.test('https://forms.gle/abc'), true);
+});
+
+test('checkable: a Facebook group as the website is a social channel, not an unreachable site', () => {
+  const fb = { ...org({}), website: 'https://www.facebook.com/groups/nycemergencyanimalrescue/', intake_urls: [], social: [] };
+  assert.equal(isCheckable(fb as never).checkable, false);
 });

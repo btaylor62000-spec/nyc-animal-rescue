@@ -809,7 +809,18 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": null,
+          "to": null,
+          "evidence_url": "http://bigcitylittlekitty.blogspot.com",
+          "source": "manual",
+          "note": "Re-read on 2026-11-04: the blog's last stories run to 2014 and nothing newer. Retired status confirmed."
+        }
+      ]
     },
     "bluepearl-brooklyn": {
       "last_checked": "2026-09-22",
@@ -1592,8 +1603,40 @@
     },
     "harlem-cats": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "website": null,
+      "emails": [
+        {
+          "value": "harlemcatsnyc@gmail.com",
+          "label": "From its Facebook page"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "harlemcatsnyc",
+          "url": "https://instagram.com/harlemcatsnyc"
+        },
+        {
+          "platform": "facebook",
+          "handle": "harlemcats",
+          "url": "https://www.facebook.com/harlemcats/"
+        }
+      ],
+      "status": "hiatus",
+      "status_note": "Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://www.harlemcats.com",
+          "to": null,
+          "evidence_url": "https://www.instagram.com/harlemcatsnyc/",
+          "source": "manual",
+          "note": "Re-checked 2026-11-04 after a reviewer pointed out it had not been since August: harlemcats.com has no DNS record (Google public DNS), so the link is removed; its Instagram still describes the group as on hiatus (as indexed; Instagram needs a login to view). Facebook page and the email it lists added so someone can ask. Hiatus kept, now dated."
+        }
+      ]
     },
     "harman-cat-rescue": {
       "last_checked": "2026-09-22",
@@ -2335,8 +2378,22 @@
     },
     "nyc-emergency-animal-rescue": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "check_status": "manual-only",
+      "consecutive_failures": 2,
+      "needs": [
+        "referral",
+        "transport"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "wildlife-rehab",
+          "to": "referral, transport",
+          "source": "manual",
+          "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically)."
+        }
+      ]
     },
     "nyc-feral-cat-initiative": {
       "last_checked": "2026-09-22",
@@ -2362,7 +2419,7 @@
     },
     "nyc-fish-rescue": {
       "last_checked": "2026-09-22",
-      "check_status": "unreachable",
+      "check_status": "manual-only",
       "consecutive_failures": 2
     },
     "nyc-health-dept-low-cost-spay-neuter": {
@@ -2878,6 +2935,21 @@
           "evidence_url": "https://scratchpay.com/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Scratchpay's site. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "(855) 727-2395",
+          "evidence_url": "https://scratchpay.com/",
+          "source": "manual",
+          "note": "Read on its own site in a browser on 2026-11-04, with \"available in all states\". Added so the listing and the help-paying guide agree."
+        }
+      ],
+      "phones": [
+        {
+          "value": "8557272395",
+          "display": "(855) 727-2395"
         }
       ]
     },
@@ -2885,7 +2957,21 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "status": "active",
+      "status_note": null,
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.nyanimalrescue.org/contact",
+          "source": "manual",
+          "note": "Read on its own site in a browser on 2026-11-04: posts dated April 2026, \"one of very few rescues who take in the most difficult medical cases\", 153 East 3rd St, 718.436.5163, info@ and adopt@nyanimalrescue.org (as stored). The \"confirm before relying\" came only from a note in the original research. (347) 599-1500 is not on its contact page and stays as stored for now."
+        }
+      ]
     },
     "second-chance-bird-and-reptile-rescue": {
       "last_checked": "2026-09-22",
@@ -3054,7 +3140,18 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.sugarmuttsrescue.com/",
+          "source": "manual",
+          "note": "Re-read in a browser on 2026-11-04: \"Formerly based in Brooklyn, NY ... Sugar Mutts relocated\", with a 2026 wish list, so still operating, outside the city. Relocated status confirmed."
+        }
+      ]
     },
     "suicide-and-crisis-lifeline": {
       "last_checked": "2026-09-22",
@@ -3170,7 +3267,7 @@
     },
     "the-poor-animals-of-st-francis-inc": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only"
     },
     "the-sato-project": {
       "last_checked": "2026-09-22",
@@ -3196,7 +3293,7 @@
     },
     "thundercats-tnr": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only"
     },
     "tnr-utopia": {
       "last_checked": "2026-09-22",
@@ -3961,6 +4058,18 @@
           "evidence_url": "https://ymcanyc.org/locations/coney-island-ymca",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: The Coney Island YMCA page: 718-215-6900, 2980 West 29th Street 11224 (same address as the city's list). The city lists 718-215-6910 for the pet food programme, one digit different; both are now published, the city's first."
+        }
+      ]
+    },
+    "bideawee-manhattan-adoption-center": {
+      "intake_urls": [
+        {
+          "url": "https://new.shelterluv.com/matchme/owner-surrender/WEE/Dog",
+          "label": "Surrender a dog (application)"
+        },
+        {
+          "url": "https://new.shelterluv.com/matchme/owner-surrender/WEE/Cat",
+          "label": "Surrender a cat (application)"
         }
       ]
     }

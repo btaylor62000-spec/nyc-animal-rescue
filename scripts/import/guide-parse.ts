@@ -23,6 +23,12 @@ export interface GuideSection {
   heading: string | null;
   bullets: GuideBullet[];
   paragraphs: string[];
+  /**
+   * Paragraphs and bullets in source order. The page used to print every
+   * paragraph of a section and then every bullet, which put the Wild Bird
+   * Fund's address under the wrong sub-heading in the wildlife guide.
+   */
+  items: Array<{ kind: 'p'; text: string } | { kind: 'b'; text: string; depth: number }>;
 }
 
 export interface GuideDoc {
@@ -91,10 +97,11 @@ export function parseGuideTab(workbook: string, tab: string): GuideDoc {
 
     const addBullet = (text: string, depth: number) => {
       if (!current) {
-        current = { heading: null, bullets: [], paragraphs: [] };
+        current = { heading: null, bullets: [], paragraphs: [], items: [] };
         sections.push(current);
       }
       current.bullets.push({ text, depth });
+      current.items.push({ kind: 'b', text, depth });
     };
 
     // The cat workbook marks entries with "  - "; the exotic workbook indents
@@ -110,9 +117,12 @@ export function parseGuideTab(workbook: string, tab: string): GuideDoc {
       continue;
     }
 
+    // "## " marks a heading outright, for sub-headings the capitals rule
+    // cannot see ("NYC's main wildlife hospital - The Wild Bird Fund").
+    const explicit = /^##\s+(.+)$/.exec(raw.trim());
     const nextNonBlank = lines.slice(i + 1).find((l) => l.trim());
-    if (isHeading(raw, nextNonBlank)) {
-      current = { heading: raw.trim(), bullets: [], paragraphs: [] };
+    if (explicit || isHeading(raw, nextNonBlank)) {
+      current = { heading: explicit ? explicit[1]!.trim() : raw.trim(), bullets: [], paragraphs: [], items: [] };
       sections.push(current);
       continue;
     }
@@ -125,7 +135,10 @@ export function parseGuideTab(workbook: string, tab: string): GuideDoc {
 
     // Plain prose: part of the intro until the first heading appears.
     if (!current) intro.push(raw.trim());
-    else current.paragraphs.push(raw.trim());
+    else {
+      current.paragraphs.push(raw.trim());
+      current.items.push({ kind: 'p', text: raw.trim() });
+    }
   }
 
   return { workbook, tab, title, intro, sections };

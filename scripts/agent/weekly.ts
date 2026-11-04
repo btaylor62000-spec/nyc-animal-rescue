@@ -206,7 +206,7 @@ async function main(): Promise<void> {
   // --- the safety valve ---------------------------------------------------
   // A run that flags a big share of the directory has broken. Keep the
   // report, write nothing but the check dates.
-  if (tooManyFlags(summary.needsReview, orgs.length)) {
+  if (tooManyFlags(summary.needsReview, orgs.length, summary.verified)) {
     summary.safetyValveTripped = true;
     console.error(
       `\nSTOPPING: this run flagged ${summary.needsReview} of ${orgs.length} records ` +

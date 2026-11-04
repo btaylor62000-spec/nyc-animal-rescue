@@ -75,7 +75,10 @@ const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corp
 const retriever = new Retriever(corpus);
 
 function retrievalChecks(c: EvalCase): { checks: Check[]; retrieved: ReturnType<Retriever['retrieve']> } {
-  const retrieved = retriever.retrieve(c.q, LIMITS.retrieveCount, { origin: c.origin ?? null, now: c.now ? new Date(c.now) : undefined });
+  // A case with no stated time runs at 11pm New York time. Using the real
+  // clock made two cases pass at night and fail after 8am, when the daytime
+  // emergency practices open and rightly rank first.
+  const retrieved = retriever.retrieve(c.q, LIMITS.retrieveCount, { origin: c.origin ?? null, now: new Date(c.now ?? '2026-11-05T04:00:00Z') });
   const ids = retrieved.orgs.map((o) => o.id);
   const checks: Check[] = [];
 

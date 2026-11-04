@@ -15,14 +15,15 @@ Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the l
 
 ## NYC DOG LICENSE - legally required (NYC Health Code 161.04)
 
+- How: apply/renew ONLINE at nyc.gov/doglicense (debit/credit/e-check), or mail a paper form (call 311 to have one mailed; forms in English + Spanish). You need proof of a current RABIES vaccine.
+
 Mail to: NYC DOHMH Dog License, PO Box 22136, New York, NY 10087-2136. Check/money order payable to 'NYC DOHMH' (no cash).
 
 Fees: $8.50/yr spayed-neutered (any age) OR dog under 4 months; $34.00/yr unaltered dog over 4 months; late fee $2.00/yr; replacement tag $1.00. May license up to 5 years at once.
 
-Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft in public; report issues via 311.
-
-- How: apply/renew ONLINE at nyc.gov/doglicense (debit/credit/e-check), or mail a paper form (call 311 to have one mailed; forms in English + Spanish). You need proof of a current RABIES vaccine.
 - In-person same-day licensing events (held across all 5 boroughs) waive the $2 late penalty and you won't be cited on-site - check the Same-Day Licensing/Vaccination schedule at nyc.gov/doglicense.
+
+Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft in public; report issues via 311.
 
 ## CITYWIDE - free / low-cost SPAY-NEUTER
 
@@ -35,11 +36,11 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 
 ## ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)
 
-(No dedicated ASPCA community clinic in Manhattan/Staten Island - use the mobile waitlist + citywide options above.)
-
 - BRONX - ASPCA Community Veterinary Clinic, South Bronx: s/n + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income \<= $50k.)
 - BROOKLYN - ASPCA Community Veterinary Clinic (Lewyt), East New York: s/n + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.
 - QUEENS - ASPCA Community Veterinary Clinic (Rachael Ray Foundation), Long Island City: s/n + wellness + routine care by appointment for eligible Queens residents. clinic.aspca.org/locations/new-york-city.
+
+(No dedicated ASPCA community clinic in Manhattan/Staten Island - use the mobile waitlist + citywide options above.)
 
 ## BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)
 
@@ -52,19 +53,19 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 
 ## ACC COMMUNITY PETS PROGRAM - free help to keep pets with their families
 
+- ACC's Community Pets Program provides free resources to help owners care for their dogs. Contact via nycacc.org/programs/community-resources or ACC (212) 788-4000.
+
 Free pop-up vaccine + microchip clinics in the Bronx and Queens: free rabies, DA2PP, and Bordetella (kennel cough) for dogs, free microchips, and referrals for free spay/neuter. Check the ACC events page for dates and locations.
 
 Also offers: free dog training, tenant advocacy and pet-housing help, spay/neuter appointments, and connections to other agencies.
 
-- ACC's Community Pets Program provides free resources to help owners care for their dogs. Contact via nycacc.org/programs/community-resources or ACC (212) 788-4000.
-
 ## LOW-COST DOG DENTAL (periodontal disease affects ~80% of dogs over age 3)
-
-Veterinary teaching hospitals + nonprofit clinics run ~$50-150 vs a ~$388 private-practice average - ask about pre-anesthetic bloodwork (required for dogs over 5 or with severe disease).
 
 - Humane Society of NY - has a dedicated 'doggy dentist' doing dentals 4-5 days/week (~4 dogs/day); low-cost, volunteer-supported. Books up fast via a waitlist - call early. 306 E 59th St, (212) 752-4842.
 - ASPCA Community Veterinary Clinics (S.Bronx 501 E 161st St / E.NY Brooklyn / LIC Queens) - subsidized dental cleanings + extractions alongside wellness, income \<=$50k. Waitlist via (844) 692-7722.
 - BBAWC Rescue Clinic (Brooklyn Bridge Animal Welfare Coalition) - low-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.
+
+Veterinary teaching hospitals + nonprofit clinics run ~$50-150 vs a ~$388 private-practice average - ask about pre-anesthetic bloodwork (required for dogs over 5 or with severe disease).
 
 ## PET FOOD / SUPPLIES (dog-specific pantries + directories)
 
@@ -76,9 +77,10 @@ Veterinary teaching hospitals + nonprofit clinics run ~$50-150 vs a ~$388 privat
 
 ## VACCINE + MICROCHIP EVENTS
 
+- ACC hosts periodic low-cost vaccine + microchip + licensing events across the boroughs - check nycacc.org (events) and the DOHMH Same-Day Licensing/Vaccination schedule.
+
 Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many NYC pet stores - low cost, no exam fee.
 
-- ACC hosts periodic low-cost vaccine + microchip + licensing events across the boroughs - check nycacc.org (events) and the DOHMH Same-Day Licensing/Vaccination schedule.
 - Microchip registration is separate from implanting: after any chip event, register the chip with the microchip company (e.g. 24Petwatch 24pet.com free, HomeAgain homeagain.com) so your contact info is on file.
 
 ## VET-BILL FINANCIAL AID (when care is unaffordable)
@@ -100,14 +102,13 @@ Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many
 
 Pet insurance reimburses a percentage of future covered vet costs after you pay the vet; it does NOT cover pre-existing conditions, so it helps most when started while a dog is young and healthy. Compare deductible, reimbursement %, annual limit, and what's excluded.
 
-Others widely reviewed for 2026: Embrace, Figo, Lemonade, Spot, Pumpkin, Fetch, MetLife. Get 2-3 quotes and read each policy's exclusions before choosing.
+- Trupanion - trupanion.com, (855) 591-3100. Per-condition deductible; can pay the vet directly at participating clinics; 90% reimbursement.
+- Healthy Paws - healthypaws.com, (855) 898-8991. Annual deductible, unlimited annual coverage, 70-90% reimbursement; fast claims.
+- ASPCA Pet Health Insurance - aspcapetinsurance.com, (866) 204-6764. Customizable; optional wellness add-on; up to 270 days to submit a claim.
+- Nationwide - petinsurance.com, 1-888-899-4874. Long-standing; some plans cover lost-pet advertising; military discount.
+- Pets Best - petsbest.com, (877) 738-7237. Direct-vet-pay option; military discount.
+- Every insurer selling to New Yorkers, with links and what to ask, is in the guide 'Help paying for care': https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
 
 Tip: ask the insurer in writing how they define a pre-existing condition, and whether curable conditions (e.g. an ear infection) can be covered later.
 
 Most subsidized spay/neuter and clinic programs are income-qualified and/or waitlist-based, and capacity is limited. Confirm eligibility, what's included, and current price when you book - certificate programs sometimes add charges for vaccines, older-pet bloodwork, pregnancy, or take-home medications.
-
-- Trupanion - trupanion.com, (855) 591-3100. Per-condition deductible; can pay the vet directly at participating clinics; 90% reimbursement.
-- Healthy Paws - healthypaws.com, (855) 898-8991. Annual deductible, unlimited annual coverage, 70-90% reimbursement; fast claims.
-- ASPCA Pet Health Insurance - aspcapetinsurance.com, (866) 204-6764. Customizable; optional wellness add-on; up to 270 days to submit a claim.
-- Nationwide - petinsurance.com, (877) 738-7874. Long-standing; some plans cover lost-pet advertising; military discount.
-- Pets Best - petsbest.com, (877) 738-7237. Direct-vet-pay option; military discount.
