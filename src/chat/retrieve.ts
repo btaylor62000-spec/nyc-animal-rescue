@@ -36,6 +36,12 @@ export interface Signals {
    * the general "legal" tag, which also covers bite reports and housing law.
    */
   abuse: boolean;
+  /**
+   * The question is about losing a home: eviction, a city shelter, an
+   * emotional support animal. It needs the housing guide -- intake addresses,
+   * the request an animal needs to come in -- whatever animal is involved.
+   */
+  housing: boolean;
   /** True when we know neither where they are nor what animal it is. */
   needsLocation: boolean;
   needsAnimal: boolean;
@@ -128,6 +134,10 @@ const REHOME_RE =
  * the domestic-violence pet programmes, and there is an eval case that fails
  * if this pattern swallows it.
  */
+/** Losing a home, or entering the city's shelter system, with an animal. */
+const HOUSING_RE =
+  /\b(homeless\w*|evict\w*|(losing|lose|lost) (my|our|the) (home|apartment|place|housing|lease)|(homeless|city|dhs) shelters?|shelter system|emotional support animals?|\besa\b|reasonable accommodation|nowhere to (live|stay|sleep)|housing (crisis|emergency))\b/i;
+
 const ABUSE_RE =
   /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|starv\w*|hoard\w*|dog ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law)\b/i;
 
@@ -193,6 +203,8 @@ export function extractSignals(question: string): Signals {
 
   const emergency = EMERGENCY_RE.test(q) || catAttack || gutStasis;
   const abuse = ABUSE_RE.test(q) && !ABUSE_VICTIM_RE.test(q);
+  const housing = HOUSING_RE.test(q);
+  if (housing) needs.add('owner-support');
   // Reporting cruelty is a legal matter, so the tag that carries the police
   // and tip lines is added whether or not the wording tripped it on its own.
   if (abuse) needs.add('legal');
@@ -214,6 +226,7 @@ export function extractSignals(question: string): Signals {
     zips,
     emergency,
     abuse,
+    housing,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
   };
@@ -490,6 +503,10 @@ export class Retriever {
      * abuse?" answered with a wild bird hospital. A reviewer hit exactly that.
      */
     if (s.abuse) return 'report-animal-abuse';
+
+    // Losing a home is the situation, whatever the animal: the answer is
+    // intake, the emotional-support request and somewhere for the pet.
+    if (s.housing) return 'keep-your-pet-if-you-lose-your-home';
 
     // Wildlife first: it is the route people most often get wrong, and the
     // consequences of getting it wrong are the least reversible.

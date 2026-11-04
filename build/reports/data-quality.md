@@ -6,7 +6,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 - **387** organizations after de-duplication
 - **77** duplicate clusters merged
-- **21** guide pages generated
+- **22** guide pages generated
 - **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -322,6 +322,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 15463 |
+| Keeping your pet if you are losing your home | 5551 |
 | Save an animal from the shelter’s at-risk list | 7523 |
 | Reporting animal abuse or neglect | 5443 |
 | Animal emergencies and poison control | 3014 |
