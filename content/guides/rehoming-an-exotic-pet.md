@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Owner suppo
 
 _Never release a domestic animal outdoors. Where to surrender responsibly._
 
-> Owner support & surrender prevention (exotic-specific)
-
 The single most important message: NEVER release a domestic animal to the wild. Domestic rabbits, king/white pigeons, red-eared sliders, goldfish and farmed birds released outdoors almost always die (predators, cars, starvation, cold) and can spread disease or disrupt native ecosystems. There is always a better path than release, dumping, or handing an animal to a pet store 'feeder' pipeline.
 
 ## Why these surrenders happen - and the humane framing:

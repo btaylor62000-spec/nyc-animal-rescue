@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Boarding, s
 
 _Care while you are away, and arranging for a pet to be looked after if you no longer can._
 
-> Boarding, sitting, grooming, life-planning & health alerts (exotic-specific unmet needs)
-
 This page covers needs that don't fit a rescue directory but come up constantly for exotic owners in NYC - and that ordinary kennels, pet-sitters and cat/dog resources usually can't meet. Confirm each provider still serves your species and check current requirements (most require a recent exotic-vet exam) before booking.
 
 ## EXOTIC BOARDING & PET-SITTING (most dog/cat kennels will NOT take exotics; these specialize):

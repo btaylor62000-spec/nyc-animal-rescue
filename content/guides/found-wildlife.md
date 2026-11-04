@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Wildlife re
 
 _Only licensed rehabilitators may legally handle wild animals. Where to take them, and what not to do._
 
-> Wildlife rehabilitation - critical and legally distinct
-
 The rule first: only NYS-licensed wildlife rehabilitators may legally handle wild animals in New York, and most wild animals cannot legally be kept as pets. Wildlife is a rehabilitation-and-release matter, NOT an adoption matter. If you find injured, sick or orphaned wildlife, contact a licensed rehabber for advice before handling it - some species need special handling and some carry diseases transmissible to people.
 
 ## Licensed rehabbers who work from home

@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Exotic-vet 
 
 _Rabbits, birds, reptiles and small mammals need an exotic-capable vet. Call ahead._
 
-> Exotic-vet & emergency care
-
 Why a separate list: most general small-animal vets do NOT treat rabbits, birds, reptiles or other exotics. Exotic species hide illness and decline fast, so line up a rabbit/bird/'exotics-savvy' vet BEFORE you need one. Confirm each clinic still sees your species, and their current hours and emergency policy, by phone on the clinic's own line before relying on it.
 
 ## Finding an exotics vet you can trust

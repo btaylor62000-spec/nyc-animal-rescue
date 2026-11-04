@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Lost-found 
 
 _Where to report, and how to tell a lost pet from a wild animal._
 
-> Lost-found & microchip / ID
-
 Exotics can be microchipped and can be lost or found just like cats and dogs - but the search channels differ by species. Act fast: small animals and birds are vulnerable outdoors.
 
 ## Birds (parrots, companion birds):

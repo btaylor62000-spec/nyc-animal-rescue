@@ -21,6 +21,9 @@ const SUBSTITUTIONS: Array<[RegExp, string]> = [
   [/\bS\/N\b/g, 'spay/neuter'],
   [/\bIG\s+@/g, 'Instagram @'],
   [/\bBklyn\b/g, 'Brooklyn'],
+  // Nobody outside rescue knows what "New Hope" is (reviewer, 2026-11-04).
+  [/(^|[.!?]\s+)ACC New Hope partner\b/gm, '$1Approved ACC rescue partner'],
+  [/\bACC New Hope partner\b/g, 'approved ACC rescue partner'],
   [/(?<![/.\w])w\/\s?(?=\w)/g, 'with '],
   [/\bw\/o\b/g, 'without'],
   [/~\s?(?=\d)/g, 'about '],

@@ -24,7 +24,7 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 
 ## STEP 3 - TRAP AND FIX
 
-- Borrow traps: Neighborhood Cats, ASPCA, FCI, Muffin's. Details: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks
+- Borrow traps: Neighborhood Cats, ASPCA, FCI. Details: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks
 - Free/low-cost spay/neuter for community cats: Toby Project (all 5 boroughs, free), ASPCA, plus feral-friendly clinics by borough.
 - An EAR-TIP (left ear, squared off) = already spayed/neutered + rabies-vaccinated. Don't re-trap ear-tipped cats.
 
@@ -65,7 +65,7 @@ Most free services require you to be a Certified TNR Caretaker (free to become -
 
 ## FREE/LOANED TRAPS + drop-traps:
 
-- Neighborhood Cats trap bank (pickup 30 Prince St, Brooklyn), ASPCA trap bank (TNRtrapbank@aspca.org), FCI loans, Muffin's rentals.
+- Neighborhood Cats trap bank (pickup 30 Prince St, Brooklyn), ASPCA trap bank (TNRtrapbank@aspca.org), FCI loans.
 
 ## FREE CAT FOOD, STRAW & WINTER SHELTERS for colonies:
 

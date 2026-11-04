@@ -9,9 +9,7 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Financial a
 
 _Grants, funds and low-cost options when you cannot afford treatment._
 
-> Financial aid, low-cost care, insurance & food help (exotic-specific)
-
-exotic vet care costs 2-3x standard pet care, far fewer clinics treat exotics, and most aid programs are written for cats and dogs. Below are the programs that actually cover exotics (birds, rabbits, small mammals, reptiles), plus the general funds that don't exclude them. Apply to SEVERAL at once - funds are limited and run out. Grants are paid to the veterinarian, not to you. Confirm eligibility and current status before relying on any single one.
+Every fund, grant and payment plan in the directory, for cats, dogs and every other animal, is listed at the end of this page. This page explains how to apply, which funds also cover rabbits, birds, reptiles and small mammals (most are written for cats and dogs, and exotic care costs more), and how pet insurance works. Apply to several at once - funds are limited and run out. Grants are paid to the veterinarian, not to you. Confirm eligibility and current status before relying on any single one.
 
 ## EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):
 

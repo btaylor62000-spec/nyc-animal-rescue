@@ -14,7 +14,8 @@
   ],
   "needs": [
     "owner-support",
-    "boarding"
+    "boarding",
+    "food-assistance"
   ],
   "boroughs": [
     "manhattan",
@@ -41,7 +42,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511 - animalhaven.org.\n\nshort-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511, animalhaven.org.",
+  "notes": "short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511 - animalhaven.org.\n\nshort-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511, animalhaven.org.\n\nfree/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org).",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",

@@ -4,11 +4,11 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **398** organizations after de-duplication
-- **77** duplicate clusters merged
+- **397** organizations after de-duplication
+- **76** duplicate clusters merged
 - **22** guide pages generated
-- **25** entries flagged as not currently active
-- **5** entries with no way at all to make contact
+- **26** entries flagged as not currently active
+- **6** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -17,7 +17,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 293 |
+| cat | 292 |
 | dog | 227 |
 | wildlife | 45 |
 | rabbit | 37 |
@@ -39,14 +39,14 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | adoption | 165 |
 | foster | 98 |
-| tnr | 95 |
-| spay-neuter | 75 |
+| tnr | 94 |
+| spay-neuter | 74 |
 | owner-support | 69 |
 | surrender | 64 |
-| low-cost-vet | 58 |
+| low-cost-vet | 57 |
 | referral | 48 |
 | emergency-vet | 37 |
-| food-assistance | 33 |
+| food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
 | medical-special-needs | 24 |
@@ -74,27 +74,27 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 260 |
-| queens | 219 |
-| manhattan | 215 |
-| bronx | 190 |
-| staten-island | 189 |
+| brooklyn | 259 |
+| queens | 218 |
+| manhattan | 214 |
+| bronx | 189 |
+| staten-island | 188 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 192 |
-| Medium | 146 |
+| Medium | 145 |
 | Low | 60 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 373 |
+| active | 371 |
 | verify | 18 |
-| retired | 4 |
+| retired | 5 |
 | hiatus | 2 |
 | relocated | 1 |
 
@@ -104,13 +104,14 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (5)
+### No contact method at all (6)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
 - **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
 - **Magnificat Cat Rescue and Rehoming** — CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)
 - **MeowRoof** — QUEENS (Queens-based / Queens-serving cat groups)
+- **Muffin's Pet Connection - MAMA Program** — SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
@@ -150,7 +151,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (26)
+### Never verified (25)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -166,6 +167,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **Harlem Cats** — `hiatus`: Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
 - **MeowRoof** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
+- **Muffin's Pet Connection - MAMA Program** — `retired`: This programme's website now belongs to an unrelated business, and nothing shows the coupon still runs. For low-cost spay/neuter, see the guide Low-cost clinics and trap banks.
 - **New Beginning Animal Rescue (NBAR)** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
 - **NYC Fish Rescue** — `verify`: It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.
 - **Paws of Hope NYC** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
@@ -184,7 +186,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (77)
+### Merged (76)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -235,7 +237,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `greater-state-veterinary-specialists` ← 2 records
 - `urgent-vets-bronx` ← 2 records
 - `friends-of-animals` ← 2 records
-- `muffins-pet-connection-mama-program` ← 2 records
 - `bbawc-rescue-clinic` ← 2 records
 - `acc-community-pets-program` ← 3 records
 - `acc-pet-food-pantry` ← 2 records
@@ -245,7 +246,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `kisos-pet-food-pantry` ← 2 records
 - `paws-ny` ← 7 records
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
-- `animal-haven-community-engagement` ← 2 records
+- `animal-haven-community-engagement` ← 3 records
 - `safe-haven-program-map-foster` ← 2 records
 - `safe-place-for-pets` ← 2 records
 - `safe-havens-for-pets` ← 2 records
@@ -343,23 +344,23 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Save an animal from the NYC shelter’s urgent list | 7583 |
 | Reporting animal abuse or neglect | 5659 |
 | Animal emergencies and poison control | 2177 |
-| Low-cost clinics and trap banks | 3713 |
-| Community cats, colonies and starting TNR | 6971 |
-| Cats needing specialist help | 4753 |
-| Lost or found a cat | 6256 |
-| Help keeping your cat | 6512 |
-| Help keeping your dog | 8577 |
-| Low-cost vet care, spay/neuter and dog licensing | 11011 |
-| Dog behaviour, training and legal questions | 6258 |
-| Lost or found a dog | 3441 |
-| Breed-specific dog rescue | 12990 |
-| Found injured or orphaned wildlife | 9957 |
-| Exotic pet emergencies | 4104 |
-| What you can legally keep in New York City | 3096 |
-| Help paying for veterinary care | 8836 |
-| Rehoming a rabbit, bird, reptile or small animal | 3184 |
-| Lost or found a rabbit, bird or reptile | 2266 |
-| Boarding, pet sitting and planning ahead | 6105 |
+| Low-cost clinics and trap banks | 3583 |
+| Community cats, colonies and starting TNR | 6943 |
+| Cats needing specialist help | 4638 |
+| Lost or found a cat | 6298 |
+| Help keeping your cat | 6434 |
+| Help keeping your dog | 8523 |
+| Low-cost vet care, spay/neuter and dog licensing | 7169 |
+| Dog behaviour, training and legal questions | 6132 |
+| Lost or found a dog | 3380 |
+| Breed-specific dog rescue | 13035 |
+| Found injured or orphaned wildlife | 9898 |
+| Exotic pet emergencies | 4073 |
+| What you can legally keep in New York City | 3057 |
+| Help paying for veterinary care | 8810 |
+| Rehoming a rabbit, bird, reptile or small animal | 3126 |
+| Lost or found a rabbit, bird or reptile | 2235 |
+| Boarding, pet sitting and planning ahead | 6013 |
 
 ### Source tabs not turned into a page (4)
 

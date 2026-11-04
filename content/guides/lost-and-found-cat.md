@@ -9,8 +9,6 @@ source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Lost-found & behavior"
 
 _What to do first, where to post, and who helps with searching._
 
-> MICROCHIP, LOST & FOUND, AND BEHAVIOR / SOCIALIZATION HELP
-
 ## LOST A CAT - do all of these fast (80% of lost cats are found within a mile - usually much closer, hiding)
 
 - Petco Love Lost (petcolove.org/lost) - FREE national database with FACIAL-RECOGNITION photo matching. Upload a clear face photo, report as LOST, print the auto-generated flyer, check every few hours.
@@ -20,13 +18,13 @@ _What to do first, where to post, and who helps with searching._
 - CAT-SPECIFIC SEARCH (cats hide, they don't run far): search silently at DUSK/NIGHT with a flashlight + carrier + smelly food; check under cars, porches, shrubs, basements, alleys, dumpsters. An indoor cat that bolted is usually within a few houses, hiding and silent for days.
 - Indoor escape? Search your OWN home first - behind the stove, in cabinets, closets, under furniture. Put their litter box / a worn t-shirt outside the door; the scent can draw them back.
 - Ask the people who walk your block: mail carriers, delivery drivers, supers, door attendants, restaurant basement staff, park workers. Post flyers at vets, pet stores, and building mailboxes (get permission on private property).
-- Do NOT chase a sighted cat - it makes them bolt. Sit, talk softly, offer food, and consider a humane trap (borrow one - see 'Clinics, traps & support').
+- Do NOT chase a sighted cat - it makes them bolt. Sit, talk softly, offer food, and consider a humane trap (borrow one: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks).
 
 ## FOUND A CAT
 
 - Get it SCANNED for a microchip at any vet or shelter (free) - the fastest route to the owner. Also check for a collar/tag and an EAR-TIP (a tipped ear = a TNR'd community cat with a caretaker, not a lost pet - leave it be).
 - Report as FOUND on Petco Love Lost + file a found report with ACC. Search local Facebook lost-and-found groups + Nextdoor for a matching 'lost' post.
-- SICK or INJURED stray/community cat? Text ACC at (203) 529-5372 or email CommunityPets@nycacc.org - they assess whether it needs help and how. Don't handle an aggressive/fearful cat.
+- SICK or INJURED stray/community cat? Call 311, or ACC on (212) 788-4000, to report a sick or injured stray cat: ACC takes these reports during business hours. You can also email CommunityPets@nycacc.org. Don't handle an aggressive/fearful cat.
 - Healthy, friendly cat? Don't assume it's a stray - it may be an indoor/outdoor neighbor's cat. ACC does NOT accept healthy stray cats; post found flyers + check for a chip first. If truly abandoned, contact a borough rescue.
 - NY stray-hold law: found pets generally must be reported to animal control and held a minimum number of days before adoption - check with ACC.
 

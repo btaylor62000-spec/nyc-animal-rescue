@@ -23,14 +23,12 @@ Every low-cost clinic and trap bank in the directory is listed at the end of thi
 - ASPCA - free/low-cost spay/neuter citywide: public via Same-Day Waitlist (clinic.aspca.org); rescue groups through the ASPCA's Rescuer Services Scheduler (https://www.aspca.org/veterinary-services/rescue-professionals). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.
 - Humane Society of NY (HSNY) - 306 E 59th St, Manhattan - (212) 752-4840 - low-cost spay/neuter for all cats (pet + feral) + dogs, 7 days, appointment only. Each cat in a separate covered trap.
 - Friends of Animals - certificates, redeem at feral-friendly vets - 1-800-321-PETS.
-- MAMA Coupon (Muffin's Pet Connection) - muffins.org/MAMA.htm.
 
 ## TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)
 
 - Neighborhood Cats Trap Bank - reserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.
 - ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); email TNRtrapbank@aspca.org.
 - NYC Feral Cat Initiative (Bideawee) - trap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).
-- Muffin's Pet Connection - rents humane cat traps (muffins.org).
 - Good Home Pet Adoptions (Crown Heights) - community TRAP BANK, info@goodhomepetadoptions.org.
 
 ## DENTALS FOR FERAL / UNHANDLEABLE CATS (bigger than a spay/neuter - needs a feral-experienced clinic, done under sedation in the trap)

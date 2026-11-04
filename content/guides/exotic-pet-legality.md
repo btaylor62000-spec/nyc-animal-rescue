@@ -9,8 +9,6 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Species car
 
 _Which animals are legal as pets in NYC, and which must go to a rehabber or sanctuary._
 
-> Species care & legality (NYC / NYS)
-
 This page is orientation, not legal advice. NYC and NYS rules change; confirm current status with NYC Health, NYC ACC, or NYS DEC before acquiring or rehoming an animal. General picture as of the last-verified date:
 
 ## Prohibited as pets in NYC (illegal to keep - a non-exhaustive list):

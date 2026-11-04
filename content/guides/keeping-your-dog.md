@@ -9,8 +9,6 @@ source: "research/NYC_Dog_Rescue_Reference.xlsx — Owner support & surrender pr
 
 _Support with costs, housing and behaviour, plus how surrender works if you still need it._
 
-> OWNER SUPPORT & KEEPING YOUR DOG (contacts inline)
-
 Resources for owners who need help caring for a dog - food, in-home care, temporary fostering, behavior help, vet-bill aid, and housing support. ACC offers many of these directly and can talk through options. Confirm current availability, which changes over time.
 
 ## ACC OWNER SUPPORT

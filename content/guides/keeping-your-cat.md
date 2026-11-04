@@ -9,8 +9,6 @@ source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Owner support & surrende
 
 _Food, vet bills, housing, and temporary care, before surrender becomes the only option._
 
-> OWNER SUPPORT & KEEPING YOUR CAT - help before surrender (contacts inline)
-
 Resources for cat owners who need help - food, in-home care, temporary/crisis fostering, vet-bill aid, housing support, and pet insurance. ACC offers many of these directly and can talk through options. Confirm current availability, which changes over time.
 
 ## ACC OWNER SUPPORT / SURRENDER PREVENTION

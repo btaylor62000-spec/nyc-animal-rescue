@@ -143,6 +143,8 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Low-cost vet care, spay/neuter and dog licensing',
     summary: 'Affordable veterinary care across the five boroughs, and how to license a dog in NYC.',
     topics: ['low cost vet dog', 'dog license', 'spay neuter dog'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Training, behavior & legal', slug: 'dog-behavior-and-legal',
@@ -240,11 +242,9 @@ export function buildTabPage(spec: TabSpec): GuidePage {
   lines.push(`_${clean(spec.summary)}_`);
   lines.push('');
 
-  // The source's own title line often carries a caveat worth keeping.
-  if (doc.title && doc.title !== spec.title) {
-    lines.push(`> ${clean(doc.title)}`);
-    lines.push('');
-  }
+  // The source's own title line is not shown: on review (2026-11-04) every
+  // one was a spreadsheet label ("OWNER SUPPORT & KEEPING YOUR DOG (contacts
+  // inline)") repeating the page title in shouting capitals.
   for (const p of doc.intro) {
     const t = clean(p);
     if (!t) continue;

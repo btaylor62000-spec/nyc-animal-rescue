@@ -9,13 +9,11 @@ source: "research/NYC_Dog_Rescue_Reference.xlsx — Lost-found & microchip"
 
 _The first hours matter most. Where to look, who to call, and how microchips help._
 
-> LOST & FOUND DOGS + MICROCHIP REGISTRIES (contacts inline)
-
 Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current.
 
 ## LOST A DOG - do all of these NOW
 
-- 1. Check ACC 24/7: search + file a LOST report at nycacc.org/services/lost-and-found - ACC takes in found pets citywide; your dog could already be there. Also call ACC (212) 788-4000.
+- 1. Check ACC first: search + file a LOST report at nycacc.org/services/lost-and-found - ACC takes in found pets citywide; your dog could already be there. Also call ACC (212) 788-4000.
 - 2. Report + search on Petco Love Lost (FREE, uses facial recognition): petcolove.org/lost - upload a clear FACE photo; it auto-matches against found reports from shelters + neighbors and generates printable flyers.
 - 3. Update your MICROCHIP: call your chip company, confirm your contact info is current, and mark the pet LOST. Don't know the company? Use the AAHA Microchip Registry Lookup (aaha.org/petmicrochiplookup) with the chip number.
 

@@ -9,8 +9,6 @@ source: "research/NYC_Dog_Rescue_Reference.xlsx — Breed-specific rescues"
 
 _Rescues that focus on a particular breed or group of breeds._
 
-> BREED-SPECIFIC DOG RESCUES serving NYC (contacts inline)
-
 Use when an adopter or surrenderer wants (or has) a specific breed/type. Most are breed-club networks that cover NYC through a regional/NYC-area volunteer coordinator rather than a local shelter, so ALWAYS confirm current NYC-area capacity and intake. All are ACC New Hope partners unless noted.
 
 "BULLY" / MOLOSSER BREEDS - what this group includes (read first)
@@ -27,28 +25,28 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 
 - New York Bully Crew (NYBC) - all bully breeds pulled from shelters and the streets, fully vetted; handles bully-breed surrenders. 501(c)(3), HQ East Patchogue (Long Island), serves NYC, a Best Friends partner. (844) 633-6922, nybullycrew.org, Instagram @newyorkbullycrew.
 - Bullied Breeds Rescue - explicitly ALL 'bullied' breeds - rottweilers, pit bulls, shepherds 'and many more'; foster-based, pulls local shelter dogs. https://www.bulliedbreedsrescue.org (site app). Instagram @bulliedbreedsrescue.
-- Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; Westchester NY (serves NY metro incl. NYC). https://www.bestbullies.org. ACC New Hope partner.
-- Pibbles & More Animal Rescue (PMAR) - pit/bully advocacy + all-breed. http://www.pmarinc.org (site form). ACC New Hope partner.
-- Get A Bull - bully-breed rescue. http://www.getabull.org. ACC New Hope partner.
+- Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; Westchester NY (serves NY metro incl. NYC). https://www.bestbullies.org. Approved ACC rescue partner.
+- Pibbles & More Animal Rescue (PMAR) - pit/bully advocacy + all-breed. http://www.pmarinc.org (site form). Approved ACC rescue partner.
+- Get A Bull - bully-breed rescue. http://www.getabull.org. Approved ACC rescue partner.
 - Recycle-A-Bull Bully Breed Rescue - pit bulls + pit mixes + OTHER bully breeds; foster-based (Central NY, PO Box 174 Clay NY 13041) - adopts into NY. https://recycleabull.com.
 - Guardian Angel Rescue - overlooked breeds including larger bully types; Brewster NY, serves NY metro. gina@guardianangelrescue.org, guardianangelrescue.org.
 - Bully Baby Rescue - bully breeds plus free/low-cost spay-neuter; Port Chester NY, serves NY metro. (914) 565-1512, info@bullybabyrescue.org, bullybabyrescue.org.
 
 ## PIT-TYPE (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)
 
-- Pit of Our Souls Rescue - pit-type dogs. http://pitofoursoulsrescue.com. ACC New Hope partner.
-- Pitties Love Peace - pit-type dogs. http://www.pittieslovepeace.com. ACC New Hope partner.
+- Pit of Our Souls Rescue - pit-type dogs. http://pitofoursoulsrescue.com. Approved ACC rescue partner.
+- Pitties Love Peace - pit-type dogs. http://www.pittieslovepeace.com. Approved ACC rescue partner.
 - Bully Project - now part of The Good Life Dog Rescue (Rescuzilla and Bully Project NYC merged): pit/bully and other dogs, NYC metro, foster-based. Adoption and foster questionnaires at https://www.thegldr.org - email hello@thegldr.org - Instagram @thegoodlifedogrescuenyc.
 
 ## BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the "bully"/molosser group)
 
-- Long Island Bulldog Rescue - English/French bulldogs, NY metro. http://longislandbulldogrescue.org. ACC New Hope partner.
+- Long Island Bulldog Rescue - English/French bulldogs, NY metro. http://longislandbulldogrescue.org. Approved ACC rescue partner.
 - American Bulldog Rescue - American bulldogs, national incl. NY. http://americanbulldogrescue.org.
 - Short Noses Only Rescue Team (SNORT) - brachycephalic (bulldogs, pugs, frenchies). http://www.snortrescue.org.
 
 ## ROTTWEILER (part of the "bully"/molosser group)
 
-- Mountain Rottie Rescue of New York - rottweilers and 'not-weilers', foster-based, pulls from Northern and Southern shelters; ACC New Hope partner. mountainrottierescue.net.
+- Mountain Rottie Rescue of New York - rottweilers and 'not-weilers', foster-based, pulls from Northern and Southern shelters; approved ACC rescue partner. mountainrottierescue.net.
 - Hudson Valley Rottie Rescue - rottweilers, Middletown NY, serves lower Hudson/NY metro. facebook.com/HudsonValleyRottieRescue.
 - For the Love of Dog Rottweiler Rescue - rottweilers, NH-based but on ACC New Hope list (adopts NY). http://www.4theloveofdog.org.
 
@@ -56,7 +54,7 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 
 ## BOXER (part of the "bully"/molosser group)
 
-- Adopt A Boxer Rescue - boxers, NY/NJ metro (ACC New Hope partner). https://www.adoptaboxerrescue.com.
+- Adopt A Boxer Rescue - boxers, NY/NJ metro (approved ACC rescue partner). https://www.adoptaboxerrescue.com.
 
 CH Boxer Rescue - boxers + bulldogs + assorted, Northeast US incl. NY; takes owner surrenders. (search 'CH Boxer Rescue').
 
@@ -69,7 +67,7 @@ Internet Miniature Pinscher Service (IMPS) - min pins, national incl. NY. (via M
 
 ## CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large "bully"/molosser)
 
-- Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (ACC New Hope partner). https://canecorsorescue.org.
+- Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). https://canecorsorescue.org.
 - Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes, has a NY chapter. https://www.magdrl.org / https://nydanerescue.com.
 - Bullmastiff Rescuers - bullmastiffs, NY-serving. http://www.bullmastiffrescuers.net.
 - Happy Go Lucky Mastiff Rescue - mastiffs, adopts NY metro. https://happygoluckymastiffrescue.com.
@@ -80,11 +78,11 @@ For Dogo Argentino / Presa Canario / Dogue de Bordeaux specifically: no dedicate
 
 ## HUSKY / NORTHERN BREEDS
 
-- Husky House - Siberian Huskies + northern breeds (NJ-based, serves NY metro; strong NYC adopter pipeline). http://www.huskyhouse.org. ACC New Hope partner.
+- Husky House - Siberian Huskies + northern breeds (NJ-based, serves NY metro; strong NYC adopter pipeline). http://www.huskyhouse.org. Approved ACC rescue partner.
 
 ## GERMAN SHEPHERD / MALINOIS / DUTCH SHEPHERD
 
-- Charwills German Shepherd Rescue - GSDs, serves NY metro. https://www.charwillsrescue.com. ACC New Hope partner.
+- Charwills German Shepherd Rescue - GSDs, serves NY metro. https://www.charwillsrescue.com. Approved ACC rescue partner.
 - American Belgian Malinois Rescue - Malinois nationwide incl. NY. https://www.malinoisrescue.org.
 - Malinois & Dutch Shepherd Rescue - Mals + Dutchies, NY-serving. https://www.madrescueinc.org.
 - Herding breeds (Aussie, cattle dog, collie, sheepdog) are covered by ECHO East Coast Herding Dog Org: echorescue.com.
@@ -99,13 +97,13 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 ## GRROWLS (Golden Retriever Rescue Operated With Love Statewide) - goldens, NY statewide. (via Mayor's Alliance list).
 
 - German Shorthaired Pointer Rescue of NJ/NY - GSPs. facebook.com/GspRescueOfNjNy.
-- With a Golden Spirit (WAGS) - golden retrievers. http://wagsrescue.homestead.com. ACC New Hope partner.
+- With a Golden Spirit (WAGS) - golden retrievers. http://wagsrescue.homestead.com. Approved ACC rescue partner.
 
 ## SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE
 
 - Waggytail Rescue - small-breed dogs, NYC (foster-based). adopt@waggytailrescue.org, waggytailrescue.org.
 
-Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. ACC New Hope partner.
+Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescue partner.
 
 - Metropolitan Maltese Rescue (MetroMalts) - Maltese + small white breeds, NY metro. https://www.malteserescue.com.
 - Save A Yorkie Rescue - Yorkshire terriers, Northeast. https://www.saveayorkierescue.org.
@@ -113,7 +111,7 @@ Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. ACC New Hope partn
 - Doxie Rescue of Bucks County & NJ - dachshunds, serves NY metro. https://doxierescue.com.
 - Compact Canine Rescue - small breeds, NY-serving. http://www.compactcaninerescue.org.
 
-Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists (checked 2026-11-04); ask ACC how to reach it. ACC New Hope partner.
+Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists (checked 2026-11-04); ask ACC how to reach it. Approved ACC rescue partner.
 
 ## POODLE / DOODLE / BICHON
 
@@ -122,7 +120,7 @@ Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists
 
 ## SHIBA / AKITA / ASIAN BREEDS
 
-- NYC Shiba Rescue - Shiba Inu, NYC-based. http://nycshibarescue.org. ACC New Hope partner.
+- NYC Shiba Rescue - Shiba Inu, NYC-based. http://nycshibarescue.org. Approved ACC rescue partner.
 - Big East Akita Rescue - Akitas, Northeast incl. NY. http://bigeastakitarescue.org.
 - Korean K9 Rescue - Jindos and all breeds rescued from South Korea plus local NYC dogs; Queens/LIC, foster-based. koreank9rescue.org.
 

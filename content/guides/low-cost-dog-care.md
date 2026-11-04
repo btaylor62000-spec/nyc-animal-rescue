@@ -9,8 +9,6 @@ source: "research/NYC_Dog_Rescue_Reference.xlsx — Low-cost vet, s-n & licensin
 
 _Affordable veterinary care across the five boroughs, and how to license a dog in NYC._
 
-> LOW-COST VET, SPAY/NEUTER & NYC DOG LICENSING (contacts inline)
-
 Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the legally-required NYC dog license. Every dog 4+ months must be licensed; every dog owner must show proof of license + rabies in public. Confirm eligibility (many are income-qualified) and current pricing before you go.
 
 ## NYC DOG LICENSE - legally required (NYC Health Code 161.04)
@@ -19,8 +17,9 @@ Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the l
 
 Mail to: NYC DOHMH Dog License, PO Box 22136, New York, NY 10087-2136. Check/money order payable to 'NYC DOHMH' (no cash).
 
-May license up to 5 years at once.
+The licence costs less for a spayed or neutered dog. You can license for up to five years at once.
 
+- In-person same-day licensing events are held across all five boroughs; you will not be cited on-site. Schedule: nyc.gov/doglicense.
 
 Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft in public; report issues via 311.
 
@@ -30,7 +29,6 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 - The Toby Project - NYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.
 - Humane Society of New York - full-service low-cost veterinary hospital + Animal Mukti FREE spay/neuter program + a free Pit Bull spay/neuter program (100% covered). 306 East 59th St, NY 10022 (btwn 1st/2nd Ave). (212) 752-4842 / clinic (212) 752-4840, 9-5 by APPOINTMENT ONLY (allow 24-48 hours for callback). info.HSNY@verizon.net; https://humanesocietyny.org.
 - Friends of Animals - low-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.
-- MAMA Coupon (Muffin's Pet Connection + Mayor's Alliance). Participating vets + guidelines at www.muffins.org/MAMA.htm.
 - NYC DOHMH low-cost spay/neuter index (authoritative list, updated periodically): https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page.
 
 ## ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)
@@ -41,7 +39,7 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 
 (No dedicated ASPCA community clinic in Manhattan/Staten Island - use the mobile waitlist + citywide options above.)
 
-## BOROUGH low-cost VET CLINICS (from the ACC Low-Cost Vet Resources sheet, Jan 2025)
+## OTHER LOWER-COST VET CLINICS
 
 - BROOKLYN - Animal Clinic of Bay Ridge: lower-cost vet care, 689 86th St, Brooklyn 11228, (718) 833-0700, animalclinicofbayridgebrooklyn.net.
 - BROOKLYN - Sean Casey Animal Rescue runs low-cost vaccine/microchip clinics: 153 East 3rd St 11218, (718) 436-5163; nyanimalrescue.org.
@@ -68,10 +66,14 @@ Also offers: free dog training, tenant advocacy and pet-housing help, spay/neute
 ## PET FOOD / SUPPLIES (dog-specific pantries + directories)
 
 - ACC - may provide food, harnesses, and other supplies directly; ask Admissions (admissions@nycacc.org).
-- ASPCA Community Engagement + Animal Haven Community Engagement Program - free/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org, aspca.org).
+- Animal Haven Community Engagement Program - free/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org).
 - PAWS NY - operates a pet food pantry alongside its in-home care (pawsny.org, (212) 203-4760).
 - Food Help NYC (nyc.gov/foodhelp) - find human food pantries; many also stock pet food. donateNYC Directory has a Pet Care/Food category.
 - Pets of the Homeless (petsofthehomeless.org) - national org providing FREE pet food + vet/dental/emergency care specifically for pets of homeless + at-risk people; find NYC-area donation/host sites on their map.
+
+## VET BILLS AND PET INSURANCE
+
+- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
 
 ## VACCINE + MICROCHIP EVENTS
 
@@ -80,33 +82,3 @@ Also offers: free dog training, tenant advocacy and pet-housing help, spay/neute
 Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many NYC pet stores - low cost, no exam fee.
 
 - Microchip registration is separate from implanting: after any chip event, register the chip with the microchip company (e.g. 24Petwatch 24pet.com free, HomeAgain homeagain.com) so your contact info is on file.
-
-## VET-BILL FINANCIAL AID (when care is unaffordable)
-
-- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. Apply: (917) 669-7281, info@nysave.org, nysave.org.
-- AMC (Schwarzman Animal Medical Center, Manhattan) financial-assistance funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.
-- ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT / SSI / VA / unemployment / TANF proof). Apply via aspca.org/nyc.
-- RedRover Relief - grants toward urgent, life-threatening care; household income under $60,000/yr; paid to the vet. redrover.org/relief, (916) 429-2457.
-- The Pet Fund - help for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.
-- Frankie's Friends - grants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.
-- Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
-- The Humane Society of NY - some cases receive full or partial funding through its Animal Emergency Appeal; ask when booking. 306 East 59th St, NY 10022, (212) 752-4842.
-- Brown Dog Foundation (browndogfoundation.org), The Mosby Foundation (themosbyfoundation.org), Onyx & Breezy Foundation (onyxandbreezy.org) - additional illness/injury funds.
-- Call 311 for a live operator with current local assistance programs: in New York City the 211 help-and-referral service is provided through 311 (https://portal.311.nyc.gov/article/?kanumber=KA-02498).
-- CareCredit - healthcare credit card accepted at most NYC vets; apply at carecredit.com or (800) 677-0718.
-- Scratchpay - simple payment plans for vet care; apply at scratchpay.com (soft credit check, no card).
-
-## PET INSURANCE (for planning ahead, not an unpaid bill you already have)
-
-Pet insurance reimburses a percentage of future covered vet costs after you pay the vet; it does NOT cover pre-existing conditions, so it helps most when started while a dog is young and healthy. Compare deductible, reimbursement %, annual limit, and what's excluded.
-
-- Trupanion - trupanion.com, (855) 591-3100. Per-condition deductible; can pay the vet directly at participating clinics; 90% reimbursement.
-- Healthy Paws - healthypaws.com, (855) 898-8991. Annual deductible, unlimited annual coverage, 70-90% reimbursement; fast claims.
-- ASPCA Pet Health Insurance - aspcapetinsurance.com, (866) 204-6764. Customizable; optional wellness add-on; up to 270 days to submit a claim.
-- Nationwide - petinsurance.com, 1-888-899-4874. Long-standing; some plans cover lost-pet advertising; military discount.
-- Pets Best - petsbest.com, (877) 738-7237. Direct-vet-pay option; military discount.
-- Every insurer selling to New Yorkers, with links and what to ask, is in the guide 'Help paying for care': https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
-
-Tip: ask the insurer in writing how they define a pre-existing condition, and whether curable conditions (e.g. an ear infection) can be covered later.
-
-Most subsidized spay/neuter and clinic programs are income-qualified and/or waitlist-based, and capacity is limited. Confirm eligibility, what's included, and current price when you book - certificate programs sometimes add charges for vaccines, older-pet bloodwork, pregnancy, or take-home medications.
