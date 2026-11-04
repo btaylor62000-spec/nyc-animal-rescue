@@ -43,6 +43,12 @@
    "lon": -73.99117,
    "matched": "238 ATLANTIC AVE, BROOKLYN, NY, 11201"
   },
+  "barc-shelter": {
+   "query": "253 Wythe Ave, Brooklyn, NY 11249",
+   "lat": 40.7161,
+   "lon": -73.964,
+   "matched": "253 WYTHE AVE, BROOKLYN, NY, 11249"
+  },
   "bbawc-rescue-clinic": {
    "query": "76 Montague St, Brooklyn, NY 11201",
    "lat": 40.69522,
