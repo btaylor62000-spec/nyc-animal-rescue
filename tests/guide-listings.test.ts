@@ -15,4 +15,9 @@ test('guide listings: the pet food list carries the city pantries and links to t
   const ids = listingsFor(food).map((o) => o.id);
   assert.ok(ids.includes('the-campaign-against-hunger'), 'a city pet food pantry');
   assert.equal(directoryHref(food), '/directory?need=food-assistance&animal=cat');
+  assert.ok(listingsFor(GUIDE_LISTINGS['report-animal-abuse']![0]!).some((o) => o.id === 'nyc-311'));
+});
+
+test('guide listings: every guide has a list built from the listings', () => {
+  for (const slug of GUIDES_BY_SLUG.keys()) assert.ok(GUIDE_LISTINGS[slug], `guide ${slug} has no listings block`);
 });

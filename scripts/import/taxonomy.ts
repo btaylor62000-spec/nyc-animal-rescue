@@ -89,7 +89,11 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
     pattern: /\bparrots?\b|\bbudgies?\b|\bcockatiels?\b|\bfinch(es)?\b|\bcockatoo|\bmacaw|\bconure|\bavian\b|companion bird|domestic bird|backyard poultry|\bchickens?\b/i,
     fields: ALL,
   },
-  { tag: 'pigeon', pattern: /\bpigeons?\b|\bking pigeon|\bdoves?\b/i, fields: ALL },
+  // "Doves" in the pet-bird section heading ("parrots, budgies ... doves") made
+  // every parrot rescue a pigeon rescue; doves count only where a group's own
+  // type or notes say so.
+  { tag: 'pigeon', pattern: /\bpigeons?\b|\bking pigeon/i, fields: ALL },
+  { tag: 'pigeon', pattern: /\bdoves?\b/i, fields: TYPE_NOTES },
   {
     tag: 'bird-wild',
     pattern: /\bwild birds?\b|\bsongbird|\braptors?\b|\bhawks?\b|\bowls?\b|\beagles?\b|\bfalcons?\b|birds? of prey|\bwaterfowl\b|\bgeese\b|\bducks?\b|\bgulls?\b|window.?strike|fledgling/i,
@@ -128,7 +132,9 @@ export const ANIMAL_RULES: Rule<Animal>[] = [
 export const NEED_RULES: Rule<Need>[] = [
   { tag: 'emergency-vet', pattern: /\b24\/7\b|\b24.?hours?\b|\b24hr\b|emergency (vet|hospital|care)|\bER\b|urgent care/i, fields: ALL, requires: IS_VET_PROVIDER },
   { tag: 'poison-control', pattern: /poison control|poison helpline|toxicolog/i, fields: ALL },
-  { tag: 'wildlife-rehab', pattern: /rehabilitat|\brehabber/i, fields: ALL },
+  // Parrot rescues "rehabilitate and rehome" pets; that is not wildlife rehab,
+  // and it put two of them in the injured-bird answers.
+  { tag: 'wildlife-rehab', pattern: /rehabilitat(?!\w*\s+(and|&)\s+re-?home)|\brehabber/i, fields: ALL },
   { tag: 'adoption', pattern: /\badopt/i, fields: TYPE_NOTES },
   { tag: 'surrender', pattern: /\bsurrender|\brehom(e|ing)|\bintake\b|\bgive up\b|owner.?relinquish/i, fields: TYPE_NOTES },
   { tag: 'foster', pattern: /\bfoster/i, fields: TYPE_NOTES },

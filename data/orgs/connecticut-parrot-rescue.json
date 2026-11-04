@@ -8,12 +8,10 @@
   ],
   "animals": [
     "bird-companion",
-    "pigeon",
     "farm",
     "wildlife"
   ],
   "needs": [
-    "wildlife-rehab",
     "adoption",
     "surrender",
     "foster"

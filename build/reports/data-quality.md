@@ -26,10 +26,10 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | farm | 30 |
 | small-mammal | 30 |
 | bird-wild | 21 |
-| pigeon | 19 |
 | amphibian | 14 |
 | fish | 14 |
 | equine | 12 |
+| pigeon | 11 |
 | invertebrate | 11 |
 | marine | 10 |
 
@@ -49,8 +49,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
-| wildlife-rehab | 28 |
 | medical-special-needs | 24 |
+| wildlife-rehab | 24 |
 | financial-aid | 23 |
 | education | 23 |
 | legal | 20 |

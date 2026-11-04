@@ -49,9 +49,8 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
           Built from the directory's own entries, so the numbers here are the ones kept current there.
           Tap a name for hours, address and how recently it was checked.
         </p>
-        {blocks.map((b) => (
-          <div class="guide-listings__block">
-            <h3>{b.heading} <span class="muted">({b.orgs.length})</span></h3>
+        {blocks.map((b) => {
+          const items = (
             <ul>
               {b.orgs.map((o) => (
                 <li>
@@ -62,9 +61,20 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
                 </li>
               ))}
             </ul>
-            <p><a href={b.href}>See these in the directory, nearest to you first &rarr;</a></p>
-          </div>
-        ))}
+          );
+          return (
+            <div class="guide-listings__block">
+              <h3>{b.heading} <span class="muted">({b.orgs.length})</span></h3>
+              {b.orgs.length > 15 ? (
+                <details>
+                  <summary>Show all {b.orgs.length}</summary>
+                  {items}
+                </details>
+              ) : items}
+              {b.href && <p><a href={b.href}>See these in the directory, nearest to you first &rarr;</a></p>}
+            </div>
+          );
+        })}
       </section>
     )}
     {guide.byline && (

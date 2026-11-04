@@ -45,11 +45,6 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
@@ -2606,22 +2601,12 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -3004,11 +2989,6 @@
       "tag": "bird-companion",
       "field": "name",
       "matched": "Parrot"
-    },
-    {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
     },
     {
       "tag": "farm",
@@ -4605,11 +4585,6 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
@@ -5807,22 +5782,12 @@
       "matched": "Avian"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -6525,22 +6490,12 @@
       "matched": "Parrot"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "farm",
       "field": "section",
       "matched": "poultry"
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -7116,11 +7071,6 @@
     },
     {
       "tag": "wildlife",
-      "field": "notes",
-      "matched": "rehabilitat"
-    },
-    {
-      "tag": "wildlife-rehab",
       "field": "notes",
       "matched": "rehabilitat"
     },
@@ -7705,11 +7655,6 @@
       "matched": "COMPANION BIRD"
     },
     {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
-    },
-    {
       "tag": "reptile",
       "field": "name",
       "matched": "Reptile"
@@ -7925,11 +7870,6 @@
       "tag": "bird-companion",
       "field": "section",
       "matched": "COMPANION BIRD"
-    },
-    {
-      "tag": "pigeon",
-      "field": "section",
-      "matched": "doves"
     },
     {
       "tag": "farm",
@@ -8586,6 +8526,11 @@
       "tag": "bird-companion",
       "field": "notes",
       "matched": "budgies"
+    },
+    {
+      "tag": "pigeon",
+      "field": "notes",
+      "matched": "pigeons"
     },
     {
       "tag": "pigeon",
