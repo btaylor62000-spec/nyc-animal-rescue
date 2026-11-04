@@ -11,9 +11,7 @@
     "cat",
     "dog"
   ],
-  "needs": [
-    "emergency-vet"
-  ],
+  "needs": [],
   "boroughs": [
     "manhattan"
   ],
@@ -31,7 +29,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://vcahospitals.com/manhattan-veterinary-group",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -43,22 +41,34 @@
     "street": "240 East 80th St",
     "zip": "10075"
   },
-  "hours": "Open 24h",
-  "notes": "240 East 80th St (btwn 2nd/3rd), NY 10075. (212) 988-1000. Open 24h.",
+  "hours": "Mon-Fri 9am-7pm, Sat 9am-5pm",
+  "notes": "A general veterinary practice (part of VCA) at 240 East 80th Street, between 2nd and 3rd Avenues. It is not an emergency hospital and is not open overnight; for an emergency out of hours, go to a 24-hour hospital such as VEG Upper East Side or the Animal Medical Center.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://vcahospitals.com/manhattan-veterinary-group/hospital/hours-information"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Emergency & poison control — MANHATTAN - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": "Open 24h",
+      "to": "Mon-Fri 9am-7pm, Sat 9am-5pm",
+      "evidence_url": "https://vcahospitals.com/manhattan-veterinary-group/hospital/hours-information",
+      "source": "manual",
+      "note": "Read on VCA's own page for this hospital, in a browser: 240 East 80th Street, 212-988-1000, regular hours Mon-Fri 9:00 am-7:00 pm, Sat 9:00 am-5:00 pm. The research had it as \"Open 24h\", which was wrong, and it is not on the Mayor's Alliance emergency list. Phone and address match. Taken off the emergency-vet listings because it is a general practice."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

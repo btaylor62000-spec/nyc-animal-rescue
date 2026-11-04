@@ -28,13 +28,18 @@
   "region_note": "QUEENS - 24-hour ER",
   "phones": [
     {
+      "value": "7183054791",
+      "display": "(718) 305-4791",
+      "label": "On the Queens page of its website"
+    },
+    {
       "value": "7185075600",
       "display": "(718) 507-5600",
-      "label": "late urgent care, not 24h - call"
+      "label": "As listed by the Mayor's Alliance"
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://urgent-vets.com/urgent-vets-queens",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -46,20 +51,23 @@
     "street": "32-33 Junction Blvd",
     "zip": "11369"
   },
-  "hours": "Late hours, not 24/7 - call for hours",
-  "notes": "32-33 Junction Blvd, Queens 11369. (718) 507-5600 (late urgent care, not 24h - call).",
+  "hours": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+  "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
+  "source_urls": [
+    "https://urgent-vets.com/urgent-vets-queens",
+    "https://www.animalalliancenyc.org/need-help/emergencyvets/"
+  ],
   "last_verified": null,
   "section": "Emergency & poison control — QUEENS - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -69,6 +77,15 @@
       "to": "Late hours, not 24/7 - call for hours",
       "source": "manual",
       "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "(718) 507-5600",
+      "to": "(718) 305-4791, (718) 507-5600",
+      "evidence_url": "https://urgent-vets.com/urgent-vets-queens",
+      "source": "manual",
+      "note": "Read in a browser on 2026-11-04. Its Queens page: \"OPEN 24 HOURS\", 32-33 Junction Boulevard, (718) 305-4791. Its home page lists (718) 568-6823 and (347) 370-3366 against Queens. The Mayor's Alliance lists (718) 507-5600 and Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Too much disagreement to pick one: the Queens page's number and the Mayor's Alliance's are both published, and the hours say they are not confirmed, so the listing never claims to be open now. Needs a phone call by a person."
     }
   ],
   "privacy_hold": false,

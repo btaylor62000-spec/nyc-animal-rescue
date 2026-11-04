@@ -1,6 +1,6 @@
 {
   "$comment": "Written by the automated checks in scripts/agent and applied by the importer as its last step, so re-running the import never discards what the checks learned. Edit by hand only to correct the agent. To discard an automated change, delete its entry and re-run the import.",
-  "updated": "2026-09-22T20:44:18.966Z",
+  "updated": "2026-11-04",
   "entries": {
     "24petwatch": {
       "last_checked": "2026-09-22",
@@ -1028,7 +1028,20 @@
     },
     "completecare-veterinary-center": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "website": "https://completecarevets.com",
+      "hours": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "24 hours",
+          "to": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+          "evidence_url": "https://completecarevets.com/contact",
+          "source": "manual",
+          "note": "Its website, completecarevets.com, refused every automated read on 2026-11-04. A search index of its contact page shows \"Open today 08:00 am - 08:00 pm\" at 1293 Clove Road; Yelp shows daytime hours with Sunday closed; it is not on the Mayor's Alliance emergency list. Only Bideawee's old list says 24 hours. The listing no longer claims to be open around the clock. Number and address unchanged. A person should open the site in a normal browser."
+        }
+      ]
     },
     "condition-specific": {
       "last_checked": "2026-09-22",
@@ -1086,7 +1099,22 @@
     },
     "elmhurst-animal-emergency-hospital": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "source_urls": [
+        "https://www.animalalliancenyc.org/need-help/emergencyvets/"
+      ],
+      "hours": "Call for hours - listed as 24 hours on its Facebook page, not confirmed",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "24 hours",
+          "to": "Call for hours - listed as 24 hours on its Facebook page, not confirmed",
+          "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
+          "source": "manual",
+          "note": "Read 2026-11-04. Its old website, eaeh.com, is now a parked domain selling ads, so it is not linked. The Mayor's Alliance lists it as \"Call for hours\" at 87-06 Queens Boulevard (btwn 55th Avenue & 55th Road), (718) 426-4444: number and address match. Only its Facebook page says 24 hours. The listing no longer claims to be open around the clock."
+        }
+      ]
     },
     "empty-cages-collective": {
       "last_checked": "2026-09-22",
@@ -1134,7 +1162,21 @@
     },
     "fifth-avenue-veterinary-hospital": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "manual-only",
+      "source_urls": [
+        "https://www.animalalliancenyc.org/need-help/emergencyvets/"
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
+          "source": "manual",
+          "note": "Checked 2026-11-04. It has no working website (fifthavenueveterinaryhospital.com does not answer). The Mayor's Alliance lists \"Open 24 hours, 9102 5th Avenue, Brooklyn, NY 11209, (718) 748-1066\", which matches the record. Left at Medium: that is a reliable list, not the hospital's own page. A person should ring it to confirm."
+        }
+      ]
     },
     "flatbush-cats": {
       "last_checked": "2026-09-22",
@@ -1571,7 +1613,27 @@
     },
     "manhattan-veterinary-group": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "website": "https://vcahospitals.com/manhattan-veterinary-group",
+      "source_urls": [
+        "https://vcahospitals.com/manhattan-veterinary-group/hospital/hours-information"
+      ],
+      "hours": "Mon-Fri 9am-7pm, Sat 9am-5pm",
+      "needs": [],
+      "notes": "A general veterinary practice (part of VCA) at 240 East 80th Street, between 2nd and 3rd Avenues. It is not an emergency hospital and is not open overnight; for an emergency out of hours, go to a 24-hour hospital such as VEG Upper East Side or the Animal Medical Center.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Open 24h",
+          "to": "Mon-Fri 9am-7pm, Sat 9am-5pm",
+          "evidence_url": "https://vcahospitals.com/manhattan-veterinary-group/hospital/hours-information",
+          "source": "manual",
+          "note": "Read on VCA's own page for this hospital, in a browser: 240 East 80th Street, 212-988-1000, regular hours Mon-Fri 9:00 am-7:00 pm, Sat 9:00 am-5:00 pm. The research had it as \"Open 24h\", which was wrong, and it is not on the Mayor's Alliance emergency list. Phone and address match. Taken off the emergency-vet listings because it is a general practice."
+        }
+      ]
     },
     "mayors-alliance-for-nycs-animals": {
       "last_checked": "2026-09-22",
@@ -2241,7 +2303,36 @@
     },
     "the-center-for-avian-and-exotic-medicine": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "last_verified": "2026-11-04",
+      "website": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+      "source_urls": [
+        "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine"
+      ],
+      "hours": "Mon-Sun 9am-7pm",
+      "phones": [
+        {
+          "value": "3322392408",
+          "display": "(332) 239-2408",
+          "label": "Number on its website"
+        },
+        {
+          "value": "2125018750",
+          "display": "(212) 501-8750",
+          "label": "Long-standing number, in the research and every directory"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(212) 501-8750",
+          "to": "(332) 239-2408, (212) 501-8750",
+          "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+          "source": "manual",
+          "note": "Read in a browser on its own page (Thrive Pet Care): 562 Columbus Ave, New York 10024, Monday-Sunday 9:00am-7:00pm. The page shows (332) 239-2408, not the (212) 501-8750 in the research and in every directory. Both are published, the website's first, rather than guessing which one is answered; the 332 number may be a call-tracking line that forwards. Not a 24-hour hospital."
+        }
+      ]
     },
     "the-good-life-dog-rescue": {
       "last_checked": "2026-09-22",
@@ -2314,8 +2405,8 @@
     },
     "urgent-vets-11369": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked",
-      "hours": "Late hours, not 24/7 - call for hours",
+      "check_status": "needs-review",
+      "hours": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2324,8 +2415,35 @@
           "to": "Late hours, not 24/7 - call for hours",
           "source": "manual",
           "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "(718) 507-5600",
+          "to": "(718) 305-4791, (718) 507-5600",
+          "evidence_url": "https://urgent-vets.com/urgent-vets-queens",
+          "source": "manual",
+          "note": "Read in a browser on 2026-11-04. Its Queens page: \"OPEN 24 HOURS\", 32-33 Junction Boulevard, (718) 305-4791. Its home page lists (718) 568-6823 and (347) 370-3366 against Queens. The Mayor's Alliance lists (718) 507-5600 and Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Too much disagreement to pick one: the Queens page's number and the Mayor's Alliance's are both published, and the hours say they are not confirmed, so the listing never claims to be open now. Needs a phone call by a person."
         }
-      ]
+      ],
+      "website": "https://urgent-vets.com/urgent-vets-queens",
+      "source_urls": [
+        "https://urgent-vets.com/urgent-vets-queens",
+        "https://www.animalalliancenyc.org/need-help/emergencyvets/"
+      ],
+      "phones": [
+        {
+          "value": "7183054791",
+          "display": "(718) 305-4791",
+          "label": "On the Queens page of its website"
+        },
+        {
+          "value": "7185075600",
+          "display": "(718) 507-5600",
+          "label": "As listed by the Mayor's Alliance"
+        }
+      ],
+      "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback."
     },
     "urgent-vets-bronx": {
       "last_checked": "2026-09-22",
@@ -2353,7 +2471,28 @@
     },
     "veg": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "ok",
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "website": "https://www.veg.com/locations/new-york/upper-east-side",
+      "source_urls": [
+        "https://www.veg.com/locations/new-york"
+      ],
+      "address": {
+        "street": "1215 2nd Avenue",
+        "zip": "10065"
+      },
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "address",
+          "from": "1215 2nd Ave",
+          "to": "1215 2nd Avenue, 10065",
+          "evidence_url": "https://www.veg.com/locations/new-york",
+          "source": "manual",
+          "note": "Read in a browser on VEG's New York locations page, as a reader sees it: \"OPEN 24/7 VEG Upper East Side, 1215 2nd Avenue, New York, NY 10065, (212) 223-3500\". Number and hours match; zip added."
+        }
+      ]
     },
     "veg-ralph-ave": {
       "last_checked": "2026-09-22",

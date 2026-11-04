@@ -49,7 +49,9 @@
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
+  "source_urls": [
+    "https://www.animalalliancenyc.org/need-help/emergencyvets/"
+  ],
   "last_verified": null,
   "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
   "source_files": [
@@ -57,9 +59,19 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
+      "source": "manual",
+      "note": "Checked 2026-11-04. It has no working website (fifthavenueveterinaryhospital.com does not answer). The Mayor's Alliance lists \"Open 24 hours, 9102 5th Avenue, Brooklyn, NY 11209, (718) 748-1066\", which matches the record. Left at Medium: that is a reliable list, not the hospital's own page. A person should ring it to confirm."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

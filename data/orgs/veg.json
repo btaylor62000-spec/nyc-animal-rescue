@@ -29,34 +29,47 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://www.veg.com/locations/new-york/upper-east-side",
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.76356,
-    "lon": -73.96228,
-    "precision": "address"
+    "lat": 40.7647,
+    "lon": -73.9633,
+    "precision": "zip"
   },
   "address": {
-    "street": "1215 2nd Ave"
+    "street": "1215 2nd Avenue",
+    "zip": "10065"
   },
   "hours": "24/7",
   "notes": "1215 2nd Ave (UES) - (212) 223-3500 - 24/7.\n\nUpper East Side, 1215 2nd Ave. (212) 223-3500. Open 24h; you stay with your pet.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
-  "source_urls": [],
-  "last_verified": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-york"
+  ],
+  "last_verified": "2026-11-04",
   "section": "Emergency & poison control — MANHATTAN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "address",
+      "from": "1215 2nd Ave",
+      "to": "1215 2nd Avenue, 10065",
+      "evidence_url": "https://www.veg.com/locations/new-york",
+      "source": "manual",
+      "note": "Read in a browser on VEG's New York locations page, as a reader sees it: \"OPEN 24/7 VEG Upper East Side, 1215 2nd Avenue, New York, NY 10065, (212) 223-3500\". Number and hours match; zip added."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

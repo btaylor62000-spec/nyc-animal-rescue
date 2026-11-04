@@ -45,7 +45,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | surrender | 63 |
 | low-cost-vet | 58 |
 | referral | 47 |
-| emergency-vet | 38 |
+| emergency-vet | 37 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
@@ -84,8 +84,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 188 |
-| Medium | 158 |
+| High | 190 |
+| Medium | 156 |
 | Low | 44 |
 
 ### By operating status
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (76)
+### Never verified (73)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
