@@ -37,7 +37,16 @@
   "website": "https://astoriaanimals.com",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.76197,
+    "lon": -73.91758,
+    "precision": "address"
+  },
+  "address": {
+    "street": "30-89 38th Street",
+    "city": "Astoria",
+    "zip": "11103"
+  },
   "hours": null,
   "notes": "30-89 38th Street, Astoria, NY 11103. Listed by the Mayor's Alliance for reduced-cost spay/neuter, including for community cats. The number is the one printed on its page; the page's tap-to-call link dials a different number, (718) 777-2018, so if one does not answer try the other.",
   "type_raw": "Vet practice offering spay/neuter and general care",

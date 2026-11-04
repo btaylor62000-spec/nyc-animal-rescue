@@ -36,6 +36,11 @@
   "website": "https://bluepearlvet.com/hospital/queens-ny/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7201,
+    "lon": -73.84337,
+    "precision": "address"
+  },
   "address": {
     "street": "107-28 71st Rd",
     "zip": "11375"

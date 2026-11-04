@@ -32,6 +32,7 @@
   "website": "https://www.ccralliance.org/post/financial_assistance",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "A list of nonprofits that help pay for cancer treatment; contact each fund directly.",

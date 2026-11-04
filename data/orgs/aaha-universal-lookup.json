@@ -30,6 +30,7 @@
   "website": "https://petmicrochiplookup.org",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).",

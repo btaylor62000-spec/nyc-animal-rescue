@@ -40,6 +40,11 @@
   "website": "https://www.facebook.com/amazinganimalsrescueandadoptions",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7851,
+    "lon": -73.81,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Small Queens cat + dog rescue doing adoption + TNR. Phone-responsive (call/text, 'answer within 5 min' if you leave a message); email is slow. FB-primary web presence, no formal 501(c)(3) status confirmed - Medium confidence. Contacts confirmed on own listings. Verified 2026-08-26. Intake: Application + vet reference required Intake: call/text to start Other channel: FB /amazinganimalsrescueandadoptions (Michelerescuer)",

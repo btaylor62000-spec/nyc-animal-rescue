@@ -32,7 +32,16 @@
   "website": "https://vcahospitals.com/westbury",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.77534,
+    "lon": -73.55204,
+    "precision": "address"
+  },
+  "address": {
+    "street": "609-5 Cantiague Rock Road",
+    "city": "Westbury",
+    "zip": "11590"
+  },
   "hours": "Open 24/7",
   "notes": "609-5 Cantiague Rock Road, Westbury, NY 11590. Open 24 hours, seven days. Outside the city, in Nassau County on Long Island.",
   "type_raw": "Emergency and specialty vet hospital, open 24/7",

@@ -44,7 +44,16 @@
   "website": "https://www.lowcostvet.org",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.73888,
+    "lon": -73.80916,
+    "precision": "address"
+  },
+  "address": {
+    "street": "159-19 Horace Harding Expressway",
+    "city": "Fresh Meadows",
+    "zip": "11365"
+  },
   "hours": null,
   "notes": "159-19 Horace Harding Expressway (westbound service road of the Long Island Expressway), Fresh Meadows, NY 11365. The QM4 and QM44 express buses run there from across the city. Read the conditions on its website before calling: it sets out rules for who it will serve.",
   "type_raw": "Low-cost vet clinic and spay/neuter",

@@ -34,7 +34,16 @@
   "website": "https://www.riversideanimalhospitalnorth.com",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.8023,
+    "lon": -73.96624,
+    "precision": "address"
+  },
+  "address": {
+    "street": "250 W 108th Street",
+    "city": "New York",
+    "zip": "10025"
+  },
   "hours": "Mon-Fri 9am-6pm, Sat 9am-5pm, Sun closed",
   "notes": "250 W 108th Street, New York, NY 10025. Also takes texts at (973) 649-9472. Ask about cost when booking.",
   "type_raw": "Vet practice listed by the Mayor's Alliance for reduced-cost care",

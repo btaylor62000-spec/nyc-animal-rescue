@@ -45,6 +45,11 @@
       "url": "https://facebook.com/readyforrescue"
     }
   ],
+  "geo": {
+    "lat": 40.7097,
+    "lon": -74.0166,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) NYC-based foster rescue pulling at-risk dogs (and some cats) from overcrowded shelters. Foster-based, no shelter. Mailing New York 10280 (Battery Park City area). Confirm current availability; email is the reliable channel. Phone: (no public phone; email preferred) Intake: Adopt/foster via site",

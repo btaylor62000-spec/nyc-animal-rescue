@@ -28,6 +28,7 @@
   "website": "https://rehome.adoptapet.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "A way of rehoming a pet yourself. Create a profile for your pet, review applications and choose the new home yourself. Charges a small one-time listing fee per pet.",

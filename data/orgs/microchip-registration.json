@@ -30,6 +30,7 @@
   "website": "https://24pet.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "after any chip event, register the chip with the microchip company (e.g. 24Petwatch 24pet.com free, HomeAgain homeagain.com) so your contact info is on file.",

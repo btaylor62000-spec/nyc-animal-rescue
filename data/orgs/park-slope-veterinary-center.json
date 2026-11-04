@@ -39,6 +39,11 @@
   "website": "https://www.parkslopevetcenter.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.66371,
+    "lon": -73.99454,
+    "precision": "address"
+  },
   "address": {
     "street": "639 4th Ave",
     "zip": "11232"

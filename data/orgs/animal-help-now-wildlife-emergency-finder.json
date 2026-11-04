@@ -31,6 +31,7 @@
   "website": "https://ahnow.org",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "A website and free phone app that finds the nearest wildlife help for where you are, including people licensed to care for injured wildlife (rehabilitators). It does not respond to emergencies itself. In the city, the Wild Bird Fund is the first call for birds.",

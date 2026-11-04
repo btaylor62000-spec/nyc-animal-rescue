@@ -40,6 +40,11 @@
   "website": "https://www.potsbronx.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.86568,
+    "lon": -73.88647,
+    "precision": "address"
+  },
   "address": {
     "street": "2759 Webster Ave.",
     "zip": "10458",

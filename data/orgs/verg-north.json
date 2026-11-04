@@ -34,6 +34,11 @@
   "website": "https://verg-brooklyn.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.68638,
+    "lon": -73.9939,
+    "precision": "address"
+  },
   "address": {
     "street": "318 Warren St",
     "zip": "11201"

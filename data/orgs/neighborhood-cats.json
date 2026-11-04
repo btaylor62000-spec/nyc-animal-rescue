@@ -58,6 +58,11 @@
     }
   ],
   "social": [],
+  "geo": {
+    "lat": 40.697,
+    "lon": -73.98241,
+    "precision": "address"
+  },
   "address": {
     "street": "30 Prince St",
     "zip": "11201"

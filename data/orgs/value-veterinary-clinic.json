@@ -38,7 +38,16 @@
   "website": "https://valuevethospital.com",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.83118,
+    "lon": -73.85463,
+    "precision": "address"
+  },
+  "address": {
+    "street": "2074 Cross Bronx Expressway",
+    "city": "Bronx",
+    "zip": "10472"
+  },
   "hours": "Mon-Sat 9am-5pm",
   "notes": "2074 Cross Bronx Expressway, Bronx, NY 10472, near the 6 train at Parkchester.",
   "type_raw": "Vet practice listed for reduced-cost care",

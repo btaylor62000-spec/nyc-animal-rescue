@@ -36,6 +36,11 @@
   "website": "https://www.veg.com/locations/new-york/williamsburg",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.72135,
+    "lon": -73.96052,
+    "precision": "address"
+  },
   "address": {
     "street": "87 Kent Ave",
     "zip": "11249"

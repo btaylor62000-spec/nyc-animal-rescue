@@ -45,6 +45,7 @@
   "website": "https://nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page - report in-progress cruelty directly and ask for the ASPCA Liaison Officer. If a precinct says it has none, ask for the Neighborhood Coordination Officer or the Community Affairs Officer and say you want to file an animal abuse complaint. Not anonymous.",

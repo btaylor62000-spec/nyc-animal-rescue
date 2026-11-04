@@ -35,6 +35,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.72548,
+    "lon": -73.8805,
+    "precision": "address"
+  },
   "address": {
     "street": "79-11 Caldwell Ave.",
     "zip": "11379",

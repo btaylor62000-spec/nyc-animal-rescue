@@ -50,6 +50,11 @@
       "url": "https://facebook.com/sugarmuttsrescue"
     }
   ],
+  "geo": {
+    "lat": 40.7019,
+    "lon": -73.9426,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "IMPORTANT STATUS UPDATE: 501(c)(3) founded 2007 in Brooklyn (East Williamsburg) by Amy Marciano as a pit/staffie-advocacy dog rescue pulling from NYC ACC - but it PERMANENTLY RELOCATED to the Pocono Mountains region of Pennsylvania in early 2018 due to NYC operating costs. It still adopts into the NY-area but is no longer NYC-based. Kept here (flagged) because it's frequently still listed as a Brooklyn rescue - verify NY-area availability directly before relying. Phone: (email preferred) Intake: Adopt/foster via site & Petfinder",

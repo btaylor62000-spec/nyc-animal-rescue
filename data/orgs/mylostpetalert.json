@@ -28,6 +28,7 @@
   "website": "https://mylostpetalert.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "A paid service that faxes shelters and vets, calls neighbours and shares a flyer when a pet goes missing.",

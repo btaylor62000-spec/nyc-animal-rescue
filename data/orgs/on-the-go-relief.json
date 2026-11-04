@@ -35,6 +35,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.67819,
+    "lon": -73.89024,
+    "precision": "address"
+  },
   "address": {
     "street": "2832 Fulton St.",
     "zip": "11207",

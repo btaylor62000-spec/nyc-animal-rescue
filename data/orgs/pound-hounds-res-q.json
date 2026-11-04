@@ -50,6 +50,11 @@
       "url": "https://facebook.com/PoundHoundsResQ"
     }
   ],
+  "geo": {
+    "lat": 40.7418,
+    "lon": -74.0005,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) since 2014, one of the highest-volume rescues pulling dogs off the euthanasia list at NYC ACC + local shelters. Foster-based, no physical facility. Thoughtful matchmaking (considers dog's behavior + household dynamics); application, interview, and home check required. About half of foster dogs are adopted by their fosters. Mailing NY, NY 10011. Phone: (no public phone; email preferred) Intake: app + interview + home check",

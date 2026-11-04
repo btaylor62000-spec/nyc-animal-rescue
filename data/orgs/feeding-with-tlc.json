@@ -35,6 +35,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.63055,
+    "lon": -74.08102,
+    "precision": "address"
+  },
   "address": {
     "street": "309 St. Paul's Ave.",
     "zip": "10304",

@@ -48,6 +48,11 @@
       "url": "https://facebook.com/badassbrooklyn"
     }
   ],
+  "geo": {
+    "lat": 40.6431,
+    "lon": -73.9764,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3) since 2011 (founder Sara Alize Cross); 4,000+ dogs rehomed. All-breed, all-volunteer, foster-based - no physical shelter. Pulls the most at-risk dogs from overcrowded rural shelters in the US South and US Virgin Islands, transports to NYC-area foster homes. Adopters must be 23+, provide ID + references, consent to a home visit. Mailing: 419 McDonald Ave, Box 180523, Brooklyn NY 11218. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Application linked from each dog's listing",

@@ -50,6 +50,7 @@
   "website": "https://portal.311.nyc.gov",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "311 - portal.311.nyc.gov - ongoing abuse or neglect, non-emergency; routes to your NYPD precinct. The online report lets you upload photos, video and documents. Takes anonymous reports.",

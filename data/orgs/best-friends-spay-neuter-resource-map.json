@@ -29,6 +29,7 @@
   "website": "https://bestfriends.org/network/resources-tools/spayneuter-resource-map",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "Best Friends Animal Society's map of spay and neuter providers, searchable by location.",

@@ -38,6 +38,11 @@
       "handle": "Greater City Aquarium Society"
     }
   ],
+  "geo": {
+    "lat": 40.7514,
+    "lon": -73.8212,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "NYC aquarium society founded 1922 (member of the Northeast Council of Aquarium Societies); monthly meetings at Queens Botanical Garden with a fish/plant/equipment auction open to the public. A Queens-side option for responsibly rehoming aquarium fish and getting care advice. Never release aquarium fish into local waters. Phone: (via greatercity.org) Email: (via greatercity.org) Intake: Rehome fish/plants at the monthly auction (1st Wednesday, except Jan/Feb, Queens Botanical Garden; auction open to all). Details at Other channel: greatercity.org",

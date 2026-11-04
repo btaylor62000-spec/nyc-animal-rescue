@@ -36,6 +36,7 @@
   "website": "https://ambuvet.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": "24/7",
   "notes": "A 24-hour pet ambulance for getting an animal to a vet when you cannot take it yourself. It is not a hospital: ring the vet hospital you are going to before pickup, as AmbuVet's own page asks. It charges for each trip, payment due at pickup or drop-off, and dispatch is first come, first served, so at busy times it may point you to a partner first. An owner is not guaranteed a ride along with the animal.",

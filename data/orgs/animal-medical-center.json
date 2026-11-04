@@ -55,6 +55,11 @@
   "website": "https://www.amcny.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.76043,
+    "lon": -73.95827,
+    "precision": "address"
+  },
   "address": {
     "street": "510 East 62nd St",
     "zip": "10065"

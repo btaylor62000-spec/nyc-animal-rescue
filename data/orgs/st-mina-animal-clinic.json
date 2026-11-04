@@ -33,6 +33,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.69166,
+    "lon": -73.8654,
+    "precision": "address"
+  },
   "address": {
     "street": "76-23 Jamaica Ave",
     "zip": "11421"

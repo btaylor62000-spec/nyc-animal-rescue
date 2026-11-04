@@ -32,6 +32,7 @@
   "website": "https://petfbi.org",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "Post a lost or found report, search for matches and get alerts, at no cost.",

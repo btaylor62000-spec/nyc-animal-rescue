@@ -33,7 +33,16 @@
   "website": "https://www.veg.com/locations/new-york/chelsea",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.74365,
+    "lon": -73.99235,
+    "precision": "address"
+  },
+  "address": {
+    "street": "735 6th Avenue",
+    "city": "New York",
+    "zip": "10010"
+  },
   "hours": "Open 24/7",
   "notes": "735 6th Avenue, New York, NY 10010. Open 24/7, 365 days; no appointments - call or walk in, and you can call and speak to a doctor first. You can stay with your pet. Part of Veterinary Emergency Group (VEG), which runs several other 24/7 hospitals in the city.",
   "type_raw": "Emergency vet hospital, open 24/7 (no appointment, walk in)",

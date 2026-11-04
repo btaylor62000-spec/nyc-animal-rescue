@@ -37,6 +37,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.758,
+    "lon": -73.87421,
+    "precision": "address"
+  },
   "address": {
     "street": "32-33 Junction Blvd",
     "zip": "11369"

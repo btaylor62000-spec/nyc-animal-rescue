@@ -29,6 +29,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.6159,
+    "lon": -73.92957,
+    "precision": "address"
+  },
   "address": {
     "street": "2220 Flatbush Ave",
     "zip": "11234"

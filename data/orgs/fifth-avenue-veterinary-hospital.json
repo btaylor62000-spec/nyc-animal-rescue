@@ -34,6 +34,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.61856,
+    "lon": -74.02882,
+    "precision": "address"
+  },
   "address": {
     "street": "9102 5th Ave",
     "zip": "11209"

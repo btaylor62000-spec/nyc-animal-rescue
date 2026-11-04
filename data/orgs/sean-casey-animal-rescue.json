@@ -94,6 +94,11 @@
       "url": "https://facebook.com/SeanCaseyAnimalRescue"
     }
   ],
+  "geo": {
+    "lat": 40.64842,
+    "lon": -73.97828,
+    "precision": "address"
+  },
   "address": {
     "street": "153 East 3rd St",
     "zip": "11218"

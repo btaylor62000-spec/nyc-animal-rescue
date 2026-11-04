@@ -35,6 +35,11 @@
   "website": "https://hourchildren.org/our-food-pantry/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.76042,
+    "lon": -73.94032,
+    "precision": "address"
+  },
   "address": {
     "street": "36-49 11th St.",
     "zip": "11106",

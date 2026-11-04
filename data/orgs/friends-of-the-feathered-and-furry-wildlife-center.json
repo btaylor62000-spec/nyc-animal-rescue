@@ -31,7 +31,16 @@
   "website": "https://fffwildlifecenter.weebly.com",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 42.23783,
+    "lon": -74.34572,
+    "precision": "address"
+  },
+  "address": {
+    "street": "10846 Route 23A",
+    "city": "Hunter",
+    "zip": "12442"
+  },
   "hours": null,
   "notes": "10846 Route 23A, Hunter, NY 12442. A 501(c)(3) headed by a multiple-license wildlife rehabilitator. Far from the city, but the Mayor's Alliance lists it because it gives advice and referrals by phone when it cannot help directly. Its website is now on Weebly; the old fffwildlifecenter.com address no longer works. Do not give a wild animal food or water while waiting.",
   "type_raw": "Licensed wildlife rehabilitator, upstate - advice and referrals by phone",

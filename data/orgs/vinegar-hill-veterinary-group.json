@@ -43,6 +43,11 @@
   "website": "https://vhvetgroup.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.70261,
+    "lon": -73.99095,
+    "precision": "address"
+  },
   "address": {
     "street": "57 Front St",
     "zip": "11201"

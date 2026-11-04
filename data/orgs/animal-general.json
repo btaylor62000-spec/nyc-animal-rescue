@@ -43,6 +43,11 @@
       "url": "https://www.facebook.com/animalgeneral/"
     }
   ],
+  "geo": {
+    "lat": 40.78724,
+    "lon": -73.97171,
+    "precision": "address"
+  },
   "address": {
     "street": "558 Columbus Ave",
     "zip": "10024"

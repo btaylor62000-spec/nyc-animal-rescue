@@ -36,6 +36,11 @@
   "website": "https://aceofspays.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 39.978,
+    "lon": -74.8363,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Hainesport, NJ, about 90 minutes' drive from the city by the Mayor's Alliance's estimate. The other numbers on its page are the after-hours hospitals it sends patients to after surgery, not the clinic.",

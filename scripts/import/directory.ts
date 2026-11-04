@@ -34,6 +34,9 @@ const HEADER_ALIASES: Record<string, string[]> = {
   // Optional. Without it every workbook row reached the page with no hours,
   // so a 24-hour hospital could not say it was one.
   hours: ['hours'],
+  // Optional. A place someone travels to needs its street address on the page,
+  // and distance sorting needs it to find the place on a map.
+  address: ['address', 'street address'],
 };
 
 export interface DraftOrg extends Org {
@@ -101,6 +104,17 @@ function confidenceOf(raw: string): Confidence {
   if (v.startsWith('high')) return 'High';
   if (v.startsWith('med')) return 'Medium';
   return 'Low';
+}
+
+/** "735 6th Avenue, New York, NY 10010" -> street, city, zip. */
+export function parseAddress(raw: string): Org['address'] {
+  if (!raw) return null;
+  const parts = raw.split(',').map((p) => p.trim()).filter(Boolean);
+  const zip = raw.match(/\b(\d{5})(?:-\d{4})?\s*$/)?.[1];
+  const street = parts[0];
+  if (!street) return null;
+  const city = parts.length >= 3 ? parts[1] : undefined;
+  return { street, ...(city ? { city } : {}), ...(zip ? { zip } : {}) };
 }
 
 export function readDirectory(spec: SourceSpec): DraftOrg[] {
@@ -282,7 +296,7 @@ function buildDraft(
     website: websites.values[0] ?? null,
     intake_urls: intake.values,
     social: social.values,
-    address: null,
+    address: parseAddress(get(row, 'address')),
     hours: get(row, 'hours') || null,
     notes: notesParts.length ? notesParts.join(' ') : null,
     type_raw: typeRaw || null,

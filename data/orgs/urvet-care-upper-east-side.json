@@ -33,7 +33,16 @@
   "website": "https://urvetcare.com/locations/upper-east-side/",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.7705,
+    "lon": -73.95704,
+    "precision": "address"
+  },
+  "address": {
+    "street": "1432 Second Avenue",
+    "city": "New York",
+    "zip": "10021"
+  },
   "hours": "Mon-Fri 8:30am-6:30pm, Sat 9am-5pm, Sun 9am-3pm",
   "notes": "1432 Second Avenue, New York, NY 10021. Walk-ins and same-day appointments during opening hours. Not open overnight: URvet Care's Midtown hospital, listed separately, is.",
   "type_raw": "Vet practice with same-day urgent care and walk-ins; daytime hours",

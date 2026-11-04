@@ -35,6 +35,11 @@
   "website": "https://www.tcahnyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.67862,
+    "lon": -73.91814,
+    "precision": "address"
+  },
   "address": {
     "street": "2004 Fulton St.",
     "zip": "11233",

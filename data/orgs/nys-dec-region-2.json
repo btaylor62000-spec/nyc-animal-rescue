@@ -40,7 +40,16 @@
   "website": "https://dec.ny.gov",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.74334,
+    "lon": -73.94903,
+    "precision": "address"
+  },
+  "address": {
+    "street": "47-40 21st Street",
+    "city": "Long Island City",
+    "zip": "11101"
+  },
   "hours": null,
   "notes": "The DEC office that covers the five boroughs, at 1 Hunters Point Plaza, 47-40 21st Street, Long Island City, NY 11101. Call in the daytime about deer, coyotes and other large animals, wildlife you think is being kept or hunted illegally, or to be pointed to a licensed wildlife carer. After hours the DEC dispatch line takes wildlife calls statewide. A reporting and referral line: they will not collect an injured bird.",
   "type_raw": "State environmental agency, New York City regional office - large mammals, deer, wildlife questions, referrals to licensed wildlife carers; a government office that does not collect animals",

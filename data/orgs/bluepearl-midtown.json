@@ -36,6 +36,11 @@
   "website": "https://bluepearlvet.com/hospital/midtown-nyc/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.76675,
+    "lon": -73.98713,
+    "precision": "address"
+  },
   "address": {
     "street": "410 West 55th St",
     "zip": "10019"

@@ -35,6 +35,11 @@
   "website": "https://girlsclub.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.72426,
+    "lon": -73.97754,
+    "precision": "address"
+  },
   "address": {
     "street": "402 East 8th St.",
     "zip": "10009",

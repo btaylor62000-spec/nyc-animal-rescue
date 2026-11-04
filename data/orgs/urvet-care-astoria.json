@@ -33,7 +33,16 @@
   "website": "https://urvetcare.com/locations/astoria/",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.76185,
+    "lon": -73.91674,
+    "precision": "address"
+  },
+  "address": {
+    "street": "30-80 Steinway Street",
+    "city": "Astoria",
+    "zip": "11103"
+  },
   "hours": "Open 24/7",
   "notes": "30-80 Steinway Street, Astoria, NY 11103. Open 24/7 for emergencies. Ring this number for this hospital; URvet Care's main line, (646) 221-1200, is a different hospital.",
   "type_raw": "Emergency vet hospital, open 24/7",

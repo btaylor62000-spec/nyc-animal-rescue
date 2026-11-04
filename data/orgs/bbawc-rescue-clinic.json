@@ -41,6 +41,11 @@
   "website": "https://bbawc.org/clinic",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.69522,
+    "lon": -73.99609,
+    "precision": "address"
+  },
   "address": {
     "street": "76 Montague St",
     "zip": "11201"

@@ -55,6 +55,11 @@
     }
   ],
   "social": [],
+  "geo": {
+    "lat": 40.6937,
+    "lon": -73.9899,
+    "precision": "zip"
+  },
   "address": null,
   "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm; Sun closed (Bay Ridge: Sun 10am-6pm)",
   "notes": "Boerum Hill: 317 Atlantic Ave, Brooklyn 11201. Bay Ridge: 8209 3rd Ave, Brooklyn. Upper East Side: 227 E 84th St, New York. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones.",

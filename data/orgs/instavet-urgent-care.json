@@ -34,6 +34,11 @@
   "website": "https://instavet.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7471,
+    "lon": -73.9397,
+    "precision": "zip"
+  },
   "address": {
     "street": "44-16 23rd St",
     "zip": "11101"

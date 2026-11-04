@@ -36,6 +36,11 @@
   "website": "https://bluepearlvet.com/hospital/downtown-nyc/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.73677,
+    "lon": -73.99315,
+    "precision": "address"
+  },
   "address": {
     "street": "1 W 15th St",
     "zip": "10011"

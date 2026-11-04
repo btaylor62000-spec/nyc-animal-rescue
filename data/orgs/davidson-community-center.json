@@ -35,6 +35,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.85374,
+    "lon": -73.90848,
+    "precision": "address"
+  },
   "address": {
     "street": "2038 Davidson Ave.",
     "zip": "10453",

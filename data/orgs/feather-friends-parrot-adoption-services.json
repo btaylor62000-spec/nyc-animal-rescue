@@ -33,6 +33,11 @@
   "website": "http://www.nycparrot.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7247,
+    "lon": -73.9096,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "A Queens (Maspeth) parrot adoption service - one of the very few listings for an IN-NYC pet-parrot resource, which is why it's included. However, its listing appears dated and could not be independently confirmed as currently operating at build time. Treat as a lead to verify by email before relying; if it's inactive, use LIPS placement, Northeast Avian Rescue, or the tri-state parrot rescues below. Phone: (fax 718-478-8460; no listed voice line) Intake: Email nycparrot@verizon.net Intake: PO Box 780344, Maspeth NY 11378. NOTE: verify the org is still active before referring (listing may be dated; site blocks automated checks). Other channel: (none confirmed)",

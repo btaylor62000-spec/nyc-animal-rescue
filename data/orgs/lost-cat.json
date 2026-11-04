@@ -31,6 +31,7 @@
   "website": "https://www.lost-cat.org/en-us/",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "Post a lost or found report, browse reports on a map and sign up for alerts near you. Listed on the Mayor's Alliance lost and found page; supplied by a reviewer on 2026-11-03. The home page shows automated browsers a loading screen, but its contact page can be read and shows hello@lost-cat.org. Intake: //www.lost-cat.org/en-us/contact",

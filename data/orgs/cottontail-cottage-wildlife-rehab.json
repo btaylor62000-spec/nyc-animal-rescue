@@ -36,6 +36,11 @@
   "website": "https://cottontailrehab.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 41.0382,
+    "lon": -73.7107,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "All-volunteer, licensed wildlife rehabilitators. The phone line is answered around the clock by voicemail; leave a message and they call back. Wild animals only: they are not a pet rescue, and everything they take in is wild and native to New York State. Mailing address P.O. Box 13, Purchase, NY 10577. Do not give a wild animal food or water while waiting. Intake: Call (914) 933-7559 at any hour and leave a message - they return calls as soon as they can",

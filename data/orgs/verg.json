@@ -38,6 +38,11 @@
   "website": "https://verg-brooklyn.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.67831,
+    "lon": -73.98252,
+    "precision": "address"
+  },
   "address": {
     "street": "196 4th Ave",
     "zip": "11217"

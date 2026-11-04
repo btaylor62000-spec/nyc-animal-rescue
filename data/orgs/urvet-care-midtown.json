@@ -34,7 +34,16 @@
   "website": "https://urvetcare.com/locations/midtown/",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.7597,
+    "lon": -73.96639,
+    "precision": "address"
+  },
+  "address": {
+    "street": "252 E 57th Street",
+    "city": "New York",
+    "zip": "10022"
+  },
   "hours": "Open 24/7",
   "notes": "252 E 57th Street, New York, NY 10022. Open 24/7 for emergencies. URvet Care's other clinic on this side of town is a daytime clinic, not an emergency hospital.",
   "type_raw": "Emergency vet hospital, open 24/7",

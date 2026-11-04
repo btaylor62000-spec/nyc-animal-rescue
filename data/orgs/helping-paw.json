@@ -33,6 +33,11 @@
   "website": "https://www.helping-paw.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.7201,
+    "lon": -73.5589,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "A 501(c)(3) clinic in East Meadow serving owned pets, community cats and groups. Spay and neuter for dogs, cats and rabbits, wellness and vaccines, with fees published on its site. No phone number is published; book online or email. Intake: Request an appointment on the website",

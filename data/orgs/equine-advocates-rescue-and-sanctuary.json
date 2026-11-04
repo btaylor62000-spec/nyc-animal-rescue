@@ -53,6 +53,11 @@
       "url": "https://facebook.com/EquineAdvocates"
     }
   ],
+  "geo": {
+    "lat": 42.3388,
+    "lon": -73.5658,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Founded 1996; 173-acre sanctuary near Chatham (Columbia County) home to 80+ rescued horses, ponies, donkeys and mules saved from slaughter, abuse and neglect. Runs a Humane Education program that specifically addresses the NYC urban carriage-horse trade. Building a Rehabilitation Center (10 stalls + vet clinic). Regional (upstate) - flagged as not NYC-local, but a relevant intake/education contact for NYC equine-welfare situations. Email: (via equineadvocates.org contact form) Intake: PO Box 354, Chatham NY 12037 Intake: (518) 245-1599",

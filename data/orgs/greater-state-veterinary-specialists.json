@@ -37,6 +37,11 @@
   "website": "https://www.gsvs.org/staten-island-ny/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.60704,
+    "lon": -74.16426,
+    "precision": "address"
+  },
   "address": {
     "street": "3135 Victory Blvd",
     "zip": "10314"

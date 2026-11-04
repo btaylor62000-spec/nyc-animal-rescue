@@ -40,6 +40,11 @@
   "website": "https://river.fund",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.69716,
+    "lon": -73.82944,
+    "precision": "address"
+  },
   "address": {
     "street": "89-11 Lefferts Blvd.",
     "zip": "11418",

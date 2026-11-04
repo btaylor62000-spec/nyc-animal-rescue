@@ -40,6 +40,11 @@
   "website": "https://www.metcouncil.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.63879,
+    "lon": -73.92338,
+    "precision": "address"
+  },
   "address": {
     "street": "5361 Preston Court",
     "zip": "11234",

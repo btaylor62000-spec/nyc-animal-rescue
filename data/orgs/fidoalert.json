@@ -28,6 +28,7 @@
   "website": "https://www.fidoalert.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "A free network that alerts local volunteers when a dog or cat goes missing; register a pet before it is lost.",

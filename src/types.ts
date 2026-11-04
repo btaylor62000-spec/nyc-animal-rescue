@@ -149,6 +149,19 @@ export interface Address {
   zip?: string;
 }
 
+/**
+ * Where a listing is on the map, for sorting by distance.
+ *
+ * `address` is its street address, looked up once with the Census Bureau's
+ * geocoder (data/geo.json). `zip` is only the centre of its one zip code: good
+ * enough to rank by, not to give anyone directions.
+ */
+export interface Geo {
+  lat: number;
+  lon: number;
+  precision: 'address' | 'zip';
+}
+
 /** One automated or manual change to a record, for the public changes feed. */
 export interface ChangeLogEntry {
   /** ISO date. */
@@ -196,6 +209,8 @@ export interface Org {
   intake_urls: LabeledUrl[];
   social: SocialLink[];
   address: Address | null;
+  /** Set by the importer for every record; null when it has no single place. */
+  geo?: Geo | null;
   hours: string | null;
 
   notes: string | null;

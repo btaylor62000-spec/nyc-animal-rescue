@@ -35,6 +35,11 @@
   "website": "https://www.fathersheartnyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.72805,
+    "lon": -73.9807,
+    "precision": "address"
+  },
   "address": {
     "street": "543-545 East 11th St.",
     "zip": "10009",

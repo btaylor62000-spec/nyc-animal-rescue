@@ -46,6 +46,11 @@
       "url": "https://instagram.com/woodstocksanctuary"
     }
   ],
+  "geo": {
+    "lat": 41.7812,
+    "lon": -74.1729,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "501(c)(3), founded 2004; ~400 rescued farmed animals on 150 acres. Handles FARMED animals only - cannot help with companion animals, exotics or wildlife (its Rescue Resources page refers those out). Has rescued chickens/roosters from NYC live-kill markets and religious rituals. Phone: (see contact page) Intake: Rescue Resources page first:   then AnimalHelp@woodstocksanctuary.org",

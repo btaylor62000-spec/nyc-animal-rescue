@@ -37,6 +37,11 @@
   "website": "https://urgent-vets.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.82498,
+    "lon": -73.82061,
+    "precision": "address"
+  },
   "address": {
     "street": "3800 E Tremont Ave",
     "zip": "10465"

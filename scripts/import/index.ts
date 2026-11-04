@@ -23,6 +23,7 @@ import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES } from './overrides.ts';
 import { GUIDANCE_ONLY } from '../../src/data/listing.ts';
+import { attachGeo } from '../geo/attach.ts';
 import { applyPrivacyHolds } from './privacy.ts';
 import { buildAllGuidePages, unusedTabs, writeGuidePages } from './guide-pages.ts';
 import { ORG_SCHEMA } from './schema.ts';
@@ -200,6 +201,10 @@ function main(): void {
         (corrections.orphaned.length ? `; ${corrections.orphaned.length} refer to records that no longer exist: ${corrections.orphaned.slice(0, 5).join(', ')}` : ''),
     );
   }
+
+  // A place on the map for distance sorting, once every address is final.
+  const geo = attachGeo(merge.orgs);
+  console.log(`  ${geo.address} placed by street address, ${geo.zip} by zip code centre`);
 
   // Ids are file names and URLs; a duplicate silently loses a record.
   const idCounts = new Map<string, number>();

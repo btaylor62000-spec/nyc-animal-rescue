@@ -29,6 +29,7 @@
   "website": "https://scratchpay.com",
   "intake_urls": [],
   "social": [],
+  "geo": null,
   "address": null,
   "hours": null,
   "notes": "simple payment plans for vet care; apply at scratchpay.com (soft credit check, no card).",

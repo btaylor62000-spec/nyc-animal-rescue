@@ -35,6 +35,11 @@
   "website": "https://ymcanyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.57337,
+    "lon": -73.99507,
+    "precision": "address"
+  },
   "address": {
     "street": "2980 West 29th St.",
     "zip": "11224",

@@ -35,7 +35,16 @@
   "website": "https://www.petchesterveterinary.com",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.95024,
+    "lon": -73.81753,
+    "precision": "address"
+  },
+  "address": {
+    "street": "309 White Plains Road",
+    "city": "Eastchester",
+    "zip": "10709"
+  },
   "hours": null,
   "notes": "309 White Plains Road, Eastchester, NY 10709. Call or text for an appointment. Listed by the Mayor's Alliance among the places to have a rabbit spayed or neutered.",
   "type_raw": "Vet practice; spays and neuters rabbits as well as dogs and cats",

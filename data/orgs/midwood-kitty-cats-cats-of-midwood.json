@@ -35,6 +35,11 @@
       "url": "https://instagram.com/midwood_kittycats"
     }
   ],
+  "geo": {
+    "lat": 40.6221,
+    "lon": -73.9652,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Hyper-local Midwood group (Cats of Midwood Inc is a Best Friends network partner). Instagram-primary; confirm via IG. Intake: Via Instagram DM",

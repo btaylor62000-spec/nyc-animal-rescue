@@ -39,6 +39,11 @@
   "website": "https://faithfulfriendsny.com",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.59211,
+    "lon": -73.97384,
+    "precision": "address"
+  },
   "address": {
     "street": "2455 McDonald Ave",
     "zip": "11223"

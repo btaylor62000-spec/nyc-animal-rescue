@@ -48,6 +48,11 @@
       "url": "https://facebook.com/kittensandbarbells"
     }
   ],
+  "geo": {
+    "lat": 40.8685,
+    "lon": -73.8467,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Foster-based 501(c)(3), co-founders Katie (TNR-certified, neonatal tube/bottle-feed trained) & Donovan. TNR + rescue of the most vulnerable felines of ALL AGES - neonatal kittens through seniors, incl. sick/injured. Satellite nurseries. Bronx-based, works NYC + Westchester. Verified 2026-08-26.",

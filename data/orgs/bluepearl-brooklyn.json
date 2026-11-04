@@ -36,6 +36,11 @@
   "website": "https://bluepearlvet.com/hospital/brooklyn-ny/",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.68086,
+    "lon": -73.98381,
+    "precision": "address"
+  },
   "address": {
     "street": "190 3rd Ave",
     "zip": "11217"

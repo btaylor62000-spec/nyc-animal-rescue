@@ -35,6 +35,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.70983,
+    "lon": -73.80086,
+    "precision": "address"
+  },
   "address": {
     "street": "162-10 Highland Ave.",
     "zip": "11432",

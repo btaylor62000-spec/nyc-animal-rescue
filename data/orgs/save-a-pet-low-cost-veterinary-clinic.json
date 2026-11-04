@@ -36,6 +36,11 @@
   "website": "https://saveapetusa.org/services",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.9135,
+    "lon": -73.0457,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Fees are on its services page. Dogs and cats five or older need blood work at least a week before surgery.",

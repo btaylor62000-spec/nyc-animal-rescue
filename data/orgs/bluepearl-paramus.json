@@ -31,7 +31,16 @@
   "website": "https://bluepearlvet.com/hospital/paramus-nj/",
   "intake_urls": [],
   "social": [],
-  "address": null,
+  "geo": {
+    "lat": 40.9473,
+    "lon": -74.0702,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "545 Route 17 S",
+    "city": "Paramus",
+    "zip": "07652"
+  },
   "hours": "Open 24/7",
   "notes": "545 Route 17 S, Paramus, NJ 07652. Open 24/7 for emergencies. Outside the city, in New Jersey, about 17 miles away by BluePearl's own hospital finder; the four BluePearl hospitals in the city are listed separately.",
   "type_raw": "Emergency and specialty vet hospital, open 24/7",

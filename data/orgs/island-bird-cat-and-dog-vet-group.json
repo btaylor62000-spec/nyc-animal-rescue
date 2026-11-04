@@ -33,6 +33,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.61865,
+    "lon": -74.12336,
+    "precision": "address"
+  },
   "address": {
     "street": "375 Manor Rd",
     "zip": "10314"

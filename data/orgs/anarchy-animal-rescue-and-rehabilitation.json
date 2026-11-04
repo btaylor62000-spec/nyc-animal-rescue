@@ -55,6 +55,11 @@
       "url": "https://facebook.com/anarchyanimalrescue"
     }
   ],
+  "geo": {
+    "lat": 40.6167,
+    "lon": -74.0134,
+    "precision": "zip"
+  },
   "address": null,
   "hours": null,
   "notes": "Brooklyn-based 501(c)(3) foster rescue (11228) taking dogs and cats, including harder placements (e.g. dogs needing a fenced yard/single-family home or a resident dog buddy - noted per-dog on their site). Careful, needs-matched placement. Foster-based, no walk-in shelter. Email is the reliable channel. Phone: (no public phone; email preferred)",

@@ -35,6 +35,11 @@
   "website": "https://www.stclementsnyc.org",
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.76142,
+    "lon": -73.99164,
+    "precision": "address"
+  },
   "address": {
     "street": "423 West 46th St.",
     "zip": "10036",

@@ -39,6 +39,11 @@
   "website": null,
   "intake_urls": [],
   "social": [],
+  "geo": {
+    "lat": 40.78736,
+    "lon": -73.97162,
+    "precision": "address"
+  },
   "address": {
     "street": "562 Columbus Avenue",
     "zip": "10024"
