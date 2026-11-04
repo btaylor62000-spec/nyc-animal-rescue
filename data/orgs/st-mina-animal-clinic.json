@@ -30,7 +30,7 @@
     }
   ],
   "emails": [],
-  "website": null,
+  "website": "https://stminaveterinaryclinic.com/",
   "intake_urls": [],
   "social": [],
   "geo": {
@@ -42,20 +42,20 @@
     "street": "76-23 Jamaica Ave",
     "zip": "11421"
   },
-  "hours": null,
+  "hours": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
   "notes": "76-23 Jamaica Ave, Woodhaven 11421 - (718) 296-0500 - feral-friendly (Bideawee list).",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — QUEENS - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -64,7 +64,35 @@
       "from": null,
       "to": "manual-only",
       "source": "manual",
-      "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+      "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://stminaveterinaryclinic.com/",
+      "evidence_url": "https://stminaveterinaryclinic.com/",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": null,
+      "to": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
+      "evidence_url": "https://stminaveterinaryclinic.com/",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://stminaveterinaryclinic.com/",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
     }
   ],
   "privacy_hold": false,

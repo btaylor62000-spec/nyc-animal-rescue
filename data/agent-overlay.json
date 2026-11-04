@@ -975,7 +975,8 @@
           "from": "https://www.barcshelter.com",
           "to": null,
           "source": "manual",
-          "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer."
+          "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -1609,7 +1610,7 @@
       "last_checked": "2026-11-04",
       "check_status": "ok",
       "website": "https://completecarevets.com",
-      "hours": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+      "hours": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1626,12 +1627,32 @@
           "from": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
           "to": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
           "source": "manual",
-          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+          "to": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+          "to": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
         }
       ],
-      "notes": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+      "notes": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "condition-specific": {
       "last_checked": "2026-11-04",
@@ -1710,7 +1731,7 @@
     },
     "elmhurst-animal-emergency-hospital": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "needs-review",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
       ],
@@ -1731,10 +1752,33 @@
           "from": "87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.\n\n87-06 Queens Blvd (btwn 55th Ave/55th Rd), Elmhurst/Rego Park 11373. (718) 426-4444. Open 24h.",
           "to": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
           "source": "manual",
-          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "retired",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": null,
+          "to": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
         }
       ],
-      "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going."
+      "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
+      "status": "retired",
+      "status_note": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0
     },
     "empty-cages-collective": {
       "last_checked": "2026-11-04",
@@ -1778,7 +1822,8 @@
           "from": "http://www.nycparrot.com",
           "to": null,
           "source": "manual",
-          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -1842,7 +1887,7 @@
     },
     "fifth-avenue-veterinary-hospital": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "ok",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
       ],
@@ -1855,8 +1900,31 @@
           "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
           "source": "manual",
           "note": "Checked 2026-11-04. It has no working website (fifthavenueveterinaryhospital.com does not answer). The Mayor's Alliance lists \"Open 24 hours, 9102 5th Avenue, Brooklyn, NY 11209, (718) 748-1066\", which matches the record. Left at Medium: that is a reliable list, not the hospital's own page. A person should ring it to confirm."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "24 hours",
+          "to": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "9102 5th Ave (Bay Ridge) 11209 - (718) 748-1066 - 24 hours.\n\n9102 5th Ave, Brooklyn 11209. (718) 748-1066. Open 24h.",
+          "to": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
         }
-      ]
+      ],
+      "hours": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+      "notes": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "Medium"
     },
     "first-united-methodist-church-of-jamaica": {
       "last_checked": "2026-11-04",
@@ -2238,15 +2306,9 @@
     },
     "hsus-dogfighting-tip-line": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "phones": [
-        {
-          "value": "8778474787",
-          "display": "(877) 847-4787",
-          "label": "Old line, not on its current materials - email first"
-        }
-      ],
+      "phones": [],
       "last_verified": "2026-11-04",
       "source_urls": [
         "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
@@ -2261,8 +2323,69 @@
           "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
           "source": "manual",
           "note": "The HSUS is now Humane World for Animals. Its 2025 reward poster: \"will pay you up to $5,000 for information leading to the arrest and conviction of a dogfighter or cockfighter. Email tips to animalfighting@humaneworld.org. Your identity will be protected.\" No phone number on it or on its animal fighting page. The email is added in the abuse workbook; the old 877-TIP-HSUS number is kept but labelled, and a person should ring it to see whether it is still answered."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "8778474787",
+          "to": null,
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "animalfighting@humaneworld.org",
+          "to": "animalfighting@hsus.org, animalfighting@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "animalfighting@humaneworld.org - https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting - suspected organised dogfighting or cockfighting that is not in progress. The HSUS is now called Humane World for Animals, and its 2025 reward poster asks for tips by email; the old phone line, (877) 847-4787 (877-TIP-HSUS), is not on its current materials and may no longer be answered. Humane World offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting (its own page, read 2026-11-04). For fighting in progress call 911. Your identity is protected.",
+          "to": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
         }
-      ]
+      ],
+      "emails": [
+        {
+          "value": "animalfighting@hsus.org"
+        },
+        {
+          "value": "animalfighting@humaneworld.org"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "label": "Online report form"
+        }
+      ],
+      "notes": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+      "confidence": "High"
     },
     "humane-society-of-new-york": {
       "last_checked": "2026-11-04",
@@ -2350,7 +2473,8 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -2727,7 +2851,8 @@
           "from": "http://www.magnificatrescue.webs.com",
           "to": null,
           "source": "manual",
-          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -3296,7 +3421,8 @@
           "from": "wildlife-rehab",
           "to": "referral, transport",
           "source": "manual",
-          "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically)."
+          "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically).",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -3492,7 +3618,7 @@
     },
     "nys-dec-region-2": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
         {
@@ -3510,7 +3636,9 @@
           "source": "manual",
           "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
         }
-      ]
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nysave": {
       "last_checked": "2026-11-04",
@@ -4027,7 +4155,8 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -4097,7 +4226,8 @@
           "from": "petbereavement@savekitty.org",
           "to": "adoptions@savekittyfoundation.org; tnr@savekittyfoundation.org; petbereavement@savekitty.org",
           "source": "manual",
-          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement."
+          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -4431,7 +4561,7 @@
     },
     "st-mina-animal-clinic": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "ok",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4439,9 +4569,42 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://stminaveterinaryclinic.com/",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
         }
-      ]
+      ],
+      "website": "https://stminaveterinaryclinic.com/",
+      "hours": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "High"
     },
     "staten-island-bird-club": {
       "last_checked": "2026-11-04",
@@ -4747,9 +4910,9 @@
       "consecutive_failures": 0,
       "phones": [
         {
-          "value": "9164436007",
-          "display": "(916) 443-6007",
-          "label": "Not on its website, which asks people to email first"
+          "value": "9165030550",
+          "display": "(916) 503-0550",
+          "label": "Its site asks you to email first"
         }
       ],
       "last_verified": "2026-11-04",
@@ -4765,6 +4928,15 @@
           "evidence_url": "https://thepetfund.com/for-pet-owners",
           "source": "manual",
           "note": "Its page for pet owners: \"email us at info@thepetfund.com with a description of your animal's medical needs\". Email confirmed. The (916) 443-6007 number is not on any page of its site; kept, labelled, not deleted, for a person to ring."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "9164436007",
+          "to": "9165030550",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The old (916) 443-6007 line gives a new number, (916) 503-0550. Its website asks people to email first."
         }
       ]
     },
@@ -4932,7 +5104,7 @@
     "urgent-vets-11369": {
       "last_checked": "2026-11-04",
       "check_status": "ok",
-      "hours": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+      "hours": "Open 24 hours, 7 days a week",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4940,7 +5112,8 @@
           "from": null,
           "to": "Late hours, not 24/7 - call for hours",
           "source": "manual",
-          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -4950,6 +5123,24 @@
           "evidence_url": "https://urgent-vets.com/urgent-vets-queens",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04. Its Queens page: \"OPEN 24 HOURS\", 32-33 Junction Boulevard, (718) 305-4791. Its home page lists (718) 568-6823 and (347) 370-3366 against Queens. The Mayor's Alliance lists (718) 507-5600 and Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Too much disagreement to pick one: the Queens page's number and the Mayor's Alliance's are both published, and the hours say they are not confirmed, so the listing never claims to be open now. Needs a phone call by a person."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "7183054791, 7185075600",
+          "to": "7185075600, 7183054791",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+          "to": "Open 24 hours, 7 days a week",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
         }
       ],
       "website": "https://urgent-vets.com/urgent-vets-queens",
@@ -4959,25 +5150,39 @@
       ],
       "phones": [
         {
-          "value": "7183054791",
-          "display": "(718) 305-4791",
-          "label": "On the Queens page of its website"
-        },
-        {
           "value": "7185075600",
           "display": "(718) 507-5600",
-          "label": "As listed by the Mayor's Alliance"
+          "label": "Queens hospital"
+        },
+        {
+          "value": "7183054791",
+          "display": "(718) 305-4791",
+          "label": "Also reaches the Queens hospital"
         }
       ],
       "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "urgent-vets-bronx": {
       "last_checked": "2026-11-04",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "hours": "Mon-Sun 10am-10pm (not 24 hours)",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr)",
+          "to": "Mon-Sun 10am-10pm (not 24 hours)",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The Bronx hospital, 3800 E Tremont Ave, (347) 281-9700, is open 7 days, 10am-10pm, not 24 hours."
+        }
+      ],
+      "confidence": "Medium"
     },
     "uri-pals": {
       "last_checked": "2026-11-04",

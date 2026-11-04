@@ -43,8 +43,8 @@
     "street": "9102 5th Ave",
     "zip": "11209"
   },
-  "hours": "24 hours",
-  "notes": "9102 5th Ave (Bay Ridge) 11209 - (718) 748-1066 - 24 hours.\n\n9102 5th Ave, Brooklyn 11209. (718) 748-1066. Open 24h.",
+  "hours": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+  "notes": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -52,14 +52,14 @@
   "source_urls": [
     "https://www.animalalliancenyc.org/need-help/emergencyvets/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Emergency & poison control — BROOKLYN - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -70,6 +70,24 @@
       "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
       "source": "manual",
       "note": "Checked 2026-11-04. It has no working website (fifthavenueveterinaryhospital.com does not answer). The Mayor's Alliance lists \"Open 24 hours, 9102 5th Avenue, Brooklyn, NY 11209, (718) 748-1066\", which matches the record. Left at Medium: that is a reliable list, not the hospital's own page. A person should ring it to confirm."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": "24 hours",
+      "to": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "9102 5th Ave (Bay Ridge) 11209 - (718) 748-1066 - 24 hours.\n\n9102 5th Ave, Brooklyn 11209. (718) 748-1066. Open 24h.",
+      "to": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
     }
   ],
   "privacy_hold": false,

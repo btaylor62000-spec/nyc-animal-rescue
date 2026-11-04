@@ -62,7 +62,8 @@
       "from": null,
       "to": "manual-only",
       "source": "manual",
-      "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+      "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
     }
   ],
   "privacy_hold": false,

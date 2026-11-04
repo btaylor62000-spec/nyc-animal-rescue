@@ -28,14 +28,14 @@
   "region_note": "QUEENS - 24-hour ER",
   "phones": [
     {
-      "value": "7183054791",
-      "display": "(718) 305-4791",
-      "label": "On the Queens page of its website"
-    },
-    {
       "value": "7185075600",
       "display": "(718) 507-5600",
-      "label": "As listed by the Mayor's Alliance"
+      "label": "Queens hospital"
+    },
+    {
+      "value": "7183054791",
+      "display": "(718) 305-4791",
+      "label": "Also reaches the Queens hospital"
     }
   ],
   "emails": [],
@@ -51,7 +51,7 @@
     "street": "32-33 Junction Blvd",
     "zip": "11369"
   },
-  "hours": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+  "hours": "Open 24 hours, 7 days a week",
   "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback.",
   "type_raw": null,
   "confidence": "Medium",
@@ -76,7 +76,8 @@
       "from": null,
       "to": "Late hours, not 24/7 - call for hours",
       "source": "manual",
-      "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+      "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
     },
     {
       "date": "2026-11-04",
@@ -86,6 +87,24 @@
       "evidence_url": "https://urgent-vets.com/urgent-vets-queens",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04. Its Queens page: \"OPEN 24 HOURS\", 32-33 Junction Boulevard, (718) 305-4791. Its home page lists (718) 568-6823 and (347) 370-3366 against Queens. The Mayor's Alliance lists (718) 507-5600 and Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Too much disagreement to pick one: the Queens page's number and the Mayor's Alliance's are both published, and the hours say they are not confirmed, so the listing never claims to be open now. Needs a phone call by a person."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "7183054791, 7185075600",
+      "to": "7185075600, 7183054791",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+      "to": "Open 24 hours, 7 days a week",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
     }
   ],
   "privacy_hold": false,

@@ -79,7 +79,8 @@
       "from": "https://www.barcshelter.com",
       "to": null,
       "source": "manual",
-      "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer."
+      "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
     },
     {
       "date": "2026-11-04",

@@ -58,7 +58,8 @@
       "from": "http://www.magnificatrescue.webs.com",
       "to": null,
       "source": "manual",
-      "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+      "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
     }
   ],
   "privacy_hold": false,

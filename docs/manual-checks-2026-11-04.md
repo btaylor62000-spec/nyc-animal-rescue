@@ -10,21 +10,32 @@ _Made 2026-11-04 from the directory's own data and the weekly check of the same 
 
 Emergency listings come first: a wrong 24-hour claim sends someone to a locked door.
 
-- [ ] **CompleteCare Veterinary Center** — Ask: are you open 24 hours? Old lists say yes; recent ones show daytime and evening only.
+- [x] **CompleteCare Veterinary Center** — Ask: are you open 24 hours? Old lists say yes; recent ones show daytime and evening only.
   - Entry: https://nyc-animal-rescue.pages.dev/org/completecare-veterinary-center/  ·  Site: https://completecarevets.com  ·  Phone: (718) 720-4211
-- [ ] **Elmhurst Animal Emergency Hospital** — Ask: are you open 24 hours? Its Facebook says so; nothing else confirms it.
+- [x] **Elmhurst Animal Emergency Hospital** — Ask: are you open 24 hours? Its Facebook says so; nothing else confirms it.
   - Entry: https://nyc-animal-rescue.pages.dev/org/elmhurst-animal-emergency-hospital/  ·  Site: (no website)  ·  Phone: (718) 426-4444
-- [ ] **Fifth Avenue Veterinary Hospital** — Ask: are you open 24 hours? We list 24 hours but have never confirmed it.
+- [x] **Fifth Avenue Veterinary Hospital** — Ask: are you open 24 hours? We list 24 hours but have never confirmed it.
   - Entry: https://nyc-animal-rescue.pages.dev/org/fifth-avenue-veterinary-hospital/  ·  Site: (no website)  ·  Phone: (718) 748-1066
-- [ ] **Urgent Vets (Queens)** — Ask: what are your hours, and which number is right, (718) 305-4791 or (718) 507-5600?
+- [x] **Urgent Vets (Queens)** — Ask: what are your hours, and which number is right, (718) 305-4791 or (718) 507-5600?
   - Entry: https://nyc-animal-rescue.pages.dev/org/urgent-vets-11369/  ·  Site: https://urgent-vets.com/urgent-vets-queens  ·  Phone: (718) 305-4791, (718) 507-5600
-- [ ] **St. Mina Animal Clinic** — Ask: are you still at 76-23 Jamaica Ave, and do you see feral cats?
+- [x] **St. Mina Animal Clinic** — Ask: are you still at 76-23 Jamaica Ave, and do you see feral cats?
   - Entry: https://nyc-animal-rescue.pages.dev/org/st-mina-animal-clinic/  ·  Site: (no website)  ·  Phone: (718) 296-0500
-- [ ] **NYS DEC Region 2 (New York City office)** — Ring the listed number and check it is the New York City office. DEC's site now shows a head-office number, (518) 402-8545.
+- [x] **NYS DEC Region 2 (New York City office)** — Ring the listed number and check it is the New York City office. DEC's site now shows a head-office number, (518) 402-8545.
   - Entry: https://nyc-animal-rescue.pages.dev/org/nys-dec-region-2/  ·  Site: https://dec.ny.gov  ·  Phone: (718) 482-4900, (844) 332-3267
-- [ ] **HSUS dogfighting tip line** — Does (877) 847-4787 (877-TIP-HSUS) still answer? Its 2025 poster gives only an email.
+- [x] **HSUS dogfighting tip line** — Does (877) 847-4787 (877-TIP-HSUS) still answer? Its 2025 poster gives only an email.
   - Entry: https://nyc-animal-rescue.pages.dev/org/hsus-dogfighting-tip-line/  ·  Site: https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting  ·  Phone: (877) 847-4787
-- [ ] **The Pet Fund** — its site says email first; does the (916) 443-6007 number still answer? (Entry: https://nyc-animal-rescue.pages.dev/org/the-pet-fund/)
+- [x] **The Pet Fund** — its site says email first; does the (916) 443-6007 number still answer? (Entry: https://nyc-animal-rescue.pages.dev/org/the-pet-fund/)
+
+**Done 2026-11-04 by the reviewer, by phone.** What changed as a result:
+
+- CompleteCare: not 24 hours; Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2.
+- Elmhurst Animal Emergency: closed, number out of service. No longer listed.
+- Fifth Avenue Veterinary: not 24 hours; Mon, Tue, Fri 10-7, Wed-Thu 3-7, Sat 10-4.
+- Urgent Vets Queens: open 24 hours, 7 days; (718) 507-5600, and (718) 305-4791 forwards there. Urgent Vets Bronx: every day 10am-10pm.
+- St. Mina: still at 76-23 Jamaica Ave, sees feral cats; website and hours added.
+- DEC Region 2: both listed numbers reach the NYC office; the (518) number is the upstate central office.
+- Humane World dogfighting tips: the (877) number is not a tip line and is removed; email animalfighting@hsus.org (its current flyer) or its online form.
+- The Pet Fund: new number (916) 503-0550.
 
 ## 2. Open each VEG page in a normal browser and read the phone number
 

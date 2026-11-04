@@ -27,8 +27,8 @@ If an animal has been hit by a car, is bleeding, is not breathing, is having a s
 
 ## IN THE BRONX
 
-- No animal hospital in the Bronx is confirmed open 24 hours. Urgent Vets, 3800 E Tremont Ave, (347) 281-9700, has long but limited hours (Sun-Wed 12pm-10pm, Thu-Sat 10am-12am).
-- Outside those hours, the nearest hospitals open 24 hours are Animal Specialty Center in Yonkers, 9 Odell Plaza, (914) 457-4000, and the Manhattan hospitals listed at the end of this page.
+- No animal hospital in the Bronx is confirmed open 24 hours. Urgent Vets, 3800 E Tremont Ave, (347) 281-9700, is open every day, 10am-10pm.
+- Outside those hours, the nearest hospitals open 24 hours are Urgent Vets in Queens, 32-33 Junction Blvd, (718) 507-5600; Animal Specialty Center in Yonkers, 9 Odell Plaza, (914) 457-4000; and the Manhattan hospitals listed at the end of this page.
 
 ## IF YOU ARE WORRIED ABOUT PAYING
 

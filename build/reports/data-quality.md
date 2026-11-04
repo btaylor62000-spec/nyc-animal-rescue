@@ -7,7 +7,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **397** organizations after de-duplication
 - **76** duplicate clusters merged
 - **23** guide pages generated
-- **26** entries flagged as not currently active
+- **27** entries flagged as not currently active
 - **6** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -84,17 +84,17 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 192 |
-| Medium | 145 |
+| High | 194 |
+| Medium | 143 |
 | Low | 60 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 371 |
+| active | 370 |
 | verify | 18 |
-| retired | 5 |
+| retired | 6 |
 | hiatus | 2 |
 | relocated | 1 |
 
@@ -151,7 +151,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (25)
+### Never verified (22)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -163,6 +163,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **Cats In The Cradle Rescue (CITCR)** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
 - **Cats of Meow York (COMY)** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
 - **City Pitties** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
+- **Elmhurst Animal Emergency Hospital** — `retired`: Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.
 - **Feather Friends Parrot Adoption Services** — `verify`: Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.
 - **Harlem Cats** — `hiatus`: Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
@@ -343,8 +344,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 5551 |
 | Save a shelter animal from euthanasia: the NYC at-risk list | 8245 |
-| Reporting animal abuse or neglect | 5821 |
-| Animal emergencies and poison control | 2177 |
+| Reporting animal abuse or neglect | 5798 |
+| Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |
 | Community cats, colonies and starting TNR | 6943 |
 | Cats needing specialist help | 4638 |
@@ -358,7 +359,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found injured or orphaned wildlife | 9898 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |
-| Help paying for veterinary care | 8810 |
+| Help paying for veterinary care | 8792 |
 | Rehoming a rabbit, bird, reptile or small animal | 3126 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Boarding, pet sitting and planning ahead | 6013 |
