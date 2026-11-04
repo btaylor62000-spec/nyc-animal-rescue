@@ -13,7 +13,7 @@
 import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
-import { boroughsIn } from '../data/geo.ts';
+import { boroughsIn, zipToBorough } from '../data/geo.ts';
 import { distanceBand, distanceMiles, takesEmergencies, type Origin } from '../data/rank.ts';
 import { openState } from '../data/schedule.ts';
 import { zipOrigin } from '../data/zip-centres.ts';
@@ -192,8 +192,11 @@ export function extractSignals(question: string): Signals {
     for (const tag of NEED_WORDS.get(t) ?? []) needs.add(tag);
   }
 
-  const boroughs: string[] = boroughsIn(question);
   const zips = [...new Set((q.match(/\b1[01]\d{3}\b/g) ?? []))];
+  // "I'm in 11203" is a Brooklyn question: without this, a Brooklyn group
+  // stored with another Brooklyn zip scored below a citywide one, the same
+  // mistake the directory's zip filter made (see src/data/area.ts).
+  const boroughs: string[] = [...new Set([...boroughsIn(question), ...zips.map(zipToBorough).filter((b): b is NonNullable<typeof b> => b !== null)])];
 
   const wild = animals.has('wildlife') || animals.has('bird-wild') || animals.has('pigeon') || animals.has('marine');
 
