@@ -30,6 +30,34 @@ const sendButton = document.getElementById('chat-send') as HTMLButtonElement | n
 
 if (form && input && log) {
   const history: Turn[] = [];
+
+  // --- nearest first -----------------------------------------------------------
+  // Asked for only when the box is ticked. Rounded here to two decimal places,
+  // about a kilometre, before it ever leaves the device: enough to order
+  // hospitals, not enough to find anyone's door. Kept in memory only.
+  let origin: { lat: number; lon: number } | null = null;
+  const useLocation = document.getElementById('chat-use-location') as HTMLInputElement | null;
+  const locationNote = document.getElementById('chat-location-note');
+  if (useLocation && !('geolocation' in navigator)) useLocation.closest('p')?.setAttribute('hidden', '');
+  useLocation?.addEventListener('change', () => {
+    if (!useLocation.checked) {
+      origin = null;
+      if (locationNote) locationNote.textContent = '';
+      return;
+    }
+    if (locationNote) locationNote.textContent = 'Finding you…';
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        origin = { lat: Math.round(pos.coords.latitude * 100) / 100, lon: Math.round(pos.coords.longitude * 100) / 100 };
+        if (locationNote) locationNote.textContent = 'Only an approximate location is sent, and it is not stored.';
+      },
+      () => {
+        useLocation.checked = false;
+        if (locationNote) locationNote.textContent = 'Could not get your location. Say your neighbourhood or zip code instead.';
+      },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 },
+    );
+  });
   let pass: string | null = null;
   let busy = false;
 
@@ -166,6 +194,11 @@ if (form && input && log) {
       fix.textContent = 'Report a problem';
       actions.append(fix);
 
+      // Distance and open-now come from the server's records and clock, never
+      // from the model's text.
+      const extra = [card.openNow, card.distance].filter(Boolean).join(' · ');
+      if (extra) where.textContent = `${where.textContent} · ${extra}`;
+
       li.append(name, where, actions);
 
       if (card.needsConfirmation) {
@@ -237,6 +270,7 @@ if (form && input && log) {
     setStatus('Looking…');
 
     const body: Record<string, unknown> = { message: question, history: history.slice(0, -1) };
+    if (origin) body.origin = origin;
     if (pass) body.pass = pass;
 
     let res: Response;

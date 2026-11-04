@@ -39,6 +39,8 @@ export interface CorpusOrg {
   intake: string | null;
   hours: string | null;
   address: string | null;
+  /** Where it is, for nearest-first ordering; null for citywide services. */
+  geo: Org['geo'];
   /** One line, for the prompt. Full notes stay on the organization's page. */
   summary: string;
   keywords: string;
@@ -100,6 +102,7 @@ export function buildOrgCorpus(orgs: Org[]): CorpusOrg[] {
       address: o.address?.street
         ? `${o.address.street}${o.address.zip ? `, ${o.address.zip}` : ''}`
         : null,
+      geo: o.geo ?? null,
       summary: firstSentences(o.notes),
       keywords: keywordsFor(o.animals, o.needs, o.org_types),
       text: [o.neighborhoods, o.type_raw, o.notes].filter(Boolean).join(' ').replace(/\s+/g, ' ').slice(0, 280),

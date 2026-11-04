@@ -543,6 +543,33 @@ hospital.
 
 ---
 
+## Nearest, open now, best evidenced
+
+Added 2026-11-04. One ordering, `src/data/rank.ts`, used by the directory in
+the browser and by the assistant on the server, so they cannot disagree: in an
+emergency, open now before unknown before closed; then distance in rough bands
+(under 1.5, 3, 6, 12 miles); then evidence; then exact distance. Search wording
+only breaks ties.
+
+- **Where things are.** `npm run geocode` looks each street address up once with
+  the Census Bureau's free geocoder and caches it in `data/geo.json` with the
+  exact query; the import attaches it only while the address still gives the
+  same query, so a corrected address never keeps the old point. One zip and no
+  street means the zip's centre (`data/zip-centroids.json`, `npm run geo:zips`),
+  shown as "about". Citywide services have no place. The import never touches
+  the network. After adding addresses: `npm run import && npm run geocode &&
+  npm run import` (in a cloud session, with the proxy variables above).
+- **Open now.** `src/data/schedule.ts` reads hours into a timetable in New York
+  time. Hours it cannot read with certainty are *unknown*, never open: a wrong
+  "Open now" sends someone to a locked door.
+- **The reader's location** is asked for only when they tap "Nearest to me" or
+  tick "Use my location". The directory keeps it on the device; the assistant
+  receives it rounded to two decimal places (about a kilometre), uses it to
+  order results, and never logs or stores it.
+- Workbook rows can carry **Hours** and **Address** columns. Use them: a row
+  without hours cannot say it is open, and one without an address cannot be
+  sorted by distance.
+
 ## Changing the assistant
 
 - The prompt is `src/chat/system-prompt.ts`, versioned in the repository so a

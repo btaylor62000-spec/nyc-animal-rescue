@@ -1064,3 +1064,6 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
    one who should be able to say so. */
 .btn--fix { color: var(--text-muted); gap: 0.35rem; }
 .btn--fix:hover { color: var(--text); }
+
+.chat__location { margin: 0.5rem 0 0; font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: center; }
+.chat__location label { display: inline-flex; gap: 0.4rem; align-items: center; cursor: pointer; }

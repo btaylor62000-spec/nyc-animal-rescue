@@ -20,6 +20,8 @@ import { Retriever, type Corpus } from '../../src/chat/retrieve.ts';
 import { SYSTEM_PROMPT, buildContext } from '../../src/chat/system-prompt.ts';
 import { StreamRedactor, allowedFrom } from '../../src/chat/redact.ts';
 import { LIMITS, type ChatCard, type ChatEvent, type ChatRequest } from '../../src/chat/protocol.ts';
+import { distanceMiles, takesEmergencies } from '../../src/data/rank.ts';
+import { openLabel, openState } from '../../src/data/schedule.ts';
 import { clientKeyFor, issuePass, verifyPass } from '../../src/chat/pass.ts';
 
 interface Env {
@@ -152,7 +154,26 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
 
   // --- what to say about -------------------------------------------------
-  const retrieved = getRetriever().retrieve(message, LIMITS.retrieveCount);
+  // Used to order results and never logged or stored. Rounded again here in
+  // case a client sent more precision than the page does.
+  const shared = body.origin;
+  const origin =
+    shared && Number.isFinite(shared.lat) && Number.isFinite(shared.lon) &&
+    shared.lat > 38 && shared.lat < 45 && shared.lon > -80 && shared.lon < -71
+      ? { lat: Math.round(shared.lat * 100) / 100, lon: Math.round(shared.lon * 100) / 100 }
+      : null;
+  const now = new Date();
+  const retrieved = getRetriever().retrieve(message, LIMITS.retrieveCount, { origin, now });
+
+  // What the card and the model are told about each place right now.
+  const extras = new Map(
+    retrieved.orgs.map((r) => {
+      const miles = origin && r.geo ? distanceMiles(origin, r.geo) : null;
+      const distance = miles === null ? null : `${r.geo!.precision === 'zip' ? 'about ' : ''}${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi`;
+      const openNow = takesEmergencies(r) ? openLabel(openState(r.hours, now), now) : null;
+      return [r.id, { distance, openNow }] as const;
+    }),
+  );
   const allowed = allowedFrom(retrieved.orgs);
 
   const cards: ChatCard[] = retrieved.orgs.slice(0, 6).map((o) => ({
@@ -168,6 +189,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     statusNote: o.statusNote,
     lastVerified: o.lastVerified,
     needsConfirmation: needsConfirmation(o),
+    distance: extras.get(o.id)?.distance ?? null,
+    openNow: extras.get(o.id)?.openNow ?? null,
   }));
 
   const history = (body.history ?? [])
@@ -177,7 +200,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const messages = [
     { role: 'system', content: SYSTEM_PROMPT },
     ...history,
-    { role: 'user', content: `${buildContext(retrieved.orgs, retrieved.guide)}\n\nQUESTION\n${message}` },
+    { role: 'user', content: `${buildContext(retrieved.orgs, retrieved.guide, extras)}\n\nQUESTION\n${message}` },
   ];
 
   const encoder = new TextEncoder();

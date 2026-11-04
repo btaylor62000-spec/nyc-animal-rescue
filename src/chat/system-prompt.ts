@@ -42,6 +42,8 @@ export function buildContext(
     statusNote: string | null; hours: string | null; address: string | null;
   }>,
   guide: { title: string; heading: string; text: string } | null,
+  /** Per record, when known: "0.7 mi", "Open now · until 7pm". */
+  extras: Map<string, { distance?: string | null; openNow?: string | null }> = new Map(),
 ): string {
   const lines: string[] = ['RESOURCES'];
 
@@ -53,6 +55,8 @@ export function buildContext(
       o.needs.length ? `  services: ${o.needs.join(', ')}` : '',
       o.phones.length ? `  phone: ${o.phones.join(', ')}` : '  phone: none listed',
       o.hours ? `  hours: ${o.hours}` : '',
+      extras.get(o.id)?.openNow ? `  right now: ${extras.get(o.id)!.openNow}` : '',
+      extras.get(o.id)?.distance ? `  distance from them: ${extras.get(o.id)!.distance}` : '',
       o.address ? `  address: ${o.address}` : '',
       o.summary ? `  about: ${o.summary}` : '',
       o.status !== 'active' ? `  CAUTION: ${o.statusNote ?? 'may no longer be operating'}` : '',

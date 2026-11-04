@@ -14,12 +14,19 @@ import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
 import { boroughsIn } from '../data/geo.ts';
-import { hasLimitedHours, isOpen24h } from '../data/hours.ts';
+import { distanceBand, distanceMiles, takesEmergencies, type Origin } from '../data/rank.ts';
+import { openState } from '../data/schedule.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
 
 export interface Corpus {
   orgs: CorpusOrg[];
   guides: CorpusGuide[];
+}
+
+/** Where the reader is and what time it is, when known. */
+export interface RetrieveContext {
+  origin?: Origin | null;
+  now?: Date;
 }
 
 export interface Signals {
@@ -101,7 +108,12 @@ const ANIMAL_WORDS = buildLookup(withTranslations(ANIMAL_SYNONYMS, SPANISH_ANIMA
  * surrender in it at all. The phrases people actually use for that are
  * matched whole, below.
  */
-const GENERIC_WORDS = ['new', 'home', 'care'];
+// "vet" and "clinic" are in the exotic, low-cost and vet-bill vocabularies
+// ("exotic vet", "free vet clinic", "vet bills"), so on their own they asked
+// for all three: "emergency vet open now" put a Manhattan exotic clinic that
+// closes at 7pm above the 24/7 hospitals near the reader. The specific words
+// -- exotic, cheap, afford, bill -- still carry those needs.
+const GENERIC_WORDS = ['new', 'home', 'care', 'vet', 'vets', 'clinic', 'clinics'];
 
 const NEED_WORDS = (() => {
   const needs = buildLookup(withTranslations(NEED_SYNONYMS, SPANISH_NEEDS));
@@ -376,7 +388,7 @@ export class Retriever {
    * who said they are in Brooklyn, so place, animal and need are scored
    * explicitly on top of it.
    */
-  private fit(org: CorpusOrg, s: Signals): number {
+  private fit(org: CorpusOrg, s: Signals, ctx: RetrieveContext = {}): number {
     let score = 0;
 
     // 1. The one thing they need most.
@@ -425,14 +437,22 @@ export class Retriever {
     //    emergency rooms.
     if (org.needs.includes('poison-control') && !s.needs.includes('poison-control')) score -= 10;
 
-    // 4b. Among vets that take emergencies, somewhere open at any hour beats
-    //     somewhere that may be closed. Daytime urgent care is still listed,
-    //     just after the 24-hour hospitals: the question rarely says what time
-    //     it is. Not gated on the question reading as an emergency, because
-    //     "ate a hair tie and is vomiting" reads as poisoning, not as one.
-    if (org.needs.includes('emergency-vet') && !org.needs.includes('poison-control')) {
-      if (isOpen24h(org.hours)) score += 5;
-      else if (hasLimitedHours(org.hours)) score -= 3;
+    // 4b. The same ordering as the directory (src/data/rank.ts): among vets
+    //     that take emergencies, open now beats unknown beats closed. Read
+    //     from the hours at the moment of asking, so a daytime clinic is
+    //     offered at 3pm and not at 3am. Poison lines are left out of it:
+    //     they are 24/7 too, and must not creep back above the hospitals.
+    if (takesEmergencies(org)) {
+      const st = openState(org.hours, ctx.now ?? new Date()).state;
+      if (st === 'open') score += 5;
+      else if (st === 'closed') score -= 6;
+    }
+
+    // 4c. Nearer first, in the same rough bands as the directory, when the
+    //     reader shared a location. Citywide services have no place and are
+    //     neither helped nor hurt.
+    if (ctx.origin && org.geo) {
+      score += [8, 6, 4, 1, -2, 0][distanceBand(distanceMiles(ctx.origin, org.geo))]!;
     }
 
     // 5. What we are surest about, and what they can act on now.
@@ -444,7 +464,7 @@ export class Retriever {
     return score;
   }
 
-  retrieve(question: string, limit = 10): Retrieved {
+  retrieve(question: string, limit = 10, ctx: RetrieveContext = {}): Retrieved {
     const signals = extractSignals(question);
 
     // Free-text relevance, then re-ranked by how well each record fits the
@@ -469,7 +489,7 @@ export class Retriever {
       // Free-text relevance breaks ties; it does not decide the answer. Left
       // stronger, it put a general vet ahead of the city's bird hospital for
       // "a pigeon hit my window" simply because the wording matched better.
-      .map((org) => ({ org, score: this.fit(org, signals) + Math.min(relevance.get(org.id) ?? 0, 12) * 0.5 }))
+      .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * 0.5 }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
     return {

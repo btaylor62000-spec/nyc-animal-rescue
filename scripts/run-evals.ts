@@ -26,6 +26,12 @@ interface EvalCase {
   expect_emergency?: boolean;
   /** The first vet offered must be open around the clock: the question gives no time, so it may be night. */
   expect_first_vet_open_24h?: boolean;
+  /** Where the reader is, as if they ticked "Use my location". */
+  origin?: { lat: number; lon: number };
+  /** When they ask, ISO time; defaults to the clock. */
+  now?: string;
+  /** The first vet offered must be one of these. */
+  expect_first_vet_any?: string[];
   expect_guide_any?: string[];
   expect_no_answer?: boolean;
   expect_clarifying_question?: boolean;
@@ -65,7 +71,7 @@ const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corp
 const retriever = new Retriever(corpus);
 
 function retrievalChecks(c: EvalCase): { checks: Check[]; retrieved: ReturnType<Retriever['retrieve']> } {
-  const retrieved = retriever.retrieve(c.q, LIMITS.retrieveCount);
+  const retrieved = retriever.retrieve(c.q, LIMITS.retrieveCount, { origin: c.origin ?? null, now: c.now ? new Date(c.now) : undefined });
   const ids = retrieved.orgs.map((o) => o.id);
   const checks: Check[] = [];
 
@@ -114,6 +120,15 @@ function retrievalChecks(c: EvalCase): { checks: Check[]; retrieved: ReturnType<
     checks.push({
       name: c.expect_emergency ? 'treated as an emergency' : 'not treated as an emergency',
       pass: retrieved.signals.emergency === c.expect_emergency,
+    });
+  }
+
+  if (c.expect_first_vet_any) {
+    const first = retrieved.orgs.find((o) => o.needs.includes('emergency-vet') && !o.needs.includes('poison-control'));
+    checks.push({
+      name: `first vet offered is one of ${c.expect_first_vet_any.join(' / ')}`,
+      pass: !!first && c.expect_first_vet_any.includes(first.id),
+      detail: first ? first.name : 'no vet retrieved',
     });
   }
 
