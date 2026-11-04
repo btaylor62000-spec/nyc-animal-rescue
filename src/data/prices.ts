@@ -22,10 +22,16 @@ const PRICE = /\$\s?\d|\b\d[\d,.]*\s?(dollars|usd)\b|(?<!no[- ])\b(consult(ation
 // income under $50,000" into a sentence with no subject.
 const ELIGIBILITY = /(income|poverty|earn\w*|salary)[^.;]{0,40}$/i;
 
+// A reward is not a price either: it is a reason to report, and the reviewer
+// asked for it to be shown (2026-11-04). Humane World's dogfighting reward is
+// on its own page, so it can be checked like any other detail.
+const REWARD = /reward\b[^.;]{0,40}$/i;
+
 export function hasPrice(text: string): boolean {
   const re = new RegExp(PRICE.source, 'gi');
   for (const m of text.matchAll(re)) {
-    if (m[0].startsWith('$') && ELIGIBILITY.test(text.slice(Math.max(0, m.index! - 60), m.index!))) continue;
+    const before = text.slice(Math.max(0, m.index! - 60), m.index!);
+    if (m[0].startsWith('$') && (ELIGIBILITY.test(before) || REWARD.test(before))) continue;
     return true;
   }
   return false;
