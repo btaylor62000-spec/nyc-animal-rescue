@@ -50,9 +50,9 @@
   "hours": null,
   "notes": "Foster-based Brooklyn rescue (all cats in foster homes) - rescue + medical care + TNR support (EIN 85-0996451). Structured adoption (application, interview, home check). No public phone/email; apply via form / DM. Intake: Adoption application via Petfinder Intake: email list signup on site",
   "type_raw": "rescue+adoption / TNR",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://pawsofhopenyc.org/",
     "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
@@ -62,10 +62,27 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

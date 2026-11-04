@@ -49,9 +49,9 @@
   "hours": null,
   "notes": "High-volume 501(c)(3) (EIN 88-1221020), founded 2017 as The Crazy Cat Family, rebranded 2022. Heavy TNRM + SPECIALTY in neonatal kitten care. One of few NYC rescues with a holding space. Queens-based, works other parts of NYC too. Verified 2026-08-26. Intake: Contact + foster/adopt apps on site Intake: Linktree in IG bio Other channel: founder Farhana Haq Other channel: women-of-color-led",
   "type_raw": "TNR / rescue+adoption (neonatal specialty)",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.catsofmeowyork.org/",
     "https://www.orgcouncil.com/ein/881221020"
@@ -61,10 +61,27 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

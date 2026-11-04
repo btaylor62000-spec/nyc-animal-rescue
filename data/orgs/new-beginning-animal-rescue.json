@@ -70,9 +70,9 @@
   "hours": null,
   "notes": "501(c)(3) (formerly NYC's Top Dog, est. 2010), founder Pedro Rosario (16 yrs at NYC ACC). Bills itself as the only no-kill facility shelter in the Bronx; houses ~40 cats + ~60 dogs. Rare Bronx WALK-IN option. DISAMBIGUATION: unrelated 'New Beginnings Animal Rescue' orgs exist in TX/MS - this is the Bronx one. Verified 2026-08-26. Intake: Adoption via site/email Intake: walk-in facility Other channel: 2515 Newbold Ave, Bronx 10462 Other channel: founder Pedro Rosario\n\nVolunteer-based no-kill shelter at 2515 Newbold Ave, Bronx 10462. Frequently described as one of the very few dedicated rescue shelters actually BASED in the Bronx. Takes in unwanted, abandoned, abused, and stray animals and rehomes them; also runs community programs. Confirm current intake capacity and hours before referring - small volunteer operation. (Formerly known as NYC's Top Dog.) Email: (via site / social) Intake: Adopt/volunteer via site & social",
   "type_raw": "rescue+adoption (physical shelter)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.adoptapet.com/shelter/89777-new-beginning-animal-rescue-bronx-new-york",
     "https://www.idealist.org/en/nonprofit/19901e2866aa4d088d9053838710e9e2-nyc-new-beginning-animal-rescue-bronx"
@@ -83,10 +83,27 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

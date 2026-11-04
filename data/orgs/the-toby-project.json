@@ -60,9 +60,9 @@
   "hours": null,
   "notes": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat s/n, all 5 boroughs (Certified TNR Caretakers). Bklyn/Man/SI: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com. $5 rabies only.\n\nNYC's only org solely devoted to free/low-cost s/n; mobile vans + in-neighborhood clinics, works with DOHMH. Free s/n with proof of public assistance, reduced without; vaccines $8 (with s/n only). Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
   "type_raw": "spay-neuter clinic / TNR support (multi-borough)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.humaneurbangroup.org/tnr-resources",
     "https://www.aspcapro.org/sites/default/files/Local%20NYC%20resources-online%2011-14.pdf"
@@ -73,10 +73,27 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

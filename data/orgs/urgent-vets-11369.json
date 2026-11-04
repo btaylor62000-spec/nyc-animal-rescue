@@ -61,13 +61,13 @@
     "https://urgent-vets.com/urgent-vets-queens",
     "https://www.animalalliancenyc.org/need-help/emergencyvets/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Emergency & poison control — QUEENS - 24-hour ER",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

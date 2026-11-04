@@ -44,9 +44,9 @@
   "hours": null,
   "notes": "Queens nonprofit. Rescues social cats/kittens at high euthanasia risk from NYC ACC + found/surrendered cats; adopts via weekend events + Petco habitats + Petfinder. NOT the several out-of-state 'Cat's Cradle' orgs (OR/CA/NC/VA/BC). Verified 2026-08-26. Intake: Adoption via weekend events, two Petco habitats & Petfinder Intake: contact via site/FB Other channel: PO Box 754078, Forest Hills 11375",
   "type_raw": "rescue+adoption",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.catsinthecradlerescuenyc.org/",
     "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
@@ -56,10 +56,27 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

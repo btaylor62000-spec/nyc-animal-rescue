@@ -80,9 +80,9 @@
   "hours": null,
   "notes": "All-volunteer 501(c)(3) no-kill on Staten Island. Uses the Merry Mutts Play & Stay facility (654A Sharrotts Rd, SI 10309) plus volunteer fosters. Dogs HW-tested; cats FIV/FeLV-tested; all vetted + altered + microchipped before adoption. Adoption donation: dog/puppy $180, purebred dog/puppy $280, cat/kitten $80 (incl. full vetting). App reviewed -> home visit -> paperwork at the visit. Mail: PO Box 140889, Staten Island 10314. Solid SI option beyond Louie's Legacy. Phone: (no public phone; contact via FB/site) Email: (via Facebook message / site) Intake: Adopt/foster via site, Petfinder & Adoptapet Intake: Saturday adoption events Intake: application -> home visit\n\nNo-kill 501(c)(3) since 2001. Cats + dogs (strays + owner surrender), full vetting. Runs a LOW-COST SPAY/NEUTER program + supports TNR for feral cats. Phone + email confirmed on own listings. Verified 2026-08-26. Intake: Pre-adopt form + home visit Intake: Sat adoptions 12-3 at Petco 2752 Veterans Rd W 10309 Other channel: PO Box 140889, Staten Island 10314 Other channel: contact Lisa Rooney",
   "type_raw": "rescue+adoption / TNR / low-cost spay-neuter",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york",
     "https://www.plutorescue.com/"
@@ -93,10 +93,27 @@
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

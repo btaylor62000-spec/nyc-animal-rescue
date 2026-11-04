@@ -57,9 +57,9 @@
   "hours": null,
   "notes": "NYC-based bully-breed foster and advocacy network (Bay Ridge, Brooklyn), affiliated with 19 shelters/rescues across all five boroughs, Central NJ, CT, and Long Island. Focuses on the American Pit Bull Terrier, pit mixes, and other bully breeds (incl. American Bulldogs, American Bull Terriers); connects them with tri-state foster homes (min ~3 weeks, breed experience requested) and adopters. Advocates on NYCHA breed/weight rules. Also a resource hub for bully owners and rescues. Phone: (no public phone; email/app) Email: (application via site) Intake: home + reference check required",
   "type_raw": "Bully-breed foster network + adoption facilitation (advocacy)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.citypitties.org/"
   ],
@@ -68,10 +68,27 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

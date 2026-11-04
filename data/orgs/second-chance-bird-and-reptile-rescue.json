@@ -52,9 +52,9 @@
   "hours": null,
   "notes": "501(c)(3) exotic-bird and reptile rescue (33+ yrs experience) providing shelter, medical care and nutrition for surrendered/abandoned birds and reptiles; accepts surrenders and does adoptions; specializes in behavior. It is an ACC New Hope partner, so it pulls at-risk birds/reptiles from NYC Animal Care Centers. REGIONAL - based in Rochester (~5.5 hrs from NYC); included for completeness because in-city companion-bird/reptile rescue is scarce, but it is a long-distance option, not a local NYC referral. Email: (via secondchancebirdandreptilerescue.org contact) Intake: //secondchancebirdandreptilerescue.org Intake: call (585) 370-7157",
   "type_raw": "Rescue / adoption / surrender (exotic birds & reptiles)",
-  "confidence": "High",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Medium",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://secondchancebirdandreptilerescue.org/"
   ],
@@ -63,10 +63,27 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "High",
+      "to": "Medium",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

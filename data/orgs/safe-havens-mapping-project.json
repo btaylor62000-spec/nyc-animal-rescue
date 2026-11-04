@@ -36,9 +36,9 @@
   "hours": null,
   "notes": "directory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com.\n\ndirectory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com / awionline.org.",
   "type_raw": null,
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [],
   "last_verified": null,
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
@@ -46,9 +46,9 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "manual-only",
-  "consecutive_failures": 2,
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -58,6 +58,22 @@
       "evidence_url": "https://safehavensmappingproject.com",
       "source": "manual",
       "note": "Tried on 2026-11-04: safehavensmappingproject.com refused every connection. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
     }
   ],
   "privacy_hold": false,

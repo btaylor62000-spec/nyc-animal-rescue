@@ -47,9 +47,9 @@
   "hours": null,
   "notes": "501(c)(3) NYC foster-based dog rescue pulling at-risk dogs from NYC ACC and overcrowded shelters, with a strong social-media adoption presence. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
   "type_raw": "Rescue+adoption (foster-based)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.animalalliancenyc.org/need-help/groups/"
   ],
@@ -58,10 +58,27 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
