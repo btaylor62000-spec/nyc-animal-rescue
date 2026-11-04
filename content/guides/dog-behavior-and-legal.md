@@ -11,7 +11,7 @@ _Behaviour help, bite reporting, breed rules and housing law._
 
 > TRAINING, BEHAVIOR & LEGAL RESOURCES (contacts inline)
 
-Training, behavior support, service/therapy-dog programs, and NYC legal/reporting resources for dog owners. Verified against each provider's own site, ACC, DOHMH, and NY State law on 2026-08-27. Confirm current details before relying. This is general information, not legal advice.
+Training, behavior support, service/therapy-dog programs, and NYC legal/reporting resources for dog owners. Confirm current details before relying. This is general information, not legal advice.
 
 ## FREE / LOW-COST BEHAVIOR + TRAINING
 

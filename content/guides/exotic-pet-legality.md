@@ -11,7 +11,7 @@ _Which animals are legal as pets in NYC, and which must go to a rehabber or sanc
 
 > Species care & legality (NYC / NYS)
 
-This tab is orientation, not legal advice. NYC and NYS rules change; confirm current status with NYC Health, NYC ACC, or NYS DEC before acquiring or rehoming an animal. General picture as of the last-verified date:
+This page is orientation, not legal advice. NYC and NYS rules change; confirm current status with NYC Health, NYC ACC, or NYS DEC before acquiring or rehoming an animal. General picture as of the last-verified date:
 
 ## Prohibited as pets in NYC (illegal to keep - a non-exhaustive list):
 
@@ -22,7 +22,7 @@ This tab is orientation, not legal advice. NYC and NYS rules change; confirm cur
 
 ## Native NY wildlife & native reptiles/amphibians:
 
-- Most native wildlife cannot legally be kept. Injured/orphaned wildlife must go to a NYS-licensed wildlife rehabilitator (see the Wildlife rehabilitation tab).
+- Most native wildlife cannot legally be kept. Injured/orphaned wildlife must go to a NYS-licensed wildlife rehabilitator (https://nyc-animal-rescue.pages.dev/guides/found-wildlife).
 - NYS DEC now requires a permit to keep ANY reptile or amphibian native to New York, including all 12 native NY turtle species. It is illegal to sell native NY reptiles/amphibians - report violations to DEC at 1-800-847-7332.
 
 ## Generally legal companion exotics (with care caveats):

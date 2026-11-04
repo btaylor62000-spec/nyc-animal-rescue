@@ -40,6 +40,14 @@ interface TabSpec {
   title: string;
   summary: string;
   topics: string[];
+  /**
+   * Sections still read for the directory (GUIDE_ORG_SOURCES) but not shown
+   * in the guide. A reviewer asked on 2026-11-04 for guides to be the
+   * know-how the directory cannot give, not a second copy of it: a list of
+   * hospitals in a guide falls out of date beside the listings shown, kept
+   * current, at the foot of the same page.
+   */
+  omitSections?: RegExp;
 }
 
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
@@ -85,12 +93,16 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Animal emergencies and poison control',
     summary: 'Where to go right now if an animal is injured, collapsed, bleeding, or has swallowed something toxic.',
     topics: ['emergency', 'poisoning', '24 hour vet', 'hit by car', 'bleeding'],
+    // Every hospital is listed, with hours and open-now, below the guide.
+    omitSections: /^(BROOKLYN|MANHATTAN|QUEENS|STATEN ISLAND|BRONX) - /,
   },
   {
     file: WB_CAT, tab: 'Clinics, traps & support', slug: 'low-cost-clinics-and-trap-banks',
     title: 'Low-cost clinics and trap banks',
-    summary: 'Free and low-cost spay/neuter by borough, and where to borrow a humane trap.',
+    summary: 'How to get a cat spayed or neutered for free or cheaply, where to borrow a humane trap, and dental care for feral cats.',
     topics: ['low-cost vet', 'spay neuter', 'borrow a trap', 'trap bank'],
+    // Borough clinic lists, vet-bill help and owner support are listed below and have their own guides.
+    omitSections: /^(BROOKLYN|MANHATTAN|QUEENS|BRONX|STATEN ISLAND) - |^HELP PAYING VET BILLS|^OWNER-SUPPORT/,
   },
   {
     file: WB_CAT, tab: 'Colony & feral care', slug: 'starting-tnr',
@@ -115,12 +127,16 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: "Help keeping your cat",
     summary: 'Food, vet bills, housing, and temporary care, before surrender becomes the only option.',
     topics: ['cannot keep my cat', 'surrender', 'pet food help', 'cannot afford vet'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^HELP PAYING VET BILLS|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Owner support & surrender prev.', slug: 'keeping-your-dog',
     title: 'Help keeping your dog',
     summary: 'Support with costs, housing and behaviour, plus how surrender works if you still need it.',
     topics: ['cannot keep my dog', 'rehome dog', 'surrender dog', 'dog food help'],
+    // Covered in full, and kept current, by the guide Help paying for veterinary care.
+    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE/,
   },
   {
     file: WB_DOG, tab: 'Low-cost vet, s-n & licensing', slug: 'low-cost-dog-care',
@@ -237,6 +253,7 @@ export function buildTabPage(spec: TabSpec): GuidePage {
   }
 
   for (const section of doc.sections) {
+    if (spec.omitSections && section.heading && spec.omitSections.test(section.heading)) continue;
     if (section.heading) {
       lines.push(`## ${clean(section.heading)}`);
       lines.push('');

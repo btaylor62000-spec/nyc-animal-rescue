@@ -176,7 +176,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     file: WB_EXOTIC,
     tab: 'Exotic-vet & emergency care',
     animals: EXOTIC_PETS,
-    skip: /^Wildlife is not|^If the animal is wild/i,
+    skip: /^Wildlife is not|^If the animal is wild|^A wild animal is not/i,
     rules: [{ pattern: /exotic|avian|vet/i, needs: ['exotic-vet', 'emergency-vet'], orgTypes: ['exotic-vet', 'clinic'] }],
   },
   {

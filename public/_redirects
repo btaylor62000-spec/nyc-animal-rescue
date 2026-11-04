@@ -15,3 +15,5 @@
 /org/safe-havens-mapping-project/*  /org/safe-havens-for-pets/:splat 301
 /org/prince-chunk-foundation    /guides/help-paying-for-care/ 301
 /org/prince-chunk-foundation/*  /guides/help-paying-for-care/ 301
+/org/aspca-community-engagement    /guides/keeping-your-cat/ 301
+/org/aspca-community-engagement/*  /guides/keeping-your-cat/ 301

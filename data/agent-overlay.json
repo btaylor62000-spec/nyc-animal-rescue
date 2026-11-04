@@ -107,19 +107,15 @@
       "intake_urls": [
         {
           "url": "https://newhope.shelterbuddy.com/Animal/List",
-          "label": "Live at-risk list — the animals that need placing now"
+          "label": "The at-risk list: find the animal, then press Reserve or Pre-Screener Form"
         },
         {
           "url": "https://forms.gle/ozHex3uqvNkQt2dq9",
-          "label": "ACC pre-screener — submit if you have a home ready (needs a Google sign-in)"
+          "label": "Pre-Screener Form, to go through a rescue group (needs a Google sign-in)"
         },
         {
-          "url": "https://nycacc.org/emergency-placement/",
-          "label": "ACC emergency placement page"
-        },
-        {
-          "url": "https://nycacc.org/programs/new-hope-partners/",
-          "label": "ACC's full list of New Hope partners"
+          "url": "https://www.nycacc.org/programs/new-hope-partners/",
+          "label": "ACC’s full list of its approved rescue groups"
         }
       ],
       "change_log": [
@@ -131,8 +127,18 @@
           "evidence_url": "https://nycacc.org/emergency-placement/",
           "source": "manual",
           "note": "A reviewer pointed out that the record was written for rescues rather than for the public, and did not link to the application at all. The two links someone actually needs — which animals need placing now, and the form that says you have a home — are now first, and the pre-screener says up front that it wants a Google sign-in, because finding that out mid-deadline wastes the time that matters."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "How nearly every NYC rescue gets ACC dogs out. Rescues take ownership of ACC animals (often medical/behavior cases) and rehome through their own process. If you want to foster/adopt an at-risk 'New Ho",
+          "to": "Rewritten to match the list page",
+          "evidence_url": "https://newhope.shelterbuddy.com/Animal/List",
+          "source": "manual",
+          "note": "Read on the list and an animal’s page 2026-11-04: every animal has \"Reserve [name]\" and \"Pre-Screener Form\" buttons; the list page gives the schedule, the 15-minute cart and adopt@nycacc.org. The old text said the list was \"updated daily\", which it is not."
         }
-      ]
+      ],
+      "notes": "Cats and dogs on ACC’s at-risk list must leave the shelter quickly or may be euthanised. On each animal’s page on the list there are two buttons. Press \"Reserve\" to adopt it yourself: it goes into a cart for 15 minutes, and you check out at the top right and pay the deposit by card. Press \"Pre-Screener Form\" to foster or adopt through one of ACC’s approved rescue groups (ACC calls them New Hope partners): it needs a Google sign-in, and then contact rescue groups yourself as well. New animals are posted Sunday, Tuesday and Thursday at 6 PM; each posting closes at noon two days later. Website trouble: adopt@nycacc.org. The guide \"Save an animal from the NYC shelter’s urgent list\" has every step and ready-made messages."
     },
     "acc-pet-food-pantry": {
       "last_checked": "2026-11-04",

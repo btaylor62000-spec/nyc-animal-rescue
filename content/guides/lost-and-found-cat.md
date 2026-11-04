@@ -11,8 +11,6 @@ _What to do first, where to post, and who helps with searching._
 
 > MICROCHIP, LOST & FOUND, AND BEHAVIOR / SOCIALIZATION HELP
 
-Verified against ACC, Petco Love Lost, 24PetWatch, and Urban Cat League, 2026-08-26.
-
 ## LOST A CAT - do all of these fast (80% of lost cats are found within a mile - usually much closer, hiding)
 
 - Petco Love Lost (petcolove.org/lost) - FREE national database with FACIAL-RECOGNITION photo matching. Upload a clear face photo, report as LOST, print the auto-generated flyer, check every few hours.
@@ -37,12 +35,12 @@ Verified against ACC, Petco Love Lost, 24PetWatch, and Urban Cat League, 2026-08
 - 24PetWatch (now at petplace.com/pet-microchip-registry; 24Petwatch accounts moved to PetPlace) - North America's largest registry, FREE registration, any chip brand.
 - Petco Love Lost - free, doubles as the lost/found database above.
 - Don't know the chip company? Look up the number at found.org/owners or the AAHA Universal Lookup (petmicrochiplookup.org).
-- Where to GET a cat chipped cheaply: ACC, HSNY, most low-cost clinics on the 'Clinics, traps & support' tab do microchipping at the s/n visit.
+- Where to GET a cat chipped cheaply: ACC, HSNY, and most low-cost clinics (https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks) do microchipping at the spay/neuter visit.
 
 ## BEHAVIOR / SOCIALIZATION - part A: feral/shy cats & kittens (make them adoptable)
 
 - Urban Cat League Taming Toolkit (urbancatleague.org/taming-toolkit) - THE NYC resource: written crash-course + 'Taming Feral Kittens & Cats' video + taming blog. Share it with adopters/fosters to prevent back-sliding.
-- Rule of thumb: kittens under 8 weeks socialize easily; 8 wks-6 months takes longer but works; adult ferals sometimes too. Work at feeding time when they're hungry, start with head/shoulders, use a large dog crate or a bathroom, hand-feed to build trust.
+- Rule of thumb: kittens under 8 weeks socialize easily; 8 weeks-6 months takes longer but works; adult ferals sometimes too. Work at feeding time when they're hungry, start with head/shoulders, use a large dog crate or a bathroom, hand-feed to build trust.
 - UCL workshops: Taming Feral Street Kittens, Bottle-Feeding Neonatals, Building Winter Shelters, Incorporating a 501(c)(3), and the TNR Certification workshop (15,000+ certified).
 - Kitten Lady (kittenlady.org) - free how-to videos on neonatal/kitten care + socialization. Cornell Feline Health Center - vet-backed behavior articles.
 
@@ -50,7 +48,7 @@ Verified against ACC, Petco Love Lost, 24PetWatch, and Urban Cat League, 2026-08
 
 - FREE National Cat Behavior Helpline - email felinehelpline@gmail.com with your contact info + a one-line issue ('cat not using litter box'); free counseling aimed at keeping cats in their homes.
 - FIRST STEP for any sudden behavior change (esp. litter box) = a VET VISIT to rule out a medical cause (UTI, kidney, pain). Behavior fixes won't work if it's medical.
-- Litter box (10%+ of cats): one box per cat PLUS one extra, scoop daily, unscented clumping litter ~2in deep, big uncovered box, quiet accessible spot. Never punish or place the cat in the box. Spraying (vertical, small amount) is marking, not a box problem - neuter fixes ~90%.
+- Litter box (10%+ of cats): one box per cat PLUS one extra, scoop daily, unscented clumping litter about 2in deep, big uncovered box, quiet accessible spot. Never punish or place the cat in the box. Spraying (vertical, small amount) is marking, not a box problem - neuter fixes about 90%.
 - Cat-to-cat aggression / introductions: separate resources (multiple bowls, beds, boxes, perches), go SLOW with a new cat (scent-swap, then feed on opposite sides of a door, then visual, then supervised). Feliway pheromone diffuser can lower tension. Don't soothe an aroused cat - give space (redirected aggression can turn on you).
 - Scratching: it's normal (stretching/marking) - provide tall sturdy posts + horizontal cardboard, don't declaw (harmful; alternatives exist). Reward using the post.
 - Authoritative free libraries: ASPCA Common Cat Behavior Issues (aspca.org/pet-care/cat-care), Pam Johnson-Bennett (catbehaviorassociates.com), Best Friends, Cornell Feline Health Center.

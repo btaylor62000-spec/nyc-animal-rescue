@@ -19,6 +19,13 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // A reviewer: nobody outside rescue knows what "New Hope" is. Named for
+    // what someone is trying to do; the old name stays searchable.
+    id: 'acc-new-hope-program',
+    reason: 'Renamed in the reader\u2019s words, to match the guide "Save an animal from the NYC shelter\u2019s urgent list" (2026-11-04).',
+    set: { name: 'ACC urgent (at-risk) list: adopt or rescue a shelter animal', aka: ['ACC New Hope Program', 'New Hope', 'ACC at-risk list'] },
+  },
+  {
     // A reviewer found the ASPCA clinics muddled: the generic entry carried
     // the South Bronx address, the "Brooklyn" one described the South Bronx
     // and was marked paused, and Long Island City was barely there. One entry

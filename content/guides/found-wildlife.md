@@ -20,7 +20,7 @@ The rule first: only NYS-licensed wildlife rehabilitators may legally handle wil
 
 ## NYC's main wildlife hospital - The Wild Bird Fund
 
-- 565 Columbus Avenue (between 87th & 88th), New York, NY 10024. Phone 646-306-2862. Open daily 9am-7pm. NYC's only wildlife rehabilitation & education center. Takes injured/sick/orphaned wild birds AND small mammals (pigeons, waterfowl, raptors, songbirds, squirrels, opossums) 7 days a week; walk-in, no appointment needed (leave a message if arriving near closing). Found-a-bird guidance: wildbirdfund.org/how-to-help/rescue. IG @wildbirdfund.
+- 565 Columbus Avenue (between 87th & 88th), New York, NY 10024. Phone 646-306-2862. Open daily 9am-7pm. NYC's only wildlife rehabilitation & education center. Takes injured/sick/orphaned wild birds AND small mammals (pigeons, waterfowl, raptors, songbirds, squirrels, opossums) 7 days a week; walk-in, no appointment needed (leave a message if arriving near closing). Found-a-bird guidance: wildbirdfund.org/how-to-help/rescue. Instagram @wildbirdfund.
 - LIMITATION: WBF CANNOT take exotic birds (budgerigars, parrots) or domestic birds (chickens, quail, domestic geese, tame doves). It CAN take rock/domestic pigeons. For exotic or domestic birds WBF can't take, Animal Care Centers of NYC (311 / 212-788-4000) is the drop-off (as of 2022): chukars, chickens, domestic geese, budgerigars, etc.
 
 ## NYC-area licensed rehabbers - raptors & general (state + federally licensed):

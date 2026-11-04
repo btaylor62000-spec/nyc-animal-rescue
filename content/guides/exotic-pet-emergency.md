@@ -40,4 +40,4 @@ These lines cover exotic pets, not just cats and dogs. Have the species, weight,
 
 Note on wildlife
 
-- A wild animal is not a candidate for a pet-clinic visit - route it to a licensed wildlife rehabber or the Wild Bird Fund (646-306-2862). See the Wildlife rehabilitation tab.
+- A wild animal is not a candidate for a pet-clinic visit - route it to a licensed wildlife rehabber or the Wild Bird Fund (646-306-2862). See https://nyc-animal-rescue.pages.dev/guides/found-wildlife

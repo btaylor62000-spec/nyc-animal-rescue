@@ -11,11 +11,11 @@ _Care while you are away, and arranging for a pet to be looked after if you no l
 
 > Boarding, sitting, grooming, life-planning & health alerts (exotic-specific unmet needs)
 
-This tab covers needs that don't fit a rescue directory but come up constantly for exotic owners in NYC - and that ordinary kennels, pet-sitters and cat/dog resources usually can't meet. Confirm each provider still serves your species and check current requirements (most require a recent exotic-vet exam) before booking.
+This page covers needs that don't fit a rescue directory but come up constantly for exotic owners in NYC - and that ordinary kennels, pet-sitters and cat/dog resources usually can't meet. Confirm each provider still serves your species and check current requirements (most require a recent exotic-vet exam) before booking.
 
 ## EXOTIC BOARDING & PET-SITTING (most dog/cat kennels will NOT take exotics; these specialize):
 
-- AMC and The Center for Avian & Exotic Medicine (see the Exotic-vet tab) and other exotic vets often offer MEDICAL boarding - the safest option for a bird/reptile/small mammal with health needs, since a vet is on site.
+- AMC and The Center for Avian & Exotic Medicine (https://nyc-animal-rescue.pages.dev/guides/exotic-pet-emergency) and other exotic vets often offer MEDICAL boarding - the safest option for a bird/reptile/small mammal with health needs, since a vet is on site.
 - Long Island Bird & Exotics Vet Clinic (Nassau County; serves all NYC) - medical boarding for birds, reptiles, small mammals and small marsupials in an exotics-only facility (no dogs/cats to stress them); birdexoticsvet.com.
 - Andrew Perrin Animal Services (Manhattan, 10022) - specialized reptile & exotic boarding/care; andrewperrinanimalservices.com.
 - Bird Girl Pet Services (Hicksville, NY) - in-home parrot/reptile/small-mammal boarding with species-appropriate heat/UVB/misting and strict disease protocols (requires an annual exotics-vet wellness exam; note RHDV2 precautions for rabbits); birdgirlpetservices.com. (Does not board ferrets or animals illegal to own locally.)
@@ -32,7 +32,7 @@ This tab covers needs that don't fit a rescue directory but come up constantly f
 ## LIFE-PLANNING: who cares for your exotic if you can't? (critical for long-lived species)
 
 - Parrots can live 30-80+ years and routinely OUTLIVE their owners - the single biggest reason big parrots cycle through many homes. Name a caregiver and put your bird in your estate plan. A pet TRUST (recognized in NY) funds and directs care without waiting for probate; a will alone can leave a bird in limbo. Specify the caregiver, a backup, and funds for food/vet care. Discuss it with the caregiver in advance.
-- Long-lived tortoises (some 50-100+ yrs) need the same planning; even rabbits/parrots of 10-15 yrs warrant a named backup caregiver.
+- Long-lived tortoises (some 50-100+ years) need the same planning; even rabbits/parrots of 10-15 years warrant a named backup caregiver.
 - Rescues that promise lifetime sanctuary for non-placeable animals (e.g. Woodstock/Catskill for farmed animals; parrot rescues that take returns) can be named as a fallback - confirm with them first and note it in your plan.
 - Consult an estate attorney about a NY pet trust; many will add a companion-animal provision to a standard will.
 
@@ -40,7 +40,7 @@ This tab covers needs that don't fit a rescue directory but come up constantly f
 
 - Keep a species-ready GO-KIT: a secure travel carrier/cage, a portable heat source + battery pack (reptiles/birds can't survive a cold apartment in a winter outage), bottled water, several days of the exact food/hay, meds, and copies of vet records + your exotic vet's after-hours number.
 - Birds are extremely sensitive to smoke, fumes and temperature swings; reptiles depend on heat/UVB; rabbits overheat fast. Plan for power loss and for a place that will take exotics (many human shelters and even pet shelters won't).
-- Microchip/band and photograph each animal now (see the Lost-found & ID tab) so you can prove ownership and reunite after an evacuation. NYC emergency info: nyc.gov/emergencymanagement (search 'pets').
+- Microchip/band and photograph each animal now (https://nyc-animal-rescue.pages.dev/guides/lost-and-found-exotic) so you can prove ownership and reunite after an evacuation. NYC emergency info: nyc.gov/emergencymanagement (search 'pets').
 
 ## SPECIES HEALTH ALERTS (current, NYC-relevant - these change; verify the latest before acting):
 

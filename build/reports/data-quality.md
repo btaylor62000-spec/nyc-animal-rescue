@@ -4,8 +4,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **399** organizations after de-duplication
-- **78** duplicate clusters merged
+- **398** organizations after de-duplication
+- **77** duplicate clusters merged
 - **22** guide pages generated
 - **25** entries flagged as not currently active
 - **5** entries with no way at all to make contact
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 294 |
-| dog | 228 |
+| cat | 293 |
+| dog | 227 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -41,7 +41,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | foster | 98 |
 | tnr | 95 |
 | spay-neuter | 75 |
-| owner-support | 70 |
+| owner-support | 69 |
 | surrender | 64 |
 | low-cost-vet | 58 |
 | referral | 48 |
@@ -58,7 +58,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | senior | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
-| boarding | 15 |
+| boarding | 14 |
 | microchip | 13 |
 | transport | 13 |
 | breed-specific | 11 |
@@ -74,25 +74,25 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 261 |
-| queens | 220 |
-| manhattan | 216 |
-| bronx | 191 |
-| staten-island | 190 |
+| brooklyn | 260 |
+| queens | 219 |
+| manhattan | 215 |
+| bronx | 190 |
+| staten-island | 189 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 192 |
-| Medium | 147 |
+| Medium | 146 |
 | Low | 60 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 374 |
+| active | 373 |
 | verify | 18 |
 | retired | 4 |
 | hiatus | 2 |
@@ -157,7 +157,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 ## Not currently active
 
 - **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
-- **Animal Relief Fund (ARF)** — `verify`: Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
+- **Animal Relief Fund (ARF!)** — `verify`: Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Cats In The Cradle Rescue (CITCR)** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
 - **Cats of Meow York (COMY)** — `verify`: Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.
@@ -184,7 +184,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (78)
+### Merged (77)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -245,7 +245,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `kisos-pet-food-pantry` ← 2 records
 - `paws-ny` ← 7 records
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
-- `aspca-community-engagement` ← 2 records
 - `animal-haven-community-engagement` ← 2 records
 - `safe-haven-program-map-foster` ← 2 records
 - `safe-place-for-pets` ← 2 records
@@ -275,7 +274,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 - **website** — nbanimalrescue.org  vs  nycnewbeginninganimalrescue.org
   - Sources give different domains for what looks like the same organization.
-- **website** — clinic.aspca.org  vs  aspcapro.org
+- **website** — clinic.aspca.org  vs  aspca.org
   - Sources give different domains for what looks like the same organization.
 - **website** — nycacc.org  vs  petsandhousing.org
   - Sources give different domains for what looks like the same organization.
@@ -341,26 +340,26 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15287 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save an animal from the NYC shelter’s urgent list | 8050 |
+| Save an animal from the NYC shelter’s urgent list | 7583 |
 | Reporting animal abuse or neglect | 5659 |
-| Animal emergencies and poison control | 3145 |
-| Low-cost clinics and trap banks | 8265 |
-| Community cats, colonies and starting TNR | 6763 |
-| Cats needing specialist help | 4812 |
-| Lost or found a cat | 6279 |
-| Help keeping your cat | 10274 |
-| Help keeping your dog | 8825 |
-| Low-cost vet care, spay/neuter and dog licensing | 11033 |
-| Dog behaviour, training and legal questions | 6345 |
-| Lost or found a dog | 3528 |
-| Breed-specific dog rescue | 13816 |
-| Found injured or orphaned wildlife | 9950 |
-| Exotic pet emergencies | 4079 |
-| What you can legally keep in New York City | 3073 |
-| Help paying for veterinary care | 8850 |
-| Rehoming a rabbit, bird, reptile or small animal | 3179 |
+| Animal emergencies and poison control | 2177 |
+| Low-cost clinics and trap banks | 3713 |
+| Community cats, colonies and starting TNR | 6971 |
+| Cats needing specialist help | 4753 |
+| Lost or found a cat | 6256 |
+| Help keeping your cat | 6512 |
+| Help keeping your dog | 8577 |
+| Low-cost vet care, spay/neuter and dog licensing | 11011 |
+| Dog behaviour, training and legal questions | 6258 |
+| Lost or found a dog | 3441 |
+| Breed-specific dog rescue | 12990 |
+| Found injured or orphaned wildlife | 9957 |
+| Exotic pet emergencies | 4104 |
+| What you can legally keep in New York City | 3096 |
+| Help paying for veterinary care | 8836 |
+| Rehoming a rabbit, bird, reptile or small animal | 3184 |
 | Lost or found a rabbit, bird or reptile | 2266 |
-| Boarding, pet sitting and planning ahead | 6022 |
+| Boarding, pet sitting and planning ahead | 6105 |
 
 ### Source tabs not turned into a page (4)
 

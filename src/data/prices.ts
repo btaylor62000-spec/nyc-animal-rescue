@@ -15,7 +15,7 @@
  */
 
 /** A dollar figure, or a fee/deposit/reward mentioned as a charge. */
-const PRICE = /\$\s?\d|\b\d[\d,.]*\s?(dollars|usd)\b|(?<!no[- ])\b(consult(ation)? fee|per-incident fee|fee applies|fee may apply|surrender fee|listing fee|adoption fees?|fees?:|deposit)\b|\bfees? (from|of|is|are)\b|\(fee\)/i;
+const PRICE = /\$\s?\d|\b\d[\d,.]*\s?(dollars|usd)\b|(?<!no[- ])\b(consult(ation)? fee|per-incident fee|fee applies|fee may apply|surrender fee|listing fee|adoption fees?|fees?:)\b|\bfees? (from|of|is|are)\b|\(fee\)/i;
 
 // An income limit is not a price: it is how someone tells whether they
 // qualify for help, and taking it out turned "for owners with a household

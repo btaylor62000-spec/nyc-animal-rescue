@@ -43,6 +43,7 @@ import { discoveredOrgs, unpublishedCandidateCount } from './discovered.ts';
 import { applyCorrections, loadSubmissions, submissionToOrg } from './community.ts';
 import { fixUrl, fixUrlsInText } from '../../src/data/url-fixes.ts';
 import { withoutPrices } from '../../src/data/prices.ts';
+import { plainWords } from '../../src/data/plain-words.ts';
 import type { TagTrace } from './tag.ts';
 
 const ORGS_DIR = 'data/orgs';
@@ -223,7 +224,7 @@ function main(): void {
       .map((i) => ({ ...i, url: fixUrl(i.url) }))
       .filter((i) => !seenUrl.has(i.url) && seenUrl.add(i.url));
     org.source_urls = [...new Set(org.source_urls.map(fixUrl))];
-    if (org.notes) org.notes = withoutPrices(fixUrlsInText(org.notes));
+    if (org.notes) org.notes = plainWords(withoutPrices(fixUrlsInText(org.notes)));
     // No prices anywhere a reader can see: src/data/prices.ts says why.
     if (org.status_note) org.status_note = withoutPrices(org.status_note);
   }
@@ -299,7 +300,7 @@ function main(): void {
 
   writeFileSync('schema/org.schema.json', `${JSON.stringify(ORG_SCHEMA, null, 2)}\n`, 'utf8');
 
-  const pages = buildAllGuidePages(sorted).map((p) => ({ ...p, markdown: withoutPrices(fixUrlsInText(p.markdown)) }));
+  const pages = buildAllGuidePages(sorted).map((p) => ({ ...p, markdown: plainWords(withoutPrices(fixUrlsInText(p.markdown))) }));
   writeGuidePages(pages, GUIDES_DIR);
   console.log(`Wrote ${pages.length} guide pages to ${GUIDES_DIR}/`);
 

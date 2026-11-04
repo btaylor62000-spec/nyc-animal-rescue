@@ -11,7 +11,7 @@ _The first hours matter most. Where to look, who to call, and how microchips hel
 
 > LOST & FOUND DOGS + MICROCHIP REGISTRIES (contacts inline)
 
-Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current. Verified against ACC, Mayor's Alliance, Petco Love Lost, and 24Petwatch on 2026-08-27.
+Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current.
 
 ## LOST A DOG - do all of these NOW
 

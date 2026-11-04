@@ -15,7 +15,7 @@ The single most important message: NEVER release a domestic animal to the wild. 
 
 ## Why these surrenders happen - and the humane framing:
 
-- 'Easter bunny' rabbits: bought as impulse/holiday gifts, then surrendered when the ~10-year commitment, indoor housing, rabbit-savvy vet care and spay/neuter needs become clear. Rabbits are fragile, dislike being picked up, and are seldom suitable as children's 'starter pets.'
+- 'Easter bunny' rabbits: bought as impulse/holiday gifts, then surrendered when the about 10-year commitment, indoor housing, rabbit-savvy vet care and spay/neuter needs become clear. Rabbits are fragile, dislike being picked up, and are seldom suitable as children's 'starter pets.'
 - Red-eared slider turtles: sold tiny and cheap, they grow large, live decades, and are invasive/illegal to release. Rescues are overwhelmed with them; rehoming can take a long time.
 - 'Teacup'/'mini' pigs: marketed as staying small; they grow into large animals that are illegal to keep in most NYC residential zoning and need farmed-animal sanctuary placement.
 - Roosters & backyard poultry: chicks bought at markets/feed stores turn out to be roosters (illegal/impractical in most NYC housing) and need sanctuary, not release.

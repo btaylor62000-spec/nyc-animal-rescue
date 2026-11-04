@@ -11,7 +11,7 @@ _Affordable veterinary care across the five boroughs, and how to license a dog i
 
 > LOW-COST VET, SPAY/NEUTER & NYC DOG LICENSING (contacts inline)
 
-Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the legally-required NYC dog license. Every dog 4+ months must be licensed; every dog owner must show proof of license + rabies in public. Verified against each provider's own site / NYC DOHMH / the ACC Low-Cost Vet Resources sheet on 2026-08-27. Confirm eligibility (many are income-qualified) and current pricing before you go.
+Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the legally-required NYC dog license. Every dog 4+ months must be licensed; every dog owner must show proof of license + rabies in public. Confirm eligibility (many are income-qualified) and current pricing before you go.
 
 ## NYC DOG LICENSE - legally required (NYC Health Code 161.04)
 
@@ -26,18 +26,18 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 
 ## CITYWIDE - free / low-cost SPAY-NEUTER
 
-- ASPCA Mobile Spay/Neuter + Community Clinics - free/low-cost s/n for dogs & cats across all 5 boroughs. Same-Day virtual WAITLIST (sign up 6:00 AM day-of at clinic.aspca.org/clinics/new-york-city). Phone (844) 692-7722. Owner 18+, pet 2 months-9 yrs, no known medical issues. No walk-ins.
-- The Toby Project - NYC's only org solely devoted to free/low-cost s/n; mobile vans + in-neighborhood clinics, works with DOHMH. Free s/n with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.
-- Humane Society of New York - full-service low-cost veterinary hospital + Animal Mukti FREE spay/neuter program + a free Pit Bull s/n program (100% covered). 306 East 59th St, NY 10022 (btwn 1st/2nd Ave). (212) 752-4842 / clinic (212) 752-4840, 9-5 by APPOINTMENT ONLY (allow 24-48 hrs for callback). info.HSNY@verizon.net; https://humanesocietyny.org.
+- ASPCA Mobile Spay/Neuter + Community Clinics - free/low-cost spay/neuter for dogs & cats across all 5 boroughs. Same-Day virtual WAITLIST (sign up 6:00 AM day-of at clinic.aspca.org/clinics/new-york-city). Phone (844) 692-7722. Owner 18+, pet 2 months-9 years, no known medical issues. No walk-ins.
+- The Toby Project - NYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.
+- Humane Society of New York - full-service low-cost veterinary hospital + Animal Mukti FREE spay/neuter program + a free Pit Bull spay/neuter program (100% covered). 306 East 59th St, NY 10022 (btwn 1st/2nd Ave). (212) 752-4842 / clinic (212) 752-4840, 9-5 by APPOINTMENT ONLY (allow 24-48 hours for callback). info.HSNY@verizon.net; https://humanesocietyny.org.
 - Friends of Animals - low-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.
 - MAMA Coupon (Muffin's Pet Connection + Mayor's Alliance). Participating vets + guidelines at www.muffins.org/MAMA.htm.
-- NYC DOHMH low-cost s/n index (authoritative list, updated periodically): https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page.
+- NYC DOHMH low-cost spay/neuter index (authoritative list, updated periodically): https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page.
 
 ## ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)
 
-- BRONX - ASPCA Community Veterinary Clinic, South Bronx: s/n + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income \<= $50k.)
-- BROOKLYN - ASPCA Community Veterinary Clinic (Lewyt), East New York: s/n + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.
-- QUEENS - ASPCA Community Veterinary Clinic (Rachael Ray Foundation), Long Island City: s/n + wellness + routine care by appointment for eligible Queens residents. clinic.aspca.org/locations/new-york-city.
+- BRONX - ASPCA Community Veterinary Clinic, South Bronx: spay/neuter + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income \<= $50k.)
+- BROOKLYN - ASPCA Community Veterinary Clinic (Lewyt), East New York: spay/neuter + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.
+- QUEENS - ASPCA Community Veterinary Clinic (Rachael Ray Foundation), Long Island City: spay/neuter + wellness + routine care by appointment for eligible Queens residents. clinic.aspca.org/locations/new-york-city.
 
 (No dedicated ASPCA community clinic in Manhattan/Staten Island - use the mobile waitlist + citywide options above.)
 
@@ -48,7 +48,7 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 - CITYWIDE - Banfield Pet Hospital: not free but lower-cost; e.g. Brooklyn 238 Atlantic Ave 11201; pricing at banfield.com. Free first vet visit for newly adopted pets.
 - CITYWIDE - Petco Vetco / Vetco vaccine clinics: no exam fee; packages available. vetcoclinics.com.
 - CITYWIDE - VIP Petcare clinics: no exam fee, single-vaccine or package pricing; find a location at vippetcare.com.
-- WESTCHESTER-ADJACENT (nr Bronx) - Bully Baby Rescue runs free/low-cost s/n clinics (Port Chester): info@bullybabyrescue.org, (914) 565-1512.
+- WESTCHESTER-ADJACENT (nr Bronx) - Bully Baby Rescue runs free/low-cost spay/neuter clinics (Port Chester): info@bullybabyrescue.org, (914) 565-1512.
 
 ## ACC COMMUNITY PETS PROGRAM - free help to keep pets with their families
 
@@ -58,9 +58,9 @@ Free pop-up vaccine + microchip clinics in the Bronx and Queens: free rabies, DA
 
 Also offers: free dog training, tenant advocacy and pet-housing help, spay/neuter appointments, and connections to other agencies.
 
-## LOW-COST DOG DENTAL (periodontal disease affects ~80% of dogs over age 3)
+## LOW-COST DOG DENTAL (periodontal disease affects about 80% of dogs over age 3)
 
-- Humane Society of NY - has a dedicated 'doggy dentist' doing dentals 4-5 days/week (~4 dogs/day); low-cost, volunteer-supported. Books up fast via a waitlist - call early. 306 E 59th St, (212) 752-4842.
+- Humane Society of NY - has a dedicated 'doggy dentist' doing dentals 4-5 days/week (about 4 dogs/day); low-cost, volunteer-supported. Books up fast via a waitlist - call early. 306 E 59th St, (212) 752-4842.
 - ASPCA Community Veterinary Clinics (S.Bronx 501 E 161st St / E.NY Brooklyn / LIC Queens) - subsidized dental cleanings + extractions alongside wellness, income \<=$50k. Waitlist via (844) 692-7722.
 - BBAWC Rescue Clinic (Brooklyn Bridge Animal Welfare Coalition) - low-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.
 
