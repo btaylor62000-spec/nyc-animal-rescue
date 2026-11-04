@@ -1,0 +1,73 @@
+{
+  "id": "one-love-animal-hospital-upper-east-side",
+  "name": "One Love Animal Hospital - Upper East Side",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan - Upper East Side (Yorkville)",
+  "zips": [],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [
+    {
+      "value": "2122498802",
+      "display": "(212) 249-8802"
+    }
+  ],
+  "emails": [
+    {
+      "value": "yorkville@onelovevet.com"
+    }
+  ],
+  "website": "https://www.onelovevet.com",
+  "intake_urls": [
+    {
+      "url": "https://www.onelovevet.com/after-hours-emergencies",
+      "label": "Overnight emergencies"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.77729,
+    "lon": -73.95428,
+    "precision": "address"
+  },
+  "address": {
+    "street": "227 E 84th St",
+    "city": "New York"
+  },
+  "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm, Sun closed",
+  "notes": "227 E 84th St, New York. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones. One of three One Love branches; the others are listed separately.",
+  "type_raw": "Vet practice that sees urgent problems and most emergencies during opening hours - Upper East Side branch",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.onelovevet.com/contact-us"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

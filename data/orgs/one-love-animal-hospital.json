@@ -1,7 +1,9 @@
 {
   "id": "one-love-animal-hospital",
-  "name": "One Love Animal Hospital",
-  "aka": [],
+  "name": "One Love Animal Hospital - Boerum Hill",
+  "aka": [
+    "One Love Animal Hospital"
+  ],
   "parent_org": null,
   "org_types": [
     "clinic",
@@ -15,12 +17,11 @@
     "emergency-vet"
   ],
   "boroughs": [
-    "brooklyn",
-    "manhattan"
+    "brooklyn"
   ],
   "citywide": false,
   "outside_nyc": false,
-  "neighborhoods": "Brooklyn (Boerum Hill, Bay Ridge) and Manhattan (Upper East Side)",
+  "neighborhoods": "Brooklyn - Boerum Hill",
   "zips": [
     "11201"
   ],
@@ -28,18 +29,7 @@
   "phones": [
     {
       "value": "7185327410",
-      "display": "(718) 532-7410",
-      "label": "Boerum Hill"
-    },
-    {
-      "value": "3475494050",
-      "display": "(347) 549-4050",
-      "label": "Bay Ridge"
-    },
-    {
-      "value": "2122498802",
-      "display": "(212) 249-8802",
-      "label": "Upper East Side"
+      "display": "(718) 532-7410"
     }
   ],
   "emails": [
@@ -56,21 +46,25 @@
   ],
   "social": [],
   "geo": {
-    "lat": 40.6937,
-    "lon": -73.9899,
-    "precision": "zip"
+    "lat": 40.68829,
+    "lon": -73.98817,
+    "precision": "address"
   },
-  "address": null,
-  "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm; Sun closed (Bay Ridge: Sun 10am-6pm)",
-  "notes": "Boerum Hill: 317 Atlantic Ave, Brooklyn 11201. Bay Ridge: 8209 3rd Ave, Brooklyn. Upper East Side: 227 E 84th St, New York. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones.",
-  "type_raw": "Vet practice that sees urgent problems and most emergencies during opening hours; three locations",
+  "address": {
+    "street": "317 Atlantic Ave",
+    "city": "Brooklyn",
+    "zip": "11201"
+  },
+  "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm, Sun closed",
+  "notes": "317 Atlantic Ave, Brooklyn 11201. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones. One of three One Love branches; the others are listed separately.",
+  "type_raw": "Vet practice that sees urgent problems and most emergencies during opening hours - Boerum Hill branch",
   "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.onelovevet.com/contact-us"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"

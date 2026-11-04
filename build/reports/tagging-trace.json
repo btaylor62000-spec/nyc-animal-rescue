@@ -1654,6 +1654,43 @@
       "matched": "Veterinary Center"
     }
   ],
+  "bronx-veterinary-center-eastchester-road": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Veterinary Center"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "section",
+      "matched": "LOW-COST"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Veterinary Center"
+    }
+  ],
   "brooklyn-animal-action": [
     {
       "tag": "cat",
@@ -6329,6 +6366,80 @@
     }
   ],
   "one-love-animal-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    }
+  ],
+  "one-love-animal-hospital-bay-ridge": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "notes",
+      "matched": "emergency hospital"
+    }
+  ],
+  "one-love-animal-hospital-upper-east-side": [
     {
       "tag": "cat",
       "field": "name",
