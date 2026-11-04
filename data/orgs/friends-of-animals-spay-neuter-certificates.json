@@ -34,9 +34,18 @@
       "display": "(800) 321-7387"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "spayprogram@friendsofanimals.org"
+    }
+  ],
   "website": "https://friendsofanimals.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "label": "Order a spay/neuter certificate"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
@@ -49,15 +58,34 @@
   "source_urls": [
     "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "spayprogram@friendsofanimals.org",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": null,
+      "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

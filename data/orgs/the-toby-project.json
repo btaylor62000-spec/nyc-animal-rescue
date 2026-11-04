@@ -44,15 +44,13 @@
   ],
   "emails": [
     {
-      "value": "tobyprojectnyc@gmail.com",
-      "label": "appts"
+      "value": "tobyprojectnyc@gmail.com"
     },
     {
-      "value": "petden19@verizon.net",
-      "label": "Brooklyn/SI/Manhattan feral coordinator"
+      "value": "info@tobyproject.org"
     }
   ],
-  "website": null,
+  "website": "https://tobyproject.org",
   "intake_urls": [],
   "social": [
     {
@@ -69,7 +67,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.\n\nNYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
+  "notes": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open.",
   "type_raw": "spay-neuter clinic / TNR support (multi-borough)",
   "confidence": "Medium",
   "status": "active",
@@ -148,6 +146,33 @@
       "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
       "source": "manual",
       "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://tobyproject.org",
+      "evidence_url": "https://tobyproject.org",
+      "source": "manual",
+      "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "tobyprojectnyc@gmail.com, petden19@verizon.net",
+      "to": "tobyprojectnyc@gmail.com, info@tobyproject.org",
+      "evidence_url": "https://tobyproject.org",
+      "source": "manual",
+      "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.\n\nNYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
+      "to": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open.",
+      "evidence_url": "https://tobyproject.org",
+      "source": "manual",
+      "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
     }
   ],
   "privacy_hold": false,

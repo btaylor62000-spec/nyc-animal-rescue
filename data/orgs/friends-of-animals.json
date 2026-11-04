@@ -32,16 +32,25 @@
       "display": "(800) 321-7387"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "spayprogram@friendsofanimals.org"
+    }
+  ],
   "website": "https://friendsofanimals.org/our-programs/spay-neuter",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "label": "Order a spay/neuter certificate"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
   "hours": null,
   "notes": "certificates, redeem at feral-friendly vets - 1-800-321-PETS.\n\nlow-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
@@ -54,7 +63,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -65,6 +74,33 @@
       "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: Its certificate page: \"call 1-800-321-PETS (7387) M-F, 9-5 EST\". Same number as stored."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "spayprogram@friendsofanimals.org",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": null,
+      "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
     }
   ],
   "privacy_hold": false,

@@ -4,8 +4,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **405** organizations after de-duplication
-- **76** duplicate clusters merged
+- **404** organizations after de-duplication
+- **77** duplicate clusters merged
 - **23** guide pages generated
 - **24** entries flagged as not currently active
 - **5** entries with no way at all to make contact
@@ -17,7 +17,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 300 |
+| cat | 299 |
 | dog | 235 |
 | wildlife | 45 |
 | rabbit | 37 |
@@ -37,12 +37,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 165 |
-| foster | 98 |
+| adoption | 164 |
+| foster | 97 |
 | tnr | 94 |
-| spay-neuter | 74 |
+| spay-neuter | 73 |
 | owner-support | 69 |
-| surrender | 64 |
+| surrender | 63 |
 | low-cost-vet | 57 |
 | referral | 48 |
 | emergency-vet | 45 |
@@ -76,7 +76,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 258 |
 | queens | 217 |
-| manhattan | 213 |
+| manhattan | 212 |
 | bronx | 188 |
 | staten-island | 187 |
 
@@ -84,15 +84,15 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 202 |
-| Medium | 145 |
+| High | 205 |
+| Medium | 141 |
 | Low | 58 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 381 |
+| active | 380 |
 | verify | 13 |
 | retired | 8 |
 | hiatus | 2 |
@@ -145,7 +145,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (22)
+### Never verified (21)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -178,7 +178,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (76)
+### Merged (77)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -194,6 +194,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `nyc-second-chance-rescue` ← 2 records
 - `new-beginning-animal-rescue` ← 2 records
 - `animal-haven` ← 2 records
+- `best-friends-animal-society-nyc` ← 2 records
 - `cat-castle-nyc` ← 2 records
 - `kittykind` ← 2 records
 - `staten-island-hope-animal-rescue` ← 2 records
@@ -334,7 +335,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found an injured bird | 15287 |
 | Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 5551 |
-| Save a shelter animal from euthanasia: the NYC at-risk list | 8245 |
+| Save a shelter animal from euthanasia: the NYC at-risk list | 8250 |
 | Reporting animal abuse or neglect | 5798 |
 | Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |

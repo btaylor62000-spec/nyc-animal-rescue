@@ -67,13 +67,13 @@ Contact every organisation that takes your animal's species, through every chann
 - Kitty Kind - Manhattan - adopt@kittykind.org
 - Little Wanderers NYC - the Bronx and Manhattan - @littlewanderersnyc - email@lwnyc.org
 - NY Cat Warriors - citywide - @nycatwarriors - nycw@nycatwarriors.org
-- NYC Cat Coalition - the Bronx - nycatcoal@yahoo.com
+- NYC Cat Coalition - the Bronx - nycatcoalADOPT@yahoo.com
 - RescueNYC - citywide - info@rescuenyc.org
 - Spicy Cats Rescue - Brooklyn - @spicycatsrescue - https://spicycats.org/contact-us
 
 ## Dogs
 
-- Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.com - https://heartsandbonesrescue.org/
+- Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.org - https://heartsandbonesrescue.org/
 - Mr. Bones & Co - Brooklyn - @mrbonesandco - https://mrbonesandco.org
 - Pound Hounds Res-Q - citywide - @poundhoundsresq - https://poundhoundsresq.org
 - Pupstarz Rescue - citywide - @pupstarzrescue - https://pupstarzrescue.org

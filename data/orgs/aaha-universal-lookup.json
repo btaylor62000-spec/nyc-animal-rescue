@@ -27,7 +27,7 @@
   "region_note": "MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
   "phones": [],
   "emails": [],
-  "website": "https://petmicrochiplookup.org",
+  "website": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -35,7 +35,7 @@
   "hours": null,
   "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
@@ -45,7 +45,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -56,6 +56,24 @@
       "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: petmicrochiplookup.org forwards to AAHA's Pet Microchip Registry Lookup, which asks for the 9-, 10- or 15-digit chip number. Working."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://petmicrochiplookup.org",
+      "to": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
     }
   ],
   "privacy_hold": false,

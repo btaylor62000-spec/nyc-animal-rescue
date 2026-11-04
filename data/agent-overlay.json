@@ -48,7 +48,7 @@
     },
     "aaha-universal-lookup": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -60,8 +60,28 @@
           "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: petmicrochiplookup.org forwards to AAHA's Pet Microchip Registry Lookup, which asks for the 9-, 10- or 15-digit chip number. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://petmicrochiplookup.org",
+          "to": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
         }
-      ]
+      ],
+      "website": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "confidence": "High"
     },
     "abandoned-angel-cocker-spaniel-rescue": {
       "last_checked": "2026-11-04",
@@ -1033,14 +1053,93 @@
     },
     "best-friends-animal-society-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
-    },
-    "best-friends-pet-adoption-center-nyc": {
-      "last_checked": "2026-11-04",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "9297773016",
+          "display": "(929) 777-3016"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "9292928300",
+          "to": "9297773016",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "adoptnyc@bestfriends.org",
+          "to": "contactnyc@bestfriends.org",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "address",
+          "from": null,
+          "to": "{\"street\": \"307 West Broadway\", \"city\": \"New York\", \"zip\": \"10013\"}",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Sun 11am-7pm",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "National no-kill org's NYC center; showcases adoptable cats from ACC + local rescues, runs spay/neuter + shelter-support programs. STATUS FLAG (2026): SoHo center CLOSED to public ~June 4-mid-Sept 2026 for Companion Animal Care Act renovations; most cats temporarily at 232 Varet St, Brooklyn 11206 (11am-7pm daily) + foster - confirm current location before visiting. Adoption partner, not a TNR field group. Intake: Cat/dog adoption survey on site Intake: showcases ACC + local-rescue cats Other channel: 307 W Broadway, NY 10013\n\nNYC center of the national 501(c)(3) Best Friends Animal Society, 307 W Broadway, SoHo 10013, open daily 11-7. Cats on-site daily; most DOGS are in foster homes, so CALL AHEAD to meet a specific dog. Works collaboratively with ACC + local rescues. Cannot take owner surrenders (unless previously adopted from them) but provides keep-your-pet resources + partner referrals. Also offers spay/neuter referrals + behavior guidance. Phone: (no public adoption phone; contact via site) Email: (via site contact form) Intake: open daily 11am-7pm",
+          "to": "The New York centre of the national no-kill charity Best Friends Animal Society: its Pet Adoption Center at 307 West Broadway, SoHo, open every day 11am-7pm. Cats are on site every day; most dogs live in foster homes, so ring ahead to meet a particular dog. Works with ACC and local rescues, and runs spay/neuter and shelter-support programmes. It does not take owner surrenders unless the animal was adopted from Best Friends.",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "includes surrender",
+          "to": "surrender removed",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "It does not take owner surrenders unless the animal was adopted from Best Friends, so it should not appear under surrender."
+        }
+      ],
+      "emails": [
+        {
+          "value": "contactnyc@bestfriends.org"
+        }
+      ],
+      "address": {
+        "street": "307 West Broadway",
+        "city": "New York",
+        "zip": "10013"
+      },
+      "hours": "Mon-Sun 11am-7pm",
+      "website": "https://bestfriends.org/new-york-city",
+      "notes": "The New York centre of the national no-kill charity Best Friends Animal Society: its Pet Adoption Center at 307 West Broadway, SoHo, open every day 11am-7pm. Cats are on site every day; most dogs live in foster homes, so ring ahead to meet a particular dog. Works with ACC and local rescues, and runs spay/neuter and shelter-support programmes. It does not take owner surrenders unless the animal was adopted from Best Friends.",
+      "confidence": "High",
+      "needs": [
+        "adoption",
+        "foster",
+        "tnr",
+        "spay-neuter",
+        "behavior-training",
+        "referral"
+      ]
     },
     "best-friends-spay-neuter-resource-map": {
       "last_checked": "2026-11-04",
@@ -1237,7 +1336,7 @@
     },
     "brooklyn-animal-action": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "needs": [
         "adoption",
@@ -1257,6 +1356,27 @@
           "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
           "source": "manual",
           "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": "https://brooklynanimalaction.org/contact/",
+          "to": "https://brooklynanimalaction.org/contact/, https://brooklynanimalaction.org/contact/",
+          "evidence_url": "https://brooklynanimalaction.org/contact/",
+          "source": "manual",
+          "note": "Contact form added from its contact page."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High",
+      "intake_urls": [
+        {
+          "url": "https://brooklynanimalaction.org/contact/",
+          "label": "contact form"
+        },
+        {
+          "url": "https://brooklynanimalaction.org/contact/",
+          "label": "Contact form"
         }
       ]
     },
@@ -2218,7 +2338,7 @@
     },
     "friends-of-animals": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -2230,16 +2350,88 @@
           "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Its certificate page: \"call 1-800-321-PETS (7387) M-F, 9-5 EST\". Same number as stored."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "spayprogram@friendsofanimals.org",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
         }
       ],
       "source_urls": [
         "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/"
-      ]
+      ],
+      "emails": [
+        {
+          "value": "spayprogram@friendsofanimals.org"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "label": "Order a spay/neuter certificate"
+        }
+      ],
+      "confidence": "High"
     },
     "friends-of-animals-spay-neuter-certificates": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "spayprogram@friendsofanimals.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "spayprogram@friendsofanimals.org",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "label": "Order a spay/neuter certificate"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "friends-of-the-feathered-and-furry-wildlife-center": {
       "last_checked": "2026-11-04",
@@ -2403,8 +2595,26 @@
     },
     "hearts-and-bones-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "info@heartsandbonesrescue.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "info@heartsandbonesrescue.com",
+          "to": "info@heartsandbonesrescue.org",
+          "evidence_url": "https://heartsandbonesrescue.org/contact-us",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its contact page says: \"Reach out to us at info@heartsandbonesrescue.org\" (.org, not .com)."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "heidi-wrangles-cats": {
       "last_checked": "2026-11-04",
@@ -2861,9 +3071,9 @@
     },
     "little-wanderers-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-11-04",
       "phones": [],
       "change_log": [
         {
@@ -3405,8 +3615,10 @@
     },
     "national-domestic-violence-hotline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "neighborhood-cats": {
       "last_checked": "2026-11-04",
@@ -3626,8 +3838,57 @@
     },
     "nyc-cat-coalition": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "9178616043",
+          "display": "(917) 861-6043"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9178616043",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "nycatcoal@yahoo.com",
+          "to": "nycatcoaladopt@yahoo.com",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/nycatcoalition",
+          "to": "https://www.facebook.com/NYCCatCoalition/",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        }
+      ],
+      "emails": [
+        {
+          "value": "nycatcoaladopt@yahoo.com"
+        }
+      ],
+      "social": [
+        {
+          "platform": "facebook",
+          "handle": "NYCCatCoalition",
+          "url": "https://www.facebook.com/NYCCatCoalition/"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nyc-dohmh-low-cost-s-n-index": {
       "last_checked": "2026-11-04",
@@ -3647,7 +3908,7 @@
     },
     "nyc-domestic-violence-hotline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -3658,8 +3919,19 @@
           "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
           "source": "manual",
           "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. The city's page gives 1-800-621-HOPE (4673), the number listed. (212) 639-9675 on the same page is the number for 311 from outside the city."
         }
-      ]
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nyc-emergency-animal-rescue": {
       "last_checked": "2026-11-04",
@@ -4129,8 +4401,22 @@
     },
     "petchester-veterinary": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "hours": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
+          "evidence_url": "https://www.petchesterveterinary.com/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site: call or text 914-771-PETS (7387), petchestervets@gmail.com; Monday-Friday 8:30am-6pm, Saturday 8:30am-1pm, Sunday closed."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "petco-love-lost": {
       "last_checked": "2026-11-04",
@@ -5058,7 +5344,7 @@
     },
     "suicide-and-crisis-lifeline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -5070,8 +5356,18 @@
           "evidence_url": "https://988lifeline.org/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: The 988 Lifeline's site, text and chat now also in Spanish. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://988lifeline.org",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site says to call or text 988. The (800) 273-8255 the checker found is the old number, which still connects to 988."
         }
-      ]
+      ],
+      "confidence": "High"
     },
     "sunset-park-cats": {
       "last_checked": "2026-11-04",
@@ -5362,9 +5658,36 @@
           "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
           "source": "manual",
           "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://tobyproject.org",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "tobyprojectnyc@gmail.com, petden19@verizon.net",
+          "to": "tobyprojectnyc@gmail.com, info@tobyproject.org",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.\n\nNYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
+          "to": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open.",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
         }
       ],
-      "website": null,
+      "website": "https://tobyproject.org",
       "social": [
         {
           "platform": "instagram",
@@ -5377,7 +5700,16 @@
           "url": "https://www.facebook.com/thetobyproject/"
         }
       ],
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "emails": [
+        {
+          "value": "tobyprojectnyc@gmail.com"
+        },
+        {
+          "value": "info@tobyproject.org"
+        }
+      ],
+      "notes": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open."
     },
     "the-toby-project-feral-spay-neuter-clinic": {
       "last_checked": "2026-11-04",

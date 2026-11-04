@@ -94,30 +94,41 @@ The address does not exist any more (or now points at a parking or gambling page
 
 The checker found a different phone or email on the organisation's own site. It never changes a contact by itself.
 
-- [ ] **Best Friends Animal Society - NYC (SoHo Lifesaving Center)** — The recorded email address is no longer on their site, and there are 40 other addresses there. (https://bestfriends.org/new-york-city)
+- [x] **Best Friends Animal Society - NYC (SoHo Lifesaving Center)** — The recorded email address is no longer on their site, and there are 40 other addresses there. (https://bestfriends.org/new-york-city)
   - Entry: https://nyc-animal-rescue.pages.dev/org/best-friends-animal-society-nyc/  ·  Site: https://bestfriends.org/new-york-city  ·  Phone: (929) 292-8300
-- [ ] **Friends of Animals** — The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/spay-neuter/)
+- [x] **Friends of Animals** — The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/spay-neuter/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/friends-of-animals/  ·  Site: https://friendsofanimals.org/our-programs/spay-neuter  ·  Phone: (800) 321-7387
-- [ ] **Friends of Animals - Spay/Neuter Certificates** — The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/)
+- [x] **Friends of Animals - Spay/Neuter Certificates** — The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/friends-of-animals-spay-neuter-certificates/  ·  Site: https://friendsofanimals.org  ·  Phone: (800) 321-7387
-- [ ] **Hearts & Bones Rescue** — The recorded email address is no longer on their site, and there are 2 other addresses there. (https://heartsandbonesrescue.org/)
+- [x] **Hearts & Bones Rescue** — The recorded email address is no longer on their site, and there are 2 other addresses there. (https://heartsandbonesrescue.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/hearts-and-bones-rescue/  ·  Site: https://heartsandbonesrescue.org/  ·  Phone: no phone listed
-- [ ] **Little Wanderers NYC** — The recorded email is no longer on their site and aaa@littlewanderersnyc.org is there instead. Confirm it on the page and update the record by hand. (https://lwnyc.org/)
+- [x] **Little Wanderers NYC** — The recorded email is no longer on their site and aaa@littlewanderersnyc.org is there instead. Confirm it on the page and update the record by hand. (https://lwnyc.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/little-wanderers-nyc/  ·  Site: https://lwnyc.org  ·  Phone: no phone listed
-- [ ] **NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)** — The recorded email address is no longer on their site, and there are 2 other addresses there. (https://www.nycatcoal.org/)
+- [x] **NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)** — The recorded email address is no longer on their site, and there are 2 other addresses there. (https://www.nycatcoal.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/nyc-cat-coalition/  ·  Site: https://www.nycatcoal.org  ·  Phone: no phone listed
-- [ ] **Petchester Veterinary** — The recorded phone number is no longer on their site, and there are 6 other numbers there. Someone needs to pick the right one. (https://www.petchesterveterinary.com/)
+- [x] **Petchester Veterinary** — The recorded phone number is no longer on their site, and there are 6 other numbers there. Someone needs to pick the right one. (https://www.petchesterveterinary.com/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/petchester-veterinary/  ·  Site: https://www.petchesterveterinary.com  ·  Phone: (914) 771-7387
-- [ ] **National Domestic Violence Hotline** — The recorded phone number is no longer on their site, and there are 4 other numbers there. Someone needs to pick the right one. (https://www.thehotline.org/)
+- [x] **National Domestic Violence Hotline** — The recorded phone number is no longer on their site, and there are 4 other numbers there. Someone needs to pick the right one. (https://www.thehotline.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/national-domestic-violence-hotline/  ·  Site: https://www.thehotline.org  ·  Phone: (800) 799-7233
-- [ ] **Suicide & Crisis Lifeline (988)** — The recorded phone number is no longer on their site and (800) 273-8255 is there instead. Confirm it on the page and update the record by hand. (https://988lifeline.org/)
+- [x] **Suicide & Crisis Lifeline (988)** — The recorded phone number is no longer on their site and (800) 273-8255 is there instead. Confirm it on the page and update the record by hand. (https://988lifeline.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/suicide-and-crisis-lifeline/  ·  Site: https://988lifeline.org  ·  Phone: 988
-- [ ] **NYC Domestic Violence Hotline** — The recorded phone number is no longer on their site and (212) 639-9675 is there instead. Confirm it on the page and update the record by hand. (https://www.nyc.gov/content/endgbv/pages/hotlines)
+- [x] **NYC Domestic Violence Hotline** — The recorded phone number is no longer on their site and (212) 639-9675 is there instead. Confirm it on the page and update the record by hand. (https://www.nyc.gov/content/endgbv/pages/hotlines)
   - Entry: https://nyc-animal-rescue.pages.dev/org/nyc-domestic-violence-hotline/  ·  Site: https://nyc.gov/content/endgbv/pages/hotlines  ·  Phone: (800) 621-4673
-- [ ] **Brooklyn Animal Action (BAA)** — The recorded email is no longer on their site and info@brooklynanimalaction.o is there instead. Confirm it on the page and update the record by hand. (https://brooklynanimalaction.org/)
+- [x] **Brooklyn Animal Action (BAA)** — The recorded email is no longer on their site and info@brooklynanimalaction.o is there instead. Confirm it on the page and update the record by hand. (https://brooklynanimalaction.org/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/brooklyn-animal-action/  ·  Site: https://brooklynanimalaction.org  ·  Phone: (877) 415-4889
-- [ ] **AAHA Universal Lookup** — https://petmicrochiplookup.org now redirects to https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/, which is a different domain. The organization may have moved, been renamed, or lost the domain. (https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/)
+- [x] **AAHA Universal Lookup** — https://petmicrochiplookup.org now redirects to https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/, which is a different domain. The organization may have moved, been renamed, or lost the domain. (https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/)
   - Entry: https://nyc-animal-rescue.pages.dev/org/aaha-universal-lookup/  ·  Site: https://petmicrochiplookup.org  ·  Phone: no phone listed
+
+**Done 2026-11-04 by the reviewer; each site read again here.**
+
+- Best Friends: one New York centre, listed twice; now one listing with its page's details: 307 West Broadway, (929) 777-3016, contactnyc@bestfriends.org, daily 11am-7pm.
+- Friends of Animals (both listings): 1-800-321-PETS confirmed on its certificate page; spayprogram@friendsofanimals.org added. FOAR and For Our Friends are different groups and were not added.
+- Hearts & Bones: email is info@heartsandbonesrescue.org (.org), corrected in the listing and guides.
+- NYC Cat Coalition: (917) 861-6043 and nycatcoalADOPT@yahoo.com, from its site.
+- Petchester: number confirmed, hours added.
+- Confirmed unchanged: Little Wanderers, both domestic violence hotlines, 988, Brooklyn Animal Action (the checker had misread its email).
+- AAHA lookup: moved to AAHA's own site; link updated.
+- The Toby Project: its website opens slowly; link restored, info@tobyproject.org added.
 
 ## 5. Sites the checker could not read: open them and confirm the details
 

@@ -55,7 +55,7 @@
   "hours": "24/7",
   "notes": "988 - 988lifeline.org - if you or someone else needs mental health or crisis support. Free, confidential, multilingual, 24/7. New York City routes its mental health crisis line through 988. Takes anonymous calls.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
@@ -65,7 +65,7 @@
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -76,6 +76,15 @@
       "evidence_url": "https://988lifeline.org/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: The 988 Lifeline's site, text and chat now also in Spanish. Working."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://988lifeline.org",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site says to call or text 988. The (800) 273-8255 the checker found is the old number, which still connects to 988."
     }
   ],
   "privacy_hold": false,

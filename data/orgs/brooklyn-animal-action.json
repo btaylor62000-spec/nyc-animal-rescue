@@ -85,14 +85,14 @@
     "https://brooklynanimalaction.org/contact/",
     "https://brooklynanimalaction.org/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "BROOKLYN-WIDE (serve all of Kings County)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -103,6 +103,15 @@
       "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
       "source": "manual",
       "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "intake_urls",
+      "from": "https://brooklynanimalaction.org/contact/",
+      "to": "https://brooklynanimalaction.org/contact/, https://brooklynanimalaction.org/contact/",
+      "evidence_url": "https://brooklynanimalaction.org/contact/",
+      "source": "manual",
+      "note": "Contact form added from its contact page."
     }
   ],
   "privacy_hold": false,
