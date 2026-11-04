@@ -11,6 +11,7 @@
  * rather than changes, and it never deletes anything.
  */
 import { AGENT } from './config.ts';
+import { REDIRECTOR } from './fetch.ts';
 import type { ChangeLogEntry, Confidence, Org } from '../../src/types.ts';
 import type { ClosureSignal } from './extract.ts';
 
@@ -159,9 +160,13 @@ export function tooCriticalToRewrite(org: Org): boolean {
 
 /** Can this organization be checked automatically at all? */
 export function isCheckable(org: Org): { checkable: boolean; reason?: string } {
-  const hasOwnSite = Boolean(org.website) || org.intake_urls.length > 0;
+  // A Facebook group or Instagram page as the "website" is a social channel:
+  // it needs a login, so it read as "unreachable for 3 weeks" every week and
+  // pushed the run over its safety valve.
+  const social = (u: string | null | undefined) => !!u && /^https?:\/\/([a-z0-9-]+\.)?(facebook|instagram|tiktok|x|twitter)\.com\//i.test(u);
+  const hasOwnSite = (Boolean(org.website) && !social(org.website)) || org.intake_urls.some((i) => !social(i.url));
   if (!hasOwnSite) {
-    if (org.social.length > 0) {
+    if (org.social.length > 0 || social(org.website)) {
       return {
         checkable: false,
         reason:
@@ -308,7 +313,9 @@ export function decide(org: Org, evidence: Evidence): Decision {
   }
 
   // --- a redirect that left the domain ----------------------------------
-  const wandered = evidence.pages.find((p) => p.offDomain);
+  // A shortener or form link is meant to land elsewhere; four of the 58
+  // flags on 2026-11-02 were bit.ly and forms.gle doing exactly that.
+  const wandered = evidence.pages.find((p) => p.offDomain && !REDIRECTOR.test(p.url));
   if (wandered) {
     return {
       kind: 'needs-review',
@@ -597,7 +604,19 @@ export function toPatch(org: Org, decision: Decision, date: string): Applied {
  * error page for every request -- and its flags are noise that would bury the
  * real ones. Report, write nothing but the check date.
  */
-export function tooManyFlags(flagCount: number, total: number): boolean {
+export function tooManyFlags(flagCount: number, total: number, reconfirmed?: number): boolean {
   if (total === 0) return false;
-  return flagCount / total > AGENT.maxChangeShare;
+  if (flagCount / total <= AGENT.maxChangeShare) return false;
+  /*
+   * A broken checker cannot also re-confirm contacts on organizations' own
+   * sites. The valve tripped every week from 2026-09-28 to 2026-11-02 while
+   * each run re-confirmed about a hundred listings: the flags were a pile of
+   * unreadable small-rescue sites and harmless redirects, not a fault, and
+   * six weeks of real confirmations were thrown away. When a third or more
+   * of the directory was re-confirmed, the checker is working; its flags are
+   * recorded for a person, and anything a reader would see still goes to a
+   * pull request.
+   */
+  if (reconfirmed !== undefined && reconfirmed / total >= 0.2) return false;
+  return true;
 }

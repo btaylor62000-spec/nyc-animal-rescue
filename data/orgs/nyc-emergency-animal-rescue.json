@@ -11,7 +11,8 @@
     "wildlife"
   ],
   "needs": [
-    "wildlife-rehab"
+    "referral",
+    "transport"
   ],
   "boroughs": [
     "manhattan",
@@ -51,9 +52,18 @@
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": "2026-09-22",
-  "check_status": "unreachable",
+  "check_status": "manual-only",
   "consecutive_failures": 2,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "needs",
+      "from": "wildlife-rehab",
+      "to": "referral, transport",
+      "source": "manual",
+      "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically)."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

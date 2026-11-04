@@ -7,7 +7,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 - **400** organizations after de-duplication
 - **78** duplicate clusters merged
 - **22** guide pages generated
-- **19** entries flagged as not currently active
+- **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -44,13 +44,13 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | owner-support | 71 |
 | surrender | 64 |
 | low-cost-vet | 58 |
-| referral | 47 |
+| referral | 48 |
 | emergency-vet | 37 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
 | medical-special-needs | 24 |
-| wildlife-rehab | 24 |
+| wildlife-rehab | 23 |
 | financial-aid | 23 |
 | education | 23 |
 | legal | 20 |
@@ -60,7 +60,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | behavior-training | 16 |
 | boarding | 15 |
 | microchip | 13 |
-| transport | 12 |
+| transport | 13 |
 | breed-specific | 11 |
 | pet-loss | 9 |
 | neonatal | 7 |
@@ -92,8 +92,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 381 |
-| verify | 13 |
+| active | 382 |
+| verify | 12 |
 | retired | 3 |
 | hiatus | 2 |
 | relocated | 1 |
@@ -156,14 +156,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **Animal Relief Fund (ARF)** — `verify`: The website this listing linked to belongs to a different group (an adoption rescue in Southern Maryland), and no current website for this New York pet food charity was found. It may no longer operate.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Feather Friends Parrot Adoption Services** — `verify`: Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.
-- **Harlem Cats** — `hiatus`: Source says this organization is paused or on hiatus.
+- **Harlem Cats** — `hiatus`: Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
 - **Kittens and Barbells Rescue, Inc.** — `verify`: Its old website address now belongs to someone else (it opens a gambling site), so it is not linked. Reach the rescue on Instagram or Facebook, and confirm it is still running.
 - **Magnificat Cat Rescue and Rehoming** — `verify`: Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.
 - **Mighty Mutts & Ollie's Place** — `verify`: Its adoption page (on Squarespace) has expired, and its website shows a security warning because its certificate does not match the address. Reach it on Instagram or Facebook and confirm it is still running.
 - **NYC Fish Rescue** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **Safe Place for Pets (RedRover)** — `verify`: Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
 - **SaveKitty Foundation** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Sean Casey Animal Rescue (SCAR)** — `verify`: Source flags this entry as needing confirmation before you rely on it.
 - **SICAW Certificate Program** — `verify`: SICAW's website no longer mentions its spay/neuter certificates (the page this listing linked to is gone). Ask SICAW whether the programme still runs before relying on it.
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
