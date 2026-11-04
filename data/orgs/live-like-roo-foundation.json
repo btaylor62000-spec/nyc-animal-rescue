@@ -1,0 +1,52 @@
+{
+  "id": "live-like-roo-foundation",
+  "name": "Live Like Roo Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "National; use from anywhere",
+  "zips": [],
+  "region_note": "HELP PAYING VET BILLS - from a reviewer's list, checked on each fund's own site 2026-11-04",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.livelikeroo.org",
+  "intake_urls": [],
+  "social": [],
+  "address": null,
+  "hours": null,
+  "notes": "A national foundation giving grants to families paying for a pet's cancer treatment, awarding grants since 2016. Apply through its website. (Magic Bullet Fund, often listed beside it, has permanently closed.) Intake: Apply for help on its website",
+  "type_raw": "Fund for families whose pet has cancer",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.livelikeroo.org"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "HELP PAYING VET BILLS - from a reviewer's list, checked on each fund's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

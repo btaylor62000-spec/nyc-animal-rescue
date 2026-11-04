@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **386** organizations after de-duplication
+- **387** organizations after de-duplication
 - **77** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 280 |
-| dog | 216 |
+| cat | 281 |
+| dog | 217 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -52,8 +52,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | wildlife-rehab | 28 |
 | medical-special-needs | 24 |
 | education | 23 |
+| financial-aid | 22 |
 | legal | 21 |
-| financial-aid | 21 |
 | lost-found | 18 |
 | sanctuary | 17 |
 | senior | 17 |
@@ -74,25 +74,25 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 254 |
-| queens | 212 |
-| manhattan | 210 |
-| bronx | 184 |
-| staten-island | 184 |
+| brooklyn | 255 |
+| queens | 213 |
+| manhattan | 211 |
+| bronx | 185 |
+| staten-island | 185 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 179 |
-| Medium | 163 |
+| High | 181 |
+| Medium | 162 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 372 |
+| active | 373 |
 | verify | 7 |
 | hiatus | 3 |
 | retired | 3 |
@@ -270,7 +270,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (30)
+### Rows the rules could not fully tag (31)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -302,6 +302,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:79)
 - **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
 - **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:83)
+- **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:89)
 
 ## Privacy
 

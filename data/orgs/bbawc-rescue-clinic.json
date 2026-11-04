@@ -33,7 +33,11 @@
       "label": "s/n, TNR, sedated exams, basic care"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "Clinic@bbawc.org"
+    }
+  ],
   "website": "https://bbawc.org/clinic",
   "intake_urls": [],
   "social": [],
@@ -42,13 +46,13 @@
     "zip": "11201"
   },
   "hours": null,
-  "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.",
+  "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.\n\nBook online only; reception is very limited. Spay/neuter appointments are open to owned and homeless cats; the rescue clinic's exams are for homeless cats. Appointments are paid in advance, refundable with 24 hours' notice.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "Clinics, traps & support — BROOKLYN - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -57,7 +61,17 @@
   "last_checked": "2026-09-22",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": null,
+      "to": null,
+      "evidence_url": "https://bbawc.org/clinic/",
+      "source": "manual",
+      "note": "Email and booking terms from its own clinic page, read in a browser: \"Contact: Clinic@bbawc.org | (917) 426-3335\"."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

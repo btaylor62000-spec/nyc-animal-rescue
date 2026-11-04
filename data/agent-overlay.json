@@ -347,8 +347,18 @@
           "evidence_url": "https://www.amcny.org/visit-amc/contact-us/",
           "source": "manual",
           "note": "Primary line (212) 838-8100 and the 510 East 62nd Street address confirmed on AMC’s own contact page. The secondary number already on the record was not listed there, so it is kept but not independently confirmed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.amcny.org/financial-assistance/",
+          "source": "manual",
+          "note": "Funds and the 5-business-day deadline from its own financial assistance page."
         }
-      ]
+      ],
+      "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appts (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nHoney Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nKiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.\n\nCharlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).\n\nHelp paying, from its financial assistance page (read 2026-11-04): Charlie's Patient Assistance Fund; the Buddy Fund for cancer treatment; SAVE for people aged 65 and over; and others for particular animals. The pet is treated at AMC, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting. Email funds@amcny.org."
     },
     "animal-relief-fund": {
       "last_checked": "2026-09-22",
@@ -488,7 +498,25 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "emails": [
+        {
+          "value": "Clinic@bbawc.org"
+        }
+      ],
+      "notes": "76 Montague St 11201 - (917) 426-3335 - monthly clinic, helps owners + rescuers (s/n, TNR, sedated exams, basic care); discount for public-assistance. bbawc.org/clinic.\n\nlow-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.\n\nBook online only; reception is very limited. Spay/neuter appointments are open to owned and homeless cats; the rescue clinic's exams are for homeless cats. Appointments are paid in advance, refundable with 24 hours' notice.",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://bbawc.org/clinic/",
+          "source": "manual",
+          "note": "Email and booking terms from its own clinic page, read in a browser: \"Contact: Clinic@bbawc.org | (917) 426-3335\"."
+        }
+      ]
     },
     "bed-stuy-kitty-crew": {
       "last_checked": "2026-09-22",
@@ -1587,7 +1615,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-11-04",
+      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": null,
+          "to": null,
+          "evidence_url": "https://www.nysave.org/pet-owners/",
+          "source": "manual",
+          "note": "Eligibility added from its own pet owners page, read in a browser. A reviewer also mentioned a yearly cap per household; its site does not state one, so none is given."
+        }
+      ]
     },
     "oak-street-cat-gang-death-row-cats-nyc": {
       "last_checked": "2026-09-22",

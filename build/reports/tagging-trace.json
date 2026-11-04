@@ -4505,6 +4505,23 @@
       "matched": "TNR"
     }
   ],
+  "live-like-roo-foundation": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "notes",
+      "matched": "grants"
+    }
+  ],
   "long-island-animal-surgery": [
     {
       "tag": "cat",
