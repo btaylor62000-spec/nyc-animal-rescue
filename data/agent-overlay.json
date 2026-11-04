@@ -1790,7 +1790,31 @@
     "savekitty-foundation": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "adoptions@savekittyfoundation.org",
+          "label": "Adoptions"
+        },
+        {
+          "value": "tnr@savekittyfoundation.org",
+          "label": "Trap-neuter-return (TNR)"
+        },
+        {
+          "value": "petbereavement@savekitty.org",
+          "label": "Pet bereavement support"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "petbereavement@savekitty.org",
+          "to": "adoptions@savekittyfoundation.org; tnr@savekittyfoundation.org; petbereavement@savekitty.org",
+          "source": "manual",
+          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement."
+        }
+      ]
     },
     "scratchpay": {
       "last_checked": "2026-09-22",
