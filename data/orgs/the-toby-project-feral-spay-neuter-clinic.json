@@ -48,7 +48,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "FREE spay/neuter + eartip in ALL FIVE BOROUGHS for community cats ($5 mandatory rabies charge). Must be a Certified TNR Caretaker. FVRCP/SNAP testing/Revolution available at heavily discounted fees. Also runs public low-cost s/n. Verified 2026-08-26. Intake: call (347) 816-2899 for the stationary clinic at Ferals in Peril (Brooklyn), Sun/Mon by appt. Bronx/Queens: email Tobyprojectnyc@gmail.com for the weekly mobile clinic. Other channel: 104,000+ spay/neuters to date",
+  "notes": "FREE spay/neuter + eartip in ALL FIVE BOROUGHS for community cats. Must be a Certified TNR Caretaker. FVRCP/SNAP testing/Revolution available at heavily discounted fees. Also runs public low-cost s/n. Verified 2026-08-26. Intake: call (347) 816-2899 for the stationary clinic at Ferals in Peril (Brooklyn), Sun/Mon by appt. Bronx/Queens: email Tobyprojectnyc@gmail.com for the weekly mobile clinic. Other channel: 104,000+ spay/neuters to date",
   "type_raw": "spay-neuter clinic (support, all boroughs)",
   "confidence": "High",
   "status": "active",
@@ -61,9 +61,9 @@
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "needs-review",
-  "consecutive_failures": 0,
+  "last_checked": "2026-11-04",
+  "check_status": "unreachable",
+  "consecutive_failures": 1,
   "change_log": [],
   "privacy_hold": false,
   "community": null

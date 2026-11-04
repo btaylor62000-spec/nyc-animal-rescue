@@ -16,7 +16,7 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 ## NEONATAL / BOTTLE-BABY (unweaned kittens needing round-the-clock care)
 
 - Itty Bitty City Kitties (Queens/Rockaway) - dedicated neonatal nursery; the specialist. ittybittycitykitties@gmail.com | ittybittycitykitties.org
-- Cats of Meow York (Queens/Woodhaven) - heavy neonatal focus + holding space. info@catsofmeowyork.org | catsofmeowyork.org | IG @catsofmeowyork
+- Cats of Meow York (Queens/Woodhaven) - heavy neonatal focus + holding space. Its website address no longer exists (2026-11-04); reach it on Instagram, @catsofmeowyork.
 - Bay Ridge Kittens (Brooklyn) - solo neonatal/critical-kitten rescuer (Flatbush Cats med coord). IG @bayridgekittens (contact via IG/adoption form)
 - Kittens and Barbells Rescue (Bronx) - TNR-cert + neonatal tube/bottle-feed trained. Instagram @kittensandbarbells_ (its old website now belongs to someone else) | IG @kittensandbarbells_
 - Cat Castle NYC (Manhattan) - takes kittens as young as one day old. (973) 752-7750 | catcastlenyc.org | IG @catcastlenyc

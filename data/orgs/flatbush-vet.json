@@ -48,7 +48,7 @@
     "zip": "11210"
   },
   "hours": null,
-  "notes": "High-volume nonprofit spay/neuter + preventative wellness clinic (cats & dogs), 7,500+ surgeries/yr, open to rescue/TNR volunteers ALL over Brooklyn (broader than Flatbush Cats' own TNR service zips). Handles unhandleable cats in traps ($60+), sedated exams, low-cost end-of-life. NOT full-service/emergency. Re-verified 2026-08-26. Intake: Online scheduler Intake: email contact@ re: subsidized options Other channel: 1460 Flatbush Avenue, Brooklyn NY 11210\n\n1460 Flatbush Ave 11210 - contact@flatbushvet.org - nonprofit s/n for rescue/TNR volunteers Brooklyn-wide (rescuer scheduler); handles cats in traps.",
+  "notes": "High-volume nonprofit spay/neuter + preventative wellness clinic (cats & dogs), 7,500+ surgeries/yr, open to rescue/TNR volunteers ALL over Brooklyn (broader than Flatbush Cats' own TNR service zips). Handles unhandleable cats in traps, sedated exams, low-cost end-of-life. NOT full-service/emergency. Re-verified 2026-08-26. Intake: Online scheduler Intake: email contact@ re: subsidized options Other channel: 1460 Flatbush Avenue, Brooklyn NY 11210\n\n1460 Flatbush Ave 11210 - contact@flatbushvet.org - nonprofit s/n for rescue/TNR volunteers Brooklyn-wide (rescuer scheduler); handles cats in traps.",
   "type_raw": "spay-neuter clinic (support)",
   "confidence": "High",
   "status": "active",
@@ -57,12 +57,12 @@
     "https://flatbushvet.org/rescuer/",
     "https://flatbushvet.org/services/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

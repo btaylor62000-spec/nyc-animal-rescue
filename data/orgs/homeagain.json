@@ -44,7 +44,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "homeagain.com; enrolled chips also WAIVE the ASPCA Poison Control consultation fee.",
+  "notes": "homeagain.com.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
@@ -55,7 +55,7 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

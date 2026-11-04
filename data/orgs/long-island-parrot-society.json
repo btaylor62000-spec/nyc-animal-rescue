@@ -77,7 +77,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Parrot club offering a Parrot Placement Program (a REFERRAL/liaison service - the bird stays in its home or a LIPS foster while LIPS matches a pre-screened member/adopter; membership required to adopt; one adoption per 6 months). Placement area explicitly includes Long Island, Queens, Brooklyn, Bronx, Staten Island, NYC, lower Westchester & lower Rockland. Species-based referral fees paid only on a successful adoption: ~$12 budgies/lovebirds; $42 conures/quakers/cockatiels; $52 Senegal/ringneck/Pionus; $152 greys/amazons/cockatoos/macaws/eclectus; $252 rare macaws. Also maintains NYC-relevant resource pages: avian vets, behavior consultants, groomers, pet sitters, lost-found, bereavement, emergency numbers. (An earlier 2026 suspension was lifted - program verified active on the last-verified date.) Placement contact (631) 456-1813. Phone: placement Intake: /adoption-application/ Intake: adoptables on Petfinder Intake: /contact-us/ Intake: PO Box 2754, North Babylon NY 11703 Other channel: FB group /liparrots Other channel: adoptables via Petfinder",
+  "notes": "Parrot club offering a Parrot Placement Program (a REFERRAL/liaison service - the bird stays in its home or a LIPS foster while LIPS matches a pre-screened member/adopter; membership required to adopt; one adoption per 6 months). Placement area explicitly includes Long Island, Queens, Brooklyn, Bronx, Staten Island, NYC, lower Westchester & lower Rockland. Also maintains NYC-relevant resource pages: avian vets, behavior consultants, groomers, pet sitters, lost-found, bereavement, emergency numbers. (An earlier 2026 suspension was lifted - program verified active on the last-verified date.) Placement contact (631) 456-1813. Phone: placement Intake: /adoption-application/ Intake: adoptables on Petfinder Intake: /contact-us/ Intake: PO Box 2754, North Babylon NY 11703 Other channel: FB group /liparrots Other channel: adoptables via Petfinder",
   "type_raw": "Membership society - parrot placement / lost-found / education",
   "confidence": "High",
   "status": "active",
@@ -85,12 +85,12 @@
   "source_urls": [
     "https://liparrots.org/parrot-placement-program/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, doves, backyard poultry)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

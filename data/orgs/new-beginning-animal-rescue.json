@@ -37,12 +37,8 @@
       "display": "(347) 797-8107"
     }
   ],
-  "emails": [
-    {
-      "value": "adopt@nbanimalrescue.org"
-    }
-  ],
-  "website": "https://www.nbanimalrescue.org",
+  "emails": [],
+  "website": null,
   "intake_urls": [],
   "social": [
     {
@@ -70,9 +66,9 @@
   "hours": null,
   "notes": "501(c)(3) (formerly NYC's Top Dog, est. 2010), founder Pedro Rosario (16 yrs at NYC ACC). Bills itself as the only no-kill facility shelter in the Bronx; houses ~40 cats + ~60 dogs. Rare Bronx WALK-IN option. DISAMBIGUATION: unrelated 'New Beginnings Animal Rescue' orgs exist in TX/MS - this is the Bronx one. Verified 2026-08-26. Intake: Adoption via site/email Intake: walk-in facility Other channel: 2515 Newbold Ave, Bronx 10462 Other channel: founder Pedro Rosario\n\nVolunteer-based no-kill shelter at 2515 Newbold Ave, Bronx 10462. Frequently described as one of the very few dedicated rescue shelters actually BASED in the Bronx. Takes in unwanted, abandoned, abused, and stray animals and rehomes them; also runs community programs. Confirm current intake capacity and hours before referring - small volunteer operation. (Formerly known as NYC's Top Dog.) Email: (via site / social) Intake: Adopt/volunteer via site & social",
   "type_raw": "rescue+adoption (physical shelter)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
   "source_urls": [
     "https://www.adoptapet.com/shelter/89777-new-beginning-animal-rescue-bronx-new-york",
     "https://www.idealist.org/en/nonprofit/19901e2866aa4d088d9053838710e9e2-nyc-new-beginning-animal-rescue-bronx"
@@ -83,10 +79,54 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://www.nbanimalrescue.org",
+      "to": null,
+      "evidence_url": "https://www.nbanimalrescue.org",
+      "source": "manual",
+      "note": "nbanimalrescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "adopt@nbanimalrescue.org",
+      "to": null,
+      "evidence_url": "https://www.nbanimalrescue.org",
+      "source": "manual",
+      "note": "nbanimalrescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it. An address on a domain that no longer exists cannot receive mail."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "evidence_url": "https://www.nbanimalrescue.org",
+      "source": "manual",
+      "note": "nbanimalrescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

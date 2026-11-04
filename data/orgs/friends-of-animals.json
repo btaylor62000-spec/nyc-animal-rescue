@@ -39,7 +39,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "certificates (cat spay ~$65 / neuter ~$51), redeem at feral-friendly vets - 1-800-321-PETS.\n\nlow-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.",
+  "notes": "certificates, redeem at feral-friendly vets - 1-800-321-PETS.\n\nlow-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -53,8 +53,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "ok",
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {

@@ -17,8 +17,8 @@ Verified against Bideawee + Mayor's Alliance emergency lists, 2026-08-26. Hours/
 
 ## POISON / TOXIN INGESTION (call FIRST, then go to an ER)
 
-- ASPCA Animal Poison Control (APCC): (888) 426-4435 - 24/7, vet toxicologists. Consult fee ~$95 (waived w/ HomeAgain microchip).
-- Pet Poison Helpline: (855) 764-7661 - 24/7 backup line, per-incident fee.
+- ASPCA Animal Poison Control (APCC): (888) 426-4435 - 24/7, vet toxicologists.
+- Pet Poison Helpline: (855) 764-7661 - 24/7 backup line.
 - Lilies are DEADLY to cats even in tiny amounts (a lick of pollen). Also: antifreeze, rodenticide, ibuprofen/acetaminophen, xylitol, onion/garlic. Don't induce vomiting unless a toxicologist says to.
 
 ## BROOKLYN - 24 hour ER

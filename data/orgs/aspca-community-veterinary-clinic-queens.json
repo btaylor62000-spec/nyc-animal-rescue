@@ -57,7 +57,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Free basic vet care for cats and dogs for western Queens residents, supported by The Rachael Ray Foundation. Only for owners living in zip codes 11101-11106, 11368, 11369, 11370, 11372, 11373 or 11377 (Long Island City, Astoria, Sunnyside, Woodside, Corona, Jackson Heights, Elmhurst and nearby). Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead.",
+  "notes": "Free basic vet care for cats and dogs for western Queens residents, supported by The Rachael Ray Foundation. Only for owners living in zip codes 11101-11106, 11368, 11369, 11370, 11372, 11373 or 11377 (Long Island City, Astoria, Sunnyside, Woodside, Corona, Jackson Heights, Elmhurst and nearby). Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
@@ -70,7 +70,7 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

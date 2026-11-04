@@ -14,7 +14,7 @@ New York City's public animal shelter, Animal Care Centers of NYC (ACC), posts a
 ## CHECK THE ANIMAL AND APPLY - START HERE
 
 - See the urgent list, and whether an animal is still available or already reserved: https://newhope.shelterbuddy.com/Animal/List - new animals are posted Sunday, Tuesday and Thursday at 6 PM.
-- To adopt the animal yourself: on that list, press Reserve, then check out (top right) within 15 minutes. It takes a $200 deposit plus a transaction fee: $50 goes toward the adoption fee and $150 is a spay/neuter deposit, refunded if the animal is already spayed or neutered. If the site gives you trouble, email adopt@nycacc.org.
+- To adopt the animal yourself: on that list, press Reserve, then check out (top right) within 15 minutes. If the site gives you trouble, email adopt@nycacc.org.
 - To foster or adopt through a rescue group instead: fill in ACC's form at https://forms.gle/ozHex3uqvNkQt2dq9 - it needs a Google sign-in. ACC passes your details to its approved rescue groups. Then contact the groups below yourself as well.
 - To see what happened to an animal that was listed: https://www.nycacc.org/adoption/at-risk-outcomes
 

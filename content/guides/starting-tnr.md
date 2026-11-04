@@ -34,7 +34,7 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 
 - Winter shelters: Urban Cat League + FCI have build guides/workshops (insulated, straw-not-blankets, small entrance).
 - Food/water + discreet feeding stations that don't create odor/waste nuisance (keeps neighbors + the colony safe).
-- Colony-support groups that help caretakers directly (with contacts): Bronx Community Cats (bronxcommunitycats.org), ARQ/Queens (arqadopt.org), MeowRoof/Queens (meowroof.org), Ocean Hill Cats/Bklyn (info@oceanhillcats.com), Good Home/Bklyn trap bank (info@goodhomepetadoptions.org), Mama Chris/SI (text 347-983-2240).
+- Colony-support groups that help caretakers directly (with contacts): Bronx Community Cats (bronxcommunitycats.org), ARQ/Queens (arqadopt.org), MeowRoof/Queens, Ocean Hill Cats/Bklyn (info@oceanhillcats.com), Good Home/Bklyn trap bank (info@goodhomepetadoptions.org), Mama Chris/SI (text 347-983-2240).
 
 ## FRIENDLY CATS / KITTENS FOUND IN A COLONY (pull for adoption)
 
@@ -59,7 +59,7 @@ Most free services require you to be a Certified TNR Caretaker (free to become -
 
 ## SPAY/NEUTER + RABIES + EAR-TIP (the core service, FREE for certified caretakers):
 
-- Toby Project: FREE, all 5 boroughs ($5 rabies only). ASPCA: FREE via RSS (aspcapro.org/scheduler). HSNY: low-cost. NSALA feral package $40 (s/n + rabies + FVRCP + penicillin + eartip). Full list + borough clinics on 'Clinics, traps & support' tab.
+- Toby Project: FREE, all 5 boroughs. ASPCA: FREE via RSS (aspcapro.org/scheduler). HSNY: low-cost. Full list + borough clinics on 'Clinics, traps & support' tab.
 
 ## FREE TRANSPORT to/from spay-neuter (if you can't drive traps):
 
@@ -93,4 +93,4 @@ Most free services require you to be a Certified TNR Caretaker (free to become -
 
 ## HANDS-ON HELP (someone to trap with you, holding space, fosters):
 
-- Borough TNR groups that trap alongside you / take friendlies / hold (with contacts): Bronx Community Cats (bronxcommunitycats.org), ARQ (arqadopt.org), MeowRoof (meowroof.org), Ocean Hill Cats (info@oceanhillcats.com), Good Home (info@goodhomepetadoptions.org), Mama Chris SI (text 347-983-2240), Bushwick Street Cats (bushwickstreetcats@gmail.com), North Brooklyn Cats (northbrooklyncats.org/help), Flatbush Cats (help@flatbushcats.org). Match to the colony's neighborhood.
+- Borough TNR groups that trap alongside you / take friendlies / hold (with contacts): Bronx Community Cats (bronxcommunitycats.org), ARQ (arqadopt.org), MeowRoof, Ocean Hill Cats (info@oceanhillcats.com), Good Home (info@goodhomepetadoptions.org), Mama Chris SI (text 347-983-2240), Bushwick Street Cats (bushwickstreetcats@gmail.com), North Brooklyn Cats (northbrooklyncats.org/help), Flatbush Cats (help@flatbushcats.org). Match to the colony's neighborhood.

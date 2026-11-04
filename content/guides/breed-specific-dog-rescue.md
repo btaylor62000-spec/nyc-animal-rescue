@@ -23,7 +23,8 @@ This tab lists all-'bully' rescues first (they take the whole group), then breed
 
 ## ALL-"BULLY" / MULTI-BREED RESCUES (take the full group)
 
-- City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affiliated with 19 rescues across all 5 boroughs + NJ/CT/LI; American Pit Bull Terrier, pit mixes, American Bulldogs, American Bull Terriers + other bullies. Fosters/adopts + fights the NYCHA ban. https://www.citypitties.org (email app). IG @citypitties. [Medium]
+City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affiliated with 19 rescues across all 5 boroughs + NJ/CT/LI; American Pit Bull Terrier, pit mixes, American Bulldogs, American Bull Terriers + other bullies. Fosters/adopts + fights the NYCHA ban. Apply by email; Instagram @citypitties. [Medium]
+
 - New York Bully Crew (NYBC) - all bully breeds pulled from shelters and the streets, fully vetted; handles bully-breed surrenders. 501(c)(3), HQ East Patchogue (Long Island), serves NYC, a Best Friends partner. (844) 633-6922, nybullycrew.org, IG @newyorkbullycrew. [Medium]
 - Bullied Breeds Rescue - explicitly ALL 'bullied' breeds - rottweilers, pit bulls, shepherds 'and many more'; foster-based, pulls local shelter dogs. https://www.bulliedbreedsrescue.org (site app). IG @bulliedbreedsrescue. [Medium]
 - Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; Westchester NY (serves NY metro incl. NYC). https://www.bestbullies.org. ACC New Hope partner. [Medium]
@@ -103,7 +104,9 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 ## SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE
 
 - Waggytail Rescue - small-breed dogs, NYC (foster-based). adopt@waggytailrescue.org, waggytailrescue.org. [High]
-- Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. https://nextstopforeverinc.com. ACC New Hope partner. [Medium]
+
+Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. ACC New Hope partner. [Medium]
+
 - Metropolitan Maltese Rescue (MetroMalts) - Maltese + small white breeds, NY metro. https://www.malteserescue.com. [Medium]
 - Save A Yorkie Rescue - Yorkshire terriers, Northeast. https://www.saveayorkierescue.org. [Medium]
 - United Yorkie Rescue - Yorkies, national incl. NY. http://unitedyorkierescue.org. [Low]

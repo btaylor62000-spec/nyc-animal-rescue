@@ -27,9 +27,9 @@ Put the animal in a cardboard box with small air holes, somewhere dark and quiet
 - **Several sick or dead birds in one place:** [the USDA line](/org/usda-report-sick-birds-line), (866) 536-7593, or 311. Do not touch them with bare hands.
 - **Someone selling or killing protected wildlife:** [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like.
 
-## If a cat may have touched it
+## If it was caught or bitten by an animal
 
-If a bird or small mammal is attacked by a cat, it is an emergency. Cats have an anaerobic bacterium called Pasteurella in their saliva which is deadly. If an animal attacked by a cat does not get the proper antibiotic in a short time (usually within the day) it is likely fatal. Please also note that very often a cat bite will leave NO visible wounds, even if the teeth have punctured the skin. Even more reason to get to a rehabber immediately! If cats are in the area where you find an injured bird, assume it may have been bitten, and get to a rehabber immediately.
+If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound. A bite can leave no visible mark and still cause an infection that needs antibiotics from a rehabber or vet the same day. If you are not sure whether it was caught, assume it may have been, and get it to a rehabber immediately.
 
 ## Found a squirrel?
 
@@ -61,7 +61,7 @@ The best way to catch a bird is to corner and either scoop up like a burrito or 
 
 Put the bird into a cardboard box with holed poked into it for air (a few pencil sized holes are more than enough, you don’t want them to be too big as birds bodies are much smaller than we see from the outside). Close up the box securely so the bird doesn’t escape. Just because they can fly, doesn’t mean they’re not injured, they may be in shock.
 
-Never touch a bird after touching a cat. Wash your hands between animals. There are few diseases communicable from birds to humans, make sure you wash your hands after handling any animal.
+Wash your hands before you handle the bird, especially after touching any other animal, and between animals. There are few diseases communicable from birds to humans, make sure you wash your hands after handling any animal.
 
 Regarding baby birds (especially those that are close to naked or are in distress for some reason) and need transport to WBF. These babies are very fragile and vulnerable to cold and exposure to cold. They usually need supplemental heat of some kind (the sock with rice or ziplock bag with water (warmed up in the microwave) can work well as well as a heating pad on low while bird is at a house anyway. This heat source may need to be monitored to make sure it stays warm (if not a heating pad) and should be warm, but not hot to the touch.
 

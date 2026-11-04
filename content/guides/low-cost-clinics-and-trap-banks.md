@@ -15,16 +15,16 @@ Verified against Bideawee Feral-Friendly Vets, KittyKind's low-cost list, ASPCA,
 
 ## CITYWIDE (work in every borough)
 
-- The Toby Project - FREE community-cat s/n, all 5 boroughs (Certified TNR Caretakers). Bklyn/Man/SI: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com. $5 rabies only.
+- The Toby Project - FREE community-cat s/n, all 5 boroughs (Certified TNR Caretakers). Bklyn/Man/SI: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.
 - ASPCA - free/low-cost s/n citywide: public via Same-Day Waitlist (clinic.aspca.org); rescuers via RSS (aspcapro.org/scheduler). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.
 - Humane Society of NY (HSNY) - 306 E 59th St, Manhattan - (212) 752-4840 - low-cost s/n for all cats (pet + feral) + dogs, 7 days, appt only. Each cat in a separate covered trap.
-- Friends of Animals - certificates (cat spay ~$65 / neuter ~$51), redeem at feral-friendly vets - 1-800-321-PETS.
-- MAMA Coupon (Muffin's Pet Connection) - community-cat s/n $58 female / $45 male incl. rabies + eartip - muffins.org/MAMA.htm.
+- Friends of Animals - certificates, redeem at feral-friendly vets - 1-800-321-PETS.
+- MAMA Coupon (Muffin's Pet Connection) - muffins.org/MAMA.htm.
 
 ## TRAP BANKS / HUMANE TRAP LENDING (borrow a trap to start TNR)
 
 - Neighborhood Cats Trap Bank - reserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.
-- ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); $50 refundable deposit per trap or carrier; email TNRtrapbank@aspca.org.
+- ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); email TNRtrapbank@aspca.org.
 - NYC Feral Cat Initiative (Bideawee) - trap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).
 - Muffin's Pet Connection - rents humane cat traps (muffins.org).
 - Good Home Pet Adoptions (Crown Heights) - community TRAP BANK, info@goodhomepetadoptions.org.
@@ -85,7 +85,7 @@ Verified against Bideawee Feral-Friendly Vets, KittyKind's low-cost list, ASPCA,
 - PAWS NY - paws.nyc.org - pet food pantry + low-income vet care + in-home help (litter, feeding, walking) for low-income NYers with impaired mobility (age/illness/disability).
 - NEW (2026): the city budget funds pop-up PET FOOD PANTRIES + spay/neuter in every borough via community partners - check your City Council Member's office or DOHMH for current locations.
 - Feeding Pets of the Homeless (petsofthehomeless.org) - pet food via partner pantries/soup kitchens/shelters for people who are homeless or in crisis.
-- Local rescues that point to pantry days: Bronx Community Cats, ARQ (Queens), MeowRoof (Queens), Loving Touch, Mama Chris (SI) - or ask 311 for the nearest current one.
+- Local rescues that point to pantry days: Bronx Community Cats, ARQ (Queens), Loving Touch, Mama Chris (SI) - or ask 311 for the nearest current one.
 - RescueNYC - holding/recovery space so a caretaker isn't forced to surrender during a TNR or medical situation.
 
 Note: this tab is a quick-reference layer; the same clinics/orgs also appear (with fuller detail) in the main sheet's 'Clinics' section and borough sections. Feral cats MUST go to a feral-experienced clinic in a covered trap.

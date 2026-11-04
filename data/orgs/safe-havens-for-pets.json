@@ -1,0 +1,120 @@
+{
+  "id": "safe-havens-for-pets",
+  "name": "Safe Havens for Pets (Animal Welfare Institute)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "phones": [],
+  "emails": [],
+  "website": "https://awionline.org/safe-havens",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "search by zip code for shelters with on-site pet housing, boarding partnerships, or foster care during a crisis: https://awionline.org/safe-havens",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://awionline.org/safe-havens",
+    "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/"
+  ],
+  "last_verified": null,
+  "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
+  "source_files": [
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": "2026-11-04",
+  "check_status": "manual-only",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "check_status",
+      "from": null,
+      "to": "manual-only",
+      "evidence_url": "https://safehavensmappingproject.com",
+      "source": "manual",
+      "note": "Tried on 2026-11-04: safehavensmappingproject.com refused every connection. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://safehavensmappingproject.com",
+      "to": "https://awionline.org/safe-havens",
+      "evidence_url": "https://safehavensmappingproject.com",
+      "source": "manual",
+      "note": "safehavensmappingproject.com no longer exists (NXDOMAIN, 2026-11-04). The Animal Welfare Institute runs the Safe Havens for Pets directory at awionline.org/safe-havens (its own news pages and search results show it there, searchable by zip code). awionline.org refuses automated checks, so a person confirms it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://safehavensmappingproject.com",
+      "source": "manual",
+      "note": "safehavensmappingproject.com no longer exists (NXDOMAIN, 2026-11-04). The Animal Welfare Institute runs the Safe Havens for Pets directory at awionline.org/safe-havens (its own news pages and search results show it there, searchable by zip code). awionline.org refuses automated checks, so a person confirms it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": null,
+      "evidence_url": "https://safehavensmappingproject.com",
+      "source": "manual",
+      "note": "safehavensmappingproject.com no longer exists (NXDOMAIN, 2026-11-04). The Animal Welfare Institute runs the Safe Havens for Pets directory at awionline.org/safe-havens (its own news pages and search results show it there, searchable by zip code). awionline.org refuses automated checks, so a person confirms it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "name",
+      "from": "Safe Havens Mapping Project (Animal Welfare Institute)",
+      "to": "Safe Havens for Pets (Animal Welfare Institute)",
+      "evidence_url": "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/",
+      "source": "manual",
+      "note": "The old project domain no longer exists; AWI runs the directory as Safe Havens for Pets at awionline.org/safe-havens. The guide rows were corrected, which renamed the entry."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

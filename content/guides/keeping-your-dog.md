@@ -32,7 +32,6 @@ To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new 
 
 Petco Love 'We Are Family' - collects pet food and litter and distributes through human food-pantry partners across the five boroughs; ask your local pantry if they participate.
 
-- Prince Chunk Foundation - provides pet food and short-term assistance to families in crisis. princechunkfoundation.org.
 - Strong Paws Rescue Community Pet Pantry - periodic food/supply distributions in the Bronx and Westchester. request@strongpawsrescue.org, strongpawsrescue.org/pet-pantry.
 - Kiso's Pet Food Pantry (Brooklyn) - free pet food, with a focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.
 - Pets of the Homeless - free pet food and vet care through partner sites for people who are homeless or at risk. petsofthehomeless.org.
@@ -59,7 +58,7 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 - PAWS NY - assists with emergency fostering for domestic-violence survivors seeking safety. referrals@pawsny.org, (212) 203-4760 ext. 306.
 - RedRover Relief - Safe Escape grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
 - Safe Place for Pets (RedRover) - searchable directory of programs ready to help survivors and pets, by ZIP. safeplaceforpets.org.
-- Safe Havens Mapping Project (Animal Welfare Institute) - directory of shelters with on-site pet housing, boarding partnerships, or foster care during a crisis. safehavensmappingproject.com / awionline.org.
+- Safe Havens for Pets (Animal Welfare Institute) - search by zip code for shelters with on-site pet housing, boarding partnerships, or foster care during a crisis: https://awionline.org/safe-havens
 - Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site; https://saftprogram.org.
 - SPCA Westchester Pet Safety Program - safe-keeping for pets in households affected by domestic violence (Westchester-adjacent). spcawestchester.org/pet-safety, (914) 941-2896.
 

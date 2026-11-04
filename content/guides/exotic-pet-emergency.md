@@ -33,8 +33,8 @@ Why a separate list: most general small-animal vets do NOT treat rabbits, birds,
 
 ## Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):
 
-- ASPCA Animal Poison Control Center: (888) 426-4435 - 24/7 (a consultation fee may apply). aspca.org/pet-care/animal-poison-control.
-- Pet Poison Helpline: (855) 764-7661 - 24/7 (fee applies).
+- ASPCA Animal Poison Control Center: (888) 426-4435 - 24/7. aspca.org/pet-care/animal-poison-control.
+- Pet Poison Helpline: (855) 764-7661 - 24/7.
 
 These lines cover exotic pets, not just cats and dogs. Have the species, weight, and the substance/amount ready.
 

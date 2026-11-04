@@ -36,7 +36,10 @@ export function normalizePhone(raw: string): string | null {
 }
 
 const PHONE_RE = /(?:\+?1[-. ]?)?\(?\d{3}\)?[-. –]?\d{3}[-. –]?\d{4}(?!\d)/g;
-const EMAIL_RE = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
+// The last label must be a real top-level domain (two letters or more): a
+// site that split its address across two elements once gave the checker
+// "info@brooklynanimalaction.o", which it then reported as a new address.
+const EMAIL_RE = /[\w.+-]+@[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}\b/gi;
 
 /**
  * Sequences that look like phone numbers but are not: dates, prices, long

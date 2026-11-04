@@ -70,7 +70,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3) animal + environmental advocacy rescue. Feral-cat TNR + rescue/adoption; pulls cats from NYCACC; FeLV+ and special-needs cat specialty; also dogs/rabbits/small animals/wildlife. Brooklyn (Williamsburg) base with citywide + Hudson Valley reach. Verified 2026-08-26. Intake: Adoption application (PDF) via adopt@ email Intake: FaceTime interview + home drop-off\n\nAll-volunteer 501(c)(3). Adopts guinea pigs only in pairs or to homes that already have one (they are social herd animals). Adoption donation from $30 single / $50 pair; $150 if spayed/neutered. Also a cat rescue (listed in the NYC cat reference). Intake: application via adopt@emptycagescollective.org",
+  "notes": "All-volunteer 501(c)(3) animal + environmental advocacy rescue. Feral-cat TNR + rescue/adoption; pulls cats from NYCACC; FeLV+ and special-needs cat specialty; also dogs/rabbits/small animals/wildlife. Brooklyn (Williamsburg) base with citywide + Hudson Valley reach. Verified 2026-08-26. Intake: Adoption application (PDF) via adopt@ email Intake: FaceTime interview + home drop-off\n\nAll-volunteer 501(c)(3). Adopts guinea pigs only in pairs or to homes that already have one (they are social herd animals). Also a cat rescue (listed in the NYC cat reference). Intake: application via adopt@emptycagescollective.org",
   "type_raw": "TNR / rescue+adoption (multi-species)",
   "confidence": "High",
   "status": "active",
@@ -80,13 +80,13 @@
     "https://www.adoptapet.com/adoption_rescue/78830-empty-cages-collective-brooklyn-new-york",
     "https://www.emptycagescollective.org/guinea-pigs-of-ecc.html"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

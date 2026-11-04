@@ -38,7 +38,7 @@ You can bring a found dog to any ACC Care Center during business hours (call ahe
 ## MICROCHIP REGISTRIES - register the chip (implanting is not registering)
 
 - 24Petwatch (by PetPlace) - North America's largest registry; FREE registration, no mandatory fees. Register/update/report lost at petplace.com/pet-microchip-registry or 24pet.com. Recovery specialists run real-time found searches.
-- HomeAgain - homeagain.com; enrolled chips also WAIVE the ASPCA Poison Control consultation fee.
+- HomeAgain - homeagain.com.
 - AKC Reunite - akcreunite.org, (800) 252-7894; lifetime registration.
 - Petkey / Save This Life / Michelson Found Animals (foundanimals.org - free) - other registries.
 - AAHA Universal Lookup - petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).

@@ -28,7 +28,7 @@
   "region_note": "CITYWIDE / MULTI-BOROUGH RESCUES (take dogs from any borough)",
   "phones": [],
   "emails": [],
-  "website": "https://www.waldosrescuepen.org",
+  "website": null,
   "intake_urls": [],
   "social": [
     {
@@ -47,9 +47,9 @@
   "hours": null,
   "notes": "501(c)(3) NYC foster-based dog rescue pulling at-risk dogs from NYC ACC and overcrowded shelters, with a strong social-media adoption presence. Foster-based, no facility. Confirm current availability; contact via site. Phone: (no public phone; contact via site) Email: (via site contact form) Intake: Adopt/foster via site",
   "type_raw": "Rescue+adoption (foster-based)",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
   "source_urls": [
     "https://www.animalalliancenyc.org/need-help/groups/"
   ],
@@ -58,10 +58,45 @@
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-04",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": "https://www.waldosrescuepen.org",
+      "to": null,
+      "evidence_url": "https://www.waldosrescuepen.org",
+      "source": "manual",
+      "note": "waldosrescuepen.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "This organization may no longer be active — their website has not responded for several weeks.",
+      "to": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "evidence_url": "https://www.waldosrescuepen.org",
+      "source": "manual",
+      "note": "waldosrescuepen.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

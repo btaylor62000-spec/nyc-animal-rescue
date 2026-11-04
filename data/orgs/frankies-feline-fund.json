@@ -47,7 +47,7 @@
   "geo": null,
   "address": null,
   "hours": "By appointment",
-  "notes": "All-volunteer 501(c)(3) rescuing abandoned elderly and special-needs cats. Adoption ($75 fee) and a senior-to-senior foster programme. Accepts owner surrenders of senior cats to keep them out of the shelter system. A different organization from Frankie's Friends, which helps pay vet bills. Intake: Email frankiesfelinefund@gmail.com or call 917-514-0228",
+  "notes": "All-volunteer 501(c)(3) rescuing abandoned elderly and special-needs cats. Adoption and a senior-to-senior foster programme. Accepts owner surrenders of senior cats to keep them out of the shelter system. A different organization from Frankie's Friends, which helps pay vet bills. Intake: Email frankiesfelinefund@gmail.com or call 917-514-0228",
   "type_raw": "Rescue / adoption (foster-based; senior and special-needs cats; owner surrenders)",
   "confidence": "High",
   "status": "active",
@@ -60,7 +60,7 @@
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

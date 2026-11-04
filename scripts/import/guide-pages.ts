@@ -301,6 +301,17 @@ export const WILDLIFE_GUIDE_BYLINE: string | null = 'community site admin';
  */
 const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string }> = [
   {
+    find: 'If a bird or small mammal is attacked by a cat, it is an emergency. Cats have an anaerobic bacterium called Pasteurella in their saliva which is deadly. If an animal attacked by a cat does not get the proper antibiotic in a short time (usually within the day) it is likely fatal. Please also note that very often a cat bite will leave NO visible wounds, even if the teeth have punctured the skin. Even more reason to get to a rehabber immediately! If cats are in the area where you find an injured bird, assume it may have been bitten, and get to a rehabber immediately.',
+    replace: 'If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound. A bite can leave no visible mark and still cause an infection that needs antibiotics from a rehabber or vet the same day. If you are not sure whether it was caught, assume it may have been, and get it to a rehabber immediately.',
+    reason:
+      'Decided by the reviewer 2026-11-04. The original named the germ in cat saliva and called it deadly, and a reader who wants to harm cats can use that against them. The instruction itself is kept whole: caught by an animal means an emergency, even with no wound, antibiotics the same day, assume it if unsure.',
+  },
+  {
+    find: 'Never touch a bird after touching a cat. Wash your hands between animals.',
+    replace: 'Wash your hands before you handle the bird, especially after touching any other animal, and between animals.',
+    reason: 'Same decision: the hygiene instruction without singling out cats.',
+  },
+  {
     find: 'Imprinting is great for socializing cats and dogs who need safe homes, and we all know there are plenty of those to go around! ',
     replace: '',
     reason:
@@ -410,11 +421,11 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
   for (const p of paragraphs.slice(1)) {
     const text = clean(p.text);
     if (!text) continue; // wholly withheld
-    // The cat-bite warning is the document's first paragraph and its most
-    // important one. It is copied as written; it just gets a heading so it
-    // reads as the instruction it is, not as a preamble.
-    if (/^If a bird or small mammal is attacked by a cat/.test(text)) {
-      lines.push('', '## If a cat may have touched it', '');
+    // The bite warning is the document's first paragraph and its most
+    // important one. It gets a heading so it reads as the instruction it is,
+    // not as a preamble.
+    if (/^If a bird or small animal has been caught or bitten/.test(text)) {
+      lines.push('', '## If it was caught or bitten by an animal', '');
     }
     // Bare URLs read better as links on their own line.
     if (/^https?:\/\/\S+$/.test(text)) {

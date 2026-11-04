@@ -60,7 +60,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) since 2011 (founder Christina Beckles); 8,000+ 'satos' (Puerto Rican street dogs) rehomed. Brooklyn address (130 Water St 11201) is an ADMIN office only - dogs are in Puerto Rico and flown to the NY/NJ area; adopters meet virtually first, then pick up on arrival. Adoption fee $650 (spay/neuter, full vetting, vaccines, microchip). East Coast adopters who can reach NY/NJ pickup are eligible. Teaches the 3-3-3 adjustment rule. Also runs Operation Sato (free island s/n) + SATO United (free transport). Phone: (no public phone; email preferred)",
+  "notes": "501(c)(3) since 2011 (founder Christina Beckles); 8,000+ 'satos' (Puerto Rican street dogs) rehomed. Brooklyn address (130 Water St 11201) is an ADMIN office only - dogs are in Puerto Rico and flown to the NY/NJ area; adopters meet virtually first, then pick up on arrival. East Coast adopters who can reach NY/NJ pickup are eligible. Teaches the 3-3-3 adjustment rule. Also runs Operation Sato (free island s/n) + SATO United (free transport). Phone: (no public phone; email preferred)",
   "type_raw": "Rescue+adoption (Puerto Rico satos; foster + direct)",
   "confidence": "High",
   "status": "active",
@@ -68,12 +68,12 @@
   "source_urls": [
     "https://www.thesatoproject.org/adopt"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-11-04",
   "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

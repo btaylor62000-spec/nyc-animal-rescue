@@ -57,13 +57,13 @@
   "source_urls": [
     "https://valuevethospital.com"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "LOW-COST VET CARE AND SPAY/NEUTER - in the city. From the Mayor's Alliance spay/neuter and reduced-cost vet lists; each checked on its own site 2026-11-03. Ask what it will cost before booking.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-04",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

@@ -37,7 +37,7 @@
   "type_raw": "Fish rehoming network (volunteer, Facebook-based)",
   "confidence": "Medium",
   "status": "verify",
-  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "status_note": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
   "source_urls": [
     "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/"
   ],
@@ -46,10 +46,20 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-09-22",
+  "last_checked": "2026-11-04",
   "check_status": "manual-only",
   "consecutive_failures": 2,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Source flags this entry as needing confirmation before you rely on it.",
+      "to": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
+      "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "source": "manual",
+      "note": "Facebook sends a robot to its log-in page, so this cannot be read from here; a person checks it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
