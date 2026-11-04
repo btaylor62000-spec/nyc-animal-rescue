@@ -18,8 +18,9 @@ production; nothing here is aspirational.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
-| Sources | Three reference workbooks, the wildlife document, and `research/NYC_Reviewer_Additions.xlsx` for organizations a reviewer found missing (7 rows: two rescues, a Bronx rehabber, and four wildlife reporting lines that the injured-bird guide cites by record id) |
-| Guides | 21, of which two are new and written from a reviewer's mockups: reporting abuse, and the shelter's at-risk list |
+| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 68 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
+| Guides | 22. Three written from reviewers' material: reporting abuse, the shelter's at-risk list, and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Directory | 385 listed of 391 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 34 emergency vets, 24 of them open 24/7, every one with hours. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
@@ -70,7 +71,9 @@ Ordered by how much harm it prevents, not by size.
    nothing is lost. Turn it on, then run the workflow by hand without dry-run
    to see it through once. Discovery still pushes straight to `main`; it only
    adds records labelled unverified and excluded from the assistant, and item
-   2 decides whether those should be published at all.
+   2 decides whether those should be published at all. (As of 2026-11-04 the
+   setting was still off: it is under Settings → Actions → **General** →
+   Workflow permissions, not under Secrets and variables.)
 
 2. **Keep marking discovery candidates by hand.** Decided 2026-09-22:
    discovery finds mostly out-of-city rescues, so nothing it finds is
@@ -84,7 +87,27 @@ Ordered by how much harm it prevents, not by size.
    had dead or broken sites that day: Fosterlings, Urban Wildlife Alliance,
    Zani's Furry Friends.
 
-3. **Two regional records still carry no location, on purpose.** Of the six
+3. **Check the sites only a person can read, monthly.** `/status` lists them
+   under "Checked by a person only" (Urban Wildlife Alliance, Petco Love
+   Lost, United Spay Alliance as of 2026-11-04; DEC Region 2 will join them
+   on the next weekly run). Open each in a normal browser and record the date
+   as described in *Sites the weekly check cannot read*. The first weekly run
+   under the blocked / gone / down rules, and with the address notes, has not
+   happened yet: read that report closely.
+
+4. **Things a reviewer raised that could not be confirmed**, left out on
+   purpose until someone can: NYC 211, Bideawee's and the ASPCA's surrender
+   lines (both pages are gone), Vet-I-Care (broken certificate), DEC's
+   general email, a yearly cap on NYSAVE grants, an ASPCA temporary-boarding
+   offer. Individual volunteers' personal contacts (Save Kitty) stay off.
+
+5. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
+   whose pages show only today's hours and whose own page description gives
+   different ones, would be 21 "hours not confirmed" cards in every emergency
+   search. One Love and Bronx Veterinary Center were split by branch on
+   2026-11-04 because their hours and addresses could be confirmed.
+
+6. **Two regional records still carry no location, on purpose.** Of the six
    regional exotic-animal rescues with no borough, four are now reachable
    citywide because their rows call them "NYC-adjacent" or "tri-state"
    (`directory.ts` reads those as serving the city, unless the row also says
@@ -157,8 +180,10 @@ read them.
 - **The overlay is the only way to correct a record.** `data/orgs/` is
   regenerated, so hand edits there are destroyed by the next import.
   `OverlayEntry` now covers `phones`, `emails`, `website`, `intake_urls`,
-  `source_urls`, `notes`, `status` and confidence — enough to fix anything a
-  reader can see.
+  `source_urls`, `notes`, `status`, confidence and `hours` -- enough to fix
+  anything a reader can see. (It is applied by spreading the entry onto the
+  record, so `address`, `social` and `needs` work too; a name or alias change
+  belongs in `scripts/import/overrides.ts`.)
 - **A record's `status_note` is only rendered when the record is not active.**
   A caveat about an operating organization belongs in `notes`.
 
@@ -566,6 +591,13 @@ only breaks ties.
   tick "Use my location". The directory keeps it on the device; the assistant
   receives it rounded to two decimal places (about a kilometre), uses it to
   order results, and never logs or stores it.
+- **No location services needed.** Many people never turn them on. A zip typed
+  into "or nearest to zip" in the directory, or written in a question to the
+  assistant ("I'm in 11215"), is measured from that zip's centre
+  (`src/data/zip-centres.ts`, served as `/zip-centres.json`). When both ends
+  have a place on the map, distance replaces the assistant's old "is it in
+  your exact zip" bonus, which had put a closed clinic above an open hospital
+  half a mile away.
 - Workbook rows can carry **Hours** and **Address** columns. Use them: a row
   without hours cannot say it is open, and one without an address cannot be
   sorted by distance.
