@@ -37,7 +37,7 @@ This tab lists all-'bully' rescues first (they take the whole group), then breed
 
 - Pit of Our Souls Rescue - pit-type dogs. http://pitofoursoulsrescue.com. ACC New Hope partner. [Medium]
 - Pitties Love Peace - pit-type dogs. http://www.pittieslovepeace.com. ACC New Hope partner. [Low]
-- Bully Project - pit/bully rescue, NYC-focused. Application emailed on request via adoptapet.com/shelter/83710-bully-project-new-york-new-york; IG @thebullyproject. [Low]
+- Bully Project - now part of The Good Life Dog Rescue (Rescuzilla and Bully Project NYC merged): pit/bully and other dogs, NYC metro, foster-based. Adoption and foster questionnaires at https://www.thegldr.org - email hello@thegldr.org - IG @thegoodlifedogrescuenyc.
 
 ## BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the "bully"/molosser group)
 

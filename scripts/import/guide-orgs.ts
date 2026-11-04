@@ -199,7 +199,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     // accept wildlife are promoted to records here.
     // The two directory pointers and Animal Help Now's situations are guide
     // text, not organizations (AHNow and DEC have their own entries).
-    skip: /^Bobby & Cathy|^Robert Spragg|^Animal Help Now:|^New York State's register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
+    skip: /^Bobby & Cathy|^Robert Spragg|^Most of the city's licensed wildlife|^Or New York State's own register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
     rules: [{ pattern: /veterinarians who will see WILDLIFE/i, needs: ['wildlife-rehab'], orgTypes: ['clinic'] }],
   },
 ];

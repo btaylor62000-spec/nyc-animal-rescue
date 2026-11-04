@@ -13,10 +13,10 @@ _Only licensed rehabilitators may legally handle wild animals. Where to take the
 
 The rule first: only NYS-licensed wildlife rehabilitators may legally handle wild animals in New York, and most wild animals cannot legally be kept as pets. Wildlife is a rehabilitation-and-release matter, NOT an adoption matter. If you find injured, sick or orphaned wildlife, contact a licensed rehabber for advice before handling it - some species need special handling and some carry diseases transmissible to people.
 
-## Find a licensed rehabber near you, right now
+## Licensed rehabbers who work from home
 
-- Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It lists every licensed wildlife rehabilitator near you, including the many who work from home, with the animals each takes, and puts first those available right now; tap a listing for its phone number. It is kept current from the state's licence lists, so it is more up to date than any copy could be.
-- New York State's register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal. The official record of who is licensed.
+- Most of the city's licensed wildlife rehabilitators are individuals caring for animals at home. They are not listed one by one here; the organizations and hospitals are, below. To reach a home rehabber near you, use Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It shows each licensed rehabber nearby, the animals they take and their phone number (tap a listing), with those available right now first, kept current from the state's licence lists.
+- Or New York State's own register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal.
 
 ## NYC's main wildlife hospital - The Wild Bird Fund
 

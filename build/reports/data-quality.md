@@ -4,8 +4,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **401** organizations after de-duplication
-- **78** duplicate clusters merged
+- **400** organizations after de-duplication
+- **79** duplicate clusters merged
 - **22** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
@@ -18,7 +18,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | Animal | Organizations |
 | --- | ---: |
 | cat | 295 |
-| dog | 230 |
+| dog | 229 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -37,12 +37,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 166 |
-| foster | 99 |
+| adoption | 165 |
+| foster | 98 |
 | tnr | 95 |
 | spay-neuter | 75 |
 | owner-support | 71 |
-| surrender | 65 |
+| surrender | 64 |
 | low-cost-vet | 58 |
 | referral | 48 |
 | emergency-vet | 37 |
@@ -76,7 +76,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 262 |
 | queens | 221 |
-| manhattan | 218 |
+| manhattan | 217 |
 | bronx | 192 |
 | staten-island | 191 |
 
@@ -84,15 +84,15 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 195 |
-| Medium | 153 |
-| Low | 53 |
+| High | 196 |
+| Medium | 152 |
+| Low | 52 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 383 |
+| active | 382 |
 | verify | 12 |
 | retired | 3 |
 | hiatus | 2 |
@@ -173,7 +173,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (78)
+### Merged (79)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -203,6 +203,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `foster-dogs-inc` ← 2 records
 - `red-hook-dog-rescue` ← 2 records
 - `mr-bones-and-co` ← 2 records
+- `the-good-life-dog-rescue` ← 2 records
 - `pluto-rescue-of-richmond-county` ← 2 records
 - `bully-baby-rescue` ← 2 records
 - `uri-pals` ← 3 records
@@ -342,8 +343,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost vet care, spay/neuter and dog licensing | 11768 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
-| Breed-specific dog rescue | 13771 |
-| Found injured or orphaned wildlife | 9901 |
+| Breed-specific dog rescue | 13867 |
+| Found injured or orphaned wildlife | 9959 |
 | Exotic pet emergencies | 4124 |
 | What you can legally keep in New York City | 3073 |
 | Help paying for veterinary care | 8868 |

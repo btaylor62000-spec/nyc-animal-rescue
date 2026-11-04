@@ -178,6 +178,10 @@ export const NEVER_MERGE: Array<[string, string]> = [
  */
 export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   { pattern: /^ACC$/i, canonicalName: 'Animal Care Centers of NYC (ACC)' },
+  // Rescuzilla and Bully Project NYC merged into The Good Life Dog Rescue
+  // (its own site, read 2026-11-04). A reviewer found the old Bully Project
+  // entry still pointing at an Adoptapet page with no way to reach anyone.
+  { pattern: /^(the )?bully project( nyc)?$|^rescuzilla$/i, canonicalName: 'The Good Life Dog Rescue' },
   { pattern: /^ASPCA$/i, canonicalName: 'ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)' },
   // The hospital and its assistance funds are one organization; the guide tabs
   // name it three different ways and the merge key strips "Center".
