@@ -5,7 +5,7 @@ import Icon from '../../components/Icon.astro';
 import { telHref } from '../../data/tel.ts';
 import {
   ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, ORGS, ORGS_BY_ID, ORG_TYPE_LABELS,
-  STATUS_LABELS, daysSinceVerified, needsConfirmation, programmesOf,
+  STATUS_LABELS, checkedLine, needsConfirmation, programmesOf,
 } from '../../data/orgs.ts';
 import { HAS_REPO, REPORT_ISSUE_BASE } from '../../data/site.ts';
 
@@ -16,7 +16,6 @@ export function getStaticPaths() {
 const { id } = Astro.params;
 const org = ORGS_BY_ID.get(id!)!;
 
-const age = daysSinceVerified(org);
 const confirm = needsConfirmation(org);
 const parent = org.parent_org ? ORGS_BY_ID.get(org.parent_org) : undefined;
 const programmes = programmesOf(org.id);
@@ -110,15 +109,14 @@ const contactCount = org.phones.length + org.emails.length + org.intake_urls.len
       </p>
     )}
 
+    <p class="card__checked">{checkedLine(org)}</p>
+
     {confirm && org.status === 'active' && (
       <p class="notice">
         <Icon name="alert" size={17} />
         <span>
-          {org.confidence === 'Low'
-            ? 'This entry comes from a directory or social channel rather than the organization’s own site. Confirm this contact is still active before relying on it.'
-            : age === null
-              ? 'This entry has not been independently verified yet. Confirm this contact is still active before relying on it.'
-              : `Last verified ${age} days ago. Confirm this contact is still active before relying on it.`}
+          This entry comes from a directory or social channel rather than the organization’s own
+          website. Confirm this contact before relying on it.
         </span>
       </p>
     )}

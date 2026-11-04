@@ -4,8 +4,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **384** organizations after de-duplication
-- **75** duplicate clusters merged
+- **383** organizations after de-duplication
+- **76** duplicate clusters merged
 - **21** guide pages generated
 - **15** entries flagged as not currently active
 - **3** entries with no way at all to make contact
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 276 |
-| dog | 216 |
+| cat | 275 |
+| dog | 215 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -45,7 +45,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | surrender | 62 |
 | low-cost-vet | 57 |
 | referral | 47 |
-| emergency-vet | 40 |
+| emergency-vet | 35 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
@@ -77,7 +77,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | brooklyn | 255 |
 | queens | 211 |
 | manhattan | 210 |
-| bronx | 186 |
+| bronx | 185 |
 | staten-island | 185 |
 
 ### By confidence
@@ -85,14 +85,14 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | High | 172 |
-| Medium | 168 |
+| Medium | 167 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 369 |
+| active | 368 |
 | verify | 8 |
 | hiatus | 3 |
 | retired | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (86)
+### Never verified (85)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -167,7 +167,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (75)
+### Merged (76)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -214,6 +214,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `instavet-urgent-care` ← 2 records
 - `completecare-veterinary-center` ← 2 records
 - `greater-state-veterinary-specialists` ← 2 records
+- `urgent-vets-bronx` ← 2 records
 - `friends-of-animals` ← 2 records
 - `muffins-pet-connection-mama-program` ← 2 records
 - `bbawc-rescue-clinic` ← 2 records

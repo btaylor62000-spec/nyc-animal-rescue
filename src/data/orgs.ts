@@ -37,8 +37,6 @@ export const DATA_VERSION: string = (() => {
   return (hash >>> 0).toString(36);
 })();
 
-/** Days after which an entry carries a "confirm before relying on it" note. */
-export const STALE_DAYS = 90;
 
 export function daysSinceVerified(org: Org, today = new Date()): number | null {
   if (!org.last_verified) return null;
@@ -50,12 +48,27 @@ export function isNewlyFound(org: Org): boolean {
   return org.check_status === 'new-unverified';
 }
 
-/** Should this entry be shown with a "confirm this is still active" note? */
-export function needsConfirmation(org: Org, today = new Date()): boolean {
-  if (org.confidence === 'Low') return true;
-  if (org.status !== 'active') return true;
-  const age = daysSinceVerified(org, today);
-  return age === null || age > STALE_DAYS;
+/**
+ * Should this entry carry a warning?
+ *
+ * Only when it should change what someone does: it may have closed, paused
+ * or moved, or its details come from a directory or social channel rather
+ * than its own site. "Not re-checked lately" used to be a warning too, and
+ * put the same yellow box on a third of the directory, so a listing nobody
+ * had got round to re-checking looked as alarming as one that may have
+ * closed. When an entry was last checked is now on every card instead, in
+ * the same words, as a fact rather than an alarm (`checkedLine`).
+ */
+export function needsConfirmation(org: Org): boolean {
+  return org.confidence === 'Low' || org.status !== 'active';
+}
+
+/** When the entry's contacts were last seen on its own site, for every card alike. */
+export function checkedLine(org: Org): string {
+  if (!org.last_verified) return 'Not yet checked on their own website';
+  const d = new Date(`${org.last_verified}T12:00:00Z`);
+  const when = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  return `Checked on their own website ${when}`;
 }
 
 /** Programme records that belong to a parent organization. */

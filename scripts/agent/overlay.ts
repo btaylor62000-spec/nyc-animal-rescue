@@ -31,6 +31,12 @@ export interface OverlayEntry {
   emails?: Org['emails'];
   website?: string | null;
   /**
+   * Replacement opening hours, set by a person. Every vet that takes
+   * emergencies shows whether it is open overnight, and that is only as good
+   * as its hours; a guide-prose record often had none to begin with.
+   */
+  hours?: string | null;
+  /**
    * Replacement source citations.
    *
    * These render as the record's "Sources" list, so a dead one is a 404 a

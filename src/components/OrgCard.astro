@@ -1,6 +1,6 @@
 ---
 import type { Org } from '../types.ts';
-import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, daysSinceVerified, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
+import { ANIMAL_LABELS, BOROUGH_LABELS, NEED_LABELS, STATUS_LABELS, checkedLine, isNewlyFound, needsConfirmation } from '../data/orgs.ts';
 import ConfidenceBadge from './ConfidenceBadge.astro';
 import Icon from './Icon.astro';
 import { telHref } from '../data/tel.ts';
@@ -9,7 +9,6 @@ import { hasLimitedHours, isOpen24h } from '../data/hours.ts';
 interface Props { org: Org }
 const { org } = Astro.props;
 
-const age = daysSinceVerified(org);
 const confirm = needsConfirmation(org);
 const newlyFound = isNewlyFound(org);
 const byVisitor = org.community?.added_on ?? null;
@@ -34,6 +33,9 @@ const phone = org.phones[0];
 const takesEmergencies = org.needs.includes('emergency-vet') && !org.needs.includes('poison-control');
 const open24 = takesEmergencies && isOpen24h(org.hours);
 const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
+// Every vet that takes emergencies carries exactly one of the three, so the
+// absence of a tag never has to be interpreted.
+const hoursUnknown = takesEmergencies && !org.hours;
 ---
 <li
   class="card"
@@ -69,6 +71,7 @@ const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
     {org.status !== 'active' && <li><span class="tag tag--strong">{STATUS_LABELS[org.status]}</span></li>}
     {open24 && <li><span class="tag tag--strong">Open 24/7</span></li>}
     {daytimeOnly && <li><span class="tag tag--strong" title={org.hours ?? undefined}>Not open overnight</span></li>}
+    {hoursUnknown && <li><span class="tag tag--strong">Hours not confirmed – call first</span></li>}
     {topNeeds.map((n) => <li><span class="tag">{NEED_LABELS[n]}</span></li>)}
   </ul>
 
@@ -86,7 +89,9 @@ const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
     </a>
   </div>
 
-  {confirm && (
+  <p class="card__checked">{checkedLine(org)}</p>
+
+  {(confirm || byVisitor || newlyFound || correctedByVisitor) && (
     <p class="notice">
       <Icon name="alert" size={17} />
       <span>
@@ -96,13 +101,9 @@ const daytimeOnly = takesEmergencies && hasLimitedHours(org.hours);
           ? 'We found this on an official list of rescue partners, but nothing about it has been checked yet. Confirm before relying on it.'
           : correctedByVisitor
           ? `A visitor corrected this entry on ${correctedByVisitor}; the new detail was seen on the organization’s own site that day, and nobody here has checked it yet.`
-          : org.status !== 'active' && org.status_note
-          ? org.status_note
-          : org.confidence === 'Low'
-            ? 'Listed from a directory or social channel. Confirm this contact is still active before relying on it.'
-            : age === null
-              ? 'Not yet independently verified. Confirm this contact is still active before relying on it.'
-              : `Last verified ${age} days ago. Confirm this contact is still active before relying on it.`}
+          : org.status !== 'active'
+          ? org.status_note ?? 'This organization may not be operating as listed. Confirm before relying on it.'
+          : 'Listed from a directory or social channel rather than its own website. Confirm this contact before relying on it.'}
       </span>
     </p>
   )}

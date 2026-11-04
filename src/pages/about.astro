@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { ORGS, STALE_DAYS } from '../data/orgs.ts';
+import { ORGS } from '../data/orgs.ts';
 import { GITHUB_REPO, HAS_REPO, REPORT_ISSUE_BASE } from '../data/site.ts';
 
 /**
@@ -78,10 +78,10 @@ const counts = {
     <h2>Why entries say "confirm before relying on this"</h2>
     <p>
       Rescue contact details go stale fast. Volunteers move on, small groups fold quietly, and
-      phone numbers get reassigned. Any entry that is Low confidence, flagged as not currently
-      active, or that has not been verified in the last {STALE_DAYS} days carries that reminder.
-      It is not a warning about the organization — it is a reminder that this directory is a
-      starting point, not a guarantee.
+      phone numbers get reassigned. A yellow note appears only where it should change what you
+      do: the organization may have closed, paused or moved, or its details come from a
+      directory or social channel rather than its own website. Every entry also says, in the
+      same words, when its details were last checked on the organization’s own website.
     </p>
 
     <h2>Privacy</h2>

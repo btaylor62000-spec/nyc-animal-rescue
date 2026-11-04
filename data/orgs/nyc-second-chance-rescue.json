@@ -4,8 +4,7 @@
   "aka": [],
   "parent_org": null,
   "org_types": [
-    "rescue-foster",
-    "emergency-vet"
+    "rescue-foster"
   ],
   "animals": [
     "cat",
@@ -13,7 +12,6 @@
     "wildlife"
   ],
   "needs": [
-    "emergency-vet",
     "adoption",
     "foster",
     "medical-special-needs",

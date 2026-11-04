@@ -5,15 +5,13 @@
   "parent_org": null,
   "org_types": [
     "rescue-foster",
-    "tnr-group",
-    "emergency-vet"
+    "tnr-group"
   ],
   "animals": [
     "cat",
     "dog"
   ],
   "needs": [
-    "emergency-vet",
     "adoption",
     "tnr",
     "colony-care",

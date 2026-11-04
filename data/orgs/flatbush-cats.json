@@ -12,7 +12,6 @@
     "cat"
   ],
   "needs": [
-    "emergency-vet",
     "adoption",
     "surrender",
     "tnr",

@@ -45,12 +45,10 @@ function getRetriever(): Retriever {
   return retriever;
 }
 
-const STALE_DAYS = 90;
-
-function needsConfirmation(org: { confidence: string; status: string; lastVerified: string | null }): boolean {
-  if (org.confidence === 'Low' || org.status !== 'active' || !org.lastVerified) return true;
-  const age = (Date.now() - Date.parse(org.lastVerified)) / 86_400_000;
-  return age > STALE_DAYS;
+// The same rule as the site's cards (src/data/orgs.ts): warn only when it
+// should change what someone does, so the assistant and the directory agree.
+function needsConfirmation(org: { confidence: string; status: string }): boolean {
+  return org.confidence === 'Low' || org.status !== 'active';
 }
 
 function sse(event: ChatEvent): string {

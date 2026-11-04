@@ -851,11 +851,6 @@
       "matched": "cats"
     },
     {
-      "tag": "emergency-vet",
-      "field": "name",
-      "matched": "24/7"
-    },
-    {
       "tag": "poison-control",
       "field": "name",
       "matched": "Poison Control"
@@ -864,11 +859,6 @@
       "tag": "spay-neuter",
       "field": "section",
       "matched": "SPAY"
-    },
-    {
-      "tag": "emergency-vet",
-      "field": "name",
-      "matched": "24/7"
     },
     {
       "tag": "hotline",
@@ -2982,11 +2972,6 @@
       "tag": "cat",
       "field": "name",
       "matched": "Cats"
-    },
-    {
-      "tag": "emergency-vet",
-      "field": "notes",
-      "matched": "24hr"
     },
     {
       "tag": "adoption",
@@ -6474,11 +6459,6 @@
   ],
   "pet-poison-helpline-24-7-hotline": [
     {
-      "tag": "emergency-vet",
-      "field": "name",
-      "matched": "24/7"
-    },
-    {
       "tag": "poison-control",
       "field": "name",
       "matched": "Poison Helpline"
@@ -6487,11 +6467,6 @@
       "tag": "spay-neuter",
       "field": "section",
       "matched": "SPAY"
-    },
-    {
-      "tag": "emergency-vet",
-      "field": "name",
-      "matched": "24/7"
     },
     {
       "tag": "hotline",
@@ -7366,11 +7341,6 @@
       "matched": "Wildlife"
     },
     {
-      "tag": "emergency-vet",
-      "field": "notes",
-      "matched": "24-hour"
-    },
-    {
       "tag": "wildlife-rehab",
       "field": "type",
       "matched": "rehabilitat"
@@ -7379,11 +7349,6 @@
       "tag": "legal",
       "field": "notes",
       "matched": "permit"
-    },
-    {
-      "tag": "emergency-vet",
-      "field": "notes",
-      "matched": "24-hour"
     },
     {
       "tag": "wildlife-rehabber",

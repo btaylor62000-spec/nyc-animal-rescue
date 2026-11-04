@@ -977,7 +977,19 @@
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
+      "last_verified": "2026-09-22",
+      "hours": "8am-10pm every day, including holidays",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "8am-10pm every day, including holidays",
+          "evidence_url": "https://instavet.com/",
+          "source": "manual",
+          "note": "Read in a browser on its own site: \"We're open from 8 am - 10 pm, 365 days/year\". Walk-in urgent care, not overnight."
+        }
+      ]
     },
     "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": {
       "last_checked": "2026-09-22",
@@ -1076,7 +1088,34 @@
     "long-island-bird-and-exotics-vet-clinic": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "hours": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
+      "phones": [
+        {
+          "value": "5164821101",
+          "display": "(516) 482-1101"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
+          "evidence_url": "https://www.birdexoticsvet.com/",
+          "source": "manual",
+          "note": "Office hours as shown on its own site, read in a browser."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "(516) 482-1101",
+          "evidence_url": "https://www.birdexoticsvet.com/",
+          "source": "manual",
+          "note": "The record had no phone number. Its own site says \"To schedule an appointment, call (516) 482-1101\". Added where there was none; nothing replaced."
+        }
+      ]
     },
     "long-island-parrot-society": {
       "last_checked": "2026-09-22",
@@ -1836,13 +1875,20 @@
         }
       ]
     },
-    "urgent-vets": {
-      "last_checked": "2026-09-22",
-      "check_status": "unchecked"
-    },
     "urgent-vets-11369": {
       "last_checked": "2026-09-22",
-      "check_status": "unchecked"
+      "check_status": "unchecked",
+      "hours": "Late hours, not 24/7 - call for hours",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Late hours, not 24/7 - call for hours",
+          "source": "manual",
+          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+        }
+      ]
     },
     "urgent-vets-bronx": {
       "last_checked": "2026-09-22",

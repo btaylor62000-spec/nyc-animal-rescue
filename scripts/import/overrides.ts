@@ -19,6 +19,18 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // Two clinics of one name: without the borough in it, two identical
+    // names sat side by side in the emergency vet list.
+    id: 'urgent-vets-bronx',
+    reason: 'Urgent Vets has a Bronx and a Queens clinic; the name says which is which.',
+    set: { name: 'Urgent Vets (Bronx)', aka: ['Urgent Vets', 'Urgent Vets - Bronx'] },
+  },
+  {
+    id: 'urgent-vets-11369',
+    reason: 'Urgent Vets has a Bronx and a Queens clinic; the name says which is which.',
+    set: { name: 'Urgent Vets (Queens)', aka: ['Urgent Vets'] },
+  },
+  {
     // The id keeps the old spelling so the page's address does not change;
     // the old name stays as an alias so a search for it still lands here.
     id: 'greater-state-veterinary-specialists',
@@ -94,6 +106,11 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   // The hospital and its assistance funds are one organization; the guide tabs
   // name it three different ways and the merge key strips "Center".
   { pattern: /^AMC\b/i, canonicalName: 'Animal Medical Center (AMC / Schwarzman)' },
+  // One Bronx clinic, written two ways by the two workbooks. The Queens branch
+  // shares the plain name, which stopped the usual prefix match, so the Bronx
+  // clinic was listed twice among the emergency vets. The location check
+  // still keeps the Queens branch apart.
+  { pattern: /^Urgent Vets - Bronx$/i, canonicalName: 'Urgent Vets' },
 ];
 
 /**
