@@ -1,0 +1,64 @@
+{
+  "id": "veg-clifton",
+  "name": "VEG Clifton (New Jersey)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "New Jersey - outside NYC",
+  "zips": [
+    "07012"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "2014387122",
+      "display": "(201) 438-7122"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-jersey/clifton",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.8469,
+    "lon": -74.1605,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "790 New Jersey 3",
+    "city": "Clifton",
+    "zip": "07012"
+  },
+  "hours": "Open 24/7",
+  "notes": "790 New Jersey 3 (Route 3), Clifton, NJ 07012. Open 24/7, walk in, no appointment. Outside the city, in New Jersey. Its number also appears on other VEG pages as a nearby location. Read on VEG's own page, 2026-11-04 (a reviewer found it on VEG's locations list).",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-jersey/clifton"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

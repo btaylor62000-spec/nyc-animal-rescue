@@ -57,7 +57,7 @@
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -68,6 +68,15 @@
       "evidence_url": "https://www.veg.com/locations/new-york",
       "source": "manual",
       "note": "Read in a browser on VEG's New York locations page, as a reader sees it: \"OPEN 24/7 VEG Upper East Side, 1215 2nd Avenue, New York, NY 10065, (212) 223-3500\". Number and hours match; zip added."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.veg.com/locations",
+      "source": "manual",
+      "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (212) 223-3500, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
     }
   ],
   "privacy_hold": false,

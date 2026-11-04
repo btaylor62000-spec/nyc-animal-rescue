@@ -125,11 +125,21 @@ async function main(): Promise<void> {
 
   console.log(`Weekly check of ${orgs.length} organizations, ${date}${dryRun ? ' (dry run)' : ''}\n`);
 
+  // Other branches' numbers, by website host: see Evidence.siblingPhones.
+  const hostOf = (u: string | null) => { try { return u ? new URL(u).hostname.replace(/^www\./, '') : null; } catch { return null; } };
+  const byHost = new Map<string, Array<{ id: string; phones: string[] }>>();
+  for (const o of loadOrgs()) {
+    const h = hostOf(o.website);
+    if (h) byHost.set(h, [...(byHost.get(h) ?? []), { id: o.id, phones: o.phones.map((p) => p.value) }]);
+  }
+  const siblingsOf = (org: Org) =>
+    (byHost.get(hostOf(org.website) ?? '') ?? []).filter((x) => x.id !== org.id).flatMap((x) => x.phones);
+
   const decisions = new Map<string, Decision>();
   let done = 0;
 
   await mapWithConcurrency(orgs, AGENT.concurrency, async (org) => {
-    const evidence = await gather(org, date);
+    const evidence = { ...(await gather(org, date)), siblingPhones: siblingsOf(org) };
     const decision = decide(org, evidence);
     decisions.set(org.id, decision);
 

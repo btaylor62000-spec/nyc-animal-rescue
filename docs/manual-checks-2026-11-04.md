@@ -41,16 +41,18 @@ Emergency listings come first: a wrong 24-hour claim sends someone to a locked d
 
 Each VEG page showed the checker a New Jersey number, (201) 438-7122, instead of the hospital's own. Last time that happened it was VEG's site loading the wrong number for robots, not a real change. Look at the number a person sees on each page and tell Claude if it differs from ours.
 
-- [ ] **VEG (Veterinary Emergency Group)** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
+- [x] **VEG (Veterinary Emergency Group)** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
   - Entry: https://nyc-animal-rescue.pages.dev/org/veg/  ·  Site: https://www.veg.com/locations/new-york/upper-east-side  ·  Phone: (212) 223-3500
-- [ ] **VEG Chelsea** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
+- [x] **VEG Chelsea** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
   - Entry: https://nyc-animal-rescue.pages.dev/org/veg-chelsea/  ·  Site: https://www.veg.com/locations/new-york/chelsea  ·  Phone: (646) 582-8882
-- [ ] **VEG New Dorp (Staten Island)** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
+- [x] **VEG New Dorp (Staten Island)** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
   - Entry: https://nyc-animal-rescue.pages.dev/org/veg-new-dorp/  ·  Site: https://www.veg.com/locations/new-york/new-dorp  ·  Phone: (718) 362-1390
-- [ ] **VEG Ralph Ave** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
+- [x] **VEG Ralph Ave** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
   - Entry: https://nyc-animal-rescue.pages.dev/org/veg-ralph-ave/  ·  Site: https://www.veg.com/locations/new-york/ralph-ave-brooklyn  ·  Phone: (718) 677-6700
-- [ ] **VEG Williamsburg** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
+- [x] **VEG Williamsburg** — The recorded phone number is no longer on their site and (201) 438-7122 is there instead
   - Entry: https://nyc-animal-rescue.pages.dev/org/veg-williamsburg/  ·  Site: https://www.veg.com/locations/new-york/williamsburg  ·  Phone: (917) 423-6444
+
+**Done 2026-11-04 by the reviewer, from VEG's own locations page.** All five match: address, number and 24/7. The New Jersey number was VEG Clifton's, shown on every VEG page; the weekly check now ignores a sister branch's number. VEG Hoboken, Clifton and Paramus (New Jersey) were added as listings outside the city.
 
 ## 3. Websites that no longer exist: find the group, or confirm it has closed
 

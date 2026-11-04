@@ -342,6 +342,20 @@ test('an emergency listing is never rewritten unattended', () => {
   if (d.kind === 'needs-review') assert.match(d.reason, /emergency listing/i);
 });
 
+test("a sister branch's number on the page is not offered as a replacement", () => {
+  const er = org({
+    id: 'veg-ralph-ave', name: 'VEG Ralph Ave',
+    needs: ['emergency-vet'],
+    phones: [{ value: '7186776700', display: '(718) 677-6700' }],
+    emails: [],
+  });
+  // (201) 438-7122 is VEG Clifton, which has its own listing.
+  const d = decide(er, { ...pageWith(['(201) 438-7122'], er), siblingPhones: ['2014387122'] });
+  assert.notEqual(d.kind, 'needs-review');
+  // A number that is not a sibling's is still flagged, as before.
+  assert.equal(decide(er, { ...pageWith(['(201) 555-0199'], er), siblingPhones: ['2014387122'] }).kind, 'needs-review');
+});
+
 test('the same evidence on an ordinary record names the number it found', () => {
   const ordinary = org({
     phones: [{ value: '7185550142', display: '(718) 555-0142' }],

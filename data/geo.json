@@ -439,11 +439,29 @@
    "lon": -73.99235,
    "matched": "735 6TH AVE, NEW YORK, NY, 10010"
   },
+  "veg-clifton": {
+   "query": "790 New Jersey 3, Clifton, NJ 07012",
+   "lat": null,
+   "lon": null,
+   "matched": null
+  },
+  "veg-hoboken": {
+   "query": "1327 Willow Avenue, Hoboken, NJ 07030",
+   "lat": 40.75324,
+   "lon": -74.02979,
+   "matched": "1327 WILLOW AVE, HOBOKEN, NJ, 07030"
+  },
   "veg-new-dorp": {
    "query": "2546 Hylan Blvd, Staten Island, NY 10306",
    "lat": 40.56951,
    "lon": -74.11063,
    "matched": "2546 HYLAN BLVD, STATEN ISLAND, NY, 10306"
+  },
+  "veg-paramus": {
+   "query": "141 State Route 17, Paramus, NJ 07652",
+   "lat": null,
+   "lon": null,
+   "matched": null
   },
   "veg-ralph-ave": {
    "query": "1950 Ralph Ave, Brooklyn, NY 11234",

@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **397** organizations after de-duplication
+- **400** organizations after de-duplication
 - **76** duplicate clusters merged
 - **23** guide pages generated
 - **27** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 292 |
-| dog | 227 |
+| cat | 295 |
+| dog | 230 |
 | wildlife | 45 |
 | rabbit | 37 |
 | bird-companion | 33 |
@@ -45,7 +45,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | surrender | 64 |
 | low-cost-vet | 57 |
 | referral | 48 |
-| emergency-vet | 37 |
+| emergency-vet | 40 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
@@ -84,7 +84,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 194 |
+| High | 197 |
 | Medium | 143 |
 | Low | 60 |
 
@@ -92,7 +92,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 370 |
+| active | 373 |
 | verify | 18 |
 | retired | 6 |
 | hiatus | 2 |

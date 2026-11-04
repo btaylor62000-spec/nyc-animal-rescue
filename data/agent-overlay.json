@@ -5234,7 +5234,7 @@
     },
     "veg": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "confidence": "High",
       "last_verified": "2026-11-04",
       "website": "https://www.veg.com/locations/new-york/upper-east-side",
@@ -5254,24 +5254,57 @@
           "evidence_url": "https://www.veg.com/locations/new-york",
           "source": "manual",
           "note": "Read in a browser on VEG's New York locations page, as a reader sees it: \"OPEN 24/7 VEG Upper East Side, 1215 2nd Avenue, New York, NY 10065, (212) 223-3500\". Number and hours match; zip added."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (212) 223-3500, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "consecutive_failures": 0
     },
     "veg-chelsea": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (646) 582-8882, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
+        }
+      ]
     },
     "veg-new-dorp": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (718) 362-1390, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
+        }
+      ]
     },
     "veg-ralph-ave": {
       "last_checked": "2026-11-04",
-      "last_verified": "2026-09-21",
-      "check_status": "needs-review",
+      "last_verified": "2026-11-04",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
@@ -5302,6 +5335,15 @@
           "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
           "source": "manual",
           "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (718) 677-6700, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "phones": [
@@ -5313,8 +5355,8 @@
     },
     "veg-williamsburg": {
       "last_checked": "2026-11-04",
-      "last_verified": "2026-09-21",
-      "check_status": "needs-review",
+      "last_verified": "2026-11-04",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/williamsburg",
@@ -5345,6 +5387,15 @@
           "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
           "source": "manual",
           "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (917) 423-6444, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "phones": [

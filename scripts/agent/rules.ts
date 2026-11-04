@@ -37,6 +37,14 @@ export interface Evidence {
   /** ISO date of the check. */
   date: string;
   pages: PageEvidence[];
+  /**
+   * Phone numbers of the organization's other branches in this directory
+   * (same website host). Chains show nearby branches on every page: every
+   * VEG page carries VEG Clifton's (201) 438-7122, and the check reported it
+   * as a "replacement" for each New York hospital's own number, week after
+   * week, when the own number was simply drawn in the browser.
+   */
+  siblingPhones?: string[];
 }
 
 /*
@@ -343,7 +351,8 @@ export function decide(org: Org, evidence: Evidence): Decision {
   }
 
   const pageText = ownPages.map((p) => p.text).join('\n');
-  const foundPhones = [...new Set(ownPages.flatMap((p) => p.phones))];
+  const siblings = new Set(evidence.siblingPhones ?? []);
+  const foundPhones = [...new Set(ownPages.flatMap((p) => p.phones))].filter((p) => !siblings.has(p) || org.phones.some((s) => s.value === p));
   const foundEmails = [...new Set(ownPages.flatMap((p) => p.emails))];
 
   // --- contacts ----------------------------------------------------------

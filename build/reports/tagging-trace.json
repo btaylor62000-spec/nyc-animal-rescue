@@ -9010,6 +9010,50 @@
       "matched": "Emergency vet"
     }
   ],
+  "veg-clifton": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-hoboken": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
   "veg-new-dorp": [
     {
       "tag": "cat",
@@ -9025,6 +9069,28 @@
       "tag": "rabbit",
       "field": "type",
       "matched": "rabbits"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-paramus": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
     },
     {
       "tag": "emergency-vet",
