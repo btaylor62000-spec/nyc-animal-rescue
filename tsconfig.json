@@ -26,6 +26,7 @@
     "tests/**/*.ts"
   ],
   "exclude": [
-    "functions/**"
+    "functions/**",
+    "scripts/dev/**"
   ]
 }

@@ -591,6 +591,19 @@ only breaks ties.
   tick "Use my location". The directory keeps it on the device; the assistant
   receives it rounded to two decimal places (about a kilometre), uses it to
   order results, and never logs or stores it.
+- **A phone can report the wrong place.** `src/data/position.ts` checks every
+  position before it is used, in the directory and the assistant alike: more
+  than 30 miles from the city (a VPN, a stale fix) is not used and the reader
+  is told so; a fix vaguer than about 2 miles is used but flagged; blocked or
+  failed location says so and points to the zip box. Location only ever
+  orders results -- nothing is hidden by it -- so a bad position costs order,
+  never information. Tested 2026-11-04 with location ON on emulated iPhone and
+  Android, five boroughs, 11pm and 3pm, plus blocked, Chicago and vague fixes.
+- **Testing the assistant's server code.** The bot check refuses automated
+  browsers, so the deployed assistant cannot be driven from a script.
+  `npx tsx scripts/dev/chat-harness.ts "question" "lat,lon" "ISO time"` runs
+  the real `/api/chat` handler locally without Turnstile or the model and
+  prints the cards it would send, with distance and open-now.
 - **No location services needed.** Many people never turn them on. A zip typed
   into "or nearest to zip" in the directory, or written in a question to the
   assistant ("I'm in 11215"), is measured from that zip's centre

@@ -11,6 +11,7 @@
  *   - Nothing is stored. The conversation lives in this tab and is gone when
  *     it closes.
  */
+import { checkPosition } from '../data/position.ts';
 import { telHref } from '../data/tel.ts';
 import type { ChatCard, ChatEvent } from '../data/chat-types.ts';
 
@@ -48,12 +49,27 @@ if (form && input && log) {
     if (locationNote) locationNote.textContent = 'Finding you…';
     navigator.geolocation.getCurrentPosition(
       (pos) => {
+        // The same check as the directory: a far-away or nonsense position is
+        // not used, and the reader is told so and offered the zip instead.
+        const check = checkPosition(pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy);
+        if (!check.use) {
+          useLocation.checked = false;
+          origin = null;
+          if (locationNote) locationNote.textContent = check.note.replace('type your zip code instead', 'say your zip code in your question instead');
+          return;
+        }
         origin = { lat: Math.round(pos.coords.latitude * 100) / 100, lon: Math.round(pos.coords.longitude * 100) / 100 };
-        if (locationNote) locationNote.textContent = 'Only an approximate location is sent, and it is not stored.';
+        const vague = /only accurate/.test(check.note) ? ' Your phone\u2019s location is only approximate; if the order looks wrong, say your zip code in your question.' : '';
+        if (locationNote) locationNote.textContent = `Using your approximate location; it is not stored.${vague}`;
       },
-      () => {
+      (err) => {
         useLocation.checked = false;
-        if (locationNote) locationNote.textContent = 'Could not get your location. Say your neighbourhood or zip code instead.';
+        if (locationNote) {
+          locationNote.textContent =
+            err.code === err.PERMISSION_DENIED
+              ? 'Location is switched off or blocked for this site. Say your zip code in your question instead.'
+              : 'Your phone could not find your location just now. Say your zip code in your question instead.';
+        }
       },
       { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 },
     );

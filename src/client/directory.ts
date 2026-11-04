@@ -16,6 +16,7 @@ import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts'
 import { zipToBorough } from '../data/geo.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
+import { checkPosition } from '../data/position.ts';
 
 interface FilterState {
   q: string;
@@ -395,25 +396,37 @@ if (form && list) {
       nearBtn.textContent = 'Finding you…';
       navigator.geolocation.getCurrentPosition(
         (pos) => {
+          nearBtn.disabled = false;
+          // A phone can report the wrong place: a cell tower miles off, a VPN
+          // abroad, yesterday's fix. Check before trusting it, and say why.
+          const check = checkPosition(pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy);
+          if (nearNote) {
+            nearNote.hidden = false;
+            nearNote.textContent = `${check.note} Your location stays on this device.`;
+          }
+          if (!check.use) {
+            nearBtn.textContent = 'Nearest to me';
+            nearZip?.focus();
+            return;
+          }
           origin = { lat: pos.coords.latitude, lon: pos.coords.longitude };
           originFromZip = false;
           if (nearZip) nearZip.value = '';
-          nearBtn.disabled = false;
           nearBtn.textContent = 'Stop sorting by distance';
-          if (nearNote) {
-            nearNote.hidden = false;
-            nearNote.textContent = 'Distances are straight-line and approximate. Your location stays on this device.';
-          }
           showDistances();
           void run(false);
         },
-        () => {
+        (err) => {
           nearBtn.disabled = false;
           nearBtn.textContent = 'Nearest to me';
           if (nearNote) {
             nearNote.hidden = false;
-            nearNote.textContent = 'Could not get your location. Type your zip code in the filters instead.';
+            nearNote.textContent =
+              err.code === err.PERMISSION_DENIED
+                ? 'Location is switched off or blocked for this site. Type your zip code in the box instead.'
+                : 'Your phone could not find your location just now. Type your zip code in the box instead.';
           }
+          nearZip?.focus();
         },
         { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 },
       );

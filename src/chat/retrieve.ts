@@ -460,14 +460,25 @@ export class Retriever {
     //     reader shared a location. Citywide services have no place and are
     //     neither helped nor hurt.
     if (ctx.origin && org.geo) {
-      score += [8, 6, 4, 1, -2, 0][distanceBand(distanceMiles(ctx.origin, org.geo))]!;
+      const miles = distanceMiles(ctx.origin, org.geo);
+      // The band does the heavy lifting; within a band, nearer still wins, as
+      // it does in the directory, rather than the better-worded listing.
+      score += [8, 6, 4, 1, -2, 0][distanceBand(miles)]! - Math.min(miles, 20) * 0.5;
+    } else if (ctx.origin && takesEmergencies(org)) {
+      // A vet with no place on the map -- a chain, an ambulance -- cannot be
+      // shown to be near, so it follows the ones that can, as in the
+      // directory. Without this it floated to the top in the Bronx, where
+      // every hospital is a few miles off and paid for it.
+      score -= 6;
     }
 
     // 5. What we are surest about, and what they can act on now.
     score += org.confidence === 'High' ? 4 : org.confidence === 'Medium' ? 2 : 0;
     if (org.phones.length) score += 2;
     if (org.status !== 'active') score -= 8;
-    if (org.outsideNyc) score -= 3;
+    // Outside the city counts against a place only when distance is unknown:
+    // from Fordham, a 24/7 hospital in Yonkers is nearer than any in the city.
+    if (org.outsideNyc && !(ctx.origin && org.geo)) score -= 3;
 
     return score;
   }
@@ -496,13 +507,18 @@ export class Retriever {
       }
     }
 
+    // With the reader's place known in an emergency, the directory orders by
+    // open, near and evidence, and wording only breaks ties. The assistant
+    // follows suit, or the two would offer the same hospitals in different
+    // orders.
+    const wordingWeight = origin && signals.emergency ? 0.02 : 0.5;
     const scored = [...candidates]
       .map((id) => this.byId.get(id))
       .filter((o): o is CorpusOrg => Boolean(o))
       // Free-text relevance breaks ties; it does not decide the answer. Left
       // stronger, it put a general vet ahead of the city's bird hospital for
       // "a pigeon hit my window" simply because the wording matched better.
-      .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * 0.5 }))
+      .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * wordingWeight }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
     return {
