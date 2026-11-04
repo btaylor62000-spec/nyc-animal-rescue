@@ -83,7 +83,7 @@ Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many
 
 ## VET-BILL FINANCIAL AID (when care is unaffordable)
 
-- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. Apply: (917) 669-7281, info@nysave.org, nysave.org.
+- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. Apply: (917) 669-7281, info@nysave.org, nysave.org.
 - AMC (Schwarzman Animal Medical Center, Manhattan) financial-assistance funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.
 - ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT / SSI / VA / unemployment / TANF proof). Apply via aspca.org/nyc.
 - RedRover Relief - grants (avg ~$250) toward urgent, life-threatening care; household income under $60,000/yr; paid to the vet. redrover.org/relief, (916) 429-2457.
@@ -92,7 +92,7 @@ Petco Vetco / VIP Petcare (above) do walk-in vaccine + microchip clinics at many
 - Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
 - The Humane Society of NY - some cases receive full or partial funding through its Animal Emergency Appeal; ask when booking. 306 East 59th St, NY 10022, (212) 752-4842.
 - Brown Dog Foundation (browndogfoundation.org), The Mosby Foundation (themosbyfoundation.org), Onyx & Breezy Foundation (onyxandbreezy.org) - additional illness/injury funds.
-- Dial 211 (or nyc.gov/211) for a live operator with current local assistance funds.
+- Call 311 for a live operator with current local assistance programs: in New York City the 211 help-and-referral service is provided through 311 (https://portal.311.nyc.gov/article/?kanumber=KA-02498).
 - CareCredit - healthcare credit card accepted at most NYC vets; apply at carecredit.com or (800) 677-0718.
 - Scratchpay - simple payment plans for vet care; apply at scratchpay.com (soft credit check, no card).
 

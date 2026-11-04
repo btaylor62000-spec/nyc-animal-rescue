@@ -2311,14 +2311,31 @@
     "nys-dec-region-2": {
       "last_checked": "2026-09-22",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "r2info@dec.ny.gov",
+          "label": "General enquiries (not for emergencies)"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "r2info@dec.ny.gov",
+          "evidence_url": "https://extapps.dec.ny.gov/docs/administration_pdf/decguide.pdf",
+          "source": "manual",
+          "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
+        }
+      ]
     },
     "nysave": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
-      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
+      "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2328,6 +2345,15 @@
           "evidence_url": "https://www.nysave.org/pet-owners/",
           "source": "manual",
           "note": "Eligibility added from its own pet owners page, read in a browser. A reviewer also mentioned a yearly cap per household; its site does not state one, so none is given."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "~$2,000/yr per household",
+          "to": "no fixed yearly amount per household",
+          "evidence_url": "https://www.nysave.org/hospitals/program-guidelines/",
+          "source": "manual",
+          "note": "A reviewer asked whether NYSAVE caps grants per household per year. Its program guidelines, read in a browser on 2026-11-04, set eligibility (city poverty level, turned down for CareCredit or Scratchpay) but no yearly amount per household; the only figures on its site are the $2,500-$10,000 yearly grants it gives partner hospitals. The \"~$2,000/yr per household\" in the research had no source and is removed."
         }
       ]
     },

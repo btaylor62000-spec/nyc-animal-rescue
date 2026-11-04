@@ -67,7 +67,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)
 
-- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay; ~$2,000/yr per household, paid to a participating vet. (917) 669-7281 - info@nysave.org - nysave.org.
+- NYSAVE (NY Save Animals in Veterinary Emergency) - NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. (917) 669-7281 - info@nysave.org - nysave.org.
 - AMC (Schwarzman Animal Medical Center, Manhattan) funds - Charlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.
 - ASPCA Animal Hospital (AAH) - low-cost urgent care in NYC for owners with household income at or below $50,000 (bring EBT/SSI/VA/unemployment/TANF proof). aspca.org/nyc.
 - RedRover Relief - grants (avg ~$250) toward urgent, life-threatening care; income under $60,000/yr; paid to the vet. redrover.org/relief - (916) 429-2457.
@@ -76,7 +76,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Waggle - vet-bill crowdfunding; 100% of funds go to the vet. waggle.org.
 - Condition-specific (cats): cancer - Live Like Roo (livelikeroo.org), Magic Bullet Fund (themagicbulletfund.org), Riedel & Cody Fund; FIP/retrovirus + chronic - The Pet Fund; Feline Veterinary Emergency Assistance Program (VAS/ISS); Diabetic Cats in Need (insulin help).
 - Humane Society of NY - some cases receive full/partial funding via its Animal Emergency Appeal; ask when booking. 306 E 59th St - (212) 752-4842.
-- Dial 211 (nyc.gov/211) for a live operator with current local assistance funds.
+- Call 311 for a live operator with current local assistance programs: in New York City the 211 help-and-referral service is provided through 311 (https://portal.311.nyc.gov/article/?kanumber=KA-02498).
 - CareCredit (carecredit.com / (800) 677-0718) and Scratchpay (scratchpay.com) - vet-care financing accepted at most NYC vets. HOW: get a written itemized estimate + proof of need (SNAP/Medicaid/income), then apply to several funds at once.
 
 ## PET INSURANCE (for planning ahead, not a bill you already have)

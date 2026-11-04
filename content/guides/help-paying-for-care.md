@@ -25,7 +25,7 @@ Why this tab: exotic vet care costs 2-3x standard pet care, far fewer clinics tr
 - The Pet Fund - non-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.
 - Frankie's Friends - lifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.
 - The Mosby Foundation, Brown Dog Foundation, Onyx & Breezy Foundation - additional illness/injury funds that consider companion animals broadly; read each fund's species scope before applying.
-- Waggle - vet-bill crowdfunding, 100% to the vet (waggle.org). Dial 211 or nyc.gov/211 for a live operator with current local assistance programs.
+- Waggle - vet-bill crowdfunding, 100% to the vet (waggle.org).
 
 ## For RESCUES (not individuals):
 

@@ -113,11 +113,27 @@ Ordered by how much harm it prevents, not by size.
    - The five pet food pantries with no website stay as the city listed them
      in October: that list is the source, and ringing is the only check.
 
-4. **Things a reviewer raised that could not be confirmed**, left out on
-   purpose until someone can: NYC 211, Bideawee's and the ASPCA's surrender
-   lines (both pages are gone), Vet-I-Care (broken certificate), DEC's
-   general email, a yearly cap on NYSAVE grants, an ASPCA temporary-boarding
-   offer. Individual volunteers' personal contacts (Save Kitty) stay off.
+4. **Things a reviewer raised, followed up 2026-11-04.**
+   - *NYC 211*: there is no separate one. The city's own 311 page says
+     211's help-and-referral service is provided through 311 in New York
+     City, so the guides now say "call 311", not "dial 211 (nyc.gov/211)".
+   - *Surrender lines*: neither Bideawee nor the ASPCA has one. The ASPCA's
+     NYC FAQ sends owners to rehoming sites and ACC's surrender service
+     (appointment only, 212-788-4000, which is already listed). Bideawee
+     publishes a surrender-prevention packet instead.
+   - *DEC's general email*: r2info@dec.ny.gov, from DEC's own "Guide to
+     DEC" (revised 2023). Added to the Region 2 entry.
+   - *NYSAVE yearly cap*: its guidelines set none per household. The
+     "~$2,000/yr" in the research had no source and is gone.
+   - *Still out*: Vet-I-Care (vet-i-care.org still has a self-signed
+     certificate and does not load), and an ASPCA temporary-boarding offer
+     (never confirmed). Individual volunteers' personal contacts (Save
+     Kitty) stay off.
+   - *No 24-hour hospital in the Bronx*: the Mayor's Alliance lists only
+     Urgent Vets there (limited hours). Directories that call four Bronx
+     clinics "24/7" are auto-generated and give every clinic a duplicate
+     "Emergency" row. From the Bronx the nearest 24/7 options are Animal
+     Specialty Center (Yonkers) and the Manhattan and Astoria hospitals.
 
 5. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
    whose pages show only today's hours and whose own page description gives

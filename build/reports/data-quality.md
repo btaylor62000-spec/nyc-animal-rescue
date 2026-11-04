@@ -332,16 +332,16 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Community cats, colonies and starting TNR | 6880 |
 | Cats needing specialist help | 4701 |
 | Lost or found a cat | 6279 |
-| Help keeping your cat | 10007 |
+| Help keeping your cat | 10159 |
 | Help keeping your dog | 8583 |
-| Low-cost vet care, spay/neuter and dog licensing | 11601 |
+| Low-cost vet care, spay/neuter and dog licensing | 11750 |
 | Dog behaviour, training and legal questions | 6345 |
 | Lost or found a dog | 3597 |
 | Breed-specific dog rescue | 13722 |
 | Found injured or orphaned wildlife | 6640 |
 | Exotic pet emergencies | 4123 |
 | What you can legally keep in New York City | 3073 |
-| Help paying for veterinary care | 6471 |
+| Help paying for veterinary care | 6387 |
 | Rehoming a rabbit, bird, reptile or small animal | 3179 |
 | Lost or found a rabbit, bird or reptile | 2266 |
 | Boarding, pet sitting and planning ahead | 6022 |
