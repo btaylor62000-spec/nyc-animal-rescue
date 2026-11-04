@@ -84,4 +84,6 @@ export function compareKeys(a: number[], b: number[]): number {
 }
 
 /** Words that mean the reader needs a vet now, for when no need filter says so. */
-export const EMERGENCY_QUERY = /\b(emergenc\w*|urgent\w*|24 ?\/ ?7|24 ?hours?|after ?hours|overnight|open now|\ber\b|bleed\w*|hit by)\b/i;
+// "urgent list" is the city shelter's at-risk list, not a vet emergency;
+// read as one, it re-sorted a search for it as if someone needed a hospital.
+export const EMERGENCY_QUERY = /\b(emergenc\w*|urgent\w*(?! list)|24 ?\/ ?7|24 ?hours?|after ?hours|overnight|open now|\ber\b|bleed\w*|hit by)\b/i;

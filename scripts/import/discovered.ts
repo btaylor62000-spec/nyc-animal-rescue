@@ -48,6 +48,13 @@ interface Candidate {
   checkedBy?: string;
 }
 
+/** The roster's name in the reader's words: nobody outside rescue knows "New Hope". */
+function sourceInWords(source: string): string {
+  return source === 'ACC New Hope partners'
+    ? 'the city shelter\u2019s list of approved rescue partners (ACC \u201cNew Hope\u201d)'
+    : source;
+}
+
 export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {
   if (!existsSync(path)) return [];
   try {
@@ -105,11 +112,11 @@ export function candidateToOrg(c: Candidate): Org {
     address: null,
     hours: null,
     notes: `${c.checkedBy ? `${c.checkedBy} ` : ''}` + (c.contactsFrom
-      ? `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
+      ? `${region.note ? `${region.note} ` : ''}Found on ${sourceInWords(c.source)} on ${c.firstSeen}. ` +
         'The contact details below were read from their own website ' +
         'on the same day, but nobody has confirmed them, and we do not know whether they are still operating. ' +
         'Confirm before relying on it.'
-      : `${region.note ? `${region.note} ` : ''}Found on ${c.source} on ${c.firstSeen}. ` +
+      : `${region.note ? `${region.note} ` : ''}Found on ${sourceInWords(c.source)} on ${c.firstSeen}. ` +
         'Nothing about this entry has been checked yet — ' +
         'not the phone number, not the address, not whether they are still operating. Confirm before relying on it.'),
     type_raw: null,

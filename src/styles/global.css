@@ -1070,3 +1070,22 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 
 .near-zip { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: var(--text-muted); }
 .near-zip input { width: 5.5rem; padding: 0.3rem 0.5rem; font: inherit; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--surface); color: var(--text); }
+
+/* A guide matching the search, shown above the organizations: steps first. */
+.guide-hints { display: grid; gap: 0.6rem; margin: 0 0 1rem; }
+.guide-hints[hidden] { display: none; }
+.guide-hint {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--accent);
+  border-left-width: 4px;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--text);
+  text-decoration: none;
+}
+.guide-hint:hover, .guide-hint:focus-visible { box-shadow: var(--shadow-sm); }
+.guide-hint strong { font-size: 1.05rem; color: var(--accent); }
+.guide-hint__label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
+.guide-hint__summary { font-size: 0.92rem; color: var(--text-muted); }

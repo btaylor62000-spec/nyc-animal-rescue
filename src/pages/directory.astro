@@ -4,6 +4,7 @@ import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
+import { GUIDES } from '../data/guides.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -22,6 +23,9 @@ const orgs = [...LISTED_ORGS].sort((a, b) => {
   return a.name.localeCompare(b.name);
 });
 import Icon from '../components/Icon.astro';
+// Topic phrases for every guide, so a search can point at the steps as well
+// as the organizations (src/data/guide-match.ts).
+const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics }) => ({ slug, title, summary, topics })));
 ---
 
 <Base
@@ -66,6 +70,9 @@ import Icon from '../components/Icon.astro';
           </p>
           <p id="near-me-note" class="filters__count" hidden></p>
         </div>
+
+        <div id="guide-hints" class="guide-hints" hidden></div>
+        <script type="application/json" id="guide-topics" set:html={guideTopics} />
 
         <ul class="results" id="results" data-index-url={`/search-index.json?v=${DATA_VERSION}`}>
           {orgs.map((org) => <OrgCard org={org} />)}

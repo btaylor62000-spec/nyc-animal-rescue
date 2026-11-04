@@ -50,6 +50,8 @@ export interface Signals {
   fighting: boolean;
   /** Escaping an abusive partner or household with a pet. */
   fleeing: boolean;
+  /** Saving an animal from the city shelter's urgent (at-risk) list. */
+  atRisk: boolean;
   /**
    * The question is about losing a home: eviction, a city shelter, an
    * emotional support animal. It needs the housing guide -- intake addresses,
@@ -160,6 +162,14 @@ const HOUSING_RE =
 const ABUSE_RE =
   /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|kick(s|ed|ing)?|tortur\w*|starv\w*|hoard\w*|dog ?fight\w*|cock ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law|maltrato|maltrat\w*|crueldad|abuso|denunci\w*)\b/i;
 
+/*
+ * Saving an animal from the city shelter's urgent ("at-risk") list. Its own
+ * situation: not a vet emergency, though "urgent" and "euthanasia" sound like
+ * one, and not someone's own pet being put to sleep, which mentions no shelter.
+ */
+const AT_RISK_RE =
+  /\b(at[- ]?risk list|urgent list|euthanasia list|kill list|death row|new hope|((acc|shelter|animal care cent\w*)\b.{0,60}\b(euthan\w*|put down|put to sleep|kill\w*|at[- ]risk))|((euthan\w*|put down|kill\w*)\b.{0,60}\b(acc|shelter)))\b/i;
+
 /** Organised fighting has its own tip line; ordinary cruelty goes to 311 first. */
 const FIGHTING_RE = /\b(dog ?fight\w*|cock ?fight\w*|animal fighting|fighting (dogs|roosters|ring)|peleas? de (perros|gallos))\b/i;
 
@@ -175,8 +185,9 @@ const FIGHTING_RE = /\b(dog ?fight\w*|cock ?fight\w*|animal fighting|fighting (d
 const ABUSE_VICTIM_RE =
   /\b(domestic violence|abusive (partner|ex|husband|wife|boyfriend|girlfriend|spouse|relationship|home|household)|(leaving|escap\w*|flee\w*) (an?|my) (abusive|violent)|(my|our) (partner|ex|husband|wife|boyfriend|girlfriend|spouse) (is|was|has been|gets) (abusive|violent)|violencia dom[eé]stica)\b/i;
 
+// "urgent" but not the shelter's "urgent list" (see EMERGENCY_QUERY in rank.ts).
 const EMERGENCY_RE =
-  /\b(emergenc\w*|urgent|dying|dead|bleed\w*|blood|broken|fracture\w*|seizure|seizing|convuls\w*|collaps\w*|unconscious|limp|not breathing|can'?t breathe|struggling to breathe|breathing (funny|hard|heavy|fast|weird|strange)|labou?red breathing|wheez\w*|gasping|choking|hit by|hit a car|run over|attacked|mauled|bitten|bite|caught by a cat|cat (got|caught|brought)|brought (it |me |in )?(a |home)|poison\w*|toxic|ate .{0,20}(chocolate|lily|lilies|rat poison|antifreeze|pill)|overdose|hit (?:the |a |my |our |his |her |its )?window|window strike|flew into|stuck|trapped|drowning|hypothermi\w*|freezing|shock|won'?t move|can'?t stand|can'?t walk|paralys\w*|gushing|severe|critical|24 ?hours?|24\/7|right now|tonight|asap|\d{1,2} ?[ap]m)\b/i;
+  /\b(emergenc\w*|urgent(?! list)|dying|dead|bleed\w*|blood|broken|fracture\w*|seizure|seizing|convuls\w*|collaps\w*|unconscious|limp|not breathing|can'?t breathe|struggling to breathe|breathing (funny|hard|heavy|fast|weird|strange)|labou?red breathing|wheez\w*|gasping|choking|hit by|hit a car|run over|attacked|mauled|bitten|bite|caught by a cat|cat (got|caught|brought)|brought (it |me |in )?(a |home)|poison\w*|toxic|ate .{0,20}(chocolate|lily|lilies|rat poison|antifreeze|pill)|overdose|hit (?:the |a |my |our |his |her |its )?window|window strike|flew into|stuck|trapped|drowning|hypothermi\w*|freezing|shock|won'?t move|can'?t stand|can'?t walk|paralys\w*|gushing|severe|critical|24 ?hours?|24\/7|right now|tonight|asap|\d{1,2} ?[ap]m)\b/i;
 
 /**
  * A small mammal or bird that has stopped eating is an emergency even though
@@ -226,7 +237,7 @@ export function extractSignals(question: string): Signals {
   const gutStasis =
     NOT_EATING_RE.test(q) && (animals.has('rabbit') || animals.has('small-mammal') || animals.has('bird-companion'));
 
-  const emergency = EMERGENCY_RE.test(q) || catAttack || gutStasis;
+  const emergency = !AT_RISK_RE.test(q) && (EMERGENCY_RE.test(q) || catAttack || gutStasis);
   const fleeing = ABUSE_VICTIM_RE.test(q);
   const abuse = ABUSE_RE.test(q) && !fleeing;
   // Someone escaping abuse needs a safe place for the pet and a hotline, not
@@ -236,6 +247,15 @@ export function extractSignals(question: string): Signals {
     needs.add('boarding');
   }
   const fighting = FIGHTING_RE.test(q);
+  const atRisk = AT_RISK_RE.test(q);
+  // The shelter's list is not a vet emergency: drop what "urgent" and
+  // "euthanasia" pulled in, so the answer is the guide and the rescue groups.
+  if (atRisk) {
+    needs.delete('emergency-vet');
+    needs.delete('pet-loss');
+    needs.add('adoption');
+    needs.add('foster');
+  }
   const housing = HOUSING_RE.test(q);
   if (housing) needs.add('owner-support');
   // Reporting cruelty is a legal matter, so the tag that carries the police
@@ -261,6 +281,7 @@ export function extractSignals(question: string): Signals {
     abuse,
     fighting,
     fleeing,
+    atRisk,
     housing,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
@@ -589,6 +610,9 @@ export class Retriever {
     // Losing a home is the situation, whatever the animal: the answer is
     // intake, the emotional-support request and somewhere for the pet.
     if (s.housing) return 'keep-your-pet-if-you-lose-your-home';
+
+    // Hours matter here: the listing closes in about 42 hours.
+    if (s.atRisk) return 'save-an-at-risk-animal';
 
     // Wildlife first: it is the route people most often get wrong, and the
     // consequences of getting it wrong are the least reversible.

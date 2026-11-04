@@ -68,9 +68,11 @@ export const GUIDE_PAGES: TabSpec[] = [
   },
   {
     file: WB_NEWHOPE, tab: 'Save an animal from the at-risk list', slug: 'save-an-at-risk-animal',
-    title: 'Save an animal from the shelter\u2019s at-risk list',
-    summary: 'How to get an at-risk animal out of the city shelter, who can actually pull it, and what to say.',
-    topics: ['at risk list', 'at-risk', 'new hope', 'euthanasia', 'euthanized', 'put down', 'put to sleep', 'death row', 'kill list', 'urgent list', 'ACC', 'pull', 'rescue partner', 'save a dog', 'save a cat', 'foster to save'],
+    // Named in the reader's words. "New Hope" and "at-risk list" are ACC's
+    // terms; a reviewer pointed out nobody searching in a hurry knows them.
+    title: 'Save an animal from the NYC shelter\u2019s urgent list',
+    summary: 'A cat or dog at the city shelter may be euthanised if nobody takes it. Check its status, adopt it yourself or apply through a rescue group, today.',
+    topics: ['urgent list', 'euthanasia list', 'at risk list', 'at-risk', 'new hope', 'euthanasia', 'euthanized', 'euthanised', 'put down', 'put to sleep', 'death row', 'kill list', 'ACC', 'pull', 'rescue partner', 'save a dog', 'save a cat', 'save a dog from the shelter', 'adopt from ACC', 'foster to save', 'reserve', 'A-number'],
   },
   {
     file: WB_ABUSE, tab: 'Report animal abuse', slug: 'report-animal-abuse',

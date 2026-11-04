@@ -14,6 +14,7 @@
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { servesBoroughs, servesZip } from '../data/area.ts';
+import { guidesFor, type GuideTopics } from '../data/guide-match.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
 import { checkPosition } from '../data/position.ts';
@@ -178,6 +179,8 @@ if (form && list) {
       }
     }
 
+    showGuideHints(state.q);
+
     let shown = 0;
     const visible: Array<{ id: string; m: NonNullable<ReturnType<typeof meta.get>> }> = [];
 
@@ -253,6 +256,37 @@ if (form && list) {
     });
     for (const { m } of visible) list!.appendChild(m.el);
     finish(shown, updateUrl, state);
+  }
+
+  // A search that names a situation gets the guide for it above the
+  // organizations: the steps first, then who to call.
+  const hintBox = document.getElementById('guide-hints');
+  let guideTopics: GuideTopics[] = [];
+  try {
+    guideTopics = JSON.parse(document.getElementById('guide-topics')?.textContent ?? '[]');
+  } catch {
+    guideTopics = [];
+  }
+  function showGuideHints(q: string): void {
+    if (!hintBox) return;
+    const found = q ? guidesFor(q, guideTopics) : [];
+    hintBox.replaceChildren();
+    hintBox.hidden = found.length === 0;
+    for (const g of found) {
+      const a = document.createElement('a');
+      a.className = 'guide-hint';
+      a.href = `/guides/${g.slug}`;
+      const label = document.createElement('span');
+      label.className = 'guide-hint__label';
+      label.textContent = 'Guide: what to do';
+      const title = document.createElement('strong');
+      title.textContent = g.title;
+      const summary = document.createElement('span');
+      summary.className = 'guide-hint__summary';
+      summary.textContent = g.summary;
+      a.append(label, title, summary);
+      hintBox.append(a);
+    }
   }
 
   function finish(shown: number, updateUrl: boolean, state: FilterState): void {
