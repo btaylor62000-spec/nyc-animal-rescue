@@ -185,6 +185,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     website: o.website,
     boroughs: o.boroughs,
     citywide: o.citywide,
+    outside: o.outsideNyc,
     confidence: o.confidence,
     status: o.status,
     statusNote: o.statusNote,

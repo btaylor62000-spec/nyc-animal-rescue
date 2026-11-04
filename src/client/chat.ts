@@ -149,6 +149,8 @@ if (form && input && log) {
   }
 
   function boroughLabel(card: ChatCard): string {
+    // The same rule as the directory card: based outside the city says so.
+    if (card.outside) return 'Outside NYC, serves New Yorkers';
     if (card.citywide) return 'All five boroughs';
     if (!card.boroughs.length) return '';
     const names: Record<string, string> = {
