@@ -13,7 +13,8 @@
   ],
   "needs": [
     "adoption",
-    "medical-special-needs"
+    "medical-special-needs",
+    "senior"
   ],
   "boroughs": [
     "queens"

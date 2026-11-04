@@ -47,7 +47,7 @@ export const NEED_SYNONYMS: Record<Need, string> = {
   'spay-neuter': 'spay neuter fix sterilise sterilize s/n desex snip',
   'low-cost-vet': 'cheap affordable low cost free vet clinic sliding scale cannot afford vet care',
   'exotic-vet': 'exotic vet avian vet rabbit savvy reptile vet bird vet small animal vet',
-  neonatal: 'newborn bottle baby unweaned eyes closed days old neonate orphaned kitten nursery tube feeding',
+  neonatal: 'newborn bottle baby unweaned eyes closed days old neonate orphaned kitten nursery tube feeding pregnant nursing mother mom litter',
   'medical-special-needs': 'special needs disabled blind deaf three legged wheelchair chronic illness medical critical injured neurological',
   senior: 'senior old elderly geriatric older cat older dog',
   retrovirus: 'felv fiv leukemia immunodeficiency retrovirus positive',

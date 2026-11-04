@@ -19,6 +19,31 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    id: '24petwatch',
+    reason: 'The registry now runs under PetPlace; one name for what the two workbooks wrote two ways.',
+    set: { name: '24Petwatch microchip registry (PetPlace)', aka: ['24PetWatch', '24Petwatch', 'PetPlace microchip registry'] },
+  },
+  {
+    id: 'homeagain',
+    reason: 'A microchip registry for cats as well as dogs; it appears only in the dog workbook.',
+    addAnimals: ['cat'],
+  },
+  {
+    // A reviewer searched for the full name and found nothing: the research
+    // only ever wrote the initials.
+    id: 'narn-central-brooklyn',
+    reason: 'NARN stands for Neighborhood Animal Rescue Network; the source never spells it out.',
+    set: { aka: ['Neighborhood Animal Rescue Network', 'Neighborhood Animal Rescue Network - Central Brooklyn', 'NARN'] },
+  },
+  {
+    // Found by discovery with a name and a link and nothing it does, so no
+    // filter could ever show it.
+    id: 'cypress-feline-rescue',
+    reason: 'Its own site describes a cat adoption rescue (visits by appointment for approved applicants); the discovery record carried no animals or needs.',
+    addAnimals: ['cat'],
+    addNeeds: ['adoption'],
+  },
+  {
     // Two clinics of one name: without the borough in it, two identical
     // names sat side by side in the emergency vet list.
     id: 'urgent-vets-bronx',
@@ -111,6 +136,8 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   // clinic was listed twice among the emergency vets. The location check
   // still keeps the Queens branch apart.
   { pattern: /^Urgent Vets - Bronx$/i, canonicalName: 'Urgent Vets' },
+  // One registry, written two ways by the two workbooks, so it was listed twice.
+  { pattern: /^24Pet ?watch\b/i, canonicalName: '24Petwatch microchip registry (PetPlace)' },
 ];
 
 /**

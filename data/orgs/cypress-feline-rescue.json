@@ -7,7 +7,9 @@
   "animals": [
     "cat"
   ],
-  "needs": [],
+  "needs": [
+    "adoption"
+  ],
   "boroughs": [
     "brooklyn"
   ],
@@ -17,21 +19,30 @@
   "zips": [],
   "region_note": null,
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "cypressfelinerescue@yahoo.com"
+    }
+  ],
   "website": "http://www.cypressfelinerescue.com",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.cypressfelinerescue.com/contact-us/",
+      "label": "Contact form"
+    }
+  ],
   "social": [],
   "address": null,
   "hours": null,
   "notes": "A person read the site on 2026-09-22 and confirmed it is in New York City. Found on ACC New Hope partners on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/new-hope-partners"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -48,6 +59,15 @@
       "evidence_url": "https://www.nycacc.org/new-hope-partners",
       "source": "monthly-discovery",
       "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "cypressfelinerescue@yahoo.com",
+      "evidence_url": "https://www.cypressfelinerescue.com/contact-us/",
+      "source": "manual",
+      "note": "Its own contact page, read in a browser, gives the address written out as \"cypress feline rescue at yahoo dot com\". Supplied by a reviewer. Added where there was none."
     }
   ],
   "privacy_hold": false,

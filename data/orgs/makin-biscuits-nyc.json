@@ -1,0 +1,67 @@
+{
+  "id": "makin-biscuits-nyc",
+  "name": "Makin' Biscuits NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "surrender",
+    "foster",
+    "neonatal"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens",
+  "zips": [],
+  "region_note": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@makinbiscuits.org"
+    }
+  ],
+  "website": "https://www.makinbiscuits.org",
+  "intake_urls": [
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR245_O9E6_8R7j63ETtwINxe_S6n82E66V-s9Jv5ZOqZRGQ/viewform",
+      "label": "Foster and adoption support form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "makinbiscuitsrescue",
+      "url": "https://instagram.com/makinbiscuitsrescue"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "A Queens cat rescue founded in February 2026 by a former ACC staff member, working throughout Queens to foster and rehome cats and to support owners. Its form covers rehoming a cat and \"Support with a pregnant cat or cat that recently had kittens.\" No phone number is published; use the form or email.",
+  "type_raw": "Cat rescue - foster, adoption and support for owners, including pregnant cats and new litters",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.makinbiscuits.org/about"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

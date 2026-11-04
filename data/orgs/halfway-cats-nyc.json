@@ -1,0 +1,65 @@
+{
+  "id": "halfway-cats-nyc",
+  "name": "Halfway Cats NYC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan",
+  "zips": [],
+  "region_note": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "phones": [],
+  "emails": [],
+  "website": "https://linktr.ee/halfwaycats",
+  "intake_urls": [
+    {
+      "url": "https://www.petfinder.com/search/pets-for-adoption/?shelter_id%5B0%5D=NY1647",
+      "label": "Adoptable cats"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "halfwaycats",
+      "url": "https://instagram.com/halfwaycats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "halfwaycats",
+      "url": "https://facebook.com/halfwaycats"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "A small cat rescue focused on frightened and forgotten street cats: rescue, socializing and adoption. Its link page lists Instagram, Facebook and its adoptable cats on Petfinder, but no phone or email; reach it by Instagram or Facebook message. A phone number and email on third-party listings are not used here because none of the group's own pages confirm them.",
+  "type_raw": "Cat rescue - street cats, socialization and adoption",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://linktr.ee/halfwaycats"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -121,7 +121,7 @@ export const NEED_LABELS: Record<Need, string> = {
   'spay-neuter': 'Spay / neuter',
   'low-cost-vet': 'Low-cost vet',
   'exotic-vet': 'Exotic vet',
-  neonatal: 'Newborn / bottle babies',
+  neonatal: 'Newborns & pregnant mothers',
   'medical-special-needs': 'Medical & special needs',
   senior: 'Senior animals',
   retrovirus: 'FeLV+ / FIV+',

@@ -1009,6 +1009,28 @@
       "matched": "TNR"
     }
   ],
+  "astoria-paws-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "atlantic-critter-rescue": [
     {
       "tag": "small-mammal",
@@ -1450,6 +1472,11 @@
       "tag": "medical-special-needs",
       "field": "notes",
       "matched": "special-needs"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "elderly"
     },
     {
       "tag": "shelter-no-kill",
@@ -3561,6 +3588,23 @@
       "matched": "Rescue"
     }
   ],
+  "halfway-cats-nyc": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "halo-veterinary-hospital": [
     {
       "tag": "cat",
@@ -4848,6 +4892,38 @@
       "tag": "small-mammal",
       "field": "section",
       "matched": "SMALL MAMMALS / 'POCKET PETS' (guinea pigs, rats, mice, hams"
+    }
+  ],
+  "makin-biscuits-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "surrender",
+      "field": "notes",
+      "matched": "rehome"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "neonatal",
+      "field": "type",
+      "matched": "pregnant"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
     }
   ],
   "mama-chris-animal-rescue-inc": [

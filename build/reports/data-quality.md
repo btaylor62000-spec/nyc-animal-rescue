@@ -4,8 +4,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **384** organizations after de-duplication
-- **76** duplicate clusters merged
+- **386** organizations after de-duplication
+- **77** duplicate clusters merged
 - **21** guide pages generated
 - **14** entries flagged as not currently active
 - **3** entries with no way at all to make contact
@@ -17,7 +17,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 276 |
+| cat | 280 |
 | dog | 216 |
 | wildlife | 45 |
 | rabbit | 36 |
@@ -37,12 +37,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 152 |
+| adoption | 156 |
 | tnr | 95 |
-| foster | 89 |
+| foster | 91 |
 | owner-support | 71 |
 | spay-neuter | 71 |
-| surrender | 62 |
+| surrender | 63 |
 | low-cost-vet | 57 |
 | referral | 47 |
 | emergency-vet | 36 |
@@ -54,18 +54,18 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | education | 23 |
 | legal | 21 |
 | financial-aid | 21 |
-| lost-found | 19 |
+| lost-found | 18 |
 | sanctuary | 17 |
+| senior | 17 |
 | behavior-training | 16 |
-| senior | 16 |
 | boarding | 15 |
-| microchip | 14 |
+| microchip | 13 |
 | transport | 12 |
 | breed-specific | 10 |
 | pet-loss | 9 |
+| neonatal | 7 |
 | exotic-vet | 6 |
 | trap-bank | 6 |
-| neonatal | 6 |
 | retrovirus | 5 |
 | working-cat | 2 |
 | poison-control | 2 |
@@ -74,25 +74,25 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 255 |
-| queens | 211 |
+| brooklyn | 254 |
+| queens | 212 |
 | manhattan | 210 |
-| bronx | 185 |
-| staten-island | 185 |
+| bronx | 184 |
+| staten-island | 184 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 173 |
-| Medium | 167 |
+| High | 178 |
+| Medium | 164 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 370 |
+| active | 372 |
 | verify | 7 |
 | hiatus | 3 |
 | retired | 3 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (85)
+### Never verified (81)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -166,7 +166,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (76)
+### Merged (77)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -241,6 +241,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `waggle` ← 3 records
 - `carecredit` ← 3 records
 - `pets-of-the-homeless` ← 2 records
+- `24petwatch` ← 2 records
 - `aspca-community-veterinary-clinic-brooklyn` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records
 - `vinegar-hill-veterinary-group` ← 2 records
@@ -250,7 +251,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - "Urgent Vets" resolved to 2 distinct locations; kept separate rather than merged
 - "ASPCA Community Veterinary Clinic" resolved to 3 distinct locations; kept separate rather than merged
 
-### Conflicts between sources (5)
+### Conflicts between sources (6)
 
 Nothing here is auto-corrected. These are disagreements between the workbooks that a person should resolve.
 
@@ -259,6 +260,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **website** — clinic.aspca.org  vs  aspcapro.org
   - Sources give different domains for what looks like the same organization.
 - **website** — nycacc.org  vs  petsandhousing.org
+  - Sources give different domains for what looks like the same organization.
+- **website** — 24pet.com  vs  petplace.com
   - Sources give different domains for what looks like the same organization.
 - **address** — VERG (Veterinary Emergency & Referral Group): 196 4th Ave  vs  VERG North (Veterinary Emergency & Referral Group): 318 Warren St
   - Same phone line (7185229400) listed at different addresses. One source is probably out of date -- verify before relying on either.

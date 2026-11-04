@@ -138,13 +138,17 @@ export const NEED_RULES: Rule<Need>[] = [
   { tag: 'spay-neuter', pattern: /\bspay|\bneuter|\bs\/n\b/i, fields: ALL },
   { tag: 'low-cost-vet', pattern: /low.?cost|free (vet|clinic|spay)|discounted|sliding scale|affordable (vet|care)/i, fields: ALL },
   { tag: 'exotic-vet', pattern: /\bavian (&|and) exotic|exotic (vet|medicine|day.?practice)|treats? exotics?/i, fields: ALL },
-  { tag: 'neonatal', pattern: /\bneonatal\b|bottle.?bab(y|ies)|bottle.?feed|unweaned|kitten nursery|one day old|tube.?feed/i, fields: ALL },
+  // Pregnant and nursing mothers belong here too: the groups that take a
+  // pregnant cat are the ones equipped for the litter that follows.
+  { tag: 'neonatal', pattern: /\bneonatal\b|bottle.?bab(y|ies)|bottle.?feed|unweaned|kitten nursery|one day old|tube.?feed|\bpregnant\b|nursing (mom|mother|queen)s?|mothers? with (kittens|puppies)/i, fields: ALL },
   {
     tag: 'medical-special-needs',
     pattern: /special.?needs|special.?care|critical.?medical|critical(ly)? (injured|ill)|medical (focus|cases|hard)|hard cases|disabled|three.?legged|3-legged|neurolog|\bblind\b|hospice|fospice|cruelty cases/i,
     fields: ALL,
   },
-  { tag: 'senior', pattern: /\bseniors?\b|\bgeriatric\b|older (cats?|dogs?|pets?)/i, fields: ALL },
+  // "Elderly" is how Frankie's Feline Fund describes itself; without it the
+  // one rescue built around old cats never appeared under Senior.
+  { tag: 'senior', pattern: /\bseniors?\b|\bgeriatric\b|\belderly\b|older (cats?|dogs?|pets?)/i, fields: ALL },
   { tag: 'retrovirus', pattern: /\bFeLV\b|\bFIV\b|retrovirus/i, fields: ALL },
   { tag: 'lost-found', pattern: /lost.{0,4}(&|and|\/).{0,4}found|lost (cat|dog|pet)|missing pet|\bfound pet/i, fields: ALL },
   { tag: 'microchip', pattern: /microchip/i, fields: ALL },

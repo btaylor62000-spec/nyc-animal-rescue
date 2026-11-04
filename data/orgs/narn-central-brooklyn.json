@@ -1,7 +1,11 @@
 {
   "id": "narn-central-brooklyn",
   "name": "NARN - Central Brooklyn (NARN-CB)",
-  "aka": [],
+  "aka": [
+    "Neighborhood Animal Rescue Network",
+    "Neighborhood Animal Rescue Network - Central Brooklyn",
+    "NARN"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster",

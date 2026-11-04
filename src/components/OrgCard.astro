@@ -24,7 +24,14 @@ const where = org.citywide
 
 // A card shows what someone needs to decide whether to tap: what it is, where
 // it works, and how fresh the information is. Everything else is on the page.
-const topNeeds = org.needs.slice(0, 4);
+// The tags that say what is particular about a group come first. Cut at four
+// in source order, Frankie's Feline Fund showed adoption, surrender, foster
+// and special needs, and dropped "Senior animals" -- the one thing it exists
+// for. General tags that half the directory carries go last.
+const GENERAL_NEEDS = ['adoption', 'foster', 'surrender', 'education', 'advocacy', 'referral', 'spay-neuter'];
+const topNeeds = [...org.needs]
+  .sort((a, b) => Number(GENERAL_NEEDS.includes(a)) - Number(GENERAL_NEEDS.includes(b)))
+  .slice(0, 4);
 const phone = org.phones[0];
 
 // For anything that takes emergencies, whether it is open now is the first

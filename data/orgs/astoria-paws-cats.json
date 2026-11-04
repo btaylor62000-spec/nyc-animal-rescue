@@ -1,0 +1,66 @@
+{
+  "id": "astoria-paws-cats",
+  "name": "Astoria Paws Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens - Astoria",
+  "zips": [],
+  "region_note": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.astoriapawscat.com",
+  "intake_urls": [
+    {
+      "url": "https://www.astoriapawscat.com/contact",
+      "label": "Contact form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "astoriapawscats",
+      "url": "https://instagram.com/astoriapawscats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "profile.php",
+      "url": "https://facebook.com/profile.php"
+    }
+  ],
+  "address": null,
+  "hours": null,
+  "notes": "A 501(c)(3) cat rescue in Astoria rescuing abandoned, injured and vulnerable cats and placing them for adoption; also takes foster volunteers. It publishes no phone or email; its own contact form covers adoption, fostering and a cat in need.",
+  "type_raw": "Cat rescue - rescue, foster and adoption",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.astoriapawscat.com/contact"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "CAT RESCUES - supplied by a reviewer 2026-11-04 and checked on each group's own site or link page that day",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

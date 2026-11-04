@@ -5,12 +5,28 @@
     "24petwatch": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
-    },
-    "24petwatch-north-americas-largest-registry-free-regi": {
-      "last_checked": "2026-09-22",
-      "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": "https://www.petplace.com/pet-microchip-registry",
+      "phones": [
+        {
+          "value": "8337387523",
+          "display": "1-833-738-7523",
+          "label": "Help line"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "1-833-738-7523",
+          "evidence_url": "https://www.petplace.com/pet-microchip-registry",
+          "source": "manual",
+          "note": "24Petwatch's registry now runs on PetPlace. Its registry page, read in a browser, gives \"Need Help? Call 1-833-738-7523\". Supplied by a reviewer. Added where there was none; website moved from 24pet.com to the PetPlace page."
+        }
+      ]
     },
     "800-kitties-rescue": {
       "last_checked": "2026-09-22",
@@ -766,7 +782,31 @@
     "cypress-feline-rescue": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "cypressfelinerescue@yahoo.com"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://www.cypressfelinerescue.com/contact-us/",
+          "label": "Contact form"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "cypressfelinerescue@yahoo.com",
+          "evidence_url": "https://www.cypressfelinerescue.com/contact-us/",
+          "source": "manual",
+          "note": "Its own contact page, read in a browser, gives the address written out as \"cypress feline rescue at yahoo dot com\". Supplied by a reviewer. Added where there was none."
+        }
+      ]
     },
     "earthlings-nyc-turtle-team": {
       "last_checked": "2026-09-22",
@@ -987,7 +1027,32 @@
     "homeagain": {
       "last_checked": "2026-09-22",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "8884663242",
+          "display": "1-888-466-3242",
+          "label": "1-888-HOMEAGAIN, lost pet line"
+        }
+      ],
+      "emails": [
+        {
+          "value": "customerservice@homeagain.com"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "1-888-466-3242",
+          "evidence_url": "https://www.merck-animal-health-usa.com/products/homeagain/",
+          "source": "manual",
+          "note": "1-888-HOMEAGAIN and customerservice@homeagain.com, read in a browser on the page of Merck Animal Health, which makes HomeAgain. Supplied by a reviewer. Added where there was none."
+        }
+      ]
     },
     "house-of-pancakes-reptile-rescue": {
       "last_checked": "2026-09-22",
