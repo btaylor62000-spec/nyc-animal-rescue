@@ -69,6 +69,15 @@ jobs:
       - name: Test the rules engine
         run: npm test
 
+      # A real browser for pages a plain request cannot read (contacts drawn by
+      # JavaScript, or a 403 to a plain request): see scripts/agent/browser.ts.
+      # Installed for this run only, as the site check does; not a dependency
+      # of the site. If either step fails the check still runs without it.
+      - run: npm install --no-save playwright@1.49.1
+        continue-on-error: true
+      - run: npx playwright install --with-deps chromium
+        continue-on-error: true
+
       - name: Run the check
         id: check
         run: |

@@ -30,6 +30,8 @@ export interface PageEvidence {
   emails: string[];
   closure: ClosureSignal[];
   error?: string;
+  /** Read in a real browser after a plain request could not read it. */
+  rendered?: boolean;
 }
 
 export interface Evidence {
@@ -216,6 +218,20 @@ export type PageProblem = 'gone' | 'blocked' | 'down' | null;
 
 const ROBOTS_REFUSED = /robots\.txt asks us not to/;
 const GOOGLE_SORRY = /^https?:\/\/(www\.)?google\.com\/sorry\//i;
+
+/**
+ * Whether a page is worth a second look in a real browser: it refused a plain
+ * request, showed a bot check, or came back with almost no text (contacts
+ * drawn by JavaScript). Never when robots.txt asked us to stay away, and never
+ * for a domain that does not exist.
+ */
+export function needsBrowser(page: PageEvidence): boolean {
+  if (page.rendered) return false;
+  if (page.error && (ROBOTS_REFUSED.test(page.error) || DNS_GONE.test(page.error))) return false;
+  if ([401, 403, 429].includes(page.status)) return true;
+  if (page.ok && page.text.length < 1500) return true;
+  return false;
+}
 
 export function pageProblem(page: PageEvidence): PageProblem {
   if (page.error && DNS_GONE.test(page.error)) return 'gone';

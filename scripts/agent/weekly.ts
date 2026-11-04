@@ -17,7 +17,8 @@ import type { Org } from '../../src/types.ts';
 import { AGENT } from './config.ts';
 import { fetchPage, sameSite } from './fetch.ts';
 import { detectClosure, extractContacts, htmlToText } from './extract.ts';
-import { decide, toPatch, tooManyFlags, type Decision, type Evidence, type PageEvidence } from './rules.ts';
+import { decide, needsBrowser, toPatch, tooManyFlags, type Decision, type Evidence, type PageEvidence } from './rules.ts';
+import { closeBrowser, renderPage } from './browser.ts';
 import { loadOverlay, saveOverlay, type OverlayEntry } from './overlay.ts';
 import { commitMessage, writeReport, type RunSummary } from './report.ts';
 
@@ -71,25 +72,39 @@ function pagesToCheck(org: Org): string[] {
 async function gather(org: Org, date: string): Promise<Evidence> {
   const pages: PageEvidence[] = [];
 
-  for (const url of pagesToCheck(org)) {
-    const fetched = await fetchPage(url);
-    const text = fetched.html ? htmlToText(fetched.html) : '';
+  const evidenceOf = (f: { url: string; finalUrl: string; status: number; ok: boolean; offDomain: boolean; html: string; error?: string }, rendered = false): PageEvidence => {
+    const text = f.html ? htmlToText(f.html) : '';
     const { phones, emails } = text ? extractContacts(text) : { phones: [], emails: [] };
-
-    pages.push({
-      url: fetched.url,
-      finalUrl: fetched.finalUrl,
-      status: fetched.status,
-      ok: fetched.ok,
-      offDomain: fetched.offDomain,
+    return {
+      url: f.url,
+      finalUrl: f.finalUrl,
+      status: f.status,
+      ok: f.ok,
+      offDomain: f.offDomain,
       // Only the organization's own domain counts as evidence about itself.
-      ownDomain: org.website ? sameSite(org.website, fetched.finalUrl) : false,
+      ownDomain: org.website ? sameSite(org.website, f.finalUrl) : false,
       text,
       phones,
       emails,
       closure: text ? detectClosure(text) : [],
-      error: fetched.error,
-    });
+      error: f.error,
+      ...(rendered ? { rendered: true } : {}),
+    };
+  };
+
+  for (const url of pagesToCheck(org)) {
+    let page = evidenceOf(await fetchPage(url));
+    // A plain request could not read it: try once in a real browser (see
+    // browser.ts). Whichever read more is the evidence.
+    if (needsBrowser(page)) {
+      const r = await renderPage(url);
+      if (r) {
+        const offDomain = !sameSite(url, r.finalUrl);
+        const second = evidenceOf({ ...r, offDomain }, true);
+        if (second.ok && second.text.length > page.text.length) page = second;
+      }
+    }
+    pages.push(page);
   }
 
   return { orgId: org.id, date, pages };
@@ -283,4 +298,4 @@ async function main(): Promise<void> {
 const invokedDirectly =
   process.argv[1] !== undefined && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 
-if (invokedDirectly) void main();
+if (invokedDirectly) void main().finally(() => closeBrowser());

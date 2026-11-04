@@ -6,7 +6,7 @@ import { detectContacts, evidenceFromHtml, org } from './helpers/agent.ts';
 import type { Org } from '../src/types.ts';
 import { detectClosure, extractContacts, htmlToText, normalizePhone } from '../scripts/agent/extract.ts';
 import { fetchPage, parseRobots, robotsAllows, sameSite } from '../scripts/agent/fetch.ts';
-import { UNREACHABLE_NOTE, addressOnPage, decide, isCheckable, isPlaceholderPhone, leavesTheCity, pageProblem, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
+import { UNREACHABLE_NOTE, addressOnPage, decide, isCheckable, needsBrowser, isPlaceholderPhone, leavesTheCity, pageProblem, toPatch, tooManyFlags } from '../scripts/agent/rules.ts';
 
 const fixture = (name: string) => readFileSync(`tests/fixtures/agent/${name}`, 'utf8');
 const DATE = '2026-09-24';
@@ -551,6 +551,15 @@ test("Google's robot check is blocked, not a move to google.com", () => {
   assert.equal(pageProblem(page), 'blocked');
   const record = org();
   assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
+});
+
+test('a refused or nearly empty page gets a second look in a browser; robots.txt and dead domains never do', () => {
+  assert.equal(needsBrowser(failedPage({ status: 403 })), true);
+  assert.equal(needsBrowser(failedPage({ status: 200, ok: true, text: 'Loading...' })), true);
+  assert.equal(needsBrowser(failedPage({ status: 200, ok: true, text: 'x'.repeat(3000) })), false);
+  assert.equal(needsBrowser(failedPage({ error: 'robots.txt asks us not to' })), false);
+  assert.equal(needsBrowser(failedPage({ error: 'fetch failed (ENOTFOUND)' })), false);
+  assert.equal(needsBrowser(failedPage({ status: 403, rendered: true })), false);
 });
 
 test('a timeout is still just a bad week', () => {

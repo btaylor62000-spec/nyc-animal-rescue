@@ -235,6 +235,8 @@ Each of these has never been confirmed by a person or the checker. Most are food
 - [ ] **Zion's Mission Animal Rescue*** — Confirm the phone and that it is open; for a pantry, ask whether it has pet food.
   - Entry: https://nyc-animal-rescue.pages.dev/org/zions-mission-animal-rescue/  ·  Site: https://www.zionsmission.org  ·  Phone: no phone listed
 
+**Update 2026-11-04:** the pantries on this list need no calls. The reviewer supplied the city's own published list; every pantry's name, number, address and zip matches it, so each is now confirmed from the city's list. With the weekly check's new browser, most of the rest should confirm themselves on its next run; whatever is left will appear in that run's report.
+
 ## 7. The 210 discovery candidates (your own session)
 
 Separate from this list: start from `docs/discovery-review-2026-11-04.md`. The 90 that say nothing about where they are need a contact page or a phone call.

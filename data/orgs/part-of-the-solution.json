@@ -92,9 +92,9 @@
       "field": "last_verified",
       "from": null,
       "to": "2026-11-04",
-      "evidence_url": "https://potsbronx.org/english/",
-      "source": "manual",
-      "note": "Read in a browser on 2026-11-04: Its site shows 718-220-4892. The first number is the one the city lists for the pet food programme."
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
     }
   ],
   "privacy_hold": false,
