@@ -30,3 +30,18 @@ test('area: a zip outside the city matches only records naming it', () => {
   assert.equal(servesZip(bluepearl, '07652'), false);
   assert.equal(servesZip({ boroughs: [], zips: ['07652'], citywide: false }, '07652'), true);
 });
+
+import { placeIn } from '../src/data/area.ts';
+
+test('area: a zip typed in the search box is a place, not a word', () => {
+  // A reviewer typed 10026 and got only Harlem Cats.
+  assert.deepEqual(placeIn('10026'), { zip: '10026', boroughs: [], rest: '' });
+  assert.deepEqual(placeIn('cat rescue 10128'), { zip: '10128', boroughs: [], rest: 'cat rescue' });
+  assert.deepEqual(placeIn('injured pigeon in brooklyn'), { zip: null, boroughs: ['brooklyn'], rest: 'injured pigeon' });
+  assert.deepEqual(placeIn('vet near harlem'), { zip: null, boroughs: ['manhattan'], rest: 'vet' });
+});
+
+test('area: numbers that are not city zips, and plain words, stay as search words', () => {
+  assert.deepEqual(placeIn('07652'), { zip: null, boroughs: [], rest: '07652' });
+  assert.deepEqual(placeIn('bluepearl'), { zip: null, boroughs: [], rest: 'bluepearl' });
+});

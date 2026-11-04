@@ -13,7 +13,7 @@
  */
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
-import { servesBoroughs, servesZip } from '../data/area.ts';
+import { placeIn, servesBoroughs, servesZip } from '../data/area.ts';
 import { guidesFor, type GuideTopics } from '../data/guide-match.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
@@ -154,11 +154,25 @@ if (form && list) {
   };
 
   async function run(updateUrl = true): Promise<void> {
-    const state = readState();
+    const typed = readState();
+    // A zip or borough typed into the search box filters by place, exactly as
+    // the filter panel does; only the other words are searched (src/data/area.ts).
+    // Unless the words are an organization's name: "Harlem Cats" is a group,
+    // not cats in Harlem.
+    const lowered = typed.q.toLowerCase();
+    const isName = lowered.length >= 4 && [...meta.values()].some((m) => m.el.dataset.name?.toLowerCase().includes(lowered));
+    const place = isName ? { zip: null, boroughs: [] as string[], rest: typed.q } : placeIn(typed.q);
+    const state: FilterState = {
+      ...typed,
+      q: place.rest,
+      zip: typed.zip || place.zip || '',
+      borough: new Set([...typed.borough, ...place.boroughs]),
+    };
 
     // Text search narrows first, and also supplies the relevance order.
     let matched: Set<string> | null = null;
     let rank: Map<string, number> | null = null;
+    let strength: Map<string, number> | null = null;
     if (state.q) {
       await loadIndex();
       // People type whole situations -- "injured pigeon brooklyn" -- not
@@ -169,6 +183,11 @@ if (form && list) {
       const hits = runSearch(index!, state.q);
       matched = new Set(hits.map((h) => h.id));
       rank = new Map(hits.map((h, i) => [h.id, i]));
+      // Close matches and loose ones: with a place to sort by, distance orders
+      // within each, so "cat rescue 10026" does not open with the nearest
+      // rabbit rescue just because it is close.
+      const top = hits[0]?.score ?? 0;
+      strength = new Map(hits.map((h) => [h.id, h.score >= top * 0.4 ? 0 : 1]));
       // A query that matches nothing fuzzily still deserves a substring pass,
       // so "bluepearl" finds "BluePearl" and a partial zip still works.
       if (matched.size === 0) {
@@ -217,6 +236,7 @@ if (form && list) {
     // "nearest to zip" box). Showing the whole borough is only useful if what
     // is around the corner comes first.
     filterZipOrigin = null;
+    lastZip = state.zip;
     if (!origin && /^\d{5}$/.test(state.zip)) {
       const c = (await centres())[state.zip];
       if (c) filterZipOrigin = { lat: c[0], lon: c[1] };
@@ -228,7 +248,7 @@ if (form && list) {
         const k = rankKey({ needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin: from, now, emergency });
         // Search wording only breaks ties: the query has already narrowed the
         // list, and among what is left, open, near and well evidenced matter.
-        return [...k, rank?.get(id) ?? 0, m.order];
+        return [strength?.get(id) ?? 0, ...k, rank?.get(id) ?? 0, m.order];
       };
       const keys = new Map(visible.map(({ id, m }) => [id, keyOf(id, m)]));
       visible.sort((a, b) => compareKeys(keys.get(a.id)!, keys.get(b.id)!));
@@ -299,7 +319,7 @@ if (form && list) {
             : `${shown} of ${meta.size} resources match`;
     }
     if (emptyState) emptyState.hidden = shown !== 0;
-    if (updateUrl) writeUrl(state);
+    if (updateUrl) writeUrl({ ...state, q: searchInput?.value.trim() ?? state.q, zip: (form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim() ?? '', borough: new Set(new FormData(form!).getAll('borough') as string[]) });
   }
 
   // JS takes over submission; without it the form still works as a GET.
@@ -359,6 +379,8 @@ if (form && list) {
   let zipCentres: Record<string, [number, number]> | null = null;
   let originFromZip = false;
   let filterZipOrigin: Origin | null = null;
+  /** The zip in force for this run, from the filter panel or the search box. */
+  let lastZip = '';
   async function centres(): Promise<Record<string, [number, number]>> {
     if (!zipCentres) {
       try {
@@ -376,7 +398,7 @@ if (form && list) {
 
   function describeOrder(emergency: boolean): void {
     if (!orderLabel) return;
-    const typedZip = (form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim();
+    const typedZip = lastZip;
     const where = origin
       ? originFromZip && nearZip ? `nearest to ${nearZip.value.trim()}` : 'nearest to you'
       : `nearest to ${typedZip}`;
