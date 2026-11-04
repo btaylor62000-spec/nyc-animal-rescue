@@ -3689,6 +3689,23 @@
       "matched": "TNR"
     }
   ],
+  "happy-tails-veterinary-practice": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "clinic",
+      "field": "notes",
+      "matched": "Clinic"
+    }
+  ],
   "hard-hat-cats": [
     {
       "tag": "cat",

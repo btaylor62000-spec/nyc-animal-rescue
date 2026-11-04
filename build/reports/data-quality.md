@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **387** organizations after de-duplication
+- **388** organizations after de-duplication
 - **77** duplicate clusters merged
 - **22** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 281 |
-| dog | 217 |
+| cat | 282 |
+| dog | 218 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -74,7 +74,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 255 |
+| brooklyn | 256 |
 | queens | 213 |
 | manhattan | 211 |
 | bronx | 185 |
@@ -84,7 +84,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 180 |
+| High | 181 |
 | Medium | 163 |
 | Low | 44 |
 
@@ -92,7 +92,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 373 |
+| active | 374 |
 | verify | 7 |
 | hiatus | 3 |
 | retired | 3 |
@@ -270,7 +270,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (31)
+### Rows the rules could not fully tag (32)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -303,6 +303,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
 - **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:83)
 - **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:89)
+- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:91)
 
 ## Privacy
 

@@ -151,6 +151,12 @@
    "lon": -74.16426,
    "matched": "3135 VICTORY BLVD, STATEN ISLAND, NY, 10314"
   },
+  "happy-tails-veterinary-practice": {
+   "query": "3121 Quentin Rd, Brooklyn, NY 11234",
+   "lat": 40.61248,
+   "lon": -73.94027,
+   "matched": "3121 QUENTIN RD, BROOKLYN, NY, 11234"
+  },
   "holy-apostles-soup-kitchen-pantry": {
    "query": "296 Ninth Ave., New York, NY 10001",
    "lat": 40.74939,
