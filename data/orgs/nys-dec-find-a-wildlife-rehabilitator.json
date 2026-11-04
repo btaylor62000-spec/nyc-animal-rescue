@@ -55,15 +55,25 @@
   "source_urls": [
     "https://dec.ny.gov/nature/wildlife-health/rehabilitators"
   ],
-  "last_verified": "2026-08-29",
+  "last_verified": "2026-11-04",
   "section": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed rehabbers may handle wild animals)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-29",
+      "to": "2026-11-04",
+      "evidence_url": "https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: the site is live and works as listed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

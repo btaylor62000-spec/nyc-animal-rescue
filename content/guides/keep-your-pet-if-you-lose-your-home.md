@@ -44,6 +44,9 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 - BARC (Brooklyn Animal Resource Coalition) - 718-486-7489 - on the city's list of shelters with surrender-prevention help.
 - North Shore Animal League America - 516-883-7900 - on the city's list of shelters with surrender-prevention help; it is on Long Island.
 - PAWS NY - (212) 203-4760 - referrals@pawsny.org - helps older people and people living with illness or disability care for their pets at home.
+- Helping Pets and People in Crisis (Mayor's Alliance) - (212) 252-2350 - boarding for the pets of New Yorkers in a crisis, including losing their home.
+- Breaking Ground - (800) 324-7055 - https://www.breakingground.org - runs shelter for people who are homeless where pets and people can stay together; ask whether a place is open.
+- Every place that can keep a pet safe, searchable by zip code, from the Animal Welfare Institute: https://www.safehavensforpets.org
 - Before you hand your pet to anyone, ask how long they will keep it, what happens if you cannot take it back in time, and whether you could lose ownership. Get the answers in writing.
 
 ## IF YOU ARE LEAVING ABUSE
@@ -51,3 +54,5 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 - More shelters can take your pet with you. In December 2025, 17 of the city's 54 domestic violence shelters accepted pets.
 - NYC 24-hour Domestic Violence Hotline - (800) 621-4673 - say that you need to leave safely with a pet.
 - URI PALS - (646) 588-0030 - https://urinyc.org/uripals - a New York City shelter programme that houses survivors together with their pets.
+- Safe Horizon - (212) 577-7700 - https://www.safehorizon.org - works with animal shelters, foster homes and boarding to keep a survivor's pet safe; ask when you call.
+- Volunteers of America-Greater New York - (855) 643-7473 - https://www.voa-gny.org - domestic violence shelters where pets and people stay together.

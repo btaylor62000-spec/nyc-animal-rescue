@@ -4,10 +4,10 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **404** organizations after de-duplication
-- **77** duplicate clusters merged
+- **408** organizations after de-duplication
+- **78** duplicate clusters merged
 - **23** guide pages generated
-- **24** entries flagged as not currently active
+- **21** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -17,34 +17,34 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 299 |
-| dog | 235 |
-| wildlife | 45 |
-| rabbit | 37 |
-| bird-companion | 33 |
-| reptile | 32 |
-| farm | 30 |
-| small-mammal | 30 |
-| bird-wild | 21 |
-| amphibian | 14 |
-| fish | 14 |
-| equine | 12 |
-| pigeon | 11 |
-| invertebrate | 11 |
-| marine | 10 |
+| cat | 303 |
+| dog | 239 |
+| wildlife | 46 |
+| rabbit | 38 |
+| bird-companion | 34 |
+| reptile | 33 |
+| farm | 31 |
+| small-mammal | 31 |
+| bird-wild | 22 |
+| amphibian | 15 |
+| fish | 15 |
+| equine | 13 |
+| pigeon | 12 |
+| invertebrate | 12 |
+| marine | 11 |
 
 ### By need
 
 | Need | Organizations |
 | --- | ---: |
 | adoption | 164 |
-| foster | 97 |
+| foster | 98 |
 | tnr | 94 |
+| owner-support | 73 |
 | spay-neuter | 73 |
-| owner-support | 69 |
-| surrender | 63 |
+| surrender | 61 |
 | low-cost-vet | 57 |
-| referral | 48 |
+| referral | 52 |
 | emergency-vet | 45 |
 | food-assistance | 34 |
 | colony-care | 33 |
@@ -55,10 +55,10 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | education | 23 |
 | legal | 20 |
 | lost-found | 18 |
+| boarding | 18 |
 | senior | 18 |
 | sanctuary | 17 |
 | behavior-training | 16 |
-| boarding | 14 |
 | microchip | 13 |
 | transport | 13 |
 | breed-specific | 11 |
@@ -74,29 +74,29 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 258 |
-| queens | 217 |
-| manhattan | 212 |
-| bronx | 188 |
-| staten-island | 187 |
+| brooklyn | 262 |
+| queens | 221 |
+| manhattan | 216 |
+| bronx | 192 |
+| staten-island | 191 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 205 |
-| Medium | 141 |
-| Low | 58 |
+| High | 207 |
+| Medium | 146 |
+| Low | 55 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 380 |
-| verify | 13 |
-| retired | 8 |
+| active | 387 |
+| retired | 9 |
+| verify | 8 |
 | hiatus | 2 |
-| relocated | 1 |
+| relocated | 2 |
 
 ## Gaps in coverage
 
@@ -114,14 +114,13 @@ These have neither phone, email, website, intake form nor a social channel. They
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
-### Reachable only through social media (22)
+### Reachable only through social media (21)
 
 The weekly automated check cannot verify these, because Instagram and Facebook cannot be reliably scraped. They stay at Low confidence and carry a "verify via their social channel" note.
 
 - **800 Kitties Rescue** — instagram 800kittiesrescue
 - **A Tail of Two Kitties** — instagram atailoftwokittiesnyc
 - **Barbey Street Cats** — instagram barbeystreetcats
-- **Bay Ridge Kittens** — instagram bayridgekittens, facebook bayridgekittens
 - **Bed Stuy Kitty Crew** — instagram bedstuykittycrew13
 - **Bedford Corners Community Cats (BC3)** — instagram bc3cats, facebook BC3cats
 - **Boomers Feline Friends** — instagram boomers_feline_friends
@@ -145,13 +144,12 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (21)
+### Never verified (16)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
-- **ACC Pet Food Pantry** — `verify`: ACC's own Community Resources page no longer mentions a pet food pantry. Email CommunityPets@nycacc.org to ask before travelling; the city's 22 pet food pantries are listed separately.
 - **Animal Relief Fund (ARF!)** — `verify`: Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
 - **Cats In The Cradle Rescue (CITCR)** — `verify`: We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.
@@ -164,21 +162,19 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - **MeowRoof** — `retired`: No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.
 - **Muffin's Pet Connection - MAMA Program** — `retired`: This programme's website now belongs to an unrelated business, and nothing shows the coupon still runs. For low-cost spay/neuter, see the guide Low-cost clinics and trap banks.
 - **New Beginning Animal Rescue (NBAR)** — `retired`: Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.
-- **NYC Fish Rescue** — `verify`: It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.
 - **Paws of Hope NYC** — `verify`: Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.
 - **P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)** — `verify`: We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.
-- **Safe Place for Pets (RedRover)** — `verify`: Its searchable directory site (safeplaceforpets.org) now just opens RedRover's home page, and the directory could not be found. RedRover's domestic-violence page offers Safe Escape grants for survivors' pets; the NYC Domestic Violence Hotline and URI PALS are the local routes.
+- **Safe Place for Pets (RedRover)** — `retired`: This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home.
 - **SICAW Certificate Program** — `retired`: SICAW no longer offers spay/neuter certificates on its website. For low-cost spay/neuter on Staten Island, search the directory for "spay neuter Staten Island".
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
-- **The Poor Animals of St. Francis, Inc.** — `verify`: Source flags this entry as needing confirmation before you rely on it.
-- **Thundercats TNR** — `verify`: Source flags this entry as needing confirmation before you rely on it.
+- **Thundercats TNR** — `relocated`: Moved to Portland, Oregon, in 2016; it no longer works in New York City.
 - **Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]** — `hiatus`: Not taking animals. Its own site says: "WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time, and this is only an informational website. If you find an animal in distress, please take it to your borough’s ACC location immediately." Its pages of advice by species are still useful.
 - **VERG North (Veterinary Emergency & Referral Group)** — `retired`: Moved. VERG now runs a single Brooklyn hospital, at 196 4th Ave, Brooklyn 11217 — same phone number, (718) 522-9400. It is listed as VERG (Veterinary Emergency & Referral Group).
 - **VERG South** — `retired`: Closed. VERG’s own site no longer lists this location, and the 2220 Flatbush Ave listing is marked closed. For a Brooklyn emergency, use VERG at 196 4th Ave or VEG Ralph Ave.
 
 ## De-duplication
 
-### Merged (77)
+### Merged (78)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -212,6 +208,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `the-good-life-dog-rescue` ← 2 records
 - `pluto-rescue-of-richmond-county` ← 2 records
 - `bully-baby-rescue` ← 2 records
+- `volunteers-of-america-greater-new-york` ← 2 records
 - `uri-pals` ← 3 records
 - `aspca-animal-poison-control-center-24-7-hotline` ← 4 records
 - `pet-poison-helpline-24-7-hotline` ← 3 records
@@ -279,7 +276,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (33)
+### Rows the rules could not fully tag (34)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -314,6 +311,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:92)
 - **Vet-I-Care** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:93)
 - **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:95)
+- **Helping Pets and People in Crisis (Mayor's Alliance)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:110)
 
 ## Privacy
 
@@ -334,9 +332,9 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 15287 |
 | Pets in a disaster or evacuation | 3404 |
-| Keeping your pet if you are losing your home | 5551 |
+| Keeping your pet if you are losing your home | 6336 |
 | Save a shelter animal from euthanasia: the NYC at-risk list | 8250 |
-| Reporting animal abuse or neglect | 5798 |
+| Reporting animal abuse or neglect | 6285 |
 | Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |
 | Community cats, colonies and starting TNR | 6916 |

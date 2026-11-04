@@ -39,8 +39,8 @@
   "notes": "Longtime Brooklyn TNR group, frequent Bushwick Street Cats / North Brooklyn Cats partner. Facebook-primary; confirm current activity + scope via DM. Intake: Via Facebook DM",
   "type_raw": "solo rescuer / TNR",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "status": "relocated",
+  "status_note": "Moved to Portland, Oregon, in 2016; it no longer works in New York City.",
   "source_urls": [
     "https://www.facebook.com/thundercatsTNR/"
   ],
@@ -50,9 +50,28 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "relocated",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its own page says: \"Thundercats TNR is a trap, neuter, and return project based in Portland, OR since 2016. We started in Bushwick, Brooklyn in 2012.\" It no longer works in New York."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Source flags this entry as needing confirmation before you rely on it.",
+      "to": "Moved to Portland, Oregon, in 2016; it no longer works in New York City.",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its own page says: \"Thundercats TNR is a trap, neuter, and return project based in Portland, OR since 2016. We started in Bushwick, Brooklyn in 2012.\" It no longer works in New York."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

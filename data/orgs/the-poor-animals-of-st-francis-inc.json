@@ -54,20 +54,48 @@
   "notes": "Bronx cat + dog rescue: permanent-home placement + helps feed colonies. Older-style operation (AOL email, Petfinder/FB presence, no standalone website) - Medium confidence, confirm current activity. Contacts consistent across listings. Intake: Email/call for adoption application Intake: adoptable pets on Petfinder Other channel: PO Box 701, Bronx 10465 Other channel: Petfinder NY587",
   "type_raw": "rescue+adoption / colony feeding",
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "Source flags this entry as needing confirmation before you rely on it.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Source flags this entry as needing confirmation before you rely on it.",
+      "to": null,
+      "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-26",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/new-york/the-poor-animals-of-st-francis-inc-ny587/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Petfinder page lists adoptable pets and recent adoptions; P.O. Box 701, Throggs Neck Station, Bronx 10465, 718-822-0043, petsofstfrancis@aol.com; adopt by emailing or ringing for an application."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -48,19 +48,19 @@
   "hours": null,
   "notes": "A 501(c)(3) wildlife rescue and rehabilitator run from a home in the Bronx, which is normal for this kind of operation, so there is no public street address. Found by a reviewer on 2026-09-21. Its only public channel is Facebook, which cannot be read automatically, so nobody here has confirmed the number: confirm before relying on it, and try the DEC directory or the city's wildlife hospital if it does not answer.",
   "type_raw": "Wildlife rescue and rehabilitation nonprofit (small mammals), home-based",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.facebook.com/islandwildlife"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "WILDLIFE REHABILITATION - in the city (home-based rehabber, small mammals)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -71,6 +71,24 @@
       "source": "manual",
       "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
       "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.facebook.com/islandwildlife/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives (914) 309-0279, and New York State lists Island Wildlife, Inc. (City Island, Bronx, filed 2018) as an active not-for-profit. The agent's home address is not published here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Low",
+      "to": "Medium",
+      "evidence_url": "https://www.facebook.com/islandwildlife/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page gives (914) 309-0279, and New York State lists Island Wildlife, Inc. (City Island, Bronx, filed 2018) as an active not-for-profit. The agent's home address is not published here."
     }
   ],
   "privacy_hold": false,

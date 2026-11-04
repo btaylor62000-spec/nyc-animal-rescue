@@ -1,0 +1,89 @@
+{
+  "id": "volunteers-of-america-greater-new-york",
+  "name": "Volunteers of America-Greater New York",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "owner-support",
+    "boarding",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs",
+  "zips": [
+    "10020"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "8556437473",
+      "display": "(855) 643-7473"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.voa-gny.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Domestic violence hotline (855) 643-7473. Listed in AWI's Safe Havens for Pets directory (last re-checked by AWI 2025-04-07) as housing pets and people together. Contacts as AWI's directory gives them, read 2026-11-04; not yet confirmed on the organization's own site.\n\n(855) 643-7473 - https://www.voa-gny.org - domestic violence shelters where pets and people stay together.",
+  "type_raw": "Domestic violence shelters where pets and people are housed together",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.safehavensforpets.org/"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx",
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "needs",
+      "from": null,
+      "to": "owner-support, boarding, referral",
+      "evidence_url": "https://www.safehavensforpets.org/",
+      "source": "manual",
+      "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

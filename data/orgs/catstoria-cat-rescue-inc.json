@@ -55,7 +55,7 @@
     "https://catstoria.com/",
     "https://www.petfinder.com/member/us/ny/astoria/catstoria-cat-rescue-ny1697/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "QUEENS (Queens-based / Queens-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -63,7 +63,17 @@
   "last_checked": "2026-11-04",
   "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-26",
+      "to": "2026-11-04",
+      "evidence_url": "https://catstoria.com/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its site is live and gives catstoriarescue@gmail.com; it runs Kitty Haven, a cat house for recovering and adoptable cats, and focuses on kittens, dumped house cats and sick or injured ferals."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

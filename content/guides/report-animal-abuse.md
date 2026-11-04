@@ -51,5 +51,8 @@ Animal abuse often occurs alongside domestic violence, child abuse and elder abu
 
 - NYC Domestic Violence Hotline - (800) 621-4673 - nyc.gov/content/endgbv/pages/hotlines - abuse of a person alongside a pet, safety planning, leaving safely. Also reachable as 800-621-HOPE. 24/7, confidential, multilingual. Takes anonymous calls.
 - URI PALS - (646) 588-0030 - urinyc.org/uripals - for a survivor who needs to leave but cannot abandon a pet. A New York City shelter programme that houses survivors together with their pets: dogs, cats and small animals.
+- Safe Horizon - (212) 577-7700 - https://www.safehorizon.org - works with animal shelters, foster homes and boarding to keep a survivor's pet safe while they leave.
+- Volunteers of America-Greater New York - (855) 643-7473 - https://www.voa-gny.org - domestic violence shelters where pets and people stay together.
+- Safe Havens for Pets (Animal Welfare Institute) - https://www.safehavensforpets.org - every place that keeps pets safe for people leaving abuse, searchable by zip code.
 - Suicide & Crisis Lifeline (988) - 988 - 988lifeline.org - if you or someone else needs mental health or crisis support. Free, confidential, multilingual, 24/7. New York City routes its mental health crisis line through 988. Takes anonymous calls.
 - ASPCA Animal Poison Control - (888) 426-4435 - aspca.org/pet-care/animal-poison-control - if an animal has been poisoned or exposed to a toxin. Staffed 24/7, 365 days a year.

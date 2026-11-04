@@ -31,7 +31,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Helps pay for urgent medical care for cats and dogs. Pays the vet or pharmacy directly, and asks for proof of income, such as a tax return, before approving.",
+  "notes": "Helps pay for urgent veterinary care for cats and dogs only, paying the vet or pharmacy directly. One pet per household; proof of income is needed. It does not pay for vaccinations, spay/neuter, cancer treatment (chemotherapy or radiation) or routine care. Start with the short pre-application on its Help My Pet page. A small charity in Bethlehem, Pennsylvania, so it cannot take every case.",
   "type_raw": "Fund for urgent vet care for dogs and cats",
   "confidence": "High",
   "status": "active",
@@ -39,15 +39,34 @@
   "source_urls": [
     "https://www.fortheloveofalex.org/help-my-pet"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "HELP PAYING VET BILLS - funds and lists from the Mayor's Alliance vet care page, checked 2026-11-03. Most have eligibility rules; read them before applying.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "Helps pay for urgent medical care for cats and dogs. Pays the vet or pharmacy directly, and asks for proof of income, such as a tax return, before approving.",
+      "to": "Helps pay for urgent veterinary care for cats and dogs only, paying the vet or pharmacy directly. One pet per household; proof of income is needed. It does not pay for vaccinations, spay/neuter, cancer treatment (chemotherapy or radiation) or routine care. Start with the short pre-application on its Help My Pet page. A small charity in Bethlehem, Pennsylvania, so it cannot take every case.",
+      "evidence_url": "https://www.fortheloveofalex.org/help-my-pet",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Help My Pet page is live (copyright 2026). It funds urgent care for cats and dogs only, pays the vet directly, one pet per household, after a pre-application; not vaccinations, spay/neuter, cancer treatment or routine care. P.O. Box 4457, Bethlehem, PA."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-03",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.fortheloveofalex.org/help-my-pet",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Help My Pet page is live (copyright 2026). It funds urgent care for cats and dogs only, pays the vet directly, one pet per household, after a pre-application; not vaccinations, spay/neuter, cancer treatment or routine care. P.O. Box 4457, Bethlehem, PA."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

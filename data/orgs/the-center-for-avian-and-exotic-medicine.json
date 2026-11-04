@@ -30,14 +30,8 @@
   "region_note": "Dedicated exotics day-practice (routine + sick visits, not 24/7):",
   "phones": [
     {
-      "value": "3322392408",
-      "display": "(332) 239-2408",
-      "label": "Number on its website"
-    },
-    {
       "value": "2125018750",
-      "display": "(212) 501-8750",
-      "label": "Long-standing number, in the research and every directory"
+      "display": "(212) 501-8750"
     }
   ],
   "emails": [],
@@ -56,7 +50,7 @@
   "hours": "Mon-Sun 9am-7pm",
   "notes": "562 Columbus Avenue, Manhattan, NY 10024 (212) 501-8750 - open 7 days 9am-7pm. NYC's only exclusively avian & exotic veterinary hospital (a calm, dog/cat-free environment). Treats birds, reptiles, amphibians, fish, small mammals, small ruminants, and wildlife-as-pets (e.g. squirrels, pigeons); offers TeleVet for established patients. The natural complement to AMC's ER for non-emergency exotic care. (On Columbus Ave, near the Wild Bird Fund.)\n\nThe Center for Avian & Exotic Medicine (562 Columbus Ave; (212) 501-8750) - not free, but the dedicated exotics day-practice; ask about payment plans + wellness packages to spread cost.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
@@ -68,7 +62,7 @@
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -79,6 +73,33 @@
       "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
       "source": "manual",
       "note": "Read in a browser on its own page (Thrive Pet Care): 562 Columbus Ave, New York 10024, Monday-Sunday 9:00am-7:00pm. The page shows (332) 239-2408, not the (212) 501-8750 in the research and in every directory. Both are published, the website's first, rather than guessing which one is answered; the 332 number may be a call-tracking line that forwards. Not a 24-hour hospital."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "3322392408, 2125018750",
+      "to": "2125018750",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-11-04",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: 562 Columbus Ave, (212) 501-8750, open Monday-Sunday 9am-7pm; birds, small mammals, reptiles, amphibians, fish, small ruminants and wildlife kept as pets. (332) 239-2408 is not on its page."
     }
   ],
   "privacy_hold": false,

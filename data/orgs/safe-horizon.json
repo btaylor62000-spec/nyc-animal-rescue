@@ -1,0 +1,66 @@
+{
+  "id": "safe-horizon",
+  "name": "Safe Horizon",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "hotline"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "foster",
+    "owner-support",
+    "boarding",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "All five boroughs",
+  "zips": [
+    "10007"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "2125777700",
+      "display": "(212) 577-7700"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.safehorizon.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Main line (212) 577-7700; its 24-hour domestic violence hotline is the city's, 1-800-621-4673. Listed in AWI's Safe Havens for Pets directory (last re-checked by AWI 2025-12-03) as partnering with animal shelters, foster programmes and boarding for survivors' pets. Ask about keeping your pet safe when you call. Contacts as AWI's directory gives them, read 2026-11-04; not yet confirmed on the organization's own site.",
+  "type_raw": "Domestic violence and crime victim services; partners with animal shelters, foster programmes and boarding so a pet is kept safe while its owner seeks safety",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.safehavensforpets.org/"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

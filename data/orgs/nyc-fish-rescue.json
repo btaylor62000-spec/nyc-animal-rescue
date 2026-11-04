@@ -25,7 +25,12 @@
   "neighborhoods": "New York City",
   "zips": [],
   "region_note": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "6462865594",
+      "display": "(646) 286-5594"
+    }
+  ],
   "emails": [],
   "website": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
   "intake_urls": [],
@@ -36,19 +41,19 @@
   "notes": "A NYC volunteer network (about 1,100+ followers) that re-homes fish that are unwanted or can no longer be cared for, and will pick up the fish and tank/equipment. Fills a category with essentially no formal rescue. NEVER flush or release aquarium fish (goldfish especially become invasive and harm waterways). Confirm current activity via the Facebook page; also try aquarium-society and hobbyist groups for species-specific rehoming. Phone: (via Facebook page) Email: (via Facebook Messenger) Intake: Message NYC Fish Rescue on Facebook to rehome fish you can no longer keep - they will come collect the fish and equipment Other channel: Facebook: NYC Fish Rescue",
   "type_raw": "Fish rehoming network (volunteer, Facebook-based)",
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/"
   ],
-  "last_verified": "2026-08-29",
+  "last_verified": "2026-11-04",
   "section": "FISH & AQUATIC (aquarium fish, goldfish, bettas; aquatic turtles are under reptiles)",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
   "check_status": "manual-only",
-  "consecutive_failures": 2,
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -58,6 +63,42 @@
       "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
       "source": "manual",
       "note": "Facebook sends a robot to its log-in page, so this cannot be read from here; a person checks it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "6462865594",
+      "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "verify",
+      "to": "active",
+      "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "It has only a Facebook page. Message it there before bringing fish, to check it is still taking them.",
+      "to": null,
+      "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": "2026-08-29",
+      "to": "2026-11-04",
+      "evidence_url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "source": "manual",
+      "note": "A reviewer opened it in a normal browser on 2026-11-04: its Facebook page posted a few weeks ago and gives (646) 286-5594: \"NYC Fish Rescue provides re-homing of fish that are unwanted or can longer be cared for. We come take the fish and equipment.\""
     }
   ],
   "privacy_hold": false,

@@ -1565,6 +1565,28 @@
       "matched": "solo rescuer"
     }
   ],
+  "breaking-ground": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "hotline",
+      "field": "notes",
+      "matched": "Hotline"
+    }
+  ],
   "bronx-community-cats": [
     {
       "tag": "cat",
@@ -3898,6 +3920,33 @@
       "tag": "clinic",
       "field": "type",
       "matched": "clinic"
+    }
+  ],
+  "helping-pets-and-people-in-crisis": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "owner-support",
+      "field": "type",
+      "matched": "Temporary boarding"
+    },
+    {
+      "tag": "boarding",
+      "field": "type",
+      "matched": "boarding"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
     }
   ],
   "home-to-home": [
@@ -7465,6 +7514,48 @@
       "matched": "Animal Hospital"
     }
   ],
+  "safe-horizon": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "owner-support",
+      "field": "type",
+      "matched": "Domestic violence"
+    },
+    {
+      "tag": "boarding",
+      "field": "type",
+      "matched": "boarding"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "hotline",
+      "field": "notes",
+      "matched": "hotline"
+    }
+  ],
   "saint-spiro-cat-rescue-inc": [
     {
       "tag": "cat",
@@ -9334,6 +9425,33 @@
       "tag": "wildlife",
       "field": "section",
       "matched": "WILDLIFE (rehabilitation, NOT adoption - only NYS-licensed r"
+    }
+  ],
+  "volunteers-of-america-greater-new-york": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "owner-support",
+      "field": "type",
+      "matched": "Domestic violence"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "hotline",
+      "field": "notes",
+      "matched": "hotline"
     }
   ],
   "waggytail-rescue": [
