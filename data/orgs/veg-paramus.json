@@ -1,0 +1,64 @@
+{
+  "id": "veg-paramus",
+  "name": "VEG Paramus (New Jersey)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "New Jersey - outside NYC",
+  "zips": [
+    "07652"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "5512581998",
+      "display": "(551) 258-1998"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-jersey/paramus",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.9473,
+    "lon": -74.0702,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "141 State Route 17",
+    "city": "Paramus",
+    "zip": "07652"
+  },
+  "hours": "Open 24/7",
+  "notes": "141 State Route 17, Paramus, NJ 07652. Open 24/7, walk in, no appointment. Outside the city, in New Jersey. Read on VEG's own page, 2026-11-04 (a reviewer found it on VEG's locations list).",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-jersey/paramus"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -43,13 +43,13 @@
   "source_urls": [
     "https://www.thehotline.org"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "DOMESTIC-VIOLENCE PET SUPPORT - national hotline and shelter finder, from the Mayor's Alliance domestic violence page",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

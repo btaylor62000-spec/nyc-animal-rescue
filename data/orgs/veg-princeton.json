@@ -1,0 +1,64 @@
+{
+  "id": "veg-princeton",
+  "name": "VEG Princeton (New Jersey)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "New Jersey - outside NYC",
+  "zips": [
+    "08540"
+  ],
+  "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "phones": [
+    {
+      "value": "6092572281",
+      "display": "(609) 257-2281"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/new-jersey/princeton",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.30932,
+    "lon": -74.66461,
+    "precision": "address"
+  },
+  "address": {
+    "street": "3512 Brunswick Pike",
+    "city": "Princeton",
+    "zip": "08540"
+  },
+  "hours": "Open 24/7",
+  "notes": "3512 Brunswick Pike, Princeton, NJ 08540. Open 24/7, walk in, no appointment. Outside the city, in New Jersey, about 50 miles from the city. Read on VEG's own page, 2026-11-04 (a reviewer found it on VEG's locations list).",
+  "type_raw": "Emergency vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/new-jersey/princeton"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

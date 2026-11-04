@@ -48,7 +48,7 @@
     },
     "aaha-universal-lookup": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -60,8 +60,28 @@
           "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: petmicrochiplookup.org forwards to AAHA's Pet Microchip Registry Lookup, which asks for the 9-, 10- or 15-digit chip number. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://petmicrochiplookup.org",
+          "to": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
         }
-      ]
+      ],
+      "website": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "confidence": "High"
     },
     "abandoned-angel-cocker-spaniel-rescue": {
       "last_checked": "2026-11-04",
@@ -975,7 +995,8 @@
           "from": "https://www.barcshelter.com",
           "to": null,
           "source": "manual",
-          "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer."
+          "note": "barcshelter.com has no DNS record any more; barcshelter.org resolves but redirected to a gambling site on 2026-11-03. Link removed so nobody is sent there. Reported by a reviewer.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -1032,14 +1053,93 @@
     },
     "best-friends-animal-society-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0,
-      "last_verified": "2026-09-22"
-    },
-    "best-friends-pet-adoption-center-nyc": {
-      "last_checked": "2026-11-04",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "9297773016",
+          "display": "(929) 777-3016"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "9292928300",
+          "to": "9297773016",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "adoptnyc@bestfriends.org",
+          "to": "contactnyc@bestfriends.org",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "address",
+          "from": null,
+          "to": "{\"street\": \"307 West Broadway\", \"city\": \"New York\", \"zip\": \"10013\"}",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Sun 11am-7pm",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "National no-kill org's NYC center; showcases adoptable cats from ACC + local rescues, runs spay/neuter + shelter-support programs. STATUS FLAG (2026): SoHo center CLOSED to public ~June 4-mid-Sept 2026 for Companion Animal Care Act renovations; most cats temporarily at 232 Varet St, Brooklyn 11206 (11am-7pm daily) + foster - confirm current location before visiting. Adoption partner, not a TNR field group. Intake: Cat/dog adoption survey on site Intake: showcases ACC + local-rescue cats Other channel: 307 W Broadway, NY 10013\n\nNYC center of the national 501(c)(3) Best Friends Animal Society, 307 W Broadway, SoHo 10013, open daily 11-7. Cats on-site daily; most DOGS are in foster homes, so CALL AHEAD to meet a specific dog. Works collaboratively with ACC + local rescues. Cannot take owner surrenders (unless previously adopted from them) but provides keep-your-pet resources + partner referrals. Also offers spay/neuter referrals + behavior guidance. Phone: (no public adoption phone; contact via site) Email: (via site contact form) Intake: open daily 11am-7pm",
+          "to": "The New York centre of the national no-kill charity Best Friends Animal Society: its Pet Adoption Center at 307 West Broadway, SoHo, open every day 11am-7pm. Cats are on site every day; most dogs live in foster homes, so ring ahead to meet a particular dog. Works with ACC and local rescues, and runs spay/neuter and shelter-support programmes. It does not take owner surrenders unless the animal was adopted from Best Friends.",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Best Friends has one centre in New York: the Pet Adoption Center, 307 West Broadway, New York, NY 10013, (929) 777-3016, contactnyc@bestfriends.org, open Sunday-Saturday 11am-7pm. (929) 292-8300 and adoptnyc@bestfriends.org are no longer on its page; the renovation closure in the old notes ended in September."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "needs",
+          "from": "includes surrender",
+          "to": "surrender removed",
+          "evidence_url": "https://bestfriends.org/new-york-city",
+          "source": "manual",
+          "note": "It does not take owner surrenders unless the animal was adopted from Best Friends, so it should not appear under surrender."
+        }
+      ],
+      "emails": [
+        {
+          "value": "contactnyc@bestfriends.org"
+        }
+      ],
+      "address": {
+        "street": "307 West Broadway",
+        "city": "New York",
+        "zip": "10013"
+      },
+      "hours": "Mon-Sun 11am-7pm",
+      "website": "https://bestfriends.org/new-york-city",
+      "notes": "The New York centre of the national no-kill charity Best Friends Animal Society: its Pet Adoption Center at 307 West Broadway, SoHo, open every day 11am-7pm. Cats are on site every day; most dogs live in foster homes, so ring ahead to meet a particular dog. Works with ACC and local rescues, and runs spay/neuter and shelter-support programmes. It does not take owner surrenders unless the animal was adopted from Best Friends.",
+      "confidence": "High",
+      "needs": [
+        "adoption",
+        "foster",
+        "tnr",
+        "spay-neuter",
+        "behavior-training",
+        "referral"
+      ]
     },
     "best-friends-spay-neuter-resource-map": {
       "last_checked": "2026-11-04",
@@ -1236,7 +1336,7 @@
     },
     "brooklyn-animal-action": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "needs": [
         "adoption",
@@ -1256,6 +1356,27 @@
           "evidence_url": "https://brooklynanimalaction.org/faq/rehoming-animals/",
           "source": "manual",
           "note": "Its own rehoming page says it is \"not a shelter and do[es] not have a physical location\" and sends owners to rehome pets themselves. The surrender tag came from the word \"rehoming\" in its description. Reviewer noted the same."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": "https://brooklynanimalaction.org/contact/",
+          "to": "https://brooklynanimalaction.org/contact/, https://brooklynanimalaction.org/contact/",
+          "evidence_url": "https://brooklynanimalaction.org/contact/",
+          "source": "manual",
+          "note": "Contact form added from its contact page."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High",
+      "intake_urls": [
+        {
+          "url": "https://brooklynanimalaction.org/contact/",
+          "label": "contact form"
+        },
+        {
+          "url": "https://brooklynanimalaction.org/contact/",
+          "label": "Contact form"
         }
       ]
     },
@@ -1407,11 +1528,11 @@
     },
     "cats-in-the-cradle-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Low",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1446,11 +1567,57 @@
           "evidence_url": "https://www.catsinthecradlerescuenyc.org",
           "source": "manual",
           "note": "catsinthecradlerescuenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9175026543",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "Cats in the Cradle Rescue NYC",
+          "to": "https://www.instagram.com/catsinthecradlenyc/, https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
+          "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
         }
       ],
       "website": null,
       "source_urls": [
         "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
+      ],
+      "phones": [
+        {
+          "value": "9175026543",
+          "display": "(917) 502-6543",
+          "label": "From its Facebook page"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "catsinthecradlenyc",
+          "url": "https://www.instagram.com/catsinthecradlenyc/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "Cats-in-the-Cradle-Rescue-NYC",
+          "url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/"
+        }
       ]
     },
     "cats-n-queens": {
@@ -1459,11 +1626,11 @@
     },
     "cats-of-meow-york": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1507,13 +1674,76 @@
           "evidence_url": "https://www.catsofmeowyork.org",
           "source": "manual",
           "note": "catsofmeowyork.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://linktr.ee/catsofmeowyork",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://form.jotform.com/210068411079046, https://form.jotform.com/211150793502144",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/catsofmeowyork",
+          "to": "https://www.instagram.com/catsofmeowyork/, https://www.tiktok.com/@catsofmeowyorkrescue, https://www.facebook.com/catsofmewyork/",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
         }
       ],
-      "website": null,
+      "website": "https://linktr.ee/catsofmeowyork",
       "source_urls": [
         "https://www.orgcouncil.com/ein/881221020"
       ],
-      "emails": []
+      "emails": [],
+      "intake_urls": [
+        {
+          "url": "https://form.jotform.com/210068411079046",
+          "label": "Adoption application"
+        },
+        {
+          "url": "https://form.jotform.com/211150793502144",
+          "label": "Foster application"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "catsofmeowyork",
+          "url": "https://www.instagram.com/catsofmeowyork/"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "catsofmeowyorkrescue",
+          "url": "https://www.tiktok.com/@catsofmeowyorkrescue"
+        },
+        {
+          "platform": "facebook",
+          "handle": "catsofmewyork",
+          "url": "https://www.facebook.com/catsofmewyork/"
+        }
+      ]
     },
     "catskill-animal-sanctuary": {
       "last_checked": "2026-11-04",
@@ -1534,11 +1764,11 @@
     },
     "city-pitties": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Low",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1582,11 +1812,55 @@
           "evidence_url": "https://www.citypitties.org",
           "source": "manual",
           "note": "citypitties.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "citypitties@yahoo.com",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/citypitties, https://facebook.com/citypitties",
+          "to": "https://www.instagram.com/city_pitties/, https://facebook.com/citypitties",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+          "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
         }
       ],
       "website": null,
       "intake_urls": [],
-      "source_urls": []
+      "source_urls": [],
+      "emails": [
+        {
+          "value": "citypitties@yahoo.com"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "city_pitties",
+          "url": "https://www.instagram.com/city_pitties/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "citypitties",
+          "url": "https://facebook.com/citypitties"
+        }
+      ]
     },
     "community-help-in-park-slope": {
       "check_status": "ok",
@@ -1609,7 +1883,7 @@
       "last_checked": "2026-11-04",
       "check_status": "ok",
       "website": "https://completecarevets.com",
-      "hours": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+      "hours": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1626,12 +1900,32 @@
           "from": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
           "to": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
           "source": "manual",
-          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+          "to": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+          "to": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
         }
       ],
-      "notes": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+      "notes": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "condition-specific": {
       "last_checked": "2026-11-04",
@@ -1710,7 +2004,7 @@
     },
     "elmhurst-animal-emergency-hospital": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "needs-review",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
       ],
@@ -1731,10 +2025,33 @@
           "from": "87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.\n\n87-06 Queens Blvd (btwn 55th Ave/55th Rd), Elmhurst/Rego Park 11373. (718) 426-4444. Open 24h.",
           "to": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
           "source": "manual",
-          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+          "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "active",
+          "to": "retired",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": null,
+          "to": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
         }
       ],
-      "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going."
+      "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
+      "status": "retired",
+      "status_note": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0
     },
     "empty-cages-collective": {
       "last_checked": "2026-11-04",
@@ -1767,10 +2084,10 @@
     },
     "feather-friends-parrot-adoption-services": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
-      "website": null,
-      "status_note": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "website": "https://nycparrot.wordpress.com/",
+      "status_note": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1778,7 +2095,42 @@
           "from": "http://www.nycparrot.com",
           "to": null,
           "source": "manual",
-          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+          "note": "The link check found the domain nycparrot.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://nycparrot.wordpress.com/",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9178655042",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website (nycparrot.com) no longer exists. The email may still reach it; confirm it is still running before relying on it.",
+          "to": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
+          "evidence_url": "https://nycparrot.wordpress.com/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "9178655042",
+          "display": "(917) 865-5042",
+          "label": "From parrot rescue directories"
         }
       ]
     },
@@ -1842,7 +2194,7 @@
     },
     "fifth-avenue-veterinary-hospital": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "ok",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
       ],
@@ -1855,8 +2207,31 @@
           "evidence_url": "https://www.animalalliancenyc.org/need-help/emergencyvets/",
           "source": "manual",
           "note": "Checked 2026-11-04. It has no working website (fifthavenueveterinaryhospital.com does not answer). The Mayor's Alliance lists \"Open 24 hours, 9102 5th Avenue, Brooklyn, NY 11209, (718) 748-1066\", which matches the record. Left at Medium: that is a reliable list, not the hospital's own page. A person should ring it to confirm."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "24 hours",
+          "to": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "9102 5th Ave (Bay Ridge) 11209 - (718) 748-1066 - 24 hours.\n\n9102 5th Ave, Brooklyn 11209. (718) 748-1066. Open 24h.",
+          "to": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Hours given: Mon, Tue, Fri 10-7; Wed-Thu 3-7; Sat 10-4. Not open 24 hours, as the research had said."
         }
-      ]
+      ],
+      "hours": "Mon-Tue 10am-7pm, Wed-Thu 3pm-7pm, Fri 10am-7pm, Sat 10am-4pm",
+      "notes": "A Bay Ridge, Brooklyn veterinary hospital at 9102 5th Ave, (718) 748-1066. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital.",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "Medium"
     },
     "first-united-methodist-church-of-jamaica": {
       "last_checked": "2026-11-04",
@@ -1963,7 +2338,7 @@
     },
     "friends-of-animals": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -1975,16 +2350,88 @@
           "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Its certificate page: \"call 1-800-321-PETS (7387) M-F, 9-5 EST\". Same number as stored."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "spayprogram@friendsofanimals.org",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its spay/neuter certificate page (read 2026-11-04) says to call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, or email spayprogram@friendsofanimals.org. Its office is in Darien, Connecticut: (203) 656-1522."
         }
       ],
       "source_urls": [
         "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/"
-      ]
+      ],
+      "emails": [
+        {
+          "value": "spayprogram@friendsofanimals.org"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "label": "Order a spay/neuter certificate"
+        }
+      ],
+      "confidence": "High"
     },
     "friends-of-animals-spay-neuter-certificates": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "spayprogram@friendsofanimals.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "spayprogram@friendsofanimals.org",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "evidence_url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its certificate page (read 2026-11-04): certificates ordered online are posted the next business day; or call 1-800-321-PETS (7387), Monday-Friday 9-5 Eastern, to have an application mailed; questions to spayprogram@friendsofanimals.org."
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://friendsofanimals.org/get-a-certificate-spay-neuter-certificate/",
+          "label": "Order a spay/neuter certificate"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "friends-of-the-feathered-and-furry-wildlife-center": {
       "last_checked": "2026-11-04",
@@ -2148,8 +2595,26 @@
     },
     "hearts-and-bones-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "info@heartsandbonesrescue.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "info@heartsandbonesrescue.com",
+          "to": "info@heartsandbonesrescue.org",
+          "evidence_url": "https://heartsandbonesrescue.org/contact-us",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its contact page says: \"Reach out to us at info@heartsandbonesrescue.org\" (.org, not .com)."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "heidi-wrangles-cats": {
       "last_checked": "2026-11-04",
@@ -2238,15 +2703,9 @@
     },
     "hsus-dogfighting-tip-line": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "phones": [
-        {
-          "value": "8778474787",
-          "display": "(877) 847-4787",
-          "label": "Old line, not on its current materials - email first"
-        }
-      ],
+      "phones": [],
       "last_verified": "2026-11-04",
       "source_urls": [
         "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
@@ -2261,8 +2720,69 @@
           "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
           "source": "manual",
           "note": "The HSUS is now Humane World for Animals. Its 2025 reward poster: \"will pay you up to $5,000 for information leading to the arrest and conviction of a dogfighter or cockfighter. Email tips to animalfighting@humaneworld.org. Your identity will be protected.\" No phone number on it or on its animal fighting page. The email is added in the abuse workbook; the old 877-TIP-HSUS number is kept but labelled, and a person should ring it to see whether it is still answered."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "8778474787",
+          "to": null,
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "animalfighting@humaneworld.org",
+          "to": "animalfighting@hsus.org, animalfighting@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "animalfighting@humaneworld.org - https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting - suspected organised dogfighting or cockfighting that is not in progress. The HSUS is now called Humane World for Animals, and its 2025 reward poster asks for tips by email; the old phone line, (877) 847-4787 (877-TIP-HSUS), is not on its current materials and may no longer be answered. Humane World offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting (its own page, read 2026-11-04). For fighting in progress call 911. Your identity is protected.",
+          "to": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
         }
-      ]
+      ],
+      "emails": [
+        {
+          "value": "animalfighting@hsus.org"
+        },
+        {
+          "value": "animalfighting@humaneworld.org"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "label": "Online report form"
+        }
+      ],
+      "notes": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+      "confidence": "High"
     },
     "humane-society-of-new-york": {
       "last_checked": "2026-11-04",
@@ -2350,7 +2870,8 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -2550,9 +3071,9 @@
     },
     "little-wanderers-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-11-04",
       "phones": [],
       "change_log": [
         {
@@ -2716,10 +3237,10 @@
     },
     "magnificat-cat-rescue-and-rehoming": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
-      "consecutive_failures": 2,
-      "website": null,
-      "status_note": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "website": "https://magnificat9.wixsite.com/magnificatrescue",
+      "status_note": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2727,7 +3248,40 @@
           "from": "http://www.magnificatrescue.webs.com",
           "to": null,
           "source": "manual",
-          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+          "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://magnificat9.wixsite.com/magnificatrescue",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "magnificatrescue2@gmail.com",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+          "to": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
+          "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+        }
+      ],
+      "emails": [
+        {
+          "value": "magnificatrescue2@gmail.com"
         }
       ]
     },
@@ -2801,10 +3355,10 @@
     "meowroof": {
       "last_checked": "2026-11-04",
       "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "retired",
+      "status_note": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2839,6 +3393,24 @@
           "evidence_url": "https://www.meowroof.org",
           "source": "manual",
           "note": "meowroof.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.",
+          "evidence_url": "https://apps.dos.ny.gov/publicInquiry/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. New York State's corporation register lists MEOWROOF, INC. (DOS ID 4974495, filed 2016-07-08, Staten Island) as inactive, and its website no longer exists."
         }
       ],
       "website": null,
@@ -3043,8 +3615,10 @@
     },
     "national-domestic-violence-hotline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "neighborhood-cats": {
       "last_checked": "2026-11-04",
@@ -3071,10 +3645,10 @@
     "new-beginning-animal-rescue": {
       "last_checked": "2026-11-04",
       "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "retired",
+      "status_note": "Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3118,6 +3692,24 @@
           "evidence_url": "https://www.nbanimalrescue.org",
           "source": "manual",
           "note": "nbanimalrescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "retired",
+          "evidence_url": "https://www.facebook.com/NBARthebronx/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Bronx location is closed. (A different group with a similar name, A New Beginning Animal Rescue on Long Island, nbrescue.org, is not this one.)"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.",
+          "evidence_url": "https://www.facebook.com/NBARthebronx/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Bronx location is closed. (A different group with a similar name, A New Beginning Animal Rescue on Long Island, nbrescue.org, is not this one.)"
         }
       ],
       "website": null,
@@ -3246,8 +3838,57 @@
     },
     "nyc-cat-coalition": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "9178616043",
+          "display": "(917) 861-6043"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": null,
+          "to": "9178616043",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "nycatcoal@yahoo.com",
+          "to": "nycatcoaladopt@yahoo.com",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/nycatcoalition",
+          "to": "https://www.facebook.com/NYCCatCoalition/",
+          "evidence_url": "https://www.nycatcoal.org/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+        }
+      ],
+      "emails": [
+        {
+          "value": "nycatcoaladopt@yahoo.com"
+        }
+      ],
+      "social": [
+        {
+          "platform": "facebook",
+          "handle": "NYCCatCoalition",
+          "url": "https://www.facebook.com/NYCCatCoalition/"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nyc-dohmh-low-cost-s-n-index": {
       "last_checked": "2026-11-04",
@@ -3267,7 +3908,7 @@
     },
     "nyc-domestic-violence-hotline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -3278,8 +3919,19 @@
           "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
           "source": "manual",
           "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. The city's page gives 1-800-621-HOPE (4673), the number listed. (212) 639-9675 on the same page is the number for 311 from outside the city."
         }
-      ]
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nyc-emergency-animal-rescue": {
       "last_checked": "2026-11-04",
@@ -3296,7 +3948,8 @@
           "from": "wildlife-rehab",
           "to": "referral, transport",
           "source": "manual",
-          "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically)."
+          "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically).",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -3492,7 +4145,7 @@
     },
     "nys-dec-region-2": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
         {
@@ -3510,7 +4163,9 @@
           "source": "manual",
           "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
         }
-      ]
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "nysave": {
       "last_checked": "2026-11-04",
@@ -3625,11 +4280,11 @@
     },
     "paws-of-hope-nyc": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status_note": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3664,11 +4319,43 @@
           "evidence_url": "https://pawsofhopenyc.org",
           "source": "manual",
           "note": "pawsofhopenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "pawsofhopenyc@gmail.com",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+          "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
         }
       ],
-      "website": null,
+      "website": "https://gissell182.wixsite.com/pawsofhopenyc",
       "source_urls": [
         "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
+      ],
+      "emails": [
+        {
+          "value": "pawsofhopenyc@gmail.com"
+        }
       ]
     },
     "paws-of-war": {
@@ -3714,8 +4401,22 @@
     },
     "petchester-veterinary": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "hours": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
+          "evidence_url": "https://www.petchesterveterinary.com/",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site: call or text 914-771-PETS (7387), petchestervets@gmail.com; Monday-Friday 8:30am-6pm, Saturday 8:30am-1pm, Sunday closed."
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "confidence": "High"
     },
     "petco-love-lost": {
       "last_checked": "2026-11-04",
@@ -3775,11 +4476,11 @@
     },
     "pluto-rescue-of-richmond-county": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "verify",
-      "status_note": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+      "status_note": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3814,6 +4515,15 @@
           "evidence_url": "https://www.plutorescue.com",
           "source": "manual",
           "note": "https://www.plutorescue.com now resolves to a domain-parking traffic service (pltraffic7.com, 162.4.84.215, checked through Google DNS 2026-11-04) and serves no site. Link removed so nobody is sent to whoever holds the domain now."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its old website address no longer belongs to it, so it is not linked. Confirm it is still running before relying on it.",
+          "to": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
+          "evidence_url": "https://www.facebook.com/groups/142243179210/about",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Older directories give (718) 227-0553 and PlutoRescue@aol.com; its Facebook group is the only current channel found, and activity could not be confirmed."
         }
       ],
       "website": null,
@@ -4027,7 +4737,8 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         }
       ]
     },
@@ -4097,7 +4808,8 @@
           "from": "petbereavement@savekitty.org",
           "to": "adoptions@savekittyfoundation.org; tnr@savekittyfoundation.org; petbereavement@savekitty.org",
           "source": "manual",
-          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement."
+          "note": "Role addresses supplied by a reviewer from Save Kitty's contact list; the bereavement address, the only one before, is kept and now labelled and listed last. Neither savekitty.org nor savekittyfoundation.org answered a check on 2026-11-04 (both domains exist), so these are not confirmed on the site here, and the entry keeps its \"confirm before relying on it\" status. The same list names individual volunteers with personal phone numbers and email addresses; those are not published, under the rule that individuals are listed only with their agreement.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -4214,11 +4926,11 @@
     },
     "second-chance-bird-and-reptile-rescue": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
+      "check_status": "ok",
+      "consecutive_failures": 0,
       "confidence": "Medium",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4253,10 +4965,58 @@
           "evidence_url": "https://secondchancebirdandreptilerescue.org",
           "source": "manual",
           "note": "secondchancebirdandreptilerescue.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.secondchancerescueroc.org/",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": null,
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "501(c)(3) exotic-bird and reptile rescue (33+ years experience) providing shelter, medical care and nutrition for surrendered/abandoned birds and reptiles; accepts surrenders and does adoptions; specializes in behavior. It is an approved ACC rescue partner, so it pulls at-risk birds/reptiles from NYC Animal Care Centers. REGIONAL - based in Rochester (about 5.5 hours from NYC); included for completeness because in-city companion-bird/reptile rescue is scarce, but it is a long-distance option, not a local NYC referral. Email: (via secondchancebirdandreptilerescue.org contact) Intake: //secondchancebirdandreptilerescue.org Intake: call (585) 370-7157",
+          "to": "A bird and reptile rescue in Rochester, New York, far from the city: 36 Normandale Dr, Rochester, (585) 370-7157. Its website says it is under construction and asks people to reach it on Facebook meanwhile.",
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "boroughs",
+          "from": "manhattan, brooklyn, queens, bronx, staten-island",
+          "to": null,
+          "evidence_url": "https://www.secondchancerescueroc.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, secondchancerescueroc.org (read 2026-11-04), calls it \"Rochester's Top Bird & Reptile Rescue\", is asking for fosters and shows new arrivals. It is in Rochester, far from the city."
         }
       ],
-      "website": null,
-      "source_urls": []
+      "website": "https://www.secondchancerescueroc.org/",
+      "source_urls": [],
+      "notes": "A bird and reptile rescue in Rochester, New York, far from the city: 36 Normandale Dr, Rochester, (585) 370-7157. Its website says it is under construction and asks people to reach it on Facebook meanwhile.",
+      "boroughs": [],
+      "last_verified": "2026-11-04"
     },
     "shelter-free-rescue-ny": {
       "last_checked": "2026-11-04",
@@ -4431,7 +5191,7 @@
     },
     "st-mina-animal-clinic": {
       "last_checked": "2026-11-04",
-      "check_status": "unchecked",
+      "check_status": "ok",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4439,9 +5199,42 @@
           "from": null,
           "to": "manual-only",
           "source": "manual",
-          "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+          "note": "Checked on 2026-11-04: No website of its own could be found; directories agree on 76-23 Jamaica Ave and (718) 296-0500. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://stminaveterinaryclinic.com/",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": null,
+          "to": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://stminaveterinaryclinic.com/",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. Still at 76-23 Jamaica Ave, Woodhaven, and sees feral cats. Its website (stminaveterinaryclinic.com, read the same day) gives the same address and (718) 296-0500. Hours as the reviewer read them."
         }
-      ]
+      ],
+      "website": "https://stminaveterinaryclinic.com/",
+      "hours": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
+      "last_verified": "2026-11-04",
+      "consecutive_failures": 0,
+      "confidence": "High"
     },
     "staten-island-bird-club": {
       "last_checked": "2026-11-04",
@@ -4551,7 +5344,7 @@
     },
     "suicide-and-crisis-lifeline": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
       "change_log": [
@@ -4563,8 +5356,18 @@
           "evidence_url": "https://988lifeline.org/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: The 988 Lifeline's site, text and chat now also in Spanish. Working."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://988lifeline.org",
+          "source": "manual",
+          "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site says to call or text 988. The (800) 273-8255 the checker found is the old number, which still connects to 988."
         }
-      ]
+      ],
+      "confidence": "High"
     },
     "sunset-park-cats": {
       "last_checked": "2026-11-04",
@@ -4747,9 +5550,9 @@
       "consecutive_failures": 0,
       "phones": [
         {
-          "value": "9164436007",
-          "display": "(916) 443-6007",
-          "label": "Not on its website, which asks people to email first"
+          "value": "9165030550",
+          "display": "(916) 503-0550",
+          "label": "Its site asks you to email first"
         }
       ],
       "last_verified": "2026-11-04",
@@ -4765,6 +5568,15 @@
           "evidence_url": "https://thepetfund.com/for-pet-owners",
           "source": "manual",
           "note": "Its page for pet owners: \"email us at info@thepetfund.com with a description of your animal's medical needs\". Email confirmed. The (916) 443-6007 number is not on any page of its site; kept, labelled, not deleted, for a person to ring."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "9164436007",
+          "to": "9165030550",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The old (916) 443-6007 line gives a new number, (916) 503-0550. Its website asks people to email first."
         }
       ]
     },
@@ -4780,11 +5592,11 @@
     },
     "the-toby-project": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
-      "confidence": "Low",
-      "status": "verify",
-      "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
+      "check_status": "manual-only",
+      "consecutive_failures": 0,
+      "confidence": "Medium",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4801,8 +5613,103 @@
           "to": "verify",
           "source": "weekly-check",
           "note": "Their website has been unreachable for 3 weekly checks running."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": "https://tobyproject.org",
+          "to": null,
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "This organization may no longer be active — their website has not responded for several weeks.",
+          "to": null,
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": null,
+          "to": "https://www.instagram.com/thetobyprojectnyc/, https://www.facebook.com/thetobyproject/",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/",
+          "source": "manual",
+          "note": "tobyproject.org has not loaded since October. Bideawee's NYC Feral Cat Initiative page, read 2026-11-04, still lists The Toby Project with (347) 816-2899 (Tue-Sat 1-7pm, for the Brooklyn clinic serving Manhattan, Brooklyn and Staten Island) and TobyProjectNYC@gmail.com (Bronx and Queens mobile clinic). A reviewer found Instagram @thetobyprojectnyc and its Facebook page."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://tobyproject.org",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": "tobyprojectnyc@gmail.com, petden19@verizon.net",
+          "to": "tobyprojectnyc@gmail.com, info@tobyproject.org",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "notes",
+          "from": "Free spay/neuter + eartip for community cats in all five boroughs (surgery free; donations requested). Contact the Brooklyn coordinator for BK colony projects. Verify current schedule. Intake: Call or email to schedule mobile spay/neuter\n\nFREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.\n\nNYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email tobyprojectnyc@gmail.com (Bronx & Queens mobile scheduling) or (212) 315-5251; https://www.tobyproject.org/services.",
+          "to": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open.",
+          "evidence_url": "https://tobyproject.org",
+          "source": "manual",
+          "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
         }
-      ]
+      ],
+      "website": "https://tobyproject.org",
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "thetobyprojectnyc",
+          "url": "https://www.instagram.com/thetobyprojectnyc/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "thetobyproject",
+          "url": "https://www.facebook.com/thetobyproject/"
+        }
+      ],
+      "last_verified": "2026-11-04",
+      "emails": [
+        {
+          "value": "tobyprojectnyc@gmail.com"
+        },
+        {
+          "value": "info@tobyproject.org"
+        }
+      ],
+      "notes": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open."
     },
     "the-toby-project-feral-spay-neuter-clinic": {
       "last_checked": "2026-11-04",
@@ -4932,7 +5839,7 @@
     "urgent-vets-11369": {
       "last_checked": "2026-11-04",
       "check_status": "ok",
-      "hours": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+      "hours": "Open 24 hours, 7 days a week",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4940,7 +5847,8 @@
           "from": null,
           "to": "Late hours, not 24/7 - call for hours",
           "source": "manual",
-          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed."
+          "note": "From the dog reference workbook: \"late urgent care, not 24h - call\". Its website did not load for a check on 2026-11-04, so the exact hours are not confirmed.",
+          "evidence_url": "phone call by a reviewer, 2026-11-04"
         },
         {
           "date": "2026-11-04",
@@ -4950,6 +5858,24 @@
           "evidence_url": "https://urgent-vets.com/urgent-vets-queens",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04. Its Queens page: \"OPEN 24 HOURS\", 32-33 Junction Boulevard, (718) 305-4791. Its home page lists (718) 568-6823 and (347) 370-3366 against Queens. The Mayor's Alliance lists (718) 507-5600 and Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Too much disagreement to pick one: the Queens page's number and the Mayor's Alliance's are both published, and the hours say they are not confirmed, so the listing never claims to be open now. Needs a phone call by a person."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "phones",
+          "from": "7183054791, 7185075600",
+          "to": "7185075600, 7183054791",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Not confirmed - its website says open 24 hours; the Mayor's Alliance lists Sun-Wed 12pm-10pm, Thu-Sat 10am-12am. Call before going",
+          "to": "Open 24 hours, 7 days a week",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. (718) 305-4791 forwards to the Queens hospital; (718) 507-5600 is the Queens hospital at 32-33 Junction Blvd, which says it is open 24 hours, 7 days a week."
         }
       ],
       "website": "https://urgent-vets.com/urgent-vets-queens",
@@ -4959,25 +5885,39 @@
       ],
       "phones": [
         {
-          "value": "7183054791",
-          "display": "(718) 305-4791",
-          "label": "On the Queens page of its website"
-        },
-        {
           "value": "7185075600",
           "display": "(718) 507-5600",
-          "label": "As listed by the Mayor's Alliance"
+          "label": "Queens hospital"
+        },
+        {
+          "value": "7183054791",
+          "display": "(718) 305-4791",
+          "label": "Also reaches the Queens hospital"
         }
       ],
       "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "confidence": "Medium"
     },
     "urgent-vets-bronx": {
       "last_checked": "2026-11-04",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04"
+      "last_verified": "2026-11-04",
+      "hours": "Mon-Sun 10am-10pm (not 24 hours)",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "hours",
+          "from": "Sun-Wed 12pm-10pm, Thu-Sat 10am-12am (NOT 24hr)",
+          "to": "Mon-Sun 10am-10pm (not 24 hours)",
+          "evidence_url": "phone call by a reviewer, 2026-11-04",
+          "source": "manual",
+          "note": "A reviewer rang on 2026-11-04. The Bronx hospital, 3800 E Tremont Ave, (347) 281-9700, is open 7 days, 10am-10pm, not 24 hours."
+        }
+      ],
+      "confidence": "Medium"
     },
     "uri-pals": {
       "last_checked": "2026-11-04",
@@ -5029,7 +5969,7 @@
     },
     "veg": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
+      "check_status": "ok",
       "confidence": "High",
       "last_verified": "2026-11-04",
       "website": "https://www.veg.com/locations/new-york/upper-east-side",
@@ -5049,24 +5989,57 @@
           "evidence_url": "https://www.veg.com/locations/new-york",
           "source": "manual",
           "note": "Read in a browser on VEG's New York locations page, as a reader sees it: \"OPEN 24/7 VEG Upper East Side, 1215 2nd Avenue, New York, NY 10065, (212) 223-3500\". Number and hours match; zip added."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (212) 223-3500, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "consecutive_failures": 0
     },
     "veg-chelsea": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (646) 582-8882, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
+        }
+      ]
     },
     "veg-new-dorp": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 0
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-04",
+      "change_log": [
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (718) 362-1390, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
+        }
+      ]
     },
     "veg-ralph-ave": {
       "last_checked": "2026-11-04",
-      "last_verified": "2026-09-21",
-      "check_status": "needs-review",
+      "last_verified": "2026-11-04",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
@@ -5097,6 +6070,15 @@
           "evidence_url": "https://www.veg.com/locations/new-york/ralph-ave-brooklyn",
           "source": "manual",
           "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (718) 677-6700, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "phones": [
@@ -5108,8 +6090,8 @@
     },
     "veg-williamsburg": {
       "last_checked": "2026-11-04",
-      "last_verified": "2026-09-21",
-      "check_status": "needs-review",
+      "last_verified": "2026-11-04",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
       "website": "https://www.veg.com/locations/new-york/williamsburg",
@@ -5140,6 +6122,15 @@
           "evidence_url": "https://www.veg.com/locations/new-york/williamsburg",
           "source": "manual",
           "note": "The weekly check replaced this with (201) 438-7122 and cited VEG's own location page as evidence. That number is not on that page. VEG renders its location numbers in the browser, so a plain HTTP fetch sees different content from a reader — the checker compared against markup nobody is shown, found the real number 'gone', and took the one number left in the static HTML, which belongs to another VEG hospital in New Jersey. Re-confirmed by loading the page as a reader."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-04",
+          "evidence_url": "https://www.veg.com/locations",
+          "source": "manual",
+          "note": "A reviewer read VEG's own New York locations page on 2026-11-04: same address, (917) 423-6444, open 24/7. The (201) 438-7122 the weekly check kept reporting is VEG Clifton's number, shown on every VEG page; it is now listed as its own hospital and ignored as a sibling's number."
         }
       ],
       "phones": [
@@ -5312,11 +6303,11 @@
     },
     "waldos-rescue-pen": {
       "last_checked": "2026-11-04",
-      "check_status": "needs-review",
-      "consecutive_failures": 3,
-      "confidence": "Low",
-      "status": "verify",
-      "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "confidence": "Medium",
+      "status": "active",
+      "status_note": null,
       "change_log": [
         {
           "date": "2026-11-04",
@@ -5351,9 +6342,81 @@
           "evidence_url": "https://www.waldosrescuepen.org",
           "source": "manual",
           "note": "waldosrescuepen.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "website",
+          "from": null,
+          "to": "https://www.waldosrescue.org/",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "emails",
+          "from": null,
+          "to": "info@waldosrescue.org",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "social",
+          "from": "https://instagram.com/waldosrescuepen, https://facebook.com/waldosrescuepen",
+          "to": "https://www.instagram.com/waldosrescue/, https://www.facebook.com/WaldosRescue/",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status",
+          "from": "verify",
+          "to": "active",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "status_note",
+          "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+          "to": null,
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
+        },
+        {
+          "date": "2026-11-04",
+          "field": "confidence",
+          "from": "Low",
+          "to": "Medium",
+          "evidence_url": "https://www.waldosrescue.org/",
+          "source": "manual",
+          "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its new site, waldosrescue.org (read 2026-11-04), is live, gives info@waldosrescue.org and lists \"URGENT: DOGS IN NEED\". Instagram and Facebook @waldosrescue."
         }
       ],
-      "website": null
+      "website": "https://www.waldosrescue.org/",
+      "emails": [
+        {
+          "value": "info@waldosrescue.org"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "waldosrescue",
+          "url": "https://www.instagram.com/waldosrescue/"
+        },
+        {
+          "platform": "facebook",
+          "handle": "WaldosRescue",
+          "url": "https://www.facebook.com/WaldosRescue/"
+        }
+      ],
+      "last_verified": "2026-11-04"
     },
     "washington-heights-cat-colony": {
       "last_checked": "2026-11-04",

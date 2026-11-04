@@ -29,14 +29,26 @@
     "11375"
   ],
   "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "9175026543",
+      "display": "(917) 502-6543",
+      "label": "From its Facebook page"
+    }
+  ],
   "emails": [],
   "website": null,
   "intake_urls": [],
   "social": [
     {
+      "platform": "instagram",
+      "handle": "catsinthecradlenyc",
+      "url": "https://www.instagram.com/catsinthecradlenyc/"
+    },
+    {
       "platform": "facebook",
-      "handle": "Cats in the Cradle Rescue NYC"
+      "handle": "Cats-in-the-Cradle-Rescue-NYC",
+      "url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/"
     }
   ],
   "geo": null,
@@ -46,7 +58,7 @@
   "type_raw": "rescue+adoption",
   "confidence": "Low",
   "status": "verify",
-  "status_note": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+  "status_note": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
   "source_urls": [
     "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
   ],
@@ -56,8 +68,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
-  "consecutive_failures": 3,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -92,6 +104,33 @@
       "evidence_url": "https://www.catsinthecradlerescuenyc.org",
       "source": "manual",
       "note": "catsinthecradlerescuenyc.org does not exist any more: Google's DNS answered NXDOMAIN on 2026-11-04, and the weekly check could not resolve it either. A lapsed domain can be bought by anyone, so the link is removed rather than left to point at whoever takes it."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "9175026543",
+      "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "Cats in the Cradle Rescue NYC",
+      "to": "https://www.instagram.com/catsinthecradlenyc/, https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+      "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website address no longer exists (checked 2026-11-04), so it is not linked. The group may have closed or moved; no new site has been found. Use the contacts below and confirm it is still running before relying on it.",
+      "to": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
+      "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
     }
   ],
   "privacy_hold": false,

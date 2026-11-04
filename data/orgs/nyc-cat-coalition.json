@@ -23,19 +23,24 @@
   "neighborhoods": "The Bronx & surrounding areas (into Westchester)",
   "zips": [],
   "region_note": "BRONX (Bronx-based / Bronx-serving cat groups)",
-  "phones": [],
+  "phones": [
+    {
+      "value": "9178616043",
+      "display": "(917) 861-6043"
+    }
+  ],
   "emails": [
     {
-      "value": "nycatcoal@yahoo.com"
+      "value": "nycatcoaladopt@yahoo.com"
     }
   ],
   "website": "https://www.nycatcoal.org",
   "intake_urls": [],
   "social": [
     {
-      "platform": "instagram",
-      "handle": "nycatcoalition",
-      "url": "https://instagram.com/nycatcoalition"
+      "platform": "facebook",
+      "handle": "NYCCatCoalition",
+      "url": "https://www.facebook.com/NYCCatCoalition/"
     }
   ],
   "geo": null,
@@ -50,15 +55,43 @@
     "https://www.adoptapet.com/shelter/107611-nyc-cat-coalition-bronx-new-york",
     "https://www.guidestar.org/profile/13-3144256"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-04",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": null,
+      "to": "9178616043",
+      "evidence_url": "https://www.nycatcoal.org/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "nycatcoal@yahoo.com",
+      "to": "nycatcoaladopt@yahoo.com",
+      "evidence_url": "https://www.nycatcoal.org/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "social",
+      "from": "https://instagram.com/nycatcoalition",
+      "to": "https://www.facebook.com/NYCCatCoalition/",
+      "evidence_url": "https://www.nycatcoal.org/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site gives P.O. Box 1324, Bronx, NY 10475, (917) 861-6043 and nycatcoalADOPT@yahoo.com, and holds adoption events at the Pelham Manor PetSmart."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

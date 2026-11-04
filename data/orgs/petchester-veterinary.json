@@ -45,7 +45,7 @@
     "city": "Eastchester",
     "zip": "10709"
   },
-  "hours": null,
+  "hours": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
   "notes": "309 White Plains Road, Eastchester, NY 10709. Call or text for an appointment. Listed by the Mayor's Alliance among the places to have a rabbit spayed or neutered.",
   "type_raw": "Vet practice; spays and neuters rabbits as well as dogs and cats",
   "confidence": "High",
@@ -54,15 +54,25 @@
   "source_urls": [
     "https://www.petchesterveterinary.com"
   ],
-  "last_verified": "2026-11-03",
+  "last_verified": "2026-11-04",
   "section": "LOW-COST SPAY/NEUTER - outside the city (Long Island, Westchester, the Hudson Valley and New Jersey). The Mayor's Alliance lists these because waits can be shorter than in the city. Checked on their own sites 2026-11-03.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": null,
+      "to": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
+      "evidence_url": "https://www.petchesterveterinary.com/",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site: call or text 914-771-PETS (7387), petchestervets@gmail.com; Monday-Friday 8:30am-6pm, Saturday 8:30am-1pm, Sunday closed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

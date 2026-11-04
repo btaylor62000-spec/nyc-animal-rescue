@@ -433,11 +433,41 @@
    "lon": -73.96228,
    "matched": "1215 2ND AVE, NEW YORK, NY, 10065"
   },
+  "veg-carle-place": {
+   "query": "204b Glen Cove Road, Carle Place, NY 11514",
+   "lat": 40.74775,
+   "lon": -73.61769,
+   "matched": "204B GLEN COVE RD, CARLE PLACE, NY, 11514"
+  },
   "veg-chelsea": {
    "query": "735 6th Avenue, New York, NY 10010",
    "lat": 40.74365,
    "lon": -73.99235,
    "matched": "735 6TH AVE, NEW YORK, NY, 10010"
+  },
+  "veg-clifton": {
+   "query": "790 New Jersey 3, Clifton, NJ 07012",
+   "lat": null,
+   "lon": null,
+   "matched": null
+  },
+  "veg-hoboken": {
+   "query": "1327 Willow Avenue, Hoboken, NJ 07030",
+   "lat": 40.75324,
+   "lon": -74.02979,
+   "matched": "1327 WILLOW AVE, HOBOKEN, NJ, 07030"
+  },
+  "veg-millburn": {
+   "query": "720 Morris Tpke, Short Hills, NJ 07078",
+   "lat": 40.71923,
+   "lon": -74.33005,
+   "matched": "720 MORRIS TPKE, SHORT HILLS, NJ, 07078"
+  },
+  "veg-nanuet": {
+   "query": "123 NY-59, Nanuet, NY 10954",
+   "lat": null,
+   "lon": null,
+   "matched": null
   },
   "veg-new-dorp": {
    "query": "2546 Hylan Blvd, Staten Island, NY 10306",
@@ -445,11 +475,29 @@
    "lon": -74.11063,
    "matched": "2546 HYLAN BLVD, STATEN ISLAND, NY, 10306"
   },
+  "veg-paramus": {
+   "query": "141 State Route 17, Paramus, NJ 07652",
+   "lat": null,
+   "lon": null,
+   "matched": null
+  },
+  "veg-princeton": {
+   "query": "3512 Brunswick Pike, Princeton, NJ 08540",
+   "lat": 40.30932,
+   "lon": -74.66461,
+   "matched": "3512 BRUNSWICK PIKE, PRINCETON, NJ, 08540"
+  },
   "veg-ralph-ave": {
    "query": "1950 Ralph Ave, Brooklyn, NY 11234",
    "lat": 40.62982,
    "lon": -73.91843,
    "matched": "1950 RALPH AVE, BROOKLYN, NY, 11234"
+  },
+  "veg-white-plains": {
+   "query": "201 Tarrytown Road, White Plains, NY 10607",
+   "lat": 41.03989,
+   "lon": -73.78449,
+   "matched": "201 TARRYTOWN RD, WHITE PLAINS, NY, 10607"
   },
   "veg-williamsburg": {
    "query": "87 Kent Ave, Brooklyn, NY 11249",

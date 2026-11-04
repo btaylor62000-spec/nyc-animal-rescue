@@ -43,8 +43,8 @@
     "street": "1293 Clove Rd",
     "zip": "10301"
   },
-  "hours": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
-  "notes": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+  "hours": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
+  "notes": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -75,7 +75,26 @@
       "from": "1293 Clove Rd 10301 - (718) 720-4211 - 24 hours.\n\n1293 Clove Road (btwn Glenwood/Dudley), Staten Island 10301. (718) 720-4211. Open 24h.",
       "to": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
       "source": "manual",
-      "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+      "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "hours",
+      "from": "Not confirmed - older listings say 24 hours, recent ones show daytime and evening hours only. Call before going",
+      "to": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "notes",
+      "from": "1293 Clove Road (between Glenwood and Dudley), Staten Island 10301. Older lists give it as open 24 hours, but recent listings show daytime and evening hours only and it could not be confirmed. Ring before going, and at night go to a hospital confirmed open 24/7, such as VEG New Dorp or Greater Staten Island Veterinary Services.",
+      "to": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. Hours given on the phone: Mon-Wed 8-6, Thu-Fri 8-8, Sat 8-2. Not open 24 hours."
     }
   ],
   "privacy_hold": false,

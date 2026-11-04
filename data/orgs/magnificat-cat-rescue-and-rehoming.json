@@ -28,8 +28,12 @@
   "zips": [],
   "region_note": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "phones": [],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "magnificatrescue2@gmail.com"
+    }
+  ],
+  "website": "https://magnificat9.wixsite.com/magnificatrescue",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -39,7 +43,7 @@
   "type_raw": "rescue+adoption / TNR (multi-borough)",
   "confidence": "Low",
   "status": "verify",
-  "status_note": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+  "status_note": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
   "source_urls": [
     "https://www.idealist.org/en/nonprofit/f2fd07127ed848c295d82543d726f704-magnificat-cat-rescue-and-rehoming-new-york-city"
   ],
@@ -49,8 +53,8 @@
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
-  "consecutive_failures": 2,
+  "check_status": "manual-only",
+  "consecutive_failures": 0,
   "change_log": [
     {
       "date": "2026-11-04",
@@ -58,7 +62,35 @@
       "from": "http://www.magnificatrescue.webs.com",
       "to": null,
       "source": "manual",
-      "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed."
+      "note": "The link check found the domain magnificatrescue.webs.com no longer exists (no DNS record, checked through Google public DNS on 2026-11-04). Link removed so nobody is sent to a dead or resold address. No replacement site was guessed.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "website",
+      "from": null,
+      "to": "https://magnificat9.wixsite.com/magnificatrescue",
+      "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": null,
+      "to": "magnificatrescue2@gmail.com",
+      "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": "Its website (magnificatrescue.webs.com) no longer exists and no other contact is known. It may no longer operate.",
+      "to": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
+      "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
+      "source": "manual",
+      "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
     }
   ],
   "privacy_hold": false,

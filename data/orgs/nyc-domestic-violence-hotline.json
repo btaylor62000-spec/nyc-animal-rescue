@@ -55,17 +55,17 @@
   "hours": "24/7",
   "notes": "(800) 621-4673 - nyc.gov/content/endgbv/pages/hotlines - abuse of a person alongside a pet, safety planning, leaving safely. Also reachable as 800-621-HOPE. 24/7, confidential, multilingual. Takes anonymous calls.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Report animal abuse — IF PEOPLE ARE AT RISK TOO",
   "source_files": [
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -76,6 +76,15 @@
       "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
       "source": "manual",
       "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://nyc.gov/content/endgbv/pages/hotlines",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. The city's page gives 1-800-621-HOPE (4673), the number listed. (212) 639-9675 on the same page is the number for 311 from outside the city."
     }
   ],
   "privacy_hold": false,

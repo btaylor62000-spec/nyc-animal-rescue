@@ -19,3 +19,5 @@
 /org/aspca-community-engagement/*  /guides/keeping-your-cat/ 301
 /org/mama-coupon    /guides/low-cost-clinics-and-trap-banks/ 301
 /org/mama-coupon/*  /guides/low-cost-clinics-and-trap-banks/ 301
+/org/best-friends-pet-adoption-center-nyc    /org/best-friends-animal-society-nyc/ 301
+/org/best-friends-pet-adoption-center-nyc/*  /org/best-friends-animal-society-nyc/:splat 301

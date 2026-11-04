@@ -19,6 +19,13 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // Two research rows for the one Best Friends centre are merged (see
+    // NAME_ALIASES); this is the name on its own page.
+    id: 'best-friends-animal-society-nyc',
+    reason: 'Best Friends\u2019 own New York page (read 2026-11-04) names one centre, its Pet Adoption Center at 307 West Broadway.',
+    set: { name: 'Best Friends Pet Adoption Center - NYC', aka: ['Best Friends Animal Society - NYC', 'Best Friends SoHo', 'SoHo Lifesaving Center'] },
+  },
+  {
     // A reviewer: nobody outside rescue knows what "New Hope" is. Named for
     // what someone is trying to do; the old name stays searchable.
     id: 'acc-new-hope-program',
@@ -189,6 +196,11 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   // (its own site, read 2026-11-04). A reviewer found the old Bully Project
   // entry still pointing at an Adoptapet page with no way to reach anyone.
   { pattern: /^(the )?bully project( nyc)?$|^rescuzilla$/i, canonicalName: 'The Good Life Dog Rescue' },
+  // One Best Friends centre in New York (307 W Broadway, SoHo), listed twice:
+  // the cat research called it the "SoHo Lifesaving Center" and carried an
+  // old number and email; its own page (read 2026-11-04) names one Pet
+  // Adoption Center. A reviewer caught it.
+  { pattern: /^Best Friends Animal Society - NYC( \(SoHo Lifesaving Center\))?$/i, canonicalName: 'Best Friends Pet Adoption Center - NYC' },
   { pattern: /^ASPCA$/i, canonicalName: 'ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)' },
   // The hospital and its assistance funds are one organization; the guide tabs
   // name it three different ways and the merge key strips "Center".

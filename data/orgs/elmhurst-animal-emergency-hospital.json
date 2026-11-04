@@ -47,19 +47,19 @@
   "notes": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
   "type_raw": null,
   "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "status": "retired",
+  "status_note": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
   "source_urls": [
     "https://www.animalalliancenyc.org/need-help/emergencyvets/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-04",
   "section": "Emergency & poison control — QUEENS - 24 hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "unchecked",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -77,7 +77,26 @@
       "from": "87-06 Queens Blvd, Rego Park/Elmhurst 11373 - (718) 426-4444 - 24 hours.\n\n87-06 Queens Blvd (btwn 55th Ave/55th Rd), Elmhurst/Rego Park 11373. (718) 426-4444. Open 24h.",
       "to": "87-06 Queens Boulevard (between 55th Avenue and 55th Road), Elmhurst/Rego Park 11373. Older lists give it as open 24 hours; the Mayor's Alliance now says to call for hours, and its old website is gone. Ring before going.",
       "source": "manual",
-      "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known."
+      "note": "The research note repeated \"Open 24h\", contradicting the corrected hours on the same page. Rewritten to say what is and is not known.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status",
+      "from": "active",
+      "to": "retired",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "status_note",
+      "from": null,
+      "to": "Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. The number, (718) 426-4444, is out of service and the hospital is closed."
     }
   ],
   "privacy_hold": false,

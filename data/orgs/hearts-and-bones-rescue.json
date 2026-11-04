@@ -28,7 +28,7 @@
   "phones": [],
   "emails": [
     {
-      "value": "info@heartsandbonesrescue.com"
+      "value": "info@heartsandbonesrescue.org"
     }
   ],
   "website": "https://heartsandbonesrescue.org/",
@@ -65,15 +65,25 @@
   "source_urls": [
     "https://heartsandbonesrescue.org/"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-04",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-04",
-  "check_status": "needs-review",
+  "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-04",
+      "field": "emails",
+      "from": "info@heartsandbonesrescue.com",
+      "to": "info@heartsandbonesrescue.org",
+      "evidence_url": "https://heartsandbonesrescue.org/contact-us",
+      "source": "manual",
+      "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its contact page says: \"Reach out to us at info@heartsandbonesrescue.org\" (.org, not .com)."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

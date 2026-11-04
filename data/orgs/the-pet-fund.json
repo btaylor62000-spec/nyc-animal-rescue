@@ -32,9 +32,9 @@
   "region_note": "VET-BILL FINANCIAL AID (when care is unaffordable)",
   "phones": [
     {
-      "value": "9164436007",
-      "display": "(916) 443-6007",
-      "label": "Not on its website, which asks people to email first"
+      "value": "9165030550",
+      "display": "(916) 503-0550",
+      "label": "Its site asks you to email first"
     }
   ],
   "emails": [
@@ -48,7 +48,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website).\n\nhelp for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.\n\nnon-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com (it asks for email first; the (916) 443-6007 number is not on its website), thepetfund.com.",
+  "notes": "non-urgent/chronic care (e.g. chronic conditions); contact BEFORE applying. info@thepetfund.com (its site asks you to email first; phone (916) 503-0550).\n\nhelp for non-urgent care such as chronic conditions; contact BEFORE applying. info@thepetfund.com (its site asks you to email first; phone (916) 503-0550), thepetfund.com.\n\nnon-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com (its site asks you to email first; phone (916) 503-0550), thepetfund.com.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -75,6 +75,15 @@
       "evidence_url": "https://thepetfund.com/for-pet-owners",
       "source": "manual",
       "note": "Its page for pet owners: \"email us at info@thepetfund.com with a description of your animal's medical needs\". Email confirmed. The (916) 443-6007 number is not on any page of its site; kept, labelled, not deleted, for a person to ring."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "phones",
+      "from": "9164436007",
+      "to": "9165030550",
+      "evidence_url": "phone call by a reviewer, 2026-11-04",
+      "source": "manual",
+      "note": "A reviewer rang on 2026-11-04. The old (916) 443-6007 line gives a new number, (916) 503-0550. Its website asks people to email first."
     }
   ],
   "privacy_hold": false,

@@ -69,7 +69,8 @@
       "from": null,
       "to": "manual-only",
       "source": "manual",
-      "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser."
+      "note": "Checked on 2026-11-04: Its only public channel is Facebook, which asks for a login. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
+      "evidence_url": "phone call by a reviewer, 2026-11-04"
     }
   ],
   "privacy_hold": false,
