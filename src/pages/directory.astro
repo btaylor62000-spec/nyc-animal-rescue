@@ -59,6 +59,10 @@ import Icon from '../components/Icon.astro';
           <p class="results-bar__order">
             <span id="results-order" class="filters__count">Strongest evidence first</span>
             <button id="near-me" class="btn btn--ghost btn--small" type="button" hidden>Nearest to me</button>
+            <span class="near-zip">
+              <label for="near-zip">or nearest to zip</label>
+              <input id="near-zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="11215" autocomplete="postal-code" />
+            </span>
           </p>
           <p id="near-me-note" class="filters__count" hidden></p>
         </div>

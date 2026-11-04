@@ -16,11 +16,14 @@ import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '
 import { boroughsIn } from '../data/geo.ts';
 import { distanceBand, distanceMiles, takesEmergencies, type Origin } from '../data/rank.ts';
 import { openState } from '../data/schedule.ts';
+import { zipOrigin } from '../data/zip-centres.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
 
 export interface Corpus {
   orgs: CorpusOrg[];
   guides: CorpusGuide[];
+  /** New York City zip code centres, for a zip written in the question. */
+  zipCentres?: Record<string, [number, number]>;
 }
 
 /** Where the reader is and what time it is, when known. */
@@ -250,6 +253,8 @@ export interface Retrieved {
   orgs: CorpusOrg[];
   guide: { slug: string; title: string; heading: string; text: string } | null;
   signals: Signals;
+  /** Where distances were measured from: the shared location, or a zip in the question. */
+  origin: Origin | null;
 }
 
 function toSearchRecord(o: CorpusOrg): SearchRecordLike {
@@ -422,8 +427,11 @@ export class Retriever {
       if (hits === 0) score -= 10;
     }
 
-    // 3. Reachable from where they are.
-    if (s.boroughs.length || s.zips.length) {
+    // 3. Reachable from where they are. When both ends have a place on the
+    //    map, distance (4c) decides instead: "not in your exact zip" cost
+    //    VERG, half a mile from 11215, more than being closed at 11pm cost a
+    //    clinic inside it.
+    if ((s.boroughs.length || s.zips.length) && !(ctx.origin && org.geo)) {
       const inBorough = s.boroughs.some((b) => org.boroughs.includes(b));
       const inZip = s.zips.some((z) => org.zips.includes(z));
       if (inBorough || inZip) score += 6;
@@ -464,8 +472,13 @@ export class Retriever {
     return score;
   }
 
-  retrieve(question: string, limit = 10, ctx: RetrieveContext = {}): Retrieved {
+  retrieve(question: string, limit = 10, given: RetrieveContext = {}): Retrieved {
     const signals = extractSignals(question);
+    // No shared location, but "I'm in 11215": measure from that zip's centre.
+    // Many people never turn location services on, and they should still get
+    // the nearest open hospital first.
+    const origin = given.origin ?? zipOrigin(signals.zips[0], this.corpus.zipCentres ?? {});
+    const ctx: RetrieveContext = { ...given, origin };
 
     // Free-text relevance, then re-ranked by how well each record fits the
     // signals. Records that match the signals but not the wording still get a
@@ -495,6 +508,7 @@ export class Retriever {
     return {
       orgs: coverEveryNeed(scored, signals.needs, limit),
       guide: this.bestGuide(question, signals),
+      origin,
       signals,
     };
   }

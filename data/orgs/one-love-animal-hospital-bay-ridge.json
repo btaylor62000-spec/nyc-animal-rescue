@@ -1,0 +1,73 @@
+{
+  "id": "one-love-animal-hospital-bay-ridge",
+  "name": "One Love Animal Hospital - Bay Ridge",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic",
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn - Bay Ridge",
+  "zips": [],
+  "region_note": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "phones": [
+    {
+      "value": "3475494050",
+      "display": "(347) 549-4050"
+    }
+  ],
+  "emails": [
+    {
+      "value": "bayridge@onelovevet.com"
+    }
+  ],
+  "website": "https://www.onelovevet.com",
+  "intake_urls": [
+    {
+      "url": "https://www.onelovevet.com/after-hours-emergencies",
+      "label": "Overnight emergencies"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.62626,
+    "lon": -74.02984,
+    "precision": "address"
+  },
+  "address": {
+    "street": "8209 3rd Ave",
+    "city": "Brooklyn"
+  },
+  "hours": "Mon-Fri 9am-7pm, Sat 10am-6pm, Sun 10am-6pm",
+  "notes": "8209 3rd Ave, Brooklyn. Same-day care during opening hours; after hours its answering service refers you to an emergency hospital, and its own page names the closest ones. One of three One Love branches; the others are listed separately.",
+  "type_raw": "Vet practice that sees urgent problems and most emergencies during opening hours - Bay Ridge branch",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.onelovevet.com/contact-us"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

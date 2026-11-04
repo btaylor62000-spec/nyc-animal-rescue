@@ -19,6 +19,18 @@ export interface Override {
 
 export const OVERRIDES: Override[] = [
   {
+    // Split by branch so each has its own place, hours and number; the first
+    // branch keeps the original id so existing links still land.
+    id: 'one-love-animal-hospital',
+    reason: 'One Love has three branches; this entry is the Boerum Hill one.',
+    set: { name: 'One Love Animal Hospital - Boerum Hill', aka: ['One Love Animal Hospital'] },
+  },
+  {
+    id: 'bronx-veterinary-center',
+    reason: 'Bronx Veterinary Center has two branches; this entry is the Webster Ave one.',
+    set: { name: 'Bronx Veterinary Center - Webster Avenue', aka: ['Bronx Veterinary Center'] },
+  },
+  {
     id: 'anjellicle-cats-rescue',
     reason: 'Its own site lists "sweet seniors" among the cats it is placing; the research row does not say so.',
     addNeeds: ['senior'],

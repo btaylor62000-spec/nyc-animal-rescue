@@ -4,7 +4,7 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **387** organizations after de-duplication
+- **391** organizations after de-duplication
 - **77** duplicate clusters merged
 - **22** guide pages generated
 - **14** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 281 |
-| dog | 217 |
+| cat | 285 |
+| dog | 221 |
 | wildlife | 45 |
 | rabbit | 36 |
 | bird-companion | 33 |
@@ -40,12 +40,12 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 | adoption | 156 |
 | tnr | 95 |
 | foster | 91 |
+| spay-neuter | 72 |
 | owner-support | 71 |
-| spay-neuter | 71 |
 | surrender | 63 |
-| low-cost-vet | 57 |
+| low-cost-vet | 58 |
 | referral | 47 |
-| emergency-vet | 36 |
+| emergency-vet | 38 |
 | food-assistance | 34 |
 | colony-care | 33 |
 | advocacy | 32 |
@@ -74,25 +74,25 @@ Generated 2026-11-04 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 255 |
+| brooklyn | 257 |
 | queens | 213 |
 | manhattan | 211 |
-| bronx | 185 |
+| bronx | 186 |
 | staten-island | 185 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 181 |
-| Medium | 162 |
+| High | 184 |
+| Medium | 163 |
 | Low | 44 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 373 |
+| active | 377 |
 | verify | 7 |
 | hiatus | 3 |
 | retired | 3 |
@@ -270,39 +270,40 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (31)
+### Rows the rules could not fully tag (32)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
 - **USDA Report Sick Birds line** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:14)
-- **Astoria Animal Society** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:33)
-- **Long Island Animal Surgery** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:41)
-- **Petchester Veterinary** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:44)
-- **SpayUSA (North Shore Animal League America)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:48)
-- **Best Friends Spay/Neuter Resource Map** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:49)
-- **Positive Tails** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:51)
-- **For The Love Of Alex** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:52)
-- **Tripawds Foundation ASAP** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:53)
-- **Canine Cancer Alliance - cancer treatment funds** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:54)
-- **Humane World for Animals - help affording a pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:55)
-- **Home To Home** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:57)
-- **Rehome by Adopt a Pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:58)
-- **911 Parrot Alert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:60)
-- **PawBoost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:61)
-- **Pet FBI** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:62)
-- **FidoAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:63)
-- **PetAmberAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:64)
-- **MyLostPetAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:65)
-- **National Domestic Violence Hotline** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:67)
-- **DomesticShelters.org** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:68)
-- **Rabbit.org** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:72)
-- **New York City Bar - free legal services** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:74)
-- **LANA Law Group (Legal Action Network for Animals)** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:75)
-- **United Spay Alliance - Feline Fix by Five** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:78)
-- **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:79)
-- **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
-- **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:83)
-- **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:89)
+- **Astoria Animal Society** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:35)
+- **Long Island Animal Surgery** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:44)
+- **Petchester Veterinary** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:47)
+- **SpayUSA (North Shore Animal League America)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:51)
+- **Best Friends Spay/Neuter Resource Map** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:52)
+- **Positive Tails** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:54)
+- **For The Love Of Alex** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:55)
+- **Tripawds Foundation ASAP** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:56)
+- **Canine Cancer Alliance - cancer treatment funds** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:57)
+- **Humane World for Animals - help affording a pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:58)
+- **Home To Home** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:60)
+- **Rehome by Adopt a Pet** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:61)
+- **911 Parrot Alert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:63)
+- **PawBoost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:64)
+- **Pet FBI** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:65)
+- **FidoAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:66)
+- **PetAmberAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:67)
+- **MyLostPetAlert** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:68)
+- **National Domestic Violence Hotline** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:70)
+- **DomesticShelters.org** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:71)
+- **Rabbit.org** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:75)
+- **New York City Bar - free legal services** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:77)
+- **LANA Law Group (Legal Action Network for Animals)** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:78)
+- **United Spay Alliance - Feline Fix by Five** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:81)
+- **Petco Love Lost** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:82)
+- **Lost Dog (lost-dog.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:85)
+- **Lost Cat (lost-cat.org)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:86)
+- **Live Like Roo Foundation** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:92)
+- **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:94)
 
 ## Privacy
 

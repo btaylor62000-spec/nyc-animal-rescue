@@ -1,0 +1,68 @@
+{
+  "id": "happy-tails-veterinary-practice",
+  "name": "Happy Tails Veterinary Practice",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "clinic"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn - Marine Park",
+  "zips": [
+    "11234"
+  ],
+  "region_note": "VET PRACTICES - supplied by a reviewer 2026-11-04, checked on the practice's own site",
+  "phones": [
+    {
+      "value": "7183368245",
+      "display": "(718) 336-8245"
+    }
+  ],
+  "emails": [
+    {
+      "value": "happytailsvetny@gmail.com"
+    }
+  ],
+  "website": "https://happytailsvetpractice.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.61248,
+    "lon": -73.94027,
+    "precision": "address"
+  },
+  "address": {
+    "street": "3121 Quentin Rd",
+    "city": "Brooklyn",
+    "zip": "11234"
+  },
+  "hours": null,
+  "notes": "A family-run vet practice in Marine Park. The Mayor's Alliance emergency list still names Animal Medicine Surgery Clinic at 9518 Avenue L; in November 2026 that clinic's old number answered as Happy Tails, and the old clinic's website has gone. Its own site does not publish hours or mention emergencies, so call before you go.",
+  "type_raw": "General vet practice - dental, surgery, specialty care",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://happytailsvetpractice.com/services/"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "VET PRACTICES - supplied by a reviewer 2026-11-04, checked on the practice's own site",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

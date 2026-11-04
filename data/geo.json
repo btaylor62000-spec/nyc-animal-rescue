@@ -43,6 +43,12 @@
    "lon": -73.99117,
    "matched": "238 ATLANTIC AVE, BROOKLYN, NY, 11201"
   },
+  "barc-shelter": {
+   "query": "253 Wythe Ave, Brooklyn, NY 11249",
+   "lat": 40.7161,
+   "lon": -73.964,
+   "matched": "253 WYTHE AVE, BROOKLYN, NY, 11249"
+  },
   "bbawc-rescue-clinic": {
    "query": "76 Montague St, Brooklyn, NY 11201",
    "lat": 40.69522,
@@ -78,6 +84,18 @@
    "lat": 40.7201,
    "lon": -73.84337,
    "matched": "107-28 71ST RD, FOREST HILLS, NY, 11375"
+  },
+  "bronx-veterinary-center": {
+   "query": "2460 Webster Avenue, Bronx, NY 10458",
+   "lat": 40.85993,
+   "lon": -73.89307,
+   "matched": "2460 WEBSTER AVE, BRONX, NY, 10458"
+  },
+  "bronx-veterinary-center-eastchester-road": {
+   "query": "1640 Eastchester Rd, Bronx, NY 10461",
+   "lat": 40.84535,
+   "lon": -73.84491,
+   "matched": "1640 EASTCHESTER RD, BRONX, NY, 10461"
   },
   "community-help-in-park-slope": {
    "query": "200 Fourth Ave., Brooklyn, NY 11217",
@@ -144,6 +162,12 @@
    "lat": 40.60704,
    "lon": -74.16426,
    "matched": "3135 VICTORY BLVD, STATEN ISLAND, NY, 10314"
+  },
+  "happy-tails-veterinary-practice": {
+   "query": "3121 Quentin Rd, Brooklyn, NY 11234",
+   "lat": 40.61248,
+   "lon": -73.94027,
+   "matched": "3121 QUENTIN RD, BROOKLYN, NY, 11234"
   },
   "holy-apostles-soup-kitchen-pantry": {
    "query": "296 Ninth Ave., New York, NY 10001",
@@ -222,6 +246,24 @@
    "lat": 40.67819,
    "lon": -73.89024,
    "matched": "2832 FULTON ST, BROOKLYN, NY, 11207"
+  },
+  "one-love-animal-hospital": {
+   "query": "317 Atlantic Ave, Brooklyn, NY 11201",
+   "lat": 40.68829,
+   "lon": -73.98817,
+   "matched": "317 ATLANTIC AVE, BROOKLYN, NY, 11201"
+  },
+  "one-love-animal-hospital-bay-ridge": {
+   "query": "8209 3rd Ave, Brooklyn, NY",
+   "lat": 40.62626,
+   "lon": -74.02984,
+   "matched": "8209 3RD AVE, BROOKLYN, NY, 11209"
+  },
+  "one-love-animal-hospital-upper-east-side": {
+   "query": "227 E 84th St, New York, NY",
+   "lat": 40.77729,
+   "lon": -73.95428,
+   "matched": "227 E 84TH ST, NEW YORK, NY, 10028"
   },
   "park-slope-veterinary-center": {
    "query": "639 4th Ave, Brooklyn, NY 11232",
