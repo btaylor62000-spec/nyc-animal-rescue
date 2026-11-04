@@ -155,13 +155,41 @@ Ordered by how much harm it prevents, not by size.
      "Emergency" row. From the Bronx the nearest 24/7 options are Animal
      Specialty Center (Yonkers) and the Manhattan and Astoria hospitals.
 
-5. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
+5. **Wildlife rehabilitators: the state register and AHNow, compared
+   2026-11-04.** DEC's register (appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab)
+   is the authority on who is *licensed*; AHNow says it draws its rehabber
+   data from the same state lists. Searched for the five boroughs plus Nassau
+   and Westchester: 127 licence holders, 73 in the five boroughs, **every one
+   an individual** (personal name, phone, email), none under an
+   organization's name. AHNow itself hides those names and shows only
+   "Wildlife Rehabilitator", the animals and a zip. Rule 3 applies: they are
+   not republished here; the guides link the DEC search and AHNow instead,
+   and each listed organization can be checked against the register.
+   Every *organization or hotline* AHNow names for the five boroughs is
+   already listed (Animal General, Island Wildlife, NYTTS, the marine
+   stranding lines, DEC Region 2, USDA, US Fish & Wildlife) except two that
+   need a phone call first: The Broken Antler (deer search and rescue,
+   Calverton, Suffolk, run by two named people) and Staten Island Animal
+   Hospital (VCA; AHNow lists it for wildlife, its own pages say dogs and
+   cats). Whether to list individual rehabbers who agree to it is the
+   reviewer's decision, not made yet.
+
+6. **Links are checked weekly** (`npm run agent:links`, results on
+   `/status`): every listing's website and forms and every address in every
+   guide. It reports and never edits. Read the report before acting: from a
+   cloud session plain `http://` addresses and bare domains such as
+   `aspca.org` fail to resolve and 502s come from the proxy, so only HTTP
+   answers (404, a parked or taken-over domain) are evidence there. Known
+   corrections live in `src/data/url-fixes.ts`, applied to every listing and
+   guide at import, each with where the right address was read.
+
+7. **Bond Vet stays one entry, deliberately.** Twenty-one daytime branches,
    whose pages show only today's hours and whose own page description gives
    different ones, would be 21 "hours not confirmed" cards in every emergency
    search. One Love and Bronx Veterinary Center were split by branch on
    2026-11-04 because their hours and addresses could be confirmed.
 
-6. **Two regional records still carry no location, on purpose.** Of the six
+8. **Two regional records still carry no location, on purpose.** Of the six
    regional exotic-animal rescues with no borough, four are now reachable
    citywide because their rows call them "NYC-adjacent" or "tri-state"
    (`directory.ts` reads those as serving the city, unless the row also says
