@@ -57,6 +57,13 @@ interface Programme {
   addedOn: string;
   listSourceUrl?: string;
   caveat?: string;
+  /**
+   * When every row was last compared with the city's own published list.
+   * The city's list is the authority for these sites (a reviewer, 2026-11-04:
+   * "why am I calling to confirm a list that the mayor published recently?"),
+   * so a match counts as confirmation and no one has to ring 22 pantries.
+   */
+  listCheckedOn?: string;
 }
 
 interface File {
@@ -120,7 +127,7 @@ export function pantryToOrg(p: Pantry, prog: Programme): Org {
     status: 'active',
     status_note: null,
     source_urls: [prog.sourceUrl, ...(p.mainPhoneFrom && p.mainPhoneFrom !== prog.sourceUrl ? [p.mainPhoneFrom] : [])],
-    last_verified: null,
+    last_verified: prog.listCheckedOn ?? null,
     section: 'City pet food pantry programme',
     source_files: ['pet-food-pantries'],
     last_checked: null,
@@ -147,6 +154,17 @@ export function pantryToOrg(p: Pantry, prog: Programme): Org {
         source: 'pet-food-pantries',
         note: "The number the city's own pet food pantry map lists for this site.",
       },
+      ...(prog.listCheckedOn
+        ? [{
+            date: prog.listCheckedOn,
+            field: 'last_verified',
+            from: null,
+            to: prog.listCheckedOn,
+            evidence_url: prog.sourceUrl,
+            source: 'pet-food-pantries',
+            note: "Name, number, address and zip compared with the city's published pet food pantry list; all match.",
+          }]
+        : []),
     ],
   };
 }

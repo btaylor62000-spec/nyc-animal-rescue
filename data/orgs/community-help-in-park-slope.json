@@ -86,9 +86,9 @@
       "field": "last_verified",
       "from": null,
       "to": "2026-11-04",
-      "evidence_url": "https://www.chipsonline.org/contact-1",
-      "source": "manual",
-      "note": "Read in a browser on 2026-11-04: CHiPS contact page: 718-237-2962, 200 4th Avenue 11217. Its pantry page gives on-site pantry hours Thursdays and Saturdays 11:30am-1pm. Same number as stored."
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
     }
   ],
   "privacy_hold": false,

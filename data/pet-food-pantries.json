@@ -7,7 +7,8 @@
     "note": "A $500,000 city-funded programme putting free dog and cat food into 22 community food pantries across the five boroughs. The city's own map says \"Pet food assistance is available at these community pantries across New York City\". Reporting at the time said the food was expected to reach pantries about two weeks after the announcement, so it may not have arrived everywhere yet.",
     "addedOn": "2026-11-03",
     "listSourceUrl": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
-    "caveat": "The city's own map says: \"Hours of operation vary for each site and are subject to change. Always confirm before visiting. Additional food locations may be available that are not shown on this map.\""
+    "caveat": "The city's own map says: \"Hours of operation vary for each site and are subject to change. Always confirm before visiting. Additional food locations may be available that are not shown on this map.\"",
+    "listCheckedOn": "2026-11-04"
   },
   "pantries": [
     {

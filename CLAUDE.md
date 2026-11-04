@@ -313,6 +313,23 @@ Urban Wildlife Alliance, Petco Love Lost and United Spay Alliance are why: all
 three are live and all three show automated browsers a bot check. Under the old
 rule they would have been marked "may no longer be active" after three weeks.
 
+**A real browser reads what a plain request cannot** (added 2026-11-04,
+`scripts/agent/browser.ts`). A page that answers 401/403/429 or comes back
+almost empty gets a second look in headless Chromium, which the workflow
+installs for the run. It sends the checker's own user agent, never visits a
+page robots.txt excludes, and a bot-check page is still "blocked". Tried on
+the 18 sites a reviewer had been opening by hand: 8 now read themselves (the
+Thrive hospital pages, Catstoria, AWI, DEC); Lost Cat/Dog, Petco Love Lost,
+Vetco, Urban Wildlife Alliance and Korean K9 still refuse an identified
+robot, and Stray from the Heart, NYC Second Chance and Halfway Cats ask
+robots not to come. Locally, set `AGENT_PLAYWRIGHT_MODULE` to an installed
+Playwright's `index.js`; without one the check behaves as before.
+
+**The city's pantry list counts as confirmation.** `listCheckedOn` in
+`data/pet-food-pantries.json` is the date every row was last compared with
+the city's published PDF; each pantry's `last_verified` follows it, so no one
+rings 22 pantries to confirm what the city itself published.
+
 **The check never looks for a replacement site.** A dead domain is exactly when
 guessing is most tempting and most dangerous: the old domain may now belong to
 someone else. A person finds the new site and records it in the overlay

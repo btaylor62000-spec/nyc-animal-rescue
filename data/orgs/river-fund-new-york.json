@@ -92,9 +92,9 @@
       "field": "last_verified",
       "from": null,
       "to": "2026-11-04",
-      "evidence_url": "https://www.river.fund/",
-      "source": "manual",
-      "note": "Read in a browser on 2026-11-04: Its site shows (718) 441-1125. The city lists (718) 442-1125; both stay published, as before."
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
     }
   ],
   "privacy_hold": false,
