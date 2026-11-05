@@ -110,8 +110,10 @@ export const GUIDE_PAGES: TabSpec[] = [
     file: WB_NEWHOPE, tab: 'Save an animal from the at-risk list', slug: 'save-an-at-risk-animal',
     // Named in the reader's words. "New Hope" and "at-risk list" are ACC's
     // terms; a reviewer pointed out nobody searching in a hurry knows them.
-    title: 'Save a shelter animal from euthanasia: the NYC at-risk list',
-    summary: 'Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it.',
+    // "New Hope Program" added back to the title on 2026-11-05: the reviewer
+    // pointed out it is the name people who have heard of it search for.
+    title: "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+    summary: 'Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, the two forms to fill in, and how to get a rescue group to pull it.',
     topics: ['urgent list', 'euthanasia list', 'at risk list', 'at-risk', 'new hope', 'euthanasia', 'euthanized', 'euthanised', 'put down', 'put to sleep', 'death row', 'kill list', 'ACC', 'pull', 'rescue partner', 'save a dog', 'save a cat', 'save a dog from the shelter', 'adopt from ACC', 'foster to save', 'reserve', 'A-number'],
   },
   {
@@ -252,8 +254,10 @@ export const GUIDE_PAGES: TabSpec[] = [
   },
   {
     file: WB_EXOTIC, tab: 'Boarding, sitting & planning', slug: 'exotic-boarding-and-planning',
-    title: 'Boarding, pet sitting and planning ahead',
-    summary: 'Care while you are away, and arranging for a pet to be looked after if you no longer can.',
+    // "Exotic" in the title since 2026-11-05: a reviewer read it as a guide
+    // for every pet, and it is about rabbits, birds, reptiles and the like.
+    title: 'Exotic pets: boarding, pet sitting and planning ahead',
+    summary: 'For rabbits, birds, reptiles and small animals: care while you are away, and arranging for a pet to be looked after if you no longer can.',
     topics: ['exotic boarding', 'pet sitter', 'pet trust'],
   },
 ];
@@ -411,7 +415,7 @@ const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string 
   },
   {
     find: 'Contact NYC Bird Alliance (there’s a team specializing in large birds) or call Urban Park Rangers.',
-    replace: 'Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators under Who to call right now, at the top of this page.',
+    replace: 'Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators in step 2 at the top of this page.',
     reason: "NYC Bird Alliance's pages (2026-11-05) name no large-bird team of its own; they list the Urban Park Rangers and the raptor rehabilitators, which is what this now says.",
   },
   {
@@ -432,7 +436,7 @@ const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string 
  * line. A heading not named here throws, so a changed document is noticed.
  */
 const BIRD_SECTIONS: Array<{ from: string; to?: string; drop?: string; merge?: true; lead?: string }> = [
-  { from: 'Who to call right now' },
+  { from: 'What to do now, step by step' },
   { from: 'If it was caught or bitten by an animal' },
   {
     from: 'Is that bird injured?',
@@ -449,7 +453,9 @@ const BIRD_SECTIONS: Array<{ from: string; to?: string; drop?: string; merge?: t
   { from: 'WBF bird rescue resources', to: 'Finding a licensed rehabber yourself' },
   { from: 'DEC Find a Licensed Rehabber search tool', merge: true },
   { from: 'List of Licensed rehabbers in NY State', merge: true },
-  { from: 'Why is some wildlife euthanized', to: 'If you later hear the bird could not be saved' },
+  // Removed at the reviewer's request, 2026-11-05: not something anyone holding
+  // an injured bird needs.
+  { from: 'Why is some wildlife euthanized', drop: 'Removed at the reviewer\'s request.' },
   { from: 'Found a squirrel?', drop: 'Squirrels are in the wildlife guide, with the same link and current advice.' },
 ];
 
@@ -520,17 +526,29 @@ function whoToCallNow(orgs: Org[]): string[] {
   // Bird Alliance's own injured-bird page as read on 2026-11-05, which now
   // sends people to Urban Wildlife Alliance; the injured-bird address the
   // document gives is no longer on it.
+  // Since a second reading on 2026-11-05 ("I don't know what anyone is
+  // supposed to do, what steps to take or who to call") the block is the
+  // steps, in order, each with who to call at that point. The document's own
+  // words follow, unchanged, for anyone with time to read them; the steps
+  // say nothing they do not.
   return [
-    '## Who to call right now',
+    '## What to do now, step by step',
     '',
-    'Put the bird in a cardboard box with small air holes, close it, keep it somewhere dark and quiet, and do not give it food or water. Then:',
+    '1. **Does it need help?** A fledgling (fully feathered, hopping, parents nearby) is usually fine: leave it where it is. A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed.',
+    `2. **A hawk, owl or other large bird? Do not pick it up.** Call 311 and ask for the Urban Park Rangers, or ring ${link(winorr, 'WINORR')}, the raptor rehabilitators, at any hour. ${link(amc, 'The Animal Medical Center')} in Manhattan, open 24 hours, takes raptors and waterfowl.`,
+    '3. **Catch it.** Walk up slowly and quietly from behind. Drop a towel or cloth over it and scoop it up, or hold it gently with your hands over its wings.',
+    '4. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out. Keep it somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.',
+    `5. **Take it to ${link(wbf, 'the Wild Bird Fund')} today.** 565 Columbus Ave (between 87th and 88th), Manhattan. Open every day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
+    `6. **Cannot get it there?** Email ${link(uwa, 'Urban Wildlife Alliance')} at ${helpline} with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.`,
     '',
-    `- **Any injured wild bird, any borough:** ${link(wbf, 'The Wild Bird Fund')}, 565 Columbus Ave (between 87th and 88th), Manhattan. Walk in any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
-    `- **You cannot get it there:** email ${link(uwa, 'Urban Wildlife Alliance')} at ${helpline} with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.`,
-    `- **Hawk, owl or other large bird:** do not try to pick it up. Call 311 and ask for the Urban Park Rangers, or ring ${link(winorr, 'WINORR')}, the raptor rehabilitators, at any hour. ${link(amc, 'The Animal Medical Center')} in Manhattan, open 24 hours, takes raptors and waterfowl.`,
+    '**Other birds:**',
+    '',
     `- **A pet or farm bird** (parrot, budgie, chicken, domestic duck or goose, tame dove): the Wild Bird Fund cannot take these. ${link(acc, 'Animal Care Centers of NYC')}, 311 or ${phoneOf(acc)}.`,
+    '- **A tame white or oddly coloured pigeon** is a domestic pigeon that cannot survive outside: see [Lost or found a rabbit, bird or reptile](/guides/lost-and-found-exotic).',
     `- **Several sick or dead birds in one place:** ${link(usda, 'the USDA line')}, ${phoneOf(usda)}, or 311. Do not touch them with bare hands.`,
-    '- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals are in [Found injured or orphaned wildlife](/guides/found-wildlife).',
+    '- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals: [Found injured or orphaned wildlife](/guides/found-wildlife).',
+    '',
+    'The rest of this page explains each step, in the words of the volunteer who wrote it.',
     '',
   ];
 }
@@ -552,19 +570,26 @@ function wildlifeWhoToCall(orgs: Org[]): string[] {
   const usfws = must(orgs, 'usfws-wildlife-crime-tip-line');
   const link = (o: Org, text = o.name): string => `[${text}](/org/${o.id})`;
 
+  // Steps first, for the same reason as the bird guide (reviewer,
+  // 2026-11-05). Each says no more than the sections below it.
   return [
-    '## Who to call right now',
+    '## What to do now, step by step',
     '',
-    'Do not pick up a wild mammal with bare hands, and do not give any wild animal food or water. Then:',
+    '1. **Is it a bird?** Go to [Found an injured bird](/guides/found-an-injured-bird). Birds are handled differently: you catch and box them yourself. Everything below is for other wild animals.',
+    '2. **Keep your hands off it, and keep pets and children away.** Do not pick up a wild mammal with bare hands. **Never give it food or water.**',
+    '3. **Is it really orphaned?** A baby animal on its own is usually not abandoned: its mother may be away for hours. Watch from a distance. It needs help now only if it is hurt, cold, covered in flies, was caught or bitten by an animal, or its mother is known to be dead.',
+    '4. **Call the right place for the animal:**',
+    `    - **Squirrel, opossum, rabbit or other small mammal:** ${link(wbf, 'the Wild Bird Fund')}, 565 Columbus Ave, Manhattan, every day 9am–7pm, no appointment, ${phoneOf(wbf)}. When it is closed, or for a wild baby rabbit or a fox: ${link(cottontail, 'Cottontail Cottage')} in Westchester, ${phoneOf(cottontail)}, any hour (leave a message; they call back).`,
+    '    - **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers, or 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.',
+    `    - **Deer or coyote:** leave it alone unless it is badly hurt or on a road; then ${link(decNyc, 'DEC Region 2')}, ${phoneOf(decNyc)} in the daytime, or 911.`,
+    `    - **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and keep dogs away. ${link(marine, 'The stranding hotline')}, ${phoneOf(marine)}, any hour; if it does not answer, ${link(noaa, 'NOAA')}, ${phoneOf(noaa)}.`,
+    `    - **A wild turtle that is hurt:** ${link(nytts, 'the New York Turtle and Tortoise Society')}, ${nytts.emails[0]?.value ?? ''}.`,
+    `    - **Anything else, or to find the nearest licensed rehabber:** ${link(ahnow, 'Animal Help Now')} (type the address where the animal is; it shows who is available now) or the ${link(dec, 'state directory')}, ${phoneOf(dec)}.`,
+    '5. **If a rehabber asks you to bring it in,** and it is safe to, put it in a ventilated box in a dark, quiet place in a warm room, and take it straight there.',
     '',
-    '- **A bird:** see [Found an injured bird](/guides/found-an-injured-bird). Birds are the exception to "do not touch": catch it and box it straight away.',
-    `- **Squirrel, opossum, rabbit or other small mammal, hurt or sick:** ${link(wbf, 'The Wild Bird Fund')} takes small mammals too. 565 Columbus Ave, Manhattan, any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
-    `- **Wild baby rabbit, fox or other wild mammal, or the Wild Bird Fund is closed:** ${link(cottontail, 'Cottontail Cottage')}, ${phoneOf(cottontail)}, any hour (leave a message; they call back). Or ${link(ahnow, 'Animal Help Now')}, which shows the licensed rehabbers near the address, those available now first, or the ${link(dec, 'DEC directory')}.`,
-    '- **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers; call 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.',
-    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance, keep dogs away, and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}; if it does not answer, ${link(noaa, 'NOAA')}, ${phoneOf(noaa)}.`,
-    `- **A wild turtle that is hurt:** ${link(nytts, 'the New York Turtle and Tortoise Society')}, ${nytts.emails[0]?.value ?? ''}.`,
-    `- **Deer, coyote or other large animal:** leave it be unless it is badly hurt or on a road; then ${link(decNyc, 'DEC Region 2')}, ${phoneOf(decNyc)} in the daytime, or 911.`,
-    `- **Someone keeping, selling or killing protected wildlife:** ${link(usfws, 'the federal tip line')}, ${phoneOf(usfws)}, anonymously if you like, or ${link(decNyc, 'DEC Region 2')}.`,
+    `**To report** someone keeping, selling or killing protected wildlife: ${link(usfws, 'the federal tip line')}, ${phoneOf(usfws)}, anonymously if you like, or ${link(decNyc, 'DEC Region 2')}.`,
+    '',
+    'The rest of this page explains each of these, animal by animal.',
     '',
   ];
 }

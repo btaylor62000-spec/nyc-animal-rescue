@@ -100,12 +100,48 @@ function htmlPattern(v: string): string {
  * not its Brooklyn branch); otherwise it is left out, since linking it would
  * pick a branch for the reader.
  */
-export function buildMatchers(orgs: Org[]): Matcher[] {
+/*
+ * Short names the research uses that cannot be worked out from a record's
+ * name. A reviewer found Cottontail Cottage named in the wildlife guide with
+ * no link and no contacts (2026-11-05): its record is "Cottontail Cottage
+ * Wildlife Rehab". Each id is checked by a test.
+ */
+export const MENTION_ALIASES: Record<string, string> = {
+  'Cottontail Cottage': 'cottontail-cottage-wildlife-rehab',
+  'Anjellicle Cats': 'anjellicle-cats-rescue',
+  'Brooklyn Bridge Animal Welfare Coalition': 'brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe',
+  'Long Island Rabbit Rescue': 'long-island-rabbit-rescue-group',
+  'NYC Pigeon Rescue Central': 'new-york-city-pigeon-rescue-central',
+  NYCPRC: 'new-york-city-pigeon-rescue-central',
+};
+
+/*
+ * A name that means one listing in one guide only. "ASPCA" is the parent of
+ * several listings and is not linked in general, but in the TNR guides it is
+ * always the spay/neuter service, whose listing carries the transport and
+ * trap bank a reviewer found missing (2026-11-05).
+ */
+export const GUIDE_ALIASES: Record<string, Record<string, string>> = {
+  'starting-tnr': { ASPCA: 'aspca-spay-neuter-nyc' },
+  'low-cost-clinics-and-trap-banks': { ASPCA: 'aspca-spay-neuter-nyc' },
+};
+
+const pattern = (v: string) => new RegExp(`(?<![\\w&/@.-])${htmlPattern(v)}(?![\\w&-]|\\.\\w)`);
+
+export function buildMatchers(orgs: Org[], slug?: string): Matcher[] {
   const byVariant = new Map<string, Org[]>();
   for (const o of orgs) {
     for (const v of nameVariants(o)) (byVariant.get(v) ?? byVariant.set(v, []).get(v)!).push(o);
   }
+  const byId = new Map(orgs.map((o) => [o.id, o]));
   const out: Matcher[] = [];
+  for (const [v, id] of Object.entries({ ...MENTION_ALIASES, ...(slug ? GUIDE_ALIASES[slug] : {}) })) {
+    const org = byId.get(id);
+    if (org) {
+      out.push({ re: pattern(v), org });
+      byVariant.delete(v);
+    }
+  }
   for (const [v, list] of byVariant) {
     let org: Org | undefined = list[0];
     if (new Set(list.map((o) => o.id)).size !== 1) {
@@ -113,7 +149,7 @@ export function buildMatchers(orgs: Org[]): Matcher[] {
       org = new Set(exact.map((o) => o.id)).size === 1 ? exact[0] : undefined;
     }
     if (!org) continue;
-    out.push({ re: new RegExp(`(?<![\\w&/@.-])${htmlPattern(v)}(?![\\w&-]|\\.\\w)`), org });
+    out.push({ re: pattern(v), org });
   }
   return out.sort((a, b) => b.re.source.length - a.re.source.length);
 }
@@ -125,7 +161,7 @@ export function contactLine(org: Org): string {
   const bits: string[] = [`<a href="/org/${org.id}">${escapeHtml(org.name)}</a>`];
   const phone = org.phones[0];
   if (phone) bits.push(`<a href="${telHref(phone.value)}" translate="no">${escapeHtml(phone.display)}</a>`);
-  else if (org.emails[0]) bits.push(`<a href="mailto:${escapeHtml(org.emails[0].value)}">${escapeHtml(org.emails[0].value)}</a>`);
+  if (org.emails[0]) bits.push(`<a href="mailto:${escapeHtml(org.emails[0].value)}">${escapeHtml(org.emails[0].value)}</a>`);
   if (org.website) {
     const host = org.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
     bits.push(`<a href="${escapeHtml(org.website)}" rel="noopener">${escapeHtml(host.length > 40 ? host.slice(0, 40) + '…' : host)}</a>`);

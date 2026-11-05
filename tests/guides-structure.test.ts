@@ -87,13 +87,14 @@ test('the bird and wildlife guides: no personal contacts, no out-of-date route, 
   assert.match(bird, /Window strike victims should NOT be given additional heat/);
   assert.match(bird, /Giving any injured or sick bird \(or any wildlife\) food or water is never ok/);
   assert.match(bird, /If the bird can stand and hop, leave it alone/);
-  // In the order someone holding a bird needs it: euthanasia is last.
+  // In the order someone holding a bird needs it: the steps first.
   const headings = [...bird.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
-  assert.equal(headings[0], 'Who to call right now');
-  assert.equal(headings.at(-1), 'If you later hear the bird could not be saved');
+  assert.equal(headings[0], 'What to do now, step by step');
+  // The euthanasia section was removed at the reviewer's request (2026-11-05).
+  assert.doesNotMatch(bird, /could not be saved|Why is some wildlife euthanized|heartbreaking to go through/i);
   assert.doesNotMatch(bird, /^## Found a squirrel/m, 'squirrels belong in the wildlife guide');
   assert.match(wild, /^## Found a baby squirrel/m);
-  assert.match(wild, /^## Who to call right now/m);
+  assert.match(wild, /^## What to do now, step by step/m);
 });
 
 test('every Animal Help Now topic is linked to its answer', () => {
@@ -120,4 +121,20 @@ test('the contacts boxes render on the built page for a guide that names listing
   const wbf = LISTED_ORGS.find((o) => o.id === 'the-wild-bird-fund')!;
   assert.ok(html.includes(wbf.phones[0]!.display));
   assert.ok(readFileSync('src/pages/guides/[slug].astro', 'utf8').includes('annotateMentions'));
+});
+
+test('the at-risk guide: ACC\'s foster/adopt form, before the list of groups, and New Hope in the title', () => {
+  const g = GUIDES.find((x) => x.slug === 'save-an-at-risk-animal')!;
+  assert.match(g.title, /New Hope Program/);
+  const form = g.body.indexOf('https://forms.gle/ozHex3uqvNkQt2dq9');
+  const who = g.body.indexOf('## WHO TO CONTACT');
+  assert.ok(form > 0 && who > form, 'the form comes before the groups to contact');
+  assert.match(g.body.slice(who), /Why only these groups/);
+});
+
+test('every alias used to link a guide name points at a listing that exists', async () => {
+  const { MENTION_ALIASES, GUIDE_ALIASES } = await import('../src/data/guide-mentions.ts');
+  const ids = new Set(LISTED_ORGS.map((o) => o.id));
+  const used = [...Object.values(MENTION_ALIASES), ...Object.values(GUIDE_ALIASES).flatMap((m) => Object.values(m))];
+  assert.deepEqual(used.filter((id) => !ids.has(id)), []);
 });

@@ -9,18 +9,23 @@ source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Wildlife re
 
 _Squirrels, rabbits, raccoons, deer, turtles and seals: who to call, and what not to do. Birds have their own guide._
 
-## Who to call right now
+## What to do now, step by step
 
-Do not pick up a wild mammal with bare hands, and do not give any wild animal food or water. Then:
+1. **Is it a bird?** Go to [Found an injured bird](/guides/found-an-injured-bird). Birds are handled differently: you catch and box them yourself. Everything below is for other wild animals.
+2. **Keep your hands off it, and keep pets and children away.** Do not pick up a wild mammal with bare hands. **Never give it food or water.**
+3. **Is it really orphaned?** A baby animal on its own is usually not abandoned: its mother may be away for hours. Watch from a distance. It needs help now only if it is hurt, cold, covered in flies, was caught or bitten by an animal, or its mother is known to be dead.
+4. **Call the right place for the animal:**
+    - **Squirrel, opossum, rabbit or other small mammal:** [the Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave, Manhattan, every day 9am–7pm, no appointment, (646) 306-2862. When it is closed, or for a wild baby rabbit or a fox: [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab) in Westchester, (914) 933-7559, any hour (leave a message; they call back).
+    - **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers, or 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.
+    - **Deer or coyote:** leave it alone unless it is badly hurt or on a road; then [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 in the daytime, or 911.
+    - **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and keep dogs away. [The stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829, any hour; if it does not answer, [NOAA](/org/noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline), (866) 755-6622.
+    - **A wild turtle that is hurt:** [the New York Turtle and Tortoise Society](/org/new-york-turtle-and-tortoise-society), qanda@nytts.org.
+    - **Anything else, or to find the nearest licensed rehabber:** [Animal Help Now](/org/animal-help-now-wildlife-emergency-finder) (type the address where the animal is; it shows who is available now) or the [state directory](/org/nys-dec-find-a-wildlife-rehabilitator), (844) 332-3267.
+5. **If a rehabber asks you to bring it in,** and it is safe to, put it in a ventilated box in a dark, quiet place in a warm room, and take it straight there.
 
-- **A bird:** see [Found an injured bird](/guides/found-an-injured-bird). Birds are the exception to "do not touch": catch it and box it straight away.
-- **Squirrel, opossum, rabbit or other small mammal, hurt or sick:** [The Wild Bird Fund](/org/the-wild-bird-fund) takes small mammals too. 565 Columbus Ave, Manhattan, any day 9am–7pm, no appointment. (646) 306-2862.
-- **Wild baby rabbit, fox or other wild mammal, or the Wild Bird Fund is closed:** [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab), (914) 933-7559, any hour (leave a message; they call back). Or [Animal Help Now](/org/animal-help-now-wildlife-emergency-finder), which shows the licensed rehabbers near the address, those available now first, or the [DEC directory](/org/nys-dec-find-a-wildlife-rehabilitator).
-- **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers; call 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.
-- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance, keep dogs away, and call [the stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829; if it does not answer, [NOAA](/org/noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline), (866) 755-6622.
-- **A wild turtle that is hurt:** [the New York Turtle and Tortoise Society](/org/new-york-turtle-and-tortoise-society), qanda@nytts.org.
-- **Deer, coyote or other large animal:** leave it be unless it is badly hurt or on a road; then [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 in the daytime, or 911.
-- **Someone keeping, selling or killing protected wildlife:** [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like, or [DEC Region 2](/org/nys-dec-region-2).
+**To report** someone keeping, selling or killing protected wildlife: [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like, or [DEC Region 2](/org/nys-dec-region-2).
+
+The rest of this page explains each of these, animal by animal.
 
 The rule first: only NYS-licensed wildlife rehabilitators may legally handle wild animals in New York, and most wild animals cannot legally be kept as pets. Wildlife is a rehabilitation-and-release matter, NOT an adoption matter. If you find injured, sick or orphaned wildlife, call a licensed rehabber for advice before you touch a wild mammal - some species need special handling and some carry diseases people can catch. Birds are the exception: a hurt bird should be caught and boxed straight away, because it may fly off in shock and die later. How to do that is in [Found an injured bird](/guides/found-an-injured-bird).
 

@@ -4238,7 +4238,31 @@
     "new-york-city-pigeon-rescue-central": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "NYCPRC.BirdAlert@gmail.com",
+          "label": "Bird down: subject \"Bird Down\", with date, time and place"
+        }
+      ],
+      "intake_urls": [
+        {
+          "url": "https://nycprc.org/HelpWanted/HelpWantedSubmit.html",
+          "label": "Help request (bird down)"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "emails",
+          "from": null,
+          "to": "NYCPRC.BirdAlert@gmail.com",
+          "evidence_url": "https://nycprc.org/HelpWanted/HelpWantedSubmit.html",
+          "source": "manual",
+          "note": "Its own help-request page, read in a browser 2026-11-05: while its server is being upgraded, email NYCPRC.BirdAlert@gmail.com with subject \"Bird Down\", the date, time and location, and your phone number; if you can, contain the bird and take it to the Wild Bird Fund. Raised by a reviewer."
+        }
+      ],
+      "last_verified": "2026-11-05"
     },
     "new-york-common-pantry": {
       "last_checked": "2026-11-05",

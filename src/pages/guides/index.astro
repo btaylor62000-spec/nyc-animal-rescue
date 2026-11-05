@@ -58,6 +58,11 @@ const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' 
     {GUIDES_GROUPED.map((group) => (
       <section class="section" style="padding-top:1.25rem">
         <h2 style="font-size:1.15rem">{group.title}</h2>
+        {group.places && (
+          <p class="muted" style="margin:-.3rem 0 .6rem">
+            Just need a number? <a href={group.places.href}>{group.places.label}</a>
+          </p>
+        )}
         <ul class="tiles">
           {group.guides.map((g) => (
             <li>

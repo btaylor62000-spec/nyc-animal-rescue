@@ -1,13 +1,13 @@
 ---
-title: "Boarding, pet sitting and planning ahead"
+title: "Exotic pets: boarding, pet sitting and planning ahead"
 slug: exotic-boarding-and-planning
-summary: "Care while you are away, and arranging for a pet to be looked after if you no longer can."
+summary: "For rabbits, birds, reptiles and small animals: care while you are away, and arranging for a pet to be looked after if you no longer can."
 topics: ["exotic boarding","pet sitter","pet trust"]
 source: "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Boarding, sitting & planning"
 ---
-# Boarding, pet sitting and planning ahead
+# Exotic pets: boarding, pet sitting and planning ahead
 
-_Care while you are away, and arranging for a pet to be looked after if you no longer can._
+_For rabbits, birds, reptiles and small animals: care while you are away, and arranging for a pet to be looked after if you no longer can._
 
 This page covers needs that don't fit a rescue directory but come up constantly for exotic owners in NYC - and that ordinary kennels, pet-sitters and cat/dog resources usually can't meet. Confirm each provider still serves your species and check current requirements (most require a recent exotic-vet exam) before booking.
 

@@ -64,24 +64,40 @@ export const GUIDES_BY_SLUG = new Map(GUIDES.map((g) => [g.slug, g]));
  * group, so a new guide cannot go missing from the home page (a reviewer found
  * that half of them were not on it, 2026-11-05).
  */
-export const GUIDE_GROUPS: Array<{ title: string; slugs: string[] }> = [
-  { title: 'An emergency', slugs: ['animal-emergency', 'exotic-pet-emergency', 'pets-in-a-disaster'] },
-  { title: 'Wild birds and wildlife', slugs: ['found-an-injured-bird', 'found-wildlife', 'more-situations-animal-help-now'] },
-  { title: 'Stray, lost or found', slugs: ['starting-tnr', 'lost-and-found-cat', 'lost-and-found-dog', 'lost-and-found-exotic'] },
+export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { label: string; href: string } }> = [
+  // Cruelty is here, not at the end: a reviewer pointed out that an animal
+  // being hurt by a person is an emergency (2026-11-05).
+  {
+    title: 'Emergencies',
+    slugs: ['animal-emergency', 'report-animal-abuse', 'exotic-pet-emergency', 'pets-in-a-disaster'],
+    places: { label: 'Emergency vets, nearest first', href: '/directory?need=emergency-vet' },
+  },
+  {
+    title: 'Wild birds and wildlife',
+    slugs: ['found-an-injured-bird', 'found-wildlife', 'more-situations-animal-help-now'],
+    places: { label: 'Wildlife rehabbers', href: '/directory?need=wildlife-rehab' },
+  },
+  {
+    title: 'Stray, lost or found',
+    slugs: ['starting-tnr', 'lost-and-found-cat', 'lost-and-found-dog', 'lost-and-found-exotic'],
+    places: { label: 'Lost and found services', href: '/directory?need=lost-found' },
+  },
   {
     title: 'Keeping your pet',
+    places: { label: 'Help with costs, food and care', href: '/directory?need=owner-support' },
     slugs: ['keeping-your-cat', 'keeping-your-dog', 'keep-your-pet-if-you-lose-your-home', 'help-paying-for-care', 'low-cost-clinics-and-trap-banks', 'low-cost-dog-care'],
   },
   {
     title: 'Adopting, rehoming and special cases',
+    places: { label: 'Rescues and shelters', href: '/directory?need=adoption' },
     slugs: ['save-an-at-risk-animal', 'cats-with-special-needs', 'breed-specific-dog-rescue', 'dog-behavior-and-legal', 'rehoming-an-exotic-pet', 'exotic-boarding-and-planning', 'exotic-pet-legality'],
   },
-  { title: 'Cruelty and neglect', slugs: ['report-animal-abuse'] },
 ];
 
 /** The groups with their guides, leaving out any slug that has no page. */
 export const GUIDES_GROUPED = GUIDE_GROUPS.map((g) => ({
   title: g.title,
+  places: g.places,
   guides: g.slugs.map((s) => GUIDES_BY_SLUG.get(s)).filter((x): x is Guide => Boolean(x)),
 }));
 

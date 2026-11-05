@@ -10,16 +10,23 @@ byline: "community site admin"
 
 _How to help an injured or baby wild bird in New York City, and the things that quietly make it worse. For other wild animals, see [Found injured or orphaned wildlife](/guides/found-wildlife)._
 
-## Who to call right now
+## What to do now, step by step
 
-Put the bird in a cardboard box with small air holes, close it, keep it somewhere dark and quiet, and do not give it food or water. Then:
+1. **Does it need help?** A fledgling (fully feathered, hopping, parents nearby) is usually fine: leave it where it is. A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed.
+2. **A hawk, owl or other large bird? Do not pick it up.** Call 311 and ask for the Urban Park Rangers, or ring [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation), the raptor rehabilitators, at any hour. [The Animal Medical Center](/org/animal-medical-center) in Manhattan, open 24 hours, takes raptors and waterfowl.
+3. **Catch it.** Walk up slowly and quietly from behind. Drop a towel or cloth over it and scoop it up, or hold it gently with your hands over its wings.
+4. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out. Keep it somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.
+5. **Take it to [the Wild Bird Fund](/org/the-wild-bird-fund) today.** 565 Columbus Ave (between 87th and 88th), Manhattan. Open every day 9am–7pm, no appointment. (646) 306-2862.
+6. **Cannot get it there?** Email [Urban Wildlife Alliance](/org/urban-wildlife-alliance) at helpline@urbanwildlifenyc.org with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.
 
-- **Any injured wild bird, any borough:** [The Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave (between 87th and 88th), Manhattan. Walk in any day 9am–7pm, no appointment. (646) 306-2862.
-- **You cannot get it there:** email [Urban Wildlife Alliance](/org/urban-wildlife-alliance) at helpline@urbanwildlifenyc.org with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.
-- **Hawk, owl or other large bird:** do not try to pick it up. Call 311 and ask for the Urban Park Rangers, or ring [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation), the raptor rehabilitators, at any hour. [The Animal Medical Center](/org/animal-medical-center) in Manhattan, open 24 hours, takes raptors and waterfowl.
+**Other birds:**
+
 - **A pet or farm bird** (parrot, budgie, chicken, domestic duck or goose, tame dove): the Wild Bird Fund cannot take these. [Animal Care Centers of NYC](/org/animal-care-centers-of-nyc), 311 or (212) 788-4000.
+- **A tame white or oddly coloured pigeon** is a domestic pigeon that cannot survive outside: see [Lost or found a rabbit, bird or reptile](/guides/lost-and-found-exotic).
 - **Several sick or dead birds in one place:** [the USDA line](/org/usda-report-sick-birds-line), (866) 536-7593, or 311. Do not touch them with bare hands.
-- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals are in [Found injured or orphaned wildlife](/guides/found-wildlife).
+- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals: [Found injured or orphaned wildlife](/guides/found-wildlife).
+
+The rest of this page explains each step, in the words of the volunteer who wrote it.
 
 ## If it was caught or bitten by an animal
 
@@ -90,7 +97,7 @@ There are more tips at-
 
 <https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird>
 
-If it’s a large bird or bird of prey, don’t try to approach or handle yourself. It is dangerous! Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators under Who to call right now, at the top of this page. This link has more on wildlife care in NYC-
+If it’s a large bird or bird of prey, don’t try to approach or handle yourself. It is dangerous! Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators in step 2 at the top of this page. This link has more on wildlife care in NYC-
 
 <https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
 
@@ -111,7 +118,3 @@ Animal help now (find licensed rehabbers anywhere) https://ahnow.org
 NY State Wildlife Rehabilitation Council page on finding a wildlife professional
 
 <https://www.nyswrc.org/find-a-wildlife-professional>
-
-## If you later hear the bird could not be saved
-
-It can be heartbreaking to go through the trouble of rescuing wildlife and taking to a rehabber, only to find out the animal was euthanized. For many, the instinct is often to blame the rehabber-how can someone end the life of an animal? However, this decision is not made lightly-every other option is considered before this, and euthanasia is a last resort. If an animal is not responding to treatment, has injuries or illness too severe for treatment, or is in a condition where their quality of life will not be good after treatment (such as excessive pain and suffering) a rehabber may decide humane euthanasia is the appropriate next step. As devastating as the ending of a life may be, it is cruel to force an animal to live through excessive suffering. Wildlife can suffer in ways that aren’t always apparent to the untrained eye-I’ve counseled many well meaning people who have kept a wild animal in domestic care, without realizing the animal is dying an extended death. The same emotions and attachments that drive our passion to help animals can also cloud our judgment, and a logical decision is not always the most pleasant one. Please remember-nobody wants to euthanize an animal, and rehabbers, like rescuers, are driven by care and love. There is a vast emotional toll on the folks who have to do this extremely difficult job, and our compassion should extend to them too.

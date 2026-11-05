@@ -4,7 +4,7 @@ import Icon from '../../components/Icon.astro';
 import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
 import { BOROUGH_LABELS, LISTED_ORGS } from '../../data/orgs.ts';
-import { annotateMentions } from '../../data/guide-mentions.ts';
+import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
 
@@ -19,7 +19,7 @@ const guide = GUIDES_BY_SLUG.get(slug!)!;
 // and the page heading is not duplicated above it.
 // Every listed organization the guide names links to its listing, and each
 // section ends with those organizations' current contacts (guide-mentions.ts).
-const { html } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS);
+const { html } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS, buildMatchers(LISTED_ORGS, guide.slug));
 
 /** Guides where the first thing to know is that this may be an emergency. */
 const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);

@@ -1,15 +1,21 @@
 ---
-title: "Save a shelter animal from euthanasia: the NYC at-risk list"
+title: "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)"
 slug: save-an-at-risk-animal
-summary: "Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it."
+summary: "Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, the two forms to fill in, and how to get a rescue group to pull it."
 topics: ["urgent list","euthanasia list","at risk list","at-risk","new hope","euthanasia","euthanized","euthanised","put down","put to sleep","death row","kill list","ACC","pull","rescue partner","save a dog","save a cat","save a dog from the shelter","adopt from ACC","foster to save","reserve","A-number"]
 source: "research/NYC_ACC_At_Risk_New_Hope.xlsx — Save an animal from the at-risk list"
 ---
-# Save a shelter animal from euthanasia: the NYC at-risk list
+# Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)
 
-_Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, and how to get a rescue group to pull it._
+_Three times a week the NYC shelter lists cats and dogs who may be euthanised if nobody takes them, and each listing closes within about 42 hours. How to check an animal, who may adopt it, the two forms to fill in, and how to get a rescue group to pull it._
 
 Three times a week, New York City's public shelter, Animal Care Centers of NYC (ACC), lists cats and dogs who may be euthanised if nobody takes them. Each listing closes about 42 hours after it is posted. ACC calls it the “at-risk list”, and runs it through its New Hope program, which places animals with approved rescue groups. Act today.
+
+## HOW MUCH TIME YOU HAVE
+
+New animals are posted on Sunday, Tuesday and Thursday at 6:00 PM. Each posting closes at 12:00 noon two days later: Sunday’s list closes Tuesday at noon, Tuesday’s closes Thursday at noon, Thursday’s closes Saturday at noon.
+
+ACC says being on the list does not automatically mean an animal will be euthanised: that happens only when no placement has been found. Acting fast is how a placement is found in time.
 
 ## STEP 1: FIND THE ANIMAL AND CHECK IT IS STILL AVAILABLE
 
@@ -19,24 +25,23 @@ Three times a week, New York City's public shelter, Animal Care Centers of NYC (
 
 ## STEP 2: READ THE ANIMAL’S PAGE: WHO IS ALLOWED TO TAKE IT?
 
-- If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: press “Pre-Screener Form”, then go straight to Step 3. On 2026-11-04 this was 22 of the 46 animals listed.
+- If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: go to Step 3. On 2026-11-04 this was 22 of the 46 animals listed.
 - If the page has a “Reserve [name]” button, a member of the public may adopt this animal directly from ACC, without a rescue group. ACC’s own list page says: “To complete an adoption, please click reserve on the animal of your choice.” Pressing it puts the animal in a cart for 15 minutes; press “check out” at the top right before the time runs out and pay the deposit by card. ACC emails a receipt, which confirms the reservation. Registering on the site first (“Register”, top of the page) saves time.
-- An animal with a Reserve button can also go to a rescue group: if you want to foster, or adopt through a rescue instead, press “Pre-Screener Form” and do Step 3.
-- The Pre-Screener Form is a Google form, so it needs a Google sign-in. ACC passes your answers to its rescue groups. Do not wait to hear back.
+- An animal with a Reserve button can also go to a rescue group: if you want to foster, or adopt through a rescue instead, go to Step 3.
 - If the website gives you trouble, email adopt@nycacc.org. Questions about the New Hope program: newhopeprogram@nycacc.org.
 
-## STEP 3 (IF A RESCUE GROUP IS NEEDED): CONTACT RESCUE GROUPS YOURSELF
+## STEP 3: FILL IN BOTH OF ACC’S FORMS FIRST
+
+- On the animal’s page, press “Pre-Screener Form” and fill it in. It is about this one animal. It is a Google form, so it needs a Google sign-in. ACC passes your answers to its rescue groups.
+- Then fill in ACC’s form for anyone who wants to foster or adopt through one of its rescue groups. ACC’s at-risk list page says: “If you are interested in fostering/adopting through one of our New Hope partners, please fill out this form: https://forms.gle/ozHex3uqvNkQt2dq9”.
+- Do not wait to hear back from either form. Go straight on to Step 4.
+
+## STEP 4: CONTACT RESCUE GROUPS YOURSELF
 
 - Only an approved rescue group can take the animal out for you. ACC calls these groups “New Hope partners”.
-- Contact every group in the list below that takes your kind of animal, through every way each one lists (phone, email, form, Instagram), all at once. Do not wait for one reply before trying the next.
+- Contact every group in the list further down this page that takes your kind of animal, through every way each one lists (phone, email, form, Instagram), all at once. Do not wait for one reply before trying the next.
 - Use the ready-made messages below, so you are not writing one under pressure.
 - The animal is safe only when a rescue group tells you it has confirmed the pull with ACC. A friendly reply is not yet a pull. Keep going until you have that confirmation.
-
-## HOW MUCH TIME YOU HAVE
-
-New animals are posted on Sunday, Tuesday and Thursday at 6:00 PM. Each posting closes at 12:00 noon two days later: Sunday’s list closes Tuesday at noon, Tuesday’s closes Thursday at noon, Thursday’s closes Saturday at noon.
-
-ACC says being on the list does not automatically mean an animal will be euthanised: that happens only when no placement has been found. Acting fast is how a placement is found in time.
 
 ## READY-MADE MESSAGES
 
@@ -52,7 +57,7 @@ Through an online form (kept short, because forms limit the length): At-risk ani
 
 ## WHO TO CONTACT
 
-Contact every organisation that takes your animal's species, through every channel it lists, at the same time. This is a working list of rescue groups approved by ACC (ACC calls them New Hope partners) across the New York, New Jersey and Connecticut area, not every ACC partner; ACC's complete official list is linked at the end of this page. Where an organisation has its own entry in this directory, that entry is where its contact details are kept current.
+Do this once both forms in Step 3 are sent, so you can tell each group they are in. Then contact every group below that takes your kind of animal, through every way it lists, at the same time. Why only these groups: ACC approves around 250 rescue groups, its New Hope partners, from New York to New England. Most of them pull animals from ACC on their own and do not take messages from the public about a particular animal, or are far from the city. The groups below are New Hope partners in or near New York City that publish a way for the public to reach them. If none of them can help, ACC's full list is at the end of this page. Where a group has its own entry in this directory, that entry is where its contact details are kept current.
 
 ## Cats
 
