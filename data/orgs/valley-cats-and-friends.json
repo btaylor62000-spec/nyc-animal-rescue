@@ -24,7 +24,7 @@
   "region_note": null,
   "phones": [],
   "emails": [],
-  "website": "http://valleycatsandfriends.com",
+  "website": "https://valleycatsandfriends.com",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -38,7 +38,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -55,6 +55,15 @@
       "evidence_url": "https://www.nycacc.org/new-hope-partners",
       "source": "monthly-discovery",
       "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://valleycatsandfriends.com/",
+      "source": "manual",
+      "note": "Its own site, read 2026-11-05 over https (http did not resolve), is live with adoptable pets, foster and volunteer pages."
     }
   ],
   "privacy_hold": false,

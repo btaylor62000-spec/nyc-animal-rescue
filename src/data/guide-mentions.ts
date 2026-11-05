@@ -113,6 +113,8 @@ export const MENTION_ALIASES: Record<string, string> = {
   'Long Island Rabbit Rescue': 'long-island-rabbit-rescue-group',
   'NYC Pigeon Rescue Central': 'new-york-city-pigeon-rescue-central',
   NYCPRC: 'new-york-city-pigeon-rescue-central',
+  // The bird guide's author writes the Wild Bird Fund as "WBF" throughout.
+  WBF: 'the-wild-bird-fund',
 };
 
 /*

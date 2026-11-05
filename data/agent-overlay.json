@@ -272,7 +272,19 @@
     "adore-a-bullie-paws-and-claws": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.adore-a-bullie.org/",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05 (the address without www does not resolve): \"founded by passionate rescuers dedicated to saving NYC's surrendered pets\", foster-based, with adoption forms. No phone or email shown."
+        }
+      ]
     },
     "advocat-rescue-inc": {
       "last_checked": "2026-11-05",
@@ -1184,7 +1196,25 @@
     "beastly-rescue": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "intake_urls": [
+        {
+          "url": "https://www.beastlyrescue.org/",
+          "label": "Adoption application and foster form"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.beastlyrescue.org/",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05, is live (\"Rescuing with love in New York City\") with an adoption application and foster page; its contact page is missing, so Facebook and Instagram are the way in."
+        }
+      ]
     },
     "bed-stuy-kitty-crew": {
       "last_checked": "2026-11-05",
@@ -2919,7 +2949,19 @@
     "heidi-wrangles-cats": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://heidiwranglescats.com/",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05: a rescue in Bed-Stuy, Brooklyn doing TNR and socialising feral kittens, with adoption and foster applications. The stored email is not shown on the home page."
+        }
+      ]
     },
     "helping-paw": {
       "last_checked": "2026-11-05",
@@ -5458,8 +5500,18 @@
           "source": "manual",
           "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
           "evidence_url": "phone call by a reviewer, 2026-11-04"
+        },
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.safehorizon.org/about-us/what-we-do/",
+          "source": "manual",
+          "note": "Safe Horizon's own pages, read 2026-11-05, give its domestic violence hotline as 1-800-621-4673, the number stored."
         }
-      ]
+      ],
+      "last_verified": "2026-11-05"
     },
     "safe-havens-for-pets": {
       "last_checked": "2026-11-05",
@@ -6904,7 +6956,19 @@
     "valley-cats-and-friends": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://valleycatsandfriends.com/",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05 over https (http did not resolve), is live with adoptable pets, foster and volunteer pages."
+        }
+      ]
     },
     "value-veterinary-clinic": {
       "last_checked": "2026-11-05",
@@ -7536,12 +7600,87 @@
     "zanis-furry-friends": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "intake_urls": [
+        {
+          "url": "https://zanisfurryfriends.org/contact",
+          "label": "Contact page and applications"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://zanisfurryfriends.org/contact",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05: \"Animal rescue all over the world and adoption in NYC + NJ\", with cat, dog and rabbit adoption and foster applications. No phone or email on the page."
+        }
+      ]
     },
     "zions-mission-animal-rescue": {
       "last_checked": "2026-11-05",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-05",
+      "intake_urls": [
+        {
+          "url": "https://www.zionsmission.org/contact",
+          "label": "Contact form"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.zionsmission.org/contact",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05, is live, with a contact form, adoption and foster pages and community programmes; it gives no phone or email."
+        }
+      ]
+    },
+    "linus-and-friends": {
+      "last_verified": "2026-11-05",
+      "confidence": "Medium",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.linusrescue.org/contact",
+          "source": "manual",
+          "note": "Its own contact page, read in a browser 2026-11-05, gives contact@linusrescue.org, the address stored."
+        }
+      ]
+    },
+    "twenty-paws-rescue": {
+      "last_verified": "2026-11-05",
+      "intake_urls": [
+        {
+          "url": "https://www.twentypawsrescue.com/contact-us/",
+          "label": "Contact form"
+        },
+        {
+          "url": "https://www.twentypawsrescue.com/forms-applications/",
+          "label": "Adoption and foster applications"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.twentypawsrescue.com/contact-us/",
+          "source": "manual",
+          "note": "Its own contact page, read 2026-11-05: rescues dogs and cats, \"located in both Pennsylvania and Brooklyn, NY\", P.O. Box 245007, Brooklyn, NY 11224, and a contact form. The email stored was supplied by a reviewer and is not on that page."
+        }
+      ]
     }
   }
 }

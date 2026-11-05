@@ -26,7 +26,12 @@
   "phones": [],
   "emails": [],
   "website": "https://www.beastlyrescue.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.beastlyrescue.org/",
+      "label": "Adoption application and foster form"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
@@ -39,7 +44,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -56,6 +61,15 @@
       "evidence_url": "https://www.nycacc.org/new-hope-partners",
       "source": "monthly-discovery",
       "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://www.beastlyrescue.org/",
+      "source": "manual",
+      "note": "Its own site, read 2026-11-05, is live (\"Rescuing with love in New York City\") with an adoption application and foster page; its contact page is missing, so Facebook and Instagram are the way in."
     }
   ],
   "privacy_hold": false,

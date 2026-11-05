@@ -85,8 +85,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | High | 207 |
-| Medium | 149 |
-| Low | 64 |
+| Medium | 150 |
+| Low | 63 |
 
 ### By operating status
 
@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (18)
+### Never verified (9)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 

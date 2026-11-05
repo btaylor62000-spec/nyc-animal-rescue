@@ -46,7 +46,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -64,6 +64,15 @@
       "source": "manual",
       "note": "Checked on 2026-11-04: A kind of programme rather than one organisation; its only contact is the NYC domestic violence hotline, whose page on nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to confirm it by phone or in a normal browser.",
       "evidence_url": "phone call by a reviewer, 2026-11-04"
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://www.safehorizon.org/about-us/what-we-do/",
+      "source": "manual",
+      "note": "Safe Horizon's own pages, read 2026-11-05, give its domestic violence hotline as 1-800-621-4673, the number stored."
     }
   ],
   "privacy_hold": false,

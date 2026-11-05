@@ -9,7 +9,7 @@ matter.
 ## Where things stand
 
 **The site is live and deployed.** Everything below already works in
-production; nothing here is aspirational. Figures last refreshed 2026-11-04
+production; nothing here is aspirational. Figures last refreshed 2026-11-05
 from the data itself (`data/orgs/`, `content/guides/`, the workbooks) -- when
 you change them, recount rather than adjust.
 
@@ -20,12 +20,12 @@ you change them, recount rather than adjust.
 | Hosting | Cloudflare Pages, auto-deploys on every push to `main` |
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
-| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 69 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
+| Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing:  85 rows as of 2026-11-05, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
 | Guides | 24. Since 2026-11-05 every guide is on the home page by situation (`GUIDE_GROUPS`, tested), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and *More situations, answered by Animal Help Now* links every question on ahnow.org/resources.php to its answer. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
-| Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
-| Discovery | 230 candidates from ACC's New Hope partner roster. 23 published, every one read and placed in the city; 207 held back. All were read in a browser on 2026-11-04, and the 131 that did not settle were read again, contact and about pages included, on 2026-11-05: `docs/discovery-review-2026-11-05.md` leaves 5 worth one look by a person; the rest are outside the city, say nothing, or cannot be read |
+| Directory | 407 listed of 420 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 400 carry a date they were last confirmed; 7 have never been: three nyc.gov reference pages that refuse robots, and four rescues published on 2026-11-05 from contacts a reviewer read on Petfinder or Facebook (American Alliance for Protection of Animals, Animals Are Forever, Big Hands Little Paws, Hopewell). 42 emergency vets, every one with hours, 29 of them open 24/7 (the New Jersey, Long Island, Westchester and Rockland VEG hospitals among them). Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
+| Discovery | **Finished 2026-11-05.** 230 candidates from ACC's New Hope partner roster (every one is an ACC rescue partner). 29 published, each read and placed in the city; the rest are outside the city, closed, or unreadable, and each is named with the reason in `docs/discovery-review-2026-11-05.md`. Breed- and population-specific rescues outside the city are in the breed guide and the special-needs sections instead, and partners outside the city whose own sites say they take animals from ACC are in the at-risk guide |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
-| Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
+| Privacy holds | All three people agreed to be listed on 2026-09-22. On 2026-11-05 the reviewer asked for Divya's mobile to come off the bird guide anyway (it now routes to organizations), and a volunteer's personal Gmail NYTTS does not publish was removed from the turtle line; the Horvaths' and Robert Spragg's numbers stay, because NYC Bird Alliance publishes them for exactly this. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
 **New here?** Read `docs/START-HERE.md` if you want to be walked through
@@ -61,20 +61,18 @@ yours:
 
 Ordered by how much harm it prevents, not by size.
 
-0. **Optional: five discovery candidates are worth one look by a person**
-   (`docs/discovery-review-2026-11-05.md`, settled 2026-11-05 by a second
-   browser pass; the reviewer no longer needs to go through all of them).
-   Earlier note, kept for the method: **the reviewer was to review the 210 held-back
-   discovery candidates by hand.** Asked for on 2026-11-04 so it is not
-   forgotten. Start from `docs/discovery-review-2026-11-04.md`, which sorts
-   every one by what its own site said (outside the city, no location,
-   unreadable, not an organisation). The 90 "say nothing about where they
-   are" are where a person's judgement is needed. For each one they decide
-   to publish, set `"publish": true` in `data/discovered.json` with
-   `boroughs` or `citywide`, `animals`, `needs` and a `checkedBy` sentence
-   saying what was read, then `npm run import` (see item 2).
+0. **Discovery is finished** (2026-11-05). Every candidate was read, by a
+   browser and then by the reviewer; the decisions and reasons are in
+   `docs/discovery-review-2026-11-05.md`. Nothing is waiting.
 
-1. **The weekly check ran properly on 2026-11-04** (by hand, after the fix
+1. **The weekly check of 2026-11-05 flagged 17; all were settled the same
+   day** (`docs/discovery-review-2026-11-05.md`, last section). Eleven were
+   false: numbers written in letters (1-800-799-SAFE, 914-771-PETS) and the
+   three-digit lines 311 and 988, which the checker now reads, plus a fax,
+   DEC's head office and ACC's main line. Read the next run's report to see
+   that they do not come back.
+
+   Earlier: **the weekly check ran properly on 2026-11-04** (by hand, after the fix
    below) and opened PR #8: 175 listings re-confirmed, 43 flagged. Its branch
    was merged into the 2026-11-04 work rather than merged alone, because it
    would have marked 14 rescues "may no longer be active": two were sites
@@ -119,11 +117,8 @@ Ordered by how much harm it prevents, not by size.
    opened in a browser and 9 more were published, each because its own site
    places it in the city or says it serves the city (`animals` and `needs`
    can now be set on a candidate too, since the name alone rarely says).
-   What is left, in `docs/discovery-review-2026-11-04.md`: 63 give an
-   address outside the city, 90 say nothing about where they are, 41 could
-   not be read, 11 are not organisations to list or are already listed (the
-   roster scrape picked up "Careers", "Register to vote", the Bronx Zoo).
-   The 90 are the work for a person: a contact page or a phone call.
+   All of them have since been decided (item 0). A future discovery run
+   will bring new candidates; the same rule applies.
 
 3. **Check the sites only a person can read, monthly.** `/status` lists them
    under "Checked by a person only" (Urban Wildlife Alliance, Petco Love
