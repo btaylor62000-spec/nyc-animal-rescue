@@ -40,7 +40,7 @@ _What to do first, where to post, and who helps with searching._
 - Urban Cat League Taming Toolkit (urbancatleague.org/taming-toolkit) - THE NYC resource: written crash-course + 'Taming Feral Kittens & Cats' video + taming blog. Share it with adopters/fosters to prevent back-sliding.
 - Rule of thumb: kittens under 8 weeks socialize easily; 8 weeks-6 months takes longer but works; adult ferals sometimes too. Work at feeding time when they're hungry, start with head/shoulders, use a large dog crate or a bathroom, hand-feed to build trust.
 - UCL workshops: Taming Feral Street Kittens, Bottle-Feeding Neonatals, Building Winter Shelters, Incorporating a 501(c)(3), and the TNR Certification workshop (15,000+ certified).
-- Kitten Lady (kittenlady.org) - free how-to videos on neonatal/kitten care + socialization. Cornell Feline Health Center - vet-backed behavior articles.
+- Kitten Lady (kittenlady.org) - free how-to videos on neonatal/kitten care + socialization. Cornell Feline Health Center - vet-backed health and behavior articles: https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics
 
 ## BEHAVIOR / SOCIALIZATION - part B: OWNED-cat problems (these are the #1 surrender triggers - solvable!)
 
@@ -49,7 +49,7 @@ _What to do first, where to post, and who helps with searching._
 - Litter box (10%+ of cats): one box per cat PLUS one extra, scoop daily, unscented clumping litter about 2in deep, big uncovered box, quiet accessible spot. Never punish or place the cat in the box. Spraying (vertical, small amount) is marking, not a box problem - neuter fixes about 90%.
 - Cat-to-cat aggression / introductions: separate resources (multiple bowls, beds, boxes, perches), go SLOW with a new cat (scent-swap, then feed on opposite sides of a door, then visual, then supervised). Feliway pheromone diffuser can lower tension. Don't soothe an aroused cat - give space (redirected aggression can turn on you).
 - Scratching: it's normal (stretching/marking) - provide tall sturdy posts + horizontal cardboard, don't declaw (harmful; alternatives exist). Reward using the post.
-- Authoritative free libraries: ASPCA Common Cat Behavior Issues (aspca.org/pet-care/cat-care), Pam Johnson-Bennett (catbehaviorassociates.com), Best Friends, Cornell Feline Health Center.
+- Authoritative free libraries: ASPCA Common Cat Behavior Issues (aspca.org/pet-care/cat-care), Pam Johnson-Bennett (catbehaviorassociates.com), Best Friends, Cornell Feline Health Center (https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center).
 - For serious/persistent cases: ask your vet for a referral to a board-certified veterinary behaviorist (Dip ACVB) or Certified Applied Animal Behaviorist (CAAB).
 
 Prevention beats everything: a registered microchip + keeping cats indoors is the single strongest safety net. A loud noise or sudden movement can send an outdoor cat running - think of a cat outside as a toddler alone.

@@ -188,6 +188,9 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
       { pattern: /LOW-COST exotic care/i, needs: ['low-cost-vet', 'exotic-vet'], orgTypes: ['clinic'] },
       { pattern: /FOOD & SUPPLY/i, needs: ['food-assistance'], orgTypes: ['support-program'] },
     ],
+    // A line naming three national funds, given their web addresses so a
+    // reader can reach them (2026-11-05); it is a pointer, not a listing.
+    skip: /^The Mosby Foundation/,
   },
   {
     file: WB_EXOTIC,
@@ -199,8 +202,8 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     // accept wildlife are promoted to records here.
     // The two directory pointers and Animal Help Now's situations are guide
     // text, not organizations (AHNow and DEC have their own entries).
-    skip: /^Bobby & Cathy|^Robert Spragg|^Most of the city's licensed wildlife|^Or New York State's own register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road/i,
-    rules: [{ pattern: /veterinarians who will see WILDLIFE/i, needs: ['wildlife-rehab'], orgTypes: ['clinic'] }],
+    skip: /^Bobby & Cathy|^Robert Spragg|^Most of the city's licensed wildlife|^Or New York State's own register|^Is it really orphaned|^Baby duck|^Injured deer|^Stuck in a glue trap|^A wild animal used to people|^A bird with a band|^An animal in the road|^Every other situation|^If it is hurt, cold/i,
+    rules: [{ pattern: /veterinarians who will see WILDLIFE|Vets who will see a wild animal/i, needs: ['wildlife-rehab'], orgTypes: ['clinic'] }],
   },
 ];
 

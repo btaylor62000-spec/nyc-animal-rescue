@@ -47,7 +47,7 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 ## ROTTWEILER (part of the "bully"/molosser group)
 
 - Mountain Rottie Rescue of New York - rottweilers and 'not-weilers', foster-based, pulls from Northern and Southern shelters; approved ACC rescue partner. mountainrottierescue.net.
-- Hudson Valley Rottie Rescue - rottweilers, Middletown NY, serves lower Hudson/NY metro. facebook.com/HudsonValleyRottieRescue.
+- Hudson Valley Rottie Rescue - rottweilers, Middletown NY, serves lower Hudson/NY metro. rottnrescues@aol.com. Facebook: https://www.facebook.com/people/Hudson-Valley-Rottie-Rescue/100064412633081/ . Dogs on Petfinder: https://www.petfinder.com/pet-search?shelter_id=NY975 (contacts supplied by a reviewer, 2026-11-05).
 - For the Love of Dog Rottweiler Rescue - rottweilers, NH-based but on ACC New Hope list (adopts NY). http://www.4theloveofdog.org.
 
 (Also: the ALL-BULLY rescues above - Bullied Breeds, NYBC, City Pitties - take rottweilers.)
@@ -71,7 +71,7 @@ Internet Miniature Pinscher Service (IMPS) - min pins, national incl. NY. (via M
 - Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes, has a NY chapter. https://www.magdrl.org / https://nydanerescue.com.
 - Bullmastiff Rescuers - bullmastiffs, NY-serving. http://www.bullmastiffrescuers.net.
 - Happy Go Lucky Mastiff Rescue - mastiffs, adopts NY metro. https://happygoluckymastiffrescue.com.
-- Lucie's Mastiff Mission - mastiffs, NY-serving (via ACC New Hope). facebook.com/groups/318799318598045.
+- Lucie's Mastiff Mission - mastiffs, based at 538 Ongs Hat Rd, Vincentown, NJ 08088; takes mastiffs from NYC through ACC's rescue-partner program. (484) 459-3257. Facebook group: https://www.facebook.com/groups/318799318598045 (address and phone supplied by a reviewer from its public nonprofit record, 2026-11-05).
 - Tibetan Mastiff Rescue - Tibetan mastiffs, national incl. NY. http://www.tibetanmastiffrescueinc.org.
 
 For Dogo Argentino / Presa Canario / Dogue de Bordeaux specifically: no dedicated NYC single-breed rescue found - use the ALL-BULLY rescues above (NYBC, Bullied Breeds, Guardian Angel) + ACC New Hope, and the breed's national club rescue (e.g. Dogo Argentino Club of America).
@@ -157,15 +157,13 @@ New England Old English Sheepdog Rescue - OES, NE incl. NY. (via Mayor's Allianc
 - Cavalier Rescue USA - Cavalier King Charles spaniels, national incl. NY. http://www.cavalierrescueusa.org.
 - Cavalier Alliance for Rescue & Research - cavaliers, NY-serving. http://www.cavalieralliance.org.
 - Peace Love and Poms / Pawsitively Pom Rescue - Pomeranians, adopt NY metro. peacelovepoms.rescuegroups.org.
-
-Pekingese Rescue Network - pekingese, NJ/NY metro. (Petfinder: pekingese-rescue-network).
+- Pekingese Rescue Network Inc. - pekingese, Hillsdale NJ 07642, serves NJ/NY/CT. (201) 739-8988, codoan@aol.com. Petfinder: https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/ (supplied by a reviewer, 2026-11-05). Not the same as pekingeserescue.org, a national site listing many Pekingese rescues.
 
 ## GREYHOUND / SIGHTHOUND
 
 - WRAP - Whippet Rescue and Placement - whippets, national incl. NY. http://whippet-rescue.org.
 - Italian Greyhound Rescue (NY affiliate) - IGs. http://www.igrescue.com/affiliates/new_york/.
-
-Greyhound Rescue and Rehabilitation - greyhounds, East Patchogue NY, serves metro. (search GRR).
+- Greyhound Rescue and Rehabilitation - retired racing greyhounds, P.O. Box 572, Cross River, NY 10518; serves the metro area. (914) 763-2221, info@greyhoundrescuerehab.org, https://greyhoundrescuerehab.org (contacts supplied by a reviewer, 2026-11-05; the website is live).
 
 ## BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS
 

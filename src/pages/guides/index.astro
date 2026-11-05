@@ -1,14 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { GUIDES_ORDERED } from '../../data/guides.ts';
+import { GUIDES_GROUPED } from '../../data/guides.ts';
 
 /*
  * An icon per guide, chosen by slug. Anything unmatched falls back to the
  * compass rather than throwing -- the importer can add a guide without this
  * page needing to know about it first.
  */
-const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' | 'leaf' | 'alert' | 'shield'> = {
+const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' | 'leaf' | 'alert' | 'shield' | 'heart'> = {
   'animal-emergency': 'alert',
   'exotic-pet-emergency': 'alert',
   'found-an-injured-bird': 'bird',
@@ -28,6 +28,11 @@ const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' 
   'help-paying-for-care': 'stethoscope',
   'low-cost-clinics-and-trap-banks': 'stethoscope',
   'low-cost-dog-care': 'stethoscope',
+  'more-situations-animal-help-now': 'leaf',
+  'pets-in-a-disaster': 'alert',
+  'report-animal-abuse': 'shield',
+  'save-an-at-risk-animal': 'heart',
+  'keep-your-pet-if-you-lose-your-home': 'home',
 };
 ---
 
@@ -38,21 +43,38 @@ const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' 
   <div class="wrap">
     <h1>Guides</h1>
     <p class="lede">
-      What to do, in the order it needs doing. Written for someone standing on a
-      pavement with a phone in one hand. Kept current by the people who use it: if a
-      number is wrong, <a href="/directory">find the entry</a> and tap Report a problem.
+      A guide tells you <strong>what to do</strong>, step by step, for one situation: how to pick up
+      an injured bird, what to try before giving up a pet, how to report cruelty. Each one ends with
+      the places to contact, taken from the directory.
+    </p>
+    <p class="notice">
+      <Icon name="search" size={17} />
+      <span>
+        Already know what you need and just want a phone number? <a href="/directory">Find help</a> lists
+        every rescue, clinic and hotline, and can show what is open now and nearest to you.
+      </span>
     </p>
 
-    <ul class="tiles">
-      {GUIDES_ORDERED.map((g) => (
-        <li>
-          <a class="tile" href={`/guides/${g.slug}`}>
-            <span class="tile__icon"><Icon name={ICONS[g.slug] ?? 'compass'} size={20} /></span>
-            <strong>{g.title}</strong>
-            <span>{g.summary}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    {GUIDES_GROUPED.map((group) => (
+      <section class="section" style="padding-top:1.25rem">
+        <h2 style="font-size:1.15rem">{group.title}</h2>
+        {group.places && (
+          <p class="muted" style="margin:-.3rem 0 .6rem">
+            Just need a number? <a href={group.places.href}>{group.places.label}</a>
+          </p>
+        )}
+        <ul class="tiles">
+          {group.guides.map((g) => (
+            <li>
+              <a class="tile" href={`/guides/${g.slug}`}>
+                <span class="tile__icon"><Icon name={ICONS[g.slug] ?? 'compass'} size={20} /></span>
+                <strong>{g.title}</strong>
+                <span>{g.summary}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
   </div>
 </Base>

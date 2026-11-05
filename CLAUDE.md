@@ -21,7 +21,7 @@ you change them, recount rather than adjust.
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 69 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 23. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Guides | 24. Since 2026-11-05 every guide is on the home page by situation (`GUIDE_GROUPS`, tested), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and *More situations, answered by Animal Help Now* links every question on ahnow.org/resources.php to its answer. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | 230 candidates from ACC's New Hope partner roster. 23 published, every one read and placed in the city; 207 held back. All were read in a browser on 2026-11-04, and the 131 that did not settle were read again, contact and about pages included, on 2026-11-05: `docs/discovery-review-2026-11-05.md` leaves 5 worth one look by a person; the rest are outside the city, say nothing, or cannot be read |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
@@ -561,6 +561,16 @@ A line carrying a contact detail becomes a listing. Register the tab in
 `GUIDE_ORG_SOURCES` as well and its contacts become organization records; leave
 it out and they stay as text on the page, which is the right choice when the
 organizations already have entries whose contacts are maintained.
+
+**A guide names an organization; the page supplies its contacts**
+(2026-11-05). `src/data/guide-mentions.ts` links the first mention of each
+listed organization in every section and ends the section with a box of
+their current phone and website, from the records at build time. Names that
+are a borough, or that several listings share ("ASPCA", "Urgent Vets"), are
+deliberately not linked. An organization a guide names that has no listing
+must carry its web address in the line (tested). The bird guide's section
+order is `BIRD_SECTIONS` and the wildlife guide's is `sectionOrder`; a
+renamed heading throws.
 
 **Guides and listings must not disagree.** Guide prose is copied research;
 listings are kept current. Five guides (`GUIDE_LISTINGS` in

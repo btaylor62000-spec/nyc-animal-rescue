@@ -4,63 +4,16 @@ import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
 import Skyline from '../components/Skyline.astro';
 import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
+import { GUIDES_GROUPED } from '../data/guides.ts';
 
 /**
- * The home page answers one question: what is happening, and where do I tap?
- * The emergency route comes before the search box, because someone holding an
- * injured animal should not have to compose a query.
+ * The home page answers one question: what happened, and where do I tap?
+ * The emergency route comes first, because someone holding an injured animal
+ * should not have to read. After it, every guide by situation, each group
+ * with a link straight to the places to contact. There used to be a second,
+ * shorter set of tiles above the guides; a reviewer found the two lists
+ * confusing in an emergency (2026-11-05), so there is one.
  */
-const tiles = [
-  {
-    href: '/guides/found-an-injured-bird',
-    icon: 'bird',
-    title: 'Found an injured bird',
-    blurb: 'Catch it, box it, and get it to a rehabber. Do not feed it.',
-  },
-  {
-    href: '/directory?need=tnr&animal=cat',
-    icon: 'cat',
-    title: 'Found a stray cat or kittens',
-    blurb: 'TNR groups, bottle-baby help and local rescues.',
-  },
-  {
-    href: '/directory?need=owner-support',
-    icon: 'home',
-    title: 'I can’t keep my pet',
-    blurb: 'Help with costs, housing and temporary care first.',
-  },
-  {
-    href: '/directory?need=lost-found',
-    icon: 'compass',
-    title: 'Lost or found a pet',
-    blurb: 'Where to report and search in the first hours.',
-  },
-  {
-    href: '/directory?need=low-cost-vet',
-    icon: 'stethoscope',
-    title: 'Need low-cost vet care',
-    blurb: 'Clinics, spay/neuter and help with vet bills.',
-  },
-  {
-    href: '/guides/found-wildlife',
-    icon: 'leaf',
-    title: 'Found wildlife',
-    blurb: 'Only licensed rehabbers may handle wild animals.',
-  },
-  {
-    href: '/guides/save-an-at-risk-animal',
-    icon: 'compass',
-    title: 'Save an animal from the shelter\u2019s urgent list',
-    blurb: 'Cats and dogs the city shelter may euthanise. Check one\u2019s status and apply, today.',
-  },
-  {
-    href: '/guides/report-animal-abuse',
-    icon: 'shield',
-    title: 'Report abuse or neglect',
-    blurb: 'In New York City this goes to the police, not the ASPCA.',
-  },
-] as const;
-
 const orgCount = ORGS.length;
 const emergencyCount = ORGS.filter((o) => o.needs.includes('emergency-vet')).length;
 const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
@@ -113,24 +66,36 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
       <div class="emergency__actions">
         <a class="btn btn--urgent" href="/directory?need=emergency-vet">24-hour emergency vets</a>
         <a class="btn" href="/guides/animal-emergency">What to do first</a>
-        <a class="btn" href="/guides/found-an-injured-bird">It’s a wild bird or animal</a>
+        <a class="btn" href="/guides/found-an-injured-bird">A wild bird is hurt</a>
+        <a class="btn" href="/guides/found-wildlife">Another wild animal is hurt</a>
+        <a class="btn" href="/guides/report-animal-abuse">Someone is hurting an animal</a>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="what-heading">
       <span class="eyebrow">Start from what happened</span>
-      <h2>Situations people arrive with</h2>
-      <ul class="tiles">
-        {tiles.map((t) => (
-          <li>
-            <a class="tile" href={t.href}>
-              <span class="tile__icon"><Icon name={t.icon} size={20} /></span>
-              <strong>{t.title}</strong>
-              <span>{t.blurb}</span>
-            </a>
-          </li>
+      <h2 id="what-heading">What happened?</h2>
+      <p class="muted" style="margin-top:-.25rem">
+        Each guide says what to do, step by step, and who to call. To go straight to phone numbers,
+        use the link under each heading, or <a href="/directory">Find help</a>.
+      </p>
+      <div class="situations">
+        {GUIDES_GROUPED.map((group) => (
+          <div class="situation">
+            <h3>{group.title}</h3>
+            <ul>
+              {group.guides.map((g) => (
+                <li><a href={`/guides/${g.slug}`}>{g.title}</a></li>
+              ))}
+            </ul>
+            {group.places && (
+              <p class="situation__places">
+                <Icon name="search" size={15} /> <a href={group.places.href}>{group.places.label}</a>
+              </p>
+            )}
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
 
     <section class="section">

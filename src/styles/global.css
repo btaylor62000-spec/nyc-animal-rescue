@@ -1096,3 +1096,28 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .guide-listings__block h3 { margin: 1.25rem 0 0.4rem; font-size: 1.05rem; }
 .guide-listings__block ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
 .guide-listings__block li { line-height: 1.45; }
+
+/* --- what happened? (2026-11-05) ----------------------------------------- */
+/* Every guide, by situation, each group with a link to the places to call.
+   It replaced two overlapping lists that a reviewer found confusing. */
+.situations { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.situation { border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; background: var(--surface); }
+.situation h3 { font-size: 1.05rem; margin: 0 0 0.45rem; }
+.situation ul { margin: 0; padding-left: 1.1rem; }
+.situation li { margin: 0.3rem 0; }
+.situation__places { margin: 0.7rem 0 0; padding-top: 0.6rem; border-top: 1px solid var(--border); font-weight: 600; display: flex; align-items: center; gap: 0.35rem; }
+
+/* Contacts for each section of a guide, built from the listings. */
+.guide-contacts {
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent, var(--border));
+  border-radius: 8px;
+  background: var(--surface, transparent);
+  font-size: 0.95rem;
+}
+.guide-contacts__title { margin: 0 0 0.3rem; font-weight: 650; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-muted); }
+.guide-contacts ul { margin: 0; padding-left: 1.1rem; }
+.guide-contacts li { margin: 0.2rem 0; overflow-wrap: anywhere; }
+.guide-lead { margin: 1rem 0 0; }

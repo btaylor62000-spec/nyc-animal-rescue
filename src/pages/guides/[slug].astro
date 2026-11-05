@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
-import { BOROUGH_LABELS } from '../../data/orgs.ts';
+import { BOROUGH_LABELS, LISTED_ORGS } from '../../data/orgs.ts';
+import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
 
@@ -16,12 +17,16 @@ const guide = GUIDES_BY_SLUG.get(slug!)!;
 
 // The guide's own <h1> comes from the Markdown, so the body is rendered as-is
 // and the page heading is not duplicated above it.
-const html = renderMarkdown(guide.body);
+// Every listed organization the guide names links to its listing, and each
+// section ends with those organizations' current contacts (guide-mentions.ts).
+const { html } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS, buildMatchers(LISTED_ORGS, guide.slug));
 
 /** Guides where the first thing to know is that this may be an emergency. */
 const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);
 const isUrgent = URGENT.has(guide.slug);
 const blocks = (GUIDE_LISTINGS[guide.slug] ?? []).map((b) => ({ ...b, orgs: listingsFor(b), href: directoryHref(b) }));
+// Where "places to contact" goes: the guide's own directory filter if it has one.
+const findHref = blocks.find((b) => b.href)?.href ?? '/directory';
 const where = (o: (typeof blocks)[number]['orgs'][number]) =>
   o.outside_nyc ? 'Outside NYC, serves New Yorkers' : o.citywide ? 'Citywide' : o.boroughs.map((b) => BOROUGH_LABELS[b]).join(', ');
 ---
@@ -39,6 +44,12 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
         </span>
       </p>
     )}
+
+    <p class="muted guide-lead">
+      <strong>This is a guide:</strong> what to do, step by step. Organizations it names link to their
+      listing, and each section ends with their current contacts. Looking only for a place to call?
+      <a href={findHref}>Find help</a>.
+    </p>
 
     <article class="guide-body" set:html={html} />
 
