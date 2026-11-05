@@ -44,12 +44,12 @@
   "source_urls": [
     "https://www.petamberalert.com/lost-and-found-pets/new-york/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "LOST AND FOUND PETS - online alert and search sites from the Mayor's Alliance lost and found page. File a report with the city's shelter as well.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

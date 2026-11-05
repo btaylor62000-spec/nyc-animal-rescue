@@ -70,8 +70,8 @@
     "research/NYC_Reviewer_Additions.xlsx",
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-05",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {

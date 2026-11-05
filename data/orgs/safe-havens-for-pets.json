@@ -47,14 +47,14 @@
     "https://awionline.org/safe-havens",
     "https://awionline.org/news/new-website-offers-shelter-resources-for-domestic-violence-survivors-with-pets/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "Owner support & surrender prev. — DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
-  "check_status": "manual-only",
+  "last_checked": "2026-11-05",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

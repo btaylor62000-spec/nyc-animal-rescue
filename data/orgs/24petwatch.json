@@ -50,13 +50,13 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "Lost-found & behavior — MICROCHIP REGISTRIES (register the chip - a chip that isn't registered can't reunite anyone)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

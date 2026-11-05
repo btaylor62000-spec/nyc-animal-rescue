@@ -1,21 +1,50 @@
 {
-  "date": "2026-11-04",
-  "checked": 670,
+  "date": "2026-11-05",
+  "checked": 688,
   "counts": {
-    "ok": 581,
-    "gone": 13,
+    "ok": 616,
+    "gone": 1,
     "parked": 0,
     "taken": 0,
-    "elsewhere": 6,
-    "blocked": 23,
-    "down": 47
+    "elsewhere": 4,
+    "blocked": 49,
+    "down": 18
   },
   "problems": [
+    {
+      "url": "http://bigcitylittlekitty.blogspot.com",
+      "verdict": "blocked",
+      "status": 429,
+      "finalUrl": "http://www.google.com/sorry/index?continue=http://bigcitylittlekitty.blogspot.com/&q=EgQUqye9GMewr9cGIi0eGcSka4W_lz1WUTPqLGEaOfFqf8ZRo9RZl38SN-HsC2LVp4aarKAwKFSmhJQyAnJSWgFDYPrA57Plou37QQ",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "big-city-little-kitty",
+          "name": "Big City Little Kitty",
+          "field": "website"
+        }
+      ]
+    },
     {
       "url": "http://www.cavalieralliance.org",
       "verdict": "blocked",
       "status": 403,
       "finalUrl": "http://www.cavalieralliance.org/",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "http://www.pmarinc.org",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "http://www.pmarinc.org",
+      "error": "robots.txt asks us not to",
       "places": [
         {
           "kind": "guide",
@@ -40,11 +69,17 @@
       ]
     },
     {
-      "url": "https://awionline.org",
+      "url": "https://awionline.org/safe-havens",
       "verdict": "blocked",
       "status": 403,
-      "finalUrl": "https://awionline.org/",
+      "finalUrl": "https://awionline.org/safe-havens",
       "places": [
+        {
+          "kind": "guide",
+          "id": "keeping-your-cat",
+          "name": "Help keeping your cat",
+          "field": "guide text"
+        },
         {
           "kind": "guide",
           "id": "keeping-your-dog",
@@ -94,6 +129,132 @@
       ]
     },
     {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYdJp4fr7_qXzWFo7vccytuWMqrPai9bDbdivtcPANoftl9w/viewform",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdYdJp4fr7_qXzWFo7vccytuWMqrPai9bDbdivtcPANoftl9w/viewform",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "house-of-pancakes-reptile-rescue",
+          "name": "House of Pancakes Reptile Rescue (HoPRR)",
+          "field": "Adoption/foster app"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR245_O9E6_8R7j63ETtwINxe_S6n82E66V-s9Jv5ZOqZRGQ/viewform",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeR245_O9E6_8R7j63ETtwINxe_S6n82E66V-s9Jv5ZOqZRGQ/viewform",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "makin-biscuits-nyc",
+          "name": "Makin' Biscuits NYC",
+          "field": "Foster and adoption support form"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/318799318598045",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/groups/318799318598045",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/nycemergencyanimalrescue",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/groups/nycemergencyanimalrescue",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "nyc-emergency-animal-rescue",
+          "name": "NYC Emergency Animal Rescue (Facebook group)",
+          "field": "form"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/GspRescueOfNjNy",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/GspRescueOfNjNy",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/HudsonValleyRottieRescue",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/HudsonValleyRottieRescue",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/Kisos-Pet-Food-Pantry",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/Kisos-Pet-Food-Pantry",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "keeping-your-cat",
+          "name": "Help keeping your cat",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "keeping-your-dog",
+          "name": "Help keeping your dog",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/SafeHounds",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://facebook.com/SafeHounds",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
       "url": "https://forms.gle/ozHex3uqvNkQt2dq9",
       "verdict": "blocked",
       "status": 401,
@@ -102,14 +263,23 @@
         {
           "kind": "listing",
           "id": "acc-new-hope-program",
-          "name": "ACC New Hope Program",
-          "field": "ACC pre-screener — submit if you have a home ready (needs a Google sign-in)"
-        },
+          "name": "ACC at-risk list: save a shelter animal from euthanasia (New Hope program)",
+          "field": "Pre-Screener Form, to go through a rescue group (needs a Google sign-in)"
+        }
+      ]
+    },
+    {
+      "url": "https://groups.google.com/g/nycprc",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://groups.google.com/g/nycprc",
+      "error": "robots.txt asks us not to",
+      "places": [
         {
-          "kind": "guide",
-          "id": "save-an-at-risk-animal",
-          "name": "Save an animal from the NYC shelter’s urgent list",
-          "field": "guide text"
+          "kind": "listing",
+          "id": "new-york-city-pigeon-rescue-central",
+          "name": "New York City Pigeon Rescue Central (NYCPRC)",
+          "field": "discussion group"
         }
       ]
     },
@@ -135,14 +305,89 @@
       "places": [
         {
           "kind": "guide",
-          "id": "dog-behavior-and-legal",
-          "name": "Dog behaviour, training and legal questions",
+          "id": "keeping-your-dog",
+          "name": "Help keeping your dog",
           "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://linktr.ee/catsofmeowyork",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://linktr.ee/catsofmeowyork",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "cats-of-meow-york",
+          "name": "Cats of Meow York (COMY)",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://linktr.ee/halfwaycats",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://linktr.ee/halfwaycats",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "halfway-cats-nyc",
+          "name": "Halfway Cats NYC",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://nycsecondchancerescue.org",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://nycsecondchancerescue.org",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "nyc-second-chance-rescue",
+          "name": "NYC Second Chance Rescue",
+          "field": "website"
         },
         {
           "kind": "guide",
-          "id": "keeping-your-dog",
-          "name": "Help keeping your dog",
+          "id": "cats-with-special-needs",
+          "name": "Cats needing specialist help",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://nycsecondchancerescue.org/adopt",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://nycsecondchancerescue.org/adopt",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "nyc-second-chance-rescue",
+          "name": "NYC Second Chance Rescue",
+          "field": "form"
+        }
+      ]
+    },
+    {
+      "url": "https://nycsecondchancerescue.org/contact",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://nycsecondchancerescue.org/contact",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: the NYC at-risk list",
           "field": "guide text"
         }
       ]
@@ -210,26 +455,6 @@
       ]
     },
     {
-      "url": "https://trupanion.com",
-      "verdict": "blocked",
-      "status": 403,
-      "finalUrl": "https://www.trupanion.com/",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "keeping-your-cat",
-          "name": "Help keeping your cat",
-          "field": "guide text"
-        },
-        {
-          "kind": "guide",
-          "id": "low-cost-dog-care",
-          "name": "Low-cost vet care, spay/neuter and dog licensing",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
       "url": "https://urbanwildlifenyc.org",
       "verdict": "blocked",
       "status": 403,
@@ -280,6 +505,126 @@
           "id": "found-an-injured-bird",
           "name": "Injured birds and other wildlife",
           "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/amazinganimalsrescueandadoptions",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/amazinganimalsrescueandadoptions",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "amazing-animals-rescue-and-adoptions",
+          "name": "Amazing Animals Rescue and Adoptions",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/atlanticcrittersrescue/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/atlanticcrittersrescue/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "atlantic-critter-rescue",
+          "name": "Atlantic Critter Rescue",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/nycemergencyanimalrescue/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/groups/nycemergencyanimalrescue/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "nyc-emergency-animal-rescue",
+          "name": "NYC Emergency Animal Rescue (Facebook group)",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "nyc-fish-rescue",
+          "name": "NYC Fish Rescue",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/parrotrescuenewyork",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/parrotrescuenewyork",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "parrot-rescue-new-york",
+          "name": "Parrot Rescue New York",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/saintspirocatrescueinc/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/saintspirocatrescueinc/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "saint-spiro-cat-rescue-inc",
+          "name": "Saint Spiro Cat Rescue, Inc.",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/StatenIslandBirdClub",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/StatenIslandBirdClub",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "staten-island-bird-club",
+          "name": "Staten Island Bird Club",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/nycanimalrescuegirls",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.instagram.com/nycanimalrescuegirls",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "new-york-city-animal-rescue-girls",
+          "name": "New York City Animal Rescue Girls",
+          "field": "website"
         }
       ]
     },
@@ -354,6 +699,20 @@
       ]
     },
     {
+      "url": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+      "verdict": "blocked",
+      "status": 403,
+      "finalUrl": "https://www.petco.com/webapp/wcs/stores/servlet/PetcoVetBookingView?source=vetcoclinics&location_type=clinic",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "petco-vetco-vetco-vaccine-clinics",
+          "name": "Petco Vetco / Vetco vaccine clinics",
+          "field": "Find a clinic and book"
+        }
+      ]
+    },
+    {
       "url": "https://www.petfinder.com/search/pets-for-adoption/?shelter_id%5B0%5D=NY1647",
       "verdict": "blocked",
       "status": 403,
@@ -364,6 +723,35 @@
           "id": "halfway-cats-nyc",
           "name": "Halfway Cats NYC",
           "field": "Adoptable cats"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ready.gov/pets",
+      "verdict": "blocked",
+      "status": 403,
+      "finalUrl": "https://www.ready.gov/pets",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "pets-in-a-disaster",
+          "name": "Pets in a disaster or evacuation",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.strayfromtheheart.org",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.strayfromtheheart.org",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "stray-from-the-heart",
+          "name": "Stray from the Heart",
+          "field": "website"
         }
       ]
     },
@@ -396,50 +784,6 @@
       ]
     },
     {
-      "url": "http://www.compactcaninerescue.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "http://www.compactcaninerescue.org",
-      "error": "timed out after 15000ms",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "http://www.pmarinc.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "http://www.pmarinc.org",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://birdgirlpetservices.com",
-      "verdict": "down",
-      "status": 500,
-      "finalUrl": "https://www.birdgirlpetservices.com/",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "exotic-boarding-and-planning",
-          "name": "Boarding, pet sitting and planning ahead",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
       "url": "https://crimestoppers.nypdonline.org",
       "verdict": "down",
       "status": 0,
@@ -457,36 +801,6 @@
           "id": "report-animal-abuse",
           "name": "Reporting animal abuse or neglect",
           "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYdJp4fr7_qXzWFo7vccytuWMqrPai9bDbdivtcPANoftl9w/viewform",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdYdJp4fr7_qXzWFo7vccytuWMqrPai9bDbdivtcPANoftl9w/viewform",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "house-of-pancakes-reptile-rescue",
-          "name": "House of Pancakes Reptile Rescue (HoPRR)",
-          "field": "Adoption/foster app"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR245_O9E6_8R7j63ETtwINxe_S6n82E66V-s9Jv5ZOqZRGQ/viewform",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeR245_O9E6_8R7j63ETtwINxe_S6n82E66V-s9Jv5ZOqZRGQ/viewform",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "makin-biscuits-nyc",
-          "name": "Makin' Biscuits NYC",
-          "field": "Foster and adoption support form"
         }
       ]
     },
@@ -512,123 +826,6 @@
       ]
     },
     {
-      "url": "https://empireofthedog.com",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://empireofthedog.com",
-      "error": "fetch failed (CERT_HAS_EXPIRED)",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "dog-behavior-and-legal",
-          "name": "Dog behaviour, training and legal questions",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/groups/318799318598045",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/groups/318799318598045",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/groups/nycemergencyanimalrescue",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/groups/nycemergencyanimalrescue",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "nyc-emergency-animal-rescue",
-          "name": "NYC Emergency Animal Rescue (Facebook group)",
-          "field": "form"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/GspRescueOfNjNy",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/GspRescueOfNjNy",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/HudsonValleyRottieRescue",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/HudsonValleyRottieRescue",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/Kisos-Pet-Food-Pantry",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/Kisos-Pet-Food-Pantry",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "kisos-pet-food-pantry",
-          "name": "Kiso's Pet Food Pantry (Brooklyn)",
-          "field": "website"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-cat",
-          "name": "Help keeping your cat",
-          "field": "guide text"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-dog",
-          "name": "Help keeping your dog",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://facebook.com/SafeHounds",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://facebook.com/SafeHounds",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
       "url": "https://found.org/owners",
       "verdict": "down",
       "status": 0,
@@ -648,7 +845,7 @@
       "verdict": "down",
       "status": 0,
       "finalUrl": "https://greatercity.org",
-      "error": "fetch failed (ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR)",
+      "error": "fetch failed (DEPTH_ZERO_SELF_SIGNED_CERT)",
       "places": [
         {
           "kind": "listing",
@@ -659,58 +856,16 @@
       ]
     },
     {
-      "url": "https://groups.google.com/g/nycprc",
+      "url": "https://holyapostlesnyc.org",
       "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://groups.google.com/g/nycprc",
-      "error": "robots.txt asks us not to",
+      "status": 504,
+      "finalUrl": "https://holyapostlesnyc.org/",
       "places": [
         {
           "kind": "listing",
-          "id": "new-york-city-pigeon-rescue-central",
-          "name": "New York City Pigeon Rescue Central (NYCPRC)",
-          "field": "discussion group"
-        }
-      ]
-    },
-    {
-      "url": "https://linktr.ee/halfwaycats",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://linktr.ee/halfwaycats",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "halfway-cats-nyc",
-          "name": "Halfway Cats NYC",
+          "id": "holy-apostles-soup-kitchen-pantry",
+          "name": "Holy Apostles Soup Kitchen Pantry",
           "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://muffins.org/MAMA.htm",
-      "verdict": "down",
-      "status": 400,
-      "finalUrl": "https://www.muffins.org/MAMA.htm",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "mama-coupon",
-          "name": "MAMA Coupon (Muffin's Pet Connection)",
-          "field": "website"
-        },
-        {
-          "kind": "listing",
-          "id": "muffins-pet-connection-mama-program",
-          "name": "Muffin's Pet Connection - MAMA Program",
-          "field": "form"
-        },
-        {
-          "kind": "guide",
-          "id": "low-cost-clinics-and-trap-banks",
-          "name": "Low-cost clinics and trap banks",
-          "field": "guide text"
         }
       ]
     },
@@ -775,99 +930,6 @@
       ]
     },
     {
-      "url": "https://nycsecondchancerescue.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://nycsecondchancerescue.org",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "nyc-second-chance-rescue",
-          "name": "NYC Second Chance Rescue",
-          "field": "website"
-        },
-        {
-          "kind": "guide",
-          "id": "cats-with-special-needs",
-          "name": "Cats needing specialist help",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://nycsecondchancerescue.org/adopt",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://nycsecondchancerescue.org/adopt",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "nyc-second-chance-rescue",
-          "name": "NYC Second Chance Rescue",
-          "field": "form"
-        }
-      ]
-    },
-    {
-      "url": "https://nycsecondchancerescue.org/contact",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://nycsecondchancerescue.org/contact",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "save-an-at-risk-animal",
-          "name": "Save an animal from the NYC shelter’s urgent list",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://paws.nyc.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://paws.nyc.org",
-      "error": "fetch failed (UNABLE_TO_GET_ISSUER_CERT_LOCALLY)",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "low-cost-clinics-and-trap-banks",
-          "name": "Low-cost clinics and trap banks",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://princechunkfoundation.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://princechunkfoundation.org",
-      "error": "fetch failed (UNABLE_TO_GET_ISSUER_CERT_LOCALLY)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "prince-chunk-foundation",
-          "name": "Prince Chunk Foundation",
-          "field": "website"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-cat",
-          "name": "Help keeping your cat",
-          "field": "guide text"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-dog",
-          "name": "Help keeping your dog",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
       "url": "https://tobyproject.org",
       "verdict": "down",
       "status": 0,
@@ -883,17 +945,32 @@
       ]
     },
     {
-      "url": "https://vetdogs.org",
+      "url": "https://www.alleykattz.org",
       "verdict": "down",
       "status": 0,
-      "finalUrl": "https://vetdogs.org",
-      "error": "fetch failed (CERT_HAS_EXPIRED)",
+      "finalUrl": "https://www.alleykattz.org",
+      "error": "timed out after 15000ms",
       "places": [
         {
-          "kind": "guide",
-          "id": "dog-behavior-and-legal",
-          "name": "Dog behaviour, training and legal questions",
-          "field": "guide text"
+          "kind": "listing",
+          "id": "alleykattz",
+          "name": "Alleykattz",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.arf-ny.org",
+      "verdict": "down",
+      "status": 0,
+      "finalUrl": "https://www.arf-ny.org",
+      "error": "fetch failed (ERR_TLS_CERT_ALTNAME_INVALID)",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "animal-relief-fund",
+          "name": "Animal Relief Fund (ARF!)",
+          "field": "website"
         }
       ]
     },
@@ -913,136 +990,16 @@
       ]
     },
     {
-      "url": "https://www.facebook.com/amazinganimalsrescueandadoptions",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/amazinganimalsrescueandadoptions",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "amazing-animals-rescue-and-adoptions",
-          "name": "Amazing Animals Rescue and Adoptions",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/atlanticcrittersrescue/",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/atlanticcrittersrescue/",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "atlantic-critter-rescue",
-          "name": "Atlantic Critter Rescue",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/groups/nycemergencyanimalrescue/",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/groups/nycemergencyanimalrescue/",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "nyc-emergency-animal-rescue",
-          "name": "NYC Emergency Animal Rescue (Facebook group)",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "nyc-fish-rescue",
-          "name": "NYC Fish Rescue",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/parrotrescuenewyork",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/parrotrescuenewyork",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "parrot-rescue-new-york",
-          "name": "Parrot Rescue New York",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/saintspirocatrescueinc/",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/saintspirocatrescueinc/",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "saint-spiro-cat-rescue-inc",
-          "name": "Saint Spiro Cat Rescue, Inc.",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.facebook.com/StatenIslandBirdClub",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.facebook.com/StatenIslandBirdClub",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "staten-island-bird-club",
-          "name": "Staten Island Bird Club",
-          "field": "website"
-        }
-      ]
-    },
-    {
       "url": "https://www.greatercity.org",
       "verdict": "down",
       "status": 0,
       "finalUrl": "https://www.greatercity.org",
-      "error": "fetch failed (ECONNRESET)",
+      "error": "fetch failed (ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR)",
       "places": [
         {
           "kind": "listing",
           "id": "greater-city-aquarium-society",
           "name": "Greater City Aquarium Society (GCAS)",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.instagram.com/nycanimalrescuegirls",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.instagram.com/nycanimalrescuegirls",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "new-york-city-animal-rescue-girls",
-          "name": "New York City Animal Rescue Girls",
           "field": "website"
         }
       ]
@@ -1063,35 +1020,6 @@
       ]
     },
     {
-      "url": "https://www.muffins.org/MAMA.htm",
-      "verdict": "down",
-      "status": 400,
-      "finalUrl": "https://www.muffins.org/MAMA.htm",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "low-cost-dog-care",
-          "name": "Low-cost vet care, spay/neuter and dog licensing",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://www.plutorescue.com",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.plutorescue.com",
-      "error": "fetch failed (UNABLE_TO_GET_ISSUER_CERT_LOCALLY)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "pluto-rescue-of-richmond-county",
-          "name": "P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)",
-          "field": "website"
-        }
-      ]
-    },
-    {
       "url": "https://www.reboundhounds.org/adoption-application.html",
       "verdict": "down",
       "status": 400,
@@ -1102,21 +1030,6 @@
           "id": "rebound-hounds",
           "name": "Rebound Hounds (Rebound Hounds Res-Q)",
           "field": "Apply"
-        }
-      ]
-    },
-    {
-      "url": "https://www.strayfromtheheart.org",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.strayfromtheheart.org",
-      "error": "robots.txt asks us not to",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "stray-from-the-heart",
-          "name": "Stray from the Heart",
-          "field": "website"
         }
       ]
     },
@@ -1165,26 +1078,6 @@
       ]
     },
     {
-      "url": "https://aspcapro.org/scheduler",
-      "verdict": "elsewhere",
-      "status": 200,
-      "finalUrl": "https://www.aspca.org/veterinary-services/rescue-professionals",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "low-cost-clinics-and-trap-banks",
-          "name": "Low-cost clinics and trap banks",
-          "field": "guide text"
-        },
-        {
-          "kind": "guide",
-          "id": "starting-tnr",
-          "name": "Community cats, colonies and starting TNR",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
       "url": "https://nydanerescue.com",
       "verdict": "elsewhere",
       "status": 200,
@@ -1205,12 +1098,6 @@
       "finalUrl": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
       "places": [
         {
-          "kind": "listing",
-          "id": "aaha-universal-lookup",
-          "name": "AAHA Universal Lookup",
-          "field": "website"
-        },
-        {
           "kind": "guide",
           "id": "lost-and-found-cat",
           "name": "Lost or found a cat",
@@ -1220,20 +1107,6 @@
           "kind": "guide",
           "id": "lost-and-found-dog",
           "name": "Lost or found a dog",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://schoolforthedogs.com",
-      "verdict": "elsewhere",
-      "status": 200,
-      "finalUrl": "https://www.anniegrossman.com/school-for-the-dogs",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "dog-behavior-and-legal",
-          "name": "Dog behaviour, training and legal questions",
           "field": "guide text"
         }
       ]
@@ -1253,219 +1126,15 @@
       ]
     },
     {
-      "url": "https://catsofmeowyork.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://catsofmeowyork.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "cats-with-special-needs",
-          "name": "Cats needing specialist help",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://meowroof.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://meowroof.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "starting-tnr",
-          "name": "Community cats, colonies and starting TNR",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://nextstopforeverinc.com",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://nextstopforeverinc.com",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://pawsofhopenyc.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://pawsofhopenyc.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "paws-of-hope-nyc",
-          "name": "Paws of Hope NYC",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://safehavensmappingproject.com",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://safehavensmappingproject.com",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "safe-havens-mapping-project",
-          "name": "Safe Havens Mapping Project (Animal Welfare Institute)",
-          "field": "website"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-cat",
-          "name": "Help keeping your cat",
-          "field": "guide text"
-        },
-        {
-          "kind": "guide",
-          "id": "keeping-your-dog",
-          "name": "Help keeping your dog",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://secondchancebirdandreptilerescue.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://secondchancebirdandreptilerescue.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "second-chance-bird-and-reptile-rescue",
-          "name": "Second Chance Bird and Reptile Rescue",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.catsinthecradlerescuenyc.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.catsinthecradlerescuenyc.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "cats-in-the-cradle-rescue",
-          "name": "Cats In The Cradle Rescue (CITCR)",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.catsofmeowyork.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.catsofmeowyork.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "cats-of-meow-york",
-          "name": "Cats of Meow York (COMY)",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.chewy.com/app/content/careplus",
+      "url": "https://www.pawsomesquad.org/about-us",
       "verdict": "gone",
       "status": 404,
-      "finalUrl": "https://www.chewy.com/app/content/careplus",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "help-paying-for-care",
-          "name": "Help paying for veterinary care",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://www.citypitties.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.citypitties.org",
-      "error": "fetch failed (ENOTFOUND)",
+      "finalUrl": "https://pawsomesquad.org/about-us",
       "places": [
         {
           "kind": "listing",
-          "id": "city-pitties",
-          "name": "City Pitties",
-          "field": "website"
-        },
-        {
-          "kind": "listing",
-          "id": "city-pitties",
-          "name": "City Pitties",
-          "field": "Foster/adopt"
-        },
-        {
-          "kind": "guide",
-          "id": "breed-specific-dog-rescue",
-          "name": "Breed-specific dog rescue",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://www.meowroof.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.meowroof.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "meowroof",
-          "name": "MeowRoof",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.nbanimalrescue.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.nbanimalrescue.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "new-beginning-animal-rescue",
-          "name": "New Beginning Animal Rescue (NBAR)",
-          "field": "website"
-        }
-      ]
-    },
-    {
-      "url": "https://www.waldosrescuepen.org",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.waldosrescuepen.org",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "waldos-rescue-pen",
-          "name": "Waldo's Rescue Pen",
+          "id": "pawsome-squad-inc",
+          "name": "Pawsome Squad, Inc.",
           "field": "website"
         }
       ]

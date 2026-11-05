@@ -47,7 +47,7 @@
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "manual-only",
   "consecutive_failures": 0,
   "change_log": [

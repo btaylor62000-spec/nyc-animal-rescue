@@ -52,13 +52,13 @@
   "source_urls": [
     "https://www.safehavensforpets.org/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-05",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

@@ -67,12 +67,12 @@
     "https://www.anjelliclecats.com/",
     "https://www.idealist.org/en/nonprofit/97576440e6b34cb5b0cf339304c3383a-anjellicle-cats-rescue-new-york"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

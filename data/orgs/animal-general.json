@@ -57,13 +57,13 @@
   "source_urls": [
     "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "Clinics, traps & support — MANHATTAN - feral-friendly / low-cost clinics",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
-  "check_status": "manual-only",
+  "last_checked": "2026-11-05",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

@@ -76,12 +76,12 @@
     "https://dolphin-coyote-9c2r.squarespace.com/",
     "https://dolphin-coyote-9c2r.squarespace.com/contact"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

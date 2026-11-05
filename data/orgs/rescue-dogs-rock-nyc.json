@@ -58,12 +58,12 @@
   "source_urls": [
     "https://rescuedogsrocknyc.org/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-04",
+  "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
