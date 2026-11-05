@@ -3,8 +3,9 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
-import { BOROUGH_LABELS, LISTED_ORGS } from '../../data/orgs.ts';
+import { BOROUGH_LABELS, LISTED_ORGS, ORGS } from '../../data/orgs.ts';
 import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
+import { assertGuideNamesOnlyListed } from '../../data/guide-integrity.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
 
@@ -14,6 +15,9 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const guide = GUIDES_BY_SLUG.get(slug!)!;
+// Stops the build, so nothing is published, if this guide still sends
+// people to a group the directory no longer lists (guide-integrity.ts).
+assertGuideNamesOnlyListed(guide, ORGS);
 
 // The guide's own <h1> comes from the Markdown, so the body is rendered as-is
 // and the page heading is not duplicated above it.

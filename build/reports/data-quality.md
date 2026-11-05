@@ -6,7 +6,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 - **419** organizations after de-duplication
 - **76** duplicate clusters merged
-- **24** guide pages generated
+- **25** guide pages generated
 - **17** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (4)
+### Never verified (1)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -325,9 +325,10 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 14232 |
+| Leaving an abusive home with your pet | 4662 |
 | More situations, answered by Animal Help Now | 8315 |
 | Pets in a disaster or evacuation | 3404 |
-| Keeping your pet if you are losing your home | 6336 |
+| Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 13396 |
 | Reporting animal abuse or neglect | 6285 |
 | Animal emergencies and poison control | 2200 |
@@ -335,8 +336,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Community cats, colonies and starting TNR | 6897 |
 | Cats needing specialist help | 6636 |
 | Lost or found a cat | 6535 |
-| Help keeping your cat | 6412 |
-| Help keeping your dog | 8962 |
+| Help keeping your cat | 5141 |
+| Help keeping your dog | 7635 |
 | Low-cost vet care, spay/neuter and dog licensing | 7169 |
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |

@@ -21,7 +21,7 @@ you change them, recount rather than adjust.
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing:  85 rows as of 2026-11-05, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 24. Since 2026-11-05 every guide is on the home page by situation (`GUIDE_GROUPS`, tested), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and *More situations, answered by Animal Help Now* links every question on ahnow.org/resources.php to its answer. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Guides | 25 (*Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide). Since 2026-11-05 every guide is on the home page by situation (`GUIDE_GROUPS`, tested), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and *More situations, answered by Animal Help Now* links every question on ahnow.org/resources.php to its answer. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 407 listed of 420 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 400 carry a date they were last confirmed; 7 have never been: three nyc.gov reference pages that refuse robots, and four rescues published on 2026-11-05 from contacts a reviewer read on Petfinder or Facebook (American Alliance for Protection of Animals, Animals Are Forever, Big Hands Little Paws, Hopewell). 42 emergency vets, every one with hours, 29 of them open 24/7 (the New Jersey, Long Island, Westchester and Rockland VEG hospitals among them). Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | **Finished 2026-11-05.** 230 candidates from ACC's New Hope partner roster (every one is an ACC rescue partner). 29 published, each read and placed in the city; the rest are outside the city, closed, or unreadable, and each is named with the reason in `docs/discovery-review-2026-11-05.md`. Breed- and population-specific rescues outside the city are in the breed guide and the special-needs sections instead, and partners outside the city whose own sites say they take animals from ACC are in the at-risk guide |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
@@ -92,22 +92,15 @@ Ordered by how much harm it prevents, not by size.
    (zip and borough searches, location on/blocked/far/vague); a failure
    emails the owner.
 
-1b. **Confirm the weekly check can open its pull request.** As of 2026-09-22
+1b. **The weekly check can open its pull request.** The repository setting
+   *Allow GitHub Actions to create and approve pull requests* (Settings →
+   Actions → General → Workflow permissions) **is on**: the reviewer turned
+   it on and sent screenshots. Do not ask about it again. As of 2026-09-22
    the check verifies and flags only; the one reader-visible change it can
-   still make (a `verify` status after three dead weeks, and lifting it) goes
-   to the `weekly-check` branch as a PR; bookkeeping-only weeks still
-   commit to `main` as the heartbeat. The split is decided by `proposed` in
-   `build/reports/weekly-summary.json`, which the run writes, and there is a
-   test that the change log is written exactly when a reader could see the
-   difference. What has *not* been verified: the repository setting **Allow
-   GitHub Actions to create and approve pull requests** (Settings → Actions →
-   General) must be on, or the PR step fails — the branch is still pushed, so
-   nothing is lost. Turn it on, then run the workflow by hand without dry-run
-   to see it through once. Discovery still pushes straight to `main`; it only
-   adds records labelled unverified and excluded from the assistant, and item
-   2 decides whether those should be published at all. (As of 2026-11-04 the
-   setting was still off: it is under Settings → Actions → **General** →
-   Workflow permissions, not under Secrets and variables.)
+   make (a `verify` status after three dead weeks, and lifting it) goes to
+   the `weekly-check` branch as a PR, and bookkeeping-only weeks commit to
+   `main`. Discovery still pushes straight to `main`, and only adds
+   unpublished candidates.
 
 2. **Keep marking discovery candidates by hand.** Decided 2026-09-22:
    discovery finds mostly out-of-city rescues, so nothing it finds is
@@ -566,6 +559,19 @@ deliberately not linked. An organization a guide names that has no listing
 must carry its web address in the line (tested). The bird guide's section
 order is `BIRD_SECTIONS` and the wildlife guide's is `sectionOrder`; a
 renamed heading throws.
+
+**Closed is not final, and a guide never names what is not listed**
+(reviewer, 2026-11-05). Rescues close, pause, move and reopen. The weekly
+check reads every record, closed and moved ones included; when a closed
+one's own site is up again with the contacts we hold and no closing wording,
+it is flagged for a person to list again (it never changes a status
+itself). `DO_NOT_LIST` in `src/data/listing.ts` holds the few taken off for
+reasons a website does not undo (Cats of Meow York: its founder's arrest
+over neglected cats, reported June 2023); those are never re-checked or
+listed. And the site build stops, so Cloudflare keeps the last good version,
+if any guide still names a group the directory does not list
+(`src/data/guide-integrity.ts`): the message gives the guide, the line and
+the workbook to change.
 
 **Guides and listings must not disagree.** Guide prose is copied research;
 listings are kept current. Five guides (`GUIDE_LISTINGS` in

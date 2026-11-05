@@ -14,6 +14,7 @@ import { AGENT } from './config.ts';
 import { REDIRECTOR } from './fetch.ts';
 import type { ChangeLogEntry, Confidence, Org } from '../../src/types.ts';
 import type { ClosureSignal } from './extract.ts';
+import { DO_NOT_LIST } from '../../src/data/listing.ts';
 
 /** What was found at one URL belonging to an organization. */
 export interface PageEvidence {
@@ -289,7 +290,31 @@ function daysBetween(from: string, to: string): number {
  * `today` is passed in rather than read from the clock so the same evidence
  * always produces the same decision in a test.
  */
+/**
+ * Every record is checked, closed and moved ones included, because rescues
+ * close, pause and reopen (reviewer, 2026-11-05). For a record we do not
+ * list, the only news worth a person's time is that it looks open again: its
+ * own site answers, still shows the contacts we hold, and says nothing about
+ * closing. Anything else (gone, silent, still saying it has closed) is what
+ * "closed" already says, so it is not a flag, and nothing about a closed
+ * record's status is ever changed by this code.
+ */
 export function decide(org: Org, evidence: Evidence): Decision {
+  if (DO_NOT_LIST.has(org.id)) return { kind: 'skipped', reason: 'Not listed, for a reason a working website does not change.' };
+  const d = decideListed(org, evidence);
+  if (org.status !== 'retired' && org.status !== 'relocated') return d;
+  if (d.kind === 'ok' && d.verified) {
+    return {
+      kind: 'needs-review',
+      reason: `We list this as ${org.status === 'relocated' ? 'moved away' : 'closed'}, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so.`,
+      evidenceUrl: evidence.pages.find((p) => p.ownDomain)?.finalUrl ?? org.website ?? undefined,
+    };
+  }
+  if (d.kind === 'skipped') return d;
+  return { kind: 'ok', verified: false };
+}
+
+function decideListed(org: Org, evidence: Evidence): Decision {
   const skip = isCheckable(org);
   if (!skip.checkable) return { kind: 'skipped', reason: skip.reason! };
 

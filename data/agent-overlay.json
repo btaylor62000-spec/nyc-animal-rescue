@@ -4535,8 +4535,18 @@
           "evidence_url": "https://nyc.gov/site/animalwelfare/resources/evictions.page",
           "source": "manual",
           "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://nyc.gov/site/animalwelfare/resources/evictions.page",
+          "source": "manual",
+          "note": "Opened in a normal browser by the reviewer on 2026-11-05: the page is up. nyc.gov turns automated checks away, so a person confirms it."
         }
-      ]
+      ],
+      "last_verified": "2026-11-05"
     },
     "nyc-cat-coalition": {
       "last_checked": "2026-11-05",
@@ -4605,8 +4615,18 @@
           "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
           "source": "manual",
           "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page",
+          "source": "manual",
+          "note": "Opened in a normal browser by the reviewer on 2026-11-05: the page is up. nyc.gov turns automated checks away, so a person confirms it."
         }
-      ]
+      ],
+      "last_verified": "2026-11-05"
     },
     "nyc-domestic-violence-hotline": {
       "last_checked": "2026-11-05",
@@ -7677,8 +7697,18 @@
           "evidence_url": "https://nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page",
           "source": "manual",
           "note": "Tried on 2026-11-04: nyc.gov answers \"Access Denied\" to automated browsers. Nothing changed; a person needs to open it in a normal browser and record what they see."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page",
+          "source": "manual",
+          "note": "Opened in a normal browser by the reviewer on 2026-11-05: the page is up. nyc.gov turns automated checks away, so a person confirms it."
         }
-      ]
+      ],
+      "last_verified": "2026-11-05"
     },
     "zanis-furry-friends": {
       "last_checked": "2026-11-05",

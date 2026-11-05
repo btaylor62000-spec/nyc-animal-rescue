@@ -106,7 +106,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     tab: 'Owner support & surrender prev.',
     // A pointer to the 22 city pantries, which are listed one by one from
     // data/pet-food-pantries.json; as a record it would be a 23rd, fake one.
-    skip: /^NYC's free pet food pantries/i,
+    skip: /^NYC's free pet food pantries|^If you are leaving an abusive home/i,
     animals: ['cat'],
     rules: [
       { pattern: /ACC OWNER SUPPORT/i, needs: ['owner-support', 'surrender'], orgTypes: ['government', 'support-program'] },
@@ -126,7 +126,7 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     // Cannoli's and Pets Alive have their own listings (reviewer additions,
     // outside the city);
     // read from this section it would merge in as citywide hospice care.
-    skip: /^NYC's free pet food pantries|^Cannoli's Sweet Life|^Pets Alive/i,
+    skip: /^NYC's free pet food pantries|^Cannoli's Sweet Life|^Pets Alive|^If you are leaving an abusive home/i,
     animals: ['dog'],
     rules: [
       { pattern: /ACC OWNER SUPPORT/i, needs: ['owner-support', 'surrender'], orgTypes: ['government', 'support-program'] },

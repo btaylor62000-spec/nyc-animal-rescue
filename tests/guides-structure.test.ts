@@ -146,19 +146,10 @@ test('mentions: a name inside a longer name does not hide its own later mention'
   assert.match(html, /<a href="\/org\/wood">Woodstock Farm Sanctuary<\/a>, or further away <a href="\/org\/farm">Farm Sanctuary<\/a>/);
 });
 
-test('no guide recommends an organization that is closed, moved away or not listed', () => {
-  // Cats of Meow York stayed in the special-needs guide after its listing
-  // was in doubt, and was found on 2026-11-05 to have had its founder
-  // arrested over neglected cats. A guide must never send someone to a group
-  // the directory itself does not list.
-  const listed = new Set(LISTED_ORGS.map((o) => o.id));
-  const gone = ORGS.filter((o) => !listed.has(o.id) && (o.status === 'retired' || o.status === 'relocated'));
-  const problems: string[] = [];
-  for (const g of GUIDES) {
-    for (const o of gone) {
-      const name = o.name.replace(/\s*\[[^\]]*\]|\s*\([^)]*\)/g, '').replace(/,?\s+Inc\.?$/, '').trim();
-      if (name.length >= 8 && g.body.includes(name)) problems.push(`${g.slug} names ${o.name} (${o.status})`);
-    }
-  }
-  assert.deepEqual(problems, []);
+test('no guide recommends an organization that is closed, moved away or not listed (the build stops on this too)', async () => {
+  const { unlistedNamedIn, assertGuideNamesOnlyListed } = await import('../src/data/guide-integrity.ts');
+  assert.deepEqual(GUIDES.flatMap((g) => unlistedNamedIn(g.body, ORGS).map((f) => `${g.slug}: ${f.org.name}`)), []);
+  // And it does stop: a guide naming a closed group throws, with the line.
+  const closed = { ...ORGS[0]!, id: 'x-closed', name: 'Example Closed Rescue', status: 'retired' as const };
+  assert.throws(() => assertGuideNamesOnlyListed({ slug: 's', source: 'research/x.xlsx', body: '- Example Closed Rescue - call us' }, [...ORGS, closed]), /Example Closed Rescue.*\n.*in the line/s);
 });

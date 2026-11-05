@@ -69,7 +69,7 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   // being hurt by a person is an emergency (2026-11-05).
   {
     title: 'Emergencies',
-    slugs: ['animal-emergency', 'report-animal-abuse', 'exotic-pet-emergency', 'pets-in-a-disaster'],
+    slugs: ['animal-emergency', 'report-animal-abuse', 'leaving-abuse-with-your-pet', 'exotic-pet-emergency', 'pets-in-a-disaster'],
     places: { label: 'Emergency vets, nearest first', href: '/directory?need=emergency-vet' },
   },
   {
