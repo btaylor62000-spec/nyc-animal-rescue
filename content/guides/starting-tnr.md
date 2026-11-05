@@ -37,7 +37,7 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 ## FRIENDLY CATS / KITTENS FOUND IN A COLONY (pull for adoption)
 
 - Socialize: Urban Cat League Taming Toolkit (in the guide https://nyc-animal-rescue.pages.dev/guides/lost-and-found-cat). Under 8 weeks socialize easily; older takes longer.
-- Neonatal/bottle-babies too young to survive outdoors: route to a nursery - Itty Bitty City Kitties, Cats of Meow York, Bay Ridge Kittens, Kittens and Barbells. More: https://nyc-animal-rescue.pages.dev/guides/cats-with-special-needs
+- Neonatal/bottle-babies too young to survive outdoors: route to a nursery - Itty Bitty City Kitties, Bay Ridge Kittens, Kittens and Barbells. More: https://nyc-animal-rescue.pages.dev/guides/cats-with-special-needs
 
 ## WHEN A CAT CAN'T BE RETURNED (site lost, unsafe, or truly unadoptable feral)
 

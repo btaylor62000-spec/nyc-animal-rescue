@@ -54,25 +54,20 @@
   ],
   "emails": [
     {
-      "value": "plutorescuerc@gmail.com"
+      "value": "plutorescue@aol.com"
+    },
+    {
+      "value": "plutorescuerc@gmail.com",
+      "label": "from older directories"
     }
   ],
   "website": null,
   "intake_urls": [],
   "social": [
     {
-      "platform": "instagram",
-      "handle": "plutorescue",
-      "url": "https://instagram.com/plutorescue"
-    },
-    {
       "platform": "facebook",
       "handle": "P.L.U.T.ORescue",
-      "url": "https://facebook.com/P.L.U.T.ORescue"
-    },
-    {
-      "platform": "facebook",
-      "handle": "PLUTO Rescue"
+      "url": "https://www.facebook.com/P.L.U.T.ORescue"
     }
   ],
   "geo": null,
@@ -81,12 +76,12 @@
   "notes": "All-volunteer 501(c)(3) no-kill on Staten Island. Uses the Merry Mutts Play & Stay facility (654A Sharrotts Rd, SI 10309) plus volunteer fosters. Dogs HW-tested; cats FIV/FeLV-tested; all vetted + altered + microchipped before adoption. App reviewed -> home visit -> paperwork at the visit. Mail: PO Box 140889, Staten Island 10314. Solid SI option beyond Louie's Legacy. Phone: (no public phone; contact via FB/site) Email: (via Facebook message / site) Intake: Adopt/foster via site, Petfinder & Adoptapet Intake: Saturday adoption events Intake: application -> home visit\n\nNo-kill 501(c)(3) since 2001. Cats + dogs (strays + owner surrender), full vetting. Runs a LOW-COST SPAY/NEUTER program + supports TNR for feral cats. Phone + email confirmed on own listings. Intake: Pre-adopt form + home visit Intake: Sat adoptions 12-3 at Petco 2752 Veterans Rd W 10309 Other channel: PO Box 140889, Staten Island 10314 Other channel: contact Lisa Rooney",
   "type_raw": "rescue+adoption / TNR / low-cost spay-neuter",
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.adoptapet.com/shelter/78700-pluto-rescue-staten-island-new-york"
   ],
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-11-05",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx",
@@ -138,6 +133,15 @@
       "evidence_url": "https://www.facebook.com/groups/142243179210/about",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Older directories give (718) 227-0553 and PlutoRescue@aol.com; its Facebook group is the only current channel found, and activity could not be confirmed."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "active",
+      "evidence_url": "https://www.facebook.com/P.L.U.T.ORescue",
+      "source": "manual",
+      "note": "Its Facebook page (P.L.U.T.O. Rescue, Staten Island) posted on 2026-11-05 and gives plutorescue@aol.com. The address plutorescue.com it gives is still parked by someone else (checked 2026-11-04), so the Facebook page is the link."
     }
   ],
   "privacy_hold": false,

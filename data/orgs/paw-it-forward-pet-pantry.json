@@ -1,0 +1,55 @@
+{
+  "id": "paw-it-forward-pet-pantry",
+  "name": "Paw It Forward Pet Pantry",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Valley Stream, Long Island (Nassau) - outside NYC",
+  "zips": [
+    "11580"
+  ],
+  "region_note": "PET FOOD PANTRY (Valley Stream, Nassau County)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "volunteerpawitforward@gmail.com"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.6749,
+    "lon": -73.7022,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A volunteer pet food pantry: short-term supplies of cat food, cat litter and dog food, dry and canned, for owners who are struggling to feed their pets. Food is picked up in Valley Stream; email volunteerpawitforward@gmail.com to arrange it. Runs as a Facebook group, Paw It Forward Pet Pantry (created 2018). Read on that group by a reviewer, 2026-11-05. Its drop-off point is a private address, so it is not published. Other channel: Facebook group: Paw It Forward Pet Pantry",
+  "type_raw": "Pet food pantry",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": "2026-11-05",
+  "section": "PET FOOD PANTRY (Valley Stream, Nassau County)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

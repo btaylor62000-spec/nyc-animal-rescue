@@ -42,8 +42,8 @@
   "notes": "Foster-based NYC cat rescue; TNR-certified (Mayor's Alliance). Assists local TNR groups across five boroughs + helps owners at risk of losing pets. Confirm current activity - older web presence. Intake: Contact via site / Petfinder",
   "type_raw": "rescue+adoption / TNR (multi-borough)",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.",
+  "status": "retired",
+  "status_note": "Closed: its last post, in 2023, says so.",
   "source_urls": [
     "https://www.idealist.org/en/nonprofit/f2fd07127ed848c295d82543d726f704-magnificat-cat-rescue-and-rehoming-new-york-city"
   ],
@@ -91,6 +91,15 @@
       "evidence_url": "https://magnificat9.wixsite.com/magnificatrescue",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (read 2026-11-04) is an unfinished template, copyright 2015, still showing the template's sample events; email magnificatrescue2@gmail.com."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://magnificatrescue.org",
+      "source": "manual",
+      "note": "Its Facebook page's last post, in 2023, says it has closed (reviewer, 2026-11-05)."
     }
   ],
   "privacy_hold": false,

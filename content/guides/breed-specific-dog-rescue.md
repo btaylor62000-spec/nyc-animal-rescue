@@ -21,8 +21,6 @@ This page lists all-'bully' rescues first (they take the whole group), then bree
 
 ## ALL-"BULLY" / MULTI-BREED RESCUES (take the full group)
 
-City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affiliated with 19 rescues across all 5 boroughs + NJ/CT/LI; American Pit Bull Terrier, pit mixes, American Bulldogs, American Bull Terriers + other bullies. Fosters/adopts + fights the NYCHA ban. Apply by email; Instagram @citypitties.
-
 - New York Bully Crew (NYBC) - all bully breeds pulled from shelters and the streets, fully vetted; handles bully-breed surrenders. 501(c)(3), HQ East Patchogue (Long Island), serves NYC, a Best Friends partner. (844) 633-6922, nybullycrew.org, Instagram @newyorkbullycrew.
 - Bullied Breeds Rescue - explicitly ALL 'bullied' breeds - rottweilers, pit bulls, shepherds 'and many more'; foster-based, pulls local shelter dogs. https://www.bulliedbreedsrescue.org (site app). Instagram @bulliedbreedsrescue.
 - Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; based in Westchester NY, serves the NY metro area incl. NYC. https://www.bestbullies.org, contact form: https://www.bestbullies.org/contact. Approved ACC rescue partner.
@@ -51,7 +49,7 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 - Hudson Valley Rottie Rescue - rottweilers, Middletown NY, serves lower Hudson/NY metro. rottnrescues@aol.com. Facebook: https://www.facebook.com/people/Hudson-Valley-Rottie-Rescue/100064412633081/ . Dogs on Petfinder: https://www.petfinder.com/pet-search?shelter_id=NY975 (contacts supplied by a reviewer, 2026-11-05).
 - For the Love of Dog Rottweiler Rescue - rottweilers, NH-based but on ACC New Hope list (adopts NY). http://www.4theloveofdog.org.
 
-(Also: the ALL-BULLY rescues above - Bullied Breeds, NYBC, City Pitties - take rottweilers.)
+(Also: the ALL-BULLY rescues above - Bullied Breeds, NYBC - take rottweilers.)
 
 ## BOXER (part of the "bully"/molosser group)
 

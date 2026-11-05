@@ -50,7 +50,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -67,6 +67,15 @@
       "evidence_url": "https://www.nycacc.org/new-hope-partners",
       "source": "monthly-discovery",
       "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Confirmed by the reviewer on its own Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
     }
   ],
   "privacy_hold": false,

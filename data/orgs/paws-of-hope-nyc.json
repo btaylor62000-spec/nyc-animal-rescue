@@ -55,12 +55,12 @@
   "notes": "Foster-based Brooklyn rescue (all cats in foster homes) - rescue + medical care + TNR support (EIN 85-0996451). Structured adoption (application, interview, home check). No public phone/email; apply via form / DM. Intake: Adoption application via Petfinder Intake: email list signup on site",
   "type_raw": "rescue+adoption / TNR",
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+  "status": "active",
+  "status_note": null,
   "source_urls": [
     "https://www.petfinder.com/member/us/ny/brooklyn/paws-of-hope-nyc-ny1532/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-05",
   "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -129,6 +129,15 @@
       "evidence_url": "https://gissell182.wixsite.com/pawsofhopenyc",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Wix site (copyright 2019) and Adopt-a-Pet page give pawsofhopenyc@gmail.com; Adopt-a-Pet listed no animals on 2026-11-04."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "active",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Its Facebook page posted on 2026-11-05 (\"on the front lines of NYC's cat crisis, rescuing, providing medical care, supporting TNR\"), with pawsofhopenyc@gmail.com, the address stored. Active."
     }
   ],
   "privacy_hold": false,

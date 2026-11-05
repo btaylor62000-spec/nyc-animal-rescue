@@ -57,8 +57,8 @@
   "notes": "NYC-based bully-breed foster and advocacy network (Bay Ridge, Brooklyn), affiliated with 19 shelters/rescues across all five boroughs, Central NJ, CT, and Long Island. Focuses on the American Pit Bull Terrier, pit mixes, and other bully breeds (incl. American Bulldogs, American Bull Terriers); connects them with tri-state foster homes (min about 3 weeks, breed experience requested) and adopters. Advocates on NYCHA breed/weight rules. Also a resource hub for bully owners and rescues. Phone: (no public phone; email/app) Email: (application via site) Intake: home + reference check required",
   "type_raw": "Bully-breed foster network + adoption facilitation (advocacy)",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.",
+  "status": "relocated",
+  "status_note": "Moved to Broward County, Florida. No longer takes dogs in New York City.",
   "source_urls": [],
   "last_verified": "2026-08-27",
   "section": "BROOKLYN (Brooklyn-based / Brooklyn-serving dog rescues)",
@@ -138,6 +138,15 @@
       "evidence_url": "https://www.adoptapet.com/shelter/79388-city-pitties-new-york-new-york",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Adopt-a-Pet page (read 2026-11-04) gives citypitties@yahoo.com and listed no adoptable dogs that day. Instagram @city_pitties."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "relocated",
+      "evidence_url": "https://www.instagram.com/city_pitties/",
+      "source": "manual",
+      "note": "The reviewer found (and first reported on 2026-11-04) that City Pitties, formerly of Bay Ridge, Brooklyn, has moved to Broward County, Florida."
     }
   ],
   "privacy_hold": false,

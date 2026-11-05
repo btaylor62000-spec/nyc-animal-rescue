@@ -4,10 +4,10 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **420** organizations after de-duplication
-- **78** duplicate clusters merged
+- **419** organizations after de-duplication
+- **76** duplicate clusters merged
 - **24** guide pages generated
-- **21** entries flagged as not currently active
+- **17** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -17,8 +17,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 310 |
-| dog | 250 |
+| cat | 309 |
+| dog | 249 |
 | wildlife | 46 |
 | rabbit | 38 |
 | bird-companion | 35 |
@@ -40,8 +40,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | adoption | 174 |
 | foster | 106 |
 | tnr | 94 |
-| owner-support | 73 |
 | spay-neuter | 73 |
+| owner-support | 71 |
 | surrender | 61 |
 | low-cost-vet | 57 |
 | referral | 52 |
@@ -57,7 +57,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | legal | 20 |
 | lost-found | 18 |
 | sanctuary | 18 |
-| boarding | 18 |
+| boarding | 17 |
 | behavior-training | 16 |
 | microchip | 13 |
 | transport | 13 |
@@ -74,11 +74,11 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 270 |
-| queens | 226 |
-| manhattan | 221 |
-| bronx | 196 |
-| staten-island | 195 |
+| brooklyn | 268 |
+| queens | 224 |
+| manhattan | 219 |
+| bronx | 194 |
+| staten-island | 193 |
 
 ### By confidence
 
@@ -86,17 +86,16 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | High | 207 |
 | Medium | 150 |
-| Low | 63 |
+| Low | 62 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 399 |
-| retired | 9 |
-| verify | 8 |
+| active | 402 |
+| retired | 12 |
+| relocated | 3 |
 | hiatus | 2 |
-| relocated | 2 |
 
 ## Gaps in coverage
 
@@ -144,27 +143,23 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (9)
+### Never verified (4)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
 ## Not currently active
 
-- **Animal Relief Fund (ARF!)** — `verify`: Its Facebook page's newest visible post is from 2013. Email susan@arf-ny.org to check it still supplies pantries before relying on it.
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
-- **Cats In The Cradle Rescue (CITCR)** — `verify`: We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.
-- **Cats of Meow York (COMY)** — `verify`: Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.
-- **City Pitties** — `verify`: Its website is gone and it listed no dogs on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.
+- **Cats In The Cradle Rescue (CITCR)** — `retired`: Not listed: no posts since 2023, and its number goes to an automated voicemail (rung 2026-11-05). If you know it is still rescuing, tell us with Report a problem.
+- **Cats of Meow York (COMY)** — `retired`: Not listed. A Queens Chronicle report (June 2023) says its founder was arrested after police allegedly found more than 40 neglected cats in the group's care, and it has posted nothing since. Do not send animals here.
+- **City Pitties** — `relocated`: Moved to Broward County, Florida. No longer takes dogs in New York City.
 - **Elmhurst Animal Emergency Hospital** — `retired`: Closed: its phone number is out of service (checked by phone on 2026-11-04). For an emergency in Queens, see the 24-hour hospitals in the directory.
-- **Feather Friends Parrot Adoption Services** — `verify`: Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.
+- **Feather Friends Parrot Adoption Services** — `retired`: Not listed: we could find no sign it is still taking birds. For a parrot, see Northeast Avian Rescue or the Long Island Parrot Society.
 - **Harlem Cats** — `hiatus`: Checked 2026-11-04: its Instagram says the group is on a hiatus while travelling the world, and its website (harlemcats.com) no longer exists. Message it on Instagram or Facebook before relying on it.
-- **Magnificat Cat Rescue and Rehoming** — `verify`: Probably no longer active: the only website found is an unfinished template from 2015. Email it before relying on it.
+- **Magnificat Cat Rescue and Rehoming** — `retired`: Closed: its last post, in 2023, says so.
 - **MeowRoof** — `retired`: No longer operating as far as we can tell: New York State lists its corporation as inactive, and its website no longer exists.
 - **Muffin's Pet Connection - MAMA Program** — `retired`: This programme's website now belongs to an unrelated business, and nothing shows the coupon still runs. For low-cost spay/neuter, see the guide Low-cost clinics and trap banks.
 - **New Beginning Animal Rescue (NBAR)** — `retired`: Closed: its Bronx location has shut and its website no longer exists. Not to be confused with A New Beginning Animal Rescue on Long Island.
-- **Paws of Hope NYC** — `verify`: Its newest website dates from 2019 and it listed no animals on Adopt-a-Pet on 2026-11-04. Email or message it on Instagram before relying on it.
-- **P.L.U.T.O. Rescue of Richmond County (Pet Lovers United Together as One)** — `verify`: We could not confirm it is still active: its website no longer belongs to it. Ring (718) 227-0553 or look at its Facebook group before relying on it.
-- **Safe Place for Pets (RedRover)** — `retired`: This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home.
 - **SICAW Certificate Program** — `retired`: SICAW no longer offers spay/neuter certificates on its website. For low-cost spay/neuter on Staten Island, search the directory for "spay neuter Staten Island".
 - **Sugar Mutts Rescue** — `relocated`: Source says this organization has moved out of New York City.
 - **Thundercats TNR** — `relocated`: Moved to Portland, Oregon, in 2016; it no longer works in New York City.
@@ -174,7 +169,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (78)
+### Merged (76)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -230,7 +225,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `bbawc-rescue-clinic` ← 2 records
 - `acc-community-pets-program` ← 3 records
 - `acc-pet-food-pantry` ← 2 records
-- `animal-relief-fund` ← 2 records
 - `new-york-common-pantry` ← 3 records
 - `food-bank-for-new-york-city` ← 2 records
 - `kisos-pet-food-pantry` ← 2 records
@@ -238,7 +232,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
 - `animal-haven-community-engagement` ← 3 records
 - `safe-haven-program-map-foster` ← 2 records
-- `safe-place-for-pets` ← 2 records
 - `safe-havens-for-pets` ← 2 records
 - `sheltering-animals-and-families-together` ← 2 records
 - `lap-of-love` ← 2 records
@@ -276,7 +269,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (34)
+### Rows the rules could not fully tag (35)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -312,6 +305,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Vet-I-Care** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:93)
 - **Happy Tails Veterinary Practice** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:95)
 - **Helping Pets and People in Crisis (Mayor's Alliance)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:110)
+- **Paw It Forward Pet Pantry** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:120)
 
 ## Privacy
 
@@ -338,15 +332,15 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Reporting animal abuse or neglect | 6285 |
 | Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |
-| Community cats, colonies and starting TNR | 6916 |
-| Cats needing specialist help | 6806 |
+| Community cats, colonies and starting TNR | 6897 |
+| Cats needing specialist help | 6636 |
 | Lost or found a cat | 6535 |
-| Help keeping your cat | 6434 |
-| Help keeping your dog | 9018 |
+| Help keeping your cat | 6412 |
+| Help keeping your dog | 8962 |
 | Low-cost vet care, spay/neuter and dog licensing | 7169 |
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |
-| Breed-specific dog rescue | 20043 |
+| Breed-specific dog rescue | 19717 |
 | Found injured or orphaned wildlife | 14001 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |
