@@ -157,3 +157,80 @@ Dead, parked, blocked or timed out. Unpublished, as before.
 - Peppertree — http://www.peppertree.org (gave up after 90s)
 - Pets Alive — http://www.petsalive.com (gave up after 90s)
 - Scottish Terrier Club of Great New York Rescue* — http://awos.petfinder.com/shelters/NJ441.html (gave up after 90s)
+
+## The reviewer's reading, 2026-11-05 (first half)
+
+A reviewer opened the published three, the five "worth a look" and the 34
+"outside the city" on their own sites and supplied what each says.
+
+- **Published three:** contacts confirmed as stored. Valley Cats & Friends
+  also takes dogs and small animals (its site), so those animals were added.
+- **Worth a look, decided:**
+  - *Metropolitan Maltese Rescue* has closed. Its site sends owners to
+    American Maltese Association Rescue, which it calls NYC-based; the breed
+    guide now says so. Not published.
+  - *Long Island Bulldog Rescue* and *Husky House* (Matawan NJ, adopts within
+    an hour of the city): not published as listings, but given their contacts
+    in the breed-specific guide, which the reviewer asked to include breed
+    rescues outside the city, as the exotic-pet guides do.
+  - *Linus & Friends* (mailing addresses only, "no animals at either") and
+    *Ruff Dog Rescue Northeast* (Thompson PA; pulls from ACC): not breed
+    rescues and not based in the city. Not published.
+- **Outside the city:** stay out of the directory. The breed rescues among
+  them now carry their own contacts in the breed-specific guide: Best
+  Bullies, Cane Corso Rescue, Bichon Frise Rescue of Northern NJ, Cavalier
+  Rescue USA (its NY/CT address only; its volunteers' personal numbers are
+  not copied), New Jersey Schnauzer Rescue Network, Save A Yorkie Rescue (its
+  contact page, for the same reason), Peace Love and Poms, Peis & Strays
+  (added), Shih Tzus & Furbabies and WAGS. Farm Sanctuary (Watkins Glen) is
+  now a listing outside the city and is named in the rehoming guide beside
+  the two nearer farmed-animal sanctuaries.
+
+## The reviewer's reading, 2026-11-05 (second half, and corrections to the first)
+
+Every candidate here came from ACC's New Hope partner list (226 of 230; the
+other four from the Mayor's Alliance resources page), so each one is an ACC
+rescue partner by definition. The question for publishing is only where it
+works.
+
+- **Published, with the contacts the reviewer read:** Linus & Friends (a
+  foster-based dog and cat rescue with a New York office; "no animals at
+  either" address because the animals live in foster homes - the first
+  reading here wrongly took that as a reason not to list it), Hopewell
+  Rescue (Manhattan), Twenty Paws Rescue (Brooklyn), Animals Are Forever
+  (Brooklyn).
+- **The at-risk guide now lists every published New Hope partner in the
+  city** (23 were missing), and has a new section for partners outside the
+  city whose own websites say they take animals from ACC or "NYC shelters":
+  Air Twiga, Cat Assistance, ECHO Rescue, Italian Greyhound Rescue (NY),
+  Karma K-9 and Ruff Dog Rescue Northeast. Found by searching every saved
+  reading of the 207 held-back sites for ACC, "NYC shelter" and "New Hope";
+  Seventh Heaven Rescue mentions a dog "left at a NYC Shelter" but is near
+  Syracuse and does not say it pulls from the city, so it is not included.
+- **Spicy Cats Rescue was in the at-risk guide as a Brooklyn group.** Its
+  own site (spicycats.org, the address on ACC's list) says it rescues on the
+  Maine and New Hampshire seacoast. Removed from that list; it is in the
+  cats guide's "further away" section instead.
+- **Breed-specific guide:** contacts and places for American Bulldog Rescue,
+  Doberman Pinscher Rescue of PA, MAGDRL, Bullmastiff Rescuers, Tibetan
+  Mastiff Rescue, American Belgian Malinois Rescue, American Maltese
+  Association Rescue, United Yorkie Rescue, Compact Canine Rescue, Pug
+  Rescue of New England, ECHO, Australian Shepherds Furever, Blue Ridge Bull
+  Terrier Group, Northeast Boston Terrier Rescue and Pitties Love Peace;
+  Air Twiga and Dalmatian Adoption added; Cavalier Alliance marked closing.
+  Individual coordinators' personal emails and numbers (American Maltese,
+  Malinois, Boston Terrier) are not copied.
+- **Population-specific:** the cats guide gains "Further away" specialists
+  (The Odd Cat Sanctuary, Tabby's Place, Spicy Cats, King's Pride Kitten
+  Rescue, Techs for Clefts, Only Maine Coons Rescue). Cannoli's Sweet Life
+  Senior Rescue (Locust Valley) is a listing tagged for senior dogs, outside
+  the city, and is named in the keep-your-dog guide.
+- **Not published:** the rest are outside the city and neither breed- nor
+  population-specific nor stated to pull from NYC (All God's Creatures,
+  All Creatures Big & Small, Animal Rescue Force, Cameron Animal Hospital
+  Rescue, Friends with Four Paws, FOWA, Gatto Pups, Hermione's Home,
+  Eleventh Hour, Kindred Spirits, Ollie's Angels, Peace Love Rescue NY,
+  PAWS-LI, Project Precious, Purrfect Pals, Redemption Rescues, Protectors of
+  Paws & Claws, Sarama, Shelter Survivors, Suruluna, Treasure Fur-Ever, Two by
+  Two, Wag On Inn, Jet's Rehab Rescue). New Hope Rescue Ranch has stopped
+  intake. Shelter Chic gives no location.

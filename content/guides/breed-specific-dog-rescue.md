@@ -25,7 +25,7 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 
 - New York Bully Crew (NYBC) - all bully breeds pulled from shelters and the streets, fully vetted; handles bully-breed surrenders. 501(c)(3), HQ East Patchogue (Long Island), serves NYC, a Best Friends partner. (844) 633-6922, nybullycrew.org, Instagram @newyorkbullycrew.
 - Bullied Breeds Rescue - explicitly ALL 'bullied' breeds - rottweilers, pit bulls, shepherds 'and many more'; foster-based, pulls local shelter dogs. https://www.bulliedbreedsrescue.org (site app). Instagram @bulliedbreedsrescue.
-- Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; Westchester NY (serves NY metro incl. NYC). https://www.bestbullies.org. Approved ACC rescue partner.
+- Best Bullies - bully breeds from local overcrowded shelters; foster + step-down training/socialization; based in Westchester NY, serves the NY metro area incl. NYC. https://www.bestbullies.org, contact form: https://www.bestbullies.org/contact. Approved ACC rescue partner.
 - Pibbles & More Animal Rescue (PMAR) - pit/bully advocacy + all-breed. http://www.pmarinc.org (site form). Approved ACC rescue partner.
 - Get A Bull - bully-breed rescue. http://www.getabull.org. Approved ACC rescue partner.
 - Recycle-A-Bull Bully Breed Rescue - pit bulls + pit mixes + OTHER bully breeds; foster-based (Central NY, PO Box 174 Clay NY 13041) - adopts into NY. https://recycleabull.com.
@@ -35,13 +35,14 @@ City Pitties - NYC-BASED (Bay Ridge, Brooklyn) bully-breed foster network affili
 ## PIT-TYPE (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)
 
 - Pit of Our Souls Rescue - pit-type dogs. http://pitofoursoulsrescue.com. Approved ACC rescue partner.
-- Pitties Love Peace - pit-type dogs. http://www.pittieslovepeace.com. Approved ACC rescue partner.
+- Air Twiga Animal Rescue - American Staffordshire terrier mixes and other dogs, many with medical needs; Glen Cove, Long Island; takes dogs from NYC's shelter. TwigaAir@gmail.com. https://www.airtwiga.org, Instagram @airtwigaanimalrescue (read on its own site by a reviewer, 2026-11-05).
+- Pitties Love Peace - pit bull and bully breed dogs; Elizabethtown, PA. info@pittieslovepeace.com. Application: https://pittieslovepeace.com/adoptable-dogs/online-application/ (read on its own site by a reviewer, 2026-11-05). Approved ACC rescue partner.
 - Bully Project - now part of The Good Life Dog Rescue (Rescuzilla and Bully Project NYC merged): pit/bully and other dogs, NYC metro, foster-based. Adoption and foster questionnaires at https://www.thegldr.org - email hello@thegldr.org - Instagram @thegoodlifedogrescuenyc.
 
 ## BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the "bully"/molosser group)
 
-- Long Island Bulldog Rescue - English/French bulldogs, NY metro. http://longislandbulldogrescue.org. Approved ACC rescue partner.
-- American Bulldog Rescue - American bulldogs, national incl. NY. http://americanbulldogrescue.org.
+- Long Island Bulldog Rescue - English/French bulldogs, Long Island (PO Box 239, Stony Brook NY 11790), works with NYC's shelters. Surrenders and help with your bulldog only: (631) 689-6245. To adopt, email longislandbulldogrescue@gmail.com with your phone number and state (adoption calls are not answered). http://longislandbulldogrescue.org (read on its own site by a reviewer, 2026-11-05).
+- American Bulldog Rescue - American bulldogs and bull breeds; works mainly in Pennsylvania, New Jersey, Maryland and New York. Info@Americanbulldogrescue.org; adoption applications Apply@Americanbulldogrescue.org. https://americanbulldogrescue.org/contact-us (read on its own site by a reviewer, 2026-11-05).
 - Short Noses Only Rescue Team (SNORT) - brachycephalic (bulldogs, pugs, frenchies). http://www.snortrescue.org.
 
 ## ROTTWEILER (part of the "bully"/molosser group)
@@ -60,30 +61,30 @@ CH Boxer Rescue - boxers + bulldogs + assorted, Northeast US incl. NY; takes own
 
 ## DOBERMAN / PINSCHER (part of the guardian/molosser group)
 
-- Doberman Pinscher Rescue of PA - dobermans, serves NY metro. https://www.dprpa.org.
+- Doberman Pinscher Rescue of PA - purebred dobermans; places dogs in PA, MD, DE, VA, NJ and NY. contacts@dprpa.org. https://www.dprpa.org (read on its own site by a reviewer, 2026-11-05).
 - Doberman Rescue Unlimited - dobermans, NE US incl. NY. http://www.dru.org.
 
 Internet Miniature Pinscher Service (IMPS) - min pins, national incl. NY. (via Mayor's Alliance list).
 
 ## CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large "bully"/molosser)
 
-- Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). https://canecorsorescue.org.
-- Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes, has a NY chapter. https://www.magdrl.org / https://nydanerescue.com.
-- Bullmastiff Rescuers - bullmastiffs, NY-serving. http://www.bullmastiffrescuers.net.
+- Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). Mailing address in West Lake Hills, Texas. 1-814-682-6776. https://canecorsorescue.org (read on its own site by a reviewer, 2026-11-05).
+- Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes and Dane mixes; serves New York, New Jersey, Pennsylvania, Delaware, Maryland, DC, West Virginia and Virginia, with a New York chapter. https://www.magdrl.org / https://nydanerescue.com. Instagram @midatlantic_greatdanerescue (read on its own site by a reviewer, 2026-11-05).
+- Bullmastiff Rescuers - bullmastiffs only ("we DO NOT accept other breeds"), NY-serving. brinc2@verizon.net. http://www.bullmastiffrescuers.net (read on its own site by a reviewer, 2026-11-05).
 - Happy Go Lucky Mastiff Rescue - mastiffs, adopts NY metro. https://happygoluckymastiffrescue.com.
 - Lucie's Mastiff Mission - mastiffs, based at 538 Ongs Hat Rd, Vincentown, NJ 08088; takes mastiffs from NYC through ACC's rescue-partner program. (484) 459-3257. Facebook group: https://www.facebook.com/groups/318799318598045 (address and phone supplied by a reviewer from its public nonprofit record, 2026-11-05).
-- Tibetan Mastiff Rescue - Tibetan mastiffs, national incl. NY. http://www.tibetanmastiffrescueinc.org.
+- Tibetan Mastiff Rescue - Tibetan mastiffs; the only US rescue for the breed; Ringoes, NJ. (908) 237-1474, tmrescue@tibetanmastiff.org. http://www.tibetanmastiffrescueinc.org (read on its own site by a reviewer, 2026-11-05).
 
 For Dogo Argentino / Presa Canario / Dogue de Bordeaux specifically: no dedicated NYC single-breed rescue found - use the ALL-BULLY rescues above (NYBC, Bullied Breeds, Guardian Angel) + ACC New Hope, and the breed's national club rescue (e.g. Dogo Argentino Club of America).
 
 ## HUSKY / NORTHERN BREEDS
 
-- Husky House - Siberian Huskies + northern breeds (NJ-based, serves NY metro; strong NYC adopter pipeline). http://www.huskyhouse.org. Approved ACC rescue partner.
+- Husky House - Siberian Huskies + northern breeds, 391 Route 34, Matawan NJ 07747; adopts to homes within a one-hour drive of NYC or Matawan. Adoption questions: hh.applicationreviewboard@gmail.com; anything else: HuskyHouseInc@gmail.com. http://www.huskyhouse.org (read on its own site by a reviewer, 2026-11-05). Approved ACC rescue partner.
 
 ## GERMAN SHEPHERD / MALINOIS / DUTCH SHEPHERD
 
 - Charwills German Shepherd Rescue - GSDs, serves NY metro. https://www.charwillsrescue.com. Approved ACC rescue partner.
-- American Belgian Malinois Rescue - Malinois nationwide incl. NY. https://www.malinoisrescue.org.
+- American Belgian Malinois Rescue - Malinois nationwide incl. NY; PO Box 52, Amherst Junction, WI 54407. info@malinoisrescue.org. https://www.malinoisrescue.org (read on its own site by a reviewer, 2026-11-05).
 - Malinois & Dutch Shepherd Rescue - Mals + Dutchies, NY-serving. https://www.madrescueinc.org.
 - Herding breeds (Aussie, cattle dog, collie, sheepdog) are covered by ECHO East Coast Herding Dog Org: echorescue.com.
 
@@ -97,7 +98,7 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 ## GRROWLS (Golden Retriever Rescue Operated With Love Statewide) - goldens, NY statewide. (via Mayor's Alliance list).
 
 - German Shorthaired Pointer Rescue of NJ/NY - GSPs. facebook.com/GspRescueOfNjNy.
-- With a Golden Spirit (WAGS) - golden retrievers. http://wagsrescue.homestead.com. Approved ACC rescue partner.
+- With a Golden Spirit (WAGS) - golden retrievers, southwestern Pennsylvania. wagsrescue@comcast.net. http://wagsrescue.homestead.com (read on its own site by a reviewer, 2026-11-05). Approved ACC rescue partner.
 
 ## SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE
 
@@ -105,18 +106,18 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 
 Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescue partner.
 
-- Metropolitan Maltese Rescue (MetroMalts) - Maltese + small white breeds, NY metro. https://www.malteserescue.com.
-- Save A Yorkie Rescue - Yorkshire terriers, Northeast. https://www.saveayorkierescue.org.
-- United Yorkie Rescue - Yorkies, national incl. NY. http://unitedyorkierescue.org.
+- Metropolitan Maltese Rescue (MetroMalts) has closed. Its site sends Maltese owners to American Maltese Association Rescue, which it describes as NYC-based: http://www.americanmalteserescue.org, amarescue@amarescue.org (its coordinators by region are on its contact page) (read on its own site by a reviewer, 2026-11-05).
+- Save A Yorkie Rescue - Yorkshire terriers, Northeast; corporate address in Allentown PA (no dogs there). Its volunteers' numbers for adopting, fostering and surrenders are on its own contact page: https://www.saveayorkierescue.org (read on its own site by a reviewer, 2026-11-05).
+- United Yorkie Rescue - Yorkies, national incl. NY; PO Box 23, Wales, WI 53183. president@uyr.us. http://unitedyorkierescue.org (read on its own site by a reviewer, 2026-11-05).
 - Doxie Rescue of Bucks County & NJ - dachshunds, serves NY metro. https://doxierescue.com.
-- Compact Canine Rescue - small breeds, NY-serving. http://www.compactcaninerescue.org.
+- Compact Canine Rescue - small breeds; volunteers in the Mid-Atlantic (Virginia, North Carolina, Maryland, DC, Delaware, Pennsylvania and New Jersey); PO Box 10312, Norfolk, VA 23513. 804-721-4703. https://compactcaninerescue.org (read on its own site by a reviewer, 2026-11-05).
 
 Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists (checked 2026-11-04); ask ACC how to reach it. Approved ACC rescue partner.
 
 ## POODLE / DOODLE / BICHON
 
 - Poodle Rescue Connecticut - poodles + doodles, adopts NY metro. http://www.poodlerescuect.org.
-- Bichon Frise Rescue of Northern NJ - bichons, serves NY metro. http://www.bichonrescuenj.com.
+- Bichon Frise Rescue of Northern NJ - bichons, PO Box 136, East Hanover NJ 07936, serves NY metro. nnjbichonrescue@yahoo.com. http://www.bichonrescuenj.com, Facebook: https://www.facebook.com/BichonFriseRescueOfNNJ (read on its own site by a reviewer, 2026-11-05).
 
 ## SHIBA / AKITA / ASIAN BREEDS
 
@@ -132,15 +133,15 @@ Big Hands Little Paws - small/senior dogs, NYC. its old website no longer exists
 ## PUG
 
 - Appalachian Pug Rescue - pugs, explicitly serves NY (multi-state); hospice fostering for medical pugs. https://appalachianpugrescue.org.
-- Pug Rescue of New England - pugs, NE US incl. NY. http://pugrescueofnewengland.org.
+- Pug Rescue of New England - pugs from the six New England states; Millis, MA. Contact form: https://pugrescueofnewengland.org/contact-us/ (read on its own site by a reviewer, 2026-11-05).
 
 Green Mountain Pug Rescue - pugs, NE incl. NY (via Mayor's Alliance list).
 
 ## HERDING (AUSTRALIAN SHEPHERD / CATTLE DOG / COLLIE / SHEEPDOG)
 
-- ECHO East Coast Herding Dog Organization - all herding breeds (also listed under GSD), NY-serving. https://www.echorescue.com.
+- ECHO East Coast Herding Dog Organization - herding breeds (border collies, Aussies, cattle dogs and mixes), especially dogs at risk of euthanasia; a New Hope partner with NYC's shelter. ECHORescue@yahoo.com. https://echorescue.com/contact/ (read on its own site, 2026-11-05).
 - Australian Cattle Dog Rescue Association - ACDs (heelers), national incl. NY. http://www.acdra.org.
-- Australian Shepherds Furever - Aussies, adopts NY metro. https://www.australianshepherdsfurever.org.
+- Australian Shepherds Furever - Aussies and Aussie mixes; mailing address in Ontario, California. To rehome an Aussie, only its rehoming page works: https://www.australianshepherdsfurever.org/rehoming (read on its own site by a reviewer, 2026-11-05).
 
 New England Border Collie Rescue - border collies, NE incl. NY. (via Mayor's Alliance list).
 
@@ -154,9 +155,11 @@ New England Old English Sheepdog Rescue - OES, NE incl. NY. (via Mayor's Allianc
 
 ## CAVALIER / TOY / COMPANION BREEDS
 
-- Cavalier Rescue USA - Cavalier King Charles spaniels, national incl. NY. http://www.cavalierrescueusa.org.
-- Cavalier Alliance for Rescue & Research - cavaliers, NY-serving. http://www.cavalieralliance.org.
-- Peace Love and Poms / Pawsitively Pom Rescue - Pomeranians, adopt NY metro. peacelovepoms.rescuegroups.org.
+- Cavalier Rescue USA - Cavalier King Charles spaniels, national; its volunteers for New York and Connecticut answer at Cavalierrescueny@gmail.com. http://www.cavalierrescueusa.org (read on its own site by a reviewer, 2026-11-05).
+
+Cavalier Alliance for Rescue & Research (senior and special-needs cavaliers) has announced on its Facebook page that it is closing (read by a reviewer, 2026-11-05). Not listed as a contact.
+
+- Peace Love and Poms Rescue (the research also names Pawsitively Pom Rescue alongside it) - Pomeranians, PO Box 744, Lebanon PA 17042, adopts in the NY metro area. peacelovepomsrescue@gmail.com. https://peacelovepoms.rescuegroups.org (read on its own site by a reviewer, 2026-11-05).
 - Pekingese Rescue Network Inc. - pekingese, Hillsdale NJ 07642, serves NJ/NY/CT. (201) 739-8988, codoan@aol.com. Petfinder: https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/ (supplied by a reviewer, 2026-11-05). Not the same as pekingeserescue.org, a national site listing many Pekingese rescues.
 
 ## GREYHOUND / SIGHTHOUND
@@ -171,21 +174,23 @@ New England Old English Sheepdog Rescue - OES, NE incl. NY. (via Mayor's Allianc
 
 Chinese Sharpei Rescue - sharpeis, NY-serving (via ACC New Hope).
 
+- Peis & Strays (Charpei Peis and Strays) - Chinese Shar Pei, all-volunteer, New England (New Hampshire). info@peisandstrays.com. http://www.peisandstrays.com (read on its own site by a reviewer, 2026-11-05).
 - Bull Terrier Rescue Mission - bull terriers. https://btrmission.org.
-- Blue Ridge Bull Terrier Group - bull terriers. http://www.brbtc.com.
+- Blue Ridge Bull Terrier Group - bull terriers. Bull terrier in need of rescue: hotline (703) 831-7323, info.brbtc@gmail.com. https://www.brbtc.org (read on its own site by a reviewer, 2026-11-05).
 - Save The Dalmatians and Others - dalmatians. https://savethedals.org.
+- Dalmatian Adoption, Inc. - dalmatians; registered in Brooklyn (New York State records). Its Petfinder page: https://www.petfinder.com/member/us/ny/brooklyn/dalmatian-adoption-inc-ny505 (supplied by a reviewer, 2026-11-05).
 - Keeshond Affiliated Rescuers of the Mid-Atlantic (KARMA) - keeshonds. https://www.karmakees.org.
 
 ## TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS
 
 Rat Terrier ResQ - rat terriers, national incl. NY. (via ACC New Hope list).
 
-- Shih Tzus & Furbabies - shih tzus + small breeds, NY-serving. https://stfbr.org.
+- Shih Tzus & Furbabies - shih tzus + small breeds; mailing address in Saint Mary's, Georgia. https://stfbr.org, contact: https://stfbr.org/contact/ (read on its own site by a reviewer, 2026-11-05).
 - Scottish Terrier Club of Greater NY Rescue - scotties. https://stcgny.com/rescue/.
-- New Jersey Schnauzer Rescue Network - schnauzers, serves NY metro. http://www.njsrn.org.
+- New Jersey Schnauzer Rescue Network - schnauzers, PO Box 36, Fanwood NJ 07023, serves NY metro. Rescue hotline (732) 920-8242, 8am-10pm only; info@njsrn.org. http://www.njsrn.org (read on its own site by a reviewer, 2026-11-05).
 - Cairns & Cousins Terrier Rescue - cairn + small terriers. https://ccterrierrescue.org.
 - Col. Potter Cairn Rescue Network - cairn terriers, national incl. NY. https://www.cairnrescue.com.
-- Northeast Boston Terrier Rescue - Boston terriers. https://nebostonrescue.com.
+- Northeast Boston Terrier Rescue - Boston terriers, volunteers across the Northeast. Surrenders by the form on its contact page (responses can be slow): https://nebostonrescue.com/contact-us/ (read on its own site by a reviewer, 2026-11-05).
 
 NOTE on breed-national rescues: many groups on the ACC New Hope list are single-breed clubs based in NJ/CT/PA/upstate that adopt INTO the NY metro area. They are included here because they serve NYC adopters, even though they aren't NYC-based. For a breed not listed, search '[breed] club of America rescue' - the national parent club will route to the nearest volunteer coordinator.
 

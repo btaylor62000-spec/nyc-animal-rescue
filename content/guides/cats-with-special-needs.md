@@ -61,4 +61,13 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - Hard Hat Cats (citywide) - places ferals at businesses. hardhatcats@gmail.com | hardhatcats.org
 - ACC Working Cats Program (municipal) - workingcats@nycacc.org | (212) 788-4000 | nycacc.org/workingcats
 
+## FURTHER AWAY: SPECIALISTS OUTSIDE THE CITY (when nobody here has room)
+
+- The Odd Cat Sanctuary (Massachusetts) - medical, behavioral, feral, senior and "death row" cats, mostly in foster homes. theoddcatsanctuary@gmail.com | https://linktr.ee/theoddcatsanctuary (read on its own site by a reviewer, 2026-11-05).
+- Tabby's Place (Ringoes, New Jersey) - cage-free sanctuary for cats from hopeless situations, with its own vet care. (908) 237-5300 | info@tabbysplace.org | https://www.tabbysplace.org (read on its own site by a reviewer, 2026-11-05).
+- Spicy Cats Rescue (Exeter, New Hampshire) - medical and behavioral special-needs cats, newborns to hospice. meow@spicycats.org | https://www.spicycats.org; strays and surrenders by its intake questionnaire (read on its own site by a reviewer, 2026-11-05).
+- King's Pride Kitten Rescue (central New Jersey) - orphaned kittens 0-8 weeks, sometimes to 12; by email first, arranged in advance; no owner surrenders. adoptions@kings-pride.org | https://kings-pride.org (read on its own site by a reviewer, 2026-11-05).
+- Veterinary Technicians for Cleft Affected Animals (California, by email) - education and support for kittens and puppies born with a cleft palate. techsforclefts@gmail.com | https://www.techsforclefts.com (read on its own site by a reviewer, 2026-11-05).
+- Only Maine Coons Rescue (Absecon, New Jersey) - Maine coon cats. info@omcrescue.org | https://www.omcrescue.org (read on its own site by a reviewer, 2026-11-05).
+
 Confirm current capacity before relying - specialist intake is the first thing that closes when a group is full.
