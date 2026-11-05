@@ -23,7 +23,7 @@ you change them, recount rather than adjust.
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing: 69 rows as of 2026-11-04, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
 | Guides | 23. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 393 listed of 399 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 357 carry a date they were last confirmed; 36 have never been, and each of those is in *What to do next* item 3 with the reason. 35 emergency vets, 21 of them confirmed open 24/7, every one with hours. Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
-| Discovery | 230 candidates from ACC's New Hope partner roster. 20 published, every one read by a person and placed in the city; 210 held back. All 219 that were waiting were read in a browser on 2026-11-04: `docs/discovery-review-2026-11-04.md` says what was found for each |
+| Discovery | 230 candidates from ACC's New Hope partner roster. 23 published, every one read and placed in the city; 207 held back. All were read in a browser on 2026-11-04, and the 131 that did not settle were read again, contact and about pages included, on 2026-11-05: `docs/discovery-review-2026-11-05.md` leaves 5 worth one look by a person; the rest are outside the city, say nothing, or cannot be read |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22; their contacts are published. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
@@ -61,7 +61,10 @@ yours:
 
 Ordered by how much harm it prevents, not by size.
 
-0. **Do this first next session: the reviewer is reviewing the 210 held-back
+0. **Optional: five discovery candidates are worth one look by a person**
+   (`docs/discovery-review-2026-11-05.md`, settled 2026-11-05 by a second
+   browser pass; the reviewer no longer needs to go through all of them).
+   Earlier note, kept for the method: **the reviewer was to review the 210 held-back
    discovery candidates by hand.** Asked for on 2026-11-04 so it is not
    forgotten. Start from `docs/discovery-review-2026-11-04.md`, which sorts
    every one by what its own site said (outside the city, no location,
