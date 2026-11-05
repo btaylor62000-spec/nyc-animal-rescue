@@ -51,8 +51,4 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 
 ## IF YOU ARE LEAVING ABUSE
 
-- More shelters can take your pet with you. In December 2025, 17 of the city's 54 domestic violence shelters accepted pets.
-- NYC 24-hour Domestic Violence Hotline - (800) 621-4673 - say that you need to leave safely with a pet.
-- URI PALS - (646) 588-0030 - https://urinyc.org/uripals - a New York City shelter programme that houses survivors together with their pets.
-- Safe Horizon - (212) 577-7700 - https://www.safehorizon.org - works with animal shelters, foster homes and boarding to keep a survivor's pet safe; ask when you call.
-- Volunteers of America-Greater New York - (855) 643-7473 - https://www.voa-gny.org - domestic violence shelters where pets and people stay together.
+- If you are leaving an abusive home, call the NYC 24-hour Domestic Violence Hotline, (800) 621-4673, and say you have a pet. Shelters that take pets, keeping your pet safe meanwhile, and the law are in [Leaving an abusive home with your pet](/guides/leaving-abuse-with-your-pet).

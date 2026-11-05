@@ -50,6 +50,12 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
   // Animal Help Now's answers are national; the New York City places to call
   // for the commonest of them are the wildlife rehabilitators.
   'more-situations-animal-help-now': [{ heading: 'Wildlife rehabilitators in and near the city', need: 'wildlife-rehab' }],
+  'leaving-abuse-with-your-pet': [
+    {
+      heading: 'Hotlines, shelters and safe-keeping for survivors and their pets',
+      ids: ['nyc-domestic-violence-hotline', 'national-domestic-violence-hotline', 'uri-pals', 'safe-horizon', 'volunteers-of-america-greater-new-york', 'safe-haven-program-map-foster', 'paws-ny', 'helping-pets-and-people-in-crisis', 'animal-haven', 'redrover-relief', 'safe-havens-for-pets', 'domesticsheltersorg'],
+    },
+  ],
   'help-paying-for-care': [{ heading: 'Help paying vet bills', need: 'financial-aid' }],
   'pets-in-a-disaster': [
     { heading: 'Emergency and urgent-care vets', need: 'emergency-vet' },

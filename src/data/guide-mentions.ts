@@ -115,6 +115,9 @@ export const MENTION_ALIASES: Record<string, string> = {
   NYCPRC: 'new-york-city-pigeon-rescue-central',
   // The bird guide's author writes the Wild Bird Fund as "WBF" throughout.
   WBF: 'the-wild-bird-fund',
+  'NYC 24-hour Domestic Violence Hotline': 'nyc-domestic-violence-hotline',
+  'RedRover Relief': 'redrover-relief',
+  'DomesticShelters.org': 'domesticsheltersorg',
 };
 
 /*

@@ -640,3 +640,19 @@ test('rules: a three-digit service line (311, 988) on the page is still there', 
   const d = decide(o, evidenceFromHtml(o, '<p>Call 311, or (212) 639-9675 from outside the city.</p>', '2026-11-05'));
   assert.notEqual(d.kind, 'flag', JSON.stringify(d));
 });
+
+test('rules: a closed listing whose own site is live again, with its contacts, goes to a person; nothing else about it is flagged or changed', () => {
+  const closed = org({ status: 'retired', status_note: 'Closed.' });
+  const live = decide(closed, evidenceFromHtml(closed, fixture('unchanged.html'), DATE));
+  assert.equal(live.kind, 'needs-review');
+  assert.match((live as { reason: string }).reason, /operating again/);
+  const { patch } = toPatch(closed, live, DATE);
+  assert.equal(patch.status, undefined, 'a person decides; the status is never changed');
+  const gone = decide(closed, { date: DATE, pages: [] } as never);
+  assert.notEqual(gone.kind, 'needs-review');
+});
+
+test('rules: a group taken off for a serious reason is never re-checked', () => {
+  const comy = org({ id: 'cats-of-meow-york', status: 'retired' });
+  assert.equal(decide(comy, evidenceFromHtml(comy, fixture('unchanged.html'), DATE)).kind, 'skipped');
+});

@@ -41,16 +41,9 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - RescueNYC - holding/recovery space so a caretaker isn't forced to surrender during a TNR or medical situation.
 - ACC - can coordinate options for people entering DHS temporary housing. admissions@nycacc.org - (212) 788-4000.
 
-## DOMESTIC-VIOLENCE PET SAFE-KEEPING (free; stay-together or safe foster)
+## LEAVING AN ABUSIVE HOME
 
-- URI PALS (Urban Resource Institute, People and Animals Living Safely) - the largest DV shelter provider in the U.S.; NYC co-living shelters let survivors bring pets, with private pet-friendly areas. Free. urinyc.org (ask about PALS); NYC DV Hotline (24/7): (800) 621-HOPE / (800) 621-4673.
-- Safe Haven Program / MAP Foster - networks of foster homes partnered with DV shelters to care for a pet temporarily when the shelter can't take animals, then reunite. Ask a DV caseworker or the NYC DV Hotline (800) 621-4673.
-- PAWS NY - assists with emergency fostering for domestic-violence survivors seeking safety. referrals@pawsny.org - (212) 203-4760 ext. 306.
-- RedRover Relief Safe Escape - grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
-- Safe Havens for Pets (Animal Welfare Institute) - searchable directory of shelters that keep pets with people leaving abuse or without a home, by state and ZIP: https://safehavensforpets.org (RedRover's Safe Place for Pets directory, listed here before, is no longer online).
-- Safe Havens for Pets (Animal Welfare Institute) - search by zip code for shelters with on-site pet housing, boarding partnerships, or foster care during a crisis: https://awionline.org/safe-havens
-- Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. https://saftprogram.org.
-- SPCA Westchester Pet Safety Program - safe-keeping for pets in DV-affected households (Westchester-adjacent). spcawestchester.org/pet-safety - (914) 941-2896.
+- If you are leaving an abusive home: call the NYC 24-hour Domestic Violence Hotline and say you have a pet. Shelters where you and your pet can stay together, keeping your pet safe meanwhile, and how a court can protect it are in [Leaving an abusive home with your pet](/guides/leaving-abuse-with-your-pet).
 
 ## HOSPICE / SENIOR + LIFETIME-CARE placement
 

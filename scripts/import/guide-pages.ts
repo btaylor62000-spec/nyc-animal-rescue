@@ -81,6 +81,11 @@ const WB_DISASTER = 'research/NYC_Pets_In_A_Disaster.xlsx';
 // Linked rather than copied: its answers are its own words, written for the
 // whole country, and kept current by Animal Help Now.
 const WB_AHNOW = 'research/NYC_AHNow_Situations.xlsx';
+// Its own guide since 2026-11-05: a reviewer pointed out that leaving abuse
+// with a pet sat at the foot of the housing guide, where someone in danger
+// would have to read past shelter applications to find it. Quotations are
+// the National Domestic Violence Hotline's own; places are the listings'.
+const WB_DV = 'research/NYC_Leaving_Abuse_With_Pets.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -88,6 +93,12 @@ const WB_AHNOW = 'research/NYC_AHNow_Situations.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_DV, tab: 'Leaving abuse with your pet', slug: 'leaving-abuse-with-your-pet',
+    title: 'Leaving an abusive home with your pet',
+    summary: 'Shelters in New York City where survivors and pets stay together, keeping your pet safe while you get to safety, planning for your pet, and how a court can protect it.',
+    topics: ['domestic violence', 'abuse', 'abusive partner', 'leaving abuse', 'dv shelter', 'safe haven', 'order of protection', 'pets and domestic violence', 'survivor', 'URI PALS', 'safe horizon', 'threatening my pet'],
+  },
   {
     file: WB_AHNOW, tab: 'More situations', slug: 'more-situations-animal-help-now',
     title: 'More situations, answered by Animal Help Now',
@@ -162,7 +173,7 @@ export const GUIDE_PAGES: TabSpec[] = [
     summary: 'Food, vet bills, housing, and temporary care, before surrender becomes the only option.',
     topics: ['cannot keep my cat', 'surrender', 'pet food help', 'cannot afford vet'],
     // Covered in full, and kept current, by the guide Help paying for veterinary care.
-    omitSections: /^HELP PAYING VET BILLS|^PET INSURANCE/,
+    omitSections: /^HELP PAYING VET BILLS|^PET INSURANCE|^DOMESTIC-VIOLENCE PET SAFE-KEEPING/,
   },
   {
     file: WB_DOG, tab: 'Owner support & surrender prev.', slug: 'keeping-your-dog',
@@ -170,7 +181,7 @@ export const GUIDE_PAGES: TabSpec[] = [
     summary: 'Support with costs, housing and behaviour, plus how surrender works if you still need it.',
     topics: ['cannot keep my dog', 'rehome dog', 'surrender dog', 'dog food help'],
     // Covered in full, and kept current, by the guide Help paying for veterinary care.
-    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE/,
+    omitSections: /^VET-BILL FINANCIAL AID|^PET INSURANCE|^DOMESTIC-VIOLENCE PET SAFE-KEEPING/,
   },
   {
     file: WB_DOG, tab: 'Low-cost vet, s-n & licensing', slug: 'low-cost-dog-care',
