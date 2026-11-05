@@ -48,8 +48,8 @@
   "notes": "A Queens (Maspeth) parrot adoption service - one of the very few listings for an IN-NYC pet-parrot resource, which is why it's included. However, its listing appears dated and could not be independently confirmed as currently operating at build time. Treat as a lead to verify by email before relying; if it's inactive, use LIPS placement, Northeast Avian Rescue, or the tri-state parrot rescues below. Phone: (fax 718-478-8460; no listed voice line) Intake: Email nycparrot@verizon.net Intake: PO Box 780344, Maspeth NY 11378. NOTE: verify the org is still active before referring (listing may be dated; site blocks automated checks). Other channel: (none confirmed)",
   "type_raw": "Parrot adoption service (NYC-based) [VERIFY - may be inactive]",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "Its website is up but we could not confirm the rescue is still taking birds. Email nycparrot@verizon.net or ring before relying on it.",
+  "status": "retired",
+  "status_note": "Not listed: we could find no sign it is still taking birds. For a parrot, see Northeast Avian Rescue or the Long Island Parrot Society.",
   "source_urls": [
     "https://birdsupplies.com/pages/parrot-rescues-and-adoption-programs"
   ],
@@ -97,6 +97,15 @@
       "evidence_url": "https://nycparrot.wordpress.com/",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its site, nycparrot.wordpress.com, is up (it shows robots a bot check), and directories give PO Box 780344, Maspeth, NY 11378 and (917) 865-5042. The site itself says: \"OUR EMAIL IS NYCPARROT@VERIZON.NET.\""
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://nycparrot.wordpress.com/",
+      "source": "manual",
+      "note": "No sign it is still taking birds: its site shows nothing, and the reviewer's search on 2026-11-05 found only an unrelated urban-wildlife page with a similar name. Not listed; the parrot guides name Northeast Avian Rescue and the Long Island Parrot Society instead."
     }
   ],
   "privacy_hold": false,

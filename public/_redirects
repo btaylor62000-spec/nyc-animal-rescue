@@ -21,3 +21,7 @@
 /org/mama-coupon/*  /guides/low-cost-clinics-and-trap-banks/ 301
 /org/best-friends-pet-adoption-center-nyc    /org/best-friends-animal-society-nyc/ 301
 /org/best-friends-pet-adoption-center-nyc/*  /org/best-friends-animal-society-nyc/:splat 301
+/org/animal-relief-fund    /directory?need=food-assistance 301
+/org/animal-relief-fund/*  /directory?need=food-assistance 301
+/org/safe-place-for-pets    /org/safe-havens-for-pets/ 301
+/org/safe-place-for-pets/*  /org/safe-havens-for-pets/:splat 301

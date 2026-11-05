@@ -6667,6 +6667,23 @@
       "matched": "TNR"
     }
   ],
+  "paw-it-forward-pet-pantry": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "dog"
+    },
+    {
+      "tag": "food-assistance",
+      "field": "type",
+      "matched": "Pet food"
+    }
+  ],
   "pawboost": [
     {
       "tag": "cat",

@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { GUIDES, GUIDE_GROUPS } from '../src/data/guides.ts';
-import { LISTED_ORGS } from '../src/data/orgs.ts';
+import { LISTED_ORGS, ORGS } from '../src/data/orgs.ts';
 import { renderMarkdown, addressesIn } from '../src/data/markdown.ts';
 import { annotateMentions, buildMatchers, nameVariants } from '../src/data/guide-mentions.ts';
 import type { Org } from '../src/types.ts';
@@ -144,4 +144,21 @@ test('mentions: a name inside a longer name does not hide its own later mention'
   const farm = fake({ id: 'farm', name: 'Farm Sanctuary' });
   const { html } = annotateMentions('<h2>x</h2><p>Woodstock Farm Sanctuary, or further away Farm Sanctuary.</p>', [wood, farm]);
   assert.match(html, /<a href="\/org\/wood">Woodstock Farm Sanctuary<\/a>, or further away <a href="\/org\/farm">Farm Sanctuary<\/a>/);
+});
+
+test('no guide recommends an organization that is closed, moved away or not listed', () => {
+  // Cats of Meow York stayed in the special-needs guide after its listing
+  // was in doubt, and was found on 2026-11-05 to have had its founder
+  // arrested over neglected cats. A guide must never send someone to a group
+  // the directory itself does not list.
+  const listed = new Set(LISTED_ORGS.map((o) => o.id));
+  const gone = ORGS.filter((o) => !listed.has(o.id) && (o.status === 'retired' || o.status === 'relocated'));
+  const problems: string[] = [];
+  for (const g of GUIDES) {
+    for (const o of gone) {
+      const name = o.name.replace(/\s*\[[^\]]*\]|\s*\([^)]*\)/g, '').replace(/,?\s+Inc\.?$/, '').trim();
+      if (name.length >= 8 && g.body.includes(name)) problems.push(`${g.slug} names ${o.name} (${o.status})`);
+    }
+  }
+  assert.deepEqual(problems, []);
 });

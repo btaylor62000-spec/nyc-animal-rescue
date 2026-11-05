@@ -57,8 +57,8 @@
   "notes": "Queens nonprofit. Rescues social cats/kittens at high euthanasia risk from NYC ACC + found/surrendered cats; adopts via weekend events + Petco habitats + Petfinder. NOT the several out-of-state 'Cat's Cradle' orgs (OR/CA/NC/VA/BC). Intake: Adoption via weekend events, two Petco habitats & Petfinder Intake: contact via site/FB Other channel: PO Box 754078, Forest Hills 11375",
   "type_raw": "rescue+adoption",
   "confidence": "Low",
-  "status": "verify",
-  "status_note": "We could not confirm it is still active: its old website is gone, and its Instagram and Facebook can only be read when logged in. Message it there, and check the date of its latest post, before relying on it.",
+  "status": "retired",
+  "status_note": "Not listed: no posts since 2023, and its number goes to an automated voicemail (rung 2026-11-05). If you know it is still rescuing, tell us with Report a problem.",
   "source_urls": [
     "https://www.facebook.com/p/Cats-in-the-Cradle-Rescue-NYC-100075851090327/"
   ],
@@ -131,6 +131,15 @@
       "evidence_url": "https://www.facebook.com/people/Cats-in-the-Cradle-Rescue-NYC/100075851090327/",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Facebook page gives 917-502-6543, P.O. Box 754078, Forest Hills, and says it \"rescues social cats and kittens who are trapped or found among feral colonies\". Instagram @catsinthecradlenyc. Activity could not be read from here."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://www.catsinthecradlerescuenyc.org",
+      "source": "manual",
+      "note": "The reviewer rang (917) 502-6543 on 2026-11-05: an automated voicemail. Its Facebook page has posted nothing since 2023 and its website did not load. Not listed until it shows signs of operating."
     }
   ],
   "privacy_hold": false,

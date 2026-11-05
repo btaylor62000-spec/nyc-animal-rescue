@@ -69,8 +69,8 @@
   "notes": "High-volume 501(c)(3) (EIN 88-1221020), founded 2017 as The Crazy Cat Family, rebranded 2022. Heavy TNRM + SPECIALTY in neonatal kitten care. One of few NYC rescues with a holding space. Queens-based, works other parts of NYC too. Intake: Contact + foster/adopt apps on site Intake: Linktree in IG bio Other channel: founder Farhana Haq Other channel: women-of-color-led",
   "type_raw": "TNR / rescue+adoption (neonatal specialty)",
   "confidence": "Medium",
-  "status": "verify",
-  "status_note": "Its website is gone, but its Linktree still links adoption and foster forms. No animals were listed on Adopt-a-Pet on 2026-11-04. Message it on Instagram before relying on it.",
+  "status": "retired",
+  "status_note": "Not listed. A Queens Chronicle report (June 2023) says its founder was arrested after police allegedly found more than 40 neglected cats in the group's care, and it has posted nothing since. Do not send animals here.",
   "source_urls": [
     "https://www.orgcouncil.com/ein/881221020"
   ],
@@ -170,6 +170,15 @@
       "evidence_url": "https://linktr.ee/catsofmeowyork",
       "source": "manual",
       "note": "Its Linktree, read in a browser 2026-11-05, gives info@catsofmeowyork.org. Added where there was none; its old website still does not answer, so the listing still asks people to confirm."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "status",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://www.qchron.com/editions/central/arrest-made-over-alleged-animal-abuse-in-woodhaven/article_af9ca6e4-0ba0-11ee-980a-67163f2e6ff2.html",
+      "source": "manual",
+      "note": "Not listed. The Queens Chronicle reported in June 2023 that the group's founder was arrested after police and the ASPCA allegedly found more than 40 neglected cats at its Woodhaven home; its Facebook page has posted nothing since 2019. Found by the reviewer, 2026-11-05."
     }
   ],
   "privacy_hold": false,

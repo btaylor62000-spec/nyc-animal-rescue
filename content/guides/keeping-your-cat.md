@@ -20,7 +20,6 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org - (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org - puppykittynyc.org.
-- Animal Relief Fund (ARF!) - a New York charity that gives pet food to human food pantries. Email susan@arf-ny.org before relying on it: the newest post on its Facebook page we could see is from 2013.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org - (917) 720-9700.
 - Food Bank For New York City - pet food is sometimes available at member pantries (varies by donations). foodbanknyc.org/get-help.
 - ASPCA + Food Bank For NYC partnership - free pet food distributed through Food Bank partner pantries citywide.
@@ -48,7 +47,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Safe Haven Program / MAP Foster - networks of foster homes partnered with DV shelters to care for a pet temporarily when the shelter can't take animals, then reunite. Ask a DV caseworker or the NYC DV Hotline (800) 621-4673.
 - PAWS NY - assists with emergency fostering for domestic-violence survivors seeking safety. referrals@pawsny.org - (212) 203-4760 ext. 306.
 - RedRover Relief Safe Escape - grants help cover pet boarding/care for survivors leaving abuse. redrover.org/domestic.
-- Safe Place for Pets (RedRover) - searchable directory of programs by ZIP. safeplaceforpets.org.
+- Safe Havens for Pets (Animal Welfare Institute) - searchable directory of shelters that keep pets with people leaving abuse or without a home, by state and ZIP: https://safehavensforpets.org (RedRover's Safe Place for Pets directory, listed here before, is no longer online).
 - Safe Havens for Pets (Animal Welfare Institute) - search by zip code for shelters with on-site pet housing, boarding partnerships, or foster care during a crisis: https://awionline.org/safe-havens
 - Sheltering Animals & Families Together (SAF-T) - helps DV shelters house pets on-site. https://saftprogram.org.
 - SPCA Westchester Pet Safety Program - safe-keeping for pets in DV-affected households (Westchester-adjacent). spcawestchester.org/pet-safety - (914) 941-2896.
