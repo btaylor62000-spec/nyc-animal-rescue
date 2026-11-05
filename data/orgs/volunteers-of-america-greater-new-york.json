@@ -45,11 +45,21 @@
   "region_note": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
   "phones": [
     {
+      "value": "2128732600",
+      "display": "(212) 873-2600",
+      "label": "Main line"
+    },
+    {
       "value": "8556437473",
-      "display": "(855) 643-7473"
+      "display": "(855) 643-7473",
+      "label": "Domestic violence hotline (from AWI's Safe Havens directory)"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "info@voa-gny.org"
+    }
+  ],
   "website": "https://www.voa-gny.org",
   "intake_urls": [],
   "social": [],
@@ -64,7 +74,7 @@
   "source_urls": [
     "https://www.safehavensforpets.org/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "SHELTERS - missing from the site, found on the Mayor's Alliance surrender page and checked on the shelter's own site 2026-11-04",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx",
@@ -82,6 +92,15 @@
       "evidence_url": "https://www.safehavensforpets.org/",
       "source": "manual",
       "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "phones",
+      "from": "(855) 643-7473",
+      "to": "(212) 873-2600 added first",
+      "evidence_url": "https://www.voa-gny.org/contact-us/",
+      "source": "manual",
+      "note": "Its contact page, read in a browser 2026-11-05, gives 135 West 50th Street, (212) 873-2600 and info@voa-gny.org. The hotline number came from AWI's directory and is not on that page; it is kept, labelled as such, after the main line."
     }
   ],
   "privacy_hold": false,

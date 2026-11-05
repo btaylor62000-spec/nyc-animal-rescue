@@ -69,7 +69,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "501(c)(3) since 2016; 10,000+ dogs saved, about 900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.",
+  "notes": "501(c)(3) since 2016; 10,000+ dogs saved, about 900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.\n\nIt does not take owner surrenders or strays of dogs it did not adopt out: its foster homes are full with dogs from its shelter partners. Adopters register first, then email to book a meeting.",
   "type_raw": "Rescue+adoption (all-breed, foster-based)",
   "confidence": "High",
   "status": "active",
@@ -77,7 +77,7 @@
   "source_urls": [
     "https://www.muddypawsrescue.org/contact-us"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -130,6 +130,15 @@
       "evidence_url": "https://www.muddypawsrescue.org/contact-us",
       "source": "manual",
       "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "notes",
+      "from": null,
+      "to": "surrender note",
+      "evidence_url": "https://www.muddypawsrescue.org/adopt",
+      "source": "manual",
+      "note": "The weekly check flagged \"at capacity\". Its adoption page, read 2026-11-05, says foster homes are at capacity with dogs from open-intake shelter partners, so it cannot take outside surrenders. It is operating; the status is unchanged."
     }
   ],
   "privacy_hold": false,

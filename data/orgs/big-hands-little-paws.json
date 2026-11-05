@@ -1,0 +1,74 @@
+{
+  "id": "big-hands-little-paws",
+  "name": "Big Hands Little Paws",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "senior",
+    "medical-special-needs"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "2122031892",
+      "display": "(212) 203-1892"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@bighandslittlepaws.org"
+    }
+  ],
+  "website": "http://bighandslittlepaws.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Supplied by a reviewer from its Facebook page, 2026-11-05 (its website did not load for us): \"NYC-based 501(c)(3) animal rescue\", P.O. Box 492, 114 John Street, New York, (212) 203-1892, info@bighandslittlepaws.org. The breed guide knows it for small, senior and special-needs dogs. On ACC's New Hope partner list. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope-partners/"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-22",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

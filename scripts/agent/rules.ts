@@ -375,7 +375,10 @@ export function decide(org: Org, evidence: Evidence): Decision {
   const storedPhones = org.phones.map((p) => p.value);
   const storedEmails = org.emails.map((e) => e.value.toLowerCase());
 
-  const phonesStillThere = storedPhones.filter((p) => foundPhones.includes(p));
+  // A three-digit service number (311, 988) is never ten digits, so it can
+  // never be among the numbers read from a page; it is there if the page
+  // says it as a word. Both lines were flagged as gone on 2026-11-05.
+  const phonesStillThere = storedPhones.filter((p) => foundPhones.includes(p) || (/^\d{3}$/.test(p) && new RegExp(`(?<![\\d-])${p}(?![\\d-])`).test(pageText)));
   const emailsStillThere = storedEmails.filter((e) => foundEmails.includes(e));
 
   const anyStoredContact = storedPhones.length > 0 || storedEmails.length > 0;

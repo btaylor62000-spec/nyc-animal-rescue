@@ -1,0 +1,70 @@
+{
+  "id": "american-alliance-for-protection-of-animals",
+  "name": "American Alliance for Protection of Animals",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "advocacy"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "Based outside the New York City area, from its phone number. Works with New York City shelters.",
+  "phones": [
+    {
+      "value": "8773112272",
+      "display": "(877) 311-2272"
+    }
+  ],
+  "emails": [
+    {
+      "value": "aapa@animalsprotectors.org"
+    }
+  ],
+  "website": "https://www.animalsprotectors.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Supplied by a reviewer, 2026-11-05: a foster-based rescue in Brooklyn that also campaigns against puppy mills and neglect; (877) 311-2272, aapa@animalsprotectors.org. Its website is down; it is active on Facebook and YouTube. Its listed street address is an apartment, so it is not published. On ACC's New Hope partner list. Based outside the New York City area, from its phone number. Works with New York City shelters. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope-partners/"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-17",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

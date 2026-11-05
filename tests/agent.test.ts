@@ -626,3 +626,17 @@ test('checkable: a Facebook group as the website is a social channel, not an unr
   const fb = { ...org({}), website: 'https://www.facebook.com/groups/nycemergencyanimalrescue/', intake_urls: [], social: [] };
   assert.equal(isCheckable(fb as never).checkable, false);
 });
+
+test('extract: numbers written in letters are read as the digits they dial', () => {
+  const c = extractContacts('Call 1-800-799-SAFE or 914-771-PETS, fax 1.800.321.PETS. Not a number: ABC-DEF-GHIJ.');
+  assert.ok(c.phones.includes('8007997233'));
+  assert.ok(c.phones.includes('9147717387'));
+  assert.ok(c.phones.includes('8003217387'));
+  assert.equal(c.phones.length, 3);
+});
+
+test('rules: a three-digit service line (311, 988) on the page is still there', () => {
+  const o = org({ phones: [{ value: '311', display: '311' }] as Org['phones'], emails: [] });
+  const d = decide(o, evidenceFromHtml(o, '<p>Call 311, or (212) 639-9675 from outside the city.</p>', '2026-11-05'));
+  assert.notEqual(d.kind, 'flag', JSON.stringify(d));
+});

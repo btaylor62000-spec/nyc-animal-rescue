@@ -69,5 +69,8 @@ Use this when a specific cat needs specialized help. Always confirm current capa
 - King's Pride Kitten Rescue (central New Jersey) - orphaned kittens 0-8 weeks, sometimes to 12; by email first, arranged in advance; no owner surrenders. adoptions@kings-pride.org | https://kings-pride.org (read on its own site by a reviewer, 2026-11-05).
 - Veterinary Technicians for Cleft Affected Animals (California, by email) - education and support for kittens and puppies born with a cleft palate. techsforclefts@gmail.com | https://www.techsforclefts.com (read on its own site by a reviewer, 2026-11-05).
 - Only Maine Coons Rescue (Absecon, New Jersey) - Maine coon cats. info@omcrescue.org | https://www.omcrescue.org (read on its own site by a reviewer, 2026-11-05).
+- Pets Alive (Middletown, New York, about 90 minutes from the city) - a no-kill shelter whose animals are often older, have medical needs or need specialized care; dogs, cats and farm animals. (845) 386-9738 (dog team ext. 2, cat team ext. 3), info@petsalive.org | https://petsalive.org (read by a reviewer, 2026-11-05).
+- Kizzy's Place (South Jersey and Philadelphia) - foster-based cat rescue, "the Island of Misfit Cats". 856-238-1229 | info@kizzysplace.org | https://kizzysplace.org (read by a reviewer, 2026-11-05).
+- Fosterlings (Pottstown, Pennsylvania) - kitten rescue. (610) 329-4266 | fosterlingsinc@gmail.com | http://fosterlings.org (read by a reviewer, 2026-11-05).
 
 Confirm current capacity before relying - specialist intake is the first thing that closes when a group is full.

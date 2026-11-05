@@ -6848,6 +6848,43 @@
       "matched": "lost and found"
     }
   ],
+  "pets-alive": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
+    },
+    {
+      "tag": "dog",
+      "field": "notes",
+      "matched": "Dog"
+    },
+    {
+      "tag": "farm",
+      "field": "animals_served",
+      "matched": "farm animals"
+    },
+    {
+      "tag": "adoption",
+      "field": "notes",
+      "matched": "adopt"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "type",
+      "matched": "special-care"
+    },
+    {
+      "tag": "senior",
+      "field": "section",
+      "matched": "SENIOR"
+    },
+    {
+      "tag": "shelter-no-kill",
+      "field": "type",
+      "matched": "No-kill shelter"
+    }
+  ],
   "place-for-cats": [
     {
       "tag": "cat",

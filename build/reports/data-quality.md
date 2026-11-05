@@ -4,7 +4,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **417** organizations after de-duplication
+- **420** organizations after de-duplication
 - **78** duplicate clusters merged
 - **24** guide pages generated
 - **21** entries flagged as not currently active
@@ -17,13 +17,13 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 308 |
-| dog | 247 |
+| cat | 310 |
+| dog | 250 |
 | wildlife | 46 |
 | rabbit | 38 |
 | bird-companion | 35 |
+| farm | 33 |
 | reptile | 33 |
-| farm | 32 |
 | small-mammal | 32 |
 | bird-wild | 22 |
 | amphibian | 15 |
@@ -37,8 +37,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 171 |
-| foster | 104 |
+| adoption | 174 |
+| foster | 106 |
 | tnr | 94 |
 | owner-support | 73 |
 | spay-neuter | 73 |
@@ -47,14 +47,14 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | referral | 52 |
 | emergency-vet | 45 |
 | food-assistance | 34 |
+| advocacy | 33 |
 | colony-care | 33 |
-| advocacy | 32 |
-| medical-special-needs | 24 |
+| medical-special-needs | 26 |
 | wildlife-rehab | 23 |
 | financial-aid | 23 |
 | education | 23 |
+| senior | 21 |
 | legal | 20 |
-| senior | 19 |
 | lost-found | 18 |
 | sanctuary | 18 |
 | boarding | 18 |
@@ -74,25 +74,25 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 268 |
-| queens | 225 |
-| manhattan | 220 |
-| bronx | 195 |
-| staten-island | 194 |
+| brooklyn | 270 |
+| queens | 226 |
+| manhattan | 221 |
+| bronx | 196 |
+| staten-island | 195 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 207 |
-| Medium | 148 |
-| Low | 62 |
+| Medium | 149 |
+| Low | 64 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 396 |
+| active | 399 |
 | retired | 9 |
 | verify | 8 |
 | hiatus | 2 |
@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (16)
+### Never verified (18)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -334,24 +334,24 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | More situations, answered by Animal Help Now | 8315 |
 | Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 6336 |
-| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 12857 |
+| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 13396 |
 | Reporting animal abuse or neglect | 6285 |
 | Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |
 | Community cats, colonies and starting TNR | 6916 |
-| Cats needing specialist help | 6127 |
+| Cats needing specialist help | 6806 |
 | Lost or found a cat | 6535 |
 | Help keeping your cat | 6434 |
-| Help keeping your dog | 8778 |
+| Help keeping your dog | 9018 |
 | Low-cost vet care, spay/neuter and dog licensing | 7169 |
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |
-| Breed-specific dog rescue | 18511 |
+| Breed-specific dog rescue | 20043 |
 | Found injured or orphaned wildlife | 14001 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |
 | Help paying for veterinary care | 8862 |
-| Rehoming a rabbit, bird, reptile or small animal | 3180 |
+| Rehoming a rabbit, bird, reptile or small animal | 3454 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Exotic pets: boarding, pet sitting and planning ahead | 6074 |
 

@@ -33,13 +33,13 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).",
+  "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).\n\nOne registry is no longer searched: AAHA's page says Save This Life has ceased operations and was disconnected from the lookup. If your pet's chip was registered there, ask your vet.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "Lost-found & microchip — MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -74,6 +74,15 @@
       "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
       "source": "manual",
       "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "notes",
+      "from": null,
+      "to": "Save This Life notice",
+      "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+      "source": "manual",
+      "note": "The weekly check read \"Save This Life has ceased operations\" on AAHA's page as AAHA closing. It is one participating registry; the lookup itself works. Read in a browser 2026-11-05."
     }
   ],
   "privacy_hold": false,
