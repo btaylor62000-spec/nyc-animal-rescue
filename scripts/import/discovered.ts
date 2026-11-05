@@ -92,7 +92,9 @@ export function candidateToOrg(c: Candidate): Org {
 
   return {
     id: slugify(c.name),
-    name: c.name,
+    // ACC's roster marks some partners with a trailing asterisk, a footnote
+    // on its own page; on ours it read as part of the name.
+    name: c.name.replace(/\s*\*+\s*$/, '').trim(),
     aka: [],
     parent_org: null,
     org_types: orgTypes,
