@@ -40,7 +40,11 @@
       "display": "(631) 656-0310"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "info@nybullycrew.org"
+    }
+  ],
   "website": "https://www.nybullycrew.org",
   "intake_urls": [
     {
@@ -87,7 +91,17 @@
   "last_checked": "2026-11-05",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-05",
+      "field": "emails",
+      "from": null,
+      "to": "info@nybullycrew.org",
+      "evidence_url": "https://www.nybullycrew.org/",
+      "source": "manual",
+      "note": "Its own contact information, read by a reviewer 2026-11-05: 1457 Montauk Highway, East Patchogue, NY 11772, info@nybullycrew.org, 631-656-0310 (already stored). Added where there was no email."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

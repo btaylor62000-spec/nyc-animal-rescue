@@ -34,6 +34,11 @@
       "value": "2129240167",
       "display": "(212) 924-0167",
       "label": "Main line"
+    },
+    {
+      "value": "6469986106",
+      "display": "(646) 998-6106",
+      "label": "On its own website"
     }
   ],
   "emails": [],
@@ -60,7 +65,7 @@
     "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
     "https://holyapostlesnyc.org"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "City pet food pantry programme",
   "source_files": [
     "pet-food-pantries"
@@ -95,6 +100,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "phones",
+      "from": null,
+      "to": "(646) 998-6106",
+      "evidence_url": "https://holyapostlesnyc.org/",
+      "source": "manual",
+      "note": "Its own site, read 2026-11-05, gives (646) 998-6106 and its main line (212) 924-0167; the city's pet food list gives (646) 998-6105, one digit different. As with The River Fund, both are published and labelled, so the reader can try the other."
     }
   ],
   "privacy_hold": false,

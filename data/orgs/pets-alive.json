@@ -1,0 +1,71 @@
+{
+  "id": "pets-alive",
+  "name": "Pets Alive",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "shelter-no-kill"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "farm"
+  ],
+  "needs": [
+    "adoption",
+    "medical-special-needs",
+    "senior"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Orange County, NY - outside NYC",
+  "zips": [
+    "10940"
+  ],
+  "region_note": "SENIOR DOG RESCUE (Long Island, takes senior dogs)",
+  "phones": [
+    {
+      "value": "8453869738",
+      "display": "(845) 386-9738"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@petsalive.org"
+    }
+  ],
+  "website": "https://petsalive.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 41.4465,
+    "lon": -74.4787,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "363 Derby Road",
+    "city": "Middletown",
+    "zip": "10940"
+  },
+  "hours": "Daily 10am-4pm",
+  "notes": "363 Derby Road, Middletown, NY 10940, about 90 minutes from the city. Open daily 10am-4pm. Dog team ext. 2, cat team ext. 3; adoptions@petsalive.org for the adoption coordinator. Many of its animals are older, have medical needs or need specialized care. Read on its own site by a reviewer, 2026-11-05.",
+  "type_raw": "No-kill shelter for older, medical and special-care animals",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://petsalive.org/contact-us/"
+  ],
+  "last_verified": "2026-11-05",
+  "section": "SENIOR DOG RESCUE (Long Island, takes senior dogs)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

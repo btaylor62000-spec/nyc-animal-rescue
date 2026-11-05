@@ -65,6 +65,7 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 - Mr. Bones & Co. - takes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.
 - Red Hook Dog Rescue - special-needs and senior dogs (blind, deaf, amputee), foster-based, Brooklyn. harithspi@gmail.com, redhookdogrescue.org.
 - Cannoli's Sweet Life Senior Rescue - senior dogs; 336 Forest Avenue, Locust Valley, Long Island. 516-788-3542, info@sweetliferescue.com, https://www.sweetliferescue.com, Instagram @sweetlifeseniorrescue (read on its own site by a reviewer, 2026-11-05).
+- Pets Alive - a no-kill shelter in Middletown, NY (about 90 minutes away) for animals that are older, have medical needs or need specialized care. (845) 386-9738, info@petsalive.org, https://petsalive.org (read by a reviewer, 2026-11-05).
 - Muddy Paws Rescue + Rescue City - foster-based rescues that place seniors and can advise on hospice fostering. muddypawsrescue.org; rescuecity.nyc.
 - Lap of Love - in-home hospice and end-of-life veterinary care across NYC. lapoflove.com, (855) 933-5683.
 

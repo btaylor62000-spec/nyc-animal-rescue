@@ -26,7 +26,11 @@
   ],
   "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "info@catsofmeowyork.org"
+    }
+  ],
   "website": "https://linktr.ee/catsofmeowyork",
   "intake_urls": [
     {
@@ -157,6 +161,15 @@
       "evidence_url": "https://linktr.ee/catsofmeowyork",
       "source": "manual",
       "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "emails",
+      "from": null,
+      "to": "info@catsofmeowyork.org",
+      "evidence_url": "https://linktr.ee/catsofmeowyork",
+      "source": "manual",
+      "note": "Its Linktree, read in a browser 2026-11-05, gives info@catsofmeowyork.org. Added where there was none; its old website still does not answer, so the listing still asks people to confirm."
     }
   ],
   "privacy_hold": false,

@@ -234,3 +234,55 @@ works.
   Paws & Claws, Sarama, Shelter Survivors, Suruluna, Treasure Fur-Ever, Two by
   Two, Wag On Inn, Jet's Rehab Rescue). New Hope Rescue Ranch has stopped
   intake. Shelter Chic gives no location.
+
+## The reviewer's reading, 2026-11-05 (the 35 that could not be read)
+
+- **Published:** Big Hands Little Paws (NYC-based; small, senior and
+  special-needs dogs) and American Alliance for Protection of Animals
+  (foster-based, Brooklyn; its listed street address is an apartment, so
+  only its phone and email are published). Both added to the at-risk guide.
+- **At-risk guide, outside the city:** Remember Me Rescue (Long Island) -
+  "We rescue from ACC, Long Island shelters, and take owner surrenders".
+- **Breed guide:** contacts and places for Get A Bull, Pit of Our Souls,
+  Mountain Rottie Rescue, Charwills, Big Hands Little Paws, Mid-Atlantic
+  Basset Hound Rescue, Scottish Terrier Club of Greater NY Rescue; Shiba
+  Rescue of New England and Peppertree added; Col. Potter Cairn and
+  Pawsitively Pom marked as possibly inactive (no recent posts; website and
+  phone not working). New York Bully Crew given its email.
+- **Population-specific:** Pets Alive (Middletown; older, medical and
+  special-care animals) is a listing outside the city and is named in the
+  cats and dogs guides; Kizzy's Place and Fosterlings are in the cats guide's
+  "further away" section; They All Want To Live (ducks and chickens) and
+  Humane Long Island are named for farmed animals in the rehoming guide.
+- **Not published:** Cats Under the Stars, Saving Paws, All Sentient Beings,
+  Dawn of a New Day (wildlife, Central Square NY), Columbia-Greene Humane
+  Society, Gimme Shelter, Little Shelter, Paws4Survival, Paws 4 Life,
+  Peace4Paws, Rawhide Rescue, Rock n' Rescue, Shore Saves, Wayward Ranch,
+  Everlasting Hope, Wells Valley Cat Rescue, Hunterdon Somerset: outside the
+  city, and neither breed- nor population-specific nor stated to take
+  animals from NYC's shelter.
+
+## The 17 flags from the weekly check of 2026-11-05
+
+They are listed on the site's status page (Entries flagged for review) and in
+`build/reports/weekly-check.md`. Each was read in a browser on 2026-11-05.
+
+- **Not real, and the checker is fixed so they stop coming back:** National
+  Domestic Violence Hotline (1-800-799-SAFE), Friends of Animals and its
+  certificates (1-800-321-PETS) and Petchester (914-771-PETS) write their
+  numbers in letters, which the checker could not read; 311 and 988 are three
+  digits and were never compared. `extract.ts` now reads letter numbers and
+  `rules.ts` finds a three-digit line written on the page.
+- **Not real:** DEC Region 2 (the "new" number is DEC's Albany head office on
+  its home page; the stored numbers were confirmed by phone on 2026-11-04);
+  Urban Utopia (already marked on hiatus); ACC New Hope (its main line; ACC's
+  site turns our browser away, so it stays to be confirmed by a person);
+  Feather Friends (the "new" number is its fax).
+- **Recorded:** AAHA (the "ceased operations" was Save This Life, one
+  registry, now noted on the listing); Cats of Meow York (email from its
+  Linktree); Holy Apostles (its own site gives (646) 998-6106 where the city
+  gives 6105, so both are published); Little Wanderers (second email on its
+  site); Muddy Paws (does not take outside surrenders, now in its notes;
+  still operating); Volunteers of America (main line and email from its own
+  contact page). Humane World's tip line: the page is now a report form;
+  the reviewer's flyer email stays.

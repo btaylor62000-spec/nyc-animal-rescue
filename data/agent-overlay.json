@@ -50,7 +50,7 @@
       "last_checked": "2026-11-05",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-05",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -78,10 +78,20 @@
           "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
           "source": "manual",
           "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. petmicrochiplookup.org now redirects to the lookup tool on AAHA's own site; it is the same AAHA Universal Pet Microchip Lookup, moved."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "notes",
+          "from": null,
+          "to": "Save This Life notice",
+          "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
+          "source": "manual",
+          "note": "The weekly check read \"Save This Life has ceased operations\" on AAHA's page as AAHA closing. It is one participating registry; the lookup itself works. Read in a browser 2026-11-05."
         }
       ],
       "website": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
-      "confidence": "High"
+      "confidence": "High",
+      "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).\n\nOne registry is no longer searched: AAHA's page says Save This Life has ceased operations and was disconnected from the lookup. If your pet's chip was registered there, ask your vet."
     },
     "abandoned-angel-cocker-spaniel-rescue": {
       "last_checked": "2026-11-05",
@@ -1885,13 +1895,26 @@
           "evidence_url": "https://linktr.ee/catsofmeowyork",
           "source": "manual",
           "note": "A reviewer searched for it on 2026-11-04 and sent what they found. Its Linktree (read 2026-11-04) is live and links Instagram, TikTok, adoption and foster applications and an Adopt-a-Pet page. But Adopt-a-Pet listed no animals that day, its Eventbrite showed nothing planned, and its email address is on the domain that no longer exists."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "emails",
+          "from": null,
+          "to": "info@catsofmeowyork.org",
+          "evidence_url": "https://linktr.ee/catsofmeowyork",
+          "source": "manual",
+          "note": "Its Linktree, read in a browser 2026-11-05, gives info@catsofmeowyork.org. Added where there was none; its old website still does not answer, so the listing still asks people to confirm."
         }
       ],
       "website": "https://linktr.ee/catsofmeowyork",
       "source_urls": [
         "https://www.orgcouncil.com/ein/881221020"
       ],
-      "emails": [],
+      "emails": [
+        {
+          "value": "info@catsofmeowyork.org"
+        }
+      ],
       "intake_urls": [
         {
           "url": "https://form.jotform.com/210068411079046",
@@ -2912,7 +2935,7 @@
     },
     "holy-apostles-soup-kitchen-pantry": {
       "check_status": "needs-review",
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-05",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -2923,9 +2946,35 @@
           "evidence_url": "https://holyapostlesnyc.org/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Its site gives \"Soup Kitchen: 212-924-0167\", 296 9th Ave. The first number is the one the city lists for the pet food programme."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "phones",
+          "from": null,
+          "to": "(646) 998-6106",
+          "evidence_url": "https://holyapostlesnyc.org/",
+          "source": "manual",
+          "note": "Its own site, read 2026-11-05, gives (646) 998-6106 and its main line (212) 924-0167; the city's pet food list gives (646) 998-6105, one digit different. As with The River Fund, both are published and labelled, so the reader can try the other."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-05",
+      "phones": [
+        {
+          "value": "6469986105",
+          "display": "(646) 998-6105",
+          "label": "Pet food programme"
+        },
+        {
+          "value": "2129240167",
+          "display": "(212) 924-0167",
+          "label": "Main line"
+        },
+        {
+          "value": "6469986106",
+          "display": "(646) 998-6106",
+          "label": "On its own website"
+        }
+      ]
     },
     "home-to-home": {
       "last_checked": "2026-11-05",
@@ -3490,7 +3539,7 @@
       "last_checked": "2026-11-05",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-05",
       "phones": [],
       "change_log": [
         {
@@ -3519,6 +3568,15 @@
           "evidence_url": "https://lwnyc.org/contact",
           "source": "manual",
           "note": "Read on its contact page in a browser on 2026-11-04. The guides gave adopt@lwnyc.org and a \"rescue line\" number, neither on its site; both replaced in the guides with this address."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "emails",
+          "from": null,
+          "to": "aaa@littlewanderersnyc.org",
+          "evidence_url": "https://lwnyc.org/",
+          "source": "manual",
+          "note": "Both email@lwnyc.org and aaa@littlewanderersnyc.org are mailto links on its home page, read in a browser 2026-11-05. The stored one is still there; the second was added beside it."
         }
       ],
       "confidence": "Low",
@@ -3526,6 +3584,9 @@
       "emails": [
         {
           "value": "email@lwnyc.org"
+        },
+        {
+          "value": "aaa@littlewanderersnyc.org"
         }
       ]
     },
@@ -4072,15 +4133,24 @@
           "evidence_url": "https://www.muddypawsrescue.org/contact-us",
           "source": "manual",
           "note": "A reviewer opened it in a normal browser on 2026-11-04: its contact page says nothing about being at capacity. The sentence the checker found is on its adoption page and is about surrenders: it cannot take in dogs not originally adopted from Muddy Paws, because its foster homes are full of dogs from shelter partners. That limits surrenders only; it is operating normally."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "notes",
+          "from": null,
+          "to": "surrender note",
+          "evidence_url": "https://www.muddypawsrescue.org/adopt",
+          "source": "manual",
+          "note": "The weekly check flagged \"at capacity\". Its adoption page, read 2026-11-05, says foster homes are at capacity with dogs from open-intake shelter partners, so it cannot take outside surrenders. It is operating; the status is unchanged."
         }
       ],
-      "notes": "501(c)(3) since 2016; 10,000+ dogs saved, ~900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.",
+      "notes": "501(c)(3) since 2016; 10,000+ dogs saved, about 900/yr, 200+ volunteers. NYC foster-based dog rescue (Pack HQ, NY 10019 - by appointment, meet dogs at events) partnering with open-intake shelters; conversation-based open-adoption model. Strong post-adoption behavior resources. Register at /adopt then email adoptionmeetings@ to set a meeting. Email is the fastest channel. Intake: behavior resources ('Pack Perks') on site\n\nThey do not take owner surrenders, or strays that were not originally adopted from them, because their foster homes are full of dogs from open-intake shelters. They are still adopting out.\n\nIt does not take owner surrenders or strays of dogs it did not adopt out: its foster homes are full with dogs from its shelter partners. Adopters register first, then email to book a meeting.",
       "needs": [
         "adoption",
         "foster",
         "behavior-training"
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-05",
       "confidence": "High"
     },
     "muffins-pet-connection-mama-program": {
@@ -4222,7 +4292,23 @@
       "last_checked": "2026-11-05",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-05",
+      "emails": [
+        {
+          "value": "info@nybullycrew.org"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "emails",
+          "from": null,
+          "to": "info@nybullycrew.org",
+          "evidence_url": "https://www.nybullycrew.org/",
+          "source": "manual",
+          "note": "Its own contact information, read by a reviewer 2026-11-05: 1457 Montauk Highway, East Patchogue, NY 11772, info@nybullycrew.org, 631-656-0310 (already stored). Added where there was no email."
+        }
+      ]
     },
     "new-york-city-animal-rescue-girls": {
       "last_checked": "2026-11-05",
@@ -7200,11 +7286,38 @@
           "evidence_url": "https://www.safehavensforpets.org/",
           "source": "manual",
           "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
+        },
+        {
+          "date": "2026-11-05",
+          "field": "phones",
+          "from": "(855) 643-7473",
+          "to": "(212) 873-2600 added first",
+          "evidence_url": "https://www.voa-gny.org/contact-us/",
+          "source": "manual",
+          "note": "Its contact page, read in a browser 2026-11-05, gives 135 West 50th Street, (212) 873-2600 and info@voa-gny.org. The hotline number came from AWI's directory and is not on that page; it is kept, labelled as such, after the main line."
         }
       ],
       "last_checked": "2026-11-05",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "phones": [
+        {
+          "value": "2128732600",
+          "display": "(212) 873-2600",
+          "label": "Main line"
+        },
+        {
+          "value": "8556437473",
+          "display": "(855) 643-7473",
+          "label": "Domestic violence hotline (from AWI's Safe Havens directory)"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@voa-gny.org"
+        }
+      ],
+      "last_verified": "2026-11-05"
     },
     "waggle": {
       "last_checked": "2026-11-05",

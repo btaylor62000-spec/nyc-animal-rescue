@@ -84,6 +84,7 @@ Do this once both forms in Step 3 are sent, so you can tell each group they are 
 
 - Abandoned Angel Cocker Spaniel Rescue - Queens - cocker spaniels - rescue@nyabandonedangels.com - https://www.nyabandonedangels.com
 - Beastly Rescue - citywide - https://www.beastlyrescue.org
+- Big Hands Little Paws - citywide - small, senior and special-needs dogs - (212) 203-1892 - info@bighandslittlepaws.org - http://bighandslittlepaws.org
 - Bull Terrier Rescue Mission - citywide - bull terriers - (917) 887-6931 - btrmission@gmail.com - https://btrmission.org
 - Every Last One Rescue - citywide - info@everylastonerescue.org - http://www.everylastonerescue.org
 - Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.org - https://heartsandbonesrescue.org/
@@ -98,6 +99,7 @@ Do this once both forms in Step 3 are sent, so you can tell each group they are 
 ## Cats and dogs
 
 - Adore-A-Bullie Paws and Claws - citywide - http://www.adore-a-bullie.org
+- American Alliance for Protection of Animals - Brooklyn - (877) 311-2272 - aapa@animalsprotectors.org - https://www.animalsprotectors.org
 - Animals Are Forever Inc - Brooklyn - (347) 355-2410 - animalsareforeverny@gmail.com - https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299
 - For Our Friends - Queens - (917) 864-2443 - fofdogrescue@yahoo.com - http://www.forourfriends.org
 - Hopewell Rescue Inc - Manhattan - hopewellrescueadopt@gmail.com - https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354
@@ -134,6 +136,7 @@ These New Hope partners are based outside New York City, but each one's own webs
 - ECHO Rescue (East Coast Herding Dog Organization) - herding breeds such as border collies, Aussies and cattle dogs; "now a New Hope Partner with the NYC ACC" - ECHORescue@yahoo.com - https://echorescue.com/contact/
 - Italian Greyhound Rescue (New York affiliate) - Italian greyhounds; "a New Hope Partner with the Animal Care Centers of NYC" - http://www.igrescue.com/affiliates/new_york/
 - Karma K-9 Rescue - dogs; its adoptable dogs include ones "rescued from a NYC shelter" - https://www.karmak9.org - Instagram @karmak9rescue
+- Remember Me Rescue - Long Island, foster-based - dogs of all breeds and ages, especially seniors; "We rescue from ACC, Long Island shelters, and take owner surrenders" - (310) 623-0463 - rmrescueny@gmail.com - https://www.remembermerescueny.com
 - Ruff Dog Rescue Northeast - Thompson, Pennsylvania, with foster homes across the Northeast - dogs; "we also rescue dogs at-risk in the NYC municipal shelter" - 570-442-1181 - rdrneinquiries@gmail.com - https://www.rdrne.org
 
 ## MORE FROM ACC

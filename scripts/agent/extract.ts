@@ -36,6 +36,15 @@ export function normalizePhone(raw: string): string | null {
 }
 
 const PHONE_RE = /(?:\+?1[-. ]?)?\(?\d{3}\)?[-. –]?\d{3}[-. –]?\d{4}(?!\d)/g;
+// "1-800-321-PETS", "(800) 799-SAFE", "1.800.799.SAFE": an area code, then
+// letters in place of some digits.
+const VANITY_RE = /(?<![\w-])(?:1[-. ])?\(?[2-9]\d{2}\)?[-. ][\dA-Z]{3}[-. ](?=[\dA-Z]*[A-Z])[\dA-Z]{4}(?![\w])/g;
+const KEYPAD: Record<string, string> = Object.fromEntries(
+  ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ'].flatMap((letters, i) => [...letters].map((l) => [l, String(i + 2)])),
+);
+function vanityToDigits(raw: string): string {
+  return raw.replace(/[A-Z]/g, (l) => KEYPAD[l]!);
+}
 // The last label must be a real top-level domain (two letters or more): a
 // site that split its address across two elements once gave the checker
 // "info@brooklynanimalaction.o", which it then reported as a new address.
@@ -76,6 +85,17 @@ export function extractContacts(text: string): PageContacts {
       phones.push(normalized);
       phoneDisplays.set(normalized, raw.trim());
     }
+  }
+
+  // Numbers written in letters, as charities and hotlines like to: "1-800-799-
+  // SAFE", "914-771-PETS". The weekly check could not read them and flagged
+  // four listings as having lost a number that was on the page all along
+  // (2026-11-05). Only an all-capital word after a real area code counts.
+  for (const m of text.matchAll(VANITY_RE)) {
+    const normalized = normalizePhone(vanityToDigits(m[0]));
+    if (!normalized || phones.includes(normalized)) continue;
+    phones.push(normalized);
+    phoneDisplays.set(normalized, m[0].trim());
   }
 
   const emails: string[] = [];

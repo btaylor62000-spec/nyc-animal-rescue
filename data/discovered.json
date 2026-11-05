@@ -259,7 +259,28 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "boroughs": [
+        "brooklyn"
+      ],
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "advocacy"
+      ],
+      "emails": [
+        "aapa@animalsprotectors.org"
+      ],
+      "phones": [
+        "8773112272"
+      ],
+      "checkedBy": "Supplied by a reviewer, 2026-11-05: a foster-based rescue in Brooklyn that also campaigns against puppy mills and neglect; (877) 311-2272, aapa@animalsprotectors.org. Its website is down; it is active on Facebook and YouTube. Its listed street address is an apartment, so it is not published. On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "American Belgian Malinois Rescue",
@@ -447,7 +468,26 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-22",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "citywide": true,
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster",
+        "senior",
+        "medical-special-needs"
+      ],
+      "emails": [
+        "info@bighandslittlepaws.org"
+      ],
+      "phones": [
+        "2122031892"
+      ],
+      "checkedBy": "Supplied by a reviewer from its Facebook page, 2026-11-05 (its website did not load for us): \"NYC-based 501(c)(3) animal rescue\", P.O. Box 492, 114 John Street, New York, (212) 203-1892, info@bighandslittlepaws.org. The breed guide knows it for small, senior and special-needs dogs. On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Blue Barn Farm & Sanctuary",

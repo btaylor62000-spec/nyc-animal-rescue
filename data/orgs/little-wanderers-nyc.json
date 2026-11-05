@@ -32,6 +32,9 @@
   "emails": [
     {
       "value": "email@lwnyc.org"
+    },
+    {
+      "value": "aaa@littlewanderersnyc.org"
     }
   ],
   "website": "https://lwnyc.org",
@@ -54,7 +57,7 @@
   "source_urls": [
     "https://lwnyc.org/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -89,6 +92,15 @@
       "evidence_url": "https://lwnyc.org/contact",
       "source": "manual",
       "note": "Read on its contact page in a browser on 2026-11-04. The guides gave adopt@lwnyc.org and a \"rescue line\" number, neither on its site; both replaced in the guides with this address."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "emails",
+      "from": null,
+      "to": "aaa@littlewanderersnyc.org",
+      "evidence_url": "https://lwnyc.org/",
+      "source": "manual",
+      "note": "Both email@lwnyc.org and aaa@littlewanderersnyc.org are mailto links on its home page, read in a browser 2026-11-05. The stored one is still there; the second was added beside it."
     }
   ],
   "privacy_hold": false,
