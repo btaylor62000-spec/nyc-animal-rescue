@@ -38,13 +38,13 @@
   "hours": null,
   "notes": "Read in a browser on 2026-11-05: \"a dog and cat rescue\" that rescues animals \"from overcrowded kill shelters and high-risk situations, prepare[s] them in foster care\". Its contact page gives contact@linusrescue.org and a New York office at 42 Broadway, 12th floor (and one in Clearwater, Florida); \"no animals at either\" because the animals live with foster homes. A reviewer confirmed it is a foster-based group based in the city. On ACC's New Hope partner list. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -70,6 +70,15 @@
       "evidence_url": "https://www.linusrescue.org/contact",
       "source": "monthly-discovery",
       "note": "Read from the organization’s own site when it was found. Not confirmed by a person."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://www.linusrescue.org/contact",
+      "source": "manual",
+      "note": "Its own contact page, read in a browser 2026-11-05, gives contact@linusrescue.org, the address stored."
     }
   ],
   "privacy_hold": false,

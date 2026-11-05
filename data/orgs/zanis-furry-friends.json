@@ -28,7 +28,12 @@
   "phones": [],
   "emails": [],
   "website": "https://zanisfurryfriends.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://zanisfurryfriends.org/contact",
+      "label": "Contact page and applications"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
@@ -41,7 +46,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-05",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -58,6 +63,15 @@
       "evidence_url": "https://www.nycacc.org/new-hope-partners",
       "source": "monthly-discovery",
       "note": "Listed on ACC New Hope partners."
+    },
+    {
+      "date": "2026-11-05",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-05",
+      "evidence_url": "https://zanisfurryfriends.org/contact",
+      "source": "manual",
+      "note": "Its own site, read 2026-11-05: \"Animal rescue all over the world and adoption in NYC + NJ\", with cat, dog and rabbit adoption and foster applications. No phone or email on the page."
     }
   ],
   "privacy_hold": false,
