@@ -57,38 +57,60 @@ Through an online form (kept short, because forms limit the length): At-risk ani
 
 ## WHO TO CONTACT
 
-Do this once both forms in Step 3 are sent, so you can tell each group they are in. Then contact every group below that takes your kind of animal, through every way it lists, at the same time. Why only these groups: ACC approves around 250 rescue groups, its New Hope partners, from New York to New England. Most of them pull animals from ACC on their own and do not take messages from the public about a particular animal, or are far from the city. The groups below are New Hope partners in or near New York City that publish a way for the public to reach them. If none of them can help, ACC's full list is at the end of this page. Where a group has its own entry in this directory, that entry is where its contact details are kept current.
+Do this once both forms in Step 3 are sent, so you can tell each group they are in. Then contact every group below that takes your kind of animal, through every way it lists, at the same time. Why only these groups: ACC approves around 250 rescue groups, its New Hope partners, from New York to New England. Most of them pull animals from ACC on their own and do not take messages from the public about a particular animal, or are far from the city. The groups below are New Hope partners in or near New York City that publish a way for the public to reach them, followed by partners further away whose own websites say they take animals from the city's shelter. If none of them can help, ACC's full list is at the end of this page. Where a group has its own entry in this directory, that entry is where its contact details are kept current.
 
 ## Cats
 
 - AdvoCat Rescue - Queens - @advocatrescue - info@advocatrescue.org - https://shelterluv.com/matchme/adopt/ADVR/Cat
+- Alleykattz - citywide - adopt.alleykattz@gmail.com - https://www.alleykattz.org
 - Anjellicle Cats - citywide - (585) 496-4660 - info@anjelliclecats.com - @anjelliclecats
 - Big Apple Cats - Manhattan - @bigapplecats - bigapplecatrescue@gmail.com
 - Bronx Tails - the Bronx - @bronxtailscatrescue - https://bronxtails.org/adopt
 - Brooklyn Bridge Animal Welfare Coalition - Brooklyn - (718) 360-9918 - BrooklynBridgeAnimals@yahoo.com - @bbawc - https://bbawc.org
 - City Critters - Manhattan - adoptions@citycritters.org - https://citycritters.org/adopt
+- Cypress Feline Rescue - Brooklyn - cypressfelinerescue@yahoo.com - http://www.cypressfelinerescue.com
+- Feline Rescue of Staten Island - Staten Island - https://felinerescueofstatenisland.org
 - Greenpoint Cats - Brooklyn - @greenpointcats - https://greenpointcats.org/adopt-a-cat
 - Itty Bitty City Kitties - Queens - @ittybittycitykitties - https://ittybittycitykitties.org
 - Kitty Kind - Manhattan - adopt@kittykind.org
 - Little Wanderers NYC - the Bronx and Manhattan - @littlewanderersnyc - email@lwnyc.org
+- Meow Parlour Cats - Manhattan - meow@meowparlour.com - https://www.meowparlour.com
 - NY Cat Warriors - citywide - @nycatwarriors - nycw@nycatwarriors.org
 - NYC Cat Coalition - the Bronx - nycatcoalADOPT@yahoo.com
 - RescueNYC - citywide - info@rescuenyc.org
-- Spicy Cats Rescue - Brooklyn - @spicycatsrescue - https://spicycats.org/contact-us
+- Valley Cats & Friends - Queens and Brooklyn - based in Valley Stream, Long Island; also dogs and small animals - http://valleycatsandfriends.com
 
 ## Dogs
 
+- Abandoned Angel Cocker Spaniel Rescue - Queens - cocker spaniels - rescue@nyabandonedangels.com - https://www.nyabandonedangels.com
+- Beastly Rescue - citywide - https://www.beastlyrescue.org
+- Bull Terrier Rescue Mission - citywide - bull terriers - (917) 887-6931 - btrmission@gmail.com - https://btrmission.org
+- Every Last One Rescue - citywide - info@everylastonerescue.org - http://www.everylastonerescue.org
 - Hearts & Bones Rescue - Manhattan - @heartsandbonesrescue - info@heartsandbonesrescue.org - https://heartsandbonesrescue.org/
 - Mr. Bones & Co - Brooklyn - @mrbonesandco - https://mrbonesandco.org
+- NYC Shiba Rescue - citywide - Shiba Inus - https://www.nycshibarescue.org
+- Pawsome Squad, Inc. - citywide - nycpawsomesquad@gmail.com - https://www.pawsomesquad.org/
 - Pound Hounds Res-Q - citywide - @poundhoundsresq - https://poundhoundsresq.org
 - Pupstarz Rescue - citywide - @pupstarzrescue - https://pupstarzrescue.org
+- Rescue Dogs Rescue Soldiers - citywide - (917) 553-0591 - info@rescuedogsrescuesoldiers.org - http://rescuedogsrescuesoldiers.org
+- Shelter Free Rescue NY - Queens - shelterfreerescueny@gmail.com - https://shelterfreerescueny.com
 
 ## Cats and dogs
 
+- Adore-A-Bullie Paws and Claws - citywide - http://www.adore-a-bullie.org
+- Animals Are Forever Inc - Brooklyn - (347) 355-2410 - animalsareforeverny@gmail.com - https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299
+- For Our Friends - Queens - (917) 864-2443 - fofdogrescue@yahoo.com - http://www.forourfriends.org
+- Hopewell Rescue Inc - Manhattan - hopewellrescueadopt@gmail.com - https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354
+- Linus & Friends - citywide - foster-based - contact@linusrescue.org - https://www.linusrescue.org
 - Louie's Legacy - citywide - @louieslegacy - newyork@louieslegacy.org - https://louieslegacy.org
+- Pet-I-Care - citywide - (347) 996-8324 - nypeticare@aol.com - http://nypeticare.com
 - Rescue City - Brooklyn - @rescuecity - https://rescuecity.nyc
 - Second Chance Rescue - citywide - @nycscr - https://nycsecondchancerescue.org/contact
+- Timber's Legacy - Queens - info@timberslegacy.org - http://www.timberslegacy.org
+- Twenty Paws Rescue - Brooklyn - info@twentypawsrescue.com - http://www.twentypawsrescue.com
 - Waggytail Rescue - Manhattan - @waggytailrescue - adopt@waggytailrescue.org - https://waggytailrescue.org
+- Zani's Furry Friends - citywide - also rabbits - https://zanisfurryfriends.org
+- Zion's Mission Animal Rescue - citywide - https://www.zionsmission.org
 
 ## Cats, dogs and small or exotic animals
 
@@ -100,8 +122,19 @@ Do this once both forms in Step 3 are sent, so you can tell each group they are 
 
 - All About Rabbits Rescue - Queens - (347) 993-2300 - info@allaboutrabbitsrescue.org - @allaboutrabbitsrescue
 - Long Island Rabbit Rescue - Long Island - information@longislandrabbitrescue.org - @longislandrabbitrescue
-- Luv-N-Bunns Rabbit Rescue - citywide - bunnies@luvnbunns.org - @luvnbunns
+- Luv-N-Bunns Rabbit Rescue - Philadelphia area, takes rabbits from New York - bunnies@luvnbunns.org - @luvnbunns
 - Rabbit Rescue & Rehab - citywide - nyc.metro.rabbits@gmail.com - @rabbitrescuerehab
+
+## OUTSIDE THE CITY: PARTNERS WHOSE OWN SITES SAY THEY TAKE ANIMALS FROM NYC'S SHELTER
+
+These New Hope partners are based outside New York City, but each one's own website says it takes animals from ACC or the city's shelter (read 2026-11-05). Try them alongside the groups above, especially for an animal that needs a particular kind of home.
+
+- Air Twiga Animal Rescue - Glen Cove, Long Island - dogs, often with injuries or medical needs; its dogs' stories say they "came to us from NYCACC" - TwigaAir@gmail.com - https://www.airtwiga.org
+- Cat Assistance - Ardsley, Westchester - cats and kittens; "rescues cats and kittens from local shelters such as ... the Animal Care Centers of NYC (ACC)" - 914-419-2574 - catassistanceny@gmail.com - https://catassistanceny.org
+- ECHO Rescue (East Coast Herding Dog Organization) - herding breeds such as border collies, Aussies and cattle dogs; "now a New Hope Partner with the NYC ACC" - ECHORescue@yahoo.com - https://echorescue.com/contact/
+- Italian Greyhound Rescue (New York affiliate) - Italian greyhounds; "a New Hope Partner with the Animal Care Centers of NYC" - http://www.igrescue.com/affiliates/new_york/
+- Karma K-9 Rescue - dogs; its adoptable dogs include ones "rescued from a NYC shelter" - https://www.karmak9.org - Instagram @karmak9rescue
+- Ruff Dog Rescue Northeast - Thompson, Pennsylvania, with foster homes across the Northeast - dogs; "we also rescue dogs at-risk in the NYC municipal shelter" - 570-442-1181 - rdrneinquiries@gmail.com - https://www.rdrne.org
 
 ## MORE FROM ACC
 

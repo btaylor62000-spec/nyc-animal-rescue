@@ -1,0 +1,67 @@
+{
+  "id": "cannolis-sweet-life-senior-rescue",
+  "name": "Cannoli's Sweet Life Senior Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "senior"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Long Island (Nassau) - outside NYC",
+  "zips": [
+    "11560"
+  ],
+  "region_note": "SENIOR DOG RESCUE (Long Island, takes senior dogs)",
+  "phones": [
+    {
+      "value": "5167883542",
+      "display": "(516) 788-3542"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@sweetliferescue.com"
+    }
+  ],
+  "website": "https://www.sweetliferescue.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.8808,
+    "lon": -73.5887,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "336 Forest Avenue",
+    "city": "Locust Valley",
+    "zip": "11560"
+  },
+  "hours": null,
+  "notes": "A 501(c)(3) rescue dedicated to saving senior dogs. 336 Forest Avenue, Locust Valley, NY. Outside the city, on Long Island's North Shore. Read on its own site by a reviewer, 2026-11-05. Other channel: Instagram @sweetlifeseniorrescue",
+  "type_raw": "Senior dog rescue",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.sweetliferescue.com"
+  ],
+  "last_verified": "2026-11-05",
+  "section": "SENIOR DOG RESCUE (Long Island, takes senior dogs)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

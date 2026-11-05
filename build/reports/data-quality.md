@@ -4,7 +4,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **412** organizations after de-duplication
+- **417** organizations after de-duplication
 - **78** duplicate clusters merged
 - **24** guide pages generated
 - **21** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 304 |
-| dog | 242 |
+| cat | 308 |
+| dog | 247 |
 | wildlife | 46 |
 | rabbit | 38 |
 | bird-companion | 35 |
@@ -37,8 +37,8 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 167 |
-| foster | 101 |
+| adoption | 171 |
+| foster | 104 |
 | tnr | 94 |
 | owner-support | 73 |
 | spay-neuter | 73 |
@@ -54,10 +54,10 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | financial-aid | 23 |
 | education | 23 |
 | legal | 20 |
+| senior | 19 |
 | lost-found | 18 |
 | sanctuary | 18 |
 | boarding | 18 |
-| senior | 18 |
 | behavior-training | 16 |
 | microchip | 13 |
 | transport | 13 |
@@ -74,25 +74,25 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 265 |
-| queens | 224 |
-| manhattan | 218 |
-| bronx | 194 |
-| staten-island | 193 |
+| brooklyn | 268 |
+| queens | 225 |
+| manhattan | 220 |
+| bronx | 195 |
+| staten-island | 194 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 207 |
-| Medium | 147 |
-| Low | 58 |
+| Medium | 148 |
+| Low | 62 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 391 |
+| active | 396 |
 | retired | 9 |
 | verify | 8 |
 | hiatus | 2 |
@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (12)
+### Never verified (16)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -334,19 +334,19 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | More situations, answered by Animal Help Now | 8315 |
 | Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 6336 |
-| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 8950 |
+| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 12857 |
 | Reporting animal abuse or neglect | 6285 |
 | Animal emergencies and poison control | 2200 |
 | Low-cost clinics and trap banks | 3583 |
 | Community cats, colonies and starting TNR | 6916 |
-| Cats needing specialist help | 4638 |
+| Cats needing specialist help | 6127 |
 | Lost or found a cat | 6535 |
 | Help keeping your cat | 6434 |
-| Help keeping your dog | 8523 |
+| Help keeping your dog | 8778 |
 | Low-cost vet care, spay/neuter and dog licensing | 7169 |
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |
-| Breed-specific dog rescue | 15829 |
+| Breed-specific dog rescue | 18511 |
 | Found injured or orphaned wildlife | 14001 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |

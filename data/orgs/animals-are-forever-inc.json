@@ -1,0 +1,68 @@
+{
+  "id": "animals-are-forever-inc",
+  "name": "Animals Are Forever Inc",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "dog",
+    "cat"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "3473552410",
+      "display": "(347) 355-2410"
+    }
+  ],
+  "emails": [
+    {
+      "value": "animalsareforeverny@gmail.com"
+    }
+  ],
+  "website": "https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Supplied by a reviewer from its Petfinder and Facebook pages, 2026-11-05 (Petfinder turns our browser away): Animals Are Forever, Inc., Brooklyn, NY 11235, (347) 355-2410, animalsareforeverny@gmail.com. On ACC's New Hope partner list. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope-partners/"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-17",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

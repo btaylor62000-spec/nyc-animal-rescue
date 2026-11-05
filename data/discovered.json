@@ -350,7 +350,26 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "boroughs": [
+        "brooklyn"
+      ],
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption"
+      ],
+      "emails": [
+        "animalsareforeverny@gmail.com"
+      ],
+      "phones": [
+        "3473552410"
+      ],
+      "checkedBy": "Supplied by a reviewer from its Petfinder and Facebook pages, 2026-11-05 (Petfinder turns our browser away): Animals Are Forever, Inc., Brooklyn, NY 11235, (347) 355-2410, animalsareforeverny@gmail.com. On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Australian Cattle Dog Rescue Association",
@@ -1067,7 +1086,24 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "boroughs": [
+        "manhattan"
+      ],
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "emails": [
+        "hopewellrescueadopt@gmail.com"
+      ],
+      "checkedBy": "Supplied by a reviewer from its Petfinder page, 2026-11-05 (Petfinder turns our browser away): Hopewell Rescue, New York, NY 10128, hopewellrescueadopt@gmail.com, Instagram @hopewellrescue; \"founded in 2016 and is based in NY & NJ\", takes animals \"off the streets, away from kill shelters\". On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Hudson Valley Humane Society",
@@ -1304,11 +1340,27 @@
     },
     {
       "name": "Linus & Friends",
-      "website": "https://www.linusandfriends.org",
+      "website": "https://www.linusrescue.org",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "citywide": true,
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "emails": [
+        "contact@linusrescue.org"
+      ],
+      "contactsFrom": "https://www.linusrescue.org/contact",
+      "checkedBy": "Read in a browser on 2026-11-05: \"a dog and cat rescue\" that rescues animals \"from overcrowded kill shelters and high-risk situations, prepare[s] them in foster care\". Its contact page gives contact@linusrescue.org and a New York office at 42 Broadway, 12th floor (and one in Clearwater, Florida); \"no animals at either\" because the animals live with foster homes. A reviewer confirmed it is a foster-based group based in the city. On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Little Shelter*",
@@ -2466,7 +2518,24 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-10-01",
-      "contactsChecked": "2026-10-01"
+      "contactsChecked": "2026-10-01",
+      "boroughs": [
+        "brooklyn"
+      ],
+      "animals": [
+        "dog",
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "emails": [
+        "info@twentypawsrescue.com"
+      ],
+      "checkedBy": "Supplied by a reviewer, 2026-11-05: \"a 501c3 non-profit, located in NY rescues dogs and cats\", Brooklyn, info@twentypawsrescue.com; works with NY, NJ, PA, CT, MA and RI. Its own site is live (read 2026-11-05) with adoption forms. On ACC's New Hope partner list.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Two by Two Rescue Group",
