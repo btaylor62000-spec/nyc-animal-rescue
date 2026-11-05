@@ -241,3 +241,5 @@ Each of these has never been confirmed by a person or the checker. Most are food
 
 Separate from this list: start from `docs/discovery-review-2026-11-04.md`. The 90 that say nothing about where they are need a contact page or a phone call.
 
+
+**Update 2026-11-05:** the 131 unsettled candidates were read again in a browser, contact and about pages included. 3 were published (Pupstarz Rescue, Pawsome Squad, Valley Cats & Friends); 34 are outside the city; 54 still say nothing; 35 cannot be read. Only 5 are worth one look by a person, and even those are optional: `docs/discovery-review-2026-11-05.md`.

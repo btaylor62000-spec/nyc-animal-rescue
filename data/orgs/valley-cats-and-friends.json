@@ -1,0 +1,60 @@
+{
+  "id": "valley-cats-and-friends",
+  "name": "Valley Cats & Friends",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "queens",
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [],
+  "emails": [],
+  "website": "http://valleycatsandfriends.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nycacc.org/programs/new-hope-partners/"
+  ],
+  "last_verified": null,
+  "section": "Discovered — ACC New Hope partners",
+  "source_files": [
+    "discovery"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-09-17",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nycacc.org/new-hope-partners",
+      "source": "monthly-discovery",
+      "note": "Listed on ACC New Hope partners."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

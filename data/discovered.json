@@ -1674,7 +1674,22 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "citywide": true,
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "emails": [
+        "nycpawsomesquad@gmail.com"
+      ],
+      "contactsFrom": "https://pawsomesquad.org/about",
+      "checkedBy": "Read in a browser on 2026-11-05: its About page says its mission is \"giving priority to local New York City shelter animals\" and that its dogs are cared for in foster homes; it gives nycpawsomesquad@gmail.com.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Peace Love and Poms Rescue",
@@ -1859,7 +1874,22 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "citywide": true,
+      "animals": [
+        "dog"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "emails": [
+        "rescue@pupstarzrescue.org"
+      ],
+      "contactsFrom": "https://www.pupstarzrescue.org/contact",
+      "checkedBy": "Read in a browser on 2026-11-05: its FAQ says \"Where are you located? New York City. We are a foster based rescue, with no physical shelter location\", and its pups are \"placed in foster homes around New York City\". Contact page gives rescue@pupstarzrescue.org.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Purrfect Pals, Inc*",
@@ -2482,7 +2512,21 @@
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
-      "contactsChecked": "2026-09-22"
+      "contactsChecked": "2026-09-22",
+      "boroughs": [
+        "queens",
+        "brooklyn"
+      ],
+      "animals": [
+        "cat"
+      ],
+      "needs": [
+        "adoption",
+        "foster"
+      ],
+      "checkedBy": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website.",
+      "publish": true,
+      "publishedOn": "2026-11-05"
     },
     {
       "name": "Veterinary Technicians for Cleft Affected Animals",
