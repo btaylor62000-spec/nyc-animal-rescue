@@ -5,7 +5,9 @@
   "parent_org": null,
   "org_types": [],
   "animals": [
-    "cat"
+    "cat",
+    "dog",
+    "small-mammal"
   ],
   "needs": [
     "adoption",
@@ -28,7 +30,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "notes": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website. Its site also lists spay/neuter and vaccination of stray cats and dogs, and fostering and adoption of cats, dogs and other small animals (reviewer, 2026-11-05). Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
   "confidence": "Low",
   "status": "active",

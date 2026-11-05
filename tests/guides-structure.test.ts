@@ -138,3 +138,10 @@ test('every alias used to link a guide name points at a listing that exists', as
   const used = [...Object.values(MENTION_ALIASES), ...Object.values(GUIDE_ALIASES).flatMap((m) => Object.values(m))];
   assert.deepEqual(used.filter((id) => !ids.has(id)), []);
 });
+
+test('mentions: a name inside a longer name does not hide its own later mention', () => {
+  const wood = fake({ id: 'wood', name: 'Woodstock Farm Sanctuary' });
+  const farm = fake({ id: 'farm', name: 'Farm Sanctuary' });
+  const { html } = annotateMentions('<h2>x</h2><p>Woodstock Farm Sanctuary, or further away Farm Sanctuary.</p>', [wood, farm]);
+  assert.match(html, /<a href="\/org\/wood">Woodstock Farm Sanctuary<\/a>, or further away <a href="\/org\/farm">Farm Sanctuary<\/a>/);
+});

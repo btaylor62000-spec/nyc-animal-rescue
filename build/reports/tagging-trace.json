@@ -3033,6 +3033,28 @@
       "matched": "(support"
     }
   ],
+  "farm-sanctuary": [
+    {
+      "tag": "bird-companion",
+      "field": "animals_served",
+      "matched": "chickens"
+    },
+    {
+      "tag": "farm",
+      "field": "notes",
+      "matched": "farmed animals"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    }
+  ],
   "feather-friends-parrot-adoption-services": [
     {
       "tag": "bird-companion",

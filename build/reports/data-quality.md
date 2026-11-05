@@ -4,7 +4,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **411** organizations after de-duplication
+- **412** organizations after de-duplication
 - **78** duplicate clusters merged
 - **24** guide pages generated
 - **21** entries flagged as not currently active
@@ -18,13 +18,13 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | Animal | Organizations |
 | --- | ---: |
 | cat | 304 |
-| dog | 241 |
+| dog | 242 |
 | wildlife | 46 |
 | rabbit | 38 |
-| bird-companion | 34 |
+| bird-companion | 35 |
 | reptile | 33 |
-| farm | 31 |
-| small-mammal | 31 |
+| farm | 32 |
+| small-mammal | 32 |
 | bird-wild | 22 |
 | amphibian | 15 |
 | fish | 15 |
@@ -55,9 +55,9 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | education | 23 |
 | legal | 20 |
 | lost-found | 18 |
+| sanctuary | 18 |
 | boarding | 18 |
 | senior | 18 |
-| sanctuary | 17 |
 | behavior-training | 16 |
 | microchip | 13 |
 | transport | 13 |
@@ -85,14 +85,14 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | High | 207 |
-| Medium | 146 |
+| Medium | 147 |
 | Low | 58 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 390 |
+| active | 391 |
 | retired | 9 |
 | verify | 8 |
 | hiatus | 2 |
@@ -346,12 +346,12 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost vet care, spay/neuter and dog licensing | 7169 |
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |
-| Breed-specific dog rescue | 13857 |
+| Breed-specific dog rescue | 15829 |
 | Found injured or orphaned wildlife | 14001 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |
 | Help paying for veterinary care | 8862 |
-| Rehoming a rabbit, bird, reptile or small animal | 3126 |
+| Rehoming a rabbit, bird, reptile or small animal | 3180 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Exotic pets: boarding, pet sitting and planning ahead | 6074 |
 

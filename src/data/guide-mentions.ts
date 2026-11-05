@@ -203,9 +203,10 @@ export function annotateMentions(html: string, orgs: Org[], matchers = buildMatc
       // mention; where two names overlap ("ASPCA Animal Poison Control
       // Center" and "ASPCA"), the longer wins.
       const hits: Array<{ at: number; end: number; org: Org }> = [];
+      // Every occurrence, not just the first: "Farm Sanctuary" first appears
+      // inside "Woodstock Farm Sanctuary", and only a later one is its own.
       for (const { re, org } of matchers) {
-        const m = re.exec(part);
-        if (m) hits.push({ at: m.index, end: m.index + m[0].length, org });
+        for (const m of part.matchAll(new RegExp(re.source, 'g'))) hits.push({ at: m.index!, end: m.index! + m[0].length, org });
       }
       hits.sort((a, b) => a.at - b.at || b.end - a.end);
       const kept: typeof hits = [];

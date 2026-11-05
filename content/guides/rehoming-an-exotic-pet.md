@@ -29,7 +29,7 @@ The single most important message: NEVER release a domestic animal to the wild. 
 - Rabbits/guinea pigs: Rabbit Rescue & Rehab, All About Rabbits Rescue, Bunnies & Beyond, Empty Cages Collective, or Animal Care Centers of NYC (nycacc.org). Screen adopters carefully if rehoming yourself (protect against 'feeder'/bait uses).
 - Turtles/reptiles: NY Turtle & Tortoise Society (qanda@nytts.org), Earthlings NYC Turtle Team, or Stray Pride.
 - Birds: Northeast Avian Rescue, Long Island Parrot Society placement program; feral/domestic pigeons -\> NYCPRC.
-- Farmed animals/poultry/pigs: Woodstock Farm Sanctuary (AnimalHelp@woodstocksanctuary.org) or Catskill Animal Sanctuary (confirm capacity first).
+- Farmed animals/poultry/pigs: Woodstock Farm Sanctuary (AnimalHelp@woodstocksanctuary.org) or Catskill Animal Sanctuary (confirm capacity first). Further away, upstate: Farm Sanctuary (Watkins Glen).
 - Any species you can't place: Animal Care Centers of NYC is the open-admission safety net (nycacc.org / 311).
 
 Species-appropriate food & supply help

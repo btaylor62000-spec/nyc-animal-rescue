@@ -1,0 +1,68 @@
+{
+  "id": "farm-sanctuary",
+  "name": "Farm Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "sanctuary"
+  ],
+  "animals": [
+    "bird-companion",
+    "farm"
+  ],
+  "needs": [
+    "sanctuary"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Upstate New York - outside NYC",
+  "zips": [
+    "14891"
+  ],
+  "region_note": "FARMED-ANIMAL SANCTUARY (upstate New York, takes farmed animals from the region)",
+  "phones": [
+    {
+      "value": "6075832225",
+      "display": "(607) 583-2225"
+    }
+  ],
+  "emails": [
+    {
+      "value": "shelter@farmsanctuary.org"
+    }
+  ],
+  "website": "https://www.farmsanctuary.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 42.3773,
+    "lon": -76.945,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "3100 Aikens Road",
+    "city": "Watkins Glen",
+    "zip": "14891"
+  },
+  "hours": null,
+  "notes": "3100 Aikens Road, Watkins Glen, NY 14891 (mail: P.O. Box 150). A national farmed-animal sanctuary in the Finger Lakes, about four and a half hours from the city; ask before bringing any animal. Main line 607-583-2225 ext. 221; general email info@farmsanctuary.org; shelter@farmsanctuary.org is the address its site gives for reporting how farmed animals are being treated. Read on its own site by a reviewer, 2026-11-05.",
+  "type_raw": "Farmed-animal sanctuary",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.farmsanctuary.org"
+  ],
+  "last_verified": "2026-11-05",
+  "section": "FARMED-ANIMAL SANCTUARY (upstate New York, takes farmed animals from the region)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

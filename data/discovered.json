@@ -1670,7 +1670,7 @@
     },
     {
       "name": "Pawsome Squad, Inc.",
-      "website": "https://www.pawsomesquad.org/about-us",
+      "website": "https://www.pawsomesquad.org/",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
@@ -2518,13 +2518,15 @@
         "brooklyn"
       ],
       "animals": [
-        "cat"
+        "cat",
+        "dog",
+        "small-mammal"
       ],
       "needs": [
         "adoption",
         "foster"
       ],
-      "checkedBy": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website.",
+      "checkedBy": "Read in a browser on 2026-11-05: \"an all volunteer and foster based rescue located in Valley Stream, Long Island, New York. Serving Nassau County, Queens and Brooklyn. Our adoption center is located at the Valley Stream Petsmart Store.\" Contact is through its website. Its site also lists spay/neuter and vaccination of stray cats and dogs, and fostering and adoption of cats, dogs and other small animals (reviewer, 2026-11-05).",
       "publish": true,
       "publishedOn": "2026-11-05"
     },

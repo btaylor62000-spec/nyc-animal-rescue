@@ -157,3 +157,31 @@ Dead, parked, blocked or timed out. Unpublished, as before.
 - Peppertree — http://www.peppertree.org (gave up after 90s)
 - Pets Alive — http://www.petsalive.com (gave up after 90s)
 - Scottish Terrier Club of Great New York Rescue* — http://awos.petfinder.com/shelters/NJ441.html (gave up after 90s)
+
+## The reviewer's reading, 2026-11-05 (first half)
+
+A reviewer opened the published three, the five "worth a look" and the 34
+"outside the city" on their own sites and supplied what each says.
+
+- **Published three:** contacts confirmed as stored. Valley Cats & Friends
+  also takes dogs and small animals (its site), so those animals were added.
+- **Worth a look, decided:**
+  - *Metropolitan Maltese Rescue* has closed. Its site sends owners to
+    American Maltese Association Rescue, which it calls NYC-based; the breed
+    guide now says so. Not published.
+  - *Long Island Bulldog Rescue* and *Husky House* (Matawan NJ, adopts within
+    an hour of the city): not published as listings, but given their contacts
+    in the breed-specific guide, which the reviewer asked to include breed
+    rescues outside the city, as the exotic-pet guides do.
+  - *Linus & Friends* (mailing addresses only, "no animals at either") and
+    *Ruff Dog Rescue Northeast* (Thompson PA; pulls from ACC): not breed
+    rescues and not based in the city. Not published.
+- **Outside the city:** stay out of the directory. The breed rescues among
+  them now carry their own contacts in the breed-specific guide: Best
+  Bullies, Cane Corso Rescue, Bichon Frise Rescue of Northern NJ, Cavalier
+  Rescue USA (its NY/CT address only; its volunteers' personal numbers are
+  not copied), New Jersey Schnauzer Rescue Network, Save A Yorkie Rescue (its
+  contact page, for the same reason), Peace Love and Poms, Peis & Strays
+  (added), Shih Tzus & Furbabies and WAGS. Farm Sanctuary (Watkins Glen) is
+  now a listing outside the city and is named in the rehoming guide beside
+  the two nearer farmed-animal sanctuaries.
