@@ -1,41 +1,33 @@
 ---
 title: "Found an injured bird"
 slug: found-an-injured-bird
-summary: "Who to call first, how to catch, contain and transport an injured bird, and why food, water and heat can kill it."
-topics: ["injured bird","window strike","baby bird","pigeon","fledgling","bird hit window","baby squirrel","baby rabbit"]
+summary: "Who to call first, whether it needs help at all, how to catch and box it, and why food, water and heat can kill it."
+topics: ["injured bird","window strike","baby bird","pigeon","fledgling","bird hit window","hawk","owl"]
 source: "research/injured-birds-wildlife-guide.docx"
 byline: "community site admin"
 ---
-# Injured birds and other wildlife
+# Found an injured bird
 
-_How to help an injured bird or wild animal in New York City, and the things that quietly make it worse._
+_How to help an injured or baby wild bird in New York City, and the things that quietly make it worse. For other wild animals, see [Found injured or orphaned wildlife](/guides/found-wildlife)._
 
 ## Who to call right now
 
-Put the animal in a cardboard box with small air holes, somewhere dark and quiet, and do not give it food or water. Then:
+Put the bird in a cardboard box with small air holes, close it, keep it somewhere dark and quiet, and do not give it food or water. Then:
 
-- **Injured bird or small mammal, any borough:** [The Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave, Manhattan. Walk in any day 9am–7pm, no appointment. (646) 306-2862.
-- **Cannot get there:** email the NYC Bird Alliance injured-bird volunteers at injuredbird@nycbirdalliance.org with your exact location and phone number. The reply is automatic and carries instructions; read them.
-- **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation).
-- **Wild baby cottontail, or a fox, raccoon or other mammal:** [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab), (914) 933-7559, any hour. Or find the nearest licensed rehabilitator in the [DEC directory](/org/nys-dec-find-a-wildlife-rehabilitator); the DEC line is (844) 332-3267.
-- **Also in the city:** [Wildlife Freedom Foundation](/org/wildlife-freedom-foundation), a licensed rehabilitator on Roosevelt Island, by email.
-- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call [the stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829; if it does not answer, [NOAA](/org/noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline), (866) 755-6622.
-
-**Reporting, not rescue.** These lines take reports; they will not collect an animal.
-
-- **Deer, coyote or other large animal, or wildlife you think is being kept or hunted illegally:** [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 in the daytime.
+- **Any injured wild bird, any borough:** [The Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave (between 87th and 88th), Manhattan. Walk in any day 9am–7pm, no appointment. (646) 306-2862.
+- **You cannot get it there:** email [Urban Wildlife Alliance](/org/urban-wildlife-alliance) at helpline@urbanwildlifenyc.org with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.
+- **Hawk, owl or other large bird:** do not try to pick it up. Call 311 and ask for the Urban Park Rangers, or ring [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation), the raptor rehabilitators, at any hour. [The Animal Medical Center](/org/animal-medical-center) in Manhattan, open 24 hours, takes raptors and waterfowl.
+- **A pet or farm bird** (parrot, budgie, chicken, domestic duck or goose, tame dove): the Wild Bird Fund cannot take these. [Animal Care Centers of NYC](/org/animal-care-centers-of-nyc), 311 or (212) 788-4000.
 - **Several sick or dead birds in one place:** [the USDA line](/org/usda-report-sick-birds-line), (866) 536-7593, or 311. Do not touch them with bare hands.
-- **Someone selling or killing protected wildlife:** [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like.
+- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals are in [Found injured or orphaned wildlife](/guides/found-wildlife).
 
 ## If it was caught or bitten by an animal
 
 If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound. A bite can leave no visible mark and still cause an infection that needs antibiotics from a rehabber or vet the same day. If you are not sure whether it was caught, assume it may have been, and get it to a rehabber immediately.
 
-## Found a squirrel?
+## Is it hurt, or a fledgling that is fine?
 
-This website has resources and instructions https://www.urbanutopiawildlife.org/reunite
-
-## Is that bird injured?
+**Signs an adult bird needs help**, in NYC Bird Alliance's words: lying on its side or sitting motionless on its stomach; allowing humans to closely approach; attempting but failing to fly; bloody or with apparent wounds; visible broken legs or drooping wings; swollen or closed eyes. "If you see an adult bird on the sidewalk with its eyes closed and/or not moving, the bird likely hit a window and is stunned." (https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird)
 
 This resource page has some great information
 
@@ -53,7 +45,7 @@ This article explains the stages of bird development, and when to help, and not 
 
 <https://chirpforbirds.com/how-to/what-to-do-when-you-find-a-baby-bird-on-the-ground/>
 
-## How to handle injured birds
+## How to catch it, box it and keep it calm
 
 Approach the bird slowly and quietly from behind, pointed away from traffic, so as to not scare it. Do not talk to the bird as you walk toward it. Wild birds are frightened of humans and will try to escape, often flying back into glass or into the street. Even a soft and gentle voice is stressful. If you see a bird that has been injured, capture it as soon as possible-they often fly away in shock after a few minutes only to die later, so the sooner you can get them, the better chance they have to survive.
 
@@ -71,47 +63,7 @@ Window strike victims should NOT be given additional heat through, for example, 
 
 If a bird is going in a car, it is important the AC is not directly on the bird if possible or turned down so bird doesn't get cold on the way over. It is also good to keep the noise level down in the car while driving. Do not talk to the bird, not even gently. Music, our voices, and other human made noise can cause excessive stress, and we don’t want to add even more stress to an injured bird, they are extremely sensitive. Wild animals have a deep and instinctual fear of humans (this helps them maintain a healthy caution around people)
 
-## Where to take injured wildlife
-
-A licensed rehabber is registered with the state and federal government. The training for and maintenance of licensing is extensive. Many well intentioned people claim to care for and rescue wildlife, but only a licensed rehabber is legally, technically, and ethically qualified to care for wildlife. The process of assessment, care, and recovery requires specialized knowledge and equipment, and cannot be replicated at home.
-
-Please note, a vet or tech that cares for domestic animals may not be trained, equipped, or licensed to care for wild animals-even domestic birds are very different from wild birds. It’s always best to to go a rehabber.
-
-If you find an injured or sick bird, get it into a cardboard box with small airholes, and take it to the Wild Bird Fund. They are open every day from 9am-7pm, and you do not need an appointment-just go to their facility!
-
-<https://www.wildbirdfund.org>
-
-Keep it in a dark and quiet room to minimize stress and stimuli. If you are unable to go, you can also contact NYC Bird Alliance Injured Bird response team (citywide network of volunteers specializing in care and transport of injured birds).
-
-Email injuredbird@nycbirdalliance.org and someone will reply shortly. The email hotline is monitored by volunteers all day. When you compose the email, you will notice that it’s automatically populates with instructions-please read and follow them. It’s important to give your exact location and phone number so someone can help you faster. Please note these are all volunteers, just like us, their capacity may be limited, so please be kind and understanding.
-
-There are more tips at-
-
-<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird>
-
-If it’s a large bird or bird of prey, don’t try to approach or handle yourself. It is dangerous! Contact NYC Bird Alliance (there’s a team specializing in large birds) or call Urban Park Rangers. This link has more on wildlife care in NYC-
-
-<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
-
-## WBF bird rescue resources
-
-<https://www.wildbirdfund.org/how-to-help/rescue/>
-
-Animal help now (find licensed rehabbers anywhere) https://ahnow.org
-
-## DEC Find a Licensed Rehabber search tool
-
-<https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab>
-
-## List of Licensed rehabbers in NY State
-
-<https://data.ny.gov/w/p5wx-nivw/caer-yrtv?cur=3dPRTc7TChq>
-
-NY State Wildlife Rehabilitation Council page on finding a wildlife professional
-
-<https://www.nyswrc.org/find-a-wildlife-professional>
-
-## Why not to feed injured wildlife
+## Never give it food or water, and why
 
 Giving any injured or sick bird (or any wildlife) food or water is never ok. This is for a few reasons.
 
@@ -122,8 +74,44 @@ Giving any injured or sick bird (or any wildlife) food or water is never ok. Thi
 - Wildlife also has very specific nutritional needs, especially when injured (yes, even pigeons!) Licensed rehabbers go through extensive training and work with scientists to ensure this nutritional knowledge is current. The products they use are not the same as used for pets, many are not even commercially available. When the bird is well enough to eat, they will be fed many nutritious, species appropriate meals.
 - the other danger of improper feeding is imprinting. Imprinting refers to when an animal forms attachments to other living beings-ideally their parents. It’s crucial to develop their sense of self. When wildlife imprints into humans, they rely on us, instead of developing their instincts to hunt and forage to survive. They do not recognize others of their species, and will not understand other crucial behaviors like nesting, migration, and mating. They can approach humans in inappropriate ways-whether it’s begging for food from people who may harm them (intentionally or not) or even biting and attacking people when they don’t get food (like the very bold squirrel in Prospect Park). Often these “nuisance” wildlife end up euthanized if authorities consider them a threat to public safety. It leads to death either way. Imprinting is incredibly difficult to reverse in wildlife, it is believed to cause a physical change in the brain. Unfortunately there are a lot of videos online showing the improper care for injured wildlife, usually viral videos shared by major media outlets. Many of these videos conclude by showing released wildlife continuing coming back to a particular person’s home for food and care. As cute as this may seem, it is highly unethical, as it’s a death sentence for wildlife. To avoid imprinting, rehabbers have ways to hide themselves or use surrogates, allowing wildlife to maintain a healthy distance and caution around humans.
 
-## Why is some wildlife euthanized
+## Where to take it
+
+A licensed rehabber is registered with the state and federal government. The training for and maintenance of licensing is extensive. Many well intentioned people claim to care for and rescue wildlife, but only a licensed rehabber is legally, technically, and ethically qualified to care for wildlife. The process of assessment, care, and recovery requires specialized knowledge and equipment, and cannot be replicated at home.
+
+Please note, a vet or tech that cares for domestic animals may not be trained, equipped, or licensed to care for wild animals-even domestic birds are very different from wild birds. It’s always best to to go a rehabber.
+
+If you find an injured or sick bird, get it into a cardboard box with small airholes, and take it to the Wild Bird Fund. They are open every day from 9am-7pm, and you do not need an appointment-just go to their facility!
+
+<https://www.wildbirdfund.org>
+
+Keep it in a dark and quiet room to minimize stress and stimuli. If you cannot take it yourself, email the Urban Wildlife Alliance helpline at helpline@urbanwildlifenyc.org with a short description, a photo or video of the bird, your phone number and your location (address or crossroads). NYC Bird Alliance, whose injured-bird page now sends people there, warns that you might not get a reply the same day and that a volunteer cannot always come, so you or a friend are likely the bird's best chance.
+
+There are more tips at-
+
+<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird>
+
+If it’s a large bird or bird of prey, don’t try to approach or handle yourself. It is dangerous! Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators under Who to call right now, at the top of this page. This link has more on wildlife care in NYC-
+
+<https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
+
+## Finding a licensed rehabber yourself
+
+<https://www.wildbirdfund.org/how-to-help/rescue/>
+
+Animal help now (find licensed rehabbers anywhere) https://ahnow.org
+
+**DEC Find a Licensed Rehabber search tool**
+
+<https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab>
+
+**List of Licensed rehabbers in NY State**
+
+<https://data.ny.gov/w/p5wx-nivw/caer-yrtv?cur=3dPRTc7TChq>
+
+NY State Wildlife Rehabilitation Council page on finding a wildlife professional
+
+<https://www.nyswrc.org/find-a-wildlife-professional>
+
+## If you later hear the bird could not be saved
 
 It can be heartbreaking to go through the trouble of rescuing wildlife and taking to a rehabber, only to find out the animal was euthanized. For many, the instinct is often to blame the rehabber-how can someone end the life of an animal? However, this decision is not made lightly-every other option is considered before this, and euthanasia is a last resort. If an animal is not responding to treatment, has injuries or illness too severe for treatment, or is in a condition where their quality of life will not be good after treatment (such as excessive pain and suffering) a rehabber may decide humane euthanasia is the appropriate next step. As devastating as the ending of a life may be, it is cruel to force an animal to live through excessive suffering. Wildlife can suffer in ways that aren’t always apparent to the untrained eye-I’ve counseled many well meaning people who have kept a wild animal in domestic care, without realizing the animal is dying an extended death. The same emotions and attachments that drive our passion to help animals can also cloud our judgment, and a logical decision is not always the most pleasant one. Please remember-nobody wants to euthanize an animal, and rehabbers, like rescuers, are driven by care and love. There is a vast emotional toll on the folks who have to do this extremely difficult job, and our compassion should extend to them too.
-
-If you have any questions not answered here, please feel free to contact Divya at (718) 344-4424. She is the cofounder of Flatbush Cats, but also works with NYC Bird Alliance and other bird rescuers and rehabbers. She would be happy to help you!

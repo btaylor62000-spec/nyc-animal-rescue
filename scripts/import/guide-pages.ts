@@ -48,6 +48,16 @@ interface TabSpec {
    * current, at the foot of the same page.
    */
   omitSections?: RegExp;
+  /**
+   * The order sections should appear in, by the start of each heading. A
+   * reviewer found the wildlife guide hard to follow (2026-11-05): the
+   * workbook's order is the order the research was done in, not the order
+   * someone on a pavement needs. Sections not named keep their place after
+   * these; a name that matches nothing throws, so a renamed heading is noticed.
+   */
+  sectionOrder?: string[];
+  /** Lines put before the guide's own text, built from the records. */
+  prepend?: (orgs: Org[]) => string[];
 }
 
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
@@ -64,6 +74,13 @@ const WB_HOUSING = 'research/NYC_Housing_Crisis_Pets.xlsx';
 // Written 2026-11-04 at the reviewer's request, from NYC Emergency
 // Management's own published guidance; quotations are its words.
 const WB_DISASTER = 'research/NYC_Pets_In_A_Disaster.xlsx';
+// Every question on Animal Help Now's resources page, each linked to its
+// answer there and to this site's guide where one exists. A reviewer asked
+// (2026-11-05) for all of that page to be on the site or linked from it, and
+// found that an earlier pass had quoted seven answers and left the rest out.
+// Linked rather than copied: its answers are its own words, written for the
+// whole country, and kept current by Animal Help Now.
+const WB_AHNOW = 'research/NYC_AHNow_Situations.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -71,6 +88,12 @@ const WB_DISASTER = 'research/NYC_Pets_In_A_Disaster.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_AHNOW, tab: 'More situations', slug: 'more-situations-animal-help-now',
+    title: 'More situations, answered by Animal Help Now',
+    summary: 'Every question Animal Help Now answers, from bats and glue traps to a cat up a utility pole, linked to its answer and to the New York City guide.',
+    topics: ['animal help now', 'ahnow', 'bat', 'glue trap', 'mange', 'wildlife conflict', 'animal in attic', 'banded bird', 'cat on pole', 'catio', 'feeding wildlife', 'animal in road', 'rescue kit'],
+  },
   {
     file: WB_DISASTER, tab: 'Pets in a disaster', slug: 'pets-in-a-disaster',
     title: 'Pets in a disaster or evacuation',
@@ -176,8 +199,26 @@ export const GUIDE_PAGES: TabSpec[] = [
   {
     file: WB_EXOTIC, tab: 'Wildlife rehabilitation', slug: 'found-wildlife',
     title: 'Found injured or orphaned wildlife',
-    summary: 'Only licensed rehabilitators may legally handle wild animals. Where to take them, and what not to do.',
-    topics: ['injured wildlife', 'baby squirrel', 'wild animal', 'rehabber'],
+    summary: 'Squirrels, rabbits, raccoons, deer, turtles and seals: who to call, and what not to do. Birds have their own guide.',
+    topics: ['injured wildlife', 'baby squirrel', 'baby rabbit', 'wild animal', 'rehabber', 'raccoon', 'bat', 'deer', 'turtle', 'seal'],
+    prepend: wildlifeWhoToCall,
+    // Who to call first, then the animals people actually find, then how to
+    // find a rehabber, then everything else (reviewer, 2026-11-05).
+    sectionOrder: [
+      'Found a baby squirrel',
+      "The city's wildlife hospital",
+      'Raccoons, skunks and bats',
+      'Seals, whales',
+      'Wild turtles',
+      'Hawks, owls',
+      "Can't take an injured bird",
+      'What to do, and what not',
+      'Vets who will see a wild animal',
+      'Finding a licensed rehabber',
+      "The state's register",
+      'A second directory',
+      'More situations',
+    ],
   },
   {
     file: WB_EXOTIC, tab: 'Exotic-vet & emergency care', slug: 'exotic-pet-emergency',
@@ -234,8 +275,20 @@ function escapeMd(s: string): string {
   return s.replace(/([<>])/g, '\\$1');
 }
 
+/** Sections in the order a spec asks for; see TabSpec.sectionOrder. */
+function orderSections<T extends { heading: string | null }>(sections: T[], order: string[] | undefined, slug: string): T[] {
+  if (!order) return sections;
+  const placed: T[] = [];
+  for (const start of order) {
+    const hit = sections.find((x) => x.heading?.startsWith(start));
+    if (!hit) throw new Error(`Guide "${slug}": no section heading starts with "${start}". Update sectionOrder in guide-pages.ts.`);
+    placed.push(hit);
+  }
+  return [...sections.filter((x) => !x.heading), ...placed, ...sections.filter((x) => x.heading && !placed.includes(x))];
+}
+
 /** Turn a parsed guide tab into a Markdown page. */
-export function buildTabPage(spec: TabSpec): GuidePage {
+export function buildTabPage(spec: TabSpec, orgs: Org[] = []): GuidePage {
   const doc = parseGuideTab(spec.file, spec.tab);
   const redactions = new Set<string>();
 
@@ -250,6 +303,7 @@ export function buildTabPage(spec: TabSpec): GuidePage {
   lines.push('');
   lines.push(`_${clean(spec.summary)}_`);
   lines.push('');
+  if (spec.prepend) lines.push(...spec.prepend(orgs));
 
   // The source's own title line is not shown: on review (2026-11-04) every
   // one was a spreadsheet label ("OWNER SUPPORT & KEEPING YOUR DOG (contacts
@@ -261,7 +315,7 @@ export function buildTabPage(spec: TabSpec): GuidePage {
     lines.push('');
   }
 
-  for (const section of doc.sections) {
+  for (const section of orderSections(doc.sections, spec.sectionOrder, spec.slug)) {
     if (spec.omitSections && section.heading && spec.omitSections.test(section.heading)) continue;
     if (section.heading) {
       lines.push(`## ${clean(section.heading)}`);
@@ -343,7 +397,80 @@ const WILDLIFE_DOC_EDITS: Array<{ find: string; replace: string; reason: string 
     reason:
       'An aside about pets on a page for someone holding an injured wild animal. A reviewer asked for the cat references that are not safety guidance to go.',
   },
+  {
+    find: 'If you are unable to go, you can also contact NYC Bird Alliance Injured Bird response team (citywide network of volunteers specializing in care and transport of injured birds).',
+    replace:
+      "If you cannot take it yourself, email the Urban Wildlife Alliance helpline at helpline@urbanwildlifenyc.org with a short description, a photo or video of the bird, your phone number and your location (address or crossroads). NYC Bird Alliance, whose injured-bird page now sends people there, warns that you might not get a reply the same day and that a volunteer cannot always come, so you or a friend are likely the bird's best chance.",
+    reason:
+      "Out of date. NYC Bird Alliance's own injured-bird page, read 2026-11-05, sends anyone who cannot transport a bird to the Urban Wildlife Alliance helpline and no longer mentions an injured-bird team or address. The wildlife guide already said so, and a reviewer found the two guides disagreeing.",
+  },
+  {
+    find: 'Email injuredbird@nycbirdalliance.org and someone will reply shortly. The email hotline is monitored by volunteers all day. When you compose the email, you will notice that it’s automatically populates with instructions-please read and follow them. It’s important to give your exact location and phone number so someone can help you faster. Please note these are all volunteers, just like us, their capacity may be limited, so please be kind and understanding.',
+    replace: '',
+    reason: 'The same out-of-date route: the address is not on NYC Bird Alliance\'s page any more (2026-11-05). The paragraph above now gives the current one.',
+  },
+  {
+    find: 'Contact NYC Bird Alliance (there’s a team specializing in large birds) or call Urban Park Rangers.',
+    replace: 'Call 311 and ask for the Urban Park Rangers, or ring the raptor rehabilitators under Who to call right now, at the top of this page.',
+    reason: "NYC Bird Alliance's pages (2026-11-05) name no large-bird team of its own; they list the Urban Park Rangers and the raptor rehabilitators, which is what this now says.",
+  },
+  {
+    find: 'If you have any questions not answered here, please feel free to contact Divya at (718) 344-4424. She is the cofounder of Flatbush Cats, but also works with NYC Bird Alliance and other bird rescuers and rehabbers. She would be happy to help you!',
+    replace: '',
+    reason:
+      'A volunteer\'s personal mobile, offered in a document shared privately. The privacy file records her agreement (2026-09-22), but the reviewer asked on 2026-11-05 whether it should be there at all. It should not: a crisis page sends calls at any hour to whatever number it shows, and every question this line invited has an organization that answers it (the Wild Bird Fund, the Urban Wildlife Alliance helpline). Removed until she asks for it back.',
+  },
 ];
+
+/*
+ * The document's sections, in the order someone holding a bird needs them.
+ * A reviewer found the guide hard to follow (2026-11-05): a section on
+ * euthanasia sat in the middle of what to do, and a squirrel section sat
+ * between the bite warning and how to tell whether a bird is hurt. Each
+ * heading as the document has it, what the page calls it, and where it goes.
+ * "merge" folds a section into the one before it, its heading kept as a bold
+ * line. A heading not named here throws, so a changed document is noticed.
+ */
+const BIRD_SECTIONS: Array<{ from: string; to?: string; drop?: string; merge?: true; lead?: string }> = [
+  { from: 'Who to call right now' },
+  { from: 'If it was caught or bitten by an animal' },
+  {
+    from: 'Is that bird injured?',
+    to: 'Is it hurt, or a fledgling that is fine?',
+    // Quoted from NYC Bird Alliance's injured-bird page (read 2026-11-05):
+    // the document says how to tell a fledgling, but not how to tell a hurt
+    // adult, which is the commoner case in the city.
+    lead:
+      "**Signs an adult bird needs help**, in NYC Bird Alliance's words: lying on its side or sitting motionless on its stomach; allowing humans to closely approach; attempting but failing to fly; bloody or with apparent wounds; visible broken legs or drooping wings; swollen or closed eyes. \"If you see an adult bird on the sidewalk with its eyes closed and/or not moving, the bird likely hit a window and is stunned.\" (https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird)",
+  },
+  { from: 'How to handle injured birds', to: 'How to catch it, box it and keep it calm' },
+  { from: 'Why not to feed injured wildlife', to: 'Never give it food or water, and why' },
+  { from: 'Where to take injured wildlife', to: 'Where to take it' },
+  { from: 'WBF bird rescue resources', to: 'Finding a licensed rehabber yourself' },
+  { from: 'DEC Find a Licensed Rehabber search tool', merge: true },
+  { from: 'List of Licensed rehabbers in NY State', merge: true },
+  { from: 'Why is some wildlife euthanized', to: 'If you later hear the bird could not be saved' },
+  { from: 'Found a squirrel?', drop: 'Squirrels are in the wildlife guide, with the same link and current advice.' },
+];
+
+/** Puts the bird guide's sections in BIRD_SECTIONS order. */
+function orderBirdSections(markdown: string): string {
+  const chunks = markdown.split(/^(?=## )/m);
+  const head = chunks.shift()!;
+  const byHeading = new Map(chunks.map((c) => [c.slice(3, c.indexOf('\n')).trim(), c.slice(c.indexOf('\n'))]));
+  const known = new Set(BIRD_SECTIONS.map((x) => x.from));
+  const unknown = [...byHeading.keys()].filter((h) => !known.has(h));
+  if (unknown.length) throw new Error(`Bird guide: sections not in BIRD_SECTIONS: ${unknown.join(', ')}. Add them in guide-pages.ts.`);
+  const out: string[] = [head];
+  for (const x of BIRD_SECTIONS) {
+    const body = byHeading.get(x.from);
+    if (body === undefined) throw new Error(`Bird guide: no section "${x.from}" any more. Update BIRD_SECTIONS in guide-pages.ts.`);
+    if (x.drop) continue;
+    const lead = x.lead ? `\n\n${x.lead}\n` : '';
+    out.push(x.merge ? `\n**${x.from}**\n${body}` : `## ${x.to ?? x.from}${lead}${body}`);
+  }
+  return out.join('');
+}
 
 /*
  * Links in the document that have moved since it was written. NYC Audubon
@@ -379,35 +506,65 @@ function phoneOf(org: Org): string {
  */
 function whoToCallNow(orgs: Org[]): string[] {
   const wbf = must(orgs, 'the-wild-bird-fund');
-  const wff = must(orgs, 'wildlife-freedom-foundation');
+  const uwa = must(orgs, 'urban-wildlife-alliance');
+  const winorr = must(orgs, 'winorr-wildlife-in-need-of-rescue-and-rehabilitation');
+  const amc = must(orgs, 'animal-medical-center');
+  const acc = must(orgs, 'animal-care-centers-of-nyc');
+  const usda = must(orgs, 'usda-report-sick-birds-line');
+  const link = (o: Org, text = o.name): string => `[${text}](/org/${o.id})`;
+  const helpline = uwa.emails.find((e) => e.value.startsWith('helpline@'))?.value ?? uwa.emails[0]?.value;
+
+  // Birds only, since 2026-11-05: the mammal, marine and reporting lines
+  // moved to the wildlife guide, where a reviewer expected them, and the two
+  // guides had begun to disagree. The "cannot get there" route follows NYC
+  // Bird Alliance's own injured-bird page as read on 2026-11-05, which now
+  // sends people to Urban Wildlife Alliance; the injured-bird address the
+  // document gives is no longer on it.
+  return [
+    '## Who to call right now',
+    '',
+    'Put the bird in a cardboard box with small air holes, close it, keep it somewhere dark and quiet, and do not give it food or water. Then:',
+    '',
+    `- **Any injured wild bird, any borough:** ${link(wbf, 'The Wild Bird Fund')}, 565 Columbus Ave (between 87th and 88th), Manhattan. Walk in any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
+    `- **You cannot get it there:** email ${link(uwa, 'Urban Wildlife Alliance')} at ${helpline} with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.`,
+    `- **Hawk, owl or other large bird:** do not try to pick it up. Call 311 and ask for the Urban Park Rangers, or ring ${link(winorr, 'WINORR')}, the raptor rehabilitators, at any hour. ${link(amc, 'The Animal Medical Center')} in Manhattan, open 24 hours, takes raptors and waterfowl.`,
+    `- **A pet or farm bird** (parrot, budgie, chicken, domestic duck or goose, tame dove): the Wild Bird Fund cannot take these. ${link(acc, 'Animal Care Centers of NYC')}, 311 or ${phoneOf(acc)}.`,
+    `- **Several sick or dead birds in one place:** ${link(usda, 'the USDA line')}, ${phoneOf(usda)}, or 311. Do not touch them with bare hands.`,
+    '- **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals are in [Found injured or orphaned wildlife](/guides/found-wildlife).',
+    '',
+  ];
+}
+
+/*
+ * The same block for the wildlife guide, read from the records for the same
+ * reason. Raccoons, skunks and bats follow the guide's own section on them:
+ * no rehabber in the city may take them.
+ */
+function wildlifeWhoToCall(orgs: Org[]): string[] {
+  const wbf = must(orgs, 'the-wild-bird-fund');
   const cottontail = must(orgs, 'cottontail-cottage-wildlife-rehab');
+  const ahnow = must(orgs, 'animal-help-now-wildlife-emergency-finder');
   const dec = must(orgs, 'nys-dec-find-a-wildlife-rehabilitator');
   const marine = must(orgs, 'ny-marine-mammal-and-sea-turtle-stranding-hotline');
-  const winorr = must(orgs, 'winorr-wildlife-in-need-of-rescue-and-rehabilitation');
-  const decNyc = must(orgs, 'nys-dec-region-2');
-  const usda = must(orgs, 'usda-report-sick-birds-line');
-  const usfws = must(orgs, 'usfws-wildlife-crime-tip-line');
   const noaa = must(orgs, 'noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline');
+  const nytts = must(orgs, 'new-york-turtle-and-tortoise-society');
+  const decNyc = must(orgs, 'nys-dec-region-2');
+  const usfws = must(orgs, 'usfws-wildlife-crime-tip-line');
   const link = (o: Org, text = o.name): string => `[${text}](/org/${o.id})`;
 
   return [
     '## Who to call right now',
     '',
-    'Put the animal in a cardboard box with small air holes, somewhere dark and quiet, and do not give it food or water. Then:',
+    'Do not pick up a wild mammal with bare hands, and do not give any wild animal food or water. Then:',
     '',
-    // Address and hours are from the document below, which is where they are maintained.
-    `- **Injured bird or small mammal, any borough:** ${link(wbf, 'The Wild Bird Fund')}, 565 Columbus Ave, Manhattan. Walk in any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
-    '- **Cannot get there:** email the NYC Bird Alliance injured-bird volunteers at injuredbird@nycbirdalliance.org with your exact location and phone number. The reply is automatic and carries instructions; read them.',
-    `- **Hawk, owl or other large bird:** do not approach it. Email the same NYC Bird Alliance address, or call 311 and ask for the Urban Park Rangers. The region's raptor rehabilitator is ${link(winorr, 'WINORR')}.`,
-    `- **Wild baby cottontail, or a fox, raccoon or other mammal:** ${link(cottontail, 'Cottontail Cottage')}, ${phoneOf(cottontail)}, any hour. Or find the nearest licensed rehabilitator in the ${link(dec, 'DEC directory')}; the DEC line is ${phoneOf(dec)}.`,
-    `- **Also in the city:** ${link(wff, 'Wildlife Freedom Foundation')}, a licensed rehabilitator on Roosevelt Island, by email.`,
-    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}; if it does not answer, ${link(noaa, 'NOAA')}, ${phoneOf(noaa)}.`,
-    '',
-    '**Reporting, not rescue.** These lines take reports; they will not collect an animal.',
-    '',
-    `- **Deer, coyote or other large animal, or wildlife you think is being kept or hunted illegally:** ${link(decNyc, 'DEC Region 2')}, ${phoneOf(decNyc)} in the daytime.`,
-    `- **Several sick or dead birds in one place:** ${link(usda, 'the USDA line')}, ${phoneOf(usda)}, or 311. Do not touch them with bare hands.`,
-    `- **Someone selling or killing protected wildlife:** ${link(usfws, 'the federal tip line')}, ${phoneOf(usfws)}, anonymously if you like.`,
+    '- **A bird:** see [Found an injured bird](/guides/found-an-injured-bird). Birds are the exception to "do not touch": catch it and box it straight away.',
+    `- **Squirrel, opossum, rabbit or other small mammal, hurt or sick:** ${link(wbf, 'The Wild Bird Fund')} takes small mammals too. 565 Columbus Ave, Manhattan, any day 9am–7pm, no appointment. ${phoneOf(wbf)}.`,
+    `- **Wild baby rabbit, fox or other wild mammal, or the Wild Bird Fund is closed:** ${link(cottontail, 'Cottontail Cottage')}, ${phoneOf(cottontail)}, any hour (leave a message; they call back). Or ${link(ahnow, 'Animal Help Now')}, which shows the licensed rehabbers near the address, those available now first, or the ${link(dec, 'DEC directory')}.`,
+    '- **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers; call 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.',
+    `- **Seal, whale, dolphin or sea turtle on a beach:** keep your distance, keep dogs away, and call ${link(marine, 'the stranding hotline')}, ${phoneOf(marine)}; if it does not answer, ${link(noaa, 'NOAA')}, ${phoneOf(noaa)}.`,
+    `- **A wild turtle that is hurt:** ${link(nytts, 'the New York Turtle and Tortoise Society')}, ${nytts.emails[0]?.value ?? ''}.`,
+    `- **Deer, coyote or other large animal:** leave it be unless it is badly hurt or on a road; then ${link(decNyc, 'DEC Region 2')}, ${phoneOf(decNyc)} in the daytime, or 911.`,
+    `- **Someone keeping, selling or killing protected wildlife:** ${link(usfws, 'the federal tip line')}, ${phoneOf(usfws)}, anonymously if you like, or ${link(decNyc, 'DEC Region 2')}.`,
     '',
   ];
 }
@@ -435,11 +592,12 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
     return text.replace(/https?:\/\/\S+/g, (u) => cleanUrl(u));
   };
 
-  const title = paragraphs[0]?.text ?? 'Injured birds and other wildlife';
+  // The document is titled "Injured birds and other wildlife"; since
+  // 2026-11-05 other wildlife has its own guide, so the page says birds.
   const lines: string[] = [
-    `# ${title}`,
+    '# Found an injured bird',
     '',
-    '_How to help an injured bird or wild animal in New York City, and the things that quietly make it worse._',
+    '_How to help an injured or baby wild bird in New York City, and the things that quietly make it worse. For other wild animals, see [Found injured or orphaned wildlife](/guides/found-wildlife)._',
     '',
     ...whoToCallNow(orgs),
   ];
@@ -484,9 +642,9 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
   return {
     slug: 'found-an-injured-bird',
     title: 'Found an injured bird',
-    summary: 'Who to call first, how to catch, contain and transport an injured bird, and why food, water and heat can kill it.',
-    topics: ['injured bird', 'window strike', 'baby bird', 'pigeon', 'fledgling', 'bird hit window', 'baby squirrel', 'baby rabbit'],
-    markdown: lines.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n',
+    summary: 'Who to call first, whether it needs help at all, how to catch and box it, and why food, water and heat can kill it.',
+    topics: ['injured bird', 'window strike', 'baby bird', 'pigeon', 'fledgling', 'bird hit window', 'hawk', 'owl'],
+    markdown: orderBirdSections(lines.join('\n')).replace(/\n{3,}/g, '\n\n').trim() + '\n',
     source: path,
     redactions: [...redactions],
     ...(WILDLIFE_GUIDE_BYLINE ? { byline: WILDLIFE_GUIDE_BYLINE } : {}),
@@ -494,7 +652,7 @@ export function buildWildlifeDocPage(orgs: Org[], path = 'research/injured-birds
 }
 
 export function buildAllGuidePages(orgs: Org[]): GuidePage[] {
-  return [buildWildlifeDocPage(orgs), ...GUIDE_PAGES.map(buildTabPage)];
+  return [buildWildlifeDocPage(orgs), ...GUIDE_PAGES.map((spec) => buildTabPage(spec, orgs))];
 }
 
 export function writeGuidePages(pages: GuidePage[], dir = 'content/guides'): void {

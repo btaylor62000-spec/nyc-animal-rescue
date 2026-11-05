@@ -22,7 +22,7 @@ Every fund, grant and payment plan in the directory, for cats, dogs and every ot
 - RedRover Relief - urgent/life-threatening care grants; explicitly assists birds, rabbits and guinea pigs, not just cats/dogs; household income under ~$60k; paid to the vet. redrover.org/relief, (916) 429-2457. Also has a domestic-violence/pets program.
 - The Pet Fund - non-urgent / chronic conditions for domestic animals (contact BEFORE treatment). info@thepetfund.com (its site asks you to email first; phone (916) 503-0550), thepetfund.com.
 - Frankie's Friends - lifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.
-- The Mosby Foundation, Brown Dog Foundation, Onyx & Breezy Foundation - additional illness/injury funds that consider companion animals broadly; read each fund's species scope before applying.
+- The Mosby Foundation (themosbyfoundation.org), Brown Dog Foundation (browndogfoundation.org), Onyx & Breezy Foundation (onyxandbreezy.org) - additional illness/injury funds that consider companion animals broadly; read each fund's species scope before applying.
 - Waggle - vet-bill crowdfunding, 100% to the vet (waggle.org).
 
 ## For RESCUES (not individuals):

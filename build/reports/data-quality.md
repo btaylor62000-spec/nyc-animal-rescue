@@ -6,7 +6,7 @@ Generated 2026-11-05 from the source workbooks and the wildlife guide.
 
 - **411** organizations after de-duplication
 - **78** duplicate clusters merged
-- **23** guide pages generated
+- **24** guide pages generated
 - **21** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (14)
+### Never verified (12)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -330,7 +330,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 15287 |
+| Found an injured bird | 14816 |
+| More situations, answered by Animal Help Now | 8315 |
 | Pets in a disaster or evacuation | 3404 |
 | Keeping your pet if you are losing your home | 6336 |
 | Save a shelter animal from euthanasia: the NYC at-risk list | 8250 |
@@ -346,10 +347,10 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Dog behaviour, training and legal questions | 6132 |
 | Lost or found a dog | 3380 |
 | Breed-specific dog rescue | 13035 |
-| Found injured or orphaned wildlife | 9898 |
+| Found injured or orphaned wildlife | 13338 |
 | Exotic pet emergencies | 4073 |
 | What you can legally keep in New York City | 3057 |
-| Help paying for veterinary care | 8792 |
+| Help paying for veterinary care | 8862 |
 | Rehoming a rabbit, bird, reptile or small animal | 3126 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Boarding, pet sitting and planning ahead | 6013 |

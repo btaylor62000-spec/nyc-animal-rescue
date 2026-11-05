@@ -4,6 +4,7 @@ import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
 import Skyline from '../components/Skyline.astro';
 import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
+import { GUIDES_GROUPED } from '../data/guides.ts';
 
 /**
  * The home page answers one question: what is happening, and where do I tap?
@@ -127,10 +128,51 @@ const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
               <span class="tile__icon"><Icon name={t.icon} size={20} /></span>
               <strong>{t.title}</strong>
               <span>{t.blurb}</span>
+              <span class="tile__kind">{t.href.startsWith('/guides/') ? 'Guide: what to do' : 'Places to contact'}</span>
             </a>
           </li>
         ))}
       </ul>
+    </section>
+
+    <section class="section" aria-labelledby="two-ways-heading">
+      <span class="eyebrow">Two ways in</span>
+      <h2 id="two-ways-heading">A guide, or a list of places?</h2>
+      <div class="two-ways">
+        <div class="panel">
+          <h3><Icon name="search" size={18} /> Find help</h3>
+          <p>
+            <strong>Who to call.</strong> Every rescue, clinic, hotline and rehabber, with phone numbers,
+            hours and addresses. Filter by animal and borough, and see what is open now and nearest.
+          </p>
+          <p style="margin-bottom:0"><a class="btn" href="/directory">Find help</a></p>
+        </div>
+        <div class="panel">
+          <h3><Icon name="leaf" size={18} /> Guides</h3>
+          <p>
+            <strong>What to do.</strong> Step by step for one situation, in the order it needs doing,
+            including what not to do. Each guide ends with the places to contact.
+          </p>
+          <p style="margin-bottom:0"><a class="btn" href="/guides">All guides</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="all-guides-heading">
+      <span class="eyebrow">Every guide</span>
+      <h2 id="all-guides-heading">Guides, by situation</h2>
+      <div class="guide-groups">
+        {GUIDES_GROUPED.map((group) => (
+          <div>
+            <h3>{group.title}</h3>
+            <ul>
+              {group.guides.map((g) => (
+                <li><a href={`/guides/${g.slug}`}>{g.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </section>
 
     <section class="section">

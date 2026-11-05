@@ -1,0 +1,123 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { GUIDES, GUIDE_GROUPS } from '../src/data/guides.ts';
+import { LISTED_ORGS } from '../src/data/orgs.ts';
+import { renderMarkdown, addressesIn } from '../src/data/markdown.ts';
+import { annotateMentions, buildMatchers, nameVariants } from '../src/data/guide-mentions.ts';
+import type { Org } from '../src/types.ts';
+
+/*
+ * What a reviewer found wrong with the guides on 2026-11-05, each kept from
+ * coming back.
+ */
+
+test('every guide is in a group, so every guide is on the home page', () => {
+  const grouped = GUIDE_GROUPS.flatMap((g) => g.slugs);
+  assert.deepEqual(GUIDES.map((g) => g.slug).filter((s) => !grouped.includes(s)), []);
+  assert.deepEqual(grouped.filter((s) => !GUIDES.some((g) => g.slug === s)), [], 'a group names a guide that does not exist');
+  assert.equal(new Set(grouped).size, grouped.length, 'a guide is in two groups');
+});
+
+const fake = (o: Partial<Org> & { id: string; name: string }): Org =>
+  ({ aka: [], phones: [], emails: [], website: null, status: 'active', ...o }) as unknown as Org;
+
+test('mentions: the first mention in a section links to the listing, and the section lists its contacts', () => {
+  const wbf = fake({ id: 'wbf', name: 'The Wild Bird Fund', phones: [{ value: '6463062862', display: '(646) 306-2862' }] as Org['phones'], website: 'https://www.wildbirdfund.org' });
+  const html = '<h2>Where</h2><p>Take it to the Wild Bird Fund. The Wild Bird Fund is open daily.</p><h2>Next</h2><p>Nothing here.</p>';
+  const { html: out, named } = annotateMentions(html, [wbf]);
+  assert.equal((out.match(/<a href="\/org\/wbf">Wild Bird Fund<\/a>/g) ?? []).length, 1, 'linked once, at the first mention');
+  assert.match(out, /Contacts for this section<\/p><ul><li><a href="\/org\/wbf">The Wild Bird Fund<\/a> · <a href="tel:[^"]+"[^>]*>\(646\) 306-2862<\/a>/);
+  assert.equal(out.split('<h2>Next</h2>')[1]!.includes('guide-contacts'), false, 'a section that names nobody has no box');
+  assert.deepEqual(named.map((o) => o.id), ['wbf']);
+});
+
+test('mentions: never inside a link or a heading, and "&" written as "&amp;" still matches', () => {
+  const hb = fake({ id: 'hb', name: 'Hearts & Bones Rescue' });
+  const { html } = annotateMentions('<h2>Hearts &amp; Bones Rescue</h2><p><a href="https://x.org">Hearts &amp; Bones Rescue</a> and Hearts &amp; Bones Rescue.</p>', [hb]);
+  assert.equal((html.match(/href="\/org\/hb">/g) ?? []).length, 2, 'one link in the prose, one in the box');
+  assert.match(html, /<h2>Hearts &amp; Bones Rescue<\/h2>/);
+});
+
+test('mentions: a borough, or a name two branches share, is never linked to one of them', () => {
+  const bronx = fake({ id: 'uv-bronx', name: 'Urgent Vets (Bronx)', aka: ['Urgent Vets', 'Urgent Vets - Bronx'] });
+  const queens = fake({ id: 'uv-queens', name: 'Urgent Vets (Queens)', aka: ['Urgent Vets'] });
+  assert.equal(nameVariants(bronx).includes('Bronx'), false);
+  const { html } = annotateMentions('<h2>x</h2><p>In the Bronx, Urgent Vets is open late.</p>', [bronx, queens]);
+  assert.equal(html.includes('/org/'), false);
+});
+
+test('mentions: the parent organizations with many listings, and boroughs, are never a name', () => {
+  const all = new Set(LISTED_ORGS.flatMap(nameVariants));
+  for (const word of ['ASPCA', 'Humane World for Animals', 'Queens', 'Bronx', 'South Bronx', 'NYS DEC', 'ACC']) assert.equal(all.has(word), false, word);
+});
+
+test('every guide line that leads with an organization it does not list gives a way to reach it', () => {
+  const matchers = buildMatchers(LISTED_ORGS);
+  const problems: string[] = [];
+  for (const g of GUIDES) {
+    for (const line of g.body.split('\n')) {
+      if (!/^\s*- /.test(line)) continue;
+      const body = line.replace(/^\s*- /, '').replace(/\*\*/g, '');
+      const lead = body.split(/ - | – |: | \(|, /)[0]!.trim();
+      // A name: two or more capitalised words, and not a heading-like phrase in capitals.
+      if (!/^[A-Z0-9][\w'’&.]*(\s+([A-Z0-9&][\w'’&.-]*|of|for|and|the|de|in|on|a)){1,8}$/.test(lead) || lead === lead.toUpperCase()) continue;
+      if (/^(During|An|A|The|If|When|For|Call|Email|Text|Ask)\b/.test(lead) && !/\b(Foundation|Fund|Rescue|Society)\b/.test(lead)) continue;
+      if (matchers.some((m) => m.re.test(lead.replace(/&/g, '&amp;'))) || /\]\(\/org\//.test(line)) continue;
+      const reachable = addressesIn(body).length > 0 || /@/.test(body) || /\d{3}\)?[-. ]\d{3}[-. ]\d{4}/.test(body) || /\]\(/.test(body);
+      if (!reachable) problems.push(`${g.slug}: ${lead}`);
+    }
+  }
+  assert.deepEqual(problems, []);
+});
+
+test('the bird and wildlife guides: no personal contacts, no out-of-date route, no contradiction on food', () => {
+  const bird = GUIDES.find((g) => g.slug === 'found-an-injured-bird')!.body;
+  const wild = GUIDES.find((g) => g.slug === 'found-wildlife')!.body;
+  for (const [what, re] of [
+    ["Divya's personal mobile (reviewer, 2026-11-05)", /Divya|344-4424/],
+    ['a volunteer’s personal email, not published by NYTTS', /lorric750|Lorri Cramer/],
+    ["NYC Bird Alliance's old injured-bird address, no longer on its page (2026-11-05)", /injuredbird@/],
+    ['"unless a rehabber tells you to": injured wildlife is never given food or water', /unless a rehabber tells you/i],
+  ] as const) {
+    assert.doesNotMatch(bird, re, `bird guide: ${what}`);
+    assert.doesNotMatch(wild, re, `wildlife guide: ${what}`);
+  }
+  // The safety guidance survives the reordering, word for word.
+  assert.match(bird, /Window strike victims should NOT be given additional heat/);
+  assert.match(bird, /Giving any injured or sick bird \(or any wildlife\) food or water is never ok/);
+  assert.match(bird, /If the bird can stand and hop, leave it alone/);
+  // In the order someone holding a bird needs it: euthanasia is last.
+  const headings = [...bird.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
+  assert.equal(headings[0], 'Who to call right now');
+  assert.equal(headings.at(-1), 'If you later hear the bird could not be saved');
+  assert.doesNotMatch(bird, /^## Found a squirrel/m, 'squirrels belong in the wildlife guide');
+  assert.match(wild, /^## Found a baby squirrel/m);
+  assert.match(wild, /^## Who to call right now/m);
+});
+
+test('every Animal Help Now topic is linked to its answer', () => {
+  const page = GUIDES.find((g) => g.slug === 'more-situations-animal-help-now')!.body;
+  const anchors = new Set([...page.matchAll(/ahnow\.org\/resources\.php#(\w+)/g)].map((m) => m[1]));
+  // Each question in the table of contents of https://ahnow.org/resources.php,
+  // read 2026-11-05. "maintocgeneral" stands for its questions about itself.
+  const AHNOW_TOPICS = (
+    'babybird babygroundbird babyowl babymammal babysquirrel turtle reptile findbat orphan reunite catdogattack birdhitwindow ' +
+    'gluetrap deerneedshelp animalmange rehab habituate transportwild transporthelp nonUSA wildlifeconflict wildlifeconflict1 ' +
+    'wildlifeconflict2 wildlifeconflict3 wildlifeconflict4 wildlifeconflict5 nonUSAconflict preventbirdhitwindow feedingwildlife ' +
+    'reportBandedBird planahead newhome vetexpenses 1 2 transport overnight canttransport poison abuse abuseinternet road wander ' +
+    'catpole catio outsidecolo evac evaclostfound evacprep evacwild rescuekit emergencykit vetguide otherorgs careers promote maintocgeneral'
+  ).split(' ');
+  assert.deepEqual(AHNOW_TOPICS.filter((a) => !anchors.has(a)), []);
+});
+
+test('the contacts boxes render on the built page for a guide that names listings', () => {
+  const g = GUIDES.find((x) => x.slug === 'found-an-injured-bird')!;
+  const { html, named } = annotateMentions(renderMarkdown(g.body), LISTED_ORGS);
+  assert.ok(named.some((o) => o.id === 'the-wild-bird-fund'));
+  assert.ok((html.match(/guide-contacts/g) ?? []).length >= 3);
+  // No box ever shows a number the listing does not have: it is built from it.
+  const wbf = LISTED_ORGS.find((o) => o.id === 'the-wild-bird-fund')!;
+  assert.ok(html.includes(wbf.phones[0]!.display));
+  assert.ok(readFileSync('src/pages/guides/[slug].astro', 'utf8').includes('annotateMentions'));
+});
