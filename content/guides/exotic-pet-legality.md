@@ -20,7 +20,7 @@ This page is orientation, not legal advice. NYC and NYS rules change; confirm cu
 
 ## Native NY wildlife & native reptiles/amphibians:
 
-- Most native wildlife cannot legally be kept. Injured/orphaned wildlife must go to a NYS-licensed wildlife rehabilitator (https://nyc-animal-rescue.pages.dev/guides/found-wildlife).
+- Most native wildlife cannot legally be kept. Injured/orphaned wildlife must go to a NYS-licensed wildlife rehabilitator ([Found injured or orphaned wildlife](/guides/found-wildlife)).
 - NYS DEC now requires a permit to keep ANY reptile or amphibian native to New York, including all 12 native NY turtle species. It is illegal to sell native NY reptiles/amphibians - report violations to DEC at 1-800-847-7332.
 
 ## Generally legal companion exotics (with care caveats):

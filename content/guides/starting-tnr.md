@@ -14,8 +14,8 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 ## STEP 1 - GET TNR-CERTIFIED (free; unlocks free spay/neuter, trap loans, transport)
 
 - Neighborhood Cats TNR Certification Workshop - monthly online, certifies you as a Certified TNR Caretaker. neighborhoodcats.org/how-to-tnr. 15,000+ New Yorkers certified.
-- NYC Feral Cat Initiative (Bideawee) - also runs certification + colony-care workshops + a 7-day helpdesk (nycfci.happyfox.com/new).
-- Certification is what makes the free/low-cost spay/neuter, trap banks, and transport (see https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks) available to you.
+- NYC Feral Cat Initiative (FCI, run by Bideawee) - free TNR certification and colony-care workshops, and a 7-day helpdesk for Certified TNR Caretakers: https://www.bideawee.org/programs/feral-cat-initiative/ (helpdesk: https://nycfci.happyfox.com/new).
+- Certification is what makes the free/low-cost spay/neuter, trap banks, and transport (see [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)) available to you.
 
 ## STEP 2 - REGISTER THE COLONY (protects it + tracks progress)
 
@@ -24,7 +24,7 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 
 ## STEP 3 - TRAP AND FIX
 
-- Borrow traps: Neighborhood Cats, ASPCA, FCI. Details: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks
+- Borrow traps: Neighborhood Cats, ASPCA, FCI. Details: [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)
 - Free/low-cost spay/neuter for community cats: Toby Project (all 5 boroughs, free), ASPCA, plus feral-friendly clinics by borough.
 - An EAR-TIP (left ear, squared off) = already spayed/neutered + rabies-vaccinated. Don't re-trap ear-tipped cats.
 
@@ -36,18 +36,18 @@ A community cat is an outdoor cat without a direct owner. Some are friendly (may
 
 ## FRIENDLY CATS / KITTENS FOUND IN A COLONY (pull for adoption)
 
-- Socialize: Urban Cat League Taming Toolkit (in the guide https://nyc-animal-rescue.pages.dev/guides/lost-and-found-cat). Under 8 weeks socialize easily; older takes longer.
-- Neonatal/bottle-babies too young to survive outdoors: route to a nursery - Itty Bitty City Kitties, Bay Ridge Kittens, Kittens and Barbells. More: https://nyc-animal-rescue.pages.dev/guides/cats-with-special-needs
+- Socialize: Urban Cat League Taming Toolkit (in the guide [Lost or found a cat](/guides/lost-and-found-cat)). Under 8 weeks socialize easily; older takes longer.
+- Neonatal/bottle-babies too young to survive outdoors: route to a nursery - Itty Bitty City Kitties, Bay Ridge Kittens, Kittens and Barbells. More: [Cats needing specialist help](/guides/cats-with-special-needs)
 
 ## WHEN A CAT CAN'T BE RETURNED (site lost, unsafe, or truly unadoptable feral)
 
-- Working-cat / barn relocation: Urban Cat League, MeowSquad, For Animals Inc. place un-adoptable ferals as working cats (barns, warehouses, breweries).
+- Working-cat / barn relocation: Urban Cat League and For Animals Inc. place un-adoptable ferals as working cats (barns, warehouses, breweries).
 - Hard Hat Cats - places working/feral cats at NYC businesses (has placed inside the Brooklyn Navy Yard) - hardhatcats@gmail.com.
 
 ## FERAL MEDICAL / EMERGENCIES
 
-- Sick/injured feral: a clinic experienced with feral cats (https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks) or an emergency hospital (https://nyc-animal-rescue.pages.dev/guides/animal-emergency). Ring ahead and bring the cat in a covered trap.
-- Dental care for a feral cat: see the dental section of https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks
+- Sick/injured feral: a clinic experienced with feral cats ([Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)) or an emergency hospital ([Animal emergencies and poison control](/guides/animal-emergency)). Ring ahead and bring the cat in a covered trap.
+- Dental care for a feral cat: see the dental section of [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)
 - Scratched or bitten by a feral? Contact a doctor immediately + report to NYC Health Animal Bite Unit (311). Handle only in a trap/transfer cage.
 - KEY CONTACTS: FCI helpdesk nycfci.happyfox.com/new / (212) 330-0033 - Neighborhood Cats help@neighborhoodcats.org / (212) 662-5761 - these two are the backbone for any colony question.
 
@@ -57,7 +57,7 @@ Most free services require you to be a Certified TNR Caretaker (free to become -
 
 ## SPAY/NEUTER + RABIES + EAR-TIP (the core service, FREE for certified caretakers):
 
-- Toby Project: FREE, all 5 boroughs. ASPCA: free for rescue groups through its Rescuer Services Scheduler. HSNY: low-cost. Every clinic: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks
+- Toby Project: FREE, all 5 boroughs. ASPCA: free for rescue groups through its Rescuer Services Scheduler. HSNY: low-cost. Every clinic: [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)
 
 ## FREE TRANSPORT to/from spay-neuter (if you can't drive traps):
 
@@ -75,19 +75,19 @@ Most free services require you to be a Certified TNR Caretaker (free to become -
 
 ## FREE POSTING OF ADOPTABLE COLONY CATS (friendlies/kittens pulled from the colony):
 
-- FCI posts Certified TNR Caretakers' adoptable cats on its Petfinder page. Borough rescues in the directory also take friendlies into their adoption pipelines.
+- Ask the FCI helpdesk (https://nycfci.happyfox.com/new) whether it can post your friendly colony cats or kittens for adoption: it has listed Certified TNR Caretakers' adoptable cats before, though Bideawee's FCI page (https://www.bideawee.org/programs/feral-cat-initiative/) no longer says so. Borough rescues in the directory also take friendlies into their adoption programmes.
 
 ## GRANTS / FINANCIAL HELP for TNR + colony vet costs:
 
-- FCI has administered ASPCA + In Defense of Animals grants for individuals' TNR/adoption expenses - ask the helpdesk what's currently open. Help with vet bills: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+- FCI has run grants for individuals' TNR and adoption costs (from the ASPCA and In Defense of Animals). Ask its helpdesk what is open now: https://nycfci.happyfox.com/new. Help with vet bills: [Help paying for veterinary care](/guides/help-paying-for-care)
 
 ## MEDICAL for colony cats (sick/injured/dental):
 
-- Feral-friendly clinics + emergency hospitals + feral dentals: see https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks and https://nyc-animal-rescue.pages.dev/guides/animal-emergency. Trap the cat, bring it covered.
+- Feral-friendly clinics + emergency hospitals + feral dentals: see [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks) and [Animal emergencies and poison control](/guides/animal-emergency). Trap the cat, bring it covered.
 
 ## COMMUNITY-RELATIONS help (neighbor complaints, feeding disputes, moving a feeding station):
 
-- FCI + Neighborhood Cats offer guidance + the 'Love Cats / Hate Cats' outreach materials; Alley Cat Allies has colony-conflict resources. NY State classifies cats (incl. feral) as companion animals - caretaking + feeding is legal, though local feeding rules can vary.
+- FCI and Neighborhood Cats offer guidance and the 'Love Cats / Hate Cats' outreach materials. Alley Cat Allies' advice on neighbours and complaints: https://www.alleycat.org/community-cat-care-category/community-relations/ (start with What to Do if Neighbors Complain: https://www.alleycat.org/community-cat-care/making-nice-with-the-neighbors/). NY State classifies cats (incl. feral) as companion animals - caretaking and feeding is legal, though local feeding rules can vary.
 
 ## HANDS-ON HELP (someone to trap with you, holding space, fosters):
 

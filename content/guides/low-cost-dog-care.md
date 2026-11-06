@@ -65,6 +65,8 @@ Also offers: free dog training, tenant advocacy and pet-housing help, spay/neute
 
 ## PET FOOD / SUPPLIES (dog-specific pantries + directories)
 
+NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs; ring before you go, as the food is new. All 22, with phone numbers and boroughs, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
+
 - ACC - may provide food, harnesses, and other supplies directly; ask Admissions (admissions@nycacc.org).
 - Animal Haven Community Engagement Program - free/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org).
 - PAWS NY - operates a pet food pantry alongside its in-home care (pawsny.org, (212) 203-4760).
@@ -73,7 +75,7 @@ Also offers: free dog training, tenant advocacy and pet-housing help, spay/neute
 
 ## VET BILLS AND PET INSURANCE
 
-- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: [Help paying for veterinary care](/guides/help-paying-for-care)
 
 ## VACCINE + MICROCHIP EVENTS
 

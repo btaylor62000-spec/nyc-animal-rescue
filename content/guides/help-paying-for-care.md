@@ -84,3 +84,9 @@ How to use aid effectively: get a written itemized estimate + proof of need (SNA
 - Pet Assure - https://www.petassure.com - a discount plan at participating vets, not insurance.
 - Wagmo - https://wagmo.io - wellness plans for routine care.
 - Chewy CarePlus - https://www.chewy.com/pet-insurance/ - wellness plans and insurance options through Chewy.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [Help with vet bills](https://ahnow.org/resources.php#vetexpenses)

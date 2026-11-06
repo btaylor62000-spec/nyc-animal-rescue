@@ -11,6 +11,13 @@ _Three times a week the NYC shelter lists cats and dogs who may be euthanised if
 
 Three times a week, New York City's public shelter, Animal Care Centers of NYC (ACC), lists cats and dogs who may be euthanised if nobody takes them. Each listing closes about 42 hours after it is posted. ACC calls it the “at-risk list”, and runs it through its New Hope program, which places animals with approved rescue groups. Act today.
 
+## THE FASTEST WAY, IF YOU ALREADY KNOW THE ANIMAL
+
+- **First:** open ACC's at-risk list: https://newhope.shelterbuddy.com/Animal/List, find the animal and press “View more..”.
+- **If its page has a “Reserve” button,** you can adopt it yourself: press Reserve, then check out within 15 minutes.
+- **If its page says it is “for new hope partners only”, or you want to foster or adopt through a rescue group,** press “Pre-Screener Form” on its page, and fill in ACC's form for fostering or adopting through a rescue partner: https://forms.gle/ozHex3uqvNkQt2dq9
+- **Then** contact the rescue groups under Who to contact, further down, all at once. The steps below explain each part.
+
 ## HOW MUCH TIME YOU HAVE
 
 New animals are posted on Sunday, Tuesday and Thursday at 6:00 PM. Each posting closes at 12:00 noon two days later: Sunday’s list closes Tuesday at noon, Tuesday’s closes Thursday at noon, Thursday’s closes Saturday at noon.
@@ -25,7 +32,7 @@ ACC says being on the list does not automatically mean an animal will be euthani
 
 ## STEP 2: READ THE ANIMAL’S PAGE: WHO IS ALLOWED TO TAKE IT?
 
-- If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: go to Step 3. On 2026-11-04 this was 22 of the 46 animals listed.
+- If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: go to Step 3.
 - If the page has a “Reserve [name]” button, a member of the public may adopt this animal directly from ACC, without a rescue group. ACC’s own list page says: “To complete an adoption, please click reserve on the animal of your choice.” Pressing it puts the animal in a cart for 15 minutes; press “check out” at the top right before the time runs out and pay the deposit by card. ACC emails a receipt, which confirms the reservation. Registering on the site first (“Register”, top of the page) saves time.
 - An animal with a Reserve button can also go to a rescue group: if you want to foster, or adopt through a rescue instead, go to Step 3.
 - If the website gives you trouble, email adopt@nycacc.org. Questions about the New Hope program: newhopeprogram@nycacc.org.

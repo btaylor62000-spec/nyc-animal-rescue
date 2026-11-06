@@ -50,3 +50,13 @@ NY stray-hold: found pets are generally reported to animal control (ACC) and hel
 - Prevention: license your dog (nyc.gov/doglicense), keep a physical ID tag on the collar, register and maintain the microchip, use a well-fitted martingale collar or harness, and keep a recent full-body photo on your phone.
 
 NOTE: Petco Love Lost is free and the single highest-leverage step (facial-recognition matching across NYC shelters + community) - do it first alongside the ACC report.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [I lost my pet](https://ahnow.org/resources.php#1)
+- [I found someone's pet](https://ahnow.org/resources.php#2)
+- [Keeping a found pet overnight](https://ahnow.org/resources.php#overnight)
+- [Transporting an animal](https://ahnow.org/resources.php#transport)
+- [An animal is wandering around my neighbourhood](https://ahnow.org/resources.php#wander)

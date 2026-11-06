@@ -24,10 +24,10 @@ What New York City Emergency Management tells pet owners to do before and during
 - Pack a Go Bag for your pet, like your own: what your pet needs every day for at least three days away from home.
 - Dogs and cats should wear a collar or harness, a rabies tag and an identification tag at all times. The ID tag should give your name, address and phone number, and the phone number of an emergency contact.
 - Keep a current colour photo of your pet. It matters most if you go to an evacuation shelter with your pet.
-- A microchip only helps if it is registered with your current phone number: see https://nyc-animal-rescue.pages.dev/guides/lost-and-found-dog
+- A microchip only helps if it is registered with your current phone number: see [Lost or found a dog](/guides/lost-and-found-dog)
 - The city's workbook, Ready New York: My Pet's Emergency Plan, walks through every step. It is available in 12 languages and as audio: https://www.nyc.gov/readyny or call 311.
 - Federal guidance, with a full kit list: https://www.ready.gov/pets
-- For birds, reptiles, rabbits and other small animals, which need heat, light or special food: see the disaster section of https://nyc-animal-rescue.pages.dev/guides/exotic-boarding-and-planning
+- For birds, reptiles, rabbits and other small animals, which need heat, light or special food: see the disaster section of [Exotic pets: boarding, pet sitting and planning ahead](/guides/exotic-boarding-and-planning)
 
 ## IN EXTREME HEAT
 
@@ -37,5 +37,14 @@ What New York City Emergency Management tells pet owners to do before and during
 
 ## IF YOUR PET IS HURT
 
-- Go to an emergency hospital and ring on the way: https://nyc-animal-rescue.pages.dev/guides/animal-emergency
+- Go to an emergency hospital and ring on the way: [Animal emergencies and poison control](/guides/animal-emergency)
 - The American Red Cross has a free Pet First Aid app with step-by-step first aid for common emergencies: search “Red Cross Pet First Aid” in your phone's app store. It is a guide while you get help, not a substitute for a vet.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [Evacuating animals and finding shelter](https://ahnow.org/resources.php#evac)
+- [Lost or found an animal in a disaster](https://ahnow.org/resources.php#evaclostfound)
+- [Preparing your pets for a disaster](https://ahnow.org/resources.php#evacprep)
+- [An emergency supply kit for disasters and evacuations](https://ahnow.org/resources.php#emergencykit)

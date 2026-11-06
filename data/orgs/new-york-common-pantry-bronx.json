@@ -1,0 +1,96 @@
+{
+  "id": "new-york-common-pantry-bronx",
+  "name": "New York Common Pantry - Bronx",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "support-program"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "food-assistance",
+    "owner-support"
+  ],
+  "boroughs": [
+    "bronx"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10459"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "9174232701",
+      "display": "(917) 423-2701",
+      "label": "Pet food programme"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.nycommonpantry.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.8257,
+    "lon": -73.893,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "1290 Hoe Ave.",
+    "zip": "10459",
+    "borough": "bronx"
+  },
+  "hours": null,
+  "notes": "A human food pantry taking part in the city's pet food programme, which funds free dog and cat food at 22 pantries across the five boroughs. The pet food is new and the pantries do not yet mention it themselves, so ring before travelling and ask whether it has arrived. The city says hours vary by site and change, and to confirm before visiting. The first number is the one the city publishes for the pet food programme itself. New York Common Pantry's Bronx site; its Manhattan site, at 8 East 109th St., is listed separately.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
+  ],
+  "last_verified": "2026-11-04",
+  "section": "City pet food pantry programme",
+  "source_files": [
+    "pet-food-pantries"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-03",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Listed in the city's pet food pantry programme, announced 2026-10."
+    },
+    {
+      "date": "2026-11-03",
+      "field": "phones",
+      "from": null,
+      "to": "(917) 423-2701",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "The number the city's own pet food pantry map lists for this site."
+    },
+    {
+      "date": "2026-11-04",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-04",
+      "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
+      "source": "pet-food-pantries",
+      "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

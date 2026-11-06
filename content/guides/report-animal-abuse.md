@@ -42,7 +42,7 @@ The ASPCA still works behind the scenes - forensic exams, medical care, housing 
 - NYC 311 - 311 - portal.311.nyc.gov - ongoing abuse or neglect, non-emergency; routes to your NYPD precinct. The online report lets you upload photos, video and documents. Takes anonymous reports.
 - NYPD Crime Stoppers - (800) 577-8477 - crimestoppers.nypdonline.org - anonymous tip on ongoing abuse, fighting, or a specific location. Also reachable as 800-577-TIPS. Fully anonymous tip line and online form.
 - Your local NYPD precinct - nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page - report in-progress cruelty directly and ask for the ASPCA Liaison Officer. If a precinct says it has none, ask for the Neighborhood Coordination Officer or the Community Affairs Officer and say you want to file an animal abuse complaint. Not anonymous.
-- HSUS dogfighting tip line - animalfighting@hsus.org - https://www.humaneworld.org/en/report-animal-cruelty-contact-form - suspected organised dogfighting or cockfighting that is not happening right now. The HSUS is now called Humane World for Animals; its current reward flyer says to email tips to animalfighting@hsus.org, and it has an online report form. Its old phone number is not a tip line (checked by phone, 2026-11-04). Humane World offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. For fighting in progress call 911. Your identity is protected.
+- HSUS dogfighting tip line - animalfighting@hsus.org - https://www.humaneworld.org/en/report-animal-cruelty-contact-form - suspected organised dogfighting or cockfighting that is not happening right now. The HSUS is now called Humane World for Animals; its current reward flyer says to email tips to animalfighting@hsus.org, and it has an online report form. Humane World offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. For fighting in progress call 911. Your identity is protected.
 - ASPCA Community Engagement - for a struggling owner who needs help with food, vet care or supplies rather than punishment. Agencies and the public can refer, by email to referrals@aspca.org. Helps keep pets with their owners when the problem is hardship, not cruelty.
 
 ## IF PEOPLE ARE AT RISK TOO
@@ -56,3 +56,10 @@ Animal abuse often occurs alongside domestic violence, child abuse and elder abu
 - Safe Havens for Pets (Animal Welfare Institute) - https://www.safehavensforpets.org - every place that keeps pets safe for people leaving abuse, searchable by zip code.
 - Suicide & Crisis Lifeline (988) - 988 - 988lifeline.org - if you or someone else needs mental health or crisis support. Free, confidential, multilingual, 24/7. New York City routes its mental health crisis line through 988. Takes anonymous calls.
 - ASPCA Animal Poison Control - (888) 426-4435 - aspca.org/pet-care/animal-poison-control - if an animal has been poisoned or exposed to a toxin. Staffed 24/7, 365 days a year.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [I saw abuse or neglect](https://ahnow.org/resources.php#abuse)
+- [I saw abuse or neglect online](https://ahnow.org/resources.php#abuseinternet)

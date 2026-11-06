@@ -13,7 +13,7 @@ Every low-cost clinic and trap bank in the directory is listed at the end of thi
 
 ## BEFORE YOU BOOK
 
-- Most free spay/neuter for community (street) cats is only for Certified TNR Caretakers. How to become one is in the guide on community cats: https://nyc-animal-rescue.pages.dev/guides/starting-tnr
+- Most free spay/neuter for community (street) cats is only for Certified TNR Caretakers. How to become one is in the guide on community cats: [Community cats, colonies and starting TNR](/guides/starting-tnr)
 - A cat that cannot be handled must go to a clinic experienced with feral cats, in a covered trap, one cat to a trap. Ask the clinic before you trap.
 - For a pet cat, the ASPCA's free clinics are for owners on public assistance who live in particular zip codes; each clinic's listing says which. The Humane Society of New York does low-cost spay/neuter for any cat or dog.
 

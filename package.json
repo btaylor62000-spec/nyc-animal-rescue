@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit && tsc --noEmit -p functions/tsconfig.json",
     "test": "tsx --test tests/*.test.ts",
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/dev/check-internal-links.mjs",
     "preview": "astro preview",
     "evals": "tsx scripts/run-evals.ts",
     "agent:weekly": "tsx scripts/agent/weekly.ts",

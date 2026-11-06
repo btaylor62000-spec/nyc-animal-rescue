@@ -10,11 +10,17 @@ test('guide listings: every guide named exists and every block has listings', ()
   }
 });
 
-test('guide listings: the pet food list carries the city pantries and links to the same filter', () => {
-  const food = GUIDE_LISTINGS['keeping-your-cat']!.find((b) => b.need === 'food-assistance')!;
-  const ids = listingsFor(food).map((o) => o.id);
-  assert.ok(ids.includes('the-campaign-against-hunger'), 'a city pet food pantry');
-  assert.equal(directoryHref(food), '/directory?need=food-assistance&animal=cat');
+test('guide listings: the city pantries have their own block, every one of them, and the other food list leaves them out', async () => {
+  const { readFileSync } = await import('node:fs');
+  const city = JSON.parse(readFileSync('data/pet-food-pantries.json', 'utf8'));
+  const rows = (city.pantries ?? Object.values(city).find(Array.isArray)) as unknown[];
+  for (const slug of ['keeping-your-cat', 'keeping-your-dog', 'low-cost-dog-care']) {
+    const pantries = GUIDE_LISTINGS[slug]!.find((b) => b.cityPantries)!;
+    assert.equal(listingsFor(pantries).length, rows.length, `${slug}: every pantry on the city's list`);
+    assert.equal(pantries.anchor, 'city-pet-food-pantries');
+    const other = GUIDE_LISTINGS[slug]!.find((b) => b.need === 'food-assistance')!;
+    assert.ok(!listingsFor(other).some((o) => o.id === 'the-campaign-against-hunger'), `${slug}: no duplicates`);
+  }
   assert.ok(listingsFor(GUIDE_LISTINGS['report-animal-abuse']![0]!).some((o) => o.id === 'nyc-311'));
 });
 

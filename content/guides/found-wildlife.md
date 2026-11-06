@@ -11,17 +11,18 @@ _Squirrels, rabbits, raccoons, deer, turtles and seals: who to call, and what no
 
 ## What to do now, step by step
 
-1. **Is it a bird?** Go to [Found an injured bird](/guides/found-an-injured-bird). Birds are handled differently: you catch and box them yourself. Everything below is for other wild animals.
-2. **Keep your hands off it, and keep pets and children away.** Do not pick up a wild mammal with bare hands. **Never give it food or water.**
-3. **Is it really orphaned?** A baby animal on its own is usually not abandoned: its mother may be away for hours. Watch from a distance. It needs help now only if it is hurt, cold, covered in flies, was caught or bitten by an animal, or its mother is known to be dead.
-4. **Call the right place for the animal:**
-    - **Squirrel, opossum, rabbit or other small mammal:** [the Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave, Manhattan, every day 9am–7pm, no appointment, (646) 306-2862. When it is closed, or for a wild baby rabbit or a fox: [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab) in Westchester, (914) 933-7559, any hour (leave a message; they call back).
-    - **Raccoon, skunk or bat:** do not touch it. No rehabber in the city is licensed to take these. Call 311 and ask for the Urban Park Rangers, or 911 if a person is at risk. If a person or a pet has touched it, call a doctor or vet now.
-    - **Deer or coyote:** leave it alone unless it is badly hurt or on a road; then [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 in the daytime, or 911.
+1. **Is it a bird?** Go to [Found an injured bird](/guides/found-an-injured-bird): birds you catch and box yourself.
+2. **Do not touch a wild mammal with bare hands, and keep pets and children away.** **Never give it food or water.**
+3. **Is it really orphaned?** A baby animal on its own is usually not abandoned: its mother may be away for hours. Watch from a distance. It needs help now if it is hurt, cold, covered in flies, was caught or bitten by an animal, or its mother is known to be dead. How to tell, and how to reunite a baby with its mother: [Animal Help Now](https://ahnow.org/resources.php#orphan), [reuniting](https://ahnow.org/resources.php#reunite).
+4. **Find the nearest licensed rehabber who is available now:** [Animal Help Now](/org/animal-help-now-wildlife-emergency-finder), https://ahnow.org. Type the address where the animal is; it lists licensed rehabbers and wildlife hotlines near you, those available at this moment first. Or the [state's list of licensed rehabilitators](/org/nys-dec-find-a-wildlife-rehabilitator).
+5. **Call for the animal you have found:**
+    - **Squirrel, opossum, rabbit or other small mammal:** [the Wild Bird Fund](/org/the-wild-bird-fund) takes small mammals, every day 9am to 7pm, 565 Columbus Ave, Manhattan, (646) 306-2862. At any hour, and for a wild baby rabbit or a fox: [Cottontail Cottage](/org/cottontail-cottage-wildlife-rehab) (Westchester), (914) 933-7559, leave a message and they call back. Also [Wildlife Freedom Foundation](/org/wildlife-freedom-foundation) (Roosevelt Island) and [Volunteers for Wildlife](/org/volunteers-for-wildlife-wildlife-center-of-long-island) (Long Island, weekdays). Baby squirrels: [Animal Help Now](https://ahnow.org/resources.php#babysquirrel).
+    - **Raccoon, skunk or bat:** do not touch it. Call 311 and ask for the Urban Park Rangers, who handle these in the city. [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation) advises on any wild animal at any hour. Animal Help Now lists the licensed rehabbers outside the city who can take raccoons, skunks and bats. If a person or pet has touched it, call a doctor or vet now. Bats: [Animal Help Now](https://ahnow.org/resources.php#findbat).
+    - **Deer, coyote or other large animal that is hurt:** do not go near it, and keep people and dogs back. Call 311 for the Urban Park Rangers; [DEC Region 2](/org/nys-dec-region-2), (718) 482-4900 on weekdays, or DEC's dispatch at any hour, (844) 332-3267. If it is on a road or anyone is in danger, call 911. Injured deer: [Animal Help Now](https://ahnow.org/resources.php#deerneedshelp).
     - **Seal, whale, dolphin or sea turtle on a beach:** keep your distance and keep dogs away. [The stranding hotline](/org/ny-marine-mammal-and-sea-turtle-stranding-hotline), (631) 369-9829, any hour; if it does not answer, [NOAA](/org/noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline), (866) 755-6622.
-    - **A wild turtle that is hurt:** [the New York Turtle and Tortoise Society](/org/new-york-turtle-and-tortoise-society), qanda@nytts.org.
-    - **Anything else, or to find the nearest licensed rehabber:** [Animal Help Now](/org/animal-help-now-wildlife-emergency-finder) (type the address where the animal is; it shows who is available now) or the [state directory](/org/nys-dec-find-a-wildlife-rehabilitator), (844) 332-3267.
-5. **If a rehabber asks you to bring it in,** and it is safe to, put it in a ventilated box in a dark, quiet place in a warm room, and take it straight there.
+    - **A wild turtle:** if it is hurt, [the New York Turtle and Tortoise Society](/org/new-york-turtle-and-tortoise-society), qanda@nytts.org, or Animal Help Now. If it is crossing a road unhurt, help it across in the direction it was going: [Animal Help Now](https://ahnow.org/resources.php#turtle).
+    - **An animal stuck in a glue trap, or with mange:** do not pull it off; call a rehabber. [Glue traps](https://ahnow.org/resources.php#gluetrap), [mange](https://ahnow.org/resources.php#animalmange).
+6. **Nobody answering?** Ask to join [NYC Emergency Animal Rescue](/org/nyc-emergency-animal-rescue) on Facebook (https://www.facebook.com/groups/nycemergencyanimalrescue/) and post the animal, where it is and a photo: members across the city help find a rehabber or transport. Keep calling the numbers above too.
 
 **To report** someone keeping, selling or killing protected wildlife: [the federal tip line](/org/usfws-wildlife-crime-tip-line), (844) 397-8477, anonymously if you like, or [DEC Region 2](/org/nys-dec-region-2).
 
@@ -37,6 +38,29 @@ The rule first: only NYS-licensed wildlife rehabilitators may legally handle wil
 
 - 565 Columbus Avenue (between 87th & 88th), New York, NY 10024. Phone 646-306-2862. Open daily 9am-7pm. NYC's only wildlife rehabilitation & education center. Takes injured/sick/orphaned wild birds AND small mammals (pigeons, waterfowl, raptors, songbirds, squirrels, opossums) 7 days a week; walk-in, no appointment needed (leave a message if arriving near closing). Found-a-bird guidance: wildbirdfund.org/how-to-help/rescue. Instagram @wildbirdfund.
 - LIMITATION: WBF CANNOT take exotic birds (budgerigars, parrots) or domestic birds (chickens, quail, domestic geese, tame doves). It CAN take rock/domestic pigeons. For exotic or domestic birds WBF can't take, Animal Care Centers of NYC (311 / 212-788-4000) is the drop-off (as of 2022): chukars, chickens, domestic geese, budgerigars, etc.
+
+## Finding a licensed rehabber near you
+
+- Most of the city's licensed wildlife rehabilitators are individuals caring for animals at home. They are not listed one by one here; the organizations and hospitals are, below. To reach a home rehabber near you, use Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It shows each licensed rehabber nearby, the animals they take and their phone number (tap a listing), with those available right now first, kept current from the state's licence lists.
+- Or New York State's own register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal.
+
+## The state's register of rehabbers (DEC)
+
+- Searchable by county and species: appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab (overview: dec.ny.gov/nature/wildlife-health/rehabilitators). DEC general/after-hours line: (844) 332-3267. Not every rehabber can accept every animal, and many run at capacity in spring/summer - if one is full, try the next-nearest listing. Species like deer, raccoons, bats and federally protected birds need special permits and have very few licensees.
+
+## A second directory (NYS Wildlife Rehabilitation Council)
+
+- 'Find a Wildlife Professional': nyswrc.org/find-a-wildlife-professional. Lists NYC-area rehabbers including Urban Utopia Wildlife Rehabilitation (NYC) and WINORR - Wildlife In Need Of Rescue and Rehabilitation (NYC / Nassau / Suffolk). Contact details rotate with licensing; confirm current phone/email through this directory or the DEC search.
+
+## More situations - Animal Help Now's guidance, in its own words
+
+- Is it really orphaned? "Always remember that baby wild animals left alone for long periods of time (up to 14 hours) may not have been abandoned. Do not interfere unless you are certain the animal has been abandoned or separated from her mother. ... If the mother is confirmed dead or the baby animal is covered with blood or insects, has been caught by [another animal] or is cold, use Animal Help Now to contact a nearby wildlife rehabilitator."
+- Baby duck, goose or other ground-nesting bird: "If you know the mother is dead, or if the baby is injured, secure the bird in a safe, well-ventilated box or paper sack and call a wildlife rehabilitator right away. If the baby is separated from the mother and you know where the mother is, place the baby close by so the mother can hear her. If the mother does not claim the baby within an hour, secure the bird in a safe, well-ventilated box or paper sack and contact a wildlife rehabilitator."
+- Injured deer: "Adult deer don't handle the stress of capture and captivity well ... If the deer can walk and is in a relatively safe place, simply leave the deer alone. ... do not approach the deer - injured and scared deer could easily injure you or make her injury worse. If she is severely injured or near a busy road, contact a wildlife emergency professional through Animal Help Now for advice, or call 911 or Animal Control."
+- Stuck in a glue trap, or with mange: Animal Help Now has step-by-step guidance for both: https://ahnow.org/resources.php#gluetrap and https://ahnow.org/resources.php#animalmange. Do not pull an animal off a glue trap; call a rehabber.
+- A wild animal used to people: "first and foremost be sure to eliminate any food sources that may be attracting the animal. Observe, too, to ensure the animal does not have dependent young. ... hazing is often the most humane way to help." Keeping a wild animal at home is illegal in New York.
+- A bird with a band on its leg: if it is hurt, get it help first. "The USFWS Migratory Bird Program and researchers rely on the public to report federally banded birds and those with auxiliary markers at www.reportband.gov." Racing-pigeon bands can be reported to the American Racing Pigeon Union.
+- An animal in the road while you are driving: "tap your brakes (so your brake lights flash), sound your horn, and flash your headlights to scare off the animal and to warn other drivers behind and in front of you."
 
 ## Raccoons, skunks and bats: no rehabber in the city may take them
 
@@ -72,26 +96,27 @@ DON'T: try to raise or keep wildlife yourself (illegal and usually fatal for the
 - The Humane Society of New York - Dr. Shackar Malka treats wildlife; 306 East 59th St, Manhattan, (212) 752-4840 (by appointment). A Manhattan option.
 - Note: these are for stabilizing/treating an injured wild animal in coordination with a licensed rehabber - the animal still needs to go to a rehabber for care-and-release. A vet visit is not a substitute for rehabilitation, and most wild animals cannot legally be kept.
 
-## Finding a licensed rehabber near you
+## More answers from Animal Help Now
 
-- Most of the city's licensed wildlife rehabilitators are individuals caring for animals at home. They are not listed one by one here; the organizations and hospitals are, below. To reach a home rehabber near you, use Animal Help Now: https://ahnow.org - type the address where the animal is and tap Wildlife Emergency. It shows each licensed rehabber nearby, the animals they take and their phone number (tap a listing), with those available right now first, kept current from the state's licence lists.
-- Or New York State's own register of licensed rehabilitators (DEC): https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab - choose the county (Bronx; Kings for Brooklyn; New York for Manhattan; Queens; Richmond for Staten Island) and the kind of animal.
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
 
-## The state's register of rehabbers (DEC)
-
-- Searchable by county and species: appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab (overview: dec.ny.gov/nature/wildlife-health/rehabilitators). DEC general/after-hours line: (844) 332-3267. Not every rehabber can accept every animal, and many run at capacity in spring/summer - if one is full, try the next-nearest listing. Species like deer, raccoons, bats and federally protected birds need special permits and have very few licensees.
-
-## A second directory (NYS Wildlife Rehabilitation Council)
-
-- 'Find a Wildlife Professional': nyswrc.org/find-a-wildlife-professional. Lists NYC-area rehabbers including Urban Utopia Wildlife Rehabilitation (NYC) and WINORR - Wildlife In Need Of Rescue and Rehabilitation (NYC / Nassau / Suffolk). Contact details rotate with licensing; confirm current phone/email through this directory or the DEC search.
-
-## More situations - Animal Help Now's guidance, in its own words
-
-- Is it really orphaned? "Always remember that baby wild animals left alone for long periods of time (up to 14 hours) may not have been abandoned. Do not interfere unless you are certain the animal has been abandoned or separated from her mother. ... If the mother is confirmed dead or the baby animal is covered with blood or insects, has been caught by [another animal] or is cold, use Animal Help Now to contact a nearby wildlife rehabilitator."
-- Baby duck, goose or other ground-nesting bird: "If you know the mother is dead, or if the baby is injured, secure the bird in a safe, well-ventilated box or paper sack and call a wildlife rehabilitator right away. If the baby is separated from the mother and you know where the mother is, place the baby close by so the mother can hear her. If the mother does not claim the baby within an hour, secure the bird in a safe, well-ventilated box or paper sack and contact a wildlife rehabilitator."
-- Injured deer: "Adult deer don't handle the stress of capture and captivity well ... If the deer can walk and is in a relatively safe place, simply leave the deer alone. ... do not approach the deer - injured and scared deer could easily injure you or make her injury worse. If she is severely injured or near a busy road, contact a wildlife emergency professional through Animal Help Now for advice, or call 911 or Animal Control."
-- Stuck in a glue trap, or with mange: Animal Help Now has step-by-step guidance for both: https://ahnow.org/resources.php#gluetrap and https://ahnow.org/resources.php#animalmange. Do not pull an animal off a glue trap; call a rehabber.
-- A wild animal used to people: "first and foremost be sure to eliminate any food sources that may be attracting the animal. Observe, too, to ensure the animal does not have dependent young. ... hazing is often the most humane way to help." Keeping a wild animal at home is illegal in New York.
-- A bird with a band on its leg: if it is hurt, get it help first. "The USFWS Migratory Bird Program and researchers rely on the public to report federally banded birds and those with auxiliary markers at www.reportband.gov." Racing-pigeon bands can be reported to the American Racing Pigeon Union.
-- An animal in the road while you are driving: "tap your brakes (so your brake lights flash), sound your horn, and flash your headlights to scare off the animal and to warn other drivers behind and in front of you."
-- Every other situation Animal Help Now answers (baby squirrels, bats, turtles, a pet that caught a wild animal, how to capture and transport, wildlife conflicts and more), each linked to its answer: [More situations, answered by Animal Help Now](/guides/more-situations-animal-help-now).
+- [A baby mammal](https://ahnow.org/resources.php#babymammal)
+- [A reptile](https://ahnow.org/resources.php#reptile)
+- [My cat or dog caught a wild animal](https://ahnow.org/resources.php#catdogattack)
+- [A wild animal used to people](https://ahnow.org/resources.php#habituate)
+- [A wild animal under the porch, in the garden or in the attic](https://ahnow.org/resources.php#wildlifeconflict)
+- [Humane wildlife control standards, and how Animal Help Now rates companies](https://ahnow.org/resources.php#wildlifeconflict1)
+- [More help with a wild animal where you do not want it](https://ahnow.org/resources.php#wildlifeconflict2)
+- [Why humane solutions are better than a pest company](https://ahnow.org/resources.php#wildlifeconflict3)
+- [Are live trapping and relocation humane?](https://ahnow.org/resources.php#wildlifeconflict4)
+- [Before hiring anyone to remove an animal](https://ahnow.org/resources.php#wildlifeconflict5)
+- [Is it all right to feed wildlife?](https://ahnow.org/resources.php#feedingwildlife)
+- [Wildlife in a disaster](https://ahnow.org/resources.php#evacwild)
+- [An animal rescue kit for the car or home](https://ahnow.org/resources.php#rescuekit)
+- [A veterinarian's guide to injured wildlife, for vet clinics](https://ahnow.org/resources.php#vetguide)
+- [Outside the United States](https://ahnow.org/resources.php#nonUSA)
+- [A wildlife conflict outside the United States](https://ahnow.org/resources.php#nonUSAconflict)
+- [How Animal Help Now works, and where its list of rehabbers comes from](https://ahnow.org/resources.php#maintocgeneral)
+- [National animal organizations](https://ahnow.org/resources.php#otherorgs)
+- [Careers helping animals](https://ahnow.org/resources.php#careers)
+- [Animal Help Now posters and share graphics](https://ahnow.org/resources.php#promote)
