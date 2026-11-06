@@ -35,7 +35,7 @@ export function hospitals24(): Array<{ area: string; key: string; list: Hospital
     area,
   });
   const order: Borough[] = ['manhattan', 'brooklyn', 'queens', 'bronx', 'staten-island'];
-  const groups = order.map((b) => ({
+  const groups: Array<{ area: string; key: string; list: Hospital[] }> = order.map((b) => ({
     area: BOROUGH_LABELS[b],
     key: b,
     list: all.filter((o) => !o.outside_nyc && (o.address?.borough ?? o.boroughs[0]) === b).map((o) => toH(o, BOROUGH_LABELS[b])),
