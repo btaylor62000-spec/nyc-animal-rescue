@@ -12,17 +12,22 @@ _How to help an injured or baby wild bird in New York City, and the things that 
 
 ## What to do now, step by step
 
-1. **Does it need help?** A fledgling (fully feathered, hopping, parents nearby) is usually fine: leave it where it is. A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed.
-2. **A hawk, owl or other large bird? Do not pick it up.** Call 311 and ask for the Urban Park Rangers, or ring [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation), the raptor rehabilitators, at any hour. [The Animal Medical Center](/org/animal-medical-center) in Manhattan, open 24 hours, takes raptors and waterfowl.
-3. **Catch it.** Walk up slowly and quietly from behind. Drop a towel or cloth over it and scoop it up, or hold it gently with your hands over its wings.
-4. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out. Keep it somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.
-5. **Take it to [the Wild Bird Fund](/org/the-wild-bird-fund) today.** 565 Columbus Ave (between 87th and 88th), Manhattan. Open every day 9am–7pm, no appointment. (646) 306-2862.
-6. **Cannot get it there?** Email [Urban Wildlife Alliance](/org/urban-wildlife-alliance) at helpline@urbanwildlifenyc.org with a short description, a photo, your phone number and where you are. A volunteer cannot always come, and you may not hear back the same day, so a friend with a car is often faster.
+1. **Does it need help?** A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed. A fully feathered young bird hopping on the ground with its parents nearby is usually a fledgling and fine: watch from a distance. Not sure? [Animal Help Now: I found a baby bird](https://ahnow.org/resources.php#babybird).
+2. **Keep it safe, and keep yourself safe.** For a small bird: walk up slowly and quietly from behind, drop a towel or cloth over it and scoop it up. For a big bird (a hawk, owl, heron, goose or swan), or any bird you are not comfortable handling: do not try to catch it. Keep people and dogs away, keep it in sight, and go straight to step 4. How to capture and carry a wild animal: [Animal Help Now](https://ahnow.org/resources.php#transportwild).
+3. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out, somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.
+4. **Call or take it to a licensed rehabber today.**
+    - **Every day, 9am to 7pm:** [the Wild Bird Fund](/org/the-wild-bird-fund), 565 Columbus Ave (between 87th and 88th), Manhattan. No appointment needed. (646) 306-2862.
+    - **At night, or any time it is closed:** [the Animal Medical Center](/org/animal-medical-center), Manhattan, open 24 hours, takes hawks, owls and other birds of prey and waterfowl (as NYC Bird Alliance's list says). [WINORR](/org/winorr-wildlife-in-need-of-rescue-and-rehabilitation), licensed state and federal rehabbers who advise on any wild animal at any hour. [Save the Animals Rescue Foundation](/org/save-the-animals-rescue-foundation) (Long Island, birds of prey) has a 24-hour answering service.
+    - **Find the nearest licensed rehabber who is available now:** [Animal Help Now](/org/animal-help-now-wildlife-emergency-finder), https://ahnow.org: type the address where the bird is. It lists licensed rehabbers near you, those available at this moment first.
+    - **Other licensed rehabbers that take birds:** [Volunteers for Wildlife](/org/volunteers-for-wildlife-wildlife-center-of-long-island) (Long Island, weekdays 8am to 4pm), [Wildlife Freedom Foundation](/org/wildlife-freedom-foundation) (Roosevelt Island, by email). Ring first: rehabbers fill up, especially in spring and summer.
+5. **Cannot get it there?** Email [Urban Wildlife Alliance](/org/urban-wildlife-alliance) at helpline@urbanwildlifenyc.org with a short description, a photo, your phone number and where you are; a volunteer cannot always come, or answer the same day. At the same time, ask to join [NYC Emergency Animal Rescue](/org/nyc-emergency-animal-rescue) on Facebook (https://www.facebook.com/groups/nycemergencyanimalrescue/) and post the bird, where it is and a photo: members nearby often drive animals to a rehabber.
 
 **Other birds:**
 
 - **A pet or farm bird** (parrot, budgie, chicken, domestic duck or goose, tame dove): the Wild Bird Fund cannot take these. [Animal Care Centers of NYC](/org/animal-care-centers-of-nyc), 311 or (212) 788-4000.
-- **A tame white or oddly coloured pigeon** is a domestic pigeon that cannot survive outside: see [Lost or found a rabbit, bird or reptile](/guides/lost-and-found-exotic).
+- **A tame white or oddly coloured pigeon** is a domestic pigeon that cannot survive outside: [NYC Pigeon Rescue Central](/org/new-york-city-pigeon-rescue-central), or the Wild Bird Fund, which takes pigeons.
+- **A bird stuck in a glue trap:** do not pull it off. Take it to a rehabber as it is. [Animal Help Now: glue traps](https://ahnow.org/resources.php#gluetrap).
+- **A bird with a band on its leg:** get it help first, then report the band: [Animal Help Now](https://ahnow.org/resources.php#reportBandedBird).
 - **Several sick or dead birds in one place:** [the USDA line](/org/usda-report-sick-birds-line), (866) 536-7593, or 311. Do not touch them with bare hands.
 - **Not a bird?** Squirrels, rabbits, raccoons, deer, turtles and seals: [Found injured or orphaned wildlife](/guides/found-wildlife).
 
@@ -31,6 +36,24 @@ The rest of this page explains each step, in the words of the volunteer who wrot
 ## If it was caught or bitten by an animal
 
 If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound. A bite can leave no visible mark and still cause an infection that needs antibiotics from a rehabber or vet the same day. If you are not sure whether it was caught, assume it may have been, and get it to a rehabber immediately.
+
+## Finding a licensed rehabber yourself
+
+<https://www.wildbirdfund.org/how-to-help/rescue/>
+
+Animal help now (find licensed rehabbers anywhere) https://ahnow.org
+
+**DEC Find a Licensed Rehabber search tool**
+
+<https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab>
+
+**List of Licensed rehabbers in NY State**
+
+<https://data.ny.gov/w/p5wx-nivw/caer-yrtv?cur=3dPRTc7TChq>
+
+NY State Wildlife Rehabilitation Council page on finding a wildlife professional
+
+<https://www.nyswrc.org/find-a-wildlife-professional>
 
 ## Is it hurt, or a fledgling that is fine?
 
@@ -101,20 +124,15 @@ If it’s a large bird or bird of prey, don’t try to approach or handle yourse
 
 <https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/nyc-region-animal-hospitals-and-rehabilitation-centers>
 
-## Finding a licensed rehabber yourself
+## More answers from Animal Help Now
 
-<https://www.wildbirdfund.org/how-to-help/rescue/>
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
 
-Animal help now (find licensed rehabbers anywhere) https://ahnow.org
-
-**DEC Find a Licensed Rehabber search tool**
-
-<https://appfactory.dec.ny.gov/SpecialLicensesSearchSystem/rehab>
-
-**List of Licensed rehabbers in NY State**
-
-<https://data.ny.gov/w/p5wx-nivw/caer-yrtv?cur=3dPRTc7TChq>
-
-NY State Wildlife Rehabilitation Council page on finding a wildlife professional
-
-<https://www.nyswrc.org/find-a-wildlife-professional>
+- [A bird hit my window](https://ahnow.org/resources.php#birdhitwindow)
+- [Stopping birds hitting windows at home or work](https://ahnow.org/resources.php#preventbirdhitwindow)
+- [A baby duck, goose or other ground-nesting bird](https://ahnow.org/resources.php#babygroundbird)
+- [A baby owl, hawk or eagle](https://ahnow.org/resources.php#babyowl)
+- [My cat or dog caught a bird](https://ahnow.org/resources.php#catdogattack)
+- [Is it all right to feed wild birds?](https://ahnow.org/resources.php#feedingwildlife)
+- [Can I get help transporting wildlife?](https://ahnow.org/resources.php#transporthelp)
+- [Should I try to rehabilitate it myself?](https://ahnow.org/resources.php#rehab)

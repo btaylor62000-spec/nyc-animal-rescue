@@ -25,3 +25,9 @@
 /org/animal-relief-fund/*  /directory?need=food-assistance 301
 /org/safe-place-for-pets    /org/safe-havens-for-pets/ 301
 /org/safe-place-for-pets/*  /org/safe-havens-for-pets/:splat 301
+/org/meowsquad-nyc    /directory?need=tnr 301
+/org/meowsquad-nyc/*  /directory?need=tnr 301
+/guides/more-situations-animal-help-now    /guides/found-wildlife/ 301
+/guides/more-situations-animal-help-now/   /guides/found-wildlife/ 301
+/org/nyc-feral-cat-initiative    /org/nyc-feral-cat-initiative-bideawee/ 301
+/org/nyc-feral-cat-initiative/*  /org/nyc-feral-cat-initiative-bideawee/:splat 301

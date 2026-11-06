@@ -47,9 +47,6 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
   'exotic-pet-legality': [{ heading: 'Rescues for exotic pets', need: 'adoption', animals: EXOTIC }],
   'found-an-injured-bird': [{ heading: 'Wildlife rehabilitators who take birds', need: 'wildlife-rehab', animals: ['bird-wild', 'pigeon'] }],
   'found-wildlife': [{ heading: 'Wildlife rehabilitators', need: 'wildlife-rehab' }],
-  // Animal Help Now's answers are national; the New York City places to call
-  // for the commonest of them are the wildlife rehabilitators.
-  'more-situations-animal-help-now': [{ heading: 'Wildlife rehabilitators in and near the city', need: 'wildlife-rehab' }],
   'leaving-abuse-with-your-pet': [
     {
       heading: 'Hotlines, shelters and safe-keeping for survivors and their pets',

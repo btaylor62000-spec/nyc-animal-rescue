@@ -33,3 +33,11 @@ If an animal has been hit by a car, is bleeding, is not breathing, is having a s
 ## IF YOU ARE WORRIED ABOUT PAYING
 
 - Go anyway, and ask the hospital about payment plans when you arrive. Help with emergency bills, from hospital funds to charities and payment plans: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [An animal has swallowed poison](https://ahnow.org/resources.php#poison)
+- [I need a vet but cannot get the animal there](https://ahnow.org/resources.php#canttransport)
+- [An animal is in the road](https://ahnow.org/resources.php#road)

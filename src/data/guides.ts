@@ -74,7 +74,7 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   },
   {
     title: 'Wild birds and wildlife',
-    slugs: ['found-an-injured-bird', 'found-wildlife', 'more-situations-animal-help-now'],
+    slugs: ['found-an-injured-bird', 'found-wildlife'],
     places: { label: 'Wildlife rehabbers', href: '/directory?need=wildlife-rehab' },
   },
   {

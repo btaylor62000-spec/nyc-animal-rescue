@@ -39,3 +39,12 @@ What New York City Emergency Management tells pet owners to do before and during
 
 - Go to an emergency hospital and ring on the way: https://nyc-animal-rescue.pages.dev/guides/animal-emergency
 - The American Red Cross has a free Pet First Aid app with step-by-step first aid for common emergencies: search “Red Cross Pet First Aid” in your phone's app store. It is a guide while you get help, not a substitute for a vet.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [Evacuating animals and finding shelter](https://ahnow.org/resources.php#evac)
+- [Lost or found an animal in a disaster](https://ahnow.org/resources.php#evaclostfound)
+- [Preparing your pets for a disaster](https://ahnow.org/resources.php#evacprep)
+- [An emergency supply kit for disasters and evacuations](https://ahnow.org/resources.php#emergencykit)

@@ -57,3 +57,12 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 - Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
 - Or call 311 and ask for current local assistance programmes: in New York City the 211 help-and-referral service is provided through 311.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [Finding a new home for your pet](https://ahnow.org/resources.php#newhome)
+- [Planning for your pets if you can no longer care for them](https://ahnow.org/resources.php#planahead)
+- [Keeping indoor-outdoor cats safely indoors (catios)](https://ahnow.org/resources.php#catio)
+- [Help with a pet in general](https://ahnow.org/resources.php#outsidecolo)

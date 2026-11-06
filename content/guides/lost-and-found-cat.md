@@ -53,3 +53,14 @@ _What to do first, where to post, and who helps with searching._
 - For serious/persistent cases: ask your vet for a referral to a board-certified veterinary behaviorist (Dip ACVB) or Certified Applied Animal Behaviorist (CAAB).
 
 Prevention beats everything: a registered microchip + keeping cats indoors is the single strongest safety net. A loud noise or sudden movement can send an outdoor cat running - think of a cat outside as a toddler alone.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [I lost my pet](https://ahnow.org/resources.php#1)
+- [I found someone's pet](https://ahnow.org/resources.php#2)
+- [Keeping a found pet overnight](https://ahnow.org/resources.php#overnight)
+- [Transporting an animal](https://ahnow.org/resources.php#transport)
+- [An animal is wandering around my neighbourhood](https://ahnow.org/resources.php#wander)
+- [A cat is stuck on a utility pole](https://ahnow.org/resources.php#catpole)

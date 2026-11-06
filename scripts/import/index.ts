@@ -21,7 +21,7 @@ import { MAIN_SOURCES, readDirectory, type DraftOrg } from './directory.ts';
 import { GUIDE_ORG_SOURCES, extractGuideOrgs } from './guide-orgs.ts';
 import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
-import { OVERRIDES, PARENT_PREFIXES } from './overrides.ts';
+import { OVERRIDES, PARENT_PREFIXES, REMOVED } from './overrides.ts';
 import { GUIDANCE_ONLY } from '../../src/data/listing.ts';
 import { attachGeo } from '../geo/attach.ts';
 import { isNycZip } from '../../src/data/geo.ts';
@@ -228,6 +228,12 @@ function main(): void {
     // No prices anywhere a reader can see: src/data/prices.ts says why.
     if (org.status_note) org.status_note = withoutPrices(org.status_note);
   }
+
+  // Organizations taken off the site entirely (overrides.ts, REMOVED).
+  for (const r of REMOVED) {
+    if (!merge.orgs.some((o) => o.id === r.id)) throw new Error(`REMOVED names "${r.id}", which no source produces any more. Delete the entry in overrides.ts.`);
+  }
+  merge.orgs = merge.orgs.filter((o) => !REMOVED.some((r) => r.id === o.id));
 
   // A place on the map for distance sorting, once every address is final.
   const geo = attachGeo(merge.orgs);

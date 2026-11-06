@@ -218,6 +218,10 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   // the merge had folded one of those rows into the Brooklyn entry -- which
   // is why "Brooklyn" described the South Bronx.
   { pattern: /^ASPCA Community Veterinary Clinic$/i, canonicalName: 'ASPCA Community Veterinary Clinics' },
+  // One programme, listed twice (one entry carried only the helpdesk link, the
+  // other Bideawee's page and phone), which also stopped the guides linking
+  // it. Found 2026-11-06 when the reviewer asked for FCI to be linked.
+  { pattern: /^NYC Feral Cat Initiative \(Bideawee\)$/i, canonicalName: 'NYC Feral Cat Initiative (FCI) - Bideawee' },
   { pattern: /^ASPCA Community Veterinary Clinic \(Lewyt\)$/i, canonicalName: 'ASPCA Community Veterinary Clinic - Brooklyn (East New York)' },
 ];
 
@@ -264,3 +268,13 @@ export const AGGREGATOR_DOMAINS = new Set([
   'dec.ny.gov',
   'data.ny.gov',
 ]);
+
+/*
+ * Removed from the site entirely: no listing, no page, no mention in any guide
+ * or in the assistant's corpus. Different from DO_NOT_LIST in
+ * src/data/listing.ts, which keeps a page so that someone arriving from an old
+ * link reads why the group is not listed. A stale entry throws.
+ */
+export const REMOVED: Array<{ id: string; reason: string }> = [
+  { id: 'meowsquad-nyc', reason: 'Removed at the reviewer\'s request, 2026-11-05 and again 2026-11-06.' },
+];

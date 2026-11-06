@@ -4009,12 +4009,6 @@
         "https://www.idealist.org/en/nonprofit/4c09c6984eb54fa283ff9379c70a535a-meowroof-flushing"
       ]
     },
-    "meowsquad-nyc": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
-      "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
-    },
     "metropolitan-council-on-jewish-poverty": {
       "check_status": "ok",
       "last_verified": "2026-11-05",
@@ -4672,23 +4666,6 @@
           "source": "manual",
           "note": "A reviewer: it is a members-only Facebook group where you post an animal emergency for the community to help, any species; it should be available but not at the top. It was tagged as a wildlife rehabilitator, which ranked it among licensed rehabbers. Retagged as a referral and transport channel; marked as checked by a person (a closed group cannot be read automatically).",
           "evidence_url": "phone call by a reviewer, 2026-11-04"
-        }
-      ]
-    },
-    "nyc-feral-cat-initiative": {
-      "last_checked": "2026-11-05",
-      "check_status": "unreachable",
-      "consecutive_failures": 2,
-      "last_verified": "2026-11-04",
-      "change_log": [
-        {
-          "date": "2026-11-04",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-04",
-          "evidence_url": "https://nycfci.happyfox.com/new",
-          "source": "manual",
-          "note": "Read in a browser on 2026-11-04: Bideawee's Feral Cat Initiative help desk form, working. It had been recorded as unreachable."
         }
       ]
     },

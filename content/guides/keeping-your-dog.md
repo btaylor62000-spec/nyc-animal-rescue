@@ -80,3 +80,10 @@ There is no NYC-based senior-dog sanctuary; senior-specialist sanctuaries in nea
 - ACC assists with tenant/landlord and NYCHA matters (admissions@nycacc.org, (212) 788-4000). Pet-Inclusive Housing Initiative (petsandhousing.org) lists pet-friendly housing resources.
 - Free housing legal help: call 311 and ask for tenant legal services, or NYC Housing Court Answers (housingcourtanswers.org, (212) 962-4795).
 - ACC accepts emergency-medical and public-safety cases at any time; call (212) 788-4000. For other situations, the options above may help. Availability changes - confirm current programs when you reach out.
+
+## More answers from Animal Help Now
+
+Animal Help Now (ahnow.org) answers these questions for the whole country. Where it says "animal control" or "your local shelter", the New York City places are in this guide and its listings.
+
+- [Finding a new home for your pet](https://ahnow.org/resources.php#newhome)
+- [Planning for your pets if you can no longer care for them](https://ahnow.org/resources.php#planahead)

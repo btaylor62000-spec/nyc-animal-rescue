@@ -1,11 +1,14 @@
 {
   "id": "nyc-feral-cat-initiative-bideawee",
   "name": "NYC Feral Cat Initiative (FCI) - Bideawee",
-  "aka": [],
+  "aka": [
+    "NYC Feral Cat Initiative (Bideawee)"
+  ],
   "parent_org": null,
   "org_types": [
     "tnr-group",
-    "referral-hub"
+    "referral-hub",
+    "support-program"
   ],
   "animals": [
     "cat"
@@ -60,7 +63,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Citywide TNR backbone. Free certification, free spay/neuter, free trap loans, transport, help desk for Certified TNR Caretakers. Training/support infrastructure, not hands-on rescue. Register colonies here + Cat Stats.: 7-day help desk (nycfci.happyfox.com/new), (212) 330-0033, and email all confirmed current on Bideawee's own site. Intake: FCI Help Desk Other channel: 244 Fifth Ave, Suite R290, NY 10001",
+  "notes": "Citywide TNR backbone. Free certification, free spay/neuter, free trap loans, transport, help desk for Certified TNR Caretakers. Training/support infrastructure, not hands-on rescue. Register colonies here + Cat Stats.: 7-day help desk (nycfci.happyfox.com/new), (212) 330-0033, and email all confirmed current on Bideawee's own site. Intake: FCI Help Desk Other channel: 244 Fifth Ave, Suite R290, NY 10001\n\ntrap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).",
   "type_raw": "referral hub / TNR support (citywide backbone)",
   "confidence": "High",
   "status": "active",

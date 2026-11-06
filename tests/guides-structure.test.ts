@@ -97,8 +97,8 @@ test('the bird and wildlife guides: no personal contacts, no out-of-date route, 
   assert.match(wild, /^## What to do now, step by step/m);
 });
 
-test('every Animal Help Now topic is linked to its answer', () => {
-  const page = GUIDES.find((g) => g.slug === 'more-situations-animal-help-now')!.body;
+test('every Animal Help Now topic is linked to its answer from some guide', () => {
+  const page = GUIDES.map((g) => g.body).join('\n');
   const anchors = new Set([...page.matchAll(/ahnow\.org\/resources\.php#(\w+)/g)].map((m) => m[1]));
   // Each question in the table of contents of https://ahnow.org/resources.php,
   // read 2026-11-05. "maintocgeneral" stands for its questions about itself.
@@ -152,4 +152,19 @@ test('no guide recommends an organization that is closed, moved away or not list
   // And it does stop: a guide naming a closed group throws, with the line.
   const closed = { ...ORGS[0]!, id: 'x-closed', name: 'Example Closed Rescue', status: 'retired' as const };
   assert.throws(() => assertGuideNamesOnlyListed({ slug: 's', source: 'research/x.xlsx', body: '- Example Closed Rescue - call us' }, [...ORGS, closed]), /Example Closed Rescue.*\n.*in the line/s);
+});
+
+test('an organization removed from the site appears nowhere a reader or the assistant can see', async () => {
+  const { REMOVED } = await import('../scripts/import/overrides.ts');
+  const { readdirSync } = await import('node:fs');
+  const places = [
+    ...readdirSync('content/guides').map((f) => `content/guides/${f}`),
+    'data/chat-corpus.json',
+    ...readdirSync('data/orgs').map((f) => `data/orgs/${f}`),
+  ];
+  for (const r of REMOVED) {
+    const word = r.id.split('-')[0]!;
+    const hits = places.filter((p) => readFileSync(p, 'utf8').toLowerCase().includes(word));
+    assert.deepEqual(hits, [], `${r.id} still appears`);
+  }
 });
