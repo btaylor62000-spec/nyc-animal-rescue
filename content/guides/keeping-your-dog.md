@@ -21,7 +21,8 @@ To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new 
 
 ## PET FOOD PANTRIES (specific programs)
 
-- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
+NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. Every pantry on the city's list, with its phone number and borough, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
+
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org, puppykittynyc.org.
 - New York Common Pantry - distributes pet food at events (often with the ASPCA), including in the Bronx. nycommonpantry.org, (917) 720-9700.
@@ -71,7 +72,7 @@ There is no NYC-based senior-dog sanctuary; senior-specialist sanctuaries in nea
 
 ## VET BILLS AND PET INSURANCE
 
-- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: [Help paying for veterinary care](/guides/help-paying-for-care)
 - Or call 311 and ask for current local assistance programmes: in New York City the 211 help-and-referral service is provided through 311.
 
 ## HOUSING SUPPORT

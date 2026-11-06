@@ -1,0 +1,59 @@
+---
+/*
+ * Design option C for the emergency page: the numbers first. Poison control
+ * pinned at the top, then every hospital confirmed open 24 hours, by borough,
+ * each a tap-to-call button. A preview for the reviewer to choose from
+ * (2026-11-06); not linked from the site and not indexed.
+ */
+import Base from '../../layouts/Base.astro';
+import { POISON, AMBULANCE, TOXIC, BRONX, hospitals24 } from '../../data/emergency-page.ts';
+const groups = hospitals24().filter((g) => g.list.length || g.key === 'bronx');
+---
+<Base title="Emergency (option C)" noindex>
+  <div class="wrap em">
+    <p class="em__tag">Design option C · numbers first</p>
+    <h1>Call now</h1>
+    <p class="em__lede">Hurt, bleeding, collapsed or poisoned: <strong>ring a 24-hour hospital and go.</strong> Tap to call.</p>
+    <nav class="em__chips" aria-label="Jump to your borough">
+      {groups.map((g) => <a href={`#${g.key}`}>{g.area}</a>)}
+    </nav>
+    <div class="em__poison">
+      <strong>☠️ Ate or touched something toxic?</strong>
+      {POISON.map((p) => <a class="em__call em__call--amber" href={p.tel}><span>{p.name}</span><b>{p.phone}</b></a>)}
+      <p>Do not make it vomit unless they tell you to. {TOXIC}</p>
+    </div>
+    {groups.map((g) => (
+      <section id={g.key} class="em__group">
+        <h2>{g.area}</h2>
+        {g.key === 'bronx' && <p class="em__note">{BRONX.night}</p>}
+        {g.key === 'bronx' && <a class="em__call" href={BRONX.day.tel}><span>{BRONX.day.name} · {BRONX.day.hours}</span><b>{BRONX.day.phone}</b></a>}
+        {g.list.map((h) => (
+          <a class="em__call" href={h.tel}><span>{h.name}{h.street && <small>{h.street}</small>}</span><b>{h.phone}</b></a>
+        ))}
+      </section>
+    ))}
+    <div class="em__foot">
+      <p>🚑 Cannot get there? <a href={AMBULANCE.tel}>{AMBULANCE.name}, {AMBULANCE.phone}</a>, 24 hours.</p>
+      <p>💵 Worried about paying? Go anyway; ask about payment plans. <a href="/guides/help-paying-for-care">Help paying</a>.</p>
+      <p class="em__note">Hours change: ring before you set off. Every vet, with what is open now nearest to you: <a href="/directory?need=emergency-vet">Find help</a>.</p>
+    </div>
+  </div>
+</Base>
+<style>
+  .em { max-width: 34rem; padding-bottom: 3rem; }
+  .em__tag { margin: 1rem 0 0; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
+  .em h1 { margin: .3rem 0 .2rem; color: #b3261e; }
+  .em__lede { font-size: 1.1rem; margin: 0 0 .8rem; }
+  .em__chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1rem; position: sticky; top: 0; background: var(--bg, var(--surface)); padding: .4rem 0; z-index: 2; }
+  .em__chips a { padding: .45rem .8rem; border-radius: 999px; border: 1px solid var(--border); text-decoration: none; font-weight: 600; font-size: .95rem; color: inherit; background: var(--surface); }
+  .em__poison { border: 2px solid #8a4b00; border-radius: 14px; padding: .9rem; margin-bottom: 1rem; background: var(--surface); }
+  .em__poison p { margin: .4rem 0 0; font-size: .92rem; color: var(--text-muted); }
+  .em__group h2 { font-size: 1.1rem; margin: 1.2rem 0 .45rem; }
+  .em__call { display: flex; justify-content: space-between; align-items: center; gap: .8rem; padding: .8rem .95rem; margin: .4rem 0; border-radius: 12px; background: #b3261e; color: #fff; text-decoration: none; }
+  .em__call span { font-weight: 650; font-size: 1rem; }
+  .em__call small { display: block; font-weight: 400; opacity: .9; font-size: .85rem; }
+  .em__call b { white-space: nowrap; font-size: 1.05rem; }
+  .em__call--amber { background: #8a4b00; }
+  .em__note { color: var(--text-muted); font-size: .92rem; }
+  .em__foot { margin-top: 1.4rem; border-top: 1px solid var(--border); padding-top: .8rem; }
+</style>

@@ -795,7 +795,30 @@ export function buildAllGuidePages(orgs: Org[]): GuidePage[] {
   for (const slug of Object.keys(AHNOW_WEAVE)) {
     if (!pages.some((p) => p.slug === slug)) throw new Error(`AHNOW_WEAVE names a guide that does not exist: ${slug}`);
   }
-  return pages.map(weaveAhnow);
+  // A link to another page of this site reads as that page's name, not as a
+  // path: "[/guides/x](/guides/x)" becomes "[Its title](/guides/x)". The
+  // research wrote these as full addresses on the live site, which also broke
+  // them on every branch preview (2026-11-06).
+  const titles = new Map(pages.map((p) => [`/guides/${p.slug}`, p.title]));
+  const name = (path: string) => {
+    const bare = path.replace(/[#?].*$/, '').replace(/\/$/, '');
+    if (titles.has(bare)) return titles.get(bare)!;
+    if (bare === '/directory') return 'Find help';
+    if (bare === '/contribute') return 'Add a resource';
+    return null;
+  };
+  const unknown: string[] = [];
+  const named = pages.map((p) => ({
+    ...p,
+    markdown: p.markdown.replace(/\[(\/[^\]]*)\]\((\/[^)]*)\)/g, (all, text: string, href: string) => {
+      if (text !== href) return all;
+      const n = name(href);
+      if (!n) unknown.push(`${p.slug}: ${href}`);
+      return n ? `[${n}](${href})` : all;
+    }),
+  }));
+  if (unknown.length) throw new Error(`Guides link to pages that do not exist: ${unknown.join(', ')}`);
+  return named.map(weaveAhnow);
 }
 
 export function writeGuidePages(pages: GuidePage[], dir = 'content/guides'): void {

@@ -13,7 +13,7 @@ This page covers needs that don't fit a rescue directory but come up constantly 
 
 ## EXOTIC BOARDING & PET-SITTING (most dog/cat kennels will NOT take exotics; these specialize):
 
-- AMC and The Center for Avian & Exotic Medicine (https://nyc-animal-rescue.pages.dev/guides/exotic-pet-emergency) and other exotic vets often offer MEDICAL boarding - the safest option for a bird/reptile/small mammal with health needs, since a vet is on site.
+- AMC and The Center for Avian & Exotic Medicine ([Exotic pet emergencies](/guides/exotic-pet-emergency)) and other exotic vets often offer MEDICAL boarding - the safest option for a bird/reptile/small mammal with health needs, since a vet is on site.
 - Long Island Bird & Exotics Vet Clinic (Nassau County; serves all NYC) - medical boarding for birds, reptiles, small mammals and small marsupials in an exotics-only facility (no dogs/cats to stress them); birdexoticsvet.com.
 - Andrew Perrin Animal Services (Manhattan, 10022) - specialized reptile & exotic boarding/care; andrewperrinanimalservices.com.
 - Bird Girl Pet Services (Hicksville, NY) - in-home parrot/reptile/small-mammal boarding with species-appropriate heat/UVB/misting and strict disease protocols (requires an annual exotics-vet wellness exam; note RHDV2 precautions for rabbits); birdgirlpetservices.com. (Does not board ferrets or animals illegal to own locally.)
@@ -38,7 +38,7 @@ This page covers needs that don't fit a rescue directory but come up constantly 
 
 - Keep a species-ready GO-KIT: a secure travel carrier/cage, a portable heat source + battery pack (reptiles/birds can't survive a cold apartment in a winter outage), bottled water, several days of the exact food/hay, meds, and copies of vet records + your exotic vet's after-hours number.
 - Birds are extremely sensitive to smoke, fumes and temperature swings; reptiles depend on heat/UVB; rabbits overheat fast. Plan for power loss and for a place that will take exotics (many human shelters and even pet shelters won't).
-- Microchip/band and photograph each animal now (https://nyc-animal-rescue.pages.dev/guides/lost-and-found-exotic) so you can prove ownership and reunite after an evacuation. NYC emergency info: nyc.gov/emergencymanagement (search 'pets').
+- Microchip/band and photograph each animal now ([Lost or found a rabbit, bird or reptile](/guides/lost-and-found-exotic)) so you can prove ownership and reunite after an evacuation. NYC emergency info: nyc.gov/emergencymanagement (search 'pets').
 
 ## SPECIES HEALTH ALERTS (current, NYC-relevant - these change; verify the latest before acting):
 

@@ -30,9 +30,7 @@ Many owners look for reward-based, force-free methods and ask a trainer about th
 
 - Wag the Dog NYC - reward-based; group reactive-dog class + private work on reactivity, separation anxiety, and fearful dogs. wagthedognyc.com.
 - Instinct Dog Behavior & Training - behavior-focused (leash reactivity, fear); Manhattan + Brooklyn. instinctdogtraining.com.
-
-Empire of the Dog - training + behavior, Brooklyn. Its website showed a security warning on 2026-11-04; ring or search for it before relying on it.
-
+- Empire of the Dog - dog training and behaviour consulting, Brooklyn (Williamsburg), running since 2000: https://www.empireofthedog.com (confirmed working by a reviewer, 2026-11-06).
 - Veterinary behaviorists (for complex cases + medication): find one at dacvb.org.
 
 ## FREE SERVICE DOGS - veterans / people with disabilities (NY-serving)

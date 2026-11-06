@@ -18,7 +18,7 @@ _What to do first, where to post, and who helps with searching._
 - CAT-SPECIFIC SEARCH (cats hide, they don't run far): search silently at DUSK/NIGHT with a flashlight + carrier + smelly food; check under cars, porches, shrubs, basements, alleys, dumpsters. An indoor cat that bolted is usually within a few houses, hiding and silent for days.
 - Indoor escape? Search your OWN home first - behind the stove, in cabinets, closets, under furniture. Put their litter box / a worn t-shirt outside the door; the scent can draw them back.
 - Ask the people who walk your block: mail carriers, delivery drivers, supers, door attendants, restaurant basement staff, park workers. Post flyers at vets, pet stores, and building mailboxes (get permission on private property).
-- Do NOT chase a sighted cat - it makes them bolt. Sit, talk softly, offer food, and consider a humane trap (borrow one: https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks).
+- Do NOT chase a sighted cat - it makes them bolt. Sit, talk softly, offer food, and consider a humane trap (borrow one: [Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)).
 
 ## FOUND A CAT
 
@@ -33,7 +33,7 @@ _What to do first, where to post, and who helps with searching._
 - 24PetWatch (now at petplace.com/pet-microchip-registry; 24Petwatch accounts moved to PetPlace) - North America's largest registry, FREE registration, any chip brand.
 - Petco Love Lost - free, doubles as the lost/found database above.
 - Don't know the chip company? Look up the number at found.org/owners or the AAHA Universal Lookup (petmicrochiplookup.org).
-- Where to GET a cat chipped cheaply: ACC, HSNY, and most low-cost clinics (https://nyc-animal-rescue.pages.dev/guides/low-cost-clinics-and-trap-banks) do microchipping at the spay/neuter visit.
+- Where to GET a cat chipped cheaply: ACC, HSNY, and most low-cost clinics ([Low-cost clinics and trap banks](/guides/low-cost-clinics-and-trap-banks)) do microchipping at the spay/neuter visit.
 
 ## BEHAVIOR / SOCIALIZATION - part A: feral/shy cats & kittens (make them adoptable)
 
@@ -50,7 +50,7 @@ _What to do first, where to post, and who helps with searching._
 - Cat-to-cat aggression / introductions: separate resources (multiple bowls, beds, boxes, perches), go SLOW with a new cat (scent-swap, then feed on opposite sides of a door, then visual, then supervised). Feliway pheromone diffuser can lower tension. Don't soothe an aroused cat - give space (redirected aggression can turn on you).
 - Scratching: it's normal (stretching/marking) - provide tall sturdy posts + horizontal cardboard, don't declaw (harmful; alternatives exist). Reward using the post.
 - Authoritative free libraries: ASPCA Common Cat Behavior Issues (aspca.org/pet-care/cat-care), Pam Johnson-Bennett (catbehaviorassociates.com), Best Friends, Cornell Feline Health Center (https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center).
-- For serious/persistent cases: ask your vet for a referral to a board-certified veterinary behaviorist (Dip ACVB) or Certified Applied Animal Behaviorist (CAAB).
+- For serious/persistent cases: ask your vet for a referral to a board-certified veterinary behaviorist (Dip ACVB) or Certified Applied Animal Behaviorist (CAAB). Find one yourself: board-certified veterinary behaviorists, https://www.dacvb.org; cat behaviour consultants, https://iaabc.org; positive-reinforcement trainers, https://www.ccpdt.org. NYC trainers who work on fear and reactivity, and how to choose one: [Dog behaviour, training and legal questions](/guides/dog-behavior-and-legal).
 
 Prevention beats everything: a registered microchip + keeping cats indoors is the single strongest safety net. A loud noise or sudden movement can send an outdoor cat running - think of a cat outside as a toddler alone.
 

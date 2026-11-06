@@ -1,0 +1,64 @@
+---
+/*
+ * Design option A for the emergency page: two big actions, three things to
+ * remember, and the rest folded away. A preview for the reviewer to choose
+ * from (2026-11-06); not linked from the site and not indexed.
+ */
+import Base from '../../layouts/Base.astro';
+import { POISON, AMBULANCE, TOXIC, BRONX } from '../../data/emergency-page.ts';
+---
+<Base title="Emergency (option A)" noindex>
+  <div class="wrap em">
+    <p class="em__tag">Design option A · two big buttons</p>
+    <h1>Animal emergency</h1>
+    <p class="em__lede">Hurt, bleeding, collapsed, not breathing, hit by a car, or ate something toxic? <strong>Go now.</strong></p>
+
+    <a class="em__big em__big--red" href="/directory?need=emergency-vet">
+      <span class="em__icon" aria-hidden="true">🏥</span>
+      <span><strong>Find a 24-hour vet</strong><small>Open now, nearest to you first</small></span>
+    </a>
+    <a class="em__big em__big--amber" href={POISON[0].tel}>
+      <span class="em__icon" aria-hidden="true">☠️</span>
+      <span><strong>Ate or touched something toxic?</strong><small>Call Poison Control: {POISON[0].phone}</small></span>
+    </a>
+
+    <h2 class="em__h">While you go</h2>
+    <ul class="em__tips">
+      <li><span aria-hidden="true">📞</span>Ring the hospital on the way, so they are ready for you.</li>
+      <li><span aria-hidden="true">🚫</span>Do not make it vomit unless a toxicologist tells you to.</li>
+      <li><span aria-hidden="true">🧴</span>Bring the packaging, plant or pill bottle with you.</li>
+    </ul>
+
+    <h2 class="em__h">If…</h2>
+    <details class="em__more"><summary>🚑 You cannot get it there</summary>
+      <p>{AMBULANCE.name}: <a href={AMBULANCE.tel}>{AMBULANCE.phone}</a>, {AMBULANCE.note}.</p></details>
+    <details class="em__more"><summary>☠️ It swallowed something: the backup line and what is toxic</summary>
+      <p>{POISON.map((p) => <span>{p.name}: <a href={p.tel}>{p.phone}</a> ({p.note}).<br /></span>)}</p>
+      <p>{TOXIC} Poison control works out the treatment and gives it to the hospital, which saves time when you arrive.</p></details>
+    <details class="em__more"><summary>📍 You are in the Bronx</summary>
+      <p>{BRONX.day.name}, {BRONX.day.where}, <a href={BRONX.day.tel}>{BRONX.day.phone}</a>, {BRONX.day.hours}.</p><p>{BRONX.night}</p></details>
+    <details class="em__more"><summary>💵 You are worried about paying</summary>
+      <p>Go anyway, and ask about payment plans when you arrive. Help with emergency bills: <a href="/guides/help-paying-for-care">Help paying for veterinary care</a>.</p></details>
+    <p class="em__small">Hours change: ring before you set off, even to a hospital listed as open 24 hours.</p>
+  </div>
+</Base>
+<style>
+  .em { max-width: 34rem; padding-bottom: 3rem; }
+  .em__tag { margin: 1rem 0 0; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
+  .em h1 { margin: .3rem 0 .4rem; }
+  .em__lede { font-size: 1.15rem; margin: 0 0 1rem; }
+  .em__big { display: flex; gap: .9rem; align-items: center; padding: 1.05rem 1.1rem; border-radius: 14px; margin: .7rem 0; text-decoration: none; color: #fff; font-size: 1.15rem; line-height: 1.25; }
+  .em__big strong { display: block; font-size: 1.25rem; }
+  .em__big small { display: block; font-size: .98rem; opacity: .95; margin-top: .15rem; }
+  .em__big--red { background: #b3261e; }
+  .em__big--amber { background: #8a4b00; }
+  .em__icon { font-size: 2rem; }
+  .em__h { font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+  .em__tips { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+  .em__tips li { display: flex; gap: .7rem; align-items: flex-start; padding: .7rem .85rem; border: 1px solid var(--border); border-radius: 10px; font-size: 1.05rem; background: var(--surface); }
+  .em__tips span { font-size: 1.4rem; line-height: 1; }
+  .em__more { border: 1px solid var(--border); border-radius: 10px; margin: .45rem 0; background: var(--surface); }
+  .em__more summary { padding: .8rem .9rem; font-weight: 650; cursor: pointer; font-size: 1.05rem; }
+  .em__more p { margin: 0 .9rem .8rem; }
+  .em__small { color: var(--text-muted); font-size: .9rem; margin-top: 1rem; }
+</style>

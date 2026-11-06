@@ -1,0 +1,66 @@
+---
+/*
+ * Design option B for the emergency page: "What is happening?" as big tiles;
+ * tap one to see only what to do for it. A preview for the reviewer to choose
+ * from (2026-11-06); not linked from the site and not indexed.
+ */
+import Base from '../../layouts/Base.astro';
+import { POISON, AMBULANCE, TOXIC, BRONX } from '../../data/emergency-page.ts';
+---
+<Base title="Emergency (option B)" noindex>
+  <div class="wrap em">
+    <p class="em__tag">Design option B · tap what is happening</p>
+    <h1>What is happening?</h1>
+    <p class="em__lede">Tap one. Each opens just what to do.</p>
+    <div class="em__grid">
+      <details class="em__tile em__tile--red" open>
+        <summary><span aria-hidden="true">🩸</span>Hurt, bleeding, collapsed or hit by a car</summary>
+        <div>
+          <p><strong>Go to a 24-hour emergency vet now.</strong> Ring on the way so they are ready.</p>
+          <a class="em__btn em__btn--red" href="/directory?need=emergency-vet">Find one open now, nearest first →</a>
+          <p class="em__note">Also: not breathing, a seizure, or cannot pass urine.</p>
+        </div>
+      </details>
+      <details class="em__tile em__tile--amber">
+        <summary><span aria-hidden="true">☠️</span>Ate or touched something toxic</summary>
+        <div>
+          {POISON.map((p) => <a class="em__btn em__btn--amber" href={p.tel}>📞 {p.name} · {p.phone}</a>)}
+          <p><strong>Do not make it vomit</strong> unless a toxicologist tells you to. Bring the packaging, plant or bottle.</p>
+          <p class="em__note">{TOXIC}</p>
+        </div>
+      </details>
+      <details class="em__tile">
+        <summary><span aria-hidden="true">🚑</span>I cannot get it to a vet</summary>
+        <div><a class="em__btn" href={AMBULANCE.tel}>📞 {AMBULANCE.name} · {AMBULANCE.phone}</a><p class="em__note">Runs 24 hours. Ring the hospital you are going to before the pickup.</p></div>
+      </details>
+      <details class="em__tile">
+        <summary><span aria-hidden="true">📍</span>I am in the Bronx</summary>
+        <div><a class="em__btn" href={BRONX.day.tel}>📞 {BRONX.day.name} · {BRONX.day.phone}</a><p class="em__note">{BRONX.day.where}, {BRONX.day.hours}. {BRONX.night}</p></div>
+      </details>
+      <details class="em__tile">
+        <summary><span aria-hidden="true">💵</span>I am worried about the cost</summary>
+        <div><p><strong>Go anyway.</strong> Ask about payment plans when you arrive.</p><a class="em__btn" href="/guides/help-paying-for-care">Help paying for vet care →</a></div>
+      </details>
+    </div>
+    <p class="em__small">Hours change: ring before you set off, even to a hospital listed as open 24 hours.</p>
+  </div>
+</Base>
+<style>
+  .em { max-width: 34rem; padding-bottom: 3rem; }
+  .em__tag { margin: 1rem 0 0; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
+  .em h1 { margin: .3rem 0 .2rem; }
+  .em__lede { font-size: 1.1rem; margin: 0 0 1rem; color: var(--text-muted); }
+  .em__grid { display: grid; gap: .65rem; }
+  .em__tile { border: 2px solid var(--border); border-radius: 14px; background: var(--surface); }
+  .em__tile--red { border-color: #b3261e; }
+  .em__tile--amber { border-color: #8a4b00; }
+  .em__tile summary { display: flex; gap: .8rem; align-items: center; padding: 1rem; font-size: 1.15rem; font-weight: 700; cursor: pointer; list-style: none; }
+  .em__tile summary::-webkit-details-marker { display: none; }
+  .em__tile summary span { font-size: 1.8rem; }
+  .em__tile > div { padding: 0 1rem 1rem; }
+  .em__btn { display: block; padding: .85rem 1rem; border-radius: 10px; margin: .4rem 0; text-decoration: none; font-weight: 700; background: var(--surface-2); color: inherit; font-size: 1.05rem; }
+  .em__btn--red { background: #b3261e; color: #fff; }
+  .em__btn--amber { background: #8a4b00; color: #fff; }
+  .em__note { color: var(--text-muted); font-size: .95rem; }
+  .em__small { color: var(--text-muted); font-size: .9rem; margin-top: 1rem; }
+</style>

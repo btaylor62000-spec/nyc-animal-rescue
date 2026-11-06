@@ -13,7 +13,7 @@ If an animal has been hit by a car, is bleeding, is not breathing, is having a s
 
 ## FIND THE NEAREST HOSPITAL OPEN NOW
 
-- Every emergency hospital in and near the city, open now and nearest to you first: https://nyc-animal-rescue.pages.dev/directory?need=emergency-vet
+- Every emergency hospital in and near the city, open now and nearest to you first: [Find help](/directory?need=emergency-vet)
 - The same hospitals, with their numbers, are listed at the end of this page.
 - Hours change. Ring before you set off, even to a hospital listed as open 24 hours.
 - If you cannot get the animal there yourself, AmbuVet runs a 24-hour pet ambulance: (800) 262-8838. Ring the hospital you are going to before the pickup.
@@ -32,7 +32,7 @@ If an animal has been hit by a car, is bleeding, is not breathing, is having a s
 
 ## IF YOU ARE WORRIED ABOUT PAYING
 
-- Go anyway, and ask the hospital about payment plans when you arrive. Help with emergency bills, from hospital funds to charities and payment plans: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+- Go anyway, and ask the hospital about payment plans when you arrive. Help with emergency bills, from hospital funds to charities and payment plans: [Help paying for veterinary care](/guides/help-paying-for-care)
 
 ## More answers from Animal Help Now
 

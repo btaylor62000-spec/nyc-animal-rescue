@@ -27,7 +27,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 - Kiso's Pet Food Pantry (Brooklyn) - free pet food, focus on senior citizens. facebook.com/Kisos-Pet-Food-Pantry.
 - Feeding Pets of the Homeless - free pet food + vet care via partner sites for people who are homeless or at risk. petsofthehomeless.org.
 - Food Help NYC (finder.nyc.gov/foodhelp) lists food pantries, some of which stock pet food; the donateNYC Directory (donatenyc.org) has a Pet Care/Food category.
-- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with addresses, nearest first: https://nyc-animal-rescue.pages.dev/directory?need=food-assistance
+- NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. Every pantry on the city's list, with its phone number and borough, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
 
 ## SENIOR / DISABILITY / ILLNESS - in-home pet care
 
@@ -55,7 +55,7 @@ Resources for cat owners who need help - food, in-home care, temporary/crisis fo
 
 ## VET BILLS AND PET INSURANCE
 
-- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: https://nyc-animal-rescue.pages.dev/guides/help-paying-for-care
+- Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: [Help paying for veterinary care](/guides/help-paying-for-care)
 - Or call 311 and ask for current local assistance programmes: in New York City the 211 help-and-referral service is provided through 311.
 
 ## More answers from Animal Help Now

@@ -329,28 +329,28 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 16932 |
 | Leaving an abusive home with your pet | 4662 |
-| Pets in a disaster or evacuation | 3991 |
+| Pets in a disaster or evacuation | 4007 |
 | Keeping your pet if you are losing your home | 5929 |
-| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 13396 |
+| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
 | Reporting animal abuse or neglect | 6593 |
-| Animal emergencies and poison control | 2670 |
-| Low-cost clinics and trap banks | 3583 |
-| Community cats, colonies and starting TNR | 7472 |
+| Animal emergencies and poison control | 2648 |
+| Low-cost clinics and trap banks | 3593 |
+| Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |
-| Lost or found a cat | 7197 |
-| Help keeping your cat | 5726 |
-| Help keeping your dog | 8049 |
-| Low-cost vet care, spay/neuter and dog licensing | 7169 |
-| Dog behaviour, training and legal questions | 6132 |
+| Lost or found a cat | 7530 |
+| Help keeping your cat | 5772 |
+| Help keeping your dog | 8094 |
+| Low-cost vet care, spay/neuter and dog licensing | 7506 |
+| Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
 | Breed-specific dog rescue | 19717 |
 | Found injured or orphaned wildlife | 17151 |
-| Exotic pet emergencies | 4073 |
-| What you can legally keep in New York City | 3057 |
+| Exotic pet emergencies | 4076 |
+| What you can legally keep in New York City | 3060 |
 | Help paying for veterinary care | 9163 |
 | Rehoming a rabbit, bird, reptile or small animal | 3454 |
 | Lost or found a rabbit, bird or reptile | 2235 |
-| Exotic pets: boarding, pet sitting and planning ahead | 6411 |
+| Exotic pets: boarding, pet sitting and planning ahead | 6410 |
 
 ### Source tabs not turned into a page (4)
 
