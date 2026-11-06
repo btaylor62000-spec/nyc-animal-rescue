@@ -1,0 +1,60 @@
+---
+/*
+ * "Where are you?" and the hospitals open now nearest to it. One tap on a
+ * borough is enough; a zip or the phone's location narrows it. Used by every
+ * emergency design option so all of them show the same hospitals in the same
+ * order (src/client/emergency.ts).
+ */
+import { emergencyVets } from '../data/emergency-page.ts';
+interface Props { count?: number; heading?: string }
+const { count = 3, heading = 'Where are you?' } = Astro.props;
+const boroughs = [
+  ['manhattan', 'Manhattan'],
+  ['brooklyn', 'Brooklyn'],
+  ['queens', 'Queens'],
+  ['bronx', 'Bronx'],
+  ['staten-island', 'Staten Island'],
+];
+---
+<div class="emf" id="where" data-em data-em-count={count}>
+  <p class="emf__ask">{heading}</p>
+  <div class="emf__boroughs">
+    {boroughs.map(([key, label]) => <button type="button" data-em-borough={key} aria-pressed="false">{label}</button>)}
+  </div>
+  <div class="emf__or">
+    <label>Zip <input data-em-zip inputmode="numeric" pattern="[0-9]*" maxlength="5" autocomplete="postal-code" placeholder="11215" /></label>
+    <button type="button" data-em-locate hidden>📍 Use my location</button>
+  </div>
+  <p class="emf__note" data-em-note hidden aria-live="polite"></p>
+  <div class="emf__list" data-em-list hidden aria-live="polite"></div>
+  <noscript><p><a href="/directory?need=emergency-vet">Every emergency vet, with their numbers</a></p></noscript>
+</div>
+<script type="application/json" id="em-data" set:html={JSON.stringify(emergencyVets())}></script>
+<script>
+  import '../client/emergency.ts';
+</script>
+<style>
+  .emf__ask { font-weight: 750; font-size: 1.15rem; margin: 0 0 .5rem; }
+  .emf__boroughs { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: .45rem; }
+  .emf__boroughs button, .emf__or button {
+    font: inherit; font-weight: 650; font-size: 1.02rem; padding: .75rem .6rem; border-radius: 10px;
+    border: 2px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; min-height: 48px;
+  }
+  .emf__boroughs button[aria-pressed='true'] { border-color: var(--text); background: var(--text); color: var(--bg); }
+  .emf__or { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: .55rem; }
+  .emf__or label { display: flex; align-items: center; gap: .4rem; font-weight: 650; }
+  .emf__or input { font: inherit; font-size: 1.05rem; width: 6.5rem; padding: .65rem .6rem; border-radius: 10px; border: 2px solid var(--border); background: var(--surface); color: var(--text); min-height: 48px; }
+  .emf__note { font-size: .92rem; color: var(--text-muted); margin: .5rem 0 0; }
+  .emf__list { display: grid; gap: .6rem; margin-top: .8rem; }
+  :global(.em-vet) { border: 2px solid var(--border); border-radius: 14px; padding: .8rem .9rem; background: var(--surface); }
+  :global(.em-vet--first) { border-color: var(--urgent); }
+  :global(.em-vet--day) { border-style: dashed; }
+  :global(.em-vet__kicker) { margin: 0 0 .25rem; font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--text-muted); }
+  :global(.em-vet__top) { display: flex; justify-content: space-between; gap: .6rem; align-items: baseline; }
+  :global(.em-vet__name) { font-weight: 750; font-size: 1.1rem; color: var(--text); }
+  :global(.em-vet__mi) { font-weight: 700; white-space: nowrap; }
+  :global(.em-vet__meta) { margin: .2rem 0 .6rem; color: var(--text-muted); font-size: .95rem; }
+  :global(.em-vet__acts) { display: flex; gap: .5rem; }
+  :global(.em-vet__call) { flex: 1; text-align: center; background: var(--urgent); color: var(--urgent-btn-text) !important; text-decoration: none; font-weight: 750; font-size: 1.1rem; padding: .8rem .5rem; border-radius: 10px; white-space: nowrap; }
+  :global(.em-vet__dir) { text-align: center; border: 2px solid var(--border); color: var(--text); text-decoration: none; font-weight: 650; padding: .7rem .7rem; border-radius: 10px; white-space: nowrap; display: flex; align-items: center; }
+</style>
