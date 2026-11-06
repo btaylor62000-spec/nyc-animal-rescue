@@ -7,11 +7,9 @@ interface Props {
   description?: string;
   /** Page path, used to mark the current nav item. */
   path?: string;
-  /** Keep the page out of search engines (design previews). */
-  noindex?: boolean;
 }
 
-const { title, description, path = Astro.url.pathname, noindex = false } = Astro.props;
+const { title, description, path = Astro.url.pathname } = Astro.props;
 const fullTitle = title === 'NYC Animal Rescue' ? title : `${title} — NYC Animal Rescue`;
 
 const nav = [
@@ -32,7 +30,6 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!--
