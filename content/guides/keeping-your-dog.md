@@ -21,7 +21,7 @@ To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new 
 
 ## PET FOOD PANTRIES (specific programs)
 
-NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. Every pantry on the city's list, with its phone number and borough, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
+NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with phone numbers and boroughs, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
 
 - ACC Pet Food Pantry - at the ACC Bronx Resource Center. ACC's own pages no longer mention it (checked 2026-11-04), so email to ask before going. CommunityPets@nycacc.org, (212) 788-4000.
 - PuppyKitty NYC - runs a pet-food bank; 501(c)(3) rescues can request stock, and it distributes to people in need. foodbank@puppykittynyc.org, puppykittynyc.org.

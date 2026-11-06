@@ -65,7 +65,7 @@ Also offers: free dog training, tenant advocacy and pet-housing help, spay/neute
 
 ## PET FOOD / SUPPLIES (dog-specific pantries + directories)
 
-NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at community food pantries across all five boroughs; ring before you go, as the food is new. Every pantry on the city's list, with its phone number and borough, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
+NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs; ring before you go, as the food is new. All 22, with phone numbers and boroughs, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
 
 - ACC - may provide food, harnesses, and other supplies directly; ask Admissions (admissions@nycacc.org).
 - Animal Haven Community Engagement Program - free/subsidized pet supplies incl. food for low-income New Yorkers (animalhaven.org).

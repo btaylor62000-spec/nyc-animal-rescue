@@ -4,7 +4,7 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **417** organizations after de-duplication
+- **418** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
 - **17** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 307 |
-| dog | 249 |
+| cat | 308 |
+| dog | 250 |
 | wildlife | 46 |
 | rabbit | 38 |
 | bird-companion | 35 |
@@ -41,12 +41,12 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 | foster | 105 |
 | tnr | 92 |
 | spay-neuter | 73 |
-| owner-support | 71 |
+| owner-support | 72 |
 | surrender | 60 |
 | low-cost-vet | 57 |
 | referral | 52 |
 | emergency-vet | 45 |
-| food-assistance | 34 |
+| food-assistance | 35 |
 | advocacy | 33 |
 | colony-care | 33 |
 | medical-special-needs | 26 |
@@ -77,7 +77,7 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 | brooklyn | 266 |
 | queens | 222 |
 | manhattan | 218 |
-| bronx | 193 |
+| bronx | 194 |
 | staten-island | 192 |
 
 ### By confidence
@@ -85,14 +85,14 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | High | 206 |
-| Medium | 149 |
+| Medium | 150 |
 | Low | 62 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 400 |
+| active | 401 |
 | retired | 12 |
 | relocated | 3 |
 | hiatus | 2 |
@@ -338,9 +338,9 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |
 | Lost or found a cat | 7530 |
-| Help keeping your cat | 5772 |
-| Help keeping your dog | 8094 |
-| Low-cost vet care, spay/neuter and dog licensing | 7506 |
+| Help keeping your cat | 5748 |
+| Help keeping your dog | 8070 |
+| Low-cost vet care, spay/neuter and dog licensing | 7482 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
 | Breed-specific dog rescue | 19717 |

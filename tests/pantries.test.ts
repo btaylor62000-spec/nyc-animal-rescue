@@ -58,9 +58,15 @@ test('every record warns the pet food is new and says to ring first', () => {
 
 test('the real file carries all 22 programme places', () => {
   const orgs = pantryOrgs();
-  // 22 places, but New York Common Pantry is in the programme twice, so 21.
-  assert.equal(orgs.length, 21);
-  assert.equal(orgs.filter((o) => o.boroughs.length === 2).length, 1);
+  // One record per place on the city's list. New York Common Pantry is on it
+  // twice (East Harlem and Hoe Ave in the Bronx); folding the two into one
+  // record once made the list read 21, so each site is its own record. The
+  // Manhattan one keeps both boroughs only because the workbooks describe the
+  // organization that way and it is the record they merge into.
+  assert.equal(orgs.length, 22);
+  const nycp = orgs.filter((o) => o.name.startsWith('New York Common Pantry'));
+  assert.equal(nycp.length, 2);
+  assert.ok(nycp.some((o) => o.address?.street === '1290 Hoe Ave.' && o.boroughs.join() === 'bronx'));
 });
 
 /*

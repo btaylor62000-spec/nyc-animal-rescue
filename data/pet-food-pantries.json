@@ -28,14 +28,23 @@
       "address": "8 East 109th St.",
       "zip": "10029",
       "borough": "manhattan",
-      "extraBorough": "bronx",
       "website": "https://www.nycommonpantry.org",
       "contactFrom": "https://www.nycommonpantry.org",
       "ownSite": true,
-      "note": "In the programme at two sites: 1290 Hoe Ave., Bronx 10459 and 8 East 109th St., Manhattan 10029.",
+      "note": "One of two New York Common Pantry sites in the programme; the other, in the Bronx, is listed separately.",
       "programmePhone": "9177209700",
-      "extraPhone": "9174232701",
-      "extraPhoneLabel": "Bronx site (1290 Hoe Ave.)"
+      "extraBorough": "bronx"
+    },
+    {
+      "name": "New York Common Pantry - Bronx",
+      "address": "1290 Hoe Ave.",
+      "zip": "10459",
+      "borough": "bronx",
+      "website": "https://www.nycommonpantry.org",
+      "contactFrom": "https://www.nycommonpantry.org",
+      "ownSite": true,
+      "note": "New York Common Pantry's Bronx site; its Manhattan site, at 8 East 109th St., is listed separately.",
+      "programmePhone": "9174232701"
     },
     {
       "name": "Davidson Community Center",
