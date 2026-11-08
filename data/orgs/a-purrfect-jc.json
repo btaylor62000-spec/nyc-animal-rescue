@@ -1,0 +1,75 @@
+{
+  "id": "a-purrfect-jc",
+  "name": "A Purrfect JC",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "07087"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "3476510141",
+      "display": "(347) 651-0141"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adopt@findyourcatpanion.org"
+    }
+  ],
+  "website": "https://www.findyourcatpanion.org/",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7672,
+    "lon": -74.0324,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "Purrfect Catpanion is a 501(c)(3) non-profit organization founded by women with a mission to make the adoption process smoother and easier for both cats and adopters. Our core purpose is to reduce the population and suffering of street cats by rescuing all friendlies from our local communities, providing them with veterinary care, socialization as needed, and ultimately finding them loving forever homes. We currently have rescuers and fosters active in Bayonne, East Newark, Guttenberg, Hoboken, Jersey City, North Bergen, Secaucus, Union City, Weehawken, West New York, and Morris Plains.\n\nAdded by a visitor to this site on 2026-11-08. Their website showed this contact detail on that day, but nobody here has checked it, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.findyourcatpanion.org/"
+  ],
+  "last_verified": null,
+  "section": "Added by visitors",
+  "source_files": [
+    "community"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-08",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.findyourcatpanion.org/",
+      "source": "community",
+      "note": "Submitted by a visitor. The contact given was found on the website given, and nothing else has been checked."
+    }
+  ],
+  "privacy_hold": false,
+  "community": {
+    "added_on": "2026-11-08",
+    "corrected_on": null
+  }
+}

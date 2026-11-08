@@ -4,7 +4,7 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **419** organizations after de-duplication
+- **420** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
 - **17** entries flagged as not currently active
@@ -17,7 +17,7 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 309 |
+| cat | 310 |
 | dog | 250 |
 | wildlife | 46 |
 | rabbit | 38 |
@@ -37,8 +37,8 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 174 |
-| foster | 106 |
+| adoption | 175 |
+| foster | 107 |
 | tnr | 93 |
 | spay-neuter | 73 |
 | owner-support | 72 |
@@ -86,13 +86,13 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | High | 206 |
 | Medium | 150 |
-| Low | 63 |
+| Low | 64 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 402 |
+| active | 403 |
 | retired | 12 |
 | relocated | 3 |
 | hiatus | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (2)
+### Never verified (3)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
