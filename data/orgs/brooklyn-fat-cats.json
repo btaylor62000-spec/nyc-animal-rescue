@@ -1,0 +1,68 @@
+{
+  "id": "brooklyn-fat-cats",
+  "name": "Brooklyn Fat Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": null,
+  "phones": [],
+  "emails": [
+    {
+      "value": "brooklynfatcats@gmail.com"
+    }
+  ],
+  "website": "https://www.brooklynfatcats.com/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "TNR/Rescue group based in Prospect Lefferts Garden/Ditmas Park, Brooklyn \"We are a TNR Certified group of neighbors in the Prospect Lefferts Garden area of Flatbush, Brooklyn. We're trying to create better outcomes for our community cats. Along with our colony feeders, trappers, fosters and adopters - we all do our part to take care of cats. We really are a team!\" Social media: @brooklynfatcats https://www.facebook.com/brooklynfatcats/\n\nAdded by a visitor to this site on 2026-11-08. Their website showed this contact detail on that day, but nobody here has checked it, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.brooklynfatcats.com/"
+  ],
+  "last_verified": null,
+  "section": "Added by visitors",
+  "source_files": [
+    "community"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-08",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.brooklynfatcats.com/",
+      "source": "community",
+      "note": "Submitted by a visitor. Their website answered with an error (530). Nothing here has been checked by a person."
+    }
+  ],
+  "privacy_hold": false,
+  "community": {
+    "added_on": "2026-11-08",
+    "corrected_on": null
+  }
+}

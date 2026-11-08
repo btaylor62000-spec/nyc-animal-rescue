@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-11-06 from the source workbooks and the wildlife guide.
+Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **418** organizations after de-duplication
+- **419** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
 - **17** entries flagged as not currently active
@@ -17,7 +17,7 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 308 |
+| cat | 309 |
 | dog | 250 |
 | wildlife | 46 |
 | rabbit | 38 |
@@ -37,9 +37,9 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 173 |
-| foster | 105 |
-| tnr | 92 |
+| adoption | 174 |
+| foster | 106 |
+| tnr | 93 |
 | spay-neuter | 73 |
 | owner-support | 72 |
 | surrender | 60 |
@@ -47,8 +47,8 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 | referral | 52 |
 | emergency-vet | 45 |
 | food-assistance | 35 |
+| colony-care | 34 |
 | advocacy | 33 |
-| colony-care | 33 |
 | medical-special-needs | 26 |
 | wildlife-rehab | 23 |
 | financial-aid | 23 |
@@ -74,7 +74,7 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 266 |
+| brooklyn | 267 |
 | queens | 222 |
 | manhattan | 218 |
 | bronx | 194 |
@@ -86,13 +86,13 @@ Generated 2026-11-06 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | High | 206 |
 | Medium | 150 |
-| Low | 62 |
+| Low | 63 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 401 |
+| active | 402 |
 | retired | 12 |
 | relocated | 3 |
 | hiatus | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (1)
+### Never verified (2)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
