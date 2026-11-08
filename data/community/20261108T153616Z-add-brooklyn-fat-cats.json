@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "kind": "add",
+  "org_id": "brooklyn-fat-cats",
+  "submitted_at": "2026-11-08T15:36:16.679Z",
+  "submitter_email": null,
+  "reason": null,
+  "fields": {
+    "name": "Brooklyn Fat Cats",
+    "website": "https://www.brooklynfatcats.com/",
+    "email": "brooklynfatcats@gmail.com",
+    "what": "TNR/Rescue group based in Prospect Lefferts Garden/Ditmas Park, Brooklyn \"We are a TNR Certified group of neighbors in the Prospect Lefferts Garden area of Flatbush, Brooklyn. We're trying to create better outcomes for our community cats. Along with our colony feeders, trappers, fosters and adopters - we all do our part to take care of cats. We really are a team!\" Social media: @brooklynfatcats https://www.facebook.com/brooklynfatcats/",
+    "boroughs": [
+      "brooklyn"
+    ],
+    "animals": [
+      "cat"
+    ]
+  },
+  "check": {
+    "page": "https://www.brooklynfatcats.com/",
+    "phone_seen": false,
+    "email_seen": false,
+    "site_read": false,
+    "note": "Their website answered with an error (530).",
+    "checked_at": "2026-11-08T15:36:16.679Z"
+  }
+}
