@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "add",
+  "org_id": "a-purrfect-jc",
+  "submitted_at": "2026-11-08T15:54:54.597Z",
+  "submitter_email": null,
+  "reason": null,
+  "fields": {
+    "name": "A Purrfect JC",
+    "website": "https://www.findyourcatpanion.org/",
+    "phone": "3476510141",
+    "email": "adopt@findyourcatpanion.org",
+    "what": "Purrfect Catpanion is a 501(c)(3) non-profit organization founded by women with a mission to make the adoption process smoother and easier for both cats and adopters. Our core purpose is to reduce the population and suffering of street cats by rescuing all friendlies from our local communities, providing them with veterinary care, socialization as needed, and ultimately finding them loving forever homes. We currently have rescuers and fosters active in Bayonne, East Newark, Guttenberg, Hoboken, Jersey City, North Bergen, Secaucus, Union City, Weehawken, West New York, and Morris Plains.",
+    "zip": "07087",
+    "animals": [
+      "cat"
+    ]
+  },
+  "check": {
+    "page": "https://www.findyourcatpanion.org/",
+    "phone_seen": false,
+    "email_seen": true,
+    "site_read": true,
+    "note": null,
+    "checked_at": "2026-11-08T15:54:54.597Z"
+  }
+}
