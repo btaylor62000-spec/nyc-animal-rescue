@@ -586,6 +586,24 @@ test('a timeout is still just a bad week', () => {
   assert.deepEqual(decide(record, { orgId: record.id, date: DATE, pages: [page] }), { kind: 'unreachable', failures: 1, flagged: false });
 });
 
+/*
+ * 2026-11-04, 11-05 and 11-09 were three runs in six days, two of them
+ * started by hand. Counted per run they read as "three weeks running" and
+ * proposed Greater City Aquarium Society as "may no longer be active".
+ */
+test('failures are counted in weeks, not runs', () => {
+  const page = failedPage({ error: 'fetch failed (UND_ERR_CONNECT_TIMEOUT)' });
+  // Two days after the last failed check: the same week, the count stays.
+  const sameWeek = org({ check_status: 'unreachable', consecutive_failures: 2, last_checked: '2026-09-22' });
+  assert.deepEqual(decide(sameWeek, { orgId: sameWeek.id, date: DATE, pages: [page] }), { kind: 'unreachable', failures: 2, flagged: false });
+  // A week later it counts, and the third week flags it.
+  const nextWeek = org({ check_status: 'unreachable', consecutive_failures: 2, last_checked: '2026-09-17' });
+  assert.deepEqual(decide(nextWeek, { orgId: nextWeek.id, date: DATE, pages: [page] }), { kind: 'unreachable', failures: 3, flagged: true });
+  // A site that answered last time starts at one, however recent.
+  const wasFine = org({ check_status: 'ok', consecutive_failures: 0, last_checked: '2026-09-23' });
+  assert.equal((decide(wasFine, { orgId: wasFine.id, date: DATE, pages: [page] }) as { failures: number }).failures, 1);
+});
+
 test('one readable page outweighs a blocked one', () => {
   const record = org();
   const evidence = evidenceFromHtml(record, fixture('unchanged.html'), DATE);
