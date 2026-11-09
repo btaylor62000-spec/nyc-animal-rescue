@@ -52,7 +52,12 @@ env:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # The 45 minutes this used to allow ran out on 2026-11-09: the check took
+    # 35, the browser install 4, and the link check finished but hung until
+    # GitHub cancelled the job, so nothing was saved. Each long step now has
+    # its own limit below, and the whole job has room for all of them. Free
+    # for a public repository.
+    timeout-minutes: 90
 
     steps:
       - uses: actions/checkout@v4
@@ -80,6 +85,7 @@ jobs:
 
       - name: Run the check
         id: check
+        timeout-minutes: 60
         run: |
           npm run agent:weekly -- \
             ${{ inputs.dry_run == true && '--dry' || '' }} \
@@ -93,8 +99,11 @@ jobs:
         run: npm run import
 
       # Every link on an entry and in a guide. Reports only; /status shows it.
+      # So a link check that runs over its limit is cut short, and the step
+      # after it still saves the week's results.
       - name: Check every link
         if: steps.check.outcome == 'success'
+        timeout-minutes: 15
         run: npm run agent:links
         continue-on-error: true
 

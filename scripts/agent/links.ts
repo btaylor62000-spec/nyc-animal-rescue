@@ -74,3 +74,7 @@ for (const v of ['taken', 'gone', 'parked', 'elsewhere', 'down', 'blocked'] as L
 }
 writeFileSync('build/reports/link-check.md', lines.join('\n'));
 console.log(lines.slice(0, 3).join('\n'));
+
+// The report is written. Do not let a connection a slow site left open hold
+// the run (and the weekly job's commit step behind it) open: see fetch.ts.
+setTimeout(() => process.exit(), 5000).unref();

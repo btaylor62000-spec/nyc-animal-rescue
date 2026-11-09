@@ -27,3 +27,18 @@ test('guide listings: the city pantries have their own block, every one of them,
 test('guide listings: every guide has a list built from the listings', () => {
   for (const slug of GUIDES_BY_SLUG.keys()) assert.ok(GUIDE_LISTINGS[slug], `guide ${slug} has no listings block`);
 });
+
+/*
+ * A block that names entries by id skips any id that is not listed, without
+ * a word. The abuse guide named ASPCA Community Engagement for weeks after
+ * it was deliberately left unlisted, and nobody could tell from the page.
+ */
+test('every entry a guide names by id is a listed entry', () => {
+  for (const [slug, blocks] of Object.entries(GUIDE_LISTINGS)) {
+    for (const b of blocks) {
+      if (!b.ids) continue;
+      const found = new Set(listingsFor(b).map((o) => o.id));
+      for (const id of b.ids) assert.ok(found.has(id), `${slug} / "${b.heading}" names ${id}, which is not listed`);
+    }
+  }
+});
