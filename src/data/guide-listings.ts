@@ -110,6 +110,15 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
       heading: 'Where to report',
       ids: ['nyc-311', 'your-local-nypd-precinct', 'nypd-crime-stoppers', 'hsus-dogfighting-tip-line', 'aspca-community-engagement', 'nyc-domestic-violence-hotline', 'uri-pals'],
     },
+    {
+      heading: 'As well as reporting: the people who make the rules',
+      ids: ['your-city-council-member', 'nyc-council-animal-welfare-caucus', 'nyc-mayors-office-of-animal-welfare'],
+    },
+    {
+      heading: 'A pet shop, breeder, shelter, rescue or other business',
+      ids: ['new-york-state-department-of-agriculture-and-markets', 'better-business-bureau'],
+    },
+    { heading: 'Something online', ids: ['fbi-tips', 'fbi-internet-crime-complaint-center'] },
   ],
   'save-an-at-risk-animal': [{ heading: 'Rescue groups that pull from the city shelter', need: 'advocacy' }],
   'starting-tnr': [

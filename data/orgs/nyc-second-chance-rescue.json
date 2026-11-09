@@ -8,8 +8,7 @@
   ],
   "animals": [
     "cat",
-    "dog",
-    "wildlife"
+    "dog"
   ],
   "needs": [
     "adoption",
@@ -17,9 +16,7 @@
     "medical-special-needs",
     "boarding",
     "advocacy",
-    "wildlife-rehab",
-    "lost-found",
-    "legal"
+    "lost-found"
   ],
   "boroughs": [
     "queens",

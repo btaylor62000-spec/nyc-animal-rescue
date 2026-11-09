@@ -1,0 +1,82 @@
+{
+  "id": "nyc-council-animal-welfare-caucus",
+  "name": "NYC Council Animal Welfare Caucus",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT AS WELL: THE PEOPLE WHO MAKE THE RULES",
+  "phones": [],
+  "emails": [
+    {
+      "value": "kgomez@council.nyc.gov"
+    }
+  ],
+  "website": "https://council.nyc.gov/caucuses/animal-welfare-caucus/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare law and funding. The Council publishes this email as the caucus's contact for questions and concerns.",
+  "type_raw": null,
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": "2026-11-09",
+  "section": "Report animal abuse — WHO TO CONTACT AS WELL: THE PEOPLE WHO MAKE THE RULES",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-09",
+      "evidence_url": "https://council.nyc.gov/caucuses/animal-welfare-caucus/",
+      "source": "manual",
+      "note": "Read on 2026-11-09: 'For any questions or concerns, please reach out to Animal Welfare Caucus Executive Director ... at kgomez@council.nyc.gov.' Email first supplied by a reviewer."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

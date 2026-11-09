@@ -1,0 +1,78 @@
+{
+  "id": "new-york-state-department-of-agriculture-and-markets",
+  "name": "New York State Department of Agriculture and Markets",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT ABOUT A BUSINESS: A PET SHOP, BREEDER, SHELTER OR RESCUE",
+  "phones": [],
+  "emails": [],
+  "website": "https://agriculture.ny.gov/animals/animal-related-complaints",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "https://agriculture.ny.gov/animals/animal-related-complaints - complaints about the care, premises, running or records of a licensed pet dealer (a pet shop or a breeder) or of a shelter or rescue: https://agriculture.ny.gov/animals/pet-dealer-and-shelter-rescue-complaint-form . Complaints about someone buying, selling or rescuing farm animals without a permit, a reportable disease, or a broken quarantine order: https://agriculture.ny.gov/form/domestic-animal-health-permit-bu . Not for cruelty: the Department says cruelty is handled by local police and SPCAs.",
+  "type_raw": null,
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": "2026-11-09",
+  "section": "Report animal abuse — WHO TO CONTACT ABOUT A BUSINESS: A PET SHOP, BREEDER, SHELTER OR RESCUE",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-09",
+      "evidence_url": "https://agriculture.ny.gov/animals/animal-related-complaints",
+      "source": "manual",
+      "note": "Read on 2026-11-09: the page lists the pet dealer/shelter rescue complaint form and the Domestic Animal Health Permit business complaint form, and says animal cruelty is regulated at the municipal level and is not in the Department's jurisdiction. Both form pages load."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

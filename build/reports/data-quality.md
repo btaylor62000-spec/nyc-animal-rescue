@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-11-08 from the source workbooks and the wildlife guide.
+Generated 2026-11-09 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **420** organizations after de-duplication
+- **427** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
 - **17** entries flagged as not currently active
@@ -17,21 +17,21 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 310 |
-| dog | 250 |
-| wildlife | 46 |
-| rabbit | 38 |
-| bird-companion | 35 |
-| farm | 33 |
-| reptile | 33 |
-| small-mammal | 32 |
-| bird-wild | 22 |
-| amphibian | 15 |
-| fish | 15 |
-| equine | 13 |
-| pigeon | 12 |
-| invertebrate | 12 |
-| marine | 11 |
+| cat | 317 |
+| dog | 257 |
+| rabbit | 45 |
+| bird-companion | 42 |
+| wildlife | 42 |
+| farm | 40 |
+| reptile | 40 |
+| small-mammal | 39 |
+| bird-wild | 29 |
+| amphibian | 22 |
+| fish | 22 |
+| equine | 20 |
+| pigeon | 19 |
+| invertebrate | 19 |
+| marine | 18 |
 
 ### By need
 
@@ -43,22 +43,22 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 | spay-neuter | 73 |
 | owner-support | 72 |
 | surrender | 60 |
+| referral | 59 |
 | low-cost-vet | 57 |
-| referral | 52 |
 | emergency-vet | 45 |
 | food-assistance | 35 |
 | colony-care | 34 |
 | advocacy | 33 |
 | medical-special-needs | 26 |
-| wildlife-rehab | 23 |
+| legal | 25 |
 | financial-aid | 23 |
 | education | 23 |
 | senior | 21 |
-| legal | 20 |
 | lost-found | 18 |
 | sanctuary | 18 |
 | boarding | 17 |
 | behavior-training | 16 |
+| wildlife-rehab | 16 |
 | microchip | 13 |
 | transport | 13 |
 | breed-specific | 11 |
@@ -74,25 +74,25 @@ Generated 2026-11-08 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 267 |
-| queens | 222 |
-| manhattan | 218 |
-| bronx | 194 |
-| staten-island | 192 |
+| brooklyn | 274 |
+| queens | 229 |
+| manhattan | 225 |
+| bronx | 201 |
+| staten-island | 199 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 206 |
-| Medium | 150 |
+| High | 211 |
+| Medium | 152 |
 | Low | 64 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 403 |
+| active | 410 |
 | retired | 12 |
 | relocated | 3 |
 | hiatus | 2 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (3)
+### Never verified (5)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -332,8 +332,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Pets in a disaster or evacuation | 4007 |
 | Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
-| Reporting animal abuse or neglect | 6593 |
-| Animal emergencies and poison control | 2648 |
+| Reporting animal abuse or neglect | 10339 |
+| Animal emergencies and poison control | 2794 |
 | Low-cost clinics and trap banks | 3593 |
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |

@@ -1,0 +1,78 @@
+{
+  "id": "fbi-internet-crime-complaint-center",
+  "name": "FBI Internet Crime Complaint Center (IC3)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT ABOUT SOMETHING ONLINE",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.ic3.gov",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "https://www.ic3.gov - online scams, for example paying for a puppy or kitten that never existed, or for \"shipping\" that never came. IC3 is for fraud and scams only; it sends other crimes to tips.fbi.gov.",
+  "type_raw": null,
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": "2026-11-09",
+  "section": "Report animal abuse — WHO TO CONTACT ABOUT SOMETHING ONLINE",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-09",
+      "evidence_url": "https://www.ic3.gov/",
+      "source": "manual",
+      "note": "Read on 2026-11-09: IC3 is 'the central hub for reporting cyber-enabled crime', run by the FBI; other types of crimes 'should be reported at tips.fbi.gov'."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

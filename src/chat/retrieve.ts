@@ -50,6 +50,13 @@ export interface Signals {
   fighting: boolean;
   /** Escaping an abusive partner or household with a pet. */
   fleeing: boolean;
+  /**
+   * Which of the narrower complaint routes the question is about, if any: a
+   * business ("pet shop", "breeder"), something online, a scam, or elected
+   * officials. Each route has its own office (state, FBI, Council), and none
+   * of them is where an ordinary cruelty report goes.
+   */
+  complaint: { business: boolean; online: boolean; scam: boolean; officials: boolean; asked: boolean };
   /** Saving an animal from the city shelter's urgent (at-risk) list. */
   atRisk: boolean;
   /**
@@ -170,6 +177,30 @@ const ABUSE_RE =
 const AT_RISK_RE =
   /\b(at[- ]?risk list|urgent list|euthanasia list|kill list|death row|new hope|((acc|shelter|animal care cent\w*)\b.{0,60}\b(euthan\w*|put down|put to sleep|kill\w*|at[- ]risk))|((euthan\w*|put down|kill\w*)\b.{0,60}\b(acc|shelter)))\b/i;
 
+/*
+ * The narrower routes on the abuse guide. Without these, every cruelty
+ * question listed the Better Business Bureau and the FBI above the local
+ * precinct, and a question about a filthy pet shop got an animal hospital.
+ */
+const BUSINESS_RE = /\b(pet ?(store|shop)s?|breeders?|puppy mills?|kennels?|groomers?|grooming|boarding|daycare|business\w*|stores?|shops?|sold (me|us)|bought|seller|rescues?|shelters?)\b/i;
+/** Words that make a question about a business or an official a complaint. */
+// Not care words such as "sick" or "hurt": "my cat is sick and the shelter is
+// closed" is a question about care, and was read as a complaint.
+const COMPLAINT_WORDS_RE = /\b(complain\w*|report\w*|conditions|filthy|dirty|unsanitary|cramped|overcrowded|terrible|awful|horrible|disgusting|mistreat\w*|neglect\w*)\b/i;
+const ONLINE_RE = /\b(online|on line|internet|video\w*|posts?|posted|posting|social media|facebook|instagram|tiktok|youtube|twitter|reddit|website|web ?site|craigslist)\b/i;
+const SCAM_RE = /\b(scam\w*|fraud\w*|fake (breeder|seller|rescue|listing)|never (came|arrived|showed|delivered)|took (my|our) money|stole (my|our) money)\b/i;
+const OFFICIALS_RE = /\b(council ?(member|woman|man)?|councilmember|elected|representatives?|politicians?|legislat\w*|lawmakers?|mayor'?s? office|mayor|officials?)\b/i;
+/** Each narrower route's records, and what in the question calls for them. */
+const COMPLAINT_ROUTES: Record<string, Exclude<keyof Signals['complaint'], 'asked'>> = {
+  'new-york-state-department-of-agriculture-and-markets': 'business',
+  'better-business-bureau': 'business',
+  'fbi-tips': 'online',
+  'fbi-internet-crime-complaint-center': 'scam',
+  'your-city-council-member': 'officials',
+  'nyc-council-animal-welfare-caucus': 'officials',
+  'nyc-mayors-office-of-animal-welfare': 'officials',
+};
+
 /** Organised fighting has its own tip line; ordinary cruelty goes to 311 first. */
 const FIGHTING_RE = /\b(dog ?fight\w*|cock ?fight\w*|animal fighting|fighting (dogs|roosters|ring)|peleas? de (perros|gallos))\b/i;
 
@@ -247,6 +278,22 @@ export function extractSignals(question: string): Signals {
     needs.add('boarding');
   }
   const fighting = FIGHTING_RE.test(q);
+  // A business or an official only counts when the question is a complaint:
+  // "I bought a puppy from a breeder" is not one, "the breeder keeps them in
+  // filthy cages" is.
+  // Someone leaving an abusive home is never sent to a complaints office.
+  const complaining = !fleeing && (COMPLAINT_WORDS_RE.test(q) || abuse);
+  const complaint = {
+    business: BUSINESS_RE.test(q) && complaining,
+    online: ONLINE_RE.test(q),
+    scam: !fleeing && SCAM_RE.test(q),
+    officials: !fleeing && OFFICIALS_RE.test(q),
+    asked: false,
+  };
+  // A scam is reported, like cruelty, even though nobody hurt an animal; so
+  // is a complaint about a business or to an official.
+  complaint.asked = complaint.scam || complaint.business || complaint.officials;
+  if (complaint.asked) needs.add('legal');
   const atRisk = AT_RISK_RE.test(q);
   // The shelter's list is not a vet emergency: drop what "urgent" and
   // "euthanasia" pulled in, so the answer is the guide and the rescue groups.
@@ -280,6 +327,7 @@ export function extractSignals(question: string): Signals {
     emergency,
     abuse,
     fighting,
+    complaint,
     fleeing,
     atRisk,
     housing,
@@ -438,7 +486,8 @@ export class Retriever {
     let score = 0;
 
     // 1. The one thing they need most.
-    const primary = primaryNeed(s.needs, s.abuse);
+    const reporting = s.abuse || s.complaint.asked;
+    const primary = primaryNeed(s.needs, reporting);
     if (primary && org.needs.includes(primary)) score += 25;
     if (s.needs.length) {
       score += s.needs.filter((n) => n !== primary && org.needs.includes(n)).length * 4;
@@ -456,15 +505,26 @@ export class Retriever {
      *     The support lines are still retrieved, just below; a question that
      *     mentions someone being at risk scores them up on its own terms.
      */
-    if (s.abuse && org.needs.includes('legal') && org.needs.includes('referral')) score += 12;
-    if (s.abuse && !org.needs.includes('legal')) score -= 15;
+    if (reporting && org.needs.includes('legal') && org.needs.includes('referral')) score += 12;
+    if (reporting && !org.needs.includes('legal')) score -= 15;
     /*
      * 1c. Who comes first. 311 is the front door for any cruelty report in
      *     the city (the ASPCA's own NYC page says so); the dogfighting tip
      *     line is for organised fighting and was leading every abuse answer.
      */
     if (s.abuse && org.id === 'nyc-311') score += 10;
-    if (s.abuse && /dogfight/.test(org.id) && !s.fighting) score -= 12;
+    if (reporting && /dogfight/.test(org.id) && !s.fighting) score -= 12;
+    /*
+     * 1d. The narrower routes come up when the question is about their
+     *     situation, and otherwise sit below 311, the precinct and Crime
+     *     Stoppers: someone whose neighbour is beating a dog needs the police,
+     *     not the Better Business Bureau.
+     */
+    const route = COMPLAINT_ROUTES[org.id];
+    if (route) {
+      if (s.complaint[route] && (route !== 'online' || s.abuse)) score += 30;
+      else score -= 14;
+    }
     // Pet-friendly domestic violence shelters and foster programmes carry
     // both tags; the hotlines carry owner-support with no animal care at all.
     if (s.fleeing && org.needs.includes('owner-support') && (org.needs.includes('boarding') || /violence/.test(org.id))) score += 20;
@@ -605,7 +665,8 @@ export class Retriever {
      * word "animal", so without this the question "how do I report animal
      * abuse?" answered with a wild bird hospital. A reviewer hit exactly that.
      */
-    if (s.abuse) return 'report-animal-abuse';
+    // A complaint about a business, a scam or to an official is on the same guide.
+    if (s.abuse || s.complaint.asked) return 'report-animal-abuse';
 
     // Losing a home is the situation, whatever the animal: the answer is
     // intake, the emotional-support request and somewhere for the pet.

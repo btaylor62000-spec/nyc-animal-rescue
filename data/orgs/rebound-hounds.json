@@ -7,8 +7,7 @@
     "rescue-foster"
   ],
   "animals": [
-    "dog",
-    "wildlife"
+    "dog"
   ],
   "needs": [
     "adoption",

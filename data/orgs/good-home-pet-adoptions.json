@@ -11,11 +11,9 @@
     "support-program"
   ],
   "animals": [
-    "cat",
-    "wildlife"
+    "cat"
   ],
   "needs": [
-    "wildlife-rehab",
     "adoption",
     "surrender",
     "tnr",

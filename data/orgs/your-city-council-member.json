@@ -1,0 +1,78 @@
+{
+  "id": "your-city-council-member",
+  "name": "Your City Council member",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "hotline",
+    "government"
+  ],
+  "animals": [
+    "cat",
+    "dog",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "bird-wild",
+    "pigeon",
+    "reptile",
+    "amphibian",
+    "fish",
+    "farm",
+    "equine",
+    "wildlife",
+    "marine",
+    "invertebrate"
+  ],
+  "needs": [
+    "legal",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "WHO TO CONTACT AS WELL: THE PEOPLE WHO MAKE THE RULES",
+  "phones": [],
+  "emails": [],
+  "website": "https://council.nyc.gov/districts/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "https://council.nyc.gov/districts/ - the elected member for the district where it happened (not necessarily where you live). Enter the address on that page to find the district; each member's page gives the office's email and phone. Each of the 51 districts has its own member.",
+  "type_raw": null,
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": "2026-11-09",
+  "section": "Report animal abuse — WHO TO CONTACT AS WELL: THE PEOPLE WHO MAKE THE RULES",
+  "source_files": [
+    "research/NYC_Animal_Abuse_Reporting.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-09",
+      "evidence_url": "https://council.nyc.gov/districts/",
+      "source": "manual",
+      "note": "Read on 2026-11-09: all 51 districts with each member's email; find your member by entering an address and borough."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}
