@@ -40,7 +40,12 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "WHO TO CONTACT AS WELL: THE PEOPLE WHO MAKE THE RULES",
-  "phones": [],
+  "phones": [
+    {
+      "value": "311",
+      "display": "311"
+    }
+  ],
   "emails": [
     {
       "value": "animalwelfare@cityhall.nyc.gov"
@@ -52,7 +57,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - the Mayor's office that coordinates city agencies on animal welfare. The email was supplied by a reviewer: nyc.gov does not let our checks read its pages. The contact page also has a web form.",
+  "notes": "animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - the Mayor's office that coordinates city agencies on animal welfare. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply; for anything urgent call 311 or 911. The contact page also has a web form.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -66,7 +71,17 @@
   "last_checked": null,
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "emails",
+      "from": null,
+      "to": "animalwelfare@cityhall.nyc.gov",
+      "evidence_url": "https://www.nyc.gov/site/animalwelfare/about/contact-us.page",
+      "source": "manual",
+      "note": "Screenshot sent by a reviewer on 2026-11-09: in a public comment thread, the head of the Mayor's Office of Animal Welfare wrote that they would prefer requests for help go to animalwelfare@cityhall.nyc.gov, to help streamline, and that it is a one-person office. Their personal work address in the same reply is deliberately not published. nyc.gov itself refuses our checks."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

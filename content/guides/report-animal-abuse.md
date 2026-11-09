@@ -52,7 +52,7 @@ These offices do not investigate cruelty and cannot send anyone out. Contact the
 
 - Your City Council member - https://council.nyc.gov/districts/ - the elected member for the district where it happened (not necessarily where you live). Enter the address on that page to find the district; each member's page gives the office's email and phone. Each of the 51 districts has its own member.
 - NYC Council Animal Welfare Caucus - kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare law and funding. The Council publishes this email as the caucus's contact for questions and concerns.
-- NYC Mayor's Office of Animal Welfare - animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - the Mayor's office that coordinates city agencies on animal welfare. The email was supplied by a reviewer: nyc.gov does not let our checks read its pages. The contact page also has a web form.
+- NYC Mayor's Office of Animal Welfare - animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - the Mayor's office that coordinates city agencies on animal welfare. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply; for anything urgent call 311 or 911. The contact page also has a web form.
 
 ## WHO TO CONTACT ABOUT A BUSINESS: A PET SHOP, BREEDER, SHELTER OR RESCUE
 

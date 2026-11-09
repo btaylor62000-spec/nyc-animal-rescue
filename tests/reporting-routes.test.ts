@@ -32,8 +32,19 @@ test('taking in "cruelty cases" does not make a rescue somewhere to report cruel
 test('the narrower reporting routes say what they are not for', () => {
   assert.match(org('new-york-state-department-of-agriculture-and-markets').notes, /Not for cruelty/);
   assert.match(org('fbi-internet-crime-complaint-center').notes, /fraud and scams only/);
-  assert.match(org('nyc-mayors-office-of-animal-welfare').notes, /supplied by a reviewer/);
+  assert.match(org('nyc-mayors-office-of-animal-welfare').notes, /said publicly that requests for help should go to this address/);
   for (const id of ['your-city-council-member', 'nyc-council-animal-welfare-caucus', 'nyc-mayors-office-of-animal-welfare', 'better-business-bureau', 'fbi-tips', 'fbi-internet-crime-complaint-center']) {
     assert.ok(org(id).needs.includes('legal'), `${id} is not findable as a way to report`);
+  }
+});
+
+/*
+ * The office's head gave her own work address in the same public reply that
+ * asked for requests to go to the shared one. Only the shared one is listed.
+ * (privacy-holds.json scrubs phone numbers only, so this is held here.)
+ */
+test("the Mayor's Office is reached only through its shared address", () => {
+  for (const f of ['data/chat-corpus.json', 'content/guides/report-animal-abuse.md', 'data/orgs/nyc-mayors-office-of-animal-welfare.json']) {
+    assert.ok(!/aftaylor/i.test(readFileSync(f, 'utf8')), `a personal address reached ${f}`);
   }
 });

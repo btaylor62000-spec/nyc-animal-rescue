@@ -7902,6 +7902,19 @@
           "note": "Read on 2026-11-09: 'For any questions or concerns, please reach out to Animal Welfare Caucus Executive Director ... at kgomez@council.nyc.gov.' Email first supplied by a reviewer."
         }
       ]
+    },
+    "nyc-mayors-office-of-animal-welfare": {
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "emails",
+          "from": null,
+          "to": "animalwelfare@cityhall.nyc.gov",
+          "evidence_url": "https://www.nyc.gov/site/animalwelfare/about/contact-us.page",
+          "source": "manual",
+          "note": "Screenshot sent by a reviewer on 2026-11-09: in a public comment thread, the head of the Mayor's Office of Animal Welfare wrote that they would prefer requests for help go to animalwelfare@cityhall.nyc.gov, to help streamline, and that it is a one-person office. Their personal work address in the same reply is deliberately not published. nyc.gov itself refuses our checks."
+        }
+      ]
     }
   }
 }
