@@ -235,7 +235,11 @@ export async function fetchPage(url: string, fetcher: typeof fetch = fetch): Pro
     // Node's fetch reports every network failure as "fetch failed" and puts
     // the reason in \`cause\`. The reason is the whole point: ENOTFOUND means
     // the domain no longer exists, a timeout means a bad afternoon.
-    const cause = (err as { cause?: { code?: string } }).cause?.code;
+    // Some causes carry no code, only a message -- a redirect loop is
+    // "redirect count exceeded" -- and without it a live site that loops for
+    // a client with no cookies looked exactly like a dead one.
+    const c = (err as { cause?: { code?: string; message?: string } }).cause;
+    const cause = c?.code ?? c?.message;
     return { ...base, error: cause ? `${(err as Error).message} (${cause})` : (err as Error).message };
   } finally {
     limit.done();

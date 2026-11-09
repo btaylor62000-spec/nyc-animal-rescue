@@ -39,7 +39,7 @@
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": "WHO TO CONTACT AS WELL: THE MAYOR'S OFFICE AND YOUR COUNCIL MEMBER",
+  "region_note": "WHO TO CONTACT",
   "phones": [],
   "emails": [
     {
@@ -52,14 +52,14 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare law and funding. The Council publishes this email as the caucus's contact for questions and concerns.",
+  "notes": "kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare. The Council publishes this email for questions and concerns.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
   "last_verified": "2026-11-09",
-  "section": "Report animal abuse — WHO TO CONTACT AS WELL: THE MAYOR'S OFFICE AND YOUR COUNCIL MEMBER",
+  "section": "Report animal abuse — WHO TO CONTACT",
   "source_files": [
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],

@@ -48,7 +48,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "https://www.bbb.org/file-a-complaint - a complaint about any business, for example a groomer, a boarding kennel, a pet shop or a breeder. For a seller who turned out to be fake, use the same page's \"Report a Scam\" option.",
+  "notes": "https://www.bbb.org/file-a-complaint - a complaint about any business, such as a groomer, boarding kennel, pet shop or breeder. For a seller who turned out to be fake, choose \"Report a Scam\".",
   "type_raw": null,
   "confidence": "High",
   "status": "active",

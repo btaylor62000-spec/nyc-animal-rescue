@@ -117,7 +117,7 @@ export const GUIDE_PAGES: TabSpec[] = [
   {
     file: WB_ABUSE, tab: 'Report animal abuse', slug: 'report-animal-abuse',
     title: 'Reporting animal abuse or neglect',
-    summary: 'Who to call in New York City, what to write down, and why it is the police rather than the ASPCA.',
+    summary: 'Who to call in New York City, and what to do.',
     topics: ['animal abuse', 'animal cruelty', 'neglect', 'report abuse', 'dogfighting', 'hoarding', '311'],
   },
   {
