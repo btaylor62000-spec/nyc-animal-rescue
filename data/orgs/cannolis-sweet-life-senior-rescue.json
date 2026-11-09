@@ -53,13 +53,13 @@
   "source_urls": [
     "https://www.sweetliferescue.com"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "SENIOR DOG RESCUE (Long Island, takes senior dogs)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-09",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

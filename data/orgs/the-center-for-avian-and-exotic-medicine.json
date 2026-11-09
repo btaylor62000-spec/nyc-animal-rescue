@@ -56,12 +56,12 @@
   "source_urls": [
     "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "Exotic-vet & emergency care — Dedicated exotics day-practice (routine + sick visits, not 24/7):",
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

@@ -60,12 +60,12 @@
     "https://www.adoptapet.com/shelter/119551-nyc-teens-for-animals-inc-brooklyn-new-york",
     "https://www.guidestar.org/profile/82-2535966"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

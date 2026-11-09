@@ -61,12 +61,12 @@
   "source_urls": [
     "https://www.petfinder.com/member/us/ny/new-york/animal-lighthouse-rescue-ny1199/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "MANHATTAN (Manhattan-based dog rescues)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

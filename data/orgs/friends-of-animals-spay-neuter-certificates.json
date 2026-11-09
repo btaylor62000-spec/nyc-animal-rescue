@@ -58,13 +58,13 @@
   "source_urls": [
     "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-09",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-09",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

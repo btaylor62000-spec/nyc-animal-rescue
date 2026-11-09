@@ -44,12 +44,12 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "Lost-found & microchip — MICROCHIP REGISTRIES - register the chip (implanting is not registering)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

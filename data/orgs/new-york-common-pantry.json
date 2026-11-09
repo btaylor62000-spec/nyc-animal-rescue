@@ -54,14 +54,14 @@
   "source_urls": [
     "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "City pet food pantry programme",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "pet-food-pantries"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

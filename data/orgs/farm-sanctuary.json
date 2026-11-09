@@ -54,13 +54,13 @@
   "source_urls": [
     "https://www.farmsanctuary.org"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "FARMED-ANIMAL SANCTUARY (upstate New York, takes farmed animals from the region)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-09",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

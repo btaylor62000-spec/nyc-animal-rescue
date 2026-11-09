@@ -47,9 +47,9 @@
   "hours": null,
   "notes": "NYC aquarium society founded 1922 (member of the Northeast Council of Aquarium Societies); monthly meetings at Queens Botanical Garden with a fish/plant/equipment auction open to the public. A Queens-side option for responsibly rehoming aquarium fish and getting care advice. Never release aquarium fish into local waters. Phone: (via greatercity.org) Email: (via greatercity.org) Intake: Rehome fish/plants at the monthly auction (1st Wednesday, except Jan/Feb, Queens Botanical Garden; auction open to all). Details at Other channel: greatercity.org",
   "type_raw": "Aquarium hobbyist society - rehoming via monthly auctions",
-  "confidence": "Medium",
-  "status": "active",
-  "status_note": null,
+  "confidence": "Low",
+  "status": "verify",
+  "status_note": "This organization may no longer be active — their website has not responded for several weeks.",
   "source_urls": [
     "https://www.petfishplants.com/local-aquarium-fish-clubs-in-new-york/"
   ],
@@ -58,10 +58,27 @@
   "source_files": [
     "research/NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
-  "check_status": "unreachable",
-  "consecutive_failures": 2,
-  "change_log": [],
+  "last_checked": "2026-11-09",
+  "check_status": "needs-review",
+  "consecutive_failures": 3,
+  "change_log": [
+    {
+      "date": "2026-11-09",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "Low",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    },
+    {
+      "date": "2026-11-09",
+      "field": "status",
+      "from": "active",
+      "to": "verify",
+      "source": "weekly-check",
+      "note": "Their website has been unreachable for 3 weekly checks running."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

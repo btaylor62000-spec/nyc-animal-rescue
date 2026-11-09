@@ -42,12 +42,12 @@
   "source_urls": [
     "https://rabbit.org"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "RABBIT CARE - national information, from the Mayor's Alliance rabbits page",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

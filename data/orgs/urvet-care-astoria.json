@@ -52,12 +52,12 @@
   "source_urls": [
     "https://urvetcare.com/locations/astoria/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "EMERGENCY VETS - 24/7 hospitals missing from the site, found on the Mayor's Alliance emergency vet list (2026-11-03). Each confirmed in a browser on its own site that day.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

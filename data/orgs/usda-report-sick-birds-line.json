@@ -47,12 +47,12 @@
   "source_urls": [
     "https://www.aphis.usda.gov/sites/default/files/card-report-sick-birds.pdf"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-09",
   "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-09",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
