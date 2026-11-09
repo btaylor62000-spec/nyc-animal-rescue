@@ -8,11 +8,9 @@
   ],
   "animals": [
     "dog",
-    "cat",
-    "wildlife"
+    "cat"
   ],
   "needs": [
-    "wildlife-rehab",
     "adoption",
     "foster"
   ],

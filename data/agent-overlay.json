@@ -7827,6 +7827,94 @@
           "note": "Confirmed by the reviewer on its own Petfinder and Instagram pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
         }
       ]
+    },
+    "new-york-state-department-of-agriculture-and-markets": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://agriculture.ny.gov/animals/animal-related-complaints",
+          "source": "manual",
+          "note": "Read on 2026-11-09: the page lists the pet dealer/shelter rescue complaint form and the Domestic Animal Health Permit business complaint form, and says animal cruelty is regulated at the municipal level and is not in the Department's jurisdiction. Both form pages load."
+        }
+      ]
+    },
+    "better-business-bureau": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://www.bbb.org/file-a-complaint",
+          "source": "manual",
+          "note": "Read on 2026-11-09: 'Start Complaint' for a problem with a business; 'Report a Scam' (BBB Scam Tracker) for fake businesses and impostors."
+        }
+      ]
+    },
+    "fbi-internet-crime-complaint-center": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://www.ic3.gov/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: IC3 is 'the central hub for reporting cyber-enabled crime', run by the FBI; other types of crimes 'should be reported at tips.fbi.gov'."
+        }
+      ]
+    },
+    "your-city-council-member": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://council.nyc.gov/districts/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: all 51 districts with each member's email; find your member by entering an address and borough."
+        }
+      ]
+    },
+    "nyc-council-animal-welfare-caucus": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://council.nyc.gov/caucuses/animal-welfare-caucus/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: 'For any questions or concerns, please reach out to Animal Welfare Caucus Executive Director ... at kgomez@council.nyc.gov.' Email first supplied by a reviewer."
+        }
+      ]
+    },
+    "nyc-mayors-office-of-animal-welfare": {
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "emails",
+          "from": null,
+          "to": "animalwelfare@cityhall.nyc.gov",
+          "evidence_url": "https://www.nyc.gov/site/animalwelfare/about/contact-us.page",
+          "source": "manual",
+          "note": "Screenshot sent by a reviewer on 2026-11-09: in a public comment thread, the head of the Mayor's Office of Animal Welfare wrote that they would prefer requests for help go to animalwelfare@cityhall.nyc.gov, to help streamline, and that it is a one-person office. Their personal work address in the same reply is deliberately not published. nyc.gov itself refuses our checks."
+        }
+      ]
     }
   }
 }

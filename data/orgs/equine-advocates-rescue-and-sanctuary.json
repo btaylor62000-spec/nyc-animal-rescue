@@ -10,11 +10,9 @@
   ],
   "animals": [
     "equine",
-    "farm",
-    "wildlife"
+    "farm"
   ],
   "needs": [
-    "wildlife-rehab",
     "surrender",
     "sanctuary",
     "education"

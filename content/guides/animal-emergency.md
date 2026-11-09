@@ -1,15 +1,15 @@
 ---
 title: "Animal emergencies and poison control"
 slug: animal-emergency
-summary: "Where to go right now if an animal is injured, collapsed, bleeding, or has swallowed something toxic."
+summary: "Where to go right now if you think an animal is hurt, very ill, poisoned or in danger."
 topics: ["emergency","poisoning","24 hour vet","hit by car","bleeding"]
 source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Emergency & poison control"
 ---
 # Animal emergencies and poison control
 
-_Where to go right now if an animal is injured, collapsed, bleeding, or has swallowed something toxic._
+_Where to go right now if you think an animal is hurt, very ill, poisoned or in danger._
 
-If an animal has been hit by a car, is bleeding, is not breathing, is having a seizure, cannot pass urine, has collapsed or has eaten something toxic, take it to a 24-hour emergency hospital now. Ring on the way so they are ready for you. This page is for medical emergencies; a rescue group cannot help in time.
+If you think an animal is hurt, very ill or in danger, take it to a 24-hour emergency hospital now. For example: it has been hit by a car, is bleeding, is struggling to breathe, is having a seizure, cannot pass urine, has collapsed, or has eaten something toxic - or anything else about it worries you. If you are not sure, ring a 24-hour hospital and ask. Ring on the way so they are ready for you. This page is for medical emergencies; a rescue group cannot help in time.
 
 ## FIND THE NEAREST HOSPITAL OPEN NOW
 

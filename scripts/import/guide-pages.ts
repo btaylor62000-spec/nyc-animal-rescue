@@ -123,7 +123,7 @@ export const GUIDE_PAGES: TabSpec[] = [
   {
     file: WB_CAT, tab: 'Emergency & poison control', slug: 'animal-emergency',
     title: 'Animal emergencies and poison control',
-    summary: 'Where to go right now if an animal is injured, collapsed, bleeding, or has swallowed something toxic.',
+    summary: 'Where to go right now if you think an animal is hurt, very ill, poisoned or in danger.',
     topics: ['emergency', 'poisoning', '24 hour vet', 'hit by car', 'bleeding'],
     // Every hospital is listed, with hours and open-now, below the guide.
     omitSections: /^(BROOKLYN|MANHATTAN|QUEENS|STATEN ISLAND|BRONX) - /,

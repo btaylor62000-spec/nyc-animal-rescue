@@ -7,16 +7,13 @@
     "rescue-foster"
   ],
   "animals": [
-    "dog",
-    "wildlife"
+    "dog"
   ],
   "needs": [
-    "wildlife-rehab",
     "adoption",
     "surrender",
     "foster",
     "medical-special-needs",
-    "legal",
     "referral"
   ],
   "boroughs": [
