@@ -48,7 +48,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "https://www.ic3.gov - online scams, for example paying for a puppy or kitten that never existed, or for \"shipping\" that never came. IC3 is for fraud and scams only; it sends other crimes to tips.fbi.gov.",
+  "notes": "https://www.ic3.gov - online scams, such as paying for a puppy or kitten that never existed. IC3 is for fraud and scams only.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",

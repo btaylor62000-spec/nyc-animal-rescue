@@ -107,18 +107,15 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
   'rehoming-an-exotic-pet': [{ heading: 'Rescues that take exotic pets', need: 'surrender', animals: EXOTIC }],
   'report-animal-abuse': [
     {
-      heading: 'Where to report',
-      ids: ['nyc-311', 'your-local-nypd-precinct', 'nypd-crime-stoppers', 'hsus-dogfighting-tip-line', 'nyc-domestic-violence-hotline', 'uri-pals'],
-    },
-    {
-      heading: "As well as reporting: the Mayor's Office and your Council member",
-      ids: ['nyc-mayors-office-of-animal-welfare', 'your-city-council-member', 'nyc-council-animal-welfare-caucus'],
+      heading: 'Who to call',
+      ids: ['nyc-311', 'nyc-mayors-office-of-animal-welfare', 'your-city-council-member', 'nyc-council-animal-welfare-caucus', 'nypd-crime-stoppers', 'your-local-nypd-precinct', 'hsus-dogfighting-tip-line'],
     },
     {
       heading: 'A pet shop, breeder, shelter, rescue or other business',
       ids: ['new-york-state-department-of-agriculture-and-markets', 'better-business-bureau'],
     },
     { heading: 'Something online', ids: ['fbi-tips', 'fbi-internet-crime-complaint-center'] },
+    { heading: 'If people are at risk too', ids: ['nyc-domestic-violence-hotline', 'uri-pals'] },
   ],
   'save-an-at-risk-animal': [{ heading: 'Rescue groups that pull from the city shelter', need: 'advocacy' }],
   'starting-tnr': [

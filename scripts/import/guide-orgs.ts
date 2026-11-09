@@ -57,6 +57,11 @@ export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
     file: WB_ABUSE,
     tab: 'Report animal abuse',
     animals: ANY_ANIMAL,
+    // Its referral email could not be confirmed on the ASPCA's own pages
+    // (2026-11-04), so it stays in the guide and out of the directory. Until
+    // 2026-11-09 that rested on its old wording containing "keep", which
+    // POINTER_RE happened to skip; rewording the guide listed it.
+    skip: /^ASPCA Community Engagement\b/,
     rules: [
       {
         pattern: /WHO TO CONTACT/i,

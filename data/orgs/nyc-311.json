@@ -53,7 +53,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "311 - portal.311.nyc.gov - ongoing abuse or neglect, non-emergency; routes to your NYPD precinct. The online report lets you upload photos, video and documents. Takes anonymous reports.",
+  "notes": "311 - portal.311.nyc.gov - any abuse or neglect that is not happening right now. Goes to your local police precinct. You can add photos and stay anonymous.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
