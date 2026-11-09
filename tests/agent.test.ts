@@ -546,6 +546,23 @@ test('a site whose robots.txt turns us away is blocked, never counted as down', 
   assert.equal(decide(record, { orgId: record.id, date: DATE, pages: [page] }).kind, 'blocked');
 });
 
+/*
+ * NYPD Crime Stoppers redirects anything without cookies back to itself
+ * (?AspxAutoDetectCookieSupport=1). The server is answering; counted as
+ * down, it was proposed as "may no longer be active" on 2026-11-09.
+ */
+test('a site that answers only with endless redirects is blocked, not down, and gets a browser look', () => {
+  const page = failedPage({ error: 'fetch failed (redirect count exceeded)' });
+  assert.equal(pageProblem(page), 'blocked');
+  assert.equal(needsBrowser(page), true);
+  const record = org({ consecutive_failures: 2, check_status: 'unreachable' });
+  const d = decide(record, { orgId: record.id, date: DATE, pages: [page] });
+  assert.equal(d.kind, 'blocked');
+  const patch = toPatch(record, d, DATE);
+  assert.notEqual(patch.patch.status, 'verify');
+  assert.ok(!patch.log.some((l) => l.field === 'status'), 'it must not touch the status');
+});
+
 test("Google's robot check is blocked, not a move to google.com", () => {
   const page = failedPage({ status: 200, ok: true, offDomain: true, url: 'http://example.blogspot.com/contact', finalUrl: 'http://www.google.com/sorry/index?continue=x' });
   assert.equal(pageProblem(page), 'blocked');

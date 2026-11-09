@@ -218,6 +218,13 @@ const BOT_WALL =
 export type PageProblem = 'gone' | 'blocked' | 'down' | null;
 
 const ROBOTS_REFUSED = /robots\.txt asks us not to/;
+/*
+ * The server answered, but only with redirects that never end. NYPD Crime
+ * Stoppers does this to anything that does not keep cookies (an ASP.NET
+ * cookie check, ?AspxAutoDetectCookieSupport=1). Counted as down, it was
+ * about to be marked "may no longer be active" on 2026-11-09.
+ */
+const REDIRECT_LOOP = /redirect count exceeded|too many redirects|ERR_TOO_MANY_REDIRECTS/i;
 const GOOGLE_SORRY = /^https?:\/\/(www\.)?google\.com\/sorry\//i;
 
 /**
@@ -229,6 +236,8 @@ const GOOGLE_SORRY = /^https?:\/\/(www\.)?google\.com\/sorry\//i;
 export function needsBrowser(page: PageEvidence): boolean {
   if (page.rendered) return false;
   if (page.error && (ROBOTS_REFUSED.test(page.error) || DNS_GONE.test(page.error))) return false;
+  // A browser keeps cookies, so it gets past a cookie-check redirect loop.
+  if (page.error && REDIRECT_LOOP.test(page.error)) return true;
   if ([401, 403, 429].includes(page.status)) return true;
   if (page.ok && page.text.length < 1500) return true;
   return false;
@@ -242,6 +251,7 @@ export function pageProblem(page: PageEvidence): PageProblem {
   // it as a failure nearly marked Stray from the Heart and NYC Second Chance
   // "may no longer be active" on 2026-11-04, when both were answering.
   if (page.error && ROBOTS_REFUSED.test(page.error)) return 'blocked';
+  if (page.error && REDIRECT_LOOP.test(page.error)) return 'blocked';
   // Blogger sends robots to Google's "unusual traffic" page; Big City Little
   // Kitty was reported as having moved to google.com because of it.
   if (GOOGLE_SORRY.test(page.finalUrl)) return 'blocked';
