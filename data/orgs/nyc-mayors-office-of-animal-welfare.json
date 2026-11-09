@@ -40,12 +40,7 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "WHO TO CONTACT",
-  "phones": [
-    {
-      "value": "311",
-      "display": "311"
-    }
-  ],
+  "phones": [],
   "emails": [
     {
       "value": "animalwelfare@cityhall.nyc.gov"
@@ -57,7 +52,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - after 311 or 911, to bring city agencies together on it. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply.",
+  "notes": "animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - once you have reported it, to bring city agencies together on it. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",

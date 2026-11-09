@@ -31,7 +31,7 @@ If something worries you, report it. You do not need proof, and you can stay ano
 ## WHO TO CONTACT
 
 - NYC 311 - 311 - portal.311.nyc.gov - any abuse or neglect that is not happening right now. Goes to your local police precinct. You can add photos and stay anonymous.
-- NYC Mayor's Office of Animal Welfare - animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - after 311 or 911, to bring city agencies together on it. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply.
+- NYC Mayor's Office of Animal Welfare - animalwelfare@cityhall.nyc.gov - https://www.nyc.gov/site/animalwelfare/about/contact-us.page - once you have reported it, to bring city agencies together on it. The office's head has said publicly that requests for help should go to this address. It is a very small office, so do not expect a quick reply.
 - Your City Council member - https://council.nyc.gov/districts/ - the member for the district where it happened. Enter the address to find them; their page gives the office's email and phone.
 - NYC Council Animal Welfare Caucus - kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare. The Council publishes this email for questions and concerns.
 - NYPD Crime Stoppers - (800) 577-8477 - crimestoppers.nypdonline.org - an anonymous tip, by phone or online. Also reachable as 800-577-TIPS.

@@ -48,3 +48,9 @@ test("the Mayor's Office is reached only through its shared address", () => {
     assert.ok(!/aftaylor/i.test(readFileSync(f, 'utf8')), `a personal address reached ${f}`);
   }
 });
+
+// "after 311 or 911" in its description once gave the Mayor's Office a phone
+// number of 311 in every contacts box: it has no phone line of its own.
+test("the Mayor's Office listing carries no phone number it does not have", () => {
+  assert.deepEqual(org('nyc-mayors-office-of-animal-welfare').phones, []);
+});
