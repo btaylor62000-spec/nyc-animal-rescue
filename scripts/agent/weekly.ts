@@ -298,4 +298,13 @@ async function main(): Promise<void> {
 const invokedDirectly =
   process.argv[1] !== undefined && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 
-if (invokedDirectly) void main().finally(() => closeBrowser());
+// Every result is on disk once main() settles. A connection a slow site never
+// closed must not hold the run open past that: on 2026-11-09 one did, and
+// GitHub cancelled the job before the results were committed. The timer is
+// unref'd, so a run with nothing left open exits at once as before, and the
+// exit code (the safety valve's) is kept.
+if (invokedDirectly) {
+  void main()
+    .finally(() => closeBrowser())
+    .finally(() => setTimeout(() => process.exit(), 5000).unref());
+}

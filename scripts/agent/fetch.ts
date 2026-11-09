@@ -128,11 +128,15 @@ async function loadRobots(origin: string, fetcher: typeof fetch): Promise<Robots
   if (cached) return cached;
 
   let robots: Robots = { disallow: [], crawlDelayMs: AGENT.perHostDelayMs };
+  const limit = deadline();
   try {
-    const res = await withTimeout(fetcher(`${origin}/robots.txt`, { headers: { 'user-agent': AGENT.userAgent } }));
+    const res = await fetcher(`${origin}/robots.txt`, { headers: { 'user-agent': AGENT.userAgent }, signal: limit.signal });
     if (res.ok) robots = parseRobots(await res.text());
+    else await res.body?.cancel().catch(() => {});
   } catch {
     // No robots.txt, or it could not be read: the standard says carry on.
+  } finally {
+    limit.done();
   }
   robotsCache.set(origin, robots);
   return robots;
@@ -149,11 +153,18 @@ async function waitTurn(host: string, delayMs: number): Promise<void> {
   lastRequestAt.set(host, Date.now());
 }
 
-function withTimeout(promise: Promise<Response>, ms = AGENT.timeoutMs): Promise<Response> {
-  return Promise.race([
-    promise,
-    new Promise<Response>((_, reject) => setTimeout(() => reject(new Error(`timed out after ${ms}ms`)), ms)),
-  ]);
+/*
+ * One deadline for the whole page, headers and body alike, that really stops
+ * the request. The old version only stopped *waiting* for the headers: the
+ * request carried on, and reading the body had no limit at all, so a site
+ * that sent its page slowly kept the run alive after every result was
+ * written. On 2026-11-09 that held the link check open until GitHub
+ * cancelled the job at 45 minutes, before anything was saved.
+ */
+function deadline(ms = AGENT.timeoutMs): { signal: AbortSignal; done: () => void } {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(new Error(`timed out after ${ms}ms`)), ms);
+  return { signal: controller.signal, done: () => clearTimeout(timer) };
 }
 
 /**
@@ -189,13 +200,13 @@ export async function fetchPage(url: string, fetcher: typeof fetch = fetch): Pro
 
   await waitTurn(host, robots.crawlDelayMs);
 
+  const limit = deadline();
   try {
-    const res = await withTimeout(
-      fetcher(url, {
-        headers: { 'user-agent': AGENT.userAgent, accept: 'text/html,application/xhtml+xml' },
-        redirect: 'follow',
-      }),
-    );
+    const res = await fetcher(url, {
+      headers: { 'user-agent': AGENT.userAgent, accept: 'text/html,application/xhtml+xml' },
+      redirect: 'follow',
+      signal: limit.signal,
+    });
 
     const finalUrl = res.url || url;
     const type = res.headers.get('content-type') ?? '';
@@ -205,6 +216,9 @@ export async function fetchPage(url: string, fetcher: typeof fetch = fetch): Pro
     if (res.ok && isHtml) {
       const text = await res.text();
       html = text.length > AGENT.maxBytes ? text.slice(0, AGENT.maxBytes) : text;
+    } else {
+      // An unread body keeps its connection open.
+      await res.body?.cancel().catch(() => {});
     }
 
     return {
@@ -217,10 +231,13 @@ export async function fetchPage(url: string, fetcher: typeof fetch = fetch): Pro
       html,
     };
   } catch (err) {
+    if (limit.signal.aborted) return { ...base, error: `timed out after ${AGENT.timeoutMs}ms` };
     // Node's fetch reports every network failure as "fetch failed" and puts
     // the reason in \`cause\`. The reason is the whole point: ENOTFOUND means
     // the domain no longer exists, a timeout means a bad afternoon.
     const cause = (err as { cause?: { code?: string } }).cause?.code;
     return { ...base, error: cause ? `${(err as Error).message} (${cause})` : (err as Error).message };
+  } finally {
+    limit.done();
   }
 }
