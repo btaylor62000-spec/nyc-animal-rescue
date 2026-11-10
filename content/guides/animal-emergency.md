@@ -33,6 +33,7 @@ If you think an animal is hurt, very ill or in danger, take it to a 24-hour emer
 ## IF YOU ARE WORRIED ABOUT PAYING
 
 - Go anyway, and ask the hospital about payment plans when you arrive. Help with emergency bills, from hospital funds to charities and payment plans: [Help paying for veterinary care](/guides/help-paying-for-care)
+- At the Animal Medical Center (AMC), ask straight away about its own funds, such as Charlie's Patient Assistance Fund for emergency care: the application must reach AMC within 5 business days of treatment starting. funds@amcny.org, https://www.amcny.org/financial-assistance/
 
 ## More answers from Animal Help Now
 

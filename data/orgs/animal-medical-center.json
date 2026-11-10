@@ -53,7 +53,12 @@
     }
   ],
   "website": "https://www.amcny.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.amcny.org/financial-assistance/",
+      "label": "Financial assistance"
+    }
+  ],
   "social": [],
   "geo": {
     "lat": 40.76043,
@@ -65,7 +70,7 @@
     "zip": "10065"
   },
   "hours": "Open 24h",
-  "notes": "510 E 62nd St 10065 - (212) 838-8100 - 24/7, the major NYC specialty/ER hospital.\n\n510 East 62nd St (btwn FDR & York), NY 10065. ER (212) 838-8100; appointments (212) 838-7053. amcny.org. Open 24h; NYC's largest specialty + ER hospital.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org - (212) 838-8100 - amcny.org/financial-assistance.\n\nCharlie's Patient Assistance Fund (free/subsidized EMERGENCY care), Buddy Fund (cancer), Cooper Fund (radiation), SAVE (seniors 65+), plus military/adopted-pet discounts. Pet must be seen at AMC; apply within 5 business days of treatment. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nHoney Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.\n\nKiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.\n\nCharlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).\n\nHelp paying, from its financial assistance page (read 2026-11-04): Charlie's Patient Assistance Fund; the Buddy Fund for cancer treatment; SAVE for people aged 65 and over; and others for particular animals. The pet is treated at AMC, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting. Email funds@amcny.org.",
+  "notes": "510 East 62nd St (between FDR Drive and York Ave), New York, NY 10065. Open 24 hours; New York City's largest specialty and emergency animal hospital. Emergency (212) 838-8100; appointments (212) 838-7053.\n\nHelp paying (read on its financial assistance page, 2026-11-10): AMC has its own funds for people who cannot afford treatment there, for any animal: Charlie's Patient Assistance Fund (free or reduced-cost emergency care), the Buddy Fund (cancer), the Monty and Minny Fund (rehabilitation), SAVE (owners 65 and over), the Honey Bunny and Rou Fund (rabbits and German Shepherds), the Kiki White Umbrella Cockatoo Avian Fund (birds), and free care for active guide dogs. An AMC vet must see the animal first, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting, so ask as soon as you arrive. Its Client Services Managers can also set up a payment plan for what a fund does not cover. Email funds@amcny.org.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
@@ -99,6 +104,15 @@
       "evidence_url": "https://www.amcny.org/financial-assistance/",
       "source": "manual",
       "note": "Funds and the 5-business-day deadline from its own financial assistance page."
+    },
+    {
+      "date": "2026-11-10",
+      "field": "notes",
+      "from": null,
+      "to": "one paragraph from the financial assistance page",
+      "evidence_url": "https://www.amcny.org/financial-assistance/",
+      "source": "manual",
+      "note": "Read 2026-11-10 after a reviewer pointed to the page. Replaces five merged copies of the funds paragraph; drops a 'Cooper Fund' that is not on the page, and an 'income threshold about $50k' that the page does not state (its eligibility form only asks whether household income is above that)."
     }
   ],
   "privacy_hold": false,

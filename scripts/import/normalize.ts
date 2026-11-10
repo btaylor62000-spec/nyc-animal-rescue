@@ -281,7 +281,9 @@ export function parseLabeledUrls(raw: string | null): Parsed<LabeledUrl> {
 
 const SOCIAL_PATTERNS: Array<{ platform: SocialLink['platform']; pattern: RegExp; url: (h: string) => string }> = [
   { platform: 'instagram', pattern: /\bIG\b[: ]*@?([\w.]+)|instagram\.com\/([\w.]+)/i, url: (h) => `https://instagram.com/${h}` },
-  { platform: 'facebook', pattern: /\bFB\b[: ]*\/?([\w.\- ]+?)(?:;|$)|facebook\.com\/([\w.-]+)/i, url: (h) => `https://facebook.com/${h}` },
+  // A group's address has two parts ("groups/166523873457272"); taking only
+  // the first linked Greater City Aquarium Society to facebook.com/groups.
+  { platform: 'facebook', pattern: /\bFB\b[: ]*\/?([\w.\- ]+?)(?:;|$)|facebook\.com\/((?:groups\/)?[\w.-]+)/i, url: (h) => `https://facebook.com/${h}` },
   { platform: 'x', pattern: /\b(?:X|Twitter)\b[: ]*@?([\w]+)/i, url: (h) => `https://x.com/${h}` },
   { platform: 'tiktok', pattern: /tiktok\.com\/@?([\w.]+)|\bTikTok\b[: ]*@?([\w.]+)/i, url: (h) => `https://tiktok.com/@${h}` },
   { platform: 'linktree', pattern: /linktr\.ee\/([\w.-]+)/i, url: (h) => `https://linktr.ee/${h}` },
@@ -308,7 +310,7 @@ export function parseSocial(raw: string | null): Parsed<SocialLink> {
       // ("FB /WINORR - Wildlife In Need of Rescue and Rehabilitation"). That
       // cannot be turned into a working URL, so keep the name and omit the
       // link rather than publishing one that 404s.
-      const linkable = /^[\w.-]+$/.test(handle);
+      const linkable = /^(?:groups\/)?[\w.-]+$/.test(handle);
       values.push(linkable ? { platform: p.platform, handle, url: p.url(handle) } : { platform: p.platform, handle });
       matched = true;
     }

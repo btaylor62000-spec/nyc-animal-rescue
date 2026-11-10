@@ -11,11 +11,17 @@ _Grants, funds and low-cost options when you cannot afford treatment._
 
 Every fund, grant and payment plan in the directory, for cats, dogs and every other animal, is listed at the end of this page. This page explains how to apply, which funds also cover rabbits, birds, reptiles and small mammals (most are written for cats and dogs, and exotic care costs more), and how pet insurance works. Apply to several at once - funds are limited and run out. Grants are paid to the veterinarian, not to you. Confirm eligibility and current status before relying on any single one.
 
+## IF THE ANIMAL IS BEING TREATED AT THE ANIMAL MEDICAL CENTER (AMC)
+
+- AMC (the Schwarzman Animal Medical Center) has its own funds for people who cannot afford treatment there, for any animal: Charlie's Patient Assistance Fund (free or reduced-cost emergency care), the Buddy Fund (cancer), the Monty and Minny Fund (rehabilitation), SAVE (owners 65 and over), and others for rabbits, birds and guide dogs.
+- Ask about them as soon as you arrive. An AMC vet must see the animal first, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting; later applications are not considered.
+- Email funds@amcny.org, or ask a Client Services Manager at the hospital, who can also set up a payment plan for whatever a fund does not cover: https://www.amcny.org/financial-assistance/
+
 ## EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):
 
 - AMC (Schwarzman Animal Medical Center) - Honey Bunny and Rou Fund: subsidized SPECIALTY care specifically for RABBITS (and German Shepherds) of owners with limited means. One pet per household per 12 months. Pet must first be seen by an AMC vet; apply within 5 business days of starting treatment; tri-state residency (NY/NJ/CT); no outstanding AMC balance; can't hold another AMC grant. funds@amcny.org, (212) 838-8100, amcny.org/financial-assistance.
 - AMC - Kiki White Umbrella Cockatoo Avian Fund: subsidizes specialty care for ALL BIRDS of families with limited means. Same rules as above (AMC exam first, 5-business-day deadline, tri-state, one pet per household per 12 months). This is one of the very few bird-specific vet funds anywhere. funds@amcny.org.
-- AMC - Charlie's Patient Assistance Fund (emergency care, any species), the Buddy Fund (cancer, any species), the Monty and Minny Fund (rehabilitation), and SAVE (owners 65+): all open to exotic pets under the same eligibility rules. Start with AMC's Eligibility Application at amcny.org/financial-assistance (income threshold about $50k/household).
+- AMC - Charlie's Patient Assistance Fund (emergency care), the Buddy Fund (cancer), the Monty and Minny Fund (rehabilitation) and SAVE (owners 65 and over) cover these animals too, under the same rules: see the AMC section above.
 
 ## GENERAL vet-bill funds that cover exotics (birds, rabbits, guinea pigs, etc.):
 
