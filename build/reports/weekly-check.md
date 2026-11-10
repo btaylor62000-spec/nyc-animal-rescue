@@ -1,15 +1,15 @@
-# Weekly data check — 2026-11-05
+# Weekly data check — 2026-11-10
 
-Checked **411** organizations.
+Checked **427** organizations.
 
 | Outcome | Count |
 | --- | ---: |
-| Unchanged | 324 |
-| …of those, contacts re-confirmed on their own site | 192 |
+| Unchanged | 340 |
+| …of those, contacts re-confirmed on their own site | 205 |
 | Flagged for a person | 17 |
-| Website unreachable | 8 |
-| Site turns automated checks away (a person checks these) | 10 |
-| Not checkable (social only, or no website) | 52 |
+| Website unreachable | 5 |
+| Site turns automated checks away (a person checks these) | 12 |
+| Not checkable (social only, or no website) | 54 |
 
 ## Needs a person (17)
 
@@ -19,38 +19,38 @@ Nothing here has been changed. The checker reports what it saw and a person deci
   [entry](https://nycanimalrescue.org/org/aaha-universal-lookup) · `data/orgs/aaha-universal-lookup.json`
 - ACC at-risk list: save a shelter animal from euthanasia (New Hope program): The recorded phone number is no longer on their site, and there are 9 other numbers there. Someone needs to pick the right one. (https://www.nycacc.org/programs/new-hope/)  
   [entry](https://nycanimalrescue.org/org/acc-new-hope-program) · `data/orgs/acc-new-hope-program.json`
-- Cats of Meow York (COMY): None of the recorded pages on the organization’s own domain could be read.  
-  [entry](https://nycanimalrescue.org/org/cats-of-meow-york) · `data/orgs/cats-of-meow-york.json`
-- Feather Friends Parrot Adoption Services: The recorded phone number is no longer on their site and (718) 478-8460 is there instead. Confirm it on the page and update the record by hand. (https://nycparrot.wordpress.com/)  
-  [entry](https://nycanimalrescue.org/org/feather-friends-parrot-adoption-services) · `data/orgs/feather-friends-parrot-adoption-services.json`
-- Friends of Animals: The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/spay-neuter/)  
-  [entry](https://nycanimalrescue.org/org/friends-of-animals) · `data/orgs/friends-of-animals.json`
-- Friends of Animals - Spay/Neuter Certificates: The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://friendsofanimals.org/)  
-  [entry](https://nycanimalrescue.org/org/friends-of-animals-spay-neuter-certificates) · `data/orgs/friends-of-animals-spay-neuter-certificates.json`
-- Holy Apostles Soup Kitchen Pantry: The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://holyapostlesnyc.org/)  
-  [entry](https://nycanimalrescue.org/org/holy-apostles-soup-kitchen-pantry) · `data/orgs/holy-apostles-soup-kitchen-pantry.json`
+- Big City Little Kitty: We list this as closed, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so. (http://bigcitylittlekitty.blogspot.com/)  
+  [entry](https://nycanimalrescue.org/org/big-city-little-kitty) · `data/orgs/big-city-little-kitty.json`
+- Big Hands Little Paws: Their site returned a page with almost no readable text. (http://bighandslittlepaws.org/)  
+  [entry](https://nycanimalrescue.org/org/big-hands-little-paws) · `data/orgs/big-hands-little-paws.json`
+- Brooklyn Fat Cats: the website's domain no longer exists (https://www.brooklynfatcats.com/). The organization may have moved to a new site; find it and record it in the overlay by hand.  
+  [entry](https://nycanimalrescue.org/org/brooklyn-fat-cats) · `data/orgs/brooklyn-fat-cats.json`
+- FBI tips: Their site returned a page with almost no readable text. (https://tips.fbi.gov/)  
+  [entry](https://nycanimalrescue.org/org/fbi-tips) · `data/orgs/fbi-tips.json`
 - HSUS dogfighting tip line: The recorded email address is no longer on their site, and there are 20 other addresses there. (https://www.humaneworld.org/en/report-animal-cruelty-contact-form)  
   [entry](https://nycanimalrescue.org/org/hsus-dogfighting-tip-line) · `data/orgs/hsus-dogfighting-tip-line.json`
-- Little Wanderers NYC: The recorded email is no longer on their site and aaa@littlewanderersnyc.org is there instead. Confirm it on the page and update the record by hand. (https://lwnyc.org/)  
-  [entry](https://nycanimalrescue.org/org/little-wanderers-nyc) · `data/orgs/little-wanderers-nyc.json`
+- Mama Chris Animal Rescue, Inc.: Their site returned a page with almost no readable text. (https://mamachrisrescue.org/)  
+  [entry](https://nycanimalrescue.org/org/mama-chris-animal-rescue-inc) · `data/orgs/mama-chris-animal-rescue-inc.json`
 - Muddy Paws Rescue: Their own site mentions being at capacity, which may or may not mean they have stopped taking animals: "renders or stray pets that were not originally adopted from Muddy Paws, as all our foster homes are at capacity with dogs that we take in from open-intake shelter partners. We reco" (https://www.muddypawsrescue.org/adopt)  
   [entry](https://nycanimalrescue.org/org/muddy-paws-rescue) · `data/orgs/muddy-paws-rescue.json`
-- National Domestic Violence Hotline: The recorded phone number is no longer on their site, and there are 4 other numbers there. Someone needs to pick the right one. (https://www.thehotline.org/)  
-  [entry](https://nycanimalrescue.org/org/national-domestic-violence-hotline) · `data/orgs/national-domestic-violence-hotline.json`
-- NYC 311: The recorded phone number is no longer on their site, and there are 3 other numbers there. Someone needs to pick the right one. (https://portal.311.nyc.gov/)  
-  [entry](https://nycanimalrescue.org/org/nyc-311) · `data/orgs/nyc-311.json`
+- New York Common Pantry - Bronx: The recorded phone number is no longer on their site and (917) 720-9665 is there instead. Confirm it on the page and update the record by hand. (https://nycommonpantry.org/)  
+  [entry](https://nycanimalrescue.org/org/new-york-common-pantry-bronx) · `data/orgs/new-york-common-pantry-bronx.json`
 - NYS DEC Region 2 (New York City office): The recorded phone number is no longer on their site, and the replacement ((518) 402-8545) has an area code outside New York City. That can mean they moved, or that the page shows a head-office number instead of this location’s. Someone should look. (https://dec.ny.gov/)  
   [entry](https://nycanimalrescue.org/org/nys-dec-region-2) · `data/orgs/nys-dec-region-2.json`
-- Petchester Veterinary: The recorded phone number is no longer on their site, and there are 6 other numbers there. Someone needs to pick the right one. (https://www.petchesterveterinary.com/)  
-  [entry](https://nycanimalrescue.org/org/petchester-veterinary) · `data/orgs/petchester-veterinary.json`
-- Suicide & Crisis Lifeline (988): The recorded phone number is no longer on their site and (800) 273-8255 is there instead. Confirm it on the page and update the record by hand. (https://988lifeline.org/)  
-  [entry](https://nycanimalrescue.org/org/suicide-and-crisis-lifeline) · `data/orgs/suicide-and-crisis-lifeline.json`
+- Save-A-Pet Low-Cost Veterinary Clinic: Their own site says it is paused. If that is right, set the status by hand: "Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027" (https://saveapetusa.org/services)  
+  [entry](https://nycanimalrescue.org/org/save-a-pet-low-cost-veterinary-clinic) · `data/orgs/save-a-pet-low-cost-veterinary-clinic.json`
+- SICAW Certificate Program: We list this as closed, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so. (https://www.sicawsaves.org/contact)  
+  [entry](https://nycanimalrescue.org/org/sicaw-certificate-program) · `data/orgs/sicaw-certificate-program.json`
+- Sugar Mutts Rescue: We list this as moved away, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so. (https://www.sugarmuttsrescue.com/)  
+  [entry](https://nycanimalrescue.org/org/sugar-mutts-rescue) · `data/orgs/sugar-mutts-rescue.json`
+- The Toby Project - Feral Spay/Neuter Clinic: The recorded email address is no longer on their site, and there are 4 other addresses there. (https://www.tobyproject.org/)  
+  [entry](https://nycanimalrescue.org/org/the-toby-project-feral-spay-neuter-clinic) · `data/orgs/the-toby-project-feral-spay-neuter-clinic.json`
 - Urban Utopia Wildlife Rehabilitation (UUWR) [ON HIATUS - info resource]: Their own site says it is paused. If that is right, set the status by hand: "ALWAYS try to reunite a baby animal with its mother first. Human care is a last resort. WUUWR is on hiatus from wildlife rehab. We do not have any volunteer rehabbers at this time," (https://www.urbanutopiawildlife.org/)  
   [entry](https://nycanimalrescue.org/org/urban-utopia-wildlife-rehabilitation) · `data/orgs/urban-utopia-wildlife-rehabilitation.json`
-- Volunteers of America-Greater New York: The recorded phone number is no longer on their site, and there are 2 other numbers there. Someone needs to pick the right one. (https://www.voa-gny.org/)  
-  [entry](https://nycanimalrescue.org/org/volunteers-of-america-greater-new-york) · `data/orgs/volunteers-of-america-greater-new-york.json`
+- VERG North (Veterinary Emergency & Referral Group): We list this as closed, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so. (https://verg-brooklyn.com/)  
+  [entry](https://nycanimalrescue.org/org/verg-north) · `data/orgs/verg-north.json`
 
-## Addresses not seen on their own site (27)
+## Addresses not seen on their own site (28)
 
 The stored street address was not found on the pages read. Often that only means the site shows it on a map or a page the check did not open, so this is a list to look through, not a set of errors. If an organization has moved, record the new address or close the old entry by hand.
 
@@ -60,6 +60,7 @@ The stored street address was not found on the pages read. Often that only means
 - BBAWC Rescue Clinic: 76 Montague St (https://bbawc.org/clinic)
 - Community Help in Park Slope (CHiPS): 200 Fourth Ave. (https://www.chipsonline.org)
 - Friends of the Feathered and Furry Wildlife Center: 10846 Route 23A (https://fffwildlifecenter.weebly.com)
+- Holy Apostles Soup Kitchen Pantry: 296 Ninth Ave. (https://holyapostlesnyc.org)
 - Hour Children Community Outreach: 36-49 11th St. (https://hourchildren.org/our-food-pantry/)
 - Metropolitan Council on Jewish Poverty: 5361 Preston Court (https://www.metcouncil.org)
 - Neighborhood Cats: 30 Prince St (https://www.neighborhoodcats.org)
@@ -82,7 +83,7 @@ The stored street address was not found on the pages read. Often that only means
 - VEG Williamsburg: 87 Kent Ave (https://www.veg.com/locations/new-york/williamsburg)
 - YMCA Community Market - Coney Island: 2980 West 29th St. (https://ymcanyc.org)
 
-## Checked by a person only (10)
+## Checked by a person only (12)
 
 These sites are up but show automated checks a bot test or "access denied", so the checker cannot read them. They are not counted as failures. Each one is flagged above once nobody has confirmed it for 90 days. To record a check, open the site in a normal browser, confirm the contacts, and set `last_verified` for it in `data/agent-overlay.json` with a `manual` change-log entry.
 
@@ -98,6 +99,8 @@ These sites are up but show automated checks a bot test or "access denied", so t
 | Petco Vetco / Vetco vaccine clinics | https://vetcoclinics.com | 2026-11-04 |
 | Stray from the Heart | https://www.strayfromtheheart.org | 2026-11-04 |
 | Urban Wildlife Alliance | https://urbanwildlifenyc.org | 2026-11-04 |
+| Animals Are Forever Inc | https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299 | 2026-11-05 |
+| Hopewell Rescue Inc | https://www.petfinder.com/member/us/ny/new-york/hopewell-rescue-ny1354 | 2026-11-05 |
 
 ---
 

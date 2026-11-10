@@ -50,12 +50,12 @@
   "source_urls": [
     "https://bluepearlvet.com/hospital/paramus-nj/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "EMERGENCY VETS - 24/7 hospitals just outside the city (Yonkers and Long Island), from the same list",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

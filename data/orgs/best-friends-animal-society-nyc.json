@@ -89,13 +89,13 @@
     "https://bestfriends.org/new-york-city/who-we-are",
     "https://bestfriends.org/new-york-city"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

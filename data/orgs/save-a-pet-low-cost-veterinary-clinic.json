@@ -56,8 +56,8 @@
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
-  "check_status": "ok",
+  "last_checked": "2026-11-10",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

@@ -58,12 +58,12 @@
   "source_urls": [
     "https://www.animalkind.com/emergency"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "EMERGENCIES BY DAY - vet practices that see emergencies and urgent problems during opening hours but are NOT open overnight. From the Mayor's Alliance emergency vet list; each checked on its own site 2026-11-03. At night, use a 24/7 hospital above.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

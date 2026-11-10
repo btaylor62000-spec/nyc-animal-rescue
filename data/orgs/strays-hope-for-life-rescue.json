@@ -66,12 +66,12 @@
     "https://strayshopeforliferescue.org/contact-us",
     "https://www.petfinder.com/member/us/ny/staten-island/strays-hope-for-life-ny1423/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "STATEN ISLAND (Staten Island cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

@@ -58,13 +58,13 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-09",
+  "last_verified": "2026-11-10",
   "section": "Report animal abuse — WHO TO CONTACT",
   "source_files": [
     "research/NYC_Animal_Abuse_Reporting.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-10",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

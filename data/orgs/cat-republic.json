@@ -72,12 +72,12 @@
   "source_urls": [
     "https://catrepublic.com/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

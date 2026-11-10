@@ -57,13 +57,13 @@
   "source_urls": [
     "https://lwnyc.org/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "BRONX (Bronx-based / Bronx-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
-  "check_status": "needs-review",
+  "last_checked": "2026-11-10",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

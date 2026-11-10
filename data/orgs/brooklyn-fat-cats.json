@@ -46,9 +46,9 @@
   "source_files": [
     "community"
   ],
-  "last_checked": null,
-  "check_status": "new-unverified",
-  "consecutive_failures": 0,
+  "last_checked": "2026-11-10",
+  "check_status": "needs-review",
+  "consecutive_failures": 1,
   "change_log": [
     {
       "date": "2026-11-08",

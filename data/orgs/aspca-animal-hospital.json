@@ -59,13 +59,13 @@
   "source_urls": [
     "https://www.aspca.org/nyc/aspca-veterinary-spayneuter-services-new-york-city/aspca-animal-hospital-nyc"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-10",
   "section": "Owner support & surrender prev. — HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-05",
+  "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [

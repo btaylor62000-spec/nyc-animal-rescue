@@ -1,9 +1,9 @@
 {
   "$comment": "Written by the automated checks in scripts/agent and applied by the importer as its last step, so re-running the import never discards what the checks learned. Edit by hand only to correct the agent. To discard an automated change, delete its entry and re-run the import.",
-  "updated": "2026-11-05T01:13:15.589Z",
+  "updated": "2026-11-10T22:32:28.955Z",
   "entries": {
     "24petwatch": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://www.petplace.com/pet-microchip-registry",
@@ -15,7 +15,7 @@
         }
       ],
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -29,25 +29,31 @@
       ]
     },
     "800-kitties-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "911-parrot-alert": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "a-helping-wing-parrot-rescue-and-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
+    "a-purrfect-jc": {
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10"
+    },
     "a-tail-of-two-kitties": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "aaha-universal-lookup": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -94,22 +100,22 @@
       "notes": "petmicrochiplookup.org: enter a chip number to find which registry it's in (doesn't store owner data, points you to the right company).\n\nOne registry is no longer searched: AAHA's page says Save This Life has ceased operations and was disconnected from the lookup. If your pet's chip was registered there, ask your vet."
     },
     "abandoned-angel-cocker-spaniel-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "abc-animal-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "acc-admissions-owner-support": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "notes": "email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.\n\nDeferred intake: if you cannot keep a pet but do not want to bring it to a shelter, ACC can look for a placement while the animal stays at home with you, and can work with partner groups to help you keep it. Call 212-788-4000 and explain your situation.",
       "change_log": [
         {
@@ -124,13 +130,13 @@
       ]
     },
     "acc-community-pets-program": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "acc-new-hope-program": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-09-21",
@@ -188,7 +194,7 @@
       ]
     },
     "acc-pet-food-pantry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://www.nycacc.org/programs/community-resources/pantry-ingredients/",
       "status": "active",
@@ -253,24 +259,24 @@
         }
       ],
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "notes": "ACC's pet food pantry for owners who are struggling to feed their pets. Its page on ACC's site gives the details; email CommunityPets@nycacc.org or ring (212) 788-4000 before you travel, to check what is available and where. The city's 22 community pet food pantries are listed separately.",
       "confidence": "Medium"
     },
     "acc-working-cats-program": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "ace-of-spays": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "adore-a-bullie-paws-and-claws": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -287,75 +293,92 @@
       ]
     },
     "advocat-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "akc-reunite": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "all-about-rabbits-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "all-creatures-veterinary-hospital-of-brooklyn": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "alleykattz": {
-      "last_checked": "2026-11-05",
-      "check_status": "unreachable",
-      "consecutive_failures": 1,
-      "last_verified": "2026-11-04"
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10"
     },
     "ama-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "amazing-animals-rescue-and-adoptions": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "ambuvet-pet-ambulance": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "american-alliance-for-protection-of-animals": {
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Confirmed by the reviewer on its own Facebook and YouTube pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "unreachable",
+      "consecutive_failures": 1
     },
     "amsterdog-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "anarchy-animal-rescue-and-rehabilitation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "animal-care-centers-of-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-care-centers-of-nyc-brooklyn": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-care-centers-of-nyc-guinea-pigs-and-small-animals": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "status": "active",
@@ -425,16 +448,16 @@
       "source_urls": [
         "https://www.nycacc.org"
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-clinic-of-bay-ridge": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-general": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://www.thrivepetcare.com/locations/new-york/new-york/animal-general-ny",
       "source_urls": [
@@ -489,7 +512,7 @@
         }
       ],
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [
         {
           "value": "2125019600",
@@ -507,10 +530,10 @@
       "hours": "Mon 8am-7pm, Tue-Wed 8am-5pm, Thu 8am-7pm, Fri-Sat 8am-5pm"
     },
     "animal-haven": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "info@animalhaven.org"
@@ -529,35 +552,35 @@
       ]
     },
     "animal-haven-community-engagement": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-help-now-wildlife-emergency-finder": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "animal-kind-veterinary-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-lighthouse-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "animal-lovers-rescue-and-adoptions": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "animal-medical-center": {
-      "last_checked": "2026-11-05",
-      "last_verified": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -709,21 +732,38 @@
       "last_verified": "2026-11-04"
     },
     "animal-rescue-of-queens-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "animal-specialty-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "animals-are-forever-inc": {
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Confirmed by the reviewer on its own Petfinder and Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "manual-only",
+      "consecutive_failures": 0
     },
     "anjellicle-cats-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [
         {
           "value": "5854964660",
@@ -764,7 +804,7 @@
       ]
     },
     "aspca-animal-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "boroughs": [
@@ -792,7 +832,7 @@
         }
       ],
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "notes": "Low-cost urgent care for cats and dogs whose owners live in New York City and have a household income under $50,000, for a qualifying medical problem. 424 East 92nd Street (between 1st and York Avenues), Manhattan. By appointment only, Monday to Friday; no walk-ins, closed on major holidays. Not free: bring an EBT card, SSI award letter, VA benefits letter, proof of unemployment or workers' compensation, or proof of TANF to apply for help with the cost. It does not do check-ups, vaccines or routine dental care. For a medical emergency, go to an emergency hospital.",
       "change_log": [
         {
@@ -807,13 +847,13 @@
       ]
     },
     "aspca-animal-poison-control-center-24-7-hotline": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "aspca-behavior-guides": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -847,7 +887,7 @@
       ]
     },
     "aspca-community-veterinary-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://clinic.aspca.org/clinics/new-york-city/south-bronx",
@@ -909,7 +949,7 @@
       "notes": "Free basic vet care for cats and dogs for South Bronx residents. Only for owners living in zip codes 10451, 10454, 10455, 10456 or 10459. Bring proof of public assistance: NYCHA, Medicaid, SSI, SSDI, welfare, TANF, or SNAP/WIC. Exams, vaccines, spay/neuter and in-house tests are free for eligible owners; a microchip is $10. Appointments only: check eligibility and book through the ASPCA's online form. For an emergency, go to an emergency hospital instead. Also offers subsidized dental cleanings and extractions."
     },
     "aspca-community-veterinary-clinic-brooklyn": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "boroughs": [
@@ -956,7 +996,7 @@
       ]
     },
     "aspca-community-veterinary-clinic-queens": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "boroughs": [
@@ -1012,12 +1052,12 @@
       ]
     },
     "aspca-spay-neuter-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "aspca-trap-bank": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://www.aspca.org/veterinary-services/rescue-professionals",
       "notes": "The ASPCA rents traps, dividers and carriers to TNR-certified rescuers who have an ASPCA Terms of Use Agreement on file. Book through the Rescuer Services Scheduler or by email to TNRtrapbank@aspca.org; pick-up and return Mon-Fri 10:30am-3pm in East New York, Brooklyn; $50 refundable deposit per trap or carrier, cash or check; keep for 14 days. The page says the ASPCA is taking on new rescue partners in Los Angeles and Miami, not New York, so this is for rescuers who already have an account. Everyone else: see the other trap banks in the TNR guide.",
@@ -1040,38 +1080,38 @@
       "consecutive_failures": 0
     },
     "astoria-animal-society": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "astoria-cat-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "astoria-paws-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "atlantic-critter-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "backyard-cats-of-bed-stuy": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "badass-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "banfield-pet-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -1088,11 +1128,11 @@
       ]
     },
     "barbey-street-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "barc-shelter": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2,
       "website": null,
@@ -1127,7 +1167,7 @@
       ]
     },
     "bay-ridge-kittens": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://www.adoptapet.com/shelter/191967-bay-ridge-kittens-brooklyn-new-york",
@@ -1185,10 +1225,10 @@
       "confidence": "Medium"
     },
     "bbawc-rescue-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "Clinic@bbawc.org"
@@ -1209,7 +1249,7 @@
       ]
     },
     "beastly-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -1232,18 +1272,18 @@
       ]
     },
     "bed-stuy-kitty-crew": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "bedford-corners-community-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "best-friends-animal-society-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [
         {
           "value": "9297773016",
@@ -1330,7 +1370,25 @@
       ]
     },
     "best-friends-spay-neuter-resource-map": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "better-business-bureau": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://www.bbb.org/file-a-complaint",
+          "source": "manual",
+          "note": "Read on 2026-11-09: 'Start Complaint' for a problem with a business; 'Report a Scam' (BBB Scam Tracker) for fake businesses and impostors."
+        }
+      ],
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
@@ -1345,14 +1403,14 @@
           "label": "Surrender a cat (application)"
         }
       ],
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "big-city-little-kitty": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
       "change_log": [
@@ -1367,9 +1425,26 @@
         }
       ]
     },
-    "bluepearl-brooklyn": {
-      "last_checked": "2026-11-05",
+    "big-hands-little-paws": {
       "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Confirmed by the reviewer on its own Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
+    },
+    "bluepearl-brooklyn": {
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -1396,8 +1471,8 @@
       ]
     },
     "bluepearl-downtown": {
-      "last_checked": "2026-11-05",
-      "last_verified": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -1424,8 +1499,8 @@
       ]
     },
     "bluepearl-midtown": {
-      "last_checked": "2026-11-05",
-      "last_verified": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -1452,14 +1527,14 @@
       ]
     },
     "bluepearl-paramus": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bluepearl-queens": {
-      "last_checked": "2026-11-05",
-      "last_verified": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -1486,18 +1561,18 @@
       ]
     },
     "bobbi-and-the-strays": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bond-vet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "boomers-feline-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "breaking-ground": {
@@ -1517,35 +1592,35 @@
           "note": "AWI's directory lists it as housing pets and people together, so it belongs with places that keep a pet safe."
         }
       ],
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bronx-community-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "bronx-tails-cat-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "bronx-veterinary-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bronx-veterinary-center-eastchester-road": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "brooklyn-animal-action": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "needs": [
@@ -1591,12 +1666,12 @@
       ]
     },
     "brooklyn-aquarium-society": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-bridge-animal-welfare-coalition-brooklyn-cat-cafe": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -1622,35 +1697,40 @@
       ]
     },
     "brooklyn-cat-cafe-brooklyn-bridge-animal-welfare-coalition-small-animals": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "brooklyn-fat-cats": {
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
+      "consecutive_failures": 1
     },
     "brooklyn-kitty-committee-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-lost-cat-finder": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "brooklyn-neighborhood-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "brooklyn-paws-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "brooklyn-waterfront-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "brown-dog-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -1686,33 +1766,33 @@
       "last_verified": "2026-11-04"
     },
     "bull-terrier-rescue-mission": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bully-baby-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bunnies-and-beyond": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "bushwick-street-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cancercare-pet-assistance-and-wellness-program": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -1729,35 +1809,41 @@
       ]
     },
     "canine-cancer-alliance-cancer-treatment-funds": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "cannolis-sweet-life-senior-rescue": {
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10"
     },
     "carecredit": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "carroll-street-cat-club": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cat-castle-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cat-republic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "cats-in-the-cradle-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -1860,12 +1946,12 @@
       ]
     },
     "cats-n-queens": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "cats-of-meow-york": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Medium",
       "status": "retired",
@@ -2007,13 +2093,13 @@
       ]
     },
     "catskill-animal-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "catstoria-cat-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -2030,13 +2116,13 @@
       ]
     },
     "city-critters": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "city-pitties": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -2159,10 +2245,10 @@
           "note": "Read in a browser on 2026-11-04: CHiPS contact page: 718-237-2962, 200 4th Avenue 11217. Its pantry page gives on-site pantry hours Thursdays and Saturdays 11:30am-1pm. Same number as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "completecare-veterinary-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://completecarevets.com",
       "hours": "Mon-Wed 8am-6pm, Thu-Fri 8am-8pm, Sat 8am-2pm",
@@ -2206,11 +2292,11 @@
       ],
       "notes": "A Staten Island veterinary hospital at 1293 Clove Rd, (718) 720-4211. It is not open 24 hours (a reviewer rang on 2026-11-04): for an emergency outside these hours, go to a 24-hour hospital such as Greater Staten Island Veterinary Specialists or VEG New Dorp.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "Medium"
     },
     "condition-specific": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -2227,18 +2313,18 @@
       ]
     },
     "connecticut-parrot-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "cottontail-cottage-wildlife-rehab": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "cypress-feline-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -2267,25 +2353,25 @@
       ]
     },
     "davidson-community-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "domesticsheltersorg": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "earthlings-nyc-turtle-team": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "eastchester-bay-stray-cat-project-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "elmhurst-animal-emergency-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
@@ -2336,37 +2422,66 @@
       "consecutive_failures": 0
     },
     "empty-cages-collective": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "equine-advocates-rescue-and-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "equine-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "every-last-one-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "faithful-friends-animal-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "farm-sanctuary": {
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10"
+    },
+    "fbi-internet-crime-complaint-center": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://www.ic3.gov/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: IC3 is 'the central hub for reporting cyber-enabled crime', run by the FBI; other types of crimes 'should be reported at tips.fbi.gov'."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "fbi-tips": {
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "feather-friends-parrot-adoption-services": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://nycparrot.wordpress.com/",
       "status_note": "Not listed: we could find no sign it is still taking birds. For a parrot, see Northeast Avian Rescue or the Long Island Parrot Society.",
@@ -2427,10 +2542,10 @@
       "status": "retired"
     },
     "feeding-pets-of-the-homeless": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2458,11 +2573,11 @@
       ]
     },
     "feeding-with-tlc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "feline-rescue-of-staten-island": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -2480,12 +2595,12 @@
       "website": "https://felinerescueofstatenisland.org"
     },
     "fidoalert": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "fifth-avenue-veterinary-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "source_urls": [
         "https://www.animalalliancenyc.org/need-help/emergencyvets/"
@@ -2526,27 +2641,27 @@
       "confidence": "Medium"
     },
     "first-united-methodist-church-of-jamaica": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "flatbush-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "flatbush-vet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "fluffle-farms-rabbit-rehab-and-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "food-bank-for-new-york-city": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -2563,23 +2678,23 @@
       ]
     },
     "for-animals-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "for-blakes-sake-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "for-our-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "for-the-love-of-alex": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "notes": "Helps pay for urgent veterinary care for cats and dogs only, paying the vet or pharmacy directly. One pet per household; proof of income is needed. It does not pay for vaccinations, spay/neuter, cancer treatment (chemotherapy or radiation) or routine care. Start with the short pre-application on its Help My Pet page. A small charity in Bethlehem, Pennsylvania, so it cannot take every case.",
@@ -2607,15 +2722,15 @@
       "confidence": "High"
     },
     "foster-dogs-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "frankies-feline-fund": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2629,7 +2744,7 @@
       ]
     },
     "frankies-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -2646,16 +2761,16 @@
       ]
     },
     "free-housing-legal-help": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "friends-of-animals": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -2711,8 +2826,8 @@
       "confidence": "High"
     },
     "friends-of-animals-spay-neuter-certificates": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
         {
@@ -2745,30 +2860,30 @@
           "label": "Order a spay/neuter certificate"
         }
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
     "friends-of-the-feathered-and-furry-wildlife-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "give-me-shelter-project-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "good-home-pet-adoptions": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "greater-city-aquarium-society": {
-      "last_checked": "2026-11-05",
-      "check_status": "unreachable",
-      "consecutive_failures": 2,
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
       "change_log": [
         {
           "date": "2026-11-10",
@@ -2783,11 +2898,11 @@
       "last_verified": "2026-11-10"
     },
     "greater-state-veterinary-specialists": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://www.gsvs.org/staten-island-ny/",
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-03",
@@ -2802,22 +2917,22 @@
       "consecutive_failures": 0
     },
     "greenpoint-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "greenpoint-cats-club": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "guardian-angel-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "halfway-cats-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "emails": [
@@ -2879,16 +2994,16 @@
       "confidence": "Medium"
     },
     "halo-veterinary-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "happy-homes-animal-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [
         {
           "value": "7325886578",
@@ -2925,19 +3040,19 @@
       "notes": "Foster-based rescue spanning Staten Island + central NJ (Old Bridge/East Brunswick). Reduces shelter euthanasia + street TNR + community spay/neuter education. Cats viewable at the SI Petco habitat + NJ Petco/PetSmart events. Verified 2026-08-26. Intake: by appointment + weekend events Other channel: IG/FB @happyhomesrescue Other channel: SI habitat: Petco 165 Bricktown Way 10309 (Sun)\n\nBased in Old Bridge, New Jersey (P.O. Box 614, Old Bridge, NJ 08857), a foster-home rescue with volunteers on Staten Island; meet-and-greets are arranged with a foster."
     },
     "happy-tails-veterinary-practice": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "hard-hat-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "harlem-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "website": null,
@@ -2984,11 +3099,11 @@
       "last_verified": "2026-11-04"
     },
     "harman-cat-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "hearts-and-bones-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -3007,11 +3122,11 @@
           "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its contact page says: \"Reach out to us at info@heartsandbonesrescue.org\" (.org, not .com)."
         }
       ],
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
     "heidi-wrangles-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -3028,20 +3143,20 @@
       ]
     },
     "helping-paw": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "helping-pets-and-people-in-crisis": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "holy-apostles-soup-kitchen-pantry": {
-      "check_status": "needs-review",
-      "last_verified": "2026-11-05",
+      "check_status": "ok",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -3063,7 +3178,7 @@
           "note": "Its own site, read 2026-11-05, gives (646) 998-6106 and its main line (212) 924-0167; the city's pet food list gives (646) 998-6105, one digit different. As with The River Fund, both are published and labelled, so the reader can try the other."
         }
       ],
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "phones": [
         {
           "value": "6469986105",
@@ -3083,12 +3198,12 @@
       ]
     },
     "home-to-home": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "homeagain": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "phones": [
@@ -3117,9 +3232,26 @@
         }
       ]
     },
+    "hopewell-rescue-inc": {
+      "last_verified": "2026-11-05",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Confirmed by the reviewer on its own Petfinder and Instagram pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "manual-only",
+      "consecutive_failures": 0
+    },
     "hour-children-community-outreach": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -3132,15 +3264,15 @@
           "note": "Read in a browser on 2026-11-04: Its food pantry page shows 718-482-8226. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "house-of-pancakes-reptile-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "hsus-dogfighting-tip-line": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "phones": [],
@@ -3223,10 +3355,10 @@
       "confidence": "High"
     },
     "humane-society-of-new-york": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "info.hsny@verizon.net"
@@ -3245,19 +3377,19 @@
       ]
     },
     "humane-world-for-animals-help-affording-a-pet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "india-street-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "instavet-urgent-care": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "hours": "8am-10pm every day, including holidays",
       "change_log": [
         {
@@ -3272,15 +3404,15 @@
       ]
     },
     "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "island-bird-cat-and-dog-vet-group": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://www.islandbirdcatdogvetgroup.com/",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "High",
       "source_urls": [
         "https://www.islandbirdcatdogvetgroup.com/"
@@ -3299,7 +3431,7 @@
       "consecutive_failures": 0
     },
     "island-wildlife-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "change_log": [
         {
@@ -3336,30 +3468,30 @@
       "confidence": "Medium"
     },
     "itty-bitty-city-kitties": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "itty-bitty-kitty-ny": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "k9kastle": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "kent-animal-shelter-spay-neuter-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "kingsbridge-heights-community-center": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -3372,10 +3504,10 @@
           "note": "Read in a browser on 2026-11-04: Its home page shows 718-884-0700. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "kisos-pet-food-pantry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -3460,7 +3592,7 @@
       "confidence": "High"
     },
     "kittens-and-barbells-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://dolphin-coyote-9c2r.squarespace.com",
@@ -3565,16 +3697,16 @@
         "https://dolphin-coyote-9c2r.squarespace.com/",
         "https://dolphin-coyote-9c2r.squarespace.com/contact"
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "kittykind": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "korean-k9-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "emails": [
@@ -3621,31 +3753,49 @@
       "last_verified": "2026-11-04"
     },
     "lana-law-group": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "lap-of-love": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "lic-feral-feeders-and-cat-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "lincoln-terrace-park-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "linus-and-friends": {
+      "last_verified": "2026-11-10",
+      "confidence": "Medium",
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.linusrescue.org/contact",
+          "source": "manual",
+          "note": "Its own contact page, read in a browser 2026-11-05, gives contact@linusrescue.org, the address stored."
+        }
+      ],
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "little-wanderers-nyc": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [],
       "change_log": [
         {
@@ -3697,18 +3847,18 @@
       ]
     },
     "live-like-roo-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "long-island-animal-surgery": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "long-island-bird-and-exotics-vet-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "hours": "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm, Sun closed",
@@ -3769,26 +3919,26 @@
       },
       "outside_nyc": true,
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "notes": "the only avian & exotic hospital in Nassau; serves all of NYC (Manhattan, Queens, Brooklyn, Bronx, Staten Island) plus Westchester/NJ/CT. Treats birds, reptiles, parrots, sugar gliders, rabbits, chinchillas and other small mammals; offers endoscopy, anesthesia, minimally invasive surgery, emergency services, MEDICAL BOARDING and grooming (birdexoticsvet.com). A strong exotics-only option for outer-borough/LI residents.\n\n333 Great Neck Road, Great Neck, NY 11021, in Nassau County, just over the Queens line. Not a 24-hour hospital: in opening hours call the main line; from 9pm to midnight call the after-hours line and the on-call doctor calls back, and if nobody has called back within 15 minutes go to a 24-hour emergency hospital. From midnight to 9am, go straight to a 24-hour emergency hospital."
     },
     "long-island-parrot-society": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "long-island-rabbit-rescue-group": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "los-sures-cats-williamsburg": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "lost-cat": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -3805,7 +3955,7 @@
       ]
     },
     "lost-dog": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -3822,29 +3972,29 @@
       ]
     },
     "louies-legacy-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "loving-touch-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "low-cost-vet-mobile": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "luv-n-bunns-rabbit-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "magnificat-cat-rescue-and-rehoming": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://magnificat9.wixsite.com/magnificatrescue",
@@ -3904,18 +4054,18 @@
       "status": "retired"
     },
     "mainely-rat-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "makin-biscuits-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "mama-chris-animal-rescue-inc": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0
     },
     "mama-coupon": {
@@ -3935,10 +4085,10 @@
       ]
     },
     "manhattan-veterinary-group": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "website": "https://vcahospitals.com/manhattan-veterinary-group",
       "source_urls": [
         "https://vcahospitals.com/manhattan-veterinary-group/hospital/hours-information"
@@ -3960,18 +4110,18 @@
       "consecutive_failures": 0
     },
     "mayors-alliance-for-nycs-animals": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "meow-parlour-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "meowroof": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -4038,7 +4188,7 @@
     },
     "metropolitan-council-on-jewish-poverty": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -4051,10 +4201,10 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 212-453-9500 (main line). The first number is the one the city lists for the pet food programme."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "microchip-registration": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://www.petplace.com/pet-microchip-registry",
@@ -4072,13 +4222,13 @@
       ]
     },
     "midwood-kitty-cats-cats-of-midwood": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "mighty-mutts-and-ollies-place": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unreachable",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "intake_urls": [],
       "status": "active",
       "status_note": null,
@@ -4183,17 +4333,17 @@
       ]
     },
     "monroe-street-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "mr-bones-and-co": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "muddy-paws-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "status": "active",
@@ -4264,7 +4414,7 @@
       "confidence": "High"
     },
     "muffins-pet-connection-mama-program": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "status": "retired",
@@ -4287,27 +4437,27 @@
       ]
     },
     "mylostpetalert": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "narn-central-brooklyn": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "national-domestic-violence-hotline": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
     "neighborhood-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "hello@neighborhoodcats.org"
@@ -4326,7 +4476,7 @@
       ]
     },
     "new-beginning-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -4399,10 +4549,10 @@
       "emails": []
     },
     "new-york-bully-crew": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "info@nybullycrew.org"
@@ -4421,18 +4571,18 @@
       ]
     },
     "new-york-city-animal-rescue-girls": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "new-york-city-bar-free-legal-services": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "new-york-city-pigeon-rescue-central": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -4461,45 +4611,68 @@
       "last_verified": "2026-11-05"
     },
     "new-york-common-pantry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "new-york-common-pantry-bronx": {
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "new-york-meow-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
+    "new-york-state-department-of-agriculture-and-markets": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://agriculture.ny.gov/animals/animal-related-complaints",
+          "source": "manual",
+          "note": "Read on 2026-11-09: the page lists the pet dealer/shelter rescue complaint form and the Domestic Animal Health Permit business complaint form, and says animal cruelty is regulated at the municipal level and is not in the Department's jurisdiction. Both form pages load."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
     "new-york-turtle-and-tortoise-society": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "noahs-ark-animal-rescue-ny-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "north-brooklyn-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "northeast-avian-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "ny-cat-warriors": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -4518,19 +4691,19 @@
           "note": "Read on its own site in a browser on 2026-11-04. The guide to the shelter's urgent list gave this address and the listing had none."
         }
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "ny-marine-mammal-and-sea-turtle-stranding-hotline": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "nyc-311": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4544,7 +4717,7 @@
       ]
     },
     "nyc-animal-welfare": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -4570,7 +4743,7 @@
       "last_verified": "2026-11-05"
     },
     "nyc-cat-coalition": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "phones": [
@@ -4620,11 +4793,29 @@
           "url": "https://www.facebook.com/NYCCatCoalition/"
         }
       ],
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
+    "nyc-council-animal-welfare-caucus": {
+      "last_verified": "2026-11-10",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://council.nyc.gov/caucuses/animal-welfare-caucus/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: 'For any questions or concerns, please reach out to Animal Welfare Caucus Executive Director ... at kgomez@council.nyc.gov.' Email first supplied by a reviewer."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
     "nyc-dohmh-low-cost-s-n-index": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -4650,7 +4841,7 @@
       "last_verified": "2026-11-05"
     },
     "nyc-domestic-violence-hotline": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -4673,11 +4864,11 @@
           "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. The city's page gives 1-800-621-HOPE (4673), the number listed. (212) 639-9675 on the same page is the number for 311 from outside the city."
         }
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
     "nyc-emergency-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2,
       "needs": [
@@ -4697,12 +4888,12 @@
       ]
     },
     "nyc-feral-cat-initiative-bideawee": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "nyc-fish-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "status_note": null,
@@ -4766,10 +4957,10 @@
       "last_verified": "2026-11-04"
     },
     "nyc-health-dept-low-cost-spay-neuter": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "phones": [
         {
           "value": "311",
@@ -4803,8 +4994,24 @@
         }
       ]
     },
+    "nyc-mayors-office-of-animal-welfare": {
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "emails",
+          "from": null,
+          "to": "animalwelfare@cityhall.nyc.gov",
+          "evidence_url": "https://www.nyc.gov/site/animalwelfare/about/contact-us.page",
+          "source": "manual",
+          "note": "Screenshot sent by a reviewer on 2026-11-09: in a public comment thread, the head of the Mayor's Office of Animal Welfare wrote that they would prefer requests for help go to animalwelfare@cityhall.nyc.gov, to help streamline, and that it is a one-person office. Their personal work address in the same reply is deliberately not published. nyc.gov itself refuses our checks."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
     "nyc-second-chance-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -4872,7 +5079,7 @@
       "last_verified": "2026-11-04"
     },
     "nyc-shiba-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -4890,16 +5097,16 @@
       "website": "https://www.nycshibarescue.org"
     },
     "nyc-teens-for-animals-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "nypd-crime-stoppers": {
-      "last_checked": "2026-11-05",
-      "check_status": "unreachable",
-      "consecutive_failures": 2,
-      "last_verified": "2026-11-04",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -4913,7 +5120,7 @@
       ]
     },
     "nys-dec-find-a-wildlife-rehabilitator": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -4930,7 +5137,7 @@
       ]
     },
     "nys-dec-region-2": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "emails": [
@@ -4954,10 +5161,10 @@
       "confidence": "High"
     },
     "nysave": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "notes": "NYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. (917) 669-7281 - info@nysave.org - nysave.org.\n\nNYC-SPECIFIC emergency funding for sick/injured pets of low-income NYC residents (all 5 boroughs). At/below NYC poverty level (about $41,100 for 1 person / $58,700 for a family of 4); you must first be denied by CareCredit/Scratchpay. Paid to a participating vet; its guidelines set no fixed yearly amount per household. Apply: (917) 669-7281, info@nysave.org, nysave.org.\n\nWho qualifies, from its own guidelines (read 2026-11-04): you live in the five boroughs; your income is at or below the city poverty level ($41,100 for one person, $58,700 for a family of four); and you have applied for CareCredit, Scratchpay or similar credit and been turned down. For emergencies, not vaccines or routine care. Call 917-669-7281 or email info@nysave.org.",
       "change_log": [
         {
@@ -4981,51 +5188,51 @@
       ]
     },
     "oak-street-cat-gang-death-row-cats-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "ocean-hill-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "on-the-go-relief": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "one-love-animal-hospital": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "one-love-animal-hospital-bay-ridge": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "one-love-animal-hospital-upper-east-side": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "park-slope-veterinary-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "parrot-rescue-new-york": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "part-of-the-solution": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -5038,34 +5245,38 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 718-220-4892. The first number is the one the city lists for the pet food programme."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "paul-the-cat-guy-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
+    },
+    "paw-it-forward-pet-pantry": {
+      "last_checked": "2026-11-10",
+      "check_status": "unchecked"
     },
     "pawboost": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "paws-crossed-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "paws-ny": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "paws-of-hope-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "Medium",
@@ -5155,7 +5366,7 @@
       "last_verified": "2026-11-05"
     },
     "paws-of-war": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -5172,38 +5383,38 @@
       ]
     },
     "pawsome-squad-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "pet-fbi": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "pet-i-care": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "pet-poison-helpline-24-7-hotline": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "petamberalert": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
-      "consecutive_failures": 0,
+      "last_checked": "2026-11-10",
+      "check_status": "unreachable",
+      "consecutive_failures": 1,
       "last_verified": "2026-11-05"
     },
     "petchester-veterinary": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "hours": "Mon-Fri 8:30am-6pm, Sat 8:30am-1pm, Sun closed",
       "change_log": [
@@ -5217,11 +5428,11 @@
           "note": "A reviewer read its own site on 2026-11-04 and Claude read it the same day. Its site: call or text 914-771-PETS (7387), petchestervets@gmail.com; Monday-Friday 8:30am-6pm, Saturday 8:30am-1pm, Sunday closed."
         }
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "confidence": "High"
     },
     "petco-love-lost": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -5247,7 +5458,7 @@
       ]
     },
     "petco-vetco-vetco-vaccine-clinics": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "change_log": [
@@ -5287,8 +5498,14 @@
       ],
       "last_verified": "2026-11-04"
     },
+    "pets-alive": {
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-10"
+    },
     "pets-of-the-homeless": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -5305,13 +5522,13 @@
       ]
     },
     "place-for-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "pluto-rescue-of-richmond-county": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Medium",
@@ -5394,25 +5611,25 @@
       ]
     },
     "posh-pets-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "positive-tails": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "pound-hounds-res-q": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "project-hospitality": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -5425,21 +5642,21 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 718-448-1544. The first number is the one the city lists for the pet food programme."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "puppy-kitty-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "pupstarz-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "queens-low-cost-vet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "website": "https://queensvet.online/",
       "phones": [
@@ -5459,7 +5676,7 @@
           "value": "qvc2827@gmail.com"
         }
       ],
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "High",
       "source_urls": [
         "https://queensvet.online/"
@@ -5478,30 +5695,30 @@
       "consecutive_failures": 0
     },
     "rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "rabbitorg": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "ready-for-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "rebound-hounds": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rebound-hounds-fospice": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -5518,63 +5735,63 @@
       ]
     },
     "red-hook-dog-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "redrover-relief": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "reenies-rabbit-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "rehome-by-adopt-a-pet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescue-city": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescue-coop": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescue-dogs-rescue-soldiers": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "rescue-dogs-rock-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "rescue-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "rescuenyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "river-fund-new-york": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -5587,16 +5804,16 @@
           "note": "Read in a browser on 2026-11-04: Its site shows (718) 441-1125. The city lists (718) 442-1125; both stay published, as before."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "riverside-animal-hospital-north": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "safe-haven-program-map-foster": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "change_log": [
         {
@@ -5621,7 +5838,7 @@
       "last_verified": "2026-11-05"
     },
     "safe-havens-for-pets": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -5734,13 +5951,13 @@
           "value": "safehavens@awionline.org"
         }
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "safe-horizon": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "safe-place-for-pets": {
       "last_checked": "2026-11-05",
@@ -5788,24 +6005,24 @@
       "status_note": "This directory is no longer online. Use Safe Havens for Pets (Animal Welfare Institute), safehavensforpets.org, to find shelters that keep pets safe for people leaving abuse or without a home."
     },
     "saint-spiro-cat-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "save-a-pet-low-cost-veterinary-clinic": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05"
     },
     "save-the-animals-rescue-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "savekitty-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -5891,10 +6108,10 @@
       "last_verified": "2026-11-04"
     },
     "scratchpay": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -5923,10 +6140,10 @@
       ]
     },
     "sean-casey-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "status": "active",
       "status_note": null,
       "confidence": "High",
@@ -5943,7 +6160,7 @@
       ]
     },
     "second-chance-bird-and-reptile-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "Medium",
@@ -6037,13 +6254,13 @@
       "last_verified": "2026-11-04"
     },
     "shelter-free-rescue-ny": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "sheltering-animals-and-families-together": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "website": "https://saftprogram.org/",
@@ -6064,8 +6281,8 @@
       ]
     },
     "sicaw-certificate-program": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "website": "https://www.sicawsaves.org/contact",
       "phones": [
@@ -6126,15 +6343,15 @@
       "last_verified": "2026-11-05"
     },
     "snarr-northeast": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "social-tees-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "emails": [
         {
           "value": "adopt@socialteesnyc.org"
@@ -6159,23 +6376,23 @@
       ]
     },
     "south-slope-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "spayusa": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "spca-of-westchester-equine-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "st-clements-food-pantry": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6188,11 +6405,11 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 212-246-7277. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "st-johns-bread-and-life-food-pantry": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6205,10 +6422,10 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 718-574-0058. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "st-mina-animal-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "change_log": [
         {
@@ -6250,29 +6467,29 @@
       ],
       "website": "https://stminaveterinaryclinic.com/",
       "hours": "Mon-Fri 8:30am-7pm, Sat 8:30am-4pm, Sun 9am-3pm",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "confidence": "High"
     },
     "staten-island-bird-club": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 2
     },
     "staten-island-council-for-animal-welfare": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "staten-island-hope-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "stray-from-the-heart": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "confidence": "Medium",
@@ -6326,26 +6543,26 @@
       "last_verified": "2026-11-04"
     },
     "stray-pride-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "strays-hope-for-life-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "strong-paws-rescue-community-pet-pantry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "sugar-mutts-rescue": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
       "change_log": [
@@ -6361,10 +6578,10 @@
       ]
     },
     "suicide-and-crisis-lifeline": {
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -6388,44 +6605,44 @@
       "confidence": "High"
     },
     "sunset-park-cats": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "symphony-vet-center": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "tara-spay-neuter-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "tavi-and-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "the-5-kittens-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "the-animal-project-nyc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "the-brooklyn-rescues": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "the-campaign-against-hunger": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6438,12 +6655,12 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 718-773-3551. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "the-center-for-avian-and-exotic-medicine": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "website": "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine",
       "source_urls": [
         "https://www.thrivepetcare.com/locations/new-york/new-york/center-for-avian-and-exotic-medicine"
@@ -6498,7 +6715,7 @@
     },
     "the-fathers-heart-ministries": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6511,10 +6728,10 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 212-375-1765. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "the-good-life-dog-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "emails": [
@@ -6554,7 +6771,7 @@
       ],
       "notes": "Formed when Rescuzilla and Bully Project NYC merged. A volunteer-run, foster-based dog rescue with no shelter building, for the New York City metro area, including pit bulls and other bully breeds; Bully Project NYC worked against dogfighting in the city. Start with the adoption or foster questionnaire on its site, or email hello@thegldr.org. Mailing address: 178 Columbus Ave, PO Box #230090, New York, NY 10023 (not a place to visit). No public phone.",
       "confidence": "High",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -6569,7 +6786,7 @@
     },
     "the-lower-eastside-girls-club": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6582,10 +6799,10 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 212-982-1633. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "the-pet-fund": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "phones": [
@@ -6621,7 +6838,7 @@
       ]
     },
     "the-poor-animals-of-st-francis-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "status": "active",
       "change_log": [
@@ -6659,15 +6876,15 @@
       "confidence": "Medium"
     },
     "the-sato-project": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "the-toby-project": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unreachable",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "confidence": "Medium",
       "status": "active",
       "status_note": null,
@@ -6786,18 +7003,18 @@
       "notes": "Free spay/neuter for community cats in all five boroughs, for Certified TNR Caretakers. Manhattan, Brooklyn and Staten Island: ring (347) 816-2899, Tuesday to Saturday 1-7pm, for its Brooklyn clinic (Sundays and Mondays, by appointment). Bronx and Queens: email TobyProjectNYC@gmail.com for its weekly mobile clinic. Its website is slow to open."
     },
     "the-toby-project-feral-spay-neuter-clinic": {
-      "last_checked": "2026-11-05",
-      "check_status": "unreachable",
-      "consecutive_failures": 2
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
+      "consecutive_failures": 0
     },
     "the-wild-bird-fund": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "thundercats-tnr": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "status": "relocated",
       "change_log": [
@@ -6823,20 +7040,20 @@
       "status_note": "Moved to Portland, Oregon, in 2016; it no longer works in New York City."
     },
     "timbers-legacy": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "tnr-utopia": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "trinitys-services-and-food-for-the-homeless": {
       "check_status": "ok",
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "consecutive_failures": 0,
       "change_log": [
         {
@@ -6849,18 +7066,45 @@
           "note": "Read in a browser on 2026-11-04: Its site shows 212-228-5254. Same as stored."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
     },
     "tripawds-foundation-asap": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
+    },
+    "twenty-paws-rescue": {
+      "last_verified": "2026-11-10",
+      "intake_urls": [
+        {
+          "url": "https://www.twentypawsrescue.com/contact-us/",
+          "label": "Contact form"
+        },
+        {
+          "url": "https://www.twentypawsrescue.com/forms-applications/",
+          "label": "Adoption and foster applications"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-05",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-05",
+          "evidence_url": "https://www.twentypawsrescue.com/contact-us/",
+          "source": "manual",
+          "note": "Its own contact page, read 2026-11-05: rescues dogs and cats, \"located in both Pennsylvania and Brooklyn, NY\", P.O. Box 245007, Brooklyn, NY 11224, and a contact form. The email stored was supplied by a reviewer and is not on that page."
+        }
+      ],
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "united-spay-alliance-feline-fix-by-five": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "change_log": [
         {
           "date": "2026-11-03",
@@ -6874,12 +7118,12 @@
       ]
     },
     "urban-cat-league": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "urban-utopia-wildlife-rehabilitation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
       "status": "hiatus",
@@ -6916,7 +7160,7 @@
       "last_verified": "2026-11-04"
     },
     "urban-wildlife-alliance": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "manual-only",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -6942,7 +7186,7 @@
       ]
     },
     "urgent-vets-11369": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "hours": "Open 24 hours, 7 days a week",
       "change_log": [
@@ -7002,14 +7246,14 @@
       ],
       "notes": "32-33 Junction Boulevard, Queens 11369 (East Elmhurst). Its own website and the Mayor's Alliance give different numbers and different hours, so ring before setting off, and have a 24-hour hospital as the fallback.",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "confidence": "Medium"
     },
     "urgent-vets-bronx": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-10",
       "hours": "Mon-Sun 10am-10pm (not 24 hours)",
       "change_log": [
         {
@@ -7025,43 +7269,43 @@
       "confidence": "Medium"
     },
     "uri-pals": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "urvet-care-astoria": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "urvet-care-midtown": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "urvet-care-upper-east-side": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "usda-report-sick-birds-line": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "usfws-wildlife-crime-tip-line": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "valley-cats-and-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -7078,19 +7322,19 @@
       ]
     },
     "value-veterinary-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "vca-veterinary-referral-and-emergency-center-of-westbury": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "veg": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "confidence": "High",
       "last_verified": "2026-11-04",
@@ -7125,12 +7369,12 @@
       "consecutive_failures": 0
     },
     "veg-carle-place": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-chelsea": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -7147,28 +7391,28 @@
       ]
     },
     "veg-clifton": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "veg-hoboken": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-millburn": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-nanuet": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-new-dorp": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -7185,17 +7429,17 @@
       ]
     },
     "veg-paramus": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-princeton": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-ralph-ave": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "last_verified": "2026-11-04",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -7247,12 +7491,12 @@
       ]
     },
     "veg-white-plains": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "veg-williamsburg": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "last_verified": "2026-11-04",
       "check_status": "ok",
       "consecutive_failures": 0,
@@ -7304,8 +7548,8 @@
       ]
     },
     "verg": {
-      "last_checked": "2026-11-05",
-      "last_verified": "2026-11-05",
+      "last_checked": "2026-11-10",
+      "last_verified": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "High",
@@ -7328,8 +7572,8 @@
       ]
     },
     "verg-north": {
-      "last_checked": "2026-11-05",
-      "check_status": "ok",
+      "last_checked": "2026-11-10",
+      "check_status": "needs-review",
       "consecutive_failures": 0,
       "website": "https://verg-brooklyn.com",
       "status": "retired",
@@ -7357,7 +7601,7 @@
       "last_verified": "2026-11-05"
     },
     "verg-south": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked",
       "consecutive_failures": 0,
       "confidence": "Low",
@@ -7396,31 +7640,31 @@
       "notes": "Closed. This location was at 2220 Flatbush Ave (between Ave R and Fillmore), Brooklyn 11234. VERG now operates from 196 4th Ave in Brooklyn."
     },
     "vet-i-care": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "vet-wheels-mobile-clinic": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "victory-4-the-voiceless-animal-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "vinegar-hill-veterinary-group": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "vip-petcare-clinics": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -7437,10 +7681,10 @@
       ]
     },
     "volunteers-for-wildlife-wildlife-center-of-long-island": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "volunteers-of-america-greater-new-york": {
       "needs": [
@@ -7468,8 +7712,8 @@
           "note": "Its contact page, read in a browser 2026-11-05, gives 135 West 50th Street, (212) 873-2600 and info@voa-gny.org. The hotline number came from AWI's directory and is not on that page; it is kept, labelled as such, after the main line."
         }
       ],
-      "last_checked": "2026-11-05",
-      "check_status": "needs-review",
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
       "consecutive_failures": 0,
       "phones": [
         {
@@ -7488,10 +7732,10 @@
           "value": "info@voa-gny.org"
         }
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "waggle": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-04",
@@ -7508,12 +7752,12 @@
       ]
     },
     "waggytail-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "waldos-rescue-pen": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "confidence": "Medium",
@@ -7627,48 +7871,48 @@
           "url": "https://www.facebook.com/WaldosRescue/"
         }
       ],
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "washington-heights-cat-colony": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "west-street-whiskers": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "whiskers-a-gogo": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "wildlife-freedom-foundation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "winorr-wildlife-in-need-of-rescue-and-rehabilitation": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "woodstock-farm-sanctuary": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-10"
     },
     "woof-dog-rescue-inc": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0
     },
     "yeshua-worldwide-ministries-food-pantry": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "unchecked"
     },
     "ymca-community-market-coney-island": {
@@ -7686,10 +7930,28 @@
           "note": "Read in a browser on 2026-11-04: The Coney Island YMCA page: 718-215-6900, 2980 West 29th Street 11224 (same address as the city's list). The city lists 718-215-6910 for the pet food programme, one digit different; both are now published, the city's first."
         }
       ],
-      "last_checked": "2026-11-05"
+      "last_checked": "2026-11-10"
+    },
+    "your-city-council-member": {
+      "last_verified": "2026-11-09",
+      "confidence": "High",
+      "change_log": [
+        {
+          "date": "2026-11-09",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-09",
+          "evidence_url": "https://council.nyc.gov/districts/",
+          "source": "manual",
+          "note": "Read on 2026-11-09: all 51 districts with each member's email; find your member by entering an address and borough."
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "check_status": "ok",
+      "consecutive_failures": 0
     },
     "your-local-nypd-precinct": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "change_log": [
@@ -7715,7 +7977,7 @@
       "last_verified": "2026-11-05"
     },
     "zanis-furry-friends": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -7738,7 +8000,7 @@
       ]
     },
     "zions-mission-animal-rescue": {
-      "last_checked": "2026-11-05",
+      "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
       "last_verified": "2026-11-05",
@@ -7757,189 +8019,6 @@
           "evidence_url": "https://www.zionsmission.org/contact",
           "source": "manual",
           "note": "Its own site, read 2026-11-05, is live, with a contact form, adoption and foster pages and community programmes; it gives no phone or email."
-        }
-      ]
-    },
-    "linus-and-friends": {
-      "last_verified": "2026-11-05",
-      "confidence": "Medium",
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.linusrescue.org/contact",
-          "source": "manual",
-          "note": "Its own contact page, read in a browser 2026-11-05, gives contact@linusrescue.org, the address stored."
-        }
-      ]
-    },
-    "twenty-paws-rescue": {
-      "last_verified": "2026-11-05",
-      "intake_urls": [
-        {
-          "url": "https://www.twentypawsrescue.com/contact-us/",
-          "label": "Contact form"
-        },
-        {
-          "url": "https://www.twentypawsrescue.com/forms-applications/",
-          "label": "Adoption and foster applications"
-        }
-      ],
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.twentypawsrescue.com/contact-us/",
-          "source": "manual",
-          "note": "Its own contact page, read 2026-11-05: rescues dogs and cats, \"located in both Pennsylvania and Brooklyn, NY\", P.O. Box 245007, Brooklyn, NY 11224, and a contact form. The email stored was supplied by a reviewer and is not on that page."
-        }
-      ]
-    },
-    "american-alliance-for-protection-of-animals": {
-      "last_verified": "2026-11-05",
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.facebook.com/",
-          "source": "manual",
-          "note": "Confirmed by the reviewer on its own Facebook and YouTube pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
-        }
-      ]
-    },
-    "animals-are-forever-inc": {
-      "last_verified": "2026-11-05",
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.facebook.com/",
-          "source": "manual",
-          "note": "Confirmed by the reviewer on its own Petfinder and Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
-        }
-      ]
-    },
-    "big-hands-little-paws": {
-      "last_verified": "2026-11-05",
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.facebook.com/",
-          "source": "manual",
-          "note": "Confirmed by the reviewer on its own Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
-        }
-      ]
-    },
-    "hopewell-rescue-inc": {
-      "last_verified": "2026-11-05",
-      "change_log": [
-        {
-          "date": "2026-11-05",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-05",
-          "evidence_url": "https://www.facebook.com/",
-          "source": "manual",
-          "note": "Confirmed by the reviewer on its own Petfinder and Instagram pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
-        }
-      ]
-    },
-    "new-york-state-department-of-agriculture-and-markets": {
-      "last_verified": "2026-11-09",
-      "confidence": "High",
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-09",
-          "evidence_url": "https://agriculture.ny.gov/animals/animal-related-complaints",
-          "source": "manual",
-          "note": "Read on 2026-11-09: the page lists the pet dealer/shelter rescue complaint form and the Domestic Animal Health Permit business complaint form, and says animal cruelty is regulated at the municipal level and is not in the Department's jurisdiction. Both form pages load."
-        }
-      ]
-    },
-    "better-business-bureau": {
-      "last_verified": "2026-11-09",
-      "confidence": "High",
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-09",
-          "evidence_url": "https://www.bbb.org/file-a-complaint",
-          "source": "manual",
-          "note": "Read on 2026-11-09: 'Start Complaint' for a problem with a business; 'Report a Scam' (BBB Scam Tracker) for fake businesses and impostors."
-        }
-      ]
-    },
-    "fbi-internet-crime-complaint-center": {
-      "last_verified": "2026-11-09",
-      "confidence": "High",
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-09",
-          "evidence_url": "https://www.ic3.gov/",
-          "source": "manual",
-          "note": "Read on 2026-11-09: IC3 is 'the central hub for reporting cyber-enabled crime', run by the FBI; other types of crimes 'should be reported at tips.fbi.gov'."
-        }
-      ]
-    },
-    "your-city-council-member": {
-      "last_verified": "2026-11-09",
-      "confidence": "High",
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-09",
-          "evidence_url": "https://council.nyc.gov/districts/",
-          "source": "manual",
-          "note": "Read on 2026-11-09: all 51 districts with each member's email; find your member by entering an address and borough."
-        }
-      ]
-    },
-    "nyc-council-animal-welfare-caucus": {
-      "last_verified": "2026-11-09",
-      "confidence": "High",
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "last_verified",
-          "from": null,
-          "to": "2026-11-09",
-          "evidence_url": "https://council.nyc.gov/caucuses/animal-welfare-caucus/",
-          "source": "manual",
-          "note": "Read on 2026-11-09: 'For any questions or concerns, please reach out to Animal Welfare Caucus Executive Director ... at kgomez@council.nyc.gov.' Email first supplied by a reviewer."
-        }
-      ]
-    },
-    "nyc-mayors-office-of-animal-welfare": {
-      "change_log": [
-        {
-          "date": "2026-11-09",
-          "field": "emails",
-          "from": null,
-          "to": "animalwelfare@cityhall.nyc.gov",
-          "evidence_url": "https://www.nyc.gov/site/animalwelfare/about/contact-us.page",
-          "source": "manual",
-          "note": "Screenshot sent by a reviewer on 2026-11-09: in a public comment thread, the head of the Mayor's Office of Animal Welfare wrote that they would prefer requests for help go to animalwelfare@cityhall.nyc.gov, to help streamline, and that it is a one-person office. Their personal work address in the same reply is deliberately not published. nyc.gov itself refuses our checks."
         }
       ]
     }
