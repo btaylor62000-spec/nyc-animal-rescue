@@ -116,3 +116,11 @@ test('phone: labels beside each number stay with that number', () => {
   );
   assert.deepEqual(r.residue, [], 'the words were labels, not notes');
 });
+
+// A Facebook group's address has two parts. Taking only the first linked
+// Greater City Aquarium Society to facebook.com/groups (2026-11-10).
+test('a Facebook group link keeps the group', () => {
+  const { values } = parseSocial('Facebook group: https://www.facebook.com/groups/166523873457272/');
+  assert.equal(values[0]?.url, 'https://facebook.com/groups/166523873457272');
+  assert.equal(parseSocial('facebook.com/bushwickcats').values[0]?.url, 'https://facebook.com/bushwickcats');
+});

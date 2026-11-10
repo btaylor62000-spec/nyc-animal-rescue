@@ -36,6 +36,13 @@ export const AGENT = {
   failuresBeforeReview: 3,
 
   /**
+   * A failure counts towards failuresBeforeReview only if it is at least this
+   * many days after the last failed check. Runs started by hand in the same
+   * week would otherwise count as extra weeks.
+   */
+  minDaysBetweenFailures: 5,
+
+  /**
    * If a single run would change more than this share of the directory,
    * nothing is applied. That pattern means the checker has broken, not that
    * a fifth of New York's rescues changed their phone number this week.

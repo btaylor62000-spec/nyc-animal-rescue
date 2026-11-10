@@ -341,7 +341,16 @@ function decideListed(org: Org, evidence: Evidence): Decision {
     }
 
     // --- the site is not there -----------------------------------------
-    const failures = org.consecutive_failures + 1;
+    // Failures are counted in weeks, not runs. Three runs in six days (the
+    // Monday run plus two started by hand, 2026-11-04 to 11-09) once read as
+    // "three weeks running" and proposed marking Greater City Aquarium
+    // Society "may no longer be active". A failure within a few days of the
+    // last failed check is the same week, so the count stays where it is.
+    const sameWeek =
+      org.check_status === 'unreachable' &&
+      !!org.last_checked &&
+      daysBetween(org.last_checked, evidence.date) < AGENT.minDaysBetweenFailures;
+    const failures = sameWeek ? Math.max(org.consecutive_failures, 1) : org.consecutive_failures + 1;
     const gone = problems.length > 0 && problems.every((p) => p === 'gone');
     return {
       kind: 'unreachable',

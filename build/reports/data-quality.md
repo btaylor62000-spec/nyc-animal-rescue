@@ -1,6 +1,6 @@
 # Data quality report
 
-Generated 2026-11-09 from the source workbooks and the wildlife guide.
+Generated 2026-11-10 from the source workbooks and the wildlife guide.
 
 ## Totals
 
@@ -212,7 +212,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `veg-ralph-ave` ← 2 records
 - `veg-williamsburg` ← 2 records
 - `fifth-avenue-veterinary-hospital` ← 2 records
-- `animal-medical-center` ← 7 records
+- `animal-medical-center` ← 6 records
 - `bluepearl-midtown` ← 2 records
 - `bluepearl-downtown` ← 2 records
 - `veg` ← 2 records
@@ -333,7 +333,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
 | Reporting animal abuse or neglect | 6890 |
-| Animal emergencies and poison control | 2794 |
+| Animal emergencies and poison control | 3071 |
 | Low-cost clinics and trap banks | 3593 |
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |
@@ -347,7 +347,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found injured or orphaned wildlife | 17151 |
 | Exotic pet emergencies | 4076 |
 | What you can legally keep in New York City | 3060 |
-| Help paying for veterinary care | 9163 |
+| Help paying for veterinary care | 9895 |
 | Rehoming a rabbit, bird, reptile or small animal | 3454 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Exotic pets: boarding, pet sitting and planning ahead | 6410 |
