@@ -6013,7 +6013,19 @@
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-05"
+      "last_verified": "2026-11-05",
+      "notes": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.",
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "notes",
+          "from": null,
+          "to": "spay/neuter clinic temporarily closed until January 2027",
+          "evidence_url": "https://saveapetusa.org/services",
+          "source": "manual",
+          "note": "Quoted by the weekly check of 2026-11-10 from its own services page: 'Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027'. Kept active: only the clinic is paused."
+        }
+      ]
     },
     "save-the-animals-rescue-foundation": {
       "last_checked": "2026-11-10",
@@ -6338,6 +6350,15 @@
           "evidence_url": "https://www.sicawsaves.org/",
           "source": "manual",
           "note": "SICAW's site, read in full 2026-11-04, no longer mentions spay/neuter certificates or vouchers, and the page this listing linked to is gone. A listing for a programme nobody can find only sends people on a wasted call, so it is no longer listed. SICAW itself stays listed."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "status-reviewed",
+          "from": null,
+          "to": "retired",
+          "evidence_url": "https://www.sicawsaves.org/contact",
+          "source": "manual",
+          "note": "Read 2026-11-11: SICAW itself is up ((718) 948-5623, sicawsaves@gmail.com), but its site no longer mentions the spay/neuter certificates. The programme stays closed."
         }
       ],
       "last_verified": "2026-11-05"
@@ -6574,6 +6595,15 @@
           "evidence_url": "https://www.sugarmuttsrescue.com/",
           "source": "manual",
           "note": "Re-read in a browser on 2026-11-04: \"Formerly based in Brooklyn, NY ... Sugar Mutts relocated\", with a 2026 wish list, so still operating, outside the city. Relocated status confirmed."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "status-reviewed",
+          "from": null,
+          "to": "relocated",
+          "evidence_url": "https://www.sugarmuttsrescue.com/",
+          "source": "manual",
+          "note": "Read 2026-11-11: active in 2026 (2026 wish list, its farm sanctuary), with nothing saying it is back in New York City. Stays 'moved away'."
         }
       ]
     },
@@ -7596,6 +7626,15 @@
           "evidence_url": "https://verg-brooklyn.com/",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: VERG's site lists only 196 4th Ave, Brooklyn 11217, (718) 522-9400. 318 Warren St has been absent since at least 2026-09-18. Same organization and phone as the 196 4th Ave entry, so this is the old address of that hospital, not a second one. Decided by a reviewer."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "status-reviewed",
+          "from": null,
+          "to": "retired",
+          "evidence_url": "https://verg-brooklyn.com/",
+          "source": "manual",
+          "note": "Read 2026-11-11: verg-brooklyn.com is VERG's single Brooklyn hospital site, (718) 522-9400, info@vergbrooklyn.com, and does not mention the North location. Still closed; the Brooklyn hospital is listed separately."
         }
       ],
       "last_verified": "2026-11-05"

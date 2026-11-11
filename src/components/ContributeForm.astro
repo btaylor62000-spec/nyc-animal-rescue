@@ -55,8 +55,8 @@ const email = org?.emails[0]?.value ?? '';
     </label>
 
     <label class="contribute__field">
-      <span>Their website {!correcting && <em>required</em>}</span>
-      <input type="url" name="website" inputmode="url" placeholder="https://" value={org?.website ?? ''} />
+      <span>Their website or social page {!correcting && <em>required</em>}</span>
+      <input type="url" name="website" inputmode="url" placeholder="https:// (Instagram, Facebook or Petfinder is fine)" value={org?.website ?? ''} />
     </label>
 
     <label class="contribute__field">

@@ -313,7 +313,14 @@ export function decide(org: Org, evidence: Evidence): Decision {
   if (DO_NOT_LIST.has(org.id)) return { kind: 'skipped', reason: 'Not listed, for a reason a working website does not change.' };
   const d = decideListed(org, evidence);
   if (org.status !== 'retired' && org.status !== 'relocated') return d;
-  if (d.kind === 'ok' && d.verified) {
+  // A person who looked and found it still closed (a manual 'status-reviewed'
+  // entry) quiets this for the usual 90 days. Without that, VERG North, the
+  // SICAW certificates and Sugar Mutts were flagged every week although each
+  // had been checked: the sites are up, but for the rest of the organization.
+  const reviewed = (org.change_log ?? []).some(
+    (c) => c.source === 'manual' && c.field === 'status-reviewed' && daysBetween(c.date, evidence.date) <= AGENT.manualRecheckDays,
+  );
+  if (d.kind === 'ok' && d.verified && !reviewed) {
     return {
       kind: 'needs-review',
       reason: `We list this as ${org.status === 'relocated' ? 'moved away' : 'closed'}, but its own site is up and still shows the contacts we hold, with nothing about closing. A person should check whether it is operating again, and list it again if so.`,

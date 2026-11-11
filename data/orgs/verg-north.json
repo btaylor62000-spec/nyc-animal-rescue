@@ -76,6 +76,15 @@
       "evidence_url": "https://verg-brooklyn.com/",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: VERG's site lists only 196 4th Ave, Brooklyn 11217, (718) 522-9400. 318 Warren St has been absent since at least 2026-09-18. Same organization and phone as the 196 4th Ave entry, so this is the old address of that hospital, not a second one. Decided by a reviewer."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "status-reviewed",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://verg-brooklyn.com/",
+      "source": "manual",
+      "note": "Read 2026-11-11: verg-brooklyn.com is VERG's single Brooklyn hospital site, (718) 522-9400, info@vergbrooklyn.com, and does not mention the North location. Still closed; the Brooklyn hospital is listed separately."
     }
   ],
   "privacy_hold": false,
