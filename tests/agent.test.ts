@@ -687,6 +687,14 @@ test('rules: a closed listing whose own site is live again, with its contacts, g
   assert.notEqual(gone.kind, 'needs-review');
 });
 
+test('rules: a person who found a closed listing still closed quiets the flag for 90 days, then it is asked again', () => {
+  const entry = (date: string) => ({ date, field: 'status-reviewed', from: null, to: 'retired', source: 'manual' as const, note: 'still closed' });
+  const recent = org({ status: 'retired', status_note: 'Closed.', change_log: [entry('2026-09-01')] });
+  assert.notEqual(decide(recent, evidenceFromHtml(recent, fixture('unchanged.html'), DATE)).kind, 'needs-review');
+  const old = org({ status: 'retired', status_note: 'Closed.', change_log: [entry('2026-05-01')] });
+  assert.equal(decide(old, evidenceFromHtml(old, fixture('unchanged.html'), DATE)).kind, 'needs-review');
+});
+
 test('rules: a group taken off for a serious reason is never re-checked', () => {
   const comy = org({ id: 'cats-of-meow-york', status: 'retired' });
   assert.equal(decide(comy, evidenceFromHtml(comy, fixture('unchanged.html'), DATE)).kind, 'skipped');

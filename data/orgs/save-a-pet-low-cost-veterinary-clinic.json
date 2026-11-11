@@ -43,7 +43,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Dogs and cats five or older need blood work at least a week before surgery.",
+  "notes": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.",
   "type_raw": "Shelter clinic offering low-cost spay/neuter",
   "confidence": "High",
   "status": "active",
@@ -59,7 +59,17 @@
   "last_checked": "2026-11-10",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-11",
+      "field": "notes",
+      "from": null,
+      "to": "spay/neuter clinic temporarily closed until January 2027",
+      "evidence_url": "https://saveapetusa.org/services",
+      "source": "manual",
+      "note": "Quoted by the weekly check of 2026-11-10 from its own services page: 'Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027'. Kept active: only the clinic is paused."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

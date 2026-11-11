@@ -82,6 +82,15 @@
       "evidence_url": "https://www.sugarmuttsrescue.com/",
       "source": "manual",
       "note": "Re-read in a browser on 2026-11-04: \"Formerly based in Brooklyn, NY ... Sugar Mutts relocated\", with a 2026 wish list, so still operating, outside the city. Relocated status confirmed."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "status-reviewed",
+      "from": null,
+      "to": "relocated",
+      "evidence_url": "https://www.sugarmuttsrescue.com/",
+      "source": "manual",
+      "note": "Read 2026-11-11: active in 2026 (2026 wish list, its farm sanctuary), with nothing saying it is back in New York City. Stays 'moved away'."
     }
   ],
   "privacy_hold": false,

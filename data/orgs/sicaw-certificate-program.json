@@ -91,6 +91,15 @@
       "evidence_url": "https://www.sicawsaves.org/",
       "source": "manual",
       "note": "SICAW's site, read in full 2026-11-04, no longer mentions spay/neuter certificates or vouchers, and the page this listing linked to is gone. A listing for a programme nobody can find only sends people on a wasted call, so it is no longer listed. SICAW itself stays listed."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "status-reviewed",
+      "from": null,
+      "to": "retired",
+      "evidence_url": "https://www.sicawsaves.org/contact",
+      "source": "manual",
+      "note": "Read 2026-11-11: SICAW itself is up ((718) 948-5623, sicawsaves@gmail.com), but its site no longer mentions the spay/neuter certificates. The programme stays closed."
     }
   ],
   "privacy_hold": false,
