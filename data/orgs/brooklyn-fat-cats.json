@@ -29,7 +29,18 @@
   ],
   "website": null,
   "intake_urls": [],
-  "social": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "brooklynfatcats",
+      "url": "https://instagram.com/brooklynfatcats"
+    },
+    {
+      "platform": "facebook",
+      "handle": "brooklynfatcats",
+      "url": "https://facebook.com/brooklynfatcats"
+    }
+  ],
   "geo": null,
   "address": null,
   "hours": null,
@@ -67,6 +78,15 @@
       "evidence_url": "https://www.instagram.com/",
       "source": "manual",
       "note": "A reviewer found its Facebook and Instagram active on 2026-11-11, and its Instagram says it is on hiatus. Its website's domain no longer exists, so the link is removed."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "social",
+      "from": null,
+      "to": "Instagram and Facebook",
+      "evidence_url": "https://www.instagram.com/brooklynfatcats/",
+      "source": "manual",
+      "note": "Links supplied by a reviewer, 2026-11-11."
     }
   ],
   "privacy_hold": false,

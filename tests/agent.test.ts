@@ -695,6 +695,19 @@ test('rules: a person who found a closed listing still closed quiets the flag fo
   assert.equal(decide(old, evidenceFromHtml(old, fixture('unchanged.html'), DATE)).kind, 'needs-review');
 });
 
+test('rules: a flag a person has settled is not raised again for 90 days', () => {
+  const entry = (date: string) => ({ date, field: 'flag-reviewed', from: null, to: 'checked', source: 'manual' as const, note: 'the other number is the fax' });
+  // A contact the page no longer shows is normally a flag.
+  const plain = org({});
+  const html = fixture('unchanged.html').replace(/\(?718\)?[ .-]?\d{3}-\d{4}/g, '(212) 555-0199').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '');
+  const raised = decide(plain, evidenceFromHtml(plain, html, DATE));
+  assert.equal(raised.kind, 'needs-review', JSON.stringify(raised));
+  const settled = org({ change_log: [entry('2026-09-01')] });
+  assert.notEqual(decide(settled, evidenceFromHtml(settled, html, DATE)).kind, 'needs-review');
+  const stale = org({ change_log: [entry('2026-05-01')] });
+  assert.equal(decide(stale, evidenceFromHtml(stale, html, DATE)).kind, 'needs-review');
+});
+
 test('rules: a group taken off for a serious reason is never re-checked', () => {
   const comy = org({ id: 'cats-of-meow-york', status: 'retired' });
   assert.equal(decide(comy, evidenceFromHtml(comy, fixture('unchanged.html'), DATE)).kind, 'skipped');

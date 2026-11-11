@@ -54,7 +54,7 @@
   "source_urls": [
     "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-11",
   "section": "City pet food pantry programme",
   "source_files": [
     "pet-food-pantries"
@@ -89,6 +89,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "(917) 423-2701",
+      "evidence_url": "https://nycommonpantry.org/",
+      "source": "manual",
+      "note": "A reviewer confirmed on 2026-11-11 that the Bronx site's number is (917) 423-2701, as the city lists it. The (917) 720-9665 the weekly check found on its site is the fax number."
     }
   ],
   "privacy_hold": false,

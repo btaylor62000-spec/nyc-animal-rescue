@@ -1463,12 +1463,33 @@
           "evidence_url": "https://www.facebook.com/",
           "source": "manual",
           "note": "Confirmed by a reviewer on its Facebook and Instagram, 2026-11-11: (212) 203-1892 and info@bighandslittlepaws.org. Its website does not answer at all, so the link is removed; the contacts stay."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "social",
+          "from": null,
+          "to": "Instagram and Facebook",
+          "evidence_url": "https://www.facebook.com/BigHandsLittlePaws/",
+          "source": "manual",
+          "note": "Links supplied by a reviewer, 2026-11-11."
         }
       ],
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "website": null
+      "website": null,
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "bighandslittlepaws",
+          "url": "https://instagram.com/bighandslittlepaws"
+        },
+        {
+          "platform": "facebook",
+          "handle": "BigHandsLittlePaws",
+          "url": "https://facebook.com/BigHandsLittlePaws"
+        }
+      ]
     },
     "bluepearl-brooklyn": {
       "last_checked": "2026-11-10",
@@ -1746,6 +1767,27 @@
           "evidence_url": "https://www.instagram.com/",
           "source": "manual",
           "note": "A reviewer found its Facebook and Instagram active on 2026-11-11, and its Instagram says it is on hiatus. Its website's domain no longer exists, so the link is removed."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "social",
+          "from": null,
+          "to": "Instagram and Facebook",
+          "evidence_url": "https://www.instagram.com/brooklynfatcats/",
+          "source": "manual",
+          "note": "Links supplied by a reviewer, 2026-11-11."
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "brooklynfatcats",
+          "url": "https://instagram.com/brooklynfatcats"
+        },
+        {
+          "platform": "facebook",
+          "handle": "brooklynfatcats",
+          "url": "https://facebook.com/brooklynfatcats"
         }
       ]
     },
@@ -3317,8 +3359,14 @@
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "phones": [],
-      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "2024521100",
+          "display": "(202) 452-1100",
+          "label": "Main line"
+        }
+      ],
+      "last_verified": "2026-11-11",
       "source_urls": [
         "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
         "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting"
@@ -3386,9 +3434,31 @@
           "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/dogfighting-how-to-identify-report.pdf",
           "source": "manual",
           "note": "A reviewer found Humane World's dogfighting PDF on 2026-11-11. Its file date is January 2011 and it gives humanesociety.org addresses and 1-877-TIP-HSUS (confirmed not a tip line on 2026-11-04), so it is not used. The listing keeps the address from the current reward flyer."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "emails",
+          "from": null,
+          "to": "donorcare@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "source": "manual",
+          "note": "A reviewer rang Humane World on (202) 452-1100 on 2026-11-11 and was told to email reports to donorcare@humaneworld.org; its animal abuse department then gets in touch. Added first; the main line is added with it."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "flag-reviewed",
+          "from": null,
+          "to": "donorcare@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "source": "manual",
+          "note": "Humane World gives donorcare@humaneworld.org for reports by phone ((202) 452-1100), not on its report page, so the weekly check will not find it there; a reviewer confirmed it by calling on 2026-11-11."
         }
       ],
       "emails": [
+        {
+          "value": "donorcare@humaneworld.org",
+          "label": "Report by email"
+        },
         {
           "value": "animalfighting@hsus.org"
         },
@@ -3402,7 +3472,7 @@
           "label": "Online report form"
         }
       ],
-      "notes": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+      "notes": "Humane World for Animals (formerly the HSUS) takes reports about dogfighting or cockfighting that is not happening right now. Email donorcare@humaneworld.org: its staff pass the report to the animal cruelty team, who get in touch with you. Its main line is (202) 452-1100. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
       "confidence": "High"
     },
     "humane-society-of-new-york": {
@@ -4686,7 +4756,19 @@
     "new-york-common-pantry-bronx": {
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-11",
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "flag-reviewed",
+          "from": null,
+          "to": "(917) 423-2701",
+          "evidence_url": "https://nycommonpantry.org/",
+          "source": "manual",
+          "note": "A reviewer confirmed on 2026-11-11 that the Bronx site's number is (917) 423-2701, as the city lists it. The (917) 720-9665 the weekly check found on its site is the fax number."
+        }
+      ]
     },
     "new-york-meow-sanctuary": {
       "last_checked": "2026-11-10",

@@ -38,7 +38,18 @@
   ],
   "website": null,
   "intake_urls": [],
-  "social": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "bighandslittlepaws",
+      "url": "https://instagram.com/bighandslittlepaws"
+    },
+    {
+      "platform": "facebook",
+      "handle": "BigHandsLittlePaws",
+      "url": "https://facebook.com/BigHandsLittlePaws"
+    }
+  ],
   "geo": null,
   "address": null,
   "hours": null,
@@ -85,6 +96,15 @@
       "evidence_url": "https://www.facebook.com/",
       "source": "manual",
       "note": "Confirmed by a reviewer on its Facebook and Instagram, 2026-11-11: (212) 203-1892 and info@bighandslittlepaws.org. Its website does not answer at all, so the link is removed; the contacts stay."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "social",
+      "from": null,
+      "to": "Instagram and Facebook",
+      "evidence_url": "https://www.facebook.com/BigHandsLittlePaws/",
+      "source": "manual",
+      "note": "Links supplied by a reviewer, 2026-11-11."
     }
   ],
   "privacy_hold": false,

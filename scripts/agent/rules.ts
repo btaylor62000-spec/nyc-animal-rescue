@@ -309,17 +309,30 @@ function daysBetween(from: string, to: string): number {
  * "closed" already says, so it is not a flag, and nothing about a closed
  * record's status is ever changed by this code.
  */
+/** A person recorded, within the usual 90 days, that they looked at this. */
+function reviewedRecently(org: Org, field: 'status-reviewed' | 'flag-reviewed', date: string): boolean {
+  return (org.change_log ?? []).some(
+    (c) => c.source === 'manual' && c.field === field && daysBetween(c.date, date) <= AGENT.manualRecheckDays,
+  );
+}
+
 export function decide(org: Org, evidence: Evidence): Decision {
   if (DO_NOT_LIST.has(org.id)) return { kind: 'skipped', reason: 'Not listed, for a reason a working website does not change.' };
   const d = decideListed(org, evidence);
-  if (org.status !== 'retired' && org.status !== 'relocated') return d;
+  if (org.status !== 'retired' && org.status !== 'relocated') {
+    // A person who looked at this exact flag and settled it (a manual
+    // 'flag-reviewed' entry) is not asked again for the usual 90 days. The
+    // New York Common Pantry's fax number and Humane World's reporting email,
+    // which it gives by phone and not on its page, were otherwise flagged
+    // every week. Nothing is changed either way; this only quiets the flag.
+    if (d.kind === 'needs-review' && reviewedRecently(org, 'flag-reviewed', evidence.date)) return { kind: 'ok', verified: false };
+    return d;
+  }
   // A person who looked and found it still closed (a manual 'status-reviewed'
   // entry) quiets this for the usual 90 days. Without that, VERG North, the
   // SICAW certificates and Sugar Mutts were flagged every week although each
   // had been checked: the sites are up, but for the rest of the organization.
-  const reviewed = (org.change_log ?? []).some(
-    (c) => c.source === 'manual' && c.field === 'status-reviewed' && daysBetween(c.date, evidence.date) <= AGENT.manualRecheckDays,
-  );
+  const reviewed = reviewedRecently(org, 'status-reviewed', evidence.date);
   if (d.kind === 'ok' && d.verified && !reviewed) {
     return {
       kind: 'needs-review',

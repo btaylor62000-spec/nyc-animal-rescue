@@ -333,7 +333,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Pets in a disaster or evacuation | 4007 |
 | Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
-| Reporting animal abuse or neglect | 6890 |
+| Reporting animal abuse or neglect | 6987 |
 | Animal emergencies and poison control | 3071 |
 | Low-cost clinics and trap banks | 3589 |
 | Community cats, colonies and starting TNR | 7469 |
