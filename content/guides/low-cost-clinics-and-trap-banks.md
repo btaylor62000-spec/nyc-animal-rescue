@@ -19,7 +19,7 @@ Every low-cost clinic and trap bank in the directory is listed at the end of thi
 
 ## CITYWIDE (work in every borough)
 
-- The Toby Project - FREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: Tobyprojectnyc@gmail.com.
+- The Toby Project - FREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: info@tobyproject.org.
 - ASPCA - free/low-cost spay/neuter citywide: public via Same-Day Waitlist (clinic.aspca.org); rescue groups through the ASPCA's Rescuer Services Scheduler (https://www.aspca.org/veterinary-services/rescue-professionals). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.
 - Humane Society of NY (HSNY) - 306 E 59th St, Manhattan - (212) 752-4840 - low-cost spay/neuter for all cats (pet + feral) + dogs, 7 days, appointment only. Each cat in a separate covered trap.
 - Friends of Animals - certificates, redeem at feral-friendly vets - 1-800-321-PETS.

@@ -75,7 +75,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope/"
   ],
-  "last_verified": "2026-09-21",
+  "last_verified": "2026-11-11",
   "section": "CITYWIDE BACKBONE & MUNICIPAL (the spine of NYC dog rescue)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -110,6 +110,15 @@
       "evidence_url": "https://newhope.shelterbuddy.com/Animal/List",
       "source": "manual",
       "note": "Every animal page read 2026-11-04: 22 of 46 say \"Sorry, this pet is for new hope partners only.\" and have only the Pre-Screener Form; 23 also have \"Reserve [name]\". newhopeprogram@nycacc.org is given on newhope.shelterbuddy.com; adopt@nycacc.org on the list page."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "last_verified",
+      "from": null,
+      "to": "2026-11-11",
+      "evidence_url": "https://www.nycacc.org/programs/new-hope/",
+      "source": "manual",
+      "note": "Confirmed by a reviewer in a browser on 2026-11-11: unchanged; adopt@nycacc.org, and newhopeprogram@nycacc.org for questions about the programme."
     }
   ],
   "privacy_hold": false,

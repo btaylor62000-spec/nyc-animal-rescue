@@ -131,6 +131,15 @@
       "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
       "source": "manual",
       "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "status-reviewed",
+      "from": null,
+      "to": "active",
+      "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/dogfighting-how-to-identify-report.pdf",
+      "source": "manual",
+      "note": "A reviewer found Humane World's dogfighting PDF on 2026-11-11. Its file date is January 2011 and it gives humanesociety.org addresses and 1-877-TIP-HSUS (confirmed not a tip line on 2026-11-04), so it is not used. The listing keeps the address from the current reward flyer."
     }
   ],
   "privacy_hold": false,

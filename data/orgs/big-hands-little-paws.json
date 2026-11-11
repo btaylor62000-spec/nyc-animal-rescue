@@ -36,7 +36,7 @@
       "value": "info@bighandslittlepaws.org"
     }
   ],
-  "website": "http://bighandslittlepaws.org",
+  "website": null,
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -50,7 +50,7 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-11",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -76,6 +76,15 @@
       "evidence_url": "https://www.facebook.com/",
       "source": "manual",
       "note": "Confirmed by the reviewer on its own Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "website",
+      "from": "http://bighandslittlepaws.org",
+      "to": null,
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Confirmed by a reviewer on its Facebook and Instagram, 2026-11-11: (212) 203-1892 and info@bighandslittlepaws.org. Its website does not answer at all, so the link is removed; the contacts stay."
     }
   ],
   "privacy_hold": false,

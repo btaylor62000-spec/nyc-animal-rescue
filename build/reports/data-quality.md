@@ -7,7 +7,7 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 - **428** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
-- **17** entries flagged as not currently active
+- **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
 
@@ -92,10 +92,10 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 411 |
+| active | 410 |
 | retired | 12 |
+| hiatus | 3 |
 | relocated | 3 |
-| hiatus | 2 |
 
 ## Gaps in coverage
 
@@ -150,6 +150,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 ## Not currently active
 
 - **Big City Little Kitty** — `retired`: Source marks this organization as retired.
+- **Brooklyn Fat Cats** — `hiatus`: On hiatus: its Instagram says so (checked by a reviewer, 2026-11-11). Its website no longer exists.
 - **Cats In The Cradle Rescue (CITCR)** — `retired`: Not listed: no posts since 2023, and its number goes to an automated voicemail (rung 2026-11-05). If you know it is still rescuing, tell us with Report a problem.
 - **Cats of Meow York (COMY)** — `retired`: Not listed. A Queens Chronicle report (June 2023) says its founder was arrested after police allegedly found more than 40 neglected cats in the group's care, and it has posted nothing since. Do not send animals here.
 - **City Pitties** — `relocated`: Moved to Broward County, Florida. No longer takes dogs in New York City.
@@ -334,13 +335,13 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
 | Reporting animal abuse or neglect | 6890 |
 | Animal emergencies and poison control | 3071 |
-| Low-cost clinics and trap banks | 3593 |
+| Low-cost clinics and trap banks | 3589 |
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |
 | Lost or found a cat | 7530 |
 | Help keeping your cat | 5748 |
 | Help keeping your dog | 8070 |
-| Low-cost vet care, spay/neuter and dog licensing | 7482 |
+| Low-cost vet care, spay/neuter and dog licensing | 7480 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
 | Breed-specific dog rescue | 19717 |
