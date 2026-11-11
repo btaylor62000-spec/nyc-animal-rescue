@@ -1,0 +1,66 @@
+{
+  "id": "dana-and-the-cats",
+  "name": "Dana and the Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Brooklyn",
+  "zips": [
+    "11225"
+  ],
+  "region_note": "CAT RESCUE - Brooklyn (social media and Petfinder only, no website of its own)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "danaandthecats@gmail.com"
+    }
+  ],
+  "website": "https://www.petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657/",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "danaandthecats",
+      "url": "https://instagram.com/danaandthecats"
+    }
+  ],
+  "geo": {
+    "lat": 40.6631,
+    "lon": -73.9539,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A Brooklyn cat rescue with cats for adoption on Petfinder. It has no website of its own: reach it by email or an Instagram message. Contacts supplied by a reviewer on 2026-11-11 from its Petfinder and Instagram pages, which turn our checks away.",
+  "type_raw": "Cat rescue - adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657/"
+  ],
+  "last_verified": "2026-11-11",
+  "section": "CAT RESCUE - Brooklyn (social media and Petfinder only, no website of its own)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

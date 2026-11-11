@@ -111,6 +111,32 @@ export function normalizeEmailInput(raw: string): string | null {
   return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v) && v.length <= 120 ? v : null;
 }
 
+/*
+ * Sites where many organizations each have a page. On these the address up
+ * to the page identifies the organization; the domain alone does not. Before
+ * this, every Petfinder page counted as a duplicate of the one listing that
+ * already had one (Animals Are Forever), and Dana and the Cats was refused.
+ */
+const SHARED_HOSTS = /(^|\.)(petfinder\.com|facebook\.com|fb\.com|instagram\.com|linktr\.ee|tiktok\.com|x\.com|twitter\.com|blogspot\.com|wordpress\.com|wixsite\.com|sites\.google\.com|squarespace\.com|weebly\.com|adoptapet\.com|rescuegroups\.org|bio\.site)$/i;
+
+/**
+ * What makes two websites "the same organization": the domain, or on a
+ * shared site the page itself. Used to spot a duplicate submission.
+ */
+export function siteKey(url: string | null | undefined): string | null {
+  if (!url) return null;
+  try {
+    const u = new URL(/^https?:\/\//i.test(url) ? url : `https://${url}`);
+    const host = u.hostname.replace(/^www\./, '').toLowerCase();
+    if (!SHARED_HOSTS.test(host)) return host;
+    const path = u.pathname.replace(/\/+$/, '').toLowerCase();
+    // A shared site's home page names nobody.
+    return path ? `${host}${path}` : null;
+  } catch {
+    return null;
+  }
+}
+
 export function normalizeWebsiteInput(raw: string): string | null {
   let v = raw.trim();
   if (!v) return null;
@@ -119,10 +145,10 @@ export function normalizeWebsiteInput(raw: string): string | null {
     const u = new URL(v);
     if (!/^https?:$/.test(u.protocol)) return null;
     if (!u.hostname.includes('.')) return null;
-    // Nothing on a social platform counts as "their own website": the check
-    // reads the page for the contact, and those pages render nothing to a
-    // plain fetch.
-    if (/(^|\.)(facebook|instagram|twitter|x|tiktok|linktr|bio)\.(com|ee|site)$/i.test(u.hostname)) return null;
+    // A social or Petfinder page is accepted (2026-11-11). Many small rescues
+    // have nothing else, and refusing them is how Dana and the Cats could not
+    // be added at all. The check reads what it can and records "not
+    // confirmed" when such a page shows it nothing, as for any other site.
     u.hash = '';
     return u.toString();
   } catch {
@@ -163,14 +189,14 @@ export function validate(req: ContributeRequest): Validated | Invalid {
   const boroughs = Array.isArray(f.boroughs) ? f.boroughs.filter((b): b is Borough => (BOROUGHS as readonly string[]).includes(b)) : [];
   const animals = Array.isArray(f.animals) ? f.animals.filter((a): a is Animal => (ANIMALS as readonly string[]).includes(a)) : [];
 
-  if (f.website && website === null) return { ok: false, message: 'That website address does not look right. It should be the organization’s own site, not a social media page.' };
+  if (f.website && website === null) return { ok: false, message: 'That web address does not look right.' };
   if (f.phone && phone === null) return { ok: false, message: 'That phone number does not look like a ten-digit US number.' };
   if (f.email && email === null) return { ok: false, message: 'That email address does not look right.' };
   if (zip && !/^\d{5}$/.test(zip)) return { ok: false, message: 'A zip code is five digits.' };
 
   if (req.kind === 'add') {
     if (name.length < LIMITS.nameMin) return { ok: false, message: 'Give the organization’s name.' };
-    if (!website) return { ok: false, message: 'Give the organization’s own website. It is how the details are checked.' };
+    if (!website) return { ok: false, message: 'Give the organization’s website, or its Instagram, Facebook or Petfinder page.' };
     if (!phone && !email) return { ok: false, message: 'Give a phone number or an email address someone can use.' };
     if (what.length < LIMITS.whatMin) return { ok: false, message: 'Say in a sentence what they do and who they help.' };
     if (!boroughs.length && !zip) return { ok: false, message: 'Say which borough they serve, or give a zip code.' };

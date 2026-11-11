@@ -2719,6 +2719,23 @@
       "matched": "WILDLIFE REHABILITATION - wild cottontails and other native "
     }
   ],
+  "dana-and-the-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "domesticsheltersorg": [
     {
       "tag": "owner-support",

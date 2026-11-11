@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { validate, normalizeWebsiteInput, type Submission } from '../src/contribute/protocol.ts';
+import { validate, normalizeWebsiteInput, siteKey, type Submission } from '../src/contribute/protocol.ts';
 import { applyCorrections, submissionToOrg } from '../scripts/import/community.ts';
 import { org } from './helpers/agent.ts';
 
@@ -33,8 +33,9 @@ test('an addition needs a name, a website, one contact, a sentence and a place',
   const noContact = validate({ kind: 'add', fields: { ...addition().fields, email: undefined } });
   assert.equal(noContact.ok, false);
 
+  // Many small rescues have only a social or Petfinder page (2026-11-11).
   const social = validate({ kind: 'add', fields: { ...addition().fields, website: 'https://www.instagram.com/makinbiscuits' } });
-  assert.equal(social.ok, false, 'a social page is not their own website and cannot be checked');
+  assert.equal(social.ok, true, 'a rescue with only an Instagram page can be added');
 
   const nowhere = validate({ kind: 'add', fields: { ...addition().fields, boroughs: [], zip: undefined } });
   assert.equal(nowhere.ok, false);
@@ -204,4 +205,21 @@ test('a person\'s check made after a correction is kept, not wiped by it', () =>
   applyCorrections([older], [fix]);
   assert.equal(older.last_verified, null, 'a check from before the correction says nothing about it');
   assert.equal(older.confidence, 'Low');
+});
+
+/*
+ * Dana and the Cats was refused as "Animals Are Forever is already listed"
+ * because both have Petfinder pages: the duplicate check compared domains.
+ */
+test('two rescues with pages on the same shared site are not duplicates', () => {
+  const dana = siteKey('https://www.petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657/');
+  const aaf = siteKey('https://www.petfinder.com/member/us/ny/brooklyn/animals-are-forever-inc-ny1299');
+  assert.ok(dana && aaf && dana !== aaf);
+  assert.notEqual(siteKey('https://instagram.com/danaandthecats'), siteKey('https://instagram.com/makinbiscuits'));
+  // The same page, written differently, is still the same rescue.
+  assert.equal(dana, siteKey('petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657'));
+  // An organization's own domain still identifies it, whatever the page.
+  assert.equal(siteKey('https://www.makinbiscuits.org/adopt'), siteKey('https://makinbiscuits.org'));
+  // A shared site's home page identifies nobody.
+  assert.equal(siteKey('https://www.petfinder.com/'), null);
 });

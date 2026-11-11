@@ -14,7 +14,7 @@
  * low-confidence tier that the assistant never cites. Corrections overwrite
  * the record -- a decision taken on 2026-09-22 with that limit understood.
  */
-import { LIMITS, validate, type ContributeRequest, type ContributeResponse, type Submission } from '../../src/contribute/protocol.ts';
+import { LIMITS, siteKey, validate, type ContributeRequest, type ContributeResponse, type Submission } from '../../src/contribute/protocol.ts';
 import { containsEmail, containsPhone, htmlToText } from '../../scripts/agent/extract.ts';
 import { isPlaceholderPhone } from '../../scripts/agent/rules.ts';
 import holds from '../../data/privacy-holds.json';
@@ -132,15 +132,6 @@ async function listedRecords(env: Env, request: Request): Promise<Listed[]> {
   }
 }
 
-function hostOf(url: string | null): string | null {
-  if (!url) return null;
-  try {
-    return new URL(url).hostname.replace(/^www\./, '').toLowerCase();
-  } catch {
-    return null;
-  }
-}
-
 async function commitSubmission(env: Env, submission: Submission): Promise<{ ok: true } | { ok: false; error: string }> {
   const token = env.GITHUB_CONTRIB_TOKEN;
   if (!token) return { ok: false, error: 'not-configured' };
@@ -214,8 +205,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (body.kind === 'add') {
     orgId = slugify(fields.name!);
     const key = mergeKey(fields.name!);
-    const newHost = hostOf(fields.website ?? null);
-    const dup = listed.find((r) => r.id === orgId || mergeKey(r.name) === key || (newHost && hostOf(r.website) === newHost));
+    const newSite = siteKey(fields.website ?? null);
+    const dup = listed.find((r) => r.id === orgId || mergeKey(r.name) === key || (newSite && siteKey(r.website) === newSite));
     if (dup) {
       return reply(409, {
         ok: false,
