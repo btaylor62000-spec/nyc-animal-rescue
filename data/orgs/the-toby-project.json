@@ -44,9 +44,6 @@
   ],
   "emails": [
     {
-      "value": "tobyprojectnyc@gmail.com"
-    },
-    {
       "value": "info@tobyproject.org"
     }
   ],
@@ -76,7 +73,7 @@
     "https://www.humaneurbangroup.org/tnr-resources",
     "https://www.aspcapro.org/sites/default/files/Local%20NYC%20resources-online%2011-14.pdf"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-11",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -173,6 +170,15 @@
       "evidence_url": "https://tobyproject.org",
       "source": "manual",
       "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "emails",
+      "from": "tobyprojectnyc@gmail.com",
+      "to": "info@tobyproject.org",
+      "evidence_url": "https://www.tobyproject.org/contact",
+      "source": "manual",
+      "note": "A reviewer's screenshot of its contact page, 2026-11-11: info@tobyproject.org for the mobile services and the mission. The Gmail address is no longer given anywhere on it."
     }
   ],
   "privacy_hold": false,

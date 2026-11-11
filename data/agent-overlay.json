@@ -139,7 +139,7 @@
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "last_verified": "2026-09-21",
+      "last_verified": "2026-11-11",
       "intake_urls": [
         {
           "url": "https://newhope.shelterbuddy.com/Animal/List",
@@ -181,6 +181,15 @@
           "evidence_url": "https://newhope.shelterbuddy.com/Animal/List",
           "source": "manual",
           "note": "Every animal page read 2026-11-04: 22 of 46 say \"Sorry, this pet is for new hope partners only.\" and have only the Pre-Screener Form; 23 also have \"Reserve [name]\". newhopeprogram@nycacc.org is given on newhope.shelterbuddy.com; adopt@nycacc.org on the list page."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-11",
+          "evidence_url": "https://www.nycacc.org/programs/new-hope/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer in a browser on 2026-11-11: unchanged; adopt@nycacc.org, and newhopeprogram@nycacc.org for questions about the programme."
         }
       ],
       "notes": "Three times a week ACC lists cats and dogs who may be euthanised if nobody takes them; each listing closes about 42 hours later (Sunday, Tuesday and Thursday at 6 PM, closing at noon two days later). Open the animal's page. If it says \"Sorry, this pet is for new hope partners only\", only an approved rescue group can take it: press \"Pre-Screener Form\" and contact rescue groups yourself at once. If it has a \"Reserve\" button, a member of the public may adopt it directly: it goes into a cart for 15 minutes, and you check out at the top right and pay the deposit by card. The Pre-Screener Form needs a Google sign-in. Website trouble: adopt@nycacc.org. New Hope program questions: newhopeprogram@nycacc.org. The guide \"Save a shelter animal from euthanasia\" has every step and ready-made messages for rescue groups.",
@@ -1422,11 +1431,20 @@
           "evidence_url": "http://bigcitylittlekitty.blogspot.com",
           "source": "manual",
           "note": "Re-read on 2026-11-04: the blog's last stories run to 2014 and nothing newer. Retired status confirmed."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "status-reviewed",
+          "from": null,
+          "to": "retired",
+          "evidence_url": "http://bigcitylittlekitty.blogspot.com",
+          "source": "manual",
+          "note": "A reviewer's screenshot, 2026-11-11: the blog's last post, 1 September 2014, is 'Big City Little Kitty has retired.' Stays closed."
         }
       ]
     },
     "big-hands-little-paws": {
-      "last_verified": "2026-11-05",
+      "last_verified": "2026-11-11",
       "change_log": [
         {
           "date": "2026-11-05",
@@ -1436,11 +1454,42 @@
           "evidence_url": "https://www.facebook.com/",
           "source": "manual",
           "note": "Confirmed by the reviewer on its own Facebook pages, 2026-11-05: this group works through social media rather than a website, and the contacts stored are the ones those pages give."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "website",
+          "from": "http://bighandslittlepaws.org",
+          "to": null,
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Confirmed by a reviewer on its Facebook and Instagram, 2026-11-11: (212) 203-1892 and info@bighandslittlepaws.org. Its website does not answer at all, so the link is removed; the contacts stay."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "social",
+          "from": null,
+          "to": "Instagram and Facebook",
+          "evidence_url": "https://www.facebook.com/BigHandsLittlePaws/",
+          "source": "manual",
+          "note": "Links supplied by a reviewer, 2026-11-11."
         }
       ],
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "website": null,
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "bighandslittlepaws",
+          "url": "https://instagram.com/bighandslittlepaws"
+        },
+        {
+          "platform": "facebook",
+          "handle": "BigHandsLittlePaws",
+          "url": "https://facebook.com/BigHandsLittlePaws"
+        }
+      ]
     },
     "bluepearl-brooklyn": {
       "last_checked": "2026-11-10",
@@ -1705,7 +1754,42 @@
     "brooklyn-fat-cats": {
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 1
+      "consecutive_failures": 1,
+      "website": null,
+      "status": "hiatus",
+      "status_note": "On hiatus: its Instagram says so (checked by a reviewer, 2026-11-11). Its website no longer exists.",
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "status",
+          "from": "active",
+          "to": "hiatus",
+          "evidence_url": "https://www.instagram.com/",
+          "source": "manual",
+          "note": "A reviewer found its Facebook and Instagram active on 2026-11-11, and its Instagram says it is on hiatus. Its website's domain no longer exists, so the link is removed."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "social",
+          "from": null,
+          "to": "Instagram and Facebook",
+          "evidence_url": "https://www.instagram.com/brooklynfatcats/",
+          "source": "manual",
+          "note": "Links supplied by a reviewer, 2026-11-11."
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "brooklynfatcats",
+          "url": "https://instagram.com/brooklynfatcats"
+        },
+        {
+          "platform": "facebook",
+          "handle": "brooklynfatcats",
+          "url": "https://facebook.com/brooklynfatcats"
+        }
+      ]
     },
     "brooklyn-kitty-committee-inc": {
       "last_checked": "2026-11-10",
@@ -3275,8 +3359,14 @@
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
       "consecutive_failures": 0,
-      "phones": [],
-      "last_verified": "2026-11-04",
+      "phones": [
+        {
+          "value": "2024521100",
+          "display": "(202) 452-1100",
+          "label": "Main line"
+        }
+      ],
+      "last_verified": "2026-11-11",
       "source_urls": [
         "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
         "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting"
@@ -3335,9 +3425,40 @@
           "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
           "source": "manual",
           "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "status-reviewed",
+          "from": null,
+          "to": "active",
+          "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/dogfighting-how-to-identify-report.pdf",
+          "source": "manual",
+          "note": "A reviewer found Humane World's dogfighting PDF on 2026-11-11. Its file date is January 2011 and it gives humanesociety.org addresses and 1-877-TIP-HSUS (confirmed not a tip line on 2026-11-04), so it is not used. The listing keeps the address from the current reward flyer."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "emails",
+          "from": null,
+          "to": "donorcare@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "source": "manual",
+          "note": "A reviewer rang Humane World on (202) 452-1100 on 2026-11-11 and was told to email reports to donorcare@humaneworld.org; its animal abuse department then gets in touch. Added first; the main line is added with it."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "flag-reviewed",
+          "from": null,
+          "to": "donorcare@humaneworld.org",
+          "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+          "source": "manual",
+          "note": "Humane World gives donorcare@humaneworld.org for reports by phone ((202) 452-1100), not on its report page, so the weekly check will not find it there; a reviewer confirmed it by calling on 2026-11-11."
         }
       ],
       "emails": [
+        {
+          "value": "donorcare@humaneworld.org",
+          "label": "Report by email"
+        },
         {
           "value": "animalfighting@hsus.org"
         },
@@ -3351,7 +3472,7 @@
           "label": "Online report form"
         }
       ],
-      "notes": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+      "notes": "Humane World for Animals (formerly the HSUS) takes reports about dogfighting or cockfighting that is not happening right now. Email donorcare@humaneworld.org: its staff pass the report to the animal cruelty team, who get in touch with you. Its main line is (202) 452-1100. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
       "confidence": "High"
     },
     "humane-society-of-new-york": {
@@ -4066,7 +4187,23 @@
     "mama-chris-animal-rescue-inc": {
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "mamachrisrescue@gmail.com"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "emails",
+          "from": null,
+          "to": "mamachrisrescue@gmail.com",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Read by a reviewer on its Facebook page, 2026-11-11. Its website shows our checks nothing."
+        }
+      ]
     },
     "mama-coupon": {
       "last_checked": "2026-11-04",
@@ -4619,7 +4756,19 @@
     "new-york-common-pantry-bronx": {
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "last_verified": "2026-11-11",
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "flag-reviewed",
+          "from": null,
+          "to": "(917) 423-2701",
+          "evidence_url": "https://nycommonpantry.org/",
+          "source": "manual",
+          "note": "A reviewer confirmed on 2026-11-11 that the Bronx site's number is (917) 423-2701, as the city lists it. The (917) 720-9665 the weekly check found on its site is the fax number."
+        }
+      ]
     },
     "new-york-meow-sanctuary": {
       "last_checked": "2026-11-10",
@@ -5155,9 +5304,18 @@
           "evidence_url": "https://extapps.dec.ny.gov/docs/administration_pdf/decguide.pdf",
           "source": "manual",
           "note": "DEC's own \"Guide to DEC\" (last revised July 2023) lists Region 2 (New York City) as 718-482-4900, r2info@dec.ny.gov. The phone matches the stored one. dec.ny.gov itself shows automated browsers a bot check, so the guide is the readable source."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "last_verified",
+          "from": null,
+          "to": "2026-11-11",
+          "evidence_url": "https://dec.ny.gov",
+          "source": "manual",
+          "note": "Confirmed by a reviewer in a browser on 2026-11-11: the Region 2 contacts are the same as the week before."
         }
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-11",
       "confidence": "High"
     },
     "nysave": {
@@ -7006,6 +7164,15 @@
           "evidence_url": "https://tobyproject.org",
           "source": "manual",
           "note": "A reviewer found that tobyproject.org does open, slowly (2026-11-04); its Facebook and Instagram give Info@tobyproject.org."
+        },
+        {
+          "date": "2026-11-11",
+          "field": "emails",
+          "from": "tobyprojectnyc@gmail.com",
+          "to": "info@tobyproject.org",
+          "evidence_url": "https://www.tobyproject.org/contact",
+          "source": "manual",
+          "note": "A reviewer's screenshot of its contact page, 2026-11-11: info@tobyproject.org for the mobile services and the mission. The Gmail address is no longer given anywhere on it."
         }
       ],
       "website": "https://tobyproject.org",
@@ -7021,11 +7188,8 @@
           "url": "https://www.facebook.com/thetobyproject/"
         }
       ],
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-11",
       "emails": [
-        {
-          "value": "tobyprojectnyc@gmail.com"
-        },
         {
           "value": "info@tobyproject.org"
         }
@@ -7035,7 +7199,24 @@
     "the-toby-project-feral-spay-neuter-clinic": {
       "last_checked": "2026-11-10",
       "check_status": "needs-review",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "emails": [
+        {
+          "value": "info@tobyproject.org"
+        }
+      ],
+      "last_verified": "2026-11-11",
+      "change_log": [
+        {
+          "date": "2026-11-11",
+          "field": "emails",
+          "from": "tobyprojectnyc@gmail.com",
+          "to": "info@tobyproject.org",
+          "evidence_url": "https://www.tobyproject.org/contact",
+          "source": "manual",
+          "note": "A reviewer's screenshot of its contact page, 2026-11-11: info@tobyproject.org for questions about the mobile services and the mission. The old Gmail address is no longer given."
+        }
+      ]
     },
     "the-wild-bird-fund": {
       "last_checked": "2026-11-10",

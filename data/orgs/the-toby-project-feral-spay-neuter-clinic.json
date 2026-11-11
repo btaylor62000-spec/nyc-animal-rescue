@@ -38,8 +38,7 @@
   ],
   "emails": [
     {
-      "value": "tobyprojectnyc@gmail.com",
-      "label": "Bronx/Queens mobile clinic"
+      "value": "info@tobyproject.org"
     }
   ],
   "website": "https://www.tobyproject.org",
@@ -48,7 +47,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "FREE spay/neuter + eartip in ALL FIVE BOROUGHS for community cats. Must be a Certified TNR Caretaker. FVRCP/SNAP testing/Revolution available at heavily discounted fees. Also runs public low-cost spay/neuter. Intake: call (347) 816-2899 for the stationary clinic at Ferals in Peril (Brooklyn), Sun/Mon by appointment. Bronx/Queens: email Tobyprojectnyc@gmail.com for the weekly mobile clinic. Other channel: 104,000+ spay/neuters to date",
+  "notes": "FREE spay/neuter + eartip in ALL FIVE BOROUGHS for community cats. Must be a Certified TNR Caretaker. FVRCP/SNAP testing/Revolution available at heavily discounted fees. Also runs public low-cost spay/neuter. Intake: call (347) 816-2899 for the stationary clinic at Ferals in Peril (Brooklyn), Sun/Mon by appointment. Bronx/Queens: email info@tobyproject.org for the weekly mobile clinic. Other channel: 104,000+ spay/neuters to date",
   "type_raw": "spay-neuter clinic (support, all boroughs)",
   "confidence": "High",
   "status": "active",
@@ -56,7 +55,7 @@
   "source_urls": [
     "https://www.bideawee.org/programs/feral-cat-initiative/colony-care/spay-neuter-vet-care/spay-neuter/nonprofit-spay-neuter-providers/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-11",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -64,7 +63,17 @@
   "last_checked": "2026-11-10",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-11",
+      "field": "emails",
+      "from": "tobyprojectnyc@gmail.com",
+      "to": "info@tobyproject.org",
+      "evidence_url": "https://www.tobyproject.org/contact",
+      "source": "manual",
+      "note": "A reviewer's screenshot of its contact page, 2026-11-11: info@tobyproject.org for questions about the mobile services and the mission. The old Gmail address is no longer given."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

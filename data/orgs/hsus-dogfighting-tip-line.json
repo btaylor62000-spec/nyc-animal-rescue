@@ -40,8 +40,18 @@
   "neighborhoods": null,
   "zips": [],
   "region_note": "WHO TO CONTACT",
-  "phones": [],
+  "phones": [
+    {
+      "value": "2024521100",
+      "display": "(202) 452-1100",
+      "label": "Main line"
+    }
+  ],
   "emails": [
+    {
+      "value": "donorcare@humaneworld.org",
+      "label": "Report by email"
+    },
     {
       "value": "animalfighting@hsus.org"
     },
@@ -60,7 +70,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Humane World for Animals (formerly the HSUS) takes tips about organised dogfighting or cockfighting that is not happening right now: email animalfighting@hsus.org, as its current reward flyer says, or use its online report form. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
+  "notes": "Humane World for Animals (formerly the HSUS) takes reports about dogfighting or cockfighting that is not happening right now. Email donorcare@humaneworld.org: its staff pass the report to the animal cruelty team, who get in touch with you. Its main line is (202) 452-1100. It offers a standing reward of $5,000 for information leading to a conviction for dogfighting or other animal fighting. If fighting is happening now, call 911.",
   "type_raw": null,
   "confidence": "High",
   "status": "active",
@@ -69,7 +79,7 @@
     "https://www.humaneworld.org/sites/default/files/docs/2025-reward-poster-animal-fighting.pdf",
     "https://www.humaneworld.org/en/issue/take-action-stop-animal-fighting"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-11",
   "section": "Report animal abuse — WHO TO CONTACT",
   "source_files": [
     "research/NYC_Animal_Abuse_Reporting.xlsx"
@@ -131,6 +141,33 @@
       "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/HSUS_Animal-Fighting-Flyer.pdf",
       "source": "manual",
       "note": "A reviewer rang on 2026-11-04. (877) 847-4787 is not a tip line. Its current reward flyer (on humaneworld.org, read 2026-11-04) says \"Email tips to animalfighting@hsus.org\" and \"$5,000 REWARD\"; it also has an online report form."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "status-reviewed",
+      "from": null,
+      "to": "active",
+      "evidence_url": "https://www.humaneworld.org/sites/default/files/docs/dogfighting-how-to-identify-report.pdf",
+      "source": "manual",
+      "note": "A reviewer found Humane World's dogfighting PDF on 2026-11-11. Its file date is January 2011 and it gives humanesociety.org addresses and 1-877-TIP-HSUS (confirmed not a tip line on 2026-11-04), so it is not used. The listing keeps the address from the current reward flyer."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "emails",
+      "from": null,
+      "to": "donorcare@humaneworld.org",
+      "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+      "source": "manual",
+      "note": "A reviewer rang Humane World on (202) 452-1100 on 2026-11-11 and was told to email reports to donorcare@humaneworld.org; its animal abuse department then gets in touch. Added first; the main line is added with it."
+    },
+    {
+      "date": "2026-11-11",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "donorcare@humaneworld.org",
+      "evidence_url": "https://www.humaneworld.org/en/report-animal-cruelty-contact-form",
+      "source": "manual",
+      "note": "Humane World gives donorcare@humaneworld.org for reports by phone ((202) 452-1100), not on its report page, so the weekly check will not find it there; a reviewer confirmed it by calling on 2026-11-11."
     }
   ],
   "privacy_hold": false,

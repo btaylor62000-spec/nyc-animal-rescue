@@ -46,7 +46,11 @@
       "label": "text"
     }
   ],
-  "emails": [],
+  "emails": [
+    {
+      "value": "mamachrisrescue@gmail.com"
+    }
+  ],
   "website": "https://mamachrisrescue.org",
   "intake_urls": [],
   "social": [],
@@ -70,7 +74,17 @@
   "last_checked": "2026-11-10",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-11",
+      "field": "emails",
+      "from": null,
+      "to": "mamachrisrescue@gmail.com",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Read by a reviewer on its Facebook page, 2026-11-11. Its website shows our checks nothing."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

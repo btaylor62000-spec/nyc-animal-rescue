@@ -36,7 +36,7 @@ If something worries you, report it. You do not need proof, and you can stay ano
 - NYC Council Animal Welfare Caucus - kgomez@council.nyc.gov - https://council.nyc.gov/caucuses/animal-welfare-caucus/ - the Council members who work on animal welfare. The Council publishes this email for questions and concerns.
 - NYPD Crime Stoppers - (800) 577-8477 - crimestoppers.nypdonline.org - an anonymous tip, by phone or online. Also reachable as 800-577-TIPS.
 - Your local NYPD precinct - nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page - to report in person. Ask for the ASPCA Liaison Officer, or the Community Affairs Officer.
-- HSUS dogfighting tip line - animalfighting@hsus.org - https://www.humaneworld.org/en/report-animal-cruelty-contact-form - suspected dogfighting or cockfighting that is not happening right now (if it is, call 911). Your identity is protected, and Humane World for Animals (formerly the HSUS) offers a reward of $5,000 for information leading to a conviction.
+- HSUS dogfighting tip line - donorcare@humaneworld.org - (202) 452-1100 - https://www.humaneworld.org/en/report-animal-cruelty-contact-form - suspected dogfighting or cockfighting that is not happening right now (if it is, call 911). Email it: Humane World for Animals (formerly the HSUS) passes it to its animal cruelty team, who get in touch with you. Your identity is protected, and it offers a reward of $5,000 for information leading to a conviction.
 - ASPCA Community Engagement - when the owner is struggling and needs help with food, vet care or supplies rather than punishment. Refer them by email to referrals@aspca.org.
 
 ## WHO TO CONTACT ABOUT A BUSINESS: A PET SHOP, BREEDER, SHELTER OR RESCUE
