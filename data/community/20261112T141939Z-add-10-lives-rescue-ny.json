@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "add",
+  "org_id": "10-lives-rescue-ny",
+  "submitted_at": "2026-11-12T14:19:39.283Z",
+  "submitter_email": null,
+  "reason": null,
+  "fields": {
+    "name": "10 Lives Rescue NY",
+    "website": "https://www.10livesrescueny.org/",
+    "phone": "6465868229",
+    "email": "info@10livesrescueny.org",
+    "what": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.",
+    "zip": "10029",
+    "animals": [
+      "cat"
+    ]
+  },
+  "check": {
+    "page": "https://www.10livesrescueny.org/",
+    "phone_seen": true,
+    "email_seen": true,
+    "site_read": true,
+    "note": null,
+    "checked_at": "2026-11-12T14:19:39.283Z"
+  }
+}
