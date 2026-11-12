@@ -1,0 +1,76 @@
+{
+  "id": "10-lives-rescue-ny",
+  "name": "10 Lives Rescue NY",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10029"
+  ],
+  "region_note": null,
+  "phones": [
+    {
+      "value": "6465868229",
+      "display": "(646) 586-8229"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@10livesrescueny.org"
+    }
+  ],
+  "website": "https://www.10livesrescueny.org/",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7922,
+    "lon": -73.9473,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.\n\nAdded by a visitor to this site on 2026-11-12. Their website showed this contact detail on that day, but nobody here has checked it, and we do not know whether they are still operating. Confirm before relying on it.",
+  "type_raw": null,
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.10livesrescueny.org/"
+  ],
+  "last_verified": null,
+  "section": "Added by visitors",
+  "source_files": [
+    "community"
+  ],
+  "last_checked": null,
+  "check_status": "new-unverified",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-12",
+      "field": "record",
+      "from": null,
+      "to": "added",
+      "evidence_url": "https://www.10livesrescueny.org/",
+      "source": "community",
+      "note": "Submitted by a visitor. The contact given was found on the website given, and nothing else has been checked."
+    }
+  ],
+  "privacy_hold": false,
+  "community": {
+    "added_on": "2026-11-12",
+    "corrected_on": null
+  }
+}

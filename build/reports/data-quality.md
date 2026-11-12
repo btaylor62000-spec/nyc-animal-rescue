@@ -1,10 +1,10 @@
 # Data quality report
 
-Generated 2026-11-11 from the source workbooks and the wildlife guide.
+Generated 2026-11-12 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **428** organizations after de-duplication
+- **429** organizations after de-duplication
 - **77** duplicate clusters merged
 - **24** guide pages generated
 - **18** entries flagged as not currently active
@@ -17,7 +17,7 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 318 |
+| cat | 319 |
 | dog | 257 |
 | rabbit | 45 |
 | bird-companion | 42 |
@@ -38,7 +38,7 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 | Need | Organizations |
 | --- | ---: |
 | adoption | 176 |
-| foster | 107 |
+| foster | 108 |
 | tnr | 93 |
 | spay-neuter | 73 |
 | owner-support | 72 |
@@ -76,7 +76,7 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 275 |
 | queens | 229 |
-| manhattan | 225 |
+| manhattan | 226 |
 | bronx | 201 |
 | staten-island | 199 |
 
@@ -86,13 +86,13 @@ Generated 2026-11-11 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | High | 211 |
 | Medium | 153 |
-| Low | 64 |
+| Low | 65 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 410 |
+| active | 411 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (4)
+### Never verified (5)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
