@@ -1,7 +1,15 @@
 {
   "$comment": "Organizations found on authoritative rosters that are not yet in the directory. The importer turns these into records marked \"newly found, not yet verified\": low confidence, labelled on the site, and kept out of the assistant’s answers until a weekly check finds a working contact on their own site.",
-  "updated": "2026-11-04",
+  "updated": "2026-11-13T17:51:50.475Z",
   "candidates": [
+    {
+      "name": "2000 Spays and Neuters",
+      "website": "https://www.facebook.com/2000SpaysandNeutersanimalrescue",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
     {
       "name": "3 Acres Rescue",
       "website": "http://3acresrescue.com",
@@ -22,6 +30,14 @@
       ],
       "emails": [],
       "contactsFrom": "https://www.3hearts4paws.com/"
+    },
+    {
+      "name": "A Tail at A Time",
+      "website": "https://www.facebook.com/atailatatime",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Abandoned Angel Cocker Spaniel Rescue",
@@ -441,12 +457,41 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Best Friends Animal Society East Coast Corridor",
+      "website": null,
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10013",
+      "phones": [
+        "9292928300"
+      ],
+      "emails": [
+        "contacteastcoast@bestfriends.org"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Bichon Frise Rescue of Northern New Jersey*",
       "website": "http://www.bichonrescuenj.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "BIG APPLE CATS",
+      "website": "http://www.bigapplecats.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10023",
+      "emails": [
+        "bigapplecatrescue@gmail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Big East Akita Rescue",
@@ -785,6 +830,14 @@
       "contactsFrom": "https://www.dru.org/"
     },
     {
+      "name": "Dreamer's Rescue",
+      "website": "https://www.facebook.com/dreamersanimalrescue",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "ECHO East Coast Herding Dog Organization",
       "website": "https://www.echorescue.com",
       "source": "ACC New Hope partners",
@@ -876,6 +929,14 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Fair Shake Sanctuary",
+      "website": "https://www.instagram.com/fairshakesanctuary",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Farm Sanctuary",
@@ -990,6 +1051,14 @@
       "contactsFrom": "https://secondchanceforanimals.org/"
     },
     {
+      "name": "Friends of the Forgotten",
+      "website": "http://www.facebook.com/people/Friends-of-the-Forgotten-Cat-Rescue-Inc/100091757350658",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Friends of Wayne Animals (FOWA)",
       "website": "http://www.fowarescue.com",
       "source": "ACC New Hope partners",
@@ -1049,6 +1118,19 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Gotham City Kitties",
+      "website": "http://www.gothamcitykitties.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10010",
+      "emails": [
+        "gothamcitykitties@gmail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Happily Furever After Rescue",
@@ -1240,6 +1322,35 @@
       "contactsFrom": "https://www.huskyhouse.org/"
     },
     {
+      "name": "In Our Hands Rescue",
+      "website": "http://www.inourhandsrescue.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10461",
+      "emails": [
+        "inourhandsrescue@gmail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
+      "name": "inky Blue Sea Companion Animal Rescue",
+      "website": "http://www.inkyblue.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10029",
+      "phones": [
+        "9176885633"
+      ],
+      "emails": [
+        "inkyblueanimalrescue@gmail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Italian Greyhound Rescue",
       "website": "http://www.igrescue.com/affiliates/new_york",
       "source": "ACC New Hope partners",
@@ -1251,6 +1362,22 @@
       ],
       "emails": [],
       "contactsFrom": "https://www.igrescue.com/affiliates/new_york/"
+    },
+    {
+      "name": "ittybittykittyny",
+      "website": null,
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "11209",
+      "phones": [
+        "9178895896"
+      ],
+      "emails": [
+        "ittybittykittyny@mail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Jenny's Dream",
@@ -1356,6 +1483,22 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Lalitamba: Bell Animal Sanctuary",
+      "website": "http://www.bell-animal-shelter.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10024",
+      "phones": [
+        "2128730140"
+      ],
+      "emails": [
+        "fredericksplace@yahoo.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Last Chance Animal Rescue",
       "website": "http://www.lcarescue.org",
       "source": "ACC New Hope partners",
@@ -1377,6 +1520,22 @@
         "lendapawinc@gmail.com"
       ],
       "contactsFrom": "https://www.lendapawinc.com/"
+    },
+    {
+      "name": "LI Pit Stop",
+      "website": "https://www.facebook.com/LIpitstop",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
+    {
+      "name": "Linda's Feral Cat Assistance",
+      "website": "https://www.facebook.com/lindascatassistance",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Linus & Friends",
@@ -1432,6 +1591,14 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Lucie's Mastiff Mission",
+      "website": "http://www.facebook.com/groups/318799318598045",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Lucky Dog Refuge CT",
@@ -1527,6 +1694,31 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Mighty Mutts",
+      "website": "http://www.mightymutts.tripod.com/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "11214",
+      "phones": [
+        "7184881664"
+      ],
+      "emails": [
+        "mmutts@yahoo.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13",
+      "maybeSameAs": "Mighty Mutts & Ollie's Place"
+    },
+    {
+      "name": "Miracle Lane Farm & Sanctuary",
+      "website": "https://www.facebook.com/MiracleLaneFarmSanctuary",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Mountain Rottie Rescue",
       "website": "https://mountainrottierescue.net",
       "source": "ACC New Hope partners",
@@ -1538,6 +1730,22 @@
         "mountainappl@yahoo.com"
       ],
       "contactsFrom": "https://mountainrottierescue.net/"
+    },
+    {
+      "name": "My Loveable Rescues",
+      "website": "http://www.myloveablerescues.petfinder.com/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "11378",
+      "phones": [
+        "9173638196"
+      ],
+      "emails": [
+        "hotshot824@aol.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "NEPA",
@@ -1576,6 +1784,23 @@
       "contactsFrom": "http://www.njsrn.org/"
     },
     {
+      "name": "New York City Cat Coalition",
+      "website": "https://nyccc.rescuegroups.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10475",
+      "phones": [
+        "7186711695"
+      ],
+      "emails": [
+        "nycatcoal@yahoo.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13",
+      "maybeSameAs": "NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)"
+    },
+    {
       "name": "Next Chance Rescue",
       "website": "http://www.nextchancerescue.org",
       "source": "ACC New Hope partners",
@@ -1603,6 +1828,22 @@
         "noahsarps@gmail.com"
       ],
       "contactsFrom": "https://www.noahsarps.com/"
+    },
+    {
+      "name": "No Dogs Left Behind",
+      "website": "http://www.nodogsleftbehind.com/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10004",
+      "phones": [
+        "8556650888"
+      ],
+      "emails": [
+        "adoption@nodogsleftbehind.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Noah's Ark Rescue Project & Sanctuary",
@@ -1724,12 +1965,44 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Paw print rescue corp",
+      "website": null,
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10305",
+      "phones": [
+        "9178609291"
+      ],
+      "emails": [
+        "pawprintrescuecorp@gmail.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Paws 4 Life",
       "website": "https://paws4lifect.com",
       "source": "ACC New Hope partners",
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-22",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Paws To Love Adoptions, Inc.",
+      "website": "http://www.paws2lov.petfinder.com/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10163",
+      "phones": [
+        "7182948058"
+      ],
+      "emails": [
+        "paws2lov@optonline.net"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Paws4Survival Rescue, Inc.",
@@ -1849,6 +2122,14 @@
         "rescue@peppertree.org"
       ],
       "contactsFrom": "http://peppertree.org/"
+    },
+    {
+      "name": "Pet Adoption League of N.Y.",
+      "website": "https://www.facebook.com/palofnyinc",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Pet Animal Welfare Society of Connecticut",
@@ -2145,6 +2426,14 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Safe Hounds Beagle Rescue",
+      "website": "https://www.facebook.com/SafeHounds",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Safe Tails Animal Rescue Corp.",
       "website": "https://www.safetails.org",
       "source": "ACC New Hope partners",
@@ -2173,6 +2462,14 @@
         "saramarescue@gmail.com"
       ],
       "contactsFrom": "https://www.sarama.org/"
+    },
+    {
+      "name": "Save a Heartbeat",
+      "website": "https://www.facebook.com/people/Save-A-Heartbeat-Kitty-Rescue/100064809723872",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Save A Yorkie Rescue, Inc.",
@@ -2258,6 +2555,22 @@
       "contactsChecked": "2026-09-22"
     },
     {
+      "name": "Shepherds' Hope Rescue",
+      "website": "http://www.petfinder.com/shelters/NY769.html",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10023",
+      "phones": [
+        "2019269901"
+      ],
+      "emails": [
+        "toomanyshepherds@aol.com"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Shiba Rescue of New England",
       "website": "https://shibarescueofnewengland.org",
       "source": "ACC New Hope partners",
@@ -2280,6 +2593,14 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Shonio's Safe Haven, Inc*",
+      "website": "https://www.facebook.com/Shoniosafehaven",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Shore Saves",
@@ -2425,6 +2746,27 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-10-01",
       "contactsChecked": "2026-10-01"
+    },
+    {
+      "name": "Tails of Love Animal Rescue, Inc.",
+      "website": "http://www.tailsofloverescue.petfinder.com/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10302",
+      "emails": [
+        "info@tailsofloverescue.org"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
+      "name": "Tanner's PAWS Inc",
+      "website": "https://www.facebook.com/tannerspaws",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Text-Size",
@@ -2608,6 +2950,19 @@
       "phones": []
     },
     {
+      "name": "Unleashed Inc",
+      "website": "http://www.unleashedny.org/",
+      "source": "RescueGroups.org",
+      "sourceUrl": "https://rescuegroups.org",
+      "firstSeen": "2026-11-13",
+      "zip": "10022",
+      "emails": [
+        "info@unleashedny.org"
+      ],
+      "contactsFrom": "RescueGroups.org, as the organization lists itself there",
+      "contactsChecked": "2026-11-13"
+    },
+    {
       "name": "Urban Wildlife Alliance",
       "website": "https://urbanwildlifealliance.org",
       "source": "ACC New Hope partners",
@@ -2690,6 +3045,15 @@
       "contactsChecked": "2026-10-01"
     },
     {
+      "name": "WINORR Wildlife In Need",
+      "website": "https://www.facebook.com/people/WINORR-Wildlife-In-Need-of-Rescue-and-Rehabilitation/100067176764943",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13",
+      "maybeSameAs": "WINORR - Wildlife In Need Of Rescue and Rehabilitation (Bobby & Cathy Horvath)"
+    },
+    {
       "name": "Wise Animal Rescue",
       "website": "http://www.wiseanimalrescue.org",
       "source": "ACC New Hope partners",
@@ -2712,6 +3076,14 @@
       "sourceUrl": "https://www.nycacc.org/new-hope-partners",
       "firstSeen": "2026-09-17",
       "contactsChecked": "2026-09-22"
+    },
+    {
+      "name": "Yummy the Pig",
+      "website": "http://facebook.com/yummythepig",
+      "source": "ACC New Hope partners",
+      "sourceUrl": "https://www.nycacc.org/new-hope-partners",
+      "firstSeen": "2026-11-13",
+      "contactsChecked": "2026-11-13"
     },
     {
       "name": "Zani's Furry Friends",
