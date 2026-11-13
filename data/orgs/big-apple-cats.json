@@ -1,0 +1,66 @@
+{
+  "id": "big-apple-cats",
+  "name": "Big Apple Cats",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan",
+  "zips": [
+    "10023"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "bigapplecatrescue@gmail.com"
+    }
+  ],
+  "website": "https://bigapplecats.org",
+  "intake_urls": [
+    {
+      "url": "https://bigapplecats.org/contact/",
+      "label": "Contact"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.7746,
+    "lon": -73.979,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A Manhattan cat rescue with cats for adoption and a foster programme. Its own contact page says email is the best way to reach it.",
+  "type_raw": "Cat rescue - adoption and foster",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://bigapplecats.org/contact/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

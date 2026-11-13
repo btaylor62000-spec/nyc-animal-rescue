@@ -82,6 +82,7 @@ For Dogo Argentino / Presa Canario / Dogue de Bordeaux specifically: no dedicate
 ## GERMAN SHEPHERD / MALINOIS / DUTCH SHEPHERD
 
 - Charwills German Shepherd Rescue - German shepherds, serves NY metro. 570-573-3366 (leave a message), info@charwillsrescue.com. https://www.charwillsrescue.com (read by a reviewer, 2026-11-05). Approved ACC rescue partner.
+- Shepherds Hope Rescue - German shepherds; places abandoned, neglected and unwanted shepherds in homes. jeannie@shepherdshoperescue.org. https://shepherdshoperescue.org
 - American Belgian Malinois Rescue - Malinois nationwide incl. NY; PO Box 52, Amherst Junction, WI 54407. info@malinoisrescue.org. https://www.malinoisrescue.org (read on its own site by a reviewer, 2026-11-05).
 - Malinois & Dutch Shepherd Rescue - Mals + Dutchies, NY-serving. https://www.madrescueinc.org.
 - Herding breeds (Aussie, cattle dog, collie, sheepdog) are covered by ECHO East Coast Herding Dog Org: echorescue.com.

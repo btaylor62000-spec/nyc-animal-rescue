@@ -1,0 +1,63 @@
+{
+  "id": "lalitamba-bell-animal-sanctuary",
+  "name": "Lalitamba: Bell Animal Sanctuary",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "sanctuary"
+  ],
+  "animals": [],
+  "needs": [
+    "sanctuary"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan",
+  "zips": [
+    "10024"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "2128730140",
+      "display": "(212) 873-0140"
+    }
+  ],
+  "emails": [
+    {
+      "value": "fredericksplace@yahoo.com"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7857,
+    "lon": -73.9713,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "An animal sanctuary with a Manhattan mailing address (PO Box 131, Planetarium Station). Its website no longer works; a reviewer confirmed on 2026-11-13 that the phone number is in use. Ring to ask what it can take.",
+  "type_raw": "Animal sanctuary",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://puplister.com/shelters/bell-animal-sanctuary-9224/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

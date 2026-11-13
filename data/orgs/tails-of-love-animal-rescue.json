@@ -1,0 +1,58 @@
+{
+  "id": "tails-of-love-animal-rescue",
+  "name": "Tails of Love Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island",
+  "zips": [
+    "10302"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "cece@tailsofloverescue.org"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.6308,
+    "lon": -74.1377,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A Staten Island (10302) rescue. Contact by email, as given by a reviewer on 2026-11-13; its old Petfinder address no longer works.",
+  "type_raw": "Rescue - adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://rescuegroups.org"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

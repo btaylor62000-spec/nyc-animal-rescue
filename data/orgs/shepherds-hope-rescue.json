@@ -1,0 +1,65 @@
+{
+  "id": "shepherds-hope-rescue",
+  "name": "Shepherds Hope Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan",
+  "zips": [
+    "10023"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "jeannie@shepherdshoperescue.org"
+    }
+  ],
+  "website": "https://shepherdshoperescue.org",
+  "intake_urls": [
+    {
+      "url": "https://shepherdshoperescue.org/contact/",
+      "label": "Contact"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.7746,
+    "lon": -73.979,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A not-for-profit German Shepherd rescue placing abandoned, neglected and unwanted shepherds in homes. Its own contact page gives this email.",
+  "type_raw": "German Shepherd breed rescue - adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://shepherdshoperescue.org/contact/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

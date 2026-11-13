@@ -1,0 +1,65 @@
+{
+  "id": "no-dogs-left-behind",
+  "name": "No Dogs Left Behind",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (office)",
+  "zips": [
+    "10001"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "8556650888",
+      "display": "(855) 665-0888"
+    }
+  ],
+  "emails": [
+    {
+      "value": "adoption@nodogsleftbehind.com"
+    }
+  ],
+  "website": "https://nodogsleftbehind.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7506,
+    "lon": -73.9973,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "Rescues dogs from the meat trade and trafficking in East Asia and places them for adoption, with an office in New York (NY 10001). The phone number is on its own contact page; the adoption email is the one it gives on RescueGroups.org.",
+  "type_raw": "Dog rescue - adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://nodogsleftbehind.com/contact/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}
