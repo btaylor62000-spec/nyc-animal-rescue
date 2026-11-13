@@ -1,39 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { GUIDES_GROUPED } from '../../data/guides.ts';
+import { GUIDE_GROUPS, LINES_BY_TIER } from '../../data/guides.ts';
 
-/*
- * An icon per guide, chosen by slug. Anything unmatched falls back to the
- * compass rather than throwing -- the importer can add a guide without this
- * page needing to know about it first.
- */
-const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' | 'leaf' | 'alert' | 'shield' | 'heart'> = {
-  'animal-emergency': 'alert',
-  'exotic-pet-emergency': 'alert',
-  'found-an-injured-bird': 'bird',
-  'found-wildlife': 'leaf',
-  'starting-tnr': 'cat',
-  'keeping-your-cat': 'cat',
-  'cats-with-special-needs': 'cat',
-  'lost-and-found-cat': 'compass',
-  'lost-and-found-dog': 'compass',
-  'lost-and-found-exotic': 'compass',
-  'keeping-your-dog': 'home',
-  'dog-behavior-and-legal': 'shield',
-  'breed-specific-dog-rescue': 'home',
-  'rehoming-an-exotic-pet': 'home',
-  'exotic-boarding-and-planning': 'home',
-  'exotic-pet-legality': 'shield',
-  'help-paying-for-care': 'stethoscope',
-  'low-cost-clinics-and-trap-banks': 'stethoscope',
-  'low-cost-dog-care': 'stethoscope',
-  'pets-in-a-disaster': 'alert',
-  'report-animal-abuse': 'shield',
-  'leaving-abuse-with-your-pet': 'shield',
-  'save-an-at-risk-animal': 'heart',
-  'keep-your-pet-if-you-lose-your-home': 'home',
-};
+/** "Just need a number?": each situation's own slice of the directory. */
+const places = GUIDE_GROUPS.flatMap((g) => (g.places ? [g.places] : []));
 ---
 
 <Base
@@ -55,21 +26,26 @@ const ICONS: Record<string, 'bird' | 'cat' | 'home' | 'compass' | 'stethoscope' 
       </span>
     </p>
 
-    {GUIDES_GROUPED.map((group) => (
-      <section class="section" style="padding-top:1.25rem">
-        <h2 style="font-size:1.15rem">{group.title}</h2>
-        {group.places && (
-          <p class="muted" style="margin:-.3rem 0 .6rem">
-            Just need a number? <a href={group.places.href}>{group.places.label}</a>
-          </p>
-        )}
-        <ul class="tiles">
-          {group.guides.map((g) => (
+    <ul class="shortcuts">
+      {places.map((p) => (
+        <li><a class="btn" href={p.href}><Icon name="phone" size={17} />{p.label}</a></li>
+      ))}
+    </ul>
+
+    <!-- The same numbered lines as the home page, here with what each guide covers. -->
+    {LINES_BY_TIER.map((tier) => (
+      <section class="section tier" style="margin-top:2rem" aria-labelledby={`tier-${tier.key}`}>
+        <h2 class="tier__title" id={`tier-${tier.key}`}>{tier.title}</h2>
+        <ul class="lines">
+          {tier.lines.map((line) => (
             <li>
-              <a class="tile" href={`/guides/${g.slug}`}>
-                <span class="tile__icon"><Icon name={ICONS[g.slug] ?? 'compass'} size={20} /></span>
-                <strong>{g.title}</strong>
-                <span>{g.summary}</span>
+              <a href={`/guides/${line.guide.slug}`}>
+                <span class={`bullet bullet--${line.tier}`} aria-hidden="true">{line.number}</span>
+                <span class="lines__name">
+                  {line.guide.title}
+                  <span class="lines__summary">{line.guide.summary}</span>
+                </span>
+                <Icon name="arrow" size={20} />
               </a>
             </li>
           ))}

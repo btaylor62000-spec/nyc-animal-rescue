@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { GUIDES, GUIDE_GROUPS } from '../src/data/guides.ts';
+import { GUIDES, GUIDE_GROUPS, GUIDE_TIERS, LINES_BY_TIER } from '../src/data/guides.ts';
 import { LISTED_ORGS, ORGS } from '../src/data/orgs.ts';
 import { renderMarkdown, addressesIn } from '../src/data/markdown.ts';
 import { annotateMentions, buildMatchers, nameVariants } from '../src/data/guide-mentions.ts';
@@ -17,6 +17,17 @@ test('every guide is in a group, so every guide is on the home page', () => {
   assert.deepEqual(GUIDES.map((g) => g.slug).filter((s) => !grouped.includes(s)), []);
   assert.deepEqual(grouped.filter((s) => !GUIDES.some((g) => g.slug === s)), [], 'a group names a guide that does not exist');
   assert.equal(new Set(grouped).size, grouped.length, 'a guide is in two groups');
+});
+
+test('every guide is a line in exactly one urgency tier, numbered from 1 with no gaps', () => {
+  const tiered = GUIDE_TIERS.flatMap((t) => t.lines.map((l) => l.slug));
+  assert.deepEqual(GUIDES.map((g) => g.slug).filter((s) => !tiered.includes(s)), [], 'a guide is on no line, so it is missing from the home page');
+  assert.deepEqual(tiered.filter((s) => !GUIDES.some((g) => g.slug === s)), [], 'a tier names a guide that does not exist');
+  assert.equal(new Set(tiered).size, tiered.length, 'a guide is in two tiers');
+  const numbers = LINES_BY_TIER.flatMap((t) => t.lines.map((l) => l.number));
+  assert.deepEqual(numbers, GUIDES.map((_, i) => i + 1));
+  // Someone holding a hurt animal reads the first line first.
+  assert.equal(LINES_BY_TIER[0]!.lines[0]!.guide.slug, 'animal-emergency');
 });
 
 const fake = (o: Partial<Org> & { id: string; name: string }): Org =>

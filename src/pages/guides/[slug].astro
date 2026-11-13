@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { GUIDES, GUIDES_BY_SLUG } from '../../data/guides.ts';
+import { GUIDES, GUIDES_BY_SLUG, LINE_BY_SLUG } from '../../data/guides.ts';
 import { renderMarkdown } from '../../data/markdown.ts';
 import { BOROUGH_LABELS, LISTED_ORGS, ORGS } from '../../data/orgs.ts';
 import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
@@ -28,6 +28,8 @@ const { html } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS, build
 /** Guides where the first thing to know is that this may be an emergency. */
 const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);
 const isUrgent = URGENT.has(guide.slug);
+// Its number and urgency tier on the home page, which colour the line down this page.
+const line = LINE_BY_SLUG.get(guide.slug);
 const blocks = (GUIDE_LISTINGS[guide.slug] ?? []).map((b) => ({ ...b, orgs: listingsFor(b), href: directoryHref(b) }));
 // Where "places to contact" goes: the guide's own directory filter if it has one.
 const findHref = blocks.find((b) => b.href)?.href ?? '/directory';
@@ -37,7 +39,15 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
 
 <Base title={guide.title} description={guide.summary}>
   <div class="wrap">
-    <p class="muted" style="margin:1rem 0 0"><a href="/guides">&larr; All guides</a></p>
+    <p class="line-tag">
+      <a href="/guides">&larr; All guides</a>
+      {line && (
+        <span class="line-tag__line">
+          <span class={`bullet bullet--sm bullet--${line.tier}`} aria-hidden="true">{line.number}</span>
+          Line {line.number} · {line.tierTitle}
+        </span>
+      )}
+    </p>
 
     {isUrgent && (
       <p class="notice notice--urgent" style="margin-top:1rem">
@@ -55,7 +65,7 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
       <a href={findHref}>Find help</a>.
     </p>
 
-    <article class="guide-body" set:html={html} />
+    <article class={`guide-body guide-line${line ? ` guide-line--${line.tier}` : ''}`} set:html={html} />
 
     {blocks.length > 0 && (
       <section class="guide-listings" aria-labelledby="guide-listings-heading">

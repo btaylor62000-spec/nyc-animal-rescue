@@ -798,6 +798,41 @@ only breaks ties.
   without hours cannot say it is open, and one without an address cannot be
   sorted by distance.
 
+## How the site looks: a sign, not a brochure
+
+Chosen 2026-11-13 from six candidate designs, after measuring the old home
+page on a phone: the emergency box started 830px down, below the whole first
+screen; the header took 149px; the search box was on the fifth screen.
+
+The look borrows from city wayfinding, because that is the thing New Yorkers
+already read fastest under stress: black bands, heavy type, one colour and one
+number per route.
+
+- **The emergency band is the first thing under the header on the home page**,
+  at every width, and it is one link from edge to edge. On every other page
+  the red E button in the header does the same job, which is why the header is
+  one row and stays in view. Nothing may be placed above the band.
+- **Every guide is a numbered line**, most urgent first: `GUIDE_TIERS` in
+  `src/data/guides.ts`. Right now, today, this week, when you have time. The
+  tier is a judgement about urgency and is the place to argue about it; a test
+  fails if a guide is in no tier or in two, so a new guide cannot be left off
+  the home page. `GUIDE_GROUPS` is still there, and now only supplies the
+  "just need a phone number?" links.
+- **A guide is drawn as a route.** The coloured line down the page and the
+  stop at each heading are CSS on the generated Markdown (`.guide-line` in
+  `global.css`); nothing in `content/guides/` changed or needs to.
+- **Red means "right now" and nothing else.** `--tier-now` and `--sign-red`
+  are not decoration. A red badge on something that is not urgent teaches
+  people to ignore red.
+- **The bands keep their colours in dark mode** (`--sign`, `--sign-text`), the
+  way a street sign does at night, so text on them never uses `--text`.
+
+Everything else (the directory, listings, the assistant, the forms) takes the
+look from the colour tokens at the top of `global.css` and was not restyled
+by hand. The type is still the self-hosted Inter: a face made for signage
+would suit it better, but that is another font file on a page someone may be
+loading with one bar.
+
 ## Changing the assistant
 
 - The prompt is `src/chat/system-prompt.ts`, versioned in the repository so a

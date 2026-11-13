@@ -2,107 +2,89 @@
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
-import Skyline from '../components/Skyline.astro';
 import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
-import { GUIDES_GROUPED } from '../data/guides.ts';
+import { GUIDE_GROUPS, LINES_BY_TIER } from '../data/guides.ts';
 
 /**
  * The home page answers one question: what happened, and where do I tap?
- * The emergency route comes first, because someone holding an injured animal
- * should not have to read. After it, every guide by situation, each group
- * with a link straight to the places to contact. There used to be a second,
- * shorter set of tiles above the guides; a reviewer found the two lists
- * confusing in an emergency (2026-11-05), so there is one.
+ *
+ * It is built like a sign rather than a brochure (2026-11-13). The emergency
+ * band is the first thing under the header, at every width: measured on a
+ * phone, the old page put it 830px down, below the whole first screen, behind
+ * a headline and four statistics. After it, every guide is a numbered line,
+ * most urgent first, so the list reads top to bottom in the order someone in
+ * trouble needs it. There is one list, not a short one and a long one; a
+ * reviewer found two lists confusing in an emergency (2026-11-05).
  */
 const orgCount = ORGS.length;
-const emergencyCount = ORGS.filter((o) => o.needs.includes('emergency-vet')).length;
-const verifiedCount = ORGS.filter((o) => o.confidence === 'High').length;
+
+/** "Just need a number?": each situation's own slice of the directory. */
+const places = GUIDE_GROUPS.flatMap((g) => (g.places ? [g.places] : []));
 ---
 
 <Base
   title="NYC Animal Rescue"
   description="Find the right animal rescue, clinic or rehabilitator in New York City — for cats, dogs, birds, wildlife and exotic pets."
 >
-  <section class="hero">
-    <Skyline class="hero__banner" />
-    <div class="wrap">
-      <h1>Find help for an animal in New York City</h1>
-      <p class="lede">
-        {orgCount} rescues, clinics, hotlines and rehabilitators across the five boroughs.
-        Free to use, kept current by New Yorkers like you, and honest about what it does not know.
-      </p>
+  <h1 class="visually-hidden">Find help for an animal in New York City</h1>
 
-      <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="/directory">
-          <Icon name="search" size={19} />
-          Search every resource
-        </a>
-        <a class="btn btn--lg" href="/ask">
-          <Icon name="message" size={19} />
-          Describe what happened
-        </a>
-      </div>
-
-      <dl class="stats">
-        <div><dd>{orgCount}</dd><dt>Organizations listed</dt></div>
-        <div><dd>{emergencyCount}</dd><dt>Emergency vets</dt></div>
-        <div><dd>{verifiedCount}</dd><dt>Verified on their own site</dt></div>
-        <div><dd>5</dd><dt>Boroughs covered</dt></div>
-      </dl>
-    </div>
-  </section>
-
-  <div class="wrap">
-    <section class="emergency" aria-labelledby="emergency-heading">
-      <h2 id="emergency-heading">
-        <Icon name="alert" size={22} />
-        Is this an emergency?
-      </h2>
+  <section class="eband" aria-labelledby="emergency-heading">
+    <a class="eband__go" href="/directory?need=emergency-vet">
+      <span class="wrap eband__row">
+        <span class="bullet bullet--e bullet--xl" aria-hidden="true">E</span>
+        <span class="eband__text">
+          <strong id="emergency-heading">Emergency</strong>
+          <span>24-hour vets, nearest first</span>
+        </span>
+        <Icon name="arrow" size={30} />
+      </span>
+    </a>
+    <div class="wrap eband__more">
       <p>
         If you think an animal is hurt, very ill or in danger — for example bleeding, struggling to
         breathe, collapsed, hit by a car, has swallowed something toxic, <strong>has been caught by another
         animal</strong>, or anything else that worries you — it needs a vet or a wildlife rehabilitator now,
         not a rescue group. Not sure? Ring a 24-hour vet and ask. Call ahead so they are ready for you.
       </p>
-      <div class="emergency__actions">
-        <a class="btn btn--urgent" href="/directory?need=emergency-vet">24-hour emergency vets</a>
-        <a class="btn" href="/guides/animal-emergency">What to do first</a>
-        <a class="btn" href="/guides/found-an-injured-bird">A wild bird is hurt</a>
-        <a class="btn" href="/guides/found-wildlife">Another wild animal is hurt</a>
-        <a class="btn" href="/guides/report-animal-abuse">Someone is hurting an animal</a>
-      </div>
-    </section>
+      <a class="btn eband__btn" href="/guides/animal-emergency">What to do first</a>
+    </div>
+  </section>
 
-    <section class="section" aria-labelledby="what-heading">
-      <span class="eyebrow">Start from what happened</span>
+  <div class="wrap">
+    <section class="section section--first" aria-labelledby="what-heading">
       <h2 id="what-heading">What happened?</h2>
-      <p class="muted" style="margin-top:-.25rem">
-        Each guide says what to do, step by step, and who to call. To go straight to phone numbers,
-        use the link under each heading, or <a href="/directory">Find help</a>.
-      </p>
-      <div class="situations">
-        {GUIDES_GROUPED.map((group) => (
-          <div class="situation">
-            <h3>{group.title}</h3>
-            <ul>
-              {group.guides.map((g) => (
-                <li><a href={`/guides/${g.slug}`}>{g.title}</a></li>
+      <div class="tiers">
+        {LINES_BY_TIER.map((tier) => (
+          <section class="tier" aria-labelledby={`tier-${tier.key}`}>
+            <h3 class="tier__title" id={`tier-${tier.key}`}>{tier.title}</h3>
+            <ul class="lines">
+              {tier.lines.map((line) => (
+                <li>
+                  <a href={`/guides/${line.guide.slug}`}>
+                    <span class={`bullet bullet--${line.tier}`} aria-hidden="true">{line.number}</span>
+                    <span class="lines__name">{line.label}</span>
+                    <Icon name="arrow" size={20} />
+                  </a>
+                </li>
               ))}
             </ul>
-            {group.places && (
-              <p class="situation__places">
-                <Icon name="search" size={15} /> <a href={group.places.href}>{group.places.label}</a>
-              </p>
-            )}
-          </div>
+          </section>
         ))}
       </div>
     </section>
 
-    <section class="section">
-      <span class="eyebrow">Or search directly</span>
-      <h2>Search every resource</h2>
-      <SearchBox label="Search every resource" />
+    <section class="section" aria-labelledby="numbers-heading">
+      <h2 id="numbers-heading">Just need a phone number?</h2>
+      <ul class="shortcuts">
+        {places.map((p) => (
+          <li><a class="btn" href={p.href}><Icon name="phone" size={17} />{p.label}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="search-heading">
+      <h2 id="search-heading">Search all {orgCount} places</h2>
+      <SearchBox label={`Search all ${orgCount} places`} />
       <p class="muted" style="margin-top:-.2rem">
         Not sure what to search for? <a href="/ask">Describe what is happening</a> and get pointed
         to the right place.

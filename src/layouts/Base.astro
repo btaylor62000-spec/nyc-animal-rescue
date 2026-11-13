@@ -21,6 +21,7 @@ const nav = [
 ];
 
 const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`);
+const isHome = path === '/';
 ---
 
 <!doctype html>
@@ -60,20 +61,43 @@ const isCurrent = (href: string) => path === href || path.startsWith(`${href}/`)
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!--
+      One row at every width, so it can stay in view: the Emergency button in
+      it is the only route to a 24-hour vet from deep inside a guide or a list
+      of 400 results. The home page leaves the button out because its first
+      thing is the emergency band itself.
+    -->
     <header class="site-header">
       <div class="wrap site-header__inner">
         <a class="site-title" href="/">
-          <Logo size={34} class="site-title__mark" />
+          <Logo size={30} class="site-title__mark" />
           <span class="site-title__text">
             NYC Animal Rescue
             <span class="site-title__sub">Free directory · All five boroughs</span>
           </span>
         </a>
-        <nav class="site-nav" aria-label="Main">
+        <nav class="site-nav site-nav--inline" aria-label="Main">
           {nav.map((item) => (
             <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
           ))}
         </nav>
+        {!isHome && (
+          <a class="epill" href="/directory?need=emergency-vet">
+            <span class="bullet bullet--e" aria-hidden="true">E</span>
+            Emergency
+          </a>
+        )}
+        <!-- A disclosure, not a script: the menu has to open with JavaScript off. -->
+        <details class="menu">
+          <summary aria-label="Menu">
+            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </summary>
+          <nav class="menu__panel" aria-label="Main menu">
+            {nav.map((item) => (
+              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+            ))}
+          </nav>
+        </details>
       </div>
     </header>
 

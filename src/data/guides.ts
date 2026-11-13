@@ -118,3 +118,96 @@ export const GUIDES_ORDERED: Guide[] = [
   ...FEATURED.map((s) => GUIDES_BY_SLUG.get(s)).filter((g): g is Guide => Boolean(g)),
   ...GUIDES.filter((g) => !FEATURED.includes(g.slug)),
 ];
+
+/**
+ * Every guide as a numbered "line", in order of how soon it matters.
+ *
+ * The home page lists all of them, most urgent first, so that someone who is
+ * panicking finds their situation near the top and nobody has to guess whether
+ * a guide exists (dogs were on no home-page card at all in an earlier design,
+ * 2026-11-13). The tier is a reading of urgency, not a property of the guide:
+ * the at-risk list is under "today" because those animals have about two
+ * days, TNR is under "when you have time" because a colony is still there
+ * next week.
+ *
+ * `label` is the short name on the sign. Leave it out and the guide's own
+ * title is used. A test fails if a guide is in no tier or in two.
+ */
+export type TierKey = 'now' | 'today' | 'week' | 'later';
+
+export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ slug: string; label?: string }> }> = [
+  {
+    key: 'now',
+    title: 'Right now',
+    lines: [
+      { slug: 'animal-emergency', label: 'A pet is hurt, very ill or poisoned' },
+      { slug: 'found-an-injured-bird', label: 'Injured bird' },
+      { slug: 'found-wildlife', label: 'Injured or orphaned wildlife' },
+      { slug: 'exotic-pet-emergency', label: 'Exotic pet emergency' },
+      { slug: 'report-animal-abuse', label: 'Someone is hurting an animal' },
+      { slug: 'leaving-abuse-with-your-pet' },
+      { slug: 'pets-in-a-disaster' },
+    ],
+  },
+  {
+    key: 'today',
+    title: 'Today',
+    lines: [
+      { slug: 'lost-and-found-dog' },
+      { slug: 'lost-and-found-cat' },
+      { slug: 'lost-and-found-exotic' },
+      { slug: 'save-an-at-risk-animal', label: 'Save a shelter animal on the at-risk list' },
+    ],
+  },
+  {
+    key: 'week',
+    title: 'This week',
+    lines: [
+      { slug: 'keeping-your-dog' },
+      { slug: 'keeping-your-cat' },
+      { slug: 'keep-your-pet-if-you-lose-your-home' },
+      { slug: 'help-paying-for-care' },
+      { slug: 'low-cost-dog-care' },
+      { slug: 'low-cost-clinics-and-trap-banks' },
+    ],
+  },
+  {
+    key: 'later',
+    title: 'When you have time',
+    lines: [
+      { slug: 'starting-tnr' },
+      { slug: 'cats-with-special-needs' },
+      { slug: 'breed-specific-dog-rescue' },
+      { slug: 'dog-behavior-and-legal' },
+      { slug: 'rehoming-an-exotic-pet' },
+      { slug: 'exotic-boarding-and-planning' },
+      { slug: 'exotic-pet-legality' },
+    ],
+  },
+];
+
+export interface Line {
+  /** 1 for the most urgent guide, counting on through every tier. */
+  number: number;
+  tier: TierKey;
+  tierTitle: string;
+  label: string;
+  guide: Guide;
+}
+
+/** The tiers with their guides and line numbers, leaving out any slug that has no page. */
+export const LINES_BY_TIER: Array<{ key: TierKey; title: string; lines: Line[] }> = (() => {
+  let n = 0;
+  return GUIDE_TIERS.map((t) => ({
+    key: t.key,
+    title: t.title,
+    lines: t.lines.flatMap((l) => {
+      const guide = GUIDES_BY_SLUG.get(l.slug);
+      if (!guide) return [];
+      n += 1;
+      return [{ number: n, tier: t.key, tierTitle: t.title, label: l.label ?? guide.title, guide }];
+    }),
+  }));
+})();
+
+export const LINE_BY_SLUG = new Map(LINES_BY_TIER.flatMap((t) => t.lines).map((l) => [l.guide.slug, l]));
