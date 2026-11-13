@@ -1,0 +1,58 @@
+{
+  "id": "because-of-dream-animal-rescue",
+  "name": "Because of Dream Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [],
+  "needs": [
+    "advocacy"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island",
+  "zips": [],
+  "region_note": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "dreamersrescue@gmail.com"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "dreamersanimalrescue",
+      "url": "https://facebook.com/dreamersanimalrescue"
+    }
+  ],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A 501(c)(3) animal rescue on Staten Island, on ACC's New Hope partner list as \"Dreamer's Rescue\". Contact by email or through its Facebook page, read by a reviewer on 2026-11-13.",
+  "type_raw": "Animal rescue",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.facebook.com/dreamersanimalrescue/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

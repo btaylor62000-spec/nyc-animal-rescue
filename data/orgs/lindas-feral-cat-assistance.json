@@ -1,0 +1,73 @@
+{
+  "id": "lindas-feral-cat-assistance",
+  "name": "Linda's Feral Cat Assistance",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "advocacy"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Woodside, Queens",
+  "zips": [
+    "11377"
+  ],
+  "region_note": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "7185701786",
+      "display": "(718) 570-1786"
+    }
+  ],
+  "emails": [
+    {
+      "value": "hi@lindasferalcatassistance.com"
+    }
+  ],
+  "website": "https://www.lindascatassistance.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "lindascatassistance",
+      "url": "https://facebook.com/lindascatassistance"
+    }
+  ],
+  "geo": {
+    "lat": 40.7448,
+    "lon": -73.9052,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "Woodside, Queens: rescues cats and kittens from outside and from the city shelter's at-risk list, and helps with feral cats. On ACC's New Hope partner list. Contacts confirmed by a reviewer on 2026-11-13.",
+  "type_raw": "Cat rescue and TNR",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.lindascatassistance.com/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,64 @@
+{
+  "id": "inkyblue-animal-rescue",
+  "name": "inkyBlue Animal Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "East Harlem, Manhattan",
+  "zips": [
+    "10035"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "9176885633",
+      "display": "(917) 688-5633"
+    }
+  ],
+  "emails": [
+    {
+      "value": "inkyblueanimalrescue@gmail.com"
+    }
+  ],
+  "website": "https://inkyblue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7953,
+    "lon": -73.9304,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "An East Harlem rescue (New York, NY 10035) with adoption, foster and volunteer applications on its site. The phone number is the one it gives on RescueGroups.org.",
+  "type_raw": "Companion animal rescue - adoption and foster",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://inkyblue.org/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,73 @@
+{
+  "id": "2000-spays-and-neuters",
+  "name": "2000 Spays and Neuters",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "spay-neuter",
+    "advocacy"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "Citywide (New York City; borough not given)",
+  "zips": [],
+  "region_note": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "6462062789",
+      "display": "(646) 206-2789"
+    }
+  ],
+  "emails": [
+    {
+      "value": "spaysandneuters2000@gmail.com"
+    }
+  ],
+  "website": "https://2000spaysandneuters.blogspot.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "2000SpaysandNeutersanimalrescue",
+      "url": "https://facebook.com/2000SpaysandNeutersanimalrescue"
+    }
+  ],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A New York City rescue dedicated to the humane rescue, spaying, neutering and adoption of homeless cats and dogs; its cats and kittens for adoption are shown on its site. On ACC's New Hope partner list. Contacts from its Facebook page, read by a reviewer on 2026-11-13.",
+  "type_raw": "Cat and dog rescue - foster and adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.facebook.com/2000SpaysandNeutersanimalrescue"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

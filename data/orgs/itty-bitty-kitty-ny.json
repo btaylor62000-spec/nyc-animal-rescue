@@ -1,7 +1,9 @@
 {
   "id": "itty-bitty-kitty-ny",
-  "name": "Itty Bitty Kitty NY (IBKNY)",
-  "aka": [],
+  "name": "Itty Bitty Kitty NY",
+  "aka": [
+    "Itty Bitty Kitty NY (IBKNY)"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster",
@@ -20,16 +22,25 @@
   ],
   "citywide": false,
   "outside_nyc": false,
-  "neighborhoods": "Bay Ridge / South Brooklyn",
+  "neighborhoods": "Bay Ridge, Brooklyn",
   "zips": [
     "11209",
     "11220",
     "11228"
   ],
-  "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
-  "phones": [],
-  "emails": [],
-  "website": "https://ittybittykittyny.org",
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "6463396995",
+      "display": "(646) 339-6995"
+    }
+  ],
+  "emails": [
+    {
+      "value": "ittybittykitty.br@gmail.com"
+    }
+  ],
+  "website": "https://www.ittybittykittyny.org",
   "intake_urls": [],
   "social": [
     {
@@ -41,18 +52,20 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Small all-volunteer Bay Ridge community-cat rescue (NOT a 501(c)(3); donations not tax-deductible). TNR + friendly rescue/adoption; adopts kittens in pairs. Lost donated holding space in 2020 (foster-based since). Site live and adopting as of 2026 re-check; co-founder George Politis (featured in 'The Cat Rescuers') long the primary caretaker - confirm current capacity via application/IG. Intake: Adoption/foster application on site Intake: urgent-request page",
-  "type_raw": "TNR / rescue+adoption",
+  "notes": "Small all-volunteer Bay Ridge community-cat rescue (NOT a 501(c)(3); donations not tax-deductible). TNR + friendly rescue/adoption; adopts kittens in pairs. Lost donated holding space in 2020 (foster-based since). Site live and adopting as of 2026 re-check; co-founder George Politis (featured in 'The Cat Rescuers') long the primary caretaker - confirm current capacity via application/IG. Intake: Adoption/foster application on site Intake: urgent-request page\n\nAn all-volunteer adoption service for neighborhood cats and kittens in Bay Ridge, Brooklyn. Phone and email from its Facebook page, read by a reviewer on 2026-11-13.",
+  "type_raw": "Cat adoption - all volunteer",
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
-    "https://ittybittykittyny.org/"
+    "https://ittybittykittyny.org/",
+    "https://www.ittybittykittyny.org/"
   ],
-  "last_verified": "2026-08-26",
-  "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Reviewer_Additions.xlsx"
   ],
   "last_checked": "2026-11-10",
   "check_status": "ok",

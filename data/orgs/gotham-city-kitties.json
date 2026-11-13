@@ -1,0 +1,68 @@
+{
+  "id": "gotham-city-kitties",
+  "name": "Gotham City Kitties",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "tnr-group",
+    "sanctuary"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "spay-neuter",
+    "sanctuary"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan",
+  "zips": [
+    "10010"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "gothamcitykitties@gmail.com"
+    }
+  ],
+  "website": "https://gothamcitykitties.com",
+  "intake_urls": [
+    {
+      "url": "https://gothamcitykitties.com/contact/",
+      "label": "Contact form"
+    }
+  ],
+  "social": [],
+  "geo": {
+    "lat": 40.739,
+    "lon": -73.9826,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A volunteer-run 501(c)(3) for feral cats: trap-neuter-return, finding homes for friendly street cats, and lifetime sanctuary for ferals with no other option. Its site has a contact form; the email is the one it gives on RescueGroups.org.",
+  "type_raw": "TNR and feral cat sanctuary",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://gothamcitykitties.com/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -134,17 +134,26 @@ Do this once both forms in Step 3 are sent, so you can tell each group they are 
 - Luv-N-Bunns Rabbit Rescue - Philadelphia area, takes rabbits from New York - bunnies@luvnbunns.org - @luvnbunns
 - Rabbit Rescue & Rehab - citywide - nyc.metro.rabbits@gmail.com - @rabbitrescuerehab
 
-## OUTSIDE THE CITY: PARTNERS WHOSE OWN SITES SAY THEY TAKE ANIMALS FROM NYC'S SHELTER
+## OUTSIDE THE CITY: APPROVED PARTNERS THAT CAN TAKE ANIMALS FROM NYC'S SHELTER
 
-These New Hope partners are based outside New York City, but each one's own website says it takes animals from ACC or the city's shelter (read 2026-11-05). Try them alongside the groups above, especially for an animal that needs a particular kind of home.
+These partners are based outside New York City, but each is on ACC's list of approved New Hope partners, so it can take animals from the city's shelter. Some say so on their own sites (read 2026-11-05); the rest were checked on their Facebook pages by a reviewer on 2026-11-13. Try them alongside the groups above, especially for an animal that needs a particular kind of home, such as a breed rescue.
 
 - Air Twiga Animal Rescue - Glen Cove, Long Island - dogs, often with injuries or medical needs; its dogs' stories say they "came to us from NYCACC" - TwigaAir@gmail.com - https://www.airtwiga.org
 - Cat Assistance - Ardsley, Westchester - cats and kittens; "rescues cats and kittens from local shelters such as ... the Animal Care Centers of NYC (ACC)" - 914-419-2574 - catassistanceny@gmail.com - https://catassistanceny.org
 - ECHO Rescue (East Coast Herding Dog Organization) - herding breeds such as border collies, Aussies and cattle dogs; "now a New Hope Partner with the NYC ACC" - ECHORescue@yahoo.com - https://echorescue.com/contact/
+- Friends of the Forgotten Cat Rescue - Johnstown, upstate New York, foster-based - cats, especially the most forgotten and high-risk - Friendsoftheforgottencatrescue@gmail.com - https://www.facebook.com/p/Friends-of-the-Forgotten-Cat-Rescue-Inc-100091757350658/
 - Italian Greyhound Rescue (New York affiliate) - Italian greyhounds; "a New Hope Partner with the Animal Care Centers of NYC" - http://www.igrescue.com/affiliates/new_york/
 - Karma K-9 Rescue - dogs; its adoptable dogs include ones "rescued from a NYC shelter" - https://www.karmak9.org - Instagram @karmak9rescue
+- Long Island Pit Stop - Huntington Station, Long Island - dogs at risk of euthanasia in New York and nationwide shelters - (917) 685-8422 - longislandpitstop@gmail.com - https://www.facebook.com/LIpitstop/
+- Lucie's Mastiff Mission - Vincentown, New Jersey - English mastiffs - (484) 459-3257 - https://www.facebook.com/groups/318799318598045
+- Miracle Lane Farm & Sanctuary - Vassalboro, Maine - dogs; runs an NYC ACC foster programme that moves the dogs most at risk of euthanasia straight from ACC into foster homes in Maine and the Northeast - (207) 480-9849 - https://miraclelanefarmnsanctuary.com
+- Pet Adoption League of NY - chows and chow mixes, foster-based - https://www.facebook.com/palofnyinc
 - Remember Me Rescue - Long Island, foster-based - dogs of all breeds and ages, especially seniors; "We rescue from ACC, Long Island shelters, and take owner surrenders" - (310) 623-0463 - rmrescueny@gmail.com - https://www.remembermerescueny.com
 - Ruff Dog Rescue Northeast - Thompson, Pennsylvania, with foster homes across the Northeast - dogs; "we also rescue dogs at-risk in the NYC municipal shelter" - 570-442-1181 - rdrneinquiries@gmail.com - https://www.rdrne.org
+- Safe Hounds Beagle Rescue - Blairstown, New Jersey - beagles - (908) 362-5313 - kjphilhower@optimum.net - https://www.facebook.com/SafeHounds/
+- Save a Heartbeat Kitty Rescue - cats - saveaheartbeat14@gmail.com - https://www.facebook.com/p/Save-A-Heartbeat-Kitty-Rescue-100064809723872/
+- Shonio's Safe Haven - Morrisville, Vermont - dogs from kill lists, especially seniors and dogs with medical or special needs; also keeps hospice residents - Shoniossafehaven@gmail.com - https://www.facebook.com/Shoniosafehaven
+- Tanner's PAWS - Corning, upstate New York - at-risk pets; rescue, foster and population management - (607) 654-4357 - https://www.facebook.com/tannerspaws
 
 ## MORE FROM ACC
 

@@ -1,4 +1,41 @@
 {
+  "2000-spays-and-neuters": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "800-kitties-rescue": [
     {
       "tag": "cat",
@@ -1218,6 +1255,18 @@
       "matched": "solo rescuer"
     }
   ],
+  "because-of-dream-animal-rescue": [
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "bed-stuy-kitty-crew": [
     {
       "tag": "cat",
@@ -1413,6 +1462,28 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "adoption"
+    }
+  ],
+  "big-apple-cats": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Cats"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
     }
   ],
   "big-city-little-kitty": [
@@ -3537,6 +3608,38 @@
       "matched": "TNR"
     }
   ],
+  "gotham-city-kitties": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "neuter"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    }
+  ],
   "greater-city-aquarium-society": [
     {
       "tag": "reptile",
@@ -4150,6 +4253,23 @@
       "matched": "solo rescuer"
     }
   ],
+  "inkyblue-animal-rescue": [
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": [
     {
       "tag": "invertebrate",
@@ -4275,7 +4395,7 @@
     {
       "tag": "cat",
       "field": "type",
-      "matched": "TNR"
+      "matched": "Cat"
     },
     {
       "tag": "adoption",
@@ -4283,24 +4403,9 @@
       "matched": "adopt"
     },
     {
-      "tag": "foster",
-      "field": "notes",
-      "matched": "foster"
-    },
-    {
-      "tag": "tnr",
-      "field": "type",
-      "matched": "TNR"
-    },
-    {
       "tag": "rescue-foster",
       "field": "type",
-      "matched": "rescue"
-    },
-    {
-      "tag": "tnr-group",
-      "field": "type",
-      "matched": "TNR"
+      "matched": "adoption"
     }
   ],
   "k9kastle": [
@@ -4498,6 +4603,18 @@
       "matched": "Rescue"
     }
   ],
+  "lalitamba-bell-animal-sanctuary": [
+    {
+      "tag": "sanctuary",
+      "field": "name",
+      "matched": "Sanctuary"
+    },
+    {
+      "tag": "sanctuary",
+      "field": "type",
+      "matched": "sanctuary"
+    }
+  ],
   "lana-law-group": [
     {
       "tag": "legal",
@@ -4592,6 +4709,33 @@
       "tag": "solo-rescuer",
       "field": "type",
       "matched": "solo rescuer"
+    }
+  ],
+  "lindas-feral-cat-assistance": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
     }
   ],
   "little-wanderers-nyc": [
@@ -5786,6 +5930,23 @@
       "matched": "REPTILES & AMPHIBIANS (turtles/tortoises, lizards, snakes; r"
     }
   ],
+  "no-dogs-left-behind": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline": [
     {
       "tag": "reptile",
@@ -6639,6 +6800,33 @@
       "tag": "food-assistance",
       "field": "type",
       "matched": "Pet food"
+    }
+  ],
+  "paw-print-rescue-corp": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "colony-care",
+      "field": "notes",
+      "matched": "community cats"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
     }
   ],
   "pawboost": [
@@ -7848,6 +8036,23 @@
       "matched": "COMPANION BIRDS (parrots, budgies, cockatiels, finches, dove"
     }
   ],
+  "shepherds-hope-rescue": [
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Shepherds"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "snarr-northeast": [
     {
       "tag": "cat",
@@ -8287,6 +8492,18 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "tails-of-love-animal-rescue": [
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "Rescue"
     }
   ],
   "tara-spay-neuter-clinic": [
@@ -8777,6 +8994,28 @@
       "tag": "spay-neuter",
       "field": "name",
       "matched": "Spay"
+    }
+  ],
+  "unleashed-inc": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "Dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
     }
   ],
   "urban-cat-league": [

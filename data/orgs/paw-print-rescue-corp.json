@@ -1,0 +1,78 @@
+{
+  "id": "paw-print-rescue-corp",
+  "name": "Paw Print Rescue Corp",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster",
+    "tnr-group"
+  ],
+  "animals": [
+    "cat"
+  ],
+  "needs": [
+    "tnr",
+    "colony-care"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Staten Island",
+  "zips": [
+    "10305"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [
+    {
+      "value": "9178609291",
+      "display": "(917) 860-9291"
+    }
+  ],
+  "emails": [
+    {
+      "value": "pawprintrescuecorp@gmail.com"
+    }
+  ],
+  "website": "https://pawprintrescuecorp.org",
+  "intake_urls": [
+    {
+      "url": "https://pawprintrescuecorp.org/contact-us",
+      "label": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "pawprintrescuesiny",
+      "url": "https://instagram.com/pawprintrescuesiny"
+    }
+  ],
+  "geo": {
+    "lat": 40.5965,
+    "lon": -74.0758,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A volunteer-based 501(c)(3) on Staten Island focused on TNR: community cats, feral colony care, and teaching neighbors about TNR. Contacts from its Facebook page, read by a reviewer on 2026-11-13.",
+  "type_raw": "TNR-focused cat rescue",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://pawprintrescuecorp.org/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

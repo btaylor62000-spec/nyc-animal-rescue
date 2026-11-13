@@ -1,0 +1,61 @@
+{
+  "id": "unleashed-inc",
+  "name": "Unleashed Inc",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster"
+  ],
+  "boroughs": [
+    "manhattan"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Manhattan (mailing address); adopts across the tri-state area",
+  "zips": [
+    "10022"
+  ],
+  "region_note": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@unleashedny.org"
+    }
+  ],
+  "website": null,
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7586,
+    "lon": -73.9679,
+    "precision": "zip"
+  },
+  "address": null,
+  "hours": null,
+  "notes": "A foster-based dog rescue with a Manhattan mailing address (Box 8175, New York, NY 10022). It rescues dogs from across the US and places them in the tri-state area: application, interview, home visit and references. Its own website no longer answers; its dogs are listed on WeRescue: https://www.werescue.pet/shelter/23949/unleashed-inc/",
+  "type_raw": "Dog rescue - foster-based adoption",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.werescue.pet/shelter/23949/unleashed-inc/"
+  ],
+  "last_verified": "2026-11-13",
+  "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}
