@@ -46,7 +46,12 @@ jobs:
 
       - run: npm ci
 
+      # RescueGroups.org's free public key, saved as a repository secret
+      # (Settings > Secrets and variables > Actions). Without it that source
+      # is skipped and the report says so.
       - name: Look for new resources
+        env:
+          RESCUEGROUPS_API_KEY: ${{ secrets.RESCUEGROUPS_API_KEY }}
         run: npm run agent:discover -- ${{ inputs.dry_run == true && '--dry' || '' }}
 
       # Regenerates the data. Candidates are not published by this: a person

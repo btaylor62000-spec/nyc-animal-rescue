@@ -31,6 +31,8 @@ import { fetchPage, hostOf } from './fetch.ts';
 import { extractContacts } from './extract.ts';
 import { htmlToText } from './extract.ts';
 import { mergeKey } from '../import/normalize.ts';
+import { zipToBorough } from '../import/taxonomy.ts';
+import { siteKey } from '../../src/contribute/protocol.ts';
 
 const DISCOVERED_PATH = 'data/discovered.json';
 
@@ -172,6 +174,43 @@ export interface Candidate {
   contactsFrom?: string;
   /** ISO date the site was last read for contacts, whether or not it gave any. */
   contactsChecked?: string;
+  /** The zip it lists itself under, where the source gives one: a hint for whoever reviews it. */
+  zip?: string;
+  /** A listing whose name shares most of this one's words: shown to the reviewer, never acted on. */
+  maybeSameAs?: string;
+}
+
+const COMMON_WORDS = new Set(['cat', 'cats', 'dog', 'dogs', 'kitty', 'kitties', 'kitten', 'kittens', 'pet', 'pets', 'paws', 'paw', 'brooklyn', 'queens', 'bronx', 'manhattan', 'staten', 'island', 'city', 'in', 'to', 'at', 'on', 'friends', 'care', 'fund', 'welfare', 'humane', 'shelter', 'sanctuary']);
+
+function nameWords(name: string): Set<string> {
+  const k = name.toLowerCase().replace(/\([^)]*\)/g, ' ').replace(/['\u2019]s\b/g, '').replace(/[^a-z0-9 ]/g, ' ');
+  return new Set(k.split(/\s+/).filter((w) => w.length > 1 && !/^(inc|llc|corp|the|a|of|and|for|ny|nyc|new|york|rescue|rescues|animal|animals|foundation|society|project|group|adoption|adoptions|program|services|center)$/.test(w)));
+}
+
+/**
+ * A listing whose distinctive words all appear in the candidate's name, or
+ * the other way round ("Mighty Mutts" and "Mighty Mutts & Ollie's Place";
+ * "WINORR Wildlife In Need" and WINORR's full name). Only a hint: two
+ * different rescues can share words, so this never hides a candidate.
+ */
+export function possibleDuplicate(name: string, orgs: Array<{ name: string; aka?: string[] }>): string | undefined {
+  const a = nameWords(name);
+  const distinctive = (s: Set<string>) => [...s].filter((w) => !COMMON_WORDS.has(w));
+  if (distinctive(a).length === 0) return undefined;
+  for (const o of orgs) {
+    for (const n of [o.name, ...(o.aka ?? [])]) {
+      const b = nameWords(n);
+      if (distinctive(b).length === 0) continue;
+      const [small, big] = a.size <= b.size ? [a, b] : [b, a];
+      if (![...small].every((w) => big.has(w))) continue;
+      // Two distinctive words in common, or one long unusual one ("coalition",
+      // "winorr"). A single short word -- "save", "hope", "haven", "farm" --
+      // matched Save a Heartbeat to STAR and Shepherds' Hope to New Hope.
+      const shared = distinctive(small);
+      if (shared.length >= 2 || (shared.length === 1 && shared[0]!.length >= 6)) return o.name;
+    }
+  }
+  return undefined;
 }
 
 interface RosterSource {
@@ -193,6 +232,107 @@ const ROSTERS: RosterSource[] = [
     note: "The city's own animal-welfare resource pages.",
   },
 ];
+
+// --- RescueGroups.org -------------------------------------------------------
+//
+// Added 2026-11-13. Petfinder closed its data service in December 2025, and
+// the shelter's partner list only has rescues that pull from the shelter.
+// RescueGroups.org is where many small rescues list themselves and their
+// animals; its public data service is free with a key (RESCUEGROUPS_API_KEY,
+// a GitHub Actions secret). Without the key this source is skipped and the
+// report says so.
+
+export const RESCUEGROUPS_SOURCE = 'RescueGroups.org';
+const RESCUEGROUPS_URL = 'https://api.rescuegroups.org/v5/public/orgs/search';
+/* One point in each borough, plus the far ends of Queens and Brooklyn, each
+ * searched to 8 miles: together they cover the city with overlap. */
+const RESCUEGROUPS_ZIPS = ['10001', '10458', '11226', '11375', '10314', '11691', '11354'];
+
+export interface RescueGroupsOrg {
+  name?: string;
+  postalcode?: string;
+  phone?: string;
+  email?: string;
+  url?: string;
+  facebookUrl?: string;
+  type?: string;
+}
+
+/** A website as RescueGroups stores it: often "http://" alone, or a bare host. */
+function cleanUrl(raw: string | undefined): string | null {
+  const v = (raw ?? '').trim();
+  if (!v || /^https?:\/\/?$/i.test(v)) return null;
+  const withScheme = /^https?:\/\//i.test(v) ? v : `https://${v}`;
+  try {
+    const u = new URL(withScheme);
+    return u.hostname.includes('.') ? u.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Turn what RescueGroups returns into candidates: only organizations whose
+ * own zip is in the city, and only ones we do not already have by name,
+ * website, email or phone. Pure, so it can be tested without the service.
+ * BBAWC and Mighty Mutts are listed there under other names; matching on
+ * their email or phone is what keeps them from coming back as new.
+ */
+export function rescueGroupsCandidates(
+  rows: RescueGroupsOrg[],
+  known: { keys: Set<string>; hosts: Set<string>; emails: Set<string>; phones: Set<string> },
+  today: string,
+): Candidate[] {
+  const out: Candidate[] = [];
+  const seen = new Set<string>();
+  for (const r of rows) {
+    const name = (r.name ?? '').trim();
+    const zip = (r.postalcode ?? '').slice(0, 5);
+    if (!name || !zipToBorough(zip)) continue;
+    const key = mergeKey(name);
+    if (!key || seen.has(key)) continue;
+    const website = cleanUrl(r.url) ?? cleanUrl(r.facebookUrl);
+    const email = (r.email ?? '').trim().toLowerCase();
+    const phone = (r.phone ?? '').replace(/\D/g, '').slice(-10);
+    if (alreadyKnown({ name, website }, known)) continue;
+    if (email && known.emails.has(email)) continue;
+    if (phone.length === 10 && known.phones.has(phone)) continue;
+    seen.add(key);
+    out.push({
+      name,
+      website,
+      source: RESCUEGROUPS_SOURCE,
+      sourceUrl: 'https://rescuegroups.org',
+      firstSeen: today,
+      zip,
+      ...(phone.length === 10 ? { phones: [phone] } : {}),
+      ...(email ? { emails: [email] } : {}),
+      contactsFrom: 'RescueGroups.org, as the organization lists itself there',
+      contactsChecked: today,
+    });
+  }
+  return out;
+}
+
+async function fetchRescueGroups(key: string): Promise<{ rows: RescueGroupsOrg[]; error?: string }> {
+  const rows: RescueGroupsOrg[] = [];
+  for (const zip of RESCUEGROUPS_ZIPS) {
+    try {
+      const res = await fetch(`${RESCUEGROUPS_URL}?limit=250`, {
+        method: 'POST',
+        headers: { Authorization: key, 'Content-Type': 'application/vnd.api+json', 'User-Agent': AGENT.userAgent },
+        body: JSON.stringify({ data: { filterRadius: { miles: 8, postalcode: zip } } }),
+        signal: AbortSignal.timeout(30_000),
+      });
+      if (!res.ok) return { rows, error: `HTTP ${res.status}` };
+      const body = (await res.json()) as { data?: Array<{ attributes?: RescueGroupsOrg }> };
+      for (const d of body.data ?? []) if (d.attributes) rows.push(d.attributes);
+    } catch (err) {
+      return { rows, error: (err as Error).message };
+    }
+  }
+  return { rows };
+}
 
 /**
  * A roster the research relied on that no longer exists.
@@ -301,8 +441,10 @@ export function alreadyKnown(
   known: { keys: Set<string>; hosts: Set<string> },
 ): boolean {
   if (known.keys.has(mergeKey(candidate.name))) return true;
-  const host = candidate.website ? hostOf(candidate.website) : null;
-  return Boolean(host && known.hosts.has(host));
+  // The page on a shared site (Facebook, Petfinder), the domain otherwise:
+  // by domain alone, every Facebook-only group matched every other one.
+  const site = siteKey(candidate.website);
+  return Boolean(site && known.hosts.has(site));
 }
 
 // --- main ------------------------------------------------------------------
@@ -326,7 +468,13 @@ async function main(): Promise<void> {
   const orgs = loadOrgs();
   const known = {
     keys: new Set(orgs.flatMap((o) => [mergeKey(o.name), ...o.aka.map(mergeKey)]).filter(Boolean)),
-    hosts: new Set(orgs.map((o) => (o.website ? hostOf(o.website) : null)).filter((h): h is string => Boolean(h))),
+    // A listing's Facebook or Instagram page identifies it as surely as its
+    // website: Frankie's Feline Fund is on the shelter's list by its Facebook page.
+    hosts: new Set(
+      orgs.flatMap((o) => [siteKey(o.website), ...(o.social ?? []).map((x) => siteKey(x.url))]).filter((h): h is string => Boolean(h)),
+    ),
+    emails: new Set(orgs.flatMap((o) => o.emails.map((e) => e.value.toLowerCase()))),
+    phones: new Set(orgs.flatMap((o) => o.phones.map((p) => p.value))),
   };
 
   const existing: Candidate[] = existsSync(DISCOVERED_PATH)
@@ -374,6 +522,31 @@ async function main(): Promise<void> {
     }
   }
 
+  // --- RescueGroups.org --------------------------------------------------
+  const rgKey = process.env.RESCUEGROUPS_API_KEY;
+  if (!rgKey) {
+    rosterNotes.push(`**${RESCUEGROUPS_SOURCE}** was not searched: no RESCUEGROUPS_API_KEY secret is set.`);
+  } else {
+    console.log(`\nSearching ${RESCUEGROUPS_SOURCE}...`);
+    const { rows, error } = await fetchRescueGroups(rgKey);
+    if (error) {
+      console.log(`  Could not finish (${error}).`);
+      rosterNotes.push(`**${RESCUEGROUPS_SOURCE}** could not be searched in full this month (${error}).`);
+    }
+    // Already waiting for a person counts as known too.
+    const notWaiting = rows.filter((r) => !seenNames.has(mergeKey(r.name ?? '')));
+    const found = rescueGroupsCandidates(notWaiting, known, today);
+    console.log(`  ${rows.length} listings near the city, ${found.length} new`);
+    for (const c of found) {
+      if (fresh.length >= MAX_NEW_PER_RUN) {
+        rosterNotes.push(`**${RESCUEGROUPS_SOURCE}** had more new organizations than one run adds; the rest follow next month.`);
+        break;
+      }
+      seenNames.add(mergeKey(c.name));
+      fresh.push(c);
+    }
+  }
+
   // --- fill in what each new organization publishes about itself ---------
   //
   // One page each, and only for the ones found this run. It is the same fetch
@@ -383,7 +556,9 @@ async function main(): Promise<void> {
   // had their site read either. They are read once; `contactsChecked` stops
   // the same silent site being fetched every month.
   const unread = existing.filter((c) => !c.phones?.length && !c.emails?.length && !c.contactsChecked);
-  const toRead = [...fresh, ...unread];
+  // RescueGroups candidates arrive with the contacts the organization gave
+  // there; reading their site again would only be a second guess.
+  const toRead = [...fresh.filter((c) => c.source !== RESCUEGROUPS_SOURCE), ...unread];
   if (toRead.length) {
     console.log(`\nReading ${toRead.length} organization site(s) for contact details (${fresh.length} new, ${unread.length} stored)...`);
     let withContacts = 0;
@@ -409,6 +584,11 @@ async function main(): Promise<void> {
       }
     }
     console.log(`  ${withContacts} of ${toRead.length} published a contact we could read`);
+  }
+
+  for (const c of fresh) {
+    const same = possibleDuplicate(c.name, orgs);
+    if (same) c.maybeSameAs = same;
   }
 
   // --- write -------------------------------------------------------------
@@ -463,7 +643,7 @@ function buildReport(
     out.push('## New candidates');
     out.push('');
     for (const c of fresh) {
-      out.push(`- **${c.name}** — ${c.website ?? 'no website found'}  `);
+      out.push(`- **${c.name}** — ${c.website ?? 'no website found'}${c.maybeSameAs ? ` — *may already be listed as ${c.maybeSameAs}*` : ''}  `);
       out.push(`  From ${c.source}`);
     }
     out.push('');
