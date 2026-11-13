@@ -32,6 +32,8 @@ interface Candidate {
   emails?: string[];
   contactsFrom?: string;
   contactsChecked?: string;
+  /** The zip it lists itself under, where the source gives one. */
+  zip?: string;
   /**
    * Set by a person, after looking. Discovery finds mostly out-of-city
    * rescues, so nothing it finds is published until someone marks it.
@@ -50,9 +52,9 @@ interface Candidate {
 
 /** The roster's name in the reader's words: nobody outside rescue knows "New Hope". */
 function sourceInWords(source: string): string {
-  return source === 'ACC New Hope partners'
-    ? 'the city shelter\u2019s list of approved rescue partners (ACC \u201cNew Hope\u201d)'
-    : source;
+  if (source === 'ACC New Hope partners') return 'the city shelter\u2019s list of approved rescue partners (ACC \u201cNew Hope\u201d)';
+  if (source === 'RescueGroups.org') return 'RescueGroups.org, where rescues list themselves and their animals';
+  return source;
 }
 
 export function loadDiscovered(path = DISCOVERED_PATH): Candidate[] {

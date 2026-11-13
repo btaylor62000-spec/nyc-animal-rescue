@@ -229,3 +229,57 @@ test('importing the discovery agent does not run it', () => {
   );
   assert.equal(readFileSync(DISCOVERED, 'utf8'), before, 'importing the module must write nothing');
 });
+
+// --- RescueGroups.org (2026-11-13) ------------------------------------------
+
+test('RescueGroups: only city zips, nothing already listed by name, site, email or phone', async () => {
+  const { rescueGroupsCandidates } = await import('../scripts/agent/discover.ts');
+  const known = {
+    keys: new Set([mergeKey('Mighty Mutts Inc')]),
+    hosts: new Set(['bbawc.org', 'facebook.com/someoneelse']),
+    emails: new Set(['adoptions@bbawc.org']),
+    phones: new Set(['7184881664']),
+  };
+  const rows = [
+    // Listed here as "Brooklyn Bridge Animal Welfare Coalition"; we have it as BBAWC.
+    { name: 'Brooklyn Bridge Animal Welfare Coalition, Inc.', postalcode: '11201', email: 'adoptions@bbawc.org', url: 'www.catcafebk.com' },
+    // Same phone as a listing under another name.
+    { name: 'Mighty Mutts', postalcode: '11214', phone: '(718) 488-1664' },
+    // Outside the city.
+    { name: 'Jersey Paws', postalcode: '07030', email: 'hi@jerseypaws.org' },
+    // New, with a website that is only "http://" and a Facebook page instead.
+    { name: 'In Our Hands Rescue', postalcode: '10458', email: 'InOurHandsRescue@gmail.com', url: 'http://', facebookUrl: 'http://www.facebook.com/inourhandsrescue' },
+    // The same organization listed twice (two search circles overlap).
+    { name: 'In Our Hands Rescue', postalcode: '10458', email: 'inourhandsrescue@gmail.com' },
+  ];
+  const out = rescueGroupsCandidates(rows, known, '2026-11-13');
+  assert.deepEqual(out.map((c) => c.name), ['In Our Hands Rescue']);
+  assert.equal(out[0]!.website, 'http://www.facebook.com/inourhandsrescue');
+  assert.deepEqual(out[0]!.emails, ['inourhandsrescue@gmail.com']);
+  assert.equal(out[0]!.zip, '10458');
+  assert.equal(out[0]!.source, 'RescueGroups.org');
+});
+
+test('a Facebook-only candidate is not "already listed" because another group is also on Facebook', () => {
+  const known = { keys: new Set<string>(), hosts: new Set(['facebook.com/islandwildlife']) };
+  assert.equal(alreadyKnown({ name: 'New Group', website: 'https://www.facebook.com/newgroup' }, known), false);
+  assert.equal(alreadyKnown({ name: 'Island Wildlife', website: 'https://facebook.com/islandwildlife/' }, known), true);
+});
+
+test('a likely duplicate is pointed out to the reviewer, and two different rescues are not confused', async () => {
+  const { possibleDuplicate } = await import('../scripts/agent/discover.ts');
+  const orgs = [
+    { name: "Mighty Mutts & Ollie's Place" },
+    { name: 'WINORR - Wildlife In Need Of Rescue and Rehabilitation (Bobby & Cathy Horvath)' },
+    { name: 'Brooklyn Fat Cats' },
+  ];
+  assert.equal(possibleDuplicate('Mighty Mutts', orgs), "Mighty Mutts & Ollie's Place");
+  assert.equal(possibleDuplicate('WINORR Wildlife In Need', orgs), orgs[1]!.name);
+  // Shares only common words: not the same rescue.
+  assert.equal(possibleDuplicate('Brooklyn Cats', orgs), undefined);
+  assert.equal(possibleDuplicate('Gotham City Kitties', orgs), undefined);
+  // One short shared word is not enough.
+  assert.equal(possibleDuplicate('Save a Heartbeat', [{ name: 'Save the Animals Rescue Foundation (STAR)' }]), undefined);
+  assert.equal(possibleDuplicate("Shonio's Safe Haven, Inc", [{ name: 'Animal Haven' }]), undefined);
+  assert.equal(possibleDuplicate('New York City Cat Coalition', [{ name: 'NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)' }]), 'NYC Cat Coalition (NYC Bronx Westchester Cat Coalition)');
+});
