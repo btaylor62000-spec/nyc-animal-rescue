@@ -89,13 +89,14 @@ Adoption League of NY (chows, with the Asian breeds).
 **Not added:**
 - **Yummy the Pig.** An education page about pet pigs ("an ambassador for
   rescue"), not a rescue that takes animals.
-- **Fair Shake Sanctuary.** ACC lists https://www.instagram.com/fairshakesanctuary.
-  The reviewer found A Fair Shake for Youth, a youth therapy-dog programme,
-  which is a different organization. Waiting for the Instagram to be
-  checked.
-- **A Tail at A Time.** The blog the reviewer found
-  (atailatatimerescue.blogspot.com) is a Manhattan cat rescue last updated
-  in 2011. One Paw at a Time, also found, is a different rescue (Rockland
-  and New Jersey). Waiting for its Facebook page,
-  https://www.facebook.com/atailatatime, to show whether it is active.
+- **Fair Shake Sanctuary.** ACC lists https://www.instagram.com/fairshakesanctuary,
+  which says "Profile isn't available" (reviewer, 2026-11-13). The reviewer
+  found A Fair Shake for Youth, a youth therapy-dog programme, which is a
+  different organization. Not listed: no working page of its own.
+- **A Tail at A Time.** Its Facebook page, https://www.facebook.com/atailatatime,
+  says "This content isn't available right now", and its blog
+  (atailatatimerescue.blogspot.com) was last updated in 2011 (reviewer,
+  2026-11-13). Not listed. Two other groups with similar names are
+  different rescues: One Paw at a Time (Rockland and New Jersey) and One
+  Tail at a Time, whose own site, onetail.org, says it is a Chicago rescue.
 - **WINORR.** Already listed.
