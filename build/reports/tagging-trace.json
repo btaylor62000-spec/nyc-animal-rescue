@@ -1,4 +1,41 @@
 {
+  "2000-spays-and-neuters": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "name",
+      "matched": "Spay"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "800-kitties-rescue": [
     {
       "tag": "cat",
@@ -1216,6 +1253,18 @@
       "tag": "solo-rescuer",
       "field": "type",
       "matched": "solo rescuer"
+    }
+  ],
+  "because-of-dream-animal-rescue": [
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "New Hope partner"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
     }
   ],
   "bed-stuy-kitty-crew": [
@@ -4660,6 +4709,33 @@
       "tag": "solo-rescuer",
       "field": "type",
       "matched": "solo rescuer"
+    }
+  ],
+  "lindas-feral-cat-assistance": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Feral"
+    },
+    {
+      "tag": "tnr",
+      "field": "type",
+      "matched": "TNR"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "at-risk"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    },
+    {
+      "tag": "tnr-group",
+      "field": "type",
+      "matched": "TNR"
     }
   ],
   "little-wanderers-nyc": [

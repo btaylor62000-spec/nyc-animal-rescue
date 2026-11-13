@@ -32,6 +32,7 @@ This page lists all-'bully' rescues first (they take the whole group), then bree
 
 ## PIT-TYPE (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)
 
+- Long Island Pit Stop - Huntington Station, Long Island; pit bulls and other dogs at risk of euthanasia in New York and southern shelters; an approved ACC rescue partner. (917) 685-8422, longislandpitstop@gmail.com. https://www.facebook.com/LIpitstop/
 - Pit of Our Souls Rescue - mainly bully breeds, all sizes and ages; foster-based across Long Island (Levittown). (516) 308-6221. https://www.pitofoursoulsrescue.org, Instagram @pitofoursoulsrescue (read by a reviewer, 2026-11-05). Approved ACC rescue partner.
 - Air Twiga Animal Rescue - American Staffordshire terrier mixes and other dogs, many with medical needs; Glen Cove, Long Island; takes dogs from NYC's shelter. TwigaAir@gmail.com. https://www.airtwiga.org, Instagram @airtwigaanimalrescue (read on its own site by a reviewer, 2026-11-05).
 - Pitties Love Peace - pit bull and bully breed dogs; Elizabethtown, PA. info@pittieslovepeace.com. Application: https://pittieslovepeace.com/adoptable-dogs/online-application/ (read on its own site by a reviewer, 2026-11-05). Approved ACC rescue partner.
@@ -66,6 +67,7 @@ Internet Miniature Pinscher Service (IMPS) - min pins, national incl. NY. (via M
 
 ## CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large "bully"/molosser)
 
+- Lucie's Mastiff Mission - Vincentown, New Jersey; rescues and rehomes English mastiffs; an approved ACC rescue partner. (484) 459-3257. https://www.facebook.com/groups/318799318598045
 - Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). Mailing address in West Lake Hills, Texas. 1-814-682-6776. https://canecorsorescue.org (read on its own site by a reviewer, 2026-11-05).
 - Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes and Dane mixes; serves New York, New Jersey, Pennsylvania, Delaware, Maryland, DC, West Virginia and Virginia, with a New York chapter. https://www.magdrl.org / https://nydanerescue.com. Instagram @midatlantic_greatdanerescue (read on its own site by a reviewer, 2026-11-05).
 - Bullmastiff Rescuers - bullmastiffs only ("we DO NOT accept other breeds"), NY-serving. brinc2@verizon.net. http://www.bullmastiffrescuers.net (read on its own site by a reviewer, 2026-11-05).
@@ -120,6 +122,7 @@ Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescu
 
 ## SHIBA / AKITA / ASIAN BREEDS
 
+- Pet Adoption League of NY - chows and chow mixes, foster-based; an approved ACC rescue partner (location not given). https://www.facebook.com/palofnyinc
 - NYC Shiba Rescue - Shiba Inu, NYC-based. http://nycshibarescue.org. Approved ACC rescue partner.
 - Shiba Rescue of New England - Shiba Inus; foster-based, serves New England and New York. shibarescuene@gmail.com, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).
 - Big East Akita Rescue - Akitas, Northeast incl. NY. http://bigeastakitarescue.org.
@@ -127,6 +130,7 @@ Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescu
 
 ## BEAGLE / HOUND / BASSET
 
+- Safe Hounds Beagle Rescue - Blairstown, New Jersey; beagles; an approved ACC rescue partner. (908) 362-5313, kjphilhower@optimum.net. https://www.facebook.com/SafeHounds/
 - Safe Hounds Beagle Rescue - beagles, NY-serving. facebook.com/SafeHounds.
 - Mid-Atlantic Basset Hound Rescue - bassets; Washington Township, Warren County, NJ; adopts NY metro. (908) 256-0598, info@midatlanticbassets.com; to surrender a basset, surrender@midatlanticbassets.com. http://www.midatlanticbassets.com (read by a reviewer, 2026-11-05).
 

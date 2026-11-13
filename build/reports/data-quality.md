@@ -4,7 +4,7 @@ Generated 2026-11-13 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **438** organizations after de-duplication
+- **441** organizations after de-duplication
 - **78** duplicate clusters merged
 - **24** guide pages generated
 - **18** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-13 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 322 |
-| dog | 260 |
+| cat | 324 |
+| dog | 261 |
 | rabbit | 45 |
 | bird-companion | 42 |
 | wildlife | 42 |
@@ -37,18 +37,18 @@ Generated 2026-11-13 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 182 |
-| foster | 111 |
-| tnr | 95 |
-| spay-neuter | 74 |
+| adoption | 183 |
+| foster | 112 |
+| tnr | 96 |
+| spay-neuter | 75 |
 | owner-support | 72 |
 | surrender | 60 |
 | referral | 59 |
 | low-cost-vet | 57 |
 | emergency-vet | 45 |
+| advocacy | 36 |
 | food-assistance | 35 |
 | colony-care | 35 |
-| advocacy | 33 |
 | medical-special-needs | 26 |
 | legal | 25 |
 | financial-aid | 23 |
@@ -74,25 +74,25 @@ Generated 2026-11-13 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 275 |
-| manhattan | 233 |
-| queens | 229 |
-| bronx | 201 |
-| staten-island | 201 |
+| brooklyn | 276 |
+| manhattan | 234 |
+| queens | 231 |
+| staten-island | 203 |
+| bronx | 202 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
 | High | 211 |
-| Medium | 162 |
+| Medium | 165 |
 | Low | 65 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 420 |
+| active | 423 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -274,7 +274,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (38)
+### Rows the rules could not fully tag (39)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -314,6 +314,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **inkyBlue Animal Rescue** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:127)
 - **Lalitamba: Bell Animal Sanctuary** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:129)
 - **Tails of Love Animal Rescue** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:133)
+- **Because of Dream Animal Rescue** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:139)
 
 ## Privacy
 
@@ -336,7 +337,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Leaving an abusive home with your pet | 4662 |
 | Pets in a disaster or evacuation | 4007 |
 | Keeping your pet if you are losing your home | 5929 |
-| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 14041 |
+| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15825 |
 | Reporting animal abuse or neglect | 6987 |
 | Animal emergencies and poison control | 3071 |
 | Low-cost clinics and trap banks | 3589 |
@@ -348,7 +349,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost vet care, spay/neuter and dog licensing | 7480 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
-| Breed-specific dog rescue | 19887 |
+| Breed-specific dog rescue | 20654 |
 | Found injured or orphaned wildlife | 17151 |
 | Exotic pet emergencies | 4076 |
 | What you can legally keep in New York City | 3060 |

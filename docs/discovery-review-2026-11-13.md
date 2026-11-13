@@ -56,3 +56,46 @@ under "FOUND THROUGH RESCUEGROUPS.ORG".
   Linda's Feral Cat Assistance, Lucie's Mastiff Mission, Safe Hounds Beagle
   Rescue, Save a Heartbeat and Shonio's Safe Haven. Each needs a person to
   read its page.
+
+## The 15 names on ACC's partner list (reviewer, 2026-11-13, from their Facebook pages)
+
+Every name here is on ACC's New Hope partner list.
+
+**Published in the directory (3):**
+- 2000 Spays and Neuters: New York City, borough not given, so listed
+  citywide.
+- Because of Dream Animal Rescue: Staten Island. ACC lists it as
+  "Dreamer's Rescue".
+- Linda's Feral Cat Assistance: Woodside, Queens.
+
+**Added to the at-risk guide's list of partners outside the city (9).**
+That section was widened from "partners whose own sites say they take from
+ACC" to "approved partners":
+- Friends of the Forgotten Cat Rescue (Johnstown, NY)
+- Long Island Pit Stop (Huntington Station)
+- Lucie's Mastiff Mission (Vincentown, NJ)
+- Miracle Lane Farm & Sanctuary (Maine; it runs an NYC ACC foster
+  programme)
+- Pet Adoption League of NY (chows; location not given)
+- Safe Hounds Beagle Rescue (Blairstown, NJ)
+- Save a Heartbeat Kitty Rescue (location not given)
+- Shonio's Safe Haven (Morrisville, VT)
+- Tanner's PAWS (Corning, NY)
+
+**Also added to the breed guide:** Long Island Pit Stop (pit-type), Lucie's
+Mastiff Mission (mastiff), Safe Hounds Beagle Rescue (beagle) and Pet
+Adoption League of NY (chows, with the Asian breeds).
+
+**Not added:**
+- **Yummy the Pig.** An education page about pet pigs ("an ambassador for
+  rescue"), not a rescue that takes animals.
+- **Fair Shake Sanctuary.** ACC lists https://www.instagram.com/fairshakesanctuary.
+  The reviewer found A Fair Shake for Youth, a youth therapy-dog programme,
+  which is a different organization. Waiting for the Instagram to be
+  checked.
+- **A Tail at A Time.** The blog the reviewer found
+  (atailatatimerescue.blogspot.com) is a Manhattan cat rescue last updated
+  in 2011. One Paw at a Time, also found, is a different rescue (Rockland
+  and New Jersey). Waiting for its Facebook page,
+  https://www.facebook.com/atailatatime, to show whether it is active.
+- **WINORR.** Already listed.
