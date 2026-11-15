@@ -78,6 +78,17 @@ export const CARD_URLS: Record<string, string> = {
   'the guide on keeping your pet if you lose your home': '/guides/keep-your-pet-if-you-lose-your-home',
   'the animal emergencies guide': '/guides/animal-emergency',
   'the wildlife guide': '/guides/found-wildlife',
+  // Directory lists, named in a card's words.
+  'every kitten nursery': '/directory?need=neonatal',
+  'every FIV+ and FeLV+ rescue': '/directory?need=retrovirus',
+  'more lower-cost clinics, nearest first': '/directory?need=low-cost-vet&near=1',
+  'rescues that take owner surrenders': '/directory?need=surrender',
+  // Addresses the guides give.
+  'ccpdt.org': 'https://www.ccpdt.org',
+  'iaabc.org': 'https://iaabc.org',
+  'dacvb.org': 'https://www.dacvb.org',
+  'Know your zone': 'https://www.nyc.gov/knowyourzone',
+  'Notify NYC': 'https://www.nyc.gov/notifynyc',
 };
 
 const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -127,9 +138,9 @@ export function linkNames(text: string, skip: ReadonlySet<string> = new Set()): 
   }
   for (const [name, url] of Object.entries(CARD_URLS)) {
     const at = out.indexOf(escape(name));
-    if (at >= 0 && !out.slice(0, at).includes(`href="${url}"`)) {
+    if (at >= 0 && !out.slice(0, at).includes(`href="${escape(url)}"`)) {
       const rel = url.startsWith('/') ? '' : ' rel="noopener"';
-      out = `${out.slice(0, at)}<a href="${url}"${rel}>${escape(name)}</a>${out.slice(at + escape(name).length)}`;
+      out = `${out.slice(0, at)}<a href="${escape(url)}"${rel}>${escape(name)}</a>${out.slice(at + escape(name).length)}`;
     }
   }
   return out;

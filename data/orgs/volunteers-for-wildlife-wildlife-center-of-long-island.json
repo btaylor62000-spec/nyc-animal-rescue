@@ -16,11 +16,9 @@
     "wildlife-rehab",
     "education"
   ],
-  "boroughs": [
-    "queens"
-  ],
+  "boroughs": [],
   "citywide": false,
-  "outside_nyc": false,
+  "outside_nyc": true,
   "neighborhoods": "Long Island (Nassau & western Suffolk); at Bailey Arboretum, Locust Valley",
   "zips": [
     "11560"

@@ -5,7 +5,6 @@ import Icon from '../components/Icon.astro';
 import EmergencySigns from '../components/EmergencySigns.astro';
 import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
 import { GUIDE_GROUPS, LINES_BY_TIER } from '../data/guides.ts';
-import { feedbackLink } from '../data/site.ts';
 
 /**
  * The home page answers one question: what happened, and where do I tap?
@@ -105,7 +104,6 @@ const places = GUIDE_GROUPS.flatMap((g) => (g.places ? [g.places] : []));
           </a>
           <a class="btn" href="/directory">Find an entry to fix</a>
         </div>
-        <p style="margin:.75rem 0 0"><a href={feedbackLink('Home page')} rel="noopener" target="_blank">Something wrong or missing on this page? Tell us</a></p>
       </div>
     </section>
 

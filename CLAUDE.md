@@ -184,6 +184,46 @@ such. The monthly audit checks whether the city has published a procedure.
   (the Census geocoder cannot read Route 17 addresses); drive times re-run.
   **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
 
+### Also changed 2026-11-15 (seventh round): steps or situations, never both kinds mixed
+
+- **The rule for cards** (owner: "you are listing steps that are not
+  sequential"): numbered `steps` only when the order is the advice (rescue a
+  bird, TNR, found kittens, the at-risk list, leaving an abusive home). Where
+  the right advice depends on what happened, the card is "What's happening?"
+  tiles (`situations`) and has no steps. Converted: disaster, both "Help
+  keeping your..." cards, help paying, low-cost dog care, cats with special
+  needs, dog behaviour, exotic planning, an animal left alone, a trapped
+  animal. A step that only repeated a tile is gone (the emergency card's
+  poison and paying steps).
+- **A safety line says it once per card** (tested): card-wide lines at the
+  bottom, situation lines in their tile, never both.
+- **Removed at the owner's request:** "Do not go back alone to fetch it"
+  (leaving abuse), "Scratched or bitten by a feral? Contact a doctor" (TNR),
+  the Code Blue tip (it is about people; city shelters do not take pets), the
+  duplicate dog-licence reminder.
+- **Giving up a pet** leads with the rescue you got it from, then rehoming it
+  yourself (ACC's Rehoming Your Pet tools keep it out of the shelter), then
+  rescues that take surrenders; ACC intake last.
+- **Help paying** opens with "Go anyway", then funds; the Animal Medical
+  Center's own funds are one tile, not the first step.
+- **Low-cost dog care**: vaccines from Petco Vetco, VIP Petcare, Sean Casey
+  and ACC's events (the card used to say ACC ran "free pop-ups in the Bronx
+  and Queens", which the guide does not say). Cats point to the clinics guide.
+- **Found kittens** links the kitten nurseries (contacts, step 3, and the list
+  at the foot, renamed "Kitten nurseries: newborn kittens and pregnant cats").
+- **At-risk guide** is "Save a shelter animal from euthanasia: ACC's New Hope
+  list" on the home page; "New Hope partner" on the card links to the listing.
+- **Tags corrected** with the new `removeNeeds` override: the New Hope list is
+  not "behaviour and training"; the Humane Society of New York and a pet
+  reptile rescue are not wildlife rehabbers. Volunteers for Wildlife is in
+  Nassau, not Queens (`set.boroughs` now allowed).
+- **Feedback is one small line in the shared layout**, on every page:
+  report a problem · add a resource · tell us about this page (the form, with
+  the page's name).
+- Ear-tipped cat: "spayed or neutered and put back where it lives", not "has
+  someone who looks after it". Turtle: "Not sure if it is a pet or wild? Send
+  NYTTS a photo and ask, before you move it."
+
 ### Also changed 2026-11-15 (sixth round)
 
 - **Two guides removed by the owner:** *When a pet dies* ("awful and
@@ -201,9 +241,7 @@ such. The monthly audit checks whether the city has published a procedure.
 - **Card bottoms carry safety lines, not repeats.** Tips and reminders that
   repeated a step or the red E button are gone; the lilies line is in the
   poison tile, the Bronx tip is gone (the Bronx tile says it).
-- **One box at the foot of each guide**: "Wrong number, or something
-  missing?", with the Google Form link inside it. The directory and the home
-  page have the same form link.
+- (Superseded in the seventh round: the feedback box became one line on every page.)
 - **Lost or found a rabbit, bird or reptile** is five situations: lost a pet;
   found a pet bird (saying it is a pet, and sending a hurt wild bird to the
   injured-bird guide); found a tame or white pigeon; found a rabbit; found a

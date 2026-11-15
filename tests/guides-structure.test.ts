@@ -180,10 +180,11 @@ test('an organization removed from the site appears nowhere a reader or the assi
   }
 });
 
-test('every guide page offers the feedback form, naming the guide', () => {
+test('every page offers the feedback form, naming the page', () => {
   // Read as text: site.ts uses Astro's import.meta.env, which tests do not have.
   const site = readFileSync('src/data/site.ts', 'utf8');
   assert.match(site, /FEEDBACK_FORM = 'https:\/\/docs\.google\.com\/forms\/d\/e\/[\w-]+\/viewform'/);
   assert.match(site, /FEEDBACK_PAGE_ENTRY = 'entry\.2083064976'/);
-  assert.match(readFileSync('src/pages/guides/[slug].astro', 'utf8'), /feedbackLink\(guide\.title\)/);
+  // One line in the shared layout, so every page has it (owner, 2026-11-15).
+  assert.match(readFileSync('src/layouts/Base.astro', 'utf8'), /feedbackLink\(title\)/);
 });

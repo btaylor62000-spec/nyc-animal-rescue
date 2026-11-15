@@ -14,7 +14,13 @@ export interface Override {
   reason: string;
   addAnimals?: Animal[];
   addNeeds?: Need[];
-  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka'>>;
+  /**
+   * A tag a word in the notes set wrongly, where changing the rule would
+   * break other records: "behavior" in the at-risk list's notes put it among
+   * trainers, beside animals about to be euthanised (owner, 2026-11-15).
+   */
+  removeNeeds?: Need[];
+  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka' | 'boroughs'>>;
 }
 
 export const OVERRIDES: Override[] = [
@@ -152,8 +158,24 @@ export const OVERRIDES: Override[] = [
   },
   {
     id: 'acc-new-hope-program',
-    reason: 'A programme of ACC rather than an independent organization.',
+    reason: 'A programme of ACC rather than an independent organization. Not training: "behavior" in its notes describes the animals on the list (owner, 2026-11-15).',
     set: { parent_org: 'animal-care-centers-of-nyc' },
+    removeNeeds: ['behavior-training'],
+  },
+  {
+    id: 'volunteers-for-wildlife-wildlife-center-of-long-island',
+    reason: 'In Locust Valley, Nassau County. Its notes mention "eastern-Queens" situations, which tagged it as being in Queens and put it among in-city wildlife rehabbers (2026-11-15).',
+    set: { boroughs: [], outside_nyc: true },
+  },
+  {
+    id: 'house-of-pancakes-reptile-rescue',
+    reason: 'A pet reptile rescue that refuses native species and "refers those to the DEC rehabber list": that phrase is why it was tagged a wildlife rehabber, and it is not one.',
+    removeNeeds: ['wildlife-rehab'],
+  },
+  {
+    id: 'humane-society-of-new-york',
+    reason: 'A vet clinic and shelter for cats and dogs; nothing on its listing says it treats wildlife, and it showed among wildlife rehabbers (owner, 2026-11-15).',
+    removeNeeds: ['wildlife-rehab'],
   },
   {
     id: 'animal-care-centers-of-nyc-brooklyn',

@@ -57,8 +57,8 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 | sanctuary | 20 |
 | lost-found | 18 |
 | boarding | 17 |
-| behavior-training | 16 |
-| wildlife-rehab | 16 |
+| behavior-training | 15 |
+| wildlife-rehab | 14 |
 | microchip | 13 |
 | transport | 13 |
 | breed-specific | 11 |
@@ -76,7 +76,7 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 | --- | ---: |
 | brooklyn | 276 |
 | manhattan | 234 |
-| queens | 231 |
+| queens | 230 |
 | staten-island | 203 |
 | bronx | 202 |
 

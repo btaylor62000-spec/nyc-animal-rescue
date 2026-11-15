@@ -1510,7 +1510,4 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .results-bar--ask { outline: 3px solid var(--accent, #c8102e); outline-offset: 4px; border-radius: 8px; }
 .results-bar--ask #near-me-note { font-weight: 700; }
 .results-bar { scroll-margin-top: 6rem; }
-.directory-foot { margin: 2rem 0 1rem; }
-.guide-foot { margin-top: 1.5rem; }
-.guide-foot p { margin: 0 0 0.45rem; }
-.guide-foot p:last-child { margin-bottom: 0; }
+.page-feedback { margin: 2rem auto 1rem; font-size: 0.85rem; color: var(--text-muted); }

@@ -202,9 +202,24 @@ test('organizations named on a card link to their listings', async () => {
         assert.ok(GUIDES.some((x) => `/guides/${x.slug}` === url), `${url} is not a guide`);
         continue;
       }
-      assert.ok(guide.body.includes(url.replace(/^https?:\/\//, '')), `${guide.slug}: ${url} is not in the guide`);
+      if (url.startsWith('/directory')) continue;
+      assert.ok(guide.body.includes(url.replace(/^https?:\/\/(www\.)?/, '')), `${guide.slug}: ${url} is not in the guide`);
     }
   }
   // Escaped, so a card's text cannot become markup.
   assert.equal(linkNames('a <b> & c'), 'a &lt;b&gt; &amp; c');
+});
+
+/*
+ * A safety line says it once (owner, 2026-11-15: the emergency card said
+ * "Do not make the animal vomit" at the bottom and again in the poison tile).
+ * A line for the whole card goes at the bottom; one for one situation goes in
+ * that tile, not both.
+ */
+test('no safety line appears twice on a card', () => {
+  for (const [slug, g] of Object.entries(GLANCE)) {
+    const lines = safetyLines(g).map(tidy);
+    const twice = lines.filter((l, i) => lines.indexOf(l) !== i);
+    assert.deepEqual(twice, [], `${slug}: said more than once`);
+  }
 });

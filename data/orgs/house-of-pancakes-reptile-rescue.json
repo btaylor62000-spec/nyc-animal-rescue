@@ -13,7 +13,6 @@
     "fish"
   ],
   "needs": [
-    "wildlife-rehab",
     "adoption",
     "surrender",
     "foster",

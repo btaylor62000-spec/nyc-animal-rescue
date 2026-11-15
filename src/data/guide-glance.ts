@@ -115,18 +115,32 @@ const CITY = 'nyc-311';
 export const GLANCE: Record<string, Glance> = {
 
   'animal-trapped': {
-    headline: 'If a trapped animal is in danger right now, call 911. If it is not, call 311.',
+    headline: 'If a trapped animal is in danger right now, call 911. If it is not, call 311. Tap what is happening.',
     contacts: [
       { dial: '911', when: 'Trapped and in danger right now' },
       { org: CITY, when: 'Not in danger right now · strays: 10am to 6pm' },
       { org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'How to find a licensed wildlife control company' },
     ],
-    steps: [
-      { title: 'In danger right now? Call 911', text: 'Stuck in a drain, under a train, in a car engine or on a ledge. Say exactly where it is and what animal it is.' },
-      { title: 'Not in danger right now? Call 311', text: 'For a stray dog or cat, ACC takes reports 10am to 6pm. In a park, 311 sends it to NYC Parks.' },
-      { title: 'A wild animal living in your walls or chimney?', text: 'Hire a licensed wildlife control company. First take away any food that draws it in.' },
+    situations: [
+      {
+        label: 'It’s in danger right now', tone: 'now', verdict: 'Call 911',
+        do: ['Stuck in a drain, under a train, in a car engine or on a ledge: call 911.', 'Say exactly where it is and what animal it is.', 'In rescues reported in the news, officers from the NYPD’s Emergency Service Unit came to free the animal.'],
+        contacts: [{ dial: '911', when: 'In danger right now' }],
+        section: 'If the animal is in danger right now, call 911',
+      },
+      {
+        label: 'It’s not in danger right now', tone: 'today', verdict: 'Call 311',
+        do: ['For a stray dog or cat, ACC takes reports through 311, 10am to 6pm.', 'In a park, 311 sends it to NYC Parks.'],
+        contacts: [{ org: CITY, when: 'Strays: 10am to 6pm' }],
+        section: 'If it is not in danger right now, call 311',
+      },
+      {
+        label: 'A wild animal is living in my walls or chimney', tone: 'week', verdict: 'Hire a licensed company',
+        do: ['Hire a licensed wildlife control company. DEC’s website explains how to find one.', 'First take away any food that draws it in.'],
+        contacts: [{ org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'Licensed wildlife control' }],
+        section: 'A wild animal living in your walls, chimney or attic',
+      },
     ],
-    tip: 'No city page covers trapped animals. In rescues reported in the news, officers from the NYPD’s Emergency Service Unit came to free the animal.',
   },
 
   'found-kittens-outside': {
@@ -134,32 +148,50 @@ export const GLANCE: Record<string, Glance> = {
     contacts: [
       { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Orphaned kittens · call before you go' },
       { org: CITY, when: 'Report orphaned kittens' },
+      { org: 'itty-bitty-city-kitties', name: 'Itty Bitty City Kitties', when: 'Kitten nursery · bottle babies' },
+      { org: 'cat-castle-nyc', name: 'Cat Castle', when: 'Kitten nursery' },
     ],
     steps: [
       { title: 'Hurt or very sick?', text: 'It needs help now. Go to an emergency vet, or call 311 to reach ACC.', link: { label: 'Animal emergencies', href: '/guides/animal-emergency' } },
       { title: 'Healthy? Wait and watch', text: 'Watch from far away for a few hours, in case the mother comes back. Don’t take them home while you wait.' },
-      { title: 'Mother not back?', text: 'Call 311 or ACC. You can also bring orphaned kittens to an ACC centre, but call first.' },
+      { title: 'Mother not back?', text: 'Call 311 or ACC, or bring them to an ACC centre (call first). Tiny kittens that still need a bottle need a kitten nursery, which cares for them around the clock.', link: { label: 'Kitten nurseries', href: '/directory?need=neonatal' } },
       { title: 'Stop more litters', text: 'The mother cat can be trapped, spayed and returned, often for free.', link: { label: 'Starting TNR', href: '/guides/starting-tnr' } },
     ],
     never: ['Do not separate stray or feral kittens from their mother.'],
-    tip: 'Tiny kittens that still need a bottle need care around the clock. Kitten nurseries are in Cats needing specialist help.',
   },
 
 
   'animal-left-alone': {
-    headline: 'If a pet has been left behind because its owner died, is in hospital or jail, or moved out, call 311.',
+    headline: 'If a pet is in danger right now, call 911. If it has been left behind and is not in danger, call 311. Tap what happened.',
     contacts: [
       { dial: '911', when: 'An animal is in danger right now' },
       { org: CITY, when: 'Report an abandoned pet, or neglect' },
       { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Takes these reports by phone in business hours' },
     ],
-    steps: [
-      { title: 'In danger right now? Call 911', text: 'For example, no food or water, or it sounds hurt.' },
-      { title: 'Otherwise, call 311', text: 'Say a pet has been left behind. Give the address, what the animal looks like, and how long it has been alone.' },
-      { title: 'Evicted, and your animal is inside?', text: 'Look for a notice on the door saying which shelter it went to. If it is still inside, ask the landlord or building staff, then your police precinct.' },
-      { title: 'Facing eviction?', text: 'Plan now: find someone who could look after your pet. Call 311 and ask for the Tenant Helpline.' },
+    situations: [
+      {
+        label: 'A neighbour’s pet has been left behind', tone: 'now', verdict: '911 if in danger, otherwise 311',
+        do: ['In danger right now, for example no food or water, or it sounds hurt? Call 911.', 'Otherwise call 311. Say a pet has been left behind. Give the address, what the animal looks like, and how long it has been alone.'],
+        contacts: [{ dial: '911', when: 'In danger right now' }, { org: CITY, when: 'Not in danger' }],
+        section: 'If a neighbour\'s pet has been left behind',
+      },
+      {
+        label: 'I was evicted and my animal is inside', tone: 'now', verdict: 'Find out where it went',
+        do: ['Look for a notice on the door saying which shelter it went to.', 'If it is still inside, ask the landlord or building staff, then your police precinct.'],
+        section: 'If you were evicted and your animal is inside',
+      },
+      {
+        label: 'I’m facing eviction', tone: 'today', verdict: 'Plan for your pet now',
+        do: ['Find someone who could look after your pet.', 'Call 311 and ask for the Tenant Helpline.'],
+        contacts: [{ org: CITY, when: 'Ask for the Tenant Helpline' }],
+        section: 'If you are facing eviction',
+      },
+      {
+        label: 'I’m going into hospital myself', tone: 'today', verdict: 'Short-term help exists',
+        do: ['PAWS NY can help care for your pet while you are away.'],
+        contacts: [{ org: 'paws-ny', name: 'PAWS NY', when: 'Help while you are in hospital' }],
+      },
     ],
-    tip: 'Going into hospital yourself? PAWS NY can help care for your pet while you are away.',
   },
   // The Bronx tile follows driving times measured 2026-11-15 with the public
   // OSRM route planner from ten Bronx neighbourhoods to every 24-hour hospital
@@ -179,10 +211,7 @@ export const GLANCE: Record<string, Glance> = {
     steps: [
       { title: 'Find the nearest hospital open now', text: 'Hit by a car, bleeding, can’t breathe, a seizure, collapsed, or anything that scares you: go now. Not sure? Call an emergency vet and ask.', link: { label: 'Hospitals open now, nearest first', href: '/directory?need=emergency-vet&near=1' } },
       { title: 'If you can, call while you travel', text: 'Don’t wait to get through before you leave. A call lets them get ready and confirms they are open. Say what kind of animal it is.', link: { label: 'Rabbit, bird or reptile? Vets who treat them', href: '/guides/exotic-pet-emergency' } },
-      { title: 'Poisoned? Call poison control first', text: 'They work out the treatment and pass it to the hospital, which saves time.' },
-      { title: 'Worried about paying? Go anyway', text: 'Ask about payment plans when you arrive.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],
-    never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
     situations: [
       {
         label: 'It ate or touched something poisonous', tone: 'now', verdict: 'Call poison control first',
@@ -277,15 +306,12 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'It hit a window', tone: 'now', verdict: 'Needs help today, even if it seems fine',
         do: ['Cover it with a towel and scoop it up.', 'Put it in a closed box with small air holes. Keep it dark and quiet.', 'Take it to a rehabber today. Birds that fly off after hitting a window often die later from shock.'],
-        never: ['No heating pad for a bird that hit a window: a warm room is enough.', 'Never give it food or water.'],
         contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'After hours: 24-hour emergency room' }],
         section: 'How to catch it, box it and keep it calm',
       },
       {
         label: 'A cat, dog or other animal caught it', tone: 'now', verdict: 'An emergency, even with no wound',
         do: ['Put it in a closed box right away.', 'Get it to a rehabber today. It may need medicine the same day.'],
-        remember: ['If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound.'],
-        never: ['Never give it food or water.'],
         contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'After hours: 24-hour emergency room' }],
         section: 'If it was caught or bitten by an animal',
       },
@@ -348,7 +374,6 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'A raccoon, skunk or bat', tone: 'now', verdict: 'Don’t touch it',
         do: ['Stay away.', 'Call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
-        never: ['Never give it food or water.'],
         contacts: [{ org: CITY, when: 'Report it · in a park, it goes to NYC Parks' }],
         section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
       },
@@ -422,7 +447,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Pet can’t come yet?', text: 'Safe Horizon, PAWS NY and foster programmes can keep it safe for a while. Get in writing how long, and how you get it back.' },
       { title: 'Ask the court to protect your pet', text: 'In New York, an order of protection can include your pet. Ask for it when you apply.' },
     ],
-    never: ['Do not go back alone to fetch it.'],
     remember: ['If you think someone checks your phone or computer, call rather than browse, and clear your history afterwards.'],
   },
 
@@ -436,14 +460,27 @@ export const GLANCE: Record<string, Glance> = {
       { org: CITY, when: 'Find your evacuation zone, shelter or cooling centre' },
       { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Poisoned or exposed to something toxic · 24/7' },
     ],
-    steps: [
-      { title: 'Take your pet with you', text: 'During an evacuation order, pets can ride the subway and buses without a carrier. A pet too big for a carrier must be muzzled and on a strong leash. Only pets that are legal in NYC are allowed.' },
-      { title: 'Know your zone', text: 'Find out if you live in an evacuation zone and where your nearest centre is.', link: { label: 'Know your zone', href: 'https://www.nyc.gov/knowyourzone' } },
-      { title: 'Pack a Go Bag for your pet', text: 'At least three days of food, water and medicine. A collar or harness with an ID tag, and a recent colour photo.' },
-      { title: 'Get emergency alerts', text: 'Notify NYC is the city’s free alert service, by app, text or email.', link: { label: 'Notify NYC', href: 'https://www.nyc.gov/notifynyc' } },
-    ],
     never: ['Never leave a pet in a car.'],
-    remember: ['Take your pet with you.'],
+    situations: [
+      {
+        label: 'We have to leave now', tone: 'now', verdict: 'Take your pet with you',
+        do: [
+          'During an evacuation order, pets can ride the subway and buses without a carrier.',
+          'A pet too big for a carrier must be muzzled and on a strong leash.',
+          'Only pets that are legal in NYC are allowed at evacuation centres.',
+          'Bring your pet’s Go Bag if you have one.',
+        ],
+      },
+      {
+        label: 'Getting ready before a disaster', tone: 'week', verdict: 'Three things to do now',
+        do: [
+          'Know your zone: find out if you live in an evacuation zone and where your nearest centre is.',
+          'Pack a Go Bag for your pet: at least three days of food, water and medicine, a collar or harness with an ID tag, and a recent colour photo.',
+          'Sign up for Notify NYC, the city’s free alert service, by app, text or email.',
+        ],
+      },
+      { label: 'My pet is hurt', tone: 'now', verdict: 'Go to an emergency vet', do: ['See the animal emergencies guide.'], href: '/guides/animal-emergency' },
+    ],
   },
 
   'lost-and-found-dog': {
@@ -509,7 +546,7 @@ export const GLANCE: Record<string, Glance> = {
         headline: 'A free microchip scan is the fastest way home.',
         steps: [
           { title: 'Get it scanned for a chip', text: 'Free at any vet or shelter. Check for a collar or tag too.', link: { label: 'Nearest vets and shelters', href: '/directory?anyneed=microchip&anyneed=emergency-vet&anyneed=low-cost-vet&near=1' } },
-          { title: 'Is the tip of one ear cut off?', text: 'That cat has been fixed and has someone who looks after it. Leave it be.' },
+          { title: 'Is the tip of one ear cut off?', text: 'That cat has been spayed or neutered and put back where it lives. Leave it there.' },
           { title: 'Report it found', text: 'On Petco Love Lost and with ACC. Look for a matching “lost” post on Nextdoor and Facebook.' },
           { title: 'Sick or hurt?', text: 'Call 311 or ACC. ACC doesn’t take healthy stray cats, so post flyers and check for a chip first.' },
         ],
@@ -574,9 +611,9 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'I found a turtle', tone: 'today', verdict: 'Pet or wild? Work that out first',
         do: [
-          'A pet turtle, such as a red-eared slider, needs a new home: contact NYTTS or Earthlings NYC.',
-          'A healthy wild turtle should be left where it was found.',
-          'A hurt wild turtle needs a wild-turtle rehabber: contact NYTTS.',
+          'Not sure if it is a pet or wild? Send NYTTS a photo and ask, before you move it.',
+          'A pet turtle, such as a red-eared slider, needs a new home: NYTTS or Earthlings NYC can help.',
+          'A healthy wild turtle should be left where it was found. A hurt one needs a wild-turtle rehabber: contact NYTTS.',
         ],
         never: ['Never relocate a healthy native turtle far from where it was found.'],
         contacts: [{ org: 'new-york-turtle-and-tortoise-society', name: 'NYTTS', when: 'Pet and wild turtles' }, { org: 'earthlings-nyc-turtle-team', name: 'Earthlings NYC', when: 'Pet turtles' }],
@@ -593,26 +630,20 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Find the animal on the at-risk list', text: 'Tick “Show only available” and press “View more..” under the animal. Write down its name and ID number.', link: { label: 'Open ACC’s at-risk list', href: 'https://newhope.shelterbuddy.com/Animal/List' } },
       { title: 'See a “Reserve” button? You can adopt it', text: 'Press Reserve, then check out within 15 minutes.' },
       { title: 'Fill in both forms', text: 'The “Pre-Screener Form” on the animal’s page, and ACC’s form for fostering or adopting through a rescue group.', link: { label: 'ACC’s foster or adopt form', href: 'https://forms.gle/ozHex3uqvNkQt2dq9' } },
-      { title: 'Contact every rescue group at once', text: 'Only an approved rescue can take out a “partners only” animal. The full guide lists them, with ready-made messages to send.' },
+      { title: 'Contact every rescue group at once', text: 'Only an approved rescue group, a New Hope partner, can take out a “partners only” animal. The full guide lists them, with ready-made messages to send.' },
     ],
     never: ['Do not wait to hear back from either form.'],
     remember: ['The animal is safe only when a rescue group tells you it has confirmed the pull with ACC.'],
   },
 
   'keeping-your-dog': {
-    headline: 'Before you give up your dog, ask for help. There is free help with food, vet bills, training and housing.',
+    headline: 'Before you give up your dog, ask for help. There is free help with food, vet bills, training and housing. Tap what you need.',
+    action: { label: 'Free pet food, nearest first', href: '/directory?need=food-assistance&near=1' },
     contacts: [
       { org: ACC, name: 'ACC owner support', when: 'A counsellor calls you back within about 3 days' },
       { org: 'paws-ny', name: 'PAWS NY', when: 'Free help at home for older, ill or disabled owners' },
       { org: 'animal-haven-community-engagement', name: 'Animal Haven', when: 'Short-term boarding in a crisis' },
     ],
-    steps: [
-      { title: 'Call ACC owner support', text: 'It helps with vet care, training, boarding, landlord problems and moving into temporary housing.' },
-      { title: 'Need food?', text: 'The city gives free dog and cat food at 22 food pantries. The food is new, so ring before you go.', link: { label: 'Free pet food, nearest first', href: '/directory?need=food-assistance&near=1' } },
-      { title: 'Behaviour problem?', text: 'Free dog training through ACC’s Community Pets programme, in person or by video.', link: { label: 'Trainers and behaviour help', href: '/directory?need=behavior-training&animal=dog' } },
-      { title: 'Vet bills?', text: 'There are funds, payment plans and low-cost clinics.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
-    ],
-    tip: 'Going into hospital or between homes? PAWS NY and Animal Haven can look after your dog for a while.',
     situations: [
       {
         label: 'I need food for my dog', tone: 'week', verdict: 'Free pet food is available',
@@ -639,28 +670,27 @@ export const GLANCE: Record<string, Glance> = {
         section: 'HOUSING SUPPORT',
       },
       {
-        label: 'I have to give up my dog', tone: 'today', verdict: 'Talk to ACC first',
-        do: ['Email admissions@nycacc.org or call ACC. Fill in its questionnaire, and a counsellor contacts you within about 3 days.', 'ACC may be able to help you keep your dog after all.', 'To find a new home yourself, ACC’s Rehoming Your Pet page has tools.'],
-        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Owner support and surrender' }],
+        label: 'I have to give up my dog', tone: 'today', verdict: 'Find it a new home without a shelter',
+        do: [
+          'Ask the rescue or shelter you got it from first. Many will take it back.',
+          'Rehome it yourself, so it never goes into a shelter. ACC’s Rehoming Your Pet page has tools for this.',
+          'Or contact rescues that take owner surrenders.',
+          'ACC takes any animal, but ask it for help keeping your dog first.',
+        ],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Rehoming tools · help to keep your dog' }],
         section: 'ACC OWNER SUPPORT',
       },
     ],
   },
 
   'keeping-your-cat': {
-    headline: 'Before you give up your cat, ask for help. There is free help with food, vet bills and a crisis.',
+    headline: 'Before you give up your cat, ask for help. There is free help with food, vet bills, behaviour and a crisis. Tap what you need.',
+    action: { label: 'Free pet food, nearest first', href: '/directory?need=food-assistance&near=1' },
     contacts: [
       { org: ACC, name: 'ACC Community Pets', when: 'Help so your cat can stay home' },
       { org: 'paws-ny', name: 'PAWS NY', when: 'Free help at home for older, ill or disabled owners' },
       { org: 'animal-haven-community-engagement', name: 'Animal Haven', when: 'Short-term boarding in a crisis' },
     ],
-    steps: [
-      { title: 'Contact ACC Community Pets', text: 'Free or low-cost vet referrals, spay/neuter, supplies like food and litter, and help in a crisis.' },
-      { title: 'Need food?', text: 'The city gives free dog and cat food at 22 food pantries. The food is new, so ring before you go.', link: { label: 'Free pet food, nearest first', href: '/directory?need=food-assistance&near=1' } },
-      { title: 'In a crisis?', text: 'Going into hospital, rehab or between homes: PAWS NY and Animal Haven can look after your cat for a while.' },
-      { title: 'Vet bills?', text: 'There are funds, payment plans and low-cost clinics.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
-    ],
-    tip: 'Need to rehome your cat yourself? ACC’s rehoming tools are often less stressful for a cat than a shelter.',
     situations: [
       {
         label: 'I need food for my cat', tone: 'week', verdict: 'Free pet food is available',
@@ -681,9 +711,14 @@ export const GLANCE: Record<string, Glance> = {
         section: 'TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition',
       },
       {
-        label: 'I have to give up my cat', tone: 'today', verdict: 'Talk to ACC first',
-        do: ['Email CommunityPets@nycacc.org or call ACC. Ask about its help to keep your cat at home first.', 'Rehoming your cat yourself is often less stressful for it than a shelter. Ask ACC about its Rehoming Your Pet tools.'],
-        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Owner support and surrender' }],
+        label: 'I have to give up my cat', tone: 'today', verdict: 'Find it a new home without a shelter',
+        do: [
+          'Ask the rescue or shelter you got it from first. Many will take it back.',
+          'Rehome it yourself, so it never goes into a shelter. It is often less stressful for a cat. ACC’s Rehoming Your Pet page has tools for this.',
+          'Or contact rescues that take owner surrenders.',
+          'ACC takes any animal, but ask it for help keeping your cat first.',
+        ],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Rehoming tools · help to keep your cat' }],
         section: 'ACC OWNER SUPPORT / SURRENDER PREVENTION',
       },
     ],
@@ -707,23 +742,17 @@ export const GLANCE: Record<string, Glance> = {
       'City shelter intake centres do not accept pets.',
       'Before you hand your pet to anyone, ask how long they will keep it, what happens if you cannot take it back in time, and whether you could lose ownership.',
     ],
-    tip: 'Code Blue (32 degrees or colder): anyone can come into any city shelter or drop-in centre without going through intake.',
   },
 
   'help-paying-for-care': {
-    headline: 'Apply to several funds at once. The money runs out fast.',
-    facts: ['At the Animal Medical Center? Apply within 5 business days of treatment starting.', 'Grants are paid to the vet, not to you.'],
+    headline: 'Can’t afford the vet? Go anyway. Then apply to several funds at once: the money runs out fast.',
+    facts: ['Grants are paid to the vet, not to you.', 'Many funds ask you to try a payment plan first.'],
+    action: { label: 'Every fund we list', href: '/directory?need=financial-aid' },
     contacts: [
-      { org: AMC, name: 'Animal Medical Center funds', when: 'Ask the day you arrive', note: 'For any animal treated there.' },
       { org: 'redrover-relief', name: 'RedRover Relief', when: 'Urgent, life-threatening care' },
+      { org: 'frankies-friends', name: 'Frankie’s Friends', when: 'Emergency or specialist care' },
       { org: 'the-pet-fund', name: 'The Pet Fund', when: 'Long-term illness · email before treatment' },
       { org: 'carecredit', name: 'CareCredit', when: 'Pay over time' },
-    ],
-    steps: [
-      { title: 'At the Animal Medical Center? Ask today', text: 'It has its own funds for any animal. Apply within 5 business days of treatment starting, or you can’t get help.' },
-      { title: 'Apply to several funds at once', text: 'Emergency: RedRover Relief and Frankie’s Friends. Long-term illness: The Pet Fund.', link: { label: 'Every fund we list', href: '/directory?need=financial-aid' } },
-      { title: 'Ask about paying over time', text: 'CareCredit and Scratchpay. Many funds want you to try these first.' },
-      { title: 'Plan ahead for next time', text: 'Insurance won’t pay for a problem your pet already has. Start while your pet is young and healthy.' },
     ],
     situations: [
       {
@@ -731,12 +760,6 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Apply to RedRover Relief for urgent, life-threatening care.', 'Apply to Frankie’s Friends too.', 'Ask the vet about CareCredit or Scratchpay while you wait.'],
         contacts: [{ org: 'redrover-relief', name: 'RedRover Relief', when: 'Urgent care' }, { org: 'frankies-friends', name: 'Frankie’s Friends', when: 'Emergency or specialist care' }],
         section: 'GENERAL vet-bill funds that cover exotics (birds, rabbits, guinea pigs, etc.):',
-      },
-      {
-        label: 'We’re at the Animal Medical Center', tone: 'today', verdict: '5 business days to apply',
-        do: ['Ask a Client Services Manager about its funds the day you arrive.', 'An AMC vet must see your pet first.', 'You must live in New York, New Jersey or Connecticut.'],
-        contacts: [{ org: AMC, name: 'Animal Medical Center funds', when: 'Ask the day you arrive' }],
-        section: 'IF THE ANIMAL IS BEING TREATED AT THE ANIMAL MEDICAL CENTER (AMC)',
       },
       {
         label: 'A long-term illness', tone: 'week', verdict: 'Apply before treatment',
@@ -752,9 +775,20 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'A rabbit, bird or reptile', tone: 'week', verdict: 'A few funds name them',
-        do: ['The Animal Medical Center has a fund just for rabbits, and one for all birds.', 'RedRover Relief also helps birds, rabbits and guinea pigs.', 'For insurance, ask Nationwide about its Avian & Exotic plan.'],
-        contacts: [{ org: AMC, name: 'Animal Medical Center funds', when: 'Rabbits and birds' }, { org: 'redrover-relief', name: 'RedRover Relief', when: 'Urgent care' }],
+        do: ['RedRover Relief helps birds, rabbits and guinea pigs.', 'The Animal Medical Center has a fund for rabbits and one for birds, for animals treated there.', 'For insurance, ask Nationwide about its Avian & Exotic plan.'],
+        contacts: [{ org: 'redrover-relief', name: 'RedRover Relief', when: 'Urgent care' }],
         section: 'EXOTIC-SPECIFIC vet-bill funds (rare - these actually name exotics):',
+      },
+      {
+        label: 'Being treated at the Animal Medical Center', tone: 'today', verdict: 'Its own funds: 5 business days to apply',
+        do: ['Ask a Client Services Manager about its funds the day you arrive.', 'An AMC vet must see your pet first.', 'You must live in New York, New Jersey or Connecticut.'],
+        contacts: [{ org: AMC, name: 'Animal Medical Center funds', when: 'Ask the day you arrive' }],
+        section: 'IF THE ANIMAL IS BEING TREATED AT THE ANIMAL MEDICAL CENTER (AMC)',
+      },
+      {
+        label: 'Planning ahead', tone: 'ok', verdict: 'Insurance, started early',
+        do: ['Insurance won’t pay for a problem your pet already has. Start while your pet is young and healthy.'],
+        section: 'PET INSURANCE - dogs and cats (checked on each company’s own site, 2026-11-04)',
       },
       {
         label: 'I run a rescue', tone: 'ok', verdict: 'Help for rescue groups',
@@ -765,20 +799,49 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'low-cost-dog-care': {
-    headline: 'Free and low-cost vet care is in every borough. Most of it needs a booking or a waitlist, so start early.',
+    headline: 'Free and low-cost vet care is in every borough. Most of it needs a booking or a waitlist, so start early. Tap what you need.',
+    action: { label: 'Low-cost vets, nearest first', href: '/directory?need=low-cost-vet&near=1' },
     contacts: [
       { org: 'aspca-spay-neuter-nyc', name: 'ASPCA spay/neuter', when: 'Same-day waitlist opens at 6am' },
       { org: 'the-toby-project', name: 'The Toby Project', when: 'Free spay/neuter with public assistance' },
       { org: 'humane-society-of-new-york', name: 'Humane Society of New York', when: 'Low-cost vet hospital · Manhattan' },
-      { org: ACC, name: 'ACC Community Pets', when: 'Free vaccine and microchip pop-ups' },
     ],
-    steps: [
-      { title: 'License your dog', text: 'Every dog over 4 months needs a licence and a rabies shot. Apply online or by mail.', link: { label: 'NYC dog licence', href: 'https://www.nyc.gov/doglicense' } },
-      { title: 'Spay or neuter, free or low-cost', text: 'The ASPCA’s same-day waitlist, the Toby Project, and the Humane Society of New York.', link: { label: 'Spay and neuter, nearest first', href: '/directory?need=spay-neuter&animal=dog&near=1' } },
-      { title: 'Vaccines and microchips', text: 'ACC runs free pop-up clinics in the Bronx and Queens. Check its events page for dates.' },
-      { title: 'Teeth', text: 'The Humane Society of New York has a low-cost dog dentist. It books up fast, so call early.' },
+    situations: [
+      {
+        label: 'A check-up or a sick dog', tone: 'week', verdict: 'Low-cost clinics',
+        do: [
+          'ASPCA community clinics in the Bronx, Brooklyn and Queens, by appointment, for owners who qualify on income.',
+          'The Humane Society of New York runs a low-cost vet hospital in Manhattan.',
+          'See more lower-cost clinics, nearest first.',
+        ],
+        contacts: [{ org: 'aspca-community-veterinary-clinic', name: 'ASPCA community clinics', when: 'By appointment · income-qualified' }, { org: 'humane-society-of-new-york', name: 'Humane Society of New York', when: 'Low-cost vet hospital' }],
+        section: 'ASPCA community veterinary clinics - by borough (appointment only, income-qualified)',
+      },
+      {
+        label: 'Spay or neuter', tone: 'week', verdict: 'Free or low-cost',
+        do: ['The ASPCA’s same-day waitlist opens at 6am.', 'The Toby Project is free with proof of public assistance.', 'The Humane Society of New York has free programmes.', 'Friends of Animals sells low-cost certificates to use at vets.'],
+        contacts: [{ org: 'aspca-spay-neuter-nyc', name: 'ASPCA spay/neuter', when: 'Same-day waitlist' }, { org: 'the-toby-project', name: 'The Toby Project', when: 'Free with public assistance' }],
+        section: 'Citywide - free / low-cost spay-neuter',
+      },
+      {
+        label: 'Vaccines and a microchip', tone: 'week', verdict: 'Walk-in clinics and events',
+        do: ['Petco Vetco and VIP Petcare run walk-in vaccine and microchip clinics in many pet stores, with no exam fee.', 'Sean Casey Animal Rescue runs low-cost vaccine and microchip clinics in Brooklyn.', 'ACC holds low-cost vaccine and microchip events across the boroughs.'],
+        contacts: [{ org: 'petco-vetco-vetco-vaccine-clinics', name: 'Petco Vetco', when: 'Walk-in clinics' }, { org: 'vip-petcare-clinics', name: 'VIP Petcare', when: 'Walk-in clinics' }, { org: 'sean-casey-animal-rescue', name: 'Sean Casey Animal Rescue', when: 'Low-cost clinics · Brooklyn' }],
+        section: 'Vaccine + microchip events',
+      },
+      {
+        label: 'Teeth', tone: 'week', verdict: 'A low-cost dog dentist',
+        do: ['The Humane Society of New York has a low-cost dog dentist. It books up fast, so call early.'],
+        contacts: [{ org: 'humane-society-of-new-york', name: 'Humane Society of New York', when: 'Low-cost dentistry' }],
+        section: 'Low-cost dog dental (periodontal disease affects about 80% of dogs over age 3)',
+      },
+      {
+        label: 'A dog licence', tone: 'ok', verdict: 'Required for every dog over 4 months',
+        do: ['Every dog over 4 months needs a licence and a rabies shot. Apply online at the city’s dog licence page, or by mail.'],
+        section: 'NYC dog license - legally required (NYC Health Code 161.04)',
+      },
+      { label: 'Low-cost care for a cat', tone: 'week', verdict: 'Clinics that see cats', do: ['See the guide on low-cost clinics.'], href: '/guides/low-cost-clinics-and-trap-banks' },
     ],
-    remember: ['Every dog 4+ months must be licensed'],
   },
 
   'low-cost-clinics-and-trap-banks': {
@@ -792,8 +855,8 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Get certified first', text: 'It’s free, and it opens up free surgery, trap loans and transport.', link: { label: 'Starting TNR', href: '/guides/starting-tnr' } },
       { title: 'Borrow a trap', text: 'Reserve one from the Neighborhood Cats trap bank, or ask the Feral Cat Initiative helpdesk.', link: { label: 'Trap banks', href: '/directory?need=trap-bank' } },
       { title: 'Book a clinic before you trap', text: 'Pick one that works with feral cats. Ask them first.', link: { label: 'Spay and neuter clinics, nearest first', href: '/directory?need=spay-neuter&animal=cat&near=1' } },
-      { title: 'A pet cat?', text: 'The ASPCA’s free clinics are for owners on public assistance in some zip codes. The Humane Society of New York is low-cost for any cat.' },
     ],
+    tip: 'Your own pet cat? The ASPCA’s free clinics are for owners on public assistance in some zip codes. The Humane Society of New York is low-cost for any cat.',
     remember: ['A cat that cannot be handled must go to a clinic experienced with feral cats, in a covered trap, one cat to a trap.'],
   },
 
@@ -805,56 +868,102 @@ export const GLANCE: Record<string, Glance> = {
       { org: 'the-toby-project-feral-spay-neuter-clinic', name: 'The Toby Project', when: 'Free spay/neuter · all 5 boroughs' },
     ],
     steps: [
-      { title: 'Get TNR-certified', text: 'A free online workshop, run every month. More than 15,000 New Yorkers have done it.' },
+      { title: 'Get TNR-certified', text: 'Neighborhood Cats runs a free online workshop every month; more than 15,000 New Yorkers have done it. The NYC Feral Cat Initiative runs free ones too.', link: { label: 'Neighborhood Cats workshop', href: 'https://www.neighborhoodcats.org/how-to-tnr' } },
       { title: 'Register your colony', text: 'Log your cats on Cat Stats. It tracks progress and can help protect a feeding spot.' },
       { title: 'Trap and fix', text: 'Borrow traps and book free spay/neuter. The ASPCA offers free transport to its clinics.', link: { label: 'Spay and neuter clinics, nearest first', href: '/directory?need=spay-neuter&animal=cat&near=1' } },
       { title: 'Keep caring', text: 'Food and water at tidy feeding spots, and insulated winter shelters with straw, not blankets.' },
     ],
     never: ['Don\'t re-trap ear-tipped cats.'],
-    remember: ['Scratched or bitten by a feral? Contact a doctor immediately'],
   },
 
   'cats-with-special-needs': {
-    headline: 'Specialist cat rescues fill up fast. Contact several at once.',
+    headline: 'Specialist cat rescues fill up fast. Contact several at once, and ring first to check they have room. Tap the kind of cat.',
     contacts: [
       { org: 'itty-bitty-city-kitties', name: 'Itty Bitty City Kitties', when: 'Newborn kittens that need bottle feeding' },
       { org: 'ny-cat-warriors', name: 'NY Cat Warriors', when: 'Urgent and complex medical cases' },
       { org: 'tavi-and-friends', name: 'Tavi & Friends', when: 'Senior, FIV+ and special-care cats' },
     ],
-    steps: [
-      { title: 'Newborn kittens', text: 'Kittens that still need a bottle need care around the clock. Contact a kitten nursery such as Itty Bitty City Kitties or Cat Castle.', link: { label: 'Kitten nurseries', href: '/directory?need=neonatal' } },
-      { title: 'Very sick or hurt', text: 'NY Cat Warriors, Little Wanderers and Sean Casey Animal Rescue. Ring first to check they have room.' },
-      { title: 'Senior, FIV+ or FeLV+', text: 'Tavi & Friends, KittyKind, Bronx Tails and Empty Cages Collective.', link: { label: 'FIV+ and FeLV+ rescues', href: '/directory?need=retrovirus' } },
-      { title: 'Disabled: three legs, blind, wobbly', text: 'K9Kastle, Saint Spiro and For Blake’s Sake.' },
+    situations: [
+      {
+        label: 'Newborn kittens, or a pregnant cat', tone: 'now', verdict: 'Contact a kitten nursery',
+        do: ['Kittens that still need a bottle need care around the clock.', 'Contact a kitten nursery such as Itty Bitty City Kitties or Cat Castle, or see every kitten nursery.'],
+        contacts: [{ org: 'itty-bitty-city-kitties', name: 'Itty Bitty City Kitties', when: 'Bottle babies' }, { org: 'cat-castle-nyc', name: 'Cat Castle', when: 'Kittens' }],
+        section: 'Neonatal / bottle-baby (unweaned kittens needing round-the-clock care)',
+      },
+      {
+        label: 'Very sick or hurt', tone: 'today', verdict: 'Medical rescues',
+        do: ['Hurt right now? Go to an emergency vet first.', 'Then contact NY Cat Warriors, Little Wanderers or Sean Casey Animal Rescue. Ring first to check they have room.'],
+        contacts: [{ org: 'ny-cat-warriors', name: 'NY Cat Warriors', when: 'Medical cases' }, { org: 'little-wanderers-nyc', name: 'Little Wanderers', when: 'Medical cases' }],
+        section: 'Sick / injured / critical-medical (cats needing emergency or intensive vet care)',
+      },
+      {
+        label: 'A senior cat', tone: 'week', verdict: 'Rescues for older cats',
+        do: ['Tavi & Friends and KittyKind take senior and special-care cats.'],
+        contacts: [{ org: 'tavi-and-friends', name: 'Tavi & Friends', when: 'Senior cats' }, { org: 'kittykind', name: 'KittyKind', when: 'Senior cats' }],
+        section: 'Senior cats',
+      },
+      {
+        label: 'FIV+ or FeLV+', tone: 'week', verdict: 'Rescues that take them',
+        do: ['Bronx Tails, Empty Cages Collective and Tavi & Friends take FIV+ or FeLV+ cats. See every FIV+ and FeLV+ rescue.'],
+        contacts: [{ org: 'bronx-tails-cat-rescue', name: 'Bronx Tails', when: 'FIV+ and FeLV+' }, { org: 'empty-cages-collective', name: 'Empty Cages Collective', when: 'FIV+ and FeLV+' }],
+        section: 'FeLV+ / FIV+ (retrovirus-positive cats)',
+      },
+      {
+        label: 'Disabled: three legs, blind or wobbly', tone: 'week', verdict: 'Special-needs rescues',
+        do: ['K9Kastle, Saint Spiro and For Blake’s Sake take disabled cats.'],
+        contacts: [{ org: 'k9kastle', name: 'K9Kastle', when: 'Special needs' }, { org: 'saint-spiro-cat-rescue-inc', name: 'Saint Spiro', when: 'Special needs' }],
+        section: 'Special-needs / disabled (3-legged, neurological, blind, chronic conditions)',
+      },
     ],
   },
 
   'breed-specific-dog-rescue': {
-    headline: 'Breed rescues are mostly volunteer networks outside the city. Always check they have room for a dog from NYC.',
+    headline: 'Rehoming or adopting a particular breed? Breed rescues know those dogs. Most are volunteer networks outside the city, so check they take dogs from NYC.',
     contacts: [{ org: 'new-york-bully-crew', name: 'New York Bully Crew', when: 'All bully breeds · takes surrenders' }],
     steps: [
-      { title: 'Find your breed in the full guide', text: 'Bully breeds first, then rottweilers, boxers, cane corsos, mastiffs, bulldogs, dobermans and more.', link: { label: 'Breed rescues', href: '/directory?need=breed-specific' } },
-      { title: 'Contact two or three at once', text: 'Don’t wait for one to answer before trying the next.' },
-      { title: 'Ask if they have room now', text: 'Ask if they take dogs from New York City and have a foster home free.' },
+      { title: 'Find rescues for your breed', text: 'The full guide lists them by breed: bully breeds first, then rottweilers, boxers, cane corsos, mastiffs, bulldogs, dobermans and more.', link: { label: 'Breed rescues in the directory', href: '/directory?need=breed-specific' } },
+      { title: 'Contact two or three at once', text: 'They are run by volunteers and fill up. Don’t wait for one to answer before trying the next.' },
+      { title: 'Ask if they can take your dog', text: 'Ask if they take dogs from New York City and have a foster home free now.' },
     ],
     tip: '“Bully breed” describes a body type, not how a dog behaves.',
   },
 
   'dog-behavior-and-legal': {
-    headline: 'Most behaviour problems can be fixed. Start with free help from ACC.',
+    headline: 'Most behaviour problems can be fixed. Start with free help from ACC. Tap what is happening.',
     contacts: [
       { org: ACC, name: 'ACC Community Pets', when: 'Free dog training, in person or by video' },
       { org: 'bideawee-manhattan-adoption-center', name: 'Bideawee', when: 'Training help and advice' },
       { org: CITY, when: 'Report a dog bite within 24 hours' },
     ],
-    steps: [
-      { title: 'Get free training', text: 'ACC’s Community Pets programme has free trainers, plus free guides online.', link: { label: 'Trainers and behaviour help', href: '/directory?need=behavior-training&animal=dog' } },
-      { title: 'Choose a reward-based trainer', text: 'Look for letters like CPDT-KA or KPA-CTP. Ask how they work with fear and reactivity before you book.' },
-      { title: 'Serious or sudden problem?', text: 'Ask your vet about a veterinary behaviourist, who can also prescribe medicine.' },
-      { title: 'After a bite', text: 'Report it to 311 within 24 hours. Anyone bitten should get medical advice.' },
-    ],
     remember: ['This is not legal advice.'],
-    tip: 'New York City has no breed ban. Landlords and NYCHA can set their own rules, and ACC can help with a housing problem.',
+    situations: [
+      {
+        label: 'My dog has a behaviour problem', tone: 'week', verdict: 'Free training first',
+        do: [
+          'ACC’s Community Pets programme has free trainers, plus free guides online.',
+          'Paying for a trainer? Choose one who uses rewards. Find certified trainers at ccpdt.org or iaabc.org, and ask how they work with fear before you book.',
+        ],
+        contacts: [{ org: ACC, name: 'ACC Community Pets', when: 'Free training' }],
+        section: 'How to choose a positive-reinforcement trainer',
+      },
+      {
+        label: 'A serious or sudden problem', tone: 'today', verdict: 'Ask your vet first',
+        do: ['A sudden change can be a health problem. See your vet.', 'For a serious problem, a veterinary behaviourist can help and can prescribe medicine. Find one at dacvb.org.'],
+        section: 'NYC behavior + reactivity specialists',
+      },
+      {
+        label: 'My dog bit someone', tone: 'today', verdict: 'Report it within 24 hours',
+        do: ['Report the bite to 311 within 24 hours.', 'Anyone bitten should get medical advice.'],
+        contacts: [{ org: CITY, when: 'Report a dog bite' }],
+        section: 'NYC bite reporting (Health Code 11.03)',
+      },
+      {
+        label: 'My landlord has a breed rule', tone: 'week', verdict: 'Get help before you give up your dog',
+        do: ['New York City has no breed ban. Landlords and NYCHA can set their own rules.', 'ACC can help with a housing problem.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Housing help' }],
+        section: 'Breed / housing-restriction support',
+      },
+    ],
   },
 
   'rehoming-an-exotic-pet': {
@@ -875,19 +984,36 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'exotic-boarding-and-planning': {
-    headline: 'Most kennels won’t take rabbits, birds or reptiles. Plan ahead for when you’re away, and for if you can’t care for them.',
+    headline: 'Most kennels won’t take rabbits, birds or reptiles. Plan ahead. Tap what you need.',
     contacts: [
       { org: 'the-center-for-avian-and-exotic-medicine', name: 'Center for Avian & Exotic Medicine', when: 'Ask about medical boarding and grooming' },
       { org: 'long-island-parrot-society', name: 'Long Island Parrot Society', when: 'List of bird sitters and groomers' },
     ],
-    steps: [
-      { title: 'Going away?', text: 'Boarding at an exotics vet is safest for an animal with health needs. Ask any sitter if they know your kind of animal, and who their emergency vet is.', link: { label: 'Boarding and sitting', href: '/directory?need=boarding' } },
-      { title: 'Grooming', text: 'Use an exotics vet for beaks, wings, nails and teeth.' },
-      { title: 'Plan for the long term', text: 'Parrots can live 30 to 80 years and often outlive their owners. Name someone to care for your pet, and think about a pet trust.' },
-      { title: 'Pack a disaster kit', text: 'A carrier, a heat source with a battery pack, several days of food, medicine and vet records.' },
-    ],
     never: ['do not DIY a beak or a rabbit\'s teeth'],
-    remember: ['overgrown rabbit teeth are a medical emergency, not a grooming task'],
+    situations: [
+      {
+        label: 'I’m going away', tone: 'week', verdict: 'Boarding or a sitter who knows your animal',
+        do: ['Boarding at an exotics vet is safest for an animal with health needs.', 'Ask any sitter if they know your kind of animal, and who their emergency vet is.'],
+        contacts: [{ org: 'the-center-for-avian-and-exotic-medicine', name: 'Center for Avian & Exotic Medicine', when: 'Medical boarding' }],
+        section: 'Exotic boarding & pet-sitting (most dog/cat kennels will not take exotics; these specialize):',
+      },
+      {
+        label: 'Beaks, wings, nails or teeth', tone: 'week', verdict: 'Use an exotics vet',
+        do: ['Use an exotics vet for beaks, wings, nails and teeth.'],
+        remember: ['overgrown rabbit teeth are a medical emergency, not a grooming task'],
+        section: 'Exotic grooming (nail/beak/wing trims, shell/tooth checks - do not DIY a beak or a rabbit\'s teeth):',
+      },
+      {
+        label: 'If I can no longer care for it', tone: 'ok', verdict: 'Name someone now',
+        do: ['Parrots can live 30 to 80 years and often outlive their owners.', 'Name someone to care for your pet, and think about a pet trust.'],
+        section: 'Life-planning: who cares for your exotic if you can\'t? (critical for long-lived species)',
+      },
+      {
+        label: 'A disaster or evacuation', tone: 'ok', verdict: 'Pack a kit now',
+        do: ['A carrier, a heat source with a battery pack, several days of food, medicine and vet records.'],
+        section: 'Disaster / evacuation planning (exotics need species-specific prep that generic plans miss):',
+      },
+    ],
   },
 
 };

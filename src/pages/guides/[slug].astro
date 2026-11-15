@@ -8,7 +8,6 @@ import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
 import { assertGuideNamesOnlyListed } from '../../data/guide-integrity.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
-import { feedbackLink } from '../../data/site.ts';
 import GuideGlance from '../../components/GuideGlance.astro';
 import EmergencySigns from '../../components/EmergencySigns.astro';
 import { GLANCE, withHeadingIds, wordCount } from '../../data/guide-glance.ts';
@@ -120,17 +119,6 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     )}
     </details>
 
-    <div class="notice guide-foot">
-      <Icon name="alert" size={17} />
-      <div>
-        <p><strong>Wrong number, or something missing?</strong> Every organization named here has its own entry
-        with a <strong>Report a problem</strong> button; <a href="/directory">find it in the directory</a>.
-        Know a place that should be here? <a href="/contribute">Add a resource</a>.</p>
-        <p><a href={feedbackLink(guide.title)} rel="noopener" target="_blank">Something wrong or missing in this guide? Tell us</a>
-        <span class="muted">(a Google Form; please leave out anyone's personal details)</span></p>
-        <p class="muted">Contact details can go stale. Confirm a number is live before you rely on it.</p>
-      </div>
-    </div>
   </div>
   <script is:inline>
     // A link to a heading inside the folded full guide ("Read why") opens it

@@ -116,6 +116,7 @@ function applyOverrides(orgs: Org[]): string[] {
     }
     if (ov.addAnimals) org.animals = [...new Set([...org.animals, ...ov.addAnimals])];
     if (ov.addNeeds) org.needs = [...new Set([...org.needs, ...ov.addNeeds])];
+    if (ov.removeNeeds) org.needs = org.needs.filter((n) => !ov.removeNeeds!.includes(n));
     if (ov.set) Object.assign(org, ov.set);
     applied.push(ov.id);
   }

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
+import { feedbackLink } from '../data/site.ts';
 
 interface Props {
   title: string;
@@ -105,6 +106,15 @@ const isHome = path === '/';
       <slot />
     </main>
 
+    {/* One quiet line on every page, so a wrong number or a gap is one tap
+        from being fixed (owner, 2026-11-15: the box at the foot of each guide
+        was too big). The form link carries the page's name. */}
+    <p class="wrap page-feedback">
+      Wrong number or something missing?
+      <a href="/directory">Report a problem on its listing</a> ·
+      <a href="/contribute">Add a resource</a> ·
+      <a href={feedbackLink(title)} rel="noopener" target="_blank">Tell us about this page</a>
+    </p>
     <footer class="site-footer">
       <div class="wrap">
         <div class="site-footer__grid">

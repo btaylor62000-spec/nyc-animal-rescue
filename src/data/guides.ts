@@ -166,7 +166,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'lost-and-found-cat' },
       { slug: 'lost-and-found-exotic' },
       { slug: 'found-kittens-outside' },
-      { slug: 'save-an-at-risk-animal', label: 'Save a shelter animal on the at-risk list' },
+      { slug: 'save-an-at-risk-animal', label: 'Save a shelter animal from euthanasia: ACC’s New Hope list' },
     ],
   },
   {
