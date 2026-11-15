@@ -50,7 +50,11 @@ export interface GlanceContact {
 
 export interface GlanceLink {
   label: string;
-  /** A page on this site, or an address that already appears in the guide. */
+  /**
+   * A page on this site, an address that already appears in the guide, or
+   * "#heading-id" for a heading in the full guide (it unfolds and scrolls
+   * there). Each is checked by tests/guide-glance.test.ts.
+   */
   href: string;
 }
 
@@ -103,6 +107,12 @@ export interface Glance {
   remember?: string[];
   tip?: string;
   situations?: GlanceSituation[];
+  /**
+   * A short list of links under a heading, for help that is neither a step
+   * nor a situation: "Help for your colony" on the TNR card (owner,
+   * 2026-11-15: link the care that is available, not "keep caring").
+   */
+  more?: { title: string; links: GlanceLink[] };
 }
 
 const ACC = 'animal-care-centers-of-nyc';
@@ -144,18 +154,20 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'found-kittens-outside': {
-    headline: 'Kittens do best with their mother. Unless they are hurt, wait and watch for her first.',
+    headline: 'Don’t do this alone. Before you move, feed or keep kittens, call a kitten rescue or ACC and ask what to do.',
+    action: { label: 'Kitten nurseries and rescues', href: '/directory?need=neonatal' },
     contacts: [
-      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Orphaned kittens · call before you go' },
-      { org: CITY, when: 'Report orphaned kittens' },
       { org: 'itty-bitty-city-kitties', name: 'Itty Bitty City Kitties', when: 'Kitten nursery · bottle babies' },
       { org: 'cat-castle-nyc', name: 'Cat Castle', when: 'Kitten nursery' },
+      { org: 'kittens-and-barbells-rescue-inc', name: 'Kittens and Barbells', when: 'Kitten rescue' },
+      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Orphaned kittens · call before you go' },
+      { org: CITY, when: 'Report orphaned kittens' },
     ],
     steps: [
-      { title: 'Hurt or very sick?', text: 'It needs help now. Go to an emergency vet, or call 311 to reach ACC.', link: { label: 'Animal emergencies', href: '/guides/animal-emergency' } },
-      { title: 'Healthy? Wait and watch', text: 'Watch from far away for a few hours, in case the mother comes back. Don’t take them home while you wait.' },
-      { title: 'Mother not back?', text: 'Call 311 or ACC, or bring them to an ACC centre (call first). Tiny kittens that still need a bottle need a kitten nursery, which cares for them around the clock.', link: { label: 'Kitten nurseries', href: '/directory?need=neonatal' } },
-      { title: 'Stop more litters', text: 'The mother cat can be trapped, spayed and returned, often for free.', link: { label: 'Starting TNR', href: '/guides/starting-tnr' } },
+      { title: 'Hurt, or in danger right now?', text: 'Take them to an emergency vet now, or call 311 to reach ACC.', link: { label: 'Emergency vets, open now', href: '/directory?need=emergency-vet&near=1' } },
+      { title: 'Otherwise, call a kitten rescue or ACC first', text: 'Tell them how many there are, how big they look and where they are. They will tell you whether to wait for the mother or bring them in.', link: { label: 'Kitten nurseries and rescues', href: '/directory?need=neonatal' } },
+      { title: 'Do what they tell you', text: 'Watch from a distance while you wait. Don’t take the kittens home unless they say so.' },
+      { title: 'Stop more litters', text: 'The mother cat can be trapped, spayed and returned, often for free.', link: { label: 'Community cats and TNR', href: '/guides/starting-tnr' } },
     ],
     never: ['Do not separate stray or feral kittens from their mother.'],
   },
@@ -356,18 +368,16 @@ export const GLANCE: Record<string, Glance> = {
     ],
     steps: [
       { title: 'Keep away', text: 'Keep pets and children back too.' },
-      { title: 'Is it really alone?', text: 'Watch from far away. It needs help now if it is hurt, cold, covered in flies, was caught by an animal, or its mother is dead.' },
-      { title: 'Find a rehabber open now', text: 'Use Animal Help Now, or call the place for the animal you found (tap your situation below).', link: { label: 'Wildlife rehabbers, nearest first', href: '/directory?need=wildlife-rehab&near=1' } },
+      { title: 'Call a rehabber before you touch or move it', text: 'They will tell you if it needs rescuing, and what to do. Animal Help Now lists the ones open right now, or tap your animal below for who to call.', link: { label: 'Wildlife rehabbers, nearest first', href: '/directory?need=wildlife-rehab&near=1' } },
       { title: 'Can’t get it there, or nobody answering?', text: 'Email Urban Wildlife Alliance at helpline@urbanwildlifenyc.org with a photo, your phone number and where you are. Or post the animal, where it is and a photo in the NYC Emergency Animal Rescue group on Facebook.' },
     ],
     never: ['Do not touch a wild mammal with bare hands, and keep pets and children away.', 'Never give it food or water.'],
-    remember: ['A baby animal on its own is usually not abandoned: its mother may be away for hours.'],
     situations: [
       { label: 'It’s a bird', tone: 'today', verdict: 'Birds have their own guide', do: ['Birds are different: you catch and box them yourself.'], href: '/guides/found-an-injured-bird' },
       { label: 'It’s stuck or trapped', tone: 'now', verdict: 'Call 911 if it is in danger', do: ['See what to do for a trapped animal.'], href: '/guides/animal-trapped' },
       {
-        label: 'A baby squirrel or rabbit', tone: 'ok', verdict: 'Often fine. Watch first.',
-        do: ['If it seems healthy and its nest fell, its mother may come back for it. Give her the chance.', 'Hurt, cold, covered in flies, or caught by an animal? It needs a rehabber today.', 'Squirrels: the Wild Bird Fund. Wild baby rabbits: Cottontail Cottage.'],
+        label: 'A baby squirrel or rabbit', tone: 'today', verdict: 'Call before you move it',
+        do: ['Call a rehabber before you touch it. They will tell you whether to leave it for its mother or bring it in.', 'Squirrels: the Wild Bird Fund. Wild baby rabbits: Cottontail Cottage.'],
         contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: 'cottontail-cottage-wildlife-rehab', name: 'Cottontail Cottage', when: 'Any hour' }],
         section: 'Found a baby squirrel or rabbit?',
       },
@@ -385,13 +395,13 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'A seal, whale, dolphin or sea turtle on a beach', tone: 'now', verdict: 'Keep your distance and call',
-        do: ['Stay back and keep dogs away.', 'Don’t try to move it. A seal resting on a beach is often healthy.', 'Call the stranding hotline, any hour.'],
+        do: ['Stay back and keep dogs away.', 'Don’t try to move it. The hotline decides if it needs help.', 'Call the stranding hotline, any hour.'],
         contacts: [{ org: 'ny-marine-mammal-and-sea-turtle-stranding-hotline', name: 'Stranding hotline', when: 'Any hour' }, { org: 'noaa-greater-atlantic-marine-mammal-and-sea-turtle-stranding-hotline', name: 'NOAA', when: 'If the hotline doesn’t answer' }],
         section: 'Seals, whales, dolphins and sea turtles',
       },
       {
-        label: 'A wild turtle', tone: 'week', verdict: 'Help only if it’s hurt',
-        do: ['Crossing a road and not hurt? Help it across in the direction it was going.', 'Hurt? Email the New York Turtle and Tortoise Society.'],
+        label: 'A wild turtle', tone: 'week', verdict: 'Ask the turtle experts',
+        do: ['Email the New York Turtle and Tortoise Society and ask what to do.', 'Crossing a road? If it is safe for you, move it across in the direction it was going.'],
         contacts: [{ org: 'new-york-turtle-and-tortoise-society', name: 'NY Turtle and Tortoise Society', when: 'Hurt wild turtles' }],
         section: 'Wild turtles',
       },
@@ -546,7 +556,6 @@ export const GLANCE: Record<string, Glance> = {
         headline: 'A free microchip scan is the fastest way home.',
         steps: [
           { title: 'Get it scanned for a chip', text: 'Free at any vet or shelter. Check for a collar or tag too.', link: { label: 'Nearest vets and shelters', href: '/directory?anyneed=microchip&anyneed=emergency-vet&anyneed=low-cost-vet&near=1' } },
-          { title: 'Is the tip of one ear cut off?', text: 'That cat has been spayed or neutered and put back where it lives. Leave it there.' },
           { title: 'Report it found', text: 'On Petco Love Lost and with ACC. Look for a matching “lost” post on Nextdoor and Facebook.' },
           { title: 'Sick or hurt?', text: 'Call 311 or ACC. ACC doesn’t take healthy stray cats, so post flyers and check for a chip first.' },
         ],
@@ -630,7 +639,7 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Find the animal on the at-risk list', text: 'Tick “Show only available” and press “View more..” under the animal. Write down its name and ID number.', link: { label: 'Open ACC’s at-risk list', href: 'https://newhope.shelterbuddy.com/Animal/List' } },
       { title: 'See a “Reserve” button? You can adopt it', text: 'Press Reserve, then check out within 15 minutes.' },
       { title: 'Fill in both forms', text: 'The “Pre-Screener Form” on the animal’s page, and ACC’s form for fostering or adopting through a rescue group.', link: { label: 'ACC’s foster or adopt form', href: 'https://forms.gle/ozHex3uqvNkQt2dq9' } },
-      { title: 'Contact every rescue group at once', text: 'Only an approved rescue group, a New Hope partner, can take out a “partners only” animal. The full guide lists them, with ready-made messages to send.' },
+      { title: 'Contact every rescue group at once', text: 'Only an approved rescue group can take out a “partners only” animal. They are under Who to contact in the full guide, with ready-made messages to send.', link: { label: 'ACC’s full list of approved rescue partners', href: 'https://www.nycacc.org/programs/new-hope-partners/' } },
     ],
     never: ['Do not wait to hear back from either form.'],
     remember: ['The animal is safe only when a rescue group tells you it has confirmed the pull with ACC.'],
@@ -653,7 +662,7 @@ export const GLANCE: Record<string, Glance> = {
       },
       { label: 'I can’t afford the vet', tone: 'week', verdict: 'Funds and payment plans', do: ['See every way to get help with a vet bill.'], href: '/guides/help-paying-for-care' },
       {
-        label: 'My dog has a behaviour problem', tone: 'week', verdict: 'Most problems can be fixed',
+        label: 'I need help training my dog', tone: 'week', verdict: 'Free training help',
         do: ['ACC’s Community Pets programme gives free dog training, in person or by video.', 'Bideawee offers training help and advice.'],
         section: 'BEHAVIOR SUPPORT (a common, workable reason owners seek help)',
       },
@@ -684,7 +693,7 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'keeping-your-cat': {
-    headline: 'Before you give up your cat, ask for help. There is free help with food, vet bills, behaviour and a crisis. Tap what you need.',
+    headline: 'Before you give up your cat, ask for help. There is free help with food, vet bills, litter box and other habits, and a crisis. Tap what you need.',
     action: { label: 'Free pet food, nearest first', href: '/directory?need=food-assistance&near=1' },
     contacts: [
       { org: ACC, name: 'ACC Community Pets', when: 'Help so your cat can stay home' },
@@ -700,7 +709,7 @@ export const GLANCE: Record<string, Glance> = {
       },
       { label: 'I can’t afford the vet', tone: 'week', verdict: 'Funds and payment plans', do: ['See every way to get help with a vet bill.'], href: '/guides/help-paying-for-care' },
       {
-        label: 'My cat has a behaviour problem', tone: 'week', verdict: 'Most problems can be fixed',
+        label: 'Litter box, scratching or other habits', tone: 'week', verdict: 'See a vet first, then ask for help',
         do: ['See a vet first: a sudden change, like not using the litter box, is often a health problem.', 'Then email the free National Cat Behavior Helpline at felinehelpline@gmail.com.'],
         section: 'BEHAVIOR / SOCIALIZATION - part B: OWNED-cat problems (these are the #1 surrender triggers - solvable!)',
       },
@@ -840,7 +849,6 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Every dog over 4 months needs a licence and a rabies shot. Apply online at the city’s dog licence page, or by mail.'],
         section: 'NYC dog license - legally required (NYC Health Code 161.04)',
       },
-      { label: 'Low-cost care for a cat', tone: 'week', verdict: 'Clinics that see cats', do: ['See the guide on low-cost clinics.'], href: '/guides/low-cost-clinics-and-trap-banks' },
     ],
   },
 
@@ -870,10 +878,21 @@ export const GLANCE: Record<string, Glance> = {
     steps: [
       { title: 'Get TNR-certified', text: 'Neighborhood Cats runs a free online workshop every month; more than 15,000 New Yorkers have done it. The NYC Feral Cat Initiative runs free ones too.', link: { label: 'Neighborhood Cats workshop', href: 'https://www.neighborhoodcats.org/how-to-tnr' } },
       { title: 'Register your colony', text: 'Log your cats on Cat Stats. It tracks progress and can help protect a feeding spot.' },
-      { title: 'Trap and fix', text: 'Borrow traps and book free spay/neuter. The ASPCA offers free transport to its clinics.', link: { label: 'Spay and neuter clinics, nearest first', href: '/directory?need=spay-neuter&animal=cat&near=1' } },
-      { title: 'Keep caring', text: 'Food and water at tidy feeding spots, and insulated winter shelters with straw, not blankets.' },
+      { title: 'Trap and fix', text: 'Borrow traps and book free spay/neuter. ASPCA Spay/Neuter offers free transport to its clinics.', link: { label: 'Spay and neuter clinics, nearest first', href: '/directory?need=spay-neuter&animal=cat&near=1' } },
     ],
-    never: ['Don\'t re-trap ear-tipped cats.'],
+    more: {
+      title: 'Help for your colony',
+      links: [
+        { label: 'Free food, straw and winter shelter giveaways', href: '#g-free-cat-food-straw-winter-shelters-for-colonies' },
+        { label: 'How to build a winter shelter (Bideawee)', href: 'https://www.bideawee.org/wp-content/uploads/2020/09/CatShelter.pdf' },
+        { label: 'How to build a winter shelter (Alley Cat Allies)', href: 'https://www.alleycat.org/resources/how-to-build-an-outdoor-shelter/' },
+        { label: 'Ready-made shelters to buy', href: 'https://www.alleycat.org/resources/feral-cat-shelter-options-gallery/' },
+        { label: 'Vet care for colony cats', href: '#g-medical-for-colony-cats-sick-injured-dental' },
+        { label: 'Someone to trap with you, holding space and fosters', href: '#g-hands-on-help-someone-to-trap-with-you-holding-space-fosters' },
+        { label: 'Grants for TNR and colony vet costs', href: '#g-grants-financial-help-for-tnr-colony-vet-costs' },
+        { label: 'Help with neighbours and feeding disputes', href: '#g-community-relations-help-neighbor-complaints-feeding-disputes-moving-a-feeding-station' },
+      ],
+    },
   },
 
   'cats-with-special-needs': {
@@ -918,18 +937,45 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'breed-specific-dog-rescue': {
-    headline: 'Rehoming or adopting a particular breed? Breed rescues know those dogs. Most are volunteer networks outside the city, so check they take dogs from NYC.',
+    headline: 'Breed rescues know their breed. Adopt from one, or ask one for help if you can no longer keep your dog. Tap what you need, or your dog’s breed.',
     contacts: [{ org: 'new-york-bully-crew', name: 'New York Bully Crew', when: 'All bully breeds · takes surrenders' }],
-    steps: [
-      { title: 'Find rescues for your breed', text: 'The full guide lists them by breed: bully breeds first, then rottweilers, boxers, cane corsos, mastiffs, bulldogs, dobermans and more.', link: { label: 'Breed rescues in the directory', href: '/directory?need=breed-specific' } },
-      { title: 'Contact two or three at once', text: 'They are run by volunteers and fill up. Don’t wait for one to answer before trying the next.' },
-      { title: 'Ask if they can take your dog', text: 'Ask if they take dogs from New York City and have a foster home free now.' },
-    ],
     tip: '“Bully breed” describes a body type, not how a dog behaves.',
+    situations: [
+      {
+        label: 'I want to adopt a particular breed', tone: 'week', verdict: 'Find its breed rescue below',
+        do: ['Tap the breed below for its rescues.', 'Most are volunteer networks outside the city: ask if they place dogs in New York City.', 'Shelters and general rescues have many of these breeds too.'],
+      },
+      {
+        label: 'I can no longer keep my dog', tone: 'today', verdict: 'Contact two or three at once',
+        do: ['Tap your dog’s breed below for its rescues.', 'Contact two or three at once: they are run by volunteers and fill up.', 'Ask if they take dogs from New York City and have a foster home free now.', 'Other help, before you give up your dog: see the guide on keeping your dog.'],
+      },
+      { label: 'My building restricts my dog’s breed', tone: 'week', verdict: 'Get help before you give up your dog', do: ['See breed and housing help in the dog behaviour guide.'], href: '/guides/dog-behavior-and-legal' },
+      { label: "All bully breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("All-\"bully\" / multi-breed rescues (take the full group)")}` },
+      { label: "Pit bulls and Staffies", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Pit-type (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)")}` },
+      { label: "Bulldogs", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Bulldog - English / French / American (part of the \"bully\"/molosser group)")}` },
+      { label: "Rottweilers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Rottweiler (part of the \"bully\"/molosser group)")}` },
+      { label: "Boxers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Boxer (part of the \"bully\"/molosser group)")}` },
+      { label: "Dobermans and pinschers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Doberman / pinscher (part of the guardian/molosser group)")}` },
+      { label: "Cane corsos, mastiffs and Great Danes", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Cane corso / dogo / presa / mastiff / Great Dane (large \"bully\"/molosser)")}` },
+      { label: "Huskies and northern breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Husky / northern breeds")}` },
+      { label: "German shepherds and malinois", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("German shepherd / malinois / Dutch shepherd")}` },
+      { label: "Labs, goldens and pointers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Retrievers (lab / golden) & pointers")}` },
+      { label: "Chihuahuas, dachshunds and small breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Small breed / chihuahua / dachshund / yorkie / maltese")}` },
+      { label: "Poodles, doodles and bichons", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Poodle / doodle / bichon")}` },
+      { label: "Shibas, akitas and Asian breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Shiba / akita / Asian breeds")}` },
+      { label: "Beagles, hounds and bassets", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Beagle / hound / basset")}` },
+      { label: "Pugs", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Pug")}` },
+      { label: "Herding breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Herding (Australian shepherd / cattle dog / collie / sheepdog)")}` },
+      { label: "Setters, spaniels and sporting breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Setter / spaniel / sporting")}` },
+      { label: "Cavaliers and toy breeds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Cavalier / toy / companion breeds")}` },
+      { label: "Greyhounds and sighthounds", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Greyhound / sighthound")}` },
+      { label: "Basenjis, shar-peis and bull terriers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Basenji / sharpei / bull terrier / other purebred networks")}` },
+      { label: "Terriers and schnauzers", tone: 'week', verdict: 'Rescues for this breed', do: ['Every rescue we know for this breed, with its link, in the full guide.'], href: `#${headingId("Terrier / schnauzer / small purebred networks")}` },
+    ],
   },
 
   'dog-behavior-and-legal': {
-    headline: 'Most behaviour problems can be fixed. Start with free help from ACC. Tap what is happening.',
+    headline: 'Help with training is often free. Start with ACC. Tap what is happening.',
     contacts: [
       { org: ACC, name: 'ACC Community Pets', when: 'Free dog training, in person or by video' },
       { org: 'bideawee-manhattan-adoption-center', name: 'Bideawee', when: 'Training help and advice' },
@@ -938,17 +984,17 @@ export const GLANCE: Record<string, Glance> = {
     remember: ['This is not legal advice.'],
     situations: [
       {
-        label: 'My dog has a behaviour problem', tone: 'week', verdict: 'Free training first',
+        label: 'I need help training my dog', tone: 'week', verdict: 'Free training first',
         do: [
           'ACC’s Community Pets programme has free trainers, plus free guides online.',
-          'Paying for a trainer? Choose one who uses rewards. Find certified trainers at ccpdt.org or iaabc.org, and ask how they work with fear before you book.',
+          'Paying for a trainer? Choose one who rewards good behaviour rather than punishing. Find certified trainers at ccpdt.org or iaabc.org.',
         ],
         contacts: [{ org: ACC, name: 'ACC Community Pets', when: 'Free training' }],
         section: 'How to choose a positive-reinforcement trainer',
       },
       {
-        label: 'A serious or sudden problem', tone: 'today', verdict: 'Ask your vet first',
-        do: ['A sudden change can be a health problem. See your vet.', 'For a serious problem, a veterinary behaviourist can help and can prescribe medicine. Find one at dacvb.org.'],
+        label: 'A sudden change, or biting or growling', tone: 'today', verdict: 'Ask your vet first',
+        do: ['A sudden change can be a health problem. See your vet.', 'A veterinary behaviourist can help and can prescribe medicine. Find one at dacvb.org.'],
         section: 'NYC behavior + reactivity specialists',
       },
       {
@@ -992,7 +1038,7 @@ export const GLANCE: Record<string, Glance> = {
     never: ['do not DIY a beak or a rabbit\'s teeth'],
     situations: [
       {
-        label: 'I’m going away', tone: 'week', verdict: 'Boarding or a sitter who knows your animal',
+        label: 'I need boarding or a pet sitter', tone: 'week', verdict: 'Someone who knows your kind of animal',
         do: ['Boarding at an exotics vet is safest for an animal with health needs.', 'Ask any sitter if they know your kind of animal, and who their emergency vet is.'],
         contacts: [{ org: 'the-center-for-avian-and-exotic-medicine', name: 'Center for Avian & Exotic Medicine', when: 'Medical boarding' }],
         section: 'Exotic boarding & pet-sitting (most dog/cat kennels will not take exotics; these specialize):',

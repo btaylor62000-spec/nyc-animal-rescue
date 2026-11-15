@@ -203,6 +203,15 @@ const sid = (i: number) => `situation-${i + 1}`;
     </>
   )}
 
+  {g.more && (
+    <>
+      <h2 class="glance__label">{g.more.title}</h2>
+      <ul class="glance-links">
+        {g.more.links.map((l) => <li><a href={l.href} rel={/^https?:/.test(l.href) ? 'noopener' : undefined}>{l.label} &rarr;</a></li>)}
+      </ul>
+    </>
+  )}
+
   {g.never && g.never.length > 0 && <Never items={g.never} />}
   {g.remember && g.remember.length > 0 && <Never items={g.remember} remember />}
   {g.tip && <p class="glance-tip" set:html={linkNames(g.tip)} />}

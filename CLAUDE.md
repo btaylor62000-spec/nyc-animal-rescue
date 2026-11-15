@@ -184,6 +184,40 @@ such. The monthly audit checks whether the city has published a procedure.
   (the Census geocoder cannot read Route 17 addresses); drive times re-run.
   **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
 
+### Also changed 2026-11-15 (eighth round): the expert decides, not the card
+
+- **No triage by us.** The wildlife card no longer asks "Is it really
+  alone?" or says a baby on its own is usually not abandoned: it says call a
+  rehabber before you touch or move it, and they decide. Found kittens says
+  the same: call a kitten rescue or ACC first (Itty Bitty City Kitties, Cat
+  Castle, Kittens and Barbells, every kitten nursery), and do what they say.
+  The guide gained a first section, "First, call someone who knows kittens",
+  with Kitten Lady's guides as reference, not instead of a rescue.
+- **Ear tips:** nothing says "leave it be" or that someone looks after the
+  cat; an ear tip means spayed or neutered through TNR, and the cat can still
+  be someone's lost pet or need help. "Don't re-trap ear-tipped cats" is gone
+  from the TNR card and guide: an ear-tipped cat may need trapping again for
+  vet care or in an emergency (owner).
+- **TNR card:** three steps (certify, with Neighborhood Cats' workshop
+  linked; register; trap and fix), then "Help for your colony", a link list
+  (the new `more` field): food and shelter giveaways, Bideawee's and Alley
+  Cat Allies' shelter guides, vet care, trapping help, grants, neighbours.
+- **Breed rescues:** situation tiles (adopt, can't keep my dog, building
+  rules) and then a tile per breed group, each opening that breed's rescues
+  in the full guide. Links and tiles can point at `#heading-id` in the full
+  guide; tests check every one is a real heading.
+- **At-risk step 4** links ACC's own list of approved rescue partners, and
+  "Who to contact" opens that section of the full guide.
+- **"Low-cost cat clinics and trap banks"** is the clinics guide's name; the
+  cat tile left the dog card.
+- **Words:** no "behaviour problem" ("I need help training my dog", "Litter
+  box, scratching or other habits"); "a trainer who rewards good behaviour
+  rather than punishing"; exotic boarding is "I need boarding or a pet
+  sitter".
+- **The emergency box is compact on guide pages and the assistant page**
+  (`<EmergencySigns compact />`): two lines, the bitten-or-caught warning
+  still in bold. The home page keeps the full band.
+
 ### Also changed 2026-11-15 (seventh round): steps or situations, never both kinds mixed
 
 - **The rule for cards** (owner: "you are listing steps that are not

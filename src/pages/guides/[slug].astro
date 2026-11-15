@@ -54,12 +54,9 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     </p>
 
     {isUrgent && (
-      <div class="notice notice--urgent" style="margin-top:1rem">
+      <div class="notice notice--urgent notice--compact" style="margin-top:1rem">
         <span aria-hidden="true">&#9888;</span>
-        <div>
-          <EmergencySigns />
-          <p><a href="/directory?need=emergency-vet">Emergency vets, open now and nearest first</a></p>
-        </div>
+        <EmergencySigns compact />
       </div>
     )}
 

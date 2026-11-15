@@ -166,7 +166,7 @@ export const GUIDE_PAGES: TabSpec[] = [
   },
   {
     file: WB_CAT, tab: 'Clinics, traps & support', slug: 'low-cost-clinics-and-trap-banks',
-    title: 'Low-cost clinics and trap banks',
+    title: 'Low-cost cat clinics and trap banks',
     summary: 'How to get a cat spayed or neutered for free or cheaply, where to borrow a humane trap, and dental care for feral cats.',
     topics: ['low-cost vet', 'spay neuter', 'borrow a trap', 'trap bank'],
     // Borough clinic lists, vet-bill help and owner support are listed below and have their own guides.

@@ -1,11 +1,11 @@
 ---
-title: "Low-cost clinics and trap banks"
+title: "Low-cost cat clinics and trap banks"
 slug: low-cost-clinics-and-trap-banks
 summary: "How to get a cat spayed or neutered for free or cheaply, where to borrow a humane trap, and dental care for feral cats."
 topics: ["low-cost vet","spay neuter","borrow a trap","trap bank"]
 source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Clinics, traps & support"
 ---
-# Low-cost clinics and trap banks
+# Low-cost cat clinics and trap banks
 
 _How to get a cat spayed or neutered for free or cheaply, where to borrow a humane trap, and dental care for feral cats._
 

@@ -335,7 +335,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | --- | ---: |
 | Found an injured bird | 17240 |
 | An animal is trapped | 2903 |
-| Found kittens outside | 2106 |
+| Found kittens outside | 2574 |
 | An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
 | Pets in a disaster or evacuation | 4330 |
@@ -343,10 +343,10 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15825 |
 | Reporting animal abuse or neglect | 6987 |
 | Animal emergencies and poison control | 5129 |
-| Low-cost clinics and trap banks | 3589 |
-| Community cats, colonies and starting TNR | 7469 |
+| Low-cost cat clinics and trap banks | 3593 |
+| Community cats, colonies and starting TNR | 7856 |
 | Cats needing specialist help | 6511 |
-| Lost or found a cat | 4444 |
+| Lost or found a cat | 4480 |
 | Help keeping your cat | 8834 |
 | Help keeping your dog | 8070 |
 | Low-cost vet care, spay/neuter and dog licensing | 7480 |

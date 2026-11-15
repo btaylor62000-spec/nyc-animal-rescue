@@ -49,6 +49,7 @@ function prose(g: Glance): string[] {
     ...(g.sides ?? []).flatMap((s) => [s.label, s.headline, s.tip ?? '', ...steps(s.steps)]),
     ...(g.situations ?? []).flatMap((s) => [s.label, s.verdict, ...s.do]),
     ...contactsOf(g).flatMap((c) => [c.name ?? '', c.when, c.note ?? '']),
+    ...(g.more ? [g.more.title, ...g.more.links.map((l) => l.label)] : []),
   ].filter(Boolean);
 }
 function links(g: Glance): string[] {
@@ -58,6 +59,7 @@ function links(g: Glance): string[] {
     ...steps(g.steps),
     ...(g.sides ?? []).flatMap((s) => steps(s.steps)),
     ...(g.situations ?? []).flatMap((s) => (s.href ? [s.href] : [])),
+    ...(g.more?.links ?? []).map((l) => l.href),
   ];
 }
 
@@ -114,7 +116,10 @@ test('every web and email address on a card is already in its guide', () => {
       }
     }
     for (const href of links(g)) {
-      if (href.startsWith('/guides/')) {
+      if (href.startsWith('#')) {
+        const ids = [...guide.body.matchAll(/^## (.+)$/gm)].map((m) => headingId(m[1]!));
+        assert.ok(ids.includes(href.slice(1)), `${guide.slug}: ${href} is not a heading in the guide`);
+      } else if (href.startsWith('/guides/')) {
         assert.ok(GUIDES.some((x) => `/guides/${x.slug}` === href), `${guide.slug}: ${href} is not a guide`);
       } else if (href.startsWith('/')) {
         assert.match(href, /^\/directory(\?|$)/, `${guide.slug}: ${href} is not a page this card may link to`);
@@ -203,6 +208,11 @@ test('organizations named on a card link to their listings', async () => {
         continue;
       }
       if (url.startsWith('/directory')) continue;
+      if (url.startsWith('#')) {
+        const ids = [...guide.body.matchAll(/^## (.+)$/gm)].map((m) => headingId(m[1]!));
+        assert.ok(ids.includes(url.slice(1)), `${guide.slug}: ${url} is not a heading in the guide`);
+        continue;
+      }
       assert.ok(guide.body.includes(url.replace(/^https?:\/\/(www\.)?/, '')), `${guide.slug}: ${url} is not in the guide`);
     }
   }

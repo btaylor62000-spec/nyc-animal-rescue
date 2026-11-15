@@ -13,13 +13,26 @@
  *
  * Used in three places so they cannot drift apart: the red band on the home
  * page, the warning on emergency guides, and the assistant page.
+ *
+ * `compact` (owner, 2026-11-15: "is there any way to compress this?") is the
+ * same advice in two lines for guide pages and the assistant page, where the
+ * card below already says what to do. The bitten-or-caught warning stays,
+ * in bold, in both.
  */
 interface Props {
   /** Where the reader finds help for a wild animal: the list below, or links. */
   wild?: 'below' | 'links';
+  compact?: boolean;
 }
-const { wild = 'links' } = Astro.props;
+const { wild = 'links', compact = false } = Astro.props;
 ---
+{compact ? (
+<p class="esigns esigns--compact">
+  <strong>Badly hurt or very sick?</strong> Go to an emergency vet now; if you can, call while you travel.
+  <strong>Bitten or caught by another animal? Go now, even if you can’t see a wound.</strong>{' '}
+  <a href="/directory?need=emergency-vet&near=1">Emergency vets open now&nbsp;&rarr;</a>
+</p>
+) : (
 <div class="esigns">
   <p class="esigns__lead">Is an animal badly hurt or very sick?</p>
   <p>Take it to an emergency vet now. Don’t wait on the phone: if you can, call while you travel so they can get ready.</p>
@@ -29,3 +42,4 @@ const { wild = 'links' } = Astro.props;
     ? <p>Found a hurt wild animal or bird? Pick it from the list below.</p>
     : <p>Found a hurt wild animal or bird? <a href="/guides/found-an-injured-bird">Birds</a> · <a href="/guides/found-wildlife">Other wild animals</a></p>}
 </div>
+)}

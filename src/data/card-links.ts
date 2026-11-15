@@ -60,7 +60,7 @@ export const CARD_ALIASES: Record<string, string> = {
   'Cat Castle': 'cat-castle-nyc',
   'Feral Cat Initiative': 'nyc-feral-cat-initiative-bideawee',
   'ASPCA’s same-day waitlist': 'aspca-spay-neuter-nyc',
-  'ASPCA offers free transport': 'aspca-spay-neuter-nyc',
+  'ASPCA Spay/Neuter': 'aspca-spay-neuter-nyc',
   'ASPCA’s free clinics': 'aspca-community-veterinary-clinic',
 };
 
@@ -78,6 +78,8 @@ export const CARD_URLS: Record<string, string> = {
   'the guide on keeping your pet if you lose your home': '/guides/keep-your-pet-if-you-lose-your-home',
   'the animal emergencies guide': '/guides/animal-emergency',
   'the wildlife guide': '/guides/found-wildlife',
+  'the guide on keeping your dog': '/guides/keeping-your-dog',
+  'Who to contact': '#g-who-to-contact',
   // Directory lists, named in a card's words.
   'every kitten nursery': '/directory?need=neonatal',
   'every FIV+ and FeLV+ rescue': '/directory?need=retrovirus',

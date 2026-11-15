@@ -1511,3 +1511,7 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .results-bar--ask #near-me-note { font-weight: 700; }
 .results-bar { scroll-margin-top: 6rem; }
 .page-feedback { margin: 2rem auto 1rem; font-size: 0.85rem; color: var(--text-muted); }
+.glance-links { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.4rem; }
+.glance-links a { font-weight: 700; }
+.esigns--compact { margin: 0; font-size: 0.95rem; line-height: 1.45; }
+.notice--compact { padding-block: 0.6rem; }
