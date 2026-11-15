@@ -62,7 +62,7 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
       </p>
     )}
 
-    <GuideGlance glance={glance} title={guide.title} tier={line?.tier} tierTitle={line?.tierTitle} number={line?.number} slug={guide.slug} />
+    <GuideGlance glance={glance} title={line?.label ?? guide.title} tier={line?.tier} tierTitle={line?.tierTitle} number={line?.number} slug={guide.slug} />
 
     <details class="full-guide" id="full-guide">
       <summary>

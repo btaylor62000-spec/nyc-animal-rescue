@@ -114,7 +114,7 @@ const CITY = 'nyc-311';
 
 export const GLANCE: Record<string, Glance> = {
   'animal-emergency': {
-    headline: 'If an animal is hurt, very ill or poisoned, go to a 24-hour animal hospital now. Call on the way.',
+    headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to a 24-hour animal hospital now.',
     action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet' },
     contacts: [
       { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Swallowed or touched something toxic · 24/7' },
@@ -124,7 +124,7 @@ export const GLANCE: Record<string, Glance> = {
     ],
     steps: [
       { title: 'Find the nearest hospital open now', text: 'Hit by a car, bleeding, can’t breathe, a seizure, collapsed, or anything that scares you: go now. Not sure? Call a 24-hour hospital and ask.', link: { label: 'Hospitals open now, nearest first', href: '/directory?need=emergency-vet' } },
-      { title: 'Call on the way', text: 'Hours change, even at 24-hour hospitals. Calling ahead means they are ready for you.' },
+      { title: 'Call on the way', text: 'Hours change, even at 24-hour hospitals. Say what kind of animal it is: not every hospital treats rabbits, birds or reptiles.', link: { label: 'Rabbit, bird or reptile? Vets who treat them', href: '/guides/exotic-pet-emergency' } },
       { title: 'Poisoned? Call poison control first', text: 'They work out the treatment and pass it to the hospital, which saves time.' },
       { title: 'Worried about paying? Go anyway', text: 'Ask about payment plans when you arrive.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],

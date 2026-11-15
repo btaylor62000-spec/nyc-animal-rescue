@@ -143,13 +143,17 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
     key: 'now',
     title: 'Emergency',
     lines: [
-      { slug: 'animal-emergency', label: 'A pet is hurt, very ill or poisoned' },
-      { slug: 'found-an-injured-bird', label: 'Injured bird' },
-      { slug: 'found-wildlife', label: 'Injured or orphaned wildlife' },
-      { slug: 'exotic-pet-emergency', label: 'Exotic pet emergency' },
-      { slug: 'report-animal-abuse', label: 'Someone is hurting an animal' },
-      { slug: 'leaving-abuse-with-your-pet' },
-      { slug: 'pets-in-a-disaster' },
+      // Asked as the reader's own question, naming the animals most people
+      // have first (owner, 2026-11-15): the old labels named birds, wildlife
+      // and exotics but never dogs or cats, so someone with a hurt dog had to
+      // guess that "a pet" meant theirs. The first line still covers every pet.
+      { slug: 'animal-emergency', label: 'Is your dog, cat or other pet hurt, very ill or poisoned?' },
+      { slug: 'found-an-injured-bird', label: 'Did you find a hurt or baby bird?' },
+      { slug: 'found-wildlife', label: 'Did you find a hurt or orphaned wild animal?' },
+      { slug: 'exotic-pet-emergency', label: 'Is your rabbit, bird, reptile or other small pet sick or hurt?' },
+      { slug: 'report-animal-abuse', label: 'Is someone hurting or neglecting an animal?' },
+      { slug: 'leaving-abuse-with-your-pet', label: 'Do you need to leave an abusive home with your pet?' },
+      { slug: 'pets-in-a-disaster', label: 'Is a disaster, evacuation or heatwave putting your pet at risk?' },
     ],
   },
   {
