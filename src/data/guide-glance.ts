@@ -133,11 +133,15 @@ export const GLANCE: Record<string, Glance> = {
     tip: 'In the Bronx, no animal hospital is confirmed open 24 hours. The full guide lists the nearest ones that are.',
   },
 
+  // Checked against NYC Bird Alliance's own pages (owner, 2026-11-15): the
+  // Animal Medical Center takes only raptors and waterfowl, so it is never the
+  // answer for a small bird at night; take the towel out of the bag; a nestling
+  // goes back in its nest first.
   'found-an-injured-bird': {
     headline: 'Most hurt birds need a licensed wildlife rescuer (a rehabber) today. Box it, then get it there.',
     contacts: [
       { org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm', note: '565 Columbus Ave, Manhattan. Just walk in, no appointment.' },
-      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours', note: 'At night, or when the Wild Bird Fund is closed. Takes hawks, owls and water birds.' },
+      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · hawks, owls and water birds only', note: 'Say NYC Bird Alliance sent you.' },
       { org: AHN, name: 'Animal Help Now', when: 'Any time', note: 'Type where the bird is. It lists rehabbers open right now.' },
     ],
     check: {
@@ -149,8 +153,8 @@ export const GLANCE: Record<string, Glance> = {
     },
     steps: [
       { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call.' },
-      { title: 'Put it in a closed box', text: 'A cardboard box with a few small air holes. Keep it somewhere dark and quiet.' },
-      { title: 'Get it to a rehabber today', text: 'Take it to the Wild Bird Fund. Closed? Call the Animal Medical Center, open 24 hours.' },
+      { title: 'Put it in a closed bag or box', text: 'A paper bag, or a cardboard box with a few small air holes. Take the towel out. Keep it somewhere dark and quiet.' },
+      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed? Use Animal Help Now to find a rehabber open now, or keep the bird boxed in a dark, quiet room and take it in at 9am.' },
     ],
     never: [
       'Never give it food or water.',
@@ -163,7 +167,7 @@ export const GLANCE: Record<string, Glance> = {
         label: 'It hit a window', tone: 'now', verdict: 'Needs help today, even if it seems fine',
         do: ['Cover it with a towel and scoop it up.', 'Put it in a closed box with small air holes. Keep it dark and quiet.', 'Take it to a rehabber today. Birds that fly off after hitting a window often die later from shock.'],
         never: ['No heating pad for a bird that hit a window: a warm room is enough.', 'Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
         section: 'How to catch it, box it and keep it calm',
       },
       {
@@ -171,20 +175,20 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Put it in a closed box right away.', 'Get it to a rehabber today. It may need medicine the same day.'],
         remember: ['If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound.'],
         never: ['Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
         section: 'If it was caught or bitten by an animal',
       },
       {
         label: 'A baby bird is on the ground', tone: 'ok', verdict: 'Probably fine. Watch first.',
-        do: ['Has feathers and can hop? It’s learning to fly, and its parents are close by.', 'Leave it alone and watch from far away.', 'Almost no feathers, cold, or hurt? Then box it and call.'],
+        do: ['Has feathers and can hop? It’s learning to fly, and its parents are close by. Leave it and watch from far away.', 'Almost no feathers? Put it back in its nest if you can. Touching it won’t make the parents reject it.', 'Hurt, or no parents after a few hours? Box it and take it to a rehabber.'],
         remember: ['Only a cold, nearly naked baby bird needs gentle warmth.'],
         contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }],
         section: 'Is it hurt, or a fledgling that is fine?',
       },
       {
         label: 'It’s big: a hawk, owl, goose or swan', tone: 'now', verdict: 'Don’t touch it. Call for help.',
-        do: ['Keep people and dogs away.', 'Keep it in sight.', 'Call the Animal Medical Center, or call 311 and ask for the Urban Park Rangers.'],
-        contacts: [{ org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours' }, { org: CITY, when: 'Ask for the Urban Park Rangers' }],
+        do: ['Keep people and dogs away.', 'Keep it in sight.', 'Call the Animal Medical Center, which takes hawks, owls and water birds at any hour. In a park, you can also call 311 and ask for the Urban Park Rangers.'],
+        contacts: [{ org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · say NYC Bird Alliance sent you' }, { org: CITY, when: 'In a park: ask for the Urban Park Rangers' }],
         section: 'Where to take it',
       },
       {
@@ -196,7 +200,7 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'It’s stuck in a glue trap', tone: 'now', verdict: 'Don’t pull it off',
         do: ['Leave it on the trap.', 'Take it to a rehabber just as it is.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
         section: 'What to do now, step by step',
       },
     ],
