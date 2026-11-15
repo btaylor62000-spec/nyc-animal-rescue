@@ -54,7 +54,7 @@
   ],
   "geo": null,
   "address": null,
-  "hours": null,
+  "hours": "Mon-Sun 9am-7pm",
   "notes": "NYC's only wildlife rehabilitation and education center. 501(c)(3). Accepts wild birds and small mammals 7 days a week; no appointment needed (leave a message if arriving near close). IMPORTANT LIMITATION: WBF CANNOT take exotic birds (budgies, parrots) or domestic birds (chickens, quail, domestic geese, tame doves) - for those go to ACC (as of 2022 the drop-off for domestic/exotic birds). WBF CAN take rock/domestic pigeons. Between 87th & 88th Streets. Email: (via wildbirdfund.org/contact) Intake: 'Found a Bird?' guidance at Intake: walk-in 565 Columbus Ave, daily 9am-7pm",
   "type_raw": "Wildlife rehabilitation & education center (NYC's main wildlife hospital)",
   "confidence": "High",
@@ -71,7 +71,17 @@
   "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-15",
+      "field": "hours",
+      "from": null,
+      "to": "Mon-Sun 9am-7pm",
+      "evidence_url": "https://www.wildbirdfund.org/about-us/location/",
+      "source": "manual",
+      "note": "Open seven days a week, 9am to 7pm, on its own Location and Hours page, and on NYC Bird Alliance's injured-bird page, read 2026-11-15. The guides and card already said so; the listing had no hours."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

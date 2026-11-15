@@ -128,7 +128,7 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'A wild animal living in your walls or chimney?', text: 'Hire a licensed wildlife control company. First take away any food that draws it in.' },
     ],
     never: ['Do not go onto subway tracks, into a drain or onto a ledge yourself: call 911.'],
-    tip: 'No city page covers trapped animals. In rescues reported in the news, the NYPD’s Emergency Service Unit came after a call to the police.',
+    tip: 'No city page covers trapped animals. In rescues reported in the news, officers from the NYPD’s Emergency Service Unit came to free the animal.',
   },
 
   'found-kittens-outside': {
@@ -308,6 +308,9 @@ export const GLANCE: Record<string, Glance> = {
     ],
   },
 
+  // Who handles a sick raccoon, skunk, bat or deer: 311, which passes it to
+  // ACC in business hours or to NYC Parks in a park (311 KA-01789, read
+  // 2026-11-15). The Urban Park Rangers are Parks staff, so only in parks.
   'found-wildlife': {
     headline: 'Don’t touch it. Find a licensed wildlife rescuer (a rehabber) and ask what to do.',
     contacts: [
@@ -337,13 +340,13 @@ export const GLANCE: Record<string, Glance> = {
         label: 'A raccoon, skunk or bat', tone: 'now', verdict: 'Don’t touch it',
         do: ['Stay away.', 'Call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
         never: ['Never give it food or water.'],
-        contacts: [{ org: CITY, when: 'Ask for the Urban Park Rangers' }],
+        contacts: [{ org: CITY, when: 'Report it · in a park, it goes to NYC Parks' }],
         section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
       },
       {
         label: 'A hurt deer, coyote or other big animal', tone: 'now', verdict: 'Stay back',
-        do: ['Don’t go near it. Keep people and dogs back.', 'Call 311 for the Urban Park Rangers, or DEC at any hour.', 'On a road, or anyone in danger? Call 911.'],
-        contacts: [{ org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'Dispatch, any hour', phone: 1 }, { org: CITY, when: 'Ask for the Urban Park Rangers' }],
+        do: ['Don’t go near it. Keep people and dogs back.', 'Call 311 in business hours, or DEC at any hour.', 'On a road, or anyone in danger? Call 911.'],
+        contacts: [{ org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'Dispatch, any hour', phone: 1 }, { org: CITY, when: 'Report it · in a park, it goes to NYC Parks' }],
         section: 'More situations - Animal Help Now’s guidance, in its own words',
       },
       {

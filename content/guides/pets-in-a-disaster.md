@@ -15,6 +15,7 @@ What New York City Emergency Management tells pet owners to do before and during
 
 - Take your pet with you. New York City Emergency Management says: “New York City's emergency evacuation shelters are pet-friendly.” It also says the most common misconception is that people cannot bring their pets, and that it never wants anyone to stay home where it is dangerous just to be with their pet.
 - “If an evacuation order is declared, pets are allowed on public transportation, even if they are not in a carrier.” Service animals are always allowed wherever people are allowed.
+- 311 adds two conditions (https://portal.311.nyc.gov/article/?kanumber=KA-02717): “When an evacuation order is declared, you can bring a legal pet too large for a carrier.” “You must have the pet muzzled and controlled on a sturdy leash.” And “Only legal pets are allowed in evacuation centers.”
 - Find out whether you live in an evacuation zone, and where your nearest evacuation centre is, at https://www.nyc.gov/knowyourzone or by calling 311.
 - Get emergency alerts from Notify NYC, the city's free alert service (app, text or email): https://www.nyc.gov/notifynyc
 

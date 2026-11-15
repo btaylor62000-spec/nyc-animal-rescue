@@ -333,13 +333,13 @@ These are personal numbers belonging to individuals, not organizational lines. N
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 16932 |
+| Found an injured bird | 17240 |
 | An animal is trapped | 2984 |
 | Found kittens outside | 2106 |
 | When a pet dies | 2269 |
 | An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
-| Pets in a disaster or evacuation | 4007 |
+| Pets in a disaster or evacuation | 4316 |
 | Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15825 |
 | Reporting animal abuse or neglect | 6987 |
@@ -354,7 +354,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
 | Breed-specific dog rescue | 20654 |
-| Found injured or orphaned wildlife | 17151 |
+| Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
 | What you can legally keep in New York City | 3060 |
 | Help paying for veterinary care | 9895 |

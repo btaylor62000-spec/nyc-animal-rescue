@@ -145,3 +145,38 @@ test('a card stays short enough to read at a glance', () => {
     for (const s of prose(g)) assert.ok(s.split(/\s+/).length <= 45, `${slug}: "${s.slice(0, 40)}..." is too long for a card`);
   }
 });
+
+/*
+ * Facts the owner settled on 2026-11-15, said the same way on the cards, in
+ * the full guides and on the listings. Each was a contradiction somewhere on
+ * the site before that day; this keeps a later edit from bringing one back.
+ */
+test('settled facts agree across cards, guides and listings', () => {
+  const body = (slug: string) => GUIDES.find((g) => g.slug === slug)!.body;
+  const card = (slug: string) => JSON.stringify(GLANCE[slug]);
+
+  // The Animal Medical Center's ER takes critically ill birds (owner's call to AMC).
+  assert.match(body('found-an-injured-bird'), /emergency room takes critically ill birds/);
+  assert.match(card('found-an-injured-bird'), /critically ill birds/);
+  assert.match(ORGS_BY_ID.get('animal-medical-center')!.notes ?? '', /critically ill birds/);
+  assert.doesNotMatch(card('found-an-injured-bird'), /(water birds|waterfowl|raptors) only|only (hawks|raptors|birds of prey)/i, 'the bird card must not say AMC takes only some birds');
+
+  // The Urban Park Rangers are Parks staff: named for parks, never as handling wildlife citywide.
+  for (const slug of ['found-wildlife', 'found-an-injured-bird']) {
+    assert.doesNotMatch(body(slug), /Urban Park Rangers, who handle these in the city|Call 311 for the Urban Park Rangers/);
+  }
+
+  // 311's evacuation conditions are in the disaster guide as well as on its card.
+  assert.match(body('pets-in-a-disaster'), /muzzled and controlled on a sturdy leash/);
+  assert.match(body('pets-in-a-disaster'), /Only legal pets are allowed in evacuation centers/);
+  assert.match(card('pets-in-a-disaster'), /muzzled/);
+
+  // Urgent Vets in the Bronx: every day 10am to 10pm, in its hours, its notes and the guide.
+  const uv = ORGS_BY_ID.get('urgent-vets-bronx')!;
+  assert.match(uv.hours ?? '', /10am-10pm/);
+  assert.match(uv.notes ?? '', /10am to 10pm/);
+  assert.match(body('animal-emergency'), /10am-10pm/);
+
+  // The Wild Bird Fund: every day, 9am to 7pm, on the listing too.
+  assert.match(ORGS_BY_ID.get('the-wild-bird-fund')!.hours ?? '', /9am-7pm/);
+});
