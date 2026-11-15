@@ -344,7 +344,33 @@
       "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-10"
+      "last_verified": "2026-11-10",
+      "emails": [
+        {
+          "value": "911@ambuvet.com"
+        }
+      ],
+      "notes": "A 24-hour pet ambulance for getting an animal to a vet when you cannot take it yourself. Its drivers are licensed veterinary technicians, and its vehicles carry stretchers and oxygen. Emergency rides at any hour; non-emergency rides 9am to 8pm. It also carries animals that have died, and large or aggressive animals. It is not a hospital: ring the vet hospital you are going to before pickup, as AmbuVet's own page asks. It charges for each trip, payment due at pickup or drop-off, and dispatch is first come, first served, so at busy times it may point you to a partner first. An owner is not guaranteed a ride along with the animal.",
+      "change_log": [
+        {
+          "date": "2026-11-15",
+          "field": "emails",
+          "from": null,
+          "to": "911@ambuvet.com",
+          "evidence_url": "https://www.facebook.com/1800AmbuVet",
+          "source": "manual",
+          "note": "Read by the owner on AmbuVet's own Facebook page, 2026-11-15."
+        },
+        {
+          "date": "2026-11-15",
+          "field": "notes",
+          "from": "A 24-hour pet ambulance for getting an animal to a vet when you cannot take it yourself. It is not a hospital: ring the vet hospital you are going to before pickup, as AmbuVet's own page asks. It charges for each trip, payment due at pickup or drop-off, and dispatch is first come, first served, so at busy times it may point you to a partner first. An owner is not guaranteed a ride along with the animal.",
+          "to": "A 24-hour pet ambulance for getting an animal to a vet when you cannot take it yourself. Its drivers are licensed veterinary technicians, and its vehicles carry stretchers and oxygen. Emergency rides at any hour; non-emergency rides 9am to 8pm. It also carries animals that have died, and large or aggressive animals. It is not a hospital: ring the vet hospital you are going to before pickup, as AmbuVet's own page asks. It charges for each trip, payment due at pickup or drop-off, and dispatch is first come, first served, so at busy times it may point you to a partner first. An owner is not guaranteed a ride along with the animal.",
+          "evidence_url": "https://www.ambuvet.com/pet_transport/pet_ambulance.html",
+          "source": "manual",
+          "note": "Licensed vet tech drivers, oxygen, hours and transport of deceased animals, read on AmbuVet's own ambulance page, 2026-11-15."
+        }
+      ]
     },
     "american-alliance-for-protection-of-animals": {
       "last_verified": "2026-11-05",

@@ -1,6 +1,6 @@
 # Data quality report
 
-Generated 2026-11-13 from the source workbooks and the wildlife guide.
+Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 ## Totals
 
