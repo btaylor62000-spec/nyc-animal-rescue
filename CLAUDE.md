@@ -58,6 +58,22 @@ three prototypes, and asked for the tier names to change. What changed:
   their rabbit that their problem could wait. The keys (`now`, `today`,
   `week`, `later`) and colours are unchanged.
 
+### A guide audit runs every month (since 2026-11-15)
+
+A scheduled task ("Monthly guide audit", owner's claude.ai account) runs on
+the 1st of each month at 12:42pm New York time, in the `nyc-animal-rescue`
+cloud environment, whose network allows the official sites it checks. It
+re-checks the emergency contacts and the at-a-glance cards against the
+organizations' own sites, compares AmbuVet's after-hours vet list with the
+directory, lists situations no guide covers, and opens a pull request on a
+`guide-audit-YYYY-MM` branch with `docs/guide-audit-YYYY-MM.md`. It never
+merges: the owner does. The first audit's findings (2026-11-15) are in that
+session's report; the open gaps it found are written into the task's prompt.
+
+**Personal contacts are settled; do not reopen them.** People whose consent
+is recorded under `cleared` in `data/privacy-holds.json` stay listed as
+they are; nobody else's personal details are added, ever. Organizations only.
+
 ### Changed 2026-11-15: the redesign is live
 
 Read this first if you were in the middle of something. One commit on `main`
