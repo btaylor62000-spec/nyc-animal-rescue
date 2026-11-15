@@ -126,9 +126,12 @@ export const GUIDES_ORDERED: Guide[] = [
  * panicking finds their situation near the top and nobody has to guess whether
  * a guide exists (dogs were on no home-page card at all in an earlier design,
  * 2026-11-13). The tier is a reading of urgency, not a property of the guide:
- * the at-risk list is under "today" because those animals have about two
- * days, TNR is under "when you have time" because a colony is still there
- * next week.
+ * the at-risk list is "Urgent" because those animals have about two days.
+ *
+ * The titles name the kind of help, not how long the reader can wait
+ * (owner, 2026-11-15): "When you have time" told someone rehoming their
+ * rabbit that their problem could wait. The order still runs most urgent
+ * first, and the keys and colours still carry the urgency.
  *
  * `label` is the short name on the sign. Leave it out and the guide's own
  * title is used. A test fails if a guide is in no tier or in two.
@@ -138,7 +141,7 @@ export type TierKey = 'now' | 'today' | 'week' | 'later';
 export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ slug: string; label?: string }> }> = [
   {
     key: 'now',
-    title: 'Right now',
+    title: 'Emergency',
     lines: [
       { slug: 'animal-emergency', label: 'A pet is hurt, very ill or poisoned' },
       { slug: 'found-an-injured-bird', label: 'Injured bird' },
@@ -151,7 +154,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
   },
   {
     key: 'today',
-    title: 'Today',
+    title: 'Urgent',
     lines: [
       { slug: 'lost-and-found-dog' },
       { slug: 'lost-and-found-cat' },
@@ -161,7 +164,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
   },
   {
     key: 'week',
-    title: 'This week',
+    title: 'Keeping your pet',
     lines: [
       { slug: 'keeping-your-dog' },
       { slug: 'keeping-your-cat' },
@@ -173,7 +176,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
   },
   {
     key: 'later',
-    title: 'When you have time',
+    title: 'Rehoming, rescue and planning',
     lines: [
       { slug: 'starting-tnr' },
       { slug: 'cats-with-special-needs' },
