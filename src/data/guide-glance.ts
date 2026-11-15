@@ -181,6 +181,12 @@ export const GLANCE: Record<string, Glance> = {
     remember: ['If it is happening right now, or an animal or a person is in danger: call 911.'],
     tip: 'Going into hospital yourself? PAWS NY can help care for your pet while you are away.',
   },
+  // The Bronx tile follows driving times measured 2026-11-15 with the public
+  // OSRM route planner from ten Bronx neighbourhoods to every 24-hour hospital
+  // (no traffic): straight-line distance put Astoria first from Fordham, but by
+  // road Yonkers is fastest for the north and west Bronx, Queens for the east,
+  // Astoria and the Upper East Side for the south. The guide's Bronx section
+  // says the same (Emergency tab of the cat workbook).
   'animal-emergency': {
     headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to a 24-hour animal hospital now.',
     action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet' },
@@ -220,8 +226,13 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'I’m in the Bronx', tone: 'today', verdict: 'No Bronx hospital is open all night',
-        do: ['Urgent Vets in the Bronx is open every day, 10am to 10pm.', 'At other times, go to Urgent Vets in Queens, Animal Specialty Center in Yonkers, or a hospital in Manhattan.'],
-        contacts: [{ org: 'urgent-vets-bronx', name: 'Urgent Vets (Bronx)', when: 'Every day, 10am to 10pm' }, { org: 'urgent-vets-11369', name: 'Urgent Vets (Queens)', when: 'Open 24 hours' }],
+        do: [
+          'Riverdale, Kingsbridge, Fordham, Norwood, Wakefield or Co-op City: Animal Specialty Center in Yonkers is usually fastest by road, about 15 to 20 minutes.',
+          'Pelham Bay or Parkchester: Urgent Vets in Queens, by LaGuardia.',
+          'Mott Haven or Hunts Point: URvet Care in Astoria, or the Animal Medical Center or VEG in Manhattan.',
+          'Urgent Vets in the Bronx is open every day, 10am to 10pm. Call on the way: traffic changes everything.',
+        ],
+        contacts: [{ org: 'animal-specialty-center', name: 'Animal Specialty Center (Yonkers)', when: 'Open 24/7 · north and west Bronx' }, { org: 'urgent-vets-11369', name: 'Urgent Vets (Queens)', when: 'Open 24 hours · east Bronx' }, { org: 'urvet-care-astoria', name: 'URvet Care Astoria', when: 'Open 24/7 · south Bronx' }, { org: 'urgent-vets-bronx', name: 'Urgent Vets (Bronx)', when: 'Every day, 10am to 10pm' }],
         section: 'IN THE BRONX',
       },
       {

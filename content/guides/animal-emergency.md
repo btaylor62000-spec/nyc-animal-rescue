@@ -29,6 +29,7 @@ If you think an animal is hurt, very ill or in danger, take it to a 24-hour emer
 
 - No animal hospital in the Bronx is confirmed open 24 hours. Urgent Vets, 3800 E Tremont Ave, (347) 281-9700, is open every day, 10am-10pm.
 - Outside those hours, the nearest hospitals open 24 hours are Urgent Vets in Queens, 32-33 Junction Blvd, (718) 507-5600; Animal Specialty Center in Yonkers, 9 Odell Plaza, (914) 457-4000; and the Manhattan hospitals listed at the end of this page.
+- Which is closest depends on where you are, because the rivers make some straight-line distances misleading. By road, with no traffic (measured 2026-11-15): from Riverdale, Kingsbridge, Fordham, Norwood, Wakefield or Co-op City, Animal Specialty Center in Yonkers is usually fastest, about 13 to 20 minutes; from Pelham Bay or Parkchester, Urgent Vets in Queens, by LaGuardia, about 16 to 19 minutes; from Mott Haven or Hunts Point, URvet Care in Astoria, the Animal Medical Center or VEG on the Upper East Side, about 11 to 15 minutes. Traffic and bridge tolls change this, so ring the hospital on the way.
 
 ## If you are worried about paying
 
