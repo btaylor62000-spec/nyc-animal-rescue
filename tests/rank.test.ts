@@ -35,3 +35,27 @@ test('without a location or an emergency, evidence alone decides', () => {
   const items: Array<[string, Rankable]> = [['Medium', vet({ confidence: 'Medium' })], ['High', vet({})]];
   assert.deepEqual(order(items, {}), ['High', 'Medium']);
 });
+
+// Owner, 2026-11-15: places outside the city never come before places in it,
+// even when they are nearer. They are still listed, after the city ones.
+test('rank: a place in the city comes before a nearer one outside it', async () => {
+  const { rankKey, compareKeys } = await import('../src/data/rank.ts');
+  const fordham = { lat: 40.8615, lon: -73.8905 };
+  const yonkers = { needs: ['emergency-vet'], hours: 'Open 24/7', status: 'active', confidence: 'High', geo: { lat: 40.9312, lon: -73.8987, precision: 'address' as const }, outside: true };
+  const manhattan = { needs: ['emergency-vet'], hours: 'Open 24/7', status: 'active', confidence: 'Medium', geo: { lat: 40.7618, lon: -73.9591, precision: 'address' as const }, outside: false };
+  const ctx = { origin: fordham, emergency: true, now: new Date('2026-11-15T08:00:00Z') };
+  assert.ok(compareKeys(rankKey(manhattan, ctx), rankKey(yonkers, ctx)) < 0);
+  assert.ok(compareKeys(rankKey(manhattan, {}), rankKey(yonkers, {})) < 0);
+});
+
+test('guide listings: places in the city are listed before places outside it', async () => {
+  const { GUIDE_LISTINGS, listingsFor } = await import('../src/data/guide-listings.ts');
+  for (const blocks of Object.values(GUIDE_LISTINGS)) {
+    for (const b of blocks) {
+      if (b.ids) continue;
+      const list = listingsFor(b);
+      const firstOutside = list.findIndex((o) => o.outside_nyc);
+      if (firstOutside >= 0) assert.ok(list.slice(firstOutside).every((o) => o.outside_nyc), `${b.heading}: a city place comes after one outside`);
+    }
+  }
+});

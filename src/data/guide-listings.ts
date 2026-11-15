@@ -155,7 +155,8 @@ export function listingsFor(block: ListingBlock, orgs: Org[] = LISTED_ORGS): Org
     .filter((o) => block.need !== undefined && o.needs.includes(block.need))
     .filter((o) => !block.notCityPantries || !isCityPantry(o))
     .filter((o) => !block.animals || o.animals.length === 0 || block.animals.some((a) => o.animals.includes(a)))
-    .sort((a, b) => CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence] || a.name.localeCompare(b.name));
+    // Places in the city first; outside the city after them (owner, 2026-11-15).
+    .sort((a, b) => Number(a.outside_nyc) - Number(b.outside_nyc) || CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence] || a.name.localeCompare(b.name));
 }
 
 /** The same list in the directory, where it can be ordered by distance. */

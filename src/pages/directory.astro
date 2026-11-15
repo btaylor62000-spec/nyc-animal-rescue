@@ -11,10 +11,12 @@ import { GUIDES } from '../data/guides.ts';
  * JavaScript, removes any loading state, and lets filtering be a DOM pass
  * rather than a re-render.
  *
- * Default order matches the sort the client applies with no query: firmest
- * evidence first, then most recently verified.
+ * Default order matches the sort the client applies with no query: places in
+ * the city first, then firmest evidence, then most recently verified.
  */
 const orgs = [...LISTED_ORGS].sort((a, b) => {
+  // Places in the city first, as the client's ranking does (rank.ts).
+  if (a.outside_nyc !== b.outside_nyc) return a.outside_nyc ? 1 : -1;
   const c = CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence];
   if (c !== 0) return c;
   const av = a.last_verified ?? '';
