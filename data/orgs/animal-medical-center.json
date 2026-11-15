@@ -40,7 +40,13 @@
   "phones": [
     {
       "value": "2128388100",
-      "display": "(212) 838-8100"
+      "display": "(212) 838-8100",
+      "label": "Emergency and main line"
+    },
+    {
+      "value": "2123298608",
+      "display": "(212) 329-8608",
+      "label": "24/7 urgent care hotline: ask the ER staff before you come"
     },
     {
       "value": "2128387053",
@@ -122,6 +128,15 @@
       "evidence_url": "https://www.amcny.org",
       "source": "manual",
       "note": "Added so the listing says what the bird guide and card say."
+    },
+    {
+      "date": "2026-11-15",
+      "field": "phones",
+      "from": null,
+      "to": "(212) 329-8608",
+      "evidence_url": "https://www.amcny.org/pet-owners/specialties/urgent-care/",
+      "source": "manual",
+      "note": "AMC's own urgent care page: '24/7 Urgent Care Hotline. Our experienced ER staff is on hand to answer your questions before you arrive at AMC. Call us 24/7 at 212-329-8608.' Added as a second line; the main line stays first."
     }
   ],
   "privacy_hold": false,

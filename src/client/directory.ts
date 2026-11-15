@@ -29,7 +29,15 @@ interface FilterState {
   zip: string;
   phone: boolean;
   activeOnly: boolean;
+  /**
+   * Any of these needs, from a guide's link only ("a vet or a shelter will scan
+   * a chip"). The filter panel's needs must all match; these need only one.
+   */
+  anyNeed: Set<string>;
 }
+
+/** How many results are drawn at once. All 428 made a page 132,000px tall on a phone. */
+const PAGE = 20;
 
 const form = document.getElementById('filters') as HTMLFormElement | null;
 const list = document.getElementById('results') as HTMLElement | null;
@@ -83,6 +91,9 @@ if (form && list) {
     });
   });
 
+  // Set by a guide's link; cleared with the filters, since the panel cannot show it.
+  let anyNeed = new Set(new URLSearchParams(location.search).getAll('anyneed'));
+
   let index: MiniSearch<SearchRecordLike> | null = null;
   let indexLoading: Promise<void> | null = null;
 
@@ -108,6 +119,7 @@ if (form && list) {
       zip: (data.get('zip') as string | null)?.trim() ?? '',
       phone: data.get('phone') === '1',
       activeOnly: data.get('active') === '1',
+      anyNeed,
     };
   }
 
@@ -120,6 +132,7 @@ if (form && list) {
     ] as const) {
       for (const v of set) params.append(key, v);
     }
+    for (const v of state.anyNeed) params.append('anyneed', v);
     if (state.zip) params.set('zip', state.zip);
     if (state.phone) params.set('phone', '1');
     if (state.activeOnly) params.set('active', '1');
@@ -209,6 +222,7 @@ if (form && list) {
       if (matched && !matched.has(id)) ok = false;
       if (ok && state.animal.size && !hasAll(m.animals, state.animal)) ok = false;
       if (ok && state.need.size && !hasAll(m.needs, state.need)) ok = false;
+      if (ok && state.anyNeed.size && !m.needs.some((n) => state.anyNeed.has(n))) ok = false;
       // Boroughs are an OR: someone in Queens wants anything serving Queens.
       if (ok && state.borough.size) ok = servesBoroughs(m, state.borough);
       if (ok && state.confidence.size && !state.confidence.has(m.confidence)) ok = false;
@@ -264,6 +278,7 @@ if (form && list) {
       visible.sort((a, b) => compareKeys(keys.get(a.id)!, keys.get(b.id)!));
       for (const { m } of visible) list!.appendChild(m.el);
       describeOrder(emergency);
+      page(visible.map((v) => v.m.el), true);
       finish(shown, updateUrl, state);
       return;
     }
@@ -289,8 +304,54 @@ if (form && list) {
       return a.m.order - b.m.order;
     });
     for (const { m } of visible) list!.appendChild(m.el);
+    page(visible.map((v) => v.m.el), true);
     finish(shown, updateUrl, state);
   }
+
+  // --- paging and the landing panel ---------------------------------------------
+  // Twenty at a time, then "Show more". And with nothing asked yet, no list at
+  // all: whatever was "best evidenced" (the at-risk list, a dogfighting tip
+  // line) is not what anyone came for, so the page asks what they need first.
+  const moreBtn = document.getElementById('show-more') as HTMLButtonElement | null;
+  const landing = document.getElementById('need-picker');
+  const browseBtn = document.getElementById('browse-all') as HTMLButtonElement | null;
+  let ordered: HTMLElement[] = [];
+  let limit = PAGE;
+  let browsing = false;
+
+  function asked(): boolean {
+    const p = new URLSearchParams(location.search);
+    return browsing || Boolean(searchInput?.value.trim()) || origin !== null ||
+      anyNeed.size > 0 || ['animal', 'borough', 'need', 'confidence', 'zip', 'phone', 'active'].some((k) => p.has(k)) ||
+      !!form!.querySelector('input:checked') || Boolean((form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim());
+  }
+
+  function page(els: HTMLElement[], reset: boolean): void {
+    ordered = els;
+    if (reset) limit = PAGE;
+    const open = asked();
+    if (landing) landing.hidden = open;
+    list!.hidden = !open;
+    const bar = document.querySelector<HTMLElement>('.results-bar');
+    if (bar) bar.hidden = !open;
+    els.forEach((el, i) => { el.hidden = i >= limit; });
+    if (moreBtn) {
+      const left = els.length - limit;
+      moreBtn.hidden = !open || left <= 0;
+      moreBtn.textContent = `Show ${Math.min(PAGE, left)} more (${left} not shown yet)`;
+    }
+  }
+  moreBtn?.addEventListener('click', () => {
+    const first = ordered[limit];
+    limit += PAGE;
+    page(ordered, false);
+    first?.querySelector<HTMLElement>('a')?.focus();
+  });
+  browseBtn?.addEventListener('click', () => {
+    browsing = true;
+    page(ordered, true);
+    list!.querySelector<HTMLElement>('li:not([hidden]) a')?.focus();
+  });
 
   // A search that names a situation gets the guide for it above the
   // organizations: the steps first, then who to call.
@@ -355,6 +416,7 @@ if (form && list) {
 
   document.getElementById('clear-filters')?.addEventListener('click', () => {
     form.reset();
+    anyNeed = new Set();
     if (searchInput) searchInput.value = '';
     void run();
   });
@@ -558,5 +620,19 @@ if (form && list) {
   window.setInterval(refreshOpenTags, 60_000);
 
   applyUrlToForm();
-  void run(false);
+  void run(false).then(() => {
+    // Arrived from a guide's "nearest" link, or with filters already chosen: on
+    // a phone the intro and search box pushed the first result below the
+    // middle of the screen, so go straight to the results.
+    const params = new URLSearchParams(location.search);
+    const bar = document.querySelector<HTMLElement>('.results-bar');
+    if (params.get('near') === '1') {
+      bar?.classList.add('results-bar--ask');
+      if (nearNote && !origin) {
+        nearNote.hidden = false;
+        nearNote.textContent = 'To see the closest first, tap “Nearest to me” or type your zip code.';
+      }
+    }
+    if (bar && (params.get('near') === '1' || (narrow.matches && asked()))) bar.scrollIntoView({ block: 'start' });
+  });
 }

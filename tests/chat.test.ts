@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { StreamRedactor, allowedFrom, redact } from '../src/chat/redact.ts';
 import { telHref } from '../src/data/tel.ts';
-import { extractSignals, Retriever, type Corpus } from '../src/chat/retrieve.ts';
+import { extractSignals, primaryNeed, Retriever, type Corpus } from '../src/chat/retrieve.ts';
 import { buildContext } from '../src/chat/system-prompt.ts';
 
 const ORGS = [
@@ -167,4 +167,18 @@ test('a short code dials as itself, a full number gets the country code', () => 
   assert.equal(telHref('988'), 'tel:988');
   assert.equal(telHref('7186776700'), 'tel:+17186776700');
   assert.equal(telHref('8884264435'), 'tel:+18884264435');
+});
+
+/*
+ * Six cards is a screen-size choice, not the whole answer (owner, 2026-11-15:
+ * "free cat food in the Bronx" showed six of over a dozen places, with nothing
+ * saying there were more). The link to the rest must follow the question's
+ * real need: "free" also matches low-cost vets, and food is what was asked.
+ */
+test('a list question knows how many places match, for the "see all" link', () => {
+  const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
+  const signals = extractSignals('where can I get free cat food in the Bronx');
+  assert.equal(primaryNeed(signals.needs, signals.abuse), 'food-assistance');
+  const count = new Retriever(corpus).countMatching('food-assistance', signals.animals, signals.boroughs);
+  assert.ok(count > 6, `only ${count} places for cat food in the Bronx`);
 });

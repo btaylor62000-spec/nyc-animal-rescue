@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.9473,
-    "lon": -74.0702,
-    "precision": "zip"
+    "lat": 40.9308609,
+    "lon": -74.0713195,
+    "precision": "address"
   },
   "address": {
     "street": "141 State Route 17",

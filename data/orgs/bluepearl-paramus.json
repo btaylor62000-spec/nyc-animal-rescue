@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.9473,
-    "lon": -74.0702,
-    "precision": "zip"
+    "lat": 40.9577093,
+    "lon": -74.0757081,
+    "precision": "address"
   },
   "address": {
     "street": "545 Route 17 S",

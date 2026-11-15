@@ -163,6 +163,17 @@ if (form && input && log) {
     return card.boroughs.map((b) => names[b] ?? b).join(', ');
   }
 
+  /** "6 of 14 shown": the cards are a short list, and the directory has the rest. */
+  function renderMore(more: { count: number; href: string }, shown: number): void {
+    const p = document.createElement('p');
+    p.className = 'chat__more';
+    const a = document.createElement('a');
+    a.href = more.href;
+    a.textContent = `See all ${more.count} in the directory →`;
+    p.append(`These are ${shown} of ${more.count} places that match. `, a);
+    log!.append(p);
+  }
+
   function renderCards(cards: ChatCard[]): void {
     if (!cards.length) return;
     const list = document.createElement('ul');
@@ -379,6 +390,7 @@ if (form && input && log) {
 
           if ('cards' in event) {
             renderCards(event.cards);
+            if (event.more) renderMore(event.more, event.cards.length);
             continue;
           }
           if ('t' in event) {

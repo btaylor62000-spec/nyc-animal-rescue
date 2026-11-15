@@ -16,7 +16,7 @@
  *      anyone asked.
  */
 import corpusData from '../../data/chat-corpus.json';
-import { Retriever, type Corpus } from '../../src/chat/retrieve.ts';
+import { Retriever, primaryNeed, type Corpus } from '../../src/chat/retrieve.ts';
 import { SYSTEM_PROMPT, buildContext } from '../../src/chat/system-prompt.ts';
 import { StreamRedactor, allowedFrom } from '../../src/chat/redact.ts';
 import { LIMITS, type ChatCard, type ChatEvent, type ChatRequest } from '../../src/chat/protocol.ts';
@@ -175,7 +175,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       const straight = miles === null ? null : `${r.geo!.precision === 'zip' ? 'about ' : ''}${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi`;
       // Driving time first where measured: it is what decides where to go.
       const distance = mins !== undefined ? `${driveLabel(mins)}${straight ? ` · ${straight}` : ''}` : straight;
-      const openNow = takesEmergencies(r) ? openLabel(openState(r.hours, now), now) : null;
+      // Open with no closing time is open around the clock. It used to show
+      // nothing at all, so a 24-hour hospital looked like one whose hours were
+      // unknown, beside a daytime vet labelled "Open now".
+      const st = takesEmergencies(r) ? openState(r.hours, now) : null;
+      const openNow = st ? (st.state === 'open' && st.until === null ? 'Open 24 hours' : openLabel(st, now)) : null;
       return [r.id, { distance, openNow }] as const;
     }),
   );
@@ -199,6 +203,13 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     openNow: extras.get(o.id)?.openNow ?? null,
   }));
 
+  // Six cards is a choice made for a phone screen, not a statement that only
+  // six places exist. "Free cat food in the Bronx" matches over a dozen; a
+  // reader shown six and nothing else would reasonably believe that is all
+  // (owner, 2026-11-15). Emergencies are left alone: the nearest open hospital
+  // is the answer there, not a longer list.
+  const more = moreLink(retrieved, cards.length);
+
   const history = (body.history ?? [])
     .slice(-LIMITS.maxHistoryTurns)
     .filter((m) => typeof m.content === 'string' && m.content.length <= LIMITS.maxMessageChars * 2);
@@ -219,7 +230,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
       // Cards first: real, verified contacts reach the reader before any
       // generated text does, so the useful part does not wait on the model.
-      send({ cards, guide: retrieved.guide ? { slug: retrieved.guide.slug, title: retrieved.guide.title } : null });
+      send({ cards, guide: retrieved.guide ? { slug: retrieved.guide.slug, title: retrieved.guide.title } : null, more });
 
       // Ask the model only after the cards are out. If the daily allocation is
       // exhausted or the model is unreachable, the reader has already been
@@ -314,3 +325,17 @@ export const onRequest: PagesFunction<Env> = async (ctx) => {
     headers: { allow: 'POST', 'content-type': 'text/plain; charset=utf-8' },
   });
 };
+
+/** The directory, filtered the way the question was, when it lists more than the cards. */
+function moreLink(retrieved: ReturnType<ReturnType<typeof getRetriever>['retrieve']>, shown: number): { count: number; href: string } | null {
+  const { signals } = retrieved;
+  const need = primaryNeed(signals.needs, signals.abuse);
+  if (!need || signals.emergency) return null;
+  const count = getRetriever().countMatching(need, signals.animals, signals.boroughs);
+  if (count <= shown) return null;
+  const params = new URLSearchParams({ need });
+  for (const a of signals.animals.slice(0, 1)) params.append('animal', a);
+  if (signals.zips[0]) params.set('zip', signals.zips[0]);
+  else for (const b of signals.boroughs) params.append('borough', b);
+  return { count, href: `/directory?${params}` };
+}

@@ -84,8 +84,8 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 214 |
-| Medium | 166 |
+| High | 216 |
+| Medium | 164 |
 | Low | 65 |
 
 ### By operating status
@@ -343,7 +343,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Keeping your pet if you are losing your home | 5929 |
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15825 |
 | Reporting animal abuse or neglect | 6987 |
-| Animal emergencies and poison control | 3721 |
+| Animal emergencies and poison control | 5129 |
 | Low-cost clinics and trap banks | 3589 |
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |

@@ -656,6 +656,15 @@
           "evidence_url": "https://www.amcny.org",
           "source": "manual",
           "note": "Added so the listing says what the bird guide and card say."
+        },
+        {
+          "date": "2026-11-15",
+          "field": "phones",
+          "from": null,
+          "to": "(212) 329-8608",
+          "evidence_url": "https://www.amcny.org/pet-owners/specialties/urgent-care/",
+          "source": "manual",
+          "note": "AMC's own urgent care page: '24/7 Urgent Care Hotline. Our experienced ER staff is on hand to answer your questions before you arrive at AMC. Call us 24/7 at 212-329-8608.' Added as a second line; the main line stays first."
         }
       ],
       "notes": "510 East 62nd St (between FDR Drive and York Ave), New York, NY 10065. Open 24 hours; New York City's largest specialty and emergency animal hospital. Emergency (212) 838-8100; appointments (212) 838-7053. Its emergency room takes critically ill birds (confirmed by the owner with AMC by phone, 2026-11-15); NYC Bird Alliance's list names it for raptors and waterfowl and asks callers to say NYC Bird Alliance sent them.\n\nHelp paying (read on its financial assistance page, 2026-11-10): AMC has its own funds for people who cannot afford treatment there, for any animal: Charlie's Patient Assistance Fund (free or reduced-cost emergency care), the Buddy Fund (cancer), the Monty and Minny Fund (rehabilitation), SAVE (owners 65 and over), the Honey Bunny and Rou Fund (rabbits and German Shepherds), the Kiki White Umbrella Cockatoo Avian Fund (birds), and free care for active guide dogs. An AMC vet must see the animal first, you must live in New York, New Jersey or Connecticut, and the application must reach AMC within 5 business days of treatment starting, so ask as soon as you arrive. Its Client Services Managers can also set up a payment plan for what a fund does not cover. Email funds@amcny.org.",
@@ -663,6 +672,22 @@
         {
           "url": "https://www.amcny.org/financial-assistance/",
           "label": "Financial assistance"
+        }
+      ],
+      "phones": [
+        {
+          "value": "2128388100",
+          "display": "(212) 838-8100",
+          "label": "Emergency and main line"
+        },
+        {
+          "value": "2123298608",
+          "display": "(212) 329-8608",
+          "label": "24/7 urgent care hotline: ask the ER staff before you come"
+        },
+        {
+          "value": "2128387053",
+          "display": "(212) 838-7053"
         }
       ]
     },
@@ -7511,7 +7536,7 @@
       "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-10",
+      "last_verified": "2026-11-15",
       "hours": "Mon-Sun 10am-10pm (not 24 hours)",
       "change_log": [
         {
@@ -7531,9 +7556,18 @@
           "evidence_url": "https://urgent-vets.com",
           "source": "manual",
           "note": "The old notes gave different hours (Sun-Wed 12pm-10pm, Thu-Sat 10am-12am) from the hours field and the emergency guide, which follow the reviewer's call of 2026-11-04."
+        },
+        {
+          "date": "2026-11-15",
+          "field": "confidence",
+          "from": "Medium",
+          "to": "High",
+          "evidence_url": "https://urgent-vets.com/",
+          "source": "manual",
+          "note": "Urgent Vets' own site lists Urgent Vets - Bronx, 3800 East Tremont Avenue Store 4, (347) 281-9700, Mon-Sun 10:00 am - 10:00 pm, matching the reviewer's call of 2026-11-04. Its Queens hospital is listed 24 hours."
         }
       ],
-      "confidence": "Medium",
+      "confidence": "High",
       "notes": "3800 E Tremont Ave, Bronx 10465. Extended urgent care, open every day 10am to 10pm, not 24 hours (a reviewer rang on 2026-11-04). No animal hospital in the Bronx is confirmed open 24 hours: at other times, see the 24-hour hospitals in Queens, Manhattan and Yonkers."
     },
     "uri-pals": {

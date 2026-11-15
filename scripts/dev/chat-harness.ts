@@ -38,5 +38,6 @@ for (const line of text.split('\n')) {
   const ev = JSON.parse(line.slice(6));
   if (ev.cards) {
     for (const c of ev.cards) console.log(`${c.name} | ${[c.openNow, c.distance].filter(Boolean).join(' · ') || '-'}`);
+    if (ev.more) console.log(`(${ev.cards.length} of ${ev.more.count} shown; ${ev.more.href})`);
   }
 }

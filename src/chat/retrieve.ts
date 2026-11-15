@@ -405,7 +405,7 @@ const NEED_PRIORITY = [
   'foster',
 ] as const;
 
-function primaryNeed(needs: string[], abuse = false): string | null {
+export function primaryNeed(needs: string[], abuse = false): string | null {
   /*
    * Reporting cruelty outranks the whole list. The phrase "animal abuse" puts
    * `wildlife-rehab` into the needs by way of the word "animal", and that sits
@@ -608,6 +608,19 @@ export class Retriever {
     if (org.outsideNyc && !(ctx.origin && org.geo)) score -= 12;
 
     return score;
+  }
+
+  /**
+   * How many listed places the assistant knows of for a need, an animal and a
+   * borough, counting citywide services, as the directory's filters would.
+   */
+  countMatching(need: string, animals: string[], boroughs: string[]): number {
+    return this.corpus.orgs.filter((o) =>
+      o.status === 'active' &&
+      o.needs.includes(need) &&
+      (animals.length === 0 || animals.some((a) => o.animals.includes(a))) &&
+      (boroughs.length === 0 || o.citywide || boroughs.some((b) => o.boroughs.includes(b))),
+    ).length;
   }
 
   retrieve(question: string, limit = 10, given: RetrieveContext = {}): Retrieved {

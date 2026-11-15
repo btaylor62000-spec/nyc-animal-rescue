@@ -25,6 +25,26 @@ const orgs = [...LISTED_ORGS].sort((a, b) => {
   return a.name.localeCompare(b.name);
 });
 import Icon from '../components/Icon.astro';
+/*
+ * The landing panel: with nothing asked yet, the page asks what the reader
+ * needs instead of opening on whatever is best evidenced (the at-risk list, a
+ * dogfighting tip line), which was nobody's reason for coming. Most urgent
+ * first. "near=1" asks for a place, because each of these is somewhere to go.
+ */
+const PICKS = [
+  { label: 'Emergency vet, open now', href: '/directory?need=emergency-vet&near=1' },
+  { label: 'Hurt or orphaned wildlife', href: '/directory?need=wildlife-rehab&near=1' },
+  { label: 'Lost or found a pet', href: '/directory?need=lost-found' },
+  { label: 'Free pet food', href: '/directory?need=food-assistance&near=1' },
+  { label: 'Help with vet bills', href: '/directory?need=financial-aid' },
+  { label: 'Low-cost vet', href: '/directory?need=low-cost-vet&near=1' },
+  { label: 'Spay or neuter', href: '/directory?need=spay-neuter&near=1' },
+  { label: 'Help keeping your pet', href: '/directory?need=owner-support' },
+  { label: 'Giving up a pet', href: '/directory?need=surrender' },
+  { label: 'Street cats (TNR)', href: '/directory?need=tnr&near=1' },
+  { label: 'Adopt or foster', href: '/directory?need=adoption' },
+  { label: 'Training and behaviour', href: '/directory?need=behavior-training' },
+];
 // Topic phrases for every guide, so a search can point at the steps as well
 // as the organizations (src/data/guide-match.ts).
 const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics }) => ({ slug, title, summary, topics })));
@@ -36,15 +56,16 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
 >
   <div class="wrap">
     <h1>Find help</h1>
-    <p class="muted" style="margin:.25rem 0 .75rem">
-      Kept up to date by the people who use it. If a number is wrong or a place has closed, use <strong>Report a problem</strong> on its listing.
-      Missing something? <a href="/contribute">Add a resource</a>.
-    </p>
-    <p class="lede">
-      Every rescue, clinic, hotline and rehabilitator we have, filterable by borough,
-      animal and what you need.
-    </p>
     <SearchBox label="Search every resource" action="/directory" />
+
+    <nav id="need-picker" class="need-picker" aria-labelledby="need-picker-title">
+      <h2 id="need-picker-title" class="need-picker__title">What do you need?</h2>
+      <ul class="need-picker__list">
+        {PICKS.map((p) => <li><a class="need-picker__pick" href={p.href}>{p.label}</a></li>)}
+      </ul>
+      <button id="browse-all" class="btn btn--ghost" type="button" data-requires-js>Or browse all {orgs.length} resources</button>
+    </nav>
+
 
     <button class="btn filters-toggle" id="filters-toggle" type="button" aria-expanded="false" aria-controls="filters" data-requires-js>
       Show filters
@@ -80,6 +101,8 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
           {orgs.map((org) => <OrgCard org={org} />)}
         </ul>
 
+        <button id="show-more" class="btn show-more" type="button" hidden>Show more</button>
+
         <p id="no-results" hidden class="notice">
           <Icon name="info" size={17} />
           <span>
@@ -91,6 +114,10 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
         </p>
       </section>
     </div>
+    <p class="muted directory-foot">
+      Kept up to date by the people who use it. If a number is wrong or a place has closed, use <strong>Report a problem</strong> on its listing.
+      Missing something? <a href="/contribute">Add a resource</a>.
+    </p>
   </div>
 </Base>
 

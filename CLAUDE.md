@@ -143,6 +143,47 @@ such. The monthly audit checks whether the city has published a procedure.
   because the site has nowhere private for free text (rule 7; its own forms
   commit to the public repository). Answers reach only the owner.
 
+### Also changed 2026-11-15 (fifth round)
+
+- **Card steps link to the nearest places.** A step that sends someone
+  somewhere carries a link into the directory, filtered and asking for a
+  place: "Get it scanned for a chip" opens the nearest vets and shelters.
+  `near=1` on a directory link highlights "Nearest to me" and the zip box
+  (the location is still asked for only when tapped). `anyneed=` (repeatable)
+  matches any of several needs, for links only; the filter panel's needs must
+  all match. New cards: give such steps a `link`.
+- **The directory asks first, then shows 20 at a time.** With nothing asked,
+  it shows "What do you need?" (`PICKS` in `src/pages/directory.astro`) and
+  no list; "Show more" adds 20. About 8,000px on a phone instead of 132,000.
+  Without JavaScript every listing is still on the page.
+- **The phone header is one line**, down to 320px (the red pill drops its
+  disc there).
+- **The assistant says when there are more.** Six cards plus "These are 6 of
+  13 places that match. See all 13 in the directory", filtered by the
+  question's primary need (`primaryNeed`), animal and borough. Not for
+  emergencies. 24-hour hospitals on its cards now say "Open 24 hours"; they
+  used to say nothing, which looked like unknown hours.
+- **Urgent Vets Bronx is confirmed twice:** the reviewer's call on 2026-11-04
+  and its own site on 2026-11-15, both Mon-Sun 10am-10pm. High confidence.
+  It is not a 24-hour vet. Do not list it for re-checking as if it were in
+  doubt.
+- **Getting there without a car** (emergency guide and card): 311's rule that
+  a cab or car service may refuse an animal not in a carrier; Uber Pet and
+  Lyft's Pet rides, with Uber's "availability may vary" and Lyft drivers'
+  opt-out; AmbuVet for an animal too hurt or too big to carry. Pet taxis
+  (Pet Chauffeur and others) are not listed: none could be read on its own
+  site.
+- **"Not sure it's an emergency?"**: VEG's own pages say a vet answers the
+  phone 24 hours; AMC's 24/7 urgent care line, (212) 329-8608, from its own
+  page (added to the AMC record); AmbuVet's 24/7 video call with a vet
+  technician, who in its words "cannot diagnose or prescribe". National video
+  services (VetTriage, Vetster, Airvet) are not listed: VetTriage's site never
+  names New York, Vetster's terms say it is not for emergencies, Airvet could
+  not be read.
+- **Paramus hospitals** are placed from the coordinates on their own pages
+  (the Census geocoder cannot read Route 17 addresses); drive times re-run.
+  **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
+
 ### A guide audit runs every month (since 2026-11-15)
 
 A scheduled task ("Monthly guide audit", owner's claude.ai account) runs on
@@ -213,14 +254,8 @@ Both pages load. Try each once on a real phone.
 What the redesign did **not** fix, all measured on a phone on 2026-11-13 and
 still true:
 
-- The directory renders every listing on one page (about 132,000px tall on a
-  phone), and the first result is below the first screen's midpoint, under
-  the intro, the search box and the sort controls.
-- With no search and no location, the directory's first results are whatever
-  is best evidenced (the at-risk list, a dogfighting tip line), not what the
-  reader came for.
-- The header on a phone wraps "NYC Animal Rescue" onto two lines beside the E
-  button. It fits; it is not elegant.
+- (Fixed in the fifth round, 2026-11-15: the 132,000px directory, its
+  arbitrary first results, and the header wrapping on a phone.)
 - The typeface is still Inter. A face made for signage would suit the design
   better, but it is another file to download on a weak connection, and the
   owner has not been asked to approve one.

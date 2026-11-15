@@ -15,8 +15,17 @@ If you think an animal is hurt, very ill or in danger, take it to an emergency v
 
 - Every emergency hospital in and near the city, open now and nearest to you first: [Find help](/directory?need=emergency-vet)
 - The same hospitals, with their numbers, are listed at the end of this page.
-- Hours change. Ring before you set off, even to a hospital listed as open 24 hours.
+- Hours change. If you can, ring while you travel, even to a hospital listed as open 24 hours. Don't wait to get through before you leave.
 - If you cannot get the animal there yourself, AmbuVet runs a 24-hour pet ambulance: (800) 262-8838. Ring the hospital you are going to before the pickup.
+- No car? A cat or small dog in a carrier can ride in a yellow cab or car service. 311 says a driver may refuse an animal that is not in a carrier, https://portal.311.nyc.gov/article/?kanumber=KA-03372 . A service animal does not need a carrier.
+- Uber and Lyft both have a pet option in their apps: Uber Pet, https://www.uber.com/us/en/ride/uber-pet/ , and Lyft's Pet rides, https://www.lyft.com/blog/posts/lyft-celebrates-national-dog-day-with-launch-of-pet-rides . Uber says availability varies by location, and Lyft drivers can opt out. If no car comes quickly, take a cab or call AmbuVet.
+
+## Not sure if it is an emergency?
+
+- If it is clearly an emergency, don't wait for advice: go now.
+- Ring an emergency vet and ask. VEG (Veterinary Emergency Group) says you can call any of its hospitals and speak with a veterinarian 24 hours a day.
+- The Animal Medical Center's 24/7 urgent care hotline, (212) 329-8608, is answered by its emergency room staff, who can answer questions before you come.
+- AmbuVet offers a video call, 24 hours a day, with a licensed veterinary technician, https://www.ambuvet.com/video_consult.html . In its words: “While we cannot diagnose or prescribe, we can certainly take a look at your pet through video to advise on whether or not you are experiencing an emergency”. Book it on AmbuVet's number, (800) 262-8838.
 
 ## If it swallowed or touched something toxic: ring poison control first
 

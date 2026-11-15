@@ -31,7 +31,16 @@ export interface ChatCard {
 }
 
 export type ChatEvent =
-  | { cards: ChatCard[]; guide?: { slug: string; title: string } | null }
+  | {
+      cards: ChatCard[];
+      guide?: { slug: string; title: string } | null;
+      /**
+       * When more places match than the cards show: how many the assistant
+       * knows of, and the directory filtered to the same need, animal and
+       * borough, which lists them all (and the unconfirmed ones it leaves out).
+       */
+      more?: { count: number; href: string } | null;
+    }
   | { t: string }
   | { done: true }
   | { error: string; degraded?: boolean };

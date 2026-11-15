@@ -99,9 +99,9 @@
   },
   "bluepearl-paramus": {
    "query": "545 Route 17 S, Paramus, NJ 07652",
-   "lat": null,
-   "lon": null,
-   "matched": null
+   "lat": 40.9577093,
+   "lon": -74.0757081,
+   "matched": "coordinates published on https://bluepearlvet.com/hospital/paramus-nj/ (the Census geocoder cannot read Route 17 addresses), read 2026-11-15"
   },
   "bluepearl-queens": {
    "query": "107-28 71st Rd, Queens, NY 11375",
@@ -531,9 +531,9 @@
   },
   "veg-paramus": {
    "query": "141 State Route 17, Paramus, NJ 07652",
-   "lat": null,
-   "lon": null,
-   "matched": null
+   "lat": 40.9308609,
+   "lon": -74.0713195,
+   "matched": "coordinates published on https://www.veg.com/locations/new-jersey/paramus (the Census geocoder cannot read Route 17 addresses), read 2026-11-15"
   },
   "veg-princeton": {
    "query": "3512 Brunswick Pike, Princeton, NJ 08540",

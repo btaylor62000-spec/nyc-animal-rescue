@@ -49,11 +49,11 @@
   "hours": "Mon-Sun 10am-10pm (not 24 hours)",
   "notes": "3800 E Tremont Ave, Bronx 10465. Extended urgent care, open every day 10am to 10pm, not 24 hours (a reviewer rang on 2026-11-04). No animal hospital in the Bronx is confirmed open 24 hours: at other times, see the 24-hour hospitals in Queens, Manhattan and Yonkers.",
   "type_raw": null,
-  "confidence": "Medium",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-15",
   "section": "Emergency & poison control — BRONX - nearest 24-hour ER",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -80,6 +80,15 @@
       "evidence_url": "https://urgent-vets.com",
       "source": "manual",
       "note": "The old notes gave different hours (Sun-Wed 12pm-10pm, Thu-Sat 10am-12am) from the hours field and the emergency guide, which follow the reviewer's call of 2026-11-04."
+    },
+    {
+      "date": "2026-11-15",
+      "field": "confidence",
+      "from": "Medium",
+      "to": "High",
+      "evidence_url": "https://urgent-vets.com/",
+      "source": "manual",
+      "note": "Urgent Vets' own site lists Urgent Vets - Bronx, 3800 East Tremont Avenue Store 4, (347) 281-9700, Mon-Sun 10:00 am - 10:00 pm, matching the reviewer's call of 2026-11-04. Its Queens hospital is listed 24 hours."
     }
   ],
   "privacy_hold": false,
