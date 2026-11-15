@@ -1,31 +1,31 @@
 ---
 /*
- * When an animal needs help now, in words a 12-year-old can follow.
+ * What to do when an animal needs help now, in a few short sentences a
+ * 12-year-old can follow.
  *
- * Replaced the reviewer's single long sentence on 2026-11-15 at the owner's
- * request: it ran to 60 words with two dashes, and the signs were buried in
- * the middle. The signs are the same ones, as a list. "Caught by another
- * animal, even if you see no wound" stays in bold, because it is the one
- * people get wrong (rule 4 in CLAUDE.md).
+ * Rewritten from scratch by the owner's decision on 2026-11-15, twice: first
+ * the reviewer's single 60-word sentence, then a bulleted list of signs that
+ * was still too much to take in. This version leads with the action, not a
+ * list of symptoms: someone looking at a hurt animal already knows it is hurt.
+ * One sentence per idea, nothing in brackets, no dashes, no jargon
+ * ("rehabilitator"). The bitten-or-caught line stays in bold, because it is
+ * the warning people get wrong (rule 4 in CLAUDE.md).
  *
  * Used in three places so they cannot drift apart: the red band on the home
  * page, the warning on emergency guides, and the assistant page.
  */
 interface Props {
-  /** Leaves out the heading line when the place it sits already says "emergency". */
-  heading?: boolean;
+  /** Where the reader finds help for a wild animal: the list below, or links. */
+  wild?: 'below' | 'links';
 }
-const { heading = true } = Astro.props;
+const { wild = 'links' } = Astro.props;
 ---
 <div class="esigns">
-  {heading && <p class="esigns__lead"><strong>Is an animal hurt, very sick or in danger? Get help now.</strong></p>}
-  <p class="esigns__intro">It can’t wait if:</p>
-  <ul>
-    <li>It is bleeding, or can’t breathe well</li>
-    <li>It collapsed, or was hit by a car</li>
-    <li>It ate or touched something poisonous</li>
-    <li><strong>Another animal caught or bit it, even if you see no wound</strong></li>
-    <li>Anything else about it scares you</li>
-  </ul>
-  <p>Take a pet to a 24-hour vet. For a wild animal, call a wildlife rehabber. A rescue group can’t help fast enough. Not sure? Call a 24-hour vet and ask. Call before you go, so they are ready for you.</p>
+  <p class="esigns__lead">Is an animal badly hurt or very sick?</p>
+  <p>Take it to a 24-hour animal hospital now. Call on the way so they can get ready.</p>
+  <p><strong>If another animal bit it or caught it, go now, even if you can’t see a wound.</strong></p>
+  <p>Not sure? Call a 24-hour animal hospital and ask.</p>
+  {wild === 'below'
+    ? <p>Found a hurt wild animal or bird? Pick it from the list below.</p>
+    : <p>Found a hurt wild animal or bird? <a href="/guides/found-an-injured-bird">Birds</a> · <a href="/guides/found-wildlife">Other wild animals</a></p>}
 </div>

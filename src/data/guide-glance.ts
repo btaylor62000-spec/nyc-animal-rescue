@@ -114,6 +114,23 @@ const CITY = 'nyc-311';
 
 export const GLANCE: Record<string, Glance> = {
 
+  'animal-trapped': {
+    headline: 'If a trapped animal is in danger right now, call 911. If it is not, call 311.',
+    contacts: [
+      { dial: '911', when: 'Trapped and in danger right now' },
+      { org: CITY, when: 'Not in danger right now · strays: 10am to 6pm' },
+      { org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'How to find a licensed wildlife control company' },
+    ],
+    steps: [
+      { title: 'In danger right now? Call 911', text: 'Stuck in a drain, under a train, in a car engine or on a ledge. Say exactly where it is and what animal it is.' },
+      { title: 'Don’t go in after it', text: 'Stay off subway tracks and out of drains, and don’t climb onto a ledge. Wait for help.' },
+      { title: 'Not in danger right now? Call 311', text: 'For a stray dog or cat, ACC takes reports 10am to 6pm. In a park, 311 sends it to NYC Parks.' },
+      { title: 'A wild animal living in your walls or chimney?', text: 'Hire a licensed wildlife control company. First take away any food that draws it in.' },
+    ],
+    never: ['Do not go onto subway tracks, into a drain or onto a ledge yourself: call 911.'],
+    tip: 'No city page covers trapped animals. In rescues reported in the news, the NYPD’s Emergency Service Unit came after a call to the police.',
+  },
+
   'found-kittens-outside': {
     headline: 'Kittens do best with their mother. Unless they are hurt, wait and watch for her first.',
     contacts: [
@@ -182,17 +199,51 @@ export const GLANCE: Record<string, Glance> = {
     never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
     remember: ['Lilies are deadly to cats even in tiny amounts (a lick of pollen).'],
     tip: 'In the Bronx, no animal hospital is confirmed open 24 hours. The full guide lists the nearest ones that are.',
+    situations: [
+      {
+        label: 'It ate or touched something poisonous', tone: 'now', verdict: 'Call poison control first',
+        do: ['Call ASPCA Animal Poison Control or the Pet Poison Helpline. Both are open 24/7.', 'They work out the treatment and tell the hospital, which saves time.'],
+        never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
+        contacts: [{ org: POISON, name: 'ASPCA Animal Poison Control', when: '24/7' }, { org: 'pet-poison-helpline-24-7-hotline', name: 'Pet Poison Helpline', when: '24/7' }],
+        section: 'IF IT SWALLOWED OR TOUCHED SOMETHING TOXIC: RING POISON CONTROL FIRST',
+      },
+      {
+        label: 'Another dog attacked my dog', tone: 'now', verdict: 'Go to a vet now',
+        do: ['Take your dog to a 24-hour animal hospital now, even if you can’t see a wound.', 'Get the other owner’s name, address and phone number.', 'Was a person bitten too? Wash the bite, see a doctor, and report it to the Health Department through 311.', 'If the dog is still a danger to people, call 911.'],
+        contacts: [{ dial: '911', when: 'The dog is still a danger to people' }, { org: CITY, when: 'Report a bite to a person' }],
+      },
+      {
+        label: 'I can’t get it there myself', tone: 'now', verdict: 'Call a pet ambulance',
+        do: ['AmbuVet runs a 24-hour pet ambulance.', 'Call the hospital you are going to before the pickup.'],
+        contacts: [{ org: 'ambuvet-pet-ambulance', name: 'AmbuVet', when: '24 hours' }],
+        section: 'FIND THE NEAREST HOSPITAL OPEN NOW',
+      },
+      {
+        label: 'I’m in the Bronx', tone: 'today', verdict: 'No Bronx hospital is open all night',
+        do: ['Urgent Vets in the Bronx is open every day, 10am to 10pm.', 'At other times, go to Urgent Vets in Queens, Animal Specialty Center in Yonkers, or a hospital in Manhattan.'],
+        contacts: [{ org: 'urgent-vets-bronx', name: 'Urgent Vets (Bronx)', when: 'Every day, 10am to 10pm' }, { org: 'urgent-vets-11369', name: 'Urgent Vets (Queens)', when: 'Open 24 hours' }],
+        section: 'IN THE BRONX',
+      },
+      {
+        label: 'I’m worried about paying', tone: 'week', verdict: 'Go anyway',
+        do: ['Ask about payment plans when you arrive.', 'At the Animal Medical Center, ask about its funds straight away. You must apply within 5 business days.'],
+        section: 'IF YOU ARE WORRIED ABOUT PAYING',
+      },
+      { label: 'It’s a rabbit, bird, reptile or small pet', tone: 'today', verdict: 'Most vets can’t treat these', do: ['Find a vet who treats your kind of animal.'], href: '/guides/exotic-pet-emergency' },
+      { label: 'It’s trapped and can’t get out', tone: 'now', verdict: 'Call 911 if it is in danger', do: ['See what to do for a trapped animal.'], href: '/guides/animal-trapped' },
+    ],
   },
 
-  // Checked against NYC Bird Alliance's own pages (owner, 2026-11-15): the
-  // Animal Medical Center takes only raptors and waterfowl, so it is never the
-  // answer for a small bird at night; take the towel out of the bag; a nestling
-  // goes back in its nest first.
+  // The Animal Medical Center's 24-hour ER takes critically ill birds: the
+  // owner rang AMC and confirmed it on 2026-11-15. NYC Bird Alliance's list
+  // names AMC for raptors and waterfowl, which is why the big-bird tile still
+  // says to mention NYC Bird Alliance. From NYC Bird Alliance's own pages:
+  // take the towel out of the bag, and a nestling goes back in its nest first.
   'found-an-injured-bird': {
     headline: 'Most hurt birds need a licensed wildlife rescuer (a rehabber) today. Box it, then get it there.',
     contacts: [
       { org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm', note: '565 Columbus Ave, Manhattan. Just walk in, no appointment.' },
-      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · hawks, owls and water birds only', note: 'Say NYC Bird Alliance sent you.' },
+      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · badly hurt birds', note: 'At night, its emergency room takes critically ill birds. Call first.' },
       { org: AHN, name: 'Animal Help Now', when: 'Any time', note: 'Type where the bird is. It lists rehabbers open right now.' },
     ],
     check: {
@@ -205,7 +256,7 @@ export const GLANCE: Record<string, Glance> = {
     steps: [
       { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call.' },
       { title: 'Put it in a closed bag or box', text: 'A paper bag, or a cardboard box with a few small air holes. Take the towel out. Keep it somewhere dark and quiet.' },
-      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed? Use Animal Help Now to find a rehabber open now, or keep the bird boxed in a dark, quiet room and take it in at 9am.' },
+      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Call the Animal Medical Center’s 24-hour emergency room.' },
     ],
     never: [
       'Never give it food or water.',
@@ -218,7 +269,7 @@ export const GLANCE: Record<string, Glance> = {
         label: 'It hit a window', tone: 'now', verdict: 'Needs help today, even if it seems fine',
         do: ['Cover it with a towel and scoop it up.', 'Put it in a closed box with small air holes. Keep it dark and quiet.', 'Take it to a rehabber today. Birds that fly off after hitting a window often die later from shock.'],
         never: ['No heating pad for a bird that hit a window: a warm room is enough.', 'Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
         section: 'How to catch it, box it and keep it calm',
       },
       {
@@ -226,7 +277,7 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Put it in a closed box right away.', 'Get it to a rehabber today. It may need medicine the same day.'],
         remember: ['If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound.'],
         never: ['Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
         section: 'If it was caught or bitten by an animal',
       },
       {
@@ -251,7 +302,7 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'It’s stuck in a glue trap', tone: 'now', verdict: 'Don’t pull it off',
         do: ['Leave it on the trap.', 'Take it to a rehabber just as it is.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AHN, name: 'Animal Help Now', when: 'Finds a rehabber open now' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
         section: 'What to do now, step by step',
       },
     ],
@@ -275,6 +326,7 @@ export const GLANCE: Record<string, Glance> = {
     remember: ['A baby animal on its own is usually not abandoned: its mother may be away for hours.'],
     situations: [
       { label: 'It’s a bird', tone: 'today', verdict: 'Birds have their own guide', do: ['Birds are different: you catch and box them yourself.'], href: '/guides/found-an-injured-bird' },
+      { label: 'It’s stuck or trapped', tone: 'now', verdict: 'Call 911 if it is in danger', do: ['See what to do for a trapped animal.'], href: '/guides/animal-trapped' },
       {
         label: 'A baby squirrel or rabbit', tone: 'ok', verdict: 'Often fine. Watch first.',
         do: ['If it seems healthy and its nest fell, its mother may come back for it. Give her the chance.', 'Hurt, cold, covered in flies, or caught by an animal? It needs a rehabber today.', 'Squirrels: the Wild Bird Fund. Wild baby rabbits: Cottontail Cottage.'],
@@ -506,6 +558,38 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Vet bills?', text: 'There are funds, payment plans and low-cost clinics.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],
     tip: 'Going into hospital or between homes? PAWS NY and Animal Haven can look after your dog for a while.',
+    situations: [
+      {
+        label: 'I need food for my dog', tone: 'week', verdict: 'Free pet food is available',
+        do: ['The city gives free dog and cat food at 22 food pantries. The food is new, so ring before you go.', 'ACC may also give food and supplies. Ask when you call.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Food and supplies · ask' }],
+        section: 'PET FOOD PANTRIES (specific programs)',
+      },
+      { label: 'I can’t afford the vet', tone: 'week', verdict: 'Funds and payment plans', do: ['See every way to get help with a vet bill.'], href: '/guides/help-paying-for-care' },
+      {
+        label: 'My dog has a behaviour problem', tone: 'week', verdict: 'Most problems can be fixed',
+        do: ['ACC’s Community Pets programme gives free dog training, in person or by video.', 'Bideawee offers training help and advice.'],
+        section: 'BEHAVIOR SUPPORT (a common, workable reason owners seek help)',
+      },
+      {
+        label: 'I’m going into hospital, or losing my home', tone: 'today', verdict: 'Short-term care exists',
+        do: ['PAWS NY helps people in hospital or rehab care for their pets.', 'Animal Haven offers short-term boarding in a crisis. Space is limited.', 'Losing your home? See the guide on keeping your pet if you lose your home.'],
+        contacts: [{ org: 'paws-ny', name: 'PAWS NY', when: 'Hospital respite' }, { org: 'animal-haven-community-engagement', name: 'Animal Haven', when: 'Short-term boarding' }],
+        section: 'TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment',
+      },
+      {
+        label: 'My landlord says no pets', tone: 'week', verdict: 'Get help before you give up your dog',
+        do: ['ACC helps with landlord problems, including NYCHA.', 'For free legal help, call 311 and ask for tenant legal services.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Landlord and NYCHA help' }],
+        section: 'HOUSING SUPPORT',
+      },
+      {
+        label: 'I have to give up my dog', tone: 'today', verdict: 'Talk to ACC first',
+        do: ['Email admissions@nycacc.org or call ACC. Fill in its questionnaire, and a counsellor contacts you within about 3 days.', 'ACC may be able to help you keep your dog after all.', 'To find a new home yourself, ACC’s Rehoming Your Pet page has tools.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Owner support and surrender' }],
+        section: 'ACC OWNER SUPPORT',
+      },
+    ],
   },
 
   'keeping-your-cat': {
@@ -522,6 +606,32 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Vet bills?', text: 'There are funds, payment plans and low-cost clinics.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],
     tip: 'Need to rehome your cat yourself? ACC’s rehoming tools are often less stressful for a cat than a shelter.',
+    situations: [
+      {
+        label: 'I need food for my cat', tone: 'week', verdict: 'Free pet food is available',
+        do: ['The city gives free dog and cat food at 22 food pantries. The food is new, so ring before you go.', 'ACC may also give food and supplies. Ask when you call.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Food and supplies · ask' }],
+        section: 'PET FOOD PANTRIES (specific programs)',
+      },
+      { label: 'I can’t afford the vet', tone: 'week', verdict: 'Funds and payment plans', do: ['See every way to get help with a vet bill.'], href: '/guides/help-paying-for-care' },
+      {
+        label: 'My cat has a behaviour problem', tone: 'week', verdict: 'Most problems can be fixed',
+        do: ['See a vet first: a sudden change, like not using the litter box, is often a health problem.', 'Then email the free National Cat Behavior Helpline at felinehelpline@gmail.com.'],
+        section: 'BEHAVIOR / SOCIALIZATION - part B: OWNED-cat problems (these are the #1 surrender triggers - solvable!)',
+      },
+      {
+        label: 'I’m going into hospital, or losing my home', tone: 'today', verdict: 'Short-term care exists',
+        do: ['PAWS NY helps people in hospital or rehab care for their pets.', 'Animal Haven offers short-term boarding in a crisis. Space is limited.', 'Losing your home? See the guide on keeping your pet if you lose your home.'],
+        contacts: [{ org: 'paws-ny', name: 'PAWS NY', when: 'Hospital respite' }, { org: 'animal-haven-community-engagement', name: 'Animal Haven', when: 'Short-term boarding' }],
+        section: 'TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition',
+      },
+      {
+        label: 'I have to give up my cat', tone: 'today', verdict: 'Talk to ACC first',
+        do: ['Email CommunityPets@nycacc.org or call ACC. Ask about its help to keep your cat at home first.', 'Rehoming your cat yourself is often less stressful for it than a shelter. Ask ACC about its Rehoming Your Pet tools.'],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Owner support and surrender' }],
+        section: 'ACC OWNER SUPPORT / SURRENDER PREVENTION',
+      },
+    ],
   },
 
   'keep-your-pet-if-you-lose-your-home': {
@@ -725,7 +835,7 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Plan for the long term', text: 'Parrots can live 30 to 80 years and often outlive their owners. Name someone to care for your pet, and think about a pet trust.' },
       { title: 'Pack a disaster kit', text: 'A carrier, a heat source with a battery pack, several days of food, medicine and vet records.' },
     ],
-    never: ['do NOT DIY a beak or a rabbit\'s teeth'],
+    never: ['do not DIY a beak or a rabbit\'s teeth'],
     remember: ['overgrown rabbit teeth are a medical emergency, not a grooming task'],
   },
 

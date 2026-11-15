@@ -1480,9 +1480,7 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .guide-body h2 { scroll-margin-top: 5rem; }
 
 /* When an animal needs help now (EmergencySigns.astro): the signs as a short list. */
-.esigns > * { margin: 0 0 0.6rem; max-width: 62ch; line-height: 1.45; }
-.esigns ul { padding-left: 1.2rem; display: grid; gap: 0.25rem; }
-.esigns__lead { font-size: 1.08rem; }
-.esigns__intro { margin-bottom: 0.25rem; font-weight: 700; }
+.esigns > * { margin: 0 0 0.55rem; max-width: 62ch; line-height: 1.45; }
+.esigns__lead { font-size: 1.15rem; font-weight: 800; }
 .notice--urgent .esigns + p { margin: 0; }
 .eband__more .esigns { font-size: 1rem; }

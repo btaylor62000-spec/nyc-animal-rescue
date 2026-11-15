@@ -121,6 +121,10 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     { heading: 'Something online', ids: ['fbi-tips', 'fbi-internet-crime-complaint-center'] },
     { heading: 'If people are at risk too', ids: ['nyc-domestic-violence-hotline', 'uri-pals'] },
   ],
+  'animal-trapped': [
+    { heading: 'Who to call', ids: ['nyc-311', 'animal-care-centers-of-nyc', 'nys-dec-region-2'] },
+    { heading: 'Emergency and urgent-care vets', need: 'emergency-vet' },
+  ],
   'animal-left-alone': [
     { heading: 'Who to call', ids: ['nyc-311', 'animal-care-centers-of-nyc', 'your-local-nypd-precinct'] },
     { heading: 'Somewhere safe for a pet meanwhile', need: 'boarding' },

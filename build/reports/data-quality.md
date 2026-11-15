@@ -4,9 +4,9 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **441** organizations after de-duplication
+- **445** organizations after de-duplication
 - **78** duplicate clusters merged
-- **27** guide pages generated
+- **28** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -17,8 +17,8 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 324 |
-| dog | 261 |
+| cat | 328 |
+| dog | 265 |
 | rabbit | 45 |
 | bird-companion | 42 |
 | wildlife | 42 |
@@ -45,7 +45,7 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 | surrender | 60 |
 | referral | 59 |
 | low-cost-vet | 57 |
-| emergency-vet | 45 |
+| emergency-vet | 49 |
 | advocacy | 36 |
 | food-assistance | 35 |
 | colony-care | 35 |
@@ -84,15 +84,15 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| High | 211 |
-| Medium | 165 |
+| High | 214 |
+| Medium | 166 |
 | Low | 65 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 423 |
+| active | 427 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -334,6 +334,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 16932 |
+| An animal is trapped | 2984 |
 | Found kittens outside | 2106 |
 | When a pet dies | 2269 |
 | An animal left alone in a home | 2558 |
@@ -346,8 +347,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost clinics and trap banks | 3589 |
 | Community cats, colonies and starting TNR | 7469 |
 | Cats needing specialist help | 6511 |
-| Lost or found a cat | 7530 |
-| Help keeping your cat | 5748 |
+| Lost or found a cat | 4444 |
+| Help keeping your cat | 8834 |
 | Help keeping your dog | 8070 |
 | Low-cost vet care, spay/neuter and dog licensing | 7480 |
 | Dog behaviour, training and legal questions | 6166 |

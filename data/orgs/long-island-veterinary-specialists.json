@@ -1,0 +1,64 @@
+{
+  "id": "long-island-veterinary-specialists",
+  "name": "Long Island Veterinary Specialists (Plainview)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Plainview, Long Island (Nassau County) - outside NYC",
+  "zips": [
+    "11803"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "5165011700",
+      "display": "(516) 501-1700"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.livs.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.7818,
+    "lon": -73.4731,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "163 S Service Rd",
+    "city": "Plainview",
+    "zip": "11803"
+  },
+  "hours": "Open 24/7",
+  "notes": "163 S Service Rd, Plainview, NY 11803. A 24-hour emergency, trauma and specialty hospital. Outside the city, in Nassau County.",
+  "type_raw": "Emergency and specialty vet hospital, open 24/7",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.livs.org"
+  ],
+  "last_verified": "2026-11-15",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

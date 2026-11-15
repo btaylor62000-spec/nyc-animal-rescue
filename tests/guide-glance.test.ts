@@ -131,7 +131,7 @@ test('"Read why" on a situation lands on a heading that exists in the guide', ()
     const ids = [...guide.body.matchAll(/^## (.+)$/gm)].map((m) => headingId(m[1]!));
     for (const s of GLANCE[guide.slug]!.situations ?? []) {
       if (s.section) assert.ok(ids.includes(headingId(s.section)), `${guide.slug}: no heading "${s.section}"`);
-      assert.ok(s.section || s.href, `${guide.slug}: "${s.label}" leads nowhere`);
+      assert.ok(s.do.length > 0, `${guide.slug}: "${s.label}" says nothing`);
     }
   }
 });

@@ -29,7 +29,7 @@ Why a separate list: most general small-animal vets do NOT treat rabbits, birds,
 - Vinegar Hill Veterinary Group, 57 Front St, Unit 101, Brooklyn (DUMBO) 11201 - (718) 797-6875 - Mon-Fri 8am-8pm, Sat-Sun 10am-5pm (2nd location in Brooklyn Heights); vhvetgroup.com. A full-service clinic with the equipment and expertise to treat exotic & avian species (incubators, oxygen therapy, nebulization) alongside cats/dogs; sees guinea pigs, turtles, hedgehogs and birds, and treats some WILDLIFE by appointment (Drs. Neumann & Adelman). The most convenient exotics-capable full-service option in Brooklyn.
 - BluePearl and other regional emergency hospitals list exotic capability unevenly - always phone first to confirm an exotics-capable clinician is on that shift.
 
-## Poison control (exotics are highly sensitive - lilies, avocado, teflon fumes, many houseplants can be fatal):
+## Poison control (exotics are highly sensitive - lilies, avocado, Teflon fumes, many houseplants can be fatal):
 
 - ASPCA Animal Poison Control Center: (888) 426-4435 - 24/7. aspca.org/pet-care/animal-poison-control.
 - Pet Poison Helpline: (855) 764-7661 - 24/7.

@@ -11,7 +11,7 @@ _The first hours matter most. Where to look, who to call, and how microchips hel
 
 Act FAST - most reunions happen when owners move quickly. A microchip only works if it's REGISTERED and current.
 
-## LOST A DOG - do all of these NOW
+## Lost a dog - do all of these now
 
 - 1. Check ACC first: search + file a LOST report at nycacc.org/services/lost-and-found - ACC takes in found pets citywide; your dog could already be there. Also call ACC (212) 788-4000.
 - 2. Report + search on Petco Love Lost (FREE, uses facial recognition): petcolove.org/lost - upload a clear FACE photo; it auto-matches against found reports from shelters + neighbors and generates printable flyers.
@@ -21,7 +21,7 @@ Act FAST - most reunions happen when owners move quickly. A microchip only works
 
 5. Do NOT chase a scared dog - it makes them bolt. Sit low, look away, toss high-value food; for dogs, leaving out your worn (stinky) clothing + grilling smelly meat can draw them back. Leave a light on and someone home.
 
-## FOUND A DOG
+## Found a dog
 
 Secure the dog safely if you can. Check for ID tags + a dog-license tag.
 
@@ -33,7 +33,7 @@ After business hours, or if the dog is sick/injured/dangerous: call 911 and a di
 
 You can bring a found dog to any ACC Care Center during business hours (call ahead). Check lost-pet apps/Facebook groups to match it to an owner searching.
 
-## MICROCHIP REGISTRIES - register the chip (implanting is not registering)
+## Microchip registries - register the chip (implanting is not registering)
 
 - 24Petwatch (by PetPlace) - North America's largest registry; FREE registration, no mandatory fees. Register/update/report lost at petplace.com/pet-microchip-registry or 24pet.com. Recovery specialists run real-time found searches.
 - HomeAgain - homeagain.com.
@@ -43,7 +43,7 @@ You can bring a found dog to any ACC Care Center during business hours (call ahe
 
 KEY: a chip must be updated MANUALLY every time you move or change phone/email. An unregistered or outdated chip cannot reunite you with your dog.
 
-## NYC STRAY-HOLD + PREVENTION
+## NYC stray-hold + prevention
 
 NY stray-hold: found pets are generally reported to animal control (ACC) and held a minimum number of days before becoming adoptable - confirm current hold period with ACC.
 

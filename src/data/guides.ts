@@ -69,7 +69,7 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   // being hurt by a person is an emergency (2026-11-05).
   {
     title: 'Emergencies',
-    slugs: ['animal-emergency', 'report-animal-abuse', 'leaving-abuse-with-your-pet', 'exotic-pet-emergency', 'pets-in-a-disaster', 'animal-left-alone'],
+    slugs: ['animal-emergency', 'report-animal-abuse', 'leaving-abuse-with-your-pet', 'exotic-pet-emergency', 'pets-in-a-disaster', 'animal-trapped', 'animal-left-alone'],
     places: { label: 'Emergency vets, nearest first', href: '/directory?need=emergency-vet' },
   },
   {
@@ -154,6 +154,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'report-animal-abuse', label: 'Is someone hurting or neglecting an animal?' },
       { slug: 'leaving-abuse-with-your-pet', label: 'Do you need to leave an abusive home with your pet?' },
       { slug: 'pets-in-a-disaster', label: 'Is a disaster, evacuation or heatwave putting your pet at risk?' },
+      { slug: 'animal-trapped', label: 'Is an animal trapped and can’t get out?' },
       { slug: 'animal-left-alone', label: 'Has an animal been left alone in a home?' },
     ],
   },
@@ -173,8 +174,8 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
     key: 'week',
     title: 'Keeping your pet',
     lines: [
-      { slug: 'keeping-your-dog' },
-      { slug: 'keeping-your-cat' },
+      { slug: 'keeping-your-dog', label: 'Help keeping your dog, or giving it up' },
+      { slug: 'keeping-your-cat', label: 'Help keeping your cat, or giving it up' },
       { slug: 'keep-your-pet-if-you-lose-your-home' },
       { slug: 'help-paying-for-care' },
       { slug: 'low-cost-dog-care' },

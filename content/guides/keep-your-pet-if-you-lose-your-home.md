@@ -11,12 +11,12 @@ _Homebase, bringing an emotional support animal into a city shelter, where to ap
 
 City homeless shelters do not take pets, but there are ways to keep you and your animal together, or to keep your animal safe nearby while you get back on your feet. The earlier you start, the more of them are open to you. Checked against the city's own pages and each organization's own website on 4 November 2026.
 
-## IF YOU HAVE NOT LOST YOUR HOME YET
+## If you have not lost your home yet
 
 - Call 311 and ask for your local Homebase office. Homebase is the city's service for people at risk of losing their home; a counsellor there can help you try to stay where you are. Staying housed is the only route where your pet never has to leave you.
 - If you rent and your lease says no pets, ask before you assume you must give your pet up: see the city's guide to emotional support animals in housing at https://www.nyc.gov/site/animalwelfare/resources/service-and-emotional-support-animals.page
 
-## IF YOU NEED SHELTER - WHAT HAPPENS TO YOUR PET
+## If you need shelter - what happens to your pet
 
 - City shelter intake centres do not accept pets. Service animals are allowed.
 - An emotional support animal is not counted as a pet. Any animal that is legal to own in New York City can qualify, and it does not need any training. To bring one into shelter you must make a Reasonable Accommodation Request, which shelter staff decide on.
@@ -26,7 +26,7 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 - During Code Blue - 32 degrees or colder, including wind chill - anyone can come in to any city shelter or drop-in centre without going through intake.
 - The city's own page on animals in shelter: https://www.nyc.gov/site/dhs/shelter/resources/service-animals.page
 
-## WHERE TO APPLY FOR SHELTER - all open 24 hours, every day
+## Where to apply for shelter - all open 24 hours, every day
 
 - Families with children under 21, or if you are pregnant: PATH, 151 East 151 Street, Bronx, NY 10451 - (718) 503-6400. Every member of the family must come, with ID, and with papers showing you are a family, such as a child's birth certificate.
 - Adult families with no children under 21: Adult Family Intake Center, 333 Bowery (between East 2nd and East 3rd Streets), New York, NY 10003. It moved here from East 30th Street on 1 August 2026; do not go to the old address.
@@ -35,7 +35,7 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 - Single adults are strongly advised to bring ID but it is not required. If you were in a city shelter in the last 12 months, go back to that shelter instead.
 - Addresses change: the city's current list is at https://portal.311.nyc.gov/article/?kanumber=KA-02501 or call 311.
 
-## SOMEWHERE SAFE FOR YOUR PET IN THE MEANTIME
+## Somewhere safe for your pet in the meantime
 
 - First ask a friend or relative to look after your animal. If you got it from a rescue group or shelter, ask them too: many will board or foster it for a while.
 - Animal Haven - (212) 274-8511 - https://animalhaven.org - helps people at risk of losing their animal because of a housing emergency, domestic violence or illness. The city's shelter page lists this number as 212-247-8511; the one here is Animal Haven's own.
@@ -49,6 +49,6 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 - Every place that can keep a pet safe, searchable by zip code, from the Animal Welfare Institute: https://www.safehavensforpets.org
 - Before you hand your pet to anyone, ask how long they will keep it, what happens if you cannot take it back in time, and whether you could lose ownership. Get the answers in writing.
 
-## IF YOU ARE LEAVING ABUSE
+## If you are leaving abuse
 
 - If you are leaving an abusive home, call the NYC 24-hour Domestic Violence Hotline, (800) 621-4673, and say you have a pet. Shelters that take pets, keeping your pet safe meanwhile, and the law are in [Leaving an abusive home with your pet](/guides/leaving-abuse-with-your-pet).

@@ -11,14 +11,14 @@ _Behaviour help, bite reporting, breed rules and housing law._
 
 Training, behavior support, service/therapy-dog programs, and NYC legal/reporting resources for dog owners. Confirm current details before relying. This is general information, not legal advice.
 
-## FREE / LOW-COST BEHAVIOR + TRAINING
+## Free / low-cost behavior + training
 
 - ACC Community Pets Program - free dog training (in-person or Zoom/FaceTime) via partner trainers, plus free behavior guides at nycacc.org/services/behavior-resources. Contact: admissions@nycacc.org, (212) 788-4000.
 - Bideawee - training help and behaviour advice; ask what is running now. bideawee.org, (866) 262-8133.
 - ASPCA behavior guides - free articles on common dog behaviors at aspca.org/pet-care/dog-care, plus the ASPCA Virtual Pet Behaviorist archive.
 - Muddy Paws Rescue behavior resources ('Pack Perks') - open to the public at muddypawsrescue.org.
 
-## HOW TO CHOOSE A POSITIVE-REINFORCEMENT TRAINER
+## How to choose a positive-reinforcement trainer
 
 Helpful credentials: CPDT-KA / CPDT-KSA (Cert. Council for Professional Dog Trainers), KPA-CTP (Karen Pryor Academy), CBCC-KA, or a Veterinary Behaviorist (DACVB) for complex cases.
 
@@ -26,14 +26,14 @@ Helpful credentials: CPDT-KA / CPDT-KSA (Cert. Council for Professional Dog Trai
 
 Many owners look for reward-based, force-free methods and ask a trainer about their approach to reactivity, counter-conditioning, and desensitization before booking.
 
-## NYC BEHAVIOR + REACTIVITY SPECIALISTS
+## NYC behavior + reactivity specialists
 
 - Wag the Dog NYC - reward-based; group reactive-dog class + private work on reactivity, separation anxiety, and fearful dogs. wagthedognyc.com.
 - Instinct Dog Behavior & Training - behavior-focused (leash reactivity, fear); Manhattan + Brooklyn. instinctdogtraining.com.
 - Empire of the Dog - dog training and behaviour consulting, Brooklyn (Williamsburg), running since 2000: https://www.empireofthedog.com (confirmed working by a reviewer, 2026-11-06).
 - Veterinary behaviorists (for complex cases + medication): find one at dacvb.org.
 
-## FREE SERVICE DOGS - veterans / people with disabilities (NY-serving)
+## Free service dogs - veterans / people with disabilities (NY-serving)
 
 - America's VetDogs - Smithtown, NY: free service + guide dogs for veterans, active-duty, and first responders (PTSD, mobility, hearing/vision, seizures); all costs including transport covered. www.vetdogs.org, (631) 930-9000.
 - Guide Dog Foundation - Smithtown, NY: free guide dogs for people who are blind or low-vision. guidedog.org, (631) 930-9000.
@@ -44,18 +44,18 @@ Many owners look for reward-based, force-free methods and ask a trainer about th
 
 These organizations provide dogs at no cost to the recipient; the ADA does not require any certificate or registration for a service dog.
 
-## THERAPY + EMOTIONAL-SUPPORT DOGS
+## Therapy + emotional-support dogs
 
 - Therapy-dog certification (to volunteer with your own dog at hospitals/schools): The Good Dog Foundation (NYC-based, thegooddogfoundation.org), Pet Partners (petpartners.org), Alliance of Therapy Dogs (therapydogs.com).
 
 Emotional Support Animal (ESA): housing protections may apply with a letter from a licensed provider; an ESA is different from a service dog and does not have public-access rights.
 
-## QUALITY-OF-LIFE + GRIEF SUPPORT
+## Quality-of-life + grief support
 
 - Quality-of-life assessment tools and end-of-life guidance: talk with your veterinarian, or a veterinary behaviorist at dacvb.org for behavior-related questions.
 - Pet-loss grief support: ASPCA Pet Loss resources (aspca.org), Tufts Pet Loss Support Hotline (508-839-7966; evenings, with voicemail), Lap of Love pet-loss support (lapoflove.com/pet-loss-support).
 
-## NYC BITE REPORTING (Health Code 11.03)
+## NYC bite reporting (Health Code 11.03)
 
 In NYC, animal bites are reported to the Health Department within 24 hours - by anyone involved.
 
@@ -63,7 +63,7 @@ In NYC, animal bites are reported to the Health Department within 24 hours - by 
 
 After a bite, a dog is typically observed for 10 days for rabies. Anyone bitten should seek medical advice, especially if the dog's rabies vaccination can't be confirmed.
 
-## NY STATE LAW - what owners may want to know (Ag & Markets Law 108 & 123)
+## NY state law - what owners may want to know (Ag & Markets Law 108 & 123)
 
 New York State (not a NYC breed rule) sets the process for how a dog may be legally classified after a serious incident; a complaint goes to a dog-control or police officer and a judge decides after a hearing.
 
@@ -71,7 +71,7 @@ There can be civil penalties for the owner after a bite, and higher penalties if
 
 NYC has no breed ban. NYCHA and some landlords/insurers set their own breed or weight limits, which is a housing/contract matter rather than a city law.
 
-## LEGAL AID + REFERRALS
+## Legal aid + referrals
 
 - Animal Legal Defense Fund - resource lists + referrals: aldf.org.
 - ASPCA - has at times provided legal help in NYC cases; ask for a current referral at aspca.org or (212) 876-7700.
@@ -79,7 +79,7 @@ NYC has no breed ban. NYCHA and some landlords/insurers set their own breed or w
 
 To report suspected animal cruelty in NYC: call 911 or 311.
 
-## BREED / HOUSING-RESTRICTION SUPPORT
+## Breed / housing-restriction support
 
 - Pet-inclusive + pet-friendly housing search: petsandhousing.org (Pet-Inclusive Housing Initiative).
 

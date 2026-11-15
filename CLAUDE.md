@@ -21,7 +21,7 @@ you change them, recount rather than adjust.
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing:  85 rows as of 2026-11-05, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 24 (*Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-15 every guide is on the home page as a numbered line, most urgent first (`GUIDE_TIERS`, tested; before that, since 2026-11-05, by situation in `GUIDE_GROUPS`, which is still tested and now supplies the "just need a phone number?" links), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Guides | 28 (four added 2026-11-15: found kittens, when a pet dies, an animal left alone, an animal trapped; *Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-15 every guide is on the home page as a numbered line, most urgent first (`GUIDE_TIERS`, tested; before that, since 2026-11-05, by situation in `GUIDE_GROUPS`, which is still tested and now supplies the "just need a phone number?" links), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 407 listed of 420 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 400 carry a date they were last confirmed; 7 have never been: three nyc.gov reference pages that refuse robots, and four rescues published on 2026-11-05 from contacts a reviewer read on Petfinder or Facebook (American Alliance for Protection of Animals, Animals Are Forever, Big Hands Little Paws, Hopewell). 42 emergency vets, every one with hours, 29 of them open 24/7 (the New Jersey, Long Island, Westchester and Rockland VEG hospitals among them). Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | **Finished 2026-11-05.** 230 candidates from ACC's New Hope partner roster (every one is an ACC rescue partner). 29 published, each read and placed in the city; the rest are outside the city, closed, or unreadable, and each is named with the reason in `docs/discovery-review-2026-11-05.md`. Breed- and population-specific rescues outside the city are in the breed guide and the special-needs sections instead, and partners outside the city whose own sites say they take animals from ACC are in the at-risk guide |
 | Design | **Redesigned 2026-11-15** as a sign: a red emergency band first on the home page, a red E button in the header of every other page, every guide a numbered line in four urgency tiers, guide pages drawn as a route. See *Changed 2026-11-15* just below, and *How the site looks* for the rules |
@@ -66,12 +66,49 @@ a dead animal on private property, the Sanitation Department's dead-animals
 page, the Office of Animal Welfare's evictions page), with the source URLs in
 each guide's first lines and quotations in their words. Workbooks:
 `research/NYC_Found_Kittens.xlsx`, `research/NYC_When_A_Pet_Dies.xlsx`,
-`research/NYC_Animal_Left_Alone.xlsx`. 27 guides now.
+`research/NYC_Animal_Left_Alone.xlsx`.
 
-Not written, because no reliable source exists: *an animal trapped in a wall,
-drain or tree*. The only accounts are news stories in which the NYPD's
-Emergency Service Unit happened to respond; there is no published city
-procedure. Do not write it from news reports.
+A fourth, *An animal is trapped* (`research/NYC_Animal_Trapped.xlsx`), was
+added the same day at the owner's request. No city agency publishes a
+procedure for it, so the guide uses what 311 and NYC Health do say (911 for
+immediate danger, 311 and ACC for strays 10am to 6pm, NYC Parks for parks, a
+licensed nuisance wildlife control operator for wildlife in a building), and
+cites the NYPD Emergency Service Unit rescues as news reports, labelled as
+such. The monthly audit checks whether the city has published a procedure.
+28 guides now.
+
+### Also changed 2026-11-15 (third round)
+
+- **Guide headings are no longer in capitals.** `headingCase` in
+  `scripts/import/guide-pages.ts` lower-cases shouting words when the page is
+  written, keeping acronyms (`KEEP_CAPS`) and names (`PROPER`). The
+  workbooks are unchanged, so `sectionOrder` and `omitSections` still match
+  the source text. A new acronym or name that comes out wrong goes in one of
+  those two lists.
+- **Cat behaviour advice is in *Help keeping your cat*,** borrowed from the
+  lost-and-found tab with the new `addSections`; the lost-cat page leaves it
+  out. The "Prevention beats everything" paragraph was moved within that tab
+  so it stays with lost cats.
+- **The Animal Medical Center's ER takes critically ill birds**: the owner
+  rang AMC and confirmed it on 2026-11-15. The bird card sends a badly hurt
+  bird there at night. NYC Bird Alliance's list names AMC for raptors and
+  waterfowl, which is why the big-bird tile says to mention NYC Bird Alliance.
+- **Four 24-hour hospitals just outside the city** were added from AmbuVet's
+  after-hours list, each checked on its own site and labelled outside NYC:
+  Garden State Veterinary Services Woodbridge (Medium: its page would not open
+  for us, read through search results), Oradell Animal Hospital, VEG
+  Greenwich and Long Island Veterinary Specialists. Far ones (Riverhead, Red
+  Bank, Stamford and the like) were left out on purpose. Note that the
+  importer reads borough names anywhere in a row: "near Staten Island" in a
+  note tagged a New Jersey hospital as being in Staten Island.
+- **Situation tiles** on the emergency card (poison, another dog attacked my
+  dog, no way to get there, the Bronx, paying, exotic pets, trapped) and on
+  both "Help keeping your..." cards (food, vet bills, behaviour, a crisis,
+  the landlord, giving up your pet). Those two home-page lines now say "or
+  giving it up". A situation no longer needs a `section`: it answers on the
+  card, and a `section` only adds "Read why".
+- **Google Translate:** the owner's decision is that readers translate the
+  site themselves; no translated copies of the guides are planned.
 
 ### A guide audit runs every month (since 2026-11-15)
 
@@ -113,9 +150,10 @@ What changed, and where:
 
 **The emergency wording in the band was rewritten by the owner's decision on
 2026-11-15** (`src/components/EmergencySigns.astro`), because the reviewer's
-single 60-word sentence was too hard to read in a hurry. The signs are the
-same, as a list, in words a 12-year-old can follow; "caught or bit it, even
-if you see no wound" stays in bold. The same component is used on the home
+single 60-word sentence was too hard to read in a hurry, and a bulleted list
+of signs that replaced it was still too much. It is now four short sentences
+that lead with what to do; "If another animal bit it or caught it, go now,
+even if you can't see a wound" stays in bold. The same component is used on the home
 page, the emergency guides and the assistant page, so the three cannot drift.
 Do not shorten it to make the page prettier.
 

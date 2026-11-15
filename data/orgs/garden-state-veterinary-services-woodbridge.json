@@ -1,0 +1,64 @@
+{
+  "id": "garden-state-veterinary-services-woodbridge",
+  "name": "Garden State Veterinary Services Woodbridge (New Jersey)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Woodbridge, New Jersey - outside NYC",
+  "zips": [
+    "07095"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "7322833535",
+      "display": "(732) 283-3535"
+    }
+  ],
+  "emails": [],
+  "website": "https://gsvs.org/woodbridge-nj",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.5529,
+    "lon": -74.2869,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "1200 Route 9 North",
+    "city": "Woodbridge",
+    "zip": "07095"
+  },
+  "hours": "Open 24/7",
+  "notes": "1200 Route 9 North, Woodbridge, NJ 07095. Open 24/7, 365 days a year. Outside the city, in New Jersey. Its own page could not be opened from our checker on 2026-11-15; the hours, address and number were read from search results quoting gsvs.org. AmbuVet's list calls it Greater State Veterinary Specialists.",
+  "type_raw": "Emergency and specialty vet hospital, open 24/7",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://gsvs.org/woodbridge-nj"
+  ],
+  "last_verified": "2026-11-15",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

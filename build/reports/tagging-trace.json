@@ -3529,6 +3529,28 @@
       "matched": "wildlife rehab"
     }
   ],
+  "garden-state-veterinary-services-woodbridge": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    }
+  ],
   "give-me-shelter-project-inc": [
     {
       "tag": "cat",
@@ -4906,6 +4928,28 @@
       "tag": "rabbit",
       "field": "section",
       "matched": "RABBITS (largest NYC exotic-rescue category)"
+    }
+  ],
+  "long-island-veterinary-specialists": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "24/7"
     }
   ],
   "los-sures-cats-williamsburg": [
@@ -6672,6 +6716,43 @@
       "tag": "emergency-vet",
       "field": "notes",
       "matched": "emergency hospital"
+    }
+  ],
+  "oradell-animal-hospital": [
+    {
+      "tag": "cat",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "dog",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "clinic",
+      "field": "name",
+      "matched": "Animal Hospital"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
     }
   ],
   "park-slope-veterinary-center": [
@@ -9373,6 +9454,28 @@
     }
   ],
   "veg-clifton": [
+    {
+      "tag": "cat",
+      "field": "animals_served",
+      "matched": "cats"
+    },
+    {
+      "tag": "dog",
+      "field": "animals_served",
+      "matched": "Dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "type",
+      "matched": "Emergency vet"
+    }
+  ],
+  "veg-greenwich": [
     {
       "tag": "cat",
       "field": "animals_served",

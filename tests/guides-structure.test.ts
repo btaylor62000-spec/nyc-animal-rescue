@@ -138,7 +138,7 @@ test('the at-risk guide: ACC\'s foster/adopt form, before the list of groups, an
   const g = GUIDES.find((x) => x.slug === 'save-an-at-risk-animal')!;
   assert.match(g.title, /New Hope Program/);
   const form = g.body.indexOf('https://forms.gle/ozHex3uqvNkQt2dq9');
-  const who = g.body.indexOf('## WHO TO CONTACT');
+  const who = g.body.indexOf('## Who to contact');
   assert.ok(form > 0 && who > form, 'the form comes before the groups to contact');
   assert.match(g.body.slice(who), /Why only these groups/);
 });

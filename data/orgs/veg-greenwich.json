@@ -1,0 +1,64 @@
+{
+  "id": "veg-greenwich",
+  "name": "VEG Greenwich (Connecticut)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "emergency-vet"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Greenwich (Cos Cob), Connecticut - outside NYC",
+  "zips": [
+    "06830"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "2039096560",
+      "display": "(203) 909-6560"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.veg.com/locations/connecticut/greenwich-cos-cob",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 41.0376,
+    "lon": -73.6243,
+    "precision": "zip"
+  },
+  "address": {
+    "street": "409 East Putnam Avenue",
+    "city": "Greenwich",
+    "zip": "06830"
+  },
+  "hours": "Open 24/7",
+  "notes": "409 East Putnam Avenue, Greenwich, CT 06830. Open 24 hours, 7 days a week; no appointment needed. Outside the city, in Connecticut, part of Veterinary Emergency Group (VEG).",
+  "type_raw": "Emergency vet hospital, open 24/7 (no appointment, walk in)",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.veg.com/locations/connecticut/greenwich-cos-cob"
+  ],
+  "last_verified": "2026-11-15",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

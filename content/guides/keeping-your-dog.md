@@ -11,7 +11,7 @@ _Support with costs, housing and behaviour, plus how surrender works if you stil
 
 Resources for owners who need help caring for a dog - food, in-home care, temporary fostering, behavior help, vet-bill aid, and housing support. ACC offers many of these directly and can talk through options. Confirm current availability, which changes over time.
 
-## ACC OWNER SUPPORT
+## ACC owner support
 
 - ACC Admissions / Owner Support: email admissions@nycacc.org or call (212) 788-4000; fill out the questionnaire linked at nycacc.org/services/surrender and a counselor contacts you within about 3 days.
 
@@ -19,7 +19,7 @@ What ACC can help with: reduced-fee routine vet care and spay/neuter; funding fo
 
 To rehome directly: ACC's 'Rehoming Your Pet' page has tools to help find a new home yourself.
 
-## PET FOOD PANTRIES (specific programs)
+## Pet food pantries (specific programs)
 
 NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs. The food is new and not every pantry mentions it yet, so ring before you go. All 22, with phone numbers and boroughs, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
 
@@ -35,24 +35,24 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 - Pets of the Homeless - free pet food and vet care through partner sites for people who are homeless or at risk. petsofthehomeless.org.
 - Food Help NYC - find nearby food pantries (some stock pet food): finder.nyc.gov/foodhelp. The donateNYC Directory lists a Pet Care/Food category: donatenyc.org.
 
-## SENIOR / DISABILITY / ILLNESS - in-home pet care
+## Senior / disability / illness - in-home pet care
 
 - PAWS NY (Pets Are Wonderful Support) - free in-home help (dog walking, feeding, litter, vet-trip coordination) for low-income seniors and people with illness/disability who struggle with daily pet care. Apply at pawsny.org; (212) 203-4760. Case-by-case eligibility.
 - CancerCare Pet Assistance & Wellness (PAW) Program - financial help for pet-care costs for people in active cancer treatment, with a dedicated NYC-resident fund. cancercare.org; (800) 813-4673.
 - Paws of War - veterinary care for pets of veterans + first responders. pawsofwar.org.
 
-## TEMPORARY / CRISIS CARE - hospitalization, rehab, housing transition, deployment
+## Temporary / crisis care - hospitalization, rehab, housing transition, deployment
 
 - PAWS NY - Hospital Respite Program for people who are hospitalized or in a rehab facility, plus a Substance Use Recovery Program for those entering inpatient treatment. referrals@pawsny.org, (212) 203-4760 ext. 306, pawsny.org.
 - Animal Haven Community Engagement Program - short-term boarding for pets whose owners face a temporary crisis (hospitalization, housing transition); space is limited. (212) 274-8511, animalhaven.org.
 - ACC - can coordinate options for people entering DHS temporary housing or facing military deployment. admissions@nycacc.org, (212) 788-4000.
 - Foster Dogs Inc - Brooklyn nonprofit that helps connect owners in crisis with temporary fostering. fosterdogsnyc.com.
 
-## LEAVING AN ABUSIVE HOME
+## Leaving an abusive home
 
 - If you are leaving an abusive home: call the NYC 24-hour Domestic Violence Hotline and say you have a pet. Shelters where you and your pet can stay together, keeping your pet safe meanwhile, and how a court can protect it are in [Leaving an abusive home with your pet](/guides/leaving-abuse-with-your-pet).
 
-## HOSPICE / FOSPICE + SENIOR-DOG PLACEMENT
+## Hospice / fospice + senior-dog placement
 
 - Rebound Hounds Fospice - lifetime foster homes for senior and terminal-medical dogs, with medical costs covered by the rescue. reboundhounds.org.
 - Mr. Bones & Co. - takes senior and complex-medical dogs case-by-case within its individualized-care program. info@mrbonesandco.org, mrbonesandco.org.
@@ -64,18 +64,18 @@ Petco Love 'We Are Family' - collects pet food and litter and distributes throug
 
 There is no NYC-based senior-dog sanctuary; senior-specialist sanctuaries in nearby states (e.g. Lily's Legacy, Frosted Faces, Young at Heart) are options for those able to travel.
 
-## BEHAVIOR SUPPORT (a common, workable reason owners seek help)
+## Behavior support (a common, workable reason owners seek help)
 
 - ACC Community Pets Program - free dog training (in person or via Zoom/FaceTime) through partner trainers; behavior guides at nycacc.org/services/behavior-resources. Contact: admissions@nycacc.org, (212) 788-4000.
 - Bideawee + GoodPup - subsidized virtual 1-on-1 training (first week free via links.goodpup.com/shelter/Bideawee10). Bideawee: bideawee.org, (866) 262-8133.
 - ASPCA behavior guides: aspca.org/pet-care/dog-care. Find a credentialed trainer at ccpdt.org, or a veterinary behaviorist at dacvb.org.
 
-## VET BILLS AND PET INSURANCE
+## Vet bills and pet insurance
 
 - Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: [Help paying for veterinary care](/guides/help-paying-for-care)
 - Or call 311 and ask for current local assistance programmes: in New York City the 211 help-and-referral service is provided through 311.
 
-## HOUSING SUPPORT
+## Housing support
 
 - NYC Animal Welfare - Animals & Housing/Evictions page (nyc.gov/site/animalwelfare/resources/evictions.page): tenant pet-law guide and resources.
 - ACC assists with tenant/landlord and NYCHA matters (admissions@nycacc.org, (212) 788-4000). Pet-Inclusive Housing Initiative (petsandhousing.org) lists pet-friendly housing resources.

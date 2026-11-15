@@ -11,7 +11,7 @@ _Affordable veterinary care across the five boroughs, and how to license a dog i
 
 Free/low-cost veterinary care, spay-neuter, vaccine/microchip options, and the legally-required NYC dog license. Every dog 4+ months must be licensed; every dog owner must show proof of license + rabies in public. Confirm eligibility (many are income-qualified) and current pricing before you go.
 
-## NYC DOG LICENSE - legally required (NYC Health Code 161.04)
+## NYC dog license - legally required (NYC Health Code 161.04)
 
 - How: apply/renew ONLINE at nyc.gov/doglicense (debit/credit/e-check), or mail a paper form (call 311 to have one mailed; forms in English + Spanish). You need proof of a current RABIES vaccine.
 
@@ -23,7 +23,7 @@ The licence costs less for a spayed or neutered dog. You can license for up to f
 
 Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft in public; report issues via 311.
 
-## CITYWIDE - free / low-cost SPAY-NEUTER
+## Citywide - free / low-cost spay-neuter
 
 - ASPCA Mobile Spay/Neuter + Community Clinics - free/low-cost spay/neuter for dogs & cats across all 5 boroughs. Same-Day virtual WAITLIST (sign up 6:00 AM day-of at clinic.aspca.org/clinics/new-york-city). Phone (844) 692-7722. Owner 18+, pet 2 months-9 years, no known medical issues. No walk-ins.
 - The Toby Project - NYC's only org solely devoted to free/low-cost spay/neuter; mobile vans + in-neighborhood clinics, works with DOHMH. Free spay/neuter with proof of public assistance, reduced without. Email info@tobyproject.org (questions about the mobile clinics) or (212) 315-5251; https://www.tobyproject.org/services.
@@ -31,7 +31,7 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 - Friends of Animals - low-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.
 - NYC DOHMH low-cost spay/neuter index (authoritative list, updated periodically): https://www.nyc.gov/site/doh/health/health-topics/low-cost-spay-and-neuter-clinics.page.
 
-## ASPCA COMMUNITY VETERINARY CLINICS - by borough (appointment only, income-qualified)
+## ASPCA community veterinary clinics - by borough (appointment only, income-qualified)
 
 - BRONX - ASPCA Community Veterinary Clinic, South Bronx: spay/neuter + wellness by appointment for eligible dog/cat owners. Start via the Same-Day Waitlist at clinic.aspca.org/locations/new-york-city. (Low-cost urgent care at the ASPCA Animal Hospital requires household income \<= $50k.)
 - BROOKLYN - ASPCA Community Veterinary Clinic (Lewyt), East New York: spay/neuter + wellness by appointment for eligible owners. Same-Day Waitlist at clinic.aspca.org/locations/new-york-city.
@@ -39,7 +39,7 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 
 (No dedicated ASPCA community clinic in Manhattan/Staten Island - use the mobile waitlist + citywide options above.)
 
-## OTHER LOWER-COST VET CLINICS
+## Other lower-cost vet clinics
 
 - BROOKLYN - Animal Clinic of Bay Ridge: lower-cost vet care, 689 86th St, Brooklyn 11228, (718) 833-0700, animalclinicofbayridgebrooklyn.net.
 - BROOKLYN - Sean Casey Animal Rescue runs low-cost vaccine/microchip clinics: 153 East 3rd St 11218, (718) 436-5163; nyanimalrescue.org.
@@ -48,7 +48,7 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 - CITYWIDE - VIP Petcare clinics: no exam fee, single-vaccine or package pricing; find a location at vippetcare.com.
 - WESTCHESTER-ADJACENT (nr Bronx) - Bully Baby Rescue runs free/low-cost spay/neuter clinics (Port Chester): info@bullybabyrescue.org, (914) 565-1512.
 
-## ACC COMMUNITY PETS PROGRAM - free help to keep pets with their families
+## ACC community pets program - free help to keep pets with their families
 
 - ACC's Community Pets Program provides free resources to help owners care for their dogs. Contact via nycacc.org/programs/community-resources or ACC (212) 788-4000.
 
@@ -56,14 +56,14 @@ Free pop-up vaccine + microchip clinics in the Bronx and Queens: free rabies, DA
 
 Also offers: free dog training, tenant advocacy and pet-housing help, spay/neuter appointments, and connections to other agencies.
 
-## LOW-COST DOG DENTAL (periodontal disease affects about 80% of dogs over age 3)
+## Low-cost dog dental (periodontal disease affects about 80% of dogs over age 3)
 
 - Humane Society of NY - has a dedicated 'doggy dentist' doing dentals 4-5 days/week (about 4 dogs/day); low-cost, volunteer-supported. Books up fast via a waitlist - call early. 306 E 59th St, (212) 752-4842.
 - ASPCA Community Veterinary Clinics (S.Bronx 501 E 161st St / E.NY Brooklyn / LIC Queens) - subsidized dental cleanings + extractions alongside wellness, income \<=$50k. Waitlist via (844) 692-7722.
 - BBAWC Rescue Clinic (Brooklyn Bridge Animal Welfare Coalition) - low-cost dentals + spay/neuter. bbawc.org/clinic, (917) 426-3335.
 
 
-## PET FOOD / SUPPLIES (dog-specific pantries + directories)
+## Pet food / supplies (dog-specific pantries + directories)
 
 NYC's free pet food pantries (new, October 2026) - the city funds free dog and cat food at 22 community food pantries across all five boroughs; ring before you go, as the food is new. All 22, with phone numbers and boroughs, is in [NYC's free pet food pantries](#city-pet-food-pantries), further down this page.
 
@@ -73,11 +73,11 @@ NYC's free pet food pantries (new, October 2026) - the city funds free dog and c
 - Food Help NYC (nyc.gov/foodhelp) - find human food pantries; many also stock pet food. donateNYC Directory has a Pet Care/Food category.
 - Pets of the Homeless (petsofthehomeless.org) - national org providing FREE pet food + vet/dental/emergency care specifically for pets of homeless + at-risk people; find NYC-area donation/host sites on their map.
 
-## VET BILLS AND PET INSURANCE
+## Vet bills and pet insurance
 
 - Every way to get help with a vet bill, from charities and hospital funds to payment plans and pet insurance, is in the guide Help paying for veterinary care: [Help paying for veterinary care](/guides/help-paying-for-care)
 
-## VACCINE + MICROCHIP EVENTS
+## Vaccine + microchip events
 
 - ACC hosts periodic low-cost vaccine + microchip + licensing events across the boroughs - check nycacc.org (events) and the DOHMH Same-Day Licensing/Vaccination schedule.
 

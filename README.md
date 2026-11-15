@@ -21,7 +21,7 @@ than starting to charge.
 | | |
 | --- | --- |
 | **393 organizations** | Across all five boroughs, each with confidence, the date it was last verified, and whether it is still operating |
-| **22 guides** | What to do, in the order it needs doing |
+| **28 guides** | What to do, in the order it needs doing |
 | **Search and filters** | Client-side, works on a phone on a weak connection, no JavaScript required to browse |
 | **An assistant** | Describe what is happening in plain words, in English or Spanish, and get the right organizations |
 | **Weekly checks** | Every organization re-checked against its own website, automatically |

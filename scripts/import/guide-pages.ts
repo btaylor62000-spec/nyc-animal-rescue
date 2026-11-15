@@ -58,6 +58,14 @@ interface TabSpec {
   sectionOrder?: string[];
   /** Lines put before the guide's own text, built from the records. */
   prepend?: (orgs: Org[]) => string[];
+  /**
+   * Sections borrowed from another tab of the same workbook, added at the end.
+   * The owner asked on 2026-11-15 for the cat behaviour advice, which sits on
+   * the lost-and-found tab, to be in the guide on keeping your cat, where a
+   * reader with a litter-box problem looks. The tab is left as it is; the
+   * lost-and-found page leaves those sections out with omitSections.
+   */
+  addSections?: { tab: string; headings: RegExp };
 }
 
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
@@ -85,6 +93,11 @@ const WB_DV = 'research/NYC_Leaving_Abuse_With_Pets.xlsx';
 const WB_KITTENS = 'research/NYC_Found_Kittens.xlsx';
 const WB_PET_DIES = 'research/NYC_When_A_Pet_Dies.xlsx';
 const WB_LEFT_ALONE = 'research/NYC_Animal_Left_Alone.xlsx';
+// No city agency publishes a procedure for a trapped animal, so this one puts
+// together what 311 and NYC Health do say, and labels the NYPD Emergency
+// Service Unit rescues it cites as news reports, not a city rule (owner,
+// 2026-11-15: "this is something that should be figured out").
+const WB_TRAPPED = 'research/NYC_Animal_Trapped.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -92,6 +105,12 @@ const WB_LEFT_ALONE = 'research/NYC_Animal_Left_Alone.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_TRAPPED, tab: 'An animal is trapped', slug: 'animal-trapped',
+    title: 'An animal is trapped',
+    summary: 'Stuck in a drain, a wall, a pipe, a car engine or under a train: call 911 if it is in danger, 311 if it is not, and what to do about wildlife living in a building.',
+    topics: ['trapped animal', 'animal stuck', 'stuck in drain', 'storm drain', 'cat stuck', 'dog stuck', 'in the wall', 'in a pipe', 'car engine', 'under a train', 'on a ledge', 'raccoon in chimney', 'animal in attic', 'emergency service unit'],
+  },
   {
     file: WB_KITTENS, tab: 'Found kittens outside', slug: 'found-kittens-outside',
     title: 'Found kittens outside',
@@ -177,12 +196,15 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Lost or found a cat',
     summary: 'What to do first, where to post, and who helps with searching.',
     topics: ['lost cat', 'found cat', 'missing pet'],
+    // In "Help keeping your cat" instead (addSections there).
+    omitSections: /^BEHAVIOR/,
   },
   {
     file: WB_CAT, tab: 'Owner support & surrender prev.', slug: 'keeping-your-cat',
     title: "Help keeping your cat",
     summary: 'Food, vet bills, housing, and temporary care, before surrender becomes the only option.',
     topics: ['cannot keep my cat', 'surrender', 'pet food help', 'cannot afford vet'],
+    addSections: { tab: 'Lost-found & behavior', headings: /^BEHAVIOR/ },
     // Covered in full, and kept current, by the guide Help paying for veterinary care.
     omitSections: /^HELP PAYING VET BILLS|^PET INSURANCE|^DOMESTIC-VIOLENCE PET SAFE-KEEPING/,
   },
@@ -297,6 +319,38 @@ export function cleanUrl(url: string): string {
   return out;
 }
 
+/*
+ * Workbook headings are often in capitals ("LOST A DOG - do all of these NOW",
+ * "EXOTIC-SPECIFIC vet-bill funds"), which reads as shouting. The owner asked
+ * for them to be fixed (2026-11-15). Words in capitals become lower case,
+ * except real acronyms, and the heading starts with a capital. The workbooks
+ * are not changed: sectionOrder and omitSections still match the source.
+ */
+const KEEP_CAPS = new Set([
+  'NYC', 'ACC', 'AMC', 'ASPCA', 'DEC', 'TNR', 'NY', 'NJ', 'CT', 'NYS', 'US', 'USDA', 'NOAA', 'FBI', 'DHS', 'NYCHA',
+  'URI', 'PALS', 'FCI', 'HSNY', 'PAWS', 'FIV', 'FELV', 'LI', 'ESA', 'ADA', 'RHDV', 'HPAI', 'DOHMH', 'NYTTS', 'ID', 'VEG',
+  'LVT', 'SICAW', 'BBAWC', 'UCL', 'AAHA', 'AKC', 'DV', 'RVS', 'DACVB', 'CAAB', 'CPDT', 'KA', 'KPA', 'CTP', 'ER', 'HSUS',
+  'IC', 'SPCA', 'PA', 'AHNOW', 'OK', 'HRA', 'PEU', 'TSU', 'HPD', 'DIY',
+]);
+// Names that need their capital back once the shouting is gone.
+const PROPER: Array<[RegExp, string]> = [
+  [/\banimal medical center\b/gi, 'Animal Medical Center'],
+  [/\bthe bronx\b/gi, 'the Bronx'],
+  [/\bgreat dane\b/gi, 'Great Dane'],
+  [/\bteflon\b/gi, 'Teflon'],
+  ...['English', 'French', 'American', 'German', 'Dutch', 'Australian', 'Asian', 'Doberman'].map(
+    (w): [RegExp, string] => [new RegExp(`\\b${w}\\b`, 'gi'), w],
+  ),
+];
+export function headingCase(heading: string): string {
+  let out = heading.replace(/\b[A-Z][A-Z]+\b/g, (w) => (KEEP_CAPS.has(w) ? w : w.toLowerCase()));
+  out = out.replace(/(?<=\s)A(?=\s)/g, 'a');
+  // "NYC'S", "CAN'T": the letter after an apostrophe was its own capital run.
+  out = out.replace(/(['\u2019])([A-Z])\b/g, (_m, q: string, c: string) => q + c.toLowerCase());
+  for (const [re, name] of PROPER) out = out.replace(re, name);
+  return out.charAt(0).toUpperCase() + out.slice(1);
+}
+
 function escapeMd(s: string): string {
   return s.replace(/([<>])/g, '\\$1');
 }
@@ -341,10 +395,9 @@ export function buildTabPage(spec: TabSpec, orgs: Org[] = []): GuidePage {
     lines.push('');
   }
 
-  for (const section of orderSections(doc.sections, spec.sectionOrder, spec.slug)) {
-    if (spec.omitSections && section.heading && spec.omitSections.test(section.heading)) continue;
+  const render = (section: (typeof doc.sections)[number]) => {
     if (section.heading) {
-      lines.push(`## ${clean(section.heading)}`);
+      lines.push(`## ${clean(headingCase(section.heading))}`);
       lines.push('');
     }
     let inList = false;
@@ -362,6 +415,17 @@ export function buildTabPage(spec: TabSpec, orgs: Org[] = []): GuidePage {
       }
     }
     if (inList) lines.push('');
+  };
+
+  for (const section of orderSections(doc.sections, spec.sectionOrder, spec.slug)) {
+    if (spec.omitSections && section.heading && spec.omitSections.test(section.heading)) continue;
+    render(section);
+  }
+  if (spec.addSections) {
+    const { tab, headings } = spec.addSections;
+    const borrowed = parseGuideTab(spec.file, tab).sections.filter((x) => x.heading && headings.test(x.heading));
+    if (borrowed.length === 0) throw new Error(`Guide "${spec.slug}": no section on tab "${tab}" matches ${headings}. Update addSections in guide-pages.ts.`);
+    borrowed.forEach(render);
   }
 
   return {

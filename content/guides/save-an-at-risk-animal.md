@@ -11,46 +11,46 @@ _Three times a week the NYC shelter lists cats and dogs who may be euthanised if
 
 Three times a week, New York City's public shelter, Animal Care Centers of NYC (ACC), lists cats and dogs who may be euthanised if nobody takes them. Each listing closes about 42 hours after it is posted. ACC calls it the “at-risk list”, and runs it through its New Hope program, which places animals with approved rescue groups. Act today.
 
-## THE FASTEST WAY, IF YOU ALREADY KNOW THE ANIMAL
+## The fastest way, if you already know the animal
 
 - **First:** open ACC's at-risk list: https://newhope.shelterbuddy.com/Animal/List, find the animal and press “View more..”.
 - **If its page has a “Reserve” button,** you can adopt it yourself: press Reserve, then check out within 15 minutes.
 - **If its page says it is “for new hope partners only”, or you want to foster or adopt through a rescue group,** press “Pre-Screener Form” on its page, and fill in ACC's form for fostering or adopting through a rescue partner: https://forms.gle/ozHex3uqvNkQt2dq9
 - **Then** contact the rescue groups under Who to contact, further down, all at once. The steps below explain each part.
 
-## HOW MUCH TIME YOU HAVE
+## How much time you have
 
 New animals are posted on Sunday, Tuesday and Thursday at 6:00 PM. Each posting closes at 12:00 noon two days later: Sunday’s list closes Tuesday at noon, Tuesday’s closes Thursday at noon, Thursday’s closes Saturday at noon.
 
 ACC says being on the list does not automatically mean an animal will be euthanised: that happens only when no placement has been found. Acting fast is how a placement is found in time.
 
-## STEP 1: FIND THE ANIMAL AND CHECK IT IS STILL AVAILABLE
+## Step 1: find the animal and check it is still available
 
 - Open ACC’s list: https://newhope.shelterbuddy.com/Animal/List
 - Tick “Show only available”, then press Filter. An animal marked Reserved already has someone taking it.
 - Press “View more..” under the animal. Its page shows its name, its ID number (for example #255268) and which care center it is at. Write these down: you will need them.
 
-## STEP 2: READ THE ANIMAL’S PAGE: WHO IS ALLOWED TO TAKE IT?
+## Step 2: read the animal’s page: who is allowed to take it?
 
 - If the page says “Sorry, this pet is for new hope partners only.”, only an approved rescue group can take this animal out. You cannot adopt it directly, but you can still save it: go to Step 3.
 - If the page has a “Reserve [name]” button, a member of the public may adopt this animal directly from ACC, without a rescue group. ACC’s own list page says: “To complete an adoption, please click reserve on the animal of your choice.” Pressing it puts the animal in a cart for 15 minutes; press “check out” at the top right before the time runs out and pay the deposit by card. ACC emails a receipt, which confirms the reservation. Registering on the site first (“Register”, top of the page) saves time.
 - An animal with a Reserve button can also go to a rescue group: if you want to foster, or adopt through a rescue instead, go to Step 3.
 - If the website gives you trouble, email adopt@nycacc.org. Questions about the New Hope program: newhopeprogram@nycacc.org.
 
-## STEP 3: FILL IN BOTH OF ACC’S FORMS FIRST
+## Step 3: fill in both of ACC’s forms first
 
 - On the animal’s page, press “Pre-Screener Form” and fill it in. It is about this one animal. It is a Google form, so it needs a Google sign-in. ACC passes your answers to its rescue groups.
 - Then fill in ACC’s form for anyone who wants to foster or adopt through one of its rescue groups. ACC’s at-risk list page says: “If you are interested in fostering/adopting through one of our New Hope partners, please fill out this form: https://forms.gle/ozHex3uqvNkQt2dq9”.
 - Do not wait to hear back from either form. Go straight on to Step 4.
 
-## STEP 4: CONTACT RESCUE GROUPS YOURSELF
+## Step 4: contact rescue groups yourself
 
 - Only an approved rescue group can take the animal out for you. ACC calls these groups “New Hope partners”.
 - Contact every group in the list further down this page that takes your kind of animal, through every way each one lists (phone, email, form, Instagram), all at once. Do not wait for one reply before trying the next.
 - Use the ready-made messages below, so you are not writing one under pressure.
 - The animal is safe only when a rescue group tells you it has confirmed the pull with ACC. A friendly reply is not yet a pull. Keep going until you have that confirmation.
 
-## READY-MADE MESSAGES
+## Ready-made messages
 
 Fill in the brackets. Saying you have a home ready is what gets a yes.
 
@@ -62,7 +62,7 @@ By email, body: Name [ ], ID number [ ], [borough] care center, listed until [da
 
 Through an online form (kept short, because forms limit the length): At-risk animal, ID number [ ], [borough] care center, listed until [day and time]. [I am / I have] a committed foster or adopter ready now. Can you pull it as a New Hope partner? I will complete your application and arrange transport immediately. Contact: [phone] / [email].
 
-## WHO TO CONTACT
+## Who to contact
 
 Do this once both forms in Step 3 are sent, so you can tell each group they are in. Then contact every group below that takes your kind of animal, through every way it lists, at the same time. Why only these groups: ACC approves around 250 rescue groups, its New Hope partners, from New York to New England. Most of them pull animals from ACC on their own and do not take messages from the public about a particular animal, or are far from the city. The groups below are New Hope partners in or near New York City that publish a way for the public to reach them, followed by partners further away whose own websites say they take animals from the city's shelter. If none of them can help, ACC's full list is at the end of this page. Where a group has its own entry in this directory, that entry is where its contact details are kept current.
 
@@ -134,7 +134,7 @@ Do this once both forms in Step 3 are sent, so you can tell each group they are 
 - Luv-N-Bunns Rabbit Rescue - Philadelphia area, takes rabbits from New York - bunnies@luvnbunns.org - @luvnbunns
 - Rabbit Rescue & Rehab - citywide - nyc.metro.rabbits@gmail.com - @rabbitrescuerehab
 
-## OUTSIDE THE CITY: APPROVED PARTNERS THAT CAN TAKE ANIMALS FROM NYC'S SHELTER
+## Outside the city: approved partners that can take animals from NYC's shelter
 
 These partners are based outside New York City, but each is on ACC's list of approved New Hope partners, so it can take animals from the city's shelter. Some say so on their own sites (read 2026-11-05); the rest were checked on their Facebook pages by a reviewer on 2026-11-13. Try them alongside the groups above, especially for an animal that needs a particular kind of home, such as a breed rescue.
 
@@ -155,7 +155,7 @@ These partners are based outside New York City, but each is on ACC's list of app
 - Shonio's Safe Haven - Morrisville, Vermont - dogs from kill lists, especially seniors and dogs with medical or special needs; also keeps hospice residents - Shoniossafehaven@gmail.com - https://www.facebook.com/Shoniosafehaven
 - Tanner's PAWS - Corning, upstate New York - at-risk pets; rescue, foster and population management - (607) 654-4357 - https://www.facebook.com/tannerspaws
 
-## MORE FROM ACC
+## More from ACC
 
 - What happened to animals that were listed: https://www.nycacc.org/adoption/at-risk-outcomes
 - ACC’s full list of its approved rescue groups (around 250): https://www.nycacc.org/programs/new-hope-partners/
