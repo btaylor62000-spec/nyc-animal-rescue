@@ -31,3 +31,8 @@
 /guides/more-situations-animal-help-now/   /guides/found-wildlife/ 301
 /org/nyc-feral-cat-initiative    /org/nyc-feral-cat-initiative-bideawee/ 301
 /org/nyc-feral-cat-initiative/*  /org/nyc-feral-cat-initiative-bideawee/:splat 301
+# Guides removed by the owner on 2026-11-15: old links land on the guide list.
+/guides/when-a-pet-dies                                     /guides/                                     301
+/guides/when-a-pet-dies/*                                   /guides/                                     301
+/guides/exotic-pet-legality                                 /guides/                                     301
+/guides/exotic-pet-legality/*                               /guides/                                     301

@@ -85,12 +85,12 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   {
     title: 'Keeping your pet',
     places: { label: 'Help with costs, food and care', href: '/directory?need=owner-support' },
-    slugs: ['keeping-your-cat', 'keeping-your-dog', 'keep-your-pet-if-you-lose-your-home', 'help-paying-for-care', 'low-cost-clinics-and-trap-banks', 'low-cost-dog-care', 'when-a-pet-dies'],
+    slugs: ['keeping-your-cat', 'keeping-your-dog', 'keep-your-pet-if-you-lose-your-home', 'help-paying-for-care', 'low-cost-clinics-and-trap-banks', 'low-cost-dog-care'],
   },
   {
     title: 'Adopting, rehoming and special cases',
     places: { label: 'Rescues and shelters', href: '/directory?need=adoption' },
-    slugs: ['save-an-at-risk-animal', 'cats-with-special-needs', 'breed-specific-dog-rescue', 'dog-behavior-and-legal', 'rehoming-an-exotic-pet', 'exotic-boarding-and-planning', 'exotic-pet-legality'],
+    slugs: ['save-an-at-risk-animal', 'cats-with-special-needs', 'breed-specific-dog-rescue', 'dog-behavior-and-legal', 'rehoming-an-exotic-pet', 'exotic-boarding-and-planning'],
   },
 ];
 
@@ -167,7 +167,6 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'lost-and-found-exotic' },
       { slug: 'found-kittens-outside' },
       { slug: 'save-an-at-risk-animal', label: 'Save a shelter animal on the at-risk list' },
-      { slug: 'when-a-pet-dies' },
     ],
   },
   {
@@ -192,7 +191,6 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'dog-behavior-and-legal' },
       { slug: 'rehoming-an-exotic-pet' },
       { slug: 'exotic-boarding-and-planning' },
-      { slug: 'exotic-pet-legality' },
     ],
   },
 ];

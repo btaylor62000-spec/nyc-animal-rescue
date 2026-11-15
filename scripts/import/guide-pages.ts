@@ -91,7 +91,6 @@ const WB_DV = 'research/NYC_Leaving_Abuse_With_Pets.xlsx';
 // from the city's own pages (311, Sanitation, the Office of Animal Welfare);
 // quotations are theirs. The source URLs are in each guide's first lines.
 const WB_KITTENS = 'research/NYC_Found_Kittens.xlsx';
-const WB_PET_DIES = 'research/NYC_When_A_Pet_Dies.xlsx';
 const WB_LEFT_ALONE = 'research/NYC_Animal_Left_Alone.xlsx';
 // No city agency publishes a procedure for a trapped animal, so this one puts
 // together what 311 and NYC Health do say, and labels the NYPD Emergency
@@ -116,12 +115,6 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Found kittens outside',
     summary: 'Check if they are hurt, then wait and watch for the mother. What to do if she does not come back.',
     topics: ['kittens', 'found kittens', 'kitten outside', 'litter of kittens', 'baby cats', 'orphaned kittens', 'mother cat', 'kitten season', 'newborn kittens', 'stray kittens'],
-  },
-  {
-    file: WB_PET_DIES, tab: 'When a pet dies', slug: 'when-a-pet-dies',
-    title: 'When a pet dies',
-    summary: 'What the city allows: cremation, burial and sanitation pickup, what to do first if it bit someone, and help at the end of life.',
-    topics: ['pet died', 'dead pet', 'pet death', 'my pet died', 'cremation', 'bury my pet', 'pet burial', 'end of life', 'euthanasia', 'pet hospice', 'dead animal', 'dead bird', 'passed away'],
   },
   {
     file: WB_LEFT_ALONE, tab: 'An animal left alone at home', slug: 'animal-left-alone',
@@ -271,12 +264,6 @@ export const GUIDE_PAGES: TabSpec[] = [
     title: 'Exotic pet emergencies',
     summary: 'Rabbits, birds, reptiles and small mammals need an exotic-capable vet. Call ahead.',
     topics: ['rabbit emergency', 'bird sick', 'reptile vet', 'exotic vet'],
-  },
-  {
-    file: WB_EXOTIC, tab: 'Species care & legality', slug: 'exotic-pet-legality',
-    title: 'What you can legally keep in New York City',
-    summary: 'Which animals are legal as pets in NYC, and which must go to a rehabber or sanctuary.',
-    topics: ['is it legal', 'ferret ban', 'keep a wild animal', 'pet rules NYC'],
   },
   {
     file: WB_EXOTIC, tab: 'Financial aid & low-cost care', slug: 'help-paying-for-care',

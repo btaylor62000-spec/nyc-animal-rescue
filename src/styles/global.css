@@ -1498,9 +1498,6 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .eband__more .esigns { font-size: 1rem; }
 
 /* "Something wrong or missing in this guide?" (2026-11-15): the owner's Google Form. */
-.guide-feedback { margin: 2rem 0 0; padding: 0.9rem 1rem; max-width: 46rem; background: var(--surface); border: 2px solid var(--text); border-radius: var(--radius); display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; align-items: baseline; }
-.guide-feedback a { font-weight: 800; }
-.guide-feedback .muted { font-size: 0.9rem; }
 
 /* Directory: the landing panel, paging, and a guide's "nearest" link. */
 .need-picker { margin: 0.5rem 0 1.25rem; }
@@ -1514,3 +1511,6 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .results-bar--ask #near-me-note { font-weight: 700; }
 .results-bar { scroll-margin-top: 6rem; }
 .directory-foot { margin: 2rem 0 1rem; }
+.guide-foot { margin-top: 1.5rem; }
+.guide-foot p { margin: 0 0 0.45rem; }
+.guide-foot p:last-child { margin-bottom: 0; }

@@ -5,6 +5,7 @@ import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
 import { GUIDES } from '../data/guides.ts';
+import { feedbackLink } from '../data/site.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -117,6 +118,7 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
     <p class="muted directory-foot">
       Kept up to date by the people who use it. If a number is wrong or a place has closed, use <strong>Report a problem</strong> on its listing.
       Missing something? <a href="/contribute">Add a resource</a>.
+      <br /><a href={feedbackLink('Find help')} rel="noopener" target="_blank">Something wrong or missing on this page? Tell us</a>
     </p>
   </div>
 </Base>

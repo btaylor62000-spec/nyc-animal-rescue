@@ -180,3 +180,31 @@ test('settled facts agree across cards, guides and listings', () => {
   // The Wild Bird Fund: every day, 9am to 7pm, on the listing too.
   assert.match(ORGS_BY_ID.get('the-wild-bird-fund')!.hours ?? '', /9am-7pm/);
 });
+
+/*
+ * Every organization a card names links to its listing (owner, 2026-11-15,
+ * asked three times). The links are made when the card is drawn
+ * (src/data/card-links.ts), so these check the machinery, and the case that
+ * prompted it.
+ */
+test('organizations named on a card link to their listings', async () => {
+  const { brokenAliases, namedIn, CARD_URLS, linkNames } = await import('../src/data/card-links.ts');
+  assert.deepEqual(brokenAliases(), [], 'a card alias names no record');
+  const abuse = GLANCE['report-animal-abuse']!.steps!.map((s) => s.text).join(' ');
+  for (const id of ['nyc-mayors-office-of-animal-welfare', 'your-city-council-member']) {
+    assert.ok(namedIn(abuse).includes(id), `the abuse card does not link ${id}`);
+  }
+  for (const guide of GUIDES) {
+    const card = JSON.stringify(GLANCE[guide.slug]);
+    for (const [name, url] of Object.entries(CARD_URLS)) {
+      if (!card.includes(name)) continue;
+      if (url.startsWith('/guides/')) {
+        assert.ok(GUIDES.some((x) => `/guides/${x.slug}` === url), `${url} is not a guide`);
+        continue;
+      }
+      assert.ok(guide.body.includes(url.replace(/^https?:\/\//, '')), `${guide.slug}: ${url} is not in the guide`);
+    }
+  }
+  // Escaped, so a card's text cannot become markup.
+  assert.equal(linkNames('a <b> & c'), 'a &lt;b&gt; &amp; c');
+});

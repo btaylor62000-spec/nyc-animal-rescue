@@ -145,23 +145,6 @@ export const GLANCE: Record<string, Glance> = {
     tip: 'Tiny kittens that still need a bottle need care around the clock. Kitten nurseries are in Cats needing specialist help.',
   },
 
-  'when-a-pet-dies': {
-    headline: 'Losing a pet is hard. Take the time you need. Here is what the city allows when you are ready.',
-    contacts: [
-      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Cremation, for a fee · call for details' },
-      { org: 'ambuvet-pet-ambulance', name: 'AmbuVet', when: 'Can carry a pet that has died' },
-      { org: 'lap-of-love', name: 'Lap of Love', when: 'In-home hospice and end-of-life care' },
-      { org: CITY, when: 'Questions, or a dead animal on the street' },
-    ],
-    steps: [
-      { title: 'Did it bite or scratch someone?', text: 'Call 311 first. If it may have had rabies, call 911. Don’t put it in the trash.' },
-      { title: 'Cremation', text: 'ACC cremates pets for a fee at its centres. Call ACC to ask how.' },
-      { title: 'Burial', text: 'You can bury a pet only on private property you own.' },
-      { title: 'Sanitation pickup', text: 'Use a heavy-duty black bag or two bags. Tape on a note saying what is inside, and put it in a bin with your regular trash.' },
-    ],
-    never: ['Do not put dead animals that may have been rabid in the trash.'],
-    tip: 'Several dead birds, fish or other wild animals in one place? Call 311. Use gloves or a plastic bag, and wash your hands after.',
-  },
 
   'animal-left-alone': {
     headline: 'If a pet has been left behind because its owner died, is in hospital or jail, or moved out, call 311.',
@@ -176,7 +159,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Evicted, and your animal is inside?', text: 'Look for a notice on the door saying which shelter it went to. If it is still inside, ask the landlord or building staff, then your police precinct.' },
       { title: 'Facing eviction?', text: 'Plan now: find someone who could look after your pet. Call 311 and ask for the Tenant Helpline.' },
     ],
-    remember: ['If it is happening right now, or an animal or a person is in danger: call 911.'],
     tip: 'Going into hospital yourself? PAWS NY can help care for your pet while you are away.',
   },
   // The Bronx tile follows driving times measured 2026-11-15 with the public
@@ -201,13 +183,12 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Worried about paying? Go anyway', text: 'Ask about payment plans when you arrive.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],
     never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
-    remember: ['Lilies are deadly to cats even in tiny amounts (a lick of pollen).'],
-    tip: 'There is no 24-hour vet in the Bronx. Tap “I’m in the Bronx” above to see where to go after hours from your part of the Bronx.',
     situations: [
       {
         label: 'It ate or touched something poisonous', tone: 'now', verdict: 'Call poison control first',
         do: ['Call ASPCA Animal Poison Control or the Pet Poison Helpline. Both are open 24/7.', 'They work out the treatment and tell the hospital, which saves time.'],
         never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
+        remember: ['Lilies are deadly to cats even in tiny amounts (a lick of pollen).'],
         contacts: [{ org: POISON, name: 'ASPCA Animal Poison Control', when: '24/7' }, { org: 'pet-poison-helpline-24-7-hotline', name: 'Pet Poison Helpline', when: '24/7' }],
         section: 'IF IT SWALLOWED OR TOUCHED SOMETHING TOXIC: RING POISON CONTROL FIRST',
       },
@@ -285,13 +266,13 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call.' },
       { title: 'Put it in a closed bag or box', text: 'A paper bag, or a cardboard box with a few small air holes. Take the towel out. Keep it somewhere dark and quiet.' },
       { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Take it to the Animal Medical Center’s 24-hour emergency room.' },
+      { title: 'Can’t get it there?', text: 'Email Urban Wildlife Alliance at helpline@urbanwildlifenyc.org with a photo, your phone number and where you are. A volunteer can’t always come. Also post it in the NYC Emergency Animal Rescue group on Facebook.' },
     ],
     never: [
       'Never give it food or water.',
       'No heating pad for a bird that hit a window: a warm room is enough.',
     ],
     remember: ['If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound.'],
-    tip: 'Can’t get it there? Email helpline@urbanwildlifenyc.org with a photo and where you are, and post it in the NYC Emergency Animal Rescue group on Facebook. Someone nearby may drive it.',
     situations: [
       {
         label: 'It hit a window', tone: 'now', verdict: 'Needs help today, even if it seems fine',
@@ -351,7 +332,7 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Keep away', text: 'Keep pets and children back too.' },
       { title: 'Is it really alone?', text: 'Watch from far away. It needs help now if it is hurt, cold, covered in flies, was caught by an animal, or its mother is dead.' },
       { title: 'Find a rehabber open now', text: 'Use Animal Help Now, or call the place for the animal you found (tap your situation below).', link: { label: 'Wildlife rehabbers, nearest first', href: '/directory?need=wildlife-rehab&near=1' } },
-      { title: 'Nobody answering?', text: 'Post the animal, where it is and a photo in the NYC Emergency Animal Rescue group on Facebook. Keep calling too.' },
+      { title: 'Can’t get it there, or nobody answering?', text: 'Email Urban Wildlife Alliance at helpline@urbanwildlifenyc.org with a photo, your phone number and where you are. Or post the animal, where it is and a photo in the NYC Emergency Animal Rescue group on Facebook.' },
     ],
     never: ['Do not touch a wild mammal with bare hands, and keep pets and children away.', 'Never give it food or water.'],
     remember: ['A baby animal on its own is usually not abandoned: its mother may be away for hours.'],
@@ -407,7 +388,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Afterwards, find your exotics vet', text: 'Rabbit and bird rescues keep lists of vets who know your animal. Save one before the next emergency.', link: { label: 'Exotic vets, nearest first', href: '/directory?need=exotic-vet&near=1' } },
     ],
     remember: ['most general small-animal vets do NOT treat rabbits, birds, reptiles or other exotics'],
-    tip: 'Found a wild animal, not a pet? See the guide for injured wildlife instead.',
   },
 
   'report-animal-abuse': {
@@ -425,7 +405,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Write it down', text: 'When and where, what you saw, how many times. Photos or video only if you can take them safely.' },
     ],
     remember: ['You do not need proof, and you can stay anonymous.'],
-    tip: '311 often closes reports without anyone coming out. Keep reporting, with dates and photos: repeated reports are what get action.',
   },
 
   'leaving-abuse-with-your-pet': {
@@ -465,7 +444,6 @@ export const GLANCE: Record<string, Glance> = {
     ],
     never: ['Never leave a pet in a car.'],
     remember: ['Take your pet with you.'],
-    tip: 'Hurt in the emergency? Go to an emergency vet now; if you can, call while you travel. Rabbits, birds and reptiles need extra planning: see the exotic pets planning guide.',
   },
 
   'lost-and-found-dog': {
@@ -544,21 +522,67 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'lost-and-found-exotic': {
-    headline: 'Pet rabbits, birds and reptiles can’t survive outside for long. Act fast.',
+    headline: 'A pet rabbit, bird or turtle can’t survive outside for long. Tap what happened.',
     contacts: [
-      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Citywide safety net for found pets of any kind' },
-      { org: '911-parrot-alert', name: '911 Parrot Alert', when: 'Lost and found birds' },
+      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Lost and found pets of every kind, all five boroughs' },
+      { org: '911-parrot-alert', name: '911 Parrot Alert', when: 'Lost and found pet birds' },
       { org: 'new-york-city-pigeon-rescue-central', name: 'NYC Pigeon Rescue Central', when: 'Tame or white pigeons' },
       { org: 'rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society', name: 'Rabbit Rescue & Rehab', when: 'Found rabbits' },
     ],
-    steps: [
-      { title: 'A bird', text: 'Post to 911 Parrot Alert and the Long Island Parrot Society. A pet bird found outside needs shelter fast: contain it and call an avian vet or rescue.' },
-      { title: 'A tame or white pigeon', text: 'It’s a pet pigeon and can’t survive outside. Contact NYC Pigeon Rescue Central or take it to the Wild Bird Fund.' },
-      { title: 'A rabbit or other small animal', text: 'Pet rabbits can’t live as strays. Contain it out of the heat or cold, and call a rabbit rescue or ACC.' },
-      { title: 'A turtle', text: 'Work out first if it is a pet or a wild turtle. A pet needs rehoming. A healthy wild one should stay where it is.' },
+    situations: [
+      {
+        label: 'I lost my pet', tone: 'now', verdict: 'Report it and post it today',
+        do: [
+          'Tell ACC. It takes in found pets of every kind, in all five boroughs.',
+          'A bird: post to 911 Parrot Alert and the Long Island Parrot Society. Give its leg band number if it has one.',
+          'A rabbit or other small pet: post to rabbit rescues and local lost-pet groups.',
+          'Microchipped? Call the microchip company and mark it lost.',
+        ],
+        contacts: [{ org: ACC, name: 'Animal Care Centers (ACC)', when: 'Lost and found' }, { org: '911-parrot-alert', name: '911 Parrot Alert', when: 'Lost birds' }, { org: 'long-island-parrot-society', name: 'Long Island Parrot Society', when: 'Lost and found parrots' }],
+        section: 'General:',
+      },
+      {
+        label: 'I found a pet bird: a parrot, budgie or cockatiel', tone: 'now', verdict: 'Get it inside, then report it',
+        do: [
+          'A pet bird can’t survive outside. Put it in a box or carrier somewhere warm and quiet.',
+          'Post it to 911 Parrot Alert and the Long Island Parrot Society, so its owner can find it.',
+          'Hurt? Call an avian vet: see the exotic pet emergency guide.',
+          'A hurt wild bird, like a sparrow, robin or hawk, is different: see the guide for an injured bird.',
+        ],
+        contacts: [{ org: '911-parrot-alert', name: '911 Parrot Alert', when: 'Lost and found birds' }, { org: 'long-island-parrot-society', name: 'Long Island Parrot Society', when: 'Lost and found parrots' }],
+        section: 'Birds (parrots, companion birds):',
+      },
+      {
+        label: 'I found a tame or white pigeon', tone: 'now', verdict: 'It is a pet pigeon: it needs rescue',
+        do: [
+          'A tame, all-white or oddly coloured pigeon that lets you walk up to it is almost certainly a pet pigeon. It can’t survive outside.',
+          'Contact NYC Pigeon Rescue Central, or bring it to the Wild Bird Fund.',
+          'A band on its leg can lead back to its owner.',
+        ],
+        contacts: [{ org: 'new-york-city-pigeon-rescue-central', name: 'NYC Pigeon Rescue Central', when: 'Help request form' }, { org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }],
+        section: 'Pigeons & doves (feral vs domestic):',
+      },
+      {
+        label: 'I found a rabbit or other small pet', tone: 'now', verdict: 'Keep it safe, then call a rabbit rescue',
+        do: [
+          'A pet rabbit can’t survive as a stray. Keep it somewhere safe, out of the heat and cold.',
+          'Contact Rabbit Rescue & Rehab, All About Rabbits Rescue, Bunnies & Beyond, or ACC.',
+        ],
+        contacts: [{ org: 'rabbit-rescue-and-rehab-nyc-chapter-house-rabbit-society', name: 'Rabbit Rescue & Rehab', when: 'Found rabbits' }, { org: 'all-about-rabbits-rescue', name: 'All About Rabbits Rescue', when: 'Found rabbits' }, { org: 'bunnies-and-beyond', name: 'Bunnies & Beyond', when: 'Found rabbits' }],
+        section: 'Rabbits & small mammals:',
+      },
+      {
+        label: 'I found a turtle', tone: 'today', verdict: 'Pet or wild? Work that out first',
+        do: [
+          'A pet turtle, such as a red-eared slider, needs a new home: contact NYTTS or Earthlings NYC.',
+          'A healthy wild turtle should be left where it was found.',
+          'A hurt wild turtle needs a wild-turtle rehabber: contact NYTTS.',
+        ],
+        never: ['Never relocate a healthy native turtle far from where it was found.'],
+        contacts: [{ org: 'new-york-turtle-and-tortoise-society', name: 'NYTTS', when: 'Pet and wild turtles' }, { org: 'earthlings-nyc-turtle-team', name: 'Earthlings NYC', when: 'Pet turtles' }],
+        section: 'Reptiles (turtles especially):',
+      },
     ],
-    never: ['Never relocate a healthy native turtle far from where it was found.'],
-    tip: 'Whatever the animal: take a photo, note exactly where it was found, and post it to groups for that kind of animal.',
   },
 
   'save-an-at-risk-animal': {
@@ -788,7 +812,6 @@ export const GLANCE: Record<string, Glance> = {
     ],
     never: ['Don\'t re-trap ear-tipped cats.'],
     remember: ['Scratched or bitten by a feral? Contact a doctor immediately'],
-    tip: 'Friendly cats and kittens in a colony can often be adopted. Tiny kittens need a kitten nursery: see Cats needing specialist help.',
   },
 
   'cats-with-special-needs': {
@@ -804,8 +827,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Senior, FIV+ or FeLV+', text: 'Tavi & Friends, KittyKind, Bronx Tails and Empty Cages Collective.', link: { label: 'FIV+ and FeLV+ rescues', href: '/directory?need=retrovirus' } },
       { title: 'Disabled: three legs, blind, wobbly', text: 'K9Kastle, Saint Spiro and For Blake’s Sake.' },
     ],
-    remember: ['Always confirm current capacity - specialists fill up fast, especially in kitten season.'],
-    tip: 'Hurt right now? Go to an emergency hospital first: see the animal emergencies guide.',
   },
 
   'breed-specific-dog-rescue': {
@@ -816,7 +837,6 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Contact two or three at once', text: 'Don’t wait for one to answer before trying the next.' },
       { title: 'Ask if they have room now', text: 'Ask if they take dogs from New York City and have a foster home free.' },
     ],
-    remember: ['ALWAYS confirm current NYC-area capacity'],
     tip: '“Bully breed” describes a body type, not how a dog behaves.',
   },
 
@@ -870,26 +890,6 @@ export const GLANCE: Record<string, Glance> = {
     remember: ['overgrown rabbit teeth are a medical emergency, not a grooming task'],
   },
 
-  'exotic-pet-legality': {
-    headline: 'Rabbits, guinea pigs, pet birds and many reptiles are legal in NYC. Ferrets, most wild animals and farm animals are not.',
-    contacts: [
-      { org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'Native wildlife, reptiles and permits' },
-      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Surrender any animal' },
-    ],
-    check: {
-      title: 'Can I keep it in NYC?',
-      yesTitle: 'Usually legal',
-      yes: ['Rabbits and guinea pigs', 'Rats, mice, hamsters, gerbils, chinchillas', 'Parrots, budgies and other pet birds', 'Bearded dragons, corn snakes, ball pythons, leopard geckos'],
-      noTitle: 'Not legal',
-      no: ['Ferrets', 'Monkeys and most wild animals', 'Venomous snakes, big constrictors, alligators', 'Roosters, pigs (even “mini” ones), goats and other farm animals'],
-    },
-    steps: [
-      { title: 'Found a wild animal?', text: 'It must go to a licensed wildlife rescuer, not into your home.', link: { label: 'Found injured or orphaned wildlife', href: '/guides/found-wildlife' } },
-      { title: 'A native New York turtle or reptile?', text: 'You need a permit from the state (DEC) to keep one.' },
-      { title: 'Have an animal you can’t keep?', text: 'Rehome it safely.', link: { label: 'Rehoming a rabbit, bird, reptile or small animal', href: '/guides/rehoming-an-exotic-pet' } },
-    ],
-    remember: ['This page is orientation, not legal advice.', 'Most native wildlife cannot legally be kept.'],
-  },
 };
 
 /**

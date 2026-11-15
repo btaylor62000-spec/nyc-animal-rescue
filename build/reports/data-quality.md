@@ -6,7 +6,7 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 - **445** organizations after de-duplication
 - **78** duplicate clusters merged
-- **28** guide pages generated
+- **26** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -336,7 +336,6 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Found an injured bird | 17240 |
 | An animal is trapped | 2903 |
 | Found kittens outside | 2106 |
-| When a pet dies | 2269 |
 | An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
 | Pets in a disaster or evacuation | 4330 |
@@ -356,17 +355,17 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Breed-specific dog rescue | 20654 |
 | Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
-| What you can legally keep in New York City | 3060 |
 | Help paying for veterinary care | 9895 |
 | Rehoming a rabbit, bird, reptile or small animal | 3454 |
 | Lost or found a rabbit, bird or reptile | 2235 |
 | Exotic pets: boarding, pet sitting and planning ahead | 6410 |
 
-### Source tabs not turned into a page (4)
+### Source tabs not turned into a page (5)
 
 These were parsed (and mined for organizations where relevant) but have no page of their own. Listed so nothing is dropped silently.
 
 - NYC_Dog_Rescue_Reference.xlsx — Emergency & poison control
 - NYC_Dog_Rescue_Reference.xlsx — Specialty view
 - NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Emergency ERs (exotic caveat)
+- NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Species care & legality
 - NYC_Exotic_SmallAnimal_Wildlife_Reference.xlsx — Specialty view

@@ -21,7 +21,7 @@ you change them, recount rather than adjust.
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing:  85 rows as of 2026-11-05, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 28 (four added 2026-11-15: found kittens, when a pet dies, an animal left alone, an animal trapped; *Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-15 every guide is on the home page as a numbered line, most urgent first (`GUIDE_TIERS`, tested; before that, since 2026-11-05, by situation in `GUIDE_GROUPS`, which is still tested and now supplies the "just need a phone number?" links), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Guides | 26 (*When a pet dies* and the legality guide removed by the owner 2026-11-15; four added 2026-11-15: found kittens, when a pet dies, an animal left alone, an animal trapped; *Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-15 every guide is on the home page as a numbered line, most urgent first (`GUIDE_TIERS`, tested; before that, since 2026-11-05, by situation in `GUIDE_GROUPS`, which is still tested and now supplies the "just need a phone number?" links), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | Recounted 2026-11-15: 428 listed of 445 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 424 listed entries carry a date they were last confirmed; 4 never have. 46 emergency vets, every one with hours, 33 of them open 24/7, including four just outside the city added 2026-11-15 (Garden State Woodbridge, Oradell, VEG Greenwich, Long Island Veterinary Specialists) and the New Jersey, Long Island, Westchester and Rockland VEG hospitals. Hours that only *say* 24 hours somewhere, unconfirmed, never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. CompleteCare turned out to be a daytime vet and Elmhurst has closed (reviewer's calls, 2026-11-04); Urgent Vets Queens was confirmed 24/7 on the same calls. No hospital in the Bronx is confirmed 24 hours. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | **Finished 2026-11-05.** 230 candidates from ACC's New Hope partner roster (every one is an ACC rescue partner). 29 published, each read and placed in the city; the rest are outside the city, closed, or unreadable, and each is named with the reason in `docs/discovery-review-2026-11-05.md`. Breed- and population-specific rescues outside the city are in the breed guide and the special-needs sections instead, and partners outside the city whose own sites say they take animals from ACC are in the at-risk guide |
 | Design | **Redesigned 2026-11-15** as a sign: a red emergency band first on the home page, a red E button in the header of every other page, every guide a numbered line in four urgency tiers, guide pages drawn as a route. See *Changed 2026-11-15* just below, and *How the site looks* for the rules |
@@ -183,6 +183,37 @@ such. The monthly audit checks whether the city has published a procedure.
 - **Paramus hospitals** are placed from the coordinates on their own pages
   (the Census geocoder cannot read Route 17 addresses); drive times re-run.
   **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
+
+### Also changed 2026-11-15 (sixth round)
+
+- **Two guides removed by the owner:** *When a pet dies* ("awful and
+  insensitive") and *What you can legally keep in New York City* (reference,
+  not help in a crisis; its one urgent point, that a wild animal goes to a
+  licensed rehabber, is in the wildlife guide). 26 guides. Old links redirect
+  to `/guides/` (`public/_redirects`); the pet-death workbook is deleted. Do
+  not bring either back, and the monthly audit is told not to propose them.
+- **Every organization a card names links to its listing**
+  (`src/data/card-links.ts`, drawn by `GlanceSteps` and `GuideGlance`): the
+  guides' own name matching plus `CARD_ALIASES` for short names ("ACC") and
+  roles ("City Council member"), and `CARD_URLS` for other guides named in a
+  card's words. A card that names an organization which does not link needs
+  an alias there; a test checks every alias names a record.
+- **Card bottoms carry safety lines, not repeats.** Tips and reminders that
+  repeated a step or the red E button are gone; the lilies line is in the
+  poison tile, the Bronx tip is gone (the Bronx tile says it).
+- **One box at the foot of each guide**: "Wrong number, or something
+  missing?", with the Google Form link inside it. The directory and the home
+  page have the same form link.
+- **Lost or found a rabbit, bird or reptile** is five situations: lost a pet;
+  found a pet bird (saying it is a pet, and sending a hurt wild bird to the
+  injured-bird guide); found a tame or white pigeon; found a rabbit; found a
+  turtle.
+- **Bird and wildlife cards** have "Can't get it there?": Urban Wildlife
+  Alliance's helpline email and the NYC Emergency Animal Rescue group.
+- **Evals for today's failures**: the Bronx at 11pm must not lead with Urgent
+  Vets Bronx; its hours question must mention 10; free cat food in the Bronx.
+  The live evals (`--live`) need a Cloudflare API token with Workers AI
+  access, which this project does not have yet.
 
 ### A guide audit runs every month (since 2026-11-15)
 

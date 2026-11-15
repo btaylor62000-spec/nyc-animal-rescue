@@ -744,7 +744,7 @@ export class Retriever {
       return animal('dog') ? 'keeping-your-dog' : 'cats-with-special-needs';
     }
 
-    if (has('legal') || has('licensing')) return exotic ? 'exotic-pet-legality' : 'dog-behavior-and-legal';
+    if (has('legal') || has('licensing')) return exotic ? 'rehoming-an-exotic-pet' : 'dog-behavior-and-legal';
     if (has('behavior-training')) return animal('dog') ? 'dog-behavior-and-legal' : 'lost-and-found-cat';
     if (has('boarding')) return exotic ? 'exotic-boarding-and-planning' : 'keeping-your-cat';
     /*

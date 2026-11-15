@@ -54,7 +54,6 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     { heading: 'Boarding and temporary care', need: 'boarding' },
   ],
   'exotic-pet-emergency': [{ heading: 'Avian and exotic vets', need: 'exotic-vet' }],
-  'exotic-pet-legality': [{ heading: 'Rescues for exotic pets', need: 'adoption', animals: EXOTIC }],
   'found-an-injured-bird': [{ heading: 'Wildlife rehabilitators who take birds', need: 'wildlife-rehab', animals: ['bird-wild', 'pigeon'] }],
   'found-wildlife': [{ heading: 'Wildlife rehabilitators', need: 'wildlife-rehab' }],
   'found-kittens-outside': [
@@ -129,9 +128,7 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     { heading: 'Who to call', ids: ['nyc-311', 'animal-care-centers-of-nyc', 'your-local-nypd-precinct'] },
     { heading: 'Somewhere safe for a pet meanwhile', need: 'boarding' },
   ],
-  'when-a-pet-dies': [
-    { heading: 'Who can help', ids: ['animal-care-centers-of-nyc', 'ambuvet-pet-ambulance', 'lap-of-love', 'nyc-311'] },
-  ],
+
   'save-an-at-risk-animal': [{ heading: 'Rescue groups that pull from the city shelter', need: 'advocacy' }],
   'starting-tnr': [
     { heading: 'Trap banks', need: 'trap-bank' },

@@ -14,6 +14,7 @@ import Never from './GlanceNever.astro';
 import { ORGS_BY_ID } from '../data/orgs.ts';
 import { telHref } from '../data/tel.ts';
 import { headingId, type Glance, type GlanceContact } from '../data/guide-glance.ts';
+import { linkNames } from '../data/card-links.ts';
 import type { TierKey } from '../data/guides.ts';
 
 interface Props {
@@ -134,7 +135,7 @@ const sid = (i: number) => `situation-${i + 1}`;
         <section class="glance-answer" id={sid(i)} aria-label={s.label}>
           <p class={`glance-verdict glance-verdict--${s.tone}`}>{s.verdict}</p>
           <h3>{s.label}</h3>
-          <ol class="glance-do">{s.do.map((d) => <li>{d}</li>)}</ol>
+          <ol class="glance-do">{s.do.map((d) => <li set:html={linkNames(d)} />)}</ol>
           {s.never && <Never items={s.never} />}
           {s.remember && <Never items={s.remember} remember />}
           {s.contacts && (
@@ -171,11 +172,11 @@ const sid = (i: number) => `situation-${i + 1}`;
       <div class="glance-check">
         <div class="glance-check__yes">
           <h3>{g.check.yesTitle}</h3>
-          <ul>{g.check.yes.map((y) => <li>{y}</li>)}</ul>
+          <ul>{g.check.yes.map((y) => <li set:html={linkNames(y)} />)}</ul>
         </div>
         <div class="glance-check__no">
           <h3>{g.check.noTitle}</h3>
-          <ul>{g.check.no.map((y) => <li>{y}</li>)}</ul>
+          <ul>{g.check.no.map((y) => <li set:html={linkNames(y)} />)}</ul>
         </div>
       </div>
     </>
@@ -189,7 +190,7 @@ const sid = (i: number) => `situation-${i + 1}`;
           <p class="glance-side__headline">{side.headline}</p>
           <Steps steps={side.steps} />
           {side.never && side.never.length > 0 && <Never items={side.never} />}
-          {side.tip && <p class="glance-tip">{side.tip}</p>}
+          {side.tip && <p class="glance-tip" set:html={linkNames(side.tip)} />}
         </section>
       ))}
     </div>
@@ -204,6 +205,6 @@ const sid = (i: number) => `situation-${i + 1}`;
 
   {g.never && g.never.length > 0 && <Never items={g.never} />}
   {g.remember && g.remember.length > 0 && <Never items={g.remember} remember />}
-  {g.tip && <p class="glance-tip">{g.tip}</p>}
+  {g.tip && <p class="glance-tip" set:html={linkNames(g.tip)} />}
 
 </section>

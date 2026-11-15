@@ -120,27 +120,17 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     )}
     </details>
 
-    <p class="guide-feedback">
-      <strong>Something wrong or missing in this guide?</strong>
-      <a href={feedbackLink(guide.title)} rel="noopener" target="_blank">Tell us</a>
-      <span class="muted">(opens a Google Form; please leave out anyone's personal details)</span>
-    </p>
-
-    <p class="notice" style="margin-top:1rem">
+    <div class="notice guide-foot">
       <Icon name="alert" size={17} />
-      <span>
-        <strong>Wrong number, or something missing?</strong> Every organization named here has its own entry
+      <div>
+        <p><strong>Wrong number, or something missing?</strong> Every organization named here has its own entry
         with a <strong>Report a problem</strong> button; <a href="/directory">find it in the directory</a>.
-        Know a place that should be here? <a href="/contribute">Add a resource</a>. Changes go live in minutes.
-      </span>
-    </p>
-
-    <hr style="margin:2.5rem 0 1rem;border:0;border-top:1px solid var(--border)" />
-    <p class="muted" style="font-size:.9rem">
-      This guide is compiled from the project's research files. Contact details inside it can go
-      stale — check the <a href="/directory">directory</a> for the current listing, and confirm a
-      number is live before you rely on it.
-    </p>
+        Know a place that should be here? <a href="/contribute">Add a resource</a>.</p>
+        <p><a href={feedbackLink(guide.title)} rel="noopener" target="_blank">Something wrong or missing in this guide? Tell us</a>
+        <span class="muted">(a Google Form; please leave out anyone's personal details)</span></p>
+        <p class="muted">Contact details can go stale. Confirm a number is live before you rely on it.</p>
+      </div>
+    </div>
   </div>
   <script is:inline>
     // A link to a heading inside the folded full guide ("Read why") opens it
