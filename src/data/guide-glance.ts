@@ -208,7 +208,7 @@ export const GLANCE: Record<string, Glance> = {
       { org: AHN, name: 'Animal Help Now', when: 'Any time', note: 'Type where the animal is. It lists rehabbers and hotlines open right now.' },
       { org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm', note: 'Takes squirrels, opossums and other small mammals too.' },
       { org: 'cottontail-cottage-wildlife-rehab', name: 'Cottontail Cottage', when: 'Any hour · baby rabbits and foxes', note: 'Leave a message and they call back.' },
-      { org: CITY, when: 'Raccoon, skunk, bat or a big animal', note: 'Ask for the Urban Park Rangers.' },
+      { org: CITY, when: 'Raccoon, skunk, bat or a big animal', note: 'In a park, ask for the Urban Park Rangers.' },
     ],
     steps: [
       { title: 'Keep away', text: 'Keep pets and children back too.' },
@@ -228,7 +228,7 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'A raccoon, skunk or bat', tone: 'now', verdict: 'Don’t touch it',
-        do: ['Stay away.', 'Call 311 and ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
+        do: ['Stay away.', 'Call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
         never: ['Never give it food or water.'],
         contacts: [{ org: CITY, when: 'Ask for the Urban Park Rangers' }],
         section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
@@ -309,6 +309,10 @@ export const GLANCE: Record<string, Glance> = {
     remember: ['If you think someone checks your phone or computer, call rather than browse, and clear your history afterwards.'],
   },
 
+  // The muzzle-and-leash and legal-pets conditions are from 311's evacuation
+  // article and NYCHA's evacuation page (checked 2026-11-15); the guide's
+  // quotation leaves them out, and someone turned away at the turnstile is
+  // worse off than someone told in advance.
   'pets-in-a-disaster': {
     headline: 'City evacuation shelters take pets. If you have to leave, take your pet with you.',
     contacts: [
@@ -316,7 +320,7 @@ export const GLANCE: Record<string, Glance> = {
       { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Poisoned or exposed to something toxic · 24/7' },
     ],
     steps: [
-      { title: 'Take your pet with you', text: 'During an evacuation order, pets can ride the subway and buses, even without a carrier.' },
+      { title: 'Take your pet with you', text: 'During an evacuation order, pets can ride the subway and buses without a carrier. A pet too big for a carrier must be muzzled and on a strong leash. Only pets that are legal in NYC are allowed.' },
       { title: 'Know your zone', text: 'Find out if you live in an evacuation zone and where your nearest centre is.', link: { label: 'Know your zone', href: 'https://www.nyc.gov/knowyourzone' } },
       { title: 'Pack a Go Bag for your pet', text: 'At least three days of food, water and medicine. A collar or harness with an ID tag, and a recent colour photo.' },
       { title: 'Get emergency alerts', text: 'Notify NYC is the city’s free alert service, by app, text or email.', link: { label: 'Notify NYC', href: 'https://www.nyc.gov/notifynyc' } },
