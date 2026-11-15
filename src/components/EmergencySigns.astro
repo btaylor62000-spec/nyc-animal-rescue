@@ -1,0 +1,31 @@
+---
+/*
+ * When an animal needs help now, in words a 12-year-old can follow.
+ *
+ * Replaced the reviewer's single long sentence on 2026-11-15 at the owner's
+ * request: it ran to 60 words with two dashes, and the signs were buried in
+ * the middle. The signs are the same ones, as a list. "Caught by another
+ * animal, even if you see no wound" stays in bold, because it is the one
+ * people get wrong (rule 4 in CLAUDE.md).
+ *
+ * Used in three places so they cannot drift apart: the red band on the home
+ * page, the warning on emergency guides, and the assistant page.
+ */
+interface Props {
+  /** Leaves out the heading line when the place it sits already says "emergency". */
+  heading?: boolean;
+}
+const { heading = true } = Astro.props;
+---
+<div class="esigns">
+  {heading && <p class="esigns__lead"><strong>Is an animal hurt, very sick or in danger? Get help now.</strong></p>}
+  <p class="esigns__intro">It can’t wait if:</p>
+  <ul>
+    <li>It is bleeding, or can’t breathe well</li>
+    <li>It collapsed, or was hit by a car</li>
+    <li>It ate or touched something poisonous</li>
+    <li><strong>Another animal caught or bit it, even if you see no wound</strong></li>
+    <li>Anything else about it scares you</li>
+  </ul>
+  <p>Take a pet to a 24-hour vet. For a wild animal, call a wildlife rehabber. A rescue group can’t help fast enough. Not sure? Call a 24-hour vet and ask. Call before you go, so they are ready for you.</p>
+</div>

@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
+import EmergencySigns from '../components/EmergencySigns.astro';
 import { LISTED_ORGS as ORGS } from '../data/orgs.ts';
 import { GUIDE_GROUPS, LINES_BY_TIER } from '../data/guides.ts';
 
@@ -40,12 +41,7 @@ const places = GUIDE_GROUPS.flatMap((g) => (g.places ? [g.places] : []));
       </span>
     </a>
     <div class="wrap eband__more">
-      <p>
-        If you think an animal is hurt, very ill or in danger — for example bleeding, struggling to
-        breathe, collapsed, hit by a car, has swallowed something toxic, <strong>has been caught by another
-        animal</strong>, or anything else that worries you — it needs a vet or a wildlife rehabilitator now,
-        not a rescue group. Not sure? Ring a 24-hour vet and ask. Call ahead so they are ready for you.
-      </p>
+      <EmergencySigns />
       <a class="btn eband__btn" href="/guides/animal-emergency">What to do first</a>
     </div>
   </section>

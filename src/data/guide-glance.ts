@@ -113,6 +113,57 @@ const POISON = 'aspca-animal-poison-control-center-24-7-hotline';
 const CITY = 'nyc-311';
 
 export const GLANCE: Record<string, Glance> = {
+
+  'found-kittens-outside': {
+    headline: 'Kittens do best with their mother. Unless they are hurt, wait and watch for her first.',
+    contacts: [
+      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Orphaned kittens · call before you go' },
+      { org: CITY, when: 'Report orphaned kittens' },
+    ],
+    steps: [
+      { title: 'Hurt or very sick?', text: 'It needs help now. Go to an emergency vet, or call 311 to reach ACC.', link: { label: 'Animal emergencies', href: '/guides/animal-emergency' } },
+      { title: 'Healthy? Wait and watch', text: 'Watch from far away for a few hours, in case the mother comes back. Don’t take them home while you wait.' },
+      { title: 'Mother not back?', text: 'Call 311 or ACC. You can also bring orphaned kittens to an ACC centre, but call first.' },
+      { title: 'Stop more litters', text: 'The mother cat can be trapped, spayed and returned, often for free.', link: { label: 'Starting TNR', href: '/guides/starting-tnr' } },
+    ],
+    never: ['Do not separate stray or feral kittens from their mother.'],
+    tip: 'Tiny kittens that still need a bottle need care around the clock. Kitten nurseries are in Cats needing specialist help.',
+  },
+
+  'when-a-pet-dies': {
+    headline: 'Losing a pet is hard. Take the time you need. Here is what the city allows when you are ready.',
+    contacts: [
+      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Cremation, for a fee · call for details' },
+      { org: 'ambuvet-pet-ambulance', name: 'AmbuVet', when: 'Can carry a pet that has died' },
+      { org: 'lap-of-love', name: 'Lap of Love', when: 'In-home hospice and end-of-life care' },
+      { org: CITY, when: 'Questions, or a dead animal on the street' },
+    ],
+    steps: [
+      { title: 'Did it bite or scratch someone?', text: 'Call 311 first. If it may have had rabies, call 911. Don’t put it in the trash.' },
+      { title: 'Cremation', text: 'ACC cremates pets for a fee at its centres. Call ACC to ask how.' },
+      { title: 'Burial', text: 'You can bury a pet only on private property you own.' },
+      { title: 'Sanitation pickup', text: 'Use a heavy-duty black bag or two bags. Tape on a note saying what is inside, and put it in a bin with your regular trash.' },
+    ],
+    never: ['Do not put dead animals that may have been rabid in the trash.'],
+    tip: 'Several dead birds, fish or other wild animals in one place? Call 311. Use gloves or a plastic bag, and wash your hands after.',
+  },
+
+  'animal-left-alone': {
+    headline: 'If a pet has been left behind because its owner died, is in hospital or jail, or moved out, call 311.',
+    contacts: [
+      { dial: '911', when: 'An animal is in danger right now' },
+      { org: CITY, when: 'Report an abandoned pet, or neglect' },
+      { org: ACC, name: 'Animal Care Centers (ACC)', when: 'Takes these reports by phone in business hours' },
+    ],
+    steps: [
+      { title: 'In danger right now? Call 911', text: 'For example, no food or water, or it sounds hurt.' },
+      { title: 'Otherwise, call 311', text: 'Say a pet has been left behind. Give the address, what the animal looks like, and how long it has been alone.' },
+      { title: 'Evicted, and your animal is inside?', text: 'Look for a notice on the door saying which shelter it went to. If it is still inside, ask the landlord or building staff, then your police precinct.' },
+      { title: 'Facing eviction?', text: 'Plan now: find someone who could look after your pet. Call 311 and ask for the Tenant Helpline.' },
+    ],
+    remember: ['If it is happening right now, or an animal or a person is in danger: call 911.'],
+    tip: 'Going into hospital yourself? PAWS NY can help care for your pet while you are away.',
+  },
   'animal-emergency': {
     headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to a 24-hour animal hospital now.',
     action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet' },

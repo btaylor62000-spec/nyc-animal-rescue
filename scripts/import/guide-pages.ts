@@ -79,6 +79,12 @@ const WB_DISASTER = 'research/NYC_Pets_In_A_Disaster.xlsx';
 // would have to read past shelter applications to find it. Quotations are
 // the National Domestic Violence Hotline's own; places are the listings'.
 const WB_DV = 'research/NYC_Leaving_Abuse_With_Pets.xlsx';
+// Three written 2026-11-15 to fill gaps the first guide audit found, each
+// from the city's own pages (311, Sanitation, the Office of Animal Welfare);
+// quotations are theirs. The source URLs are in each guide's first lines.
+const WB_KITTENS = 'research/NYC_Found_Kittens.xlsx';
+const WB_PET_DIES = 'research/NYC_When_A_Pet_Dies.xlsx';
+const WB_LEFT_ALONE = 'research/NYC_Animal_Left_Alone.xlsx';
 
 /**
  * Which tabs become pages, and what each page is called in plain language.
@@ -86,6 +92,24 @@ const WB_DV = 'research/NYC_Leaving_Abuse_With_Pets.xlsx';
  * do not get a page of their own.
  */
 export const GUIDE_PAGES: TabSpec[] = [
+  {
+    file: WB_KITTENS, tab: 'Found kittens outside', slug: 'found-kittens-outside',
+    title: 'Found kittens outside',
+    summary: 'Check if they are hurt, then wait and watch for the mother. What to do if she does not come back.',
+    topics: ['kittens', 'found kittens', 'kitten outside', 'litter of kittens', 'baby cats', 'orphaned kittens', 'mother cat', 'kitten season', 'newborn kittens', 'stray kittens'],
+  },
+  {
+    file: WB_PET_DIES, tab: 'When a pet dies', slug: 'when-a-pet-dies',
+    title: 'When a pet dies',
+    summary: 'What the city allows: cremation, burial and sanitation pickup, what to do first if it bit someone, and help at the end of life.',
+    topics: ['pet died', 'dead pet', 'pet death', 'my pet died', 'cremation', 'bury my pet', 'pet burial', 'end of life', 'euthanasia', 'pet hospice', 'dead animal', 'dead bird', 'passed away'],
+  },
+  {
+    file: WB_LEFT_ALONE, tab: 'An animal left alone at home', slug: 'animal-left-alone',
+    title: 'An animal left alone in a home',
+    summary: 'A pet left behind after its owner died, went into hospital or jail, or was evicted: who to call, and how to get your own animal back.',
+    topics: ['abandoned pet', 'left behind', 'pet left alone', 'owner died', 'owner in hospital', 'owner in jail', 'eviction', 'evicted', 'locked out', 'marshal', 'neighbor pet alone', 'neighbour pet alone'],
+  },
   {
     file: WB_DV, tab: 'Leaving abuse with your pet', slug: 'leaving-abuse-with-your-pet',
     title: 'Leaving an abusive home with your pet',

@@ -58,6 +58,21 @@ three prototypes, and asked for the tier names to change. What changed:
   their rabbit that their problem could wait. The keys (`now`, `today`,
   `week`, `later`) and colours are unchanged.
 
+### Three guides added 2026-11-15, from the first audit's gaps
+
+*Found kittens outside*, *When a pet dies* and *An animal left alone in a
+home*, each from the city's own pages (311's articles on stray animals and on
+a dead animal on private property, the Sanitation Department's dead-animals
+page, the Office of Animal Welfare's evictions page), with the source URLs in
+each guide's first lines and quotations in their words. Workbooks:
+`research/NYC_Found_Kittens.xlsx`, `research/NYC_When_A_Pet_Dies.xlsx`,
+`research/NYC_Animal_Left_Alone.xlsx`. 27 guides now.
+
+Not written, because no reliable source exists: *an animal trapped in a wall,
+drain or tree*. The only accounts are news stories in which the NYPD's
+Emergency Service Unit happened to respond; there is no published city
+procedure. Do not write it from news reports.
+
 ### A guide audit runs every month (since 2026-11-15)
 
 A scheduled task ("Monthly guide audit", owner's claude.ai account) runs on
@@ -96,9 +111,13 @@ What changed, and where:
 | `src/styles/global.css` | New colour tokens at the top; new header, footer, bullets, band, lines and route styles at the bottom |
 | `tests/guides-structure.test.ts` | New test: every guide is in exactly one tier, numbered from 1 with no gaps |
 
-**The reviewer's emergency wording is kept word for word** inside the band,
-which is why the band is taller than a designer would draw it. Do not shorten
-it to make the page prettier.
+**The emergency wording in the band was rewritten by the owner's decision on
+2026-11-15** (`src/components/EmergencySigns.astro`), because the reviewer's
+single 60-word sentence was too hard to read in a hurry. The signs are the
+same, as a list, in words a 12-year-old can follow; "caught or bit it, even
+if you see no wound" stays in bold. The same component is used on the home
+page, the emergency guides and the assistant page, so the three cannot drift.
+Do not shorten it to make the page prettier.
 
 Adding a guide now needs one more step: put its slug in a tier in
 `GUIDE_TIERS`, or the new test fails. It still needs its `GUIDE_GROUPS` entry,

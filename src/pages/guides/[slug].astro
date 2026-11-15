@@ -9,6 +9,7 @@ import { assertGuideNamesOnlyListed } from '../../data/guide-integrity.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
 import GuideGlance from '../../components/GuideGlance.astro';
+import EmergencySigns from '../../components/EmergencySigns.astro';
 import { GLANCE, withHeadingIds, wordCount } from '../../data/guide-glance.ts';
 
 export function getStaticPaths() {
@@ -53,13 +54,13 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     </p>
 
     {isUrgent && (
-      <p class="notice notice--urgent" style="margin-top:1rem">
+      <div class="notice notice--urgent" style="margin-top:1rem">
         <span aria-hidden="true">&#9888;</span>
-        <span>
-          If you think the animal is hurt, very ill or in danger — for example bleeding, struggling to breathe,
-          collapsed, caught by another animal, or anything else that worries you — it needs care now. <a href="/directory?need=emergency-vet">24-hour emergency vets</a>.
-        </span>
-      </p>
+        <div>
+          <EmergencySigns />
+          <p><a href="/directory?need=emergency-vet">24-hour emergency vets, nearest first</a></p>
+        </div>
+      </div>
     )}
 
     <GuideGlance glance={glance} title={line?.label ?? guide.title} tier={line?.tier} tierTitle={line?.tierTitle} number={line?.number} slug={guide.slug} />

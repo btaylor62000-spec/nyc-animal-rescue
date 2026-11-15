@@ -57,6 +57,10 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
   'exotic-pet-legality': [{ heading: 'Rescues for exotic pets', need: 'adoption', animals: EXOTIC }],
   'found-an-injured-bird': [{ heading: 'Wildlife rehabilitators who take birds', need: 'wildlife-rehab', animals: ['bird-wild', 'pigeon'] }],
   'found-wildlife': [{ heading: 'Wildlife rehabilitators', need: 'wildlife-rehab' }],
+  'found-kittens-outside': [
+    { heading: 'Newborn kittens', need: 'neonatal', animals: ['cat'] },
+    { heading: 'TNR groups, for the mother cat', need: 'tnr', animals: ['cat'] },
+  ],
   'leaving-abuse-with-your-pet': [
     {
       heading: 'Hotlines, shelters and safe-keeping for survivors and their pets',
@@ -116,6 +120,13 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     },
     { heading: 'Something online', ids: ['fbi-tips', 'fbi-internet-crime-complaint-center'] },
     { heading: 'If people are at risk too', ids: ['nyc-domestic-violence-hotline', 'uri-pals'] },
+  ],
+  'animal-left-alone': [
+    { heading: 'Who to call', ids: ['nyc-311', 'animal-care-centers-of-nyc', 'your-local-nypd-precinct'] },
+    { heading: 'Somewhere safe for a pet meanwhile', need: 'boarding' },
+  ],
+  'when-a-pet-dies': [
+    { heading: 'Who can help', ids: ['animal-care-centers-of-nyc', 'ambuvet-pet-ambulance', 'lap-of-love', 'nyc-311'] },
   ],
   'save-an-at-risk-animal': [{ heading: 'Rescue groups that pull from the city shelter', need: 'advocacy' }],
   'starting-tnr': [

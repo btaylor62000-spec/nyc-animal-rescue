@@ -69,7 +69,7 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   // being hurt by a person is an emergency (2026-11-05).
   {
     title: 'Emergencies',
-    slugs: ['animal-emergency', 'report-animal-abuse', 'leaving-abuse-with-your-pet', 'exotic-pet-emergency', 'pets-in-a-disaster'],
+    slugs: ['animal-emergency', 'report-animal-abuse', 'leaving-abuse-with-your-pet', 'exotic-pet-emergency', 'pets-in-a-disaster', 'animal-left-alone'],
     places: { label: 'Emergency vets, nearest first', href: '/directory?need=emergency-vet' },
   },
   {
@@ -79,13 +79,13 @@ export const GUIDE_GROUPS: Array<{ title: string; slugs: string[]; places?: { la
   },
   {
     title: 'Stray, lost or found',
-    slugs: ['starting-tnr', 'lost-and-found-cat', 'lost-and-found-dog', 'lost-and-found-exotic'],
+    slugs: ['found-kittens-outside', 'starting-tnr', 'lost-and-found-cat', 'lost-and-found-dog', 'lost-and-found-exotic'],
     places: { label: 'Lost and found services', href: '/directory?need=lost-found' },
   },
   {
     title: 'Keeping your pet',
     places: { label: 'Help with costs, food and care', href: '/directory?need=owner-support' },
-    slugs: ['keeping-your-cat', 'keeping-your-dog', 'keep-your-pet-if-you-lose-your-home', 'help-paying-for-care', 'low-cost-clinics-and-trap-banks', 'low-cost-dog-care'],
+    slugs: ['keeping-your-cat', 'keeping-your-dog', 'keep-your-pet-if-you-lose-your-home', 'help-paying-for-care', 'low-cost-clinics-and-trap-banks', 'low-cost-dog-care', 'when-a-pet-dies'],
   },
   {
     title: 'Adopting, rehoming and special cases',
@@ -154,6 +154,7 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'report-animal-abuse', label: 'Is someone hurting or neglecting an animal?' },
       { slug: 'leaving-abuse-with-your-pet', label: 'Do you need to leave an abusive home with your pet?' },
       { slug: 'pets-in-a-disaster', label: 'Is a disaster, evacuation or heatwave putting your pet at risk?' },
+      { slug: 'animal-left-alone', label: 'Has an animal been left alone in a home?' },
     ],
   },
   {
@@ -163,7 +164,9 @@ export const GUIDE_TIERS: Array<{ key: TierKey; title: string; lines: Array<{ sl
       { slug: 'lost-and-found-dog' },
       { slug: 'lost-and-found-cat' },
       { slug: 'lost-and-found-exotic' },
+      { slug: 'found-kittens-outside' },
       { slug: 'save-an-at-risk-animal', label: 'Save a shelter animal on the at-risk list' },
+      { slug: 'when-a-pet-dies' },
     ],
   },
   {

@@ -6,7 +6,7 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 - **441** organizations after de-duplication
 - **78** duplicate clusters merged
-- **24** guide pages generated
+- **27** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
 - **1** personal contact details withheld
@@ -334,6 +334,9 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 16932 |
+| Found kittens outside | 2106 |
+| When a pet dies | 2269 |
+| An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
 | Pets in a disaster or evacuation | 4007 |
 | Keeping your pet if you are losing your home | 5929 |
