@@ -18,6 +18,7 @@ import { guidesFor, type GuideTopics } from '../data/guide-match.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
 import { checkPosition } from '../data/position.ts';
+import { driveLabel, minutesFrom, nearestZip, type DriveTable } from '../data/drive.ts';
 
 interface FilterState {
   q: string;
@@ -241,11 +242,20 @@ if (form && list) {
       const c = (await centres())[state.zip];
       if (c) filterZipOrigin = { lat: c[0], lon: c[1] };
     }
-    showDistances();
     const from = origin ?? filterZipOrigin;
+    // The zip to measure driving time from: the one typed, or the one nearest
+    // the reader's location.
+    driveNow = null;
+    if (from) {
+      const table = await loadDrive();
+      const typed = originFromZip && nearZip ? nearZip.value.trim() : !origin && /^\d{5}$/.test(state.zip) ? state.zip : null;
+      const zip = typed ?? (origin && table ? nearestZip(origin, await centres(), table) : null);
+      driveNow = minutesFrom(zip, table);
+    }
+    showDistances();
     if (from || emergency) {
       const keyOf = (id: string, m: (typeof visible)[number]['m']) => {
-        const k = rankKey({ needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin: from, now, emergency });
+        const k = rankKey({ id, needs: m.needs, hours: m.hours, status: m.status, confidence: m.confidence, geo: m.geo, outside: m.outside }, { origin: from, now, emergency, drive: driveNow });
         // Search wording only breaks ties: the query has already narrowed the
         // list, and among what is left, open, near and well evidenced matter.
         return [strength?.get(id) ?? 0, ...k, rank?.get(id) ?? 0, m.order];
@@ -383,6 +393,21 @@ if (form && list) {
   let zipCentres: Record<string, [number, number]> | null = null;
   let originFromZip = false;
   let filterZipOrigin: Origin | null = null;
+  // Driving times by zip (src/data/drive.ts), fetched the first time someone
+  // orders by distance, and the minutes from their zip for this run.
+  let driveTable: DriveTable | null = null;
+  let driveNow: Map<string, number> | null = null;
+  async function loadDrive(): Promise<DriveTable | null> {
+    if (!driveTable) {
+      try {
+        driveTable = await (await fetch('/drive-times.json')).json();
+      } catch {
+        // Straight-line distance still orders the list without it.
+        return null;
+      }
+    }
+    return driveTable;
+  }
   /** The zip in force for this run, from the filter panel or the search box. */
   let lastZip = '';
   async function centres(): Promise<Record<string, [number, number]>> {
@@ -406,7 +431,7 @@ if (form && list) {
     const where = origin
       ? originFromZip && nearZip ? `nearest to ${nearZip.value.trim()}` : 'nearest to you'
       : `nearest to ${typedZip}`;
-    const parts = [emergency ? 'Open now first' : null, origin || filterZipOrigin ? where : null].filter(Boolean) as string[];
+    const parts = [emergency ? 'Open now first' : null, origin || filterZipOrigin ? (emergency && driveNow ? `${where} by car` : where) : null].filter(Boolean) as string[];
     orderLabel.textContent = parts.length
       ? `${parts.join(', then ')}, then strongest evidence`
       : searchInput?.value.trim() ? 'Best match first' : 'Strongest evidence first';
@@ -414,7 +439,7 @@ if (form && list) {
 
   function showDistances(): void {
     const from = origin ?? filterZipOrigin;
-    for (const m of meta.values()) {
+    for (const [id, m] of meta) {
       const span = m.el.querySelector<HTMLElement>('.card__distance');
       if (!span) continue;
       if (!from || !m.geo) {
@@ -423,9 +448,13 @@ if (form && list) {
       }
       const miles = distanceMiles(from, m.geo);
       const shown = miles < 10 ? miles.toFixed(1) : String(Math.round(miles));
-      // A zip code's centre is not the door; say so.
-      span.textContent = `${m.geo.precision === 'zip' ? 'about ' : ''}${shown} mi`;
-      span.title = m.geo.precision === 'zip' ? 'Measured to the centre of its zip code' : 'Measured to its street address, as the crow flies';
+      const mins = driveNow?.get(id);
+      // A zip code's centre is not the door; say so. Driving time first where
+      // we measured it: it is what decides where to go in an emergency.
+      span.textContent = mins !== undefined ? `${driveLabel(mins)} · ${shown} mi` : `${m.geo.precision === 'zip' ? 'about ' : ''}${shown} mi`;
+      span.title = mins !== undefined
+        ? 'By car from the middle of your zip code, without traffic; distance as the crow flies'
+        : m.geo.precision === 'zip' ? 'Measured to the centre of its zip code' : 'Measured to its street address, as the crow flies';
       span.hidden = false;
     }
   }

@@ -35,9 +35,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.8808,
-    "lon": -73.5887,
-    "precision": "zip"
+    "lat": 40.87464,
+    "lon": -73.60936,
+    "precision": "address"
   },
   "address": {
     "street": "336 Forest Avenue",

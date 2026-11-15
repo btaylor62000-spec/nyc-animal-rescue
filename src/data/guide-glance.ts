@@ -188,23 +188,23 @@ export const GLANCE: Record<string, Glance> = {
   // Astoria and the Upper East Side for the south. The guide's Bronx section
   // says the same (Emergency tab of the cat workbook).
   'animal-emergency': {
-    headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to a 24-hour animal hospital now.',
+    headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to an emergency animal hospital now.',
     action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet' },
     contacts: [
       { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Swallowed or touched something toxic · 24/7' },
       { org: 'pet-poison-helpline-24-7-hotline', name: 'Pet Poison Helpline', when: 'Backup poison line · 24/7' },
-      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · Manhattan' },
-      { org: 'ambuvet-pet-ambulance', name: 'AmbuVet pet ambulance', when: 'Can’t get there yourself · 24 hours' },
+      { org: AMC, name: 'Animal Medical Center', when: 'Open day and night · Manhattan' },
+      { org: 'ambuvet-pet-ambulance', name: 'AmbuVet pet ambulance', when: 'Can’t get there yourself · day and night' },
     ],
     steps: [
-      { title: 'Find the nearest hospital open now', text: 'Hit by a car, bleeding, can’t breathe, a seizure, collapsed, or anything that scares you: go now. Not sure? Call a 24-hour hospital and ask.', link: { label: 'Hospitals open now, nearest first', href: '/directory?need=emergency-vet' } },
-      { title: 'Call on the way', text: 'Hours change, even at 24-hour hospitals. Say what kind of animal it is: not every hospital treats rabbits, birds or reptiles.', link: { label: 'Rabbit, bird or reptile? Vets who treat them', href: '/guides/exotic-pet-emergency' } },
+      { title: 'Find the nearest hospital open now', text: 'Hit by a car, bleeding, can’t breathe, a seizure, collapsed, or anything that scares you: go now. Not sure? Call an emergency hospital and ask.', link: { label: 'Hospitals open now, nearest first', href: '/directory?need=emergency-vet' } },
+      { title: 'Call on the way', text: 'Hours change, so check they are open. Say what kind of animal it is: not every hospital treats rabbits, birds or reptiles.', link: { label: 'Rabbit, bird or reptile? Vets who treat them', href: '/guides/exotic-pet-emergency' } },
       { title: 'Poisoned? Call poison control first', text: 'They work out the treatment and pass it to the hospital, which saves time.' },
       { title: 'Worried about paying? Go anyway', text: 'Ask about payment plans when you arrive.', link: { label: 'Help paying for vet care', href: '/guides/help-paying-for-care' } },
     ],
     never: ['Do not make the animal vomit unless a toxicologist tells you to.'],
     remember: ['Lilies are deadly to cats even in tiny amounts (a lick of pollen).'],
-    tip: 'In the Bronx, no animal hospital is confirmed open 24 hours. The full guide lists the nearest ones that are.',
+    tip: 'In the Bronx, no emergency animal hospital is open all night. Tap “I’m in the Bronx” above to see where to go from your part of the Bronx.',
     situations: [
       {
         label: 'It ate or touched something poisonous', tone: 'now', verdict: 'Call poison control first',
@@ -215,24 +215,25 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'Another dog attacked my dog', tone: 'now', verdict: 'Go to a vet now',
-        do: ['Take your dog to a 24-hour animal hospital now, even if you can’t see a wound.', 'Get the other owner’s name, address and phone number.', 'Was a person bitten too? Wash the bite, see a doctor, and report it to the Health Department through 311.', 'If the dog is still a danger to people, call 911.'],
+        do: ['Take your dog to an emergency animal hospital now, even if you can’t see a wound.', 'Get the other owner’s name, address and phone number.', 'Was a person bitten too? Wash the bite, see a doctor, and report it to the Health Department through 311.', 'If the dog is still a danger to people, call 911.'],
         contacts: [{ dial: '911', when: 'The dog is still a danger to people' }, { org: CITY, when: 'Report a bite to a person' }],
       },
       {
         label: 'I can’t get it there myself', tone: 'now', verdict: 'Call a pet ambulance',
-        do: ['AmbuVet runs a 24-hour pet ambulance.', 'Call the hospital you are going to before the pickup.'],
-        contacts: [{ org: 'ambuvet-pet-ambulance', name: 'AmbuVet', when: '24 hours' }],
+        do: ['AmbuVet runs a pet ambulance, day and night.', 'Call the hospital you are going to before the pickup.'],
+        contacts: [{ org: 'ambuvet-pet-ambulance', name: 'AmbuVet', when: 'Day and night' }],
         section: 'FIND THE NEAREST HOSPITAL OPEN NOW',
       },
       {
-        label: 'I’m in the Bronx', tone: 'today', verdict: 'No Bronx hospital is open all night',
+        label: 'I’m in the Bronx: there’s no all-night emergency hospital', tone: 'today', verdict: 'At night, go to Yonkers, Queens or Manhattan',
         do: [
+          'No emergency animal hospital in the Bronx is open all night. At night you have to leave the Bronx, and which hospital is closest by road depends on where you are.',
           'Riverdale, Kingsbridge, Fordham, Norwood, Wakefield or Co-op City: Animal Specialty Center in Yonkers is usually fastest by road, about 15 to 20 minutes.',
           'Pelham Bay or Parkchester: Urgent Vets in Queens, by LaGuardia.',
           'Mott Haven or Hunts Point: URvet Care in Astoria, or the Animal Medical Center or VEG in Manhattan.',
           'Urgent Vets in the Bronx is open every day, 10am to 10pm. Call on the way: traffic changes everything.',
         ],
-        contacts: [{ org: 'animal-specialty-center', name: 'Animal Specialty Center (Yonkers)', when: 'Open 24/7 · north and west Bronx' }, { org: 'urgent-vets-11369', name: 'Urgent Vets (Queens)', when: 'Open 24 hours · east Bronx' }, { org: 'urvet-care-astoria', name: 'URvet Care Astoria', when: 'Open 24/7 · south Bronx' }, { org: 'urgent-vets-bronx', name: 'Urgent Vets (Bronx)', when: 'Every day, 10am to 10pm' }],
+        contacts: [{ org: 'animal-specialty-center', name: 'Animal Specialty Center (Yonkers)', when: 'Open all night · north and west Bronx' }, { org: 'urgent-vets-11369', name: 'Urgent Vets (Queens)', when: 'Open all night · east Bronx' }, { org: 'urvet-care-astoria', name: 'URvet Care Astoria', when: 'Open all night · south Bronx' }, { org: 'urgent-vets-bronx', name: 'Urgent Vets (Bronx)', when: 'Every day, 10am to 10pm' }],
         section: 'IN THE BRONX',
       },
       {
@@ -254,7 +255,7 @@ export const GLANCE: Record<string, Glance> = {
     headline: 'Most hurt birds need a licensed wildlife rescuer (a rehabber) today. Box it, then get it there.',
     contacts: [
       { org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm', note: '565 Columbus Ave, Manhattan. Just walk in, no appointment.' },
-      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · badly hurt birds', note: 'At night, its emergency room takes critically ill birds. Call first.' },
+      { org: AMC, name: 'Animal Medical Center', when: 'Open day and night · badly hurt birds', note: 'At night, its emergency room takes critically ill birds. Call first.' },
       { org: AHN, name: 'Animal Help Now', when: 'Any time', note: 'Type where the bird is. It lists rehabbers open right now.' },
     ],
     check: {
@@ -267,7 +268,7 @@ export const GLANCE: Record<string, Glance> = {
     steps: [
       { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call.' },
       { title: 'Put it in a closed bag or box', text: 'A paper bag, or a cardboard box with a few small air holes. Take the towel out. Keep it somewhere dark and quiet.' },
-      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Call the Animal Medical Center’s 24-hour emergency room.' },
+      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Call the Animal Medical Center’s emergency room, which is open all night.' },
     ],
     never: [
       'Never give it food or water.',
@@ -280,7 +281,7 @@ export const GLANCE: Record<string, Glance> = {
         label: 'It hit a window', tone: 'now', verdict: 'Needs help today, even if it seems fine',
         do: ['Cover it with a towel and scoop it up.', 'Put it in a closed box with small air holes. Keep it dark and quiet.', 'Take it to a rehabber today. Birds that fly off after hitting a window often die later from shock.'],
         never: ['No heating pad for a bird that hit a window: a warm room is enough.', 'Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: its emergency room, call first' }],
         section: 'How to catch it, box it and keep it calm',
       },
       {
@@ -288,7 +289,7 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Put it in a closed box right away.', 'Get it to a rehabber today. It may need medicine the same day.'],
         remember: ['If a bird or small animal has been caught or bitten by another animal, it is an emergency, even if you can see no wound.'],
         never: ['Never give it food or water.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: its emergency room, call first' }],
         section: 'If it was caught or bitten by an animal',
       },
       {
@@ -301,7 +302,7 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'It’s big: a hawk, owl, goose or swan', tone: 'now', verdict: 'Don’t touch it. Call for help.',
         do: ['Keep people and dogs away.', 'Keep it in sight.', 'Call the Animal Medical Center, which takes hawks, owls and water birds at any hour. In a park, you can also call 311 and ask for the Urban Park Rangers.'],
-        contacts: [{ org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · say NYC Bird Alliance sent you' }, { org: CITY, when: 'In a park: ask for the Urban Park Rangers' }],
+        contacts: [{ org: AMC, name: 'Animal Medical Center', when: 'Open day and night · say NYC Bird Alliance sent you' }, { org: CITY, when: 'In a park: ask for the Urban Park Rangers' }],
         section: 'Where to take it',
       },
       {
@@ -313,7 +314,7 @@ export const GLANCE: Record<string, Glance> = {
       {
         label: 'It’s stuck in a glue trap', tone: 'now', verdict: 'Don’t pull it off',
         do: ['Leave it on the trap.', 'Take it to a rehabber just as it is.'],
-        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: 24-hour ER, call first' }],
+        contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }, { org: AMC, name: 'Animal Medical Center', when: 'At night: its emergency room, call first' }],
         section: 'What to do now, step by step',
       },
     ],
@@ -385,7 +386,7 @@ export const GLANCE: Record<string, Glance> = {
     ],
     steps: [
       { title: 'Call first', text: 'Check they will treat your kind of animal tonight. Rabbits, birds and reptiles hide illness and get worse fast.' },
-      { title: 'Night or weekend? Try the Animal Medical Center', text: 'It is open 24 hours and has its own team for birds, reptiles, rabbits and small mammals.' },
+      { title: 'Night or weekend? Try the Animal Medical Center', text: 'It is open day and night and has its own team for birds, reptiles, rabbits and small mammals.' },
       { title: 'Poisoned? Call poison control', text: 'Have ready: the kind of animal, its weight, and what it ate or touched.' },
       { title: 'Afterwards, find your exotics vet', text: 'Rabbit and bird rescues keep lists of vets who know your animal. Save one before the next emergency.' },
     ],
@@ -415,10 +416,10 @@ export const GLANCE: Record<string, Glance> = {
     headline: 'You don’t have to choose between your safety and your pet. Call the hotline and say you have a pet.',
     contacts: [
       { dial: '911', when: 'In danger now' },
-      { org: 'nyc-domestic-violence-hotline', name: 'NYC Domestic Violence Hotline', when: '24 hours · say you have a pet' },
+      { org: 'nyc-domestic-violence-hotline', name: 'NYC Domestic Violence Hotline', when: 'Day and night · say you have a pet' },
       { org: 'uri-pals', name: 'URI PALS', when: 'Shelters where you and your pet live together' },
       { org: 'safe-horizon', name: 'Safe Horizon', when: 'Keeps your pet safe while you leave' },
-      { org: 'national-domestic-violence-hotline', name: 'National Domestic Violence Hotline', when: '24 hours · or text START to 88788' },
+      { org: 'national-domestic-violence-hotline', name: 'National Domestic Violence Hotline', when: 'Day and night · or text START to 88788' },
     ],
     steps: [
       { title: 'In danger now? Call 911', text: 'Then call the NYC hotline. Tell them you have a pet and need to leave safely with it.' },

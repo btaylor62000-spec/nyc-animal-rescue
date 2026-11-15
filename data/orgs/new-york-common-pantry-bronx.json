@@ -36,9 +36,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.8257,
-    "lon": -73.893,
-    "precision": "zip"
+    "lat": 40.8304,
+    "lon": -73.89064,
+    "precision": "address"
   },
   "address": {
     "street": "1290 Hoe Ave.",

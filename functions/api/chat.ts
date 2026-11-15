@@ -21,6 +21,7 @@ import { SYSTEM_PROMPT, buildContext } from '../../src/chat/system-prompt.ts';
 import { StreamRedactor, allowedFrom } from '../../src/chat/redact.ts';
 import { LIMITS, type ChatCard, type ChatEvent, type ChatRequest } from '../../src/chat/protocol.ts';
 import { distanceMiles, takesEmergencies } from '../../src/data/rank.ts';
+import { driveLabel } from '../../src/data/drive.ts';
 import { openLabel, openState } from '../../src/data/schedule.ts';
 import { clientKeyFor, issuePass, verifyPass } from '../../src/chat/pass.ts';
 
@@ -170,7 +171,10 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     retrieved.orgs.map((r) => {
       const from = retrieved.origin;
       const miles = from && r.geo ? distanceMiles(from, r.geo) : null;
-      const distance = miles === null ? null : `${r.geo!.precision === 'zip' ? 'about ' : ''}${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi`;
+      const mins = retrieved.drive?.get(r.id);
+      const straight = miles === null ? null : `${r.geo!.precision === 'zip' ? 'about ' : ''}${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi`;
+      // Driving time first where measured: it is what decides where to go.
+      const distance = mins !== undefined ? `${driveLabel(mins)}${straight ? ` · ${straight}` : ''}` : straight;
       const openNow = takesEmergencies(r) ? openLabel(openState(r.hours, now), now) : null;
       return [r.id, { distance, openNow }] as const;
     }),

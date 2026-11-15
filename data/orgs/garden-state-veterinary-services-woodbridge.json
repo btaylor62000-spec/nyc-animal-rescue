@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.5529,
-    "lon": -74.2869,
-    "precision": "zip"
+    "lat": 40.55305,
+    "lon": -74.29129,
+    "precision": "address"
   },
   "address": {
     "street": "1200 Route 9 North",

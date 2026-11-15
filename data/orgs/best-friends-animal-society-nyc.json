@@ -72,7 +72,11 @@
       "url": "https://facebook.com/bestfriendsanimalsociety"
     }
   ],
-  "geo": null,
+  "geo": {
+    "lat": 40.72154,
+    "lon": -74.00439,
+    "precision": "address"
+  },
   "address": {
     "street": "307 West Broadway",
     "city": "New York",

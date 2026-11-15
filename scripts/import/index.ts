@@ -27,6 +27,19 @@ import { attachGeo } from '../geo/attach.ts';
 import { isNycZip } from '../../src/data/geo.ts';
 
 /** The city's zip centres, for the assistant to place a zip written in a question. */
+/**
+ * Driving times to emergency vets by zip (scripts/geo/drive-times.ts), for the
+ * assistant. Read as measured; the import never touches the network.
+ */
+function driveTimes(): unknown {
+  try {
+    const t = JSON.parse(readFileSync('data/drive-times.json', 'utf8'));
+    return { measuredOn: t.measuredOn, hospitals: t.hospitals, minutes: t.minutes };
+  } catch {
+    return undefined;
+  }
+}
+
 function nycZipCentres(): Record<string, [number, number]> {
   const all: Record<string, [number, number]> = existsSync('data/zip-centroids.json')
     ? JSON.parse(readFileSync('data/zip-centroids.json', 'utf8')).zips
@@ -322,7 +335,7 @@ function main(): void {
   }));
   writeFileSync(
     'data/chat-corpus.json',
-    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, zipCentres: nycZipCentres() }, null, 0)}\n`,
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;

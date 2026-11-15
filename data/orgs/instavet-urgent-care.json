@@ -35,9 +35,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.7471,
-    "lon": -73.9397,
-    "precision": "zip"
+    "lat": 40.74925,
+    "lon": -73.94884,
+    "precision": "address"
   },
   "address": {
     "street": "44-16 23rd St",

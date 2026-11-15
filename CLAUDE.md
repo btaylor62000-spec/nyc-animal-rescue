@@ -118,6 +118,22 @@ such. The monthly audit checks whether the city has published a procedure.
 - **Google Translate:** the owner's decision is that readers translate the
   site themselves; no translated copies of the guides are planned.
 
+### Also changed 2026-11-15 (fourth round)
+
+- **"Emergency animal hospital", not "24-hour"** (owner): telling someone
+  where to go says "emergency animal hospital" or "emergency vets"; a
+  place's own hours say "open day and night"; "open all night" only where
+  hours decide where to go (the Bronx). "Within 24 hours" stays where it is a
+  deadline (reporting a bite).
+- **The Bronx tile says why it is there:** "I'm in the Bronx: there's no
+  all-night emergency hospital", then where to go by neighbourhood, from the
+  driving times.
+- **Guide feedback goes to the owner's Google Form** (`FEEDBACK_FORM` in
+  `src/data/site.ts`): "Something wrong or missing in this guide? Tell us" on
+  every guide, with the guide's name filled in. A form the owner holds,
+  because the site has nowhere private for free text (rule 7; its own forms
+  commit to the public repository). Answers reach only the owner.
+
 ### A guide audit runs every month (since 2026-11-15)
 
 A scheduled task ("Monthly guide audit", owner's claude.ai account) runs on
@@ -933,6 +949,23 @@ morning at the top, and the server-rendered order), the assistant
 the foot of each guide (`guide-listings.ts`). With a location or zip, the
 owner wants the nearest open places, so a Yonkers hospital can lead for
 someone in the north Bronx at night.
+
+**Emergencies are ordered by driving time, not miles** (owner, 2026-11-15:
+"lives depend on this"). Straight-line distance is wrong where a river is in
+the way: from Fordham, Astoria is nearest as the crow flies and Yonkers is
+four minutes faster by road. `npm run drive-times` (`scripts/geo/drive-times.ts`)
+measures minutes by car, no traffic, from the centre of every NYC zip code
+(209) to every emergency vet (42) with the free public OSRM route planner,
+and writes `data/drive-times.json` (about 31 KB), served as
+`/drive-times.json` and copied into the assistant's corpus at import. In an
+emergency with a known place, the directory and the assistant look up the
+reader's zip (typed, or the zip whose centre is nearest their location,
+within two miles) and order by those minutes after open-now; cards show
+"about N min by car · X mi". Run it again whenever an emergency vet is added
+or moves: `tests/drive-times.test.ts` fails until you do. In a cloud session
+it needs `router.project-osrm.org` and `geocoding.geo.census.gov` allowed
+and the proxy variables above. Two hospitals on Route 17 in Paramus could
+not be geocoded and are measured from their zip's centre.
 
 Added 2026-11-04. One ordering, `src/data/rank.ts`, used by the directory in
 the browser and by the assistant on the server, so they cannot disagree: in an

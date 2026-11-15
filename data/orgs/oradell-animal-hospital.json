@@ -33,9 +33,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.9473,
-    "lon": -74.0702,
-    "precision": "zip"
+    "lat": 40.96099,
+    "lon": -74.07152,
+    "precision": "address"
   },
   "address": {
     "street": "580 Winters Ave",

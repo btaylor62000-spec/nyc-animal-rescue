@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 40.7818,
-    "lon": -73.4731,
-    "precision": "zip"
+    "lat": 40.78616,
+    "lon": -73.44999,
+    "precision": "address"
   },
   "address": {
     "street": "163 S Service Rd",

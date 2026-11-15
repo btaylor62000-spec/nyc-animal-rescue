@@ -8,6 +8,7 @@ import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
 import { assertGuideNamesOnlyListed } from '../../data/guide-integrity.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
+import { feedbackLink } from '../../data/site.ts';
 import GuideGlance from '../../components/GuideGlance.astro';
 import EmergencySigns from '../../components/EmergencySigns.astro';
 import { GLANCE, withHeadingIds, wordCount } from '../../data/guide-glance.ts';
@@ -58,7 +59,7 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
         <span aria-hidden="true">&#9888;</span>
         <div>
           <EmergencySigns />
-          <p><a href="/directory?need=emergency-vet">24-hour emergency vets, nearest first</a></p>
+          <p><a href="/directory?need=emergency-vet">Emergency vets, open now and nearest first</a></p>
         </div>
       </div>
     )}
@@ -119,7 +120,13 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     )}
     </details>
 
-    <p class="notice" style="margin-top:2rem">
+    <p class="guide-feedback">
+      <strong>Something wrong or missing in this guide?</strong>
+      <a href={feedbackLink(guide.title)} rel="noopener" target="_blank">Tell us</a>
+      <span class="muted">(opens a Google Form; please leave out anyone's personal details)</span>
+    </p>
+
+    <p class="notice" style="margin-top:1rem">
       <Icon name="alert" size={17} />
       <span>
         <strong>Wrong number, or something missing?</strong> Every organization named here has its own entry

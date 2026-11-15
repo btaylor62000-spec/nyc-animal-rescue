@@ -18,6 +18,8 @@ import { openState } from './schedule.ts';
 export interface Origin { lat: number; lon: number }
 
 export interface Rankable {
+  /** Needed only to look up a driving time. */
+  id?: string;
   needs: string[];
   hours: string | null;
   status: string;
@@ -59,12 +61,25 @@ export interface RankContext {
   now?: Date;
   /** The person needs help now: put open places first. */
   emergency?: boolean;
+  /**
+   * Minutes by car from the reader's zip to each emergency vet
+   * (src/data/drive.ts). In an emergency these replace straight-line miles.
+   */
+  drive?: Map<string, number> | null;
 }
 
 /** Sort keys for one record; compare them left to right. */
 export function rankKey(o: Rankable, ctx: RankContext): number[] {
   const open = ctx.emergency && takesEmergencies(o) ? OPEN_RANK[openState(o.hours, ctx.now ?? new Date()).state] : 1;
   const miles = ctx.origin && o.geo ? distanceMiles(ctx.origin, o.geo) : null;
+  // In an emergency with a known place, order by minutes on the road. A
+  // record with no measured time (a poison line, a place with no address) is
+  // given a rough estimate from straight-line miles, or put last.
+  if (ctx.emergency && ctx.origin) {
+    const mins = o.id ? ctx.drive?.get(o.id) : undefined;
+    const est = mins ?? (miles === null ? 999 : Math.round(miles * 3 + 3));
+    return [open, est, CONF_RANK[o.confidence] ?? 3, miles ?? Number.MAX_SAFE_INTEGER];
+  }
   return [
     ctx.emergency ? open : 0,
     // With a location, the nearest places come first wherever they are: from

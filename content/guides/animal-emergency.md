@@ -9,14 +9,14 @@ source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Emergency & poison contr
 
 _Where to go right now if you think an animal is hurt, very ill, poisoned or in danger._
 
-If you think an animal is hurt, very ill or in danger, take it to a 24-hour emergency hospital now. For example: it has been hit by a car, is bleeding, is struggling to breathe, is having a seizure, cannot pass urine, has collapsed, or has eaten something toxic - or anything else about it worries you. If you are not sure, ring a 24-hour hospital and ask. Ring on the way so they are ready for you. This page is for medical emergencies; a rescue group cannot help in time.
+If you think an animal is hurt, very ill or in danger, take it to an emergency animal hospital now. For example: it has been hit by a car, is bleeding, is struggling to breathe, is having a seizure, cannot pass urine, has collapsed, or has eaten something toxic - or anything else about it worries you. If you are not sure, ring an emergency animal hospital and ask. Ring on the way so they are ready for you. This page is for medical emergencies; a rescue group cannot help in time.
 
 ## Find the nearest hospital open now
 
 - Every emergency hospital in and near the city, open now and nearest to you first: [Find help](/directory?need=emergency-vet)
 - The same hospitals, with their numbers, are listed at the end of this page.
 - Hours change. Ring before you set off, even to a hospital listed as open 24 hours.
-- If you cannot get the animal there yourself, AmbuVet runs a 24-hour pet ambulance: (800) 262-8838. Ring the hospital you are going to before the pickup.
+- If you cannot get the animal there yourself, AmbuVet runs a pet ambulance, day and night: (800) 262-8838. Ring the hospital you are going to before the pickup.
 
 ## If it swallowed or touched something toxic: ring poison control first
 

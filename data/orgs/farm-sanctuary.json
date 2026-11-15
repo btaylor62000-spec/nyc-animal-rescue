@@ -36,9 +36,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 42.3773,
-    "lon": -76.945,
-    "precision": "zip"
+    "lat": 42.38557,
+    "lon": -77.03322,
+    "precision": "address"
   },
   "address": {
     "street": "3100 Aikens Road",

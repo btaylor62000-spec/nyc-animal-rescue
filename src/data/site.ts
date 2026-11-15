@@ -35,3 +35,16 @@ export const SITE_NAME = 'NYC Animal Rescue';
 
 /** True once a real repository is configured, so links are never dead. */
 export const HAS_REPO = !GITHUB_REPO.startsWith('your-github-username/');
+
+/**
+ * The owner's Google Form for "something wrong or missing in this guide"
+ * (2026-11-15). A form the owner holds, because the site has nowhere private
+ * to keep free text: its own forms commit to the public repository, and
+ * people in a crisis write personal details. Answers go to the owner only.
+ */
+export const FEEDBACK_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSeCnvCil-xPO58fDMSxAB4DUq638pU1N72JRUycBQFXXccRnQ/viewform';
+/** The form's "Which guide or page?" question, filled in for the reader. */
+const FEEDBACK_PAGE_ENTRY = 'entry.2083064976';
+export function feedbackLink(page: string): string {
+  return `${FEEDBACK_FORM}?usp=pp_url&${FEEDBACK_PAGE_ENTRY}=${encodeURIComponent(page)}`;
+}

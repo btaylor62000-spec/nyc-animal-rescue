@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 41.0376,
-    "lon": -73.6243,
-    "precision": "zip"
+    "lat": 41.02148,
+    "lon": -73.64068,
+    "precision": "address"
   },
   "address": {
     "street": "409 East Putnam Avenue",

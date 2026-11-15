@@ -32,9 +32,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 41.0992,
-    "lon": -74.013,
-    "precision": "zip"
+    "lat": 41.09537,
+    "lon": -74.00733,
+    "precision": "address"
   },
   "address": {
     "street": "123 NY-59",

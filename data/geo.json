@@ -67,6 +67,12 @@
    "lon": -73.99609,
    "matched": "76 MONTAGUE ST, BROOKLYN, NY, 11201"
   },
+  "best-friends-animal-society-nyc": {
+   "query": "307 West Broadway, New York, NY 10013",
+   "lat": 40.72154,
+   "lon": -74.00439,
+   "matched": "307 W BROADWAY, NEW YORK, NY, 10013"
+  },
   "bideawee-manhattan-adoption-center": {
    "query": "152 W 24th St, New York, NY 10011",
    "lat": 40.74415,
@@ -115,6 +121,12 @@
    "lon": -73.84491,
    "matched": "1640 EASTCHESTER RD, BRONX, NY, 10461"
   },
+  "cannolis-sweet-life-senior-rescue": {
+   "query": "336 Forest Avenue, Locust Valley, NY 11560",
+   "lat": 40.87464,
+   "lon": -73.60936,
+   "matched": "336 FOREST AVE, LOCUST VALLEY, NY, 11560"
+  },
   "community-help-in-park-slope": {
    "query": "200 Fourth Ave., Brooklyn, NY 11217",
    "lat": 40.67819,
@@ -145,6 +157,12 @@
    "lon": -73.97384,
    "matched": "2455 MCDONALD AVE, BROOKLYN, NY, 11223"
   },
+  "farm-sanctuary": {
+   "query": "3100 Aikens Road, Watkins Glen, NY 14891",
+   "lat": 42.38557,
+   "lon": -77.03322,
+   "matched": "3100 AIKENS RD, WATKINS GLEN, NY, 14891"
+  },
   "feeding-with-tlc": {
    "query": "309 St. Paul's Ave., Staten Island, NY 10304",
    "lat": 40.63055,
@@ -174,6 +192,12 @@
    "lat": 42.23783,
    "lon": -74.34572,
    "matched": "10846 STATE RTE 23A, HUNTER, NY, 12442"
+  },
+  "garden-state-veterinary-services-woodbridge": {
+   "query": "1200 Route 9 North, Woodbridge, NJ 07095",
+   "lat": 40.55305,
+   "lon": -74.29129,
+   "matched": "1200 US HWY 9, WOODBRIDGE, NJ, 07095"
   },
   "greater-state-veterinary-specialists": {
    "query": "3135 Victory Blvd, Staten Island, NY 10314",
@@ -207,9 +231,9 @@
   },
   "instavet-urgent-care": {
    "query": "44-16 23rd St, Queens, NY 11101",
-   "lat": null,
-   "lon": null,
-   "matched": null
+   "lat": 40.74925,
+   "lon": -73.94884,
+   "matched": "16-23 44TH RD, LONG ISLAND CITY, NY, 11101: the corner of 23rd St and 44th Rd, the same block as 44-16 23rd St (looked up 2026-11-15)"
   },
   "island-bird-cat-and-dog-vet-group": {
    "query": "375 Manor Rd, Staten Island, NY 10314",
@@ -228,6 +252,12 @@
    "lat": 40.77938,
    "lon": -73.73232,
    "matched": "333 GREAT NECK RD, GREAT NECK, NY, 11021"
+  },
+  "long-island-veterinary-specialists": {
+   "query": "163 S Service Rd, Plainview, NY 11803",
+   "lat": 40.78616,
+   "lon": -73.44999,
+   "matched": "163 S SVC RD, PLAINVIEW, NY, 11803"
   },
   "low-cost-vet-mobile": {
    "query": "159-19 Horace Harding Expressway, Fresh Meadows, NY 11365",
@@ -259,6 +289,12 @@
    "lon": -73.94957,
    "matched": "8 E 109TH ST, NEW YORK, NY, 10029"
   },
+  "new-york-common-pantry-bronx": {
+   "query": "1290 Hoe Ave., Bronx, NY 10459",
+   "lat": 40.8304,
+   "lon": -73.89064,
+   "matched": "1290 HOE AVE, BRONX, NY, 10459"
+  },
   "nys-dec-region-2": {
    "query": "47-40 21st Street, Long Island City, NY 11101",
    "lat": 40.74334,
@@ -289,6 +325,12 @@
    "lon": -73.95428,
    "matched": "227 E 84TH ST, NEW YORK, NY, 10028"
   },
+  "oradell-animal-hospital": {
+   "query": "580 Winters Ave, Paramus, NJ 07652",
+   "lat": 40.96099,
+   "lon": -74.07152,
+   "matched": "580 WINTERS AVE, PARAMUS, NJ, 07652"
+  },
   "park-slope-veterinary-center": {
    "query": "639 4th Ave, Brooklyn, NY 11232",
    "lat": 40.66371,
@@ -306,6 +348,12 @@
    "lat": 40.95024,
    "lon": -73.81753,
    "matched": "309 WHITE PLAINS RD, EASTCHESTER, NY, 10709"
+  },
+  "pets-alive": {
+   "query": "363 Derby Road, Middletown, NY 10940",
+   "lat": 41.49333,
+   "lon": -74.43741,
+   "matched": "363 DERBY RD, MIDDLETOWN, NY, 10940"
   },
   "project-hospitality": {
    "query": "205 Canal St., Staten Island, NY 10304",
@@ -447,9 +495,15 @@
   },
   "veg-clifton": {
    "query": "790 New Jersey 3, Clifton, NJ 07012",
-   "lat": null,
-   "lon": null,
-   "matched": null
+   "lat": 40.83547,
+   "lon": -74.15036,
+   "matched": "790 STATE RTE 3, CLIFTON, NJ, 07012 (looked up as \"790 Route 3, Clifton, NJ 07012\", 2026-11-15)"
+  },
+  "veg-greenwich": {
+   "query": "409 East Putnam Avenue, Greenwich, CT 06830",
+   "lat": 41.02148,
+   "lon": -73.64068,
+   "matched": "409 W PUTNAM AVE, GREENWICH, CT, 06830"
   },
   "veg-hoboken": {
    "query": "1327 Willow Avenue, Hoboken, NJ 07030",
@@ -465,9 +519,9 @@
   },
   "veg-nanuet": {
    "query": "123 NY-59, Nanuet, NY 10954",
-   "lat": null,
-   "lon": null,
-   "matched": null
+   "lat": 41.09537,
+   "lon": -74.00733,
+   "matched": "123 STATE RTE 59, NANUET, NY, 10954 (looked up as \"123 State Rte 59\", 2026-11-15)"
   },
   "veg-new-dorp": {
    "query": "2546 Hylan Blvd, Staten Island, NY 10306",

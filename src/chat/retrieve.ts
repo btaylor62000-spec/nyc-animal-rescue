@@ -18,18 +18,23 @@ import { distanceBand, distanceMiles, takesEmergencies, type Origin } from '../d
 import { openState } from '../data/schedule.ts';
 import { zipOrigin } from '../data/zip-centres.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
+import { minutesFrom, nearestZip, type DriveTable } from '../data/drive.ts';
 
 export interface Corpus {
   orgs: CorpusOrg[];
   guides: CorpusGuide[];
   /** New York City zip code centres, for a zip written in the question. */
   zipCentres?: Record<string, [number, number]>;
+  /** Driving times to emergency vets by zip (src/data/drive.ts). */
+  driveTimes?: DriveTable;
 }
 
 /** Where the reader is and what time it is, when known. */
 export interface RetrieveContext {
   origin?: Origin | null;
   now?: Date;
+  /** Minutes by car from the reader's zip to each emergency vet. */
+  drive?: Map<string, number> | null;
 }
 
 export interface Signals {
@@ -344,6 +349,8 @@ export interface Retrieved {
   signals: Signals;
   /** Where distances were measured from: the shared location, or a zip in the question. */
   origin: Origin | null;
+  /** Minutes by car to each emergency vet from the reader's zip, when known. */
+  drive: Map<string, number> | null;
 }
 
 function toSearchRecord(o: CorpusOrg): SearchRecordLike {
@@ -572,7 +579,11 @@ export class Retriever {
     // 4c. Nearer first, in the same rough bands as the directory, when the
     //     reader shared a location. Citywide services have no place and are
     //     neither helped nor hurt.
-    if (ctx.origin && org.geo) {
+    const mins = ctx.drive?.get(org.id);
+    if (mins !== undefined) {
+      // Minutes on the road, measured, beat miles as the crow flies.
+      score += (mins < 10 ? 8 : mins < 15 ? 6 : mins < 20 ? 4 : mins < 30 ? 1 : mins < 45 ? -2 : -4) - Math.min(mins, 60) * 0.25;
+    } else if (ctx.origin && org.geo) {
       const miles = distanceMiles(ctx.origin, org.geo);
       // The band does the heavy lifting; within a band, nearer still wins, as
       // it does in the directory, rather than the better-worded listing.
@@ -605,7 +616,12 @@ export class Retriever {
     // Many people never turn location services on, and they should still get
     // the nearest open hospital first.
     const origin = given.origin ?? zipOrigin(signals.zips[0], this.corpus.zipCentres ?? {});
-    const ctx: RetrieveContext = { ...given, origin };
+    // Driving time from the zip in the question, or the one nearest the shared
+    // location: straight-line distance is wrong where a river is in the way.
+    const table = this.corpus.driveTimes;
+    const zip = signals.zips[0] ?? (given.origin && table ? nearestZip(given.origin, this.corpus.zipCentres ?? {}, table) : null);
+    const drive = minutesFrom(zip, table);
+    const ctx: RetrieveContext = { ...given, origin, drive };
 
     // Free-text relevance, then re-ranked by how well each record fits the
     // signals. Records that match the signals but not the wording still get a
@@ -641,6 +657,7 @@ export class Retriever {
       orgs: coverEveryNeed(scored, signals.needs, limit),
       guide: this.bestGuide(question, signals),
       origin,
+      drive,
       signals,
     };
   }

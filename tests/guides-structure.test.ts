@@ -179,3 +179,11 @@ test('an organization removed from the site appears nowhere a reader or the assi
     assert.deepEqual(hits, [], `${r.id} still appears`);
   }
 });
+
+test('every guide page offers the feedback form, naming the guide', () => {
+  // Read as text: site.ts uses Astro's import.meta.env, which tests do not have.
+  const site = readFileSync('src/data/site.ts', 'utf8');
+  assert.match(site, /FEEDBACK_FORM = 'https:\/\/docs\.google\.com\/forms\/d\/e\/[\w-]+\/viewform'/);
+  assert.match(site, /FEEDBACK_PAGE_ENTRY = 'entry\.2083064976'/);
+  assert.match(readFileSync('src/pages/guides/[slug].astro', 'utf8'), /feedbackLink\(guide\.title\)/);
+});

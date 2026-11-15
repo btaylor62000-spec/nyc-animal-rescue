@@ -39,9 +39,9 @@
   "intake_urls": [],
   "social": [],
   "geo": {
-    "lat": 41.4465,
-    "lon": -74.4787,
-    "precision": "zip"
+    "lat": 41.49333,
+    "lon": -74.43741,
+    "precision": "address"
   },
   "address": {
     "street": "363 Derby Road",

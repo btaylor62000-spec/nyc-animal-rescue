@@ -1484,3 +1484,8 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .esigns__lead { font-size: 1.15rem; font-weight: 800; }
 .notice--urgent .esigns + p { margin: 0; }
 .eband__more .esigns { font-size: 1rem; }
+
+/* "Something wrong or missing in this guide?" (2026-11-15): the owner's Google Form. */
+.guide-feedback { margin: 2rem 0 0; padding: 0.9rem 1rem; max-width: 46rem; background: var(--surface); border: 2px solid var(--text); border-radius: var(--radius); display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; align-items: baseline; }
+.guide-feedback a { font-weight: 800; }
+.guide-feedback .muted { font-size: 0.9rem; }
