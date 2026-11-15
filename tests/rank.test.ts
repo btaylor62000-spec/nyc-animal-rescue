@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { compareKeys, distanceBand, distanceMiles, rankKey, type Rankable } from '../src/data/rank.ts';
 
 const PARK_SLOPE = { lat: 40.6681, lon: -73.9806 };
@@ -36,16 +37,21 @@ test('without a location or an emergency, evidence alone decides', () => {
   assert.deepEqual(order(items, {}), ['High', 'Medium']);
 });
 
-// Owner, 2026-11-15: places outside the city never come before places in it,
-// even when they are nearer. They are still listed, after the city ones.
-test('rank: a place in the city comes before a nearer one outside it', async () => {
-  const { rankKey, compareKeys } = await import('../src/data/rank.ts');
+// Owner, 2026-11-15: with no location, places outside the city never lead;
+// with one, the nearest open places come first, wherever they are.
+test('rank: without a location the city comes first; with one, the nearest', async () => {
   const fordham = { lat: 40.8615, lon: -73.8905 };
   const yonkers = { needs: ['emergency-vet'], hours: 'Open 24/7', status: 'active', confidence: 'High', geo: { lat: 40.9312, lon: -73.8987, precision: 'address' as const }, outside: true };
   const manhattan = { needs: ['emergency-vet'], hours: 'Open 24/7', status: 'active', confidence: 'Medium', geo: { lat: 40.7618, lon: -73.9591, precision: 'address' as const }, outside: false };
-  const ctx = { origin: fordham, emergency: true, now: new Date('2026-11-15T08:00:00Z') };
-  assert.ok(compareKeys(rankKey(manhattan, ctx), rankKey(yonkers, ctx)) < 0);
-  assert.ok(compareKeys(rankKey(manhattan, {}), rankKey(yonkers, {})) < 0);
+  const now = new Date('2026-11-15T08:00:00Z');
+  assert.ok(compareKeys(rankKey(manhattan, { emergency: true, now }), rankKey(yonkers, { emergency: true, now })) < 0, 'no location: the city first');
+  assert.ok(compareKeys(rankKey(manhattan, {}), rankKey(yonkers, {})) < 0, 'no location, no emergency: the city first');
+  assert.ok(compareKeys(rankKey(yonkers, { origin: fordham, emergency: true, now }), rankKey(manhattan, { origin: fordham, emergency: true, now })) < 0, 'from Fordham: the nearer open hospital first');
+});
+
+test('directory: the page sorts places in the city first when there is no location', () => {
+  const src = readFileSync('src/client/directory.ts', 'utf8');
+  assert.match(src, /if \(a\.m\.outside !== b\.m\.outside\) return a\.m\.outside \? 1 : -1;/);
 });
 
 test('guide listings: places in the city are listed before places outside it', async () => {

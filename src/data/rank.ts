@@ -23,7 +23,7 @@ export interface Rankable {
   status: string;
   confidence: string;
   geo?: Geo | null;
-  /** Based outside the city. In-city help always comes first. */
+  /** Based outside the city. Without a location, in-city help comes first. */
   outside?: boolean;
 }
 
@@ -66,13 +66,13 @@ export function rankKey(o: Rankable, ctx: RankContext): number[] {
   const open = ctx.emergency && takesEmergencies(o) ? OPEN_RANK[openState(o.hours, ctx.now ?? new Date()).state] : 1;
   const miles = ctx.origin && o.geo ? distanceMiles(ctx.origin, o.geo) : null;
   return [
-    // In the city always comes first, whatever the distance (owner, 2026-11-15:
-    // places outside NYC "shouldn't" show first). They are still listed, after
-    // every place in the city, so a hospital in Yonkers remains one scroll
-    // away for someone in the north Bronx at night.
-    o.outside ? 1 : 0,
     ctx.emergency ? open : 0,
-    ctx.origin ? distanceBand(miles) : 0,
+    // With a location, the nearest places come first wherever they are: from
+    // the north Bronx at night the nearest 24-hour hospital is in Yonkers, and
+    // the owner wants the nearest open places (2026-11-15). Without one,
+    // distance is unknown and places in the city come first, so a hospital on
+    // Long Island never leads the list for someone in the city.
+    ctx.origin ? distanceBand(miles) : o.outside ? 1 : 0,
     CONF_RANK[o.confidence] ?? 3,
     miles ?? Number.MAX_SAFE_INTEGER,
   ];

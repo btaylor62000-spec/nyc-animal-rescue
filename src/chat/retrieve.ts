@@ -444,8 +444,7 @@ function coverEveryNeed(
       break;
     }
   }
-  // Places in the city before places outside it, as in the directory (rank.ts).
-  return chosen.sort((a, b) => Number(a.org.outsideNyc) - Number(b.org.outsideNyc) || b.score - a.score).map((c) => c.org);
+  return chosen.sort((a, b) => b.score - a.score).map((c) => c.org);
 }
 
 export class Retriever {
@@ -590,8 +589,12 @@ export class Retriever {
     score += org.confidence === 'High' ? 4 : org.confidence === 'Medium' ? 2 : 0;
     if (org.phones.length) score += 2;
     if (org.status !== 'active') score -= 8;
-    // Places outside the city are ordered after every place in it where the
-    // list is sorted (owner, 2026-11-15), not by a score here.
+    // Outside the city counts against a place only when distance is unknown:
+    // from Fordham, a 24/7 hospital in Yonkers is nearer than any in the city,
+    // and with a location the nearest open places should lead (owner,
+    // 2026-11-15). Without one, it is heavy enough to put every place in the
+    // city first.
+    if (org.outsideNyc && !(ctx.origin && org.geo)) score -= 12;
 
     return score;
   }
@@ -632,7 +635,7 @@ export class Retriever {
       // stronger, it put a general vet ahead of the city's bird hospital for
       // "a pigeon hit my window" simply because the wording matched better.
       .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * wordingWeight }))
-      .sort((a, b) => Number(a.org.outsideNyc) - Number(b.org.outsideNyc) || b.score - a.score || a.org.name.localeCompare(b.org.name));
+      .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
     return {
       orgs: coverEveryNeed(scored, signals.needs, limit),

@@ -923,14 +923,16 @@ hospital.
 
 ## Nearest, open now, best evidenced
 
-**Places in the city always come first** (owner, 2026-11-15): before any
-place outside NYC, whatever the distance, in the directory (`rank.ts` and
-the server-rendered default order), the assistant (`retrieve.ts`) and the
-lists at the foot of each guide (`guide-listings.ts`). Outside places are
-still listed, after the city ones. This replaced an earlier rule that let a
-nearer hospital in Yonkers lead for someone in the north Bronx; the
-emergency guide still names Yonkers for the Bronx at night. A consequence:
-the assistant shows six places, so outside ones rarely appear in its answer.
+**Without a location, places in the city come first; with one, the nearest
+places come first, wherever they are** (owner, 2026-11-15). Outside places
+must never lead a list for someone whose location is unknown: in the
+directory (`rank.ts`, the in-browser default sort in `src/client/directory.ts`,
+which runs on page load and used to put a Long Island hospital checked that
+morning at the top, and the server-rendered order), the assistant
+(`retrieve.ts`, a heavy penalty when distance is unknown) and the lists at
+the foot of each guide (`guide-listings.ts`). With a location or zip, the
+owner wants the nearest open places, so a Yonkers hospital can lead for
+someone in the north Bronx at night.
 
 Added 2026-11-04. One ordering, `src/data/rank.ts`, used by the directory in
 the browser and by the assistant on the server, so they cannot disagree: in an

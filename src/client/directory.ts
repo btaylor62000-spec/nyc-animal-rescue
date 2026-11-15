@@ -268,6 +268,10 @@ if (form && list) {
         const rb = rank.get(b.id) ?? Number.MAX_SAFE_INTEGER;
         if (ra !== rb) return ra - rb;
       }
+      // Without a location, places in the city first (owner, 2026-11-15): this
+      // sort runs as soon as the page loads, and "most recently verified" put
+      // a Long Island hospital checked that morning at the top of the list.
+      if (a.m.outside !== b.m.outside) return a.m.outside ? 1 : -1;
       const ca = CONF[a.m.confidence] ?? 3;
       const cb = CONF[b.m.confidence] ?? 3;
       if (ca !== cb) return ca - cb;
