@@ -8,6 +8,8 @@ import { annotateMentions, buildMatchers } from '../../data/guide-mentions.ts';
 import { assertGuideNamesOnlyListed } from '../../data/guide-integrity.ts';
 import { GUIDE_LISTINGS, directoryHref, listingsFor } from '../../data/guide-listings.ts';
 import { telHref } from '../../data/tel.ts';
+import GuideGlance from '../../components/GuideGlance.astro';
+import { GLANCE, withHeadingIds, wordCount } from '../../data/guide-glance.ts';
 
 export function getStaticPaths() {
   return GUIDES.map((g) => ({ params: { slug: g.slug } }));
@@ -23,7 +25,14 @@ assertGuideNamesOnlyListed(guide, ORGS);
 // and the page heading is not duplicated above it.
 // Every listed organization the guide names links to its listing, and each
 // section ends with those organizations' current contacts (guide-mentions.ts).
-const { html } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS, buildMatchers(LISTED_ORGS, guide.slug));
+const { html: annotated } = annotateMentions(renderMarkdown(guide.body), LISTED_ORGS, buildMatchers(LISTED_ORGS, guide.slug));
+// The card above carries the page's <h1>, so the guide's own is dropped here.
+// Every section heading gets an id, so the card's "Read why" links land on it.
+const html = withHeadingIds(annotated.replace(/<h1[^>]*>[\s\S]*?<\/h1>/, ''));
+const glance = GLANCE[guide.slug]!;
+const words = wordCount(guide.body);
+// About 200 words a minute: a reader on a phone, who may be upset.
+const minutes = Math.max(1, Math.round(words / 200));
 
 /** Guides where the first thing to know is that this may be an emergency. */
 const URGENT = new Set(['animal-emergency', 'found-an-injured-bird', 'found-wildlife', 'exotic-pet-emergency']);
@@ -41,12 +50,6 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
   <div class="wrap">
     <p class="line-tag">
       <a href="/guides">&larr; All guides</a>
-      {line && (
-        <span class="line-tag__line">
-          <span class={`bullet bullet--sm bullet--${line.tier}`} aria-hidden="true">{line.number}</span>
-          Line {line.number} · {line.tierTitle}
-        </span>
-      )}
     </p>
 
     {isUrgent && (
@@ -58,6 +61,14 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
         </span>
       </p>
     )}
+
+    <GuideGlance glance={glance} title={guide.title} tier={line?.tier} tierTitle={line?.tierTitle} number={line?.number} slug={guide.slug} />
+
+    <details class="full-guide" id="full-guide">
+      <summary>
+        <span class="full-guide__title">Read the full guide</span>
+        <span class="full-guide__meta">{words.toLocaleString('en-US')} words · about {minutes} min · every detail, place and link</span>
+      </summary>
 
     <p class="muted guide-lead">
       <strong>This is a guide:</strong> what to do, step by step. Organizations it names link to their
@@ -105,6 +116,7 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
     {guide.byline && (
       <p class="muted" style="margin-top:1.5rem;font-size:.95rem">Written by {guide.byline}.</p>
     )}
+    </details>
 
     <p class="notice" style="margin-top:2rem">
       <Icon name="alert" size={17} />
@@ -122,4 +134,18 @@ const where = (o: (typeof blocks)[number]['orgs'][number]) =>
       number is live before you rely on it.
     </p>
   </div>
+  <script is:inline>
+    // A link to a heading inside the folded full guide ("Read why") opens it
+    // first. Without JavaScript the guide is still one tap away.
+    (function () {
+      function show() {
+        var id = decodeURIComponent(location.hash.slice(1));
+        var el = id && document.getElementById(id);
+        var box = el && el.closest('details');
+        if (box && !box.open) { box.open = true; el.scrollIntoView(); }
+      }
+      addEventListener('hashchange', show);
+      show();
+    })();
+  </script>
 </Base>

@@ -29,6 +29,35 @@ you change them, recount rather than adjust.
 | Privacy holds | All three people agreed to be listed on 2026-09-22. On 2026-11-05 the reviewer asked for Divya's mobile to come off the bird guide anyway (it now routes to organizations), and a volunteer's personal Gmail NYTTS does not publish was removed from the turtle line; the Horvaths' and Robert Spragg's numbers stay, because NYC Bird Alliance publishes them for exactly this. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
 
+### Changed 2026-11-15 (later the same day): every guide opens "at a glance"
+
+The owner found the guides too long to read in a hurry, chose a layout from
+three prototypes, and asked for the tier names to change. What changed:
+
+- **Every guide page opens with an at-a-glance card** (`GLANCE` in
+  `src/data/guide-glance.ts`, drawn by `src/components/GuideGlance.astro`):
+  a one-line headline, who to contact first, three or four numbered steps, a
+  black "Never do this" box and a "Remember" box. Written so a 12-year-old
+  can follow it. The full guide is unchanged, folded underneath in a
+  `<details>` ("Read the full guide · N words · about M min").
+- **Three guides also get situation tiles** ("What's happening?"): the
+  injured bird, wildlife and help-paying guides, where the right advice
+  depends on what happened. Each answer links to the heading in the full guide
+  it came from. They work without JavaScript (`:target`). The lost-and-found
+  dog and cat guides show "I lost one" and "I found one" side by side.
+- **The card cannot drift from the data** (`tests/guide-glance.test.ts`):
+  every guide has a card; contacts are record ids and their numbers come from
+  the records; no phone number or price in the card's own words; every web
+  or email address is already in the guide; `never` and `remember` lines are
+  copied word for word from the guide (rule 4); a situation's `section` is a
+  real heading. **Adding a guide now also needs its `GLANCE` entry.** When a
+  guide's wording changes at the workbook, a copied safety line can stop
+  matching: the test names it, and the fix is to copy the new wording.
+- **The tiers are renamed**: Emergency, Urgent, Keeping your pet, Rehoming,
+  rescue and planning. The old "When you have time" told someone rehoming
+  their rabbit that their problem could wait. The keys (`now`, `today`,
+  `week`, `later`) and colours are unchanged.
+
 ### Changed 2026-11-15: the redesign is live
 
 Read this first if you were in the middle of something. One commit on `main`
@@ -56,7 +85,8 @@ which is why the band is taller than a designer would draw it. Do not shorten
 it to make the page prettier.
 
 Adding a guide now needs one more step: put its slug in a tier in
-`GUIDE_TIERS`, or the new test fails. It still needs its `GUIDE_GROUPS` entry.
+`GUIDE_TIERS`, or the new test fails. It still needs its `GUIDE_GROUPS` entry,
+and (since the at-a-glance change above) its `GLANCE` entry.
 
 Left behind on purpose, safe to remove when someone is tidying:
 
@@ -878,7 +908,10 @@ number per route.
   the red E button in the header does the same job, which is why the header is
   one row and stays in view. Nothing may be placed above the band.
 - **Every guide is a numbered line**, most urgent first: `GUIDE_TIERS` in
-  `src/data/guides.ts`. Right now, today, this week, when you have time. The
+  `src/data/guides.ts`: Emergency, Urgent, Keeping your pet, Rehoming, rescue
+  and planning. The titles name the kind of help, never how long someone can
+  wait (owner, 2026-11-15: "When you have time" told a person rehoming their
+  rabbit that it could wait). The
   tier is a judgement about urgency and is the place to argue about it; a test
   fails if a guide is in no tier or in two, so a new guide cannot be left off
   the home page. `GUIDE_GROUPS` is still there, and now only supplies the

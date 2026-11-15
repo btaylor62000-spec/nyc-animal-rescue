@@ -1,0 +1,14 @@
+---
+/*
+ * The black "Never do this" box, or the quieter "Remember" box. Both carry
+ * lines copied word for word from the guide (rule 4), which is why the box
+ * says so: a reader should know nothing in it has been softened.
+ */
+import Icon from './Icon.astro';
+interface Props { items: string[]; remember?: boolean }
+const { items, remember = false } = Astro.props;
+---
+<div class={remember ? 'glance-remember' : 'glance-never'}>
+  <h2 class="glance-never__title"><Icon name="alert" size={18} /> {remember ? 'Remember' : 'Never do this'}</h2>
+  <ul>{items.map((t) => <li>{t}</li>)}</ul>
+</div>

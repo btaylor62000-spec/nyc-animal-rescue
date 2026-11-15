@@ -1,0 +1,209 @@
+---
+/*
+ * The "at a glance" card at the top of a guide: what to do, who to call, and
+ * what never to do, readable in about thirty seconds. Its content and the
+ * rules it keeps are in src/data/guide-glance.ts.
+ *
+ * It works with no JavaScript. Situation tiles are links to answers that the
+ * stylesheet shows only while they are the page's target (:target), so a
+ * tap shows the answer and the back button hides it again.
+ */
+import Icon from './Icon.astro';
+import Steps from './GlanceSteps.astro';
+import Never from './GlanceNever.astro';
+import { ORGS_BY_ID } from '../data/orgs.ts';
+import { telHref } from '../data/tel.ts';
+import { headingId, type Glance, type GlanceContact } from '../data/guide-glance.ts';
+import type { TierKey } from '../data/guides.ts';
+
+interface Props {
+  glance: Glance;
+  title: string;
+  tier?: TierKey;
+  tierTitle?: string;
+  number?: number;
+  slug: string;
+}
+const { glance: g, title, tier, tierTitle, number, slug } = Astro.props;
+
+interface Shown {
+  name: string;
+  when: string;
+  note?: string;
+  phone?: { href: string; display: string };
+  email?: string;
+  website?: string;
+  page?: string;
+}
+// Everything a reader can dial or open comes from the record, never from the card (rule 1).
+function resolve(c: GlanceContact): Shown {
+  if (c.dial) return { name: c.dial, when: c.when, note: c.note, phone: { href: telHref(c.dial), display: c.dial } };
+  const o = ORGS_BY_ID.get(c.org!)!;
+  const p = o.phones[c.phone ?? 0];
+  return {
+    name: c.name ?? o.name,
+    when: c.when,
+    note: c.note,
+    phone: p ? { href: telHref(p.value), display: p.display } : undefined,
+    email: o.emails[0]?.value,
+    website: o.website ?? undefined,
+    page: `/org/${o.id}`,
+  };
+}
+const first = resolve(g.contacts[0]!);
+const rest = g.contacts.slice(1).map(resolve);
+const hostOf = (u: string) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+const sid = (i: number) => `situation-${i + 1}`;
+---
+
+<section class={`glance glance--${tier ?? 'later'}`} aria-labelledby="glance-title">
+  <header class="glance__head">
+    {number && <span class={`bullet bullet--${tier}`} aria-hidden="true">{number}</span>}
+    <div>
+      <p class="glance__chip">
+        {tierTitle && <span class="glance__tier">{tierTitle}</span>}
+        <span>At a glance</span>
+      </p>
+      <h1 id="glance-title">{title}</h1>
+    </div>
+  </header>
+
+  <p class="glance__headline">{g.headline}</p>
+
+  {g.facts && (
+    <ul class="glance__facts">
+      {g.facts.map((f) => <li><Icon name="alert" size={18} /><span>{f}</span></li>)}
+    </ul>
+  )}
+
+  {g.action && (
+    <a class="glance__action" href={g.action.href}>
+      <Icon name="search" size={20} /><span>{g.action.label}</span><Icon name="arrow" size={18} />
+    </a>
+  )}
+
+  <h2 class="glance__label">Contact first</h2>
+  <div class="glance-call">
+    <div class="glance-call__who">
+      {first.page ? <a href={first.page}>{first.name}</a> : <strong>{first.name}</strong>}
+      <span class="glance-call__when">{first.when}</span>
+    </div>
+    {first.phone && (
+      <a class="glance-btn" href={first.phone.href} translate="no"><Icon name="phone" size={20} /> Call {first.phone.display}</a>
+    )}
+    {!first.phone && first.email && (
+      <a class="glance-btn" href={`mailto:${first.email}`}><Icon name="mail" size={20} /> {first.email}</a>
+    )}
+    {!first.phone && !first.email && first.website && (
+      <a class="glance-btn" href={first.website} rel="noopener"><Icon name="globe" size={20} /> {hostOf(first.website)}</a>
+    )}
+    {first.note && <p class="glance-call__note">{first.note}</p>}
+  </div>
+
+  {rest.length > 0 && (
+    <ul class="glance-more">
+      {rest.map((c) => (
+        <li>
+          <span class="glance-more__who">
+            {c.page ? <a href={c.page}>{c.name}</a> : <strong>{c.name}</strong>}
+            <span>{c.when}</span>
+            {c.note && <span>{c.note}</span>}
+          </span>
+          {c.phone ? (
+            <a class="glance-more__go" href={c.phone.href} translate="no">{c.phone.display}</a>
+          ) : c.email ? (
+            <a class="glance-more__go" href={`mailto:${c.email}`}>Email</a>
+          ) : c.website ? (
+            <a class="glance-more__go" href={c.website} rel="noopener">Website</a>
+          ) : null}
+        </li>
+      ))}
+    </ul>
+  )}
+
+  {g.situations && (
+    <div class="glance-situations" id="situations">
+      <h2 class="glance__question">What’s happening?</h2>
+      <p class="glance__hint">Tap the one that fits for advice just for that.</p>
+      <ul class="glance-tiles">
+        {g.situations.map((s, i) => (
+          <li><a class="glance-tile" href={s.href ?? `#${sid(i)}`}>{s.label}<Icon name="arrow" size={16} /></a></li>
+        ))}
+      </ul>
+      {g.situations.map((s, i) => !s.href && (
+        <section class="glance-answer" id={sid(i)} aria-label={s.label}>
+          <p class={`glance-verdict glance-verdict--${s.tone}`}>{s.verdict}</p>
+          <h3>{s.label}</h3>
+          <ol class="glance-do">{s.do.map((d) => <li>{d}</li>)}</ol>
+          {s.never && <Never items={s.never} />}
+          {s.remember && <Never items={s.remember} remember />}
+          {s.contacts && (
+            <ul class="glance-more">
+              {s.contacts.map(resolve).map((c) => (
+                <li>
+                  <span class="glance-more__who">
+                    {c.page ? <a href={c.page}>{c.name}</a> : <strong>{c.name}</strong>}
+                    <span>{c.when}</span>
+                  </span>
+                  {c.phone ? (
+                    <a class="glance-more__go" href={c.phone.href} translate="no">{c.phone.display}</a>
+                  ) : c.email ? (
+                    <a class="glance-more__go" href={`mailto:${c.email}`}>Email</a>
+                  ) : c.website ? (
+                    <a class="glance-more__go" href={c.website} rel="noopener">Website</a>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          )}
+          <p class="glance-answer__links">
+            {s.section && <a href={`#${headingId(s.section)}`}>Read why, in the full guide</a>}
+            <a href="#situations">Other situations</a>
+          </p>
+        </section>
+      ))}
+    </div>
+  )}
+
+  {g.check && (
+    <>
+      <h2 class="glance__label">{g.check.title}</h2>
+      <div class="glance-check">
+        <div class="glance-check__yes">
+          <h3>{g.check.yesTitle}</h3>
+          <ul>{g.check.yes.map((y) => <li>{y}</li>)}</ul>
+        </div>
+        <div class="glance-check__no">
+          <h3>{g.check.noTitle}</h3>
+          <ul>{g.check.no.map((y) => <li>{y}</li>)}</ul>
+        </div>
+      </div>
+    </>
+  )}
+
+  {g.sides && (
+    <div class="glance-sides">
+      {g.sides.map((side) => (
+        <section class="glance-side" aria-label={side.label}>
+          <h2>{side.label}</h2>
+          <p class="glance-side__headline">{side.headline}</p>
+          <Steps steps={side.steps} />
+          {side.never && side.never.length > 0 && <Never items={side.never} />}
+          {side.tip && <p class="glance-tip">{side.tip}</p>}
+        </section>
+      ))}
+    </div>
+  )}
+
+  {g.steps && (
+    <>
+      <h2 class="glance__label">What to do</h2>
+      <Steps steps={g.steps} />
+    </>
+  )}
+
+  {g.never && g.never.length > 0 && <Never items={g.never} />}
+  {g.remember && g.remember.length > 0 && <Never items={g.remember} remember />}
+  {g.tip && <p class="glance-tip">{g.tip}</p>}
+
+</section>

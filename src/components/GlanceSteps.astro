@@ -1,0 +1,18 @@
+---
+/* Numbered steps on an at-a-glance card. The numbers are real: the order is the advice. */
+import type { GlanceStep } from '../data/guide-glance.ts';
+interface Props { steps: GlanceStep[] }
+const { steps } = Astro.props;
+---
+<ol class="glance-steps">
+  {steps.map((s) => (
+    <li>
+      <strong>{s.title}</strong>
+      <span>{s.text}</span>
+      {s.warn && <span class="glance-steps__warn">{s.warn}</span>}
+      {s.link && (
+        <a href={s.link.href} rel={/^https?:/.test(s.link.href) ? 'noopener' : undefined}>{s.link.label} &rarr;</a>
+      )}
+    </li>
+  ))}
+</ol>
