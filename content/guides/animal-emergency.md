@@ -9,14 +9,14 @@ source: "research/NYC_Cat_Rescue_TNR_Reference.xlsx — Emergency & poison contr
 
 _Where to go right now if you think an animal is hurt, very ill, poisoned or in danger._
 
-If you think an animal is hurt, very ill or in danger, take it to an emergency animal hospital now. For example: it has been hit by a car, is bleeding, is struggling to breathe, is having a seizure, cannot pass urine, has collapsed, or has eaten something toxic - or anything else about it worries you. If you are not sure, ring an emergency animal hospital and ask. Ring on the way so they are ready for you. This page is for medical emergencies; a rescue group cannot help in time.
+If you think an animal is hurt, very ill or in danger, take it to an emergency vet now. For example: it has been hit by a car, is bleeding, is struggling to breathe, is having a seizure, cannot pass urine, has collapsed, or has eaten something toxic - or anything else about it worries you. If you are not sure, ring an emergency vet and ask. If you can, ring while you travel so they are ready; don't wait to get through before you leave. This page is for medical emergencies; a rescue group cannot help in time.
 
 ## Find the nearest hospital open now
 
 - Every emergency hospital in and near the city, open now and nearest to you first: [Find help](/directory?need=emergency-vet)
 - The same hospitals, with their numbers, are listed at the end of this page.
 - Hours change. Ring before you set off, even to a hospital listed as open 24 hours.
-- If you cannot get the animal there yourself, AmbuVet runs a pet ambulance, day and night: (800) 262-8838. Ring the hospital you are going to before the pickup.
+- If you cannot get the animal there yourself, AmbuVet runs a 24-hour pet ambulance: (800) 262-8838. Ring the hospital you are going to before the pickup.
 
 ## If it swallowed or touched something toxic: ring poison control first
 
@@ -27,9 +27,9 @@ If you think an animal is hurt, very ill or in danger, take it to an emergency a
 
 ## In the Bronx
 
-- No animal hospital in the Bronx is confirmed open 24 hours. Urgent Vets, 3800 E Tremont Ave, (347) 281-9700, is open every day, 10am-10pm.
-- Outside those hours, the nearest hospitals open 24 hours are Urgent Vets in Queens, 32-33 Junction Blvd, (718) 507-5600; Animal Specialty Center in Yonkers, 9 Odell Plaza, (914) 457-4000; and the Manhattan hospitals listed at the end of this page.
-- Which is closest depends on where you are, because the rivers make some straight-line distances misleading. By road, with no traffic (measured 2026-11-15): from Riverdale, Kingsbridge, Fordham, Norwood, Wakefield or Co-op City, Animal Specialty Center in Yonkers is usually fastest, about 13 to 20 minutes; from Pelham Bay or Parkchester, Urgent Vets in Queens, by LaGuardia, about 16 to 19 minutes; from Mott Haven or Hunts Point, URvet Care in Astoria, the Animal Medical Center or VEG on the Upper East Side, about 11 to 15 minutes. Traffic and bridge tolls change this, so ring the hospital on the way.
+- There is no 24-hour vet in the Bronx. Urgent Vets, 3800 E Tremont Ave, (347) 281-9700, is an emergency vet open every day, 10am-10pm.
+- Outside those hours, the nearest 24-hour vets are Urgent Vets in Queens, 32-33 Junction Blvd, (718) 507-5600; Animal Specialty Center in Yonkers, 9 Odell Plaza, (914) 457-4000; and the Manhattan hospitals listed at the end of this page.
+- Which is closest depends on where you are, because the rivers make some straight-line distances misleading. By road, with no traffic (measured 2026-11-15): from Riverdale, Kingsbridge, Fordham, Norwood, Wakefield or Co-op City, Animal Specialty Center in Yonkers is usually fastest, about 13 to 20 minutes; from Pelham Bay or Parkchester, Urgent Vets in Queens, by LaGuardia, about 16 to 19 minutes; from Mott Haven or Hunts Point, URvet Care in Astoria, the Animal Medical Center or VEG on the Upper East Side, about 11 to 15 minutes. Traffic and bridge tolls change this, so ring the hospital while you travel if you can.
 
 ## If you are worried about paying
 

@@ -120,13 +120,22 @@ such. The monthly audit checks whether the city has published a procedure.
 
 ### Also changed 2026-11-15 (fourth round)
 
-- **"Emergency animal hospital", not "24-hour"** (owner): telling someone
-  where to go says "emergency animal hospital" or "emergency vets"; a
-  place's own hours say "open day and night"; "open all night" only where
-  hours decide where to go (the Bronx). "Within 24 hours" stays where it is a
-  deadline (reporting a bite).
+- **"Emergency vet" for an emergency, "24-hour vet" for after hours**
+  (owner, revised the same day): every 24-hour vet is an emergency vet, but
+  not every emergency vet is open 24 hours. Telling someone where to go in an
+  emergency says "emergency vet"; a place's own hours, and where to go after
+  hours, say "24-hour vet" or "Open 24 hours". There is no 24-hour vet in the
+  Bronx: Urgent Vets there is an emergency vet, 10am to 10pm. "Within 24
+  hours" stays where it is a deadline (reporting a bite).
+- **Never delay leaving to make a call.** "Go now; if you can, call while you
+  travel" (owner's question, 2026-11-15: does "call on the way" delay care?).
+  The call is worth making, because an ER can be full or not treat birds,
+  rabbits or reptiles, but it is never a step before setting off.
+- **The trapped-animal guide does not tell people what not to do themselves**
+  (owner: "not your place to say"). It says who to call; the "don't go in
+  after it" step and the subway/drain line were removed.
 - **The Bronx tile says why it is there:** "I'm in the Bronx: there's no
-  all-night emergency hospital", then where to go by neighbourhood, from the
+  24-hour vet", then where to go by neighbourhood, from the
   driving times.
 - **Guide feedback goes to the owner's Google Form** (`FEEDBACK_FORM` in
   `src/data/site.ts`): "Something wrong or missing in this guide? Tell us" on

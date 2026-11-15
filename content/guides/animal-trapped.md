@@ -14,7 +14,6 @@ No New York City agency publishes one page on what to do when an animal is trapp
 ## If the animal is in danger right now, call 911
 
 - If an animal is trapped and could die or be badly hurt, call 911. Say exactly where it is and what kind of animal it is.
-- Do not go onto subway tracks, into a drain or onto a ledge yourself: call 911.
 - In rescues reported in the news, officers from the NYPD's Emergency Service Unit came to free the animal: a kitten in a Staten Island storm drain, https://amny.com/news/nypd-rescues-kitten-staten-island-drain , a dog under a subway train in Manhattan, https://abc7ny.com/post/nypd-officers-rescue-distressed-dog-beneath-subway-train-manhattan-nyc/18066501/ , and a cat inside a car engine, https://www.foxnews.com/us/elite-nypd-squad-rescues-cat-trapped-in-cars-engine . These are news reports, not a published city rule.
 
 ## If it is not in danger right now, call 311

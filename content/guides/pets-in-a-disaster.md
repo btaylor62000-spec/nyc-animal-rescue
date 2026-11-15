@@ -38,7 +38,7 @@ What New York City Emergency Management tells pet owners to do before and during
 
 ## If your pet is hurt
 
-- Go to an emergency hospital and ring on the way: [Animal emergencies and poison control](/guides/animal-emergency)
+- Go to an emergency vet now; if you can, ring while you travel: [Animal emergencies and poison control](/guides/animal-emergency)
 - The American Red Cross has a free Pet First Aid app with step-by-step first aid for common emergencies: search “Red Cross Pet First Aid” in your phone's app store. It is a guide while you get help, not a substitute for a vet.
 
 ## More answers from Animal Help Now
