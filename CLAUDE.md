@@ -21,12 +21,77 @@ you change them, recount rather than adjust.
 | Assistant | Working, with Workers AI and Turnstile both switched on |
 | Scheduled checks | Both active. Weekly ran for the first time 2026-09-21 and **pushed five wrong changes to production** — see below. Since 2026-09-22 it opens a pull request for anything a reader could see; only bookkeeping goes to `main`. Discovery has run once, 2026-09-17, and still pushes to `main` |
 | Sources | Three reference workbooks, the wildlife document, the city's pet food pantry list, and `research/NYC_Reviewer_Additions.xlsx` for what reviewers found missing:  85 rows as of 2026-11-05, each checked on the organization's own site or marked as supplied by a reviewer where the site turns robots away. It carries optional **Hours** and **Address** columns |
-| Guides | 24 (*Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-05 every guide is on the home page by situation (`GUIDE_GROUPS`, tested), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
+| Guides | 24 (*Leaving an abusive home with your pet* added 2026-11-05, out of the housing guide; the separate Animal Help Now page removed 2026-11-06, its answers woven into the guides where each belongs, `AHNOW_WEAVE` in `guide-pages.ts`, tested). Since 2026-11-15 every guide is on the home page as a numbered line, most urgent first (`GUIDE_TIERS`, tested; before that, since 2026-11-05, by situation in `GUIDE_GROUPS`, which is still tested and now supplies the "just need a phone number?" links), every listed organization a guide names links to its listing with a per-section contacts box built from the records (`src/data/guide-mentions.ts`), and every question on ahnow.org/resources.php is linked from the guide it belongs in. One written 2026-11-04 from NYC Emergency Management's own guidance (pets in a disaster); three from reviewers' material: reporting abuse, the shelter's urgent ("at-risk") list -- renamed 2026-11-04 because nobody outside rescue knows "New Hope" -- and keeping your pet when facing homelessness (checked line by line against the city's 311 and DHS pages on 2026-11-04) |
 | Directory | 407 listed of 420 records (closed, moved-away and two guidance-only reporting lines are not listed; their pages still exist). 400 carry a date they were last confirmed; 7 have never been: three nyc.gov reference pages that refuse robots, and four rescues published on 2026-11-05 from contacts a reviewer read on Petfinder or Facebook (American Alliance for Protection of Animals, Animals Are Forever, Big Hands Little Paws, Hopewell). 42 emergency vets, every one with hours, 29 of them open 24/7 (the New Jersey, Long Island, Westchester and Rockland VEG hospitals among them). Three more *say* 24 hours somewhere but could not be confirmed on 2026-11-04 (CompleteCare, Elmhurst, Urgent Vets Queens); their hours say so and they never show "Open now" -- see `DOUBTFUL` in `src/data/hours.ts`. Ordered open now, then nearest (device location, a typed zip, or a zip in the question), then evidence -- see *Nearest, open now, best evidenced* |
 | Discovery | **Finished 2026-11-05.** 230 candidates from ACC's New Hope partner roster (every one is an ACC rescue partner). 29 published, each read and placed in the city; the rest are outside the city, closed, or unreadable, and each is named with the reason in `docs/discovery-review-2026-11-05.md`. Breed- and population-specific rescues outside the city are in the breed guide and the special-needs sections instead, and partners outside the city whose own sites say they take animals from ACC are in the at-risk guide |
+| Design | **Redesigned 2026-11-15** as a sign: a red emergency band first on the home page, a red E button in the header of every other page, every guide a numbered line in four urgency tiers, guide pages drawn as a route. See *Changed 2026-11-15* just below, and *How the site looks* for the rules |
 | Self-reporting | `/status` publishes what is checked, what is not, and what is waiting on a person |
 | Privacy holds | All three people agreed to be listed on 2026-09-22. On 2026-11-05 the reviewer asked for Divya's mobile to come off the bird guide anyway (it now routes to organizations), and a volunteer's personal Gmail NYTTS does not publish was removed from the turtle line; the Horvaths' and Robert Spragg's numbers stay, because NYC Bird Alliance publishes them for exactly this. The mechanism stays for the next one. Tests use `tests/fixtures/privacy-holds.json`, not the live file |
 | Visitor submissions | Live since 2026-09-22: `/contribute` adds a resource, every card and entry page has "Report a problem". First real correction went through the whole chain the same day (form → commit → publish workflow → deploy → labelled entry) |
+
+### Changed 2026-11-15: the redesign is live
+
+Read this first if you were in the middle of something. One commit on `main`
+(`6c417d3`) changed how every page looks and rebuilt the home page. No data,
+guide content, listing, importer, assistant or scheduled job was touched.
+
+**Before you carry on:** start from the current `main`. Branch
+`claude/festive-ramanujan-w3qytx` was level with `main` before this commit and
+merges with it cleanly (checked 2026-11-15), so there is nothing to untangle.
+
+What changed, and where:
+
+| File | What |
+| --- | --- |
+| `src/pages/index.astro` | Rebuilt. The emergency band, then all 24 guides as numbered lines in four tiers, then the phone-number shortcuts, search and the two panels. The headline, skyline and four statistics are gone |
+| `src/data/guides.ts` | New: `GUIDE_TIERS`, `LINES_BY_TIER`, `LINE_BY_SLUG`. `GUIDE_GROUPS` is unchanged |
+| `src/layouts/Base.astro` | The header is one black row that stays in view: name, links (a menu below 900px), and the red E button on every page except the home page |
+| `src/pages/guides/index.astro` | The same numbered lines, each with its summary |
+| `src/pages/guides/[slug].astro` | Shows the guide's line number and tier, and draws the page as a route |
+| `src/styles/global.css` | New colour tokens at the top; new header, footer, bullets, band, lines and route styles at the bottom |
+| `tests/guides-structure.test.ts` | New test: every guide is in exactly one tier, numbered from 1 with no gaps |
+
+**The reviewer's emergency wording is kept word for word** inside the band,
+which is why the band is taller than a designer would draw it. Do not shorten
+it to make the page prettier.
+
+Adding a guide now needs one more step: put its slug in a tier in
+`GUIDE_TIERS`, or the new test fails. It still needs its `GUIDE_GROUPS` entry.
+
+Left behind on purpose, safe to remove when someone is tidying:
+
+- `src/components/Skyline.astro` is no longer used by any page. The owner
+  was asked whether to bring the skyline back and said not to (2026-11-15).
+- These styles in `global.css` have no markup using them any more: `.hero`,
+  `.hero__banner`, `.stats`, `.emergency`, `.emergency__actions`, `.tiles`,
+  `.tile`, `.situations`, `.situation`. `.hero__actions` is still used by the
+  two panels on the home page, so keep that one.
+- Branch `lines-redesign` is the preview the owner looked at. It is identical
+  to `main` at `6c417d3` and can be deleted.
+
+Not checked, because a script cannot do either: the assistant answering a
+real question since the change (the bot check refuses automated browsers),
+and the add-a-resource form submitting (a test would publish a listing).
+Both pages load. Try each once on a real phone.
+
+What the redesign did **not** fix, all measured on a phone on 2026-11-13 and
+still true:
+
+- The directory renders every listing on one page (about 132,000px tall on a
+  phone), and the first result is below the first screen's midpoint, under
+  the intro, the search box and the sort controls.
+- With no search and no location, the directory's first results are whatever
+  is best evidenced (the at-risk list, a dogfighting tip line), not what the
+  reader came for.
+- The header on a phone wraps "NYC Animal Rescue" onto two lines beside the E
+  button. It fits; it is not elegant.
+- The typeface is still Inter. A face made for signage would suit the design
+  better, but it is another file to download on a weak connection, and the
+  owner has not been asked to approve one.
+
+The other five designs the owner chose between, and the measurements behind
+the choice, are not in the repository; the reasons are in *How the site
+looks: a sign, not a brochure*, further down.
 
 **New here?** Read `docs/START-HERE.md` if you want to be walked through
 setup one step at a time — it uses Claude Code in the browser
