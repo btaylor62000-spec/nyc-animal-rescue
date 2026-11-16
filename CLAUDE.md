@@ -204,6 +204,14 @@ such. The monthly audit checks whether the city has published a procedure.
 - Kitten card links Kitten Lady's guides; at-risk card links the ready-made
   messages; the dog guide is "Low-cost dog vet care, spay/neuter and
   licensing"; the breed card has an "Every breed rescue" button.
+- **Find help's "What do you need?" buttons follow the home page's four
+  tiers, with the same names** (`PICK_GROUPS` in `src/pages/directory.astro`,
+  owner, 2026-11-16). Added: poisoned, rabbit/bird/reptile emergency, report
+  abuse, found kittens, save a shelter animal, breed rescues, boarding.
+  "Report abuse" and "Save a shelter animal" open their guides, because the
+  answer is steps, not a place. `tests/directory-picks.test.ts` fails if a
+  button opens an empty list or a missing guide. The 12 buttons before this
+  were chosen by judgement, with no visitor data (the site has no analytics).
 - **The guide feedback form needs no Google account**: checked 2026-11-16,
   it opens signed out; "Sign in to save your progress" is optional.
 

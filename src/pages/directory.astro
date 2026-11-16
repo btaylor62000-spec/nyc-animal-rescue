@@ -4,7 +4,7 @@ import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
-import { GUIDES } from '../data/guides.ts';
+import { GUIDES, GUIDE_TIERS } from '../data/guides.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -27,24 +27,43 @@ const orgs = [...LISTED_ORGS].sort((a, b) => {
 import Icon from '../components/Icon.astro';
 /*
  * The landing panel: with nothing asked yet, the page asks what the reader
- * needs instead of opening on whatever is best evidenced (the at-risk list, a
- * dogfighting tip line), which was nobody's reason for coming. Most urgent
- * first. "near=1" asks for a place, because each of these is somewhere to go.
+ * needs instead of opening on whatever is best evidenced. Grouped by the same
+ * four tiers, with the same names, as the guides on the home page
+ * (GUIDE_TIERS), so the same help is called the same thing everywhere (owner,
+ * 2026-11-16). "near=1" asks for a place where the help is somewhere to go.
+ * Two buttons open a guide instead of a list, because the answer is a set of
+ * steps (911, 311, the at-risk list's forms), not a place.
  */
-const PICKS = [
-  { label: 'Emergency vet, open now', href: '/directory?need=emergency-vet&near=1' },
-  { label: 'Hurt or orphaned wildlife', href: '/directory?need=wildlife-rehab&near=1' },
-  { label: 'Lost or found a pet', href: '/directory?need=lost-found' },
-  { label: 'Free pet food', href: '/directory?need=food-assistance&near=1' },
-  { label: 'Help with vet bills', href: '/directory?need=financial-aid' },
-  { label: 'Low-cost vet', href: '/directory?need=low-cost-vet&near=1' },
-  { label: 'Spay or neuter', href: '/directory?need=spay-neuter&near=1' },
-  { label: 'Help keeping your pet', href: '/directory?need=owner-support' },
-  { label: 'Giving up a pet', href: '/directory?need=surrender' },
-  { label: 'Street cats (TNR)', href: '/directory?need=tnr&near=1' },
-  { label: 'Adopt or foster', href: '/directory?need=adoption' },
-  { label: 'Training and behaviour', href: '/directory?need=behavior-training' },
-];
+const PICK_GROUPS: Record<string, Array<{ label: string; href: string }>> = {
+  now: [
+    { label: 'Emergency vet, open now', href: '/directory?need=emergency-vet&near=1' },
+    { label: 'Poisoned', href: '/directory?need=poison-control' },
+    { label: 'Hurt bird or wild animal', href: '/directory?need=wildlife-rehab&near=1' },
+    { label: 'Rabbit, bird or reptile emergency', href: '/directory?need=exotic-vet&near=1' },
+    { label: 'Report abuse', href: '/guides/report-animal-abuse' },
+  ],
+  today: [
+    { label: 'Lost or found a pet', href: '/directory?need=lost-found' },
+    { label: 'Found kittens', href: '/directory?need=neonatal' },
+    { label: 'Save a shelter animal from euthanasia', href: '/guides/save-an-at-risk-animal' },
+  ],
+  week: [
+    { label: 'Free pet food', href: '/directory?need=food-assistance&near=1' },
+    { label: 'Help with vet bills', href: '/directory?need=financial-aid' },
+    { label: 'Low-cost vet', href: '/directory?need=low-cost-vet&near=1' },
+    { label: 'Spay or neuter', href: '/directory?need=spay-neuter&near=1' },
+    { label: 'Help keeping your pet', href: '/directory?need=owner-support' },
+    { label: 'Training', href: '/directory?need=behavior-training' },
+  ],
+  later: [
+    { label: 'Giving up a pet', href: '/directory?need=surrender' },
+    { label: 'Street cats (TNR)', href: '/directory?need=tnr&near=1' },
+    { label: 'Breed rescues', href: '/directory?need=breed-specific' },
+    { label: 'Adopt or foster', href: '/directory?need=adoption' },
+    { label: 'Boarding', href: '/directory?need=boarding' },
+  ],
+};
+const PICKS = GUIDE_TIERS.map((t) => ({ key: t.key, title: t.title, picks: PICK_GROUPS[t.key] ?? [] }));
 // Topic phrases for every guide, so a search can point at the steps as well
 // as the organizations (src/data/guide-match.ts).
 const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics }) => ({ slug, title, summary, topics })));
@@ -60,9 +79,14 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
 
     <nav id="need-picker" class="need-picker" aria-labelledby="need-picker-title">
       <h2 id="need-picker-title" class="need-picker__title">What do you need?</h2>
-      <ul class="need-picker__list">
-        {PICKS.map((p) => <li><a class="need-picker__pick" href={p.href}>{p.label}</a></li>)}
-      </ul>
+      {PICKS.map((g) => (
+        <section class={`need-picker__group need-picker__group--${g.key}`}>
+          <h3 class="need-picker__tier">{g.title}</h3>
+          <ul class="need-picker__list">
+            {g.picks.map((p) => <li><a class="need-picker__pick" href={p.href}>{p.label}</a></li>)}
+          </ul>
+        </section>
+      ))}
       <button id="browse-all" class="btn btn--ghost" type="button" data-requires-js>Or browse all {orgs.length} resources</button>
     </nav>
 
