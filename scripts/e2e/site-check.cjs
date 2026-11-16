@@ -36,6 +36,12 @@ async function results(page) {
   await page.waitForTimeout(1200);
   const summary = ((await page.textContent('#results-summary')) || '').trim();
   const shown = Number((/^(\d+)/.exec(summary) || [])[1] || 0);
+  // The directory draws 20 at a time (since 2026-11-15). Citywide help is in
+  // the results but can sit past the first 20 once they are ordered nearest
+  // first, so open every page before reading the names; the order is kept.
+  for (let i = 0; i < 40 && (await page.locator('#show-more:not([hidden])').count()); i++) {
+    await page.click('#show-more');
+  }
   const names = await page.locator('li.card:not([hidden]) .card__title').allInnerTexts();
   const order = ((await page.textContent('#results-order')) || '').trim();
   return { summary, shown, names, order };
