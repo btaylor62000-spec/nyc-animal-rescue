@@ -4,7 +4,7 @@ import SearchBox from '../components/SearchBox.astro';
 import Icon from '../components/Icon.astro';
 import EmergencySigns from '../components/EmergencySigns.astro';
 import { TURNSTILE_SITE_KEY } from '../data/site.ts';
-import { LINES_BY_TIER } from '../data/guides.ts';
+import GuideLines from '../components/GuideLines.astro';
 
 /**
  * The assistant lives on its own page so the home page stays fast and the
@@ -16,13 +16,8 @@ import { LINES_BY_TIER } from '../data/guides.ts';
  */
 const turnstileSiteKey = TURNSTILE_SITE_KEY;
 
-/*
- * Starting points: the home page's 26 numbered guide lines, grouped by tier,
- * so the assistant offers the same map of help as the rest of the site
- * (owner, 2026-11-16). Tapping one asks it in those words; a test checks the
- * assistant answers each from its own guide.
- */
-const examples = LINES_BY_TIER.map((t) => ({ key: t.key, title: t.title, lines: t.lines.map((l) => ({ number: l.number, label: l.label })) }));
+// Starting points: the home page's 26 guide lines (GuideLines). A test checks
+// the assistant answers each from its own guide.
 ---
 
 <Base
@@ -60,16 +55,7 @@ const examples = LINES_BY_TIER.map((t) => ({ key: t.key, title: t.title, lines: 
 
       <div>
         <p class="muted" style="font-size:.9rem;margin-bottom:.45rem">Start from one of these, or describe it in your own words below:</p>
-        <div id="chat-examples" class="chat__examples-groups">
-          {examples.map((t) => (
-            <details class={`chat__tier need-picker__group--${t.key}`} open={t.key === 'now'}>
-              <summary class="need-picker__tier">{t.title}</summary>
-              <ul class="chat__examples">
-                {t.lines.map((l) => <li><button type="button" data-q={l.label}><span class="need-picker__num">{l.number}</span>{l.label}</button></li>)}
-              </ul>
-            </details>
-          ))}
-        </div>
+        <GuideLines mode="ask" id="chat-examples" />
       </div>
 
       <form id="chat-form" class="chat__form" data-turnstile-site-key={turnstileSiteKey}>

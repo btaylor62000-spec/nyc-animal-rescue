@@ -28,6 +28,8 @@ test('every Find help list has listings', () => {
 
 test('Find help and the assistant are built from the guide lines', () => {
   assert.equal(LINES_BY_TIER.flatMap((t) => t.lines).length, GUIDES.length);
-  assert.match(readFileSync('src/pages/directory.astro', 'utf8'), /LINES_BY_TIER\.map/);
-  assert.match(readFileSync('src/pages/ask.astro', 'utf8'), /LINES_BY_TIER\.map/);
+  // Both pages draw the same component, which is built from the lines.
+  assert.match(readFileSync('src/components/GuideLines.astro', 'utf8'), /LINES_BY_TIER\.map/);
+  assert.match(readFileSync('src/pages/directory.astro', 'utf8'), /<GuideLines mode="link"/);
+  assert.match(readFileSync('src/pages/ask.astro', 'utf8'), /<GuideLines mode="ask" id="chat-examples"/);
 });

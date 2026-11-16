@@ -1,0 +1,33 @@
+---
+/*
+ * The 26 numbered guide lines in their four tiers, as a list of drop-downs
+ * (Emergency open, the rest one tap away). One component for Find help and
+ * the assistant's page, so the two look and read the same (owner,
+ * 2026-11-16). On Find help each line is a link to that guide's list
+ * (findHelpHref); on the assistant's page it is a button that asks it.
+ */
+import { LINES_BY_TIER } from '../data/guides.ts';
+import { findHelpHref } from '../data/guide-listings.ts';
+
+interface Props {
+  mode: 'link' | 'ask';
+  id?: string;
+}
+const { mode, id } = Astro.props;
+---
+<div class="guide-lines" id={id}>
+  {LINES_BY_TIER.map((t) => (
+    <details class={`guide-lines__tier need-picker__group--${t.key}`} open={t.key === 'now'}>
+      <summary class="need-picker__tier">{t.title}</summary>
+      <ul class="guide-lines__list">
+        {t.lines.map((l) => (
+          <li>
+            {mode === 'link'
+              ? <a class="guide-lines__item" href={findHelpHref(l.guide.slug)}><span class="need-picker__num">{l.number}</span>{l.label}</a>
+              : <button class="guide-lines__item" type="button" data-q={l.label}><span class="need-picker__num">{l.number}</span>{l.label}</button>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  ))}
+</div>

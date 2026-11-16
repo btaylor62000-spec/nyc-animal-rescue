@@ -4,8 +4,8 @@ import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
-import { GUIDES, LINES_BY_TIER, LINE_BY_SLUG } from '../data/guides.ts';
-import { findHelpHref } from '../data/guide-listings.ts';
+import { GUIDES, LINE_BY_SLUG } from '../data/guides.ts';
+import GuideLines from '../components/GuideLines.astro';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -28,17 +28,9 @@ const orgs = [...LISTED_ORGS].sort((a, b) => {
 import Icon from '../components/Icon.astro';
 /*
  * The landing panel: with nothing asked yet, the page asks what the reader
- * needs. Its buttons are the home page's 26 numbered guide lines, with the
- * same numbers, names and tiers (owner, 2026-11-16: one map of help across
- * the site). Each opens that guide's own list in the directory, with the
- * guide shown above it, or the guide itself where the answer is steps
- * (findHelpHref in src/data/guide-listings.ts).
+ * needs, with the home page's 26 numbered guide lines (GuideLines), the same
+ * drop-downs as the assistant's page.
  */
-const PICKS = LINES_BY_TIER.map((t) => ({
-  key: t.key,
-  title: t.title,
-  picks: t.lines.map((l) => ({ number: l.number, label: l.label, href: findHelpHref(l.guide.slug) })),
-}));
 // Topic phrases for every guide, so a search can point at the steps as well
 // as the organizations (src/data/guide-match.ts).
 // Titled as on the home page, so a guide is called the same thing everywhere.
@@ -55,14 +47,7 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
 
     <nav id="need-picker" class="need-picker" aria-labelledby="need-picker-title">
       <h2 id="need-picker-title" class="need-picker__title">What do you need?</h2>
-      {PICKS.map((g) => (
-        <section class={`need-picker__group need-picker__group--${g.key}`}>
-          <h3 class="need-picker__tier">{g.title}</h3>
-          <ul class="need-picker__list">
-            {g.picks.map((p) => <li><a class="need-picker__pick" href={p.href}><span class="need-picker__num">{p.number}</span>{p.label}</a></li>)}
-          </ul>
-        </section>
-      ))}
+      <GuideLines mode="link" />
       <button id="browse-all" class="btn btn--ghost" type="button" data-requires-js>Or browse all {orgs.length} resources</button>
     </nav>
 

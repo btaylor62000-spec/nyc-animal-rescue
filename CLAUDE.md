@@ -211,6 +211,9 @@ such. The monthly audit checks whether the city has published a procedure.
   directory with the guide shown above it (`FIND_HELP` / `findHelpHref` in
   `src/data/guide-listings.ts`), or the guide itself where the answer is
   steps. **A new guide needs a `FIND_HELP` entry** (tested).
+  Both pages draw the list with one component, `src/components/GuideLines.astro`
+  (drop-downs per tier, Emergency open): links on Find help, questions on
+  the assistant's page.
   `tests/directory-picks.test.ts` checks every list has listings.
 - **The assistant answers each guide's own name from that guide** (tested in
   `tests/chat.test.ts`). It used to send 13 of the 26 elsewhere; new routes
