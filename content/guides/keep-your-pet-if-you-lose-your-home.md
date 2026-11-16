@@ -15,6 +15,7 @@ City homeless shelters do not take pets, but there are ways to keep you and your
 
 - Call 311 and ask for your local Homebase office. Homebase is the city's service for people at risk of losing their home; a counsellor there can help you try to stay where you are. Staying housed is the only route where your pet never has to leave you.
 - If you rent and your lease says no pets, ask before you assume you must give your pet up: see the city's guide to emotional support animals in housing at https://www.nyc.gov/site/animalwelfare/resources/service-and-emotional-support-animals.page
+- If you have Medicaid, a Social Care Navigator can help you with housing and utilities, food and transport, at no cost. This is help for you, not for your pet. Every Medicaid member can be screened. Bronx: Somos, 1-833-766-6769, https://www.somoscommunitycare.org/social-care-network/ . Staten Island, and some Brooklyn and Queens zip codes: the Staten Island Social Care Network, (917) 830-1140, https://statenislandpps.org/social-care-network/ . Manhattan, Queens and Brooklyn: WholeYouNYC (Public Health Solutions), https://wholeyou.nyc .
 
 ## If you need shelter - what happens to your pet
 
