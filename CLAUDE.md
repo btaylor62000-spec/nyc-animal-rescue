@@ -204,14 +204,19 @@ such. The monthly audit checks whether the city has published a procedure.
 - Kitten card links Kitten Lady's guides; at-risk card links the ready-made
   messages; the dog guide is "Low-cost dog vet care, spay/neuter and
   licensing"; the breed card has an "Every breed rescue" button.
-- **Find help's "What do you need?" buttons follow the home page's four
-  tiers, with the same names** (`PICK_GROUPS` in `src/pages/directory.astro`,
-  owner, 2026-11-16). Added: poisoned, rabbit/bird/reptile emergency, report
-  abuse, found kittens, save a shelter animal, breed rescues, boarding.
-  "Report abuse" and "Save a shelter animal" open their guides, because the
-  answer is steps, not a place. `tests/directory-picks.test.ts` fails if a
-  button opens an empty list or a missing guide. The 12 buttons before this
-  were chosen by judgement, with no visitor data (the site has no analytics).
+- **One map of help across the site** (owner, 2026-11-16): the home page,
+  Find help's "What do you need?" and the assistant's starting points all
+  show the same 26 numbered guide lines in the same four tiers, built from
+  `LINES_BY_TIER`. A Find help button opens that guide's own list in the
+  directory with the guide shown above it (`FIND_HELP` / `findHelpHref` in
+  `src/data/guide-listings.ts`), or the guide itself where the answer is
+  steps. **A new guide needs a `FIND_HELP` entry** (tested).
+  `tests/directory-picks.test.ts` checks every list has listings.
+- **The assistant answers each guide's own name from that guide** (tested in
+  `tests/chat.test.ts`). It used to send 13 of the 26 elsewhere; new routes
+  in `routeGuide` cover disasters, trapped animals, leaving an abusive home,
+  kittens found outside, pet rabbits/birds/reptiles (not wildlife, though
+  they say "bird"), cat clinics and breed rescues.
 - **The guide feedback form needs no Google account**: checked 2026-11-16,
   it opens signed out; "Sign in to save your progress" is optional.
 

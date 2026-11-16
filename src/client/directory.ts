@@ -93,6 +93,8 @@ if (form && list) {
 
   // Set by a guide's link; cleared with the filters, since the panel cannot show it.
   let anyNeed = new Set(new URLSearchParams(location.search).getAll('anyneed'));
+  // Set by a Find help button: the guide for this list, shown above it.
+  let guideFromUrl = new URLSearchParams(location.search).get('guide') ?? '';
 
   let index: MiniSearch<SearchRecordLike> | null = null;
   let indexLoading: Promise<void> | null = null;
@@ -133,6 +135,7 @@ if (form && list) {
       for (const v of set) params.append(key, v);
     }
     for (const v of state.anyNeed) params.append('anyneed', v);
+    if (guideFromUrl) params.set('guide', guideFromUrl);
     if (state.zip) params.set('zip', state.zip);
     if (state.phone) params.set('phone', '1');
     if (state.activeOnly) params.set('active', '1');
@@ -322,7 +325,7 @@ if (form && list) {
   function asked(): boolean {
     const p = new URLSearchParams(location.search);
     return browsing || Boolean(searchInput?.value.trim()) || origin !== null ||
-      anyNeed.size > 0 || ['animal', 'borough', 'need', 'confidence', 'zip', 'phone', 'active'].some((k) => p.has(k)) ||
+      anyNeed.size > 0 || Boolean(guideFromUrl) || ['animal', 'borough', 'need', 'confidence', 'zip', 'phone', 'active'].some((k) => p.has(k)) ||
       !!form!.querySelector('input:checked') || Boolean((form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim());
   }
 
@@ -364,7 +367,8 @@ if (form && list) {
   }
   function showGuideHints(q: string): void {
     if (!hintBox) return;
-    const found = q ? guidesFor(q, guideTopics) : [];
+    const named = guideTopics.filter((g) => g.slug === guideFromUrl);
+    const found = [...named, ...(q ? guidesFor(q, guideTopics) : []).filter((g) => g.slug !== guideFromUrl)];
     hintBox.replaceChildren();
     hintBox.hidden = found.length === 0;
     for (const g of found) {
@@ -417,6 +421,7 @@ if (form && list) {
   document.getElementById('clear-filters')?.addEventListener('click', () => {
     form.reset();
     anyNeed = new Set();
+    guideFromUrl = '';
     if (searchInput) searchInput.value = '';
     void run();
   });

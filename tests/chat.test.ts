@@ -182,3 +182,23 @@ test('a list question knows how many places match, for the "see all" link', () =
   const count = new Retriever(corpus).countMatching('food-assistance', signals.animals, signals.boroughs);
   assert.ok(count > 6, `only ${count} places for cat food in the Bronx`);
 });
+
+/*
+ * One map of help across the site (owner, 2026-11-16): the home page, Find
+ * help and the assistant's starting points all use the 26 numbered guide
+ * lines. Asked a guide's own name, the assistant must answer from that guide.
+ * Before this, half of them landed elsewhere: "a disaster putting your pet at
+ * risk" on the shelter's at-risk list, "leave an abusive home" on rehoming
+ * exotic pets.
+ */
+test('asked a guide line by name, the assistant answers from that guide', async () => {
+  const { LINES_BY_TIER } = await import('../src/data/guides.ts');
+  const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
+  const r = new Retriever(corpus);
+  const wrong: string[] = [];
+  for (const t of LINES_BY_TIER) for (const l of t.lines) {
+    const got = r.retrieve(l.label, 10).guide?.slug;
+    if (got !== l.guide.slug) wrong.push(`${l.number} "${l.label}" -> ${got}`);
+  }
+  assert.deepEqual(wrong, []);
+});

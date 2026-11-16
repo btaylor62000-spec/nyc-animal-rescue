@@ -4,7 +4,8 @@ import FilterPanel from '../components/FilterPanel.astro';
 import OrgCard from '../components/OrgCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 import { CONFIDENCE_ORDER, DATA_VERSION, LISTED_ORGS } from '../data/orgs.ts';
-import { GUIDES, GUIDE_TIERS } from '../data/guides.ts';
+import { GUIDES, LINES_BY_TIER, LINE_BY_SLUG } from '../data/guides.ts';
+import { findHelpHref } from '../data/guide-listings.ts';
 
 /**
  * Every record is rendered server-side. That keeps the page usable without
@@ -27,46 +28,21 @@ const orgs = [...LISTED_ORGS].sort((a, b) => {
 import Icon from '../components/Icon.astro';
 /*
  * The landing panel: with nothing asked yet, the page asks what the reader
- * needs instead of opening on whatever is best evidenced. Grouped by the same
- * four tiers, with the same names, as the guides on the home page
- * (GUIDE_TIERS), so the same help is called the same thing everywhere (owner,
- * 2026-11-16). "near=1" asks for a place where the help is somewhere to go.
- * Two buttons open a guide instead of a list, because the answer is a set of
- * steps (911, 311, the at-risk list's forms), not a place.
+ * needs. Its buttons are the home page's 26 numbered guide lines, with the
+ * same numbers, names and tiers (owner, 2026-11-16: one map of help across
+ * the site). Each opens that guide's own list in the directory, with the
+ * guide shown above it, or the guide itself where the answer is steps
+ * (findHelpHref in src/data/guide-listings.ts).
  */
-const PICK_GROUPS: Record<string, Array<{ label: string; href: string }>> = {
-  now: [
-    { label: 'Emergency vet, open now', href: '/directory?need=emergency-vet&near=1' },
-    { label: 'Poisoned', href: '/directory?need=poison-control' },
-    { label: 'Hurt bird or wild animal', href: '/directory?need=wildlife-rehab&near=1' },
-    { label: 'Rabbit, bird or reptile emergency', href: '/directory?need=exotic-vet&near=1' },
-    { label: 'Report abuse', href: '/guides/report-animal-abuse' },
-  ],
-  today: [
-    { label: 'Lost or found a pet', href: '/directory?need=lost-found' },
-    { label: 'Found kittens', href: '/directory?need=neonatal' },
-    { label: 'Save a shelter animal from euthanasia', href: '/guides/save-an-at-risk-animal' },
-  ],
-  week: [
-    { label: 'Free pet food', href: '/directory?need=food-assistance&near=1' },
-    { label: 'Help with vet bills', href: '/directory?need=financial-aid' },
-    { label: 'Low-cost vet', href: '/directory?need=low-cost-vet&near=1' },
-    { label: 'Spay or neuter', href: '/directory?need=spay-neuter&near=1' },
-    { label: 'Help keeping your pet', href: '/directory?need=owner-support' },
-    { label: 'Training', href: '/directory?need=behavior-training' },
-  ],
-  later: [
-    { label: 'Giving up a pet', href: '/directory?need=surrender' },
-    { label: 'Street cats (TNR)', href: '/directory?need=tnr&near=1' },
-    { label: 'Breed rescues', href: '/directory?need=breed-specific' },
-    { label: 'Adopt or foster', href: '/directory?need=adoption' },
-    { label: 'Boarding', href: '/directory?need=boarding' },
-  ],
-};
-const PICKS = GUIDE_TIERS.map((t) => ({ key: t.key, title: t.title, picks: PICK_GROUPS[t.key] ?? [] }));
+const PICKS = LINES_BY_TIER.map((t) => ({
+  key: t.key,
+  title: t.title,
+  picks: t.lines.map((l) => ({ number: l.number, label: l.label, href: findHelpHref(l.guide.slug) })),
+}));
 // Topic phrases for every guide, so a search can point at the steps as well
 // as the organizations (src/data/guide-match.ts).
-const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics }) => ({ slug, title, summary, topics })));
+// Titled as on the home page, so a guide is called the same thing everywhere.
+const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics }) => ({ slug, title: LINE_BY_SLUG.get(slug)?.label ?? title, summary, topics })));
 ---
 
 <Base
@@ -83,7 +59,7 @@ const guideTopics = JSON.stringify(GUIDES.map(({ slug, title, summary, topics })
         <section class={`need-picker__group need-picker__group--${g.key}`}>
           <h3 class="need-picker__tier">{g.title}</h3>
           <ul class="need-picker__list">
-            {g.picks.map((p) => <li><a class="need-picker__pick" href={p.href}>{p.label}</a></li>)}
+            {g.picks.map((p) => <li><a class="need-picker__pick" href={p.href}><span class="need-picker__num">{p.number}</span>{p.label}</a></li>)}
           </ul>
         </section>
       ))}

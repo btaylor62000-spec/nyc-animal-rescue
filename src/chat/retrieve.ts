@@ -169,7 +169,24 @@ const REHOME_RE =
  */
 /** Losing a home, or entering the city's shelter system, with an animal. */
 const HOUSING_RE =
-  /\b(homeless\w*|evict\w*|(losing|lose|lost) (my|our|the) (home|apartment|place|housing|lease)|(homeless|city|dhs) shelters?|shelter system|emotional support animals?|\besa\b|reasonable accommodation|nowhere to (live|stay|sleep)|housing (crisis|emergency))\b/i;
+  /\b(homeless\w*|evict\w*|(losing|lose|lost) (my|our|the|your) (home|apartment|place|housing|lease)|(homeless|city|dhs) shelters?|shelter system|emotional support animals?|\besa\b|reasonable accommodation|nowhere to (live|stay|sleep)|housing (crisis|emergency))\b/i;
+
+/*
+ * Situations with their own guide that the need and animal words cannot tell
+ * apart (owner, 2026-11-16: the assistant sent half the home page's own guide
+ * names to the wrong guide, "a disaster putting your pet at risk" to the
+ * shelter's at-risk list among them). tests/chat.test.ts asks the assistant
+ * every guide's name and checks it lands on that guide.
+ */
+const DISASTER_RE = /\b(disasters?|evacuat\w*|hurricanes?|flood\w*|heat ?waves?|extreme heat|blackouts?|power (cut|outage)s?|coastal storms?)\b/i;
+const TRAPPED_RE = /\b(is|are|was|were|got|gets|get|been)\s+(trapped|stuck)\b|\b(trapped|stuck)\s+(in|under|inside|behind|between)\b|\bcan.?t get (it )?out\b/i;
+const BIRD_WORDS_RE = /\b(birds?|pigeons?|sparrows?|hawks?|owls?|ducks?|goose|geese|swans?|robins?|fledgl\w*|gulls?|herons?|starlings?|blue ?jays?|cardinals?|nestlings?)\b/i;
+/** A pet rabbit, reptile or small animal, or a bird that is plainly a pet: not wildlife. */
+const EXOTIC_PET_RE = /\b(rabbits?|bunn(y|ies)|reptiles?|turtles?|tortoises?|lizards?|snakes?|guinea pigs?|hamsters?|ferrets?|chinchillas?|small (pet|animal)s?|parrots?|budgies?|cockatiels?|parakeets?|lovebirds?|canar(y|ies)|finch(es)?|pet birds?|exotic pets?)\b/i;
+const GIVE_UP_RE = /\b(rehom\w*|surrender\w*|give (it|him|her|them) up|giving (it|him|her|them)? ?up|can.?t keep)\b/i;
+const BOARDING_RE = /\b(board(ing)?|pet ?sit\w*|sitters?|going away|vacation|holiday|planning ahead|pet trust)\b/i;
+const KITTENS_RE = /\bkittens?\b/i;
+const FOUND_OUTSIDE_RE = /\b(found|find|outside|yard|street|alone|abandoned|litter|mother|mom|under (a|the)|in (my|the|a) (yard|garden|backyard))\b/i;
 
 const ABUSE_RE =
   /\b(abuse\w*|abusive|cruel|cruelty|neglect\w*|mistreat\w*|maltreat\w*|beat(en|ing)?|kick(s|ed|ing)?|tortur\w*|starv\w*|hoard\w*|dog ?fight\w*|cock ?fight\w*|animal fighting|chained (up|dog|outside)|kept chained|tether\w*|report (my |a |the )?(neighbou?r|owner)|turn (them|him|her) in|animal control|humane law|maltrato|maltrat\w*|crueldad|abuso|denunci\w*)\b/i;
@@ -685,7 +702,7 @@ export class Retriever {
    * in order and the first match wins; free-text search is the fallback for
    * anything they do not cover.
    */
-  private routeGuide(s: Signals): string | null {
+  private routeGuide(s: Signals, q = ''): string | null {
     const has = (n: string) => s.needs.includes(n);
     const animal = (a: string) => s.animals.includes(a);
     const exotic = animal('rabbit') || animal('small-mammal') || animal('bird-companion') || animal('reptile') || animal('amphibian') || animal('fish');
@@ -699,6 +716,8 @@ export class Retriever {
      * abuse?" answered with a wild bird hospital. A reviewer hit exactly that.
      */
     // A complaint about a business, a scam or to an official is on the same guide.
+    // Someone leaving an abusive home needs shelter with their pet, not a tip line.
+    if (s.fleeing) return 'leaving-abuse-with-your-pet';
     if (s.abuse || s.complaint.asked) return 'report-animal-abuse';
 
     // Losing a home is the situation, whatever the animal: the answer is
@@ -708,8 +727,25 @@ export class Retriever {
     // Hours matter here: the listing closes in about 42 hours.
     if (s.atRisk) return 'save-an-at-risk-animal';
 
+    if (DISASTER_RE.test(q)) return 'pets-in-a-disaster';
+    if (TRAPPED_RE.test(q) && !/glue trap/i.test(q)) return 'animal-trapped';
+    // Kittens found outdoors: a kitten rescue decides, from that guide.
+    if (KITTENS_RE.test(q) && FOUND_OUTSIDE_RE.test(q) && !/\b(lost|missing)\b/i.test(q)) return 'found-kittens-outside';
+
+    // A pet rabbit, reptile or parrot is not wildlife, though "bird" says so.
+    if (EXOTIC_PET_RE.test(q)) {
+      if (has('lost-found') || /\blost\b|\bmissing\b|lost or found/i.test(q)) return 'lost-and-found-exotic';
+      if (GIVE_UP_RE.test(q) || has('surrender')) return 'rehoming-an-exotic-pet';
+      if (BOARDING_RE.test(q) || has('boarding')) return 'exotic-boarding-and-planning';
+      // Sick or hurt: the exotic emergency guide. Anything else falls through
+      // to the need rules below ("are ferrets legal" is not an emergency).
+      const unwell = s.emergency || has('emergency-vet') || has('exotic-vet') || /\b(sick|hurt|ill|injur\w*|emergency|not eating|bleeding|breathing)\b/i.test(q);
+      if (unwell && (/\b(my|your|our|pet|pets)\b/i.test(q) || !BIRD_WORDS_RE.test(q))) return 'exotic-pet-emergency';
+    }
+
     // Wildlife first: it is the route people most often get wrong, and the
     // consequences of getting it wrong are the least reversible.
+    if ((animal('wildlife') || animal('marine')) && !BIRD_WORDS_RE.test(q)) return 'found-wildlife';
     if (animal('bird-wild') || animal('pigeon')) return 'found-an-injured-bird';
     if (animal('wildlife') || animal('marine')) return 'found-wildlife';
 
@@ -718,6 +754,8 @@ export class Retriever {
     if (has('exotic-vet')) return 'exotic-pet-emergency';
 
     if (has('neonatal')) return 'cats-with-special-needs';
+    // "Low-cost cat clinics and trap banks" has its own guide; TNR is the how-to.
+    if (/\bclinics?\b|low.?cost|cheap/i.test(q) && !animal('dog') && !/\b(food|feed\w*)\b/i.test(q) && (has('tnr') || has('trap-bank') || has('spay-neuter') || has('low-cost-vet'))) return 'low-cost-clinics-and-trap-banks';
     if (has('trap-bank') || has('tnr') || has('colony-care') || has('working-cat')) return 'starting-tnr';
 
     if (has('lost-found') || has('microchip')) {
@@ -754,14 +792,14 @@ export class Retriever {
      * down was being answered with breed-specific rescue, which cannot pull
      * from ACC on their behalf.
      */
+    if (has('breed-specific') || /\bbreed[- ]specific|\bbreed rescues?\b/i.test(q)) return 'breed-specific-dog-rescue';
     if (has('advocacy')) return 'save-an-at-risk-animal';
-    if (has('breed-specific')) return 'breed-specific-dog-rescue';
 
     return null;
   }
 
   private bestGuide(question: string, signals: Signals): Retrieved['guide'] {
-    const routed = this.routeGuide(signals);
+    const routed = this.routeGuide(signals, question);
 
     // Within the chosen guide, pick the section that best fits the question.
     if (routed) {

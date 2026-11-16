@@ -1520,4 +1520,15 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .need-picker__group--today .need-picker__tier { color: var(--tier-today); }
 .need-picker__group--week .need-picker__tier { color: var(--tier-week); }
 .need-picker__group--later .need-picker__tier { color: var(--tier-later); }
-.need-picker__group--now .need-picker__list li:first-child .need-picker__pick { background: var(--sign-red); border-color: var(--sign-red); color: #fff; }
+.need-picker__pick { gap: 0.55rem; }
+.need-picker__num { flex: none; display: inline-grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%; color: #fff; font-size: 0.85rem; font-weight: 800; background: var(--tier-later); }
+.need-picker__group--now .need-picker__num { background: var(--tier-now); }
+.need-picker__group--today .need-picker__num { background: var(--tier-today); }
+.need-picker__group--week .need-picker__num { background: var(--tier-week); }
+.need-picker__list { grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+.chat__tier { margin: 0 0 0.5rem; }
+.chat__tier > summary { cursor: pointer; list-style: none; padding: 0.3rem 0 0.3rem 0.55rem; }
+.chat__tier > summary::-webkit-details-marker { display: none; }
+.chat__tier > summary::after { content: ' +'; }
+.chat__tier[open] > summary::after { content: ' \2212'; }
+.chat__examples button { display: inline-flex; align-items: center; gap: 0.45rem; text-align: left; }

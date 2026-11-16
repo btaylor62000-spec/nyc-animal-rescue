@@ -165,3 +165,57 @@ export function directoryHref(block: ListingBlock): string | null {
   if (block.animals?.length === 1) p.set('animal', block.animals[0]!);
   return `/directory?${p.toString()}`;
 }
+
+/*
+ * Where each guide's line on Find help leads (owner, 2026-11-16: one map of
+ * help across the site, the same 26 lines as the home page). A need opens
+ * the directory filtered to it; null opens the guide itself, because the
+ * answer is steps rather than a place (911 or 311, the at-risk list's forms),
+ * or because the directory cannot filter "rabbits, birds and reptiles"
+ * together. A test checks every guide is here and every list has listings.
+ */
+export const FIND_HELP: Record<string, { need: Need; animal?: string } | null> = {
+  'animal-emergency': { need: 'emergency-vet' },
+  'found-an-injured-bird': { need: 'wildlife-rehab' },
+  'found-wildlife': { need: 'wildlife-rehab' },
+  'exotic-pet-emergency': { need: 'exotic-vet' },
+  'report-animal-abuse': null,
+  'leaving-abuse-with-your-pet': null,
+  'pets-in-a-disaster': null,
+  'animal-trapped': null,
+  'animal-left-alone': null,
+  'lost-and-found-dog': { need: 'lost-found', animal: 'dog' },
+  'lost-and-found-cat': { need: 'lost-found', animal: 'cat' },
+  'lost-and-found-exotic': { need: 'lost-found' },
+  'found-kittens-outside': { need: 'neonatal', animal: 'cat' },
+  'save-an-at-risk-animal': null,
+  'keeping-your-dog': { need: 'owner-support', animal: 'dog' },
+  'keeping-your-cat': { need: 'owner-support', animal: 'cat' },
+  'keep-your-pet-if-you-lose-your-home': null,
+  'help-paying-for-care': { need: 'financial-aid' },
+  'low-cost-dog-care': { need: 'low-cost-vet', animal: 'dog' },
+  'low-cost-clinics-and-trap-banks': { need: 'low-cost-vet', animal: 'cat' },
+  'starting-tnr': { need: 'tnr', animal: 'cat' },
+  'cats-with-special-needs': { need: 'medical-special-needs', animal: 'cat' },
+  'breed-specific-dog-rescue': { need: 'breed-specific', animal: 'dog' },
+  'dog-behavior-and-legal': { need: 'behavior-training', animal: 'dog' },
+  'rehoming-an-exotic-pet': null,
+  'exotic-boarding-and-planning': null,
+};
+
+/* Help that is a place to go: these lists ask for a location or zip first. */
+const PLACE_NEEDS = new Set<string>(['emergency-vet', 'wildlife-rehab', 'exotic-vet', 'food-assistance', 'low-cost-vet', 'spay-neuter', 'tnr', 'neonatal']);
+
+/**
+ * The link for a guide's line on Find help: its directory list, carrying the
+ * guide so the page shows "Guide: what to do" above the list, or the guide.
+ */
+export function findHelpHref(slug: string): string {
+  const target = FIND_HELP[slug];
+  if (!target) return `/guides/${slug}`;
+  const p = new URLSearchParams({ need: target.need });
+  if (target.animal) p.set('animal', target.animal);
+  if (PLACE_NEEDS.has(target.need)) p.set('near', '1');
+  p.set('guide', slug);
+  return `/directory?${p.toString()}`;
+}

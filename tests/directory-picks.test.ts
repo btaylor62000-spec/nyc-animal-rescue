@@ -2,31 +2,32 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { LISTED_ORGS } from '../src/data/orgs.ts';
-import { GUIDES, GUIDE_TIERS } from '../src/data/guides.ts';
+import { GUIDES, LINES_BY_TIER } from '../src/data/guides.ts';
+import { FIND_HELP, findHelpHref } from '../src/data/guide-listings.ts';
 
 /*
- * The "What do you need?" buttons on Find help (src/pages/directory.astro),
- * grouped like the guides on the home page (owner, 2026-11-16). Read as text:
- * the page is Astro. A button must never open an empty list or a missing guide.
+ * One map of help across the site (owner, 2026-11-16): Find help's buttons
+ * and the assistant's starting points are the home page's 26 numbered guide
+ * lines. These check that every guide has a place on Find help, that every
+ * list it opens has something in it, and that both pages are built from the
+ * lines rather than from a hand-made list that can drift.
  */
-const page = readFileSync('src/pages/directory.astro', 'utf8');
-const block = page.slice(page.indexOf('const PICK_GROUPS'), page.indexOf('const PICKS ='));
-
-test('the Find help buttons use the home page tiers', () => {
-  for (const t of GUIDE_TIERS) assert.match(block, new RegExp(`\\n  ${t.key}: \\[`), `no buttons for the ${t.title} tier`);
+test('every guide has a Find help link, and none is left over', () => {
+  const slugs = GUIDES.map((g) => g.slug).sort();
+  assert.deepEqual(Object.keys(FIND_HELP).sort(), slugs);
 });
 
-test('every Find help button opens a list with something in it, or a real guide', () => {
-  const hrefs = [...block.matchAll(/href: '([^']+)'/g)].map((m) => m[1]!);
-  assert.ok(hrefs.length >= 15, 'too few buttons found: is the block still where this test looks?');
-  for (const href of hrefs) {
-    if (href.startsWith('/guides/')) {
-      assert.ok(GUIDES.some((g) => `/guides/${g.slug}` === href), `${href} is not a guide`);
-      continue;
-    }
-    const need = new URL(href, 'https://x').searchParams.get('need');
-    assert.ok(need, `${href} names no need`);
-    const n = LISTED_ORGS.filter((o) => o.needs.includes(need as never)).length;
-    assert.ok(n > 0, `${href}: no listing has the need "${need}"`);
+test('every Find help list has listings', () => {
+  for (const [slug, target] of Object.entries(FIND_HELP)) {
+    if (!target) continue;
+    const n = LISTED_ORGS.filter((o) => o.needs.includes(target.need) && (!target.animal || o.animals.includes(target.animal as never))).length;
+    assert.ok(n > 0, `${slug}: no listing for ${target.need}${target.animal ? ` / ${target.animal}` : ''}`);
+    assert.match(findHelpHref(slug), new RegExp(`guide=${slug}$`));
   }
+});
+
+test('Find help and the assistant are built from the guide lines', () => {
+  assert.equal(LINES_BY_TIER.flatMap((t) => t.lines).length, GUIDES.length);
+  assert.match(readFileSync('src/pages/directory.astro', 'utf8'), /LINES_BY_TIER\.map/);
+  assert.match(readFileSync('src/pages/ask.astro', 'utf8'), /LINES_BY_TIER\.map/);
 });
