@@ -61,13 +61,13 @@
     "https://ittybittykittyny.org/",
     "https://www.ittybittykittyny.org/"
   ],
-  "last_verified": "2026-11-13",
+  "last_verified": "2026-11-16",
   "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": "2026-11-10",
+  "last_checked": "2026-11-16",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

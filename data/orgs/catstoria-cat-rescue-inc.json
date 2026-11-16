@@ -55,13 +55,13 @@
     "https://catstoria.com/",
     "https://www.petfinder.com/member/us/ny/astoria/catstoria-cat-rescue-ny1697/"
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-16",
   "section": "QUEENS (Queens-based / Queens-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-10",
-  "check_status": "manual-only",
+  "last_checked": "2026-11-16",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

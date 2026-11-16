@@ -44,13 +44,13 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-16",
   "section": "Breed-specific rescues — TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-16",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,
