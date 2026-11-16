@@ -1,30 +1,16 @@
 {
-  "date": "2026-11-10",
-  "checked": 789,
+  "date": "2026-11-16",
+  "checked": 833,
   "counts": {
-    "ok": 712,
-    "gone": 3,
+    "ok": 745,
+    "gone": 2,
     "parked": 0,
     "taken": 1,
-    "elsewhere": 3,
-    "blocked": 56,
-    "down": 14
+    "elsewhere": 4,
+    "blocked": 64,
+    "down": 17
   },
   "problems": [
-    {
-      "url": "http://bigcitylittlekitty.blogspot.com",
-      "verdict": "blocked",
-      "status": 429,
-      "finalUrl": "http://www.google.com/sorry/index?continue=http://bigcitylittlekitty.blogspot.com/&q=EgQUoU6ZGIq3ztcGIi1DLaG8qWJH5CpXQrTowgDhN9500Q7Q-0I-xOO5qxSQp3xvOx1kVbscLFkOaRsyAnJSWgFDYP3Ez6iQk_a-Pg",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "big-city-little-kitty",
-          "name": "Big City Little Kitty",
-          "field": "website"
-        }
-      ]
-    },
     {
       "url": "http://fosterlings.org",
       "verdict": "blocked",
@@ -48,6 +34,12 @@
       "error": "robots.txt asks us not to",
       "places": [
         {
+          "kind": "listing",
+          "id": "pibbles-and-more-animal-rescue",
+          "name": "Pibbles & More Animal Rescue (PMAR)",
+          "field": "website"
+        },
+        {
           "kind": "guide",
           "id": "breed-specific-dog-rescue",
           "name": "Breed-specific dog rescue",
@@ -70,21 +62,21 @@
       ]
     },
     {
-      "url": "https://catstoria.com",
+      "url": "https://animalclinicofbayridgebrooklyn.net",
       "verdict": "blocked",
       "status": 403,
-      "finalUrl": "https://catstoria.com/",
+      "finalUrl": "https://animalclinicofbayridgebrooklyn.net/",
       "places": [
         {
           "kind": "listing",
-          "id": "catstoria-cat-rescue-inc",
-          "name": "Catstoria Cat Rescue Inc. (Kitty Haven)",
+          "id": "animal-clinic-of-bay-ridge",
+          "name": "Animal Clinic of Bay Ridge",
           "field": "website"
         },
         {
           "kind": "guide",
-          "id": "cats-with-special-needs",
-          "name": "Cats needing specialist help",
+          "id": "low-cost-dog-care",
+          "name": "Low-cost dog vet care, spay/neuter and licensing",
           "field": "guide text"
         }
       ]
@@ -182,6 +174,12 @@
       "finalUrl": "https://facebook.com/GspRescueOfNjNy",
       "error": "robots.txt asks us not to",
       "places": [
+        {
+          "kind": "listing",
+          "id": "german-shorthaired-pointer-rescue-of-nj-ny",
+          "name": "German Shorthaired Pointer Rescue of NJ/NY",
+          "field": "website"
+        },
         {
           "kind": "guide",
           "id": "breed-specific-dog-rescue",
@@ -315,6 +313,20 @@
           "kind": "guide",
           "id": "cats-with-special-needs",
           "name": "Cats needing specialist help",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://nycgovparks.org",
+      "verdict": "blocked",
+      "status": 403,
+      "finalUrl": "https://www.nycgovparks.org/",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "found-wildlife",
+          "name": "Found injured or orphaned wildlife",
           "field": "guide text"
         }
       ]
@@ -456,7 +468,7 @@
       "url": "https://vetcoclinics.com",
       "verdict": "blocked",
       "status": 403,
-      "finalUrl": "https://vetcoclinics.com/",
+      "finalUrl": "https://www.vetcoclinics.com/",
       "places": [
         {
           "kind": "listing",
@@ -467,7 +479,7 @@
         {
           "kind": "guide",
           "id": "low-cost-dog-care",
-          "name": "Low-cost vet care, spay/neuter and dog licensing",
+          "name": "Low-cost dog vet care, spay/neuter and licensing",
           "field": "guide text"
         }
       ]
@@ -494,8 +506,8 @@
       "places": [
         {
           "kind": "guide",
-          "id": "lost-and-found-cat",
-          "name": "Lost or found a cat",
+          "id": "keeping-your-cat",
+          "name": "Help keeping your cat",
           "field": "guide text"
         }
       ]
@@ -553,9 +565,21 @@
       "error": "robots.txt asks us not to",
       "places": [
         {
+          "kind": "listing",
+          "id": "lucies-mastiff-mission",
+          "name": "Lucie's Mastiff Mission",
+          "field": "website"
+        },
+        {
           "kind": "guide",
           "id": "breed-specific-dog-rescue",
           "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
           "field": "guide text"
         }
       ]
@@ -588,6 +612,48 @@
       ]
     },
     {
+      "url": "https://www.facebook.com/LIpitstop/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/LIpitstop/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "long-island-pit-stop",
+          "name": "Long Island Pit Stop",
+          "field": "website"
+        },
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/p/Friends-of-the-Forgotten-Cat-Rescue-Inc-100091757350658/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/p/Friends-of-the-Forgotten-Cat-Rescue-Inc-100091757350658/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
       "url": "https://www.facebook.com/p/NYC-Fish-Rescue-100066599886526/",
       "verdict": "blocked",
       "status": 0,
@@ -599,6 +665,48 @@
           "id": "nyc-fish-rescue",
           "name": "NYC Fish Rescue",
           "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/p/Save-A-Heartbeat-Kitty-Rescue-100064809723872/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/p/Save-A-Heartbeat-Kitty-Rescue-100064809723872/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/palofnyinc",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/palofnyinc",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "pet-adoption-league-of-ny",
+          "name": "Pet Adoption League of NY",
+          "field": "website"
+        },
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
         }
       ]
     },
@@ -633,6 +741,33 @@
       ]
     },
     {
+      "url": "https://www.facebook.com/SafeHounds/",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/SafeHounds/",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "safe-hounds-beagle-rescue",
+          "name": "Safe Hounds Beagle Rescue",
+          "field": "website"
+        },
+        {
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
       "url": "https://www.facebook.com/saintspirocatrescueinc/",
       "verdict": "blocked",
       "status": 0,
@@ -648,6 +783,21 @@
       ]
     },
     {
+      "url": "https://www.facebook.com/Shoniosafehaven",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/Shoniosafehaven",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
       "url": "https://www.facebook.com/StatenIslandBirdClub",
       "verdict": "blocked",
       "status": 0,
@@ -659,6 +809,21 @@
           "id": "staten-island-bird-club",
           "name": "Staten Island Bird Club",
           "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/tannerspaws",
+      "verdict": "blocked",
+      "status": 0,
+      "finalUrl": "https://www.facebook.com/tannerspaws",
+      "error": "robots.txt asks us not to",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
         }
       ]
     },
@@ -782,6 +947,12 @@
       "finalUrl": "https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/",
       "places": [
         {
+          "kind": "listing",
+          "id": "pekingese-rescue-network-inc",
+          "name": "Pekingese Rescue Network Inc",
+          "field": "website"
+        },
+        {
           "kind": "guide",
           "id": "breed-specific-dog-rescue",
           "name": "Breed-specific dog rescue",
@@ -816,10 +987,30 @@
       "finalUrl": "https://www.petfinder.com/member/us/ny/brooklyn/dalmatian-adoption-inc-ny505",
       "places": [
         {
+          "kind": "listing",
+          "id": "dalmatian-adoption-inc",
+          "name": "Dalmatian Adoption, Inc",
+          "field": "website"
+        },
+        {
           "kind": "guide",
           "id": "breed-specific-dog-rescue",
           "name": "Breed-specific dog rescue",
           "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657/",
+      "verdict": "blocked",
+      "status": 403,
+      "finalUrl": "https://www.petfinder.com/member/us/ny/brooklyn/dana-and-the-cats-ny1657/",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "dana-and-the-cats",
+          "name": "Dana and the Cats",
+          "field": "website"
         }
       ]
     },
@@ -901,16 +1092,43 @@
       ]
     },
     {
-      "url": "https://catrepublic.com",
+      "url": "http://bighandslittlepaws.org",
       "verdict": "down",
-      "status": 500,
-      "finalUrl": "https://catrepublic.com/",
+      "status": 502,
+      "finalUrl": "http://bighandslittlepaws.org/",
       "places": [
         {
-          "kind": "listing",
-          "id": "cat-republic",
-          "name": "Cat Republic",
-          "field": "website"
+          "kind": "guide",
+          "id": "breed-specific-dog-rescue",
+          "name": "Breed-specific dog rescue",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "save-an-at-risk-animal",
+          "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
+      "url": "https://ccpdt.org",
+      "verdict": "down",
+      "status": 0,
+      "finalUrl": "https://ccpdt.org",
+      "error": "timed out after 15000ms",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "dog-behavior-and-legal",
+          "name": "Dog behaviour, training and legal questions",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "keeping-your-dog",
+          "name": "Help keeping your dog",
+          "field": "guide text"
         }
       ]
     },
@@ -965,16 +1183,41 @@
       ]
     },
     {
-      "url": "https://kings-pride.org",
+      "url": "https://holyapostlesnyc.org",
       "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://kings-pride.org",
-      "error": "timed out after 15000ms",
+      "status": 504,
+      "finalUrl": "https://holyapostlesnyc.org/",
       "places": [
         {
+          "kind": "listing",
+          "id": "holy-apostles-soup-kitchen-pantry",
+          "name": "Holy Apostles Soup Kitchen Pantry",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://lapoflove.com",
+      "verdict": "down",
+      "status": 500,
+      "finalUrl": "https://www.lapoflove.com/",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "lap-of-love",
+          "name": "Lap of Love",
+          "field": "website"
+        },
+        {
           "kind": "guide",
-          "id": "cats-with-special-needs",
-          "name": "Cats needing specialist help",
+          "id": "keeping-your-cat",
+          "name": "Help keeping your cat",
+          "field": "guide text"
+        },
+        {
+          "kind": "guide",
+          "id": "keeping-your-dog",
+          "name": "Help keeping your dog",
           "field": "guide text"
         }
       ]
@@ -1008,27 +1251,13 @@
         {
           "kind": "guide",
           "id": "low-cost-clinics-and-trap-banks",
-          "name": "Low-cost clinics and trap banks",
+          "name": "Low-cost cat clinics and trap banks",
           "field": "guide text"
         },
         {
           "kind": "guide",
           "id": "starting-tnr",
           "name": "Community cats, colonies and starting TNR",
-          "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://nycgovparks.org",
-      "verdict": "down",
-      "status": 405,
-      "finalUrl": "https://www.nycgovparks.org/",
-      "places": [
-        {
-          "kind": "guide",
-          "id": "found-wildlife",
-          "name": "Found injured or orphaned wildlife",
           "field": "guide text"
         }
       ]
@@ -1094,21 +1323,6 @@
       ]
     },
     {
-      "url": "https://www.petamberalert.com/lost-and-found-pets/new-york/",
-      "verdict": "down",
-      "status": 0,
-      "finalUrl": "https://www.petamberalert.com/lost-and-found-pets/new-york/",
-      "error": "fetch failed (EAI_AGAIN)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "petamberalert",
-          "name": "PetAmberAlert",
-          "field": "website"
-        }
-      ]
-    },
-    {
       "url": "https://www.reboundhounds.org/adoption-application.html",
       "verdict": "down",
       "status": 400,
@@ -1119,6 +1333,51 @@
           "id": "rebound-hounds",
           "name": "Rebound Hounds (Rebound Hounds Res-Q)",
           "field": "Apply"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehotline.org",
+      "verdict": "down",
+      "status": 0,
+      "finalUrl": "https://www.thehotline.org",
+      "error": "timed out after 15000ms",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "national-domestic-violence-hotline",
+          "name": "National Domestic Violence Hotline",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tobyproject.org",
+      "verdict": "down",
+      "status": 0,
+      "finalUrl": "https://www.tobyproject.org",
+      "error": "timed out after 15000ms",
+      "places": [
+        {
+          "kind": "listing",
+          "id": "the-toby-project-feral-spay-neuter-clinic",
+          "name": "The Toby Project - Feral Spay/Neuter Clinic",
+          "field": "website"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tobyproject.org/services",
+      "verdict": "down",
+      "status": 0,
+      "finalUrl": "https://www.tobyproject.org/services",
+      "error": "timed out after 15000ms",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "low-cost-dog-care",
+          "name": "Low-cost dog vet care, spay/neuter and licensing",
+          "field": "guide text"
         }
       ]
     },
@@ -1157,6 +1416,20 @@
       ]
     },
     {
+      "url": "https://wholeyou.nyc",
+      "verdict": "elsewhere",
+      "status": 200,
+      "finalUrl": "https://healthsolutions.org/find-services/wholeyounyc/",
+      "places": [
+        {
+          "kind": "guide",
+          "id": "keep-your-pet-if-you-lose-your-home",
+          "name": "Keeping your pet if you are losing your home",
+          "field": "guide text"
+        }
+      ]
+    },
+    {
       "url": "https://www.reportband.gov",
       "verdict": "elsewhere",
       "status": 200,
@@ -1187,21 +1460,6 @@
           "id": "save-an-at-risk-animal",
           "name": "Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program)",
           "field": "guide text"
-        }
-      ]
-    },
-    {
-      "url": "https://www.brooklynfatcats.com/",
-      "verdict": "gone",
-      "status": 0,
-      "finalUrl": "https://www.brooklynfatcats.com/",
-      "error": "fetch failed (ENOTFOUND)",
-      "places": [
-        {
-          "kind": "listing",
-          "id": "brooklyn-fat-cats",
-          "name": "Brooklyn Fat Cats",
-          "field": "website"
         }
       ]
     },
