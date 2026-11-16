@@ -15,7 +15,8 @@
     "breed-specific",
     "advocacy",
     "pet-loss",
-    "referral"
+    "referral",
+    "surrender"
   ],
   "boroughs": [
     "manhattan",
@@ -54,7 +55,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "All-volunteer 501(c)(3), approved ACC rescue partner, focused on the breeds that get overlooked - primarily BULLY BREEDS - plus dogs in danger of euthanasia for space/abuse. Foster-based (Brewster/Putnam), adopts into the NY metro incl. NYC. A useful specialty referral for pit/bully-type dogs and a New Hope partner that pulls NYC ACC dogs. Confirm current NYC-area capacity. Contact gina@guardianangelrescue.org. Phone: (no public phone; email preferred) Intake: Adopt/volunteer via site & Petfinder",
+  "notes": "All-volunteer 501(c)(3), approved ACC rescue partner, focused on the breeds that get overlooked - primarily BULLY BREEDS - plus dogs in danger of euthanasia for space/abuse. Foster-based (Brewster/Putnam), adopts into the NY metro incl. NYC. A useful specialty referral for pit/bully-type dogs and a New Hope partner that pulls NYC ACC dogs. Confirm current NYC-area capacity. Contact gina@guardianangelrescue.org. Phone: (no public phone; email preferred) Intake: Adopt/volunteer via site & Petfinder\n\noverlooked breeds including larger bully types; Brewster NY, serves NY metro. gina@guardianangelrescue.org, guardianangelrescue.org.",
   "type_raw": "Rescue+adoption (bully breeds + overlooked dogs; foster-based)",
   "confidence": "Medium",
   "status": "active",

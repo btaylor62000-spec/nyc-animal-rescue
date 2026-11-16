@@ -3,11 +3,17 @@
   "name": "NYC Shiba Rescue",
   "aka": [],
   "parent_org": null,
-  "org_types": [],
+  "org_types": [
+    "rescue-foster"
+  ],
   "animals": [
     "dog"
   ],
-  "needs": [],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
   "boroughs": [
     "manhattan",
     "brooklyn",
@@ -19,7 +25,7 @@
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": null,
+  "region_note": "SHIBA / AKITA / ASIAN BREEDS",
   "phones": [],
   "emails": [],
   "website": "https://www.nycshibarescue.org",
@@ -28,32 +34,24 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "notes": "Shiba Inu, NYC-based. http://nycshibarescue.org. Approved ACC rescue partner.\n\nFound on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
   "last_verified": "2026-11-04",
-  "section": "Discovered — ACC New Hope partners",
+  "section": "Breed-specific rescues — SHIBA / AKITA / ASIAN BREEDS",
   "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx",
     "discovery"
   ],
   "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
-    {
-      "date": "2026-09-22",
-      "field": "record",
-      "from": null,
-      "to": "added",
-      "evidence_url": "https://www.nycacc.org/new-hope-partners",
-      "source": "monthly-discovery",
-      "note": "Listed on ACC New Hope partners."
-    },
     {
       "date": "2026-11-04",
       "field": "last_verified",

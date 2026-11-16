@@ -3,14 +3,17 @@
   "name": "Abandoned Angel Cocker Spaniel Rescue",
   "aka": [],
   "parent_org": null,
-  "org_types": [],
+  "org_types": [
+    "rescue-foster"
+  ],
   "animals": [
     "dog"
   ],
   "needs": [
+    "breed-specific",
     "adoption",
-    "foster",
-    "breed-specific"
+    "surrender",
+    "foster"
   ],
   "boroughs": [
     "queens"
@@ -19,7 +22,7 @@
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": null,
+  "region_note": "SETTER / SPANIEL / SPORTING",
   "phones": [],
   "emails": [
     {
@@ -32,42 +35,24 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A person read the site on 2026-11-04: a cocker spaniel rescue, PO Box 545426, Flushing, NY 11354. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
+  "notes": "cockers, NY-based. https://www.nyabandonedangels.com.\n\nA person read the site on 2026-11-04: a cocker spaniel rescue, PO Box 545426, Flushing, NY 11354. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
   "last_verified": "2026-11-10",
-  "section": "Discovered — ACC New Hope partners",
+  "section": "Breed-specific rescues — SETTER / SPANIEL / SPORTING",
   "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx",
     "discovery"
   ],
   "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [
-    {
-      "date": "2026-09-17",
-      "field": "record",
-      "from": null,
-      "to": "added",
-      "evidence_url": "https://www.nycacc.org/new-hope-partners",
-      "source": "monthly-discovery",
-      "note": "Listed on ACC New Hope partners."
-    },
-    {
-      "date": "2026-09-17",
-      "field": "contacts",
-      "from": null,
-      "to": "rescue@nyabandonedangels.com",
-      "evidence_url": "https://www.nyabandonedangels.com/",
-      "source": "monthly-discovery",
-      "note": "Read from the organization’s own site when it was found. Not confirmed by a person."
-    }
-  ],
+  "change_log": [],
   "privacy_hold": false,
   "community": null
 }

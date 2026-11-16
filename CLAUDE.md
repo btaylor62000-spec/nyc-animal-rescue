@@ -184,6 +184,29 @@ such. The monthly audit checks whether the city has published a procedure.
   (the Census geocoder cannot read Route 17 addresses); drive times re-run.
   **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
 
+### Changed 2026-11-16 (ninth round)
+
+- **Breed rescues are directory listings.** The breed tab of the dog
+  workbook is a `GUIDE_ORG_SOURCES` source with the new `regional` flag: 68
+  rescues became listings (Medium, from the research), 63 of them marked
+  outside the city because their rows name no borough. 496 listed now. Two
+  emails that read as individuals' own (Safe Hounds Beagle Rescue,
+  Pekingese Rescue Network) were removed from the listings, the change logs
+  and the guide rows; their websites stay. Recount the directory figures in
+  the table at the top when you next touch them.
+- **Bird card:** a big bird now says call the Animal Medical Center, and the
+  big-bird tile carries Urban Wildlife Alliance's helpline and the NYC
+  Emergency Animal Rescue group for when no one can come. Step 3 links
+  Animal Help Now (ahnow.org) for a rehabber open now.
+- **Ear tips** say only that the cat has been spayed or neutered, everywhere.
+- **"Fledgling"** is explained where the bird guide first uses it, and its
+  heading is now "Is it hurt, or a young bird learning to fly?".
+- Kitten card links Kitten Lady's guides; at-risk card links the ready-made
+  messages; the dog guide is "Low-cost dog vet care, spay/neuter and
+  licensing"; the breed card has an "Every breed rescue" button.
+- **The guide feedback form needs no Google account**: checked 2026-11-16,
+  it opens signed out; "Sign in to save your progress" is optional.
+
 ### Also changed 2026-11-15 (eighth round): the expert decides, not the card
 
 - **No triage by us.** The wildlife card no longer asks "Is it really

@@ -30,6 +30,12 @@ export interface GuideOrgSpec {
   animals: Animal[];
   /** Bullets to ignore outright. */
   skip?: RegExp;
+  /**
+   * Entries are regional networks: one that names no borough and does not
+   * serve the whole city is outside it, so it never leads a list for someone
+   * whose location is unknown (owner, 2026-11-15).
+   */
+  regional?: boolean;
 }
 
 const WB_CAT = 'research/NYC_Cat_Rescue_TNR_Reference.xlsx';
@@ -43,6 +49,22 @@ const EXOTIC_PETS: Animal[] = ['rabbit', 'small-mammal', 'bird-companion', 'rept
 const ANY_ANIMAL: Animal[] = [...ANIMALS];
 
 export const GUIDE_ORG_SOURCES: GuideOrgSpec[] = [
+  {
+    /*
+     * Breed rescues (owner, 2026-11-15: "why are the breed rescues not in
+     * Find help?"). Each row in the breed tab names one rescue with its own
+     * site or email, read from the research; as records they are searchable,
+     * filterable by "Breed-specific" and carry their own Report a problem
+     * button. Most are regional networks outside the city: the importer reads
+     * their region from the row, and the guide tells readers to ask whether
+     * they place dogs in New York City.
+     */
+    file: WB_DOG,
+    tab: 'Breed-specific rescues',
+    animals: ['dog'],
+    regional: true,
+    rules: [{ pattern: /./, needs: ['breed-specific', 'adoption', 'surrender'], orgTypes: ['rescue-foster'] }],
+  },
   {
     /*
      * The reporting lines themselves become records, so search and the
@@ -454,7 +476,7 @@ export function extractGuideOrgs(spec: GuideOrgSpec): Org[] {
         needs: [...rule.needs],
         boroughs: [...boroughs],
         citywide,
-        outside_nyc: false,
+        outside_nyc: Boolean(spec.regional) && boroughs.size === 0,
         neighborhoods: null,
         zips: zip ? [zip] : [],
         region_note: section.heading,

@@ -22,7 +22,7 @@ _What to do first, where to post, and who helps with searching._
 
 ## Found a cat
 
-- Get it SCANNED for a microchip at any vet or shelter (free) - the fastest route to the owner. Also check for a collar/tag. A tipped ear means the cat has been spayed or neutered through TNR; it can still be someone's lost pet, so scan it all the same.
+- Get it SCANNED for a microchip at any vet or shelter (free) - the fastest route to the owner. Also check for a collar/tag. A tipped ear means the cat has been spayed or neutered.
 - Report as FOUND on Petco Love Lost + file a found report with ACC. Search local Facebook lost-and-found groups + Nextdoor for a matching 'lost' post.
 - SICK or INJURED stray/community cat? Call 311, or ACC on (212) 788-4000, to report a sick or injured stray cat: ACC takes these reports during business hours. You can also email CommunityPets@nycacc.org. Don't handle an aggressive/fearful cat.
 - Healthy, friendly cat? Don't assume it's a stray - it may be an indoor/outdoor neighbor's cat. ACC does NOT accept healthy stray cats; post found flyers + check for a chip first. If truly abandoned, contact a borough rescue.

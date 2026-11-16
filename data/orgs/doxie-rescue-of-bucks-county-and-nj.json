@@ -1,0 +1,48 @@
+{
+  "id": "doxie-rescue-of-bucks-county-and-nj",
+  "name": "Doxie Rescue of Bucks County & NJ",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
+  "phones": [],
+  "emails": [],
+  "website": "https://doxierescue.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "dachshunds, serves NY metro. https://doxierescue.com.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

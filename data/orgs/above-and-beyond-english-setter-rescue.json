@@ -1,0 +1,48 @@
+{
+  "id": "above-and-beyond-english-setter-rescue",
+  "name": "Above and Beyond English Setter Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "SETTER / SPANIEL / SPORTING",
+  "phones": [],
+  "emails": [],
+  "website": "https://esrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "English setters. https://esrescue.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — SETTER / SPANIEL / SPORTING",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

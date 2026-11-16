@@ -1,0 +1,59 @@
+{
+  "id": "lucies-mastiff-mission",
+  "name": "Lucie's Mastiff Mission",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "phones": [
+    {
+      "value": "4844593257",
+      "display": "(484) 459-3257"
+    },
+    {
+      "value": "9318598045",
+      "display": "(931) 859-8045"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.facebook.com/groups/318799318598045",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": {
+    "street": "538 Ongs Hat Rd"
+  },
+  "hours": null,
+  "notes": "Vincentown, New Jersey; rescues and rehomes English mastiffs; an approved ACC rescue partner. (484) 459-3257. https://www.facebook.com/groups/318799318598045\n\nmastiffs, based at 538 Ongs Hat Rd, Vincentown, NJ 08088; takes mastiffs from NYC through ACC's rescue-partner program. (484) 459-3257. Facebook group: https://www.facebook.com/groups/318799318598045 (address and phone supplied by a reviewer from its public nonprofit record, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

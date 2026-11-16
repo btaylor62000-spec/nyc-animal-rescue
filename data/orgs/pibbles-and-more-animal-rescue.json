@@ -1,0 +1,48 @@
+{
+  "id": "pibbles-and-more-animal-rescue",
+  "name": "Pibbles & More Animal Rescue (PMAR)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "phones": [],
+  "emails": [],
+  "website": "http://www.pmarinc.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "pit/bully advocacy + all-breed. http://www.pmarinc.org (site form). Approved ACC rescue partner.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -150,7 +150,7 @@ These partners are based outside New York City, but each is on ACC's list of app
 - Pet Adoption League of NY - chows and chow mixes, foster-based - https://www.facebook.com/palofnyinc
 - Remember Me Rescue - Long Island, foster-based - dogs of all breeds and ages, especially seniors; "We rescue from ACC, Long Island shelters, and take owner surrenders" - (310) 623-0463 - rmrescueny@gmail.com - https://www.remembermerescueny.com
 - Ruff Dog Rescue Northeast - Thompson, Pennsylvania, with foster homes across the Northeast - dogs; "we also rescue dogs at-risk in the NYC municipal shelter" - 570-442-1181 - rdrneinquiries@gmail.com - https://www.rdrne.org
-- Safe Hounds Beagle Rescue - Blairstown, New Jersey - beagles - (908) 362-5313 - kjphilhower@optimum.net - https://www.facebook.com/SafeHounds/
+- Safe Hounds Beagle Rescue - Blairstown, New Jersey - beagles - (908) 362-5313 - - https://www.facebook.com/SafeHounds/
 - Save a Heartbeat Kitty Rescue - cats - saveaheartbeat14@gmail.com - https://www.facebook.com/p/Save-A-Heartbeat-Kitty-Rescue-100064809723872/
 - Shonio's Safe Haven - Morrisville, Vermont - dogs from kill lists, especially seniors and dogs with medical or special needs; also keeps hospice residents - Shoniossafehaven@gmail.com - https://www.facebook.com/Shoniosafehaven
 - Tanner's PAWS - Corning, upstate New York - at-risk pets; rescue, foster and population management - (607) 654-4357 - https://www.facebook.com/tannerspaws

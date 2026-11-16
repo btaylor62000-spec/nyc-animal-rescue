@@ -1,0 +1,63 @@
+{
+  "id": "compact-canine-rescue",
+  "name": "Compact Canine Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "staten-island"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [
+    "10312"
+  ],
+  "region_note": "SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
+  "phones": [
+    {
+      "value": "8047214703",
+      "display": "(804) 721-4703"
+    }
+  ],
+  "emails": [],
+  "website": "https://compactcaninerescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.5452,
+    "lon": -74.1804,
+    "precision": "zip"
+  },
+  "address": {
+    "zip": "10312"
+  },
+  "hours": null,
+  "notes": "small breeds; volunteers in the Mid-Atlantic (Virginia, North Carolina, Maryland, DC, Delaware, Pennsylvania and New Jersey); PO Box 10312, Norfolk, VA 23513. 804-721-4703. https://compactcaninerescue.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

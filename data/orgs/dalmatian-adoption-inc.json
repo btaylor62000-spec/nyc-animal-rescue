@@ -1,0 +1,50 @@
+{
+  "id": "dalmatian-adoption-inc",
+  "name": "Dalmatian Adoption, Inc",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "brooklyn"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.petfinder.com/member/us/ny/brooklyn/dalmatian-adoption-inc-ny505",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "dalmatians; registered in Brooklyn (New York State records). Its Petfinder page: https://www.petfinder.com/member/us/ny/brooklyn/dalmatian-adoption-inc-ny505 (supplied by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

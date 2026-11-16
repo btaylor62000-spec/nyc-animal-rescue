@@ -130,7 +130,7 @@ Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescu
 
 ## Beagle / hound / basset
 
-- Safe Hounds Beagle Rescue - Blairstown, New Jersey; beagles; an approved ACC rescue partner. (908) 362-5313, kjphilhower@optimum.net. https://www.facebook.com/SafeHounds/
+- Safe Hounds Beagle Rescue - Blairstown, New Jersey; beagles; an approved ACC rescue partner. (908) 362-5313. https://www.facebook.com/SafeHounds/
 - Safe Hounds Beagle Rescue - beagles, NY-serving. facebook.com/SafeHounds.
 - Mid-Atlantic Basset Hound Rescue - bassets; Washington Township, Warren County, NJ; adopts NY metro. (908) 256-0598, info@midatlanticbassets.com; to surrender a basset, surrender@midatlanticbassets.com. http://www.midatlanticbassets.com (read by a reviewer, 2026-11-05).
 
@@ -164,7 +164,7 @@ New England Old English Sheepdog Rescue - OES, NE incl. NY. (via Mayor's Allianc
 Cavalier Alliance for Rescue & Research (senior and special-needs cavaliers) has announced on its Facebook page that it is closing (read by a reviewer, 2026-11-05). Not listed as a contact.
 
 - Peace Love and Poms Rescue (the research also names Pawsitively Pom Rescue, of Harrisburg PA, whose website and phone did not work when a reviewer tried them on 2026-11-05) - Pomeranians, PO Box 744, Lebanon PA 17042, adopts in the NY metro area. peacelovepomsrescue@gmail.com. https://peacelovepoms.rescuegroups.org (read on its own site by a reviewer, 2026-11-05).
-- Pekingese Rescue Network Inc. - pekingese, Hillsdale NJ 07642, serves NJ/NY/CT. (201) 739-8988, codoan@aol.com. Petfinder: https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/ (supplied by a reviewer, 2026-11-05). Not the same as pekingeserescue.org, a national site listing many Pekingese rescues.
+- Pekingese Rescue Network Inc. - pekingese, Hillsdale NJ 07642, serves NJ/NY/CT. (201) 739-8988. Petfinder: https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/ (supplied by a reviewer, 2026-11-05). Not the same as pekingeserescue.org, a national site listing many Pekingese rescues.
 
 ## Greyhound / sighthound
 

@@ -1,0 +1,48 @@
+{
+  "id": "mountain-rottie-rescue-of-new-york",
+  "name": "Mountain Rottie Rescue of New York",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ROTTWEILER (part of the \"bully\"/molosser group)",
+  "phones": [],
+  "emails": [],
+  "website": "https://mountainrottierescue.net",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "rottweilers and other breeds; foster homes in the Capital District, Central New York and the Catskills; adopts in New York and western Massachusetts. https://mountainrottierescue.net (read by a reviewer, 2026-11-05). Approved ACC rescue partner.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — ROTTWEILER (part of the \"bully\"/molosser group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

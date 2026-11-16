@@ -1,0 +1,48 @@
+{
+  "id": "australian-cattle-dog-rescue-association",
+  "name": "Australian Cattle Dog Rescue Association",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HERDING (AUSTRALIAN SHEPHERD / CATTLE DOG / COLLIE / SHEEPDOG)",
+  "phones": [],
+  "emails": [],
+  "website": "http://www.acdra.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "ACDs (heelers), national incl. NY. http://www.acdra.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — HERDING (AUSTRALIAN SHEPHERD / CATTLE DOG / COLLIE / SHEEPDOG)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

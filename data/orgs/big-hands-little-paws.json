@@ -3,12 +3,16 @@
   "name": "Big Hands Little Paws",
   "aka": [],
   "parent_org": null,
-  "org_types": [],
+  "org_types": [
+    "rescue-foster"
+  ],
   "animals": [
     "dog"
   ],
   "needs": [
+    "breed-specific",
     "adoption",
+    "surrender",
     "foster",
     "senior",
     "medical-special-needs"
@@ -24,7 +28,7 @@
   "outside_nyc": false,
   "neighborhoods": null,
   "zips": [],
-  "region_note": null,
+  "region_note": "SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
   "phones": [
     {
       "value": "2122031892",
@@ -51,34 +55,28 @@
     }
   ],
   "geo": null,
-  "address": null,
+  "address": {
+    "street": "114 John Street"
+  },
   "hours": null,
-  "notes": "Supplied by a reviewer from its Facebook page, 2026-11-05 (its website did not load for us): \"NYC-based 501(c)(3) animal rescue\", P.O. Box 492, 114 John Street, New York, (212) 203-1892, info@bighandslittlepaws.org. The breed guide knows it for small, senior and special-needs dogs. On ACC's New Hope partner list. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
+  "notes": "small, senior and special-needs dogs; NYC-based (P.O. Box 492, 114 John Street). (212) 203-1892, info@bighandslittlepaws.org. http://bighandslittlepaws.org (read by a reviewer, 2026-11-05). Approved ACC rescue partner.\n\nSupplied by a reviewer from its Facebook page, 2026-11-05 (its website did not load for us): \"NYC-based 501(c)(3) animal rescue\", P.O. Box 492, 114 John Street, New York, (212) 203-1892, info@bighandslittlepaws.org. The breed guide knows it for small, senior and special-needs dogs. On ACC's New Hope partner list. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-22. Nothing about this entry has been checked yet — not the phone number, not the address, not whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
   "last_verified": "2026-11-11",
-  "section": "Discovered — ACC New Hope partners",
+  "section": "Breed-specific rescues — SMALL BREED / CHIHUAHUA / DACHSHUND / YORKIE / MALTESE",
   "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx",
     "discovery"
   ],
   "last_checked": "2026-11-10",
   "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
-    {
-      "date": "2026-09-22",
-      "field": "record",
-      "from": null,
-      "to": "added",
-      "evidence_url": "https://www.nycacc.org/new-hope-partners",
-      "source": "monthly-discovery",
-      "note": "Listed on ACC New Hope partners."
-    },
     {
       "date": "2026-11-05",
       "field": "last_verified",

@@ -1,0 +1,65 @@
+{
+  "id": "greyhound-rescue-and-rehabilitation",
+  "name": "Greyhound Rescue and Rehabilitation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [
+    "10518"
+  ],
+  "region_note": "GREYHOUND / SIGHTHOUND",
+  "phones": [
+    {
+      "value": "9147632221",
+      "display": "(914) 763-2221"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@greyhoundrescuerehab.org"
+    }
+  ],
+  "website": "https://greyhoundrescuerehab.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 41.2661,
+    "lon": -73.5883,
+    "precision": "zip"
+  },
+  "address": {
+    "zip": "10518"
+  },
+  "hours": null,
+  "notes": "retired racing greyhounds, P.O. Box 572, Cross River, NY 10518; serves the metro area. (914) 763-2221, info@greyhoundrescuerehab.org, https://greyhoundrescuerehab.org (contacts supplied by a reviewer, 2026-11-05; the website is live).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — GREYHOUND / SIGHTHOUND",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,48 @@
+{
+  "id": "save-the-dalmatians-and-others",
+  "name": "Save The Dalmatians and Others",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "phones": [],
+  "emails": [],
+  "website": "https://savethedals.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "dalmatians. https://savethedals.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -211,7 +211,7 @@ export const GUIDE_PAGES: TabSpec[] = [
   },
   {
     file: WB_DOG, tab: 'Low-cost vet, s-n & licensing', slug: 'low-cost-dog-care',
-    title: 'Low-cost vet care, spay/neuter and dog licensing',
+    title: 'Low-cost dog vet care, spay/neuter and licensing',
     summary: 'Affordable veterinary care across the five boroughs, and how to license a dog in NYC.',
     topics: ['low cost vet dog', 'dog license', 'spay neuter dog'],
     // Covered in full, and kept current, by the guide Help paying for veterinary care.
@@ -516,7 +516,7 @@ const BIRD_SECTIONS: Array<{ from: string; to?: string; drop?: string; merge?: t
   { from: 'List of Licensed rehabbers in NY State', merge: true },
   {
     from: 'Is that bird injured?',
-    to: 'Is it hurt, or a fledgling that is fine?',
+    to: 'Is it hurt, or a young bird learning to fly?',
     // Quoted from NYC Bird Alliance's injured-bird page (read 2026-11-05):
     // the document says how to tell a fledgling, but not how to tell a hurt
     // adult, which is the commoner case in the city.
@@ -615,7 +615,7 @@ function whoToCallNow(orgs: Org[]): string[] {
   return [
     '## What to do now, step by step',
     '',
-    `1. **Does it need help?** A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed. A fully feathered young bird hopping on the ground with its parents nearby is usually a fledgling and fine: watch from a distance. Not sure? [Animal Help Now: I found a baby bird](${AH}babybird).`,
+    `1. **Does it need help?** A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed. A fully feathered young bird hopping on the ground with its parents nearby is usually a fledgling (a young bird learning to fly) and fine: watch from a distance. Not sure? [Animal Help Now: I found a baby bird](${AH}babybird).`,
     `2. **Keep it safe, and keep yourself safe.** For a small bird: walk up slowly and quietly from behind, drop a towel or cloth over it and scoop it up. For a big bird (a hawk, owl, heron, goose or swan), or any bird you are not comfortable handling: do not try to catch it. Keep people and dogs away, keep it in sight, and go straight to step 4. How to capture and carry a wild animal: [Animal Help Now](${AH}transportwild).`,
     '3. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out, somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.',
     '4. **Call or take it to a licensed rehabber today.**',

@@ -1,0 +1,57 @@
+{
+  "id": "tibetan-mastiff-rescue",
+  "name": "Tibetan Mastiff Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "phones": [
+    {
+      "value": "9082371474",
+      "display": "(908) 237-1474"
+    }
+  ],
+  "emails": [
+    {
+      "value": "tmrescue@tibetanmastiff.org"
+    }
+  ],
+  "website": "http://www.tibetanmastiffrescueinc.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Tibetan mastiffs; the only US rescue for the breed; Ringoes, NJ. (908) 237-1474, tmrescue@tibetanmastiff.org. http://www.tibetanmastiffrescueinc.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

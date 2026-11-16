@@ -80,6 +80,8 @@ export const CARD_URLS: Record<string, string> = {
   'the wildlife guide': '/guides/found-wildlife',
   'the guide on keeping your dog': '/guides/keeping-your-dog',
   'Who to contact': '#g-who-to-contact',
+  'ready-made messages': '#g-ready-made-messages',
+  'Kitten Lady’s guides': 'https://www.kittenlady.org/kitten-care',
   // Directory lists, named in a card's words.
   'every kitten nursery': '/directory?need=neonatal',
   'every FIV+ and FeLV+ rescue': '/directory?need=retrovirus',

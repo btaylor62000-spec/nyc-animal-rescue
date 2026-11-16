@@ -1,11 +1,11 @@
 # Data quality report
 
-Generated 2026-11-15 from the source workbooks and the wildlife guide.
+Generated 2026-11-16 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **445** organizations after de-duplication
-- **78** duplicate clusters merged
+- **513** organizations after de-duplication
+- **89** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
@@ -17,8 +17,8 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
+| dog | 333 |
 | cat | 328 |
-| dog | 265 |
 | rabbit | 45 |
 | bird-companion | 42 |
 | wildlife | 42 |
@@ -37,12 +37,13 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 183 |
+| adoption | 253 |
+| surrender | 135 |
 | foster | 112 |
 | tnr | 96 |
+| breed-specific | 83 |
 | spay-neuter | 75 |
 | owner-support | 72 |
-| surrender | 60 |
 | referral | 59 |
 | low-cost-vet | 57 |
 | emergency-vet | 49 |
@@ -61,7 +62,6 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 | wildlife-rehab | 14 |
 | microchip | 13 |
 | transport | 13 |
-| breed-specific | 11 |
 | pet-loss | 9 |
 | neonatal | 7 |
 | exotic-vet | 6 |
@@ -74,25 +74,25 @@ Generated 2026-11-15 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 276 |
-| manhattan | 234 |
-| queens | 230 |
-| staten-island | 203 |
-| bronx | 202 |
+| brooklyn | 279 |
+| manhattan | 236 |
+| queens | 233 |
+| staten-island | 206 |
+| bronx | 204 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
+| Medium | 236 |
 | High | 216 |
-| Medium | 164 |
-| Low | 65 |
+| Low | 61 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 427 |
+| active | 495 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -143,7 +143,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (5)
+### Never verified (73)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -170,7 +170,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (78)
+### Merged (89)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -202,11 +202,22 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `mayors-alliance-for-nycs-animals` ← 2 records
 - `foster-dogs-inc` ← 2 records
 - `red-hook-dog-rescue` ← 2 records
+- `korean-k9-rescue` ← 2 records
 - `mr-bones-and-co` ← 2 records
-- `the-good-life-dog-rescue` ← 2 records
+- `the-good-life-dog-rescue` ← 3 records
 - `pluto-rescue-of-richmond-county` ← 2 records
-- `bully-baby-rescue` ← 2 records
+- `new-york-bully-crew` ← 2 records
+- `waggytail-rescue` ← 2 records
+- `guardian-angel-rescue` ← 2 records
+- `bully-baby-rescue` ← 3 records
 - `volunteers-of-america-greater-new-york` ← 2 records
+- `shepherds-hope-rescue` ← 2 records
+- `lucies-mastiff-mission` ← 2 records
+- `big-hands-little-paws` ← 2 records
+- `nyc-shiba-rescue` ← 2 records
+- `safe-hounds-beagle-rescue` ← 2 records
+- `abandoned-angel-cocker-spaniel-rescue` ← 2 records
+- `bull-terrier-rescue-mission` ← 2 records
 - `uri-pals` ← 3 records
 - `aspca-animal-poison-control-center-24-7-hotline` ← 4 records
 - `pet-poison-helpline-24-7-hotline` ← 3 records
@@ -333,26 +344,26 @@ These are personal numbers belonging to individuals, not organizational lines. N
 
 | Page | Bytes |
 | --- | ---: |
-| Found an injured bird | 17240 |
+| Found an injured bird | 17275 |
 | An animal is trapped | 2903 |
-| Found kittens outside | 2574 |
+| Found kittens outside | 2512 |
 | An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
 | Pets in a disaster or evacuation | 4330 |
 | Keeping your pet if you are losing your home | 5929 |
-| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15825 |
+| Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15801 |
 | Reporting animal abuse or neglect | 6987 |
 | Animal emergencies and poison control | 5129 |
 | Low-cost cat clinics and trap banks | 3593 |
 | Community cats, colonies and starting TNR | 7856 |
 | Cats needing specialist help | 6511 |
-| Lost or found a cat | 4480 |
+| Lost or found a cat | 4407 |
 | Help keeping your cat | 8834 |
 | Help keeping your dog | 8070 |
-| Low-cost vet care, spay/neuter and dog licensing | 7480 |
+| Low-cost dog vet care, spay/neuter and licensing | 7480 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
-| Breed-specific dog rescue | 20654 |
+| Breed-specific dog rescue | 20613 |
 | Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
 | Help paying for veterinary care | 9895 |

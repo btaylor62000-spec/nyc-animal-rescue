@@ -1,0 +1,57 @@
+{
+  "id": "get-a-bull",
+  "name": "Get A Bull",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "phones": [
+    {
+      "value": "5167144403",
+      "display": "(516) 714-4403"
+    }
+  ],
+  "emails": [
+    {
+      "value": "getabullrescue@gmail.com"
+    }
+  ],
+  "website": "http://www.getabull.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "pit bulls in the New York area; its Facebook page places it in Easton, CT. 516-714-4403, getabullrescue@gmail.com. http://www.getabull.org (read by a reviewer, 2026-11-05). Approved ACC rescue partner.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

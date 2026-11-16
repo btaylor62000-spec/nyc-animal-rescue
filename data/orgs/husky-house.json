@@ -1,0 +1,56 @@
+{
+  "id": "husky-house",
+  "name": "Husky House",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HUSKY / NORTHERN BREEDS",
+  "phones": [],
+  "emails": [
+    {
+      "value": "hh.applicationreviewboard@gmail.com"
+    },
+    {
+      "value": "huskyhouseinc@gmail.com",
+      "label": "anything else"
+    }
+  ],
+  "website": "http://www.huskyhouse.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Siberian Huskies + northern breeds, 391 Route 34, Matawan NJ 07747; adopts to homes within a one-hour drive of NYC or Matawan. Adoption questions: hh.applicationreviewboard@gmail.com; anything else: HuskyHouseInc@gmail.com. http://www.huskyhouse.org (read on its own site by a reviewer, 2026-11-05). Approved ACC rescue partner.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — HUSKY / NORTHERN BREEDS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

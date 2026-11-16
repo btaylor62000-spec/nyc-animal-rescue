@@ -1,0 +1,58 @@
+{
+  "id": "american-belgian-malinois-rescue",
+  "name": "American Belgian Malinois Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "GERMAN SHEPHERD / MALINOIS / DUTCH SHEPHERD",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@malinoisrescue.org"
+    }
+  ],
+  "website": "https://www.malinoisrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Malinois nationwide incl. NY; PO Box 52, Amherst Junction, WI 54407. info@malinoisrescue.org. https://www.malinoisrescue.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — GERMAN SHEPHERD / MALINOIS / DUTCH SHEPHERD",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

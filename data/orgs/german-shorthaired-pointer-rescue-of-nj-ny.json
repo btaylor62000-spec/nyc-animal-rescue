@@ -1,0 +1,48 @@
+{
+  "id": "german-shorthaired-pointer-rescue-of-nj-ny",
+  "name": "German Shorthaired Pointer Rescue of NJ/NY",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "GRROWLS (Golden Retriever Rescue Operated With Love Statewide) - goldens, NY statewide. (via Mayor's Alliance list). [Low]",
+  "phones": [],
+  "emails": [],
+  "website": "https://facebook.com/GspRescueOfNjNy",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "GSPs. facebook.com/GspRescueOfNjNy.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — GRROWLS (Golden Retriever Rescue Operated With Love Statewide) - goldens, NY statewide. (via Mayor's Alliance list). [Low]",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

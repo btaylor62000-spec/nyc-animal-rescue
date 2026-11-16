@@ -10,7 +10,9 @@
     "dog"
   ],
   "needs": [
-    "adoption"
+    "adoption",
+    "breed-specific",
+    "surrender"
   ],
   "boroughs": [
     "manhattan"
@@ -43,7 +45,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "A not-for-profit German Shepherd rescue placing abandoned, neglected and unwanted shepherds in homes. Its own contact page gives this email.",
+  "notes": "A not-for-profit German Shepherd rescue placing abandoned, neglected and unwanted shepherds in homes. Its own contact page gives this email.\n\nGerman shepherds; places abandoned, neglected and unwanted shepherds in homes. jeannie@shepherdshoperescue.org. https://shepherdshoperescue.org",
   "type_raw": "German Shepherd breed rescue - adoption",
   "confidence": "Medium",
   "status": "active",
@@ -54,7 +56,8 @@
   "last_verified": "2026-11-13",
   "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
   "source_files": [
-    "research/NYC_Reviewer_Additions.xlsx"
+    "research/NYC_Reviewer_Additions.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": null,
   "check_status": "unchecked",

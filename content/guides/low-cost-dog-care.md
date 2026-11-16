@@ -1,11 +1,11 @@
 ---
-title: "Low-cost vet care, spay/neuter and dog licensing"
+title: "Low-cost dog vet care, spay/neuter and licensing"
 slug: low-cost-dog-care
 summary: "Affordable veterinary care across the five boroughs, and how to license a dog in NYC."
 topics: ["low cost vet dog","dog license","spay neuter dog"]
 source: "research/NYC_Dog_Rescue_Reference.xlsx — Low-cost vet, s-n & licensing"
 ---
-# Low-cost vet care, spay/neuter and dog licensing
+# Low-cost dog vet care, spay/neuter and licensing
 
 _Affordable veterinary care across the five boroughs, and how to license a dog in NYC._
 

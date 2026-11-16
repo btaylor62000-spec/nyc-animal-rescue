@@ -1,0 +1,65 @@
+{
+  "id": "long-island-bulldog-rescue",
+  "name": "Long Island Bulldog Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [
+    "11790"
+  ],
+  "region_note": "BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "phones": [
+    {
+      "value": "6316896245",
+      "display": "(631) 689-6245"
+    }
+  ],
+  "emails": [
+    {
+      "value": "longislandbulldogrescue@gmail.com"
+    }
+  ],
+  "website": "http://longislandbulldogrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.9078,
+    "lon": -73.1275,
+    "precision": "zip"
+  },
+  "address": {
+    "zip": "11790"
+  },
+  "hours": null,
+  "notes": "English/French bulldogs, Long Island (PO Box 239, Stony Brook NY 11790), works with NYC's shelters. Surrenders and help with your bulldog only: (631) 689-6245. To adopt, email longislandbulldogrescue@gmail.com with your phone number and state (adoption calls are not answered). http://longislandbulldogrescue.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,53 @@
+{
+  "id": "pit-of-our-souls-rescue",
+  "name": "Pit of Our Souls Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "PIT-TYPE (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)",
+  "phones": [
+    {
+      "value": "5163086221",
+      "display": "(516) 308-6221"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.pitofoursoulsrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "mainly bully breeds, all sizes and ages; foster-based across Long Island (Levittown). (516) 308-6221. https://www.pitofoursoulsrescue.org, Instagram @pitofoursoulsrescue (read by a reviewer, 2026-11-05). Approved ACC rescue partner.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — PIT-TYPE (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

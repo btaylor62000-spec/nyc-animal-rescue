@@ -1,0 +1,59 @@
+{
+  "id": "cane-corso-rescue",
+  "name": "Cane Corso Rescue (CCAA Rescue Committee)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "phones": [
+    {
+      "value": "8146826776",
+      "display": "(814) 682-6776"
+    }
+  ],
+  "emails": [],
+  "website": "https://canecorsorescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). Mailing address in West Lake Hills, Texas. 1-814-682-6776. https://canecorsorescue.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — CANE CORSO / DOGO / PRESA / MASTIFF / GREAT DANE (large \"bully\"/molosser)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,63 @@
+{
+  "id": "safe-hounds-beagle-rescue",
+  "name": "Safe Hounds Beagle Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BEAGLE / HOUND / BASSET",
+  "phones": [
+    {
+      "value": "9083625313",
+      "display": "(908) 362-5313"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.facebook.com/SafeHounds/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Blairstown, New Jersey; beagles; an approved ACC rescue partner. (908) 362-5313. https://www.facebook.com/SafeHounds/\n\nbeagles, NY-serving. facebook.com/SafeHounds.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BEAGLE / HOUND / BASSET",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-16",
+      "field": "emails",
+      "from": "an individual’s email (held)",
+      "to": null,
+      "evidence_url": "research/NYC_Dog_Rescue_Reference.xlsx (Breed-specific rescues tab)",
+      "source": "manual",
+      "note": "Held off the listing: it reads as one person's own email rather than the rescue's. The website stays. Rule 3 in CLAUDE.md; the owner can clear it."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

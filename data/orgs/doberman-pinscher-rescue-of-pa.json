@@ -1,0 +1,52 @@
+{
+  "id": "doberman-pinscher-rescue-of-pa",
+  "name": "Doberman Pinscher Rescue of PA",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "DOBERMAN / PINSCHER (part of the guardian/molosser group)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "contacts@dprpa.org"
+    }
+  ],
+  "website": "https://www.dprpa.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "purebred dobermans; places dogs in PA, MD, DE, VA, NJ and NY. contacts@dprpa.org. https://www.dprpa.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — DOBERMAN / PINSCHER (part of the guardian/molosser group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

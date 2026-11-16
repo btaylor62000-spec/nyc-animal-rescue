@@ -1,0 +1,55 @@
+{
+  "id": "scottish-terrier-club-of-greater-ny-rescue",
+  "name": "Scottish Terrier Club of Greater NY Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "phones": [
+    {
+      "value": "9733616790",
+      "display": "(973) 361-6790"
+    }
+  ],
+  "emails": [],
+  "website": "https://stcgny.com/rescue/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Scottish terriers; serves NY, NJ, eastern PA and DE; Rockaway, NJ. A Scottie that needs rescue: 973-361-6790. https://stcgny.com/rescue/ (read by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

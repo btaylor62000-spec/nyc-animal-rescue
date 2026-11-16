@@ -1,0 +1,48 @@
+{
+  "id": "recycle-a-bull-bully-breed-rescue",
+  "name": "Recycle-A-Bull Bully Breed Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "phones": [],
+  "emails": [],
+  "website": "https://recycleabull.com",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "pit bulls + pit mixes + OTHER bully breeds; foster-based (Central NY, PO Box 174 Clay NY 13041) - adopts into NY. https://recycleabull.com.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

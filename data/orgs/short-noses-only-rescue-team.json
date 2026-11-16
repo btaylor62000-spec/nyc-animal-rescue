@@ -1,0 +1,48 @@
+{
+  "id": "short-noses-only-rescue-team",
+  "name": "Short Noses Only Rescue Team (SNORT)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "phones": [],
+  "emails": [],
+  "website": "http://www.snortrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "brachycephalic (bulldogs, pugs, frenchies). http://www.snortrescue.org.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

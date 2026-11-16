@@ -1,0 +1,52 @@
+{
+  "id": "cavalier-rescue-usa",
+  "name": "Cavalier Rescue USA",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CAVALIER / TOY / COMPANION BREEDS",
+  "phones": [],
+  "emails": [
+    {
+      "value": "cavalierrescueny@gmail.com"
+    }
+  ],
+  "website": "http://www.cavalierrescueusa.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Cavalier King Charles spaniels, national; its volunteers for New York and Connecticut answer at Cavalierrescueny@gmail.com. http://www.cavalierrescueusa.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — CAVALIER / TOY / COMPANION BREEDS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

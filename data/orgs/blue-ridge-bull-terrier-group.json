@@ -1,0 +1,58 @@
+{
+  "id": "blue-ridge-bull-terrier-group",
+  "name": "Blue Ridge Bull Terrier Group",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "phones": [
+    {
+      "value": "7038317323",
+      "display": "(703) 831-7323",
+      "label": "hotline"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info.brbtc@gmail.com"
+    }
+  ],
+  "website": "https://www.brbtc.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "bull terriers. Bull terrier in need of rescue: hotline (703) 831-7323, info.brbtc@gmail.com. https://www.brbtc.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

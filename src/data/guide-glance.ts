@@ -170,6 +170,7 @@ export const GLANCE: Record<string, Glance> = {
       { title: 'Stop more litters', text: 'The mother cat can be trapped, spayed and returned, often for free.', link: { label: 'Community cats and TNR', href: '/guides/starting-tnr' } },
     ],
     never: ['Do not separate stray or feral kittens from their mother.'],
+    tip: 'Kitten Lady’s guides show what caring for kittens involves, so you know what to ask. Use them with a rescue’s help, not instead of it.',
   },
 
 
@@ -304,9 +305,9 @@ export const GLANCE: Record<string, Glance> = {
       no: ['A young bird with feathers, hopping, parents nearby, is learning to fly. Leave it and watch from far away.'],
     },
     steps: [
-      { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call.' },
+      { title: 'Cover it and scoop it up', text: 'Walk up slowly and quietly from behind. Drop a towel over it and lift it gently.', warn: 'Big bird (hawk, owl, heron, goose or swan)? Don’t try to catch it. Keep people and dogs away, keep it in sight, and call the Animal Medical Center. No one can come? See step 4.' },
       { title: 'Put it in a closed bag or box', text: 'A paper bag, or a cardboard box with a few small air holes. Take the towel out. Keep it somewhere dark and quiet.' },
-      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Take it to the Animal Medical Center’s 24-hour emergency room.' },
+      { title: 'Get it to the Wild Bird Fund today', text: 'Every day, 9am to 7pm, no appointment. Closed and the bird is badly hurt? Take it to the Animal Medical Center’s 24-hour emergency room. Or find a licensed rehabber open now on Animal Help Now.', link: { label: 'Animal Help Now: rehabbers open now', href: 'https://ahnow.org' } },
       { title: 'Can’t get it there?', text: 'Email Urban Wildlife Alliance at helpline@urbanwildlifenyc.org with a photo, your phone number and where you are. A volunteer can’t always come. Also post it in the NYC Emergency Animal Rescue group on Facebook.' },
     ],
     never: [
@@ -332,11 +333,11 @@ export const GLANCE: Record<string, Glance> = {
         do: ['Has feathers and can hop? It’s learning to fly, and its parents are close by. Leave it and watch from far away.', 'Almost no feathers? Put it back in its nest if you can. Touching it won’t make the parents reject it.', 'Hurt, or no parents after a few hours? Box it and take it to a rehabber.'],
         remember: ['Only a cold, nearly naked baby bird needs gentle warmth.'],
         contacts: [{ org: WBF, name: 'Wild Bird Fund', when: 'Every day, 9am to 7pm' }],
-        section: 'Is it hurt, or a fledgling that is fine?',
+        section: 'Is it hurt, or a young bird learning to fly?',
       },
       {
         label: 'It’s big: a hawk, owl, goose or swan', tone: 'now', verdict: 'Don’t touch it. Call for help.',
-        do: ['Keep people and dogs away.', 'Keep it in sight.', 'Call the Animal Medical Center, which takes hawks, owls and water birds at any hour. In a park, you can also call 311 and ask for the Urban Park Rangers.'],
+        do: ['Keep people and dogs away, and keep it in sight.', 'Call the Animal Medical Center, which takes hawks, owls and water birds at any hour. In a park, you can also call 311 and ask for the Urban Park Rangers.', 'No one can come? Email Urban Wildlife Alliance at helpline@urbanwildlifenyc.org with a photo and where it is, and post it in the NYC Emergency Animal Rescue group on Facebook.'],
         contacts: [{ org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · say NYC Bird Alliance sent you' }, { org: CITY, when: 'In a park: ask for the Urban Park Rangers' }],
         section: 'Where to take it',
       },
@@ -937,6 +938,7 @@ export const GLANCE: Record<string, Glance> = {
   },
 
   'breed-specific-dog-rescue': {
+    action: { label: 'Every breed rescue in the directory', href: '/directory?need=breed-specific' },
     headline: 'Breed rescues know their breed. Adopt from one, or ask one for help if you can no longer keep your dog. Tap what you need, or your dog’s breed.',
     contacts: [{ org: 'new-york-bully-crew', name: 'New York Bully Crew', when: 'All bully breeds · takes surrenders' }],
     tip: '“Bully breed” describes a body type, not how a dog behaves.',

@@ -1,0 +1,48 @@
+{
+  "id": "shih-tzus-and-furbabies",
+  "name": "Shih Tzus & Furbabies",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "phones": [],
+  "emails": [],
+  "website": "https://stfbr.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "shih tzus + small breeds; mailing address in Saint Mary's, Georgia. https://stfbr.org, contact: https://stfbr.org/contact/ (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

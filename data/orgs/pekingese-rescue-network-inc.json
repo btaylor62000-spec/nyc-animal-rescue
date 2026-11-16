@@ -1,0 +1,63 @@
+{
+  "id": "pekingese-rescue-network-inc",
+  "name": "Pekingese Rescue Network Inc",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "CAVALIER / TOY / COMPANION BREEDS",
+  "phones": [
+    {
+      "value": "2017398988",
+      "display": "(201) 739-8988"
+    }
+  ],
+  "emails": [],
+  "website": "https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "pekingese, Hillsdale NJ 07642, serves NJ/NY/CT. (201) 739-8988. Petfinder: https://www.petfinder.com/member/us/nj/hillsdale/pekingese-rescue-network-inc-nj403/ (supplied by a reviewer, 2026-11-05). Not the same as pekingeserescue.org, a national site listing many Pekingese rescues.",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — CAVALIER / TOY / COMPANION BREEDS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [
+    {
+      "date": "2026-11-16",
+      "field": "emails",
+      "from": "an individual’s email (held)",
+      "to": null,
+      "evidence_url": "research/NYC_Dog_Rescue_Reference.xlsx (Breed-specific rescues tab)",
+      "source": "manual",
+      "note": "Held off the listing: it reads as one person's own email rather than the rescue's. The website stays. Rule 3 in CLAUDE.md; the owner can clear it."
+    }
+  ],
+  "privacy_hold": false,
+  "community": null
+}

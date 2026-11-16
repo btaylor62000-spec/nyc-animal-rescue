@@ -1,0 +1,52 @@
+{
+  "id": "echo-east-coast-herding-dog-organization",
+  "name": "ECHO East Coast Herding Dog Organization",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "HERDING (AUSTRALIAN SHEPHERD / CATTLE DOG / COLLIE / SHEEPDOG)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "echorescue@yahoo.com"
+    }
+  ],
+  "website": "https://echorescue.com/contact/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "herding breeds (border collies, Aussies, cattle dogs and mixes), especially dogs at risk of euthanasia; a New Hope partner with NYC's shelter. ECHORescue@yahoo.com. https://echorescue.com/contact/ (read on its own site, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — HERDING (AUSTRALIAN SHEPHERD / CATTLE DOG / COLLIE / SHEEPDOG)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

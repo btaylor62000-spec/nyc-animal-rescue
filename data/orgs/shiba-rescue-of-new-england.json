@@ -1,0 +1,57 @@
+{
+  "id": "shiba-rescue-of-new-england",
+  "name": "Shiba Rescue of New England",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "SHIBA / AKITA / ASIAN BREEDS",
+  "phones": [
+    {
+      "value": "5613072221",
+      "display": "(561) 307-2221"
+    }
+  ],
+  "emails": [
+    {
+      "value": "shibarescuene@gmail.com"
+    }
+  ],
+  "website": "https://shibarescueofnewengland.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Shiba Inus; foster-based, serves New England and New York. shibarescuene@gmail.com, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — SHIBA / AKITA / ASIAN BREEDS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

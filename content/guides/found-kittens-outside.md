@@ -34,5 +34,5 @@ What the city tells New Yorkers to do when they find kittens outdoors. The quota
 ## Grown cats
 
 - ACC “does not capture or accept reports of healthy stray or feral cats. Bringing in a stray cat may not be in their best interest if the cat appears healthy and thriving in the community.”
-- A cat with the tip of one ear cut off has been spayed or neutered through TNR. It can still be someone's lost pet, or need help.
+- A cat with the tip of one ear cut off has been spayed or neutered.
 - To stop more litters, the mother cat can be trapped, spayed and returned to where she lives. How it works, and who helps for free: [Community cats, colonies and starting TNR](/guides/starting-tnr).

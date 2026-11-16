@@ -1,0 +1,55 @@
+{
+  "id": "american-bulldog-rescue",
+  "name": "American Bulldog Rescue",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@americanbulldogrescue.org"
+    },
+    {
+      "value": "apply@americanbulldogrescue.org"
+    }
+  ],
+  "website": "https://americanbulldogrescue.org/contact-us",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "American bulldogs and bull breeds; works mainly in Pennsylvania, New Jersey, Maryland and New York. Info@Americanbulldogrescue.org; adoption applications Apply@Americanbulldogrescue.org. https://americanbulldogrescue.org/contact-us (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — BULLDOG - ENGLISH / FRENCH / AMERICAN (part of the \"bully\"/molosser group)",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

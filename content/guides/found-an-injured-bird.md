@@ -12,7 +12,7 @@ _How to help an injured or baby wild bird in New York City, and the things that 
 
 ## What to do now, step by step
 
-1. **Does it need help?** A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed. A fully feathered young bird hopping on the ground with its parents nearby is usually a fledgling and fine: watch from a distance. Not sure? [Animal Help Now: I found a baby bird](https://ahnow.org/resources.php#babybird).
+1. **Does it need help?** A bird needs help if it hit a window, was caught or bitten by any animal (even with no wound you can see), is bleeding, cannot stand or fly, lets you walk right up to it, or has its eyes closed. A fully feathered young bird hopping on the ground with its parents nearby is usually a fledgling (a young bird learning to fly) and fine: watch from a distance. Not sure? [Animal Help Now: I found a baby bird](https://ahnow.org/resources.php#babybird).
 2. **Keep it safe, and keep yourself safe.** For a small bird: walk up slowly and quietly from behind, drop a towel or cloth over it and scoop it up. For a big bird (a hawk, owl, heron, goose or swan), or any bird you are not comfortable handling: do not try to catch it. Keep people and dogs away, keep it in sight, and go straight to step 4. How to capture and carry a wild animal: [Animal Help Now](https://ahnow.org/resources.php#transportwild).
 3. **Box it.** A cardboard box or paper bag with a few small air holes, closed so it cannot get out, somewhere dark and quiet. **Never give it food or water.** **No heating pad for a bird that hit a window**: a warm room is enough. Only a cold, nearly naked baby bird needs gentle warmth.
 4. **Call or take it to a licensed rehabber today.**
@@ -55,7 +55,7 @@ NY State Wildlife Rehabilitation Council page on finding a wildlife professional
 
 <https://www.nyswrc.org/find-a-wildlife-professional>
 
-## Is it hurt, or a fledgling that is fine?
+## Is it hurt, or a young bird learning to fly?
 
 **Signs an adult bird needs help**, in NYC Bird Alliance's words: lying on its side or sitting motionless on its stomach; allowing humans to closely approach; attempting but failing to fly; bloody or with apparent wounds; visible broken legs or drooping wings; swollen or closed eyes. "If you see an adult bird on the sidewalk with its eyes closed and/or not moving, the bird likely hit a window and is stunned." (https://nycbirdalliance.org/take-action/help-a-bird-in-trouble/what-to-do-if-you-find-an-injured-bird)
 

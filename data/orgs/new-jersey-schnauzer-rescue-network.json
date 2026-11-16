@@ -1,0 +1,58 @@
+{
+  "id": "new-jersey-schnauzer-rescue-network",
+  "name": "New Jersey Schnauzer Rescue Network",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "breed-specific",
+    "adoption",
+    "surrender"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": null,
+  "zips": [],
+  "region_note": "TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "phones": [
+    {
+      "value": "7329208242",
+      "display": "(732) 920-8242",
+      "label": "hotline"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@njsrn.org"
+    }
+  ],
+  "website": "http://www.njsrn.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": "8am-10pm",
+  "notes": "schnauzers, PO Box 36, Fanwood NJ 07023, serves NY metro. Rescue hotline (732) 920-8242, 8am-10pm only; info@njsrn.org. http://www.njsrn.org (read on its own site by a reviewer, 2026-11-05).",
+  "type_raw": null,
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [],
+  "last_verified": null,
+  "section": "Breed-specific rescues — TERRIER / SCHNAUZER / SMALL PUREBRED NETWORKS",
+  "source_files": [
+    "research/NYC_Dog_Rescue_Reference.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}
