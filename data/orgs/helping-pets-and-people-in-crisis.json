@@ -11,7 +11,8 @@
   "needs": [
     "owner-support",
     "boarding",
-    "referral"
+    "referral",
+    "domestic-violence"
   ],
   "boroughs": [
     "manhattan",

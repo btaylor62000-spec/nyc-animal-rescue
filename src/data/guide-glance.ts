@@ -519,7 +519,7 @@ export const GLANCE: Record<string, Glance> = {
         headline: 'Help it get home. A free microchip scan is the fastest way.',
         steps: [
           { title: 'Check for tags', text: 'Look for an ID tag or a dog licence tag on the collar.' },
-          { title: 'Get it scanned for a chip', text: 'Any vet office or ACC shelter will scan it for free.', link: { label: 'Nearest vets and shelters', href: '/directory?anyneed=microchip&anyneed=emergency-vet&anyneed=low-cost-vet&near=1' } },
+          { title: 'Get it scanned for a chip', text: 'Any vet office or ACC shelter will scan it for free.', link: { label: 'Nearest vets open now', href: '/directory?need=emergency-vet&near=1' } },
           { title: 'Report it found', text: 'On Petco Love Lost and with ACC. Call ACC before you bring a dog in.', link: { label: 'ACC lost and found', href: 'https://www.nycacc.org/services/lost-and-found' } },
           { title: 'Sick, hurt, dangerous, or after hours?', text: 'Call 911. A dispatcher will help.' },
         ],
@@ -556,7 +556,7 @@ export const GLANCE: Record<string, Glance> = {
         label: 'I found a cat',
         headline: 'A free microchip scan is the fastest way home.',
         steps: [
-          { title: 'Get it scanned for a chip', text: 'Free at any vet or shelter. Check for a collar or tag too.', link: { label: 'Nearest vets and shelters', href: '/directory?anyneed=microchip&anyneed=emergency-vet&anyneed=low-cost-vet&near=1' } },
+          { title: 'Get it scanned for a chip', text: 'Free at any vet or shelter. Check for a collar or tag too.', link: { label: 'Nearest vets open now', href: '/directory?need=emergency-vet&near=1' } },
           { title: 'Report it found', text: 'On Petco Love Lost and with ACC. Look for a matching “lost” post on Nextdoor and Facebook.' },
           { title: 'Sick or hurt?', text: 'Call 311 or ACC. ACC doesn’t take healthy stray cats, so post flyers and check for a chip first.' },
         ],

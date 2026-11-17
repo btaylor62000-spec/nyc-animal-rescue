@@ -8396,6 +8396,23 @@
           "note": "Held off the listing: it reads as one person's own email rather than the rescue's. The website stays. Rule 3 in CLAUDE.md; the owner can clear it."
         }
       ]
+    },
+    "10-lives-rescue-ny": {
+      "check_status": "ok",
+      "confidence": "Medium",
+      "last_verified": "2026-11-17",
+      "change_log": [
+        {
+          "date": "2026-11-17",
+          "field": "check_status",
+          "from": "new-unverified",
+          "to": "ok",
+          "evidence_url": "https://nyc-animal-rescue.pages.dev/org/10-lives-rescue-ny/",
+          "source": "manual",
+          "note": "Confirmed by the site's owner, who submitted this listing herself through Add a resource on 2026-11-12 from the rescue's own site. Medium: confirmed by a person, not yet re-read by the weekly check."
+        }
+      ],
+      "notes": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.\n\nAdded through this site on 2026-11-12 and confirmed by the site's owner."
     }
   }
 }

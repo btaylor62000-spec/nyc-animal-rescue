@@ -112,7 +112,7 @@ export const ANIMAL_LABELS: Record<Animal, string> = {
 export const NEED_LABELS: Record<Need, string> = {
   'emergency-vet': 'Emergency vet',
   'poison-control': 'Poison control',
-  'wildlife-rehab': 'Wildlife rehab',
+  'wildlife-rehab': 'Hurt or orphaned wildlife',
   adoption: 'Adoption',
   surrender: 'Surrender / rehoming',
   foster: 'Fostering',
@@ -143,6 +143,8 @@ export const NEED_LABELS: Record<Need, string> = {
   licensing: 'Licensing',
   'pet-loss': 'Pet loss support',
   referral: 'Referral hub',
+  'report-cruelty': 'Report cruelty or neglect',
+  'domestic-violence': 'Leaving abuse with your pet',
 };
 
 export const BOROUGH_LABELS: Record<Borough, string> = {

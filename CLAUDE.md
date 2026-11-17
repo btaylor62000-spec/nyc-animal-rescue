@@ -244,6 +244,44 @@ rule. Now:
   every borough) **and Int. 1098** (vets posting prices), and checks the
   one-topic rule with the assistant harness.
 
+### Changed 2026-11-17 (evening): every door gives Find help's answer
+
+Owner, the fifth time of asking: the same places and the same count, however
+someone asks. **Find help's tick-boxes are the source of truth.**
+
+- **One reader for questions**, `src/data/understand.ts`: a question becomes
+  a kind of help, the animals it names ("pet" names none, which means every
+  animal) and a place. Find help's search box and the assistant both use it,
+  then show exactly what those boxes show. The search box says what it read
+  ("Showing Borrow a trap: 4 places"). A whole organization name is still a
+  name search; words that name no kind of help are still a word search.
+  A wording it gets wrong is fixed in that file's table, with a case in
+  `tests/one-answer.test.ts`.
+- **Every list at the foot of a guide is one set of boxes** (no hand-picked
+  lists left). New kinds of help so they could be: *Report cruelty or
+  neglect* (`report-cruelty`) and *Leaving abuse with your pet*
+  (`domestic-violence`). The city's pantries lead the one food list
+  (`pantriesFirst`) instead of being a list of their own.
+- **Poison control brings the emergency vets** (owner): ticking it shows the
+  two hotlines and every emergency vet, open now first (`NEED_ALSO` in
+  `topics.ts`), on the guide, in Find help and from the assistant.
+- **One order with no location**: places that lead (the card's own order,
+  `lead`), then in the city, then best confirmed, then name
+  (`compareListing`). A location or an emergency reorders by nearest and
+  open now. Leads now also on the abuse lists (311 first) and the
+  survivors' list. A lead for one animal set falls back to a list covering
+  those animals, then to the need's list for every animal.
+- **AMC is tagged for wild birds**, so it is on the bird list by rule, not by
+  hand. **10 Lives Rescue NY** is confirmed (the owner added it).
+- **The chip-scan step** links Find help's Emergency vet box, nearest first
+  (any vet scans; these are open).
+- **Checks:** `tests/one-answer.test.ts` asks 7,008 questions (every kind of
+  help × animal × 16 places) through the search box and the assistant and
+  compares each with the boxes; `scripts/dev/consistency-audit.ts` (after a
+  build) also reads every Find help link on the built site. Both at zero.
+  Three evals now expect a card *among* the answers rather than first
+  (puppy scam, online cruelty, pet shop), because 311 leads every report list.
+
 ### Changed 2026-11-16 (ninth round)
 
 - **Breed rescues are directory listings.** The breed tab of the dog

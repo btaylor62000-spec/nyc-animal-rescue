@@ -26,7 +26,8 @@
   ],
   "needs": [
     "legal",
-    "owner-support"
+    "owner-support",
+    "domestic-violence"
   ],
   "boroughs": [
     "manhattan",

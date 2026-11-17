@@ -11,7 +11,8 @@
  * answered with a Staten Island clinic.
  */
 import { servesBoroughs, servesZip } from '../data/area.ts';
-import { matchesTopic } from '../data/topics.ts';
+import { compareListing, leadFor, matchesTopic, type Lead } from '../data/topics.ts';
+import { understand } from '../data/understand.ts';
 import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
@@ -46,6 +47,8 @@ export interface Corpus {
   guides: CorpusGuide[];
   /** Every list at the foot of a guide (src/data/guide-listings.ts). */
   topics?: CorpusTopic[];
+  /** Places that lead a need's list (guide-listings.ts LEADS), as in Find help. */
+  leads?: Lead[];
   /** Where each listed place is, for the directory's borough and zip rule. */
   areas?: Record<string, { boroughs: string[]; citywide: boolean; zips: string[]; needs?: string[]; animals?: string[] }>;
   /** New York City zip code centres, for a zip written in the question. */
@@ -711,29 +714,38 @@ export class Retriever {
     const choice = this.topicFor(question, signals);
     let lists = choice?.lists ?? null;
     /*
-     * A typed question about one kind of help ("free cat food in the Bronx")
-     * is the directory's own filter: that need, the animals the question
-     * names (none means every animal) and its borough or zip. "See all" opens
-     * the directory with exactly those boxes ticked, so the count can be
-     * checked against the filter panel (owner, 2026-11-17: Pet food help and
-     * the Bronx showed 15 in Find help, the assistant 13 for cat food, and
-     * nothing on screen said why). A guide's name, a situation, an emergency
-     * with two lists, or a list with places that lead keeps its list.
+     * A typed question is read as Find help's boxes by the same reader the
+     * search box uses (src/data/understand.ts): a kind of help, the animals
+     * it names (none means every animal) and its borough or zip. The answer
+     * is exactly what Find help shows with those boxes ticked, and "See all"
+     * opens Find help with them ticked (owner, 2026-11-17: "the same results
+     * regardless of how it was searched"). A guide's own name, as the Ask
+     * buttons send it, answers from the list Find help opens for that guide.
      */
-    const needs = new Set((lists ?? []).map((t) => t.need));
-    const filterNeed = choice?.byNeed && lists!.every((t) => t.filterable) && needs.size === 1 ? lists![0]!.need : null;
+    // An organization's whole name is a question about that organization,
+    // as in Find help's search box.
+    const plainName = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const wholeName = this.corpus.orgs.some((o) => plainName(o.name) === plainName(question));
+    const asked = choice?.named || wholeName ? null : understand(question);
+    const filterNeed = asked?.need ?? null;
+    const filterAnimals = asked?.animals ?? [];
     const facts = this.corpus.areas ?? {};
     const filterIds = filterNeed
-      ? new Set(Object.entries(facts).filter(([, f]) => matchesTopic({ needs: f.needs ?? [], animals: f.animals ?? [] }, { need: filterNeed, animals: namedAnimals(signals.animals, question) })).map(([id]) => id))
+      ? new Set(Object.entries(facts).filter(([, f]) => matchesTopic({ needs: f.needs ?? [], animals: f.animals ?? [] }, { need: filterNeed, animals: filterAnimals })).map(([id]) => id))
       : null;
+    if (filterNeed) lists = lists ?? [];
     const listIds = filterIds ?? (lists ? new Set(lists.flatMap((t) => t.ids)) : null);
 
+    // The place, read the way Find help's search box reads it when the
+    // question is its boxes; otherwise from the signals.
+    const placeZip = asked?.need ? asked.zip : signals.zips[0] ?? null;
+    const placeBoroughs = asked?.need ? asked.boroughs : signals.boroughs;
     const candidates = new Set<string>(listIds ?? hits.slice(0, 60).map((h) => h.id));
-    if (listIds && (signals.zips[0] || signals.boroughs.length)) {
+    if (listIds && (placeZip || placeBoroughs.length)) {
       for (const id of [...candidates]) {
         const a = this.corpus.areas?.[id];
         if (!a) continue;
-        const ok = signals.zips[0] ? servesZip(a, signals.zips[0]) : servesBoroughs(a, signals.boroughs);
+        const ok = placeZip ? servesZip(a, placeZip) : servesBoroughs(a, placeBoroughs);
         if (!ok) candidates.delete(id);
       }
     }
@@ -758,18 +770,27 @@ export class Retriever {
       // "a pigeon hit my window" simply because the wording matched better.
       .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * wordingWeight }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
+    // With no place and no emergency, a list reads in Find help's own order
+    // (topics.ts compareListing), so the same question gives the same first
+    // cards in both. A place or an emergency reorders by nearest and open.
+    if (listIds && !origin && !signals.emergency) {
+      scored.sort((a, b) => compareListing(
+        { outside: a.org.outsideNyc, confidence: a.org.confidence, name: a.org.name },
+        { outside: b.org.outsideNyc, confidence: b.org.confidence, name: b.org.name },
+      ));
+    }
 
     // A borough or zip in the question narrows the list the way the
     // directory's filter does: places there, and places serving the whole
     // city (owner, 2026-11-17: "free cat food in the Bronx" should count and
     // link to the Bronx, not the whole city).
-    const where = signals.zips[0] ? { zip: signals.zips[0] } : signals.boroughs.length ? { boroughs: signals.boroughs } : null;
+    const where = placeZip ? { zip: placeZip } : placeBoroughs.length ? { boroughs: placeBoroughs } : null;
     const inArea = (id: string) => {
       const a = this.corpus.areas?.[id];
       if (!where || !a) return true;
       return 'zip' in where ? servesZip(a, where.zip!) : servesBoroughs(a, where.boroughs!);
     };
-    const filterQuery = filterNeed ? new URLSearchParams([['need', filterNeed], ...namedAnimals(signals.animals, question).map((a) => ['animal', a] as [string, string])]).toString() : '';
+    const filterQuery = filterNeed ? new URLSearchParams([['need', filterNeed], ...filterAnimals.map((a) => ['animal', a] as [string, string])]).toString() : '';
     const baseHref = filterNeed
       ? `/directory?${filterQuery}`
       : lists ? (lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`) : '';
@@ -784,7 +805,9 @@ export class Retriever {
         }
       : null;
     return {
-      orgs: leadFirst(coverEveryNeed(scored, signals.needs, limit), lists, this.byId, limit),
+      orgs: filterNeed
+        ? leadIds(scored.map((x) => x.org).filter((o) => candidates.has(o.id)), leadFor(this.corpus.leads ?? [], filterNeed, filterAnimals), this.byId, limit)
+        : leadFirst(coverEveryNeed(scored, signals.needs, limit), lists, this.byId, limit),
       guide: this.bestGuide(question, signals),
       origin,
       drive,
@@ -794,10 +817,14 @@ export class Retriever {
   }
 
   /** The lists at the foot of the routed guide that hold the question's main need. */
-  private topicFor(question: string, signals: Signals): { lists: CorpusTopic[]; byNeed: boolean } | null {
+  private topicFor(question: string, signals: Signals): { lists: CorpusTopic[]; byNeed: boolean; named: boolean } | null {
+    this.lastNamed = false;
     const lists = this.topicLists(question, signals);
-    return lists ? { lists, byNeed: this.lastByNeed } : null;
+    return lists ? { lists, byNeed: this.lastByNeed, named: this.lastNamed } : null;
   }
+
+  /** Whether the last topicLists() call matched a guide's own name (an Ask button). */
+  private lastNamed = false;
 
   /** Whether the last topicLists() call chose by the question's need (a typed question). */
   private lastByNeed = false;
@@ -814,7 +841,10 @@ export class Retriever {
     // opens for that guide (or all its lists where Find help opens the guide).
     const asked = plainKey(question);
     const named = this.corpus.guides.find((g) => plainKey(g.label ?? g.title) === asked || plainKey(g.title) === asked);
-    if (named) return ofGuide(named.slug);
+    if (named) {
+      this.lastNamed = true;
+      return ofGuide(named.slug);
+    }
 
     const guide = this.routeGuide(signals, question);
     if (!guide) return null;
@@ -975,6 +1005,13 @@ function leadFirst(orgs: CorpusOrg[], lists: CorpusTopic[] | null, byId: Map<str
   if (!lead.length) return orgs;
   const ids = new Set(lead.map((o) => o.id));
   return [...lead, ...orgs.filter((o) => !ids.has(o.id))].slice(0, limit);
+}
+
+/** Places that lead Find help's list for these boxes, then the rest, in order. */
+function leadIds(orgs: CorpusOrg[], lead: string[], byId: Map<string, CorpusOrg>, limit: number): CorpusOrg[] {
+  const first = lead.map((id) => byId.get(id)).filter((o): o is CorpusOrg => Boolean(o) && orgs.some((x) => x.id === o!.id));
+  const ids = new Set(first.map((o) => o.id));
+  return [...first, ...orgs.filter((o) => !ids.has(o.id))].slice(0, limit);
 }
 
 /** Guides chosen by the situation, not by a need (routeGuide's own routes). */

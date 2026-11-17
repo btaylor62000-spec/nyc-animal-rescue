@@ -24,6 +24,30 @@ export interface Override {
 }
 
 export const OVERRIDES: Override[] = [
+  { id: 'nyc-311', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'nyc-mayors-office-of-animal-welfare', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'your-city-council-member', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'nyc-council-animal-welfare-caucus', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'nypd-crime-stoppers', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'your-local-nypd-precinct', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'hsus-dogfighting-tip-line', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'new-york-state-department-of-agriculture-and-markets', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'better-business-bureau', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'fbi-tips', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'fbi-internet-crime-complaint-center', reason: 'On the report-abuse guide\'s list of who to call: tagged so Find help\'s "Report cruelty or neglect" shows the same places (owner, 2026-11-17).', addNeeds: ['report-cruelty'] },
+  { id: 'nyc-domestic-violence-hotline', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'national-domestic-violence-hotline', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'uri-pals', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'safe-horizon', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'volunteers-of-america-greater-new-york', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'safe-haven-program-map-foster', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'paws-ny', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'helping-pets-and-people-in-crisis', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'animal-haven', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'redrover-relief', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'safe-havens-for-pets', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'domesticsheltersorg', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
+  { id: 'animal-medical-center', reason: 'Its ER takes critically ill birds (owner rang AMC, 2026-11-15), so it is in Find help\'s "Hurt or orphaned wildlife" for birds, as on the bird guide (owner, 2026-11-17).', addNeeds: ['wildlife-rehab'], addAnimals: ['bird-wild'] },
   {
     // Two research rows for the one Best Friends centre are merged (see
     // NAME_ALIASES); this is the name on its own page.

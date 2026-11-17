@@ -41,21 +41,21 @@
   },
   "address": null,
   "hours": null,
-  "notes": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.\n\nAdded by a visitor to this site on 2026-11-12. Their website showed this contact detail on that day, but nobody here has checked it, and we do not know whether they are still operating. Confirm before relying on it.",
+  "notes": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.\n\nAdded through this site on 2026-11-12 and confirmed by the site's owner.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.10livesrescueny.org/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-17",
   "section": "Added by visitors",
   "source_files": [
     "community"
   ],
   "last_checked": null,
-  "check_status": "new-unverified",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {
@@ -66,6 +66,15 @@
       "evidence_url": "https://www.10livesrescueny.org/",
       "source": "community",
       "note": "Submitted by a visitor. The contact given was found on the website given, and nothing else has been checked."
+    },
+    {
+      "date": "2026-11-17",
+      "field": "check_status",
+      "from": "new-unverified",
+      "to": "ok",
+      "evidence_url": "https://nyc-animal-rescue.pages.dev/org/10-lives-rescue-ny/",
+      "source": "manual",
+      "note": "Confirmed by the site's owner, who submitted this listing herself through Add a resource on 2026-11-12 from the rescue's own site. Medium: confirmed by a person, not yet re-read by the weekly check."
     }
   ],
   "privacy_hold": false,

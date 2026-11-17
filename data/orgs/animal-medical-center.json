@@ -20,12 +20,14 @@
     "rabbit",
     "small-mammal",
     "bird-companion",
-    "reptile"
+    "reptile",
+    "bird-wild"
   ],
   "needs": [
     "emergency-vet",
     "financial-aid",
-    "owner-support"
+    "owner-support",
+    "wildlife-rehab"
   ],
   "boroughs": [
     "manhattan"

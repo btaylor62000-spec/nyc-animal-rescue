@@ -32,9 +32,21 @@ export function servesAnimals(orgAnimals: readonly string[], wanted: Iterable<st
   return list.some((a) => orgAnimals.includes(a));
 }
 
+/**
+ * A kind of help that brings another with it. Poison control: the two
+ * hotlines, and the emergency vets open now (owner, 2026-11-17: "ticking
+ * poison control should also show emergency vets open now").
+ */
+export const NEED_ALSO: Record<string, string[]> = { 'poison-control': ['emergency-vet'] };
+
+/** Whether a place has a need, counting what that need brings with it. */
+export function hasNeed(needs: readonly string[], need: string): boolean {
+  return needs.includes(need) || (NEED_ALSO[need] ?? []).some((n) => needs.includes(n));
+}
+
 /** The one test of whether a place belongs to a need-and-animal topic. */
 export function matchesTopic(o: { needs: readonly string[]; animals: readonly string[] }, f: TopicFilter): boolean {
-  if (f.need && !o.needs.includes(f.need)) return false;
+  if (f.need && !hasNeed(o.needs, f.need)) return false;
   if (f.anyNeeds?.length && !f.anyNeeds.some((n) => o.needs.includes(n))) return false;
   return servesAnimals(o.animals, f.animals ?? []);
 }
@@ -55,4 +67,39 @@ export function topicQuery(t: { key: string; plain: TopicFilter | null }): URLSe
     p.set('list', t.key);
   }
   return p;
+}
+
+/**
+ * The one order for a list when nobody has said where they are: places in
+ * the city first, then the best confirmed, then by name. The guides' lists,
+ * Find help and the assistant all use it, so the same list reads the same
+ * way in each (owner, 2026-11-17). A location or an emergency reorders it
+ * (nearest, open now); nothing else does.
+ */
+const CONFIDENCE_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
+export function compareListing(
+  a: { outside: boolean; confidence: string; name: string },
+  b: { outside: boolean; confidence: string; name: string },
+): number {
+  if (a.outside !== b.outside) return a.outside ? 1 : -1;
+  const c = (CONFIDENCE_RANK[a.confidence] ?? 3) - (CONFIDENCE_RANK[b.confidence] ?? 3);
+  if (c !== 0) return c;
+  return a.name.localeCompare(b.name);
+}
+
+/** Places a list names to lead it, for a need and animals: the bird list, poisoning. */
+export interface Lead { need: string; animals: string[]; ids: string[] }
+export function leadFor(leads: readonly Lead[], need: string | undefined, animals: Iterable<string>): string[] {
+  if (!need) return [];
+  const wanted = [...animals];
+  const want = [...wanted].sort().join(',');
+  const forNeed = leads.filter((l) => l.need === need);
+  // The list for exactly these animals; else one that covers them all ("a
+  // pigeon" is led like the bird list); else the need's list for every animal
+  // ("a man kicking pigeons" is led by 311, like any report).
+  return (
+    forNeed.find((l) => [...l.animals].sort().join(',') === want) ??
+    (wanted.length ? forNeed.find((l) => l.animals.length && wanted.every((a) => l.animals.includes(a))) : undefined) ??
+    forNeed.find((l) => l.animals.length === 0)
+  )?.ids ?? [];
 }

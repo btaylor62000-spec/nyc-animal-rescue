@@ -14,12 +14,13 @@
 import type MiniSearch from 'minisearch';
 import { buildIndex, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { placeIn, servesBoroughs, servesZip } from '../data/area.ts';
+import { understand } from '../data/understand.ts';
 import { guidesFor, type GuideTopics } from '../data/guide-match.ts';
 import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } from '../data/rank.ts';
 import { openLabel, openState } from '../data/schedule.ts';
 import { checkPosition } from '../data/position.ts';
 import { driveLabel, minutesFrom, nearestZip, type DriveTable } from '../data/drive.ts';
-import { servesAnimals } from '../data/topics.ts';
+import { compareListing, hasNeed, leadFor, servesAnimals, type Lead } from '../data/topics.ts';
 
 interface FilterState {
   q: string;
@@ -103,10 +104,18 @@ if (form && list) {
     topicLists = {};
   }
   let listKeys = new URLSearchParams(location.search).getAll('list').filter((k) => topicLists[k]);
+  let topicLeads: Lead[] = [];
+  try {
+    topicLeads = JSON.parse(document.getElementById('topic-leads')?.textContent ?? '[]');
+  } catch {
+    topicLeads = [];
+  }
   const listIds = () => (listKeys.length ? new Set(listKeys.flatMap((k) => topicLists[k]!.ids)) : null);
   // Set by a Find help button: the guide for this list, shown above it.
   let guideFromUrl = new URLSearchParams(location.search).get('guide') ?? '';
 
+  // What the search box's words were read as, when they name a kind of help.
+  let understood: ReturnType<typeof understand> | null = null;
   let index: MiniSearch<SearchRecordLike> | null = null;
   let indexLoading: Promise<void> | null = null;
 
@@ -191,11 +200,25 @@ if (form && list) {
     const lowered = typed.q.toLowerCase();
     const isName = lowered.length >= 4 && [...meta.values()].some((m) => m.el.dataset.name?.toLowerCase().includes(lowered));
     const place = isName ? { zip: null, boroughs: [] as string[], rest: typed.q } : placeIn(typed.q);
+    // Words that name a kind of help are read as Find help's boxes
+    // (src/data/understand.ts, shared with the assistant), so "borrow a trap
+    // for a cat in the Bronx" shows exactly what ticking Borrow a trap, Cat
+    // and The Bronx shows. Word search is for everything else: a name, a
+    // street, a word no box covers.
+    // An organization's whole name is still a name search ("Rehome by Adopt
+    // a Pet"); a kind of help that is only part of a name ("adopt a pet",
+    // "poison control") is the boxes.
+    const plain = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const wholeName = [...meta.values()].some((m) => plain(m.el.dataset.name ?? '') === plain(typed.q));
+    const read = wholeName || !typed.q ? null : understand(typed.q);
+    understood = read?.need ? read : null;
     const state: FilterState = {
       ...typed,
-      q: place.rest,
-      zip: typed.zip || place.zip || '',
-      borough: new Set([...typed.borough, ...place.boroughs]),
+      q: understood ? '' : place.rest,
+      zip: typed.zip || (understood ? understood.zip : place.zip) || '',
+      borough: new Set([...typed.borough, ...(understood ? understood.boroughs : place.boroughs)]),
+      need: new Set([...typed.need, ...(understood ? [understood.need!] : [])]),
+      animal: new Set([...typed.animal, ...(understood?.animals ?? [])]),
     };
 
     // Text search narrows first, and also supplies the relevance order.
@@ -227,7 +250,7 @@ if (form && list) {
       }
     }
 
-    showGuideHints(state.q);
+    showGuideHints(typed.q);
 
     let shown = 0;
     const visible: Array<{ id: string; m: NonNullable<ReturnType<typeof meta.get>> }> = [];
@@ -240,7 +263,9 @@ if (form && list) {
       // A place that names no animal serves them all (topics.ts): the same
       // rule as the guides' lists and the assistant.
       if (ok && state.animal.size && !servesAnimals(m.animals, state.animal)) ok = false;
-      if (ok && state.need.size && !hasAll(m.needs, state.need)) ok = false;
+      // Each ticked need, counting what it brings (Poison control brings the
+      // emergency vets): the same rule as the guides and the assistant.
+      if (ok && state.need.size && ![...state.need].every((n) => hasNeed(m.needs, n))) ok = false;
       if (ok && state.anyNeed.size && !m.needs.some((n) => state.anyNeed.has(n))) ok = false;
       // Boroughs are an OR: someone in Queens wants anything serving Queens.
       if (ok && state.borough.size) ok = servesBoroughs(m, state.borough);
@@ -263,7 +288,7 @@ if (form && list) {
     // (src/data/rank.ts, also the assistant's) decides: open now, then nearest,
     // then firmest evidence. Search relevance comes last, so the nearest
     // relevant place wins rather than the best-worded far one.
-    const emergency = state.need.has('emergency-vet') || EMERGENCY_QUERY.test(state.q);
+    const emergency = state.need.has('emergency-vet') || state.need.has('poison-control') || EMERGENCY_QUERY.test(typed.q);
     const now = new Date();
     // A zip typed into the filters orders from that zip too, unless the
     // reader has already given a closer origin (their location, or the
@@ -294,7 +319,11 @@ if (form && list) {
         return [strength?.get(id) ?? 0, ...k, rank?.get(id) ?? 0, m.order];
       };
       const keys = new Map(visible.map(({ id, m }) => [id, keyOf(id, m)]));
-      visible.sort((a, b) => compareKeys(keys.get(a.id)!, keys.get(b.id)!));
+      // A list's leading places stay first even when nearest-first: the
+      // poison lines have no address, and would otherwise sink below every vet.
+      const leadNow = state.need.size === 1 ? leadFor(topicLeads, [...state.need][0], state.animal) : [];
+      const leadRank = (id: string) => { const i = leadNow.indexOf(id); return i < 0 ? Number.MAX_SAFE_INTEGER : i; };
+      visible.sort((a, b) => leadRank(a.id) - leadRank(b.id) || compareKeys(keys.get(a.id)!, keys.get(b.id)!));
       for (const { m } of visible) list!.appendChild(m.el);
       describeOrder(emergency);
       page(visible.map((v) => v.m.el), true);
@@ -305,7 +334,7 @@ if (form && list) {
 
     // Best match first when there is a query; then firmest evidence; then the
     // most recently verified. Someone in a hurry should meet the surest entry.
-    const CONF: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
+    const lead = state.need.size === 1 ? leadFor(topicLeads, [...state.need][0], state.animal) : [];
     // A named list keeps its own order until there is a place to measure
     // from: the guide and the assistant show the bird list as the Wild Bird
     // Fund, the Animal Medical Center, Animal Help Now, then the rest.
@@ -324,12 +353,17 @@ if (form && list) {
       // Without a location, places in the city first (owner, 2026-11-15): this
       // sort runs as soon as the page loads, and "most recently verified" put
       // a Long Island hospital checked that morning at the top of the list.
-      if (a.m.outside !== b.m.outside) return a.m.outside ? 1 : -1;
-      const ca = CONF[a.m.confidence] ?? 3;
-      const cb = CONF[b.m.confidence] ?? 3;
-      if (ca !== cb) return ca - cb;
-      if (a.m.verified !== b.m.verified) return b.m.verified - a.m.verified;
-      return a.m.order - b.m.order;
+      // A list's leading places first (the bird list, poisoning), then the
+      // site's one order (topics.ts), as on the guide and in the assistant.
+      if (lead.length) {
+        const la = lead.indexOf(a.id);
+        const lb = lead.indexOf(b.id);
+        if (la !== lb) return (la < 0 ? Number.MAX_SAFE_INTEGER : la) - (lb < 0 ? Number.MAX_SAFE_INTEGER : lb);
+      }
+      return compareListing(
+        { outside: a.m.outside, confidence: a.m.confidence, name: a.m.el.dataset.name ?? '' },
+        { outside: b.m.outside, confidence: b.m.confidence, name: b.m.el.dataset.name ?? '' },
+      );
     });
     for (const { m } of visible) list!.appendChild(m.el);
     page(visible.map((v) => v.m.el), true);
@@ -414,7 +448,15 @@ if (form && list) {
   }
 
   function finish(shown: number, updateUrl: boolean, state: FilterState): void {
-    if (summary && listKeys.length) {
+    if (summary && understood && !listKeys.length) {
+      // Say which boxes the words were read as, so the reader can check them
+      // against the filter panel (owner, 2026-11-17).
+      const label = (name: string, value: string) =>
+        form!.querySelector<HTMLInputElement>(`input[name="${name}"][value="${value}"]`)?.closest('label')?.textContent?.replace(/\(\d+\)/g, '').trim() ?? value;
+      const parts = [label('need', understood.need!), ...understood.animals.map((a) => label('animal', a)), ...understood.boroughs.map((b) => label('borough', b))];
+      if (understood.zip) parts.push(understood.zip);
+      summary.textContent = `Showing ${parts.join(' · ')}: ${shown === 1 ? '1 place' : `${shown} places`}`;
+    } else if (summary && listKeys.length) {
       // A named list says which list it is, so the count can be compared with the guide's.
       const names = [...new Set(listKeys.map((k) => topicLists[k]!.heading))].join(' and ');
       summary.textContent = `${names}: ${shown === 1 ? '1 place' : `${shown} places`}`;

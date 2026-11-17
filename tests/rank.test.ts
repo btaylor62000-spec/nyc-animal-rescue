@@ -51,7 +51,9 @@ test('rank: without a location the city comes first; with one, the nearest', asy
 
 test('directory: the page sorts places in the city first when there is no location', () => {
   const src = readFileSync('src/client/directory.ts', 'utf8');
-  assert.match(src, /if \(a\.m\.outside !== b\.m\.outside\) return a\.m\.outside \? 1 : -1;/);
+  assert.match(src, /compareListing\(/);
+  // compareListing (topics.ts) puts places outside the city last.
+  assert.match(readFileSync('src/data/topics.ts', 'utf8'), /if \(a\.outside !== b\.outside\) return a\.outside \? 1 : -1;/);
 });
 
 test('guide listings: places in the city are listed before places outside it', async () => {

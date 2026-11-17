@@ -61,6 +61,10 @@ export const NEEDS = [
   'licensing',
   'pet-loss',
   'referral',
+  // Find help choices for the guides' hand-picked lists (owner, 2026-11-17:
+  // every guide list must be something Find help can show by ticking a box).
+  'report-cruelty',
+  'domestic-violence',
 ] as const;
 export type Need = (typeof NEEDS)[number];
 

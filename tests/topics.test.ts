@@ -58,26 +58,26 @@ test('every directory link on a card opens a list with places in it', () => {
   for (const href of hrefs) assert.ok(directoryShows(href).size > 0, href);
 });
 
-test('the assistant answers a guide topic from that list, with the same count and link', () => {
+test("a typed question is Find help's boxes: the same kind of help, count and link", () => {
   const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
   const r = new Retriever(corpus);
-  const byKey = new Map((corpus.topics ?? []).map((t) => [t.key, t]));
-  for (const [q, heading] of [
-    ['where can I borrow a trap', 'Trap banks'],
-    ['borrow a trap for TNR in Brooklyn', 'Trap banks'],
-    ['where can I get free cat food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
-    ['free cat food 10458', "NYC's free pet food pantries (the city's programme)"],
-    ['free pet food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
-    ['free dog food in the bronx', "NYC's free pet food pantries (the city's programme)"],
-    ['where can I borrow a trap in Brooklyn', 'Trap banks'],
-    ['my dog was hit by a car', 'Emergency and urgent-care vets'],
-    ['I need a low cost spay for my cat', 'Low-cost spay and neuter'],
-    ['I found an injured pigeon', 'Who takes injured birds'],
-    ['my rabbit is not eating', 'Avian and exotic vets'],
+  for (const [q, need] of [
+    ['where can I borrow a trap', 'trap-bank'],
+    ['borrow a trap for TNR in Brooklyn', 'trap-bank'],
+    ['where can I get free cat food in the Bronx', 'food-assistance'],
+    ['free cat food 10458', 'food-assistance'],
+    ['free pet food in the Bronx', 'food-assistance'],
+    ['free dog food in the bronx', 'food-assistance'],
+    ['where can I borrow a trap in Brooklyn', 'trap-bank'],
+    ['my dog was hit by a car', 'emergency-vet'],
+    ['I need a low cost spay for my cat', 'spay-neuter'],
+    ['I found an injured pigeon', 'wildlife-rehab'],
+    ['my rabbit is not eating', 'exotic-vet'],
+    ['my cat ate a lily', 'poison-control'],
   ] as const) {
     const got = r.retrieve(q, 10);
     assert.ok(got.topic, `${q}: answered without a list`);
-    assert.ok(got.topic!.headings.includes(heading), `${q}: lists ${got.topic!.headings.join(', ')}`);
+    assert.equal(new URL(got.topic!.href, 'https://x').searchParams.get('need'), need, `${q}: ${got.topic!.href}`);
     const shown = directoryShows(got.topic!.href);
     for (const o of got.orgs) assert.ok(shown.has(o.id), `${q}: ${o.name} is not in what "see all" opens`);
     assert.equal(got.topic!.count, shown.size, `${q}: the count is not what "see all" opens`);

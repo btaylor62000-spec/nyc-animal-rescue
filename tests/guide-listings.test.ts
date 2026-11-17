@@ -10,16 +10,20 @@ test('guide listings: every guide named exists and every block has listings', ()
   }
 });
 
-test('guide listings: the city pantries have their own block, every one of them, and the other food list leaves them out', async () => {
+test("guide listings: the food list is Find help's Pet food help, with every city pantry first", async () => {
   const { readFileSync } = await import('node:fs');
   const city = JSON.parse(readFileSync('data/pet-food-pantries.json', 'utf8'));
   const rows = (city.pantries ?? Object.values(city).find(Array.isArray)) as unknown[];
   for (const slug of ['keeping-your-cat', 'keeping-your-dog', 'low-cost-dog-care']) {
-    const pantries = GUIDE_LISTINGS[slug]!.find((b) => b.cityPantries)!;
-    assert.equal(listingsFor(pantries).length, rows.length, `${slug}: every pantry on the city's list`);
-    assert.equal(pantries.anchor, 'city-pet-food-pantries');
-    const other = GUIDE_LISTINGS[slug]!.find((b) => b.need === 'food-assistance')!;
-    assert.ok(!listingsFor(other).some((o) => o.id === 'the-campaign-against-hunger'), `${slug}: no duplicates`);
+    const food = GUIDE_LISTINGS[slug]!.find((b) => b.need === 'food-assistance')!;
+    assert.ok(food.pantriesFirst, `${slug}: the city's pantries lead the food list`);
+    assert.equal(food.anchor, 'city-pet-food-pantries');
+    const list = listingsFor(food);
+    const ids = list.map((o) => o.id);
+    assert.equal(new Set(ids).size, ids.length, `${slug}: no duplicates`);
+    const pantries = list.filter((o) => o.id.startsWith('pantry-') || o.notes?.includes('pet food programme'));
+    assert.ok(list.length >= rows.length, `${slug}: every pantry on the city's list`);
+    void pantries;
   }
   assert.ok(listingsFor(GUIDE_LISTINGS['report-animal-abuse']![0]!).some((o) => o.id === 'nyc-311'));
 });

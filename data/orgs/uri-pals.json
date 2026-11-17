@@ -29,7 +29,8 @@
   "needs": [
     "legal",
     "owner-support",
-    "boarding"
+    "boarding",
+    "domestic-violence"
   ],
   "boroughs": [
     "manhattan",

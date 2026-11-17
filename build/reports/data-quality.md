@@ -25,7 +25,7 @@ Generated 2026-11-17 from the source workbooks and the wildlife guide.
 | farm | 40 |
 | reptile | 39 |
 | small-mammal | 38 |
-| bird-wild | 28 |
+| bird-wild | 29 |
 | amphibian | 21 |
 | fish | 21 |
 | equine | 19 |
@@ -59,9 +59,11 @@ Generated 2026-11-17 from the source workbooks and the wildlife guide.
 | lost-found | 18 |
 | boarding | 17 |
 | behavior-training | 15 |
-| wildlife-rehab | 14 |
+| wildlife-rehab | 15 |
 | microchip | 13 |
 | transport | 13 |
+| domestic-violence | 11 |
+| report-cruelty | 11 |
 | pet-loss | 9 |
 | neonatal | 7 |
 | trap-bank | 5 |
@@ -84,9 +86,9 @@ Generated 2026-11-17 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 236 |
+| Medium | 237 |
 | High | 216 |
-| Low | 61 |
+| Low | 60 |
 
 ### By operating status
 
@@ -143,7 +145,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (73)
+### Never verified (72)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 

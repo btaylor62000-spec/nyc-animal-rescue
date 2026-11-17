@@ -74,6 +74,8 @@ export const NEED_SYNONYMS: Record<Need, string> = {
   licensing: 'licence license permit registration legal to own',
   'pet-loss': 'pet loss grief bereavement euthanasia died death saying goodbye',
   referral: 'directory referral where do i start who can help list of rescues',
+  'report-cruelty': 'report cruelty abuse neglect animal abuse mistreated starving chained dogfighting cockfighting police tip line',
+  'domestic-violence': 'domestic violence abusive partner abuser leave flee safe shelter survivor',
 };
 
 export const ORG_TYPE_SYNONYMS: Partial<Record<OrgType, string>> = {

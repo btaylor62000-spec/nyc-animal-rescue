@@ -10,7 +10,8 @@
   "animals": [],
   "needs": [
     "owner-support",
-    "referral"
+    "referral",
+    "domestic-violence"
   ],
   "boroughs": [
     "manhattan",

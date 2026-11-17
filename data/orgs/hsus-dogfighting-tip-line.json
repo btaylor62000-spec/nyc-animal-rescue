@@ -13,7 +13,8 @@
   ],
   "needs": [
     "legal",
-    "referral"
+    "referral",
+    "report-cruelty"
   ],
   "boroughs": [
     "manhattan",

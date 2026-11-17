@@ -23,7 +23,7 @@ import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES, REMOVED } from './overrides.ts';
 import { GUIDANCE_ONLY, isListed } from '../../src/data/listing.ts';
-import { FIND_HELP, TOPICS, topicHref, topicIdsByKey } from '../../src/data/guide-listings.ts';
+import { FIND_HELP, LEADS, TOPICS, topicHref, topicIdsByKey } from '../../src/data/guide-listings.ts';
 import { GUIDE_TIERS } from '../../src/data/guides.ts';
 import { attachGeo } from '../geo/attach.ts';
 import { isNycZip } from '../../src/data/geo.ts';
@@ -350,7 +350,7 @@ function main(): void {
   const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, lead: t.block.lead ?? [], filterable: Boolean(t.plain || t.block.cityPantries || t.block.notCityPantries), main: FIND_HELP[t.guide] !== null && FIND_HELP[t.guide] !== undefined && t.key === `${t.guide}.${FIND_HELP[t.guide]}`, href: topicHref(t) }));
   writeFileSync(
     'data/chat-corpus.json',
-    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, areas, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, leads: LEADS, areas, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;
