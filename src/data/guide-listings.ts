@@ -30,6 +30,14 @@ export interface ListingBlock {
   notCityPantries?: true;
   /** An anchor on the guide page, so a line in the guide can point at this list. */
   anchor?: string;
+  /**
+   * Places that lead the list, in this order, whether or not they carry the
+   * need: the bird list opens with the Wild Bird Fund, the Animal Medical
+   * Center (its ER takes critically ill birds; owner's call to AMC,
+   * 2026-11-15) and Animal Help Now, as the bird card does. The assistant
+   * keeps the same lead (owner, 2026-11-17: AMC was missing for birds).
+   */
+  lead?: string[];
 }
 
 const EXOTIC: Animal[] = ['rabbit', 'small-mammal', 'bird-companion', 'reptile', 'amphibian', 'fish'];
@@ -55,8 +63,18 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     { heading: 'Boarding and temporary care', need: 'boarding' },
   ],
   'exotic-pet-emergency': [{ heading: 'Avian and exotic vets', need: 'exotic-vet' }],
-  'found-an-injured-bird': [{ heading: 'Wildlife rehabilitators who take birds', need: 'wildlife-rehab', animals: ['bird-wild', 'pigeon'] }],
-  'found-wildlife': [{ heading: 'Wildlife rehabilitators', need: 'wildlife-rehab' }],
+  'found-an-injured-bird': [{
+    heading: 'Who takes injured birds',
+    need: 'wildlife-rehab',
+    animals: ['bird-wild', 'pigeon'],
+    lead: ['the-wild-bird-fund', 'animal-medical-center', 'animal-help-now-wildlife-emergency-finder'],
+  }],
+  'found-wildlife': [{
+    heading: 'Wildlife rehabilitators',
+    need: 'wildlife-rehab',
+    // As the wildlife card: find one open now, then the city's main rehab.
+    lead: ['animal-help-now-wildlife-emergency-finder', 'the-wild-bird-fund'],
+  }],
   'found-kittens-outside': [
     { heading: 'Kitten nurseries: newborn kittens and pregnant cats', need: 'neonatal', animals: ['cat'] },
     { heading: 'TNR groups, for the mother cat', need: 'tnr', animals: ['cat'] },
@@ -81,12 +99,15 @@ export const GUIDE_LISTINGS: Record<string, ListingBlock[]> = {
     { heading: 'Other free pet food', need: 'food-assistance', animals: ['cat'], notCityPantries: true },
     { heading: 'Help paying vet bills', need: 'financial-aid', animals: ['cat'] },
     { heading: 'Help keeping your cat', need: 'owner-support', animals: ['cat'] },
+    // The "I have to give up my cat" tile names these; the list was missing.
+    { heading: 'Rescues that take a cat from its owner', need: 'surrender', animals: ['cat'] },
   ],
   'keeping-your-dog': [
     { heading: "NYC's free pet food pantries (the city's programme)", cityPantries: true, anchor: 'city-pet-food-pantries' },
     { heading: 'Other free pet food', need: 'food-assistance', animals: ['dog'], notCityPantries: true },
     { heading: 'Help paying vet bills', need: 'financial-aid', animals: ['dog'] },
     { heading: 'Help keeping your dog', need: 'owner-support', animals: ['dog'] },
+    { heading: 'Rescues that take a dog from its owner', need: 'surrender', animals: ['dog'] },
   ],
   'lost-and-found-cat': [
     { heading: 'Lost and found', need: 'lost-found', animals: ['cat'] },
@@ -148,6 +169,11 @@ export function listingsFor(block: ListingBlock, orgs: Org[] = LISTED_ORGS): Org
       .sort((a, b) => BOROUGH_ORDER.indexOf(a.boroughs[0] ?? '') - BOROUGH_ORDER.indexOf(b.boroughs[0] ?? '') || a.name.localeCompare(b.name));
   }
   if (block.ids) return block.ids.map((id) => orgs.find((o) => o.id === id)).filter((o): o is Org => Boolean(o));
+  if (block.lead) {
+    const lead = block.lead.map((id) => orgs.find((o) => o.id === id)).filter((o): o is Org => Boolean(o));
+    const rest = listingsFor({ ...block, lead: undefined }, orgs).filter((o) => !block.lead!.includes(o.id));
+    return [...lead, ...rest];
+  }
   const isCityPantry = (o: Org) => o.source_files.some((f) => f.includes('pet-food-pantries'));
   return orgs
     // The site's one rule for a topic (topics.ts): the directory and the
@@ -171,7 +197,7 @@ export interface Topic {
 
 export function topicOf(slug: string, index: number): Topic {
   const block = GUIDE_LISTINGS[slug]![index]!;
-  const plain = !block.ids && !block.cityPantries && !block.notCityPantries && (block.animals?.length ?? 0) <= 1 && block.need
+  const plain = !block.ids && !block.lead && !block.cityPantries && !block.notCityPantries && (block.animals?.length ?? 0) <= 1 && block.need
     ? { need: block.need, animals: block.animals }
     : null;
   // The city's pantries are food help, though the block names no need.

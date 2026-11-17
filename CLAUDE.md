@@ -206,6 +206,17 @@ rule. Now:
   emergency or a poisoning), never free search; "These are 6 of N" and "See
   all" are that list's count and link. The lists are in the chat corpus
   (`topics`), built at import from the same records.
+- **Later the same day (owner: "make 1000% sure"):** every one of the 26 Ask
+  buttons answers from the list its Find help button opens (a question that
+  is a guide's own name uses that guide's Find help list; situation guides
+  such as found kittens always use their own lists). Lists can name places
+  that lead them, in order (`lead`): the bird list opens with the Wild Bird
+  Fund, the Animal Medical Center and Animal Help Now, the wildlife list with
+  Animal Help Now and the Wild Bird Fund, in the guide, the directory (which
+  keeps a list's order until there is a place to measure from) and the
+  assistant. A question about something hurt or ill puts the emergency vets
+  before poison control; the emergency card's contacts do the same. The cat
+  and dog keeping guides gained "Rescues that take a cat/dog from its owner".
 - **`tests/topics.test.ts`** compares, for every list, the guide, the directory
   link, Find help, card links and the assistant. Add a guide list and it is
   covered.

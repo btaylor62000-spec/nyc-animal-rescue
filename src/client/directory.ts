@@ -306,7 +306,16 @@ if (form && list) {
     // Best match first when there is a query; then firmest evidence; then the
     // most recently verified. Someone in a hurry should meet the surest entry.
     const CONF: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
+    // A named list keeps its own order until there is a place to measure
+    // from: the guide and the assistant show the bird list as the Wild Bird
+    // Fund, the Animal Medical Center, Animal Help Now, then the rest.
+    const listOrder = listKeys.length ? new Map(listKeys.flatMap((k) => topicLists[k]!.ids).map((id, i) => [id, i] as const)) : null;
     visible.sort((a, b) => {
+      if (listOrder && !rank) {
+        const la = listOrder.get(a.id) ?? Number.MAX_SAFE_INTEGER;
+        const lb = listOrder.get(b.id) ?? Number.MAX_SAFE_INTEGER;
+        if (la !== lb) return la - lb;
+      }
       if (rank) {
         const ra = rank.get(a.id) ?? Number.MAX_SAFE_INTEGER;
         const rb = rank.get(b.id) ?? Number.MAX_SAFE_INTEGER;

@@ -214,12 +214,12 @@ export const GLANCE: Record<string, Glance> = {
   // says the same (Emergency tab of the cat workbook).
   'animal-emergency': {
     headline: 'Dog, cat, rabbit, bird or any other pet: if it is hurt, very ill or poisoned, go to an emergency vet now.',
-    action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet' },
+    action: { label: 'Find the nearest hospital open now', href: '/directory?need=emergency-vet&near=1' },
     contacts: [
-      { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Swallowed or touched something toxic · 24/7' },
-      { org: 'pet-poison-helpline-24-7-hotline', name: 'Pet Poison Helpline', when: 'Backup poison line · 24/7' },
-      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · Manhattan' },
+      { org: AMC, name: 'Animal Medical Center', when: 'Open 24 hours · Manhattan · or the nearest hospital above' },
       { org: 'ambuvet-pet-ambulance', name: 'AmbuVet pet ambulance', when: 'Can’t get there yourself · 24 hours' },
+      { org: POISON, name: 'ASPCA Animal Poison Control', when: 'Only if it swallowed or touched something toxic · 24/7' },
+      { org: 'pet-poison-helpline-24-7-hotline', name: 'Pet Poison Helpline', when: 'Backup poison line · 24/7' },
     ],
     steps: [
       { title: 'Find the nearest hospital open now', text: 'Hit by a car, bleeding, can’t breathe, a seizure, collapsed, or anything that scares you: go now. Not sure? Call an emergency vet and ask.', link: { label: 'Hospitals open now, nearest first', href: '/directory?need=emergency-vet&near=1' } },

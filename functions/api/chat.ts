@@ -332,7 +332,7 @@ function moreLink(retrieved: ReturnType<ReturnType<typeof getRetriever>['retriev
   // are that list's, the same places the guide and Find help show.
   if (retrieved.topic) return retrieved.topic.count > shown ? { count: retrieved.topic.count, href: retrieved.topic.href } : null;
   const { signals } = retrieved;
-  const need = primaryNeed(signals.needs, signals.abuse);
+  const need = primaryNeed(signals.needs, signals.abuse, signals.injured);
   if (!need || signals.emergency) return null;
   const count = getRetriever().countMatching(need, signals.animals, signals.boroughs);
   if (count <= shown) return null;

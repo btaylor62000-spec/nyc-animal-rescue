@@ -23,7 +23,8 @@ import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES, REMOVED } from './overrides.ts';
 import { GUIDANCE_ONLY, isListed } from '../../src/data/listing.ts';
-import { TOPICS, topicHref, topicIdsByKey } from '../../src/data/guide-listings.ts';
+import { FIND_HELP, TOPICS, topicHref, topicIdsByKey } from '../../src/data/guide-listings.ts';
+import { GUIDE_TIERS } from '../../src/data/guides.ts';
 import { attachGeo } from '../geo/attach.ts';
 import { isNycZip } from '../../src/data/geo.ts';
 
@@ -328,9 +329,11 @@ function main(): void {
   // The corpus the chat assistant retrieves against, generated here so it can
   // never drift from what the site publishes.
   const orgCorpus = buildOrgCorpus(sorted);
+  const lineLabel = new Map(GUIDE_TIERS.flatMap((t) => t.lines).map((l) => [l.slug, l.label]));
   const guideCorpus: CorpusGuide[] = pages.map((p) => ({
     slug: p.slug,
     title: p.title,
+    label: lineLabel.get(p.slug) ?? p.title,
     summary: p.summary,
     topics: p.topics,
     chunks: chunkGuide(p.markdown, p.title),
@@ -339,7 +342,7 @@ function main(): void {
   // answers a topic from exactly the list the guide and Find help show
   // (owner, 2026-11-17). Built from this run's records, not the old files.
   const topicIds = topicIdsByKey(sorted.filter(isListed));
-  const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, href: topicHref(t) }));
+  const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, lead: t.block.lead ?? [], main: FIND_HELP[t.guide] !== null && FIND_HELP[t.guide] !== undefined && t.key === `${t.guide}.${FIND_HELP[t.guide]}`, href: topicHref(t) }));
   writeFileSync(
     'data/chat-corpus.json',
     `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,

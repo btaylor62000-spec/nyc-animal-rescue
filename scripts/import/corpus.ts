@@ -50,6 +50,8 @@ export interface CorpusOrg {
 export interface CorpusGuide {
   slug: string;
   title: string;
+  /** The guide's numbered line as the home page, Find help and the Ask buttons show it. */
+  label?: string;
   summary: string;
   topics: string[];
   /** Each section of the guide, small enough to put one in a prompt. */

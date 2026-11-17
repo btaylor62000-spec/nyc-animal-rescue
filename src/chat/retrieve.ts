@@ -27,6 +27,10 @@ export interface CorpusTopic {
   heading: string;
   need: string | null;
   ids: string[];
+  /** Places that lead the list, in order (guide-listings.ts `lead`). */
+  lead?: string[];
+  /** The list Find help opens for this guide. */
+  main?: boolean;
   href: string;
 }
 
@@ -56,6 +60,8 @@ export interface Signals {
   zips: string[];
   /** The question describes an animal in immediate danger. */
   emergency: boolean;
+  /** Hurt or ill, not only poisoned. */
+  injured: boolean;
   /**
    * The question is about someone harming or neglecting an animal, rather than
    * an animal needing care. It routes somewhere completely different — to the
@@ -190,6 +196,8 @@ const HOUSING_RE =
  * shelter's at-risk list among them). tests/chat.test.ts asks the assistant
  * every guide's name and checks it lands on that guide.
  */
+/** Hurt or ill, not only poisoned: a vet comes before poison control. */
+const INJURED_RE = /\b(hurt|injur\w*|bleed\w*|blood|hit by|broken|limp\w*|seizure\w*|collaps\w*|can.?t (breathe|walk|stand)|very (ill|sick)|ill|sick|wound\w*|attack\w*|bitten)\b/i;
 const DISASTER_RE = /\b(disasters?|evacuat\w*|hurricanes?|flood\w*|heat ?waves?|extreme heat|blackouts?|power (cut|outage)s?|coastal storms?)\b/i;
 const TRAPPED_RE = /\b(is|are|was|were|got|gets|get|been)\s+(trapped|stuck)\b|\b(trapped|stuck)\s+(in|under|inside|behind|between)\b|\bcan.?t get (it )?out\b/i;
 const BIRD_WORDS_RE = /\b(birds?|pigeons?|sparrows?|hawks?|owls?|ducks?|goose|geese|swans?|robins?|fledgl\w*|gulls?|herons?|starlings?|blue ?jays?|cardinals?|nestlings?)\b/i;
@@ -328,6 +336,7 @@ export function extractSignals(question: string): Signals {
   // is a complaint about a business or to an official.
   complaint.asked = complaint.scam || complaint.business || complaint.officials;
   if (complaint.asked) needs.add('legal');
+  const injured = INJURED_RE.test(q);
   const atRisk = AT_RISK_RE.test(q);
   // The shelter's list is not a vet emergency: drop what "urgent" and
   // "euthanasia" pulled in, so the answer is the guide and the rescue groups.
@@ -364,6 +373,7 @@ export function extractSignals(question: string): Signals {
     complaint,
     fleeing,
     atRisk,
+    injured,
     housing,
     needsLocation: boroughs.length === 0 && zips.length === 0,
     needsAnimal: animals.size === 0,
@@ -439,7 +449,7 @@ const NEED_PRIORITY = [
   'foster',
 ] as const;
 
-export function primaryNeed(needs: string[], abuse = false): string | null {
+export function primaryNeed(needs: string[], abuse = false, injured = false): string | null {
   /*
    * Reporting cruelty outranks the whole list. The phrase "animal abuse" puts
    * `wildlife-rehab` into the needs by way of the word "animal", and that sits
@@ -447,6 +457,13 @@ export function primaryNeed(needs: string[], abuse = false): string | null {
    * hospitals for a question about the police.
    */
   if (abuse && needs.includes('legal')) return 'legal';
+  /*
+   * "Hurt, very ill or poisoned": a vet first. Poison control leads only
+   * when poisoning is the whole story ("it ate a lily"); with an injury or an
+   * illness in the question it comes along second (owner, 2026-11-17: not
+   * every emergency needs poison control).
+   */
+  if (injured && needs.includes('emergency-vet')) return 'emergency-vet';
   for (const n of NEED_PRIORITY) if (needs.includes(n)) return n;
   return needs[0] ?? null;
 }
@@ -528,7 +545,7 @@ export class Retriever {
 
     // 1. The one thing they need most.
     const reporting = s.abuse || s.complaint.asked;
-    const primary = primaryNeed(s.needs, reporting);
+    const primary = primaryNeed(s.needs, reporting, s.injured);
     if (primary && org.needs.includes(primary)) score += 25;
     if (s.needs.length) {
       score += s.needs.filter((n) => n !== primary && org.needs.includes(n)).length * 4;
@@ -717,7 +734,7 @@ export class Retriever {
         }
       : null;
     return {
-      orgs: coverEveryNeed(scored, signals.needs, limit),
+      orgs: leadFirst(coverEveryNeed(scored, signals.needs, limit), lists, this.byId, limit),
       guide: this.bestGuide(question, signals),
       origin,
       drive,
@@ -728,14 +745,34 @@ export class Retriever {
 
   /** The lists at the foot of the routed guide that hold the question's main need. */
   private topicFor(question: string, signals: Signals): CorpusTopic[] | null {
+    const topics = this.corpus.topics ?? [];
+    const ofGuide = (slug: string) => {
+      const main = topics.filter((t) => t.guide === slug && t.main);
+      const all = topics.filter((t) => t.guide === slug);
+      return main.length ? main : all.length ? all : null;
+    };
+    // A guide's own name, as the Ask buttons send it: the list Find help
+    // opens for that guide (or all its lists where Find help opens the guide).
+    const asked = plainKey(question);
+    const named = this.corpus.guides.find((g) => plainKey(g.label ?? g.title) === asked || plainKey(g.title) === asked);
+    if (named) return ofGuide(named.slug);
+
     const guide = this.routeGuide(signals, question);
-    const need = primaryNeed(signals.needs, signals.abuse);
-    if (!guide || !need) return null;
+    if (!guide) return null;
+    // Situations with their own guide: the need words in them are noise
+    // ("found kittens" is not a lost-and-found or TNR question).
+    if (SITUATION_GUIDES.has(guide)) return ofGuide(guide);
+    const need = primaryNeed(signals.needs, signals.abuse, signals.injured);
+    if (!need) return ofGuide(guide);
     // In an emergency the vets' list comes too: "it ate a hair tie and is
     // vomiting" needs poison control and a vet, from the same guide.
     const wanted = new Set([need, ...(signals.emergency || need === 'poison-control' || signals.needs.includes('emergency-vet') ? ['emergency-vet'] : [])]);
     const lists = (this.corpus.topics ?? []).filter((t) => t.guide === guide && t.need !== null && wanted.has(t.need));
-    return lists.length ? lists : null;
+    if (lists.length) return lists;
+    // No list in that guide for the main need ("a hurt bird" reads as a vet
+    // emergency, and the bird guide's list is its rescuers): the list Find
+    // help opens for the guide, so the Ask buttons and Find help agree.
+    return ofGuide(guide);
   }
 
   /**
@@ -779,7 +816,8 @@ export class Retriever {
     if (KITTENS_RE.test(q) && FOUND_OUTSIDE_RE.test(q) && !/\b(lost|missing)\b/i.test(q)) return 'found-kittens-outside';
 
     // A pet rabbit, reptile or parrot is not wildlife, though "bird" says so.
-    if (EXOTIC_PET_RE.test(q)) {
+    // "A baby wild rabbit" is wildlife, whatever animal it is.
+    if (EXOTIC_PET_RE.test(q) && !/\bwild\b/i.test(q)) {
       if (has('lost-found') || /\blost\b|\bmissing\b|lost or found/i.test(q)) return 'lost-and-found-exotic';
       if (GIVE_UP_RE.test(q) || has('surrender')) return 'rehoming-an-exotic-pet';
       if (BOARDING_RE.test(q) || has('boarding')) return 'exotic-boarding-and-planning';
@@ -861,4 +899,27 @@ export class Retriever {
     const chunk = this.chunks.get(hit.id as string);
     return chunk ? { slug: chunk.slug, title: chunk.title, heading: chunk.heading, text: chunk.text } : null;
   }
+}
+
+/**
+ * A list that names its leading places (the bird list: the Wild Bird Fund,
+ * the Animal Medical Center, Animal Help Now) puts them first in the
+ * assistant's cards too, in the same order as the guide.
+ */
+function leadFirst(orgs: CorpusOrg[], lists: CorpusTopic[] | null, byId: Map<string, CorpusOrg>, limit: number): CorpusOrg[] {
+  const lead = (lists ?? []).flatMap((t) => t.lead ?? []).map((id) => byId.get(id)).filter((o): o is CorpusOrg => Boolean(o));
+  if (!lead.length) return orgs;
+  const ids = new Set(lead.map((o) => o.id));
+  return [...lead, ...orgs.filter((o) => !ids.has(o.id))].slice(0, limit);
+}
+
+/** Guides chosen by the situation, not by a need (routeGuide's own routes). */
+const SITUATION_GUIDES = new Set([
+  'found-kittens-outside', 'pets-in-a-disaster', 'animal-trapped', 'animal-left-alone',
+  'leaving-abuse-with-your-pet', 'keep-your-pet-if-you-lose-your-home', 'save-an-at-risk-animal', 'report-animal-abuse',
+]);
+
+/** A question compared with a guide's name: letters and digits only. */
+function plainKey(s: string): string {
+  return s.toLowerCase().replace(/[‘’]/g, "'").replace(/[^a-z0-9]+/g, ' ').trim();
 }

@@ -58,7 +58,7 @@ test('the assistant answers a guide topic from that list, with the same count an
     ['where can I get free cat food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
     ['my dog was hit by a car', 'Emergency and urgent-care vets'],
     ['I need a low cost spay for my cat', 'Low-cost spay and neuter'],
-    ['I found an injured pigeon', 'Wildlife rehabilitators who take birds'],
+    ['I found an injured pigeon', 'Who takes injured birds'],
     ['my rabbit is not eating', 'Avian and exotic vets'],
   ] as const) {
     const got = r.retrieve(q, 10);
@@ -75,4 +75,32 @@ test('the lists the assistant holds are the lists the site shows', () => {
   const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
   const page = topicListsForPage();
   for (const t of corpus.topics ?? []) assert.deepEqual(new Set(t.ids), new Set(page[t.key]?.ids), t.key);
+});
+
+/*
+ * The Ask buttons are the 26 guide lines (GuideLines.astro). Each must answer
+ * from the list its Find help button opens, or from the guide's own lists
+ * where Find help opens the guide (owner, 2026-11-17: "make 1000% sure").
+ */
+test('every Ask button answers from the same list as its Find help button', async () => {
+  const { LINES_BY_TIER } = await import('../src/data/guides.ts');
+  const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
+  const r = new Retriever(corpus);
+  for (const l of LINES_BY_TIER.flatMap((t) => t.lines)) {
+    const got = r.retrieve(l.label, 10);
+    const index = FIND_HELP[l.guide.slug];
+    const expected = index === null || index === undefined
+      ? (corpus.topics ?? []).filter((t) => t.guide === l.guide.slug).map((t) => t.key)
+      : [`${l.guide.slug}.${index}`];
+    assert.deepEqual(got.topic?.keys ?? [], expected, `${l.number} "${l.label}"`);
+    const union = new Set(expected.flatMap((k) => (corpus.topics ?? []).find((t) => t.key === k)!.ids));
+    for (const o of got.orgs) assert.ok(union.has(o.id), `${l.number}: ${o.name} is not on the Find help list`);
+  }
+});
+
+test('a badly hurt bird: the Animal Medical Center is on the bird list everywhere', () => {
+  const t = TOPICS.find((x) => x.key === 'found-an-injured-bird.0')!;
+  const list = listingsFor(t.block).map((o) => o.id);
+  assert.deepEqual(list.slice(0, 3), ['the-wild-bird-fund', 'animal-medical-center', 'animal-help-now-wildlife-emergency-finder']);
+  assert.ok(directoryShows(findHelpHref('found-an-injured-bird')).has('animal-medical-center'));
 });
