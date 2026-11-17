@@ -19,6 +19,7 @@ import { EMERGENCY_QUERY, compareKeys, distanceMiles, rankKey, type Origin } fro
 import { openLabel, openState } from '../data/schedule.ts';
 import { checkPosition } from '../data/position.ts';
 import { driveLabel, minutesFrom, nearestZip, type DriveTable } from '../data/drive.ts';
+import { servesAnimals } from '../data/topics.ts';
 
 interface FilterState {
   q: string;
@@ -93,6 +94,16 @@ if (form && list) {
 
   // Set by a guide's link; cleared with the filters, since the panel cannot show it.
   let anyNeed = new Set(new URLSearchParams(location.search).getAll('anyneed'));
+  // A named list (`?list=`, one or several): exactly the places a guide lists,
+  // written into the page at build time from the same rule (topics.ts).
+  let topicLists: Record<string, { heading: string; ids: string[] }> = {};
+  try {
+    topicLists = JSON.parse(document.getElementById('topic-lists')?.textContent ?? '{}');
+  } catch {
+    topicLists = {};
+  }
+  let listKeys = new URLSearchParams(location.search).getAll('list').filter((k) => topicLists[k]);
+  const listIds = () => (listKeys.length ? new Set(listKeys.flatMap((k) => topicLists[k]!.ids)) : null);
   // Set by a Find help button: the guide for this list, shown above it.
   let guideFromUrl = new URLSearchParams(location.search).get('guide') ?? '';
 
@@ -135,6 +146,7 @@ if (form && list) {
       for (const v of set) params.append(key, v);
     }
     for (const v of state.anyNeed) params.append('anyneed', v);
+    for (const k of listKeys) params.append('list', k);
     if (guideFromUrl) params.set('guide', guideFromUrl);
     if (state.zip) params.set('zip', state.zip);
     if (state.phone) params.set('phone', '1');
@@ -220,10 +232,14 @@ if (form && list) {
     let shown = 0;
     const visible: Array<{ id: string; m: NonNullable<ReturnType<typeof meta.get>> }> = [];
 
+    const inList = listIds();
     for (const [id, m] of meta) {
       let ok = true;
       if (matched && !matched.has(id)) ok = false;
-      if (ok && state.animal.size && !hasAll(m.animals, state.animal)) ok = false;
+      if (ok && inList && !inList.has(id)) ok = false;
+      // A place that names no animal serves them all (topics.ts): the same
+      // rule as the guides' lists and the assistant.
+      if (ok && state.animal.size && !servesAnimals(m.animals, state.animal)) ok = false;
       if (ok && state.need.size && !hasAll(m.needs, state.need)) ok = false;
       if (ok && state.anyNeed.size && !m.needs.some((n) => state.anyNeed.has(n))) ok = false;
       // Boroughs are an OR: someone in Queens wants anything serving Queens.
@@ -325,7 +341,7 @@ if (form && list) {
   function asked(): boolean {
     const p = new URLSearchParams(location.search);
     return browsing || Boolean(searchInput?.value.trim()) || origin !== null ||
-      anyNeed.size > 0 || Boolean(guideFromUrl) || ['animal', 'borough', 'need', 'confidence', 'zip', 'phone', 'active'].some((k) => p.has(k)) ||
+      anyNeed.size > 0 || listKeys.length > 0 || Boolean(guideFromUrl) || ['animal', 'borough', 'need', 'confidence', 'zip', 'phone', 'active'].some((k) => p.has(k)) ||
       !!form!.querySelector('input:checked') || Boolean((form!.elements.namedItem('zip') as HTMLInputElement | null)?.value.trim());
   }
 
@@ -389,7 +405,11 @@ if (form && list) {
   }
 
   function finish(shown: number, updateUrl: boolean, state: FilterState): void {
-    if (summary) {
+    if (summary && listKeys.length) {
+      // A named list says which list it is, so the count can be compared with the guide's.
+      const names = [...new Set(listKeys.map((k) => topicLists[k]!.heading))].join(' and ');
+      summary.textContent = `${names}: ${shown === 1 ? '1 place' : `${shown} places`}`;
+    } else if (summary) {
       summary.textContent =
         shown === meta.size
           ? `Showing all ${shown} resources`
@@ -422,6 +442,7 @@ if (form && list) {
     form.reset();
     anyNeed = new Set();
     guideFromUrl = '';
+    listKeys = [];
     if (searchInput) searchInput.value = '';
     void run();
   });

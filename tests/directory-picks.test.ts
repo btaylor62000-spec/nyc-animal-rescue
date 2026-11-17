@@ -1,9 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { LISTED_ORGS } from '../src/data/orgs.ts';
 import { GUIDES, LINES_BY_TIER } from '../src/data/guides.ts';
-import { FIND_HELP, findHelpHref } from '../src/data/guide-listings.ts';
+import { FIND_HELP, GUIDE_LISTINGS, findHelpHref, listingsFor } from '../src/data/guide-listings.ts';
 
 /*
  * One map of help across the site (owner, 2026-11-16): Find help's buttons
@@ -18,10 +17,10 @@ test('every guide has a Find help link, and none is left over', () => {
 });
 
 test('every Find help list has listings', () => {
-  for (const [slug, target] of Object.entries(FIND_HELP)) {
-    if (!target) continue;
-    const n = LISTED_ORGS.filter((o) => o.needs.includes(target.need) && (!target.animal || o.animals.includes(target.animal as never))).length;
-    assert.ok(n > 0, `${slug}: no listing for ${target.need}${target.animal ? ` / ${target.animal}` : ''}`);
+  for (const [slug, index] of Object.entries(FIND_HELP)) {
+    if (index === null) continue;
+    assert.ok(GUIDE_LISTINGS[slug]?.[index], `${slug}: no list ${index} on that guide`);
+    assert.ok(listingsFor(GUIDE_LISTINGS[slug]![index]!).length > 0, `${slug}: its list is empty`);
     assert.match(findHelpHref(slug), new RegExp(`guide=${slug}$`));
   }
 });

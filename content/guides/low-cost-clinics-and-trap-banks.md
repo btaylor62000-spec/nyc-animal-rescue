@@ -20,14 +20,14 @@ Every low-cost clinic and trap bank in the directory is listed at the end of thi
 ## Citywide (work in every borough)
 
 - The Toby Project - FREE community-cat spay/neuter, all 5 boroughs (Certified TNR Caretakers). Brooklyn, Manhattan and Staten Island: (347) 816-2899. Bronx/Queens mobile: info@tobyproject.org.
-- ASPCA - free/low-cost spay/neuter citywide: public via Same-Day Waitlist (clinic.aspca.org); rescue groups through the ASPCA's Rescuer Services Scheduler (https://www.aspca.org/veterinary-services/rescue-professionals). Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.
+- ASPCA - free/low-cost spay/neuter citywide: public via Same-Day Waitlist (clinic.aspca.org); rescue groups through the ASPCA's Rescuer Services Scheduler (https://www.aspca.org/veterinary-services/rescue-professionals), its online tool for spay/neuter, transport and humane trap rental in New York City: https://aspcasnc.civicore.com/RSS/index.php?action=userLogin . Physical clinics in South Bronx + LIC Queens; mobile vans in designated zips.
 - Humane Society of NY (HSNY) - 306 E 59th St, Manhattan - (212) 752-4840 - low-cost spay/neuter for all cats (pet + feral) + dogs, 7 days, appointment only. Each cat in a separate covered trap.
 - Friends of Animals - certificates, redeem at feral-friendly vets - 1-800-321-PETS.
 
 ## Trap banks / humane trap lending (borrow a trap to start TNR)
 
 - Neighborhood Cats Trap Bank - reserve at neighborhoodcats.org/tnr-in-nyc/trap-banks. Pickup: Public Storage, 30 Prince St, Brooklyn 11201.
-- ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); email TNRtrapbank@aspca.org.
+- ASPCA Trap Bank - for rescuers who already have an ASPCA rescuer account (it is not taking on new New York rescuers as of 2026-11-04); email TNRtrapbank@aspca.org. Trap rental is booked through the Rescuer Services Scheduler: https://aspcasnc.civicore.com/RSS/index.php?action=userLogin.
 - NYC Feral Cat Initiative (Bideawee) - trap loans for Certified TNR Caretakers via the helpdesk (nycfci.happyfox.com/new).
 - Good Home Pet Adoptions (Crown Heights) - community TRAP BANK, info@goodhomepetadoptions.org.
 

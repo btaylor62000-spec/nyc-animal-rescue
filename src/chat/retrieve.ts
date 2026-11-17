@@ -20,9 +20,21 @@ import { zipOrigin } from '../data/zip-centres.ts';
 import type { CorpusGuide, CorpusOrg } from '../../scripts/import/corpus.ts';
 import { minutesFrom, nearestZip, type DriveTable } from '../data/drive.ts';
 
+/** A list at the foot of a guide: the places it shows, and its directory link. */
+export interface CorpusTopic {
+  key: string;
+  guide: string;
+  heading: string;
+  need: string | null;
+  ids: string[];
+  href: string;
+}
+
 export interface Corpus {
   orgs: CorpusOrg[];
   guides: CorpusGuide[];
+  /** Every list at the foot of a guide (src/data/guide-listings.ts). */
+  topics?: CorpusTopic[];
   /** New York City zip code centres, for a zip written in the question. */
   zipCentres?: Record<string, [number, number]>;
   /** Driving times to emergency vets by zip (src/data/drive.ts). */
@@ -368,6 +380,11 @@ export interface Retrieved {
   origin: Origin | null;
   /** Minutes by car to each emergency vet from the reader's zip, when known. */
   drive: Map<string, number> | null;
+  /**
+   * The guide list (or lists) the question belongs to, when it has one: the
+   * cards come only from it, and "see all" opens the same list.
+   */
+  topic: { keys: string[]; headings: string[]; count: number; href: string } | null;
 }
 
 function toSearchRecord(o: CorpusOrg): SearchRecordLike {
@@ -660,8 +677,16 @@ export class Retriever {
     const hits = runSearch(this.index, question);
     const relevance = new Map(hits.map((h, i) => [h.id, Math.max(0, 30 - i)]));
 
-    const candidates = new Set<string>(hits.slice(0, 60).map((h) => h.id));
-    if (signals.needs.length || signals.animals.length) {
+    // A question that belongs to one of the guides' lists is answered from
+    // that list and nothing else (owner, 2026-11-17: borrowing a trap must
+    // give the same places on the guide, in Find help and here). Free search
+    // used to add groups that only mentioned the words, such as cat rescues
+    // tagged TNR in answer to "where can I borrow a trap".
+    const lists = this.topicFor(question, signals);
+    const listIds = lists ? new Set(lists.flatMap((t) => t.ids)) : null;
+
+    const candidates = new Set<string>(listIds ?? hits.slice(0, 60).map((h) => h.id));
+    if (!listIds && (signals.needs.length || signals.animals.length)) {
       for (const org of this.corpus.orgs) {
         const needMatch = signals.needs.some((n) => org.needs.includes(n));
         const animalMatch = signals.animals.length === 0 || signals.animals.some((a) => org.animals.includes(a));
@@ -683,13 +708,34 @@ export class Retriever {
       .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * wordingWeight }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
+    const topic = lists
+      ? {
+          keys: lists.map((t) => t.key),
+          headings: [...new Set(lists.map((t) => t.heading))],
+          count: listIds!.size,
+          href: lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`,
+        }
+      : null;
     return {
       orgs: coverEveryNeed(scored, signals.needs, limit),
       guide: this.bestGuide(question, signals),
       origin,
       drive,
       signals,
+      topic,
     };
+  }
+
+  /** The lists at the foot of the routed guide that hold the question's main need. */
+  private topicFor(question: string, signals: Signals): CorpusTopic[] | null {
+    const guide = this.routeGuide(signals, question);
+    const need = primaryNeed(signals.needs, signals.abuse);
+    if (!guide || !need) return null;
+    // In an emergency the vets' list comes too: "it ate a hair tie and is
+    // vomiting" needs poison control and a vet, from the same guide.
+    const wanted = new Set([need, ...(signals.emergency || need === 'poison-control' || signals.needs.includes('emergency-vet') ? ['emergency-vet'] : [])]);
+    const lists = (this.corpus.topics ?? []).filter((t) => t.guide === guide && t.need !== null && wanted.has(t.need));
+    return lists.length ? lists : null;
   }
 
   /**

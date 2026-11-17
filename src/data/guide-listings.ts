@@ -11,6 +11,7 @@
  */
 import type { Animal, Need, Org } from '../types.ts';
 import { CONFIDENCE_ORDER, LISTED_ORGS } from './orgs.ts';
+import { matchesTopic, topicQuery, type TopicFilter } from './topics.ts';
 
 export interface ListingBlock {
   heading: string;
@@ -149,58 +150,98 @@ export function listingsFor(block: ListingBlock, orgs: Org[] = LISTED_ORGS): Org
   if (block.ids) return block.ids.map((id) => orgs.find((o) => o.id === id)).filter((o): o is Org => Boolean(o));
   const isCityPantry = (o: Org) => o.source_files.some((f) => f.includes('pet-food-pantries'));
   return orgs
-    .filter((o) => block.need !== undefined && o.needs.includes(block.need))
+    // The site's one rule for a topic (topics.ts): the directory and the
+    // assistant use it too, so the same topic lists the same places.
+    .filter((o) => block.need !== undefined && matchesTopic(o, { need: block.need, animals: block.animals }))
     .filter((o) => !block.notCityPantries || !isCityPantry(o))
-    .filter((o) => !block.animals || o.animals.length === 0 || block.animals.some((a) => o.animals.includes(a)))
     // Places in the city first; outside the city after them (owner, 2026-11-15).
     .sort((a, b) => Number(a.outside_nyc) - Number(b.outside_nyc) || CONFIDENCE_ORDER[a.confidence] - CONFIDENCE_ORDER[b.confidence] || a.name.localeCompare(b.name));
 }
 
+/** A list's name and, where the filter panel can say it, its plain filter. */
+export interface Topic {
+  /** `<guide>.<n>`: the n-th list at the foot of that guide. */
+  key: string;
+  guide: string;
+  heading: string;
+  need?: string;
+  plain: TopicFilter | null;
+  block: ListingBlock;
+}
+
+export function topicOf(slug: string, index: number): Topic {
+  const block = GUIDE_LISTINGS[slug]![index]!;
+  const plain = !block.ids && !block.cityPantries && !block.notCityPantries && (block.animals?.length ?? 0) <= 1 && block.need
+    ? { need: block.need, animals: block.animals }
+    : null;
+  // The city's pantries are food help, though the block names no need.
+  const need = block.need ?? (block.cityPantries ? 'food-assistance' : undefined);
+  return { key: `${slug}.${index}`, guide: slug, heading: block.heading, need, plain, block };
+}
+
+/** Every list on the site, one per block at the foot of a guide. */
+export const TOPICS: Topic[] = Object.entries(GUIDE_LISTINGS).flatMap(([slug, blocks]) => blocks.map((_, i) => topicOf(slug, i)));
+
+/** The places in each list, by key: written into the directory page so `list=` shows exactly these. */
+export function topicIdsByKey(orgs: Org[] = LISTED_ORGS): Record<string, string[]> {
+  return Object.fromEntries(TOPICS.map((t) => [t.key, listingsFor(t.block, orgs).map((o) => o.id)]));
+}
+
+/** The same, with each list's heading, for the directory page. */
+export function topicListsForPage(orgs: Org[] = LISTED_ORGS): Record<string, { heading: string; ids: string[] }> {
+  const ids = topicIdsByKey(orgs);
+  return Object.fromEntries(TOPICS.map((t) => [t.key, { heading: t.heading, ids: ids[t.key]! }]));
+}
+
+/** The same list in the directory, where it can be ordered by distance. */
+export function topicHref(topic: Topic, extra: Record<string, string> = {}): string {
+  const p = topicQuery(topic);
+  for (const [k, v] of Object.entries(extra)) p.set(k, v);
+  return `/directory?${p.toString()}`;
+}
+
 /** The same list in the directory, where it can be ordered by distance. */
 export function directoryHref(block: ListingBlock): string | null {
-  if (block.cityPantries) return '/directory?need=food-assistance';
-  if (!block.need) return null;
-  const p = new URLSearchParams({ need: block.need });
-  // The directory's animal filter takes one; a list of exotic animals goes unfiltered.
-  if (block.animals?.length === 1) p.set('animal', block.animals[0]!);
-  return `/directory?${p.toString()}`;
+  const t = TOPICS.find((x) => x.block === block);
+  return t ? topicHref(t) : null;
 }
 
 /*
  * Where each guide's line on Find help leads (owner, 2026-11-16: one map of
- * help across the site, the same 26 lines as the home page). A need opens
- * the directory filtered to it; null opens the guide itself, because the
+ * help across the site, the same 26 lines as the home page). A number opens
+ * that list from the foot of the guide (since 2026-11-17, so Find help and
+ * the guide cannot list different places); null opens the guide itself, because the
  * answer is steps rather than a place (911 or 311, the at-risk list's forms),
  * or because the directory cannot filter "rabbits, birds and reptiles"
  * together. A test checks every guide is here and every list has listings.
  */
-export const FIND_HELP: Record<string, { need: Need; animal?: string } | null> = {
-  'animal-emergency': { need: 'emergency-vet' },
-  'found-an-injured-bird': { need: 'wildlife-rehab' },
-  'found-wildlife': { need: 'wildlife-rehab' },
-  'exotic-pet-emergency': { need: 'exotic-vet' },
+export const FIND_HELP: Record<string, number | null> = {
+  'animal-emergency': 0,
+  'found-an-injured-bird': 0,
+  'found-wildlife': 0,
+  'exotic-pet-emergency': 0,
   'report-animal-abuse': null,
   'leaving-abuse-with-your-pet': null,
   'pets-in-a-disaster': null,
   'animal-trapped': null,
   'animal-left-alone': null,
-  'lost-and-found-dog': { need: 'lost-found', animal: 'dog' },
-  'lost-and-found-cat': { need: 'lost-found', animal: 'cat' },
-  'lost-and-found-exotic': { need: 'lost-found' },
-  'found-kittens-outside': { need: 'neonatal', animal: 'cat' },
+  'lost-and-found-dog': 0,
+  'lost-and-found-cat': 0,
+  'lost-and-found-exotic': 0,
+  'found-kittens-outside': 0,
   'save-an-at-risk-animal': null,
-  'keeping-your-dog': { need: 'owner-support', animal: 'dog' },
-  'keeping-your-cat': { need: 'owner-support', animal: 'cat' },
+  'keeping-your-dog': 3,
+  'keeping-your-cat': 3,
   'keep-your-pet-if-you-lose-your-home': null,
-  'help-paying-for-care': { need: 'financial-aid' },
-  'low-cost-dog-care': { need: 'low-cost-vet', animal: 'dog' },
-  'low-cost-clinics-and-trap-banks': { need: 'low-cost-vet', animal: 'cat' },
-  'starting-tnr': { need: 'tnr', animal: 'cat' },
-  'cats-with-special-needs': { need: 'medical-special-needs', animal: 'cat' },
-  'breed-specific-dog-rescue': { need: 'breed-specific', animal: 'dog' },
-  'dog-behavior-and-legal': { need: 'behavior-training', animal: 'dog' },
-  'rehoming-an-exotic-pet': null,
-  'exotic-boarding-and-planning': null,
+  'help-paying-for-care': 0,
+  'low-cost-dog-care': 2,
+  'low-cost-clinics-and-trap-banks': 0,
+  'starting-tnr': 2,
+  'cats-with-special-needs': 1,
+  'breed-specific-dog-rescue': 0,
+  'dog-behavior-and-legal': 0,
+  'rehoming-an-exotic-pet': 0,
+  'exotic-boarding-and-planning': 1,
 };
 
 /* Help that is a place to go: these lists ask for a location or zip first. */
@@ -211,11 +252,8 @@ const PLACE_NEEDS = new Set<string>(['emergency-vet', 'wildlife-rehab', 'exotic-
  * guide so the page shows "Guide: what to do" above the list, or the guide.
  */
 export function findHelpHref(slug: string): string {
-  const target = FIND_HELP[slug];
-  if (!target) return `/guides/${slug}`;
-  const p = new URLSearchParams({ need: target.need });
-  if (target.animal) p.set('animal', target.animal);
-  if (PLACE_NEEDS.has(target.need)) p.set('near', '1');
-  p.set('guide', slug);
-  return `/directory?${p.toString()}`;
+  const index = FIND_HELP[slug];
+  if (index === null || index === undefined) return `/guides/${slug}`;
+  const t = topicOf(slug, index);
+  return topicHref(t, { ...(t.need && PLACE_NEEDS.has(t.need) ? { near: '1' } : {}), guide: slug });
 }

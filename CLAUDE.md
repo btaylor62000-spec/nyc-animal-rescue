@@ -184,6 +184,41 @@ such. The monthly audit checks whether the city has published a procedure.
   (the Census geocoder cannot read Route 17 addresses); drive times re-run.
   **GSVS Woodbridge** is High: the owner opened its page and confirmed it.
 
+### Changed 2026-11-17: one topic, one set of places
+
+The owner found "borrow a trap" giving different places on the guide, in Find
+help and from the assistant (once Advocat, once Anjellicle). Each used its own
+rule. Now:
+
+- **One rule** (`src/data/topics.ts`, `matchesTopic`): a place belongs to a
+  need-and-animal topic if it has the need and serves one of the animals, and
+  a place that names no animal serves them all. The guides' lists
+  (`listingsFor`), the directory's animal filter (it used to leave out places
+  naming no animal, and needed every ticked animal) and the assistant use it.
+- **Every list at the foot of a guide has a name**, `<guide>.<n>` (`TOPICS`
+  in `guide-listings.ts`). The directory page carries every list's places;
+  `?list=` (one or several) shows exactly those, headed with the list's name.
+  A plain need with one animal still links as `?need=&animal=`.
+- **Find help opens one of its guide's own lists** (`FIND_HELP` now holds a
+  list number), so the two can never differ.
+- **The assistant answers a guide topic from that guide's list**: the routed
+  guide's list for the question's main need (plus the emergency vets in an
+  emergency or a poisoning), never free search; "These are 6 of N" and "See
+  all" are that list's count and link. The lists are in the chat corpus
+  (`topics`), built at import from the same records.
+- **`tests/topics.test.ts`** compares, for every list, the guide, the directory
+  link, Find help, card links and the assistant. Add a guide list and it is
+  covered.
+- Tags fixed on the way: the two poison hotlines are not spay/neuter clinics
+  or exotic vets; the dogfighting tip line is dogs and farm animals (roosters),
+  not every animal (`set.animals` is now allowed in overrides).
+- **The ASPCA Rescuer Services Scheduler** (spay/neuter, transport, trap
+  rental for rescuers) is linked in the TNR and clinics guides and on the
+  ASPCA spay/neuter and trap bank listings (owner supplied the link).
+- **The monthly audit watches NYC Council Int. 1029** (low-cost vet clinics in
+  every borough) **and Int. 1098** (vets posting prices), and checks the
+  one-topic rule with the assistant harness.
+
 ### Changed 2026-11-16 (ninth round)
 
 - **Breed rescues are directory listings.** The breed tab of the dog

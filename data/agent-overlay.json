@@ -1123,7 +1123,28 @@
     "aspca-spay-neuter-nyc": {
       "last_checked": "2026-11-10",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "intake_urls": [
+        {
+          "url": "https://clinic.aspca.org",
+          "label": "aspcapro.org/scheduler"
+        },
+        {
+          "url": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "label": "Rescuer Services Scheduler: spay/neuter, transport and humane trap rental for rescuers"
+        }
+      ],
+      "change_log": [
+        {
+          "date": "2026-11-17",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "evidence_url": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "source": "manual",
+          "note": "The owner, 2026-11-17: the Rescuer Services Scheduler is the ASPCA's online tool for its rescuer services in New York City (spay/neuter, transport and humane trap rental). Its sign-in page."
+        }
+      ]
     },
     "aspca-trap-bank": {
       "last_checked": "2026-11-10",
@@ -1144,9 +1165,24 @@
           "evidence_url": "https://www.aspca.org/veterinary-services/rescue-professionals",
           "source": "manual",
           "note": "Read on the ASPCA's rescue professionals page on 2026-11-04 (NYC tab): equipment rental terms, hours, deposit, and the TNRtrapbank@aspca.org address. The old note said \"free\"; it takes a $50 refundable deposit."
+        },
+        {
+          "date": "2026-11-17",
+          "field": "intake_urls",
+          "from": null,
+          "to": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "evidence_url": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "source": "manual",
+          "note": "The owner, 2026-11-17: the Rescuer Services Scheduler is the ASPCA's online tool for its rescuer services in New York City (spay/neuter, transport and humane trap rental). Its sign-in page."
         }
       ],
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "intake_urls": [
+        {
+          "url": "https://aspcasnc.civicore.com/RSS/index.php?action=userLogin",
+          "label": "Rescuer Services Scheduler: spay/neuter, transport and humane trap rental for rescuers"
+        }
+      ]
     },
     "astoria-animal-society": {
       "last_checked": "2026-11-10",

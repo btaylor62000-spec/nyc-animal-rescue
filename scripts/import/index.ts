@@ -22,7 +22,8 @@ import { GUIDE_ORG_SOURCES, extractGuideOrgs } from './guide-orgs.ts';
 import { pantryOrgs } from './pantries.ts';
 import { mergeOrgs } from './merge.ts';
 import { OVERRIDES, PARENT_PREFIXES, REMOVED } from './overrides.ts';
-import { GUIDANCE_ONLY } from '../../src/data/listing.ts';
+import { GUIDANCE_ONLY, isListed } from '../../src/data/listing.ts';
+import { TOPICS, topicHref, topicIdsByKey } from '../../src/data/guide-listings.ts';
 import { attachGeo } from '../geo/attach.ts';
 import { isNycZip } from '../../src/data/geo.ts';
 
@@ -334,9 +335,14 @@ function main(): void {
     topics: p.topics,
     chunks: chunkGuide(p.markdown, p.title),
   }));
+  // Every list at the foot of a guide, with its places, so the assistant
+  // answers a topic from exactly the list the guide and Find help show
+  // (owner, 2026-11-17). Built from this run's records, not the old files.
+  const topicIds = topicIdsByKey(sorted.filter(isListed));
+  const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, href: topicHref(t) }));
   writeFileSync(
     'data/chat-corpus.json',
-    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;

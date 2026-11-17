@@ -20,7 +20,7 @@ export interface Override {
    * trainers, beside animals about to be euthanised (owner, 2026-11-15).
    */
   removeNeeds?: Need[];
-  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka' | 'boroughs'>>;
+  set?: Partial<Pick<Org, 'parent_org' | 'citywide' | 'outside_nyc' | 'status' | 'status_note' | 'name' | 'aka' | 'boroughs' | 'animals'>>;
 }
 
 export const OVERRIDES: Override[] = [
@@ -161,6 +161,21 @@ export const OVERRIDES: Override[] = [
     reason: 'A programme of ACC rather than an independent organization. Not training: "behavior" in its notes describes the animals on the list (owner, 2026-11-15).',
     set: { parent_org: 'animal-care-centers-of-nyc' },
     removeNeeds: ['behavior-training'],
+  },
+  {
+    id: 'aspca-animal-poison-control-center-24-7-hotline',
+    reason: 'A poison hotline, not a clinic or a vet: "spay" in its source section heading listed it under low-cost spay and neuter, and it was in the "Avian and exotic vets" list (owner, 2026-11-17: the same topic must list the same, right places). It still answers for exotic pets as poison control.',
+    removeNeeds: ['spay-neuter', 'exotic-vet'],
+  },
+  {
+    id: 'pet-poison-helpline-24-7-hotline',
+    reason: 'As the ASPCA poison line: a hotline, not a spay/neuter clinic or an exotic vet.',
+    removeNeeds: ['spay-neuter', 'exotic-vet'],
+  },
+  {
+    id: 'hsus-dogfighting-tip-line',
+    reason: 'Every line in the abuse-reporting source is tagged with every animal, which is right for 311 or the police. This line takes reports of dogfighting and cockfighting only, so it listed under cats and rabbits for no reason (owner, 2026-11-17). Roosters are farm animals.',
+    set: { animals: ['dog', 'farm'] },
   },
   {
     id: 'volunteers-for-wildlife-wildlife-center-of-long-island',

@@ -8,21 +8,8 @@
     "government"
   ],
   "animals": [
-    "cat",
     "dog",
-    "rabbit",
-    "small-mammal",
-    "bird-companion",
-    "bird-wild",
-    "pigeon",
-    "reptile",
-    "amphibian",
-    "fish",
-    "farm",
-    "equine",
-    "wildlife",
-    "marine",
-    "invertebrate"
+    "farm"
   ],
   "needs": [
     "legal",

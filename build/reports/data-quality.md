@@ -1,6 +1,6 @@
 # Data quality report
 
-Generated 2026-11-16 from the source workbooks and the wildlife guide.
+Generated 2026-11-17 from the source workbooks and the wildlife guide.
 
 ## Totals
 
@@ -18,20 +18,20 @@ Generated 2026-11-16 from the source workbooks and the wildlife guide.
 | Animal | Organizations |
 | --- | ---: |
 | dog | 333 |
-| cat | 328 |
-| rabbit | 45 |
-| bird-companion | 42 |
-| wildlife | 42 |
+| cat | 327 |
+| rabbit | 44 |
+| bird-companion | 41 |
+| wildlife | 41 |
 | farm | 40 |
-| reptile | 40 |
-| small-mammal | 39 |
-| bird-wild | 29 |
-| amphibian | 22 |
-| fish | 22 |
-| equine | 20 |
-| pigeon | 19 |
-| invertebrate | 19 |
-| marine | 18 |
+| reptile | 39 |
+| small-mammal | 38 |
+| bird-wild | 28 |
+| amphibian | 21 |
+| fish | 21 |
+| equine | 19 |
+| pigeon | 18 |
+| invertebrate | 18 |
+| marine | 17 |
 
 ### By need
 
@@ -42,7 +42,7 @@ Generated 2026-11-16 from the source workbooks and the wildlife guide.
 | foster | 112 |
 | tnr | 96 |
 | breed-specific | 83 |
-| spay-neuter | 75 |
+| spay-neuter | 73 |
 | owner-support | 72 |
 | referral | 59 |
 | low-cost-vet | 57 |
@@ -64,9 +64,9 @@ Generated 2026-11-16 from the source workbooks and the wildlife guide.
 | transport | 13 |
 | pet-loss | 9 |
 | neonatal | 7 |
-| exotic-vet | 6 |
 | trap-bank | 5 |
 | retrovirus | 5 |
+| exotic-vet | 4 |
 | working-cat | 2 |
 | poison-control | 2 |
 
@@ -354,8 +354,8 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Save a shelter animal from euthanasia: ACC's at-risk list (the New Hope Program) | 15801 |
 | Reporting animal abuse or neglect | 6987 |
 | Animal emergencies and poison control | 5129 |
-| Low-cost cat clinics and trap banks | 3593 |
-| Community cats, colonies and starting TNR | 7856 |
+| Low-cost cat clinics and trap banks | 3864 |
+| Community cats, colonies and starting TNR | 7918 |
 | Cats needing specialist help | 6511 |
 | Lost or found a cat | 4407 |
 | Help keeping your cat | 8834 |
