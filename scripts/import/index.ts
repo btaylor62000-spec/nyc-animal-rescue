@@ -346,8 +346,8 @@ function main(): void {
   // (src/data/area.ts), so a borough or zip in a question narrows a list
   // exactly as the directory's filter does.
   const listed = sorted.filter(isListed);
-  const areas = Object.fromEntries(listed.map((o) => [o.id, { boroughs: o.boroughs, citywide: o.citywide, zips: o.zips }]));
-  const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, lead: t.block.lead ?? [], main: FIND_HELP[t.guide] !== null && FIND_HELP[t.guide] !== undefined && t.key === `${t.guide}.${FIND_HELP[t.guide]}`, href: topicHref(t) }));
+  const areas = Object.fromEntries(listed.map((o) => [o.id, { boroughs: o.boroughs, citywide: o.citywide, zips: o.zips, needs: o.needs, animals: o.animals }]));
+  const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, lead: t.block.lead ?? [], filterable: Boolean(t.plain || t.block.cityPantries || t.block.notCityPantries), main: FIND_HELP[t.guide] !== null && FIND_HELP[t.guide] !== undefined && t.key === `${t.guide}.${FIND_HELP[t.guide]}`, href: topicHref(t) }));
   writeFileSync(
     'data/chat-corpus.json',
     `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, areas, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,

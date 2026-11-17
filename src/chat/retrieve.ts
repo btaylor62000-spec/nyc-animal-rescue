@@ -11,6 +11,7 @@
  * answered with a Staten Island clinic.
  */
 import { servesBoroughs, servesZip } from '../data/area.ts';
+import { matchesTopic } from '../data/topics.ts';
 import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
@@ -32,6 +33,11 @@ export interface CorpusTopic {
   lead?: string[];
   /** The list Find help opens for this guide. */
   main?: boolean;
+  /**
+   * The list is a need (and animals) the directory's filter panel can say:
+   * true of every list except fixed ones and those with places that lead.
+   */
+  filterable?: boolean;
   href: string;
 }
 
@@ -41,7 +47,7 @@ export interface Corpus {
   /** Every list at the foot of a guide (src/data/guide-listings.ts). */
   topics?: CorpusTopic[];
   /** Where each listed place is, for the directory's borough and zip rule. */
-  areas?: Record<string, { boroughs: string[]; citywide: boolean; zips: string[] }>;
+  areas?: Record<string, { boroughs: string[]; citywide: boolean; zips: string[]; needs?: string[]; animals?: string[] }>;
   /** New York City zip code centres, for a zip written in the question. */
   zipCentres?: Record<string, [number, number]>;
   /** Driving times to emergency vets by zip (src/data/drive.ts). */
@@ -205,7 +211,7 @@ const DISASTER_RE = /\b(disasters?|evacuat\w*|hurricanes?|flood\w*|heat ?waves?|
 const TRAPPED_RE = /\b(is|are|was|were|got|gets|get|been)\s+(trapped|stuck)\b|\b(trapped|stuck)\s+(in|under|inside|behind|between)\b|\bcan.?t get (it )?out\b/i;
 const BIRD_WORDS_RE = /\b(birds?|pigeons?|sparrows?|hawks?|owls?|ducks?|goose|geese|swans?|robins?|fledgl\w*|gulls?|herons?|starlings?|blue ?jays?|cardinals?|nestlings?)\b/i;
 /** A pet rabbit, reptile or small animal, or a bird that is plainly a pet: not wildlife. */
-const EXOTIC_PET_RE = /\b(rabbits?|bunn(y|ies)|reptiles?|turtles?|tortoises?|lizards?|snakes?|guinea pigs?|hamsters?|ferrets?|chinchillas?|small (pet|animal)s?|parrots?|budgies?|cockatiels?|parakeets?|lovebirds?|canar(y|ies)|finch(es)?|pet birds?|exotic pets?)\b/i;
+const EXOTIC_PET_RE = /\b(rabbits?|bunn(y|ies)|reptiles?|turtles?|tortoises?|(red[- ]eared )?sliders?|bearded dragons?|geckos?|lizards?|snakes?|guinea pigs?|hamsters?|ferrets?|chinchillas?|small (pet|animal)s?|parrots?|budgies?|cockatiels?|parakeets?|lovebirds?|canar(y|ies)|finch(es)?|pet birds?|exotic pets?)\b/i;
 const GIVE_UP_RE = /\b(rehom\w*|surrender\w*|give (it|him|her|them) up|giving (it|him|her|them)? ?up|can.?t keep)\b/i;
 const BOARDING_RE = /\b(board(ing)?|pet ?sit\w*|sitters?|going away|vacation|holiday|planning ahead|pet trust)\b/i;
 const KITTENS_RE = /\bkittens?\b/i;
@@ -702,8 +708,25 @@ export class Retriever {
     // give the same places on the guide, in Find help and here). Free search
     // used to add groups that only mentioned the words, such as cat rescues
     // tagged TNR in answer to "where can I borrow a trap".
-    const lists = this.topicFor(question, signals);
-    const listIds = lists ? new Set(lists.flatMap((t) => t.ids)) : null;
+    const choice = this.topicFor(question, signals);
+    let lists = choice?.lists ?? null;
+    /*
+     * A typed question about one kind of help ("free cat food in the Bronx")
+     * is the directory's own filter: that need, the animals the question
+     * names (none means every animal) and its borough or zip. "See all" opens
+     * the directory with exactly those boxes ticked, so the count can be
+     * checked against the filter panel (owner, 2026-11-17: Pet food help and
+     * the Bronx showed 15 in Find help, the assistant 13 for cat food, and
+     * nothing on screen said why). A guide's name, a situation, an emergency
+     * with two lists, or a list with places that lead keeps its list.
+     */
+    const needs = new Set((lists ?? []).map((t) => t.need));
+    const filterNeed = choice?.byNeed && lists!.every((t) => t.filterable) && needs.size === 1 ? lists![0]!.need : null;
+    const facts = this.corpus.areas ?? {};
+    const filterIds = filterNeed
+      ? new Set(Object.entries(facts).filter(([, f]) => matchesTopic({ needs: f.needs ?? [], animals: f.animals ?? [] }, { need: filterNeed, animals: namedAnimals(signals.animals, question) })).map(([id]) => id))
+      : null;
+    const listIds = filterIds ?? (lists ? new Set(lists.flatMap((t) => t.ids)) : null);
 
     const candidates = new Set<string>(listIds ?? hits.slice(0, 60).map((h) => h.id));
     if (listIds && (signals.zips[0] || signals.boroughs.length)) {
@@ -746,7 +769,10 @@ export class Retriever {
       if (!where || !a) return true;
       return 'zip' in where ? servesZip(a, where.zip!) : servesBoroughs(a, where.boroughs!);
     };
-    const baseHref = lists ? (lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`) : '';
+    const filterQuery = filterNeed ? new URLSearchParams([['need', filterNeed], ...namedAnimals(signals.animals, question).map((a) => ['animal', a] as [string, string])]).toString() : '';
+    const baseHref = filterNeed
+      ? `/directory?${filterQuery}`
+      : lists ? (lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`) : '';
     const areaQuery = where ? ('zip' in where ? `zip=${where.zip}` : where.boroughs!.map((b) => `borough=${b}`).join('&')) : '';
     const topic = lists
       ? {
@@ -768,7 +794,16 @@ export class Retriever {
   }
 
   /** The lists at the foot of the routed guide that hold the question's main need. */
-  private topicFor(question: string, signals: Signals): CorpusTopic[] | null {
+  private topicFor(question: string, signals: Signals): { lists: CorpusTopic[]; byNeed: boolean } | null {
+    const lists = this.topicLists(question, signals);
+    return lists ? { lists, byNeed: this.lastByNeed } : null;
+  }
+
+  /** Whether the last topicLists() call chose by the question's need (a typed question). */
+  private lastByNeed = false;
+
+  private topicLists(question: string, signals: Signals): CorpusTopic[] | null {
+    this.lastByNeed = false;
     const topics = this.corpus.topics ?? [];
     const ofGuide = (slug: string) => {
       const main = topics.filter((t) => t.guide === slug && t.main);
@@ -792,7 +827,10 @@ export class Retriever {
     // vomiting" needs poison control and a vet, from the same guide.
     const wanted = new Set([need, ...(signals.emergency || need === 'poison-control' || signals.needs.includes('emergency-vet') ? ['emergency-vet'] : [])]);
     const lists = (this.corpus.topics ?? []).filter((t) => t.guide === guide && t.need !== null && wanted.has(t.need));
-    if (lists.length) return lists;
+    if (lists.length) {
+      this.lastByNeed = true;
+      return lists;
+    }
     // No list in that guide for the main need ("a hurt bird" reads as a vet
     // emergency, and the bird guide's list is its rescuers): the list Find
     // help opens for the guide, so the Ask buttons and Find help agree.
@@ -872,12 +910,14 @@ export class Retriever {
     }
 
     if (has('financial-aid')) return 'help-paying-for-care';
+    // "Pet" alone reads as small animals and pet birds; only a named one counts here.
+    const namedExotic = exotic && EXOTIC_PET_RE.test(q);
     if (has('food-assistance') || has('owner-support')) {
-      if (exotic) return 'rehoming-an-exotic-pet';
+      if (namedExotic) return 'rehoming-an-exotic-pet';
       return animal('dog') ? 'keeping-your-dog' : 'keeping-your-cat';
     }
     if (has('surrender')) {
-      if (exotic) return 'rehoming-an-exotic-pet';
+      if (namedExotic) return 'rehoming-an-exotic-pet';
       return animal('dog') ? 'keeping-your-dog' : 'keeping-your-cat';
     }
 
@@ -946,4 +986,25 @@ const SITUATION_GUIDES = new Set([
 /** A question compared with a guide's name: letters and digits only. */
 function plainKey(s: string): string {
   return s.toLowerCase().replace(/[‘’]/g, "'").replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+/*
+ * The animals a question actually names, for the directory filter. The word
+ * "pet" alone reads as small animals and pet birds in the need vocabulary,
+ * which narrowed "free pet food in the Bronx" to a few places; with no animal
+ * named, the filter covers every animal, as the filter panel does unticked.
+ */
+const NAMED_ANIMAL: Record<string, RegExp> = {
+  cat: /\b(cats?|kitt(en|ens|y|ies))\b/i,
+  dog: /\b(dogs?|pupp(y|ies)|pups?)\b/i,
+  rabbit: /\b(rabbits?|bunn(y|ies))\b/i,
+  'small-mammal': /\b(guinea pigs?|hamsters?|gerbils?|ferrets?|chinchillas?|rats?|mice|mouse|hedgehogs?)\b/i,
+  'bird-companion': /\b(parrots?|budgies?|cockatiels?|parakeets?|lovebirds?|canar(y|ies)|finch(es)?|pet birds?)\b/i,
+  'bird-wild': /\b(birds?|sparrows?|hawks?|owls?|robins?|ducks?|geese|goose|swans?|gulls?)\b/i,
+  pigeon: /\b(pigeons?|doves?)\b/i,
+  reptile: /\b(reptiles?|turtles?|tortoises?|sliders?|snakes?|lizards?|geckos?|iguanas?|bearded dragons?)\b/i,
+  farm: /\b(chickens?|roosters?|goats?|pigs?|sheep|cows?)\b/i,
+};
+function namedAnimals(animals: string[], q: string): string[] {
+  return animals.filter((a) => NAMED_ANIMAL[a]?.test(q));
 }

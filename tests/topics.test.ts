@@ -67,6 +67,8 @@ test('the assistant answers a guide topic from that list, with the same count an
     ['borrow a trap for TNR in Brooklyn', 'Trap banks'],
     ['where can I get free cat food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
     ['free cat food 10458', "NYC's free pet food pantries (the city's programme)"],
+    ['free pet food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
+    ['free dog food in the bronx', "NYC's free pet food pantries (the city's programme)"],
     ['where can I borrow a trap in Brooklyn', 'Trap banks'],
     ['my dog was hit by a car', 'Emergency and urgent-care vets'],
     ['I need a low cost spay for my cat', 'Low-cost spay and neuter'],
@@ -114,4 +116,18 @@ test('a badly hurt bird: the Animal Medical Center is on the bird list everywher
   const list = listingsFor(t.block).map((o) => o.id);
   assert.deepEqual(list.slice(0, 3), ['the-wild-bird-fund', 'animal-medical-center', 'animal-help-now-wildlife-emergency-finder']);
   assert.ok(directoryShows(findHelpHref('found-an-injured-bird')).has('animal-medical-center'));
+});
+
+/*
+ * What the owner did (2026-11-17): Find help, tick "Pet food help" and "The
+ * Bronx": 15 places. The assistant must give the same 15 for the same
+ * question, and the same 13 as ticking "Cat" too when the question says cat.
+ */
+test('the assistant matches the filter panel for pet food in the Bronx', () => {
+  const corpus = JSON.parse(readFileSync('data/chat-corpus.json', 'utf8')) as Corpus;
+  const r = new Retriever(corpus);
+  const panel = (animals: string[]) => directoryShows(`/directory?need=food-assistance&borough=bronx${animals.map((a) => `&animal=${a}`).join('')}`).size;
+  assert.equal(r.retrieve('free pet food in the Bronx', 10).topic!.count, panel([]));
+  assert.equal(r.retrieve('where can I get free cat food in the Bronx', 10).topic!.count, panel(['cat']));
+  assert.equal(r.retrieve('free dog food in the bronx', 10).topic!.count, panel(['dog']));
 });

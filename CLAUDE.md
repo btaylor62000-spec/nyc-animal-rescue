@@ -222,6 +222,15 @@ rule. Now:
   corpus carries each place's `areas`): "free cat food in the Bronx" is 6 of
   13 (the Bronx plus help covering the whole city), and "see all" opens
   those 13. The assistant's line names the area.
+  **Since later on 2026-11-17, a typed question about one kind of help is
+  the directory's own filter**: that need, only the animals the question
+  actually names (`namedAnimals`; "pet" alone means every animal), and its
+  borough or zip. "See all" opens the directory with those boxes ticked, so
+  it can be compared with the filter panel: "free pet food in the Bronx" is
+  15 = Pet food help + The Bronx; "free cat food in the Bronx" is 13 = the
+  same with Cat ticked (the two dog-only pantries drop out). Guide names (the
+  Ask buttons), situations, an emergency with two lists, and lists with places
+  that lead keep their guide list. Tested against the filter panel.
 - **`tests/topics.test.ts`** compares, for every list, the guide, the directory
   link, Find help, card links and the assistant. Add a guide list and it is
   covered.
