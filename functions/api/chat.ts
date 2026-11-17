@@ -327,10 +327,10 @@ export const onRequest: PagesFunction<Env> = async (ctx) => {
 };
 
 /** The directory, filtered the way the question was, when it lists more than the cards. */
-function moreLink(retrieved: ReturnType<ReturnType<typeof getRetriever>['retrieve']>, shown: number): { count: number; href: string } | null {
+function moreLink(retrieved: ReturnType<ReturnType<typeof getRetriever>['retrieve']>, shown: number): { count: number; href: string; area?: string | null } | null {
   // The guide's own list, when the question has one: the count and the link
   // are that list's, the same places the guide and Find help show.
-  if (retrieved.topic) return retrieved.topic.count > shown ? { count: retrieved.topic.count, href: retrieved.topic.href } : null;
+  if (retrieved.topic) return retrieved.topic.count > shown ? { count: retrieved.topic.count, href: retrieved.topic.href, area: retrieved.topic.area } : null;
   const { signals } = retrieved;
   const need = primaryNeed(signals.needs, signals.abuse, signals.injured);
   if (!need || signals.emergency) return null;

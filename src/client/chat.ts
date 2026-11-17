@@ -164,13 +164,16 @@ if (form && input && log) {
   }
 
   /** "6 of 14 shown": the cards are a short list, and the directory has the rest. */
-  function renderMore(more: { count: number; href: string }, shown: number): void {
+  function renderMore(more: { count: number; href: string; area?: string | null }, shown: number): void {
     const p = document.createElement('p');
     p.className = 'chat__more';
     const a = document.createElement('a');
     a.href = more.href;
     a.textContent = `See all ${more.count} in the directory →`;
-    p.append(`These are ${shown} of ${more.count} places that match. `, a);
+    // Name the area, so the count is not read as the whole city's.
+    const names: Record<string, string> = { manhattan: 'Manhattan', brooklyn: 'Brooklyn', queens: 'Queens', bronx: 'the Bronx', 'staten-island': 'Staten Island' };
+    const area = more.area ? ` in ${more.area.split(', ').map((b) => names[b] ?? `and near ${b}`).join(' and ')}, with help that covers the whole city` : '';
+    p.append(`These are ${shown} of ${more.count} places that match${area}. `, a);
     log!.append(p);
   }
 

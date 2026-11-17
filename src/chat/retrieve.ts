@@ -10,6 +10,7 @@
  * more than wording does. A question that mentions Brooklyn should not be
  * answered with a Staten Island clinic.
  */
+import { servesBoroughs, servesZip } from '../data/area.ts';
 import MiniSearch from 'minisearch';
 import { MINISEARCH_OPTIONS, processQuery, runSearch, type SearchRecordLike } from '../data/search.ts';
 import { ANIMAL_SYNONYMS, NEED_SYNONYMS, SPANISH_ANIMALS, SPANISH_NEEDS } from '../data/synonyms.ts';
@@ -39,6 +40,8 @@ export interface Corpus {
   guides: CorpusGuide[];
   /** Every list at the foot of a guide (src/data/guide-listings.ts). */
   topics?: CorpusTopic[];
+  /** Where each listed place is, for the directory's borough and zip rule. */
+  areas?: Record<string, { boroughs: string[]; citywide: boolean; zips: string[] }>;
   /** New York City zip code centres, for a zip written in the question. */
   zipCentres?: Record<string, [number, number]>;
   /** Driving times to emergency vets by zip (src/data/drive.ts). */
@@ -394,7 +397,7 @@ export interface Retrieved {
    * The guide list (or lists) the question belongs to, when it has one: the
    * cards come only from it, and "see all" opens the same list.
    */
-  topic: { keys: string[]; headings: string[]; count: number; href: string } | null;
+  topic: { keys: string[]; headings: string[]; count: number; href: string; area: string | null } | null;
 }
 
 function toSearchRecord(o: CorpusOrg): SearchRecordLike {
@@ -703,6 +706,14 @@ export class Retriever {
     const listIds = lists ? new Set(lists.flatMap((t) => t.ids)) : null;
 
     const candidates = new Set<string>(listIds ?? hits.slice(0, 60).map((h) => h.id));
+    if (listIds && (signals.zips[0] || signals.boroughs.length)) {
+      for (const id of [...candidates]) {
+        const a = this.corpus.areas?.[id];
+        if (!a) continue;
+        const ok = signals.zips[0] ? servesZip(a, signals.zips[0]) : servesBoroughs(a, signals.boroughs);
+        if (!ok) candidates.delete(id);
+      }
+    }
     if (!listIds && (signals.needs.length || signals.animals.length)) {
       for (const org of this.corpus.orgs) {
         const needMatch = signals.needs.some((n) => org.needs.includes(n));
@@ -725,12 +736,25 @@ export class Retriever {
       .map((org) => ({ org, score: this.fit(org, signals, ctx) + Math.min(relevance.get(org.id) ?? 0, 12) * wordingWeight }))
       .sort((a, b) => b.score - a.score || a.org.name.localeCompare(b.org.name));
 
+    // A borough or zip in the question narrows the list the way the
+    // directory's filter does: places there, and places serving the whole
+    // city (owner, 2026-11-17: "free cat food in the Bronx" should count and
+    // link to the Bronx, not the whole city).
+    const where = signals.zips[0] ? { zip: signals.zips[0] } : signals.boroughs.length ? { boroughs: signals.boroughs } : null;
+    const inArea = (id: string) => {
+      const a = this.corpus.areas?.[id];
+      if (!where || !a) return true;
+      return 'zip' in where ? servesZip(a, where.zip!) : servesBoroughs(a, where.boroughs!);
+    };
+    const baseHref = lists ? (lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`) : '';
+    const areaQuery = where ? ('zip' in where ? `zip=${where.zip}` : where.boroughs!.map((b) => `borough=${b}`).join('&')) : '';
     const topic = lists
       ? {
           keys: lists.map((t) => t.key),
           headings: [...new Set(lists.map((t) => t.heading))],
-          count: listIds!.size,
-          href: lists.length === 1 ? lists[0]!.href : `/directory?${lists.map((t) => `list=${encodeURIComponent(t.key)}`).join('&')}`,
+          count: [...listIds!].filter(inArea).length,
+          href: areaQuery ? `${baseHref}&${areaQuery}` : baseHref,
+          area: where ? ('zip' in where ? where.zip! : where.boroughs!.join(', ')) : null,
         }
       : null;
     return {

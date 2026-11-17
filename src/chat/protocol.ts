@@ -39,7 +39,7 @@ export type ChatEvent =
        * knows of, and the directory filtered to the same need, animal and
        * borough, which lists them all (and the unconfirmed ones it leaves out).
        */
-      more?: { count: number; href: string } | null;
+      more?: { count: number; href: string; area?: string | null } | null;
     }
   | { t: string }
   | { done: true }

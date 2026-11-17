@@ -4,6 +4,8 @@ import { readFileSync } from 'node:fs';
 import { LISTED_ORGS } from '../src/data/orgs.ts';
 import { FIND_HELP, TOPICS, findHelpHref, listingsFor, topicHref, topicListsForPage, topicOf } from '../src/data/guide-listings.ts';
 import { matchesTopic } from '../src/data/topics.ts';
+import { servesBoroughs, servesZip } from '../src/data/area.ts';
+import { ORGS_BY_ID } from '../src/data/orgs.ts';
 import { GLANCE } from '../src/data/guide-glance.ts';
 import { Retriever, type Corpus } from '../src/chat/retrieve.ts';
 
@@ -20,11 +22,19 @@ import { Retriever, type Corpus } from '../src/chat/retrieve.ts';
 function directoryShows(href: string, lists = topicListsForPage()): Set<string> {
   const p = new URL(href, 'https://x').searchParams;
   const keys = p.getAll('list');
-  if (keys.length) return new Set(keys.flatMap((k) => lists[k]?.ids ?? []));
+  const boroughs = p.getAll('borough');
+  const zip = p.get('zip');
+  // The directory's own place rule (src/data/area.ts), applied after the list.
+  const inArea = (id: string) => {
+    const o = ORGS_BY_ID.get(id)!;
+    if (zip) return servesZip(o, zip);
+    return boroughs.length ? servesBoroughs(o, boroughs) : true;
+  };
+  if (keys.length) return new Set(keys.flatMap((k) => lists[k]?.ids ?? []).filter(inArea));
   const need = p.get('need') ?? undefined;
   const animals = p.getAll('animal');
   const anyNeeds = p.getAll('anyneed');
-  return new Set(LISTED_ORGS.filter((o) => matchesTopic(o, { need, animals, anyNeeds })).map((o) => o.id));
+  return new Set(LISTED_ORGS.filter((o) => matchesTopic(o, { need, animals, anyNeeds }) && inArea(o.id)).map((o) => o.id));
 }
 const ids = (xs: Array<{ id: string }>) => new Set(xs.map((o) => o.id));
 
@@ -56,6 +66,8 @@ test('the assistant answers a guide topic from that list, with the same count an
     ['where can I borrow a trap', 'Trap banks'],
     ['borrow a trap for TNR in Brooklyn', 'Trap banks'],
     ['where can I get free cat food in the Bronx', "NYC's free pet food pantries (the city's programme)"],
+    ['free cat food 10458', "NYC's free pet food pantries (the city's programme)"],
+    ['where can I borrow a trap in Brooklyn', 'Trap banks'],
     ['my dog was hit by a car', 'Emergency and urgent-care vets'],
     ['I need a low cost spay for my cat', 'Low-cost spay and neuter'],
     ['I found an injured pigeon', 'Who takes injured birds'],
@@ -64,10 +76,9 @@ test('the assistant answers a guide topic from that list, with the same count an
     const got = r.retrieve(q, 10);
     assert.ok(got.topic, `${q}: answered without a list`);
     assert.ok(got.topic!.headings.includes(heading), `${q}: lists ${got.topic!.headings.join(', ')}`);
-    const union = new Set(got.topic!.keys.flatMap((k) => byKey.get(k)!.ids));
-    for (const o of got.orgs) assert.ok(union.has(o.id), `${q}: ${o.name} is not on the list`);
-    assert.equal(got.topic!.count, union.size, `${q}: count`);
-    assert.deepEqual(directoryShows(got.topic!.href), union, `${q}: "see all" opens a different list`);
+    const shown = directoryShows(got.topic!.href);
+    for (const o of got.orgs) assert.ok(shown.has(o.id), `${q}: ${o.name} is not in what "see all" opens`);
+    assert.equal(got.topic!.count, shown.size, `${q}: the count is not what "see all" opens`);
   }
 });
 

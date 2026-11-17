@@ -217,6 +217,11 @@ rule. Now:
   assistant. A question about something hurt or ill puts the emergency vets
   before poison control; the emergency card's contacts do the same. The cat
   and dog keeping guides gained "Rescues that take a cat/dog from its owner".
+  A borough or zip in a question narrows the list exactly as the directory's
+  filter does (`servesBoroughs` / `servesZip` in `src/data/area.ts`; the
+  corpus carries each place's `areas`): "free cat food in the Bronx" is 6 of
+  13 (the Bronx plus help covering the whole city), and "see all" opens
+  those 13. The assistant's line names the area.
 - **`tests/topics.test.ts`** compares, for every list, the guide, the directory
   link, Find help, card links and the assistant. Add a guide list and it is
   covered.

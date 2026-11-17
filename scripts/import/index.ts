@@ -342,10 +342,15 @@ function main(): void {
   // answers a topic from exactly the list the guide and Find help show
   // (owner, 2026-11-17). Built from this run's records, not the old files.
   const topicIds = topicIdsByKey(sorted.filter(isListed));
+  // Where each listed place is, by the directory's own borough and zip rule
+  // (src/data/area.ts), so a borough or zip in a question narrows a list
+  // exactly as the directory's filter does.
+  const listed = sorted.filter(isListed);
+  const areas = Object.fromEntries(listed.map((o) => [o.id, { boroughs: o.boroughs, citywide: o.citywide, zips: o.zips }]));
   const topics = TOPICS.map((t) => ({ key: t.key, guide: t.guide, heading: t.heading, need: t.need ?? null, ids: topicIds[t.key]!, lead: t.block.lead ?? [], main: FIND_HELP[t.guide] !== null && FIND_HELP[t.guide] !== undefined && t.key === `${t.guide}.${FIND_HELP[t.guide]}`, href: topicHref(t) }));
   writeFileSync(
     'data/chat-corpus.json',
-    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
+    `${JSON.stringify({ orgs: orgCorpus, guides: guideCorpus, topics, areas, zipCentres: nycZipCentres(), driveTimes: driveTimes() }, null, 0)}\n`,
     'utf8',
   );
   const closedOut = sorted.filter((o) => o.status === 'retired' || o.status === 'relocated').length;
