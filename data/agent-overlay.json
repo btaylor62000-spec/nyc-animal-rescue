@@ -625,7 +625,46 @@
     },
     "animal-lovers-rescue-and-adoptions": {
       "last_checked": "2026-11-10",
-      "check_status": "unchecked"
+      "check_status": "unchecked",
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "phones",
+          "from": "[]",
+          "to": "[{\"value\":\"3477403076\",\"display\":\"(347) 740-3076\"}]",
+          "evidence_url": "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york",
+          "source": "manual",
+          "note": "Read by the site owner on its Adopt-a-Pet page, 2026-11-18: Whitestone, NY 11357, (347) 740-3076. The email on that page reads as a person’s own address and is not published. A Facebook page called Animal Lover Rescue (Brooklyn, cleft palate puppies) is a different group."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "website",
+          "from": "null",
+          "to": "\"https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york\"",
+          "evidence_url": "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york",
+          "source": "manual",
+          "note": "Read by the site owner on its Adopt-a-Pet page, 2026-11-18: Whitestone, NY 11357, (347) 740-3076. The email on that page reads as a person’s own address and is not published. A Facebook page called Animal Lover Rescue (Brooklyn, cleft palate puppies) is a different group."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"Small Whitestone rescue: takes in animals, adoption + advice + community TNR. Only verifiable channel is the Adoptapet listing (no independent site/email/phone found). Real but reach via listing. Intake: Adoption application + vet check Intake: contact via Adoptapet listing Other channel: Adoptapet: animal-lovers-rescue-and-adoptions\"",
+          "to": "\"Small Whitestone rescue: takes in animals, adoption, advice and community TNR. Its animals are on its Adopt-a-Pet page.\"",
+          "evidence_url": "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york",
+          "source": "manual",
+          "note": "Read by the site owner on its Adopt-a-Pet page, 2026-11-18: Whitestone, NY 11357, (347) 740-3076. The email on that page reads as a person’s own address and is not published. A Facebook page called Animal Lover Rescue (Brooklyn, cleft palate puppies) is a different group."
+        }
+      ],
+      "phones": [
+        {
+          "value": "3477403076",
+          "display": "(347) 740-3076"
+        }
+      ],
+      "website": "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york",
+      "notes": "Small Whitestone rescue: takes in animals, adoption, advice and community TNR. Its animals are on its Adopt-a-Pet page.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
     },
     "animal-medical-center": {
       "last_checked": "2026-11-10",
@@ -4996,7 +5035,76 @@
     },
     "new-york-meow-sanctuary": {
       "last_checked": "2026-11-10",
-      "check_status": "unchecked"
+      "check_status": "unchecked",
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "emails",
+          "from": "[]",
+          "to": "[{\"value\":\"nymeows@gmail.com\"}]",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+          "source": "manual",
+          "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "website",
+          "from": "null",
+          "to": "\"https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/\"",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+          "source": "manual",
+          "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "intake_urls",
+          "from": "[]",
+          "to": "[{\"url\":\"https://forms.gle/vdekoNiTkG6QAqWy7\",\"label\":\"Form\"}]",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+          "source": "manual",
+          "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "social",
+          "from": "[]",
+          "to": "[{\"platform\":\"instagram\",\"handle\":\"nymeows\",\"url\":\"https://www.instagram.com/nymeows/\"}]",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+          "source": "manual",
+          "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"Group of Flushing cat rescuers: TNR + adoption + sick-cat medical support + neighborhood feeding + DIY winter shelters. Only verifiable channel is the Petfinder profile - no independent email/phone/website found. Real but reach via Petfinder. Intake: Contact via Petfinder profile messaging Other channel: Petfinder: new-york-meow-sanctuary Other channel: Amazon wishlist for donations\"",
+          "to": "\"Group of Flushing cat rescuers: TNR, adoption, medical help for sick cats, neighbourhood feeding and winter shelters. Its cats are on its Petfinder page.\"",
+          "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+          "source": "manual",
+          "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+        }
+      ],
+      "emails": [
+        {
+          "value": "nymeows@gmail.com"
+        }
+      ],
+      "website": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "intake_urls": [
+        {
+          "url": "https://forms.gle/vdekoNiTkG6QAqWy7",
+          "label": "Form"
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "handle": "nymeows",
+          "url": "https://www.instagram.com/nymeows/"
+        }
+      ],
+      "notes": "Group of Flushing cat rescuers: TNR, adoption, medical help for sick cats, neighbourhood feeding and winter shelters. Its cats are on its Petfinder page.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
     },
     "new-york-state-department-of-agriculture-and-markets": {
       "last_verified": "2026-11-09",

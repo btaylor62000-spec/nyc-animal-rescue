@@ -8,7 +8,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
-- **5** entries with no way at all to make contact
+- **3** entries with no way at all to make contact
 - **1** personal contact details withheld
 
 ## Coverage
@@ -86,9 +86,9 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 243 |
+| Medium | 245 |
 | High | 216 |
-| Low | 52 |
+| Low | 50 |
 
 ### By operating status
 
@@ -105,14 +105,12 @@ No animal type has fewer than four organizations.
 
 ## Entries needing attention
 
-### No contact method at all (5)
+### No contact method at all (3)
 
 These have neither phone, email, website, intake form nor a social channel. They cannot be acted on and should either be researched or dropped.
 
-- **Animal Lovers Rescue and Adoptions** — QUEENS (Queens-based / Queens-serving cat groups)
 - **MeowRoof** — QUEENS (Queens-based / Queens-serving cat groups)
 - **Muffin's Pet Connection - MAMA Program** — SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT
-- **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
 ### Reachable only through social media (22)

@@ -31,22 +31,37 @@
   ],
   "region_note": "QUEENS (Queens-based / Queens-serving cat groups)",
   "phones": [],
-  "emails": [],
-  "website": null,
-  "intake_urls": [],
-  "social": [],
+  "emails": [
+    {
+      "value": "nymeows@gmail.com"
+    }
+  ],
+  "website": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+  "intake_urls": [
+    {
+      "url": "https://forms.gle/vdekoNiTkG6QAqWy7",
+      "label": "Form"
+    }
+  ],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "nymeows",
+      "url": "https://www.instagram.com/nymeows/"
+    }
+  ],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Group of Flushing cat rescuers: TNR + adoption + sick-cat medical support + neighborhood feeding + DIY winter shelters. Only verifiable channel is the Petfinder profile - no independent email/phone/website found. Real but reach via Petfinder. Intake: Contact via Petfinder profile messaging Other channel: Petfinder: new-york-meow-sanctuary Other channel: Amazon wishlist for donations",
+  "notes": "Group of Flushing cat rescuers: TNR, adoption, medical help for sick cats, neighbourhood feeding and winter shelters. Its cats are on its Petfinder page.",
   "type_raw": "solo rescuer / TNR / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "QUEENS (Queens-based / Queens-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -54,7 +69,53 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "emails",
+      "from": "[]",
+      "to": "[{\"value\":\"nymeows@gmail.com\"}]",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "source": "manual",
+      "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "website",
+      "from": "null",
+      "to": "\"https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/\"",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "source": "manual",
+      "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "intake_urls",
+      "from": "[]",
+      "to": "[{\"url\":\"https://forms.gle/vdekoNiTkG6QAqWy7\",\"label\":\"Form\"}]",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "source": "manual",
+      "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "social",
+      "from": "[]",
+      "to": "[{\"platform\":\"instagram\",\"handle\":\"nymeows\",\"url\":\"https://www.instagram.com/nymeows/\"}]",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "source": "manual",
+      "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Group of Flushing cat rescuers: TNR + adoption + sick-cat medical support + neighborhood feeding + DIY winter shelters. Only verifiable channel is the Petfinder profile - no independent email/phone/website found. Real but reach via Petfinder. Intake: Contact via Petfinder profile messaging Other channel: Petfinder: new-york-meow-sanctuary Other channel: Amazon wishlist for donations\"",
+      "to": "\"Group of Flushing cat rescuers: TNR, adoption, medical help for sick cats, neighbourhood feeding and winter shelters. Its cats are on its Petfinder page.\"",
+      "evidence_url": "https://www.petfinder.com/member/us/ny/flushing/new-york-meow-sanctuary-ny1686/",
+      "source": "manual",
+      "note": "Read by the site owner on its Petfinder page and Instagram, 2026-11-18: Flushing, NY 11358, nymeows@gmail.com, its form and Instagram @nymeows."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }
