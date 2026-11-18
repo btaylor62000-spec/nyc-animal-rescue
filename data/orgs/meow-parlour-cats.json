@@ -25,18 +25,26 @@
   "website": "https://www.meowparlour.com",
   "intake_urls": [],
   "social": [],
-  "geo": null,
-  "address": null,
+  "geo": {
+    "lat": 40.71607,
+    "lon": -73.98957,
+    "precision": "address"
+  },
+  "address": {
+    "street": "43 Essex Street",
+    "city": "New York",
+    "zip": "10002"
+  },
   "hours": null,
   "notes": "A person read the site on 2026-09-22 and confirmed it is in New York City. Found on the city shelter’s list of approved rescue partners (ACC “New Hope”) on 2026-09-17. The contact details below were read from their own website on the same day, but nobody has confirmed them, and we do not know whether they are still operating. Confirm before relying on it.",
   "type_raw": null,
-  "confidence": "Low",
+  "confidence": "High",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-18",
   "section": "Discovered — ACC New Hope partners",
   "source_files": [
     "discovery"
@@ -62,6 +70,15 @@
       "evidence_url": "https://www.meowparlour.com/",
       "source": "monthly-discovery",
       "note": "Read from the organization’s own site when it was found. Not confirmed by a person."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "address",
+      "from": "null",
+      "to": "{\"street\":\"43 Essex Street\",\"city\":\"New York\",\"zip\":\"10002\"}",
+      "evidence_url": "https://www.meowparlour.com/contact",
+      "source": "manual",
+      "note": "Read by the site owner on its contact page, 2026-11-18: 43 Essex Street, New York, NY 10002. Its contact page shows meow@meowparlour.com, already listed."
     }
   ],
   "privacy_hold": false,

@@ -4518,7 +4518,24 @@
       "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-10"
+      "last_verified": "2026-11-18",
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "address",
+          "from": "null",
+          "to": "{\"street\":\"43 Essex Street\",\"city\":\"New York\",\"zip\":\"10002\"}",
+          "evidence_url": "https://www.meowparlour.com/contact",
+          "source": "manual",
+          "note": "Read by the site owner on its contact page, 2026-11-18: 43 Essex Street, New York, NY 10002. Its contact page shows meow@meowparlour.com, already listed."
+        }
+      ],
+      "address": {
+        "street": "43 Essex Street",
+        "city": "New York",
+        "zip": "10002"
+      },
+      "confidence": "High"
     },
     "meowroof": {
       "last_checked": "2026-11-10",

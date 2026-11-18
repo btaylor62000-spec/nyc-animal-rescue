@@ -271,6 +271,12 @@
    "lon": -73.95522,
    "matched": "240 E 80TH ST, NEW YORK, NY, 10075"
   },
+  "meow-parlour-cats": {
+   "query": "43 Essex Street, New York, NY 10002",
+   "lat": 40.71607,
+   "lon": -73.98957,
+   "matched": "43 ESSEX ST, NEW YORK, NY, 10002"
+  },
   "metropolitan-council-on-jewish-poverty": {
    "query": "5361 Preston Court, Brooklyn, NY 11234",
    "lat": 40.63879,
