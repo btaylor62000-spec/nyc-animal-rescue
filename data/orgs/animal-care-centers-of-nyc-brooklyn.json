@@ -10,7 +10,12 @@
     "support-program"
   ],
   "animals": [
-    "cat"
+    "dog",
+    "cat",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
   ],
   "needs": [
     "adoption",

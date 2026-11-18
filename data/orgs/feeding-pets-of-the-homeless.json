@@ -1,14 +1,14 @@
 {
   "id": "feeding-pets-of-the-homeless",
   "name": "Feeding Pets of the Homeless",
-  "aka": [],
+  "aka": [
+    "Pets of the Homeless"
+  ],
   "parent_org": null,
   "org_types": [
     "support-program"
   ],
-  "animals": [
-    "cat"
-  ],
+  "animals": [],
   "needs": [
     "food-assistance",
     "owner-support"
@@ -37,7 +37,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "free pet food + vet care via partner sites for people who are homeless or at risk. petsofthehomeless.org.",
+  "notes": "free pet food + vet care via partner sites for people who are homeless or at risk. petsofthehomeless.org.\n\nfree pet food and vet care through partner sites for people who are homeless or at risk. petsofthehomeless.org.\n\norg) - national org providing FREE pet food + vet/dental/emergency care specifically for pets of homeless + at-risk people; find NYC-area donation/host sites on their map.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
@@ -46,7 +46,8 @@
   "last_verified": "2026-11-10",
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-10",
   "check_status": "ok",

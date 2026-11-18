@@ -8,7 +8,12 @@
     "support-program"
   ],
   "animals": [
-    "dog"
+    "dog",
+    "cat",
+    "rabbit",
+    "small-mammal",
+    "bird-companion",
+    "reptile"
   ],
   "needs": [
     "owner-support",

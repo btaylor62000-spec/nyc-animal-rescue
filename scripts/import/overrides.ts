@@ -48,6 +48,29 @@ export const OVERRIDES: Override[] = [
   { id: 'safe-havens-for-pets', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
   { id: 'domesticsheltersorg', reason: 'On the leaving-abuse guide\'s list: tagged so Find help\'s "Leaving abuse with your pet" shows the same places (owner, 2026-11-17).', addNeeds: ['domestic-violence'] },
   { id: 'animal-medical-center', reason: 'Its ER takes critically ill birds (owner rang AMC, 2026-11-15), so it is in Find help\'s "Hurt or orphaned wildlife" for birds, as on the bird guide (owner, 2026-11-17).', addNeeds: ['wildlife-rehab'], addAnimals: ['bird-wild'] },
+  // Who each one helps, read on its own site on 2026-11-18 (owner, 2026-11-17: a
+  // group in both the cat and dog workbooks came out as one or the other).
+  { id: 'feeding-pets-of-the-homeless', reason: 'Its own site, 2026-11-18: “pet food and emergency veterinary care to pets that belong to people experiencing homelessness”; it names no kind of pet, so every animal.', set: { animals: [] } },
+  { id: 'strong-paws-rescue-community-pet-pantry', reason: 'Its pantry page, 2026-11-18: “We typically carry items such as dog & cat food”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'nyc-health-dept-low-cost-spay-neuter', reason: "The city's page, 2026-11-18: “low-cost spay or neuter surgery for dogs and cats”.", set: { animals: ['cat', 'dog'] } },
+  { id: 'friends-of-animals-spay-neuter-certificates', reason: 'Its spay/neuter page, 2026-11-18: certificates for “cats and dogs”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'rescuenyc', reason: 'Its own site, 2026-11-18, shows only its Community Cat Program and cat adoption; no dogs. One group, once listed twice.', set: { animals: ['cat'], name: 'RescueNYC', aka: ['Rescue NYC', 'RescueNYC Community Cat Program'] } },
+  { id: 'akc-reunite', reason: 'Its own site, 2026-11-18: enrols “your pet’s microchip” and names no kind of pet.', set: { animals: [] } },
+  { id: 'animal-general', reason: 'Its own page, 2026-11-18: “Animals We See: Dogs, Cats”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'banfield-pet-hospital', reason: 'Its own site, 2026-11-18: cat vaccines and puppy care.', set: { animals: ['cat', 'dog'] } },
+  { id: 'brown-dog-foundation', reason: 'Its own site, 2026-11-18: “saving the family pet”; it names no kind of pet.', set: { animals: [] } },
+  { id: 'island-bird-cat-and-dog-vet-group', reason: 'Its name and own site, 2026-11-18: Island Bird Cat & Dog Veterinary Group.', set: { animals: ['bird-companion', 'cat', 'dog'] } },
+  { id: 'paws-of-war', reason: 'Its own site, 2026-11-18: “Saving dogs and cats rescued by U.S. troops”, with dogs and cats for adoption.', set: { animals: ['cat', 'dog'] } },
+  { id: 'queens-low-cost-vet', reason: 'Its own site, 2026-11-18: “Dog & Cat spay”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'scratchpay', reason: 'Its own site, 2026-11-18: payment plans for “pet care”; it names no kind of pet.', set: { animals: [] } },
+  { id: 'st-mina-animal-clinic', reason: 'Its own site, 2026-11-18: “comprehensive care for dogs and cats”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'vip-petcare-clinics', reason: 'Its own site, 2026-11-18: preventive care for “dogs and cats”.', set: { animals: ['cat', 'dog'] } },
+  { id: 'animal-lighthouse-rescue', reason: 'Its own site, 2026-11-18: “Our Dogs” and “Our Cats” for adoption.', set: { animals: ['cat', 'dog'] } },
+  { id: 'aspca-behavior-guides', reason: "The ASPCA's pet care pages, 2026-11-18, are for every pet.", set: { animals: [] } },
+  { id: 'free-housing-legal-help', reason: 'Housing Court Answers (2026-11-18) helps tenants; it is not about one kind of pet.', set: { animals: [] } },
+  { id: 'nyc-animal-welfare', reason: "The Office of Animal Welfare's evictions page (2026-11-18) is about every pet.", set: { animals: [] } },
+  { id: 'acc-admissions-owner-support', reason: "ACC's surrender page, 2026-11-18, takes every animal ACC takes, not only dogs.", set: { animals: ['dog', 'cat', 'rabbit', 'small-mammal', 'bird-companion', 'reptile'] } },
+  { id: 'animal-care-centers-of-nyc-brooklyn', reason: "The city shelter's Brooklyn centre takes every animal ACC takes, not only cats.", set: { animals: ['dog', 'cat', 'rabbit', 'small-mammal', 'bird-companion', 'reptile'] } },
   {
     // Two research rows for the one Best Friends centre are merged (see
     // NAME_ALIASES); this is the name on its own page.
@@ -253,6 +276,17 @@ export const NEVER_MERGE: Array<[string, string]> = [
  */
 export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
   { pattern: /^ACC$/i, canonicalName: 'Animal Care Centers of NYC (ACC)' },
+  // One group each, listed twice because it was in both the cat and the dog
+  // workbooks (owner found Pets of the Homeless twice, 2026-11-17; the rest
+  // were found by looking for listings that share a website).
+  { pattern: /^Feeding Pets of the Homeless$/i, canonicalName: 'Pets of the Homeless' },
+  { pattern: /^NYC DOHMH low-cost s\/n index$/i, canonicalName: 'NYC Health Dept - Low-Cost Spay/Neuter (APCP)' },
+  // "Rescue NYC" reduces to an empty merge key, so it is pointed at the
+  // longer name rather than the other way round.
+  { pattern: /^Rescue NYC$/i, canonicalName: 'RescueNYC (Community Cat Program)' },
+  { pattern: /^Friends of Animals$/i, canonicalName: 'Friends of Animals - Spay/Neuter Certificates' },
+  // A heading in the breed tab ("Herding breeds ... are covered by ECHO").
+  { pattern: /^Herding breeds$/i, canonicalName: 'ECHO East Coast Herding Dog Organization' },
   // Rescuzilla and Bully Project NYC merged into The Good Life Dog Rescue
   // (its own site, read 2026-11-04). A reviewer found the old Bully Project
   // entry still pointing at an Adoptapet page with no way to reach anyone.
@@ -292,6 +326,13 @@ export const NAME_ALIASES: Array<{ pattern: RegExp; canonicalName: string }> = [
  */
 export const DROP_NAMES: RegExp[] = [
   /^Food$/i, // from "Food Help NYC" split mid-phrase
+  // Workbook headings, not organizations (2026-11-18). The groups they name
+  // have their own listings: Live Like Roo, The Pet Fund, 24Petwatch, HomeAgain.
+  /^Condition-specific \(cats\)$/i,
+  /^Microchip registration$/i,
+  // A routing note ("Invertebrates - routing: LHCOS / HCA / Sean Casey ...")
+  // carrying Sean Casey's number under other groups' names.
+  /^Invertebrates - routing\b/i,
 ];
 
 /**

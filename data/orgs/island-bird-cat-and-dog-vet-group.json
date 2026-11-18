@@ -7,7 +7,9 @@
     "clinic"
   ],
   "animals": [
-    "cat"
+    "bird-companion",
+    "cat",
+    "dog"
   ],
   "needs": [
     "low-cost-vet",

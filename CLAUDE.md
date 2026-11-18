@@ -244,6 +244,22 @@ rule. Now:
   every borough) **and Int. 1098** (vets posting prices), and checks the
   one-topic rule with the assistant harness.
 
+### Changed 2026-11-18: listings checked against their own sites
+
+The consistency check of 2026-11-17 proved every door shows the *same*
+places, not that each listing is *right*. The owner then found Pets of the
+Homeless listed twice (cats, dogs) and Strong Paws marked dogs only with a
+stale note. Cause: a group in both the cat and dog workbooks, or a service
+for both, came out as one or the other. Five duplicates merged, three
+headings dropped, 21 listings' animals corrected from their own sites
+(`set.animals` overrides, each with the quote), Strong Paws' note updated.
+Everything checked, with evidence and what could not be read, is in
+`docs/listing-check-2026-11-18.md`. `tests/no-duplicates.test.ts` fails the
+build on two listings sharing a website (unless listed in `SHARED_SITE_OK`
+as branches or programmes) and on names that look like headings.
+"Rescue NYC" reduces to an empty merge key, so its alias points the other
+way, at the longer name.
+
 ### Changed 2026-11-17 (evening): every door gives Find help's answer
 
 Owner, the fifth time of asking: the same places and the same count, however

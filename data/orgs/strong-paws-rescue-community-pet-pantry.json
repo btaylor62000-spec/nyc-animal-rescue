@@ -7,6 +7,7 @@
     "support-program"
   ],
   "animals": [
+    "cat",
     "dog"
   ],
   "needs": [
@@ -33,13 +34,13 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "periodic food/supply distributions in the Bronx and Westchester. request@strongpawsrescue.org, strongpawsrescue.org/pet-pantry.",
+  "notes": "Free dog and cat food, collars, harnesses, leashes and basic supplies at pantry events in the Bronx and Westchester. It no longer makes monthly deliveries: it holds pantry events two to four times a year. Fill in the form on its pantry page to be told about the next one, or email request@strongpawsrescue.org.",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-18",
   "section": "Owner support & surrender prev. — PET FOOD PANTRIES (specific programs)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -47,7 +48,17 @@
   "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "periodic food/supply distributions in the Bronx and Westchester. request@strongpawsrescue.org, strongpawsrescue.org/pet-pantry.",
+      "to": "Free dog and cat food, collars, harnesses, leashes and basic supplies at pantry events in the Bronx and Westchester. It no longer makes monthly deliveries: it holds pantry events two to four times a year. Fill in the form on its pantry page to be told about the next one, or email request@strongpawsrescue.org.",
+      "evidence_url": "https://www.strongpawsrescue.org/pet-pantry",
+      "source": "manual",
+      "note": "Its pantry page, read 2026-11-18: \"We are no longer available for monthly deliveries at this time\"; \"We will schedule pantry events 2-4x/ year to distribute food and supplies to our local Bronx & Westchester community\"; \"dog & cat food\". The owner found the old note out of date."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

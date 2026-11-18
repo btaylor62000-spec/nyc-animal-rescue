@@ -1,7 +1,9 @@
 {
   "id": "echo-east-coast-herding-dog-organization",
   "name": "ECHO East Coast Herding Dog Organization",
-  "aka": [],
+  "aka": [
+    "Herding breeds"
+  ],
   "parent_org": null,
   "org_types": [
     "rescue-foster"
@@ -32,7 +34,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "herding breeds (border collies, Aussies, cattle dogs and mixes), especially dogs at risk of euthanasia; a New Hope partner with NYC's shelter. ECHORescue@yahoo.com. https://echorescue.com/contact/ (read on its own site, 2026-11-05).",
+  "notes": "cattle dog, collie, sheepdog) are covered by ECHO East Coast Herding Dog Org: echorescue.com.\n\nherding breeds (border collies, Aussies, cattle dogs and mixes), especially dogs at risk of euthanasia; a New Hope partner with NYC's shelter. ECHORescue@yahoo.com. https://echorescue.com/contact/ (read on its own site, 2026-11-05).",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",

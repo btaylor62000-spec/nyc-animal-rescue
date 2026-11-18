@@ -1,11 +1,11 @@
 # Data quality report
 
-Generated 2026-11-17 from the source workbooks and the wildlife guide.
+Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **513** organizations after de-duplication
-- **89** duplicate clusters merged
+- **505** organizations after de-duplication
+- **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
 - **5** entries with no way at all to make contact
@@ -17,51 +17,51 @@ Generated 2026-11-17 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| dog | 333 |
-| cat | 327 |
-| rabbit | 44 |
-| bird-companion | 41 |
+| cat | 330 |
+| dog | 328 |
+| rabbit | 46 |
+| bird-companion | 44 |
+| reptile | 41 |
 | wildlife | 41 |
 | farm | 40 |
-| reptile | 39 |
-| small-mammal | 38 |
+| small-mammal | 40 |
 | bird-wild | 29 |
 | amphibian | 21 |
 | fish | 21 |
 | equine | 19 |
 | pigeon | 18 |
-| invertebrate | 18 |
 | marine | 17 |
+| invertebrate | 17 |
 
 ### By need
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 253 |
-| surrender | 135 |
+| adoption | 251 |
+| surrender | 133 |
 | foster | 112 |
 | tnr | 96 |
-| breed-specific | 83 |
-| spay-neuter | 73 |
-| owner-support | 72 |
-| referral | 59 |
-| low-cost-vet | 57 |
+| breed-specific | 82 |
+| spay-neuter | 71 |
+| owner-support | 70 |
+| referral | 58 |
+| low-cost-vet | 54 |
 | emergency-vet | 49 |
 | advocacy | 36 |
-| food-assistance | 35 |
 | colony-care | 35 |
+| food-assistance | 34 |
 | medical-special-needs | 26 |
 | legal | 25 |
-| financial-aid | 23 |
 | education | 23 |
+| financial-aid | 22 |
 | senior | 21 |
 | sanctuary | 20 |
 | lost-found | 18 |
 | boarding | 17 |
 | behavior-training | 15 |
 | wildlife-rehab | 15 |
-| microchip | 13 |
 | transport | 13 |
+| microchip | 12 |
 | domestic-violence | 11 |
 | report-cruelty | 11 |
 | pet-loss | 9 |
@@ -76,25 +76,25 @@ Generated 2026-11-17 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 279 |
-| manhattan | 236 |
-| queens | 233 |
-| staten-island | 206 |
-| bronx | 204 |
+| brooklyn | 273 |
+| manhattan | 230 |
+| queens | 228 |
+| staten-island | 201 |
+| bronx | 199 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 237 |
-| High | 216 |
-| Low | 60 |
+| Medium | 231 |
+| High | 215 |
+| Low | 59 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 495 |
+| active | 487 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -145,7 +145,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (72)
+### Never verified (71)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -172,7 +172,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 
 ## De-duplication
 
-### Merged (89)
+### Merged (92)
 
 - `empty-cages-collective` ← 2 records
 - `good-home-pet-adoptions` ← 2 records
@@ -185,6 +185,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `nyc-feral-cat-initiative-bideawee` ← 2 records
 - `neighborhood-cats` ← 2 records
 - `puppy-kitty-nyc` ← 3 records
+- `rescuenyc` ← 2 records
 - `the-toby-project` ← 3 records
 - `animal-rescue-of-queens-inc` ← 2 records
 - `nyc-second-chance-rescue` ← 2 records
@@ -198,7 +199,9 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `aspca-spay-neuter-nyc` ← 2 records
 - `faithful-friends-animal-hospital` ← 2 records
 - `flatbush-vet` ← 2 records
+- `friends-of-animals-spay-neuter-certificates` ← 3 records
 - `humane-society-of-new-york` ← 7 records
+- `nyc-health-dept-low-cost-spay-neuter` ← 2 records
 - `park-slope-veterinary-center` ← 2 records
 - `animal-care-centers-of-nyc` ← 7 records
 - `mayors-alliance-for-nycs-animals` ← 2 records
@@ -215,6 +218,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `volunteers-of-america-greater-new-york` ← 2 records
 - `shepherds-hope-rescue` ← 2 records
 - `lucies-mastiff-mission` ← 2 records
+- `echo-east-coast-herding-dog-organization` ← 2 records
 - `big-hands-little-paws` ← 2 records
 - `nyc-shiba-rescue` ← 2 records
 - `safe-hounds-beagle-rescue` ← 2 records
@@ -237,13 +241,13 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `completecare-veterinary-center` ← 2 records
 - `greater-state-veterinary-specialists` ← 2 records
 - `urgent-vets-bronx` ← 2 records
-- `friends-of-animals` ← 2 records
 - `bbawc-rescue-clinic` ← 2 records
 - `acc-community-pets-program` ← 3 records
 - `acc-pet-food-pantry` ← 2 records
 - `new-york-common-pantry` ← 3 records
 - `food-bank-for-new-york-city` ← 2 records
 - `kisos-pet-food-pantry` ← 2 records
+- `feeding-pets-of-the-homeless` ← 3 records
 - `paws-ny` ← 7 records
 - `cancercare-pet-assistance-and-wellness-program` ← 2 records
 - `animal-haven-community-engagement` ← 3 records
@@ -258,7 +262,6 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `frankies-friends` ← 3 records
 - `waggle` ← 3 records
 - `carecredit` ← 3 records
-- `pets-of-the-homeless` ← 2 records
 - `24petwatch` ← 2 records
 - `aspca-community-veterinary-clinic` ← 2 records
 - `the-center-for-avian-and-exotic-medicine` ← 2 records

@@ -36,3 +36,20 @@
 /guides/when-a-pet-dies/*                                   /guides/                                     301
 /guides/exotic-pet-legality                                 /guides/                                     301
 /guides/exotic-pet-legality/*                               /guides/                                     301
+# One group listed twice, or a workbook heading listed as a group (2026-11-18).
+/org/pets-of-the-homeless /org/feeding-pets-of-the-homeless 301
+/org/pets-of-the-homeless/ /org/feeding-pets-of-the-homeless/ 301
+/org/nyc-dohmh-low-cost-s-n-index /org/nyc-health-dept-low-cost-spay-neuter 301
+/org/nyc-dohmh-low-cost-s-n-index/ /org/nyc-health-dept-low-cost-spay-neuter/ 301
+/org/rescue-nyc /org/rescuenyc 301
+/org/rescue-nyc/ /org/rescuenyc/ 301
+/org/friends-of-animals /org/friends-of-animals-spay-neuter-certificates 301
+/org/friends-of-animals/ /org/friends-of-animals-spay-neuter-certificates/ 301
+/org/herding-breeds /org/echo-east-coast-herding-dog-organization 301
+/org/herding-breeds/ /org/echo-east-coast-herding-dog-organization/ 301
+/org/condition-specific /org/live-like-roo-foundation 301
+/org/condition-specific/ /org/live-like-roo-foundation/ 301
+/org/microchip-registration /org/24petwatch 301
+/org/microchip-registration/ /org/24petwatch/ 301
+/org/invertebrates-routing-lhcos-hca-sean-casey-small-n-furry /org/sean-casey-animal-rescue 301
+/org/invertebrates-routing-lhcos-hca-sean-casey-small-n-furry/ /org/sean-casey-animal-rescue/ 301

@@ -8,6 +8,7 @@
     "rescue-foster"
   ],
   "animals": [
+    "cat",
     "dog"
   ],
   "needs": [

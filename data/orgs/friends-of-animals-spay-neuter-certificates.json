@@ -1,7 +1,9 @@
 {
   "id": "friends-of-animals-spay-neuter-certificates",
   "name": "Friends of Animals - Spay/Neuter Certificates",
-  "aka": [],
+  "aka": [
+    "Friends of Animals"
+  ],
   "parent_org": null,
   "org_types": [
     "clinic",
@@ -9,7 +11,8 @@
     "support-program"
   ],
   "animals": [
-    "cat"
+    "cat",
+    "dog"
   ],
   "needs": [
     "spay-neuter",
@@ -50,7 +53,7 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Sells low-cost spay/neuter CERTIFICATES redeemable at participating vets - useful when ASPCA/Toby/HSNY appointments are booked. IMPORTANT for feral cats: only use a clinic experienced with ferals (their Feral-Friendly Veterinarians page). Intake: Buy discounted spay/neuter certificates online",
+  "notes": "Sells low-cost spay/neuter CERTIFICATES redeemable at participating vets - useful when ASPCA/Toby/HSNY appointments are booked. IMPORTANT for feral cats: only use a clinic experienced with ferals (their Feral-Friendly Veterinarians page). Intake: Buy discounted spay/neuter certificates online\n\ncertificates, redeem at feral-friendly vets - 1-800-321-PETS.\n\nlow-cost spay/neuter CERTIFICATES usable at participating NYC vets (you pay FoA, then use the certificate at a clinic; clinic may add charges for extras). (800) 321-7387; https://friendsofanimals.org/our-programs/spay-neuter.",
   "type_raw": "spay-neuter certificate program (support, nationwide/NYC)",
   "confidence": "High",
   "status": "active",
@@ -61,7 +64,8 @@
   "last_verified": "2026-11-10",
   "section": "SPAY/NEUTER & RESCUE CLINICS + MUNICIPAL SUPPORT",
   "source_files": [
-    "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
+    "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
+    "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
   "last_checked": "2026-11-10",
   "check_status": "ok",
