@@ -28,7 +28,7 @@ This page lists all-'bully' rescues first (they take the whole group), then bree
 - Get A Bull - pit bulls in the New York area; its Facebook page places it in Easton, CT. 516-714-4403, getabullrescue@gmail.com. http://www.getabull.org (read by a reviewer, 2026-11-05). Approved ACC rescue partner.
 - Recycle-A-Bull Bully Breed Rescue - pit bulls + pit mixes + OTHER bully breeds; foster-based (Central NY, PO Box 174 Clay NY 13041) - adopts into NY. https://recycleabull.com.
 - Guardian Angel Rescue - overlooked breeds including larger bully types; Brewster NY, serves NY metro. gina@guardianangelrescue.org, guardianangelrescue.org.
-- Bully Baby Rescue - bully breeds plus free/low-cost spay-neuter; Port Chester NY, serves NY metro. (914) 565-1512, info@bullybabyrescue.org, bullybabyrescue.org.
+- Bully Baby Rescue - bully breed dogs. Based in St Croix, US Virgin Islands (not in New York): brings adoptable dogs to New York with a New York rescue partner. (914) 565-1512, info@bullybabyrescue.org, bullybabyrescue.org.
 
 ## Pit-type (Am. Pit Bull Terrier / Am. Staffordshire / Staffie)
 

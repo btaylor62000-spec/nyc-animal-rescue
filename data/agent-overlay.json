@@ -2056,7 +2056,20 @@
       "last_checked": "2026-11-10",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-10"
+      "last_verified": "2026-11-18",
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"Nonprofit focused on BULLY BREEDS (pit bull terriers + breeds mislabeled as aggressive) - restoring their reputation, plus FREE/LOW-COST spay-neuter clinics and training assistance. Foster-based, pulls from shelters. Port Chester (Westchester), serves the NY metro incl. NYC. Both a bully adoption referral and a low-cost spay/neuter resource. Confirm current clinic schedule. Intake: Adopt/foster via site Intake: also runs free/low-cost spay/neuter clinics\\n\\nbully breeds plus free/low-cost spay-neuter; Port Chester NY, serves NY metro. (914) 565-1512, info@bullybabyrescue.org, bullybabyrescue.org.\\n\\ninfo@bullybabyrescue.org, (914) 565-1512.\"",
+          "to": "\"Based in St Croix, US Virgin Islands, not in New York. Its team there rescues dogs and transports adoptable ones to the US with its New York partner, Pet Rescue (ny-petrescue.org). It also runs spay/neuter clinics on Native American reservations with Underdog Rescue. It does not say it runs clinics in New York City.\"",
+          "evidence_url": "https://www.bullybabyrescue.org/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Its own pages: \"BBR has a team in St Croix US Virgin Island working diligently to rescue and transport adoptable dogs to the US with NY based partner Pet Rescue\"; spay/neuter clinics on reservations with Underdog Rescue; contact address 6953 La Vallee, Kingshill, Saint Croix. The old note said Port Chester and NYC clinics."
+        }
+      ],
+      "notes": "Based in St Croix, US Virgin Islands, not in New York. Its team there rescues dogs and transports adoptable ones to the US with its New York partner, Pet Rescue (ny-petrescue.org). It also runs spay/neuter clinics on Native American reservations with Underdog Rescue. It does not say it runs clinics in New York City.",
+      "confidence": "Medium"
     },
     "bunnies-and-beyond": {
       "last_checked": "2026-11-10",
@@ -7069,7 +7082,40 @@
     "the-animal-project-nyc": {
       "last_checked": "2026-11-10",
       "check_status": "ok",
-      "consecutive_failures": 0
+      "consecutive_failures": 0,
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "phones",
+          "from": "[]",
+          "to": "[{\"value\":\"2125675206\",\"display\":\"(212) 567-5206\"}]",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Its Facebook page: (212) 567-5206 and animalprojectnyc@gmail.com. Added where the listing had none; the owner agreed."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "emails",
+          "from": "[]",
+          "to": "[{\"value\":\"animalprojectnyc@gmail.com\"}]",
+          "evidence_url": "https://www.facebook.com/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Its Facebook page: (212) 567-5206 and animalprojectnyc@gmail.com. Added where the listing had none; the owner agreed."
+        }
+      ],
+      "phones": [
+        {
+          "value": "2125675206",
+          "display": "(212) 567-5206"
+        }
+      ],
+      "emails": [
+        {
+          "value": "animalprojectnyc@gmail.com"
+        }
+      ],
+      "confidence": "High",
+      "last_verified": "2026-11-18"
     },
     "the-brooklyn-rescues": {
       "last_checked": "2026-11-10",
@@ -8602,6 +8648,101 @@
         }
       ],
       "notes": "10 Lives Rescue is a foster-based 501c3 not for profit cat rescue in Upper Manhattan, seeking to make the world a better, kinder place - one feline at a time. Founded in June 2024, we are a passionate collective of cat rescuers, fosters, and volunteers who are dedicated to helping the cats and communities of New York. Our mission is to take our collective knowledge and expertise to implement long term sustainable solutions that provide a better future for cats in need and their human care takers. Together, we’re creating a kinder world, one cat at a time.\n\nAdded through this site on 2026-11-12 and confirmed by the site's owner."
+    },
+    "adoptable-kitties-queens-nyc": {
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+          "to": "\"Rescue kittens and cats for adoption in Queens. Instagram only: message it there.\"",
+          "evidence_url": "https://www.instagram.com/adoptable_kitties.queens_nyc/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Adoptable rescue kitties\"."
+        }
+      ],
+      "notes": "Rescue kittens and cats for adoption in Queens. Instagram only: message it there.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
+    },
+    "house-of-boop": {
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+          "to": "\"A cat and kitten foster home in Queens, fostering with Whiskers-A-GoGo (formerly WildGreenpoint). Its form is linked from its Instagram.\"",
+          "evidence_url": "https://www.instagram.com/houseofboopnyc/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Cat and kitten foster home w/ @whiskers_agogo\", \"Queens, NYC\", \"Formerly WildGreenpoint\", and its form link. The personal account it names is not published."
+        },
+        {
+          "date": "2026-11-18",
+          "field": "intake_urls",
+          "from": "[]",
+          "to": "[{\"url\":\"https://forms.monday.com/forms/c830a6d39f0904bdae7ab35a28e51db6?r=use1\",\"label\":\"Form\"}]",
+          "evidence_url": "https://www.instagram.com/houseofboopnyc/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Cat and kitten foster home w/ @whiskers_agogo\", \"Queens, NYC\", \"Formerly WildGreenpoint\", and its form link. The personal account it names is not published."
+        }
+      ],
+      "notes": "A cat and kitten foster home in Queens, fostering with Whiskers-A-GoGo (formerly WildGreenpoint). Its form is linked from its Instagram.",
+      "intake_urls": [
+        {
+          "url": "https://forms.monday.com/forms/c830a6d39f0904bdae7ab35a28e51db6?r=use1",
+          "label": "Form"
+        }
+      ],
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
+    },
+    "intimutt-inc": {
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+          "to": "\"Rescues neglected animals in New York City: emergency rescue, rescue and rehabilitation, TNR, fostering and adoption. Instagram only: message it there.\"",
+          "evidence_url": "https://www.instagram.com/intimutt/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Rescuing the neglected and forgotten\", \"NYC\", \"ER, Rescue/Rehab, TNR, Foster, Adopt\"."
+        }
+      ],
+      "notes": "Rescues neglected animals in New York City: emergency rescue, rescue and rehabilitation, TNR, fostering and adoption. Instagram only: message it there.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
+    },
+    "sashas-dream": {
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+          "to": "\"Twin sisters caring for the street cats of New York City (community cat care). Its Instagram links ways to help it.\"",
+          "evidence_url": "https://www.instagram.com/sashasdreamccc/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Twin sisters caring for the street cats of NYC!\"."
+        }
+      ],
+      "notes": "Twin sisters caring for the street cats of New York City (community cat care). Its Instagram links ways to help it.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
+    },
+    "ridgewood-rescue": {
+      "change_log": [
+        {
+          "date": "2026-11-18",
+          "field": "notes",
+          "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+          "to": "\"A 501(c)(3) helping the stray cats and kittens of Ridgewood, Queens through TNR, socialization, adoptions and community education. Instagram only: message it there.\"",
+          "evidence_url": "https://www.instagram.com/ridgewoodrescue/",
+          "source": "manual",
+          "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"501c3 org improving the lives of the stray cats and kittens of Ridgewood, Queens through TNR, socialization, adoptions, and community education\"."
+        }
+      ],
+      "notes": "A 501(c)(3) helping the stray cats and kittens of Ridgewood, Queens through TNR, socialization, adoptions and community education. Instagram only: message it there.",
+      "confidence": "Medium",
+      "last_verified": "2026-11-18"
     }
   }
 }

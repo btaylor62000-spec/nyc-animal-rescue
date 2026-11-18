@@ -46,7 +46,6 @@ Questions: call 311 (ask for the DOHMH Dog Licensing Unit). Leash law: max 6 ft 
 - CITYWIDE - Banfield Pet Hospital: not free but lower-cost; e.g. Brooklyn 238 Atlantic Ave 11201; pricing at banfield.com. Free first vet visit for newly adopted pets.
 - CITYWIDE - Petco Vetco / Vetco vaccine clinics: no exam fee; packages available. vetcoclinics.com.
 - CITYWIDE - VIP Petcare clinics: no exam fee, single-vaccine or package pricing; find a location at vippetcare.com.
-- WESTCHESTER-ADJACENT (nr Bronx) - Bully Baby Rescue runs free/low-cost spay/neuter clinics (Port Chester): info@bullybabyrescue.org, (914) 565-1512.
 
 ## ACC community pets program - free help to keep pets with their families
 

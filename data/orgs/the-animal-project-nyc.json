@@ -31,8 +31,17 @@
     "10040"
   ],
   "region_note": "MANHATTAN (Manhattan-based cat groups)",
-  "phones": [],
-  "emails": [],
+  "phones": [
+    {
+      "value": "2125675206",
+      "display": "(212) 567-5206"
+    }
+  ],
+  "emails": [
+    {
+      "value": "animalprojectnyc@gmail.com"
+    }
+  ],
   "website": "https://www.animalprojectnyc.org",
   "intake_urls": [
     {
@@ -64,7 +73,7 @@
     "https://www.animalprojectnyc.org/",
     "https://www.petfinder.com/member/us/ny/new-york/the-animal-project-ny714/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -72,7 +81,26 @@
   "last_checked": "2026-11-10",
   "check_status": "ok",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "phones",
+      "from": "[]",
+      "to": "[{\"value\":\"2125675206\",\"display\":\"(212) 567-5206\"}]",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Its Facebook page: (212) 567-5206 and animalprojectnyc@gmail.com. Added where the listing had none; the owner agreed."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "emails",
+      "from": "[]",
+      "to": "[{\"value\":\"animalprojectnyc@gmail.com\"}]",
+      "evidence_url": "https://www.facebook.com/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Its Facebook page: (212) 567-5206 and animalprojectnyc@gmail.com. Added where the listing had none; the owner agreed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

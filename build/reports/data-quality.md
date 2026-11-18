@@ -37,29 +37,29 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 252 |
-| surrender | 133 |
-| foster | 113 |
-| tnr | 99 |
+| adoption | 254 |
+| surrender | 132 |
+| foster | 115 |
+| tnr | 101 |
 | breed-specific | 82 |
-| spay-neuter | 71 |
+| spay-neuter | 70 |
 | owner-support | 70 |
-| referral | 58 |
-| low-cost-vet | 54 |
+| referral | 57 |
+| low-cost-vet | 53 |
 | emergency-vet | 49 |
 | advocacy | 36 |
 | colony-care | 36 |
 | food-assistance | 34 |
 | medical-special-needs | 26 |
 | legal | 25 |
-| education | 23 |
+| education | 24 |
 | financial-aid | 22 |
 | senior | 21 |
 | sanctuary | 20 |
 | lost-found | 18 |
 | boarding | 17 |
-| behavior-training | 15 |
 | wildlife-rehab | 15 |
+| behavior-training | 14 |
 | transport | 13 |
 | microchip | 12 |
 | domestic-violence | 11 |
@@ -76,19 +76,19 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 273 |
-| queens | 233 |
-| manhattan | 230 |
-| staten-island | 201 |
-| bronx | 199 |
+| brooklyn | 272 |
+| queens | 232 |
+| manhattan | 229 |
+| staten-island | 200 |
+| bronx | 198 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 238 |
+| Medium | 243 |
 | High | 215 |
-| Low | 57 |
+| Low | 52 |
 
 ### By operating status
 
@@ -146,7 +146,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (76)
+### Never verified (71)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -215,7 +215,7 @@ Mostly entries extracted from guide prose, which carried no verification date of
 - `new-york-bully-crew` ← 2 records
 - `waggytail-rescue` ← 2 records
 - `guardian-angel-rescue` ← 2 records
-- `bully-baby-rescue` ← 3 records
+- `bully-baby-rescue` ← 2 records
 - `volunteers-of-america-greater-new-york` ← 2 records
 - `shepherds-hope-rescue` ← 2 records
 - `lucies-mastiff-mission` ← 2 records
@@ -370,10 +370,10 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Lost or found a cat | 4407 |
 | Help keeping your cat | 8834 |
 | Help keeping your dog | 8070 |
-| Low-cost dog vet care, spay/neuter and licensing | 7480 |
+| Low-cost dog vet care, spay/neuter and licensing | 7329 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
-| Breed-specific dog rescue | 20613 |
+| Breed-specific dog rescue | 20674 |
 | Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
 | Help paying for veterinary care | 9895 |

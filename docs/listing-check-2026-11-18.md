@@ -113,3 +113,20 @@ in Queens, each linked there to an Instagram page only. They are added at Low
 confidence, saying we could not read them: Adoptable Kitties Queens NYC, House
 of Boop, Intimutt Inc., Sasha's Dream, Ridgewood Rescue. Three have no kind of
 help tagged, because nothing we could read says what they do.
+
+The owner then read all five on Instagram (2026-11-18), and each now says
+what it does: Adoptable Kitties Queens NYC (adoption), House of Boop (a foster
+home with Whiskers-A-GoGo; its form), Intimutt Inc. (rescue, TNR, fostering,
+adoption), Sasha's Dream (community cat care), Ridgewood Rescue (TNR,
+adoption, education). Medium, read by a person.
+
+## Bully Baby Rescue and The Animal Project
+
+Bully Baby Rescue is based in St Croix, US Virgin Islands. It brings dogs to
+New York through a partner, and its spay/neuter clinics are on Native American
+reservations. It is now marked outside the city, its spay/neuter and low-cost
+vet tags are gone, and the breed guide's line says so. The low-cost dog care
+guide no longer sends people to its clinics.
+
+The Animal Project had no phone or email; its Facebook page's (212) 567-5206
+and animalprojectnyc@gmail.com are added, with the owner's agreement.

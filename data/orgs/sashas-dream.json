@@ -32,15 +32,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.",
+  "notes": "Twin sisters caring for the street cats of New York City (community cat care). Its Instagram links ways to help it.",
   "type_raw": "Community cat group, Instagram only",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-18",
   "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -48,7 +48,17 @@
   "last_checked": null,
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+      "to": "\"Twin sisters caring for the street cats of New York City (community cat care). Its Instagram links ways to help it.\"",
+      "evidence_url": "https://www.instagram.com/sashasdreamccc/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Twin sisters caring for the street cats of NYC!\"."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

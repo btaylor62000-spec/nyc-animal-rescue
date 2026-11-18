@@ -7,7 +7,9 @@
   "animals": [
     "cat"
   ],
-  "needs": [],
+  "needs": [
+    "foster"
+  ],
   "boroughs": [
     "queens"
   ],
@@ -19,7 +21,12 @@
   "phones": [],
   "emails": [],
   "website": null,
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://forms.monday.com/forms/c830a6d39f0904bdae7ab35a28e51db6?r=use1",
+      "label": "Form"
+    }
+  ],
   "social": [
     {
       "platform": "instagram",
@@ -30,15 +37,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.",
+  "notes": "A cat and kitten foster home in Queens, fostering with Whiskers-A-GoGo (formerly WildGreenpoint). Its form is linked from its Instagram.",
   "type_raw": "Cat group, Instagram only",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-18",
   "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -46,7 +53,26 @@
   "last_checked": null,
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+      "to": "\"A cat and kitten foster home in Queens, fostering with Whiskers-A-GoGo (formerly WildGreenpoint). Its form is linked from its Instagram.\"",
+      "evidence_url": "https://www.instagram.com/houseofboopnyc/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Cat and kitten foster home w/ @whiskers_agogo\", \"Queens, NYC\", \"Formerly WildGreenpoint\", and its form link. The personal account it names is not published."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "intake_urls",
+      "from": "[]",
+      "to": "[{\"url\":\"https://forms.monday.com/forms/c830a6d39f0904bdae7ab35a28e51db6?r=use1\",\"label\":\"Form\"}]",
+      "evidence_url": "https://www.instagram.com/houseofboopnyc/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Cat and kitten foster home w/ @whiskers_agogo\", \"Queens, NYC\", \"Formerly WildGreenpoint\", and its form link. The personal account it names is not published."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

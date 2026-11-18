@@ -7,7 +7,11 @@
   "animals": [
     "cat"
   ],
-  "needs": [],
+  "needs": [
+    "tnr",
+    "foster",
+    "adoption"
+  ],
   "boroughs": [
     "queens"
   ],
@@ -30,15 +34,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.",
+  "notes": "Rescues neglected animals in New York City: emergency rescue, rescue and rehabilitation, TNR, fostering and adoption. Instagram only: message it there.",
   "type_raw": "Animal group, Instagram only",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": null,
+  "last_verified": "2026-11-18",
   "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -46,7 +50,17 @@
   "last_checked": null,
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.\"",
+      "to": "\"Rescues neglected animals in New York City: emergency rescue, rescue and rehabilitation, TNR, fostering and adoption. Instagram only: message it there.\"",
+      "evidence_url": "https://www.instagram.com/intimutt/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Rescuing the neglected and forgotten\", \"NYC\", \"ER, Rescue/Rehab, TNR, Foster, Adopt\"."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

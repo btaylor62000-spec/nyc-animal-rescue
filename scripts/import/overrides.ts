@@ -70,6 +70,15 @@ export const OVERRIDES: Override[] = [
   { id: 'free-housing-legal-help', reason: 'Housing Court Answers (2026-11-18) helps tenants; it is not about one kind of pet.', set: { animals: [] } },
   { id: 'nyc-animal-welfare', reason: "The Office of Animal Welfare's evictions page (2026-11-18) is about every pet.", set: { animals: [] } },
   // Read by the owner on 2026-11-18, where the sites refuse robots.
+  { id: 'house-of-boop', reason: 'Its Instagram, read by the owner 2026-11-18: "Cat and kitten foster home".', addNeeds: ['foster'] },
+  { id: 'intimutt-inc', reason: 'Its Instagram, read by the owner 2026-11-18: "ER, Rescue/Rehab, TNR, Foster, Adopt".', addNeeds: ['tnr', 'foster', 'adoption'] },
+  { id: 'ridgewood-rescue', reason: 'Its Instagram, read by the owner 2026-11-18: "TNR, socialization, adoptions, and community education".', addNeeds: ['tnr', 'adoption', 'education'] },
+  {
+    id: 'bully-baby-rescue',
+    reason: 'Its own pages, read by the owner 2026-11-18: based in St Croix, US Virgin Islands; brings dogs to New York through its partner Pet Rescue; its spay/neuter clinics are on Native American reservations, not in the city.',
+    removeNeeds: ['spay-neuter', 'low-cost-vet', 'behavior-training', 'referral', 'surrender'],
+    set: { boroughs: [], citywide: false, outside_nyc: true },
+  },
   { id: 'harman-cat-rescue', reason: 'Its Instagram, read by the owner 2026-11-18: "TNR, Rescuing, fostering, socializing and adoptions".', addNeeds: ['tnr', 'foster'] },
   { id: 'boomers-feline-friends', reason: 'Its Facebook page, read by the owner 2026-11-18: "stray/feral cats through TNR and rescue of friendly cats".', addNeeds: ['tnr'] },
   { id: 'the-5-kittens-rescue', reason: 'Its own profile, read by the owner 2026-11-18: "TNR focused cat rescue".', addNeeds: ['tnr'] },
