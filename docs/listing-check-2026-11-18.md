@@ -130,3 +130,11 @@ guide no longer sends people to its clinics.
 
 The Animal Project had no phone or email; its Facebook page's (212) 567-5206
 and animalprojectnyc@gmail.com are added, with the owner's agreement.
+
+## Pet Rescue added
+
+Pet Rescue (Harrison, NY), Bully Baby Rescue's New York partner, read by the
+owner on https://ny-petrescue.org on 2026-11-18: a no-kill cat and dog rescue
+since 1982, foster-based, with a kennel at 7 Harrison Ave, Harrison, NY 10528;
+(914) 835-3332 for dogs, (914) 835-4133 for cats, nypetrescue@gmail.com.
+Listed outside the city, High.

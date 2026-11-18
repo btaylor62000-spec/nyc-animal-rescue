@@ -343,6 +343,12 @@
    "lon": -73.88647,
    "matched": "2759 WEBSTER AVE, BRONX, NY, 10458"
   },
+  "pet-rescue": {
+   "query": "7 Harrison Ave, Harrison, NY 10528",
+   "lat": 40.96089,
+   "lon": -73.71704,
+   "matched": "7 HARRISON AVE, HARRISON, NY, 10528"
+  },
   "petchester-veterinary": {
    "query": "309 White Plains Road, Eastchester, NY 10709",
    "lat": 40.95024,

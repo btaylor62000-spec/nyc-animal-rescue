@@ -7061,6 +7061,38 @@
       "matched": "MUNICIPAL"
     }
   ],
+  "pet-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    },
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dog"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "foster",
+      "field": "type",
+      "matched": "foster"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "special needs"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "rescue"
+    }
+  ],
   "petamberalert": [
     {
       "tag": "cat",

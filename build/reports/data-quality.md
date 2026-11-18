@@ -4,7 +4,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **510** organizations after de-duplication
+- **511** organizations after de-duplication
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
@@ -17,8 +17,8 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 338 |
-| dog | 328 |
+| cat | 339 |
+| dog | 329 |
 | rabbit | 46 |
 | bird-companion | 44 |
 | reptile | 41 |
@@ -37,9 +37,9 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 254 |
+| adoption | 255 |
 | surrender | 132 |
-| foster | 115 |
+| foster | 116 |
 | tnr | 101 |
 | breed-specific | 82 |
 | spay-neuter | 70 |
@@ -50,7 +50,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 | advocacy | 36 |
 | colony-care | 36 |
 | food-assistance | 34 |
-| medical-special-needs | 26 |
+| medical-special-needs | 27 |
 | legal | 25 |
 | education | 24 |
 | financial-aid | 22 |
@@ -87,14 +87,14 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 | Confidence | Organizations |
 | --- | ---: |
 | Medium | 243 |
-| High | 215 |
+| High | 216 |
 | Low | 52 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 492 |
+| active | 493 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |

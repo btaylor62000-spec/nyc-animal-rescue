@@ -1,0 +1,76 @@
+{
+  "id": "pet-rescue",
+  "name": "Pet Rescue (Harrison, NY)",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "rescue-foster"
+  ],
+  "animals": [
+    "cat",
+    "dog"
+  ],
+  "needs": [
+    "adoption",
+    "foster",
+    "medical-special-needs"
+  ],
+  "boroughs": [],
+  "citywide": false,
+  "outside_nyc": true,
+  "neighborhoods": "Harrison, Westchester - outside NYC",
+  "zips": [
+    "10528"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "9148353332",
+      "display": "(914) 835-3332",
+      "label": "Dogs"
+    },
+    {
+      "value": "9148354133",
+      "display": "(914) 835-4133",
+      "label": "Cats"
+    }
+  ],
+  "emails": [
+    {
+      "value": "nypetrescue@gmail.com"
+    }
+  ],
+  "website": "https://ny-petrescue.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": {
+    "lat": 40.96089,
+    "lon": -73.71704,
+    "precision": "address"
+  },
+  "address": {
+    "street": "7 Harrison Ave",
+    "city": "Harrison",
+    "zip": "10528"
+  },
+  "hours": null,
+  "notes": "A volunteer-run no-kill group founded in 1982. It cares for dogs, cats, puppies, kittens and animals with special needs until they are adopted, many of them in volunteers' foster homes, and has a kennel and a space for adult cats in Harrison. Its animals come from owners who can no longer keep them, from kill shelters and from the streets. Mailing address: P.O. Box 393, Larchmont, NY 10538. Bully Baby Rescue brings dogs to New York through it. Outside the city, in Westchester.",
+  "type_raw": "Cat and dog rescue and adoption, foster-based, with its own kennel",
+  "confidence": "High",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://ny-petrescue.org"
+  ],
+  "last_verified": "2026-11-18",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}
