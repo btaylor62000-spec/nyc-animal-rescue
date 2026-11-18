@@ -4,7 +4,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **505** organizations after de-duplication
+- **510** organizations after de-duplication
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
@@ -17,7 +17,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 333 |
+| cat | 338 |
 | dog | 328 |
 | rabbit | 46 |
 | bird-companion | 44 |
@@ -37,10 +37,10 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Need | Organizations |
 | --- | ---: |
-| adoption | 251 |
+| adoption | 252 |
 | surrender | 133 |
-| foster | 112 |
-| tnr | 96 |
+| foster | 113 |
+| tnr | 99 |
 | breed-specific | 82 |
 | spay-neuter | 71 |
 | owner-support | 70 |
@@ -48,7 +48,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 | low-cost-vet | 54 |
 | emergency-vet | 49 |
 | advocacy | 36 |
-| colony-care | 35 |
+| colony-care | 36 |
 | food-assistance | 34 |
 | medical-special-needs | 26 |
 | legal | 25 |
@@ -77,8 +77,8 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 | Borough | Organizations |
 | --- | ---: |
 | brooklyn | 273 |
+| queens | 233 |
 | manhattan | 230 |
-| queens | 228 |
 | staten-island | 201 |
 | bronx | 199 |
 
@@ -86,15 +86,15 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 231 |
+| Medium | 238 |
 | High | 215 |
-| Low | 59 |
+| Low | 57 |
 
 ### By operating status
 
 | Status | Organizations |
 | --- | ---: |
-| active | 487 |
+| active | 492 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -115,29 +115,30 @@ These have neither phone, email, website, intake form nor a social channel. They
 - **New York Meow Sanctuary** — QUEENS (Queens-based / Queens-serving cat groups)
 - **VERG South** — BROOKLYN - 24-hour ER
 
-### Reachable only through social media (21)
+### Reachable only through social media (22)
 
 The weekly automated check cannot verify these, because Instagram and Facebook cannot be reliably scraped. They stay at Low confidence and carry a "verify via their social channel" note.
 
 - **800 Kitties Rescue** — instagram 800kittiesrescue
 - **A Tail of Two Kitties** — instagram atailoftwokittiesnyc
+- **Adoptable Kitties Queens NYC** — instagram adoptable_kitties.queens_nyc
 - **Barbey Street Cats** — instagram barbeystreetcats
 - **Bed Stuy Kitty Crew** — instagram bedstuykittycrew13
 - **Bedford Corners Community Cats (BC3)** — instagram bc3cats, facebook BC3cats
-- **Boomers Feline Friends** — instagram boomers_feline_friends
-- **Brooklyn Lost Cat Finder** — instagram brooklynlostcatfinder
 - **Brooklyn Neighborhood Cats** — instagram brooklynneighborhoodcats
 - **Brooklyn Waterfront Cats** — instagram bkwaterfrontcats
 - **Eastchester Bay Stray Cat Project, Inc.** — instagram eastchesterbaystraycats, facebook EastchesterBayStrayCatProject
 - **Harman Cat Rescue** — instagram harman_catrescue
+- **House of Boop** — instagram houseofboopnyc
 - **India Street Cats** — instagram indiastreetcats
+- **Intimutt Inc.** — instagram intimutt
 - **Los Sures Cats Williamsburg** — instagram gatoslossures
 - **Midwood Kitty Cats / Cats of Midwood** — instagram midwood_kittycats
 - **Monroe Street Cats (Bed Stuy)** — instagram monroestreetcats
 - **Oak Street Cat Gang / Death Row Cats NYC** — instagram oakstreetcatgang
+- **Ridgewood Rescue** — instagram ridgewoodrescue
+- **Sasha's Dream** — instagram sashasdreamccc
 - **South Slope Cats** — instagram southslopecats
-- **The 5 Kittens Rescue** — instagram the5kittensrescue
-- **The Brooklyn Rescues (Bed Stuy)** — instagram bkrescues
 - **Thundercats TNR** — facebook thundercatsTNR
 - **West Street Whiskers** — instagram weststreetwhiskers
 
@@ -145,7 +146,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (71)
+### Never verified (76)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -290,7 +291,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (39)
+### Rows the rules could not fully tag (43)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -331,6 +332,10 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Lalitamba: Bell Animal Sanctuary** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:129)
 - **Tails of Love Animal Rescue** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:133)
 - **Because of Dream Animal Rescue** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:139)
+- **House of Boop** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:148)
+- **Intimutt Inc.** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:149)
+- **Sasha's Dream** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:150)
+- **Ridgewood Rescue** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:151)
 
 ## Privacy
 

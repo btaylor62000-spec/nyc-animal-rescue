@@ -12,7 +12,9 @@
   ],
   "needs": [
     "adoption",
-    "referral"
+    "referral",
+    "tnr",
+    "foster"
   ],
   "boroughs": [
     "brooklyn"
@@ -36,15 +38,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Hyper-local rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "notes": "A couple in Bushwick helping the feral cat community through TNR, rescue, fostering, socializing and adoptions. Instagram only: message it there.",
   "type_raw": "solo rescuer / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -52,7 +54,17 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Hyper-local rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM\"",
+      "to": "\"A couple in Bushwick helping the feral cat community through TNR, rescue, fostering, socializing and adoptions. Instagram only: message it there.\"",
+      "evidence_url": "https://www.instagram.com/harman_catrescue/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"helping the feral cat community thru TNR, Rescuing, fostering, socializing and adoptions\" in Bushwick."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

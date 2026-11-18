@@ -36,15 +36,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Hyper-local rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "notes": "Cat rescue in Brooklyn (it describes itself as \"Mr. Fluffy’s Friends\", helping cats in Brooklyn since 2014). Listed by North Brooklyn Cats under Center/East Brooklyn. Instagram only: message it there.",
   "type_raw": "solo rescuer / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "EAST BROOKLYN (Ocean Hill / Brownsville / East New York)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -52,7 +52,17 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Hyper-local rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM\"",
+      "to": "\"Cat rescue in Brooklyn (it describes itself as \\\"Mr. Fluffy’s Friends\\\", helping cats in Brooklyn since 2014). Listed by North Brooklyn Cats under Center/East Brooklyn. Instagram only: message it there.\"",
+      "evidence_url": "https://www.instagram.com/800kittiesrescue/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Mr. Fluffy’s Friends. Helping cats in Brooklyn since 2014.\""
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

@@ -1,0 +1,52 @@
+{
+  "id": "house-of-boop",
+  "name": "House of Boop",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [
+    "cat"
+  ],
+  "needs": [],
+  "boroughs": [
+    "queens"
+  ],
+  "citywide": false,
+  "outside_nyc": false,
+  "neighborhoods": "Queens",
+  "zips": [],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [],
+  "website": null,
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "instagram",
+      "handle": "houseofboopnyc",
+      "url": "https://instagram.com/houseofboopnyc"
+    }
+  ],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A Queens cat group on a local cat-rescue resource list, which links only its Instagram. We could not read the Instagram page (Instagram turns robots away). Message it on Instagram to ask what it does before relying on it.",
+  "type_raw": "Cat group, Instagram only",
+  "confidence": "Low",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://northbrooklyncats.org/resources/"
+  ],
+  "last_verified": null,
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

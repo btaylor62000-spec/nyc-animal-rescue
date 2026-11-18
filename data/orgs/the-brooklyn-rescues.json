@@ -27,8 +27,12 @@
   ],
   "region_note": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
   "phones": [],
-  "emails": [],
-  "website": null,
+  "emails": [
+    {
+      "value": "thebkrescue@gmail.com"
+    }
+  ],
+  "website": "https://linktr.ee/Bkrescue",
   "intake_urls": [],
   "social": [
     {
@@ -40,15 +44,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Hyper-local Bed-Stuy rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "notes": "Cat rescue in Bed-Stuy, Brooklyn. Listed by North Brooklyn Cats under Center/East Brooklyn.",
   "type_raw": "solo rescuer / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "CENTRAL BROOKLYN (Flatbush / Bed-Stuy / Crown Heights / Prospect Hts)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -56,7 +60,35 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "emails",
+      "from": "[]",
+      "to": "[{\"value\":\"thebkrescue@gmail.com\"}]",
+      "evidence_url": "https://linktr.ee/Bkrescue",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Cat rescuer in bed stuy brooklyn\", Thebkrescue@gmail.com, linktr.ee/Bkrescue, Instagram bkrescues."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "website",
+      "from": "null",
+      "to": "\"https://linktr.ee/Bkrescue\"",
+      "evidence_url": "https://linktr.ee/Bkrescue",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Cat rescuer in bed stuy brooklyn\", Thebkrescue@gmail.com, linktr.ee/Bkrescue, Instagram bkrescues."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Hyper-local Bed-Stuy rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM\"",
+      "to": "\"Cat rescue in Bed-Stuy, Brooklyn. Listed by North Brooklyn Cats under Center/East Brooklyn.\"",
+      "evidence_url": "https://linktr.ee/Bkrescue",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Cat rescuer in bed stuy brooklyn\", Thebkrescue@gmail.com, linktr.ee/Bkrescue, Instagram bkrescues."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

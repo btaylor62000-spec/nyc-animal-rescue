@@ -70,6 +70,9 @@ export const OVERRIDES: Override[] = [
   { id: 'free-housing-legal-help', reason: 'Housing Court Answers (2026-11-18) helps tenants; it is not about one kind of pet.', set: { animals: [] } },
   { id: 'nyc-animal-welfare', reason: "The Office of Animal Welfare's evictions page (2026-11-18) is about every pet.", set: { animals: [] } },
   // Read by the owner on 2026-11-18, where the sites refuse robots.
+  { id: 'harman-cat-rescue', reason: 'Its Instagram, read by the owner 2026-11-18: "TNR, Rescuing, fostering, socializing and adoptions".', addNeeds: ['tnr', 'foster'] },
+  { id: 'boomers-feline-friends', reason: 'Its Facebook page, read by the owner 2026-11-18: "stray/feral cats through TNR and rescue of friendly cats".', addNeeds: ['tnr'] },
+  { id: 'the-5-kittens-rescue', reason: 'Its own profile, read by the owner 2026-11-18: "TNR focused cat rescue".', addNeeds: ['tnr'] },
   { id: 'aaha-universal-lookup', reason: 'Read by the owner on its own page, 2026-11-18: the lookup is for cats and dogs.', set: { animals: ['cat', 'dog'] } },
   { id: 'animal-clinic-of-bay-ridge', reason: 'Read by the owner on its services page, 2026-11-18: "Types of Pets Seen: Dogs and Cats".', set: { animals: ['cat', 'dog'] } },
   { id: 'petco-vetco-vetco-vaccine-clinics', reason: 'Read by the owner on its clinics page, 2026-11-18: "low-cost mobile puppy, dog, kitten and cat vaccination clinic".', set: { animals: ['cat', 'dog'] } },

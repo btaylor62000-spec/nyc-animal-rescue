@@ -95,3 +95,21 @@ Kittens, The Brooklyn Rescues): all cat groups by name.
 `tests/no-duplicates.test.ts`: the build fails if two listings share a website
 without being named branches or programmes of one group, or if a listing's
 name looks like a workbook heading.
+
+## The seven with no website, read by the owner on Instagram and Facebook
+
+All seven help cats, as listed. Updated from what the owner read:
+Boomers Feline Friends (group email, Facebook, TNR, Bensonhurst / Dyker
+Heights / Bay Ridge), The Brooklyn Rescues (group email, links page), Brooklyn
+Lost Cat Finder (links page; how to post), Brooklyn Neighborhood Cats (**not
+taking in cats at the moment**), Harman Cat Rescue (TNR, fostering), The 5
+Kittens Rescue (links page; TNR), 800 Kitties Rescue (Brooklyn since 2014).
+Personal payment handles on those pages (Venmo, Zelle) are not published.
+
+## North Brooklyn Cats' resource list, compared
+
+Every group on https://northbrooklyncats.org/resources/ is listed except five
+in Queens, each linked there to an Instagram page only. They are added at Low
+confidence, saying we could not read them: Adoptable Kitties Queens NYC, House
+of Boop, Intimutt Inc., Sasha's Dream, Ridgewood Rescue. Three have no kind of
+help tagged, because nothing we could read says what they do.

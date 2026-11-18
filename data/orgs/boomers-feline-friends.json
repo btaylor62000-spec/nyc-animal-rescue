@@ -12,7 +12,8 @@
   ],
   "needs": [
     "adoption",
-    "referral"
+    "referral",
+    "tnr"
   ],
   "boroughs": [
     "brooklyn"
@@ -23,7 +24,11 @@
   "zips": [],
   "region_note": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
   "phones": [],
-  "emails": [],
+  "emails": [
+    {
+      "value": "boomersfelinefriends@gmail.com"
+    }
+  ],
   "website": null,
   "intake_urls": [],
   "social": [
@@ -31,20 +36,25 @@
       "platform": "instagram",
       "handle": "boomers_feline_friends",
       "url": "https://instagram.com/boomers_feline_friends"
+    },
+    {
+      "platform": "facebook",
+      "handle": "Boomers Feline Friends",
+      "url": "https://www.facebook.com/people/Boomers-Feline-Friends/61557925103574/"
     }
   ],
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Hyper-local South Brooklyn rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM",
+  "notes": "Nonprofit helping stray and feral cats through TNR and rescuing friendly cats, in Bensonhurst, Dyker Heights and Bay Ridge. Listed by North Brooklyn Cats under South Brooklyn.",
   "type_raw": "solo rescuer / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "SOUTH & SW BROOKLYN (Sunset Park / Bay Ridge / Midwood / Sheepshead Bay)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -52,7 +62,35 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "emails",
+      "from": "[]",
+      "to": "[{\"value\":\"boomersfelinefriends@gmail.com\"}]",
+      "evidence_url": "https://www.facebook.com/people/Boomers-Feline-Friends/61557925103574/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Our focus is to alleviate the suffering of stray/feral cats through TNR and rescue of friendly cats\"; Bensonhurst, Dyker Heights, Bay Ridge; the group email. The personal payment handles on the page are not published."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "social",
+      "from": "[{\"platform\":\"instagram\",\"handle\":\"boomers_feline_friends\",\"url\":\"https://instagram.com/boomers_feline_friends\"}]",
+      "to": "[{\"platform\":\"instagram\",\"handle\":\"boomers_feline_friends\",\"url\":\"https://instagram.com/boomers_feline_friends\"},{\"platform\":\"facebook\",\"handle\":\"Boomers Feline Friends\",\"url\":\"https://www.facebook.com/people/Boomers-Feline-Friends/61557925103574/\"}]",
+      "evidence_url": "https://www.facebook.com/people/Boomers-Feline-Friends/61557925103574/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Our focus is to alleviate the suffering of stray/feral cats through TNR and rescue of friendly cats\"; Bensonhurst, Dyker Heights, Bay Ridge; the group email. The personal payment handles on the page are not published."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Hyper-local South Brooklyn rescue from North Brooklyn Cats' directory. Instagram-primary; confirm via IG. Intake: Via Instagram DM\"",
+      "to": "\"Nonprofit helping stray and feral cats through TNR and rescuing friendly cats, in Bensonhurst, Dyker Heights and Bay Ridge. Listed by North Brooklyn Cats under South Brooklyn.\"",
+      "evidence_url": "https://www.facebook.com/people/Boomers-Feline-Friends/61557925103574/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Facebook: \"Our focus is to alleviate the suffering of stray/feral cats through TNR and rescue of friendly cats\"; Bensonhurst, Dyker Heights, Bay Ridge; the group email. The personal payment handles on the page are not published."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

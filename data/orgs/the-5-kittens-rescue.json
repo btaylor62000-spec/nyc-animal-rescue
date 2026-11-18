@@ -12,7 +12,8 @@
   ],
   "needs": [
     "adoption",
-    "referral"
+    "referral",
+    "tnr"
   ],
   "boroughs": [
     "brooklyn"
@@ -24,7 +25,7 @@
   "region_note": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "phones": [],
   "emails": [],
-  "website": null,
+  "website": "https://linktr.ee/the5kittensrescues",
   "intake_urls": [],
   "social": [
     {
@@ -36,15 +37,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Hyper-local/solo rescue listed in North Brooklyn Cats' vetted directory. Instagram-primary; confirm scope and contact via IG. Intake: Via Instagram DM",
+  "notes": "A TNR-focused cat rescue in New York City. Its links page has its ways to reach it.",
   "type_raw": "solo rescuer / rescue+adoption",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "NORTH BROOKLYN (Greenpoint / Williamsburg / Bushwick)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -52,7 +53,26 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "website",
+      "from": "null",
+      "to": "\"https://linktr.ee/the5kittensrescues\"",
+      "evidence_url": "https://linktr.ee/the5kittensrescues",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Its own profile: \"TNR focused cat rescue in NYC\", links linktr.ee/the5kittensrescues (the account is the5kittensrescues, with an s)."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Hyper-local/solo rescue listed in North Brooklyn Cats' vetted directory. Instagram-primary; confirm scope and contact via IG. Intake: Via Instagram DM\"",
+      "to": "\"A TNR-focused cat rescue in New York City. Its links page has its ways to reach it.\"",
+      "evidence_url": "https://linktr.ee/the5kittensrescues",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Its own profile: \"TNR focused cat rescue in NYC\", links linktr.ee/the5kittensrescues (the account is the5kittensrescues, with an s)."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

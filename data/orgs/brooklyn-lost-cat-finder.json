@@ -24,7 +24,7 @@
   "region_note": "BROOKLYN-WIDE (serve all of Kings County)",
   "phones": [],
   "emails": [],
-  "website": null,
+  "website": "https://linktr.ee/brooklynlostcatfinder",
   "intake_urls": [],
   "social": [
     {
@@ -36,15 +36,15 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Not a rescue - a Brooklyn-wide lost/found cat networking resource. Useful to route people whose cat is missing rather than a street/colony case. Intake: Via Instagram DM",
+  "notes": "Not a rescue: an Instagram page that posts lost and found cats in Brooklyn. To post, message it with up to three photos and the cat’s name.",
   "type_raw": "referral hub / lost-cat support",
-  "confidence": "Low",
+  "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [
     "https://northbrooklyncats.org/resources/"
   ],
-  "last_verified": "2026-08-26",
+  "last_verified": "2026-11-18",
   "section": "BROOKLYN-WIDE (serve all of Kings County)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
@@ -52,7 +52,26 @@
   "last_checked": "2026-11-10",
   "check_status": "unchecked",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-18",
+      "field": "website",
+      "from": "null",
+      "to": "\"https://linktr.ee/brooklynlostcatfinder\"",
+      "evidence_url": "https://www.instagram.com/brooklynlostcatfinder/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Lost & found cats in Brooklyn, NY. For a post, dm: max 3 pics, cat’s name\"; links linktr.ee/brooklynlostcatfinder."
+    },
+    {
+      "date": "2026-11-18",
+      "field": "notes",
+      "from": "\"Not a rescue - a Brooklyn-wide lost/found cat networking resource. Useful to route people whose cat is missing rather than a street/colony case. Intake: Via Instagram DM\"",
+      "to": "\"Not a rescue: an Instagram page that posts lost and found cats in Brooklyn. To post, message it with up to three photos and the cat’s name.\"",
+      "evidence_url": "https://www.instagram.com/brooklynlostcatfinder/",
+      "source": "manual",
+      "note": "Read by the site owner on its own page, 2026-11-18. Instagram: \"Lost & found cats in Brooklyn, NY. For a post, dm: max 3 pics, cat’s name\"; links linktr.ee/brooklynlostcatfinder."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

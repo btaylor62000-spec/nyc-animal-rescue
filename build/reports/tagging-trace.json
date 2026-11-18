@@ -245,6 +245,23 @@
       "matched": "clinic"
     }
   ],
+  "adoptable-kitties-queens-nyc": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    },
+    {
+      "tag": "adoption",
+      "field": "type",
+      "matched": "adopt"
+    },
+    {
+      "tag": "rescue-foster",
+      "field": "type",
+      "matched": "adoption"
+    }
+  ],
   "advocat-rescue-inc": [
     {
       "tag": "cat",
@@ -4117,6 +4134,13 @@
       "matched": "rehoming"
     }
   ],
+  "house-of-boop": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    }
+  ],
   "house-of-pancakes-reptile-rescue": [
     {
       "tag": "reptile",
@@ -4290,6 +4314,13 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "rescue"
+    }
+  ],
+  "intimutt-inc": [
+    {
+      "tag": "cat",
+      "field": "notes",
+      "matched": "cat"
     }
   ],
   "invertebrates-routing-lhcos-hca-sean-casey-small-n-furry": [
@@ -7776,6 +7807,13 @@
       "matched": "TNR"
     }
   ],
+  "ridgewood-rescue": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "Cat"
+    }
+  ],
   "riverside-animal-hospital-north": [
     {
       "tag": "cat",
@@ -7895,6 +7933,18 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "sashas-dream": [
+    {
+      "tag": "cat",
+      "field": "type",
+      "matched": "cat"
+    },
+    {
+      "tag": "colony-care",
+      "field": "type",
+      "matched": "Community cat"
     }
   ],
   "save-a-pet-low-cost-veterinary-clinic": [
