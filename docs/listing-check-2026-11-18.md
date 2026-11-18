@@ -64,7 +64,22 @@ Dogs, Hearts & Bones, Mr. Bones, Pound Hounds, Red Hook Dog Rescue, Rescue City,
 Rescue Dogs Rock, The Good Life, The Sato Project, ECHO). Flatbush Cats' clinic
 sees dogs too; it has its own listing (Flatbush Vet), already cats and dogs.
 
-## Could not be read by a robot; a person should look
+## Read by the owner, where robots are refused
+
+| Listing | Was | Now | The owner read |
+| --- | --- | --- | --- |
+| AAHA microchip lookup | dogs | cats and dogs | the lookup is for cats and dogs |
+| Animal Clinic of Bay Ridge | dogs | cats and dogs | "Types of Pets Seen: Dogs and Cats" |
+| Vetco vaccine clinics | dogs | cats and dogs | "puppy, dog, kitten and cat vaccination clinic" |
+
+Confirmed as they were: Cat Castle, United Spay Alliance's Feline Fix by Five,
+Mama Chris, Ocean Hill Cats and The Animal Project (cats); Guardian Angel and
+Rebound Hounds (dogs); The Toby Project (its main listing is cats and dogs, its
+feral clinic cats). Happy Homes' page says "animals" without saying which;
+it stays cats, as its listing describes. Bully Baby Rescue's contact page now
+gives an address in Saint Croix, US Virgin Islands: waiting on the owner.
+
+## Could not be read by a robot (before the owner read them)
 
 AAHA microchip lookup and Animal Clinic of Bay Ridge (bot check), Vetco (bot
 check), Happy Homes (bot check), Cat Castle and United Spay Alliance (bot

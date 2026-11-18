@@ -17,7 +17,7 @@ Generated 2026-11-18 from the source workbooks and the wildlife guide.
 
 | Animal | Organizations |
 | --- | ---: |
-| cat | 330 |
+| cat | 333 |
 | dog | 328 |
 | rabbit | 46 |
 | bird-companion | 44 |

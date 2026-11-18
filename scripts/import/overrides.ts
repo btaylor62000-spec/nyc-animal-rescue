@@ -69,6 +69,10 @@ export const OVERRIDES: Override[] = [
   { id: 'aspca-behavior-guides', reason: "The ASPCA's pet care pages, 2026-11-18, are for every pet.", set: { animals: [] } },
   { id: 'free-housing-legal-help', reason: 'Housing Court Answers (2026-11-18) helps tenants; it is not about one kind of pet.', set: { animals: [] } },
   { id: 'nyc-animal-welfare', reason: "The Office of Animal Welfare's evictions page (2026-11-18) is about every pet.", set: { animals: [] } },
+  // Read by the owner on 2026-11-18, where the sites refuse robots.
+  { id: 'aaha-universal-lookup', reason: 'Read by the owner on its own page, 2026-11-18: the lookup is for cats and dogs.', set: { animals: ['cat', 'dog'] } },
+  { id: 'animal-clinic-of-bay-ridge', reason: 'Read by the owner on its services page, 2026-11-18: "Types of Pets Seen: Dogs and Cats".', set: { animals: ['cat', 'dog'] } },
+  { id: 'petco-vetco-vetco-vaccine-clinics', reason: 'Read by the owner on its clinics page, 2026-11-18: "low-cost mobile puppy, dog, kitten and cat vaccination clinic".', set: { animals: ['cat', 'dog'] } },
   { id: 'acc-admissions-owner-support', reason: "ACC's surrender page, 2026-11-18, takes every animal ACC takes, not only dogs.", set: { animals: ['dog', 'cat', 'rabbit', 'small-mammal', 'bird-companion', 'reptile'] } },
   { id: 'animal-care-centers-of-nyc-brooklyn', reason: "The city shelter's Brooklyn centre takes every animal ACC takes, not only cats.", set: { animals: ['dog', 'cat', 'rabbit', 'small-mammal', 'bird-companion', 'reptile'] } },
   {
