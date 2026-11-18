@@ -24,11 +24,15 @@ import { distanceMiles, takesEmergencies } from '../../src/data/rank.ts';
 import { driveLabel } from '../../src/data/drive.ts';
 import { openLabel, openState } from '../../src/data/schedule.ts';
 import { clientKeyFor, issuePass, verifyPass } from '../../src/chat/pass.ts';
+import { alertOutOfAllowance } from '../../src/chat/limit-alert.ts';
 
 interface Env {
   AI: { run: (model: string, input: unknown) => Promise<ReadableStream | { response?: string }> };
   TURNSTILE_SECRET_KEY?: string;
   CHAT_PASS_SECRET?: string;
+  /** The contribute form's GitHub token, reused to raise the daily-limit alert. */
+  GITHUB_CONTRIB_TOKEN?: string;
+  GITHUB_REPO?: string;
 }
 
 /**
@@ -113,7 +117,7 @@ async function turnstileOk(secret: string, token: string, ip: string): Promise<b
   }
 }
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   let body: ChatRequest;
   try {
     body = (await request.json()) as ChatRequest;
@@ -255,6 +259,17 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         const outOfQuota = /quota|limit|exceed|capacity|too many|429/.test(text);
         send({ error: outOfQuota ? 'assistant-out-of-allowance' : 'assistant-unavailable', degraded: true });
         controller.close();
+        if (outOfQuota) {
+          waitUntil(
+            alertOutOfAllowance({
+              token: env.GITHUB_CONTRIB_TOKEN,
+              repo: env.GITHUB_REPO ?? 'btaylor62000-spec/nyc-animal-rescue',
+              now: new Date(),
+              fetch,
+              cache: (caches as unknown as { default: Cache }).default as never,
+            }),
+          );
+        }
         return;
       }
 

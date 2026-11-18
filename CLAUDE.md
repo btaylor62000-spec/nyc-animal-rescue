@@ -244,6 +244,15 @@ rule. Now:
   every borough) **and Int. 1098** (vets posting prices), and checks the
   one-topic rule with the assistant harness.
 
+### Added 2026-11-18: an email when the assistant runs out
+
+When Workers AI refuses for quota, `functions/api/chat.ts` calls
+`src/chat/limit-alert.ts`, which asks GitHub (with the existing
+`GITHUB_CONTRIB_TOKEN`) to run `.github/workflows/assistant-limit.yml`. That
+workflow fails on purpose, once a day, and GitHub emails the owner about the
+failed run, as with the site check. No new account, inbox or secret. "Run
+workflow" on the Actions tab sends a test email marked TEST ONLY.
+
 ### Changed 2026-11-18: listings checked against their own sites
 
 The consistency check of 2026-11-17 proved every door shows the *same*

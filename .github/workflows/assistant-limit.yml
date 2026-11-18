@@ -1,0 +1,52 @@
+# The assistant used its free daily allowance.
+#
+# The chat function asks GitHub to run this the moment Workers AI refuses for
+# quota (src/chat/limit-alert.ts). It fails on purpose, once a day, because a
+# failed run is what GitHub emails the owner about: the same way the weekly
+# site check reaches her. Nothing is broken when this fails. The assistant
+# says it is resting and offers the directory search until the allowance
+# resets, and Find help and the guides are not affected.
+#
+# "Run workflow" on the Actions tab sends a test email the same way.
+name: Assistant daily limit
+
+on:
+  repository_dispatch:
+    types: [assistant-out-of-allowance]
+  workflow_dispatch:
+
+permissions:
+  actions: read
+
+concurrency:
+  group: assistant-limit
+  cancel-in-progress: false
+
+jobs:
+  tell-the-owner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Once a day only
+        id: once
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          TZ: America/New_York
+        run: |
+          today=$(TZ=America/New_York date +%F)
+          # Earlier runs of this workflow today that already sent the email.
+          earlier=$(gh run list --repo "$REPO" --workflow assistant-limit.yml --limit 20 \
+            --json databaseId,conclusion,createdAt,event \
+            --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.conclusion == \"failure\") | select(.event == \"repository_dispatch\") | select((.createdAt | fromdateiso8601 | strflocaltime(\"%Y-%m-%d\")) == \"$today\")] | length" 2>/dev/null || echo 0)
+          echo "earlier=$earlier" >> "$GITHUB_OUTPUT"
+      - name: Tell the owner
+        if: steps.once.outputs.earlier == '0' || github.event_name == 'workflow_dispatch'
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            msg="TEST ONLY: this is what the email looks like when the assistant runs out. Nothing has happened."
+          else
+            msg="The assistant on nyc-animal-rescue.pages.dev used its free daily allowance on ${{ github.event.client_payload.date }}. Until it resets, it tells people it is resting and offers the directory search instead. Find help and the guides are not affected. Nothing needs fixing."
+          fi
+          echo "$msg" >> "$GITHUB_STEP_SUMMARY"
+          echo "::error title=Assistant daily limit::$msg"
+          exit 1
