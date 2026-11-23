@@ -43,7 +43,7 @@
   },
   "address": null,
   "hours": null,
-  "notes": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.",
+  "notes": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.\n\nIts spay/neuter clinic says it is temporarily closed: \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027\". Ring before going for spay/neuter.",
   "type_raw": "Shelter clinic offering low-cost spay/neuter",
   "confidence": "High",
   "status": "active",
@@ -68,6 +68,24 @@
       "evidence_url": "https://saveapetusa.org/services",
       "source": "manual",
       "note": "Quoted by the weekly check of 2026-11-10 from its own services page: 'Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027'. Kept active: only the clinic is paused."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "notes",
+      "from": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.",
+      "to": "Its spay/neuter clinic is temporarily closed: its own services page says \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027.\" Ring before going for any other service. Dogs and cats five or older need blood work at least a week before surgery.\n\nIts spay/neuter clinic says it is temporarily closed: \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027\". Ring before going for spay/neuter.",
+      "evidence_url": "https://saveapetusa.org/services",
+      "source": "manual",
+      "note": "Weekly check of 2026-11-16 read on its services page: \"Spay/Neuter Clinic - Temporarily Closed. Please check back January 2027\". Only the spay/neuter clinic says so, so the listing stays active with this note."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "2026-11-23",
+      "evidence_url": "https://saveapetusa.org/services",
+      "source": "manual",
+      "note": "Settled: note added; listing stays active."
     }
   ],
   "privacy_hold": false,

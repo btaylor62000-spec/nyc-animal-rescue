@@ -151,6 +151,13 @@ test('a closure is flagged with the sentence, and the status is left for a perso
   assert.equal(patch.phones, undefined, 'a closed organization keeps its contacts on the record');
 });
 
+test('a group already listed as paused is not flagged for saying it is paused', () => {
+  const record = org({ status: 'hiatus', phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
+  const decision = decide(record, evidenceFromHtml(record, fixture('paused.html'), DATE));
+  // (The tiny test page is flagged for having little text; never for the pause.)
+  assert.ok(decision.kind !== 'needs-review' || !/paused|intakes/i.test(decision.reason), JSON.stringify(decision));
+});
+
 test('a pause is flagged the same way', () => {
   const record = org({ phones: [{ value: '7185550142', display: '(718) 555-0142' }] });
   const decision = decide(record, evidenceFromHtml(record, fixture('paused.html'), DATE));

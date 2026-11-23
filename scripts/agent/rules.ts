@@ -399,6 +399,9 @@ function decideListed(org: Org, evidence: Evidence): Decision {
       page.closure.find((c) => c.severity === 'paused') ??
       page.closure[0];
     if (!worst) continue;
+    // Already listed as paused, and the site says it is paused: that is the
+    // listing being right, not news (Urban Utopia, flagged every week).
+    if (org.status === 'hiatus' && worst.severity !== 'closed') continue;
 
     // Softer than a closure: something on the page might mean they have
     // stopped, and might just as easily not. Those get a person, not a status.
