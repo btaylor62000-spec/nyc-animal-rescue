@@ -6,6 +6,9 @@ name: Site check (location, zip, borough)
 on:
   schedule:
     - cron: '17 14 * * 2'   # Tuesdays, mid-morning New York time
+    # It also runs on every push, so a dropped Tuesday is covered by the next change;
+    # this second weekly try covers a quiet week.
+    - cron: '17 15 * * 4'   # Thursdays
   push:
     branches: [main]        # after every change that goes live
   workflow_dispatch:

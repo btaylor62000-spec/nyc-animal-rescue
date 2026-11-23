@@ -14,8 +14,12 @@ name: Monthly discovery
 
 on:
   schedule:
-    # The first of each month, after the weekly check has had its turn.
-    - cron: '0 9 1 * *'
+    # The first of each month, after the weekly check has had its turn, with
+    # a second try on the 2nd in case GitHub drops the first (it queues jobs
+    # set on the hour behind everyone else's). The second stands down if the
+    # first already succeeded.
+    - cron: '23 9 1 * *'
+    - cron: '23 9 2 * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -32,7 +36,25 @@ permissions:
   issues: write
 
 jobs:
+  due:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.month.outputs.run }}
+    steps:
+      - id: month
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          since=$(date -u +%Y-%m-01T00:00:00Z)
+          done=$(gh run list --repo "$REPO" --workflow monthly-discovery.yml --limit 10 --json conclusion,createdAt,databaseId \
+            --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.conclusion == \"success\") | select(.createdAt >= \"$since\")] | length")
+          if [ "$done" = "0" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; else echo "run=false" >> "$GITHUB_OUTPUT"; fi
+
   discover:
+    needs: due
+    if: needs.due.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
 

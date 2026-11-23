@@ -244,6 +244,18 @@ rule. Now:
   every borough) **and Int. 1098** (vets posting prices), and checks the
   one-topic rule with the assistant harness.
 
+### Changed 2026-11-23: the scheduled checks actually run, and tell the owner
+
+The weekly check's one Monday 07:00 UTC slot was dropped by GitHub on
+2026-11-09 and started 9.5 hours late on 2026-11-16; the owner started it by
+hand. GitHub queues on-the-hour scheduled jobs behind everyone's and can drop
+them. Now it has four tries (Monday and Tuesday, 07:23 and 13:23 UTC), and a
+first job (`due`) stands the later ones down once this week's check has
+succeeded. Monthly discovery has a second try on the 2nd, the site check a
+second weekly slot. Its pull request, opened by GitHub's own bot, notified
+nobody: it is now assigned to the repository owner and gets a comment
+mentioning them every week, which sends GitHub's email.
+
 ### Added 2026-11-18: an email when the assistant runs out
 
 When Workers AI refuses for quota, `functions/api/chat.ts` calls

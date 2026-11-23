@@ -19,8 +19,17 @@ name: Weekly data check
 
 on:
   schedule:
-    # Mondays at 07:00 UTC, which is early morning in New York.
-    - cron: '0 7 * * 1'
+    # Several tries a week, not one. GitHub queues scheduled jobs behind
+    # everyone else's and can drop them, worst on the hour: the 07:00 Monday
+    # run was dropped on 2026-11-09 and started 9.5 hours late on 2026-11-16,
+    # and the owner had to start it by hand. Each try below checks first
+    # whether this week's check already ran, so only one does the work.
+    # Monday 07:23 and 13:23, Tuesday 07:23 and 13:23 UTC (early morning and
+    # mid-morning in New York), off the hour.
+    - cron: '23 7 * * 1'
+    - cron: '23 13 * * 1'
+    - cron: '23 7 * * 2'
+    - cron: '23 13 * * 2'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -50,7 +59,29 @@ env:
   PROPOSAL_BRANCH: weekly-check
 
 jobs:
+  # A scheduled try stands down if this week's check has already succeeded
+  # (Monday 00:00 New York time onwards). A run started by hand always goes.
+  due:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.week.outputs.run }}
+    steps:
+      - id: week
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          monday=$(TZ=America/New_York date -d "$(TZ=America/New_York date +%F) -$(( $(TZ=America/New_York date +%u) - 1 )) days" +%F)
+          since=$(date -u -d "TZ=\"America/New_York\" $monday 00:00" +%Y-%m-%dT%H:%M:%SZ)
+          done=$(gh run list --repo "$REPO" --workflow weekly-check.yml --limit 20 --json conclusion,createdAt,databaseId \
+            --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.conclusion == \"success\") | select(.createdAt >= \"$since\")] | length")
+          echo "Successful runs since $since: $done"
+          if [ "$done" = "0" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; else echo "run=false" >> "$GITHUB_OUTPUT"; fi
+
   check:
+    needs: due
+    if: needs.due.outputs.run == 'true'
     runs-on: ubuntu-latest
     # The 45 minutes this used to allow ran out on 2026-11-09: the check took
     # 35, the browser install 4, and the link check finished but hung until
@@ -180,16 +211,28 @@ jobs:
             ].join('\n');
             if (body.length > 60000) body = body.slice(0, 60000) + '\n\n…truncated. See build/reports/weekly-check.md on the branch.';
 
+            // A pull request opened by GitHub's own bot notifies nobody, so
+            // the owner never heard about one (2026-11-23). Assign it to the
+            // repository owner and mention them in a comment each week: both
+            // send GitHub's email, new or updated.
+            const tell = async (number) => {
+              try { await github.rest.issues.addAssignees({ owner, repo, issue_number: number, assignees: [owner] }); } catch {}
+              await github.rest.issues.createComment({ owner, repo, issue_number: number,
+                body: `@${owner} this week's check is ready: ${title}. Nothing changes on the site until you merge it.` });
+            };
+
             const open = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${head}`, base, per_page: 5 });
             if (open.data.length) {
               const pr = open.data[0];
               await github.rest.pulls.update({ owner, repo, pull_number: pr.number, title, body });
+              await tell(pr.number);
               core.notice(`Updated pull request #${pr.number}: ${pr.html_url}`);
               return;
             }
 
             try {
               const pr = await github.rest.pulls.create({ owner, repo, head, base, title, body });
+              await tell(pr.data.number);
               core.notice(`Opened pull request #${pr.data.number}: ${pr.data.html_url}`);
             } catch (err) {
               // The branch is pushed either way, so nothing is lost. The usual
