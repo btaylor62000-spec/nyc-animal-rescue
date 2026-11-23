@@ -375,7 +375,11 @@ function decideListed(org: Org, evidence: Evidence): Decision {
     // --- the site answers, but not to us -------------------------------
     if (problems.includes('blocked')) {
       const lastConfirmed = org.last_verified;
-      const stale = !lastConfirmed || daysBetween(lastConfirmed, evidence.date) > AGENT.manualRecheckDays;
+      // Asking a person to open a site by hand is only worth their time for a
+      // listing in the city. Outside rescues behind a bot check (breed rescues
+      // in other states, mostly) filled the owner's list in November 2026; they
+      // are still shown as "checked by a person only", just not asked about.
+      const stale = !org.outside_nyc && (!lastConfirmed || daysBetween(lastConfirmed, evidence.date) > AGENT.manualRecheckDays);
       return { kind: 'blocked', lastConfirmed, stale };
     }
 

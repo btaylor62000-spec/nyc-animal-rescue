@@ -3397,9 +3397,18 @@
           "evidence_url": "https://www.frankiesfriends.org/jlacf-fund",
           "source": "manual",
           "note": "Read in a browser 2026-11-23: the cancer fund is a Frankie’s Friends programme."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "notes",
+          "from": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund",
+          "to": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund\n\nAlso: Bond’s Fund, for specialised eye care (https://www.frankiesfriends.org/bonds-fund), and grants toward vet care for rescues (https://www.frankiesfriends.org/vet-care-for-rescues-grant-program).",
+          "evidence_url": "https://www.frankiesfriends.org/bonds-fund",
+          "source": "manual",
+          "note": "Both programmes are pages on Frankie’s Friends’ own site, listed on a Rhode Island resource page the owner sent."
         }
       ],
-      "notes": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund"
+      "notes": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund\n\nAlso: Bond’s Fund, for specialised eye care (https://www.frankiesfriends.org/bonds-fund), and grants toward vet care for rescues (https://www.frankiesfriends.org/vet-care-for-rescues-grant-program)."
     },
     "free-housing-legal-help": {
       "last_checked": "2026-11-23",

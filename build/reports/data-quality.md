@@ -4,7 +4,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **515** organizations after de-duplication
+- **517** organizations after de-duplication
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
@@ -18,7 +18,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 | Animal | Organizations |
 | --- | ---: |
 | cat | 339 |
-| dog | 331 |
+| dog | 332 |
 | rabbit | 46 |
 | bird-companion | 44 |
 | reptile | 41 |
@@ -51,8 +51,8 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 | colony-care | 36 |
 | food-assistance | 35 |
 | medical-special-needs | 28 |
+| financial-aid | 27 |
 | legal | 25 |
-| financial-aid | 25 |
 | education | 24 |
 | senior | 23 |
 | sanctuary | 20 |
@@ -76,17 +76,17 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 276 |
-| queens | 236 |
-| manhattan | 233 |
-| staten-island | 204 |
-| bronx | 202 |
+| brooklyn | 278 |
+| queens | 238 |
+| manhattan | 235 |
+| staten-island | 206 |
+| bronx | 204 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 249 |
+| Medium | 251 |
 | High | 217 |
 | Low | 49 |
 
@@ -94,7 +94,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 497 |
+| active | 499 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -289,7 +289,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (45)
+### Rows the rules could not fully tag (46)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -336,6 +336,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Ridgewood Rescue** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:151)
 - **STARelief and Pet Assistance** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:155)
 - **Pet Help Finder** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:156)
+- **Friends & Vets Helping Pets** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:157)
 
 ## Privacy
 

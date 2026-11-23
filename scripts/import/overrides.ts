@@ -75,6 +75,8 @@ export const OVERRIDES: Override[] = [
   { id: 'the-mosby-foundation', reason: 'A fund for vet bills, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
   { id: 'mirandas-people', reason: 'A fund for vet bills, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
   { id: 'starelief-and-pet-assistance', reason: 'A fund for pet costs, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
+  { id: 'friends-and-vets-helping-pets', reason: 'A fund for vet bills, not a vet or a referral line.', removeNeeds: ['emergency-vet', 'referral'] },
+  { id: 'bow-wow-buddies-foundation', reason: 'A fund for vet bills, not a vet.', removeNeeds: ['emergency-vet'] },
   { id: 'pet-help-finder', reason: 'A search of low-cost services, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
   { id: 'house-of-boop', reason: 'Its Instagram, read by the owner 2026-11-18: "Cat and kitten foster home".', addNeeds: ['foster'] },
   { id: 'intimutt-inc', reason: 'Its Instagram, read by the owner 2026-11-18: "ER, Rescue/Rehab, TNR, Foster, Adopt".', addNeeds: ['tnr', 'foster', 'adoption'] },

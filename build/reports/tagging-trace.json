@@ -1643,6 +1643,28 @@
       "matched": "solo rescuer"
     }
   ],
+  "bow-wow-buddies-foundation": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    }
+  ],
   "breaking-ground": [
     {
       "tag": "cat",
@@ -3485,6 +3507,28 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "Rescue"
+    }
+  ],
+  "friends-and-vets-helping-pets": [
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "resource directory"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
     }
   ],
   "friends-of-animals-spay-neuter-certificates": [

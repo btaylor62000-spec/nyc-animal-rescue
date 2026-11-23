@@ -1,0 +1,66 @@
+{
+  "id": "bow-wow-buddies-foundation",
+  "name": "Bow Wow Buddies Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [
+    "80021"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [
+    {
+      "value": "foundation@bowwowbuddies.com"
+    }
+  ],
+  "website": "https://www.bowwowbuddies.com",
+  "intake_urls": [],
+  "social": [
+    {
+      "platform": "facebook",
+      "handle": "BowWowBuddiesFoundation",
+      "url": "https://facebook.com/BowWowBuddiesFoundation"
+    }
+  ],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "In its words, \"dedicated to providing urgent medical care funds to sick and injured dogs in need\". Based in Westminster, Colorado; apply on its website. Contacts from its Facebook page, read by the site owner; its website turns robots away. Intake: //www.bowwowbuddies.com/apply-for-grant/",
+  "type_raw": "Grants toward urgent vet bills for dogs (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.facebook.com/BowWowBuddiesFoundation/"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -1,0 +1,67 @@
+{
+  "id": "friends-and-vets-helping-pets",
+  "name": "Friends & Vets Helping Pets",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [],
+  "needs": [
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [
+    "40591"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "8593092043",
+      "display": "(859) 309-2043"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@friendsandvetshelpingpets.org"
+    }
+  ],
+  "website": "https://friendsandvetshelpingpets.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": {
+    "street": "PO Box 910117",
+    "city": "Lexington",
+    "zip": "40591"
+  },
+  "hours": null,
+  "notes": "Grants for curable, lifesaving treatment such as tumors, broken bones, ambulatory care, expensive medication or prosthetics after surgery. Not routine care. For people up to 200% of the federal poverty guidelines, who must show financial need. Nationwide. Contacts from the Minnesota Board on Aging's resource directory (updated 2026-05-19), read by the site owner; its own site could not be read from here.",
+  "type_raw": "Grants toward vet bills for curable conditions (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://mn.gov/adresources/"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

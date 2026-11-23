@@ -186,3 +186,19 @@ a robot; nothing suggests they closed).
   (grants go to organizations, not to pet owners); the "Pet Lifeline Project"
   link is a news article, not an organization; Friends & Vets Helping Pets
   and Bow Wow Buddies could not be read from here.
+
+### From the Rhode Island Pet Network's list, 2026-11-23
+
+Added: Friends & Vets Helping Pets (contacts from Minnesota's official
+resource directory) and Bow Wow Buddies Foundation (from its Facebook page),
+both national. Frankie's Friends' Bond's Fund (eye care) and its grants for
+rescues are noted on its listing. Not added: the Rhode Island and
+Massachusetts clinics, pantries and rescues (not for New York); Shakespeare
+Animal Fund (Northern Nevada and North Central Florida only); Magic Bullet
+Fund (closed); FVEAP (its domain now belongs to a gambling site, and nothing
+on this site links to it); Pet Assistance Inc (its site does not say where it
+helps); Onyx and Breezy, Paws 4 a Cure and Voice for the Animals (would not
+load or refuse robots).
+
+The weekly check no longer asks a person to open, by hand, a site outside
+the city that refuses robots.

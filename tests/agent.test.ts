@@ -177,6 +177,15 @@ test('one unreachable week is not yet a problem', () => {
   assert.equal(patch.confidence, undefined, 'one bad week must not downgrade anyone');
 });
 
+test('a site outside the city that refuses robots is not put to a person', () => {
+  const record = org({ outside_nyc: true, last_verified: null });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    { url: 'https://example.org', finalUrl: 'https://example.org', status: 403, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [] },
+  ] });
+  assert.equal(decision.kind, 'blocked');
+  if (decision.kind === 'blocked') assert.equal(decision.stale, false);
+});
+
 test('a slow site a person confirmed recently is not counted as down', () => {
   // The Toby Project: reviewers opened its slow site on 2026-11-04 and 11-11,
   // and the check still flagged it "unreachable for 3 weeks".
