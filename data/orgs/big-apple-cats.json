@@ -52,13 +52,13 @@
   "source_urls": [
     "https://bigapplecats.org/contact/"
   ],
-  "last_verified": "2026-11-13",
+  "last_verified": "2026-11-23",
   "section": "FOUND THROUGH RESCUEGROUPS.ORG, CHECKED BY A REVIEWER (2026-11-13)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
   ],
-  "last_checked": null,
-  "check_status": "unchecked",
+  "last_checked": "2026-11-23",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],
   "privacy_hold": false,

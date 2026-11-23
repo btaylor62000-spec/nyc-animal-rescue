@@ -50,13 +50,13 @@
   "source_urls": [
     "https://www.adoptapet.com/shelter/77260-animal-lovers-rescue-and-adoptions-whitestone-new-york"
   ],
-  "last_verified": "2026-11-18",
+  "last_verified": "2026-11-23",
   "section": "QUEENS (Queens-based / Queens-serving cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-10",
-  "check_status": "unchecked",
+  "last_checked": "2026-11-23",
+  "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
     {

@@ -51,13 +51,13 @@
   "source_urls": [
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-23",
   "section": "Breed-specific rescues — BASENJI / SHARPEI / BULL TERRIER / OTHER PUREBRED NETWORKS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "discovery"
   ],
-  "last_checked": "2026-11-10",
+  "last_checked": "2026-11-23",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

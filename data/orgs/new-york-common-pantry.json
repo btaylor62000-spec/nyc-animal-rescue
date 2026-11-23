@@ -61,8 +61,8 @@
     "research/NYC_Dog_Rescue_Reference.xlsx",
     "pet-food-pantries"
   ],
-  "last_checked": "2026-11-10",
-  "check_status": "ok",
+  "last_checked": "2026-11-23",
+  "check_status": "needs-review",
   "consecutive_failures": 0,
   "change_log": [
     {

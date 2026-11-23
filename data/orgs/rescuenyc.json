@@ -61,13 +61,13 @@
     "http://www.rescuenyc.org/",
     "https://www.nycacc.org/programs/new-hope-partners/"
   ],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-23",
   "section": "CITYWIDE BACKBONE & MULTI-BOROUGH (take Brooklyn cases)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
     "research/NYC_Dog_Rescue_Reference.xlsx"
   ],
-  "last_checked": "2026-11-10",
+  "last_checked": "2026-11-23",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [],

@@ -73,12 +73,12 @@
     "https://www.animalprojectnyc.org/",
     "https://www.petfinder.com/member/us/ny/new-york/the-animal-project-ny714/"
   ],
-  "last_verified": "2026-11-18",
+  "last_verified": "2026-11-23",
   "section": "MANHATTAN (Manhattan-based cat groups)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx"
   ],
-  "last_checked": "2026-11-10",
+  "last_checked": "2026-11-23",
   "check_status": "ok",
   "consecutive_failures": 0,
   "change_log": [
