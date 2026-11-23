@@ -1,0 +1,58 @@
+{
+  "id": "onyx-and-breezy-foundation",
+  "name": "Onyx and Breezy Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [],
+  "needs": [
+    "spay-neuter",
+    "financial-aid",
+    "food-assistance"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [
+    "10987"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [
+    {
+      "value": "info@onyxandbreezy.org"
+    }
+  ],
+  "website": "https://onyxandbreezy.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Listed by the Rhode Island Pet Network among national grant programs: it covers medical treatment, medication, food and spay/neuter for people who can show financial need. Based in Tuxedo Park, New York (mailing address P.O. Box 857, Tuxedo Park, NY 10987). Contact from its own contact page, read by the site owner.",
+  "type_raw": "Grants toward pet medical costs, food and spay/neuter for people in need",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://onyxandbreezy.org/pages/contact"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

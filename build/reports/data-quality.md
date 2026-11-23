@@ -4,7 +4,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **517** organizations after de-duplication
+- **520** organizations after de-duplication
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
@@ -42,18 +42,18 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 | foster | 116 |
 | tnr | 101 |
 | breed-specific | 82 |
-| spay-neuter | 72 |
+| spay-neuter | 73 |
 | owner-support | 71 |
 | referral | 58 |
 | low-cost-vet | 54 |
 | emergency-vet | 49 |
-| advocacy | 36 |
+| advocacy | 37 |
+| food-assistance | 36 |
 | colony-care | 36 |
-| food-assistance | 35 |
+| financial-aid | 30 |
 | medical-special-needs | 28 |
-| financial-aid | 27 |
 | legal | 25 |
-| education | 24 |
+| education | 25 |
 | senior | 23 |
 | sanctuary | 20 |
 | lost-found | 18 |
@@ -76,17 +76,17 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 278 |
-| queens | 238 |
-| manhattan | 235 |
-| staten-island | 206 |
-| bronx | 204 |
+| brooklyn | 281 |
+| queens | 241 |
+| manhattan | 238 |
+| staten-island | 209 |
+| bronx | 207 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 251 |
+| Medium | 254 |
 | High | 217 |
 | Low | 49 |
 
@@ -94,7 +94,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 499 |
+| active | 502 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -289,7 +289,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (46)
+### Rows the rules could not fully tag (49)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -337,6 +337,9 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **STARelief and Pet Assistance** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:155)
 - **Pet Help Finder** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:156)
 - **Friends & Vets Helping Pets** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:157)
+- **Onyx and Breezy Foundation** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:159)
+- **Paws 4 A Cure** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:160)
+- **Voice for the Animals Foundation** — missing animals, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:161)
 
 ## Privacy
 

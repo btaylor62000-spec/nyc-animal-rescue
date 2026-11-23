@@ -202,3 +202,7 @@ load or refuse robots).
 
 The weekly check no longer asks a person to open, by hand, a site outside
 the city that refuses robots.
+
+Later the same day the owner read the three that would not load: Onyx and
+Breezy Foundation, Paws 4 A Cure and Voice for the Animals Foundation are
+now listed.

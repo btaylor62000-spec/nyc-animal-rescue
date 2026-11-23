@@ -1,0 +1,67 @@
+{
+  "id": "voice-for-the-animals-foundation",
+  "name": "Voice for the Animals Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [],
+  "animals": [],
+  "needs": [
+    "financial-aid",
+    "advocacy",
+    "education"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [
+    "90405"
+  ],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [
+    {
+      "value": "3103925153",
+      "display": "(310) 392-5153"
+    }
+  ],
+  "emails": [
+    {
+      "value": "info@vftafoundation.org"
+    }
+  ],
+  "website": "https://www.vftafoundation.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": {
+    "street": "1902 A Lincoln Blvd #202",
+    "city": "Santa Monica",
+    "zip": "90405"
+  },
+  "hours": null,
+  "notes": "A Santa Monica, California charity working on animal education, rescue and advocacy. The Rhode Island Pet Network lists it as helping seniors and people with disabilities with pet care. Contacts from its own site and Facebook page, read by the site owner.",
+  "type_raw": "Help with pet care for seniors and people with disabilities (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.vftafoundation.org/"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

@@ -6815,6 +6815,18 @@
       "matched": "emergency hospital"
     }
   ],
+  "onyx-and-breezy-foundation": [
+    {
+      "tag": "spay-neuter",
+      "field": "type",
+      "matched": "spay"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    }
+  ],
   "oradell-animal-hospital": [
     {
       "tag": "cat",
@@ -7022,6 +7034,23 @@
       "tag": "lost-found",
       "field": "type",
       "matched": "Lost and found"
+    }
+  ],
+  "paws-4-a-cure": [
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
     }
   ],
   "paws-crossed-animal-rescue": [
@@ -9979,6 +10008,28 @@
       "tag": "tnr-group",
       "field": "type",
       "matched": "TNR"
+    }
+  ],
+  "voice-for-the-animals-foundation": [
+    {
+      "tag": "senior",
+      "field": "type",
+      "matched": "seniors"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Help with"
+    },
+    {
+      "tag": "advocacy",
+      "field": "notes",
+      "matched": "advocacy"
+    },
+    {
+      "tag": "education",
+      "field": "notes",
+      "matched": "education"
     }
   ],
   "volunteers-for-wildlife-wildlife-center-of-long-island": [
