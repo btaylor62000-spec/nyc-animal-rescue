@@ -170,6 +170,21 @@ test('one unreachable week is not yet a problem', () => {
   assert.equal(patch.confidence, undefined, 'one bad week must not downgrade anyone');
 });
 
+test('a slow site a person confirmed recently is not counted as down', () => {
+  // The Toby Project: reviewers opened its slow site on 2026-11-04 and 11-11,
+  // and the check still flagged it "unreachable for 3 weeks".
+  const record = org({ consecutive_failures: 2, confidence: 'High', change_log: [
+    { date: DATE, field: 'last_verified', from: null, to: DATE, evidence_url: 'https://example.org', source: 'manual', note: 'Opened in a browser; slow but up.' },
+  ] });
+  const decision = decide(record, { orgId: record.id, date: DATE, pages: [
+    { url: 'https://example.org', finalUrl: 'https://example.org', status: 0, ok: false, offDomain: false, ownDomain: true, text: '', phones: [], emails: [], closure: [], error: 'timed out' },
+  ] });
+  assert.equal(decision.kind, 'ok');
+  const { patch } = toPatch(record, decision, DATE);
+  assert.equal(patch.status, undefined);
+  assert.equal(patch.confidence, undefined);
+});
+
 test('three unreachable weeks flags the record and downgrades confidence once', () => {
   const record = org({ consecutive_failures: 2, confidence: 'High' });
   const decision = decide(record, { orgId: record.id, date: DATE, pages: [

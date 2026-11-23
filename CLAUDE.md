@@ -256,6 +256,14 @@ second weekly slot. Its pull request, opened by GitHub's own bot, notified
 nobody: it is now assigned to the repository owner and gets a comment
 mentioning them every week, which sends GitHub's email.
 
+Also the same day: **a slow site a person confirmed is not "down".** The
+Toby Project's site takes longer than the check's 15 seconds; reviewers
+opened it on 2026-11-04 and 11-11 and it was still flagged "unreachable for 3
+weeks". A site that times out, where a person recorded a manual check in the
+last 90 days, now counts as fine (`personConfirmedRecently` in
+`scripts/agent/rules.ts`, tested). A domain that no longer exists is still
+reported at once.
+
 ### Added 2026-11-18: an email when the assistant runs out
 
 When Workers AI refuses for quota, `functions/api/chat.ts` calls

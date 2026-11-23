@@ -309,6 +309,11 @@ function daysBetween(from: string, to: string): number {
  * "closed" already says, so it is not a flag, and nothing about a closed
  * record's status is ever changed by this code.
  */
+/** A person opened the organization's own site and confirmed it, within the usual 90 days. */
+function personConfirmedRecently(org: Org, date: string): boolean {
+  return (org.change_log ?? []).some((c) => c.source === 'manual' && daysBetween(c.date, date) <= AGENT.manualRecheckDays);
+}
+
 /** A person recorded, within the usual 90 days, that they looked at this. */
 function reviewedRecently(org: Org, field: 'status-reviewed' | 'flag-reviewed', date: string): boolean {
   return (org.change_log ?? []).some(
@@ -372,6 +377,11 @@ function decideListed(org: Org, evidence: Evidence): Decision {
       daysBetween(org.last_checked, evidence.date) < AGENT.minDaysBetweenFailures;
     const failures = sameWeek ? Math.max(org.consecutive_failures, 1) : org.consecutive_failures + 1;
     const gone = problems.length > 0 && problems.every((p) => p === 'gone');
+    // A slow site a person opened and confirmed recently is not down. The
+    // Toby Project's site takes longer than the check waits; reviewers opened
+    // it on 2026-11-04 and 11-11, and it was still flagged "unreachable for 3
+    // weeks" every Monday. A domain that no longer exists is still reported.
+    if (!gone && personConfirmedRecently(org, evidence.date)) return { kind: 'ok', verified: false };
     return {
       kind: 'unreachable',
       failures,
