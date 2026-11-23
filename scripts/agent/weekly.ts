@@ -69,10 +69,23 @@ function pagesToCheck(org: Org): string[] {
   return urls.slice(0, AGENT.maxPagesPerOrg);
 }
 
+type Fetched = { url: string; finalUrl: string; status: number; ok: boolean; offDomain: boolean; html: string; error?: string };
+
+/** A page read in the browser, as evidence about this organization. */
+function evidenceOfRendered(org: Org, f: Fetched): PageEvidence {
+  const text = f.html ? htmlToText(f.html) : '';
+  const { phones, emails } = text ? extractContacts(text) : { phones: [], emails: [] };
+  return {
+    url: f.url, finalUrl: f.finalUrl, status: f.status, ok: f.ok, offDomain: f.offDomain,
+    ownDomain: org.website ? sameSite(org.website, f.finalUrl) : false,
+    text, phones, emails, closure: text ? detectClosure(text) : [], error: f.error, rendered: true,
+  };
+}
+
 async function gather(org: Org, date: string): Promise<Evidence> {
   const pages: PageEvidence[] = [];
 
-  const evidenceOf = (f: { url: string; finalUrl: string; status: number; ok: boolean; offDomain: boolean; html: string; error?: string }, rendered = false): PageEvidence => {
+  const evidenceOf = (f: Fetched, rendered = false): PageEvidence => {
     const text = f.html ? htmlToText(f.html) : '';
     const { phones, emails } = text ? extractContacts(text) : { phones: [], emails: [] };
     return {
@@ -155,7 +168,24 @@ async function main(): Promise<void> {
 
   await mapWithConcurrency(orgs, AGENT.concurrency, async (org) => {
     const evidence = { ...(await gather(org, date)), siblingPhones: siblingsOf(org) };
-    const decision = decide(org, evidence);
+    let decision = decide(org, evidence);
+    // Before asking a person, read the organization's own pages as a person
+    // sees them. VEG's pages carry a call-tracking number in their raw code
+    // and draw each hospital's real number in the browser, so a plain read
+    // flagged all 14 VEG hospitals on 2026-11-16 with the same (205) number
+    // while their real numbers were on the page (and the wrong NJ number of
+    // 2026-09-21 came the same way). Only a second read that comes back
+    // readable is used.
+    if (decision.kind === 'needs-review' && evidence.pages.some((p) => p.ownDomain && p.ok && !p.rendered)) {
+      const pages = await Promise.all(evidence.pages.map(async (p) => {
+        if (!p.ownDomain || !p.ok || p.rendered) return p;
+        const r = await renderPage(p.url);
+        if (!r) return p;
+        const second = evidenceOfRendered(org, { ...r, offDomain: !sameSite(p.url, r.finalUrl) });
+        return second.ok && second.text.length > 200 ? second : p;
+      }));
+      decision = decide(org, { ...evidence, pages });
+    }
     decisions.set(org.id, decision);
 
     done++;

@@ -264,6 +264,13 @@ last 90 days, now counts as fine (`personConfirmedRecently` in
 `scripts/agent/rules.ts`, tested). A domain that no longer exists is still
 reported at once.
 
+And: **a changed contact is re-read in a browser before it is flagged.** The
+2026-11-16 run flagged all 14 VEG hospitals with the same (205) number: a
+call-tracking number in VEG's raw page code, while each hospital's real
+number is drawn in the browser and matches the listing. `weekly.ts` now
+re-reads the organization's own pages in Chromium whenever a decision would
+ask a person, and decides again on what a reader sees.
+
 ### Added 2026-11-18: an email when the assistant runs out
 
 When Workers AI refuses for quota, `functions/api/chat.ts` calls
