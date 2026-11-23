@@ -51,7 +51,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "http://www.getabull.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its site draws everything by script and showed nothing to a robot; nothing suggests it has closed."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

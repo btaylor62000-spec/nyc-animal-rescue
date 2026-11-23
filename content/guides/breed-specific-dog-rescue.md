@@ -70,7 +70,7 @@ Internet Miniature Pinscher Service (IMPS) - min pins, national incl. NY. (via M
 - Lucie's Mastiff Mission - Vincentown, New Jersey; rescues and rehomes English mastiffs; an approved ACC rescue partner. (484) 459-3257. https://www.facebook.com/groups/318799318598045
 - Cane Corso Rescue (CCAA Rescue Committee) - Cane Corsos (Italian Mastiff) nationwide incl. NY; foster/transport/rehome (approved ACC rescue partner). Mailing address in West Lake Hills, Texas. 1-814-682-6776. https://canecorsorescue.org (read on its own site by a reviewer, 2026-11-05).
 - Mid-Atlantic Great Dane Rescue League (MAGDRL) - Great Danes and Dane mixes; serves New York, New Jersey, Pennsylvania, Delaware, Maryland, DC, West Virginia and Virginia, with a New York chapter. https://www.magdrl.org / https://nydanerescue.com. Instagram @midatlantic_greatdanerescue (read on its own site by a reviewer, 2026-11-05).
-- Bullmastiff Rescuers - bullmastiffs only ("we DO NOT accept other breeds"), NY-serving. brinc2@verizon.net. http://www.bullmastiffrescuers.net (read on its own site by a reviewer, 2026-11-05).
+- Bullmastiff Rescuers - bullmastiffs only ("we DO NOT accept other breeds"), NY-serving. bri.socialmedia1@gmail.com. http://www.bullmastiffrescuers.net (read on its own site by a reviewer, 2026-11-05).
 - Happy Go Lucky Mastiff Rescue - mastiffs, adopts NY metro. https://happygoluckymastiffrescue.com.
 - Lucie's Mastiff Mission - mastiffs, based at 538 Ongs Hat Rd, Vincentown, NJ 08088; takes mastiffs from NYC through ACC's rescue-partner program. (484) 459-3257. Facebook group: https://www.facebook.com/groups/318799318598045 (address and phone supplied by a reviewer from its public nonprofit record, 2026-11-05).
 - Tibetan Mastiff Rescue - Tibetan mastiffs; the only US rescue for the breed; Ringoes, NJ. (908) 237-1474, tmrescue@tibetanmastiff.org. http://www.tibetanmastiffrescueinc.org (read on its own site by a reviewer, 2026-11-05).
@@ -124,7 +124,7 @@ Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescu
 
 - Pet Adoption League of NY - chows and chow mixes, foster-based; an approved ACC rescue partner (location not given). https://www.facebook.com/palofnyinc
 - NYC Shiba Rescue - Shiba Inu, NYC-based. http://nycshibarescue.org. Approved ACC rescue partner.
-- Shiba Rescue of New England - Shiba Inus; foster-based, serves New England and New York. shibarescuene@gmail.com, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).
+- Shiba Rescue of New England - Shiba Inus; foster-based, serves New England and New York. admin@shibarescueofnewengland.org, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).
 - Big East Akita Rescue - Akitas, Northeast incl. NY. http://bigeastakitarescue.org.
 - Korean K9 Rescue - Jindos and all breeds rescued from South Korea plus local NYC dogs; Queens/LIC, foster-based. koreank9rescue.org.
 

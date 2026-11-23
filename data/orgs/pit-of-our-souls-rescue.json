@@ -47,7 +47,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.pitofoursoulsrescue.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its site no longer shows a phone number; the recorded one stays until someone confirms another."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

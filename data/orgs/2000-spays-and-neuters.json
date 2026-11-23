@@ -32,6 +32,11 @@
     {
       "value": "6462062789",
       "display": "(646) 206-2789"
+    },
+    {
+      "value": "9173712751",
+      "display": "(917) 371-2751",
+      "label": "On its site"
     }
   ],
   "emails": [
@@ -59,7 +64,7 @@
   "source_urls": [
     "https://www.facebook.com/2000SpaysandNeutersanimalrescue"
   ],
-  "last_verified": "2026-11-13",
+  "last_verified": "2026-11-23",
   "section": "FOUND ON ACC'S NEW HOPE PARTNER LIST, CHECKED BY A REVIEWER (2026-11-13)",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -67,7 +72,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "phones",
+      "from": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"}]",
+      "to": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"},{\"value\":\"9173712751\",\"display\":\"(917) 371-2751\",\"label\":\"On its site\"}]",
+      "evidence_url": "https://2000spaysandneuters.blogspot.com/",
+      "source": "manual",
+      "note": "The weekly check of 2026-11-23 read (917) 371-2751 on its own page and not the recorded number. Added, not replaced: both are listed until a person confirms which is current."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

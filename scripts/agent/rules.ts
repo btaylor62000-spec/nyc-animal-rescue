@@ -174,7 +174,21 @@ export function isCheckable(org: Org): { checkable: boolean; reason?: string } {
   // A Facebook group or Instagram page as the "website" is a social channel:
   // it needs a login, so it read as "unreachable for 3 weeks" every week and
   // pushed the run over its safety valve.
-  const social = (u: string | null | undefined) => !!u && /^https?:\/\/([a-z0-9-]+\.)?(facebook|instagram|tiktok|x|twitter)\.com\//i.test(u);
+  // So is a listing platform or a form host: a Petfinder or Adopt-a-Pet page,
+  // a links page, a Google or monday.com form. None is the group's own site,
+  // and none can be read by the check (New York Meow Sanctuary and House of
+  // Boop, 2026-11-23, were flagged as "could not be read").
+  const social = (u: string | null | undefined) => {
+    if (!u) return false;
+    try {
+      const url = new URL(u);
+      const host = url.hostname.toLowerCase();
+      if (host === 'docs.google.com' && url.pathname.startsWith('/forms')) return true;
+      return /(^|\.)(facebook\.com|instagram\.com|tiktok\.com|x\.com|twitter\.com|petfinder\.com|adoptapet\.com|linktr\.ee|forms\.monday\.com|forms\.gle|jotform\.com|typeform\.com)$/.test(host);
+    } catch {
+      return false;
+    }
+  };
   const hasOwnSite = (Boolean(org.website) && !social(org.website)) || org.intake_urls.some((i) => !social(i.url));
   if (!hasOwnSite) {
     if (org.social.length > 0 || social(org.website)) {

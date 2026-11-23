@@ -46,7 +46,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.americanmalteserescue.org/contact",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its site now lists only coordinators’ personal contacts, which are not published; reach it through its contact page."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

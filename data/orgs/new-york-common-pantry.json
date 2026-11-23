@@ -91,6 +91,15 @@
       "evidence_url": "https://www.nyc.gov/assets/hra/downloads/pdf/services/efap/NYC-Pet-Food-Pantries-Map.pdf",
       "source": "pet-food-pantries",
       "note": "Name, number, address and zip compared with the city's published pet food pantry list; all match."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://nycommonpantry.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: “at capacity” is about taking on new Mobile Pantry partners, not about food for people."
     }
   ],
   "privacy_hold": false,

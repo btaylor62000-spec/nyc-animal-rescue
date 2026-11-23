@@ -138,3 +138,30 @@ owner on https://ny-petrescue.org on 2026-11-18: a no-kill cat and dog rescue
 since 1982, foster-based, with a kennel at 7 Harrison Ave, Harrison, NY 10528;
 (914) 835-3332 for dogs, (914) 835-4133 for cats, nypetrescue@gmail.com.
 Listed outside the city, High.
+
+## Weekly check of 2026-11-23: every flag settled
+
+20 flagged (32 the week before). Fixed in the check itself, so they do not
+come back: VEG's tracking number (pages are now re-read in a browser before
+a flag), The Toby Project (slow but confirmed by people), Urban Utopia
+(already listed as paused), and listings whose "website" is a Petfinder,
+Adopt-a-Pet, links page or form (House of Boop, New York Meow Sanctuary,
+Dalmatian Adoption, Pekingese Rescue Network): those are not the group's own
+site and are no longer checked as if they were.
+
+Changed, from each group's own site read in a browser:
+- Shiba Rescue of New England: email now admin@shibarescueofnewengland.org.
+- Bullmastiff Rescuers: email now bri.socialmedia1@gmail.com (the rescue's).
+- PMAR: website now https (the http address could not be read).
+- 2000 Spays and Neuters: (917) 371-2751, now on its page, added beside the
+  recorded number until someone confirms which is current.
+- Save-A-Pet: its spay/neuter clinic is closed until January 2027 (note).
+
+False alarms, settled with the reason in each listing's change log: AAHA (the
+notice is about a different registry), FBI tips, DEC Region 2 (Albany head
+office number), New York Common Pantry (capacity is about partners), Muddy
+Paws (full for surrenders, still adopting), Flatbush Cats (contact page
+missing; addresses kept), Mama Chris (owner read its Facebook), MetroMalts
+(site lists only coordinators' own contacts, not published), Pit of Our
+Souls, Doberman Pinscher Rescue of PA and Get A Bull (sites show nothing to
+a robot; nothing suggests they closed).

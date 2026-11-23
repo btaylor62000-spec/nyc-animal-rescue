@@ -22,7 +22,7 @@
   "region_note": "ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
   "phones": [],
   "emails": [],
-  "website": "http://www.pmarinc.org",
+  "website": "https://www.pmarinc.org",
   "intake_urls": [],
   "social": [],
   "geo": null,
@@ -34,7 +34,7 @@
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-23",
   "section": "Breed-specific rescues — ALL-\"BULLY\" / MULTI-BREED RESCUES (take the full group)",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -42,7 +42,17 @@
   "last_checked": "2026-11-23",
   "check_status": "manual-only",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "website",
+      "from": "\"http://www.pmarinc.org\"",
+      "to": "\"https://www.pmarinc.org\"",
+      "evidence_url": "https://www.pmarinc.org/",
+      "source": "manual",
+      "note": "Read in a browser 2026-11-23: the site answers on https; the http address could not be read, which is why it looked like it refused robots."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

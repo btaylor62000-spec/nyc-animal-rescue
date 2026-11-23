@@ -95,6 +95,15 @@
       "evidence_url": "https://www.urbanutopiawildlife.org/",
       "source": "manual",
       "note": "Home page read in a browser 2026-11-04: on hiatus, information only, phone and email unchanged."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.urbanutopiawildlife.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: listed as on hiatus, as an information resource; its phone is not what people use it for."
     }
   ],
   "privacy_hold": false,

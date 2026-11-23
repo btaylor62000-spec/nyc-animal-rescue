@@ -28,7 +28,7 @@
   ],
   "emails": [
     {
-      "value": "shibarescuene@gmail.com"
+      "value": "admin@shibarescueofnewengland.org"
     }
   ],
   "website": "https://shibarescueofnewengland.org",
@@ -37,13 +37,13 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "Shiba Inus; foster-based, serves New England and New York. shibarescuene@gmail.com, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).",
+  "notes": "Shiba Inus; foster-based, serves New England and New York. admin@shibarescueofnewengland.org, 561-307-2221. https://shibarescueofnewengland.org (read by a reviewer, 2026-11-05).",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": null,
+  "last_verified": "2026-11-23",
   "section": "Breed-specific rescues — SHIBA / AKITA / ASIAN BREEDS",
   "source_files": [
     "research/NYC_Dog_Rescue_Reference.xlsx"
@@ -51,7 +51,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "emails",
+      "from": "[{\"value\":\"shibarescuene@gmail.com\"}]",
+      "to": "[{\"value\":\"admin@shibarescueofnewengland.org\"}]",
+      "evidence_url": "https://shibarescueofnewengland.org/",
+      "source": "manual",
+      "note": "Read in a browser 2026-11-23: its own site gives admin@shibarescueofnewengland.org; the old Gmail address is no longer on it."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

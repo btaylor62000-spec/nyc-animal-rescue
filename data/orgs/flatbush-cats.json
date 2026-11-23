@@ -71,7 +71,17 @@
   "last_checked": "2026-11-23",
   "check_status": "needs-review",
   "consecutive_failures": 0,
-  "change_log": [],
+  "change_log": [
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.flatbushcats.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its contact page is missing (404), so the recorded addresses could not be seen; press@ is for the press. The recorded addresses stay."
+    }
+  ],
   "privacy_hold": false,
   "community": null
 }

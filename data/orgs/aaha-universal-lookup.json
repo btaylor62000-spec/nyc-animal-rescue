@@ -84,6 +84,15 @@
       "evidence_url": "https://www.aaha.org/for-veterinary-professionals/microchip-registry-lookup-tool-aaha-find-your-pets-microchip-registry/",
       "source": "manual",
       "note": "The weekly check read \"Save This Life has ceased operations\" on AAHA's page as AAHA closing. It is one participating registry; the lookup itself works. Read in a browser 2026-11-05."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.aaha.org/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: the closing notice is about Save This Life, a different registry that left AAHA’s lookup; the lookup itself works."
     }
   ],
   "privacy_hold": false,

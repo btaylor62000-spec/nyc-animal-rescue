@@ -83,6 +83,15 @@
       "evidence_url": "https://www.facebook.com/",
       "source": "manual",
       "note": "Read by a reviewer on its Facebook page, 2026-11-11. Its website shows our checks nothing."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.facebook.com/mamachrisrescue1/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its website is blank to robots; the owner read its Facebook page on 2026-11-18 (Staten Island cats, mamachrisrescue@gmail.com)."
     }
   ],
   "privacy_hold": false,

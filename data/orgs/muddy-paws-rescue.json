@@ -139,6 +139,15 @@
       "evidence_url": "https://www.muddypawsrescue.org/adopt",
       "source": "manual",
       "note": "The weekly check flagged \"at capacity\". Its adoption page, read 2026-11-05, says foster homes are at capacity with dogs from open-intake shelter partners, so it cannot take outside surrenders. It is operating; the status is unchanged."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://www.muddypawsrescue.org/adopt",
+      "source": "manual",
+      "note": "Settled 2026-11-23: its foster homes are full for owner surrenders; it is not listed as taking surrenders, and it is still adopting."
     }
   ],
   "privacy_hold": false,

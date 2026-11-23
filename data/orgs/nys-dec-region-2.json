@@ -90,6 +90,15 @@
       "evidence_url": "https://dec.ny.gov",
       "source": "manual",
       "note": "Confirmed by a reviewer in a browser on 2026-11-11: the Region 2 contacts are the same as the week before."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "flag-reviewed",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://dec.ny.gov/",
+      "source": "manual",
+      "note": "Settled 2026-11-23: (518) 402-8545 is DEC’s Albany head office on its general pages; the Region 2 numbers stay."
     }
   ],
   "privacy_hold": false,

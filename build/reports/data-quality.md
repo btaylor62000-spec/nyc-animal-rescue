@@ -144,7 +144,7 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 
 None.
 
-### Never verified (71)
+### Never verified (54)
 
 Mostly entries extracted from guide prose, which carried no verification date of their own. They are set to Medium confidence and will get a real date after the first successful automated check.
 
@@ -371,7 +371,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost dog vet care, spay/neuter and licensing | 7329 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
-| Breed-specific dog rescue | 20674 |
+| Breed-specific dog rescue | 20692 |
 | Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
 | Help paying for veterinary care | 9895 |

@@ -243,6 +243,21 @@ jobs:
               core.setFailed(`Could not open a pull request from ${head}: ${err.message}. The changes are on the branch; open one by hand.`);
             }
 
+      # A week with nothing to propose leaves last week's proposal out of date
+      # (and in conflict with main): close it, so the only open pull request is
+      # ever a current one (2026-11-23).
+      - name: Close an out-of-date proposal
+        if: steps.commit.outputs.outcome == 'bookkeeping' || steps.commit.outputs.outcome == 'nothing'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const open = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${process.env.PROPOSAL_BRANCH}`, per_page: 5 });
+            for (const pr of open.data) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body: "This week's check found nothing to propose for the live site, so this older proposal is out of date. Closing it." });
+              await github.rest.pulls.update({ owner, repo, pull_number: pr.number, state: 'closed' });
+            }
+
       # One issue, reopened and rewritten each week, rather than a new one
       # every Monday. Anything the checker would not decide on its own is in
       # here; the site works whether or not it is read.
