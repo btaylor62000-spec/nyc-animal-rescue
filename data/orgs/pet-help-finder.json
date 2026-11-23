@@ -1,0 +1,55 @@
+{
+  "id": "pet-help-finder",
+  "name": "Pet Help Finder",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [],
+  "needs": [
+    "spay-neuter",
+    "low-cost-vet",
+    "food-assistance",
+    "referral"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [],
+  "website": "https://www.pethelpfinder.org/m/phf",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A free search of low-cost vet care, spay and neuter clinics, vaccines, pet food pantries and supplies, by city or zip code. A directory, not a provider. Listed on Bullmastiff Rescuers' resources page.",
+  "type_raw": "Search for low-cost vet care, pet food and supplies near you (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://www.pethelpfinder.org/m/phf"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

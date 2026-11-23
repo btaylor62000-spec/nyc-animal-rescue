@@ -165,3 +165,24 @@ missing; addresses kept), Mama Chris (owner read its Facebook), MetroMalts
 (site lists only coordinators' own contacts, not published), Pit of Our
 Souls, Doberman Pinscher Rescue of PA and Get A Bull (sites show nothing to
 a robot; nothing suggests they closed).
+
+### Corrections from the owner's reading, 2026-11-23
+
+- Metropolitan Maltese Rescue has closed after 29 years. It is no longer
+  listed; American Maltese Association Rescue, which took its dogs, is listed
+  instead (website only: its contact page gives coordinators' own addresses,
+  which are not published). The old page redirects there.
+- Shiba Rescue of New England: one group. Both its website address and the
+  Gmail on its Facebook page are listed.
+- 2000 Spays and Neuters: its current site is 2000spaysandneuters.weebly.com;
+  the (917) number came from its old blogspot page and is removed.
+- PMAR: its contact form is linked.
+- DEC Region 2: the owner rang and confirmed the number.
+- Added from Bullmastiff Rescuers' resources list, each read on its own
+  site: The Mosby Foundation, Miranda's People, STARelief, Pet Help Finder;
+  the Joshua Lewis Animal Cancer Fund is noted on Frankie's Friends. Already
+  listed: CareCredit, RedRover, The Pet Fund, Frankie's Friends, Live Like
+  Roo, Pets of the Homeless, Best Friends. Not added: Banfield Foundation
+  (grants go to organizations, not to pet owners); the "Pet Lifeline Project"
+  link is a news article, not an organization; Friends & Vets Helping Pets
+  and Bow Wow Buddies could not be read from here.

@@ -23,7 +23,12 @@
   "phones": [],
   "emails": [],
   "website": "https://www.pmarinc.org",
-  "intake_urls": [],
+  "intake_urls": [
+    {
+      "url": "https://www.pmarinc.org/contact-us/",
+      "label": "Contact form"
+    }
+  ],
   "social": [],
   "geo": null,
   "address": null,
@@ -51,6 +56,15 @@
       "evidence_url": "https://www.pmarinc.org/",
       "source": "manual",
       "note": "Read in a browser 2026-11-23: the site answers on https; the http address could not be read, which is why it looked like it refused robots."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "intake_urls",
+      "from": "[]",
+      "to": "[{\"url\":\"https://www.pmarinc.org/contact-us/\",\"label\":\"Contact form\"}]",
+      "evidence_url": "https://www.pmarinc.org/contact-us/",
+      "source": "manual",
+      "note": "Read in a browser 2026-11-23: a contact form; mailing address P.O. Box 1903, Binghamton, NY 13902."
     }
   ],
   "privacy_hold": false,

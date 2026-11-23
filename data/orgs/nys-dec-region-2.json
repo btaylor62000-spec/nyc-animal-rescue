@@ -64,7 +64,7 @@
   "source_urls": [
     "https://dec.ny.gov/about/contact-us/statewide-office-information"
   ],
-  "last_verified": "2026-11-11",
+  "last_verified": "2026-11-23",
   "section": "WILDLIFE REPORTING LINES - who to call about sick, dead, stranded or illegally kept wildlife. Reporting lines only: for a live injured animal use the wildlife carers above.",
   "source_files": [
     "research/NYC_Reviewer_Additions.xlsx"
@@ -99,6 +99,15 @@
       "evidence_url": "https://dec.ny.gov/",
       "source": "manual",
       "note": "Settled 2026-11-23: (518) 402-8545 is DEC’s Albany head office on its general pages; the Region 2 numbers stay."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "last_verified",
+      "from": null,
+      "to": "\"2026-11-23\"",
+      "evidence_url": "https://dec.ny.gov/",
+      "source": "manual",
+      "note": "The site owner rang DEC Region 2 and confirmed the recorded number."
     }
   ],
   "privacy_hold": false,

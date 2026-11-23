@@ -38,13 +38,13 @@
   "geo": null,
   "address": null,
   "hours": null,
-  "notes": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.",
+  "notes": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund",
   "type_raw": null,
   "confidence": "Medium",
   "status": "active",
   "status_note": null,
   "source_urls": [],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-23",
   "section": "Owner support & surrender prev. — HELP PAYING VET BILLS (financial aid - prevents economic euthanasia; apply to several at once, funds go to the vet)",
   "source_files": [
     "research/NYC_Cat_Rescue_TNR_Reference.xlsx",
@@ -63,6 +63,15 @@
       "evidence_url": "https://www.frankiesfriends.org/apply-for-assistance-3",
       "source": "manual",
       "note": "Read in a browser on 2026-11-04: Frankie's Friends application page: grants for emergency or specialty vet care. Working."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "notes",
+      "from": "\"lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\"",
+      "to": "\"lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\\n\\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund\"",
+      "evidence_url": "https://www.frankiesfriends.org/jlacf-fund",
+      "source": "manual",
+      "note": "Read in a browser 2026-11-23: the cancer fund is a Frankie’s Friends programme."
     }
   ],
   "privacy_hold": false,

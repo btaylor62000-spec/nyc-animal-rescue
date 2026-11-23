@@ -1,0 +1,57 @@
+{
+  "id": "the-mosby-foundation",
+  "name": "The Mosby Foundation",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [
+    "dog"
+  ],
+  "needs": [
+    "spay-neuter",
+    "medical-special-needs",
+    "senior",
+    "financial-aid"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [],
+  "website": "https://themosbyfoundation.org",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "Helps limited-income dog owners with vet bills for critical medical care, cancer, senior dogs, heart health or spay/neuter, in its words for \"extenuating veterinary circumstances no one could possibly foresee\". Apply on its website. Listed on Bullmastiff Rescuers' resources page.",
+  "type_raw": "Grants toward vet bills for dogs (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://themosbyfoundation.org/"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

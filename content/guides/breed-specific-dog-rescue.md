@@ -108,7 +108,7 @@ Long Island Golden Retriever Rescue - goldens, serves NY metro incl. NYC. (via M
 
 Next Stop Forever Small Dog Rescue - small dogs, NYC-serving. Approved ACC rescue partner.
 
-- Metropolitan Maltese Rescue (MetroMalts) has closed. Its site sends Maltese owners to American Maltese Association Rescue, which it describes as NYC-based: http://www.americanmalteserescue.org, amarescue@amarescue.org (its coordinators by region are on its contact page) (read on its own site by a reviewer, 2026-11-05).
+- American Maltese Association Rescue (AMAR) - Maltese; a volunteer rescue that takes Maltese surrendered by their owners and calls itself NYC-based. It took over the dogs of Metropolitan Maltese Rescue, which closed after 29 years. Write to a coordinator through its contact page: https://www.americanmalteserescue.org/contact
 - Save A Yorkie Rescue - Yorkshire terriers, Northeast; corporate address in Allentown PA (no dogs there). Its volunteers' numbers for adopting, fostering and surrenders are on its own contact page: https://www.saveayorkierescue.org (read on its own site by a reviewer, 2026-11-05).
 - United Yorkie Rescue - Yorkies, national incl. NY; PO Box 23, Wales, WI 53183. president@uyr.us. http://unitedyorkierescue.org (read on its own site by a reviewer, 2026-11-05).
 - Doxie Rescue of Bucks County & NJ - dachshunds, serves NY metro. https://doxierescue.com.

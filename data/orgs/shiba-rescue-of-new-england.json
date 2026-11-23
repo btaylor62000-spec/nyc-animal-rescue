@@ -29,6 +29,9 @@
   "emails": [
     {
       "value": "admin@shibarescueofnewengland.org"
+    },
+    {
+      "value": "shibarescuene@gmail.com"
     }
   ],
   "website": "https://shibarescueofnewengland.org",
@@ -60,6 +63,15 @@
       "evidence_url": "https://shibarescueofnewengland.org/",
       "source": "manual",
       "note": "Read in a browser 2026-11-23: its own site gives admin@shibarescueofnewengland.org; the old Gmail address is no longer on it."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "emails",
+      "from": "[{\"value\":\"admin@shibarescueofnewengland.org\"}]",
+      "to": "[{\"value\":\"admin@shibarescueofnewengland.org\"},{\"value\":\"shibarescuene@gmail.com\"}]",
+      "evidence_url": "https://www.facebook.com/ShibaRescueofNewEngland/",
+      "source": "manual",
+      "note": "Read by the site owner 2026-11-23: its website gives admin@shibarescueofnewengland.org and its Facebook page, which links that website, gives shibarescuene@gmail.com. Same group; both kept."
     }
   ],
   "privacy_hold": false,

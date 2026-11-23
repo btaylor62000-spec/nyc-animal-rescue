@@ -32,11 +32,6 @@
     {
       "value": "6462062789",
       "display": "(646) 206-2789"
-    },
-    {
-      "value": "9173712751",
-      "display": "(917) 371-2751",
-      "label": "On its site"
     }
   ],
   "emails": [
@@ -44,7 +39,7 @@
       "value": "spaysandneuters2000@gmail.com"
     }
   ],
-  "website": "https://2000spaysandneuters.blogspot.com",
+  "website": "https://2000spaysandneuters.weebly.com",
   "intake_urls": [],
   "social": [
     {
@@ -81,6 +76,24 @@
       "evidence_url": "https://2000spaysandneuters.blogspot.com/",
       "source": "manual",
       "note": "The weekly check of 2026-11-23 read (917) 371-2751 on its own page and not the recorded number. Added, not replaced: both are listed until a person confirms which is current."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "phones",
+      "from": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"},{\"value\":\"9173712751\",\"display\":\"(917) 371-2751\",\"label\":\"On its site\"}]",
+      "to": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"}]",
+      "evidence_url": "https://www.facebook.com/2000SpaysandNeutersanimalrescue/",
+      "source": "manual",
+      "note": "Read by the site owner 2026-11-23: its Facebook page gives (646) 206-2789 and spaysandneuters2000@gmail.com and links its current site, 2000spaysandneuters.weebly.com. The (917) number came from its old blogspot page and is removed."
+    },
+    {
+      "date": "2026-11-23",
+      "field": "website",
+      "from": "\"https://2000spaysandneuters.blogspot.com\"",
+      "to": "\"https://2000spaysandneuters.weebly.com\"",
+      "evidence_url": "https://www.facebook.com/2000SpaysandNeutersanimalrescue/",
+      "source": "manual",
+      "note": "Its current site, linked from its Facebook page (owner, 2026-11-23); the blogspot page is out of date."
     }
   ],
   "privacy_hold": false,

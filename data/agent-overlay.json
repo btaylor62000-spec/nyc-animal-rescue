@@ -34,20 +34,34 @@
           "evidence_url": "https://2000spaysandneuters.blogspot.com/",
           "source": "manual",
           "note": "The weekly check of 2026-11-23 read (917) 371-2751 on its own page and not the recorded number. Added, not replaced: both are listed until a person confirms which is current."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "phones",
+          "from": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"},{\"value\":\"9173712751\",\"display\":\"(917) 371-2751\",\"label\":\"On its site\"}]",
+          "to": "[{\"value\":\"6462062789\",\"display\":\"(646) 206-2789\"}]",
+          "evidence_url": "https://www.facebook.com/2000SpaysandNeutersanimalrescue/",
+          "source": "manual",
+          "note": "Read by the site owner 2026-11-23: its Facebook page gives (646) 206-2789 and spaysandneuters2000@gmail.com and links its current site, 2000spaysandneuters.weebly.com. The (917) number came from its old blogspot page and is removed."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "website",
+          "from": "\"https://2000spaysandneuters.blogspot.com\"",
+          "to": "\"https://2000spaysandneuters.weebly.com\"",
+          "evidence_url": "https://www.facebook.com/2000SpaysandNeutersanimalrescue/",
+          "source": "manual",
+          "note": "Its current site, linked from its Facebook page (owner, 2026-11-23); the blogspot page is out of date."
         }
       ],
       "phones": [
         {
           "value": "6462062789",
           "display": "(646) 206-2789"
-        },
-        {
-          "value": "9173712751",
-          "display": "(917) 371-2751",
-          "label": "On its site"
         }
       ],
-      "last_verified": "2026-11-23"
+      "last_verified": "2026-11-23",
+      "website": "https://2000spaysandneuters.weebly.com"
     },
     "24petwatch": {
       "last_checked": "2026-11-23",
@@ -3364,7 +3378,7 @@
       "last_checked": "2026-11-23",
       "check_status": "ok",
       "consecutive_failures": 0,
-      "last_verified": "2026-11-04",
+      "last_verified": "2026-11-23",
       "change_log": [
         {
           "date": "2026-11-04",
@@ -3374,8 +3388,18 @@
           "evidence_url": "https://www.frankiesfriends.org/apply-for-assistance-3",
           "source": "manual",
           "note": "Read in a browser on 2026-11-04: Frankie's Friends application page: grants for emergency or specialty vet care. Working."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "notes",
+          "from": "\"lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\"",
+          "to": "\"lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\\n\\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\\n\\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund\"",
+          "evidence_url": "https://www.frankiesfriends.org/jlacf-fund",
+          "source": "manual",
+          "note": "Read in a browser 2026-11-23: the cancer fund is a Frankie’s Friends programme."
         }
-      ]
+      ],
+      "notes": "lifesaving emergency/specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\ngrants for lifesaving emergency or specialty care (pet already seen by a vet, good prognosis). frankiesfriends.org/apply-for-assistance-3.\n\nlifesaving emergency or specialty care; pet already seen by a vet with a good prognosis. frankiesfriends.org/apply-for-assistance.\n\nIt also runs the Joshua Lewis Animal Cancer Fund, for pets with cancer: https://www.frankiesfriends.org/jlacf-fund"
     },
     "free-housing-legal-help": {
       "last_checked": "2026-11-23",
@@ -5069,22 +5093,6 @@
       ],
       "last_checked": "2026-11-23"
     },
-    "metropolitan-maltese-rescue": {
-      "last_checked": "2026-11-23",
-      "check_status": "needs-review",
-      "consecutive_failures": 0,
-      "change_log": [
-        {
-          "date": "2026-11-23",
-          "field": "flag-reviewed",
-          "from": null,
-          "to": "\"2026-11-23\"",
-          "evidence_url": "https://www.americanmalteserescue.org/contact",
-          "source": "manual",
-          "note": "Settled 2026-11-23: its site now lists only coordinators’ personal contacts, which are not published; reach it through its contact page."
-        }
-      ]
-    },
     "microchip-registration": {
       "last_checked": "2026-11-10",
       "check_status": "ok",
@@ -6189,9 +6197,18 @@
           "evidence_url": "https://dec.ny.gov/",
           "source": "manual",
           "note": "Settled 2026-11-23: (518) 402-8545 is DEC’s Albany head office on its general pages; the Region 2 numbers stay."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "last_verified",
+          "from": null,
+          "to": "\"2026-11-23\"",
+          "evidence_url": "https://dec.ny.gov/",
+          "source": "manual",
+          "note": "The site owner rang DEC Region 2 and confirmed the recorded number."
         }
       ],
-      "last_verified": "2026-11-11",
+      "last_verified": "2026-11-23",
       "confidence": "High"
     },
     "nysave": {
@@ -6623,10 +6640,25 @@
           "evidence_url": "https://www.pmarinc.org/",
           "source": "manual",
           "note": "Read in a browser 2026-11-23: the site answers on https; the http address could not be read, which is why it looked like it refused robots."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "intake_urls",
+          "from": "[]",
+          "to": "[{\"url\":\"https://www.pmarinc.org/contact-us/\",\"label\":\"Contact form\"}]",
+          "evidence_url": "https://www.pmarinc.org/contact-us/",
+          "source": "manual",
+          "note": "Read in a browser 2026-11-23: a contact form; mailing address P.O. Box 1903, Binghamton, NY 13902."
         }
       ],
       "website": "https://www.pmarinc.org",
-      "last_verified": "2026-11-23"
+      "last_verified": "2026-11-23",
+      "intake_urls": [
+        {
+          "url": "https://www.pmarinc.org/contact-us/",
+          "label": "Contact form"
+        }
+      ]
     },
     "pit-of-our-souls-rescue": {
       "last_checked": "2026-11-23",
@@ -7540,11 +7572,23 @@
           "evidence_url": "https://shibarescueofnewengland.org/",
           "source": "manual",
           "note": "Read in a browser 2026-11-23: its own site gives admin@shibarescueofnewengland.org; the old Gmail address is no longer on it."
+        },
+        {
+          "date": "2026-11-23",
+          "field": "emails",
+          "from": "[{\"value\":\"admin@shibarescueofnewengland.org\"}]",
+          "to": "[{\"value\":\"admin@shibarescueofnewengland.org\"},{\"value\":\"shibarescuene@gmail.com\"}]",
+          "evidence_url": "https://www.facebook.com/ShibaRescueofNewEngland/",
+          "source": "manual",
+          "note": "Read by the site owner 2026-11-23: its website gives admin@shibarescueofnewengland.org and its Facebook page, which links that website, gives shibarescuene@gmail.com. Same group; both kept."
         }
       ],
       "emails": [
         {
           "value": "admin@shibarescueofnewengland.org"
+        },
+        {
+          "value": "shibarescuene@gmail.com"
         }
       ],
       "last_verified": "2026-11-23"

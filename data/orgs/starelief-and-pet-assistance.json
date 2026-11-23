@@ -1,0 +1,58 @@
+{
+  "id": "starelief-and-pet-assistance",
+  "name": "STARelief and Pet Assistance",
+  "aka": [],
+  "parent_org": null,
+  "org_types": [
+    "emergency-vet"
+  ],
+  "animals": [],
+  "needs": [
+    "senior",
+    "financial-aid",
+    "owner-support"
+  ],
+  "boroughs": [
+    "manhattan",
+    "brooklyn",
+    "queens",
+    "bronx",
+    "staten-island"
+  ],
+  "citywide": true,
+  "outside_nyc": false,
+  "neighborhoods": "New York City (national service)",
+  "zips": [],
+  "region_note": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "phones": [],
+  "emails": [
+    {
+      "value": "care@starelief.org"
+    }
+  ],
+  "website": "https://starelief.org/our-programs/",
+  "intake_urls": [],
+  "social": [],
+  "geo": null,
+  "address": null,
+  "hours": null,
+  "notes": "A national 501c3 based in Stamford, Connecticut. Its programs help low-income families, people with disabilities, military families, people experiencing homelessness, seniors on fixed incomes, survivors of domestic violence, and pets displaced by natural disasters. Listed on Bullmastiff Rescuers' resources page.",
+  "type_raw": "Help with vet bills and pet costs for people in hardship (national)",
+  "confidence": "Medium",
+  "status": "active",
+  "status_note": null,
+  "source_urls": [
+    "https://starelief.org/our-programs/"
+  ],
+  "last_verified": "2026-11-23",
+  "section": "EMERGENCY VETS JUST OUTSIDE THE CITY - from AmbuVet's after-hours list (2026-11-15), each checked on its own site; for nights when one of these is the nearest 24-hour hospital",
+  "source_files": [
+    "research/NYC_Reviewer_Additions.xlsx"
+  ],
+  "last_checked": null,
+  "check_status": "unchecked",
+  "consecutive_failures": 0,
+  "change_log": [],
+  "privacy_hold": false,
+  "community": null
+}

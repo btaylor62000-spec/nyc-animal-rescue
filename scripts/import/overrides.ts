@@ -70,6 +70,12 @@ export const OVERRIDES: Override[] = [
   { id: 'free-housing-legal-help', reason: 'Housing Court Answers (2026-11-18) helps tenants; it is not about one kind of pet.', set: { animals: [] } },
   { id: 'nyc-animal-welfare', reason: "The Office of Animal Welfare's evictions page (2026-11-18) is about every pet.", set: { animals: [] } },
   // Read by the owner on 2026-11-18, where the sites refuse robots.
+  // Funds and a finder added 2026-11-23 from Bullmastiff Rescuers' resources
+  // list: "vet bills" in their rows read as emergency vets. None is a vet.
+  { id: 'the-mosby-foundation', reason: 'A fund for vet bills, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
+  { id: 'mirandas-people', reason: 'A fund for vet bills, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
+  { id: 'starelief-and-pet-assistance', reason: 'A fund for pet costs, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
+  { id: 'pet-help-finder', reason: 'A search of low-cost services, not a vet (its own site, 2026-11-23).', removeNeeds: ['emergency-vet'] },
   { id: 'house-of-boop', reason: 'Its Instagram, read by the owner 2026-11-18: "Cat and kitten foster home".', addNeeds: ['foster'] },
   { id: 'intimutt-inc', reason: 'Its Instagram, read by the owner 2026-11-18: "ER, Rescue/Rehab, TNR, Foster, Adopt".', addNeeds: ['tnr', 'foster', 'adoption'] },
   { id: 'ridgewood-rescue', reason: 'Its Instagram, read by the owner 2026-11-18: "TNR, socialization, adoptions, and community education".', addNeeds: ['tnr', 'adoption', 'education'] },

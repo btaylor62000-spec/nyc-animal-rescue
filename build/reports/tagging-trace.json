@@ -5500,6 +5500,28 @@
       "matched": "Rescue"
     }
   ],
+  "mirandas-people": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    }
+  ],
   "monroe-street-cats": [
     {
       "tag": "cat",
@@ -7039,6 +7061,38 @@
       "matched": "lost and found"
     }
   ],
+  "pet-help-finder": [
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "low-cost-vet",
+      "field": "type",
+      "matched": "low-cost"
+    },
+    {
+      "tag": "food-assistance",
+      "field": "type",
+      "matched": "pet food"
+    },
+    {
+      "tag": "referral",
+      "field": "notes",
+      "matched": "directory"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    }
+  ],
   "pet-poison-helpline-24-7-hotline": [
     {
       "tag": "poison-control",
@@ -8371,6 +8425,33 @@
       "matched": "EQUINES (horses, ponies, donkeys) - NYC has little on-the-gr"
     }
   ],
+  "starelief-and-pet-assistance": [
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "seniors"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Help with"
+    },
+    {
+      "tag": "owner-support",
+      "field": "notes",
+      "matched": "domestic violence"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    }
+  ],
   "staten-island-bird-club": [
     {
       "tag": "bird-companion",
@@ -8869,6 +8950,43 @@
       "tag": "rescue-foster",
       "field": "type",
       "matched": "Rescue"
+    }
+  ],
+  "the-mosby-foundation": [
+    {
+      "tag": "dog",
+      "field": "type",
+      "matched": "dogs"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
+    },
+    {
+      "tag": "spay-neuter",
+      "field": "notes",
+      "matched": "spay"
+    },
+    {
+      "tag": "medical-special-needs",
+      "field": "notes",
+      "matched": "critical medical"
+    },
+    {
+      "tag": "senior",
+      "field": "notes",
+      "matched": "senior"
+    },
+    {
+      "tag": "financial-aid",
+      "field": "type",
+      "matched": "Grants"
+    },
+    {
+      "tag": "emergency-vet",
+      "field": "section",
+      "matched": "EMERGENCY VET"
     }
   ],
   "the-poor-animals-of-st-francis-inc": [

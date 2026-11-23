@@ -4,7 +4,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 ## Totals
 
-- **511** organizations after de-duplication
+- **515** organizations after de-duplication
 - **92** duplicate clusters merged
 - **26** guide pages generated
 - **18** entries flagged as not currently active
@@ -18,7 +18,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 | Animal | Organizations |
 | --- | ---: |
 | cat | 339 |
-| dog | 329 |
+| dog | 331 |
 | rabbit | 46 |
 | bird-companion | 44 |
 | reptile | 41 |
@@ -42,19 +42,19 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 | foster | 116 |
 | tnr | 101 |
 | breed-specific | 82 |
-| spay-neuter | 70 |
-| owner-support | 70 |
-| referral | 57 |
-| low-cost-vet | 53 |
+| spay-neuter | 72 |
+| owner-support | 71 |
+| referral | 58 |
+| low-cost-vet | 54 |
 | emergency-vet | 49 |
 | advocacy | 36 |
 | colony-care | 36 |
-| food-assistance | 34 |
-| medical-special-needs | 27 |
+| food-assistance | 35 |
+| medical-special-needs | 28 |
 | legal | 25 |
+| financial-aid | 25 |
 | education | 24 |
-| financial-aid | 22 |
-| senior | 21 |
+| senior | 23 |
 | sanctuary | 20 |
 | lost-found | 18 |
 | boarding | 17 |
@@ -76,17 +76,17 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Borough | Organizations |
 | --- | ---: |
-| brooklyn | 272 |
-| queens | 232 |
-| manhattan | 229 |
-| staten-island | 200 |
-| bronx | 198 |
+| brooklyn | 276 |
+| queens | 236 |
+| manhattan | 233 |
+| staten-island | 204 |
+| bronx | 202 |
 
 ### By confidence
 
 | Confidence | Organizations |
 | --- | ---: |
-| Medium | 245 |
+| Medium | 249 |
 | High | 217 |
 | Low | 49 |
 
@@ -94,7 +94,7 @@ Generated 2026-11-23 from the source workbooks and the wildlife guide.
 
 | Status | Organizations |
 | --- | ---: |
-| active | 493 |
+| active | 497 |
 | retired | 12 |
 | hiatus | 3 |
 | relocated | 3 |
@@ -289,7 +289,7 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 
 ## Tagging
 
-### Rows the rules could not fully tag (43)
+### Rows the rules could not fully tag (45)
 
 - **NYS DEC Region 2 (New York City office)** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:12)
 - **NOAA Greater Atlantic marine mammal and sea turtle stranding hotline** — missing needs (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:13)
@@ -334,6 +334,8 @@ Nothing here is auto-corrected. These are disagreements between the workbooks th
 - **Intimutt Inc.** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:149)
 - **Sasha's Dream** — missing org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:150)
 - **Ridgewood Rescue** — missing needs, org_types (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:151)
+- **STARelief and Pet Assistance** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:155)
+- **Pet Help Finder** — missing animals (research/NYC_Reviewer_Additions.xlsx#Reviewer additions:156)
 
 ## Privacy
 
@@ -371,7 +373,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Low-cost dog vet care, spay/neuter and licensing | 7329 |
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
-| Breed-specific dog rescue | 20692 |
+| Breed-specific dog rescue | 20697 |
 | Found injured or orphaned wildlife | 17367 |
 | Exotic pet emergencies | 4076 |
 | Help paying for veterinary care | 9895 |
