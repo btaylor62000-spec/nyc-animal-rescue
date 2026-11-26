@@ -382,8 +382,17 @@ export const GLANCE: Record<string, Glance> = {
         section: 'Found a baby squirrel or rabbit?',
       },
       {
-        label: 'A raccoon, skunk or bat', tone: 'now', verdict: 'Don’t touch it',
-        do: ['Stay away.', 'A raccoon that is not clearly hurt or sick: leave it alone. The Mayor’s Office of Animal Welfare says raccoons picked up by authorities or pest control are put down, even healthy ones.', 'Clearly hurt or sick: call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
+        // Only raccoons: the Mayor's Office of Animal Welfare's written advice
+        // (2026-11-26) is about raccoons and nothing else. Skunks and bats keep
+        // 311's advice, unchanged.
+        label: 'A raccoon', tone: 'now', verdict: 'Leave it alone unless it is clearly hurt or sick',
+        do: ['Stay away, and don’t touch it.', 'Not clearly hurt or sick: leave it alone. The Mayor’s Office of Animal Welfare says raccoons picked up by authorities or pest control are put down, even healthy ones. Out in the daytime only means it is hungry.', 'Clearly hurt or sick: call 311. In a park, ask for the Urban Park Rangers.', 'If a person or pet touched it, call a doctor or vet now.'],
+        contacts: [{ org: CITY, when: 'Only if it is clearly hurt or sick' }],
+        section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
+      },
+      {
+        label: 'A skunk or bat', tone: 'now', verdict: 'Don’t touch it',
+        do: ['Stay away.', 'Call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
         contacts: [{ org: CITY, when: 'Report it · in a park, it goes to NYC Parks' }],
         section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
       },

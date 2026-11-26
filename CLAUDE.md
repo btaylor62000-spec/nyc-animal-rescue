@@ -257,6 +257,12 @@ euthanised even when healthy. The trapped guide's old "If you have a raccoon
 issue, call a professional" (311) and the licensed-company tile are gone.
 Do not bring them back.
 
+**The raccoon advice is about raccoons only.** The first version put it in
+the wildlife card's "raccoon, skunk or bat" tile and changed the skunk-and-bat
+sentence in the full guide to match; the owner caught it. Raccoons now have
+their own tile, and the skunk-and-bat sentence is back word for word. Never
+widen an official's advice beyond the animals it names.
+
 ### Changed 2026-11-23: the scheduled checks actually run, and tell the owner
 
 The weekly check's one Monday 07:00 UTC slot was dropped by GitHub on
