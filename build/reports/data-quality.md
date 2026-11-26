@@ -1,6 +1,6 @@
 # Data quality report
 
-Generated 2026-11-23 from the source workbooks and the wildlife guide.
+Generated 2026-11-26 from the source workbooks and the wildlife guide.
 
 ## Totals
 
@@ -140,9 +140,49 @@ The weekly automated check cannot verify these, because Instagram and Facebook c
 - **Thundercats TNR** — facebook thundercatsTNR
 - **West Street Whiskers** — instagram weststreetwhiskers
 
-### Verification older than 90 days (0)
+### Verification older than 90 days (70)
 
-None.
+- **A Tail of Two Kitties** — last verified 2026-08-26 (92 days ago)
+- **AdvoCat Rescue, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Amazing Animals Rescue and Adoptions** — last verified 2026-08-26 (92 days ago)
+- **ASPCA Spay/Neuter - NYC (Same-Day Waitlist + mobile + clinics)** — last verified 2026-08-26 (92 days ago)
+- **Astoria Cat Rescue, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Backyard Cats of Bed-Stuy** — last verified 2026-08-26 (92 days ago)
+- **Barbey Street Cats** — last verified 2026-08-26 (92 days ago)
+- **Bed Stuy Kitty Crew** — last verified 2026-08-26 (92 days ago)
+- **Bedford Corners Community Cats (BC3)** — last verified 2026-08-26 (92 days ago)
+- **Bronx Community Cats** — last verified 2026-08-26 (92 days ago)
+- **Bronx Tails Cat Rescue** — last verified 2026-08-26 (92 days ago)
+- **Brooklyn Bridge Animal Welfare Coalition (BBAWC) / Brooklyn Cat Cafe** — last verified 2026-08-26 (92 days ago)
+- **Brooklyn Kitty Committee, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Brooklyn Waterfront Cats** — last verified 2026-08-26 (92 days ago)
+- **Bushwick Street Cats** — last verified 2026-08-26 (92 days ago)
+- **Carroll Street Cat Club** — last verified 2026-08-26 (92 days ago)
+- **Cat Castle NYC** — last verified 2026-08-26 (92 days ago)
+- **Cats In The Cradle Rescue (CITCR)** — last verified 2026-08-26 (92 days ago)
+- **Cats 'n Queens** — last verified 2026-08-26 (92 days ago)
+- **Cats of Meow York (COMY)** — last verified 2026-08-26 (92 days ago)
+- **Eastchester Bay Stray Cat Project, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Flatbush Cats** — last verified 2026-08-26 (92 days ago)
+- **For Animals Inc.** — last verified 2026-08-26 (92 days ago)
+- **For Blake's Sake Rescue, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Good Home Pet Adoptions** — last verified 2026-08-26 (92 days ago)
+- **Greenpoint Cats** — last verified 2026-08-26 (92 days ago)
+- **Greenpoint Cats Club** — last verified 2026-08-26 (92 days ago)
+- **India Street Cats** — last verified 2026-08-26 (92 days ago)
+- **Itty Bitty City Kitties** — last verified 2026-08-26 (92 days ago)
+- **LIC Feral Feeders and Cat Rescue** — last verified 2026-08-26 (92 days ago)
+- **Lincoln Terrace Park Cats (LTPC)** — last verified 2026-08-26 (92 days ago)
+- **Los Sures Cats Williamsburg** — last verified 2026-08-26 (92 days ago)
+- **Loving Touch, Inc.** — last verified 2026-08-26 (92 days ago)
+- **Magnificat Cat Rescue and Rehoming** — last verified 2026-08-26 (92 days ago)
+- **Mama Chris Animal Rescue, Inc.** — last verified 2026-08-26 (92 days ago)
+- **MeowRoof** — last verified 2026-08-26 (92 days ago)
+- **Midwood Kitty Cats / Cats of Midwood** — last verified 2026-08-26 (92 days ago)
+- **Monroe Street Cats (Bed Stuy)** — last verified 2026-08-26 (92 days ago)
+- **Muffin's Pet Connection - MAMA Program** — last verified 2026-08-26 (92 days ago)
+- **NARN - Central Brooklyn (NARN-CB)** — last verified 2026-08-26 (92 days ago)
+- …and 30 more
 
 ### Never verified (54)
 
@@ -359,7 +399,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Page | Bytes |
 | --- | ---: |
 | Found an injured bird | 17275 |
-| An animal is trapped | 2903 |
+| An animal is trapped | 3637 |
 | Found kittens outside | 2512 |
 | An animal left alone in a home | 2558 |
 | Leaving an abusive home with your pet | 4662 |
@@ -378,7 +418,7 @@ These are personal numbers belonging to individuals, not organizational lines. N
 | Dog behaviour, training and legal questions | 6166 |
 | Lost or found a dog | 3964 |
 | Breed-specific dog rescue | 20697 |
-| Found injured or orphaned wildlife | 17367 |
+| Found injured or orphaned wildlife | 17946 |
 | Exotic pet emergencies | 4076 |
 | Help paying for veterinary care | 9895 |
 | Rehoming a rabbit, bird, reptile or small animal | 3454 |

@@ -129,7 +129,7 @@ export const GLANCE: Record<string, Glance> = {
     contacts: [
       { dial: '911', when: 'Trapped and in danger right now' },
       { org: CITY, when: 'Not in danger right now · strays: 10am to 6pm' },
-      { org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'How to find a licensed wildlife control company' },
+      { org: 'nyc-mayors-office-of-animal-welfare', name: 'Mayor’s Office of Animal Welfare', when: 'If 911 or 311 does not help, email them' },
     ],
     situations: [
       {
@@ -145,10 +145,9 @@ export const GLANCE: Record<string, Glance> = {
         section: 'If it is not in danger right now, call 311',
       },
       {
-        label: 'A wild animal is living in my walls or chimney', tone: 'week', verdict: 'Hire a licensed company',
-        do: ['Hire a licensed wildlife control company. DEC’s website explains how to find one.', 'First take away any food that draws it in.'],
-        contacts: [{ org: 'nys-dec-region-2', name: 'DEC (state wildlife office)', when: 'Licensed wildlife control' }],
-        section: 'A wild animal living in your walls, chimney or attic',
+        label: 'A raccoon near my home', tone: 'week', verdict: 'Leave it alone unless it is clearly hurt or sick',
+        do: ['The Mayor’s Office of Animal Welfare: raccoons “picked up by authorities or pest control companies are automatically euthanized because they are a rabies vector species, even if they are perfectly healthy.”', 'Seeing one in the daytime only means it is hungry.', 'Take away whatever food or shelter is drawing it in.'],
+        section: 'A raccoon near your home',
       },
     ],
   },
@@ -384,7 +383,7 @@ export const GLANCE: Record<string, Glance> = {
       },
       {
         label: 'A raccoon, skunk or bat', tone: 'now', verdict: 'Don’t touch it',
-        do: ['Stay away.', 'Call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
+        do: ['Stay away.', 'A raccoon that is not clearly hurt or sick: leave it alone. The Mayor’s Office of Animal Welfare says raccoons picked up by authorities or pest control are put down, even healthy ones.', 'Clearly hurt or sick: call 311. In a park, ask for the Urban Park Rangers. No rehabber in the city may take these animals.', 'If a person or pet touched it, call a doctor or vet now.'],
         contacts: [{ org: CITY, when: 'Report it · in a park, it goes to NYC Parks' }],
         section: 'Raccoons, skunks and bats: no rehabber in the city may take them',
       },

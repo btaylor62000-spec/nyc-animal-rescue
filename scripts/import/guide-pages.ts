@@ -107,7 +107,7 @@ export const GUIDE_PAGES: TabSpec[] = [
   {
     file: WB_TRAPPED, tab: 'An animal is trapped', slug: 'animal-trapped',
     title: 'An animal is trapped',
-    summary: 'Stuck in a drain, a wall, a pipe, a car engine or under a train: call 911 if it is in danger, 311 if it is not, and what to do about wildlife living in a building.',
+    summary: 'Stuck in a drain, a wall, a pipe, a car engine or under a train: call 911 if it is in danger, 311 if it is not, and why to leave a healthy raccoon alone.',
     topics: ['trapped animal', 'animal stuck', 'stuck in drain', 'storm drain', 'cat stuck', 'dog stuck', 'in the wall', 'in a pipe', 'car engine', 'under a train', 'on a ledge', 'raccoon in chimney', 'animal in attic', 'emergency service unit'],
   },
   {

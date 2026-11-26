@@ -244,6 +244,19 @@ rule. Now:
   every borough) **and Int. 1098** (vets posting prices), and checks the
   one-topic rule with the assistant harness.
 
+### Changed 2026-11-26: the Mayor's Office of Animal Welfare answered
+
+Asked by the owner in writing, the Mayor's Office of Animal Welfare said: a
+trapped animal in danger, call 911; not in danger, call 311 at any hour; if
+either does not help, email animalwelfare@cityhall.nyc.gov. It pointed to
+311's animal-abuse page (KA-02224). And, quoted word for word on the
+trapped-animal guide, the wildlife guide and both cards: do not call 311,
+911, DEC or a professional about a raccoon unless it is clearly hurt or
+sick, because raccoons picked up by authorities or pest control are
+euthanised even when healthy. The trapped guide's old "If you have a raccoon
+issue, call a professional" (311) and the licensed-company tile are gone.
+Do not bring them back.
+
 ### Changed 2026-11-23: the scheduled checks actually run, and tell the owner
 
 The weekly check's one Monday 07:00 UTC slot was dropped by GitHub on
